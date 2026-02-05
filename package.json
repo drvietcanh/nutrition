@@ -1,0 +1,9 @@
+{
+  "name": "nutrition-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Clinical nutrition knowledge base and tools",
+  "workspaces": [
+    "clinical-nutrition"
+  ]
+}
