@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Clinical Nutrition Education & Tools",
+  title: "Giáo dục Dinh dưỡng Lâm sàng & Công cụ",
   description:
-    "A public, educational platform explaining clinical nutrition concepts and providing interactive tools that support (but do not replace) clinical reasoning.",
+    "Nền tảng giáo dục công cộng giải thích các khái niệm dinh dưỡng lâm sàng và cung cấp công cụ tương tác hỗ trợ (nhưng không thay thế) tư duy lâm sàng.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="vi">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

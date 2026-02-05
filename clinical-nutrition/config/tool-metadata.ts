@@ -11,27 +11,27 @@ export interface ToolMetadata {
 export const TOOL_CATALOG: ToolMetadata[] = [
   {
     id: "malnutrition-screening",
-    title: "Malnutrition Screening",
+    title: "Sàng lọc Suy Dinh dưỡng",
     category: "screener",
-    summary: "Structured questions to support recognition of patients at risk of malnutrition.",
+    summary: "Câu hỏi có cấu trúc để hỗ trợ nhận diện bệnh nhân có nguy cơ suy dinh dưỡng.",
     educationalFocus:
-      "Teaches how to interpret common malnutrition screening criteria and limitations.",
+      "Dạy cách diễn giải tiêu chí sàng lọc suy dinh dưỡng phổ biến và giới hạn.",
   },
   {
     id: "energy-protein-calculator",
-    title: "Energy & Protein Calculator",
+    title: "Máy tính Năng lượng & Protein",
     category: "calculator",
-    summary: "Estimates daily energy and protein requirements for educational scenarios.",
+    summary: "Ước tính nhu cầu năng lượng và protein hàng ngày cho các tình huống giáo dục.",
     educationalFocus:
-      "Helps learners understand how patient characteristics influence estimated needs.",
+      "Giúp người học hiểu cách đặc điểm bệnh nhân ảnh hưởng đến nhu cầu ước tính.",
   },
   {
     id: "intake-assessment",
-    title: "Intake Assessment Worksheet",
+    title: "Bảng Đánh giá Lượng Ăn",
     category: "worksheet",
-    summary: "Guides systematic review of oral/enteral/parenteral intake over time.",
+    summary: "Hướng dẫn đánh giá có hệ thống lượng ăn qua đường miệng/ống thông/tĩnh mạch theo thời gian.",
     educationalFocus:
-      "Supports structured thinking about adequacy of intake versus estimated needs.",
+      "Hỗ trợ tư duy có cấu trúc về mức độ đầy đủ của lượng ăn so với nhu cầu ước tính.",
   },
 ];
 

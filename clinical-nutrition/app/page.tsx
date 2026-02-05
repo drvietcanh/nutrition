@@ -7,11 +7,11 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Clinical Nutrition Education & Tools
+            Giáo dục Dinh dưỡng Lâm sàng & Công cụ
           </h1>
           <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            A public, educational platform explaining clinical nutrition concepts and providing 
-            interactive tools that support (but do not replace) clinical reasoning.
+            Nền tảng giáo dục công cộng giải thích các khái niệm dinh dưỡng lâm sàng và cung cấp 
+            công cụ tương tác hỗ trợ (nhưng không thay thế) tư duy lâm sàng.
           </p>
         </div>
 
@@ -29,15 +29,15 @@ export default function Home() {
                 </svg>
               </div>
               <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors">
-                Knowledge Base
+                Cơ sở Kiến thức
               </h2>
             </div>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Educational content explaining clinical nutrition concepts, assessment processes, 
-              myths and misconceptions, and clinical reasoning principles.
+              Nội dung giáo dục giải thích các khái niệm dinh dưỡng lâm sàng, quy trình đánh giá, 
+              hiểu lầm và quan niệm sai, và nguyên tắc lập luận lâm sàng.
             </p>
             <span className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800">
-              Explore Knowledge →
+              Khám phá Kiến thức →
             </span>
           </Link>
 
@@ -53,75 +53,75 @@ export default function Home() {
                 </svg>
               </div>
               <h2 className="text-2xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">
-                Interactive Tools
+                Công cụ Tương tác
               </h2>
             </div>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Practice with interactive tools for malnutrition screening, energy and protein 
-              calculation, and intake assessment.
+              Thực hành với các công cụ tương tác để sàng lọc suy dinh dưỡng, tính toán năng lượng và protein, 
+              và đánh giá lượng ăn vào.
             </p>
             <span className="inline-flex items-center text-green-600 font-medium group-hover:text-green-800">
-              Use Tools →
+              Sử dụng Công cụ →
             </span>
           </Link>
         </div>
 
         {/* Quick Links Section */}
         <div className="bg-white rounded-xl border border-gray-200 p-8 mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Quick Links</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Liên kết Nhanh</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link
               href="/knowledge/myths-in-clinical-nutrition"
               className="p-4 rounded-lg border border-gray-200 hover:border-blue-500 hover:bg-blue-50 transition-colors"
             >
-              <h3 className="font-semibold text-gray-900 mb-2">Myths & Misconceptions</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Hiểu lầm & Quan niệm Sai</h3>
               <p className="text-sm text-gray-600">
-                Evidence-based corrections to common misconceptions
+                Điều chỉnh dựa trên bằng chứng cho các hiểu lầm phổ biến
               </p>
             </Link>
             <Link
               href="/knowledge/assessment-process"
               className="p-4 rounded-lg border border-gray-200 hover:border-blue-500 hover:bg-blue-50 transition-colors"
             >
-              <h3 className="font-semibold text-gray-900 mb-2">Assessment Process</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Quy trình Đánh giá</h3>
               <p className="text-sm text-gray-600">
-                Complete guide to clinical nutrition assessment
+                Hướng dẫn đầy đủ về đánh giá dinh dưỡng lâm sàng
               </p>
             </Link>
             <Link
               href="/tools/malnutrition-screening"
               className="p-4 rounded-lg border border-gray-200 hover:border-green-500 hover:bg-green-50 transition-colors"
             >
-              <h3 className="font-semibold text-gray-900 mb-2">Screening Tool</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Công cụ Sàng lọc</h3>
               <p className="text-sm text-gray-600">
-                Interactive malnutrition screening
+                Sàng lọc suy dinh dưỡng tương tác
               </p>
             </Link>
             <Link
               href="/tools/energy-protein-calculator"
               className="p-4 rounded-lg border border-gray-200 hover:border-green-500 hover:bg-green-50 transition-colors"
             >
-              <h3 className="font-semibold text-gray-900 mb-2">Energy & Protein Calculator</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Máy tính Năng lượng & Protein</h3>
               <p className="text-sm text-gray-600">
-                Calculate nutritional needs
+                Tính toán nhu cầu dinh dưỡng
               </p>
             </Link>
             <Link
               href="/knowledge/why-intake-falls-short"
               className="p-4 rounded-lg border border-gray-200 hover:border-blue-500 hover:bg-blue-50 transition-colors"
             >
-              <h3 className="font-semibold text-gray-900 mb-2">Why Intake Falls Short</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Vì sao Lượng Ăn Thường Thiếu</h3>
               <p className="text-sm text-gray-600">
-                Understanding real-world factors
+                Hiểu các yếu tố thực tế
               </p>
             </Link>
             <Link
               href="/tools/intake-assessment"
               className="p-4 rounded-lg border border-gray-200 hover:border-green-500 hover:bg-green-50 transition-colors"
             >
-              <h3 className="font-semibold text-gray-900 mb-2">Intake Assessment</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Đánh giá Lượng Ăn</h3>
               <p className="text-sm text-gray-600">
-                Assess actual nutritional intake
+                Đánh giá lượng dinh dưỡng thực tế
               </p>
             </Link>
           </div>
@@ -129,15 +129,15 @@ export default function Home() {
 
         {/* About Section */}
         <div className="bg-blue-50 rounded-xl border border-blue-200 p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">About This Platform</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Về Nền tảng Này</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            This platform is designed to support healthcare professionals in understanding clinical nutrition 
-            concepts and applying evidence-based practices. All content is educational and should be used 
-            to support, not replace, clinical judgment and multidisciplinary team collaboration.
+            Nền tảng này được thiết kế để hỗ trợ các chuyên gia y tế hiểu các khái niệm dinh dưỡng lâm sàng 
+            và áp dụng thực hành dựa trên bằng chứng. Tất cả nội dung mang tính giáo dục và nên được sử dụng 
+            để hỗ trợ, không thay thế, phán đoán lâm sàng và hợp tác đa ngành.
           </p>
           <p className="text-sm text-gray-600 italic">
-            Remember: Tools and guidelines inform your judgment; they don't replace it. When in doubt, 
-            consult with registered dietitians and your clinical team.
+            Lưu ý: Công cụ và hướng dẫn cung cấp thông tin cho phán đoán của bạn; chúng không thay thế nó. Khi còn nghi ngờ, 
+            hãy tham khảo ý kiến của chuyên gia dinh dưỡng đã đăng ký và nhóm lâm sàng của bạn.
           </p>
         </div>
       </main>
