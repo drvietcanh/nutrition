@@ -404,7 +404,7 @@ export default function MythsAndMisconceptionsPage() {
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600">3.</span>
                 Context Is Critical
-              </p>
+              </h3>
               <p className="text-sm text-gray-700">
                 The same intervention can be appropriate or inappropriate depending on the patient's condition, 
                 prognosis, and goals of care. Considering the full clinical picture is typically important.
