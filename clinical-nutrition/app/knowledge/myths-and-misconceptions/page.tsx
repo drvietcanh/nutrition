@@ -414,7 +414,7 @@ export default function MythsAndMisconceptionsPage() {
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600">4.</span>
                 Evidence Evolves
-              </p>
+              </h3>
               <p className="text-sm text-gray-700">
                 Practices that were standard decades ago may not align with current evidence. Stay current with 
                 guidelines and be open to updating your practice.
@@ -424,7 +424,7 @@ export default function MythsAndMisconceptionsPage() {
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600">5.</span>
                 Question Assumptions
-              </p>
+              </h3>
               <p className="text-sm text-gray-700">
                 When you hear "we always do it this way," ask why. Understanding the rationale helps you identify 
                 when practices need updating.
