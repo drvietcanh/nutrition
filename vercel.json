@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd clinical-nutrition && npm install && npm run build",
+  "outputDirectory": "clinical-nutrition/.next",
+  "installCommand": "cd clinical-nutrition && npm install",
+  "framework": "nextjs",
+  "rootDirectory": "clinical-nutrition"
+}
