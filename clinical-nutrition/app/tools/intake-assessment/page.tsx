@@ -6,13 +6,13 @@ export default function IntakeAssessmentPage() {
       {/* 1. Title + brief explanation */}
       <header className="space-y-2">
         <h1 className="text-xl font-semibold sm:text-2xl">
-          Intake Assessment – Teaching Tool
+          Đánh giá Lượng Ăn – Công cụ Giảng dạy
         </h1>
         <p className="text-sm text-neutral-700 sm:text-base">
-          This page helps you compare an{" "}
-          <strong>educational estimate of energy and protein needs</strong> with
-          what is actually being provided over a short period. The focus is on
-          understanding gaps, not on prescribing diets or feeds.
+          Trang này giúp bạn so sánh một{" "}
+          <strong>ước tính giáo dục về nhu cầu năng lượng và protein</strong> với
+          những gì thực sự được cung cấp trong một khoảng thời gian ngắn. Trọng tâm là
+          hiểu các khoảng cách, không phải kê đơn chế độ ăn hoặc thức ăn.
         </p>
       </header>
 
@@ -25,28 +25,28 @@ export default function IntakeAssessmentPage() {
           id="why-compare-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          2. Why compare estimated needs with actual intake?
+          2. Vì sao so sánh nhu cầu ước tính với lượng ăn thực tế?
         </h2>
         <p className="text-sm text-neutral-700 sm:text-base">
-          In clinical settings, patients often receive less (or occasionally
-          more) than an educational estimate of their energy and protein needs.
-          Seeing this gap clearly can support clinical reasoning about{" "}
-          <strong>why intake looks the way it does</strong> and what trends
-          might mean over time.
+          Trong môi trường lâm sàng, bệnh nhân thường nhận được ít hơn (hoặc đôi khi
+          nhiều hơn) so với ước tính giáo dục về nhu cầu năng lượng và protein của họ.
+          Nhìn thấy khoảng cách này rõ ràng có thể hỗ trợ lập luận lâm sàng về{" "}
+          <strong>vì sao lượng ăn trông như vậy</strong> và các xu hướng
+          có thể có ý nghĩa gì theo thời gian.
         </p>
         <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
-            Shortfalls may reflect symptoms, procedures, access, food choices,
-            or system factors rather than a simple &quot;failure to eat&quot;.
+            Thiếu hụt có thể phản ánh triệu chứng, thủ thuật, tiếp cận, lựa chọn thực phẩm,
+            hoặc yếu tố hệ thống thay vì đơn giản là "không ăn được".
           </li>
           <li>
-            Apparent &quot;overfeeding&quot; may stem from generous estimates,
-            mixing methods, or transient changes in intake.
+            "Cho ăn quá" rõ ràng có thể xuất phát từ ước tính hào phóng,
+            trộn lẫn phương pháp, hoặc thay đổi tạm thời trong lượng ăn.
           </li>
           <li>
-            Clinicians usually pay more attention to{" "}
-            <strong>patterns over several days</strong> than to a single day in
-            isolation.
+            Các bác sĩ lâm sàng thường chú ý nhiều hơn đến{" "}
+            <strong>mô hình trong vài ngày</strong> hơn là một ngày đơn lẻ
+            riêng biệt.
           </li>
         </ul>
       </section>
@@ -63,24 +63,24 @@ export default function IntakeAssessmentPage() {
           id="reasons-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          6. Why intake often falls short in practice
+          6. Vì sao lượng ăn thường thiếu trong thực hành
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
-            Symptoms such as pain, nausea, early satiety, or breathlessness can
-            limit what patients feel able to eat or drink.
+            Triệu chứng như đau, buồn nôn, no sớm, hoặc khó thở có thể
+            hạn chế những gì bệnh nhân cảm thấy có thể ăn hoặc uống.
           </li>
           <li>
-            Tests, procedures, fasting orders, and scheduling can reduce time
-            available for meals and snacks.
+            Xét nghiệm, thủ thuật, lệnh nhịn ăn, và lịch trình có thể giảm thời gian
+            có sẵn cho bữa ăn và đồ ăn nhẹ.
           </li>
           <li>
-            Texture, route, and food preferences influence how much of what is
-            offered is actually consumed.
+            Kết cấu, đường, và sở thích thực phẩm ảnh hưởng đến bao nhiêu trong số những gì
+            được cung cấp thực sự được tiêu thụ.
           </li>
           <li>
-            Documentation may miss snacks, supplements, or family-provided food,
-            so charted intake can under- or overestimate reality.
+            Tài liệu có thể bỏ sót đồ ăn nhẹ, bổ sung, hoặc thực phẩm do gia đình cung cấp,
+            vì vậy lượng ăn được ghi chép có thể đánh giá thấp hoặc cao hơn thực tế.
           </li>
         </ul>
       </section>
@@ -91,20 +91,20 @@ export default function IntakeAssessmentPage() {
           id="trends-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          7. Thinking in trends, not single days
+          7. Tư duy theo xu hướng, không phải ngày đơn lẻ
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
-            A single low-intake day around a major procedure may be less
-            concerning than several low-intake days without a clear reason.
+            Một ngày lượng ăn thấp xung quanh một thủ thuật lớn có thể ít
+            đáng lo ngại hơn vài ngày lượng ăn thấp mà không có lý do rõ ràng.
           </li>
           <li>
-            Small changes in intake can accumulate over a week; clinicians often
-            look back at several days before drawing conclusions.
+            Thay đổi nhỏ trong lượng ăn có thể tích lũy trong một tuần; các bác sĩ lâm sàng thường
+            nhìn lại vài ngày trước khi rút ra kết luận.
           </li>
           <li>
-            Reassessment is routine: estimates, intake records, and plans are
-            revisited as the clinical situation changes.
+            Đánh giá lại là thường quy: ước tính, hồ sơ lượng ăn, và kế hoạch được
+            xem xét lại khi tình huống lâm sàng thay đổi.
           </li>
         </ul>
       </section>
@@ -115,16 +115,15 @@ export default function IntakeAssessmentPage() {
           id="safety-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          8. Safety reminder
+          8. Nhắc nhở an toàn
         </h2>
         <p className="text-xs text-neutral-600 sm:text-sm">
-          This page is for <strong>education only</strong>. It does not provide
-          medical advice, diagnosis, or treatment, does not create a
-          clinician–patient relationship, and must not be used for clinical
-          decision-making, orders, or prescriptions.
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ
+          bác sĩ–bệnh nhân, và không được sử dụng để ra quyết định lâm sàng,
+          lệnh, hoặc kê đơn.
         </p>
       </section>
     </main>
   );
 }
-

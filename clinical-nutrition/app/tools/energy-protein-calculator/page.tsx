@@ -6,13 +6,13 @@ export default function EnergyProteinCalculatorPage() {
       {/* 1. Title + brief explanation */}
       <header className="space-y-2">
         <h1 className="text-xl font-semibold sm:text-2xl">
-          Energy &amp; Protein Needs – Teaching Tool
+          Nhu cầu Năng lượng & Protein – Công cụ Giảng dạy
         </h1>
         <p className="text-sm text-neutral-700 sm:text-base">
-          This page illustrates how clinicians often estimate daily energy and
-          protein needs using simple weight-based rules and equation-style
-          approaches. The numbers shown are{" "}
-          <strong>educational ranges, not prescriptions</strong>.
+          Trang này minh họa cách các bác sĩ lâm sàng thường ước tính nhu cầu năng lượng và
+          protein hàng ngày sử dụng các quy tắc đơn giản dựa trên cân nặng và phương pháp
+          dạng phương trình. Các con số hiển thị là{" "}
+          <strong>khoảng giáo dục, không phải kê đơn</strong>.
         </p>
       </header>
 
@@ -25,27 +25,27 @@ export default function EnergyProteinCalculatorPage() {
           id="why-estimate-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          2. Why do we estimate energy &amp; protein needs?
+          2. Vì sao chúng ta ước tính nhu cầu năng lượng & protein?
         </h2>
         <p className="text-sm text-neutral-700 sm:text-base">
-          In clinical nutrition, we rarely know the exact requirement for an
-          individual person. Instead, we use <strong>reasonable ranges</strong>{" "}
-          based on weight, clinical context, and guidelines, then adjust based
-          on how the person responds over time.
+          Trong dinh dưỡng lâm sàng, chúng ta hiếm khi biết chính xác nhu cầu của một
+          người cụ thể. Thay vào đó, chúng ta sử dụng <strong>khoảng hợp lý</strong>{" "}
+          dựa trên cân nặng, bối cảnh lâm sàng, và hướng dẫn, sau đó điều chỉnh dựa
+          trên cách người đó phản ứng theo thời gian.
         </p>
         <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
-            Energy estimates aim to avoid both underfeeding and overfeeding,
-            especially during illness and recovery.
+            Ước tính năng lượng nhằm tránh cả việc cho ăn thiếu và cho ăn quá,
+            đặc biệt trong thời gian bệnh và phục hồi.
           </li>
           <li>
-            Protein ranges support the maintenance or rebuilding of lean mass,
-            but must be balanced against organ function and tolerance.
+            Khoảng protein hỗ trợ duy trì hoặc tái xây dựng khối nạc,
+            nhưng phải được cân bằng với chức năng cơ quan và khả năng dung nạp.
           </li>
           <li>
-            Different methods (simple weight-based, equation-based, stress
-            factors) are <strong>tools to structure thinking</strong>, not
-            final answers.
+            Các phương pháp khác nhau (đơn giản dựa trên cân nặng, dựa trên phương trình, hệ số
+            stress) là <strong>công cụ để cấu trúc tư duy</strong>, không phải
+            câu trả lời cuối cùng.
           </li>
         </ul>
       </section>
@@ -59,22 +59,22 @@ export default function EnergyProteinCalculatorPage() {
           id="learning-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          6. Interpretation &amp; learning points
+          6. Diễn giải & điểm học tập
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
-            Ranges are usually more useful than single &quot;correct&quot;
-            numbers, because real needs shift with time, stress, and activity.
+            Khoảng thường hữu ích hơn các con số "đúng" đơn lẻ,
+            vì nhu cầu thực tế thay đổi theo thời gian, stress, và hoạt động.
           </li>
           <li>
-            Simple rules and equations work best when they are{" "}
-            <strong>combined with clinical judgment</strong>, local protocols,
-            and regular review.
+            Quy tắc đơn giản và phương trình hoạt động tốt nhất khi chúng được{" "}
+            <strong>kết hợp với phán đoán lâm sàng</strong>, quy trình địa phương,
+            và đánh giá thường xuyên.
           </li>
           <li>
-            When in doubt, clinicians generally start cautiously, monitor
-            tolerance and progress, and adjust rather than relying on a single
-            calculation.
+            Khi còn nghi ngờ, các bác sĩ lâm sàng thường bắt đầu thận trọng, theo dõi
+            khả năng dung nạp và tiến triển, và điều chỉnh thay vì dựa vào một
+            phép tính duy nhất.
           </li>
         </ul>
       </section>
@@ -88,22 +88,22 @@ export default function EnergyProteinCalculatorPage() {
           id="pitfalls-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          7. Common clinical pitfalls
+          7. Các cạm bẫy lâm sàng phổ biến
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
-            Relying on actual body weight alone in people with significant{" "}
-            <strong>edema, ascites, or fluid shifts</strong>, which can hide
-            loss of lean tissue.
+            Dựa vào cân nặng thực tế một mình ở những người có{" "}
+            <strong>phù, cổ trướng, hoặc dịch chuyển</strong> đáng kể, có thể che giấu
+            mất mô nạc.
           </li>
           <li>
-            Applying the same ranges to everyone without considering{" "}
-            <strong>organ function</strong> (for example, advanced renal or
-            liver disease) or <strong>refeeding risk</strong>.
+            Áp dụng cùng một khoảng cho mọi người mà không xem xét{" "}
+            <strong>chức năng cơ quan</strong> (ví dụ, bệnh thận hoặc
+            gan tiến triển) hoặc <strong>nguy cơ hội chứng tái cho ăn</strong>.
           </li>
           <li>
-            Treating a calculation as a prescription rather than{" "}
-            <strong>a starting point for a monitored plan</strong>.
+            Coi một phép tính như một kê đơn thay vì{" "}
+            <strong>điểm khởi đầu cho một kế hoạch được theo dõi</strong>.
           </li>
         </ul>
       </section>
@@ -114,16 +114,15 @@ export default function EnergyProteinCalculatorPage() {
           id="safety-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          8. Safety reminder
+          8. Nhắc nhở an toàn
         </h2>
         <p className="text-xs text-neutral-600 sm:text-sm">
-          This page is for <strong>education only</strong>. It does not provide
-          medical advice, diagnosis, or treatment, does not create a
-          clinician–patient relationship, and must not be used for clinical
-          decision-making or to prescribe diets, feeds, or medications.
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ
+          bác sĩ–bệnh nhân, và không được sử dụng để ra quyết định lâm sàng
+          hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
         </p>
       </section>
     </main>
   );
 }
-

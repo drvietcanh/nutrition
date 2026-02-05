@@ -6,12 +6,11 @@ export default function MalnutritionScreeningPage() {
       {/* 1. Title + short intro */}
       <header className="space-y-2">
         <h1 className="text-xl font-semibold sm:text-2xl">
-          Malnutrition Risk – Teaching Tool
+          Nguy cơ Suy Dinh dưỡng – Công cụ Giảng dạy
         </h1>
         <p className="text-sm text-neutral-700 sm:text-base">
-          This page helps you explore how common screening tools think about{" "}
-          <strong>risk of malnutrition</strong> using simplified, de-identified
-          example inputs.
+          Trang này giúp bạn khám phá cách các công cụ sàng lọc phổ biến đánh giá{" "}
+          <strong>nguy cơ suy dinh dưỡng</strong> sử dụng các đầu vào ví dụ đơn giản, đã ẩn danh.
         </p>
       </header>
 
@@ -21,20 +20,20 @@ export default function MalnutritionScreeningPage() {
           id="what-is-risk-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          1. What is “malnutrition risk”?
+          1. "Nguy cơ suy dinh dưỡng" là gì?
         </h2>
         <p className="text-sm text-neutral-700 sm:text-base">
-          Screening tools such as NRS-2002 and PG-SGA are designed to flag{" "}
-          <strong>people who might be at higher nutritional risk</strong> so
-          that a fuller assessment can be done. A positive screen does not
-          confirm a diagnosis, and a negative screen does not guarantee that
-          nutrition is adequate.
+          Các công cụ sàng lọc như NRS-2002 và PG-SGA được thiết kế để đánh dấu{" "}
+          <strong>những người có thể có nguy cơ dinh dưỡng cao hơn</strong> để
+          có thể thực hiện đánh giá đầy đủ hơn. Sàng lọc dương tính không
+          xác nhận chẩn đoán, và sàng lọc âm tính không đảm bảo rằng
+          dinh dưỡng là đầy đủ.
         </p>
         <p className="text-sm text-neutral-700 sm:text-base">
-          This teaching tool focuses on how these screeners use information like
-          recent weight loss, reduced intake, and disease context to raise or
-          lower concern. It does not make clinical decisions or recommend
-          treatments.
+          Công cụ giảng dạy này tập trung vào cách các công cụ sàng lọc này sử dụng thông tin như
+          sụt cân gần đây, giảm lượng ăn, và bối cảnh bệnh để tăng hoặc
+          giảm mức quan ngại. Nó không đưa ra quyết định lâm sàng hoặc khuyến nghị
+          điều trị.
         </p>
       </section>
 
@@ -47,23 +46,23 @@ export default function MalnutritionScreeningPage() {
           id="learning-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          5. Interpretation &amp; learning points
+          5. Diễn giải & điểm học tập
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
-            Screening tools are designed to be{" "}
-            <strong>quick and sensitive</strong>, not perfect; they err on the
-            side of flagging people who might deserve a closer look.
+            Các công cụ sàng lọc được thiết kế để{" "}
+            <strong>nhanh và nhạy cảm</strong>, không hoàn hảo; chúng có xu hướng
+            đánh dấu những người có thể cần được xem xét kỹ hơn.
           </li>
           <li>
-            A “higher risk” pattern means{" "}
-            <strong>“consider a full nutrition assessment”</strong>, not
-            “malnutrition is present” or “start a particular treatment”.
+            Mô hình "nguy cơ cao hơn" có nghĩa là{" "}
+            <strong>"xem xét đánh giá dinh dưỡng đầy đủ"</strong>, không phải
+            "suy dinh dưỡng đang hiện diện" hoặc "bắt đầu một điều trị cụ thể".
           </li>
           <li>
-            Different hospitals and guidelines may use slightly different
-            thresholds, so always interpret scores in the context of{" "}
-            <strong>local policies and senior clinical judgment</strong>.
+            Các bệnh viện và hướng dẫn khác nhau có thể sử dụng ngưỡng hơi khác nhau,
+            vì vậy luôn diễn giải điểm số trong bối cảnh{" "}
+            <strong>chính sách địa phương và phán đoán lâm sàng của bác sĩ có kinh nghiệm</strong>.
           </li>
         </ul>
       </section>
@@ -74,43 +73,43 @@ export default function MalnutritionScreeningPage() {
           id="when-to-use-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          6. When to use / When not to use this teaching tool
+          6. Khi nào sử dụng / Khi nào không sử dụng công cụ giảng dạy này
         </h2>
         <div className="grid gap-6 md:grid-cols-2 md:items-start">
           <div className="space-y-2">
             <h3 className="text-sm font-semibold">
-              When this tool is useful
+              Khi công cụ này hữu ích
             </h3>
             <ul className="list-disc space-y-1 pl-5 text-xs text-neutral-700 sm:text-sm">
               <li>
-                Teaching students or colleagues how common malnutrition
-                screeners think about risk.
+                Dạy sinh viên hoặc đồng nghiệp cách các công cụ sàng lọc suy dinh dưỡng
+                phổ biến đánh giá nguy cơ.
               </li>
               <li>
-                Exploring how changes in weight loss, intake, or disease stress
-                might influence concern about nutritional status.
+                Khám phá cách thay đổi trong sụt cân, lượng ăn, hoặc stress bệnh
+                có thể ảnh hưởng đến quan ngại về tình trạng dinh dưỡng.
               </li>
               <li>
-                Preparing for exams or journal clubs that involve nutrition
-                screening tools.
+                Chuẩn bị cho kỳ thi hoặc câu lạc bộ tạp chí liên quan đến công cụ
+                sàng lọc dinh dưỡng.
               </li>
             </ul>
           </div>
           <div className="space-y-2">
             <h3 className="text-sm font-semibold">
-              When this tool is NOT appropriate
+              Khi công cụ này KHÔNG phù hợp
             </h3>
             <ul className="list-disc space-y-1 pl-5 text-xs text-neutral-700 sm:text-sm">
               <li>
-                Making clinical decisions for an individual patient (e.g.,
-                admissions, feeding routes, prescriptions).
+                Đưa ra quyết định lâm sàng cho một bệnh nhân cụ thể (ví dụ:
+                nhập viện, đường cho ăn, kê đơn).
               </li>
               <li>
-                Replacing a full nutrition assessment or multidisciplinary team
-                review.
+                Thay thế đánh giá dinh dưỡng đầy đủ hoặc đánh giá đa ngành
+                của nhóm.
               </li>
               <li>
-                Managing emergencies or time-critical situations.
+                Xử lý cấp cứu hoặc tình huống cấp thời.
               </li>
             </ul>
           </div>
@@ -123,17 +122,15 @@ export default function MalnutritionScreeningPage() {
           id="safety-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          7. Safety reminder
+          7. Nhắc nhở an toàn
         </h2>
         <p className="text-xs text-neutral-600 sm:text-sm">
-          This page is for <strong>education only</strong>. It does not provide
-          medical advice, diagnosis, or treatment, does not create a
-          clinician–patient relationship, and must not be used for clinical
-          decision-making or emergency care.
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ
+          bác sĩ–bệnh nhân, và không được sử dụng để ra quyết định lâm sàng
+          hoặc chăm sóc cấp cứu.
         </p>
       </section>
     </main>
   );
 }
-
-
