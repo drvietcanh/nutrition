@@ -17,19 +17,19 @@ export function ToolNavigation(props: {
     currentStep === 1
       ? null
       : currentStep === 2
-      ? { href: "/tools/malnutrition-screening", label: "Step 1 – Malnutrition Risk" }
-      : { href: "/tools/energy-protein-calculator", label: "Step 2 – Energy & Protein Needs" };
+      ? { href: "/tools/malnutrition-screening", label: "Bước 1 – Nguy cơ Suy Dinh dưỡng" }
+      : { href: "/tools/energy-protein-calculator", label: "Bước 2 – Nhu cầu Năng lượng & Protein" };
 
   const next =
     currentStep === 3
       ? null
       : currentStep === 1
-      ? { href: "/tools/energy-protein-calculator", label: "Step 2 – Energy & Protein Needs" }
-      : { href: "/tools/intake-vs-needs", label: "Step 3 – Intake vs Needs" };
+      ? { href: "/tools/energy-protein-calculator", label: "Bước 2 – Nhu cầu Năng lượng & Protein" }
+      : { href: "/tools/intake-vs-needs", label: "Bước 3 – Lượng Ăn vs Nhu Cầu" };
 
   return (
     <nav
-      aria-label="Tool navigation"
+      aria-label="Điều hướng công cụ"
       className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-neutral-200 pt-4 text-xs sm:text-sm"
     >
       <div>
@@ -42,7 +42,7 @@ export function ToolNavigation(props: {
             <span>{previous.label}</span>
           </Link>
         ) : (
-          <span className="text-neutral-400">Start of learning journey</span>
+          <span className="text-neutral-400">Bắt đầu hành trình học tập</span>
         )}
       </div>
 
@@ -57,7 +57,7 @@ export function ToolNavigation(props: {
           </Link>
         ) : (
           <span className="text-neutral-500">
-            You have reached the final step; you can revisit earlier tools at any time.
+            Bạn đã đến bước cuối cùng; bạn có thể xem lại các công cụ trước đó bất cứ lúc nào.
           </span>
         )}
       </div>

@@ -96,13 +96,13 @@ export default function IntakeVsNeedsPage() {
       {/* 1. Title + short explanation */}
       <header className="space-y-2">
         <h1 className="text-xl font-semibold sm:text-2xl">
-          Intake vs Estimated Needs – Teaching Tool
+          Lượng Ăn vs Nhu Cầu Ước Tính – Công cụ Giảng dạy
         </h1>
         <p className="text-sm text-neutral-700 sm:text-base">
-          This page compares an <strong>educational estimate</strong> of energy
-          and protein needs with what is actually being provided over a recent
-          period. It is designed to make gaps visible and support reasoning,
-          not to prescribe interventions.
+          Trang này so sánh một <strong>ước tính giáo dục</strong> về nhu cầu năng lượng
+          và protein với những gì thực sự được cung cấp trong một khoảng thời gian gần đây.
+          Nó được thiết kế để làm cho các khoảng cách hiển thị và hỗ trợ lý luận,
+          không phải để chỉ định can thiệp.
         </p>
       </header>
 
@@ -112,13 +112,13 @@ export default function IntakeVsNeedsPage() {
         className="space-y-2 rounded-md border border-neutral-200 bg-white p-4"
       >
         <h2 id="why-heading" className="text-base font-semibold sm:text-lg">
-          2. Why intake assessment matters
+          2. Tại sao đánh giá lượng ăn vào quan trọng
         </h2>
         <p className="text-sm text-neutral-700 sm:text-base">
-          In many clinical settings, patients receive less nutrition than
-          simple estimates suggest. Understanding this gap helps explain weight
-          changes, fatigue, and recovery patterns, but it still needs to be
-          interpreted in the full clinical context.
+          Trong nhiều môi trường lâm sàng, bệnh nhân nhận được ít dinh dưỡng hơn
+          so với các ước tính đơn giản gợi ý. Hiểu khoảng cách này giúp giải thích thay đổi
+          cân nặng, mệt mỏi, và mẫu phục hồi, nhưng nó vẫn cần được
+          giải thích trong toàn bộ bối cảnh lâm sàng.
         </p>
       </section>
 
@@ -138,21 +138,21 @@ export default function IntakeVsNeedsPage() {
           id="page-learning-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          6. Interpretation &amp; learning points
+          6. Giải thích &amp; điểm học tập
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
-            Intake below an educational needs band is a{" "}
-            <strong>prompt to ask why</strong>, not proof of harm on its own.
+            Lượng ăn vào dưới phạm vi nhu cầu giáo dục là một{" "}
+            <strong>gợi ý để hỏi tại sao</strong>, không phải bằng chứng về tác hại tự nó.
           </li>
           <li>
-            Short-term dips can be acceptable when there is a clear reason and
-            recovery is underway; persistent gaps over several days deserve more
-            attention.
+            Sự giảm ngắn hạn có thể chấp nhận được khi có lý do rõ ràng và
+            phục hồi đang diễn ra; khoảng cách dai dẳng trong vài ngày xứng đáng được chú ý
+            nhiều hơn.
           </li>
           <li>
-            Real-world decisions rely on clinicians combining these estimates
-            with symptoms, function, organ status, and patient goals.
+            Quyết định trong thế giới thực dựa vào các bác sĩ lâm sàng kết hợp các ước tính này
+            với triệu chứng, chức năng, tình trạng cơ quan, và mục tiêu bệnh nhân.
           </li>
         </ul>
       </section>
@@ -166,27 +166,27 @@ export default function IntakeVsNeedsPage() {
           id="patterns-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          7. Common intake vs needs patterns
+          7. Mẫu lượng ăn vs nhu cầu phổ biến
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
-            Intake &lt;50% of needs for several days often prompts clinicians to
-            re-check data, explore reasons for low intake, and consider local
-            pathways.
+            Lượng ăn vào &lt;50% nhu cầu trong vài ngày thường khiến các bác sĩ lâm sàng
+            kiểm tra lại dữ liệu, khám phá lý do lượng ăn vào thấp, và xem xét
+            quy trình địa phương.
           </li>
           <li>
-            Protein intake is frequently lower than energy intake as a
-            percentage of needs, especially when meals are small or
-            carbohydrate-heavy.
+            Lượng ăn vào protein thường thấp hơn lượng ăn vào năng lượng như một
+            phần trăm của nhu cầu, đặc biệt khi bữa ăn nhỏ hoặc
+            giàu carbohydrate.
           </li>
           <li>
-            Energy may appear adequate while protein is relatively low,
-            highlighting the importance of looking at{" "}
-            <strong>both energy and protein</strong>.
+            Năng lượng có thể xuất hiện đầy đủ trong khi protein tương đối thấp,
+            làm nổi bật tầm quan trọng của việc xem xét{" "}
+            <strong>cả năng lượng và protein</strong>.
           </li>
           <li>
-            Day-to-day fluctuations are common; trends over several days are
-            usually more informative than any single value.
+            Biến động hàng ngày là phổ biến; xu hướng trong vài ngày
+            thường cung cấp thông tin hơn bất kỳ giá trị đơn lẻ nào.
           </li>
         </ul>
       </section>
@@ -197,13 +197,13 @@ export default function IntakeVsNeedsPage() {
           id="safety-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          8. Safety reminder
+          8. Nhắc nhở an toàn
         </h2>
         <p className="text-xs text-neutral-600 sm:text-sm">
-          This tool is for <strong>education only</strong>. It does not provide
-          medical advice, diagnosis, or treatment, does not create a
-          clinician–patient relationship, and must not be used to prescribe
-          diets, feeds, or other interventions.
+          Công cụ này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ
+          bác sĩ–bệnh nhân, và không được sử dụng để chỉ định
+          chế độ ăn, thức ăn, hoặc các can thiệp khác.
         </p>
       </section>
     </main>
@@ -226,28 +226,28 @@ function NeedsInput({ state, onChange }: NeedsInputProps) {
         id="needs-input-heading"
         className="text-base font-semibold sm:text-lg"
       >
-        3. Estimated daily needs (educational band)
+        3. Nhu cầu hàng ngày ước tính (phạm vi giáo dục)
       </h2>
       <p className="text-sm text-neutral-700 sm:text-base">
-        Enter an energy and protein band from a guideline or from the energy
-        &amp; protein tool. This step is for{" "}
-        <strong>learning continuity only</strong>; it does not link tools or
-        prescribe doses.
+        Nhập một phạm vi năng lượng và protein từ hướng dẫn hoặc từ công cụ
+        năng lượng &amp; protein. Bước này chỉ dành cho{" "}
+        <strong>tính liên tục học tập</strong>; nó không liên kết công cụ hoặc
+        chỉ định liều lượng.
       </p>
       <form className="grid gap-4 rounded-md border border-neutral-200 bg-white p-4 sm:grid-cols-2 sm:gap-6">
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: the lower end often reflects a cautious starting point in many examples."
+            title="Tại sao quan trọng: cuối thấp hơn thường phản ánh điểm khởi đầu thận trọng trong nhiều ví dụ."
           >
-            Energy needs – lower end (kcal/day)
+            Nhu cầu năng lượng – cuối thấp hơn (kcal/ngày)
           </label>
           <input
             type="number"
             inputMode="numeric"
             min={0}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 1750"
+            placeholder="ví dụ: 1750"
             value={state.energyLower}
             onChange={(e) => update("energyLower", e.target.value)}
           />
@@ -255,16 +255,16 @@ function NeedsInput({ state, onChange }: NeedsInputProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: the upper end defines a more generous band that may or may not be appropriate in practice."
+            title="Tại sao quan trọng: cuối cao hơn định nghĩa một phạm vi rộng rãi hơn có thể hoặc không phù hợp trong thực hành."
           >
-            Energy needs – upper end (kcal/day)
+            Nhu cầu năng lượng – cuối cao hơn (kcal/ngày)
           </label>
           <input
             type="number"
             inputMode="numeric"
             min={0}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 2100"
+            placeholder="ví dụ: 2100"
             value={state.energyUpper}
             onChange={(e) => update("energyUpper", e.target.value)}
           />
@@ -273,16 +273,16 @@ function NeedsInput({ state, onChange }: NeedsInputProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: protein ranges help frame the quality of intake, not just total calories."
+            title="Tại sao quan trọng: phạm vi protein giúp khung chất lượng lượng ăn vào, không chỉ tổng calo."
           >
-            Protein needs – lower end (g/day)
+            Nhu cầu protein – cuối thấp hơn (g/ngày)
           </label>
           <input
             type="number"
             inputMode="numeric"
             min={0}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 70"
+            placeholder="ví dụ: 70"
             value={state.proteinLower}
             onChange={(e) => update("proteinLower", e.target.value)}
           />
@@ -290,16 +290,16 @@ function NeedsInput({ state, onChange }: NeedsInputProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: the upper end reflects more generous protein provision in some teaching examples."
+            title="Tại sao quan trọng: cuối cao hơn phản ánh cung cấp protein rộng rãi hơn trong một số ví dụ giảng dạy."
           >
-            Protein needs – upper end (g/day)
+            Nhu cầu protein – cuối cao hơn (g/ngày)
           </label>
           <input
             type="number"
             inputMode="numeric"
             min={0}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 105"
+            placeholder="ví dụ: 105"
             value={state.proteinUpper}
             onChange={(e) => update("proteinUpper", e.target.value)}
           />
@@ -326,12 +326,12 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
         id="intake-input-heading"
         className="text-base font-semibold sm:text-lg"
       >
-        4. Approximate daily intake over a recent period
+        4. Lượng ăn vào hàng ngày gần đúng trong một khoảng thời gian gần đây
       </h2>
       <p className="text-sm text-neutral-700 sm:text-base">
-        Use best-available information (for example, charted oral intake,
-        nutrition support records, or a 24-hour recall). These values are
-        educational estimates, not legal documentation.
+        Sử dụng thông tin tốt nhất có sẵn (ví dụ: lượng ăn vào qua đường miệng đã ghi chép,
+        hồ sơ hỗ trợ dinh dưỡng, hoặc nhớ lại 24 giờ). Các giá trị này là
+        ước tính giáo dục, không phải tài liệu pháp lý.
       </p>
 
       <form
@@ -344,16 +344,16 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: comparing daily energy intake with an estimated band makes under- or over-provision visible."
+            title="Tại sao quan trọng: so sánh lượng ăn vào năng lượng hàng ngày với phạm vi ước tính làm cho việc cung cấp dưới hoặc quá mức hiển thị."
           >
-            Energy intake (kcal/day)
+            Lượng ăn vào năng lượng (kcal/ngày)
           </label>
           <input
             type="number"
             inputMode="numeric"
             min={0}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 1200"
+            placeholder="ví dụ: 1200"
             value={state.energyIntake}
             onChange={(e) => update("energyIntake", e.target.value)}
           />
@@ -362,16 +362,16 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: protein intake often lags behind energy intake as a percentage of estimated needs."
+            title="Tại sao quan trọng: lượng ăn vào protein thường tụt lại phía sau lượng ăn vào năng lượng như một phần trăm của nhu cầu ước tính."
           >
-            Protein intake (g/day)
+            Lượng ăn vào protein (g/ngày)
           </label>
           <input
             type="number"
             inputMode="numeric"
             min={0}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 45"
+            placeholder="ví dụ: 45"
             value={state.proteinIntake}
             onChange={(e) => update("proteinIntake", e.target.value)}
           />
@@ -380,16 +380,16 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
         <div className="space-y-1 sm:col-span-2">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: a single day may not reflect the typical pattern; several days give more context."
+            title="Tại sao quan trọng: một ngày duy nhất có thể không phản ánh mẫu điển hình; vài ngày cung cấp thêm bối cảnh."
           >
-            Number of days observed
+            Số ngày quan sát
           </label>
           <input
             type="number"
             inputMode="numeric"
             min={1}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm sm:max-w-xs"
-            placeholder="e.g., 3"
+            placeholder="ví dụ: 3"
             value={state.daysObserved}
             onChange={(e) => update("daysObserved", e.target.value)}
           />
@@ -398,9 +398,9 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: rough 'percentage of meals eaten' notes can help explain why calculated intake looks low."
+            title="Tại sao quan trọng: ghi chép thô 'phần trăm bữa ăn đã ăn' có thể giúp giải thích tại sao lượng ăn vào được tính toán trông thấp."
           >
-            Approximate percentage of meals consumed (optional)
+            Phần trăm bữa ăn tiêu thụ gần đúng (tùy chọn)
           </label>
           <input
             type="number"
@@ -408,7 +408,7 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
             min={0}
             max={100}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 50"
+            placeholder="ví dụ: 50"
             value={state.mealsPercent}
             onChange={(e) => update("mealsPercent", e.target.value)}
           />
@@ -417,9 +417,9 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: patterns differ when intake is mostly oral, mostly tube feeding, or mixed; this label is descriptive only."
+            title="Tại sao quan trọng: mẫu khác nhau khi lượng ăn vào chủ yếu qua đường miệng, chủ yếu nuôi ăn qua ống, hoặc hỗn hợp; nhãn này chỉ mang tính mô tả."
           >
-            Main route of nutrition (optional, educational label)
+            Đường dinh dưỡng chính (tùy chọn, nhãn giáo dục)
           </label>
           <select
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
@@ -431,10 +431,10 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
               )
             }
           >
-            <option value="">Select (e.g., oral)</option>
-            <option value="oral">Mostly oral intake</option>
-            <option value="mixed">Mixed oral and nutrition support</option>
-            <option value="unspecified">Unspecified / not documented</option>
+            <option value="">Chọn (ví dụ: qua đường miệng)</option>
+            <option value="oral">Chủ yếu lượng ăn vào qua đường miệng</option>
+            <option value="mixed">Hỗn hợp qua đường miệng và hỗ trợ dinh dưỡng</option>
+            <option value="unspecified">Không xác định / không được ghi chép</option>
           </select>
         </div>
 
@@ -443,7 +443,7 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
             type="submit"
             className="inline-flex items-center rounded-md border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800"
           >
-            Compare intake with needs (educational)
+            So sánh lượng ăn vào với nhu cầu (giáo dục)
           </button>
         </div>
       </form>
@@ -467,12 +467,12 @@ function ComparisonPanel({ comparison }: ComparisonPanelProps) {
           id="comparison-heading"
           className="text-base font-semibold sm:text-lg"
         >
-          5. Comparison between intake and needs
+          5. So sánh giữa lượng ăn vào và nhu cầu
         </h2>
         <p>
-          After you enter an educational needs band and approximate intake, this
-          section will show how they compare and offer neutral teaching points
-          about common patterns.
+          Sau khi bạn nhập một phạm vi nhu cầu giáo dục và lượng ăn vào gần đúng, phần này
+          sẽ cho thấy cách chúng so sánh và cung cấp các điểm giảng dạy trung lập
+          về các mẫu phổ biến.
         </p>
       </section>
     );
@@ -487,7 +487,7 @@ function ComparisonPanel({ comparison }: ComparisonPanelProps) {
         id="comparison-heading"
         className="text-base font-semibold sm:text-lg"
       >
-        5. Comparison between intake and needs (educational view)
+        5. So sánh giữa lượng ăn vào và nhu cầu (chế độ xem giáo dục)
       </h2>
       <ComparisonBands comparison={comparison} />
       <InterpretationBlock comparison={comparison} />
@@ -514,33 +514,33 @@ function ComparisonBands({ comparison }: ComparisonBandsProps) {
 
   const formatCoverage = (value: number | null) =>
     value != null
-      ? `${value}% of the midpoint of the needs band`
-      : "unable to describe with the current data";
+      ? `${value}% của điểm giữa phạm vi nhu cầu`
+      : "không thể mô tả với dữ liệu hiện tại";
 
   const formatGap = (gap: number | null, unit: "kcal" | "g") => {
     if (gap == null || !Number.isFinite(gap)) {
-      return "gap cannot be described with the current data";
+      return "khoảng cách không thể được mô tả với dữ liệu hiện tại";
     }
     const rounded = Math.round(Math.abs(gap));
-    if (rounded === 0) return "very close to the midpoint of the needs band";
+    if (rounded === 0) return "rất gần với điểm giữa phạm vi nhu cầu";
     if (gap < 0) {
-      return `about ${rounded} ${unit}/day below the midpoint of the needs band`;
+      return `khoảng ${rounded} ${unit}/ngày dưới điểm giữa phạm vi nhu cầu`;
     }
-    return `about ${rounded} ${unit}/day above the midpoint of the needs band`;
+    return `khoảng ${rounded} ${unit}/ngày trên điểm giữa phạm vi nhu cầu`;
   };
 
   const adequacyLabel = (category: typeof energyCategory) => {
     switch (category) {
       case "much_lower":
-        return "markedly below this educational band (markedly inadequate from a teaching perspective)";
+        return "thấp hơn đáng kể so với phạm vi giáo dục này (không đầy đủ đáng kể từ góc độ giảng dạy)";
       case "somewhat_lower":
-        return "somewhat below this educational band (partially adequate)";
+        return "thấp hơn một chút so với phạm vi giáo dục này (đầy đủ một phần)";
       case "approximate":
-        return "broadly within this educational band (often considered adequate in teaching scenarios)";
+        return "rộng rãi trong phạm vi giáo dục này (thường được coi là đầy đủ trong các kịch bản giảng dạy)";
       case "higher":
-        return "above this educational band; in practice this may or may not be appropriate";
+        return "trên phạm vi giáo dục này; trong thực hành điều này có thể hoặc không phù hợp";
       default:
-        return "cannot be categorised with the current information";
+        return "không thể được phân loại với thông tin hiện tại";
     }
   };
 
@@ -570,48 +570,48 @@ function ComparisonBands({ comparison }: ComparisonBandsProps) {
     <div className="grid gap-4 md:grid-cols-2">
       <div className="space-y-2">
         <p className="text-xs font-semibold text-neutral-700">
-          Energy comparison
+          So sánh năng lượng
         </p>
         <p className="text-xs text-neutral-700">
           {energyMidpoint != null
-            ? `Midpoint of needs band ≈ ${Math.round(energyMidpoint)} kcal/day.`
-            : "Energy needs band not provided."}{" "}
-          Estimated intake is{" "}
-          <strong>{formatCoverage(energyCoveragePercent)}</strong> and{" "}
-          <strong>{formatGap(energyGapKcalPerDay, "kcal")}</strong> (energy
-          adequacy is {adequacyLabel(energyCategory)}).
+            ? `Điểm giữa phạm vi nhu cầu ≈ ${Math.round(energyMidpoint)} kcal/ngày.`
+            : "Phạm vi nhu cầu năng lượng không được cung cấp."}{" "}
+          Lượng ăn vào ước tính là{" "}
+          <strong>{formatCoverage(energyCoveragePercent)}</strong> và{" "}
+          <strong>{formatGap(energyGapKcalPerDay, "kcal")}</strong> (đầy đủ
+          năng lượng là {adequacyLabel(energyCategory)}).
         </p>
         <div className="mt-1 space-y-1">
           <div className="h-2 w-full rounded-full bg-neutral-100">
             <div className={`h-2 rounded-full ${energyBarClass}`} />
           </div>
           <p className="text-[11px] text-neutral-500">
-            The bar qualitatively shows how intake compares with the midpoint
-            of the educational needs band (not to scale).
+            Thanh này cho thấy một cách định tính cách lượng ăn vào so sánh với điểm giữa
+            của phạm vi nhu cầu giáo dục (không theo tỷ lệ).
           </p>
         </div>
       </div>
 
       <div className="space-y-2">
         <p className="text-xs font-semibold text-neutral-700">
-          Protein comparison
+          So sánh protein
         </p>
         <p className="text-xs text-neutral-700">
           {proteinMidpoint != null
-            ? `Midpoint of needs band ≈ ${Math.round(proteinMidpoint)} g/day.`
-            : "Protein needs band not provided."}{" "}
-          Estimated intake is{" "}
-          <strong>{formatCoverage(proteinCoveragePercent)}</strong> and{" "}
-          <strong>{formatGap(proteinGapGramsPerDay, "g")}</strong> (protein
-          adequacy is {adequacyLabel(proteinCategory)}).
+            ? `Điểm giữa phạm vi nhu cầu ≈ ${Math.round(proteinMidpoint)} g/ngày.`
+            : "Phạm vi nhu cầu protein không được cung cấp."}{" "}
+          Lượng ăn vào ước tính là{" "}
+          <strong>{formatCoverage(proteinCoveragePercent)}</strong> và{" "}
+          <strong>{formatGap(proteinGapGramsPerDay, "g")}</strong> (đầy đủ
+          protein là {adequacyLabel(proteinCategory)}).
         </p>
         <div className="mt-1 space-y-1">
           <div className="h-2 w-full rounded-full bg-neutral-100">
             <div className={`h-2 rounded-full ${proteinBarClass}`} />
           </div>
           <p className="text-[11px] text-neutral-500">
-            This band makes protein gaps visible without suggesting specific
-            targets or actions.
+            Dải này làm cho khoảng cách protein hiển thị mà không gợi ý
+            mục tiêu hoặc hành động cụ thể.
           </p>
         </div>
       </div>
@@ -628,7 +628,7 @@ function InterpretationBlock({ comparison }: InterpretationBlockProps) {
   return (
     <section className="space-y-1 border-t border-dashed border-neutral-200 pt-2">
       <p className="text-xs font-semibold text-neutral-700">
-        Interpretation &amp; learning points (educational only)
+        Giải thích &amp; điểm học tập (chỉ giáo dục)
       </p>
       <ul className="list-disc space-y-1 pl-5 text-xs text-neutral-700">
         {comparison.interpretation.map((line) => (
@@ -638,10 +638,10 @@ function InterpretationBlock({ comparison }: InterpretationBlockProps) {
       {(comparison.missingFields.length > 0 ||
         comparison.warnings.length > 0) && (
         <div className="mt-2 space-y-1 rounded-md border border-amber-100 bg-amber-50 p-2 text-xs text-amber-900">
-          <p className="font-semibold">Limitations and caveats</p>
+          <p className="font-semibold">Giới hạn và lưu ý</p>
           {comparison.missingFields.length > 0 && (
             <p>
-              Some information was missing or approximate:{" "}
+              Một số thông tin bị thiếu hoặc gần đúng:{" "}
               {comparison.missingFields.join(", ")}.
             </p>
           )}

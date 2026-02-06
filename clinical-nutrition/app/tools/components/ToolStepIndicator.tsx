@@ -12,14 +12,14 @@ import Link from "next/link";
  */
 export function ToolStepIndicator({ currentStep }: { currentStep: 1 | 2 | 3 }) {
   const steps = [
-    { id: 1, label: "Malnutrition Risk", href: "/tools/malnutrition-screening" },
-    { id: 2, label: "Energy & Protein Needs", href: "/tools/energy-protein-calculator" },
-    { id: 3, label: "Intake vs Needs", href: "/tools/intake-vs-needs" },
+    { id: 1, label: "Nguy cơ Suy Dinh dưỡng", href: "/tools/malnutrition-screening" },
+    { id: 2, label: "Nhu cầu Năng lượng & Protein", href: "/tools/energy-protein-calculator" },
+    { id: 3, label: "Lượng Ăn vs Nhu Cầu", href: "/tools/intake-vs-needs" },
   ] as const;
 
   return (
     <nav
-      aria-label="Clinical nutrition learning steps"
+      aria-label="Các bước học tập dinh dưỡng lâm sàng"
       className="mb-4 flex flex-wrap items-center gap-2 text-xs sm:text-sm"
     >
       {steps.map((step, index) => {
@@ -36,7 +36,7 @@ export function ToolStepIndicator({ currentStep }: { currentStep: 1 | 2 | 3 }) {
 
         const content = (
           <>
-            <span className="font-medium">Step {step.id}</span>
+            <span className="font-medium">Bước {step.id}</span>
             <span className="hidden sm:inline">·</span>
             <span className="sm:truncate">{step.label}</span>
           </>
