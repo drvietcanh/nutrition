@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 /**
  * Bottom-of-page navigation for the three-step tool flow.
@@ -36,9 +37,9 @@ export function ToolNavigation(props: {
         {previous ? (
           <Link
             href={previous.href}
-            className="inline-flex items-center gap-1 text-neutral-700 hover:text-neutral-900"
+            className="inline-flex items-center gap-1.5 text-neutral-700 hover:text-neutral-900 transition-colors focus-ring rounded"
           >
-            <span aria-hidden="true">←</span>
+            <ChevronLeft className="w-4 h-4" aria-hidden="true" />
             <span>{previous.label}</span>
           </Link>
         ) : (
@@ -50,10 +51,10 @@ export function ToolNavigation(props: {
         {next ? (
           <Link
             href={next.href}
-            className="inline-flex items-center gap-1 rounded-md border border-neutral-800 bg-neutral-900 px-3 py-1.5 font-medium text-white shadow-sm hover:bg-neutral-800"
+            className="inline-flex items-center gap-1.5 rounded-md border border-neutral-800 bg-neutral-900 px-3 py-1.5 font-medium text-white shadow-sm hover:bg-neutral-800 transition-colors focus-ring"
           >
             <span>{next.label}</span>
-            <span aria-hidden="true">→</span>
+            <ChevronRight className="w-4 h-4" aria-hidden="true" />
           </Link>
         ) : (
           <span className="text-neutral-500">

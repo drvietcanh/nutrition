@@ -1,27 +1,38 @@
 import { InteractiveSection } from "./InteractiveSection";
+import { ToolStepIndicator } from "../components/ToolStepIndicator";
+import { ToolNavigation } from "../components/ToolNavigation";
+import { Activity, AlertCircle, CheckCircle } from "lucide-react";
 
 export default function MalnutritionScreeningPage() {
   return (
-    <main className="space-y-8">
+    <main className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6 lg:px-8">
+      <ToolStepIndicator currentStep={1} />
+      
       {/* 1. Title + short intro */}
-      <header className="space-y-2">
-        <h1 className="text-xl font-semibold sm:text-2xl">
-          Nguy cơ Suy Dinh dưỡng – Công cụ Giảng dạy
-        </h1>
-        <p className="text-sm text-neutral-700 sm:text-base">
+      <header className="space-y-4">
+        <div className="flex items-center gap-3">
+          <Activity className="w-8 h-8 text-green-600" aria-hidden="true" />
+          <h1 className="text-3xl font-bold sm:text-4xl text-gray-900">
+            Nguy cơ Suy Dinh dưỡng – Công cụ Giảng dạy
+          </h1>
+        </div>
+        <p className="text-lg text-gray-700 leading-relaxed">
           Trang này giúp bạn khám phá cách các công cụ sàng lọc phổ biến đánh giá{" "}
           <strong>nguy cơ suy dinh dưỡng</strong> sử dụng các đầu vào ví dụ đơn giản, đã ẩn danh.
         </p>
       </header>
 
       {/* 2. What is malnutrition risk? */}
-      <section aria-labelledby="what-is-risk-heading" className="space-y-2">
-        <h2
-          id="what-is-risk-heading"
-          className="text-base font-semibold sm:text-lg"
-        >
-          1. "Nguy cơ suy dinh dưỡng" là gì?
-        </h2>
+      <section aria-labelledby="what-is-risk-heading" className="space-y-4">
+        <div className="flex items-center gap-2">
+          <AlertCircle className="w-5 h-5 text-blue-600" aria-hidden="true" />
+          <h2
+            id="what-is-risk-heading"
+            className="text-xl font-semibold sm:text-2xl text-gray-900"
+          >
+            "Nguy cơ suy dinh dưỡng" là gì?
+          </h2>
+        </div>
         <p className="text-sm text-neutral-700 sm:text-base">
           Các công cụ sàng lọc như NRS-2002 và PG-SGA được thiết kế để đánh dấu{" "}
           <strong>những người có thể có nguy cơ dinh dưỡng cao hơn</strong> để
@@ -41,13 +52,16 @@ export default function MalnutritionScreeningPage() {
       <InteractiveSection />
 
       {/* 6. Interpretation & learning points */}
-      <section aria-labelledby="learning-heading" className="space-y-3">
-        <h2
-          id="learning-heading"
-          className="text-base font-semibold sm:text-lg"
-        >
-          5. Diễn giải & điểm học tập
-        </h2>
+      <section aria-labelledby="learning-heading" className="space-y-4">
+        <div className="flex items-center gap-2">
+          <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
+          <h2
+            id="learning-heading"
+            className="text-xl font-semibold sm:text-2xl text-gray-900"
+          >
+            Diễn giải & điểm học tập
+          </h2>
+        </div>
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
             Các công cụ sàng lọc được thiết kế để{" "}
@@ -68,12 +82,12 @@ export default function MalnutritionScreeningPage() {
       </section>
 
       {/* 7. When to use / When not to use – tool-specific wording */}
-      <section aria-labelledby="when-to-use-heading" className="space-y-3">
+      <section aria-labelledby="when-to-use-heading" className="space-y-4">
         <h2
           id="when-to-use-heading"
-          className="text-base font-semibold sm:text-lg"
+          className="text-xl font-semibold sm:text-2xl text-gray-900"
         >
-          6. Khi nào sử dụng / Khi nào không sử dụng công cụ giảng dạy này
+          Khi nào sử dụng / Khi nào không sử dụng công cụ giảng dạy này
         </h2>
         <div className="grid gap-6 md:grid-cols-2 md:items-start">
           <div className="space-y-2">
@@ -117,20 +131,22 @@ export default function MalnutritionScreeningPage() {
       </section>
 
       {/* 8. Safety disclaimer – local reiteration */}
-      <section aria-labelledby="safety-heading" className="space-y-2">
+      <section aria-labelledby="safety-heading" className="space-y-3">
         <h2
           id="safety-heading"
-          className="text-base font-semibold sm:text-lg"
+          className="text-lg font-semibold sm:text-xl text-gray-900"
         >
-          7. Nhắc nhở an toàn
+          Nhắc nhở an toàn
         </h2>
-        <p className="text-xs text-neutral-600 sm:text-sm">
+        <p className="text-sm text-gray-600 sm:text-base leading-relaxed">
           Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
           tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ
           bác sĩ–bệnh nhân, và không được sử dụng để ra quyết định lâm sàng
           hoặc chăm sóc cấp cứu.
         </p>
       </section>
+
+      <ToolNavigation currentStep={1} />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Activity, Calculator, UtensilsCrossed, CheckCircle2 } from "lucide-react";
 
 /**
  * Step indicator for the three-part clinical nutrition learning journey.
@@ -12,9 +13,9 @@ import Link from "next/link";
  */
 export function ToolStepIndicator({ currentStep }: { currentStep: 1 | 2 | 3 }) {
   const steps = [
-    { id: 1, label: "Nguy cơ Suy Dinh dưỡng", href: "/tools/malnutrition-screening" },
-    { id: 2, label: "Nhu cầu Năng lượng & Protein", href: "/tools/energy-protein-calculator" },
-    { id: 3, label: "Lượng Ăn vs Nhu Cầu", href: "/tools/intake-vs-needs" },
+    { id: 1, label: "Nguy cơ Suy Dinh dưỡng", href: "/tools/malnutrition-screening", icon: Activity },
+    { id: 2, label: "Nhu cầu Năng lượng & Protein", href: "/tools/energy-protein-calculator", icon: Calculator },
+    { id: 3, label: "Lượng Ăn vs Nhu Cầu", href: "/tools/intake-vs-needs", icon: UtensilsCrossed },
   ] as const;
 
   return (
@@ -34,8 +35,14 @@ export function ToolStepIndicator({ currentStep }: { currentStep: 1 | 2 | 3 }) {
           ? "border-neutral-300 bg-neutral-50 text-neutral-800 hover:bg-neutral-100"
           : "border-neutral-200 bg-white text-neutral-700 hover:bg-neutral-50";
 
+        const Icon = step.icon;
         const content = (
           <>
+            {isCompleted ? (
+              <CheckCircle2 className="w-4 h-4 text-green-600" aria-hidden="true" />
+            ) : (
+              <Icon className="w-4 h-4" aria-hidden="true" />
+            )}
             <span className="font-medium">Bước {step.id}</span>
             <span className="hidden sm:inline">·</span>
             <span className="sm:truncate">{step.label}</span>
