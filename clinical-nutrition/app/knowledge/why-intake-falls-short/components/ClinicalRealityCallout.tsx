@@ -17,7 +17,7 @@ export default function ClinicalRealityCallout({ children }: ClinicalRealityCall
   return (
     <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4">
       <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-        Clinical Reality
+        Thực Tế Lâm Sàng
       </p>
       <div className="text-sm text-gray-700 leading-relaxed">
         {children}

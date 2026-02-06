@@ -38,7 +38,7 @@ export default function MythCard({ myth, isExpanded, onToggle }: MythCardProps) 
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-3">
               {/* Myth Badge - Visual indicator that this is a misconception */}
               <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-red-100 text-red-800 border border-red-200 self-start">
-                MYTH
+                HIỂU LẦM
               </span>
               {/* Myth Statement - The common misconception */}
               <h2 className="text-base sm:text-lg font-bold text-gray-900 leading-tight">
@@ -77,7 +77,7 @@ export default function MythCard({ myth, isExpanded, onToggle }: MythCardProps) 
           <section className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4 sm:p-5">
             <h3 className="text-sm font-bold text-gray-900 mb-2.5 uppercase tracking-wide flex items-center gap-2">
               <span className="text-amber-600" aria-hidden="true">•</span>
-              Why It Sounds Right
+              Tại Sao Nghe Có Vẻ Đúng
             </h3>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
               {myth.whyItSoundsRight}
@@ -88,7 +88,7 @@ export default function MythCard({ myth, isExpanded, onToggle }: MythCardProps) 
           <section className="bg-gray-50 border-l-4 border-gray-400 rounded-r-lg p-4 sm:p-5">
             <h3 className="text-sm font-bold text-gray-900 mb-2.5 uppercase tracking-wide flex items-center gap-2">
               <span className="text-gray-600" aria-hidden="true">•</span>
-              What Actually Happens in Practice
+              Điều Gì Thực Sự Xảy Ra Trong Thực Hành
             </h3>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
               {myth.whatActuallyHappens}
@@ -100,10 +100,10 @@ export default function MythCard({ myth, isExpanded, onToggle }: MythCardProps) 
             <div className="flex items-center gap-2 mb-2.5">
               {/* Reality Badge - Visual indicator of evidence-based understanding */}
               <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-green-600 text-white">
-                REALITY
+                THỰC TẾ
               </span>
               <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wide">
-                What to Understand Instead
+                Điều Cần Hiểu Thay Vào Đó
               </h3>
             </div>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed font-medium">
@@ -116,7 +116,7 @@ export default function MythCard({ myth, isExpanded, onToggle }: MythCardProps) 
             <section className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-4 sm:p-5">
               <h3 className="text-sm font-bold text-gray-900 mb-2.5 uppercase tracking-wide flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">•</span>
-                Clinical Insight
+                Hiểu Biết Lâm Sàng
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {myth.clinicalInsight}

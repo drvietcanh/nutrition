@@ -44,9 +44,9 @@ export function EducationalNote({
     : 'text-orange-900';
 
   const defaultTitle = variant === 'clinical-insight'
-    ? 'Clinical Insight'
+    ? 'Hiểu Biết Lâm Sàng'
     : variant === 'common-pitfall'
-    ? 'Common Pitfall'
+    ? 'Cạm Bẫy Thường Gặp'
     : undefined;
 
   return (
