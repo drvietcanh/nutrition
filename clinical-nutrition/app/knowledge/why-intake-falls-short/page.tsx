@@ -499,12 +499,12 @@ export default function WhyIntakeFallsShortPage() {
               <li>Delayed meal service after procedures, even when NPO is lifted</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Example:</strong> A patient ordered for breakfast, lunch, and dinner may miss lunch 
+              <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho bữa sáng, bữa trưa, và bữa tối có thể bỏ lỡ bữa trưa 
               entirely if they're NPO from midnight for a 2 PM procedure. Even after the procedure, they 
               may not receive a meal until dinner time—missing an entire meal.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>For nurses:</strong> You may see patients who are NPO for extended periods due to 
+              <strong>Cho điều dưỡng:</strong> Bạn có thể thấy bệnh nhân NPO trong thời gian dài do 
               procedure delays or multiple tests. This is expected, not a documentation error. 
               <strong>For medical students:</strong> Understanding that procedures require fasting helps 
               explain why intake gaps occur even when nutrition is ordered.
@@ -529,7 +529,7 @@ export default function WhyIntakeFallsShortPage() {
               <li>Patient refuses meal, and no alternative is offered in time</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Example:</strong> A patient ordered for three meals per day may only receive two if 
+              <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho ba bữa ăn mỗi ngày có thể chỉ nhận được hai nếu 
               breakfast arrives while they're in radiology, lunch is removed because they're going to 
               surgery, and dinner arrives when they're too nauseous to eat.
             </p>
@@ -553,7 +553,7 @@ export default function WhyIntakeFallsShortPage() {
               <li>Overnight alarms that aren't addressed immediately</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Example:</strong> A patient ordered for 1,600 kcal/day via continuous tube feeding 
+              <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho 1,600 kcal/ngày qua cho ăn qua ống liên tục 
               at 80 mL/hour may only receive 1,000-1,200 kcal/day due to:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mt-1">
@@ -562,7 +562,7 @@ export default function WhyIntakeFallsShortPage() {
               <li>Overnight pump alarm that wasn't addressed for 2 hours</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>For nurses monitoring tube feeds:</strong> Check the pump's <strong>delivered volume</strong>, 
+              <strong>Cho điều dưỡng theo dõi cho ăn qua ống:</strong> Kiểm tra <strong>thể tích được cung cấp</strong> của máy bơm, 
               not just the ordered rate. The ordered rate tells you what was prescribed, but the delivered 
               volume tells you what the patient actually received.
             </p>
@@ -587,7 +587,7 @@ export default function WhyIntakeFallsShortPage() {
               <li>No snacks available between scheduled meals when patient feels able to eat</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Example:</strong> A patient with morning nausea may be unable to eat breakfast at 
+              <strong>Ví dụ:</strong> Một bệnh nhân với buồn nôn buổi sáng có thể không thể ăn bữa sáng lúc 
               8 AM but feel ready to eat at 10 AM. However, the next meal isn't until noon, and by then 
               they may be nauseous again or have missed their window of opportunity.
             </p>
