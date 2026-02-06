@@ -505,7 +505,7 @@ export default function WhyIntakeFallsShortPage() {
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Cho điều dưỡng:</strong> Bạn có thể thấy bệnh nhân NPO trong thời gian dài do 
-              procedure delays or multiple tests. This is expected, not a documentation error. 
+              trì hoãn thủ thuật hoặc nhiều xét nghiệm. Điều này được mong đợi, không phải lỗi ghi chép. 
               <strong>Cho sinh viên y khoa:</strong> Hiểu rằng thủ thuật yêu cầu nhịn ăn giúp 
               giải thích tại sao khoảng cách lượng ăn vào xảy ra ngay cả khi dinh dưỡng được đặt.
             </p>
