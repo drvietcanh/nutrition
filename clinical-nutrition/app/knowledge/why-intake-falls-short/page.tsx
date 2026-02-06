@@ -464,7 +464,7 @@ export default function WhyIntakeFallsShortPage() {
           id="care-delivery-heading"
           className="text-xl font-semibold sm:text-2xl text-gray-900"
         >
-          Care-Delivery Factors
+          Yếu Tố Cung Cấp Chăm Sóc
         </h2>
         <div className="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-4 mb-4">
           <p className="text-sm font-semibold text-red-900 mb-2 uppercase tracking-wide">
