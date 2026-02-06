@@ -29,17 +29,17 @@ export default function NutritionAssessmentOverviewPage() {
       */}
       <header className="space-y-5 border-b border-neutral-200 pb-8">
         <h1 className="text-3xl font-semibold leading-tight text-neutral-900 sm:text-4xl">
-          Nutrition Assessment Overview
+          Tổng Quan Đánh Giá Dinh Dưỡng
         </h1>
         <ContentBlock>
           <p>
-            Clinical nutrition assessment is a structured process that helps healthcare teams understand
-            a person's nutritional status and needs. This overview explains the fundamental concepts
-            and how they work together in clinical practice.
+            Đánh giá dinh dưỡng lâm sàng là một quy trình có cấu trúc giúp các nhóm chăm sóc sức khỏe hiểu
+            tình trạng dinh dưỡng và nhu cầu của một người. Tổng quan này giải thích các khái niệm cơ bản
+            và cách chúng hoạt động cùng nhau trong thực hành lâm sàng.
           </p>
           <p>
-            This content is designed for educational purposes to help you understand assessment concepts.
-            It does not provide treatment recommendations or replace clinical guidelines or professional training.
+            Nội dung này được thiết kế cho mục đích giáo dục để giúp bạn hiểu các khái niệm đánh giá.
+            Nó không cung cấp khuyến nghị điều trị hoặc thay thế hướng dẫn lâm sàng hoặc đào tạo chuyên nghiệp.
           </p>
         </ContentBlock>
       </header>
@@ -51,34 +51,34 @@ export default function NutritionAssessmentOverviewPage() {
       */}
       <ContentSection ariaLabelledBy="what-is-heading">
         <SectionHeading id="what-is-heading">
-          What is Nutrition Assessment?
+          Đánh Giá Dinh Dưỡng Là Gì?
         </SectionHeading>
         <ContentBlock>
           <p>
-            Nutrition assessment is <strong>a systematic process</strong> of gathering and interpreting
-            information about a person's nutritional status. It's not a single test or calculation,
-            but rather a way of thinking about nutrition in the context of health and illness.
+            Đánh giá dinh dưỡng là <strong>một quy trình có hệ thống</strong> để thu thập và giải thích
+            thông tin về tình trạng dinh dưỡng của một người. Nó không phải là một xét nghiệm hoặc tính toán đơn lẻ,
+            mà là một cách suy nghĩ về dinh dưỡng trong bối cảnh sức khỏe và bệnh tật.
           </p>
           <p>
-            The assessment process typically involves three main steps:
+            Quy trình đánh giá thường bao gồm ba bước chính:
           </p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              <strong>Screening</strong>: A quick check to identify if there's a nutrition risk
-              that may need attention
+              <strong>Sàng lọc</strong>: Kiểm tra nhanh để xác định xem có nguy cơ dinh dưỡng
+              có thể cần được chú ý
             </li>
             <li>
-              <strong>Needs estimation</strong>: Estimating what the person's body likely needs
-              in terms of energy, protein, and other nutrients
+              <strong>Ước tính nhu cầu</strong>: Ước tính những gì cơ thể người đó có thể cần
+              về năng lượng, protein và các chất dinh dưỡng khác
             </li>
             <li>
-              <strong>Intake assessment</strong>: Measuring what the person is actually consuming
-              and comparing it to estimated needs
+              <strong>Đánh giá lượng ăn vào</strong>: Đo lường những gì người đó thực sự đang tiêu thụ
+              và so sánh với nhu cầu ước tính
             </li>
           </ul>
           <p>
-            These steps work together to help clinicians understand the full picture of a person's
-            nutrition situation and identify where attention may be needed.
+            Các bước này làm việc cùng nhau để giúp các bác sĩ lâm sàng hiểu toàn bộ bức tranh về
+            tình huống dinh dưỡng của một người và xác định nơi có thể cần chú ý.
           </p>
         </ContentBlock>
       </ContentSection>
@@ -90,36 +90,36 @@ export default function NutritionAssessmentOverviewPage() {
       */}
       <ContentSection ariaLabelledBy="why-matters-heading">
         <SectionHeading id="why-matters-heading">
-          Why Assessment Matters
+          Tại Sao Đánh Giá Quan Trọng
         </SectionHeading>
         <ContentBlock>
           <p>
-            Nutrition assessment helps healthcare teams answer important questions about a person's
-            nutritional status. It provides structure for thinking about nutrition in clinical settings
-            and helps identify situations where nutrition may be a concern.
+            Đánh giá dinh dưỡng giúp các nhóm chăm sóc sức khỏe trả lời các câu hỏi quan trọng về
+            tình trạng dinh dưỡng của một người. Nó cung cấp cấu trúc cho việc suy nghĩ về dinh dưỡng trong môi trường lâm sàng
+            và giúp xác định các tình huống nơi dinh dưỡng có thể là mối quan tâm.
           </p>
           <p>
-            Assessment is valuable because it:
+            Đánh giá có giá trị vì nó:
           </p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              Helps identify nutrition concerns early, when there may be more options available
+              Giúp xác định các mối quan tâm dinh dưỡng sớm, khi có thể có nhiều lựa chọn hơn
             </li>
             <li>
-              Provides a framework for understanding how nutrition relates to a person's overall health
+              Cung cấp khung để hiểu cách dinh dưỡng liên quan đến sức khỏe tổng thể của một người
             </li>
             <li>
-              Supports clinical reasoning by organizing information in a structured way
+              Hỗ trợ lý luận lâm sàng bằng cách tổ chức thông tin một cách có cấu trúc
             </li>
             <li>
-              Helps prioritize attention and resources based on identified needs
+              Giúp ưu tiên sự chú ý và nguồn lực dựa trên nhu cầu đã xác định
             </li>
           </ul>
-          <EducationalNote variant="info" title="Assessment Informs, Not Dictates">
+          <EducationalNote variant="info" title="Đánh Giá Thông Báo, Không Chỉ Đạo">
             <p>
-              Assessment helps prioritize attention and guides clinical reasoning, but it doesn't
-              replace professional judgment or patient preferences. Assessment informs decisions—
-              it doesn't make them automatically.
+              Đánh giá giúp ưu tiên sự chú ý và hướng dẫn lý luận lâm sàng, nhưng nó không
+              thay thế phán đoán chuyên nghiệp hoặc sở thích bệnh nhân. Đánh giá thông báo quyết định—
+              nó không tự động đưa ra quyết định.
             </p>
           </EducationalNote>
         </ContentBlock>
@@ -132,12 +132,12 @@ export default function NutritionAssessmentOverviewPage() {
       */}
       <ContentSection ariaLabelledBy="process-heading">
         <SectionHeading id="process-heading">
-          The Assessment Process
+          Quy Trình Đánh Giá
         </SectionHeading>
         <ContentBlock>
           <p>
-            Assessment follows a logical sequence where each step builds on the previous one.
-            Understanding this flow helps make sense of how the pieces fit together.
+            Đánh giá tuân theo một trình tự logic nơi mỗi bước xây dựng trên bước trước đó.
+            Hiểu luồng này giúp hiểu cách các phần phù hợp với nhau.
           </p>
         </ContentBlock>
 
@@ -148,21 +148,21 @@ export default function NutritionAssessmentOverviewPage() {
         */}
         <div className="mt-6 space-y-4">
           <h3 className="text-xl font-semibold text-neutral-900">
-            Step 1: Screening
+            Bước 1: Sàng Lọc
           </h3>
           <ContentBlock>
             <p>
-              Screening is typically the first step. It's a quick check to identify whether there's
-              a nutrition risk that may need further attention. Screening tools use simple questions
-              about weight changes, appetite, and illness to provide a risk score.
+              Sàng lọc thường là bước đầu tiên. Đó là một kiểm tra nhanh để xác định xem có
+              nguy cơ dinh dưỡng có thể cần được chú ý thêm. Các công cụ sàng lọc sử dụng các câu hỏi đơn giản
+              về thay đổi cân nặng, cảm giác ngon miệng và bệnh tật để cung cấp điểm nguy cơ.
             </p>
             <p>
-              Common screening tools include NRS-2002 and PG-SGA. These tools are designed to be
-              fast and practical, usually taking just a few minutes to complete.
+              Các công cụ sàng lọc phổ biến bao gồm NRS-2002 và PG-SGA. Những công cụ này được thiết kế để
+              nhanh và thực tế, thường chỉ mất vài phút để hoàn thành.
             </p>
             <p>
-              Screening identifies <strong>risk</strong>, not diagnosis. A high-risk screening result
-              indicates that a full assessment may be helpful, not that malnutrition is definitely present.
+              Sàng lọc xác định <strong>nguy cơ</strong>, không phải chẩn đoán. Kết quả sàng lọc nguy cơ cao
+              cho thấy rằng đánh giá đầy đủ có thể hữu ích, không phải là suy dinh dưỡng chắc chắn có mặt.
             </p>
           </ContentBlock>
         </div>
@@ -174,22 +174,22 @@ export default function NutritionAssessmentOverviewPage() {
         */}
         <div className="mt-6 space-y-4">
           <h3 className="text-xl font-semibold text-neutral-900">
-            Step 2: Needs Estimation
+            Bước 2: Ước Tính Nhu Cầu
           </h3>
           <ContentBlock>
             <p>
-              Once screening identifies a potential risk, the next step is estimating what the person's
-              body likely needs. This involves considering factors like age, size, activity level,
-              and clinical context (illness, recovery, special conditions).
+              Khi sàng lọc xác định một nguy cơ tiềm ẩn, bước tiếp theo là ước tính những gì cơ thể người đó
+              có thể cần. Điều này liên quan đến việc xem xét các yếu tố như tuổi, kích thước, mức độ hoạt động,
+              và bối cảnh lâm sàng (bệnh tật, phục hồi, điều kiện đặc biệt).
             </p>
             <p>
-              It's important to understand that needs are <strong>estimates, not exact targets</strong>.
-              Different estimation methods exist, and they often produce different numbers. This is
-              normal and expected—no single method fits all situations.
+              Điều quan trọng là hiểu rằng nhu cầu là <strong>ước tính, không phải mục tiêu chính xác</strong>.
+              Các phương pháp ước tính khác nhau tồn tại, và chúng thường tạo ra các con số khác nhau. Điều này là
+              bình thường và dự kiến—không có phương pháp đơn lẻ nào phù hợp với tất cả các tình huống.
             </p>
             <p>
-              Clinicians typically think in <strong>ranges</strong> rather than exact numbers. For example,
-              "1,600–2,000 kcal/day" or "25–30 kcal/kg/day" acknowledges uncertainty and allows flexibility.
+              Các bác sĩ lâm sàng thường suy nghĩ trong <strong>phạm vi</strong> thay vì con số chính xác. Ví dụ,
+              "1,600–2,000 kcal/ngày" hoặc "25–30 kcal/kg/ngày" thừa nhận sự không chắc chắn và cho phép linh hoạt.
             </p>
           </ContentBlock>
         </div>
@@ -201,21 +201,21 @@ export default function NutritionAssessmentOverviewPage() {
         */}
         <div className="mt-6 space-y-4">
           <h3 className="text-xl font-semibold text-neutral-900">
-            Step 3: Intake Assessment
+            Bước 3: Đánh Giá Lượng Ăn Vào
           </h3>
           <ContentBlock>
             <p>
-              The final step is assessing what the person is actually consuming. This involves measuring
-              actual intake and comparing it to estimated needs to identify any gaps.
+              Bước cuối cùng là đánh giá những gì người đó thực sự đang tiêu thụ. Điều này liên quan đến việc đo lường
+              lượng ăn vào thực tế và so sánh với nhu cầu ước tính để xác định bất kỳ khoảng trống nào.
             </p>
             <p>
-              There's often a difference between <strong>prescribed</strong> (what was ordered or planned)
-              and <strong>delivered</strong> (what was actually consumed) nutrition. Only delivered nutrition
-              affects health outcomes.
+              Thường có sự khác biệt giữa dinh dưỡng <strong>được chỉ định</strong> (những gì được yêu cầu hoặc lên kế hoạch)
+              và <strong>được cung cấp</strong> (những gì thực sự được tiêu thụ). Chỉ dinh dưỡng được cung cấp
+              ảnh hưởng đến kết quả sức khỏe.
             </p>
             <p>
-              Clinicians typically look at <strong>trends over time</strong> rather than single-day snapshots.
-              Patterns matter more than isolated days because day-to-day variation is normal.
+              Các bác sĩ lâm sàng thường xem xét <strong>xu hướng theo thời gian</strong> thay vì ảnh chụp một ngày.
+              Mô hình quan trọng hơn các ngày cô lập vì sự biến đổi ngày qua ngày là bình thường.
             </p>
           </ContentBlock>
         </div>
@@ -228,51 +228,51 @@ export default function NutritionAssessmentOverviewPage() {
       */}
       <ContentSection ariaLabelledBy="concepts-heading">
         <SectionHeading id="concepts-heading">
-          Key Concepts to Understand
+          Các Khái Niệm Chính Cần Hiểu
         </SectionHeading>
         <ContentBlock>
           <p>
-            Understanding these concepts helps make sense of how assessment works in practice:
+            Hiểu các khái niệm này giúp hiểu cách đánh giá hoạt động trong thực hành:
           </p>
         </ContentBlock>
 
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-              Assessment is Dynamic
+              Đánh Giá Là Động
             </h3>
             <ContentBlock>
               <p>
-                A person's nutrition needs change over time—with illness, recovery, activity level,
-                and life circumstances. What was appropriate last week may not be right today.
-                That's why assessment includes regular reassessment and adjustment.
+                Nhu cầu dinh dưỡng của một người thay đổi theo thời gian—với bệnh tật, phục hồi, mức độ hoạt động,
+                và hoàn cảnh cuộc sống. Điều gì phù hợp tuần trước có thể không đúng hôm nay.
+                Đó là lý do tại sao đánh giá bao gồm đánh giá lại và điều chỉnh thường xuyên.
               </p>
             </ContentBlock>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-              Assessment is Context-Dependent
+              Đánh Giá Phụ Thuộc Vào Bối Cảnh
             </h3>
             <ContentBlock>
               <p>
-                The same numbers mean different things for different people in different situations.
-                A person recovering from surgery has different needs than someone managing a chronic condition.
-                Someone with kidney disease needs different considerations than someone with heart disease.
-                Context shapes everything.
+                Cùng một con số có ý nghĩa khác nhau cho những người khác nhau trong các tình huống khác nhau.
+                Một người đang phục hồi sau phẫu thuật có nhu cầu khác với người quản lý tình trạng mạn tính.
+                Người bị bệnh thận cần cân nhắc khác với người bị bệnh tim.
+                Bối cảnh định hình mọi thứ.
               </p>
             </ContentBlock>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-              Numbers Inform, Not Prescribe
+              Số Liệu Thông Báo, Không Chỉ Định
             </h3>
             <ContentBlock>
               <p>
-                Numbers from screening tools, needs calculations, and intake assessments are informative,
-                not prescriptive. They help structure thinking, but they don't make decisions automatically.
-                Clinical judgment, patient preferences, and goals of care all play essential roles.
+                Số liệu từ công cụ sàng lọc, tính toán nhu cầu và đánh giá lượng ăn vào là thông tin,
+                không phải chỉ định. Chúng giúp cấu trúc suy nghĩ, nhưng chúng không tự động đưa ra quyết định.
+                Phán đoán lâm sàng, sở thích bệnh nhân và mục tiêu chăm sóc đều đóng vai trò thiết yếu.
               </p>
             </ContentBlock>
           </div>
@@ -286,31 +286,31 @@ export default function NutritionAssessmentOverviewPage() {
       */}
       <ContentSection ariaLabelledBy="misunderstandings-heading">
         <SectionHeading id="misunderstandings-heading">
-          Common Misunderstandings
+          Hiểu Lầm Phổ Biến
         </SectionHeading>
         <div className="space-y-4">
-          <EducationalNote variant="warning" title='❌ "If I calculate the needs, the job is done"'>
+          <EducationalNote variant="warning" title='❌ "Nếu tôi tính toán nhu cầu, công việc đã xong"'>
             <p>
-              <strong>Reality</strong>: Calculating needs is just the beginning. Assessment typically involves
-              evaluating actual intake, identifying gaps, considering options, monitoring response, and
-              reassessing regularly. Needs estimation provides a target, but assessment is an ongoing process.
+              <strong>Thực tế</strong>: Tính toán nhu cầu chỉ là khởi đầu. Đánh giá thường bao gồm
+              đánh giá lượng ăn vào thực tế, xác định khoảng trống, xem xét các lựa chọn, theo dõi phản ứng và
+              đánh giá lại thường xuyên. Ước tính nhu cầu cung cấp mục tiêu, nhưng đánh giá là một quy trình liên tục.
             </p>
           </EducationalNote>
 
-          <EducationalNote variant="warning" title='❌ "Screening tools diagnose malnutrition"'>
+          <EducationalNote variant="warning" title='❌ "Công cụ sàng lọc chẩn đoán suy dinh dưỡng"'>
             <p>
-              <strong>Reality</strong>: Screening tools identify risk, not diagnosis. They indicate who may
-              benefit from further assessment, not who definitely has malnutrition. Diagnosis requires
-              comprehensive assessment including detailed history, physical examination, laboratory data,
-              and clinical judgment.
+              <strong>Thực tế</strong>: Công cụ sàng lọc xác định nguy cơ, không phải chẩn đoán. Chúng chỉ ra ai có thể
+              hưởng lợi từ đánh giá thêm, không phải ai chắc chắn bị suy dinh dưỡng. Chẩn đoán đòi hỏi
+              đánh giá toàn diện bao gồm tiền sử chi tiết, khám thực thể, dữ liệu phòng thí nghiệm,
+              và phán đoán lâm sàng.
             </p>
           </EducationalNote>
 
-          <EducationalNote variant="warning" title='❌ "The formula gives the correct answer"'>
+          <EducationalNote variant="warning" title='❌ "Công thức cho câu trả lời đúng"'>
             <p>
-              <strong>Reality</strong>: Formulas provide estimates, not exact requirements. Different methods
-              produce different numbers, and that's normal. Formulas help structure thinking, but clinical
-              judgment and patient response guide actual decisions.
+              <strong>Thực tế</strong>: Công thức cung cấp ước tính, không phải yêu cầu chính xác. Các phương pháp khác nhau
+              tạo ra các con số khác nhau, và điều đó là bình thường. Công thức giúp cấu trúc suy nghĩ, nhưng phán đoán
+              lâm sàng và phản ứng bệnh nhân hướng dẫn quyết định thực tế.
             </p>
           </EducationalNote>
         </div>
@@ -323,58 +323,58 @@ export default function NutritionAssessmentOverviewPage() {
       */}
       <ContentSection ariaLabelledBy="learn-more-heading">
         <SectionHeading id="learn-more-heading" variant="blue">
-          Learn More
+          Tìm Hiểu Thêm
         </SectionHeading>
         <ContentBlock>
           <p>
-            This overview provides a high-level introduction to nutrition assessment. For more detailed
-            information, explore these resources:
+            Tổng quan này cung cấp giới thiệu cấp cao về đánh giá dinh dưỡng. Để biết thêm chi tiết
+            thông tin, hãy khám phá các tài nguyên này:
           </p>
         </ContentBlock>
 
         <div className="mt-6 space-y-4">
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Detailed Process Guide
+              Hướng Dẫn Quy Trình Chi Tiết
             </h3>
             <p className="text-sm text-blue-800 mb-3">
-              Learn about the complete assessment process, including how screening, needs estimation,
-              and intake assessment work together.
+              Tìm hiểu về quy trình đánh giá đầy đủ, bao gồm cách sàng lọc, ước tính nhu cầu,
+              và đánh giá lượng ăn vào làm việc cùng nhau.
             </p>
             <Link
               href="/knowledge/assessment-process"
               className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
             >
-              Read the full guide →
+              Đọc hướng dẫn đầy đủ →
             </Link>
           </div>
 
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Interactive Tools
+              Công Cụ Tương Tác
             </h3>
             <p className="text-sm text-blue-800 mb-3">
-              Practice the assessment process with our interactive tools designed for learning:
+              Thực hành quy trình đánh giá với các công cụ tương tác của chúng tôi được thiết kế cho việc học:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-blue-800 mb-3">
               <li>
                 <Link href="/tools/malnutrition-screening" className="underline">
-                  Malnutrition Screening Tool
+                  Công Cụ Sàng Lọc Suy Dinh Dưỡng
                 </Link>
               </li>
               <li>
                 <Link href="/tools/energy-protein-calculator" className="underline">
-                  Energy & Protein Calculator
+                  Máy Tính Năng Lượng & Protein
                 </Link>
               </li>
               <li>
                 <Link href="/tools/intake-assessment" className="underline">
-                  Intake Assessment Worksheet
+                  Bảng Đánh Giá Lượng Ăn Vào
                 </Link>
               </li>
             </ul>
             <p className="text-xs text-blue-700 italic">
-              These tools are for educational purposes only and should not be used for clinical decision-making.
+              Các công cụ này chỉ dành cho mục đích giáo dục và không nên được sử dụng để ra quyết định lâm sàng.
             </p>
           </div>
         </div>
@@ -387,31 +387,31 @@ export default function NutritionAssessmentOverviewPage() {
       */}
       <ContentSection ariaLabelledBy="safety-heading">
         <SectionHeading id="safety-heading" variant="amber">
-          Safety & Limitations
+          An Toàn & Giới Hạn
         </SectionHeading>
-        <EducationalNote variant="warning" title="⚠️ Important Disclaimer">
+        <EducationalNote variant="warning" title="⚠️ Tuyên Bố Miễn Trừ Trách Nhiệm Quan Trọng">
           <p className="mb-2">
-            <strong>This site and its tools are for educational purposes only.</strong> They do not provide
-            medical advice, diagnosis, or treatment. They do not create a clinician–patient relationship.
-            They must not be used for clinical decision-making, prescribing diets or feeds, or making
-            treatment decisions.
+            <strong>Trang web này và các công cụ của nó chỉ dành cho mục đích giáo dục.</strong> Chúng không cung cấp
+            lời khuyên y tế, chẩn đoán hoặc điều trị. Chúng không tạo mối quan hệ bác sĩ–bệnh nhân.
+            Chúng không được sử dụng để ra quyết định lâm sàng, chỉ định chế độ ăn hoặc nuôi ăn, hoặc đưa ra
+            quyết định điều trị.
           </p>
           <p>
-            If you have concerns about nutrition status or health, consult with a qualified healthcare
-            provider or registered dietitian for a personalized, clinical assessment.
+            Nếu bạn có mối quan tâm về tình trạng dinh dưỡng hoặc sức khỏe, hãy tư vấn với nhà cung cấp chăm sóc sức khỏe
+            có trình độ hoặc chuyên gia dinh dưỡng đã đăng ký để được đánh giá lâm sàng cá nhân hóa.
           </p>
         </EducationalNote>
 
         <ContentBlock className="mt-6">
           <p>
-            This content is designed to support learning and understanding of clinical nutrition assessment
-            concepts. It helps you practice the thinking process and see how different factors influence
-            estimates and assessments.
+            Nội dung này được thiết kế để hỗ trợ học tập và hiểu biết về các khái niệm đánh giá dinh dưỡng lâm sàng.
+            Nó giúp bạn thực hành quy trình suy nghĩ và xem cách các yếu tố khác nhau ảnh hưởng đến
+            ước tính và đánh giá.
           </p>
           <p>
-            However, these tools and content cannot and should not be used to make clinical decisions.
-            Real clinical assessment requires comprehensive evaluation, professional judgment, and consideration
-            of the full clinical context—none of which can be captured by online tools or educational content alone.
+            Tuy nhiên, các công cụ và nội dung này không thể và không nên được sử dụng để đưa ra quyết định lâm sàng.
+            Đánh giá lâm sàng thực sự đòi hỏi đánh giá toàn diện, phán đoán chuyên nghiệp và xem xét
+            toàn bộ bối cảnh lâm sàng—không có điều nào trong số này có thể được nắm bắt bởi các công cụ trực tuyến hoặc nội dung giáo dục một mình.
           </p>
         </ContentBlock>
       </ContentSection>
