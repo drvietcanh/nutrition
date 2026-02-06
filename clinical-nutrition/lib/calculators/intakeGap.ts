@@ -92,15 +92,15 @@ export function compareNeedsAndIntake(
 
   if (intake.daysObserved == null || intake.daysObserved <= 0) {
     warnings.push(
-      "Intake was entered without a clear observation period; in practice, clinicians usually look at patterns over several days."
+      "Lượng ăn vào được nhập mà không có khoảng thời gian quan sát rõ ràng; trong thực hành, các bác sĩ lâm sàng thường xem xét các mẫu trong vài ngày."
     );
   } else if (intake.daysObserved < 3) {
     interpretation.push(
-      "This snapshot covers only a short period; in practice, repeated observations over several days give a more reliable picture."
+      "Ảnh chụp này chỉ bao gồm một khoảng thời gian ngắn; trong thực hành, quan sát lặp lại trong vài ngày cho một bức tranh đáng tin cậy hơn."
     );
   } else {
     interpretation.push(
-      "Looking at intake over several days can help distinguish a brief dip from a persistent gap between needs and intake."
+      "Xem xét lượng ăn vào trong vài ngày có thể giúp phân biệt một sự giảm ngắn hạn với một khoảng cách dai dẳng giữa nhu cầu và lượng ăn vào."
     );
   }
 
@@ -109,13 +109,13 @@ export function compareNeedsAndIntake(
 
   if (energyCoveragePercent != null && (energyCoveragePercent < 50 || energyCoveragePercent > 150)) {
     warnings.push(
-      "The gap between estimated needs and intake is large; in practice, clinicians would confirm the data and consider whether it reflects measurement issues or a real clinical concern."
+      "Khoảng cách giữa nhu cầu ước tính và lượng ăn vào là lớn; trong thực hành, các bác sĩ lâm sàng sẽ xác nhận dữ liệu và xem xét liệu nó có phản ánh vấn đề đo lường hoặc mối quan tâm lâm sàng thực sự không."
     );
   }
 
   if (missingFields.length > 0) {
     warnings.push(
-      "Some information was missing or approximate; these comparisons are for education only and should not be used for individual decisions."
+      "Một số thông tin bị thiếu hoặc gần đúng; các so sánh này chỉ dành cho giáo dục và không nên được sử dụng cho quyết định cá nhân."
     );
   }
 
@@ -152,35 +152,35 @@ function buildEnergyInterpretation(
 ) {
   if (category === "unknown") {
     lines.push(
-      "Because key information about needs or intake is missing, it is difficult to say much about the energy gap even in a teaching context."
+      "Vì thông tin chính về nhu cầu hoặc lượng ăn vào bị thiếu, khó khăn để nói nhiều về khoảng cách năng lượng ngay cả trong bối cảnh giảng dạy."
     );
     return;
   }
 
   if (category === "much_lower") {
     lines.push(
-      "When estimated energy intake is clearly below the educational needs range, clinicians often ask why intake is low (for example, symptoms, procedures, or access issues) before deciding what to change."
+      "Khi lượng ăn vào năng lượng ước tính rõ ràng dưới phạm vi nhu cầu giáo dục, các bác sĩ lâm sàng thường hỏi tại sao lượng ăn vào thấp (ví dụ, triệu chứng, thủ thuật, hoặc vấn đề tiếp cận) trước khi quyết định thay đổi gì."
     );
     return;
   }
 
   if (category === "somewhat_lower") {
     lines.push(
-      "A moderate energy shortfall over several days may prompt closer monitoring and discussion, but does not automatically mean that intake must be increased on a specific day."
+      "Một thiếu hụt năng lượng vừa phải trong vài ngày có thể khiến theo dõi và thảo luận gần hơn, nhưng không tự động có nghĩa là lượng ăn vào phải được tăng lên vào một ngày cụ thể."
     );
     return;
   }
 
   if (category === "approximate") {
     lines.push(
-      "When estimated intake is broadly in the same band as educational needs, attention often shifts to tolerance, metabolic response, and longer-term trends rather than chasing exact numbers."
+      "Khi lượng ăn vào ước tính rộng rãi trong cùng phạm vi như nhu cầu giáo dục, sự chú ý thường chuyển sang khả năng dung nạp, phản ứng chuyển hóa, và xu hướng dài hạn thay vì theo đuổi con số chính xác."
     );
     return;
   }
 
   if (category === "higher") {
     lines.push(
-      "If estimated intake is consistently above an educational needs band, clinicians may check for signs of intolerance or overfeeding, while also confirming that the underlying needs estimate is appropriate."
+      "Nếu lượng ăn vào ước tính liên tục trên phạm vi nhu cầu giáo dục, các bác sĩ lâm sàng có thể kiểm tra các dấu hiệu không dung nạp hoặc cho ăn quá mức, đồng thời xác nhận rằng ước tính nhu cầu cơ bản là phù hợp."
     );
   }
 }
@@ -191,28 +191,28 @@ function buildProteinInterpretation(
 ) {
   if (category === "unknown") {
     lines.push(
-      "Unclear protein intake makes it hard to comment on adequacy, particularly in older or chronically unwell patients where protein often deserves special attention."
+      "Lượng ăn vào protein không rõ ràng làm khó khăn để nhận xét về tính đầy đủ, đặc biệt ở bệnh nhân cao tuổi hoặc bệnh mạn tính nơi protein thường xứng đáng được chú ý đặc biệt."
     );
     return;
   }
 
   if (category === "much_lower" || category === "somewhat_lower") {
     lines.push(
-      "When protein intake falls well below educational estimates, clinicians often consider whether symptoms, food choices, or route limit access to protein-rich options."
+      "Khi lượng ăn vào protein rơi xuống dưới đáng kể so với ước tính giáo dục, các bác sĩ lâm sàng thường xem xét liệu triệu chứng, lựa chọn thực phẩm, hoặc đường dùng có hạn chế tiếp cận các lựa chọn giàu protein không."
     );
     return;
   }
 
   if (category === "approximate") {
     lines.push(
-      "Protein intake in a similar band to educational estimates suggests that other factors (such as activity, inflammation, and function) will shape longer-term outcomes."
+      "Lượng ăn vào protein trong phạm vi tương tự như ước tính giáo dục gợi ý rằng các yếu tố khác (như hoạt động, viêm, và chức năng) sẽ định hình kết quả dài hạn."
     );
     return;
   }
 
   if (category === "higher") {
     lines.push(
-      "Higher protein intakes can be appropriate for some clinical situations, but in practice they are interpreted in the light of renal and hepatic function, tolerance, and local guidance."
+      "Lượng ăn vào protein cao hơn có thể phù hợp cho một số tình huống lâm sàng, nhưng trong thực hành chúng được giải thích dựa trên chức năng thận và gan, khả năng dung nạp, và hướng dẫn địa phương."
     );
   }
 }
