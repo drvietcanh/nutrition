@@ -441,13 +441,13 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Clinical Reality
+            Thực Tế Lâm Sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            These illness-related factors often occur together. A patient might have inflammation 
-            <em>and</em> pain <em>and</em> nausea <em>and</em> dyspnea <em>and</em> functional 
-            limitations—all at once. This compounding effect explains why intake gaps are so common 
-            during acute illness. It's not a failure—it's the reality of being unwell.
+            Các yếu tố liên quan đến bệnh tật này thường xảy ra cùng nhau. Một bệnh nhân có thể có viêm 
+            <em>và</em> đau <em>và</em> buồn nôn <em>và</em> khó thở <em>và</em> hạn chế 
+            chức năng—tất cả cùng một lúc. Hiệu ứng kết hợp này giải thích tại sao khoảng cách lượng ăn vào rất phổ biến 
+            trong bệnh cấp tính. Đây không phải là thất bại—đó là thực tế của việc không khỏe.
           </p>
         </div>
       </section>
@@ -468,10 +468,10 @@ export default function WhyIntakeFallsShortPage() {
         </h2>
         <div className="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-4 mb-4">
           <p className="text-sm font-semibold text-red-900 mb-2 uppercase tracking-wide">
-            Clinical Reality
+            Thực Tế Lâm Sàng
           </p>
           <p className="text-base text-gray-900 leading-relaxed font-semibold mb-2">
-            Prescribed ≠ Delivered
+            Được Kê Đơn ≠ Được Cung Cấp
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             What is <strong>prescribed</strong> (ordered, planned, recommended) is often different from what 
