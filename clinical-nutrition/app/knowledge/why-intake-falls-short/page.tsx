@@ -396,7 +396,7 @@ export default function WhyIntakeFallsShortPage() {
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Điều này là phổ biến và được dự kiến.</strong> Buồn nôn trong bệnh tật là bình thường. Không phải 
               bệnh nhân không muốn ăn—họ về mặt thể chất không thể dung nạp thức ăn khi buồn nôn. Đây là 
-              protective mechanism.
+              cơ chế bảo vệ.
             </p>
           </article>
 
