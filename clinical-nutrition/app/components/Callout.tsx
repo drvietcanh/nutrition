@@ -1,0 +1,94 @@
+import {
+  Info,
+  AlertTriangle,
+  CheckCircle,
+  XCircle,
+  LucideIcon,
+} from 'lucide-react';
+
+type CalloutVariant = 'info' | 'warning' | 'error' | 'success';
+
+const iconMap: Record<CalloutVariant, LucideIcon> = {
+  info: Info,
+  warning: AlertTriangle,
+  error: XCircle,
+  success: CheckCircle,
+};
+
+const colorMap: Record<
+  CalloutVariant,
+  {
+    bg: string;
+    border: string;
+    text: string;
+    icon: string;
+  }
+> = {
+  info: {
+    bg: 'bg-blue-50',
+    border: 'border-blue-500',
+    text: 'text-blue-900',
+    icon: 'text-blue-600',
+  },
+  warning: {
+    bg: 'bg-amber-50',
+    border: 'border-amber-500',
+    text: 'text-amber-900',
+    icon: 'text-amber-600',
+  },
+  error: {
+    bg: 'bg-red-50',
+    border: 'border-red-500',
+    text: 'text-red-900',
+    icon: 'text-red-600',
+  },
+  success: {
+    bg: 'bg-green-50',
+    border: 'border-green-500',
+    text: 'text-green-900',
+    icon: 'text-green-600',
+  },
+};
+
+interface CalloutProps {
+  variant?: CalloutVariant;
+  title?: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+export function Callout({
+  variant = 'info',
+  title,
+  children,
+  className = '',
+}: CalloutProps) {
+  const Icon = iconMap[variant];
+  const colors = colorMap[variant];
+
+  return (
+    <div
+      className={`${colors.bg} border-l-4 ${colors.border} rounded-r-lg p-4 sm:p-5 ${className}`}
+      role="alert"
+    >
+      <div className="flex items-start gap-3">
+        <Icon
+          className={`w-5 h-5 ${colors.icon} flex-shrink-0 mt-0.5`}
+          aria-hidden="true"
+        />
+        <div className="flex-1 min-w-0">
+          {title && (
+            <h3
+              className={`text-sm font-bold ${colors.text} mb-2 uppercase tracking-wide`}
+            >
+              {title}
+            </h3>
+          )}
+          <div className={`text-sm ${colors.text} leading-relaxed`}>
+            {children}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

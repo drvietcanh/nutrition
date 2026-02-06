@@ -1,0 +1,97 @@
+import { LucideIcon } from 'lucide-react';
+import Link from 'next/link';
+
+interface CardProps {
+  children: React.ReactNode;
+  className?: string;
+  href?: string;
+  onClick?: () => void;
+}
+
+export function Card({ children, className = '', href, onClick }: CardProps) {
+  const baseClasses =
+    'bg-white rounded-xl border border-gray-200 p-6 sm:p-8 shadow-sm hover:shadow-md transition-all';
+
+  const interactiveClasses = href || onClick
+    ? 'cursor-pointer hover:border-blue-300 active:scale-[0.99]'
+    : '';
+
+  const content = (
+    <div className={`${baseClasses} ${interactiveClasses} ${className}`}>
+      {children}
+    </div>
+  );
+
+  if (href) {
+    return (
+      <Link href={href} className="block focus-ring rounded-xl">
+        {content}
+      </Link>
+    );
+  }
+
+  if (onClick) {
+    return (
+      <button
+        onClick={onClick}
+        className={`block w-full text-left ${baseClasses} ${interactiveClasses} ${className} focus-ring`}
+      >
+        {children}
+      </button>
+    );
+  }
+
+  return content;
+}
+
+interface CardHeaderProps {
+  icon?: LucideIcon;
+  title: string;
+  description?: string;
+  className?: string;
+}
+
+export function CardHeader({
+  icon: Icon,
+  title,
+  description,
+  className = '',
+}: CardHeaderProps) {
+  return (
+    <div className={`mb-4 ${className}`}>
+      <div className="flex items-center gap-4 mb-2">
+        {Icon && (
+          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <Icon className="w-6 h-6 text-blue-600" aria-hidden="true" />
+          </div>
+        )}
+        <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+      </div>
+      {description && (
+        <p className="text-gray-700 leading-relaxed">{description}</p>
+      )}
+    </div>
+  );
+}
+
+interface CardContentProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+export function CardContent({ children, className = '' }: CardContentProps) {
+  return <div className={className}>{children}</div>;
+}
+
+interface CardFooterProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+export function CardFooter({ children, className = '' }: CardFooterProps) {
+  return (
+    <div className={`mt-4 pt-4 border-t border-gray-200 ${className}`}>
+      {children}
+    </div>
+  );
+}
