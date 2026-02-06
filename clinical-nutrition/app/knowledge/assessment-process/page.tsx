@@ -6,28 +6,28 @@ export default function AssessmentProcessPage() {
       {/* 1. Page title & introduction */}
       <header className="space-y-5 border-b border-neutral-200 pb-8">
         <h1 className="text-3xl font-semibold leading-tight text-neutral-900 sm:text-4xl">
-          Clinical Nutrition Assessment: Understanding the Process
+          Đánh giá Dinh dưỡng Lâm sàng: Hiểu Quy trình
         </h1>
         <div className="space-y-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
           <p>
-            Nutritional assessment is <strong>a process, not a single calculation</strong>. It's not about finding one "correct" number
-            or running a formula once. Instead, it's a structured way of gathering information, making sense of it, and using that understanding
-            to guide care.
+            Đánh giá dinh dưỡng là <strong>một quy trình, không phải một phép tính đơn lẻ</strong>. Nó không phải về việc tìm một con số "đúng"
+            hoặc chạy một công thức một lần. Thay vào đó, nó là cách có cấu trúc để thu thập thông tin, hiểu nó, và sử dụng sự hiểu biết đó
+            để hướng dẫn chăm sóc.
           </p>
           <p>
-            Assessment is also <strong>dynamic, not static</strong>. A person's nutrition needs change over time—with illness, recovery,
-            activity level, and life circumstances. What was appropriate last week may not be right today. That's why assessment includes
-            regular reassessment and adjustment.
+            Đánh giá cũng là <strong>động, không tĩnh</strong>. Nhu cầu dinh dưỡng của một người thay đổi theo thời gian—với bệnh tật, phục hồi,
+            mức độ hoạt động, và hoàn cảnh cuộc sống. Điều phù hợp tuần trước có thể không đúng hôm nay. Đó là lý do đánh giá bao gồm
+            đánh giá lại và điều chỉnh thường xuyên.
           </p>
           <p>
-            Most importantly, assessment is <strong>context-dependent</strong>. The same numbers mean different things for different people
-            in different situations. A person recovering from surgery has different needs than someone managing a chronic condition.
-            Someone with kidney disease needs different considerations than someone with heart disease. Context shapes everything.
+            Quan trọng nhất, đánh giá là <strong>phụ thuộc vào bối cảnh</strong>. Cùng một con số có ý nghĩa khác nhau cho những người khác nhau
+            trong các tình huống khác nhau. Một người đang phục hồi sau phẫu thuật có nhu cầu khác với người quản lý tình trạng mạn tính.
+            Người có bệnh thận cần cân nhắc khác với người có bệnh tim. Bối cảnh định hình mọi thứ.
           </p>
           <p className="text-base text-neutral-600 italic border-l-4 border-blue-200 pl-4 py-2 bg-blue-50/50 rounded-r">
-            Whether you're a clinician new to nutrition, a nurse doing screening, a medical student, or someone learning about the process,
-            this page will help you understand how screening, needs estimation, and intake assessment work together—and how our tools support
-            each step. Take your time, and remember: assessment is a skill that develops with practice.
+            Dù bạn là bác sĩ lâm sàng mới với dinh dưỡng, điều dưỡng làm sàng lọc, sinh viên y khoa, hoặc người đang học về quy trình,
+            trang này sẽ giúp bạn hiểu cách sàng lọc, ước tính nhu cầu, và đánh giá lượng ăn hoạt động cùng nhau—và cách các công cụ của chúng tôi hỗ trợ
+            từng bước. Hãy dành thời gian, và nhớ: đánh giá là một kỹ năng phát triển với thực hành.
           </p>
         </div>
       </header>
@@ -43,42 +43,42 @@ export default function AssessmentProcessPage() {
             id="why-matters-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Why Nutritional Assessment Matters
+            Vì sao Đánh giá Dinh dưỡng Quan trọng
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
           <p>
-            Malnutrition is common in clinical settings, but it's often overlooked. People may not mention changes in appetite or weight,
-            or these changes might seem less urgent than other medical concerns. Assessment helps bring nutrition into focus.
+            Suy dinh dưỡng phổ biến trong môi trường lâm sàng, nhưng nó thường bị bỏ qua. Mọi người có thể không đề cập đến thay đổi về cảm giác ngon miệng hoặc cân nặng,
+            hoặc những thay đổi này có thể có vẻ ít khẩn cấp hơn các mối quan tâm y tế khác. Đánh giá giúp đưa dinh dưỡng vào tầm nhìn.
           </p>
           <p>
-            Early identification supports better care planning. When we notice nutrition concerns early, we have more options and can
-            address them before they become more complex. This doesn't mean every concern needs immediate intervention—it means we're
-            aware and can plan appropriately.
+            Nhận diện sớm hỗ trợ lập kế hoạch chăm sóc tốt hơn. Khi chúng ta nhận thấy mối quan tâm dinh dưỡng sớm, chúng ta có nhiều lựa chọn hơn và có thể
+            giải quyết chúng trước khi chúng trở nên phức tạp hơn. Điều này không có nghĩa là mọi mối quan tâm đều cần can thiệp ngay lập tức—nó có nghĩa là chúng ta
+            nhận thức và có thể lập kế hoạch phù hợp.
           </p>
           <p>
-            Assessment helps clinicians answer three fundamental questions that inform clinical reasoning:
+            Đánh giá giúp các bác sĩ lâm sàng trả lời ba câu hỏi cơ bản cung cấp thông tin cho lập luận lâm sàng:
           </p>
           <ul className="list-disc space-y-3 pl-6">
           <li>
-            <strong>Is there a problem?</strong> Are there signs of nutrition risk that need attention now?
+            <strong>Có vấn đề không?</strong> Có dấu hiệu nguy cơ dinh dưỡng cần chú ý ngay bây giờ không?
           </li>
           <li>
-            <strong>What does this person need?</strong> Roughly how much energy, protein, and other nutrients does their body require?
+            <strong>Người này cần gì?</strong> Cơ thể họ cần khoảng bao nhiêu năng lượng, protein, và các chất dinh dưỡng khác?
           </li>
           <li>
-            <strong>What are they actually getting?</strong> How does their current intake compare to what they need?
+            <strong>Họ thực sự đang nhận được gì?</strong> Lượng ăn hiện tại của họ so với những gì họ cần như thế nào?
           </li>
         </ul>
           <p>
-            Importantly, assessment helps <strong>prioritize attention, not dictate treatment</strong>. It guides clinical reasoning
-            and helps determine what needs focus, but it doesn't replace professional judgment or patient preferences. Assessment informs
-            decisions—it doesn't make them automatically.
+            Quan trọng, đánh giá giúp <strong>ưu tiên sự chú ý, không chỉ đạo điều trị</strong>. Nó hướng dẫn lập luận lâm sàng
+            và giúp xác định điều gì cần tập trung, nhưng nó không thay thế phán đoán chuyên nghiệp hoặc sở thích bệnh nhân. Đánh giá cung cấp thông tin cho
+            quyết định—nó không tự động đưa ra chúng.
           </p>
           <p>
-            Without assessment, recommendations may be based on assumptions. With assessment, clinicians can develop{" "}
-            <strong>informed, targeted, and measurable</strong> approaches that fit the person's actual situation.
+            Không có đánh giá, khuyến nghị có thể dựa trên giả định. Với đánh giá, các bác sĩ lâm sàng có thể phát triển{" "}
+            <strong>các cách tiếp cận có thông tin, có mục tiêu, và có thể đo lường</strong> phù hợp với tình huống thực tế của người đó.
           </p>
         </div>
       </section>
@@ -94,12 +94,12 @@ export default function AssessmentProcessPage() {
             id="framework-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            The 3-Step Framework
+            Khung 3 Bước
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
             <p className="text-base leading-relaxed text-neutral-700 sm:text-lg mb-6">
-              Assessment follows a simple, logical flow. Each step builds on the previous one:
+              Đánh giá tuân theo một luồng đơn giản, logic. Mỗi bước xây dựng trên bước trước:
             </p>
             <div className="space-y-5">
               <div className="flex gap-4">
@@ -107,9 +107,9 @@ export default function AssessmentProcessPage() {
                   1️⃣
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-base mb-1">Identify Nutritional Risk</h3>
+                  <h3 className="font-semibold text-base mb-1">Nhận diện Nguy cơ Dinh dưỡng</h3>
                   <p className="text-sm text-neutral-700">
-                    Quick check: Is there a nutrition risk that may need attention? This indicates <strong>urgency</strong>.
+                    Kiểm tra nhanh: Có nguy cơ dinh dưỡng có thể cần chú ý không? Điều này chỉ ra <strong>mức độ khẩn cấp</strong>.
                   </p>
                 </div>
               </div>
@@ -118,9 +118,9 @@ export default function AssessmentProcessPage() {
                   2️⃣
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-base mb-1">Estimate Nutritional Needs</h3>
+                  <h3 className="font-semibold text-base mb-1">Ước tính Nhu cầu Dinh dưỡng</h3>
                   <p className="text-sm text-neutral-700">
-                    Estimate what their body likely needs. This provides a <strong>target range</strong> to consider.
+                    Ước tính những gì cơ thể họ có thể cần. Điều này cung cấp một <strong>khoảng mục tiêu</strong> để xem xét.
                   </p>
                 </div>
               </div>
@@ -129,9 +129,9 @@ export default function AssessmentProcessPage() {
                   3️⃣
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-base mb-1">Compare Needs with Actual Intake</h3>
+                  <h3 className="font-semibold text-base mb-1">So sánh Nhu cầu với Lượng Ăn Thực tế</h3>
                   <p className="text-sm text-neutral-700">
-                    Measure what they're actually getting. This reveals the <strong>gap</strong> between needs and reality.
+                    Đo lường những gì họ thực sự đang nhận được. Điều này tiết lộ <strong>khoảng cách</strong> giữa nhu cầu và thực tế.
                   </p>
                 </div>
               </div>
@@ -140,42 +140,42 @@ export default function AssessmentProcessPage() {
             <div className="mt-6 space-y-4">
               <div>
                 <h3 className="font-semibold text-base mb-2 text-neutral-900">
-                  Why the Order Matters
+                  Vì sao Thứ tự Quan trọng
                 </h3>
                 <p className="text-base text-neutral-700">
-                  The sequence matters because each step informs the next. Screening indicates <em>whether</em> and <em>how urgently</em> further
-                  assessment may be helpful. Needs estimation provides a <em>target</em> to compare against. Intake assessment reveals the <em>gap</em> between
-                  target and reality—which helps identify what may warrant attention.
+                  Trình tự quan trọng vì mỗi bước cung cấp thông tin cho bước tiếp theo. Sàng lọc chỉ ra <em>liệu</em> và <em>mức độ khẩn cấp</em> đánh giá
+                  thêm có thể hữu ích. Ước tính nhu cầu cung cấp một <em>mục tiêu</em> để so sánh. Đánh giá lượng ăn tiết lộ <em>khoảng cách</em> giữa
+                  mục tiêu và thực tế—giúp nhận diện điều gì có thể cần chú ý.
                 </p>
                 <p className="text-base text-neutral-700 mt-2">
-                  Skipping screening may lead to spending time on detailed assessments for people who may not need them, or missing people who may need urgent attention.
-                  Skipping needs estimation means there's no clear target to compare intake against. Skipping intake assessment means planning
-                  based on assumptions rather than observed reality.
+                  Bỏ qua sàng lọc có thể dẫn đến dành thời gian cho đánh giá chi tiết cho những người có thể không cần chúng, hoặc bỏ lỡ những người có thể cần chú ý khẩn cấp.
+                  Bỏ qua ước tính nhu cầu có nghĩa là không có mục tiêu rõ ràng để so sánh lượng ăn. Bỏ qua đánh giá lượng ăn có nghĩa là lập kế hoạch
+                  dựa trên giả định thay vì thực tế quan sát được.
                 </p>
               </div>
 
           <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Why Skipping Steps Leads to Confusion
+              Vì sao Bỏ qua Các Bước Dẫn đến Nhầm lẫn
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              When steps are skipped or done out of order, assessment becomes less useful:
+              Khi các bước bị bỏ qua hoặc thực hiện không đúng thứ tự, đánh giá trở nên ít hữu ích hơn:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-amber-800">
               <li>
-                <strong>Starting with needs estimation</strong> without screening means you might calculate requirements for someone who doesn't
-                need detailed assessment, wasting time and resources.
+                <strong>Bắt đầu với ước tính nhu cầu</strong> mà không sàng lọc có nghĩa là bạn có thể tính toán nhu cầu cho người không
+                cần đánh giá chi tiết, lãng phí thời gian và nguồn lực.
               </li>
               <li>
-                <strong>Assessing intake without knowing needs</strong> leaves you with numbers but no context—is 1,200 calories enough? Too much?
-                You can't tell without the target.
+                <strong>Đánh giá lượng ăn mà không biết nhu cầu</strong> để lại cho bạn các con số nhưng không có ngữ cảnh—1.200 calo có đủ không? Quá nhiều?
+                Bạn không thể biết mà không có mục tiêu.
               </li>
               <li>
-                <strong>Skipping screening</strong> means you might miss urgent cases that need immediate attention, or over-prioritize low-risk situations.
+                <strong>Bỏ qua sàng lọc</strong> có nghĩa là bạn có thể bỏ lỡ các trường hợp khẩn cấp cần chú ý ngay lập tức, hoặc ưu tiên quá mức các tình huống nguy cơ thấp.
               </li>
             </ul>
             <p className="text-sm text-amber-800 mt-2">
-              Following the sequence ensures you have the right information at the right time to make informed decisions.
+              Tuân theo trình tự đảm bảo bạn có thông tin đúng vào đúng thời điểm để đưa ra quyết định có thông tin.
             </p>
           </div>
         </div>
@@ -192,18 +192,18 @@ export default function AssessmentProcessPage() {
             id="screening-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Step 1: Nutritional Risk Screening
+            Bước 1: Sàng lọc Nguy cơ Dinh dưỡng
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
           <p>
-            <strong>Thinking process</strong>: Screening is a quick first check to identify urgency. It asks simple questions:
+            <strong>Quá trình tư duy</strong>: Sàng lọc là kiểm tra nhanh đầu tiên để nhận diện mức độ khẩn cấp. Nó đặt các câu hỏi đơn giản:
           </p>
           <ul className="list-disc space-y-2 pl-6">
-          <li>Recent weight loss or gain?</li>
-          <li>Eating much less than usual?</li>
-          <li>Serious illness or condition that increases risk?</li>
+          <li>Sụt cân hoặc tăng cân gần đây?</li>
+          <li>Ăn ít hơn nhiều so với bình thường?</li>
+          <li>Bệnh nghiêm trọng hoặc tình trạng làm tăng nguy cơ?</li>
         </ul>
 
         </div>
@@ -211,54 +211,54 @@ export default function AssessmentProcessPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg mb-3 text-neutral-900">
-              What Screening Tools Are
+              Công cụ Sàng lọc Là gì
             </h3>
             <div className="space-y-3 text-base leading-relaxed text-neutral-700 sm:text-lg">
               <p>
-                Screening tools are structured questionnaires designed to quickly identify people at risk of malnutrition. Common tools include:
+                Công cụ sàng lọc là bảng câu hỏi có cấu trúc được thiết kế để nhanh chóng nhận diện những người có nguy cơ suy dinh dưỡng. Các công cụ phổ biến bao gồm:
               </p>
               <ul className="list-disc space-y-3 pl-6">
               <li>
-                <strong>NRS-2002 (Nutritional Risk Screening 2002)</strong>: A simple tool that combines BMI, weight loss, and disease severity.
-                It's widely used in hospitals and gives a score that indicates low, moderate, or high risk.
+                <strong>NRS-2002 (Sàng lọc Nguy cơ Dinh dưỡng 2002)</strong>: Một công cụ đơn giản kết hợp BMI, sụt cân, và mức độ nghiêm trọng của bệnh.
+                Nó được sử dụng rộng rãi trong bệnh viện và cho điểm số chỉ ra nguy cơ thấp, trung bình, hoặc cao.
               </li>
               <li>
-                <strong>PG-SGA (Patient-Generated Subjective Global Assessment)</strong>: A more detailed tool that includes patient-reported
-                symptoms and functional capacity. It's often used in oncology and other specialty settings.
+                <strong>PG-SGA (Đánh giá Toàn cầu Chủ quan do Bệnh nhân Tạo ra)</strong>: Một công cụ chi tiết hơn bao gồm
+                triệu chứng do bệnh nhân báo cáo và khả năng chức năng. Nó thường được sử dụng trong ung thư và các môi trường chuyên khoa khác.
               </li>
             </ul>
               <p className="mt-2">
-                These tools are designed to be <strong>fast and practical</strong>—they can usually be completed in a few minutes, making them
-                suitable for busy clinical settings.
+                Các công cụ này được thiết kế để <strong>nhanh và thực tế</strong>—chúng thường có thể hoàn thành trong vài phút, làm cho chúng
+                phù hợp với môi trường lâm sàng bận rộn.
               </p>
             </div>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              What Screening Can and Cannot Tell Us
+              Sàng lọc Có thể và Không thể Cho chúng ta Biết gì
             </h3>
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-md bg-green-50 border border-green-200 p-4">
                 <p className="text-sm font-semibold text-green-900 mb-2">
-                  ✓ What screening CAN tell us:
+                  ✓ Sàng lọc CÓ THỂ cho chúng ta biết:
                 </p>
                 <ul className="list-disc space-y-1 pl-5 text-sm text-green-800">
-                  <li>Whether someone is at low, moderate, or high risk</li>
-                  <li>How urgently a full assessment may be helpful</li>
-                  <li>Which patients may benefit from prioritization for nutrition care</li>
-                  <li>Whether screening may be worth repeating (and when)</li>
+                  <li>Liệu ai đó có nguy cơ thấp, trung bình, hoặc cao</li>
+                  <li>Mức độ khẩn cấp đánh giá đầy đủ có thể hữu ích</li>
+                  <li>Bệnh nhân nào có thể hưởng lợi từ ưu tiên cho chăm sóc dinh dưỡng</li>
+                  <li>Liệu sàng lọc có thể đáng lặp lại (và khi nào)</li>
                 </ul>
               </div>
               <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
                 <p className="text-sm font-semibold text-amber-900 mb-2">
-                  ✗ What screening CANNOT tell us:
+                  ✗ Sàng lọc KHÔNG THỂ cho chúng ta biết:
                 </p>
                 <ul className="list-disc space-y-1 pl-5 text-sm text-amber-800">
-                  <li>The specific cause of nutrition problems</li>
-                  <li>Exact nutrient requirements</li>
-                  <li>What interventions are needed</li>
-                  <li>Whether someone definitely has malnutrition</li>
+                  <li>Nguyên nhân cụ thể của vấn đề dinh dưỡng</li>
+                  <li>Nhu cầu chất dinh dưỡng chính xác</li>
+                  <li>Can thiệp nào cần thiết</li>
+                  <li>Liệu ai đó chắc chắn có suy dinh dưỡng</li>
                 </ul>
               </div>
             </div>
@@ -266,64 +266,64 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Why Screening ≠ Diagnosis
+              Vì sao Sàng lọc ≠ Chẩn đoán
             </h3>
             <p className="text-base text-neutral-700">
-              Screening is a <strong>filter</strong>, not a diagnosis. It identifies who needs further assessment, not what their specific
-              nutrition problem is. A high-risk screening result means "this person needs a full assessment," not "this person definitely has malnutrition."
+              Sàng lọc là một <strong>bộ lọc</strong>, không phải chẩn đoán. Nó xác định ai cần đánh giá thêm, không phải vấn đề dinh dưỡng cụ thể của họ là gì. 
+              Kết quả sàng lọc nguy cơ cao có nghĩa là "người này cần đánh giá đầy đủ," không phải "người này chắc chắn có suy dinh dưỡng."
             </p>
             <p className="text-base text-neutral-700 mt-2">
-              Diagnosis comes from comprehensive assessment, which includes detailed history, physical examination, laboratory data, and clinical judgment.
-              Screening just tells you where to focus your attention.
+              Chẩn đoán đến từ đánh giá toàn diện, bao gồm tiền sử chi tiết, khám thực thể, dữ liệu xét nghiệm, và phán đoán lâm sàng.
+              Sàng lọc chỉ cho bạn biết nơi tập trung sự chú ý của bạn.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Typical Use Cases
+              Trường hợp Sử dụng Điển hình
             </h3>
             <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
               <li>
-                <strong>Hospital admission</strong>: Screen all patients on admission to identify who needs full nutrition assessment
+                <strong>Nhập viện</strong>: Sàng lọc tất cả bệnh nhân khi nhập viện để xác định ai cần đánh giá dinh dưỡng đầy đủ
               </li>
               <li>
-                <strong>Outpatient clinics</strong>: Screen patients with chronic conditions, recent illness, or concerning symptoms
+                <strong>Phòng khám ngoại trú</strong>: Sàng lọc bệnh nhân có tình trạng mạn tính, bệnh gần đây, hoặc triệu chứng đáng lo ngại
               </li>
               <li>
-                <strong>Long-term care</strong>: Regular screening (e.g., monthly or quarterly) to catch changes early
+                <strong>Chăm sóc dài hạn</strong>: Sàng lọc thường xuyên (ví dụ: hàng tháng hoặc hàng quý) để phát hiện thay đổi sớm
               </li>
               <li>
-                <strong>Before procedures</strong>: Screen patients scheduled for surgery or other procedures that might affect nutrition
+                <strong>Trước thủ thuật</strong>: Sàng lọc bệnh nhân được lên lịch phẫu thuật hoặc thủ thuật khác có thể ảnh hưởng đến dinh dưỡng
               </li>
               <li>
-                <strong>When clinical status changes</strong>: Re-screen if a patient's condition worsens or improves significantly
+                <strong>Khi tình trạng lâm sàng thay đổi</strong>: Sàng lọc lại nếu tình trạng bệnh nhân xấu đi hoặc cải thiện đáng kể
               </li>
             </ul>
           </div>
 
           <div className="rounded-md bg-red-50 border border-red-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-red-900">
-              Common Pitfalls to Avoid
+              Cạm bẫy Phổ biến Cần Tránh
             </h3>
             <ul className="list-disc space-y-2 pl-5 text-sm text-red-800">
               <li>
-                <strong>Relying on albumin alone</strong>: Low albumin often reflects inflammation or illness severity, not just poor nutrition.
-                It's not a reliable screening tool and is generally not used in isolation.
+                <strong>Dựa vào albumin một mình</strong>: Albumin thấp thường phản ánh viêm hoặc mức độ nghiêm trọng của bệnh, không chỉ dinh dưỡng kém.
+                Nó không phải là công cụ sàng lọc đáng tin cậy và thường không được sử dụng riêng lẻ.
               </li>
               <li>
-                <strong>Treating screening as diagnosis</strong>: Screening showing low risk doesn't necessarily mean full assessment isn't needed, especially
-                if clinical signs suggest otherwise.
+                <strong>Coi sàng lọc như chẩn đoán</strong>: Sàng lọc cho thấy nguy cơ thấp không nhất thiết có nghĩa là đánh giá đầy đủ không cần thiết, đặc biệt
+                nếu dấu hiệu lâm sàng gợi ý điều ngược lại.
               </li>
               <li>
-                <strong>Not re-screening</strong>: A single screening at admission may not be sufficient. Re-screening when clinical status changes can be helpful.
+                <strong>Không sàng lọc lại</strong>: Một lần sàng lọc khi nhập viện có thể không đủ. Sàng lọc lại khi tình trạng lâm sàng thay đổi có thể hữu ích.
               </li>
               <li>
-                <strong>Ignoring patient-reported symptoms</strong>: Tools that include patient input (like PG-SGA) are often more accurate
-                than those that rely only on objective measures.
+                <strong>Bỏ qua triệu chứng do bệnh nhân báo cáo</strong>: Công cụ bao gồm đầu vào của bệnh nhân (như PG-SGA) thường chính xác hơn
+                những công cụ chỉ dựa vào đo lường khách quan.
               </li>
               <li>
-                <strong>Using the wrong tool for the setting</strong>: Some tools work better in certain populations. Choose tools validated
-                for your patient population and setting.
+                <strong>Sử dụng công cụ sai cho môi trường</strong>: Một số công cụ hoạt động tốt hơn ở một số quần thể nhất định. Chọn công cụ đã được xác thực
+                cho quần thể bệnh nhân và môi trường của bạn.
               </li>
             </ul>
           </div>
@@ -331,13 +331,13 @@ export default function AssessmentProcessPage() {
 
         <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2">
-            Try our screening tool:
+            Thử công cụ sàng lọc của chúng tôi:
           </p>
           <Link
             href="/tools/malnutrition-screening"
             className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
           >
-            Malnutrition Screening Tool (Tool 01) →
+            Công cụ Sàng lọc Suy Dinh dưỡng (Công cụ 01) →
           </Link>
         </div>
       </section>
@@ -353,52 +353,52 @@ export default function AssessmentProcessPage() {
             id="needs-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Step 2: Estimating Energy & Protein Needs
+            Bước 2: Ước tính Nhu cầu Năng lượng & Protein
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
           <p>
-            <strong>Thinking process</strong>: Once we know there's a risk (from screening), we estimate what their body needs. We consider:
+            <strong>Quá trình tư duy</strong>: Một khi chúng ta biết có nguy cơ (từ sàng lọc), chúng ta ước tính những gì cơ thể họ cần. Chúng ta xem xét:
           </p>
           <ul className="list-disc space-y-2 pl-6">
-          <li>Basic factors: age, size, activity</li>
-          <li>Clinical context: illness, recovery, special conditions</li>
+          <li>Yếu tố cơ bản: tuổi, kích thước, hoạt động</li>
+          <li>Bối cảnh lâm sàng: bệnh tật, phục hồi, tình trạng đặc biệt</li>
         </ul>
           <p>
-            The key question: <em>"If things were ideal, roughly how much would they need?"</em>
+            Câu hỏi chính: <em>"Nếu mọi thứ lý tưởng, họ cần khoảng bao nhiêu?"</em>
           </p>
         </div>
 
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Why Needs Are Estimates, Not Exact Targets
+              Vì sao Nhu cầu Là Ước tính, Không phải Mục tiêu Chính xác
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              No formula can tell you the exact calorie or protein requirement for a specific person on a specific day. Here's why:
+              Không có công thức nào có thể cho bạn biết nhu cầu calo hoặc protein chính xác cho một người cụ thể vào một ngày cụ thể. Đây là lý do:
             </p>
             <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
               <li>
-                <strong>Individual variation</strong>: Two people with the same age, weight, and condition can have different metabolic rates,
-                activity patterns, and responses to food. Genetics, body composition, and even gut bacteria play roles.
+                <strong>Biến đổi cá nhân</strong>: Hai người cùng tuổi, cân nặng, và tình trạng có thể có tốc độ chuyển hóa khác nhau,
+                mô hình hoạt động, và phản ứng với thức ăn. Di truyền, thành phần cơ thể, và thậm chí vi khuẩn đường ruột đóng vai trò.
               </li>
               <li>
-                <strong>Dynamic needs</strong>: Requirements change day-to-day based on stress, sleep, illness severity, healing, activity,
-                and even mood. A person recovering from surgery one week may need more than the same person a month later.
+                <strong>Nhu cầu động</strong>: Yêu cầu thay đổi từng ngày dựa trên stress, giấc ngủ, mức độ nghiêm trọng của bệnh, chữa lành, hoạt động,
+                và thậm chí tâm trạng. Một người đang phục hồi sau phẫu thuật một tuần có thể cần nhiều hơn cùng người đó một tháng sau.
               </li>
               <li>
-                <strong>Measurement limitations</strong>: We can't directly measure someone's "true" energy needs without specialized equipment
-                (like indirect calorimetry), which isn't practical for most clinical settings. Even then, results vary with time and conditions.
+                <strong>Giới hạn đo lường</strong>: Chúng ta không thể đo trực tiếp nhu cầu năng lượng "thực sự" của ai đó mà không có thiết bị chuyên biệt
+                (như đo nhiệt lượng gián tiếp), điều này không thực tế cho hầu hết môi trường lâm sàng. Ngay cả khi đó, kết quả thay đổi theo thời gian và điều kiện.
               </li>
               <li>
-                <strong>Context matters</strong>: The same person may need different amounts depending on whether they're trying to maintain weight,
-                gain muscle, support healing, or manage a chronic condition. Goals and clinical priorities shape the target range.
+                <strong>Bối cảnh quan trọng</strong>: Cùng một người có thể cần lượng khác nhau tùy thuộc vào việc họ đang cố gắng duy trì cân nặng,
+                tăng cơ, hỗ trợ chữa lành, hoặc quản lý tình trạng mạn tính. Mục tiêu và ưu tiên lâm sàng định hình khoảng mục tiêu.
               </li>
             </ul>
             <p className="text-base text-neutral-700 mt-2">
-              Therefore, <strong>estimates are starting points</strong>, not prescriptions. They help structure thinking and guide initial planning,
-              but they are typically combined with <strong>clinical judgment, monitoring, and regular reassessment</strong>.
+              Do đó, <strong>ước tính là điểm khởi đầu</strong>, không phải kê đơn. Chúng giúp cấu trúc tư duy và hướng dẫn lập kế hoạch ban đầu,
+              nhưng chúng thường được kết hợp với <strong>phán đoán lâm sàng, theo dõi, và đánh giá lại thường xuyên</strong>.
             </p>
           </div>
 
@@ -511,16 +511,16 @@ export default function AssessmentProcessPage() {
 
         <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2">
-            Try our needs calculator:
+            Thử máy tính nhu cầu của chúng tôi:
           </p>
           <Link
             href="/tools/energy-protein-calculator"
             className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
           >
-            Energy & Protein Calculator (Tool 02) →
+            Máy tính Năng lượng & Protein (Công cụ 02) →
           </Link>
           <p className="text-xs text-blue-700 mt-2">
-            Or <Link href="/knowledge/needs-estimation" className="underline">learn more about needs estimation</Link>
+            Hoặc <Link href="/knowledge/needs-estimation" className="underline">tìm hiểu thêm về ước tính nhu cầu</Link>
           </p>
         </div>
       </section>
@@ -536,16 +536,16 @@ export default function AssessmentProcessPage() {
             id="intake-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Step 3: Assessing Actual Intake
+            Bước 3: Đánh giá Lượng Ăn Thực tế
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
           <p>
-            <strong>Thinking process</strong>: Now we measure reality. We look at what they actually eat and drink, usually by asking them to describe a typical day or recall the last 24 hours.
+            <strong>Quá trình tư duy</strong>: Bây giờ chúng ta đo lường thực tế. Chúng ta xem những gì họ thực sự ăn và uống, thường bằng cách yêu cầu họ mô tả một ngày điển hình hoặc nhớ lại 24 giờ qua.
           </p>
           <p>
-            This helps answer: <em>"How does their actual intake compare to what we estimated they need?"</em>
+            Điều này giúp trả lời: <em>"Lượng ăn thực tế của họ so với những gì chúng ta ước tính họ cần như thế nào?"</em>
           </p>
         </div>
 
@@ -745,16 +745,16 @@ export default function AssessmentProcessPage() {
 
         <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2">
-            Try our intake assessment tool:
+            Thử công cụ đánh giá lượng ăn của chúng tôi:
           </p>
           <Link
             href="/tools/intake-assessment"
             className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
           >
-            Intake Assessment Worksheet (Tool 03) →
+            Bảng Đánh giá Lượng Ăn (Công cụ 03) →
           </Link>
           <p className="text-xs text-blue-700 mt-2">
-            Or <Link href="/knowledge/intake-assessment" className="underline">learn more about intake assessment</Link>
+            Hoặc <Link href="/knowledge/intake-assessment" className="underline">tìm hiểu thêm về đánh giá lượng ăn</Link>
           </p>
         </div>
       </section>
@@ -770,7 +770,7 @@ export default function AssessmentProcessPage() {
             id="reasoning-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Putting It All Together
+            Tổng hợp Tất cả
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -946,7 +946,7 @@ export default function AssessmentProcessPage() {
             id="misunderstandings-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Common Misunderstandings
+            Hiểu lầm Phổ biến
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -1040,7 +1040,7 @@ export default function AssessmentProcessPage() {
             id="safety-heading"
             className="text-2xl font-semibold text-amber-900 sm:text-3xl whitespace-nowrap"
           >
-            Safety & Limitations
+            An toàn & Giới hạn
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-amber-300 to-transparent"></div>
         </div>
@@ -1180,7 +1180,7 @@ export default function AssessmentProcessPage() {
             id="cta-heading"
             className="text-2xl font-semibold text-blue-900 sm:text-3xl whitespace-nowrap"
           >
-            Explore the Tools
+            Khám phá Các Công cụ
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
         </div>
