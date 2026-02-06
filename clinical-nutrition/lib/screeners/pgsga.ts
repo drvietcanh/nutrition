@@ -7,7 +7,7 @@ export interface PgSgaEducationalResult {
   /** Identifier for the screening tool used (for display in the result panel). */
   toolId: "pg-sga";
   /** Human-readable name of the tool. */
-  toolLabel: "PG-SGA (educational approximation)";
+  toolLabel: "PG-SGA (ước tính giáo dục)";
   /** Educational, approximate score; not a validated or complete PG-SGA score. */
   approximateScore: number | null;
   /** Simple risk band, used only for teaching purposes. */
@@ -70,13 +70,13 @@ export function calculateEducationalPgSga(
     score += 2;
     contributingDomains.weightHistory = true;
     teachingPoints.push(
-      "PG-SGA gives meaningful weight to moderate recent weight loss, especially if unintentional."
+      "PG-SGA cho trọng số có ý nghĩa cho giảm cân gần đây vừa phải, đặc biệt nếu không chủ ý."
     );
   } else if (input.recentWeightLossPercent >= 10) {
     score += 3;
     contributingDomains.weightHistory = true;
     teachingPoints.push(
-      "Larger recent weight loss (≥10%) is often scored more heavily in PG-SGA-style tools."
+      "Giảm cân gần đây lớn hơn (≥10%) thường được điểm nặng hơn trong các công cụ kiểu PG-SGA."
     );
   }
 
@@ -92,13 +92,13 @@ export function calculateEducationalPgSga(
       score += 1;
       contributingDomains.intakeAndSymptoms = true;
       teachingPoints.push(
-        "Moderate reductions in intake can contribute points in PG-SGA symptom/intake sections."
+        "Giảm lượng ăn vào vừa phải có thể đóng góp điểm trong các phần triệu chứng/lượng ăn vào của PG-SGA."
       );
     } else if (input.intakeReductionPercent >= 50) {
       score += 2;
       contributingDomains.intakeAndSymptoms = true;
       teachingPoints.push(
-        "Markedly reduced intake (around half or less of usual) is usually scored more heavily."
+        "Lượng ăn vào giảm đáng kể (khoảng một nửa hoặc ít hơn so với thông thường) thường được điểm nặng hơn."
       );
     }
   }
@@ -113,7 +113,7 @@ export function calculateEducationalPgSga(
         score += 2;
         contributingDomains.functionAndDisease = true;
         teachingPoints.push(
-          "Oncology and ICU settings often carry higher symptom and functional burden in PG-SGA-style thinking."
+          "Cài đặt ung thư và ICU thường mang gánh nặng triệu chứng và chức năng cao hơn trong tư duy kiểu PG-SGA."
         );
         break;
       case "surgical":
@@ -121,7 +121,7 @@ export function calculateEducationalPgSga(
         score += 1;
         contributingDomains.functionAndDisease = true;
         teachingPoints.push(
-          "Surgical and gastrointestinal conditions can contribute to symptom burden and functional limitation."
+          "Tình trạng phẫu thuật và tiêu hóa có thể đóng góp vào gánh nặng triệu chứng và hạn chế chức năng."
         );
         break;
       case "general_medical":
@@ -130,13 +130,13 @@ export function calculateEducationalPgSga(
       case "other":
         score += 0;
         teachingPoints.push(
-          "In a simplified educational model, some disease contexts may not add extra points but still require clinical judgment."
+          "Trong một mô hình giáo dục đơn giản hóa, một số bối cảnh bệnh có thể không thêm điểm bổ sung nhưng vẫn yêu cầu phán đoán lâm sàng."
         );
         break;
       default:
         missingFields.push("diseaseContextCode");
         warnings.push(
-          "Disease context code was not recognized; disease/symptom burden was not estimated."
+          "Mã bối cảnh bệnh không được nhận dạng; gánh nặng bệnh/triệu chứng không được ước tính."
         );
         break;
     }
@@ -144,14 +144,14 @@ export function calculateEducationalPgSga(
 
   if (missingFields.length > 0) {
     warnings.push(
-      "Some fields were missing; this educational PG-SGA-style score is incomplete and may underestimate concern."
+      "Một số trường bị thiếu; điểm kiểu PG-SGA giáo dục này không đầy đủ và có thể đánh giá thấp mối quan tâm."
     );
   }
 
   if (score === 0 && warnings.length > 0) {
     return {
       toolId: "pg-sga",
-      toolLabel: "PG-SGA (educational approximation)",
+      toolLabel: "PG-SGA (ước tính giáo dục)",
       approximateScore: null,
       riskBand: "unknown",
       riskCategory: "unknown",
@@ -161,9 +161,9 @@ export function calculateEducationalPgSga(
       warnings,
       teachingPoints,
       summaryExplanation:
-        "There was not enough information to create even an educational PG-SGA style estimate.",
+        "Không có đủ thông tin để tạo ngay cả một ước tính kiểu PG-SGA giáo dục.",
       whyThisResult: [
-        "Key inputs such as weight loss, intake reduction, or disease context were missing or unclear.",
+        "Các đầu vào chính như giảm cân, giảm lượng ăn vào, hoặc bối cảnh bệnh bị thiếu hoặc không rõ ràng.",
       ],
     };
   }
@@ -190,27 +190,27 @@ export function calculateEducationalPgSga(
   }
 
   warnings.push(
-    "This is a simplified, educational PG-SGA style estimate and must not be used for clinical decisions."
+    "Đây là một ước tính kiểu PG-SGA giáo dục đơn giản hóa và không được sử dụng cho quyết định lâm sàng."
   );
 
   if (riskCategory === "low") {
     whyThisResult.push(
-      "Based on the information entered, there is limited evidence of severe recent weight loss, reduced intake, or high symptom burden."
+      "Dựa trên thông tin đã nhập, có bằng chứng hạn chế về giảm cân gần đây nặng, giảm lượng ăn vào, hoặc gánh nặng triệu chứng cao."
     );
   } else {
     whyThisResult.push(
-      "Recent weight loss, reduced intake, and/or a high-burden disease context together raise educational concern about nutritional risk."
+      "Giảm cân gần đây, giảm lượng ăn vào, và/hoặc bối cảnh bệnh gánh nặng cao cùng nhau làm tăng mối quan tâm giáo dục về nguy cơ dinh dưỡng."
     );
   }
 
   const summaryExplanation =
     riskCategory === "low"
-      ? "This educational PG-SGA style estimate suggests a lower level of nutritional risk with the current information."
-      : "This educational PG-SGA style estimate suggests increased concern about nutritional risk, signalling that a fuller assessment would be appropriate in real practice.";
+      ? "Ước tính kiểu PG-SGA giáo dục này gợi ý mức nguy cơ dinh dưỡng thấp hơn với thông tin hiện tại."
+      : "Ước tính kiểu PG-SGA giáo dục này gợi ý mối quan tâm tăng về nguy cơ dinh dưỡng, báo hiệu rằng một đánh giá đầy đủ hơn sẽ phù hợp trong thực hành thực tế.";
 
   return {
     toolId: "pg-sga",
-    toolLabel: "PG-SGA (educational approximation)",
+    toolLabel: "PG-SGA (ước tính giáo dục)",
     approximateScore: score,
     riskBand,
     riskCategory,
