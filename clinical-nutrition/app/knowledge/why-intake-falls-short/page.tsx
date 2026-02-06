@@ -592,9 +592,9 @@ export default function WhyIntakeFallsShortPage() {
               they may be nauseous again or have missed their window of opportunity.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>For nurses:</strong> You may notice patients who can't eat during scheduled meal 
-              times due to symptoms, procedures, or sleep. This is a common reality. Documenting actual 
-              intake (not just what was served) helps the team understand the real situation.
+              <strong>Cho điều dưỡng:</strong> Bạn có thể nhận thấy bệnh nhân không thể ăn trong thời gian bữa ăn 
+              đã lên lịch do triệu chứng, thủ thuật, hoặc ngủ. Đây là một thực tế phổ biến. Ghi chép lượng ăn vào thực tế 
+              (không chỉ những gì được phục vụ) giúp nhóm hiểu tình huống thực tế.
             </p>
             <p className="text-sm text-gray-600 italic mt-1">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Thời gian bữa ăn cố định là cần thiết cho hoạt động 
