@@ -506,8 +506,8 @@ export default function WhyIntakeFallsShortPage() {
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Cho điều dưỡng:</strong> Bạn có thể thấy bệnh nhân NPO trong thời gian dài do 
               procedure delays or multiple tests. This is expected, not a documentation error. 
-              <strong>For medical students:</strong> Understanding that procedures require fasting helps 
-              explain why intake gaps occur even when nutrition is ordered.
+              <strong>Cho sinh viên y khoa:</strong> Hiểu rằng thủ thuật yêu cầu nhịn ăn giúp 
+              giải thích tại sao khoảng cách lượng ăn vào xảy ra ngay cả khi dinh dưỡng được đặt.
             </p>
             <p className="text-sm text-gray-600 italic mt-1">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Nhịn ăn cho thủ thuật là cần thiết cho an toàn, 
