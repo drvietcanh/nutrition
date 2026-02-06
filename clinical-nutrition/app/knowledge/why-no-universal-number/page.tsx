@@ -303,48 +303,48 @@ export default function WhyNoUniversalNumberPage() {
                 cần nhiều hơn so với tính toán gợi ý vì họ đang tích cực chữa lành và trở nên hoạt động hơn.
               </p>
               <p>
-                This is why nurses' daily observations about what patients actually consume are so valuable—they
-                show the gap between what's calculated and what's possible. It's also why addressing symptoms (nausea,
-                pain, depression) is often the first step in nutrition care, before trying to meet calculated targets.
+                Đây là lý do tại sao quan sát hàng ngày của y tá về những gì bệnh nhân thực sự tiêu thụ rất có giá trị—chúng
+                cho thấy khoảng cách giữa những gì được tính toán và những gì có thể. Đây cũng là lý do tại sao giải quyết các triệu chứng (buồn nôn,
+                đau, trầm cảm) thường là bước đầu tiên trong chăm sóc dinh dưỡng, trước khi cố gắng đáp ứng các mục tiêu được tính toán.
               </p>
             </div>
           </div>
 
           <EducationalNote variant="clinical-insight">
             <p>
-              <strong>Why reassessment matters:</strong> Because needs change over time, reassessment is central to
-              clinical nutrition. Initial estimates are starting points, not fixed targets. Regular reassessment
-              helps ensure that nutrition support remains appropriate as circumstances change.
+              <strong>Tại sao đánh giá lại quan trọng:</strong> Vì nhu cầu thay đổi theo thời gian, đánh giá lại là trung tâm của
+              dinh dưỡng lâm sàng. Ước tính ban đầu là điểm khởi đầu, không phải mục tiêu cố định. Đánh giá lại thường xuyên
+              giúp đảm bảo rằng hỗ trợ dinh dưỡng vẫn phù hợp khi hoàn cảnh thay đổi.
             </p>
             <p>
-              In practice, this means:
+              Trong thực hành, điều này có nghĩa là:
             </p>
             <ul className="list-disc space-y-1 pl-5 mt-2">
               <li>
-                Calculating needs once isn't enough—reassessment is typically needed regularly as the person's
-                condition, activity, and tolerance change
+                Tính toán nhu cầu một lần là không đủ—đánh giá lại thường cần thiết thường xuyên khi tình trạng,
+                hoạt động và khả năng chịu đựng của người đó thay đổi
               </li>
               <li>
-                Nurses' daily monitoring of intake, symptoms, and patient response provides essential information
-                for reassessment
+                Theo dõi hàng ngày của y tá về lượng ăn vào, triệu chứng và phản ứng bệnh nhân cung cấp thông tin thiết yếu
+                cho đánh giá lại
               </li>
               <li>
-                Clinicians' regular reassessment catches changes that calculations can't predict
+                Đánh giá lại thường xuyên của bác sĩ lâm sàng nắm bắt các thay đổi mà tính toán không thể dự đoán
               </li>
               <li>
-                The care team adjusts the plan based on what's actually happening, not just what calculations suggest
+                Nhóm chăm sóc điều chỉnh kế hoạch dựa trên những gì thực sự đang xảy ra, không chỉ những gì tính toán gợi ý
               </li>
             </ul>
             <p className="mt-2">
-              This ongoing process of assessment, monitoring, and adjustment is what makes nutrition care effective.
-              It's not about finding the "right number" once—it's about staying responsive to change.
+              Quy trình liên tục này của đánh giá, theo dõi và điều chỉnh là điều làm cho chăm sóc dinh dưỡng hiệu quả.
+              Nó không phải về việc tìm "con số đúng" một lần—nó là về việc luôn phản ứng với thay đổi.
             </p>
           </EducationalNote>
           <p>
-            This dynamic nature means that even if you could determine someone's "exact" need today, it might not
-            be exact tomorrow. A single universal number can't account for this variability over time. This is why
-            <strong>reassessment is central to clinical nutrition</strong>—not as an optional step, but as a core
-            part of how nutrition care works.
+            Bản chất động này có nghĩa là ngay cả khi bạn có thể xác định nhu cầu "chính xác" của ai đó hôm nay, nó có thể
+            không chính xác vào ngày mai. Một con số phổ quát duy nhất không thể tính đến sự biến đổi này theo thời gian. Đây là lý do tại sao
+            <strong>đánh giá lại là trung tâm của dinh dưỡng lâm sàng</strong>—không phải như một bước tùy chọn, mà như một phần
+            cốt lõi của cách chăm sóc dinh dưỡng hoạt động.
           </p>
         </ContentBlock>
       </ContentSection>
@@ -359,120 +359,120 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="formulas-heading">
         <SectionHeading id="formulas-heading">
-          What Formulas Really Do (and Don't Do)
+          Công Thức Thực Sự Làm Gì (Và Không Làm Gì)
         </SectionHeading>
         <ContentBlock>
           <p>
-            Estimation formulas are valuable tools, but understanding what they actually do—and what they don't
-            do—is essential for using them safely and effectively.
+            Công thức ước tính là công cụ có giá trị, nhưng hiểu những gì chúng thực sự làm—và những gì chúng không
+            làm—là cần thiết để sử dụng chúng một cách an toàn và hiệu quả.
           </p>
-          <EducationalNote variant="warning" title="Formulas Do Not 'Measure' True Needs">
+          <EducationalNote variant="warning" title="Công Thức Không 'Đo' Nhu Cầu Thực Sự">
             <p>
-              <strong>It's important to understand: formulas do not "measure" true needs.</strong> They provide
-              estimates based on population averages, not individual measurements. To actually measure someone's
-              energy needs, you would need specialized equipment (like indirect calorimetry) that measures oxygen
-              consumption and carbon dioxide production. Most clinical settings don't have this equipment, and
-              even when they do, results can vary with time and conditions.
+              <strong>Điều quan trọng là hiểu: công thức không "đo" nhu cầu thực sự.</strong> Chúng cung cấp
+              ước tính dựa trên trung bình dân số, không phải đo lường cá nhân. Để thực sự đo nhu cầu năng lượng của ai đó,
+              bạn sẽ cần thiết bị chuyên dụng (như đo nhiệt lượng gián tiếp) đo lường tiêu thụ oxy
+              và sản xuất carbon dioxide. Hầu hết các môi trường lâm sàng không có thiết bị này, và
+              ngay cả khi có, kết quả có thể thay đổi theo thời gian và điều kiện.
             </p>
             <p>
-              Formulas estimate needs based on what worked for groups of people in research studies. They don't
-              measure what a specific person actually needs. This distinction matters because it helps us understand
-              that formulas provide starting points, not definitive answers.
+              Công thức ước tính nhu cầu dựa trên những gì hiệu quả cho nhóm người trong các nghiên cứu. Chúng không
+              đo những gì một người cụ thể thực sự cần. Sự khác biệt này quan trọng vì nó giúp chúng ta hiểu
+              rằng công thức cung cấp điểm khởi đầu, không phải câu trả lời dứt khoát.
             </p>
           </EducationalNote>
 
           <p className="mt-6">
-            <strong>What formulas do:</strong>
+            <strong>Công thức làm gì:</strong>
           </p>
           <ul className="list-disc space-y-3 pl-6">
             <li>
-              <strong>Provide a starting estimate</strong>: Formulas give you a reasonable starting point to begin
-              with. This estimate can then be adjusted based on clinical observation, patient response, and ongoing
-              monitoring. Think of it as a starting point, not a destination. For clinicians early in practice and
-              students learning, this starting point helps structure initial thinking about what might be appropriate.
+              <strong>Cung cấp ước tính khởi đầu</strong>: Công thức cho bạn một điểm khởi đầu hợp lý để bắt đầu
+              với. Ước tính này sau đó có thể được điều chỉnh dựa trên quan sát lâm sàng, phản ứng bệnh nhân và
+              theo dõi liên tục. Hãy nghĩ về nó như một điểm khởi đầu, không phải điểm đến. Đối với các bác sĩ lâm sàng mới vào nghề và
+              sinh viên đang học, điểm khởi đầu này giúp cấu trúc suy nghĩ ban đầu về những gì có thể phù hợp.
             </li>
             <li>
-              <strong>Are based on populations, not individuals</strong>: Formulas were developed from studies of
-              groups of people. They give you an average estimate for someone with similar characteristics (age,
-              weight, activity level), not an individual requirement. Your specific patient may need more or less
-              than the average person in those studies. This is why two patients with the same inputs can have
-              different actual needs—they're individuals, not averages.
+              <strong>Dựa trên dân số, không phải cá nhân</strong>: Công thức được phát triển từ các nghiên cứu về
+              nhóm người. Chúng cho bạn một ước tính trung bình cho ai đó có đặc điểm tương tự (tuổi,
+              cân nặng, mức độ hoạt động), không phải yêu cầu cá nhân. Bệnh nhân cụ thể của bạn có thể cần nhiều hơn hoặc ít hơn
+              so với người trung bình trong các nghiên cứu đó. Đây là lý do tại sao hai bệnh nhân với cùng đầu vào có thể có
+              nhu cầu thực tế khác nhau—họ là cá nhân, không phải trung bình.
             </li>
             <li>
-              <strong>Help structure thinking, not replace it</strong>: Formulas help organize information (age,
-              weight, activity) in a systematic way, which supports clinical reasoning. They provide a framework
-              for thinking about needs estimation. However, they don't replace the need to consider the whole person,
-              their context, their response, and clinical judgment. They structure thinking—they don't do the
-              thinking for you.
+              <strong>Giúp cấu trúc suy nghĩ, không thay thế nó</strong>: Công thức giúp tổ chức thông tin (tuổi,
+              cân nặng, hoạt động) một cách có hệ thống, điều này hỗ trợ lý luận lâm sàng. Chúng cung cấp khung
+              để suy nghĩ về ước tính nhu cầu. Tuy nhiên, chúng không thay thế nhu cầu xem xét toàn bộ con người,
+              bối cảnh của họ, phản ứng của họ và phán đoán lâm sàng. Chúng cấu trúc suy nghĩ—chúng không làm
+              suy nghĩ cho bạn.
             </li>
           </ul>
 
           <p className="mt-6">
-            <strong>What formulas don't do:</strong>
+            <strong>Công thức không làm gì:</strong>
           </p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              <strong>Provide exact individual requirements</strong>: They can't tell you what a specific person
-              actually needs on a specific day. They provide estimates, not exact values.
+              <strong>Cung cấp yêu cầu cá nhân chính xác</strong>: Chúng không thể cho bạn biết một người cụ thể
+              thực sự cần gì trong một ngày cụ thể. Chúng cung cấp ước tính, không phải giá trị chính xác.
             </li>
             <li>
-              <strong>Account for all individual variation</strong>: They can't capture body composition differences,
-              genetic factors, gut microbiome, or many other individual characteristics that affect needs.
+              <strong>Tính đến tất cả sự biến đổi cá nhân</strong>: Chúng không thể nắm bắt sự khác biệt về thành phần cơ thể,
+              yếu tố di truyền, hệ vi sinh đường ruột, hoặc nhiều đặc điểm cá nhân khác ảnh hưởng đến nhu cầu.
             </li>
             <li>
-              <strong>Predict dynamic changes</strong>: They can't account for how needs change day-to-day based
-              on stress, sleep, illness fluctuations, or other dynamic factors.
+              <strong>Dự đoán thay đổi động</strong>: Chúng không thể tính đến cách nhu cầu thay đổi hàng ngày dựa
+              trên stress, giấc ngủ, biến động bệnh tật, hoặc các yếu tố động khác.
             </li>
             <li>
-              <strong>Replace clinical judgment</strong>: They can't see the whole person, assess tolerance, consider
-              goals of care, or adapt to unique circumstances. That requires clinical judgment.
+              <strong>Thay thế phán đoán lâm sàng</strong>: Chúng không thể nhìn thấy toàn bộ con người, đánh giá khả năng chịu đựng, xem xét
+              mục tiêu chăm sóc, hoặc thích ứng với hoàn cảnh độc đáo. Điều đó đòi hỏi phán đoán lâm sàng.
             </li>
             <li>
-              <strong>Account for context</strong>: They can't consider goals of care, organ function, tolerance,
-              practical constraints, or other contextual factors that shape what's actually appropriate.
+              <strong>Tính đến bối cảnh</strong>: Chúng không thể xem xét mục tiêu chăm sóc, chức năng cơ quan, khả năng chịu đựng,
+              ràng buộc thực tế, hoặc các yếu tố bối cảnh khác định hình những gì thực sự phù hợp.
             </li>
           </ul>
 
           <p className="mt-6">
-            <strong>Why different formulas produce different numbers:</strong>
+            <strong>Tại sao các công thức khác nhau tạo ra các con số khác nhau:</strong>
           </p>
           <p>
-            Clinicians use various methods to estimate needs. These include simple weight-based rules (e.g.,
-            "25–30 kcal/kg/day"), predictive equations (e.g., Harris-Benedict, Mifflin-St Jeor), and clinical
-            judgment combined with guidelines.
+            Các bác sĩ lâm sàng sử dụng nhiều phương pháp để ước tính nhu cầu. Chúng bao gồm quy tắc đơn giản dựa trên cân nặng (ví dụ,
+            "25–30 kcal/kg/ngày"), phương trình dự đoán (ví dụ, Harris-Benedict, Mifflin-St Jeor), và phán đoán
+            lâm sàng kết hợp với hướng dẫn.
           </p>
           <p>
-            <strong>These methods often produce different numbers, and that's normal.</strong> It's not a sign
-            that one is "wrong" or another is "right." Different methods exist because they were developed for
-            different purposes, populations, or situations. For example:
+            <strong>Các phương pháp này thường tạo ra các con số khác nhau, và điều đó là bình thường.</strong> Nó không phải là dấu hiệu
+            rằng một cái "sai" hoặc cái khác "đúng." Các phương pháp khác nhau tồn tại vì chúng được phát triển cho
+            mục đích, dân số hoặc tình huống khác nhau. Ví dụ:
           </p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              Some formulas were developed for healthy populations and may not fit ill patients well
+              Một số công thức được phát triển cho dân số khỏe mạnh và có thể không phù hợp với bệnh nhân bệnh tốt
             </li>
             <li>
-              Some were developed for specific age groups or conditions
+              Một số được phát triển cho nhóm tuổi hoặc tình trạng cụ thể
             </li>
             <li>
-              Some account for more factors (like activity) than others
+              Một số tính đến nhiều yếu tố hơn (như hoạt động) so với các yếu tố khác
             </li>
             <li>
-              Some are simpler and easier to use, while others are more complex
+              Một số đơn giản hơn và dễ sử dụng, trong khi những cái khác phức tạp hơn
             </li>
           </ul>
           <p>
-            Experienced clinicians often use multiple methods, compare results, and choose a reasonable range
-            based on the clinical context. The goal isn't to find the "correct answer," but to establish a
-            <strong>safe, reasonable starting point</strong> that can be monitored and adjusted.
+            Các bác sĩ lâm sàng có kinh nghiệm thường sử dụng nhiều phương pháp, so sánh kết quả và chọn một phạm vi hợp lý
+            dựa trên bối cảnh lâm sàng. Mục tiêu không phải là tìm "câu trả lời đúng," mà là thiết lập một
+            <strong>điểm khởi đầu an toàn, hợp lý</strong> có thể được theo dõi và điều chỉnh.
           </p>
-          <EducationalNote variant="warning" title="The Risk of Overconfidence">
+          <EducationalNote variant="warning" title="Rủi Ro Của Sự Tự Tin Quá Mức">
             <p>
-              Treating formulas as if they provide exact answers can lead to overconfidence in numbers. This is
-              a common pitfall for clinicians early in practice, nurses following protocols, and students learning
-              calculations. Overconfidence can cause healthcare teams to overlook clinical signs (like poor wound
-              healing, continued weight loss, or patient-reported fatigue) because "the calculation says they're
-              getting enough." Formulas inform, but clinical judgment and patient response determine what's
-              actually appropriate.
+              Đối xử với công thức như thể chúng cung cấp câu trả lời chính xác có thể dẫn đến tự tin quá mức vào số liệu. Đây là
+              một cạm bẫy phổ biến cho các bác sĩ lâm sàng mới vào nghề, y tá tuân theo giao thức và sinh viên học
+              tính toán. Tự tin quá mức có thể khiến các nhóm chăm sóc sức khỏe bỏ qua các dấu hiệu lâm sàng (như vết thương kém
+              lành, tiếp tục giảm cân, hoặc mệt mỏi bệnh nhân báo cáo) vì "tính toán nói rằng họ
+              đang nhận đủ." Công thức thông báo, nhưng phán đoán lâm sàng và phản ứng bệnh nhân xác định những gì
+              thực sự phù hợp.
             </p>
           </EducationalNote>
         </ContentBlock>
