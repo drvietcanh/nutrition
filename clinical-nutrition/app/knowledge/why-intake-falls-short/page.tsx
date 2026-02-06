@@ -403,14 +403,14 @@ export default function WhyIntakeFallsShortPage() {
           <article className="border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">Dyspnea (Breathing Difficulties)</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              When patients have trouble breathing, eating becomes challenging:
+              Khi bệnh nhân gặp khó khăn khi thở, ăn trở nên thách thức:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Breathing takes priority over eating—patients focus on getting air, not food</li>
-              <li>Chewing and swallowing require holding breath briefly, which is difficult when dyspneic</li>
-              <li>Eating increases oxygen demand, making breathing feel harder</li>
-              <li>Patients may need oxygen during meals, which can interfere with eating</li>
-              <li>Anxiety about breathing can reduce appetite</li>
+              <li>Thở có ưu tiên hơn ăn—bệnh nhân tập trung vào lấy không khí, không phải thức ăn</li>
+              <li>Nhai và nuốt yêu cầu nín thở một chút, điều này khó khăn khi khó thở</li>
+              <li>Ăn tăng nhu cầu oxy, làm cho thở cảm thấy khó hơn</li>
+              <li>Bệnh nhân có thể cần oxy trong bữa ăn, có thể cản trở việc ăn</li>
+              <li>Lo lắng về thở có thể giảm cảm giác ngon miệng</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Khi bệnh nhân đang vật lộn để thở, ăn 
@@ -487,21 +487,21 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="space-y-4 mt-4">
           <article className="border-l-4 border-red-500 bg-red-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Fasting for Procedures</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Nhịn Ăn Cho Thủ Thuật</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Patients frequently miss meals due to fasting requirements:
+              Bệnh nhân thường xuyên bỏ lỡ bữa ăn do yêu cầu nhịn ăn:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>NPO (nothing by mouth) orders before procedures, surgeries, or tests</li>
-              <li>Extended fasting periods when procedures are delayed</li>
-              <li>Multiple procedures requiring repeated fasting over several days</li>
-              <li>Unclear or overly conservative NPO orders extending beyond necessary time</li>
-              <li>Delayed meal service after procedures, even when NPO is lifted</li>
+              <li>Lệnh NPO (không ăn uống qua đường miệng) trước thủ thuật, phẫu thuật, hoặc xét nghiệm</li>
+              <li>Khoảng thời gian nhịn ăn kéo dài khi thủ thuật bị trì hoãn</li>
+              <li>Nhiều thủ thuật yêu cầu nhịn ăn lặp lại trong vài ngày</li>
+              <li>Lệnh NPO không rõ ràng hoặc quá bảo thủ kéo dài vượt quá thời gian cần thiết</li>
+              <li>Dịch vụ bữa ăn bị trì hoãn sau thủ thuật, ngay cả khi NPO được gỡ bỏ</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
               <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho bữa sáng, bữa trưa, và bữa tối có thể bỏ lỡ bữa trưa 
-              entirely if they're NPO from midnight for a 2 PM procedure. Even after the procedure, they 
-              may not receive a meal until dinner time—missing an entire meal.
+              hoàn toàn nếu họ NPO từ nửa đêm cho một thủ thuật lúc 2 giờ chiều. Ngay cả sau thủ thuật, họ 
+              có thể không nhận được bữa ăn cho đến giờ ăn tối—bỏ lỡ toàn bộ một bữa ăn.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Cho điều dưỡng:</strong> Bạn có thể thấy bệnh nhân NPO trong thời gian dài do 
@@ -516,22 +516,22 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-indigo-500 bg-indigo-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Missed Meals</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Bữa Ăn Bị Bỏ Lỡ</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Meals may be missed for reasons beyond fasting:
+              Bữa ăn có thể bị bỏ lỡ vì những lý do ngoài nhịn ăn:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Meals arrive during procedures, tests, or when patient is sleeping</li>
-              <li>Patient is off the unit for imaging or other tests during meal times</li>
-              <li>Meals are delayed due to staffing or logistics issues</li>
-              <li>Patient is too unwell to eat when meal arrives</li>
-              <li>Meals are removed before patient can eat (e.g., due to procedure timing)</li>
-              <li>Patient refuses meal, and no alternative is offered in time</li>
+              <li>Bữa ăn đến trong khi thủ thuật, xét nghiệm, hoặc khi bệnh nhân đang ngủ</li>
+              <li>Bệnh nhân rời khỏi đơn vị để chụp hình hoặc các xét nghiệm khác trong giờ ăn</li>
+              <li>Bữa ăn bị trì hoãn do vấn đề nhân sự hoặc hậu cần</li>
+              <li>Bệnh nhân quá không khỏe để ăn khi bữa ăn đến</li>
+              <li>Bữa ăn bị lấy đi trước khi bệnh nhân có thể ăn (ví dụ, do thời gian thủ thuật)</li>
+              <li>Bệnh nhân từ chối bữa ăn, và không có lựa chọn thay thế được cung cấp kịp thời</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
               <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho ba bữa ăn mỗi ngày có thể chỉ nhận được hai nếu 
-              breakfast arrives while they're in radiology, lunch is removed because they're going to 
-              surgery, and dinner arrives when they're too nauseous to eat.
+              bữa sáng đến khi họ đang ở khoa chẩn đoán hình ảnh, bữa trưa bị lấy đi vì họ sắp đi 
+              phẫu thuật, và bữa tối đến khi họ quá buồn nôn để ăn.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Trong môi trường lâm sàng bận rộn, bữa ăn có thể bị bỏ lỡ 
@@ -540,31 +540,31 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-teal-500 bg-teal-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Feeding Interruptions</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Gián Đoạn Cho Ăn</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Tube feeding is frequently interrupted, reducing delivered nutrition:
+              Cho ăn qua ống thường xuyên bị gián đoạn, giảm dinh dưỡng được cung cấp:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Holds for procedures, tests, or medications</li>
-              <li>Pump malfunctions or disconnections</li>
-              <li>High gastric residuals requiring rate reduction or temporary hold</li>
-              <li>Tube dislodgement or clogging</li>
-              <li>Patient positioning issues affecting tolerance</li>
-              <li>Overnight alarms that aren't addressed immediately</li>
+              <li>Giữ cho thủ thuật, xét nghiệm, hoặc thuốc</li>
+              <li>Máy bơm hỏng hoặc ngắt kết nối</li>
+              <li>Dịch dạ dày còn lại cao yêu cầu giảm tỷ lệ hoặc giữ tạm thời</li>
+              <li>Ống bị lệch hoặc tắc</li>
+              <li>Vấn đề tư thế bệnh nhân ảnh hưởng đến khả năng dung nạp</li>
+              <li>Báo động qua đêm không được xử lý ngay lập tức</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
               <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho 1,600 kcal/ngày qua cho ăn qua ống liên tục 
-              at 80 mL/hour may only receive 1,000-1,200 kcal/day due to:
+              ở 80 mL/giờ có thể chỉ nhận được 1,000-1,200 kcal/ngày do:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mt-1">
-              <li>4-hour hold before procedure + 4-hour hold after = 8 hours without feeding (33% reduction)</li>
-              <li>Rate reduced to 40 mL/hour for tolerance issues (50% reduction)</li>
-              <li>Overnight pump alarm that wasn't addressed for 2 hours</li>
+              <li>Giữ 4 giờ trước thủ thuật + giữ 4 giờ sau = 8 giờ không cho ăn (giảm 33%)</li>
+              <li>Tỷ lệ giảm xuống 40 mL/giờ do vấn đề dung nạp (giảm 50%)</li>
+              <li>Báo động máy bơm qua đêm không được xử lý trong 2 giờ</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
               <strong>Cho điều dưỡng theo dõi cho ăn qua ống:</strong> Kiểm tra <strong>thể tích được cung cấp</strong> của máy bơm, 
-              not just the ordered rate. The ordered rate tells you what was prescribed, but the delivered 
-              volume tells you what the patient actually received.
+              không chỉ tỷ lệ được đặt. Tỷ lệ được đặt cho bạn biết những gì đã được kê đơn, nhưng thể tích được cung cấp 
+              cho bạn biết những gì bệnh nhân thực sự nhận được.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Gián đoạn cho ăn qua ống là cần thiết cho 
@@ -574,22 +574,22 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-amber-500 bg-amber-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Poor Timing of Meals</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Thời Gian Bữa Ăn Kém</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Meal timing may not align with when patients can actually eat:
+              Thời gian bữa ăn có thể không khớp với khi bệnh nhân thực sự có thể ăn:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Fixed meal times that don't match patient appetite patterns</li>
-              <li>Meals served when patient is nauseous, in pain, or too tired</li>
-              <li>Meals arrive during peak medication side effects</li>
-              <li>Insufficient time between meals for digestion</li>
-              <li>Meals served when patient is most symptomatic (e.g., morning nausea)</li>
-              <li>No snacks available between scheduled meals when patient feels able to eat</li>
+              <li>Thời gian bữa ăn cố định không khớp với mẫu cảm giác ngon miệng của bệnh nhân</li>
+              <li>Bữa ăn được phục vụ khi bệnh nhân buồn nôn, đau, hoặc quá mệt</li>
+              <li>Bữa ăn đến trong thời gian tác dụng phụ của thuốc đạt đỉnh</li>
+              <li>Thời gian không đủ giữa các bữa ăn để tiêu hóa</li>
+              <li>Bữa ăn được phục vụ khi bệnh nhân có nhiều triệu chứng nhất (ví dụ, buồn nôn buổi sáng)</li>
+              <li>Không có đồ ăn nhẹ có sẵn giữa các bữa ăn đã lên lịch khi bệnh nhân cảm thấy có thể ăn</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
               <strong>Ví dụ:</strong> Một bệnh nhân với buồn nôn buổi sáng có thể không thể ăn bữa sáng lúc 
-              8 AM but feel ready to eat at 10 AM. However, the next meal isn't until noon, and by then 
-              they may be nauseous again or have missed their window of opportunity.
+              8 giờ sáng nhưng cảm thấy sẵn sàng ăn lúc 10 giờ sáng. Tuy nhiên, bữa ăn tiếp theo không đến cho đến trưa, và đến lúc đó 
+              họ có thể buồn nôn lại hoặc đã bỏ lỡ cơ hội của họ.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Cho điều dưỡng:</strong> Bạn có thể nhận thấy bệnh nhân không thể ăn trong thời gian bữa ăn 
