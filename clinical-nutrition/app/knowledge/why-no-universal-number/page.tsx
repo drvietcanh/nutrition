@@ -629,119 +629,119 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="mistakes-heading">
         <SectionHeading id="mistakes-heading">
-          Common Mistakes When Chasing Exact Numbers
+          Những Sai Lầm Phổ Biến Khi Theo Đuổi Con Số Chính Xác
         </SectionHeading>
         <ContentBlock>
           <p>
-            When we treat calculated needs as exact values, several common mistakes can occur. These mistakes are
-            understandable—they often come from wanting to do the right thing and having clear guidance. Understanding
-            why these mistakes happen helps us avoid them and use clinical tools more safely.
+            Khi chúng ta đối xử với nhu cầu được tính toán như giá trị chính xác, một số sai lầm phổ biến có thể xảy ra. Những sai lầm này là
+            dễ hiểu—chúng thường đến từ mong muốn làm điều đúng và có hướng dẫn rõ ràng. Hiểu
+            tại sao những sai lầm này xảy ra giúp chúng ta tránh chúng và sử dụng công cụ lâm sàng an toàn hơn.
           </p>
         </ContentBlock>
         <div className="mt-6 space-y-4 sm:space-y-5">
-          <EducationalNote variant="common-pitfall" title='Treating Calculated Needs as Prescriptions'>
+          <EducationalNote variant="common-pitfall" title='Đối Xử Với Nhu Cầu Được Tính Toán Như Chỉ Định'>
             <p>
-              <strong>What happens:</strong> A calculation suggests a specific number (e.g., 1,800 calories), and
-              the care team treats this as a prescription that must be met, regardless of what the patient can
-              actually tolerate or what fits their situation.
+              <strong>Điều gì xảy ra:</strong> Một tính toán gợi ý một con số cụ thể (ví dụ: 1,800 calo), và
+              nhóm chăm sóc đối xử với điều này như một chỉ định phải được đáp ứng, bất kể bệnh nhân có thể
+              thực sự chịu đựng gì hoặc những gì phù hợp với tình huống của họ.
             </p>
             <p>
-              <strong>Why this happens:</strong> It's natural to want clear direction. A specific number feels
-              definitive and actionable. For clinicians early in practice or nurses following protocols, having a
-              clear target can feel reassuring.
+              <strong>Tại sao điều này xảy ra:</strong> Muốn có hướng dẫn rõ ràng là điều tự nhiên. Một con số cụ thể cảm thấy
+              dứt khoát và có thể hành động. Đối với các bác sĩ lâm sàng mới vào nghề hoặc y tá tuân theo giao thức, có một
+              mục tiêu rõ ràng có thể cảm thấy yên tâm.
             </p>
             <p>
-              <strong>Why it's a problem:</strong> Calculations provide starting estimates, not prescriptions. What
-              a person can actually tolerate, what fits their goals of care, and what's practically possible all
-              matter more than what a formula suggests. Trying to force a specific number can lead to discomfort,
-              intolerance, or inappropriate care.
+              <strong>Tại sao đây là vấn đề:</strong> Tính toán cung cấp ước tính khởi đầu, không phải chỉ định. Những gì
+              một người thực sự có thể chịu đựng, những gì phù hợp với mục tiêu chăm sóc của họ, và những gì thực tế có thể tất cả
+              quan trọng hơn những gì công thức gợi ý. Cố gắng ép buộc một con số cụ thể có thể dẫn đến khó chịu,
+              không dung nạp, hoặc chăm sóc không phù hợp.
             </p>
             <p>
-              <strong>What experienced clinicians often do:</strong> Many experienced clinicians use calculations
-              to establish a reasonable range, then start conservatively within that range. They adjust based on
-              what the patient can actually tolerate and how they respond. The calculation guides them, but patient
-              response determines the plan.
-            </p>
-          </EducationalNote>
-
-          <EducationalNote variant="common-pitfall" title='Ignoring Tolerance and Intake'>
-            <p>
-              <strong>What happens:</strong> The care team focuses on meeting calculated needs but doesn't pay enough
-              attention to what the patient is actually eating or what they can tolerate. The nurse documents that
-              the patient is eating only 30–40% of meals, but the plan doesn't change because "they need 1,800 calories."
-            </p>
-            <p>
-              <strong>Why this happens:</strong> It's easy to focus on the target number and lose sight of what's
-              actually happening. When there's a gap between what's calculated and what's possible, it can feel
-              like the solution is to push harder to meet the target.
-            </p>
-            <p>
-              <strong>Why it's a problem:</strong> What patients actually consume matters more than what calculations
-              suggest they should consume. If someone can't tolerate the calculated amount, forcing it won't help.
-              Ignoring tolerance and actual intake can lead to wasted food, patient discomfort, and missed opportunities
-              to address underlying issues (like nausea, pain, or depression) that are preventing adequate intake.
-            </p>
-            <p>
-              <strong>What experienced clinicians often do:</strong> Many experienced clinicians pay close attention
-              to what patients actually eat and what they can tolerate. Nurses' daily documentation of intake is
-              essential—it shows the gap between calculated needs and reality. Many care teams address symptoms and
-              barriers to eating first, then gradually increase intake as tolerated. The goal is meeting needs
-              within what's possible, not forcing an impossible target.
+              <strong>Những gì các bác sĩ lâm sàng có kinh nghiệm thường làm:</strong> Nhiều bác sĩ lâm sàng có kinh nghiệm sử dụng tính toán
+              để thiết lập một phạm vi hợp lý, sau đó bắt đầu một cách bảo thủ trong phạm vi đó. Họ điều chỉnh dựa trên
+              những gì bệnh nhân thực sự có thể chịu đựng và cách họ phản ứng. Tính toán hướng dẫn họ, nhưng phản ứng bệnh nhân
+              xác định kế hoạch.
             </p>
           </EducationalNote>
 
-          <EducationalNote variant="common-pitfall" title='Overfeeding Early Acute Illness'>
+          <EducationalNote variant="common-pitfall" title='Bỏ Qua Khả Năng Chịu Đựng Và Lượng Ăn Vào'>
             <p>
-              <strong>What happens:</strong> A patient is admitted with severe infection or critical illness. The
-              care team calculates needs and immediately tries to meet the full target, even though the patient is
-              very ill, may be on a ventilator, and their body is in a stressed state.
+              <strong>Điều gì xảy ra:</strong> Nhóm chăm sóc tập trung vào việc đáp ứng nhu cầu được tính toán nhưng không chú ý đủ
+              đến những gì bệnh nhân thực sự đang ăn hoặc những gì họ có thể chịu đựng. Y tá ghi chép rằng
+              bệnh nhân chỉ ăn 30–40% bữa ăn, nhưng kế hoạch không thay đổi vì "họ cần 1,800 calo."
             </p>
             <p>
-              <strong>Why this happens:</strong> It's natural to want to support someone who's very ill. The
-              calculation suggests a target, and it feels like meeting that target will help. There's often concern
-              about underfeeding, which can lead to trying to maximize intake.
+              <strong>Tại sao điều này xảy ra:</strong> Dễ tập trung vào con số mục tiêu và mất tầm nhìn về những gì
+              thực sự đang xảy ra. Khi có khoảng cách giữa những gì được tính toán và những gì có thể, có thể cảm thấy
+              như giải pháp là đẩy mạnh hơn để đáp ứng mục tiêu.
             </p>
             <p>
-              <strong>Why it's a problem:</strong> During early acute illness, the body is in a stressed state.
-              Overfeeding during this phase may increase metabolic stress, worsen organ function, or cause
-              complications. The body may not be able to process large amounts of nutrition effectively during
-              severe illness. Starting with aggressive feeding may not be appropriate.
+              <strong>Tại sao đây là vấn đề:</strong> Những gì bệnh nhân thực sự tiêu thụ quan trọng hơn những gì tính toán
+              gợi ý họ nên tiêu thụ. Nếu ai đó không thể chịu đựng lượng được tính toán, ép buộc sẽ không giúp.
+              Bỏ qua khả năng chịu đựng và lượng ăn vào thực tế có thể dẫn đến lãng phí thức ăn, khó chịu bệnh nhân, và bỏ lỡ cơ hội
+              để giải quyết các vấn đề tiềm ẩn (như buồn nôn, đau, hoặc trầm cảm) đang ngăn cản lượng ăn vào đầy đủ.
             </p>
             <p>
-              <strong>What experienced clinicians often do:</strong> During early acute illness, many experienced
-              clinicians start conservatively. The body's ability to process nutrition is often reduced during
-              severe illness. They may gradually increase nutrition as the patient stabilizes and their condition
-              improves. This is especially important in critical illness, where tolerance is often limited. The
-              goal is supporting the body without overwhelming it during the most stressed phase.
+              <strong>Những gì các bác sĩ lâm sàng có kinh nghiệm thường làm:</strong> Nhiều bác sĩ lâm sàng có kinh nghiệm chú ý kỹ
+              đến những gì bệnh nhân thực sự ăn và những gì họ có thể chịu đựng. Ghi chép hàng ngày của y tá về lượng ăn vào là
+              cần thiết—nó cho thấy khoảng cách giữa nhu cầu được tính toán và thực tế. Nhiều nhóm chăm sóc giải quyết các triệu chứng và
+              rào cản ăn uống trước, sau đó dần dần tăng lượng ăn vào khi được dung nạp. Mục tiêu là đáp ứng nhu cầu
+              trong những gì có thể, không phải ép buộc một mục tiêu không thể.
             </p>
           </EducationalNote>
 
-          <EducationalNote variant="common-pitfall" title='Underestimating Protein in Elderly Patients'>
+          <EducationalNote variant="common-pitfall" title='Cho Ăn Quá Mức Trong Bệnh Cấp Tính Sớm'>
             <p>
-              <strong>What happens:</strong> An elderly patient is recovering from surgery or illness. The care team
-              focuses on meeting energy (calorie) needs but doesn't pay enough attention to protein. The patient
-              may be getting enough calories but not enough protein to support healing and maintain muscle mass.
+              <strong>Điều gì xảy ra:</strong> Một bệnh nhân được nhập viện với nhiễm trùng nặng hoặc bệnh nặng. Nhóm
+              chăm sóc tính toán nhu cầu và ngay lập tức cố gắng đáp ứng mục tiêu đầy đủ, mặc dù bệnh nhân
+              rất bệnh, có thể đang thở máy, và cơ thể của họ đang trong trạng thái stress.
             </p>
             <p>
-              <strong>Why this happens:</strong> It's common to focus on total calories as the main target. Protein
-              needs can get overlooked, especially if the patient is eating and meeting calorie goals. For elderly
-              patients, who may have reduced appetite and smaller portions, it's easy to miss that they're not getting
-              enough protein within what they can eat.
+              <strong>Tại sao điều này xảy ra:</strong> Muốn hỗ trợ ai đó rất bệnh là điều tự nhiên.
+              Tính toán gợi ý một mục tiêu, và cảm thấy như đáp ứng mục tiêu đó sẽ giúp. Thường có mối quan tâm
+              về việc cho ăn không đủ, điều này có thể dẫn đến cố gắng tối đa hóa lượng ăn vào.
             </p>
             <p>
-              <strong>Why it's a problem:</strong> Elderly patients are at higher risk for muscle loss, especially
-              during illness and recovery. They need adequate protein to heal wounds, maintain muscle mass, and
-              recover function. Getting enough calories but not enough protein can lead to slow healing, continued
-              muscle loss, weakness, and poor recovery. This is especially important because elderly patients may
-              have less margin for error—they can't afford to lose muscle mass.
+              <strong>Tại sao đây là vấn đề:</strong> Trong bệnh cấp tính sớm, cơ thể đang trong trạng thái stress.
+              Cho ăn quá mức trong giai đoạn này có thể tăng stress chuyển hóa, làm xấu đi chức năng cơ quan, hoặc gây
+              biến chứng. Cơ thể có thể không thể xử lý lượng dinh dưỡng lớn một cách hiệu quả trong
+              bệnh nặng. Bắt đầu với cho ăn tích cực có thể không phù hợp.
             </p>
             <p>
-              <strong>What experienced clinicians often do:</strong> Many experienced clinicians pay attention to
-              both energy and protein needs, especially in elderly patients. They look at what patients are actually
-              eating—are they getting protein-rich foods, or mostly carbohydrates? Some care teams consider protein
-              supplements or high-protein foods if needed, within what patients can tolerate. Nurses documenting
-              what patients actually consume (not just how much) helps identify protein gaps. The goal is meeting
-              both energy and protein needs, not just calories.
+              <strong>Những gì các bác sĩ lâm sàng có kinh nghiệm thường làm:</strong> Trong bệnh cấp tính sớm, nhiều bác sĩ lâm sàng có kinh nghiệm
+              bắt đầu một cách bảo thủ. Khả năng xử lý dinh dưỡng của cơ thể thường giảm trong
+              bệnh nặng. Họ có thể dần dần tăng dinh dưỡng khi bệnh nhân ổn định và tình trạng của họ
+              cải thiện. Điều này đặc biệt quan trọng trong bệnh nặng, nơi khả năng chịu đựng thường hạn chế.
+              Mục tiêu là hỗ trợ cơ thể mà không làm quá tải nó trong giai đoạn stress nhất.
+            </p>
+          </EducationalNote>
+
+          <EducationalNote variant="common-pitfall" title='Đánh Giá Thấp Protein Ở Bệnh Nhân Cao Tuổi'>
+            <p>
+              <strong>Điều gì xảy ra:</strong> Một bệnh nhân cao tuổi đang phục hồi sau phẫu thuật hoặc bệnh tật. Nhóm chăm sóc
+              tập trung vào việc đáp ứng nhu cầu năng lượng (calo) nhưng không chú ý đủ đến protein. Bệnh nhân
+              có thể đang nhận đủ calo nhưng không đủ protein để hỗ trợ chữa lành và duy trì khối lượng cơ.
+            </p>
+            <p>
+              <strong>Tại sao điều này xảy ra:</strong> Tập trung vào tổng calo như mục tiêu chính là phổ biến. Nhu cầu
+              protein có thể bị bỏ qua, đặc biệt nếu bệnh nhân đang ăn và đáp ứng mục tiêu calo. Đối với bệnh nhân cao tuổi,
+              những người có thể có cảm giác ngon miệng giảm và khẩu phần nhỏ hơn, dễ bỏ lỡ rằng họ không nhận được
+              đủ protein trong những gì họ có thể ăn.
+            </p>
+            <p>
+              <strong>Tại sao đây là vấn đề:</strong> Bệnh nhân cao tuổi có nguy cơ mất cơ cao hơn, đặc biệt
+              trong bệnh tật và phục hồi. Họ cần protein đầy đủ để chữa lành vết thương, duy trì khối lượng cơ và
+              phục hồi chức năng. Nhận đủ calo nhưng không đủ protein có thể dẫn đến chữa lành chậm, tiếp tục
+              mất cơ, yếu, và phục hồi kém. Điều này đặc biệt quan trọng vì bệnh nhân cao tuổi có thể
+              có ít biên độ lỗi hơn—họ không thể để mất khối lượng cơ.
+            </p>
+            <p>
+              <strong>Những gì các bác sĩ lâm sàng có kinh nghiệm thường làm:</strong> Nhiều bác sĩ lâm sàng có kinh nghiệm chú ý đến
+              cả nhu cầu năng lượng và protein, đặc biệt ở bệnh nhân cao tuổi. Họ xem xét những gì bệnh nhân thực sự
+              đang ăn—họ có nhận được thực phẩm giàu protein, hay chủ yếu carbohydrate? Một số nhóm chăm sóc xem xét bổ sung
+              protein hoặc thực phẩm giàu protein nếu cần, trong những gì bệnh nhân có thể chịu đựng. Y tá ghi chép
+              những gì bệnh nhân thực sự tiêu thụ (không chỉ bao nhiêu) giúp xác định khoảng trống protein. Mục tiêu là đáp ứng
+              cả nhu cầu năng lượng và protein, không chỉ calo.
             </p>
           </EducationalNote>
         </div>
@@ -755,111 +755,111 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="ranges-heading">
         <SectionHeading id="ranges-heading">
-          How Clinicians Use Ranges Instead of Targets
+          Cách Các Bác Sĩ Lâm Sàng Sử Dụng Phạm Vi Thay Vì Mục Tiêu
         </SectionHeading>
         <ContentBlock>
           <p>
-            Instead of chasing exact numbers, experienced clinicians think in <strong>ranges</strong>. This
-            approach acknowledges uncertainty, allows flexibility, and supports safer nutrition care.
+            Thay vì theo đuổi con số chính xác, các bác sĩ lâm sàng có kinh nghiệm suy nghĩ trong <strong>phạm vi</strong>. Cách tiếp cận này
+            thừa nhận sự không chắc chắn, cho phép linh hoạt, và hỗ trợ chăm sóc dinh dưỡng an toàn hơn.
           </p>
 
           <div className="mt-6 space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Why Clinicians Work with Ranges
+                Tại Sao Các Bác Sĩ Lâm Sàng Làm Việc Với Phạm Vi
               </h3>
               <p>
-                Clinicians work with ranges because they recognize that nutrition needs are estimates, not exact
-                values. A range acknowledges that we don't know the precise need—we're working with estimates
-                based on population averages, not individual measurements.
+                Các bác sĩ lâm sàng làm việc với phạm vi vì họ nhận ra rằng nhu cầu dinh dưỡng là ước tính, không phải giá trị
+                chính xác. Một phạm vi thừa nhận rằng chúng ta không biết nhu cầu chính xác—chúng ta đang làm việc với ước tính
+                dựa trên trung bình dân số, không phải đo lường cá nhân.
               </p>
               <p>
-                Working with ranges is more honest than claiming an exact number. It reflects the reality that
-                different estimation methods produce different results, and that's normal. It also acknowledges
-                that individual variation means the same calculation might not fit everyone, or even the same
-                person in different situations.
+                Làm việc với phạm vi trung thực hơn so với tuyên bố một con số chính xác. Nó phản ánh thực tế rằng
+                các phương pháp ước tính khác nhau tạo ra kết quả khác nhau, và điều đó là bình thường. Nó cũng thừa nhận
+                rằng sự biến đổi cá nhân có nghĩa là cùng một tính toán có thể không phù hợp với tất cả mọi người, hoặc thậm chí cùng một
+                người trong các tình huống khác nhau.
               </p>
               <p>
-                Ranges also prevent overconfidence. A single number can feel like a "target" to hit precisely, which
-                isn't how nutrition works. Ranges remind us that we're working with estimates, not exact values.
-                This helps clinicians, nurses, and students avoid the trap of treating calculations as definitive
-                answers.
+                Phạm vi cũng ngăn chặn sự tự tin quá mức. Một con số duy nhất có thể cảm thấy như một "mục tiêu" để đạt chính xác, điều
+                không phải là cách dinh dưỡng hoạt động. Phạm vi nhắc nhở chúng ta rằng chúng ta đang làm việc với ước tính, không phải giá trị chính xác.
+                Điều này giúp các bác sĩ lâm sàng, y tá và sinh viên tránh cạm bẫy đối xử với tính toán như câu trả lời
+                dứt khoát.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                How Ranges Allow Flexibility
+                Cách Phạm Vi Cho Phép Linh Hoạt
               </h3>
               <p>
-                Ranges allow flexibility because a person might do well anywhere within the range, depending on
-                their appetite, tolerance, activity level, and other factors. This flexibility is important when
-                dealing with real patients who have varying daily capacity.
+                Phạm vi cho phép linh hoạt vì một người có thể làm tốt ở bất kỳ đâu trong phạm vi, tùy thuộc vào
+                cảm giác ngon miệng, khả năng chịu đựng, mức độ hoạt động và các yếu tố khác của họ. Sự linh hoạt này quan trọng khi
+                đối phó với bệnh nhân thực tế có khả năng hàng ngày thay đổi.
               </p>
               <p>
-                For example, someone might do well at the lower end of the range on days when they're feeling unwell
-                or have less appetite, and at the higher end on days when they're feeling better and more active.
-                The range accommodates this natural variation without creating rigid targets that don't fit reality.
+                Ví dụ, ai đó có thể làm tốt ở cuối thấp hơn của phạm vi vào những ngày họ cảm thấy không khỏe
+                hoặc có cảm giác ngon miệng ít hơn, và ở cuối cao hơn vào những ngày họ cảm thấy tốt hơn và hoạt động nhiều hơn.
+                Phạm vi chứa đựng sự biến đổi tự nhiên này mà không tạo ra các mục tiêu cứng nhắc không phù hợp với thực tế.
               </p>
               <p>
-                Ranges also allow the care team to start conservatively and adjust based on what the patient can
-                actually tolerate. Instead of trying to hit an exact number immediately, the team can start within
-                the range and adjust up or down based on patient response. This approach is safer and more realistic
-                than forcing a specific target.
+                Phạm vi cũng cho phép nhóm chăm sóc bắt đầu một cách bảo thủ và điều chỉnh dựa trên những gì bệnh nhân có thể
+                thực sự chịu đựng. Thay vì cố gắng đạt một con số chính xác ngay lập tức, nhóm có thể bắt đầu trong
+                phạm vi và điều chỉnh lên hoặc xuống dựa trên phản ứng bệnh nhân. Cách tiếp cận này an toàn hơn và thực tế hơn
+                so với ép buộc một mục tiêu cụ thể.
               </p>
               <p>
-                This flexibility is especially important because tolerance and intake can change day-to-day. A
-                range accommodates these changes, while a single number would require constant adjustment or create
-                unrealistic expectations.
+                Sự linh hoạt này đặc biệt quan trọng vì khả năng chịu đựng và lượng ăn vào có thể thay đổi hàng ngày. Một
+                phạm vi chứa đựng những thay đổi này, trong khi một con số duy nhất sẽ yêu cầu điều chỉnh liên tục hoặc tạo ra
+                kỳ vọng không thực tế.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                How Monitoring Guides Adjustment
+                Cách Theo Dõi Hướng Dẫn Điều Chỉnh
               </h3>
               <p>
-                Ranges guide monitoring and adjustment. If someone consistently falls below the range, it signals
-                a need to reassess—maybe the range needs adjustment, or maybe there are barriers to eating that need
-                to be addressed. If someone consistently exceeds the range, it might signal that the range needs
-                adjustment, or that there are concerns about overfeeding.
+                Phạm vi hướng dẫn theo dõi và điều chỉnh. Nếu ai đó liên tục rơi xuống dưới phạm vi, nó báo hiệu
+                nhu cầu đánh giá lại—có thể phạm vi cần điều chỉnh, hoặc có thể có rào cản ăn uống cần
+                được giải quyết. Nếu ai đó liên tục vượt quá phạm vi, nó có thể báo hiệu rằng phạm vi cần
+                điều chỉnh, hoặc có mối quan tâm về việc cho ăn quá mức.
               </p>
               <p>
-                However, the range itself isn't the only guide. More importantly, monitoring how the person responds
-                guides adjustment. If someone is doing well (healing, maintaining weight, feeling better) even if
-                they're below the calculated range, that might be appropriate for them. If someone is struggling
-                (poor healing, continued weight loss, weakness) even if they're meeting the range, that signals
-                a need to reassess.
+                Tuy nhiên, phạm vi tự nó không phải là hướng dẫn duy nhất. Quan trọng hơn, theo dõi cách người đó phản ứng
+                hướng dẫn điều chỉnh. Nếu ai đó đang làm tốt (chữa lành, duy trì cân nặng, cảm thấy tốt hơn) ngay cả khi
+                họ ở dưới phạm vi được tính toán, điều đó có thể phù hợp với họ. Nếu ai đó đang vật lộn
+                (chữa lành kém, tiếp tục giảm cân, yếu) ngay cả khi họ đang đáp ứng phạm vi, điều đó báo hiệu
+                nhu cầu đánh giá lại.
               </p>
               <p>
-                Nurses' daily monitoring of intake, symptoms, and patient response provides essential information
-                for adjustment. This monitoring shows not just whether someone meets a number, but how they're
-                actually responding. Clinicians use this information to adjust the plan—not just to hit a target,
-                but to support the person's actual needs and response.
+                Theo dõi hàng ngày của y tá về lượng ăn vào, triệu chứng và phản ứng bệnh nhân cung cấp thông tin thiết yếu
+                cho điều chỉnh. Theo dõi này cho thấy không chỉ liệu ai đó có đáp ứng một con số, mà cách họ
+                thực sự đang phản ứng. Các bác sĩ lâm sàng sử dụng thông tin này để điều chỉnh kế hoạch—không chỉ để đạt mục tiêu,
+                mà để hỗ trợ nhu cầu và phản ứng thực tế của người đó.
               </p>
               <p>
-                This ongoing process of monitoring and adjustment is what makes ranges useful. The range provides
-                structure and guidance, but patient response determines the actual plan. This is why reassessment
-                is central to clinical nutrition—the range is a starting point, not a fixed destination.
+                Quy trình liên tục này của theo dõi và điều chỉnh là điều làm cho phạm vi hữu ích. Phạm vi cung cấp
+                cấu trúc và hướng dẫn, nhưng phản ứng bệnh nhân xác định kế hoạch thực tế. Đây là lý do tại sao đánh giá lại
+                là trung tâm của dinh dưỡng lâm sàng—phạm vi là điểm khởi đầu, không phải điểm đến cố định.
               </p>
             </div>
           </div>
 
           <EducationalNote variant="clinical-insight">
             <p>
-              <strong>How experienced clinicians work:</strong> A clinician calculates needs using multiple methods
-              and gets different results from each method. They establish a range to account for this variation and
-              uncertainty. They start the patient conservatively within the range. The nurse monitors daily intake
-              and observes how the patient is tolerating nutrition and how they're responding clinically. Based on
-              this monitoring, the care team adjusts—they might gradually increase if the patient is tolerating well
-              and showing signs of improvement, or they might stay where they are, or even decrease if there are
-              concerns. The range guides them, but patient response determines the actual plan.
+              <strong>Cách các bác sĩ lâm sàng có kinh nghiệm làm việc:</strong> Một bác sĩ lâm sàng tính toán nhu cầu sử dụng nhiều phương pháp
+              và nhận được kết quả khác nhau từ mỗi phương pháp. Họ thiết lập một phạm vi để tính đến sự biến đổi và
+              không chắc chắn này. Họ bắt đầu bệnh nhân một cách bảo thủ trong phạm vi. Y tá theo dõi lượng ăn vào hàng ngày
+              và quan sát cách bệnh nhân đang dung nạp dinh dưỡng và cách họ đang phản ứng lâm sàng. Dựa trên
+              theo dõi này, nhóm chăm sóc điều chỉnh—họ có thể dần dần tăng nếu bệnh nhân đang dung nạp tốt
+              và cho thấy dấu hiệu cải thiện, hoặc họ có thể ở nơi họ đang ở, hoặc thậm chí giảm nếu có
+              mối quan tâm. Phạm vi hướng dẫn họ, nhưng phản ứng bệnh nhân xác định kế hoạch thực tế.
             </p>
           </EducationalNote>
           <p>
-            This approach recognizes that nutrition needs are complex, dynamic, and context-dependent. There's no
-            universal number because people and situations are too varied for simple answers. Ranges provide
-            structure while maintaining the flexibility that real clinical care requires.
+            Cách tiếp cận này nhận ra rằng nhu cầu dinh dưỡng là phức tạp, động và phụ thuộc vào bối cảnh. Không có
+            con số phổ quát vì con người và tình huống quá đa dạng cho câu trả lời đơn giản. Phạm vi cung cấp
+            cấu trúc trong khi duy trì sự linh hoạt mà chăm sóc lâm sàng thực tế đòi hỏi.
           </p>
         </ContentBlock>
       </ContentSection>
@@ -873,84 +873,84 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="takeaway-heading">
         <SectionHeading id="takeaway-heading" variant="blue">
-          What to Take Away
+          Điều Cần Rút Ra
         </SectionHeading>
         <ContentBlock>
           <p>
-            Understanding why there's no universal number for nutrition needs can feel overwhelming at first, but
-            it's actually reassuring. It means you don't need to find the "perfect" number—you need to think
-            thoughtfully about what's appropriate for each person in their specific situation. Here are the key
-            takeaways to guide your practice:
+            Hiểu tại sao không có con số phổ quát cho nhu cầu dinh dưỡng có thể cảm thấy quá tải lúc đầu, nhưng
+            nó thực sự yên tâm. Nó có nghĩa là bạn không cần tìm con số "hoàn hảo"—bạn cần suy nghĩ
+            cẩn thận về những gì phù hợp cho mỗi người trong tình huống cụ thể của họ. Đây là những điểm chính
+            cần rút ra để hướng dẫn thực hành của bạn:
           </p>
         </ContentBlock>
 
         <div className="mt-6 space-y-6">
           <div className="rounded-md bg-blue-50 border border-blue-200 p-5">
             <h3 className="text-lg font-semibold text-blue-900 mb-3">
-              No Single Correct Number Exists
+              Không Có Con Số Đúng Duy Nhất Tồn Tại
             </h3>
             <p className="text-blue-800 mb-2">
-              This is actually good news. It means you don't need to worry about finding the "perfect" answer.
-              Different estimation methods produce different numbers, and that's normal. Patients with the same
-              weight may have different needs. Needs change over time. This variation is real and expected—it's
-              not a flaw in your assessment or a sign that you're doing something wrong.
+              Đây thực sự là tin tốt. Nó có nghĩa là bạn không cần lo lắng về việc tìm câu trả lời "hoàn hảo".
+              Các phương pháp ước tính khác nhau tạo ra các con số khác nhau, và điều đó là bình thường. Bệnh nhân có cùng
+              cân nặng có thể có nhu cầu khác nhau. Nhu cầu thay đổi theo thời gian. Sự biến đổi này là thực tế và dự kiến—nó
+              không phải là lỗi trong đánh giá của bạn hoặc dấu hiệu rằng bạn đang làm sai điều gì đó.
             </p>
             <p className="text-blue-800">
-              Instead of chasing an exact number, think in ranges. Ranges acknowledge uncertainty and allow
-              flexibility. They provide useful guidance without creating rigid targets that don't fit reality.
-              This approach is more honest and more practical than trying to find a single "correct" answer.
+              Thay vì theo đuổi một con số chính xác, hãy suy nghĩ trong phạm vi. Phạm vi thừa nhận sự không chắc chắn và cho phép
+              linh hoạt. Chúng cung cấp hướng dẫn hữu ích mà không tạo ra các mục tiêu cứng nhắc không phù hợp với thực tế.
+              Cách tiếp cận này trung thực hơn và thực tế hơn so với cố gắng tìm một câu trả lời "đúng" duy nhất.
             </p>
           </div>
 
           <div className="rounded-md bg-blue-50 border border-blue-200 p-5">
             <h3 className="text-lg font-semibold text-blue-900 mb-3">
-              Numbers Support Thinking, Not Decisions
+              Số Liệu Hỗ Trợ Suy Nghĩ, Không Phải Quyết Định
             </h3>
             <p className="text-blue-800 mb-2">
-              Clinical tools—calculators, formulas, screening tools—are valuable. They help you estimate needs,
-              identify ranges, and structure your thinking. They provide starting points and help you consider
-              important factors. But they don't make decisions for you.
+              Công cụ lâm sàng—máy tính, công thức, công cụ sàng lọc—có giá trị. Chúng giúp bạn ước tính nhu cầu,
+              xác định phạm vi, và cấu trúc suy nghĩ của bạn. Chúng cung cấp điểm khởi đầu và giúp bạn xem xét
+              các yếu tố quan trọng. Nhưng chúng không đưa ra quyết định cho bạn.
             </p>
             <p className="text-blue-800">
-              Numbers inform your thinking, but clinical judgment guides your decisions. The whole person—their
-              symptoms, their context, their response, their goals of care—matters more than any calculation.
-              Use tools to support your thinking, but let judgment determine the plan. This isn't about ignoring
-              numbers—it's about using them appropriately, as aids to thinking rather than replacements for judgment.
+              Số liệu thông báo suy nghĩ của bạn, nhưng phán đoán lâm sàng hướng dẫn quyết định của bạn. Toàn bộ con người—các
+              triệu chứng của họ, bối cảnh của họ, phản ứng của họ, mục tiêu chăm sóc của họ—quan trọng hơn bất kỳ tính toán nào.
+              Sử dụng công cụ để hỗ trợ suy nghĩ của bạn, nhưng để phán đoán xác định kế hoạch. Đây không phải về việc bỏ qua
+              số liệu—nó là về việc sử dụng chúng một cách phù hợp, như hỗ trợ cho suy nghĩ thay vì thay thế cho phán đoán.
             </p>
           </div>
 
           <div className="rounded-md bg-blue-50 border border-blue-200 p-5">
             <h3 className="text-lg font-semibold text-blue-900 mb-3">
-              Clinical Context and Reassessment Matter Most
+              Bối Cảnh Lâm Sàng Và Đánh Giá Lại Quan Trọng Nhất
             </h3>
             <p className="text-blue-800 mb-2">
-              The most important factors in nutrition care aren't the numbers from calculations—they're the clinical
-              context and ongoing reassessment. What's the person's situation? What are their goals? What can they
-              actually tolerate? How are they responding? These questions matter more than any formula.
+              Các yếu tố quan trọng nhất trong chăm sóc dinh dưỡng không phải là số liệu từ tính toán—chúng là bối cảnh
+              lâm sàng và đánh giá lại liên tục. Tình huống của người đó là gì? Mục tiêu của họ là gì? Họ có thể
+              thực sự chịu đựng gì? Họ đang phản ứng như thế nào? Những câu hỏi này quan trọng hơn bất kỳ công thức nào.
             </p>
             <p className="text-blue-800">
-              Reassessment is central to clinical nutrition. Initial estimates are starting points, not fixed
-              targets. Regular reassessment—informed by nurses' daily monitoring, patient response, and clinical
-              changes—ensures that nutrition support remains appropriate as circumstances change. This ongoing
-              process of assessment, monitoring, and adjustment is what makes nutrition care effective. It's not
-              about finding the right number once—it's about staying responsive to change.
+              Đánh giá lại là trung tâm của dinh dưỡng lâm sàng. Ước tính ban đầu là điểm khởi đầu, không phải mục tiêu
+              cố định. Đánh giá lại thường xuyên—được thông báo bởi theo dõi hàng ngày của y tá, phản ứng bệnh nhân và
+              thay đổi lâm sàng—đảm bảo rằng hỗ trợ dinh dưỡng vẫn phù hợp khi hoàn cảnh thay đổi. Quy trình liên tục
+              này của đánh giá, theo dõi và điều chỉnh là điều làm cho chăm sóc dinh dưỡng hiệu quả. Nó không
+              phải về việc tìm con số đúng một lần—nó là về việc luôn phản ứng với thay đổi.
             </p>
           </div>
 
-          <EducationalNote variant="info" title="A Calm Reminder">
+          <EducationalNote variant="info" title="Lời Nhắc Nhở Yên Tâm">
             <p>
-              If you're feeling uncertain about nutrition needs estimation, that's understandable. This is complex,
-              and there's no simple answer. But remember: you don't need to find the perfect number. You need to
-              think thoughtfully, consider the whole person, monitor response, and adjust as needed. That's what
-              experienced clinicians do—not because they have all the answers, but because they recognize that
-              thoughtful, responsive care matters more than exact calculations.
+              Nếu bạn cảm thấy không chắc chắn về ước tính nhu cầu dinh dưỡng, điều đó là dễ hiểu. Đây là phức tạp,
+              và không có câu trả lời đơn giản. Nhưng hãy nhớ: bạn không cần tìm con số hoàn hảo. Bạn cần
+              suy nghĩ cẩn thận, xem xét toàn bộ con người, theo dõi phản ứng, và điều chỉnh khi cần. Đó là những gì
+              các bác sĩ lâm sàng có kinh nghiệm làm—không phải vì họ có tất cả câu trả lời, mà vì họ nhận ra rằng
+              chăm sóc cẩn thận, phản ứng quan trọng hơn tính toán chính xác.
             </p>
             <p>
-              Use tools to support your thinking. Pay attention to what patients actually consume and how they
-              respond. Consider clinical context. Reassess regularly. Trust your judgment. This approach—thinking
-              in ranges, monitoring response, adjusting as needed—is how effective nutrition care works. You don't
-              need to have all the answers right away. You just need to think thoughtfully and stay responsive to
-              what you observe.
+              Sử dụng công cụ để hỗ trợ suy nghĩ của bạn. Chú ý đến những gì bệnh nhân thực sự tiêu thụ và cách họ
+              phản ứng. Xem xét bối cảnh lâm sàng. Đánh giá lại thường xuyên. Tin tưởng phán đoán của bạn. Cách tiếp cận này—suy nghĩ
+              trong phạm vi, theo dõi phản ứng, điều chỉnh khi cần—là cách chăm sóc dinh dưỡng hiệu quả hoạt động. Bạn không
+              cần có tất cả câu trả lời ngay lập tức. Bạn chỉ cần suy nghĩ cẩn thận và luôn phản ứng với
+              những gì bạn quan sát.
             </p>
           </EducationalNote>
         </div>
@@ -963,63 +963,63 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="learn-more-heading">
         <SectionHeading id="learn-more-heading" variant="blue">
-          Learn More
+          Tìm Hiểu Thêm
         </SectionHeading>
         <ContentBlock>
           <p>
-            This page explains why there's no universal number. For more detailed information about how
-            needs are estimated in practice, explore these resources:
+            Trang này giải thích tại sao không có con số phổ quát. Để biết thêm thông tin chi tiết về cách
+            nhu cầu được ước tính trong thực hành, hãy khám phá các tài nguyên này:
           </p>
         </ContentBlock>
 
         <div className="mt-6 space-y-4">
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Needs Estimation in Detail
+              Ước Tính Nhu Cầu Chi Tiết
             </h3>
             <p className="text-sm text-blue-800 mb-3">
-              Learn more about different estimation methods, why ranges matter, and how clinicians
-              approach needs estimation in practice.
+              Tìm hiểu thêm về các phương pháp ước tính khác nhau, tại sao phạm vi quan trọng, và cách các bác sĩ lâm sàng
+              tiếp cận ước tính nhu cầu trong thực hành.
             </p>
             <Link
               href="/knowledge/needs-estimation"
               className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
             >
-              Read about needs estimation →
+              Đọc về ước tính nhu cầu →
             </Link>
           </div>
 
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              The Complete Assessment Process
+              Quy Trình Đánh Giá Đầy Đủ
             </h3>
             <p className="text-sm text-blue-800 mb-3">
-              Understand how needs estimation fits into the broader assessment process, including
-              screening and intake assessment.
+              Hiểu cách ước tính nhu cầu phù hợp với quy trình đánh giá rộng hơn, bao gồm
+              sàng lọc và đánh giá lượng ăn vào.
             </p>
             <Link
               href="/knowledge/assessment-process"
               className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
             >
-              Read the assessment guide →
+              Đọc hướng dẫn đánh giá →
             </Link>
           </div>
 
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Interactive Tools
+              Công Cụ Tương Tác
             </h3>
             <p className="text-sm text-blue-800 mb-3">
-              Practice needs estimation with our interactive calculator, designed for learning:
+              Thực hành ước tính nhu cầu với máy tính tương tác của chúng tôi, được thiết kế cho việc học:
             </p>
             <Link
               href="/tools/energy-protein-calculator"
               className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
             >
-              Energy & Protein Calculator →
+              Máy Tính Năng Lượng & Protein →
             </Link>
             <p className="text-xs text-blue-700 mt-2 italic">
-              This tool is for educational purposes only and should not be used for clinical decision-making.
+              Công cụ này chỉ dành cho mục đích giáo dục và không nên được sử dụng để ra quyết định lâm sàng.
             </p>
           </div>
         </div>
@@ -1032,31 +1032,31 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="safety-heading">
         <SectionHeading id="safety-heading" variant="amber">
-          Safety & Limitations
+          An Toàn & Giới Hạn
         </SectionHeading>
-        <EducationalNote variant="warning" title="⚠️ Important Disclaimer">
+        <EducationalNote variant="warning" title="⚠️ Tuyên Bố Miễn Trừ Trách Nhiệm Quan Trọng">
           <p className="mb-2">
-            <strong>This site and its content are for educational purposes only.</strong> They do not provide
-            medical advice, diagnosis, or treatment. They do not create a clinician–patient relationship.
-            They must not be used for clinical decision-making, prescribing diets or feeds, or making
-            treatment decisions.
+            <strong>Trang web này và nội dung của nó chỉ dành cho mục đích giáo dục.</strong> Chúng không cung cấp
+            lời khuyên y tế, chẩn đoán hoặc điều trị. Chúng không tạo mối quan hệ bác sĩ–bệnh nhân.
+            Chúng không được sử dụng để ra quyết định lâm sàng, chỉ định chế độ ăn hoặc nuôi ăn, hoặc đưa ra
+            quyết định điều trị.
           </p>
           <p>
-            If you have concerns about nutrition status or health, consult with a qualified healthcare
-            provider or registered dietitian for a personalized, clinical assessment.
+            Nếu bạn có mối quan tâm về tình trạng dinh dưỡng hoặc sức khỏe, hãy tư vấn với nhà cung cấp chăm sóc sức khỏe
+            có trình độ hoặc chuyên gia dinh dưỡng đã đăng ký để được đánh giá lâm sàng cá nhân hóa.
           </p>
         </EducationalNote>
 
         <ContentBlock className="mt-6">
           <p>
-            This content is designed to support learning and understanding of clinical nutrition concepts.
-            It helps you understand why nutrition needs can't be reduced to universal numbers and how
-            clinicians think about needs estimation in practice.
+            Nội dung này được thiết kế để hỗ trợ học tập và hiểu biết về các khái niệm dinh dưỡng lâm sàng.
+            Nó giúp bạn hiểu tại sao nhu cầu dinh dưỡng không thể được giảm xuống thành các con số phổ quát và cách
+            các bác sĩ lâm sàng suy nghĩ về ước tính nhu cầu trong thực hành.
           </p>
           <p>
-            However, this content cannot and should not be used to make clinical decisions. Real clinical
-            assessment requires comprehensive evaluation, professional judgment, and consideration of the
-            full clinical context—none of which can be captured by educational content alone.
+            Tuy nhiên, nội dung này không thể và không nên được sử dụng để đưa ra quyết định lâm sàng. Đánh giá lâm sàng thực sự
+            đòi hỏi đánh giá toàn diện, phán đoán chuyên nghiệp và xem xét
+            toàn bộ bối cảnh lâm sàng—không có điều nào trong số này có thể được nắm bắt bởi nội dung giáo dục một mình.
           </p>
         </ContentBlock>
       </ContentSection>
