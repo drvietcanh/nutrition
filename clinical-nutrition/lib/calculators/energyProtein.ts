@@ -84,7 +84,7 @@ export function calculateSimpleWeightBasedNeeds(
     // or situations where standard g/kg rules are less reliable.
     if (w < 30 || w > 200) {
       warnings.push(
-        "The weight entered is outside the typical adult inpatient range; in practice, clinicians would check for fluid overload, measurement error, or the need for adjusted body weight."
+        "Cân nặng đã nhập nằm ngoài phạm vi điển hình của bệnh nhân nội trú người lớn; trong thực hành, các bác sĩ lâm sàng sẽ kiểm tra quá tải dịch, lỗi đo lường, hoặc nhu cầu cân nặng điều chỉnh."
       );
     }
 
@@ -109,31 +109,31 @@ export function calculateSimpleWeightBasedNeeds(
     };
 
     explanation.push(
-      "Energy needs were illustrated using a common educational rule of thumb of about 25–30 kcal/kg for many adult inpatients.",
-      "Protein needs were illustrated using a simple range of around 1.0–1.5 g/kg/day, which many guidelines use as a starting point for discussion.",
-      "This simple method will usually give different bands from more detailed equations, because it does not explicitly model age, sex, or activity level."
+      "Nhu cầu năng lượng được minh họa sử dụng quy tắc đơn giản giáo dục phổ biến khoảng 25–30 kcal/kg cho nhiều bệnh nhân nội trú người lớn.",
+      "Nhu cầu protein được minh họa sử dụng phạm vi đơn giản khoảng 1.0–1.5 g/kg/ngày, mà nhiều hướng dẫn sử dụng như điểm khởi đầu cho thảo luận.",
+      "Phương pháp đơn giản này thường sẽ cho các phạm vi khác với các phương trình chi tiết hơn, vì nó không mô hình hóa rõ ràng tuổi, giới tính, hoặc mức độ hoạt động."
     );
   } else {
     warnings.push(
-      "Weight was missing or implausible, so simple weight-based ranges could not be illustrated."
+      "Cân nặng bị thiếu hoặc không hợp lý, vì vậy các phạm vi dựa trên cân nặng đơn giản không thể được minh họa."
     );
   }
 
   if (input.heightCm != null && input.weightKg != null) {
     explanation.push(
-      "In practice, clinicians would also consider BMI and body composition, not just raw weight."
+      "Trong thực hành, các bác sĩ lâm sàng cũng sẽ xem xét BMI và thành phần cơ thể, không chỉ cân nặng thô."
     );
   }
 
   clinicalContextNotes.push(
-    "In everyday clinical practice, simple weight-based ranges are often used for quick bedside estimates, then refined using local guidelines and the full clinical picture.",
-    "Clinicians typically choose a starting point within the range, observe tolerance and progress (for example, weight, labs, and clinical course), and adjust rather than assuming the first estimate is exact.",
-    "These ranges do not account for all special situations (for example, severe obesity, multi-organ failure, or refeeding risk), where more specific guidance is usually required."
+    "Trong thực hành lâm sàng hàng ngày, các phạm vi dựa trên cân nặng đơn giản thường được sử dụng cho ước tính nhanh tại giường, sau đó được tinh chỉnh sử dụng hướng dẫn địa phương và toàn bộ bức tranh lâm sàng.",
+    "Các bác sĩ lâm sàng thường chọn một điểm khởi đầu trong phạm vi, quan sát khả năng dung nạp và tiến triển (ví dụ, cân nặng, xét nghiệm, và diễn biến lâm sàng), và điều chỉnh thay vì giả định ước tính đầu tiên là chính xác.",
+    "Các phạm vi này không tính đến tất cả các tình huống đặc biệt (ví dụ, béo phì nặng, suy đa cơ quan, hoặc nguy cơ tái cho ăn), nơi hướng dẫn cụ thể hơn thường được yêu cầu."
   );
 
   return {
     method: "simple-weight-based",
-    methodLabel: "Simple weight-based ranges (25–30 kcal/kg; 1.0–1.5 g/kg)",
+    methodLabel: "Phạm vi dựa trên cân nặng đơn giản (25–30 kcal/kg; 1.0–1.5 g/kg)",
     ranges,
     missingFields,
     warnings,
@@ -167,7 +167,7 @@ export function calculateEquationStyleNeeds(
   if (input.heightCm == null) {
     missingFields.push("heightCm");
     warnings.push(
-      "Height was missing, so an equation-style example cannot be fully illustrated; consider using simple weight-based ranges or adding height."
+      "Chiều cao bị thiếu, vì vậy ví dụ kiểu phương trình không thể được minh họa đầy đủ; hãy xem xét sử dụng phạm vi dựa trên cân nặng đơn giản hoặc thêm chiều cao."
     );
   }
 
@@ -197,7 +197,7 @@ export function calculateEquationStyleNeeds(
       break;
     default:
       warnings.push(
-        "Disease context was not specified or recognised; a broader stress band was used to emphasise uncertainty."
+        "Bối cảnh bệnh không được chỉ định hoặc nhận dạng; một dải stress rộng hơn được sử dụng để nhấn mạnh sự không chắc chắn."
       );
       // Use a slightly broader band when context is unclear.
       stressFactorLower = 0.9;
@@ -241,25 +241,25 @@ export function calculateEquationStyleNeeds(
     };
 
     explanation.push(
-      "A baseline band of around 20–25 kcal/kg was used and then multiplied by a small stress factor derived from the disease context.",
-      "Protein ranges were nudged upwards in higher-stress settings to illustrate how inflammation and catabolism can increase requirements.",
-      "Compared with simple weight-based rules, this approach often gives slightly different bands because it makes illness-related stress more explicit."
+      "Một dải cơ bản khoảng 20–25 kcal/kg được sử dụng và sau đó nhân với một hệ số stress nhỏ có nguồn gốc từ bối cảnh bệnh.",
+      "Phạm vi protein được đẩy lên cao hơn trong các cài đặt stress cao hơn để minh họa cách viêm và dị hóa có thể tăng nhu cầu.",
+      "So với quy tắc dựa trên cân nặng đơn giản, cách tiếp cận này thường cho các phạm vi hơi khác vì nó làm cho stress liên quan đến bệnh rõ ràng hơn."
     );
   } else {
     warnings.push(
-      "Weight was missing or implausible, so equation-style ranges could not be illustrated."
+      "Cân nặng bị thiếu hoặc không hợp lý, vì vậy các phạm vi kiểu phương trình không thể được minh họa."
     );
   }
 
   clinicalContextNotes.push(
-    "In practice, equation-based methods may use more detailed inputs (for example, age, sex, height, and temperature) and are anchored to local protocols.",
-    "Clinicians usually compare equation outputs with simpler rules of thumb to see whether they tell a consistent story before choosing a working estimate.",
-    "Stress factors are usually chosen cautiously and revisited in light of tolerance, metabolic response, and changes in clinical status; reassessment is a routine part of care."
+    "Trong thực hành, các phương pháp dựa trên phương trình có thể sử dụng đầu vào chi tiết hơn (ví dụ, tuổi, giới tính, chiều cao, và nhiệt độ) và được neo vào giao thức địa phương.",
+    "Các bác sĩ lâm sàng thường so sánh đầu ra phương trình với quy tắc đơn giản hơn để xem liệu chúng có kể một câu chuyện nhất quán không trước khi chọn một ước tính làm việc.",
+    "Các hệ số stress thường được chọn một cách thận trọng và được xem xét lại dựa trên khả năng dung nạp, phản ứng chuyển hóa, và thay đổi trong tình trạng lâm sàng; đánh giá lại là một phần thường quy của chăm sóc."
   );
 
   return {
     method: "equation-educational",
-    methodLabel: "Equation-style ranges (base 20–25 kcal/kg with stress factors)",
+    methodLabel: "Phạm vi kiểu phương trình (cơ sở 20–25 kcal/kg với hệ số stress)",
     ranges,
     missingFields,
     warnings,
