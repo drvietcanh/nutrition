@@ -413,8 +413,8 @@ export default function WhyIntakeFallsShortPage() {
               <li>Anxiety about breathing can reduce appetite</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> When patients are struggling to breathe, eating 
-              is understandably not a priority. Breathing comes first, and that's appropriate.
+              <strong>Điều này là phổ biến và được mong đợi.</strong> Khi bệnh nhân đang vật lộn để thở, ăn 
+              hiểu được không phải là ưu tiên. Thở đến trước, và đó là phù hợp.
             </p>
           </article>
 
@@ -432,9 +432,9 @@ export default function WhyIntakeFallsShortPage() {
               <li>Fatigue making the physical act of eating too exhausting</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Functional limitations are consequences of illness 
-              or treatment, not patient choices. Patients may want to eat but physically cannot do so 
-              independently or safely.
+              <strong>Điều này là phổ biến và được mong đợi.</strong> Hạn chế chức năng là hậu quả của bệnh tật 
+              hoặc điều trị, không phải lựa chọn của bệnh nhân. Bệnh nhân có thể muốn ăn nhưng về mặt thể chất không thể làm như vậy 
+              một cách độc lập hoặc an toàn.
             </p>
           </article>
         </div>
@@ -510,8 +510,8 @@ export default function WhyIntakeFallsShortPage() {
               explain why intake gaps occur even when nutrition is ordered.
             </p>
             <p className="text-sm text-gray-600 italic mt-1">
-              <strong>This is common and expected.</strong> Fasting for procedures is necessary for safety, 
-              not a system failure. These interruptions are expected parts of clinical care.
+              <strong>Điều này là phổ biến và được mong đợi.</strong> Nhịn ăn cho thủ thuật là cần thiết cho an toàn, 
+              không phải thất bại hệ thống. Những gián đoạn này là các phần được mong đợi của chăm sóc lâm sàng.
             </p>
           </article>
 
@@ -534,8 +534,8 @@ export default function WhyIntakeFallsShortPage() {
               surgery, and dinner arrives when they're too nauseous to eat.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> In busy clinical settings, meals may be missed 
-              due to competing priorities. This isn't a failure—it's the reality of complex care.
+              <strong>Điều này là phổ biến và được mong đợi.</strong> Trong môi trường lâm sàng bận rộn, bữa ăn có thể bị bỏ lỡ 
+              do các ưu tiên cạnh tranh. Đây không phải là thất bại—đó là thực tế của chăm sóc phức tạp.
             </p>
           </article>
 
@@ -567,9 +567,9 @@ export default function WhyIntakeFallsShortPage() {
               volume tells you what the patient actually received.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Tube feeding interruptions are necessary for 
-              procedures, safety, and tolerance. The goal is to monitor and minimize gaps, not eliminate 
-              all interruptions.
+              <strong>Điều này là phổ biến và được mong đợi.</strong> Gián đoạn cho ăn qua ống là cần thiết cho 
+              thủ thuật, an toàn, và khả năng dung nạp. Mục tiêu là theo dõi và giảm thiểu khoảng cách, không loại bỏ 
+              tất cả gián đoạn.
             </p>
           </article>
 
@@ -597,9 +597,9 @@ export default function WhyIntakeFallsShortPage() {
               intake (not just what was served) helps the team understand the real situation.
             </p>
             <p className="text-sm text-gray-600 italic mt-1">
-              <strong>This is common and expected.</strong> Fixed meal times are necessary for efficient 
-              food service operations. This is a system constraint, not a failure. We work within these 
-              constraints while finding ways to optimize intake.
+              <strong>Điều này là phổ biến và được mong đợi.</strong> Thời gian bữa ăn cố định là cần thiết cho hoạt động 
+              dịch vụ thực phẩm hiệu quả. Đây là một ràng buộc hệ thống, không phải thất bại. Chúng ta làm việc trong những 
+              ràng buộc này trong khi tìm cách tối ưu hóa lượng ăn vào.
             </p>
           </article>
         </div>
