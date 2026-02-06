@@ -81,66 +81,66 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="appeal-heading">
         <SectionHeading id="appeal-heading">
-          The Appeal of "One Correct Number"
+          Sự Hấp Dẫn Của "Một Con Số Đúng"
         </SectionHeading>
         <ContentBlock>
           <p>
-            It's natural to want a simple answer. A single number would be clear, definitive, and easy to use.
-            You could calculate it once, write it in the chart, and know exactly what to aim for. This appeal
-            is understandable, especially when you're learning or when clinical situations feel complex.
+            Muốn có một câu trả lời đơn giản là điều tự nhiên. Một con số duy nhất sẽ rõ ràng, dứt khoát và dễ sử dụng.
+            Bạn có thể tính toán một lần, ghi vào biểu đồ, và biết chính xác mục tiêu cần đạt. Sự hấp dẫn này
+            là dễ hiểu, đặc biệt khi bạn đang học hoặc khi các tình huống lâm sàng cảm thấy phức tạp.
           </p>
           <p>
-            Many clinicians and learners are drawn to this approach for several reasons:
+            Nhiều bác sĩ lâm sàng và người học bị thu hút bởi cách tiếp cận này vì một số lý do:
           </p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              <strong>Clear formulas</strong>: Step-by-step calculations with specific inputs and outputs feel
-              structured and learnable. They provide a sense of mastery—"if I follow the steps correctly, I'll
-              get the right answer." For students learning clinical nutrition, formulas offer a concrete way
-              to approach what can feel like an abstract problem.
+              <strong>Công thức rõ ràng</strong>: Tính toán từng bước với đầu vào và đầu ra cụ thể cảm thấy
+              có cấu trúc và có thể học được. Chúng cung cấp cảm giác thành thạo—"nếu tôi làm theo các bước đúng, tôi sẽ
+              nhận được câu trả lời đúng." Đối với sinh viên học dinh dưỡng lâm sàng, công thức cung cấp một cách cụ thể
+              để tiếp cận những gì có thể cảm thấy như một vấn đề trừu tượng.
             </li>
             <li>
-              <strong>Single targets</strong>: Having one number to aim for simplifies decision-making. Instead
-              of navigating uncertainty and ranges, you have a clear goal. For clinicians early in practice,
-              this can feel reassuring—you know what to write in the chart, what to order, what to monitor.
-              For nurses following protocols, it provides clear direction.
+              <strong>Mục tiêu đơn lẻ</strong>: Có một con số để nhắm tới đơn giản hóa việc ra quyết định. Thay vì
+              điều hướng sự không chắc chắn và phạm vi, bạn có một mục tiêu rõ ràng. Đối với các bác sĩ lâm sàng mới vào nghề,
+              điều này có thể cảm thấy yên tâm—bạn biết phải ghi gì vào biểu đồ, phải chỉ định gì, phải theo dõi gì.
+              Đối với y tá tuân theo giao thức, nó cung cấp hướng dẫn rõ ràng.
             </li>
             <li>
-              <strong>Exact-looking results</strong>: When a calculator shows "1,847 calories" or "72.3 grams of
-              protein," it looks precise and authoritative. That precision feels scientific and reliable. It's
-              easier to defend a specific number than to explain why you're working with a range.
+              <strong>Kết quả trông chính xác</strong>: Khi máy tính hiển thị "1,847 calo" hoặc "72.3 gram
+              protein," nó trông chính xác và có thẩm quyền. Độ chính xác đó cảm thấy khoa học và đáng tin cậy. Dễ
+              bảo vệ một con số cụ thể hơn là giải thích tại sao bạn đang làm việc với một phạm vi.
             </li>
           </ul>
           <p>
-            There's something else at play here, too: <strong>numbers feel safe and objective</strong>. In a field
-            where so much depends on judgment, experience, and interpretation, numbers offer a sense of certainty.
-            They seem to remove ambiguity. If the formula says 1,800 calories, that feels more concrete than
-            "probably somewhere between 1,600 and 2,000, depending on how they respond."
+            Có một điều khác đang diễn ra ở đây: <strong>số liệu cảm thấy an toàn và khách quan</strong>. Trong một lĩnh vực
+            nơi quá nhiều phụ thuộc vào phán đoán, kinh nghiệm và giải thích, số liệu cung cấp cảm giác chắc chắn.
+            Chúng dường như loại bỏ sự mơ hồ. Nếu công thức nói 1,800 calo, điều đó cảm thấy cụ thể hơn
+            "có lẽ đâu đó giữa 1,600 và 2,000, tùy thuộc vào cách họ phản ứng."
           </p>
           <p>
-            Numbers also <strong>simplify complex decisions</strong>. Clinical nutrition involves weighing many
-            factors: the patient's condition, their goals of care, what they can tolerate, what's practically
-            possible, and how they're responding. A single number cuts through that complexity. It gives you
-            something concrete to work with, something you can document, something you can defend if questioned.
+            Số liệu cũng <strong>đơn giản hóa các quyết định phức tạp</strong>. Dinh dưỡng lâm sàng liên quan đến việc cân nhắc nhiều
+            yếu tố: tình trạng bệnh nhân, mục tiêu chăm sóc của họ, những gì họ có thể chịu đựng, những gì thực tế
+            có thể, và cách họ đang phản ứng. Một con số duy nhất cắt qua sự phức tạp đó. Nó cho bạn
+            một cái gì đó cụ thể để làm việc, một cái gì đó bạn có thể ghi chép, một cái gì đó bạn có thể bảo vệ nếu bị chất vấn.
           </p>
           <p>
-            Many clinical tools seem to promise this: enter the patient's weight, age, and condition, and get
-            "the answer." For clinicians early in practice, this can feel reassuring. For nurses following protocols,
-            it can seem straightforward. For students learning calculations, it can appear like there's a right
-            way to do it.
+            Nhiều công cụ lâm sàng dường như hứa hẹn điều này: nhập cân nặng, tuổi và tình trạng của bệnh nhân, và nhận
+            "câu trả lời." Đối với các bác sĩ lâm sàng mới vào nghề, điều này có thể cảm thấy yên tâm. Đối với y tá tuân theo giao thức,
+            nó có thể có vẻ thẳng thắn. Đối với sinh viên học tính toán, nó có thể xuất hiện như có một cách đúng
+            để làm điều đó.
           </p>
           <p>
-            However, <strong>clinical nutrition doesn't work that way</strong>. There's no universal number that
-            applies to everyone, or even to the same person in different situations. Understanding why this is the
-            case—and why it's actually a good thing—helps healthcare teams provide better, safer nutrition care.
+            Tuy nhiên, <strong>dinh dưỡng lâm sàng không hoạt động theo cách đó</strong>. Không có con số phổ quát nào
+            áp dụng cho tất cả mọi người, hoặc thậm chí cho cùng một người trong các tình huống khác nhau. Hiểu tại sao điều này là
+            trường hợp—và tại sao nó thực sự là một điều tốt—giúp các nhóm chăm sóc sức khỏe cung cấp tốt hơn, an toàn hơn chăm sóc dinh dưỡng.
           </p>
-          <EducationalNote variant="info" title="Why This Matters">
+          <EducationalNote variant="info" title="Tại Sao Điều Này Quan Trọng">
             <p>
-              The desire for a single correct number can lead to overconfidence in calculations and underconfidence
-              in clinical judgment. Understanding why there's no universal number helps clinicians, nurses, and
-              students use tools appropriately—as aids to thinking, not replacements for judgment. Recognizing the
-              appeal of clear formulas and exact numbers helps us understand why we're drawn to them, which is the
-              first step in using them more safely.
+              Mong muốn một con số đúng duy nhất có thể dẫn đến tự tin quá mức vào tính toán và thiếu tự tin
+              trong phán đoán lâm sàng. Hiểu tại sao không có con số phổ quát giúp các bác sĩ lâm sàng, y tá và
+              sinh viên sử dụng công cụ một cách phù hợp—như hỗ trợ cho suy nghĩ, không phải thay thế cho phán đoán. Nhận ra
+              sự hấp dẫn của công thức rõ ràng và số chính xác giúp chúng ta hiểu tại sao chúng ta bị thu hút bởi chúng, đó là
+              bước đầu tiên trong việc sử dụng chúng an toàn hơn.
             </p>
           </EducationalNote>
         </ContentBlock>
@@ -155,73 +155,73 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="variation-heading">
         <SectionHeading id="variation-heading">
-          Why Nutrition Needs Vary Between Patients
+          Tại Sao Nhu Cầu Dinh Dưỡng Khác Nhau Giữa Các Bệnh Nhân
         </SectionHeading>
         <ContentBlock>
           <p>
-            Two patients with the same weight, age, height, and even the same medical condition can have very
-            different nutrition needs. This isn't a flaw in assessment—it's a reflection of real biological and
-            clinical variation. Understanding why this happens helps explain why there's no universal number.
+            Hai bệnh nhân có cùng cân nặng, tuổi, chiều cao và thậm chí cùng tình trạng y tế có thể có
+            nhu cầu dinh dưỡng rất khác nhau. Đây không phải là lỗi trong đánh giá—đó là phản ánh của sự biến đổi sinh học và
+            lâm sàng thực sự. Hiểu tại sao điều này xảy ra giúp giải thích tại sao không có con số phổ quát.
           </p>
           <p>
-            Here are the key sources of variability that make a difference in clinical practice:
+            Đây là các nguồn biến đổi chính tạo ra sự khác biệt trong thực hành lâm sàng:
           </p>
           <ul className="list-disc space-y-3 pl-6">
             <li>
-              <strong>Body composition</strong>: Two people with the same weight can have very different amounts
-              of muscle versus fat. Muscle tissue uses more energy than fat tissue, even at rest. Someone with
-              more muscle mass (visible muscle definition, stronger grip strength) typically needs more energy
-              than someone with more fat mass, even if they weigh the same. This is something nurses and clinicians
-              can observe during physical assessment.
+              <strong>Thành phần cơ thể</strong>: Hai người có cùng cân nặng có thể có lượng
+              cơ so với mỡ rất khác nhau. Mô cơ sử dụng nhiều năng lượng hơn mô mỡ, ngay cả khi nghỉ ngơi. Người có
+              khối lượng cơ nhiều hơn (định nghĩa cơ rõ ràng, sức nắm mạnh hơn) thường cần nhiều năng lượng hơn
+              người có khối lượng mỡ nhiều hơn, ngay cả khi họ nặng như nhau. Đây là điều y tá và bác sĩ lâm sàng
+              có thể quan sát trong đánh giá thể chất.
             </li>
             <li>
-              <strong>Illness severity</strong>: Two patients with the same diagnosis can have very different
-              disease severity, which affects how much energy their body needs. For example, two patients with
-              heart failure may have different cardiac function—one might be stable and active, while another
-              might be in severe heart failure with limited activity. The more severe the illness, the more it
-              can affect metabolic demands. This is why understanding the full clinical picture matters more
-              than just knowing the diagnosis.
+              <strong>Mức độ nghiêm trọng của bệnh</strong>: Hai bệnh nhân có cùng chẩn đoán có thể có
+              mức độ nghiêm trọng của bệnh rất khác nhau, điều này ảnh hưởng đến lượng năng lượng cơ thể họ cần. Ví dụ, hai bệnh nhân với
+              suy tim có thể có chức năng tim khác nhau—một có thể ổn định và hoạt động, trong khi người kia
+              có thể bị suy tim nặng với hoạt động hạn chế. Bệnh càng nghiêm trọng, nó càng
+              có thể ảnh hưởng đến nhu cầu chuyển hóa. Đây là lý do tại sao hiểu toàn bộ bức tranh lâm sàng quan trọng hơn
+              chỉ biết chẩn đoán.
             </li>
             <li>
-              <strong>Inflammation and stress response</strong>: When the body is dealing with inflammation,
-              infection, surgery, or other stressors, it needs more energy. This is why someone recovering from
-              surgery may need more than the same person when they're stable. The stress response increases
-              metabolic demands, sometimes significantly. This can change day-to-day based on procedures, infections,
-              or other clinical events. Nurses monitoring for signs of infection or inflammation, and clinicians
-              tracking procedures and complications, can observe these changes.
+              <strong>Viêm và phản ứng stress</strong>: Khi cơ thể đang xử lý viêm,
+              nhiễm trùng, phẫu thuật hoặc các stressor khác, nó cần nhiều năng lượng hơn. Đây là lý do tại sao người đang phục hồi sau
+              phẫu thuật có thể cần nhiều hơn cùng một người khi họ ổn định. Phản ứng stress tăng
+              nhu cầu chuyển hóa, đôi khi đáng kể. Điều này có thể thay đổi hàng ngày dựa trên thủ thuật, nhiễm trùng,
+              hoặc các sự kiện lâm sàng khác. Y tá theo dõi các dấu hiệu nhiễm trùng hoặc viêm, và bác sĩ lâm sàng
+              theo dõi thủ thuật và biến chứng, có thể quan sát những thay đổi này.
             </li>
             <li>
-              <strong>Physical activity</strong>: How much someone moves affects their energy needs. Someone who
-              is walking daily, doing physical therapy, or generally more active needs more energy than someone
-              who is bedbound or mostly sedentary. This can change during a hospital stay—someone might start
-              bedbound after surgery but become more active as they recover. Nurses observing activity levels
-              and clinicians tracking functional status notice these changes, which formulas can't predict.
+              <strong>Hoạt động thể chất</strong>: Mức độ di chuyển của ai đó ảnh hưởng đến nhu cầu năng lượng của họ. Người
+              đi bộ hàng ngày, làm vật lý trị liệu, hoặc nói chung hoạt động nhiều hơn cần nhiều năng lượng hơn người
+              nằm liệt giường hoặc chủ yếu ít vận động. Điều này có thể thay đổi trong thời gian nằm viện—ai đó có thể bắt đầu
+              nằm liệt giường sau phẫu thuật nhưng trở nên hoạt động hơn khi họ phục hồi. Y tá quan sát mức độ hoạt động
+              và bác sĩ lâm sàng theo dõi tình trạng chức năng nhận thấy những thay đổi này, điều mà công thức không thể dự đoán.
             </li>
             <li>
-              <strong>Age and functional status</strong>: Older adults may have different needs than younger
-              adults, and functional status (how well someone can perform daily activities) matters too. Someone
-              who is independent and active may have different needs than someone who is frail or dependent, even
-              at the same age. Functional status can change during illness and recovery, affecting needs over time.
+              <strong>Tuổi và tình trạng chức năng</strong>: Người cao tuổi có thể có nhu cầu khác với người trẻ
+              hơn, và tình trạng chức năng (mức độ ai đó có thể thực hiện các hoạt động hàng ngày) cũng quan trọng. Người
+              độc lập và hoạt động có thể có nhu cầu khác với người yếu đuối hoặc phụ thuộc, ngay cả
+              ở cùng tuổi. Tình trạng chức năng có thể thay đổi trong bệnh tật và phục hồi, ảnh hưởng đến nhu cầu theo thời gian.
             </li>
           </ul>
           <EducationalNote variant="clinical-insight">
             <p>
-              <strong>Clinical observation:</strong> Consider two patients with the same weight, age, and diagnosis.
-              Patient A has more muscle mass (visible muscle definition, stronger grip), is more active, and has
-              better organ function. Patient B has more fat mass, is less active, and has more severe illness.
+              <strong>Quan sát lâm sàng:</strong> Hãy xem xét hai bệnh nhân có cùng cân nặng, tuổi và chẩn đoán.
+              Bệnh nhân A có khối lượng cơ nhiều hơn (định nghĩa cơ rõ ràng, sức nắm mạnh hơn), hoạt động nhiều hơn và có
+              chức năng cơ quan tốt hơn. Bệnh nhân B có khối lượng mỡ nhiều hơn, hoạt động ít hơn và có bệnh nghiêm trọng hơn.
             </p>
             <p>
-              Even though they weigh the same, their actual energy needs may differ significantly. A formula that
-              only considers weight would give both patients the same target, missing this important difference.
-              This is why nurses observing activity levels and body composition, and clinicians considering illness
-              severity and functional status, matter so much.
+              Mặc dù họ nặng như nhau, nhu cầu năng lượng thực tế của họ có thể khác nhau đáng kể. Một công thức
+              chỉ xem xét cân nặng sẽ cho cả hai bệnh nhân cùng một mục tiêu, bỏ lỡ sự khác biệt quan trọng này.
+              Đây là lý do tại sao y tá quan sát mức độ hoạt động và thành phần cơ thể, và bác sĩ lâm sàng xem xét mức độ nghiêm trọng của bệnh
+              và tình trạng chức năng, quan trọng như vậy.
             </p>
           </EducationalNote>
           <p>
-            These sources of variability mean that even with the same inputs (age, weight, condition), two people
-            may have different actual needs. Formulas can't capture this individual variation, which is why they
-            provide estimates, not exact requirements. This is also why clinical observation—what nurses see,
-            what patients report, what the care team observes—is so valuable in nutrition assessment.
+            Các nguồn biến đổi này có nghĩa là ngay cả với cùng đầu vào (tuổi, cân nặng, tình trạng), hai người
+            có thể có nhu cầu thực tế khác nhau. Công thức không thể nắm bắt sự biến đổi cá nhân này, đó là lý do tại sao chúng
+            cung cấp ước tính, không phải yêu cầu chính xác. Đây cũng là lý do tại sao quan sát lâm sàng—những gì y tá thấy,
+            những gì bệnh nhân báo cáo, những gì nhóm chăm sóc quan sát—rất có giá trị trong đánh giá dinh dưỡng.
           </p>
         </ContentBlock>
       </ContentSection>
@@ -235,72 +235,72 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="dynamic-heading">
         <SectionHeading id="dynamic-heading">
-          Why Needs Change Over Time
+          Tại Sao Nhu Cầu Thay Đổi Theo Thời Gian
         </SectionHeading>
         <ContentBlock>
           <p>
-            A person's nutrition needs aren't static—they change over time. <strong>What someone needs today may
-            not be what they need tomorrow</strong>. This dynamic nature is another reason why there's no universal
-            number. Even if you could determine someone's "exact" need today, it might not be exact tomorrow.
+            Nhu cầu dinh dưỡng của một người không tĩnh—chúng thay đổi theo thời gian. <strong>Những gì ai đó cần hôm nay có thể
+            không phải là những gì họ cần ngày mai</strong>. Bản chất động này là một lý do khác tại sao không có con số
+            phổ quát. Ngay cả khi bạn có thể xác định nhu cầu "chính xác" của ai đó hôm nay, nó có thể không chính xác vào ngày mai.
           </p>
           <p>
-            Understanding how needs change helps explain why a single calculation isn't enough. Here are three
-            important ways needs shift over time:
+            Hiểu cách nhu cầu thay đổi giúp giải thích tại sao một tính toán đơn lẻ là không đủ. Đây là ba
+            cách quan trọng nhu cầu thay đổi theo thời gian:
           </p>
 
           <div className="mt-6 space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Acute Illness, Recovery, and Rehabilitation Differ
+                Bệnh Cấp Tính, Phục Hồi và Phục Hồi Chức Năng Khác Nhau
               </h3>
               <p>
-                The same person has different needs depending on where they are in their illness and recovery:
+                Cùng một người có nhu cầu khác nhau tùy thuộc vào vị trí của họ trong bệnh tật và phục hồi:
               </p>
               <ul className="list-disc space-y-2 pl-6 mt-3">
                 <li>
-                  <strong>During acute illness</strong>: When someone is critically ill, their body may need more
-                  energy to fight infection, heal, or maintain basic functions. However, they may also be unable to
-                  tolerate much nutrition due to nausea, pain, or other symptoms. This creates a challenging
-                  situation where needs might be high, but tolerance is low.
+                  <strong>Trong bệnh cấp tính</strong>: Khi ai đó bị bệnh nặng, cơ thể họ có thể cần nhiều
+                  năng lượng hơn để chống nhiễm trùng, chữa lành hoặc duy trì các chức năng cơ bản. Tuy nhiên, họ cũng có thể không thể
+                  chịu đựng nhiều dinh dưỡng do buồn nôn, đau hoặc các triệu chứng khác. Điều này tạo ra một tình huống
+                  thách thức nơi nhu cầu có thể cao, nhưng khả năng chịu đựng thấp.
                 </li>
                 <li>
-                  <strong>During recovery</strong>: As someone starts to recover, their body needs energy and protein
-                  to rebuild tissue, heal wounds, and regain strength. This is often when needs are highest—the body
-                  is both fighting illness and actively healing. At the same time, appetite and tolerance often improve,
-                  making it possible to meet these increased needs.
+                  <strong>Trong phục hồi</strong>: Khi ai đó bắt đầu phục hồi, cơ thể họ cần năng lượng và protein
+                  để tái tạo mô, chữa lành vết thương và lấy lại sức mạnh. Đây thường là khi nhu cầu cao nhất—cơ thể
+                  vừa chống lại bệnh tật vừa tích cực chữa lành. Đồng thời, cảm giác ngon miệng và khả năng chịu đựng thường cải thiện,
+                  làm cho việc đáp ứng những nhu cầu tăng lên này có thể.
                 </li>
                 <li>
-                  <strong>During rehabilitation</strong>: As someone moves into rehabilitation, they're often more
-                  active, which increases energy needs. However, the stress of acute illness may have passed, so
-                  metabolic demands might be different than during the acute phase. The focus shifts from healing
-                  to rebuilding strength and function.
+                  <strong>Trong phục hồi chức năng</strong>: Khi ai đó chuyển sang phục hồi chức năng, họ thường
+                  hoạt động nhiều hơn, điều này làm tăng nhu cầu năng lượng. Tuy nhiên, stress của bệnh cấp tính có thể đã qua, vì vậy
+                  nhu cầu chuyển hóa có thể khác với giai đoạn cấp tính. Trọng tâm chuyển từ chữa lành
+                  sang tái tạo sức mạnh và chức năng.
                 </li>
               </ul>
               <p className="mt-3">
-                A calculation done during acute illness won't fit the recovery phase. A calculation done during
-                recovery won't fit rehabilitation. This is why reassessment matters—the person's needs change
-                as their situation changes.
+                Một tính toán được thực hiện trong bệnh cấp tính sẽ không phù hợp với giai đoạn phục hồi. Một tính toán được thực hiện trong
+                phục hồi sẽ không phù hợp với phục hồi chức năng. Đây là lý do tại sao đánh giá lại quan trọng—nhu cầu của người đó thay đổi
+                khi tình huống của họ thay đổi.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Intake Tolerance Changes Before Needs Do
+                Khả Năng Chịu Đựng Lượng Ăn Vào Thay Đổi Trước Khi Nhu Cầu Thay Đổi
               </h3>
               <p>
-                There's an important timing issue in clinical nutrition: <strong>what someone can actually tolerate
-                often changes before their calculated needs do</strong>. This creates a gap between what formulas
-                suggest and what's actually possible.
+                Có một vấn đề thời gian quan trọng trong dinh dưỡng lâm sàng: <strong>những gì ai đó thực sự có thể chịu đựng
+                thường thay đổi trước khi nhu cầu được tính toán của họ thay đổi</strong>. Điều này tạo ra khoảng cách giữa những gì công thức
+                gợi ý và những gì thực sự có thể.
               </p>
               <p>
-                For example, someone might be nauseous, in pain, or struggling with depression, making it difficult
-                to eat. Their calculated needs might suggest 1,800 calories, but they can only tolerate 800–1,000
-                calories right now. The calculation doesn't change, but their ability to meet it does.
+                Ví dụ, ai đó có thể buồn nôn, đau, hoặc đang vật lộn với trầm cảm, làm cho việc ăn khó khăn.
+                Nhu cầu được tính toán của họ có thể gợi ý 1,800 calo, nhưng họ chỉ có thể chịu đựng 800–1,000
+                calo ngay bây giờ. Tính toán không thay đổi, nhưng khả năng đáp ứng của họ thì có.
               </p>
               <p>
-                Conversely, as someone recovers, their appetite and tolerance often improve before their calculated
-                needs decrease. They might be able to eat more than the initial calculation suggested, or they might
-                need more than the calculation suggests because they're actively healing and becoming more active.
+                Ngược lại, khi ai đó phục hồi, cảm giác ngon miệng và khả năng chịu đựng của họ thường cải thiện trước khi nhu cầu được tính toán
+                của họ giảm. Họ có thể có thể ăn nhiều hơn so với tính toán ban đầu gợi ý, hoặc họ có thể
+                cần nhiều hơn so với tính toán gợi ý vì họ đang tích cực chữa lành và trở nên hoạt động hơn.
               </p>
               <p>
                 This is why nurses' daily observations about what patients actually consume are so valuable—they
