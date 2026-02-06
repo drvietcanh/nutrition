@@ -33,28 +33,28 @@ export default function WhyIntakeFallsShortPage() {
           Uses relatable timeline (Monday to Friday) to help readers identify with the situation. */}
       <header className="space-y-4">
         <h1 className="text-2xl font-semibold sm:text-3xl text-gray-900">
-          Why Nutritional Intake Often Falls Short of Calculated Requirements
+          Vì sao Lượng Dinh dưỡng Thường Thiếu so với Yêu cầu Tính toán
         </h1>
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
           <p className="text-base text-gray-700 leading-relaxed mb-4">
-            <strong>Monday morning:</strong> You assess a 65-year-old patient recovering from surgery. 
-            Using standard equations, you calculate their nutritional needs: 1,800 kcal and 80g protein per day. 
-            You order a regular diet with high-protein supplements twice daily. The plan looks solid.
+            <strong>Sáng thứ Hai:</strong> Bạn đánh giá một bệnh nhân 65 tuổi đang phục hồi sau phẫu thuật. 
+            Sử dụng các phương trình tiêu chuẩn, bạn tính nhu cầu dinh dưỡng của họ: 1.800 kcal và 80g protein mỗi ngày. 
+            Bạn chỉ định chế độ ăn thường với bổ sung protein cao hai lần mỗi ngày. Kế hoạch trông vững chắc.
           </p>
           <p className="text-base text-gray-700 leading-relaxed mb-4">
-            <strong>Friday afternoon:</strong> You review the week's intake records. Despite your careful 
-            calculation and appropriate orders, the patient has been consuming only about 1,200 kcal and 50g 
-            protein per day—roughly 65% of what you calculated they need. You wonder: "Why is there such a gap?"
+            <strong>Chiều thứ Sáu:</strong> Bạn xem xét ghi chép lượng ăn trong tuần. Mặc dù tính toán cẩn thận 
+            và lệnh phù hợp của bạn, bệnh nhân chỉ tiêu thụ khoảng 1.200 kcal và 50g 
+            protein mỗi ngày—khoảng 65% những gì bạn tính họ cần. Bạn tự hỏi: "Vì sao có khoảng cách như vậy?"
           </p>
           <p className="text-base text-gray-700 leading-relaxed mb-3">
-            If this scenario feels familiar, you're not alone. This gap between calculated requirements and 
-            actual intake happens every day in clinical practice. It's not a failure—it's the reality of 
-            providing nutrition care to people who are unwell.
+            Nếu tình huống này cảm thấy quen thuộc, bạn không đơn độc. Khoảng cách giữa yêu cầu tính toán và 
+            lượng ăn thực tế xảy ra mỗi ngày trong thực hành lâm sàng. Đó không phải là thất bại—đó là thực tế của 
+            việc cung cấp chăm sóc dinh dưỡng cho những người đang bệnh.
           </p>
           <p className="text-base text-gray-700 leading-relaxed">
-            Understanding why this happens—and that it's expected—helps us interpret intake gaps with 
-            empathy rather than frustration, make practical decisions, and provide better care. This page 
-            explores the real-world factors that create these gaps and how to think about them realistically.
+            Hiểu vì sao điều này xảy ra—và rằng nó được dự kiến—giúp chúng ta diễn giải khoảng cách lượng ăn với 
+            sự đồng cảm thay vì thất vọng, đưa ra quyết định thực tế, và cung cấp chăm sóc tốt hơn. Trang này 
+            khám phá các yếu tố thực tế tạo ra những khoảng cách này và cách suy nghĩ về chúng một cách thực tế.
           </p>
         </div>
       </header>
@@ -71,26 +71,26 @@ export default function WhyIntakeFallsShortPage() {
           id="reality-gap-heading"
           className="text-xl font-semibold sm:text-2xl text-gray-900"
         >
-          The Gap Between Calculation and Reality
+          Khoảng cách Giữa Tính toán và Thực tế
         </h2>
         <p className="text-base text-gray-700 leading-relaxed">
-          In clinical nutrition, there's often a difference between:
+          Trong dinh dưỡng lâm sàng, thường có sự khác biệt giữa:
         </p>
         {/* Educational: Visual comparison helps readers understand the distinction
             between calculated requirements (ideal) and actual intake (reality). */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Calculated Requirements</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Yêu cầu Tính toán</h3>
             <p className="text-sm text-gray-700">
-              The estimated nutritional needs based on equations, clinical assessment, and guidelines. 
-              This represents what we <em>aim for</em>, not necessarily what we can achieve.
+              Nhu cầu dinh dưỡng ước tính dựa trên phương trình, đánh giá lâm sàng, và hướng dẫn. 
+              Điều này đại diện cho những gì chúng ta <em>hướng tới</em>, không nhất thiết những gì chúng ta có thể đạt được.
             </p>
           </div>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Actual Intake</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Lượng Ăn Thực tế</h3>
             <p className="text-sm text-gray-700">
-              What the patient <em>actually</em> consumes or receives. This is what affects 
-              health outcomes, and it's often less than calculated needs—and that's okay.
+              Những gì bệnh nhân <em>thực sự</em> tiêu thụ hoặc nhận được. Đây là điều ảnh hưởng đến 
+              kết quả sức khỏe, và nó thường ít hơn nhu cầu tính toán—và điều đó là ổn.
             </p>
           </div>
         </div>
@@ -101,43 +101,43 @@ export default function WhyIntakeFallsShortPage() {
           {/* Educational: Helps readers understand that calculations have limitations
               and don't account for real-world barriers. */}
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Calculations Assume Ideal Conditions</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Tính toán Giả định Điều kiện Lý tưởng</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
-              Nutritional equations and guidelines are based on research conducted under relatively controlled 
-              conditions. They assume patients can eat when hungry, have normal appetite, aren't interrupted 
-              by procedures, and have access to appealing food at appropriate times. In reality, clinical 
-              settings are far from ideal. Patients are unwell, procedures interrupt meals, medications affect 
-              appetite, and food service operates on fixed schedules. The calculation gives us a target, but 
-              it doesn't account for the real-world barriers patients face.
+              Phương trình và hướng dẫn dinh dưỡng dựa trên nghiên cứu được thực hiện trong điều kiện tương đối có kiểm soát. 
+              Chúng giả định bệnh nhân có thể ăn khi đói, có cảm giác ngon miệng bình thường, không bị gián đoạn 
+              bởi thủ thuật, và có tiếp cận thực phẩm hấp dẫn vào thời điểm thích hợp. Trong thực tế, môi trường 
+              lâm sàng xa rời lý tưởng. Bệnh nhân đang bệnh, thủ thuật gián đoạn bữa ăn, thuốc ảnh hưởng đến 
+              cảm giác ngon miệng, và dịch vụ thực phẩm hoạt động theo lịch trình cố định. Tính toán cho chúng ta một mục tiêu, nhưng 
+              nó không tính đến các rào cản thực tế mà bệnh nhân phải đối mặt.
             </p>
           </div>
 
           {/* Educational: Explains compounding effect of multiple barriers.
               Helps readers understand why gaps are so common. */}
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Real Patients Face Multiple Barriers</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Bệnh nhân Thực tế Đối mặt Nhiều Rào cản</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
-              Unlike the ideal conditions assumed by calculations, real patients face multiple barriers 
-              simultaneously. A patient might be nauseous from medications, miss meals due to procedures, 
-              find hospital food unappealing, and be too fatigued to eat—all in the same day. These barriers 
-              don't just add up; they compound. When a patient is nauseous, they're less likely to eat 
-              even if food is available. When they miss a meal due to a procedure, they may not feel hungry 
-              when the next meal arrives. Understanding that multiple barriers work together helps explain 
-              why intake gaps are so common.
+              Không giống như điều kiện lý tưởng được giả định bởi tính toán, bệnh nhân thực tế đối mặt với nhiều rào cản 
+              đồng thời. Một bệnh nhân có thể buồn nôn do thuốc, bỏ lỡ bữa ăn do thủ thuật, 
+              thấy thức ăn bệnh viện không hấp dẫn, và quá mệt mỏi để ăn—tất cả trong cùng một ngày. Những rào cản này 
+              không chỉ cộng lại; chúng tích lũy. Khi một bệnh nhân buồn nôn, họ ít có khả năng ăn 
+              ngay cả khi thức ăn có sẵn. Khi họ bỏ lỡ một bữa ăn do thủ thuật, họ có thể không cảm thấy đói 
+              khi bữa ăn tiếp theo đến. Hiểu rằng nhiều rào cản hoạt động cùng nhau giúp giải thích 
+              vì sao khoảng cách lượng ăn rất phổ biến.
             </p>
           </div>
 
           {/* Educational: Reframes intake as dynamic process, not static event.
               Helps readers understand why monitoring and adjustment matter. */}
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Intake Is a Process, Not a Single Event</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Lượng Ăn Là Một Quy trình, Không phải Sự kiện Đơn lẻ</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
-              We often think of nutrition intake as a simple equation: order food → patient eats → needs met. 
-              But intake is actually a complex process that happens over time, influenced by many factors. 
-              A patient's ability and willingness to eat changes throughout the day, from day to day, and 
-              as their condition changes. What they can eat on Monday after surgery may be very different 
-              from what they can eat on Friday as they recover. Intake isn't a single event we can control—it's 
-              an ongoing process that we monitor, support, and adapt to as the patient's situation evolves.
+              Chúng ta thường nghĩ về lượng ăn dinh dưỡng như một phương trình đơn giản: chỉ định thức ăn → bệnh nhân ăn → nhu cầu được đáp ứng. 
+              Nhưng lượng ăn thực sự là một quy trình phức tạp xảy ra theo thời gian, bị ảnh hưởng bởi nhiều yếu tố. 
+              Khả năng và sự sẵn sàng ăn của bệnh nhân thay đổi trong suốt ngày, từ ngày này sang ngày khác, và 
+              khi tình trạng của họ thay đổi. Những gì họ có thể ăn vào thứ Hai sau phẫu thuật có thể rất khác 
+              với những gì họ có thể ăn vào thứ Sáu khi họ phục hồi. Lượng ăn không phải là một sự kiện đơn lẻ chúng ta có thể kiểm soát—nó là 
+              một quy trình đang diễn ra mà chúng ta theo dõi, hỗ trợ, và thích ứng khi tình huống bệnh nhân phát triển.
             </p>
           </div>
         </div>
@@ -145,13 +145,13 @@ export default function WhyIntakeFallsShortPage() {
         {/* Educational: Normalizes intake gaps as expected, not failures */}
         <ClinicalRealityCallout>
           <p className="mb-2">
-            Intake gaps are common and expected, especially during acute illness. This is not a failure 
-            of the patient, the care team, or the system. It's a normal part of clinical nutrition practice.
+            Khoảng cách lượng ăn là phổ biến và được dự kiến, đặc biệt trong bệnh cấp tính. Đây không phải là thất bại 
+            của bệnh nhân, nhóm chăm sóc, hoặc hệ thống. Đó là một phần bình thường của thực hành dinh dưỡng lâm sàng.
           </p>
           <p>
-            Calculating needs gives us a target, but many factors beyond our control affect whether 
-            that target is reached. The goal is not perfection, but understanding the gap and making 
-            realistic, practical decisions about nutrition care.
+            Tính toán nhu cầu cho chúng ta một mục tiêu, nhưng nhiều yếu tố ngoài tầm kiểm soát của chúng ta ảnh hưởng đến việc 
+            mục tiêu đó có được đạt đến hay không. Mục tiêu không phải là sự hoàn hảo, mà là hiểu khoảng cách và đưa ra 
+            quyết định thực tế, thực hành về chăm sóc dinh dưỡng.
           </p>
         </ClinicalRealityCallout>
 
@@ -159,30 +159,30 @@ export default function WhyIntakeFallsShortPage() {
             in the scenarios. Reduces frustration by normalizing the experience. */}
         {/* Practical Examples for Different Roles */}
         <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 mt-4">
-          <h3 className="font-semibold text-gray-900 mb-3 text-sm">Real-World Scenarios You Might Encounter:</h3>
+          <h3 className="font-semibold text-gray-900 mb-3 text-sm">Tình huống Thực tế Bạn có thể Gặp:</h3>
           <div className="space-y-3 text-sm">
             <div>
-              <p className="text-gray-700 font-medium mb-1">As a nurse documenting intake:</p>
+              <p className="text-gray-700 font-medium mb-1">Là điều dưỡng ghi chép lượng ăn:</p>
               <p className="text-gray-600">
-                You note that a patient ordered for 1,800 kcal/day only ate about 50% of each meal. 
-                This isn't unusual—especially if they had a procedure today or are experiencing nausea. 
-                Document what they actually consumed. The team needs to know the real intake, not what was served.
+                Bạn ghi chú rằng một bệnh nhân được chỉ định 1.800 kcal/ngày chỉ ăn khoảng 50% mỗi bữa ăn. 
+                Điều này không bất thường—đặc biệt nếu họ có thủ thuật hôm nay hoặc đang trải qua buồn nôn. 
+                Ghi chép những gì họ thực sự tiêu thụ. Nhóm cần biết lượng ăn thực tế, không phải những gì được phục vụ.
               </p>
             </div>
             <div>
-              <p className="text-gray-700 font-medium mb-1">As a clinician reviewing intake:</p>
+              <p className="text-gray-700 font-medium mb-1">Là bác sĩ lâm sàng xem xét lượng ăn:</p>
               <p className="text-gray-600">
-                You see a patient receiving 70% of calculated needs. Before adjusting orders, consider: 
-                Is this expected given their clinical situation? Are they improving? Sometimes 70% is 
-                adequate for the current context, and intake will improve as they recover.
+                Bạn thấy một bệnh nhân nhận được 70% nhu cầu tính toán. Trước khi điều chỉnh lệnh, hãy cân nhắc: 
+                Điều này có được dự kiến cho tình huống lâm sàng của họ không? Họ có đang cải thiện không? Đôi khi 70% là 
+                đầy đủ cho bối cảnh hiện tại, và lượng ăn sẽ cải thiện khi họ phục hồi.
               </p>
             </div>
             <div>
-              <p className="text-gray-700 font-medium mb-1">As a medical student on rounds:</p>
+              <p className="text-gray-700 font-medium mb-1">Là sinh viên y khoa trong hội chẩn:</p>
               <p className="text-gray-600">
-                You hear that a patient isn't meeting their nutritional goals. This is a learning 
-                opportunity—ask why. Understanding the factors (procedures, symptoms, system issues) 
-                helps you learn to interpret intake gaps realistically.
+                Bạn nghe rằng một bệnh nhân không đáp ứng mục tiêu dinh dưỡng của họ. Đây là cơ hội học tập 
+                —hãy hỏi vì sao. Hiểu các yếu tố (thủ thuật, triệu chứng, vấn đề hệ thống) 
+                giúp bạn học cách diễn giải khoảng cách lượng ăn một cách thực tế.
               </p>
             </div>
           </div>
@@ -201,126 +201,125 @@ export default function WhyIntakeFallsShortPage() {
           id="patient-factors-heading"
           className="text-xl font-semibold sm:text-2xl text-gray-900"
         >
-          Patient-Related Factors
+          Yếu tố Liên quan đến Bệnh nhân
         </h2>
         <p className="text-base text-gray-700 leading-relaxed">
-          During illness, the body and mind respond in ways that naturally reduce intake. These aren't 
-          failures or refusals—they're normal physiological and psychological responses to being unwell. 
-          <strong> These factors are common and expected</strong> in clinical practice. Understanding this 
-          helps us approach intake gaps with empathy rather than frustration:
+          Trong bệnh tật, cơ thể và tâm trí phản ứng theo cách tự nhiên làm giảm lượng ăn. Đây không phải là 
+          thất bại hoặc từ chối—chúng là phản ứng sinh lý và tâm lý bình thường khi bị bệnh. 
+          <strong> Các yếu tố này là phổ biến và được dự kiến</strong> trong thực hành lâm sàng. Hiểu điều này 
+          giúp chúng ta tiếp cận khoảng cách lượng ăn với sự đồng cảm thay vì thất vọng:
         </p>
 
         {/* Educational: Each factor card explains a specific barrier with
             emphasis on "common and expected" to reduce blame. */}
         <div className="space-y-4 mt-4">
           <article className="border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Poor Appetite</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Cảm giác Ngon miệng Kém</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Loss of appetite (anorexia) is one of the most common reasons for reduced intake during illness. 
-              It can be caused by:
+              Mất cảm giác ngon miệng (chán ăn) là một trong những lý do phổ biến nhất cho giảm lượng ăn trong bệnh tật. 
+              Nó có thể được gây ra bởi:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>The body's stress response to illness (inflammatory cytokines suppress appetite)</li>
-              <li>Pain, discomfort, or nausea</li>
-              <li>Medications that affect appetite</li>
-              <li>Depression or anxiety</li>
-              <li>Fatigue making eating feel like too much effort</li>
+              <li>Phản ứng stress của cơ thể với bệnh tật (cytokine viêm ức chế cảm giác ngon miệng)</li>
+              <li>Đau, khó chịu, hoặc buồn nôn</li>
+              <li>Thuốc ảnh hưởng đến cảm giác ngon miệng</li>
+              <li>Trầm cảm hoặc lo âu</li>
+              <li>Mệt mỏi làm cho việc ăn cảm thấy như quá nhiều nỗ lực</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Poor appetite during illness is a normal 
-              physiological response, not a patient choice or lack of willpower. It's the body's way of 
-              conserving energy for healing.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Cảm giác ngon miệng kém trong bệnh tật là phản ứng 
+              sinh lý bình thường, không phải lựa chọn của bệnh nhân hoặc thiếu ý chí. Đó là cách cơ thể 
+              bảo tồn năng lượng cho chữa lành.
             </p>
           </article>
 
           <article className="border-l-4 border-purple-500 bg-purple-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Early Satiety</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">No Sớm</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Patients may feel full after eating only small amounts. This can occur due to:
+              Bệnh nhân có thể cảm thấy no sau khi chỉ ăn lượng nhỏ. Điều này có thể xảy ra do:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Delayed gastric emptying from illness or medications</li>
-              <li>Abdominal distension or pressure</li>
-              <li>Slowed digestion during illness</li>
-              <li>Medications affecting stomach motility</li>
-              <li>Anxiety affecting digestion</li>
+              <li>Làm rỗng dạ dày chậm do bệnh tật hoặc thuốc</li>
+              <li>Chướng bụng hoặc áp lực</li>
+              <li>Tiêu hóa chậm trong bệnh tật</li>
+              <li>Thuốc ảnh hưởng đến nhu động dạ dày</li>
+              <li>Lo âu ảnh hưởng đến tiêu hóa</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Early satiety is a normal response to illness, 
-              not a sign that the patient isn't trying. They physically cannot eat more, even if they want to.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> No sớm là phản ứng bình thường với bệnh tật, 
+              không phải dấu hiệu rằng bệnh nhân không cố gắng. Họ về mặt thể chất không thể ăn nhiều hơn, ngay cả khi họ muốn.
             </p>
           </article>
 
           <article className="border-l-4 border-green-500 bg-green-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Fatigue</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Mệt mỏi</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Illness and treatment cause fatigue that makes eating physically exhausting:
+              Bệnh tật và điều trị gây mệt mỏi làm cho việc ăn trở nên kiệt sức về thể chất:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Chewing and swallowing require energy that patients may not have</li>
-              <li>Meal preparation or self-feeding becomes too tiring</li>
-              <li>Patients may fall asleep during meals</li>
-              <li>Fatigue reduces motivation to eat</li>
-              <li>Treatment side effects compound fatigue</li>
+              <li>Nhai và nuốt đòi hỏi năng lượng mà bệnh nhân có thể không có</li>
+              <li>Chuẩn bị bữa ăn hoặc tự ăn trở nên quá mệt mỏi</li>
+              <li>Bệnh nhân có thể ngủ trong bữa ăn</li>
+              <li>Mệt mỏi làm giảm động lực ăn</li>
+              <li>Tác dụng phụ điều trị tích lũy mệt mỏi</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Fatigue during illness is normal. Eating requires 
-              energy, and when patients are exhausted, eating can feel overwhelming. This isn't laziness—it's 
-              the reality of being unwell.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Mệt mỏi trong bệnh tật là bình thường. Ăn đòi hỏi 
+              năng lượng, và khi bệnh nhân kiệt sức, ăn có thể cảm thấy quá tải. Đây không phải lười biếng—đó là 
+              thực tế của việc bị bệnh.
             </p>
           </article>
 
           <article className="border-l-4 border-amber-500 bg-amber-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Taste Changes</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Thay đổi Vị giác</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Illness, medications, and treatments can dramatically alter how food tastes:
+              Bệnh tật, thuốc, và điều trị có thể thay đổi đáng kể cách thức ăn có vị:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Metallic taste from medications or treatments</li>
-              <li>Altered taste perception (dysgeusia) making food taste bland, bitter, or "off"</li>
-              <li>Loss of taste sensation</li>
-              <li>Foods that were once favorites become unappealing</li>
-              <li>Changes in smell affecting taste perception</li>
+              <li>Vị kim loại từ thuốc hoặc điều trị</li>
+              <li>Thay đổi nhận thức vị giác (rối loạn vị giác) làm thức ăn có vị nhạt, đắng, hoặc "sai"</li>
+              <li>Mất cảm giác vị giác</li>
+              <li>Thực phẩm từng là yêu thích trở nên không hấp dẫn</li>
+              <li>Thay đổi khứu giác ảnh hưởng đến nhận thức vị giác</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Taste changes are normal side effects of illness 
-              and treatment. When food doesn't taste right, patients naturally eat less. This isn't pickiness—it's 
-              a physiological response.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Thay đổi vị giác là tác dụng phụ bình thường của bệnh tật 
+              và điều trị. Khi thức ăn không có vị đúng, bệnh nhân tự nhiên ăn ít hơn. Đây không phải kén chọn—đó là 
+              phản ứng sinh lý.
             </p>
           </article>
 
           <article className="border-l-4 border-pink-500 bg-pink-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Psychological Stress</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Stress Tâm lý</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              The stress of illness and hospitalization significantly impacts eating:
+              Stress của bệnh tật và nhập viện ảnh hưởng đáng kể đến ăn uống:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Anxiety about diagnosis, treatment, or outcomes</li>
-              <li>Depression reducing interest in food</li>
-              <li>Stress from being in an unfamiliar environment</li>
-              <li>Worry about family, work, or finances</li>
-              <li>Fear about food safety, restrictions, or making things worse</li>
-              <li>Grief, sadness, or emotional distress</li>
-              <li>Loss of control and independence</li>
+              <li>Lo âu về chẩn đoán, điều trị, hoặc kết quả</li>
+              <li>Trầm cảm làm giảm quan tâm đến thức ăn</li>
+              <li>Stress từ việc ở trong môi trường không quen thuộc</li>
+              <li>Lo lắng về gia đình, công việc, hoặc tài chính</li>
+              <li>Sợ hãi về an toàn thực phẩm, hạn chế, hoặc làm mọi thứ tồi tệ hơn</li>
+              <li>Đau buồn, buồn bã, hoặc đau khổ cảm xúc</li>
+              <li>Mất kiểm soát và độc lập</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Psychological stress during illness is normal. 
-              It's not a character flaw or lack of resilience—it's a natural response to being unwell and 
-              facing uncertainty. Stress directly affects appetite and digestion.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Stress tâm lý trong bệnh tật là bình thường. 
+              Đó không phải là khuyết điểm tính cách hoặc thiếu khả năng phục hồi—đó là phản ứng tự nhiên khi bị bệnh và 
+              đối mặt với sự không chắc chắn. Stress trực tiếp ảnh hưởng đến cảm giác ngon miệng và tiêu hóa.
             </p>
           </article>
         </div>
 
         <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-amber-900 mb-2 uppercase tracking-wide">
-            Common Pitfall
+            Cạm bẫy Phổ biến
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            <strong>Avoid assuming a single factor causes intake gaps.</strong> These factors often occur 
-            together. A patient might have poor appetite <em>and</em> early satiety <em>and</em> fatigue 
-            <em>and</em> taste changes <em>and</em> psychological stress—all at the same time. This 
-            compounding effect is why intake gaps are so common. It's not that patients aren't trying; 
-            it's that multiple normal responses to illness are working together to reduce intake.
+            <strong>Tránh giả định một yếu tố đơn lẻ gây ra khoảng cách lượng ăn.</strong> Các yếu tố này thường xảy ra 
+            cùng nhau. Một bệnh nhân có thể có cảm giác ngon miệng kém <em>và</em> no sớm <em>và</em> mệt mỏi 
+            <em>và</em> thay đổi vị giác <em>và</em> stress tâm lý—tất cả cùng một lúc. Hiệu ứng tích lũy này là lý do tại sao khoảng cách lượng ăn rất phổ biến. Không phải bệnh nhân không cố gắng; 
+            đó là nhiều phản ứng bình thường với bệnh tật đang hoạt động cùng nhau để giảm lượng ăn.
           </p>
         </div>
       </section>
@@ -337,66 +336,66 @@ export default function WhyIntakeFallsShortPage() {
           id="illness-factors-heading"
           className="text-xl font-semibold sm:text-2xl text-gray-900"
         >
-          Illness-Related Factors
+          Yếu tố Liên quan đến Bệnh tật
         </h2>
         <p className="text-base text-gray-700 leading-relaxed">
-          Illness itself creates barriers to eating. These are direct consequences of being unwell, not 
-          patient choices or failures. Understanding how illness affects intake helps clinicians interpret 
-          gaps realistically:
+          Bệnh tật tự nó tạo ra rào cản cho việc ăn. Đây là hậu quả trực tiếp của việc bị bệnh, không phải 
+          lựa chọn hoặc thất bại của bệnh nhân. Hiểu cách bệnh tật ảnh hưởng đến lượng ăn giúp các bác sĩ lâm sàng diễn giải 
+          khoảng cách một cách thực tế:
         </p>
 
         <div className="space-y-4 mt-4">
           <article className="border-l-4 border-cyan-500 bg-cyan-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Inflammation</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Viêm</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              When the body is fighting infection or healing from injury, inflammation occurs. This natural 
-              response affects eating in several ways:
+              Khi cơ thể đang chống lại nhiễm trùng hoặc chữa lành từ chấn thương, viêm xảy ra. Phản ứng tự nhiên này 
+              ảnh hưởng đến ăn uống theo nhiều cách:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Inflammatory signals suppress appetite—this is the body's way of conserving energy</li>
-              <li>Patients may feel generally unwell and not want to eat</li>
-              <li>Fever and malaise reduce interest in food</li>
-              <li>Even when patients want to eat, inflammation can make eating feel difficult</li>
+              <li>Tín hiệu viêm ức chế cảm giác ngon miệng—đây là cách cơ thể bảo tồn năng lượng</li>
+              <li>Bệnh nhân có thể cảm thấy nói chung không khỏe và không muốn ăn</li>
+              <li>Sốt và khó chịu làm giảm quan tâm đến thức ăn</li>
+              <li>Ngay cả khi bệnh nhân muốn ăn, viêm có thể làm cho việc ăn cảm thấy khó khăn</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Reduced appetite during inflammation is a normal 
-              physiological response. As inflammation resolves, appetite typically returns.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Giảm cảm giác ngon miệng trong viêm là phản ứng 
+              sinh lý bình thường. Khi viêm giải quyết, cảm giác ngon miệng thường trở lại.
             </p>
           </article>
 
           <article className="border-l-4 border-red-500 bg-red-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Pain</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Đau</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Pain directly interferes with eating:
+              Đau trực tiếp can thiệp vào việc ăn:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Pain reduces appetite and makes eating unpleasant</li>
-              <li>Chewing or swallowing may be painful (e.g., after surgery, with mouth sores)</li>
-              <li>Abdominal pain makes eating feel risky or uncomfortable</li>
-              <li>Pain medications may cause nausea or drowsiness</li>
-              <li>Patients may avoid eating to prevent triggering pain</li>
+              <li>Đau làm giảm cảm giác ngon miệng và làm cho việc ăn khó chịu</li>
+              <li>Nhai hoặc nuốt có thể đau (ví dụ: sau phẫu thuật, với loét miệng)</li>
+              <li>Đau bụng làm cho việc ăn cảm thấy rủi ro hoặc khó chịu</li>
+              <li>Thuốc giảm đau có thể gây buồn nôn hoặc buồn ngủ</li>
+              <li>Bệnh nhân có thể tránh ăn để ngăn chặn kích hoạt đau</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> When patients are in pain, eating becomes a 
-              lower priority. Pain management often takes precedence over nutrition, and that's appropriate.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Khi bệnh nhân đau, ăn trở thành 
+              ưu tiên thấp hơn. Quản lý đau thường ưu tiên hơn dinh dưỡng, và điều đó là phù hợp.
             </p>
           </article>
 
           <article className="border-l-4 border-orange-500 bg-orange-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Nausea</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Buồn nôn</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Nausea is one of the most common barriers to eating during illness:
+              Buồn nôn là một trong những rào cản phổ biến nhất cho việc ăn trong bệnh tật:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Nausea makes the thought of food unappealing</li>
-              <li>Patients may be afraid to eat because they fear vomiting</li>
-              <li>Even small amounts of food can trigger nausea</li>
-              <li>Nausea can be constant or come in waves</li>
-              <li>Smells of food may trigger nausea</li>
+              <li>Buồn nôn làm cho ý nghĩ về thức ăn không hấp dẫn</li>
+              <li>Bệnh nhân có thể sợ ăn vì họ sợ nôn</li>
+              <li>Ngay cả lượng nhỏ thức ăn cũng có thể kích hoạt buồn nôn</li>
+              <li>Buồn nôn có thể liên tục hoặc đến theo đợt</li>
+              <li>Mùi thức ăn có thể kích hoạt buồn nôn</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Nausea during illness is normal. It's not that 
-              patients don't want to eat—they physically cannot tolerate food when nauseous. This is a 
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Buồn nôn trong bệnh tật là bình thường. Không phải 
+              bệnh nhân không muốn ăn—họ về mặt thể chất không thể dung nạp thức ăn khi buồn nôn. Đây là 
               protective mechanism.
             </p>
           </article>
@@ -607,13 +606,13 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Clinical Reality
+            Thực tế Lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            Prescribed nutrition (what's ordered) and delivered nutrition (what's actually consumed) 
-            are often different. This gap is normal and expected. Regular intake assessment helps identify 
-            the real gap between prescription and delivery, allowing clinicians to make informed decisions 
-            about nutrition care.
+            Dinh dưỡng được kê đơn (những gì được chỉ định) và dinh dưỡng được cung cấp (những gì thực sự được tiêu thụ) 
+            thường khác nhau. Khoảng cách này là bình thường và được dự kiến. Đánh giá lượng ăn thường xuyên giúp nhận diện 
+            khoảng cách thực sự giữa kê đơn và cung cấp, cho phép các bác sĩ lâm sàng đưa ra quyết định có thông tin 
+            về chăm sóc dinh dưỡng.
           </p>
         </div>
       </section>
@@ -630,127 +629,127 @@ export default function WhyIntakeFallsShortPage() {
           id="system-workflow-heading"
           className="text-xl font-semibold sm:text-2xl text-gray-900"
         >
-          System & Workflow Factors
+          Yếu tố Hệ thống & Quy trình Làm việc
         </h2>
         <p className="text-base text-gray-700 leading-relaxed">
-          Healthcare systems and workflows create inherent challenges that affect intake. These aren't 
-          failures of individual staff or departments—they're realities of providing care in busy, complex 
-          environments. Understanding these system-level factors helps explain why intake gaps occur even 
-          when everyone is doing their best:
+          Hệ thống y tế và quy trình làm việc tạo ra các thách thức vốn có ảnh hưởng đến lượng ăn. Đây không phải là 
+          thất bại của nhân viên hoặc phòng ban cá nhân—chúng là thực tế của việc cung cấp chăm sóc trong môi trường bận rộn, phức tạp 
+          . Hiểu các yếu tố cấp hệ thống này giúp giải thích vì sao khoảng cách lượng ăn xảy ra ngay cả 
+          khi mọi người đang làm hết sức mình:
         </p>
 
         <div className="space-y-4 mt-4">
           <article className="border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Staffing Constraints</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Hạn chế Nhân sự</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Limited staffing affects nutrition care in several ways:
+              Nhân sự hạn chế ảnh hưởng đến chăm sóc dinh dưỡng theo nhiều cách:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Not enough staff to assist patients with meals</li>
-              <li>Staff pulled to other patient care needs during meal times</li>
-              <li>Insufficient time to encourage eating or offer alternatives</li>
-              <li>Limited availability to monitor tube feeding or respond to alarms promptly</li>
-              <li>High patient-to-staff ratios making individualized attention difficult</li>
-              <li>Staff fatigue affecting ability to provide optimal nutrition support</li>
+              <li>Không đủ nhân viên để hỗ trợ bệnh nhân với bữa ăn</li>
+              <li>Nhân viên bị kéo sang nhu cầu chăm sóc bệnh nhân khác trong giờ ăn</li>
+              <li>Không đủ thời gian để khuyến khích ăn hoặc cung cấp lựa chọn thay thế</li>
+              <li>Khả năng hạn chế để theo dõi cho ăn qua ống hoặc phản ứng với báo động kịp thời</li>
+              <li>Tỷ lệ bệnh nhân-nhân viên cao làm cho sự chú ý cá nhân hóa khó khăn</li>
+              <li>Mệt mỏi nhân viên ảnh hưởng đến khả năng cung cấp hỗ trợ dinh dưỡng tối ưu</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Example:</strong> A nurse may want to help a patient eat, but if they're managing 
-              multiple patients with competing care needs, meal assistance may not be possible. This isn't a 
-              failure of the nurse—it's a system constraint.
+              <strong>Ví dụ:</strong> Một điều dưỡng có thể muốn giúp bệnh nhân ăn, nhưng nếu họ đang quản lý 
+              nhiều bệnh nhân với nhu cầu chăm sóc cạnh tranh, hỗ trợ bữa ăn có thể không khả thi. Đây không phải là 
+              thất bại của điều dưỡng—đó là ràng buộc hệ thống.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Staffing constraints are system-level issues, 
-              not individual failures. Healthcare workers do their best within available resources, but 
-              limited staffing affects all aspects of care, including nutrition.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Hạn chế nhân sự là vấn đề cấp hệ thống, 
+              không phải thất bại cá nhân. Nhân viên y tế làm hết sức trong nguồn lực có sẵn, nhưng 
+              nhân sự hạn chế ảnh hưởng đến tất cả khía cạnh chăm sóc, bao gồm dinh dưỡng.
             </p>
           </article>
 
           <article className="border-l-4 border-purple-500 bg-purple-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Lack of Monitoring</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Thiếu Theo dõi</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Inadequate monitoring of nutrition intake can allow gaps to go unnoticed:
+              Theo dõi không đầy đủ lượng ăn dinh dưỡng có thể cho phép khoảng cách không được chú ý:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>No systematic process for tracking actual intake vs. ordered nutrition</li>
-              <li>Tube feeding pumps not regularly checked for delivered volume</li>
-              <li>Intake documentation not consistently reviewed or acted upon</li>
-              <li>No alerts or flags when intake falls below thresholds</li>
-              <li>Limited visibility of intake trends over time</li>
-              <li>Gaps between shifts in monitoring continuity</li>
+              <li>Không có quy trình có hệ thống để theo dõi lượng ăn thực tế vs. dinh dưỡng được chỉ định</li>
+              <li>Máy bơm cho ăn qua ống không được kiểm tra thường xuyên về thể tích được cung cấp</li>
+              <li>Tài liệu lượng ăn không được xem xét hoặc hành động một cách nhất quán</li>
+              <li>Không có cảnh báo hoặc cờ khi lượng ăn rơi xuống dưới ngưỡng</li>
+              <li>Khả năng hiển thị hạn chế của xu hướng lượng ăn theo thời gian</li>
+              <li>Khoảng cách giữa các ca trong tính liên tục theo dõi</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Example:</strong> A patient's tube feeding may be running at the ordered rate, but 
-              if no one checks the pump's delivered volume, interruptions may go unnoticed. The system 
-              assumes delivery matches orders, but reality may differ.
+              <strong>Ví dụ:</strong> Cho ăn qua ống của bệnh nhân có thể đang chạy ở tốc độ được chỉ định, nhưng 
+              nếu không ai kiểm tra thể tích được cung cấp của máy bơm, gián đoạn có thể không được chú ý. Hệ thống 
+              giả định cung cấp khớp với lệnh, nhưng thực tế có thể khác.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Monitoring gaps are system-level issues related 
-              to workflow design, not individual oversight. Without systematic monitoring processes, intake 
-              gaps can persist unnoticed.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Khoảng cách theo dõi là vấn đề cấp hệ thống liên quan 
+              đến thiết kế quy trình làm việc, không phải giám sát cá nhân. Không có quy trình theo dõi có hệ thống, khoảng cách lượng ăn 
+              có thể tồn tại không được chú ý.
             </p>
           </article>
 
           <article className="border-l-4 border-green-500 bg-green-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Communication Gaps</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Khoảng cách Giao tiếp</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Communication challenges between team members affect nutrition care:
+              Thách thức giao tiếp giữa các thành viên nhóm ảnh hưởng đến chăm sóc dinh dưỡng:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Nutrition goals not clearly communicated to all team members</li>
-              <li>Intake concerns not passed between shifts effectively</li>
-              <li>Dietitian recommendations not consistently shared with nursing staff</li>
-              <li>Changes in patient condition affecting intake not communicated promptly</li>
-              <li>Family-provided foods or supplements not communicated to the team</li>
-              <li>Multiple communication channels (chart, verbal, electronic) leading to missed information</li>
+              <li>Mục tiêu dinh dưỡng không được truyền đạt rõ ràng cho tất cả thành viên nhóm</li>
+              <li>Mối quan tâm lượng ăn không được truyền giữa các ca một cách hiệu quả</li>
+              <li>Khuyến nghị chuyên gia dinh dưỡng không được chia sẻ nhất quán với nhân viên điều dưỡng</li>
+              <li>Thay đổi tình trạng bệnh nhân ảnh hưởng đến lượng ăn không được truyền đạt kịp thời</li>
+              <li>Thực phẩm hoặc bổ sung do gia đình cung cấp không được truyền đạt cho nhóm</li>
+              <li>Nhiều kênh giao tiếp (biểu đồ, lời nói, điện tử) dẫn đến thông tin bị bỏ lỡ</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Example:</strong> A dietitian may recommend a specific approach to improve intake, 
-              but if this isn't communicated clearly to nursing staff, it may not be implemented. This 
-              isn't anyone's fault—it's a communication system issue.
+              <strong>Ví dụ:</strong> Chuyên gia dinh dưỡng có thể khuyến nghị một cách tiếp cận cụ thể để cải thiện lượng ăn, 
+              nhưng nếu điều này không được truyền đạt rõ ràng cho nhân viên điều dưỡng, nó có thể không được thực hiện. Đây 
+              không phải lỗi của ai—đó là vấn đề hệ thống giao tiếp.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Communication gaps are inherent to complex 
-              healthcare systems with multiple team members, shifts, and communication channels. These 
-              are system-level challenges, not individual communication failures.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Khoảng cách giao tiếp vốn có trong 
+              hệ thống y tế phức tạp với nhiều thành viên nhóm, ca, và kênh giao tiếp. Đây 
+              là thách thức cấp hệ thống, không phải thất bại giao tiếp cá nhân.
             </p>
           </article>
 
           <article className="border-l-4 border-amber-500 bg-amber-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Inadequate Follow-Up</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Theo dõi Không Đầy đủ</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Limited follow-up on nutrition support can allow intake gaps to persist:
+              Theo dõi hạn chế về hỗ trợ dinh dưỡng có thể cho phép khoảng cách lượng ăn tồn tại:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>No systematic process to check if nutrition support approaches were effective</li>
-              <li>Supplements ordered but not consistently offered or consumed</li>
-              <li>Diet modifications made but not followed up to assess impact</li>
-              <li>Intake concerns identified but not revisited</li>
-              <li>No clear responsibility for following up on nutrition support</li>
-              <li>Limited time or resources for ongoing nutrition monitoring</li>
+              <li>Không có quy trình có hệ thống để kiểm tra liệu cách tiếp cận hỗ trợ dinh dưỡng có hiệu quả không</li>
+              <li>Bổ sung được chỉ định nhưng không được cung cấp hoặc tiêu thụ nhất quán</li>
+              <li>Điều chỉnh chế độ ăn được thực hiện nhưng không được theo dõi để đánh giá tác động</li>
+              <li>Mối quan tâm lượng ăn được nhận diện nhưng không được xem xét lại</li>
+              <li>Không có trách nhiệm rõ ràng cho việc theo dõi hỗ trợ dinh dưỡng</li>
+              <li>Thời gian hoặc nguồn lực hạn chế cho theo dõi dinh dưỡng đang diễn ra</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Example:</strong> High-protein supplements may be ordered, but if there's no follow-up 
-              to ensure they're actually being offered and consumed, the intended effect may not be achieved. 
-              This isn't a failure of individual staff—it's a system issue with follow-up processes.
+              <strong>Ví dụ:</strong> Bổ sung protein cao có thể được chỉ định, nhưng nếu không có theo dõi 
+              để đảm bảo chúng thực sự đang được cung cấp và tiêu thụ, hiệu quả dự định có thể không đạt được. 
+              Đây không phải là thất bại của nhân viên cá nhân—đó là vấn đề hệ thống với quy trình theo dõi.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>This is common and expected.</strong> Inadequate follow-up is a system-level issue 
-              related to workflow design and resource allocation, not individual neglect. Without systematic 
-              follow-up processes, nutrition support may not achieve its intended effect.
+              <strong>Điều này là phổ biến và được dự kiến.</strong> Theo dõi không đầy đủ là vấn đề cấp hệ thống 
+              liên quan đến thiết kế quy trình làm việc và phân bổ nguồn lực, không phải bỏ bê cá nhân. Không có quy trình theo dõi có hệ thống 
+              , hỗ trợ dinh dưỡng có thể không đạt được hiệu quả dự định.
             </p>
           </article>
         </div>
 
         <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-amber-900 mb-2 uppercase tracking-wide">
-            Common Pitfall
+            Cạm bẫy Phổ biến
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            <strong>Avoid blaming individuals for system-level issues.</strong> These system and workflow 
-            factors are not about individual performance or effort. They're about how healthcare systems are 
-            structured and resourced. Healthcare workers do their best within system constraints, but these 
-            constraints affect nutrition care. Understanding this helps us address system-level issues rather 
-            than blaming individuals.
+            <strong>Tránh đổ lỗi cho cá nhân về vấn đề cấp hệ thống.</strong> Các yếu tố hệ thống và quy trình làm việc này 
+            không phải về hiệu suất hoặc nỗ lực cá nhân. Chúng là về cách hệ thống y tế được 
+            cấu trúc và cung cấp nguồn lực. Nhân viên y tế làm hết sức trong ràng buộc hệ thống, nhưng những 
+            ràng buộc này ảnh hưởng đến chăm sóc dinh dưỡng. Hiểu điều này giúp chúng ta giải quyết vấn đề cấp hệ thống thay vì 
+            đổ lỗi cho cá nhân.
           </p>
         </div>
       </section>
@@ -767,122 +766,122 @@ export default function WhyIntakeFallsShortPage() {
           id="interpretation-heading"
           className="text-xl font-semibold sm:text-2xl text-gray-900"
         >
-          How Clinicians Interpret Intake Shortfalls
+          Cách Các Bác sĩ Lâm sàng Diễn giải Thiếu hụt Lượng Ăn
         </h2>
         <p className="text-base text-gray-700 leading-relaxed mb-4">
-          Understanding that intake gaps are normal and expected helps clinicians interpret them realistically 
-          and make practical decisions. Here's how experienced clinicians approach intake shortfalls:
+          Hiểu rằng khoảng cách lượng ăn là bình thường và được dự kiến giúp các bác sĩ lâm sàng diễn giải chúng một cách thực tế 
+          và đưa ra quyết định thực tế. Đây là cách các bác sĩ lâm sàng có kinh nghiệm tiếp cận thiếu hụt lượng ăn:
         </p>
 
         <div className="space-y-4 mt-4">
           <article className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Look at Trends, Not Single Days</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Xem Xu hướng, Không phải Ngày Đơn lẻ</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Experienced clinicians understand that a single day of low intake is often not concerning—it's 
-              expected during illness. Instead, they focus on patterns over time:
+              Các bác sĩ lâm sàng có kinh nghiệm hiểu rằng một ngày lượng ăn thấp thường không đáng lo ngại—nó 
+              được dự kiến trong bệnh tật. Thay vào đó, họ tập trung vào mô hình theo thời gian:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
-              <li>Is intake improving over several days?</li>
-              <li>Is it stable at a reasonable level?</li>
-              <li>Is it declining over time?</li>
-              <li>Are there patterns related to procedures or symptoms?</li>
+              <li>Lượng ăn có đang cải thiện trong vài ngày không?</li>
+              <li>Nó có ổn định ở mức hợp lý không?</li>
+              <li>Nó có đang giảm theo thời gian không?</li>
+              <li>Có mô hình liên quan đến thủ thuật hoặc triệu chứng không?</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Example:</strong> A patient eating 40% of meals on Monday (post-surgery day) but 70% 
-              by Friday shows an improving trend. This is more meaningful than a single low day. Clinicians 
-              look at the trajectory, not isolated values.
+              <strong>Ví dụ:</strong> Một bệnh nhân ăn 40% bữa ăn vào thứ Hai (ngày sau phẫu thuật) nhưng 70% 
+              vào thứ Sáu cho thấy xu hướng cải thiện. Điều này có ý nghĩa hơn một ngày thấp đơn lẻ. Các bác sĩ lâm sàng 
+              xem quỹ đạo, không phải giá trị riêng lẻ.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>For nurses documenting intake:</strong> Don't worry if one day shows low intake—especially 
-              after a procedure or during acute illness. What matters is the pattern over 3-5 days. Is the 
-              patient improving? That's what the team needs to know.
+              <strong>Cho điều dưỡng ghi chép lượng ăn:</strong> Đừng lo lắng nếu một ngày cho thấy lượng ăn thấp—đặc biệt 
+              sau thủ thuật hoặc trong bệnh cấp tính. Điều quan trọng là mô hình trong 3-5 ngày. Bệnh nhân có 
+              đang cải thiện không? Đó là điều nhóm cần biết.
             </p>
           </article>
 
           <article className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Prioritize Protein Gaps</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Ưu tiên Khoảng cách Protein</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              While both energy (calories) and protein matter, clinicians often prioritize protein intake 
-              because:
+              Mặc dù cả năng lượng (calo) và protein đều quan trọng, các bác sĩ lâm sàng thường ưu tiên lượng ăn protein 
+              vì:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
-              <li>Protein is essential for healing, immune function, and maintaining muscle mass</li>
-              <li>Protein deficits can have more immediate clinical consequences than energy deficits</li>
-              <li>Protein needs are often harder to meet than energy needs</li>
-              <li>Protein supplementation may be more feasible than increasing overall intake</li>
+              <li>Protein cần thiết cho chữa lành, chức năng miễn dịch, và duy trì khối lượng cơ</li>
+              <li>Thiếu hụt protein có thể có hậu quả lâm sàng ngay lập tức hơn thiếu hụt năng lượng</li>
+              <li>Nhu cầu protein thường khó đáp ứng hơn nhu cầu năng lượng</li>
+              <li>Bổ sung protein có thể khả thi hơn tăng tổng lượng ăn</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Example:</strong> A patient receiving 80% of energy needs but only 50% of protein needs 
-              may have different considerations than one missing both. Clinicians often prioritize addressing 
-              protein gaps when making decisions about nutrition support.
+              <strong>Ví dụ:</strong> Một bệnh nhân nhận được 80% nhu cầu năng lượng nhưng chỉ 50% nhu cầu protein 
+              có thể có cân nhắc khác với người thiếu cả hai. Các bác sĩ lâm sàng thường ưu tiên giải quyết 
+              khoảng cách protein khi đưa ra quyết định về hỗ trợ dinh dưỡng.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>For clinicians:</strong> When reviewing intake, check both energy and protein separately. 
-              Understanding which is more affected helps inform clinical reasoning about nutrition support 
-              decisions.
+              <strong>Cho các bác sĩ lâm sàng:</strong> Khi xem xét lượng ăn, hãy kiểm tra cả năng lượng và protein riêng biệt. 
+              Hiểu cái nào bị ảnh hưởng nhiều hơn giúp cung cấp thông tin cho lập luận lâm sàng về quyết định hỗ trợ dinh dưỡng 
+              .
             </p>
           </article>
 
           <article className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Balance Risk of Underfeeding vs. Overfeeding</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Cân bằng Rủi ro Thiếu ăn vs. Thừa ăn</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Clinicians must balance competing concerns:
+              Các bác sĩ lâm sàng phải cân bằng các mối quan tâm cạnh tranh:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
-              <li><strong>Underfeeding considerations:</strong> Inadequate nutrition can impair healing, weaken 
-              immune function, and lead to muscle loss</li>
-              <li><strong>Overfeeding considerations:</strong> Aggressive nutrition support can cause complications 
-              (refeeding syndrome, hyperglycemia, fluid overload) especially in patients with organ dysfunction</li>
-              <li><strong>Context matters:</strong> The balance shifts based on patient condition, acuity, 
-              and clinical trajectory</li>
+              <li><strong>Cân nhắc thiếu ăn:</strong> Dinh dưỡng không đầy đủ có thể làm suy yếu chữa lành, suy yếu 
+              chức năng miễn dịch, và dẫn đến mất cơ</li>
+              <li><strong>Cân nhắc thừa ăn:</strong> Hỗ trợ dinh dưỡng tích cực có thể gây biến chứng 
+              (hội chứng tái cho ăn, tăng đường huyết, quá tải dịch) đặc biệt ở bệnh nhân có rối loạn chức năng cơ quan</li>
+              <li><strong>Bối cảnh quan trọng:</strong> Sự cân bằng thay đổi dựa trên tình trạng bệnh nhân, mức độ nghiêm trọng, 
+              và quỹ đạo lâm sàng</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Example:</strong> A stable patient with good appetite may tolerate higher nutrition 
-              intake. However, a patient with organ dysfunction may need more cautious, gradual nutrition 
-              support to avoid complications. Clinicians consider these factors based on the clinical situation.
+              <strong>Ví dụ:</strong> Một bệnh nhân ổn định với cảm giác ngon miệng tốt có thể dung nạp lượng dinh dưỡng cao hơn. 
+              Tuy nhiên, một bệnh nhân có rối loạn chức năng cơ quan có thể cần hỗ trợ dinh dưỡng thận trọng hơn, dần dần 
+              để tránh biến chứng. Các bác sĩ lâm sàng xem xét các yếu tố này dựa trên tình huống lâm sàng.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>For clinicians:</strong> The goal isn't always maximum nutrition—it's appropriate 
-              nutrition for the clinical context. Sometimes accepting a moderate intake gap is safer than 
-              forcing higher intake that could cause harm.
+              <strong>Cho các bác sĩ lâm sàng:</strong> Mục tiêu không phải lúc nào cũng là dinh dưỡng tối đa—đó là dinh dưỡng 
+              phù hợp cho bối cảnh lâm sàng. Đôi khi chấp nhận khoảng cách lượng ăn vừa phải an toàn hơn 
+              ép lượng ăn cao hơn có thể gây hại.
             </p>
           </article>
 
           <article className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Reassess as Condition Evolves</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Đánh giá lại Khi Tình trạng Phát triển</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Patient conditions change, and nutrition needs and intake capacity change with them. Clinicians 
-              regularly reassess:
+              Tình trạng bệnh nhân thay đổi, và nhu cầu dinh dưỡng và khả năng lượng ăn thay đổi cùng với chúng. Các bác sĩ lâm sàng 
+              thường xuyên đánh giá lại:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
-              <li>As patients recover, intake capacity typically improves</li>
-              <li>As symptoms resolve, barriers to eating decrease</li>
-              <li>As condition stabilizes, nutrition goals may shift</li>
-              <li>As procedures complete, interruptions decrease</li>
-              <li>As medications change, side effects affecting intake may change</li>
+              <li>Khi bệnh nhân phục hồi, khả năng lượng ăn thường cải thiện</li>
+              <li>Khi triệu chứng giải quyết, rào cản cho việc ăn giảm</li>
+              <li>Khi tình trạng ổn định, mục tiêu dinh dưỡng có thể thay đổi</li>
+              <li>Khi thủ thuật hoàn thành, gián đoạn giảm</li>
+              <li>Khi thuốc thay đổi, tác dụng phụ ảnh hưởng đến lượng ăn có thể thay đổi</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Example:</strong> A patient who could only tolerate 50% of meals during acute illness 
-              may improve to 80% as symptoms resolve. Clinicians adjust expectations and approaches as the 
-              patient's condition evolves, rather than maintaining the same approach throughout.
+              <strong>Ví dụ:</strong> Một bệnh nhân chỉ có thể dung nạp 50% bữa ăn trong bệnh cấp tính 
+              có thể cải thiện lên 80% khi triệu chứng giải quyết. Các bác sĩ lâm sàng điều chỉnh kỳ vọng và cách tiếp cận khi 
+              tình trạng bệnh nhân phát triển, thay vì duy trì cùng cách tiếp cận trong suốt.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>For all healthcare workers:</strong> Intake assessment isn't a one-time event—it's an 
-              ongoing process. Regular reassessment helps identify when approaches are effective, when they 
-              need adjustment, and when intake gaps are resolving naturally as the patient recovers.
+              <strong>Cho tất cả nhân viên y tế:</strong> Đánh giá lượng ăn không phải là sự kiện một lần—nó là 
+              quy trình đang diễn ra. Đánh giá lại thường xuyên giúp nhận diện khi cách tiếp cận hiệu quả, khi chúng 
+              cần điều chỉnh, và khi khoảng cách lượng ăn đang giải quyết tự nhiên khi bệnh nhân phục hồi.
             </p>
           </article>
         </div>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Clinical Reality
+            Thực tế Lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            Experienced clinicians don't expect perfect intake. They look at trends, prioritize what matters 
-            most (often protein), balance risks, and adjust as the patient's condition evolves. This practical 
-            approach recognizes that intake gaps are normal and focuses on what's achievable and appropriate 
-            for each patient's situation.
+            Các bác sĩ lâm sàng có kinh nghiệm không mong đợi lượng ăn hoàn hảo. Họ xem xu hướng, ưu tiên điều quan trọng nhất 
+            (thường là protein), cân bằng rủi ro, và điều chỉnh khi tình trạng bệnh nhân phát triển. Cách tiếp cận thực tế này 
+            nhận ra rằng khoảng cách lượng ăn là bình thường và tập trung vào những gì có thể đạt được và phù hợp 
+            cho tình huống của mỗi bệnh nhân.
           </p>
         </div>
       </section>
@@ -899,72 +898,72 @@ export default function WhyIntakeFallsShortPage() {
           id="takeaway-heading"
           className="text-xl font-semibold sm:text-2xl text-gray-900"
         >
-          What to Take Away
+          Điều Cần Rút ra
         </h2>
         <p className="text-base text-gray-700 leading-relaxed mb-4">
-          As you work with patients experiencing intake gaps, remember these three essential points:
+          Khi bạn làm việc với bệnh nhân trải qua khoảng cách lượng ăn, hãy nhớ ba điểm cần thiết này:
         </p>
 
         <div className="space-y-4">
           <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-5">
-            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Intake Shortfall Is Common</h3>
+            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Thiếu hụt Lượng Ăn Là Phổ biến</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Intake gaps are not unusual, unexpected, or a sign that something has gone wrong. They are 
-              common and expected, especially during acute illness. Multiple factors—patient-related, 
-              illness-related, care-delivery, and system factors—work together to create these gaps.
+              Khoảng cách lượng ăn không bất thường, không mong đợi, hoặc dấu hiệu rằng có điều gì đó đã sai. Chúng là 
+              phổ biến và được dự kiến, đặc biệt trong bệnh cấp tính. Nhiều yếu tố—liên quan đến bệnh nhân, 
+              liên quan đến bệnh tật, cung cấp chăm sóc, và yếu tố hệ thống—hoạt động cùng nhau để tạo ra những khoảng cách này.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Remember:</strong> When you see a patient eating 60-70% of calculated needs, this isn't 
-              a crisis—it's often normal for that clinical situation. Intake gaps are the rule, not the exception, 
-              in clinical nutrition practice.
+              <strong>Hãy nhớ:</strong> Khi bạn thấy một bệnh nhân ăn 60-70% nhu cầu tính toán, đây không phải là 
+              khủng hoảng—nó thường bình thường cho tình huống lâm sàng đó. Khoảng cách lượng ăn là quy tắc, không phải ngoại lệ, 
+              trong thực hành dinh dưỡng lâm sàng.
             </p>
           </div>
 
           <div className="bg-green-50 border-2 border-green-300 rounded-lg p-5">
-            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Calculation Is a Starting Point</h3>
+            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Tính toán Là Điểm Khởi đầu</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Calculating nutritional needs gives us a target to aim for, but it's just the beginning. 
-              Calculations assume ideal conditions that rarely exist in real clinical settings. They don't 
-              account for the many barriers patients face—appetite changes, procedures, symptoms, system 
-              constraints, and more.
+              Tính toán nhu cầu dinh dưỡng cho chúng ta một mục tiêu để hướng tới, nhưng nó chỉ là khởi đầu. 
+              Tính toán giả định điều kiện lý tưởng hiếm khi tồn tại trong môi trường lâm sàng thực tế. Chúng không 
+              tính đến nhiều rào cản mà bệnh nhân phải đối mặt—thay đổi cảm giác ngon miệng, thủ thuật, triệu chứng, ràng buộc hệ thống 
+              , và nhiều hơn nữa.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Remember:</strong> The calculated requirement is a guide, not a mandate. It helps us 
-              understand what we're aiming for, but actual intake will often be different—and that's okay. 
-              The calculation is a starting point for planning, not a rigid target that must be met.
+              <strong>Hãy nhớ:</strong> Yêu cầu tính toán là hướng dẫn, không phải mệnh lệnh. Nó giúp chúng ta 
+              hiểu những gì chúng ta đang hướng tới, nhưng lượng ăn thực tế thường sẽ khác—và điều đó là ổn. 
+              Tính toán là điểm khởi đầu cho lập kế hoạch, không phải mục tiêu cứng nhắc phải được đáp ứng.
             </p>
           </div>
 
           <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-5">
-            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Monitoring and Adjustment Matter More Than Perfection</h3>
+            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Theo dõi và Điều chỉnh Quan trọng Hơn Sự Hoàn hảo</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              What matters most is not achieving 100% of calculated needs, but rather:
+              Điều quan trọng nhất không phải là đạt được 100% nhu cầu tính toán, mà là:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
-              <li><strong>Monitoring actual intake</strong> to understand what patients are really receiving</li>
-              <li><strong>Looking at trends</strong> over time, not just single-day values</li>
-              <li><strong>Adjusting approaches</strong> based on what's actually happening</li>
-              <li><strong>Reassessing</strong> as the patient's condition evolves</li>
-              <li><strong>Focusing on what's achievable</strong> and appropriate for the clinical context</li>
+              <li><strong>Theo dõi lượng ăn thực tế</strong> để hiểu những gì bệnh nhân thực sự đang nhận được</li>
+              <li><strong>Xem xu hướng</strong> theo thời gian, không chỉ giá trị một ngày</li>
+              <li><strong>Điều chỉnh cách tiếp cận</strong> dựa trên những gì thực sự đang xảy ra</li>
+              <li><strong>Đánh giá lại</strong> khi tình trạng bệnh nhân phát triển</li>
+              <li><strong>Tập trung vào những gì có thể đạt được</strong> và phù hợp cho bối cảnh lâm sàng</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Remember:</strong> Perfect intake is rarely achievable or necessary. What matters is 
-              understanding the gap, monitoring trends, and making practical adjustments. Regular monitoring 
-              and thoughtful adjustment lead to better outcomes than striving for an unattainable perfect target.
+              <strong>Hãy nhớ:</strong> Lượng ăn hoàn hảo hiếm khi có thể đạt được hoặc cần thiết. Điều quan trọng là 
+              hiểu khoảng cách, theo dõi xu hướng, và thực hiện điều chỉnh thực tế. Theo dõi thường xuyên 
+              và điều chỉnh thấu đáo dẫn đến kết quả tốt hơn so với phấn đấu cho một mục tiêu hoàn hảo không thể đạt được.
             </p>
           </div>
         </div>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-6">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Clinical Reality
+            Thực tế Lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            Intake shortfalls are common. Calculations give us a starting point, but they don't guarantee 
-            intake. What matters most is monitoring what patients actually receive, understanding why gaps 
-            occur, and making practical adjustments based on real-world circumstances. This approach—focused 
-            on monitoring and adjustment rather than perfection—leads to better nutrition care and better 
-            patient outcomes.
+            Thiếu hụt lượng ăn là phổ biến. Tính toán cho chúng ta điểm khởi đầu, nhưng chúng không đảm bảo 
+            lượng ăn. Điều quan trọng nhất là theo dõi những gì bệnh nhân thực sự nhận được, hiểu vì sao khoảng cách 
+            xảy ra, và thực hiện điều chỉnh thực tế dựa trên hoàn cảnh thực tế. Cách tiếp cận này—tập trung 
+            vào theo dõi và điều chỉnh thay vì sự hoàn hảo—dẫn đến chăm sóc dinh dưỡng tốt hơn và kết quả bệnh nhân tốt hơn 
+            .
           </p>
         </div>
       </section>
@@ -981,83 +980,83 @@ export default function WhyIntakeFallsShortPage() {
           id="cta-heading"
           className="text-xl font-semibold sm:text-2xl text-gray-900"
         >
-          Put This Into Practice
+          Đưa Điều này Vào Thực hành
         </h2>
         <p className="text-base text-gray-700 leading-relaxed">
-          Now that you understand why intake gaps occur, here are practical ways to apply this knowledge:
+          Bây giờ bạn đã hiểu vì sao khoảng cách lượng ăn xảy ra, đây là các cách thực tế để áp dụng kiến thức này:
         </p>
 
         <div className="space-y-4 mt-6">
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <h3 className="font-semibold text-gray-900 mb-2 text-lg">
-              Use Tool 03 to Visualize Gaps
+              Sử dụng Công cụ 03 để Hình dung Khoảng cách
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
-              The <Link href="/tools/intake-vs-needs" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
-                Intake vs. Needs Comparison Tool
-              </Link> helps you see the gap between calculated requirements and actual intake. 
-              This visualization makes it easier to understand the magnitude of gaps and identify 
-              patterns over time.
+              <Link href="/tools/intake-assessment" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
+                Công cụ So sánh Lượng Ăn vs. Nhu cầu
+              </Link> giúp bạn thấy khoảng cách giữa yêu cầu tính toán và lượng ăn thực tế. 
+              Hình dung này làm cho việc hiểu mức độ khoảng cách và nhận diện 
+              mô hình theo thời gian dễ dàng hơn.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Try it:</strong> Enter a patient's calculated needs and their actual intake. 
-              The tool will show you the gap visually, helping you see whether the shortfall is in 
-              energy, protein, or both. This practical visualization reinforces that gaps are normal 
-              and helps you interpret them in context.
+              <strong>Thử nó:</strong> Nhập nhu cầu tính toán của bệnh nhân và lượng ăn thực tế của họ. 
+              Công cụ sẽ cho bạn thấy khoảng cách một cách trực quan, giúp bạn thấy liệu thiếu hụt là trong 
+              năng lượng, protein, hoặc cả hai. Hình dung thực tế này củng cố rằng khoảng cách là bình thường 
+              và giúp bạn diễn giải chúng trong ngữ cảnh.
             </p>
           </div>
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <h3 className="font-semibold text-gray-900 mb-2 text-lg">
-              Revisit Tool 02 Assumptions
+              Xem lại Giả định Công cụ 02
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
-              The <Link href="/tools/energy-protein-calculator" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
-                Energy & Protein Calculator (Tool 02)
-              </Link> helps you estimate nutritional needs. Now that you understand intake gaps, 
-              revisit this tool with new perspective.
+              <Link href="/tools/energy-protein-calculator" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
+                Máy tính Năng lượng & Protein (Công cụ 02)
+              </Link> giúp bạn ước tính nhu cầu dinh dưỡng. Bây giờ bạn đã hiểu khoảng cách lượng ăn, 
+              hãy xem lại công cụ này với quan điểm mới.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Remember:</strong> The numbers from Tool 02 are starting points, not rigid targets. 
-              When you calculate needs, keep in mind that actual intake will likely be lower—and that's 
-              expected. Use the calculated range as a guide for planning, but don't be surprised or 
-              frustrated when intake falls short. The calculation helps you understand what you're aiming 
-              for, but monitoring actual intake tells you what's really happening.
+              <strong>Hãy nhớ:</strong> Các con số từ Công cụ 02 là điểm khởi đầu, không phải mục tiêu cứng nhắc. 
+              Khi bạn tính nhu cầu, hãy nhớ rằng lượng ăn thực tế có thể sẽ thấp hơn—và điều đó 
+              được dự kiến. Sử dụng khoảng tính toán như hướng dẫn cho lập kế hoạch, nhưng đừng ngạc nhiên hoặc 
+              thất vọng khi lượng ăn thiếu. Tính toán giúp bạn hiểu những gì bạn đang hướng tới, 
+              nhưng theo dõi lượng ăn thực tế cho bạn biết những gì thực sự đang xảy ra.
             </p>
           </div>
 
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-5">
             <h3 className="font-semibold text-gray-900 mb-2 text-lg">
-              Apply Reasoning to Case Examples
+              Áp dụng Lập luận vào Ví dụ Ca bệnh
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
-              As you work with patients, practice applying the reasoning from this page:
+              Khi bạn làm việc với bệnh nhân, hãy thực hành áp dụng lập luận từ trang này:
             </p>
             <ul className="list-disc space-y-2 pl-5 text-sm text-gray-700 mb-3">
-              <li>When you see an intake gap, ask: <em>"What factors are contributing?"</em> Consider 
-              patient-related, illness-related, care-delivery, and system factors.</li>
-              <li>Look at trends over several days, not just single-day values. Is intake improving, 
-              stable, or declining?</li>
-              <li>Interpret gaps in context. A 30% gap in a patient who just had surgery is different 
-              from a 30% gap in a stable patient.</li>
-              <li>Focus on monitoring and adjustment rather than achieving perfect intake.</li>
+              <li>Khi bạn thấy khoảng cách lượng ăn, hãy hỏi: <em>"Các yếu tố nào đang góp phần?"</em> Cân nhắc 
+              yếu tố liên quan đến bệnh nhân, liên quan đến bệnh tật, cung cấp chăm sóc, và hệ thống.</li>
+              <li>Xem xu hướng trong vài ngày, không chỉ giá trị một ngày. Lượng ăn có đang cải thiện, 
+              ổn định, hoặc giảm không?</li>
+              <li>Diễn giải khoảng cách trong ngữ cảnh. Khoảng cách 30% ở bệnh nhân vừa phẫu thuật khác 
+              với khoảng cách 30% ở bệnh nhân ổn định.</li>
+              <li>Tập trung vào theo dõi và điều chỉnh thay vì đạt được lượng ăn hoàn hảo.</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Practice:</strong> The next time you review a patient's intake records, use this 
-              framework. Identify the factors contributing to any gaps, assess trends, and consider 
-              what approaches are realistic and appropriate. This practical reasoning will help you 
-              understand nutrition care better.
+              <strong>Thực hành:</strong> Lần tới khi bạn xem xét ghi chép lượng ăn của bệnh nhân, hãy sử dụng 
+              khung này. Nhận diện các yếu tố góp phần vào bất kỳ khoảng cách nào, đánh giá xu hướng, và cân nhắc 
+              cách tiếp cận nào thực tế và phù hợp. Lập luận thực tế này sẽ giúp bạn 
+              hiểu chăm sóc dinh dưỡng tốt hơn.
             </p>
           </div>
         </div>
 
         <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 mt-6">
           <p className="text-sm text-gray-700 leading-relaxed">
-            <strong>You've got this.</strong> Understanding why intake gaps occur is the first step. 
-            Using these tools and applying this reasoning in practice will help you interpret intake 
-            gaps realistically and make practical decisions about nutrition care. Remember: intake 
-            shortfalls are common, calculations are starting points, and monitoring and adjustment 
-            matter more than perfection.
+            <strong>Bạn có thể làm được.</strong> Hiểu vì sao khoảng cách lượng ăn xảy ra là bước đầu tiên. 
+            Sử dụng các công cụ này và áp dụng lập luận này trong thực hành sẽ giúp bạn diễn giải khoảng cách lượng ăn 
+            một cách thực tế và đưa ra quyết định thực tế về chăm sóc dinh dưỡng. Hãy nhớ: thiếu hụt lượng ăn 
+            là phổ biến, tính toán là điểm khởi đầu, và theo dõi và điều chỉnh 
+            quan trọng hơn sự hoàn hảo.
           </p>
         </div>
       </section>
@@ -1065,9 +1064,9 @@ export default function WhyIntakeFallsShortPage() {
       {/* Footer Note */}
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
         <p className="text-sm text-gray-700 leading-relaxed">
-          <strong>Note:</strong> This resource is for educational purposes. Individual patient situations vary, 
-          and clinical judgment should always guide nutrition care decisions. When in doubt, consult with 
-          registered dietitians and the clinical team.
+          <strong>Lưu ý:</strong> Tài nguyên này chỉ dùng cho mục đích giáo dục. Tình huống bệnh nhân cá nhân khác nhau, 
+          và phán đoán lâm sàng nên luôn hướng dẫn quyết định chăm sóc dinh dưỡng. Khi còn nghi ngờ, hãy tham khảo với 
+          chuyên gia dinh dưỡng đã đăng ký và nhóm lâm sàng.
         </p>
       </div>
     </main>
