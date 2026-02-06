@@ -547,7 +547,17 @@ function ResultPanel({ result }: ResultPanelProps) {
           {result.missingFields.length > 0 && (
             <p>
               Một số thông tin bị thiếu hoặc gần đúng:{" "}
-              {result.missingFields.join(", ")}.
+              {result.missingFields
+                .map((f) => {
+                  const labels: Record<string, string> = {
+                    estimatedEnergyRange: "phạm vi năng lượng ước tính",
+                    estimatedProteinRange: "phạm vi protein ước tính",
+                    actualEnergyIntake: "lượng ăn vào năng lượng thực tế",
+                    actualProteinIntake: "lượng ăn vào protein thực tế",
+                  };
+                  return labels[f] || f;
+                })
+                .join(", ")}.
             </p>
           )}
           {result.warnings.length > 0 && (

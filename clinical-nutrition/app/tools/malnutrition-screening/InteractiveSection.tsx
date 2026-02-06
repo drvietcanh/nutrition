@@ -560,7 +560,19 @@ function SingleToolResult({ label, result, variant }: SingleToolResultProps) {
           {result.missingFields.length > 0 && (
             <p>
               Một số thông tin bị thiếu hoặc không rõ ràng:{" "}
-              {result.missingFields.join(", ")}.
+              {result.missingFields
+                .map((f) => {
+                  const labels: Record<string, string> = {
+                    weightKg: "cân nặng",
+                    heightCm: "chiều cao",
+                    ageYears: "tuổi",
+                    recentWeightLossPercent: "phần trăm giảm cân gần đây",
+                    intakeReductionPercent: "phần trăm giảm lượng ăn vào",
+                    diseaseContextCode: "bối cảnh bệnh",
+                  };
+                  return labels[f] || f;
+                })
+                .join(", ")}.
             </p>
           )}
           {result.warnings.length > 0 && (

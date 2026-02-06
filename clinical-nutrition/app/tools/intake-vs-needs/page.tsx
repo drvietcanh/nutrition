@@ -642,7 +642,17 @@ function InterpretationBlock({ comparison }: InterpretationBlockProps) {
           {comparison.missingFields.length > 0 && (
             <p>
               Một số thông tin bị thiếu hoặc gần đúng:{" "}
-              {comparison.missingFields.join(", ")}.
+              {comparison.missingFields
+                .map((f) => {
+                  const labels: Record<string, string> = {
+                    estimatedEnergyRange: "phạm vi năng lượng ước tính",
+                    estimatedProteinRange: "phạm vi protein ước tính",
+                    actualEnergyIntake: "lượng ăn vào năng lượng thực tế",
+                    actualProteinIntake: "lượng ăn vào protein thực tế",
+                  };
+                  return labels[f] || f;
+                })
+                .join(", ")}.
             </p>
           )}
           {comparison.warnings.length > 0 && (
