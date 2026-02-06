@@ -38,43 +38,43 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Sets context and explains the purpose without judgment */}
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Common Misconceptions in Clinical Nutrition
+            Hiểu lầm Phổ biến trong Dinh dưỡng Lâm sàng
           </h1>
           <div className="max-w-3xl mx-auto text-left space-y-6">
             <section className="bg-blue-50 border border-blue-200 rounded-lg p-6">
               <p className="text-gray-700 leading-relaxed mb-4">
-                Have you ever wondered why certain nutrition practices persist despite evidence suggesting otherwise? 
-                Many common beliefs in clinical nutrition stem from <strong>oversimplification</strong>—taking complex, 
-                individualized concepts and reducing them to simple rules that feel easier to remember and apply.
+                Bạn đã bao giờ tự hỏi vì sao một số thực hành dinh dưỡng vẫn tồn tại dù bằng chứng cho thấy điều ngược lại? 
+                Nhiều quan niệm phổ biến trong dinh dưỡng lâm sàng xuất phát từ <strong>sự đơn giản hóa quá mức</strong>—biến các khái niệm 
+                phức tạp, cá thể hóa thành các quy tắc đơn giản dễ nhớ và áp dụng hơn.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                While these simplified approaches can feel safe and straightforward, <strong>clinical nutrition requires 
-                context and judgment</strong>. What works for one patient may not work for another. The same intervention 
-                can be appropriate or inappropriate depending on the patient's condition, prognosis, metabolic state, and 
-                goals of care. There are rarely universal answers—only thoughtful questions and evidence-informed decisions.
+                Mặc dù các cách tiếp cận đơn giản này có thể cảm thấy an toàn và dễ hiểu, <strong>dinh dưỡng lâm sàng đòi hỏi 
+                bối cảnh và phán đoán</strong>. Điều hiệu quả với một bệnh nhân có thể không hiệu quả với bệnh nhân khác. Cùng một can thiệp 
+                có thể phù hợp hoặc không phù hợp tùy thuộc vào tình trạng bệnh nhân, tiên lượng, trạng thái chuyển hóa, và 
+                mục tiêu chăm sóc. Hiếm khi có câu trả lời phổ quát—chỉ có những câu hỏi thấu đáo và quyết định dựa trên bằng chứng.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                This resource explores common misconceptions not to criticize, but to understand. We're curious about 
-                why these beliefs persist and how we can approach nutrition care with greater nuance. 
-                <strong> Correcting these myths improves patient care</strong> by helping us make more appropriate, 
-                individualized decisions that better serve our patients' needs.
+                Tài nguyên này khám phá các hiểu lầm phổ biến không phải để chỉ trích, mà để hiểu. Chúng tôi tò mò về 
+                vì sao những quan niệm này vẫn tồn tại và cách chúng ta có thể tiếp cận chăm sóc dinh dưỡng với sự tinh tế hơn. 
+                <strong> Sửa chữa những hiểu lầm này cải thiện chăm sóc bệnh nhân</strong> bằng cách giúp chúng ta đưa ra các quyết định 
+                phù hợp hơn, cá thể hóa hơn phục vụ tốt hơn nhu cầu của bệnh nhân.
               </p>
             </section>
             <section className="bg-purple-50 border border-purple-200 rounded-lg p-6">
-              <h2 className="font-semibold text-gray-900 mb-3">How to Use This Resource</h2>
+              <h2 className="font-semibold text-gray-900 mb-3">Cách Sử dụng Tài nguyên Này</h2>
               <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                Whether you're a nurse documenting intake, a medical student on rounds, or a clinician writing nutrition orders, 
-                you've likely encountered these common beliefs. This resource helps you:
+                Dù bạn là điều dưỡng ghi chép lượng ăn, sinh viên y khoa trong buổi hội chẩn, hay bác sĩ viết lệnh dinh dưỡng, 
+                bạn có thể đã gặp những quan niệm phổ biến này. Tài nguyên này giúp bạn:
               </p>
               <ul className="text-gray-700 text-sm space-y-2 list-disc pl-6">
-                <li><strong>Recognize</strong> when common beliefs might need questioning in your daily practice</li>
-                <li><strong>Understand</strong> why these beliefs persist (they often have logical origins)</li>
-                <li><strong>Learn</strong> the clinical reasoning behind evidence-based approaches</li>
-                <li><strong>Improve</strong> safe use of nutrition assessment and intervention tools</li>
+                <li><strong>Nhận diện</strong> khi các quan niệm phổ biến có thể cần được đặt câu hỏi trong thực hành hàng ngày</li>
+                <li><strong>Hiểu</strong> vì sao những quan niệm này vẫn tồn tại (chúng thường có nguồn gốc logic)</li>
+                <li><strong>Học</strong> lập luận lâm sàng đằng sau các cách tiếp cận dựa trên bằng chứng</li>
+                <li><strong>Cải thiện</strong> sử dụng an toàn các công cụ đánh giá và can thiệp dinh dưỡng</li>
               </ul>
               <p className="text-gray-700 text-xs mt-4 italic">
-                <strong>Note:</strong> Medical terms are explained in context. If you encounter unfamiliar terminology, 
-                consider it an opportunity to build your clinical vocabulary.
+                <strong>Lưu ý:</strong> Thuật ngữ y tế được giải thích trong ngữ cảnh. Nếu bạn gặp thuật ngữ không quen thuộc, 
+                hãy coi đó là cơ hội để xây dựng vốn từ vựng lâm sàng của bạn.
               </p>
             </section>
           </div>
@@ -84,43 +84,43 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Helps readers understand the logical origins of misconceptions */}
         <section className="mb-12 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-8" aria-labelledby="why-myths-persist-heading">
           <h2 id="why-myths-persist-heading" className="text-2xl font-bold text-gray-900 mb-4">
-            Why Do These Beliefs Persist?
+            Vì sao Những Quan niệm Này Vẫn Tồn tại?
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            Understanding why misconceptions persist helps us recognize them in practice and approach change with empathy. 
-            These beliefs often continue because of:
+            Hiểu vì sao hiểu lầm vẫn tồn tại giúp chúng ta nhận diện chúng trong thực hành và tiếp cận thay đổi với sự đồng cảm. 
+            Những quan niệm này thường tiếp tục vì:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <article className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Desire for Simple Rules</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Mong muốn Quy tắc Đơn giản</h3>
               <p className="text-sm text-gray-700">
-                Simple rules feel safer and easier to apply than complex, individualized approaches. 
-                "2000 kcal for everyone" is easier to remember than calculating individual needs, even if less accurate. 
-                In busy clinical settings, simple rules reduce decision fatigue and feel more manageable.
+                Quy tắc đơn giản cảm thấy an toàn và dễ áp dụng hơn các cách tiếp cận phức tạp, cá thể hóa. 
+                "2000 kcal cho mọi người" dễ nhớ hơn tính toán nhu cầu cá nhân, dù kém chính xác hơn. 
+                Trong môi trường lâm sàng bận rộn, quy tắc đơn giản giảm mệt mỏi quyết định và cảm thấy dễ quản lý hơn.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Overreliance on Numbers or Labs</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Phụ thuộc Quá mức vào Số liệu hoặc Xét nghiệm</h3>
               <p className="text-sm text-gray-700">
-                Numbers and lab values feel objective and definitive, but they don't tell the whole story. 
-                Focusing solely on a single lab value (like albumin) or a specific number (like BMI) can lead us 
-                to miss the broader clinical picture and individual patient needs.
+                Số liệu và giá trị xét nghiệm cảm thấy khách quan và chắc chắn, nhưng chúng không kể toàn bộ câu chuyện. 
+                Chỉ tập trung vào một giá trị xét nghiệm (như albumin) hoặc một con số cụ thể (như BMI) có thể khiến chúng ta 
+                bỏ lỡ bức tranh lâm sàng rộng hơn và nhu cầu cá nhân của bệnh nhân.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Misinterpretation of Guidelines</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Diễn giải Sai Hướng dẫn</h3>
               <p className="text-sm text-gray-700">
-                Clinical guidelines provide evidence-based recommendations, but they're meant to guide judgment, 
-                not replace it. When guidelines are applied too rigidly or without considering patient context, 
-                they can lead to inappropriate care. Guidelines are tools, not rules.
+                Hướng dẫn lâm sàng cung cấp khuyến nghị dựa trên bằng chứng, nhưng chúng nhằm hướng dẫn phán đoán, 
+                không thay thế nó. Khi hướng dẫn được áp dụng quá cứng nhắc hoặc không xem xét bối cảnh bệnh nhân, 
+                chúng có thể dẫn đến chăm sóc không phù hợp. Hướng dẫn là công cụ, không phải quy tắc.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Mixing Community Nutrition Advice with Clinical Care</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Trộn lẫn Lời khuyên Dinh dưỡng Cộng đồng với Chăm sóc Lâm sàng</h3>
               <p className="text-sm text-gray-700">
-                General nutrition advice for healthy populations (like "eat less carbs" or "more protein is better") 
-                doesn't always apply to sick, hospitalized patients. What's appropriate for community health may not be 
-                appropriate in clinical settings where patients have different metabolic needs.
+                Lời khuyên dinh dưỡng chung cho dân số khỏe mạnh (như "ăn ít carb" hoặc "nhiều protein hơn là tốt hơn") 
+                không phải lúc nào cũng áp dụng cho bệnh nhân bệnh, nằm viện. Điều phù hợp cho sức khỏe cộng đồng có thể không 
+                phù hợp trong môi trường lâm sàng nơi bệnh nhân có nhu cầu chuyển hóa khác nhau.
               </p>
             </article>
           </div>
@@ -129,15 +129,15 @@ export default function MythsInClinicalNutritionPage() {
         {/* Search Functionality */}
         {/* Educational: Helps users find specific misconceptions they're interested in */}
         <div className="mb-6 sm:mb-8">
-          <label htmlFor="myth-search" className="sr-only">Search myths and misconceptions</label>
+          <label htmlFor="myth-search" className="sr-only">Tìm kiếm hiểu lầm và quan niệm sai</label>
           <input
             id="myth-search"
             type="search"
-            placeholder="Search myths and misconceptions..."
+            placeholder="Tìm kiếm hiểu lầm và quan niệm sai..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="w-full px-4 py-3 text-sm sm:text-base border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
-            aria-label="Search myths and misconceptions"
+            aria-label="Tìm kiếm hiểu lầm và quan niệm sai"
           />
         </div>
 
@@ -145,11 +145,11 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Each myth card provides structured learning about misconceptions */}
         <section className="mb-12" aria-labelledby="myths-heading">
           <h2 id="myths-heading" className="text-2xl font-bold text-gray-900 mb-6">
-            Common Misconceptions in Practice
+            Hiểu lầm Phổ biến trong Thực hành
           </h2>
           {filteredMyths.length === 0 ? (
             <div className="text-center py-12 text-gray-500" role="status" aria-live="polite">
-              No myths found matching your search.
+              Không tìm thấy hiểu lầm nào khớp với tìm kiếm của bạn.
             </div>
           ) : (
             <ol className="space-y-4" aria-label="List of common misconceptions">
@@ -170,60 +170,60 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Helps readers identify patterns across misconceptions */}
         <section className="mb-12 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-lg" aria-labelledby="common-themes-heading">
           <h2 id="common-themes-heading" className="text-2xl font-bold text-gray-900 mb-4">
-            Common Themes Across These Misconceptions
+            Chủ đề Chung xuyên suốt Các Hiểu lầm Này
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            As you reflect on these misconceptions, you'll notice several recurring themes that appear across different beliefs. 
-            Understanding these themes helps us recognize when similar thinking patterns might be influencing our practice:
+            Khi bạn suy ngẫm về những hiểu lầm này, bạn sẽ nhận thấy một số chủ đề lặp lại xuất hiện xuyên suốt các quan niệm khác nhau. 
+            Hiểu những chủ đề này giúp chúng ta nhận diện khi các mô hình tư duy tương tự có thể đang ảnh hưởng đến thực hành của chúng ta:
           </p>
           <div className="space-y-6">
             <article className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl" aria-hidden="true">1.</span>
-                Context Matters
+                Bối cảnh Quan trọng
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                The same intervention can be appropriate or inappropriate depending on the patient's condition, prognosis, 
-                metabolic state, and goals of care. What works for a healthy outpatient may not work for a hospitalized patient. 
-                What's appropriate for one clinical situation may not be appropriate in another. Consider the full clinical picture 
-                before applying general rules or guidelines.
+                Cùng một can thiệp có thể phù hợp hoặc không phù hợp tùy thuộc vào tình trạng bệnh nhân, tiên lượng, 
+                trạng thái chuyển hóa, và mục tiêu chăm sóc. Điều hiệu quả với bệnh nhân ngoại trú khỏe mạnh có thể không hiệu quả với bệnh nhân nằm viện. 
+                Điều phù hợp cho một tình huống lâm sàng có thể không phù hợp cho tình huống khác. Xem xét toàn bộ bức tranh lâm sàng 
+                trước khi áp dụng quy tắc hoặc hướng dẫn chung.
               </p>
               <p className="text-gray-600 text-sm mt-3 italic">
-                Example: Weight loss may be beneficial for an obese outpatient, but unintentional weight loss in a hospitalized 
-                patient is concerning, even if they're obese.
+                Ví dụ: Sụt cân có thể có lợi cho bệnh nhân ngoại trú béo phì, nhưng sụt cân không chủ ý ở bệnh nhân nằm viện 
+                là đáng lo ngại, ngay cả khi họ béo phì.
               </p>
             </article>
 
             <article className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl" aria-hidden="true">2.</span>
-                Trends Matter More Than Single Values
+                Xu hướng Quan trọng Hơn Giá trị Đơn lẻ
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                A single lab value, weight measurement, or calorie count tells you very little. What matters is the trend over time. 
-                Is the patient improving? Getting worse? Staying stable? Single values can be misleading, but trends reveal the true 
-                clinical picture. Focus on patterns and changes rather than isolated numbers.
+                Một giá trị xét nghiệm, đo cân nặng, hoặc đếm calo đơn lẻ cho bạn biết rất ít. Điều quan trọng là xu hướng theo thời gian. 
+                Bệnh nhân có đang cải thiện? Xấu đi? Ổn định? Giá trị đơn lẻ có thể gây hiểu lầm, nhưng xu hướng tiết lộ 
+                bức tranh lâm sàng thực sự. Tập trung vào mô hình và thay đổi thay vì các con số riêng lẻ.
               </p>
               <p className="text-gray-600 text-sm mt-3 italic">
-                Example: A single day of low intake isn't necessarily concerning, but a pattern of declining intake over several 
-                days requires attention.
+                Ví dụ: Một ngày lượng ăn thấp không nhất thiết đáng lo ngại, nhưng mô hình lượng ăn giảm trong vài 
+                ngày cần được chú ý.
               </p>
             </article>
 
             <article className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl" aria-hidden="true">3.</span>
-                Numbers Support Thinking, Not Replace It
+                Số liệu Hỗ trợ Tư duy, Không Thay thế Nó
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Calculations, lab values, and measurements are tools to inform your clinical judgment, not to replace it. 
-                Numbers provide data, but you provide the interpretation. Use calculations and measurements to support your thinking, 
-                but always consider the patient's individual circumstances, response to interventions, and overall clinical picture. 
-                The number is a starting point, not an endpoint.
+                Tính toán, giá trị xét nghiệm, và đo lường là công cụ để cung cấp thông tin cho phán đoán lâm sàng của bạn, không phải để thay thế nó. 
+                Số liệu cung cấp dữ liệu, nhưng bạn cung cấp cách diễn giải. Sử dụng tính toán và đo lường để hỗ trợ tư duy của bạn, 
+                nhưng luôn xem xét hoàn cảnh cá nhân của bệnh nhân, phản ứng với can thiệp, và toàn bộ bức tranh lâm sàng. 
+                Con số là điểm khởi đầu, không phải điểm kết thúc.
               </p>
               <p className="text-gray-600 text-sm mt-3 italic">
-                Example: A calculated calorie requirement is an estimate based on equations. Monitor the patient's response and 
-                adjust based on how they're actually doing, not just the number.
+                Ví dụ: Nhu cầu calo đã tính là ước tính dựa trên phương trình. Theo dõi phản ứng của bệnh nhân và 
+                điều chỉnh dựa trên cách họ thực sự đang làm, không chỉ dựa vào con số.
               </p>
             </article>
           </div>
@@ -233,69 +233,69 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Key principles to guide practice */}
         <section className="mb-12 p-6 bg-blue-50 border border-blue-200 rounded-lg" aria-labelledby="remember-heading">
           <h2 id="remember-heading" className="text-2xl font-bold text-gray-900 mb-4">
-            What to Remember
+            Điều Cần Nhớ
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            As you reflect on these common misconceptions, keep these key principles in mind:
+            Khi bạn suy ngẫm về những hiểu lầm phổ biến này, hãy ghi nhớ những nguyên tắc chính sau:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">1.</span>
-                Individualization Matters
+                Cá thể hóa Quan trọng
               </h3>
               <p className="text-sm text-gray-700">
-                Nutrition needs vary significantly between patients. What works for one patient may not work for another, 
-                even with similar conditions. Individual assessment and calculation of needs is typically important.
+                Nhu cầu dinh dưỡng khác biệt đáng kể giữa các bệnh nhân. Điều hiệu quả với một bệnh nhân có thể không hiệu quả với bệnh nhân khác, 
+                ngay cả với tình trạng tương tự. Đánh giá và tính toán nhu cầu cá nhân thường quan trọng.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">2.</span>
-                More Isn't Always Better
+                Nhiều Không phải Luôn Tốt hơn
               </h3>
               <p className="text-sm text-gray-700">
-                Adequacy is typically the goal, not maximization. Excessive nutrients may not provide additional benefit and can be problematic. The focus is usually on meeting needs rather than exceeding them.
+                Mức đầy đủ thường là mục tiêu, không phải tối đa hóa. Chất dinh dưỡng quá mức có thể không mang lại lợi ích thêm và có thể gây vấn đề. Trọng tâm thường là đáp ứng nhu cầu thay vì vượt quá chúng.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">3.</span>
-                Context Is Critical
+                Bối cảnh Rất Quan trọng
               </h3>
               <p className="text-sm text-gray-700">
-                The same intervention can be appropriate or inappropriate depending on the patient's condition, 
-                prognosis, and goals of care. Considering the full clinical picture is typically important.
+                Cùng một can thiệp có thể phù hợp hoặc không phù hợp tùy thuộc vào tình trạng bệnh nhân, 
+                tiên lượng, và mục tiêu chăm sóc. Xem xét toàn bộ bức tranh lâm sàng thường quan trọng.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">4.</span>
-                Evidence Evolves
+                Bằng chứng Phát triển
               </h3>
               <p className="text-sm text-gray-700">
-                Practices that were standard decades ago may not align with current evidence. Stay current with 
-                guidelines and be open to updating your practice.
+                Thực hành từng là tiêu chuẩn nhiều thập kỷ trước có thể không phù hợp với bằng chứng hiện tại. Cập nhật 
+                hướng dẫn và cởi mở với việc cập nhật thực hành của bạn.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">5.</span>
-                Question Assumptions
+                Đặt câu hỏi về Giả định
               </h3>
               <p className="text-sm text-gray-700">
-                When you hear "we always do it this way," ask why. Understanding the rationale helps you identify 
-                when practices need updating.
+                Khi bạn nghe "chúng ta luôn làm theo cách này," hãy hỏi vì sao. Hiểu lý do giúp bạn nhận diện 
+                khi thực hành cần được cập nhật.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">6.</span>
-                Collaboration Improves Care
+                Hợp tác Cải thiện Chăm sóc
               </h3>
               <p className="text-sm text-gray-700">
-                Work with dietitians, nurses, physicians, and other team members. Different perspectives help identify 
-                assumptions and improve decision-making.
+                Làm việc với chuyên gia dinh dưỡng, điều dưỡng, bác sĩ, và các thành viên nhóm khác. Các quan điểm khác nhau giúp nhận diện 
+                giả định và cải thiện ra quyết định.
               </p>
             </article>
           </div>
@@ -310,84 +310,84 @@ export default function MythsInClinicalNutritionPage() {
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
               </svg>
-              Important Disclaimer
+              Lưu ý Quan trọng
             </h2>
             <p className="text-sm text-red-900 leading-relaxed font-medium">
-              This resource is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. 
-              The information provided should not replace professional clinical judgment or multidisciplinary team consultation. 
-              Always consult with qualified healthcare professionals for patient-specific nutrition care decisions.
+              Tài nguyên này chỉ dùng cho mục đích giáo dục và không cấu thành tư vấn y tế, chẩn đoán, hoặc điều trị. 
+              Thông tin được cung cấp không nên thay thế phán đoán lâm sàng chuyên nghiệp hoặc tư vấn nhóm đa ngành. 
+              Luôn tham khảo ý kiến các chuyên gia y tế có trình độ cho các quyết định chăm sóc dinh dưỡng cụ thể cho bệnh nhân.
             </p>
           </div>
 
           {/* Main Content */}
           <div className="p-6 bg-amber-50 border border-amber-200 rounded-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Safety & Perspective
+              An toàn & Quan điểm
             </h2>
             <div className="space-y-6">
               <article className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Nutrition Tools Help Guide Attention
+                  Công cụ Dinh dưỡng Giúp Hướng dẫn Sự Chú ý
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  Nutrition assessment tools, calculators, screening instruments, and guidelines are designed to help you 
-                  identify areas that need attention and provide a framework for thinking about nutrition care. They help 
-                  you focus on what matters most and ensure you don't miss important considerations. Think of them as 
-                  navigational aids that point you in the right direction, not as destinations themselves.
+                  Công cụ đánh giá dinh dưỡng, máy tính, công cụ sàng lọc, và hướng dẫn được thiết kế để giúp bạn 
+                  nhận diện các lĩnh vực cần chú ý và cung cấp khung tư duy về chăm sóc dinh dưỡng. Chúng giúp 
+                  bạn tập trung vào điều quan trọng nhất và đảm bảo bạn không bỏ lỡ các cân nhắc quan trọng. Hãy coi chúng như 
+                  công cụ điều hướng chỉ bạn đúng hướng, không phải điểm đến.
                 </p>
               </article>
 
               <article className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  They Do Not Replace Multidisciplinary Care
+                  Chúng Không Thay thế Chăm sóc Đa ngành
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  No tool, calculation, or guideline can replace the expertise and collaboration of a multidisciplinary team. 
-                  Effective nutrition care requires input from registered dietitians, physicians, nurses, pharmacists, 
-                  physical therapists, and other specialists who each bring unique perspectives. Tools support team 
-                  decision-making; they don't eliminate the need for team collaboration. The best nutrition care happens 
-                  when team members work together, sharing knowledge and perspectives.
+                  Không có công cụ, tính toán, hoặc hướng dẫn nào có thể thay thế chuyên môn và hợp tác của nhóm đa ngành. 
+                  Chăm sóc dinh dưỡng hiệu quả đòi hỏi đầu vào từ chuyên gia dinh dưỡng đã đăng ký, bác sĩ, điều dưỡng, dược sĩ, 
+                  vật lý trị liệu, và các chuyên gia khác, mỗi người mang lại quan điểm độc đáo. Công cụ hỗ trợ 
+                  ra quyết định nhóm; chúng không loại bỏ nhu cầu hợp tác nhóm. Chăm sóc dinh dưỡng tốt nhất xảy ra 
+                  khi các thành viên nhóm làm việc cùng nhau, chia sẻ kiến thức và quan điểm.
                 </p>
               </article>
 
               <article className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Clinical Judgment Remains Central
+                  Phán đoán Lâm sàng Vẫn là Trung tâm
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  Clinical judgment—your ability to assess, interpret, and make decisions based on the full clinical picture—is 
-                  irreplaceable. Tools provide data and suggestions, but you must interpret that information in the context of 
-                  each unique patient situation. Consider the patient's condition, prognosis, goals of care, family preferences, 
-                  and institutional resources. Numbers and guidelines inform your judgment; they don't replace it. When tools 
-                  and clinical judgment conflict, trust your judgment and consult with your team.
+                  Phán đoán lâm sàng—khả năng của bạn để đánh giá, diễn giải, và ra quyết định dựa trên toàn bộ bức tranh lâm sàng—là 
+                  không thể thay thế. Công cụ cung cấp dữ liệu và gợi ý, nhưng bạn phải diễn giải thông tin đó trong bối cảnh 
+                  tình huống bệnh nhân độc đáo. Xem xét tình trạng bệnh nhân, tiên lượng, mục tiêu chăm sóc, sở thích gia đình, 
+                  và nguồn lực cơ sở. Số liệu và hướng dẫn cung cấp thông tin cho phán đoán của bạn; chúng không thay thế nó. Khi công cụ 
+                  và phán đoán lâm sàng xung đột, hãy tin vào phán đoán của bạn và tham khảo với nhóm của bạn.
                 </p>
               </article>
 
               <div className="bg-blue-50 p-5 rounded-lg border border-blue-200">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  When in Doubt, Consult
+                  Khi Còn Nghi ngờ, Hãy Tham khảo
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed mb-3">
-                  If you're uncertain about a nutrition decision, consult with:
+                  Nếu bạn không chắc chắn về quyết định dinh dưỡng, hãy tham khảo với:
                 </p>
                 <ul className="text-sm text-gray-700 space-y-1 list-disc pl-6">
-                  <li><strong>Registered Dietitians:</strong> Nutrition assessment and planning experts</li>
-                  <li><strong>Clinical Nutrition Support Teams:</strong> For complex cases requiring specialized nutrition support</li>
-                  <li><strong>Your Clinical Team:</strong> Physicians, nurses, and other providers who know the patient</li>
-                  <li><strong>Clinical Guidelines:</strong> Current evidence-based recommendations from professional organizations</li>
+                  <li><strong>Chuyên gia Dinh dưỡng Đã Đăng ký:</strong> Chuyên gia đánh giá và lập kế hoạch dinh dưỡng</li>
+                  <li><strong>Nhóm Hỗ trợ Dinh dưỡng Lâm sàng:</strong> Cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
+                  <li><strong>Nhóm Lâm sàng Của Bạn:</strong> Bác sĩ, điều dưỡng, và các nhà cung cấp khác biết bệnh nhân</li>
+                  <li><strong>Hướng dẫn Lâm sàng:</strong> Khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
                 </ul>
               </div>
 
               <div className="border-t border-gray-300 pt-4">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  About This Resource
+                  Về Tài nguyên Này
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  All information is based on current clinical guidelines from leading nutrition organizations including 
-                  ASPEN (American Society for Parenteral and Enteral Nutrition), ESPEN (European Society for Clinical 
-                  Nutrition and Metabolism), and the Academy of Nutrition and Dietetics. Our goal is to support safe, 
-                  evidence-based nutrition practice through education and reflection, not criticism. Regular updates ensure 
-                  alignment with the latest evidence.
+                  Tất cả thông tin dựa trên hướng dẫn lâm sàng hiện tại từ các tổ chức dinh dưỡng hàng đầu bao gồm 
+                  ASPEN (Hiệp hội Dinh dưỡng Tĩnh mạch và Ống thông Hoa Kỳ), ESPEN (Hiệp hội Dinh dưỡng Lâm sàng và Chuyển hóa Châu Âu), 
+                  và Học viện Dinh dưỡng và Chế độ Ăn. Mục tiêu của chúng tôi là hỗ trợ thực hành dinh dưỡng an toàn, 
+                  dựa trên bằng chứng thông qua giáo dục và suy ngẫm, không phải chỉ trích. Cập nhật thường xuyên đảm bảo 
+                  phù hợp với bằng chứng mới nhất.
                 </p>
               </div>
             </div>
@@ -399,11 +399,11 @@ export default function MythsInClinicalNutritionPage() {
         <section className="mb-8 p-8 bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg" aria-labelledby="cta-heading">
           <div className="text-center mb-6">
             <h2 id="cta-heading" className="text-2xl font-bold text-gray-900 mb-3">
-              Ready to Apply What You've Learned?
+              Sẵn sàng Áp dụng Những gì Bạn đã Học?
             </h2>
             <p className="text-gray-700 max-w-2xl mx-auto leading-relaxed">
-              Understanding these misconceptions is valuable, but putting that knowledge into practice is where real learning happens. 
-              We invite you to continue your journey with these supportive next steps:
+              Hiểu những hiểu lầm này là có giá trị, nhưng đưa kiến thức đó vào thực hành là nơi học tập thực sự xảy ra. 
+              Chúng tôi mời bạn tiếp tục hành trình của mình với các bước tiếp theo hỗ trợ này:
             </p>
           </div>
           
@@ -415,18 +415,18 @@ export default function MythsInClinicalNutritionPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2 text-center">Explore Assessment Tools</h3>
+                <h3 className="font-semibold text-gray-900 mb-2 text-center">Khám phá Công cụ Đánh giá</h3>
               </div>
               <p className="text-sm text-gray-700 mb-4 text-center">
-                Practice with our interactive nutrition assessment and calculation tools. These tools help you apply what you've learned 
-                in a hands-on way, building confidence as you work through real scenarios.
+                Thực hành với các công cụ đánh giá và tính toán dinh dưỡng tương tác của chúng tôi. Các công cụ này giúp bạn áp dụng những gì bạn đã học 
+                một cách thực hành, xây dựng sự tự tin khi bạn làm việc qua các tình huống thực tế.
               </p>
               <div className="text-center">
                 <a 
                   href="/tools" 
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
                 >
-                  Explore Tools
+                  Khám phá Công cụ
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -441,18 +441,18 @@ export default function MythsInClinicalNutritionPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2 text-center">Read the Assessment Overview</h3>
+                <h3 className="font-semibold text-gray-900 mb-2 text-center">Đọc Tổng quan Đánh giá</h3>
               </div>
               <p className="text-sm text-gray-700 mb-4 text-center">
-                Deepen your understanding by reading our comprehensive overview of the clinical nutrition assessment process. 
-                See how screening, needs estimation, and intake assessment work together to form a complete picture.
+                Đào sâu hiểu biết của bạn bằng cách đọc tổng quan toàn diện của chúng tôi về quy trình đánh giá dinh dưỡng lâm sàng. 
+                Xem cách sàng lọc, ước tính nhu cầu, và đánh giá lượng ăn hoạt động cùng nhau để tạo thành bức tranh hoàn chỉnh.
               </p>
               <div className="text-center">
                 <a 
                   href="/knowledge/assessment-process" 
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
                 >
-                  Read Overview
+                  Đọc Tổng quan
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -467,18 +467,18 @@ export default function MythsInClinicalNutritionPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2 text-center">Apply to Case Examples</h3>
+                <h3 className="font-semibold text-gray-900 mb-2 text-center">Áp dụng vào Ví dụ Ca bệnh</h3>
               </div>
               <p className="text-sm text-gray-700 mb-4 text-center">
-                Put your learning into practice by working through case examples. See how the principles you've learned apply 
-                to real patient scenarios, building your clinical reasoning skills along the way.
+                Đưa học tập của bạn vào thực hành bằng cách làm việc qua các ví dụ ca bệnh. Xem cách các nguyên tắc bạn đã học áp dụng 
+                vào các tình huống bệnh nhân thực tế, xây dựng kỹ năng lập luận lâm sàng của bạn trên đường đi.
               </p>
               <div className="text-center">
                 <a 
                   href="/cases" 
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
                 >
-                  View Cases
+                  Xem Ca bệnh
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -489,8 +489,8 @@ export default function MythsInClinicalNutritionPage() {
 
           <blockquote className="mt-8 p-5 bg-white rounded-lg border border-gray-200 max-w-3xl mx-auto text-center">
             <p className="text-sm text-gray-700 leading-relaxed italic">
-              "Remember, learning is a journey, not a destination. Every patient encounter is an opportunity to apply what you've learned 
-              and continue growing in your practice. You're building skills that will serve you and your patients well."
+              "Hãy nhớ, học tập là một hành trình, không phải điểm đến. Mỗi lần gặp bệnh nhân là cơ hội để áp dụng những gì bạn đã học 
+              và tiếp tục phát triển trong thực hành của bạn. Bạn đang xây dựng các kỹ năng sẽ phục vụ bạn và bệnh nhân của bạn tốt."
             </p>
           </blockquote>
         </section>
