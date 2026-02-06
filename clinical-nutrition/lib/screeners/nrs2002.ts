@@ -10,7 +10,7 @@ export interface Nrs2002EducationalResult {
   /** Identifier for the screening tool used (for display in the result panel). */
   toolId: "nrs-2002";
   /** Human-readable name of the tool. */
-  toolLabel: "NRS-2002 (educational approximation)";
+  toolLabel: "NRS-2002 (ước tính giáo dục)";
   /** Educational, approximate score (0–?); not a validated clinical score. */
   approximateScore: number | null;
   /** Simple risk band used only for teaching language. */
@@ -77,13 +77,13 @@ export function calculateEducationalNrs2002(
     score += 1;
     contributingDomains.impairedNutritionalStatus = true;
     teachingPoints.push(
-      "Recent weight loss of 5–10% suggests some impairment of nutritional status."
+      "Giảm cân gần đây 5–10% gợi ý một số suy giảm tình trạng dinh dưỡng."
     );
   } else if (input.recentWeightLossPercent >= 10) {
     score += 2;
     contributingDomains.impairedNutritionalStatus = true;
     teachingPoints.push(
-      "Weight loss of ≥10% is often considered a stronger signal for impaired nutritional status."
+      "Giảm cân ≥10% thường được coi là tín hiệu mạnh hơn cho suy giảm tình trạng dinh dưỡng."
     );
   }
 
@@ -93,13 +93,13 @@ export function calculateEducationalNrs2002(
     score += 1;
     contributingDomains.impairedNutritionalStatus = true;
     teachingPoints.push(
-      "Eating roughly 50–75% of usual intake contributes to nutritional risk."
+      "Ăn khoảng 50–75% lượng ăn vào thông thường đóng góp vào nguy cơ dinh dưỡng."
     );
   } else if (input.intakeReductionPercent >= 50) {
     score += 2;
     contributingDomains.impairedNutritionalStatus = true;
     teachingPoints.push(
-      "Eating about half or less of usual intake for several days is a strong concern signal."
+      "Ăn khoảng một nửa hoặc ít hơn lượng ăn vào thông thường trong vài ngày là một tín hiệu quan tâm mạnh."
     );
   }
 
@@ -111,7 +111,7 @@ export function calculateEducationalNrs2002(
       case "general_medical":
         score += 0;
         teachingPoints.push(
-          "Stable general medical conditions may have lower additional stress scoring."
+          "Tình trạng nội khoa chung ổn định có thể có điểm stress bổ sung thấp hơn."
         );
         break;
       case "surgical":
@@ -119,7 +119,7 @@ export function calculateEducationalNrs2002(
         score += 1;
         contributingDomains.diseaseSeverity = true;
         teachingPoints.push(
-          "Postoperative or gastrointestinal conditions can increase stress and impair intake."
+          "Tình trạng sau phẫu thuật hoặc tiêu hóa có thể tăng stress và làm suy giảm lượng ăn vào."
         );
         break;
       case "oncology":
@@ -127,7 +127,7 @@ export function calculateEducationalNrs2002(
         score += 2;
         contributingDomains.diseaseSeverity = true;
         teachingPoints.push(
-          "Oncology and ICU contexts often involve higher catabolic and inflammatory burden."
+          "Bối cảnh ung thư và ICU thường liên quan đến gánh nặng dị hóa và viêm cao hơn."
         );
         break;
       case "renal":
@@ -136,13 +136,13 @@ export function calculateEducationalNrs2002(
         score += 1;
         contributingDomains.diseaseSeverity = true;
         teachingPoints.push(
-          "Chronic organ disease can contribute to nutritional risk in a more moderate way."
+          "Bệnh cơ quan mạn tính có thể đóng góp vào nguy cơ dinh dưỡng theo cách vừa phải hơn."
         );
         break;
       default:
         missingFields.push("diseaseContextCode");
         warnings.push(
-          "Disease context code was not recognized; disease-related stress was not estimated."
+          "Mã bối cảnh bệnh không được nhận dạng; stress liên quan đến bệnh không được ước tính."
         );
         break;
     }
@@ -155,20 +155,20 @@ export function calculateEducationalNrs2002(
     score += 1;
     contributingDomains.ageAdjustment = true;
     teachingPoints.push(
-      "Age ≥70 years is often treated as an additional risk factor in NRS-style tools."
+      "Tuổi ≥70 năm thường được đối xử như một yếu tố nguy cơ bổ sung trong các công cụ kiểu NRS."
     );
   }
 
   if (missingFields.length > 0) {
     warnings.push(
-      "Some fields were missing; this educational score may underestimate or misrepresent risk."
+      "Một số trường bị thiếu; điểm giáo dục này có thể đánh giá thấp hoặc trình bày sai nguy cơ."
     );
   }
 
   if (score === 0 && warnings.length > 0) {
     return {
       toolId: "nrs-2002",
-      toolLabel: "NRS-2002 (educational approximation)",
+      toolLabel: "NRS-2002 (ước tính giáo dục)",
       approximateScore: null,
       riskBand: "unknown",
       riskCategory: "unknown",
@@ -178,9 +178,9 @@ export function calculateEducationalNrs2002(
       warnings,
       teachingPoints,
       summaryExplanation:
-        "There was not enough information to create even an educational NRS-2002 style estimate.",
+        "Không có đủ thông tin để tạo ngay cả một ước tính kiểu NRS-2002 giáo dục.",
       whyThisResult: [
-        "Key inputs such as weight loss, intake reduction, age, or disease context were missing or unclear.",
+        "Các đầu vào chính như giảm cân, giảm lượng ăn vào, tuổi, hoặc bối cảnh bệnh bị thiếu hoặc không rõ ràng.",
       ],
     };
   }
@@ -207,27 +207,27 @@ export function calculateEducationalNrs2002(
   }
 
   warnings.push(
-    "This is a simplified, educational NRS-2002 style estimate and must not be used for clinical decisions."
+    "Đây là một ước tính kiểu NRS-2002 giáo dục đơn giản hóa và không được sử dụng cho quyết định lâm sàng."
   );
 
   if (riskCategory === "low") {
     whyThisResult.push(
-      "Based on the information entered, there is limited evidence of impaired nutritional status or high disease-related stress."
+      "Dựa trên thông tin đã nhập, có bằng chứng hạn chế về suy giảm tình trạng dinh dưỡng hoặc stress liên quan đến bệnh cao."
     );
   } else {
     whyThisResult.push(
-      "Recent weight loss, reduced intake, age, and/or disease context together raise educational concern about nutritional risk."
+      "Giảm cân gần đây, giảm lượng ăn vào, tuổi, và/hoặc bối cảnh bệnh cùng nhau làm tăng mối quan tâm giáo dục về nguy cơ dinh dưỡng."
     );
   }
 
   const summaryExplanation =
     riskCategory === "low"
-      ? "This educational NRS-2002 style estimate suggests a lower level of nutritional risk with the current information."
-      : "This educational NRS-2002 style estimate suggests increased concern about nutritional risk, signalling that a full assessment would be appropriate in real practice.";
+      ? "Ước tính kiểu NRS-2002 giáo dục này gợi ý mức nguy cơ dinh dưỡng thấp hơn với thông tin hiện tại."
+      : "Ước tính kiểu NRS-2002 giáo dục này gợi ý mối quan tâm tăng về nguy cơ dinh dưỡng, báo hiệu rằng một đánh giá đầy đủ sẽ phù hợp trong thực hành thực tế.";
 
   return {
     toolId: "nrs-2002",
-    toolLabel: "NRS-2002 (educational approximation)",
+    toolLabel: "NRS-2002 (ước tính giáo dục)",
     approximateScore: score,
     riskBand,
     riskCategory,

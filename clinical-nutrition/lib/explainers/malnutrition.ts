@@ -29,17 +29,17 @@ export function buildMalnutritionInterpretation(
   if (riskCategory === "low") {
     return {
       whatItUsuallyMeans: [
-        "In clinical practice, a lower-risk screening pattern often means there are no strong immediate red flags for recent weight loss or sustained intake problems.",
-        "It does not prove that nutrition is adequate, but suggests that other problems may be more urgent to address first.",
+        "Trong thực hành lâm sàng, một mẫu sàng lọc nguy cơ thấp hơn thường có nghĩa là không có dấu hiệu cảnh báo mạnh ngay lập tức cho giảm cân gần đây hoặc vấn đề lượng ăn vào kéo dài.",
+        "Nó không chứng minh rằng dinh dưỡng là đầy đủ, nhưng gợi ý rằng các vấn đề khác có thể cấp bách hơn để giải quyết trước.",
       ],
       whatCliniciansOftenConsiderNext: [
-        "Continuing to observe weight, intake, and functional status over time.",
-        "Re-screening if the clinical situation changes, such as a new illness or reduced appetite.",
-        "Considering a more detailed nutrition history if there are additional concerns not captured by the screener.",
+        "Tiếp tục quan sát cân nặng, lượng ăn vào, và tình trạng chức năng theo thời gian.",
+        "Sàng lọc lại nếu tình huống lâm sàng thay đổi, chẳng hạn như bệnh mới hoặc giảm cảm giác ngon miệng.",
+        "Xem xét tiền sử dinh dưỡng chi tiết hơn nếu có mối quan tâm bổ sung không được nắm bắt bởi công cụ sàng lọc.",
       ],
       commonPitfalls: [
-        "Relying on the screening result alone without asking about recent changes in appetite, symptoms, or functional decline.",
-        "Missing risk in people who have had very gradual changes over a long period or who cannot easily report their history.",
+        "Dựa vào kết quả sàng lọc một mình mà không hỏi về thay đổi gần đây trong cảm giác ngon miệng, triệu chứng, hoặc suy giảm chức năng.",
+        "Bỏ lỡ nguy cơ ở những người đã có thay đổi rất dần dần trong một khoảng thời gian dài hoặc những người không thể dễ dàng báo cáo tiền sử của họ.",
       ],
     };
   }
@@ -47,18 +47,18 @@ export function buildMalnutritionInterpretation(
   if (riskCategory === "high") {
     return {
       whatItUsuallyMeans: [
-        "In clinical practice, a higher-risk screening pattern is often treated as a signal that nutrition may be an important contributor to overall risk.",
-        "It does not confirm malnutrition, but it usually prompts clinicians to look more closely at intake, weight history, and function.",
+        "Trong thực hành lâm sàng, một mẫu sàng lọc nguy cơ cao hơn thường được đối xử như một tín hiệu rằng dinh dưỡng có thể là một đóng góp quan trọng cho nguy cơ tổng thể.",
+        "Nó không xác nhận suy dinh dưỡng, nhưng nó thường khiến các bác sĩ lâm sàng xem xét kỹ hơn về lượng ăn vào, tiền sử cân nặng, và chức năng.",
       ],
       whatCliniciansOftenConsiderNext: [
-        "Arranging a fuller nutrition assessment, where available, to explore causes, severity, and potential supports.",
-        "Reviewing medication, symptoms, and underlying disease to understand why intake or weight have changed.",
-        "Checking local guidelines or pathways that describe how to respond to positive nutrition screening results.",
+        "Sắp xếp một đánh giá dinh dưỡng đầy đủ hơn, nơi có sẵn, để khám phá nguyên nhân, mức độ nghiêm trọng, và hỗ trợ tiềm năng.",
+        "Xem xét lại thuốc, triệu chứng, và bệnh tiềm ẩn để hiểu tại sao lượng ăn vào hoặc cân nặng đã thay đổi.",
+        "Kiểm tra hướng dẫn địa phương hoặc quy trình mô tả cách phản ứng với kết quả sàng lọc dinh dưỡng dương tính.",
       ],
       commonPitfalls: [
-        "Interpreting a higher-risk pattern as a treatment plan on its own, without a broader clinical assessment.",
-        "Overlooking confounders such as oedema, fluid resuscitation, or large-volume ascites, which can hide weight loss.",
-        "Ignoring the influence of acute inflammation or infection, which can change weight and intake without reflecting long-term status.",
+        "Giải thích một mẫu nguy cơ cao hơn như một kế hoạch điều trị tự nó, không có đánh giá lâm sàng rộng hơn.",
+        "Bỏ qua các yếu tố gây nhiễu như phù, hồi sức dịch, hoặc cổ trướng thể tích lớn, có thể che giấu giảm cân.",
+        "Bỏ qua ảnh hưởng của viêm cấp tính hoặc nhiễm trùng, có thể thay đổi cân nặng và lượng ăn vào mà không phản ánh tình trạng dài hạn.",
       ],
     };
   }
@@ -67,33 +67,33 @@ export function buildMalnutritionInterpretation(
   if (riskCategory === "increased") {
     return {
       whatItUsuallyMeans: [
-        "In clinical practice, an 'increased risk' pattern is often treated as an early signal that closer attention to nutrition may be helpful.",
-        "It suggests that there are some concerning features, but the overall picture still needs to be confirmed with more detail.",
+        "Trong thực hành lâm sàng, một mẫu 'nguy cơ tăng' thường được đối xử như một tín hiệu sớm rằng chú ý gần hơn đến dinh dưỡng có thể hữu ích.",
+        "Nó gợi ý rằng có một số đặc điểm đáng quan tâm, nhưng toàn bộ bức tranh vẫn cần được xác nhận với chi tiết hơn.",
       ],
       whatCliniciansOftenConsiderNext: [
-        "Clarifying the time course of weight loss and reduced intake.",
-        "Looking for reversible contributors, such as nausea, pain, or difficulties accessing food.",
-        "Discussing the findings with colleagues (for example, dietitians or senior clinicians) if available.",
+        "Làm rõ quá trình thời gian của giảm cân và giảm lượng ăn vào.",
+        "Tìm kiếm các đóng góp có thể đảo ngược, chẳng hạn như buồn nôn, đau, hoặc khó khăn tiếp cận thực phẩm.",
+        "Thảo luận các phát hiện với đồng nghiệp (ví dụ, chuyên gia dinh dưỡng hoặc bác sĩ lâm sàng cao cấp) nếu có sẵn.",
       ],
       commonPitfalls: [
-        "Assuming that 'increased risk' automatically means malnutrition is present.",
-        "Forgetting to re-check the information when new history becomes available or when symptoms change.",
+        "Giả định rằng 'nguy cơ tăng' tự động có nghĩa là suy dinh dưỡng đang hiện diện.",
+        "Quên kiểm tra lại thông tin khi tiền sử mới trở nên có sẵn hoặc khi triệu chứng thay đổi.",
       ],
     };
   }
 
   return {
     whatItUsuallyMeans: [
-      "When important pieces of information are missing, it becomes difficult to say very much about nutritional risk even in a teaching context.",
-      "In practice, clinicians would usually try to gather more detail before interpreting the result.",
+      "Khi các mảnh thông tin quan trọng bị thiếu, trở nên khó khăn để nói nhiều về nguy cơ dinh dưỡng ngay cả trong bối cảnh giảng dạy.",
+      "Trong thực hành, các bác sĩ lâm sàng thường cố gắng thu thập chi tiết hơn trước khi giải thích kết quả.",
     ],
     whatCliniciansOftenConsiderNext: [
-      "Clarifying gaps in the history, such as time frames for weight change or reasons for reduced intake.",
-      "Asking about symptoms or social factors that might not have been captured in the initial screening questions.",
+      "Làm rõ khoảng trống trong tiền sử, chẳng hạn như khung thời gian cho thay đổi cân nặng hoặc lý do cho giảm lượng ăn vào.",
+      "Hỏi về triệu chứng hoặc yếu tố xã hội có thể không được nắm bắt trong các câu hỏi sàng lọc ban đầu.",
     ],
     commonPitfalls: [
-      "Over-interpreting an incomplete screening result as if it were definitive.",
-      "Failing to recognise that missing data can hide clinically important problems.",
+      "Giải thích quá mức một kết quả sàng lọc không đầy đủ như thể nó là dứt khoát.",
+      "Không nhận ra rằng dữ liệu thiếu có thể che giấu các vấn đề quan trọng về mặt lâm sàng.",
     ],
   };
 }
