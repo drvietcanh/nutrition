@@ -71,7 +71,7 @@ export function InteractiveSection() {
 
   return (
     <section
-      aria-label="Interactive energy and protein needs teaching tool"
+      aria-label="Công cụ giảng dạy tương tác về nhu cầu năng lượng và protein"
       className="space-y-6"
     >
       <MethodSelector activeMethod={activeMethod} onChange={setActiveMethod} />
@@ -104,13 +104,13 @@ function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
         id="method-selector-heading"
         className="text-base font-semibold sm:text-lg"
       >
-        3. Choose an estimation method
+        3. Chọn phương pháp ước tính
       </h2>
       <p className="text-sm text-neutral-700 sm:text-base">
-        Different approaches to estimating requirements answer slightly
-        different questions. Use this section to compare a simple
-        weight-based rule of thumb with a stress-adjusted, equation-style
-        estimate.
+        Các cách tiếp cận khác nhau để ước tính nhu cầu trả lời
+        các câu hỏi hơi khác nhau. Sử dụng phần này để so sánh một
+        quy tắc đơn giản dựa trên cân nặng với một ước tính
+        điều chỉnh stress, kiểu phương trình.
       </p>
       <div className="flex flex-wrap gap-3">
         <button
@@ -122,7 +122,7 @@ function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
               : "border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50"
           }`}
         >
-          Simple weight-based
+          Đơn giản dựa trên cân nặng
         </button>
         <button
           type="button"
@@ -133,7 +133,7 @@ function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
               : "border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50"
           }`}
         >
-          Equation-style (educational)
+          Kiểu phương trình (giáo dục)
         </button>
         <button
           type="button"
@@ -144,12 +144,12 @@ function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
               : "border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50"
           }`}
         >
-          Compare both
+          So sánh cả hai
         </button>
       </div>
       <p className="text-xs text-neutral-600 sm:text-sm">
-        These methods show different ways of thinking about the same problem.
-        They are starting points for discussion, not prescriptions.
+        Các phương pháp này cho thấy các cách suy nghĩ khác nhau về cùng một vấn đề.
+        Chúng là điểm khởi đầu cho thảo luận, không phải chỉ định.
       </p>
     </section>
   );
@@ -171,12 +171,12 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
   return (
     <section aria-labelledby="inputs-heading" className="space-y-3">
       <h2 id="inputs-heading" className="text-base font-semibold sm:text-lg">
-        4. Enter example clinical information
+        4. Nhập thông tin lâm sàng ví dụ
       </h2>
       <p className="text-sm text-neutral-700 sm:text-base">
-        Use anonymous, hypothetical values only. The aim is to understand how
-        weight and clinical context shape estimated requirements, not to
-        manage real patients.
+        Chỉ sử dụng giá trị giả định, ẩn danh. Mục đích là hiểu cách
+        cân nặng và bối cảnh lâm sàng định hình nhu cầu ước tính, không phải để
+        quản lý bệnh nhân thực tế.
       </p>
 
       <form
@@ -190,22 +190,22 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: some equations and guidelines adjust requirements for older or younger adults."
+            title="Tại sao quan trọng: một số phương trình và hướng dẫn điều chỉnh nhu cầu cho người lớn tuổi hoặc trẻ hơn."
           >
-            Age (years)
+            Tuổi (năm)
           </label>
           <input
             type="number"
             inputMode="numeric"
             min={0}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 65"
+            placeholder="ví dụ: 65"
             value={form.ageYears}
             onChange={(e) => update("ageYears", e.target.value)}
           />
           <p className="text-xs text-neutral-600">
-            Example: a 30-year-old and an 85-year-old with the same weight may
-            have different requirements and tolerance.
+            Ví dụ: một người 30 tuổi và một người 85 tuổi với cùng cân nặng có thể
+            có nhu cầu và khả năng chịu đựng khác nhau.
           </p>
         </div>
 
@@ -213,9 +213,9 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: reference values and body composition often differ by sex."
+            title="Tại sao quan trọng: giá trị tham chiếu và thành phần cơ thể thường khác nhau theo giới tính."
           >
-            Sex (for reference values)
+            Giới tính (cho giá trị tham chiếu)
           </label>
           <select
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
@@ -224,15 +224,15 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
               update("sex", (e.target.value || null) as FormState["sex"])
             }
           >
-            <option value="">Select (optional)</option>
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <option value="intersex">Intersex</option>
-            <option value="unspecified">Unspecified</option>
-            <option value="unknown">Unknown</option>
+            <option value="">Chọn (tùy chọn)</option>
+            <option value="female">Nữ</option>
+            <option value="male">Nam</option>
+            <option value="intersex">Liên giới tính</option>
+            <option value="unspecified">Không xác định</option>
+            <option value="unknown">Không biết</option>
           </select>
           <p className="text-xs text-neutral-600">
-            Example: some equations use sex as one of several input variables.
+            Ví dụ: một số phương trình sử dụng giới tính như một trong nhiều biến đầu vào.
           </p>
         </div>
 
@@ -240,22 +240,22 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: most bedside methods use body weight as the main anchor for energy and protein ranges."
+            title="Tại sao quan trọng: hầu hết các phương pháp tại giường sử dụng cân nặng cơ thể như điểm neo chính cho phạm vi năng lượng và protein."
           >
-            Current weight (kg)
+            Cân nặng hiện tại (kg)
           </label>
           <input
             type="number"
             inputMode="decimal"
             min={0}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 70"
+            placeholder="ví dụ: 70"
             value={form.weightKg}
             onChange={(e) => update("weightKg", e.target.value)}
           />
           <p className="text-xs text-neutral-600">
-            Example: using 70&nbsp;kg with a 25–30 kcal/kg rule gives roughly
-            1750–2100&nbsp;kcal/day as a starting band.
+            Ví dụ: sử dụng 70&nbsp;kg với quy tắc 25–30 kcal/kg cho khoảng
+            1750–2100&nbsp;kcal/ngày như một phạm vi khởi đầu.
           </p>
         </div>
 
@@ -263,22 +263,22 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: height helps interpret weight (for example, via BMI or adjusted body weight in obesity)."
+            title="Tại sao quan trọng: chiều cao giúp giải thích cân nặng (ví dụ, qua BMI hoặc cân nặng điều chỉnh trong béo phì)."
           >
-            Height (cm)
+            Chiều cao (cm)
           </label>
           <input
             type="number"
             inputMode="decimal"
             min={0}
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
-            placeholder="e.g., 170"
+            placeholder="ví dụ: 170"
             value={form.heightCm}
             onChange={(e) => update("heightCm", e.target.value)}
           />
           <p className="text-xs text-neutral-600">
-            Example: 70&nbsp;kg at 170&nbsp;cm has a different context than
-            70&nbsp;kg at 150&nbsp;cm.
+            Ví dụ: 70&nbsp;kg ở 170&nbsp;cm có bối cảnh khác với
+            70&nbsp;kg ở 150&nbsp;cm.
           </p>
         </div>
 
@@ -286,9 +286,9 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
         <div className="space-y-1 sm:col-span-2">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: higher-stress clinical contexts (for example, major surgery, sepsis, ICU) often lead to higher estimated requirements."
+            title="Tại sao quan trọng: bối cảnh lâm sàng stress cao hơn (ví dụ: phẫu thuật lớn, nhiễm trùng huyết, ICU) thường dẫn đến nhu cầu ước tính cao hơn."
           >
-            Clinical context (illness / stress level, optional)
+            Bối cảnh lâm sàng (bệnh tật / mức độ stress, tùy chọn)
           </label>
           <select
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
@@ -301,31 +301,31 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
             }
           >
             <option value="">
-              Select (optional, e.g., stable / mild illness)
+              Chọn (tùy chọn, ví dụ: ổn định / bệnh nhẹ)
             </option>
             <option value="general_medical">
-              Stable / mild illness (general medical ward)
+              Ổn định / bệnh nhẹ (khoa nội khoa chung)
             </option>
             <option value="surgical">
-              Moderate stress (postoperative / surgical)
+              Stress trung bình (sau phẫu thuật / ngoại khoa)
             </option>
             <option value="oncology">
-              Moderate–higher stress (oncology, active treatment)
+              Stress trung bình–cao (ung thư, điều trị tích cực)
             </option>
             <option value="icu">
-              Severe illness / critical care (ICU)
+              Bệnh nặng / chăm sóc cấp cứu (ICU)
             </option>
             <option value="gastrointestinal">
-              GI disease (malabsorption, IBD, pancreatitis)
+              Bệnh tiêu hóa (kém hấp thu, IBD, viêm tụy)
             </option>
-            <option value="renal">Renal disease</option>
-            <option value="hepatic">Liver disease</option>
-            <option value="other">Other / mixed</option>
+            <option value="renal">Bệnh thận</option>
+            <option value="hepatic">Bệnh gan</option>
+            <option value="other">Khác / hỗn hợp</option>
           </select>
           <p className="text-xs text-neutral-600">
-            Example: selecting &quot;Severe illness / critical care&quot; will
-            illustrate how stress adjustments can nudge ranges upwards compared
-            with a stable general medical ward.
+            Ví dụ: chọn &quot;Bệnh nặng / chăm sóc cấp cứu&quot; sẽ
+            minh họa cách điều chỉnh stress có thể đẩy phạm vi lên cao hơn so
+            với khoa nội khoa chung ổn định.
           </p>
         </div>
 
@@ -333,9 +333,9 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: more mobile patients often have slightly higher energy expenditure than those on strict bedrest."
+            title="Tại sao quan trọng: bệnh nhân di chuyển nhiều hơn thường có tiêu hao năng lượng cao hơn một chút so với những người nằm liệt giường nghiêm ngặt."
           >
-            Activity level (optional)
+            Mức độ hoạt động (tùy chọn)
           </label>
           <select
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
@@ -344,18 +344,18 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
               update("activityLevel", e.target.value as FormState["activityLevel"])
             }
           >
-            <option value="">Select (e.g., bedrest)</option>
-            <option value="bedrest">Bedrest / mostly in bed</option>
+            <option value="">Chọn (ví dụ: nằm liệt giường)</option>
+            <option value="bedrest">Nằm liệt giường / chủ yếu trên giường</option>
             <option value="light">
-              Light activity (mostly in chair / short walks)
+              Hoạt động nhẹ (chủ yếu trên ghế / đi bộ ngắn)
             </option>
             <option value="mobile">
-              Mobile on ward (independent walking, rehab)
+              Di chuyển trong khoa (đi bộ độc lập, phục hồi chức năng)
             </option>
           </select>
           <p className="text-xs text-neutral-600">
-            Example: an independently mobile patient may tolerate the upper end
-            of an energy range more easily than someone on strict bedrest.
+            Ví dụ: một bệnh nhân di chuyển độc lập có thể dung nạp cuối cao hơn
+            của phạm vi năng lượng dễ dàng hơn so với ai đó nằm liệt giường nghiêm ngặt.
           </p>
         </div>
 
@@ -363,9 +363,9 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
         <div className="space-y-1">
           <label
             className="block text-xs font-medium text-neutral-800 sm:text-sm"
-            title="Why it matters: very low or very high body size can change how clinicians use simple weight-based rules and when they consider adjusted weights."
+            title="Tại sao quan trọng: kích thước cơ thể rất thấp hoặc rất cao có thể thay đổi cách các bác sĩ lâm sàng sử dụng quy tắc đơn giản dựa trên cân nặng và khi nào họ xem xét cân nặng điều chỉnh."
           >
-            Body size context (optional, educational)
+            Bối cảnh kích thước cơ thể (tùy chọn, giáo dục)
           </label>
           <select
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
@@ -374,15 +374,15 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
               update("bodySizeFlag", e.target.value as FormState["bodySizeFlag"])
             }
           >
-            <option value="">Select (e.g., typical range)</option>
-            <option value="underweight">Underweight / low BMI</option>
+            <option value="">Chọn (ví dụ: phạm vi điển hình)</option>
+            <option value="underweight">Thiếu cân / BMI thấp</option>
             <option value="obesity">
-              Obesity (where adjusted body weight may be discussed)
+              Béo phì (nơi cân nặng điều chỉnh có thể được thảo luận)
             </option>
           </select>
           <p className="text-xs text-neutral-600">
-            Example: in severe obesity, some teams discuss using adjusted or
-            ideal body weight when applying g/kg rules of thumb.
+            Ví dụ: trong béo phì nặng, một số nhóm thảo luận sử dụng cân nặng điều chỉnh hoặc
+            cân nặng lý tưởng khi áp dụng quy tắc g/kg.
           </p>
         </div>
 
@@ -391,7 +391,7 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
             type="submit"
             className="inline-flex items-center rounded-md border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800"
           >
-            Show educational ranges
+            Hiển thị phạm vi giáo dục
           </button>
         </div>
       </form>
@@ -419,12 +419,12 @@ function ResultPanel({
   return (
     <section aria-labelledby="results-heading" className="space-y-3">
       <h2 id="results-heading" className="text-base font-semibold sm:text-lg">
-        5. Educational ranges (not prescriptions)
+        5. Phạm vi giáo dục (không phải chỉ định)
       </h2>
       <p className="text-sm text-neutral-700 sm:text-base">
-        These bands show how different methods might frame daily energy and
-        protein needs. They are meant to support reasoning and discussion,
-        not to generate diet plans or orders.
+        Các phạm vi này cho thấy cách các phương pháp khác nhau có thể khung nhu cầu năng lượng và
+        protein hàng ngày. Chúng nhằm hỗ trợ lý luận và thảo luận,
+        không phải để tạo kế hoạch ăn uống hoặc chỉ định.
       </p>
 
       <div className="grid gap-4 md:grid-cols-2">
@@ -454,8 +454,8 @@ function SingleMethodResult({ heading, result }: SingleMethodResultProps) {
   if (!result) {
     return (
       <div className="rounded-md border border-dashed border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-700">
-        Enter example values and run the estimation to see how this approach
-        frames daily energy and protein needs.
+        Nhập giá trị ví dụ và chạy ước tính để xem cách tiếp cận này
+        khung nhu cầu năng lượng và protein hàng ngày.
       </div>
     );
   }
@@ -464,21 +464,21 @@ function SingleMethodResult({ heading, result }: SingleMethodResultProps) {
 
   const energyText =
     ranges.energyKcalPerDay &&
-    `${ranges.energyKcalPerDay.lower.toLocaleString()}–${ranges.energyKcalPerDay.upper.toLocaleString()} kcal/day`;
+    `${ranges.energyKcalPerDay.lower.toLocaleString()}–${ranges.energyKcalPerDay.upper.toLocaleString()} kcal/ngày`;
 
   const proteinText =
     ranges.proteinGramsPerDay &&
-    `${ranges.proteinGramsPerDay.lower.toLocaleString()}–${ranges.proteinGramsPerDay.upper.toLocaleString()} g/day`;
+    `${ranges.proteinGramsPerDay.lower.toLocaleString()}–${ranges.proteinGramsPerDay.upper.toLocaleString()} g/ngày`;
 
   const proteinPerKgText =
     ranges.proteinGramsPerKgPerDay &&
-    `${ranges.proteinGramsPerKgPerDay.lower}–${ranges.proteinGramsPerKgPerDay.upper} g/kg/day`;
+    `${ranges.proteinGramsPerKgPerDay.lower}–${ranges.proteinGramsPerKgPerDay.upper} g/kg/ngày`;
 
   return (
     <article className="space-y-3 rounded-md border border-neutral-200 bg-white p-4 text-sm text-neutral-800">
       <header className="space-y-1">
         <p className="text-xs uppercase tracking-wide text-neutral-500">
-          Estimation approach
+          Cách tiếp cận ước tính
         </p>
         <p className="text-sm font-semibold">{heading}</p>
         <p className="text-xs text-neutral-600">{result.methodLabel}</p>
@@ -486,21 +486,21 @@ function SingleMethodResult({ heading, result }: SingleMethodResultProps) {
 
       <section className="space-y-1">
         <p className="text-xs font-semibold text-neutral-700">
-          Illustrative daily ranges
+          Phạm vi hàng ngày minh họa
         </p>
         <ul className="space-y-0.5 text-xs text-neutral-700">
           <li>
-            Energy:{" "}
-            <strong>{energyText ?? "insufficient data to illustrate"}</strong>
+            Năng lượng:{" "}
+            <strong>{energyText ?? "dữ liệu không đủ để minh họa"}</strong>
           </li>
           <li>
-            Protein (total):{" "}
-            <strong>{proteinText ?? "insufficient data to illustrate"}</strong>
+            Protein (tổng):{" "}
+            <strong>{proteinText ?? "dữ liệu không đủ để minh họa"}</strong>
           </li>
           <li>
-            Protein (per kg):{" "}
+            Protein (mỗi kg):{" "}
             <strong>
-              {proteinPerKgText ?? "insufficient data to illustrate"}
+              {proteinPerKgText ?? "dữ liệu không đủ để minh họa"}
             </strong>
           </li>
         </ul>
@@ -513,8 +513,8 @@ function SingleMethodResult({ heading, result }: SingleMethodResultProps) {
               <div className="h-2 w-3/4 rounded-full bg-sky-100" />
             </div>
             <p className="text-[11px] text-neutral-500">
-              Visual band only (not to scale). Use the numbers above for
-              approximate ranges.
+              Chỉ là dải trực quan (không theo tỷ lệ). Sử dụng các con số ở trên cho
+              phạm vi gần đúng.
             </p>
           </div>
         )}
@@ -529,10 +529,10 @@ function SingleMethodResult({ heading, result }: SingleMethodResultProps) {
       {/* Common pitfalls */}
       {(result.warnings.length > 0 || result.missingFields.length > 0) && (
         <section className="space-y-1 rounded-md border border-amber-100 bg-amber-50 p-2 text-xs text-amber-900">
-          <p className="font-semibold">Common pitfalls and caveats</p>
+          <p className="font-semibold">Cạm bẫy phổ biến và lưu ý</p>
           {result.missingFields.length > 0 && (
             <p>
-              Some information was missing or unclear:{" "}
+              Một số thông tin bị thiếu hoặc không rõ ràng:{" "}
               {result.missingFields.join(", ")}.
             </p>
           )}
@@ -562,7 +562,7 @@ function InterpretationBlock({
   return (
     <section className="space-y-1 border-t border-dashed border-neutral-200 pt-2">
       <p className="text-xs font-semibold text-neutral-700">
-        Key assumptions, interpretation &amp; learning points
+        Giả định chính, giải thích &amp; điểm học tập
       </p>
       <ul className="list-disc space-y-1 pl-5 text-xs text-neutral-700">
         {explanation.map((line) => (
