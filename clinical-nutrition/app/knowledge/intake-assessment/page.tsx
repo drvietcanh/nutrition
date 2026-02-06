@@ -6,11 +6,11 @@ export default function IntakeAssessmentPage() {
       {/* Header */}
       <header className="space-y-3">
         <h1 className="text-2xl font-semibold sm:text-3xl">
-          Intake Assessment: Understanding What People Actually Receive
+          Đánh giá Lượng Ăn: Hiểu Những gì Mọi người Thực sự Nhận được
         </h1>
         <p className="text-base text-neutral-700 sm:text-lg">
-          Knowing what someone <em>should</em> get (estimated needs) is only half the picture.
-          Understanding what they <strong>actually receive</strong>—and why there's often a gap—is essential for effective nutrition care.
+          Biết những gì ai đó <em>nên</em> nhận được (nhu cầu ước tính) chỉ là một nửa bức tranh.
+          Hiểu những gì họ <strong>thực sự nhận được</strong>—và vì sao thường có khoảng cách—là cần thiết cho chăm sóc dinh dưỡng hiệu quả.
         </p>
       </header>
 
@@ -23,60 +23,60 @@ export default function IntakeAssessmentPage() {
           id="prescribed-vs-delivered-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Prescribed vs. Delivered: The Gap Between Plan and Reality
+          Kê đơn vs. Cung cấp: Khoảng cách Giữa Kế hoạch và Thực tế
         </h2>
         <p className="text-base text-neutral-700">
-          In clinical settings, there's often a difference between:
+          Trong môi trường lâm sàng, thường có sự khác biệt giữa:
         </p>
         <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
           <li>
-            <strong>Prescribed nutrition</strong>: What was ordered, planned, or recommended (e.g., "1,800 kcal/day via oral diet + supplements"
-            or "tube feed at 60 mL/hour providing 1,500 kcal/day").
+            <strong>Dinh dưỡng được kê đơn</strong>: Những gì được chỉ định, lập kế hoạch, hoặc khuyến nghị (ví dụ: "1.800 kcal/ngày qua chế độ ăn miệng + bổ sung"
+            hoặc "cho ăn qua ống 60 mL/giờ cung cấp 1.500 kcal/ngày").
           </li>
           <li>
-            <strong>Delivered nutrition</strong>: What the person actually consumed or received (e.g., they ate half their meals, refused supplements,
-            or the tube feed was held for 8 hours due to procedures).
+            <strong>Dinh dưỡng được cung cấp</strong>: Những gì người đó thực sự tiêu thụ hoặc nhận được (ví dụ: họ ăn một nửa bữa ăn, từ chối bổ sung,
+            hoặc cho ăn qua ống bị tạm dừng 8 giờ do thủ thuật).
           </li>
         </ul>
         <p className="text-base text-neutral-700">
-          This gap matters because <strong>only delivered nutrition affects health outcomes</strong>. A perfect plan that isn't followed doesn't help.
+          Khoảng cách này quan trọng vì <strong>chỉ dinh dưỡng được cung cấp ảnh hưởng đến kết quả sức khỏe</strong>. Một kế hoạch hoàn hảo không được tuân theo không giúp ích.
         </p>
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Clinical Example 1: Hospital Meal Service
+            Ví dụ Lâm sàng 1: Dịch vụ Bữa ăn Bệnh viện
           </p>
           <p className="text-sm text-neutral-700 mb-2">
-            A patient is prescribed a "regular diet" estimated to provide ~1,800 kcal/day. However:
+            Một bệnh nhân được kê đơn "chế độ ăn thường" ước tính cung cấp ~1.800 kcal/ngày. Tuy nhiên:
           </p>
           <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-            <li>They're nauseous and only eat 30% of each meal.</li>
-            <li>Meals are delayed due to tests, so they miss lunch entirely.</li>
-            <li>They don't like the food choices and skip several items.</li>
-            <li>Family brings snacks, but these aren't documented in the chart.</li>
+            <li>Họ buồn nôn và chỉ ăn 30% mỗi bữa ăn.</li>
+            <li>Bữa ăn bị trì hoãn do xét nghiệm, nên họ bỏ lỡ bữa trưa hoàn toàn.</li>
+            <li>Họ không thích lựa chọn thực phẩm và bỏ qua nhiều món.</li>
+            <li>Gia đình mang đồ ăn nhẹ, nhưng những thứ này không được ghi chép trong biểu đồ.</li>
           </ul>
           <p className="text-sm text-neutral-700 mt-2">
-            <strong>Result</strong>: Prescribed ~1,800 kcal/day, but actual delivered intake may be closer to 800–1,000 kcal/day.
-            Without assessing actual intake, the care team might assume the patient is meeting needs when they're not.
+            <strong>Kết quả</strong>: Kê đơn ~1.800 kcal/ngày, nhưng lượng ăn thực tế được cung cấp có thể gần 800–1.000 kcal/ngày.
+            Không đánh giá lượng ăn thực tế, nhóm chăm sóc có thể giả định bệnh nhân đang đáp ứng nhu cầu khi họ không.
           </p>
         </div>
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Clinical Example 2: Enteral (Tube) Feeding
+            Ví dụ Lâm sàng 2: Cho ăn Qua Ống (Enteral)
           </p>
           <p className="text-sm text-neutral-700 mb-2">
-            A patient has a nasogastric tube with orders for "continuous feed at 80 mL/hour, providing 1,600 kcal/day." However:
+            Một bệnh nhân có ống thông mũi dạ dày với lệnh "cho ăn liên tục 80 mL/giờ, cung cấp 1.600 kcal/ngày." Tuy nhiên:
           </p>
           <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-            <li>The feed is held for 4 hours before and after a procedure (8 hours total).</li>
-            <li>The pump malfunctions overnight, and no one notices until morning.</li>
-            <li>The patient experiences high gastric residuals, so the rate is reduced to 40 mL/hour for tolerance.</li>
-            <li>Flushes with water aren't counted toward nutrition, but they do add volume.</li>
+            <li>Cho ăn bị tạm dừng 4 giờ trước và sau thủ thuật (tổng 8 giờ).</li>
+            <li>Máy bơm bị hỏng qua đêm, và không ai nhận thấy cho đến sáng.</li>
+            <li>Bệnh nhân có dịch dạ dày dư thừa cao, nên tốc độ giảm xuống 40 mL/giờ để dung nạp.</li>
+            <li>Rửa bằng nước không được tính vào dinh dưỡng, nhưng chúng có thêm thể tích.</li>
           </ul>
           <p className="text-sm text-neutral-700 mt-2">
-            <strong>Result</strong>: Prescribed 1,600 kcal/day, but actual delivered may be closer to 800–1,000 kcal/day due to holds,
-            rate reductions, and interruptions. Regular intake assessment helps identify these gaps early.
+            <strong>Kết quả</strong>: Kê đơn 1.600 kcal/ngày, nhưng thực tế được cung cấp có thể gần 800–1.000 kcal/ngày do tạm dừng,
+            giảm tốc độ, và gián đoạn. Đánh giá lượng ăn thường xuyên giúp nhận diện những khoảng cách này sớm.
           </p>
         </div>
       </section>
@@ -90,74 +90,74 @@ export default function IntakeAssessmentPage() {
           id="falls-short-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Why Intake Often Falls Short in Practice
+          Vì sao Lượng Ăn Thường Thiếu trong Thực hành
         </h2>
         <p className="text-base text-neutral-700">
-          Understanding <strong>why</strong> intake falls short helps clinicians address root causes, not just symptoms.
-          Common reasons include:
+          Hiểu <strong>vì sao</strong> lượng ăn thiếu giúp các bác sĩ lâm sàng giải quyết nguyên nhân gốc rễ, không chỉ triệu chứng.
+          Lý do phổ biến bao gồm:
         </p>
 
         <div className="space-y-4 mt-4">
           <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-            <h3 className="font-semibold text-base mb-2">1. Symptoms and Side Effects</h3>
+            <h3 className="font-semibold text-base mb-2">1. Triệu chứng và Tác dụng Phụ</h3>
             <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-              <li><strong>Nausea and vomiting</strong>: Make eating unpleasant or impossible.</li>
-              <li><strong>Early satiety</strong>: Feeling full after small amounts (common in illness, certain medications, or conditions affecting stomach emptying).</li>
-              <li><strong>Pain</strong>: Abdominal pain, mouth sores, or swallowing difficulties reduce intake.</li>
-              <li><strong>Fatigue</strong>: Too tired to eat, chew, or prepare food.</li>
-              <li><strong>Altered taste or smell</strong>: Food doesn't taste right, reducing appetite.</li>
+              <li><strong>Buồn nôn và nôn</strong>: Làm cho việc ăn khó chịu hoặc không thể.</li>
+              <li><strong>No sớm</strong>: Cảm thấy no sau lượng nhỏ (phổ biến trong bệnh tật, một số thuốc, hoặc tình trạng ảnh hưởng đến làm rỗng dạ dày).</li>
+              <li><strong>Đau</strong>: Đau bụng, loét miệng, hoặc khó nuốt làm giảm lượng ăn.</li>
+              <li><strong>Mệt mỏi</strong>: Quá mệt để ăn, nhai, hoặc chuẩn bị thức ăn.</li>
+              <li><strong>Thay đổi vị giác hoặc khứu giác</strong>: Thức ăn không có vị đúng, làm giảm cảm giác ngon miệng.</li>
             </ul>
           </div>
 
           <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-            <h3 className="font-semibold text-base mb-2">2. Medical Procedures and Scheduling</h3>
+            <h3 className="font-semibold text-base mb-2">2. Thủ thuật Y tế và Lịch trình</h3>
             <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-              <li><strong>Fasting orders</strong>: NPO (nothing by mouth) before procedures, surgeries, or tests.</li>
-              <li><strong>Procedure delays</strong>: Tests run late, extending fasting periods beyond planned.</li>
-              <li><strong>Meal timing conflicts</strong>: Meals arrive during rounds, tests, or when the patient is sleeping.</li>
-              <li><strong>Multiple appointments</strong>: Outpatient visits scheduled during usual meal times.</li>
+              <li><strong>Lệnh nhịn ăn</strong>: NPO (không ăn uống) trước thủ thuật, phẫu thuật, hoặc xét nghiệm.</li>
+              <li><strong>Trì hoãn thủ thuật</strong>: Xét nghiệm chạy muộn, kéo dài thời gian nhịn ăn vượt quá kế hoạch.</li>
+              <li><strong>Xung đột thời gian bữa ăn</strong>: Bữa ăn đến trong lúc hội chẩn, xét nghiệm, hoặc khi bệnh nhân đang ngủ.</li>
+              <li><strong>Nhiều cuộc hẹn</strong>: Thăm khám ngoại trú được lên lịch trong giờ ăn thông thường.</li>
             </ul>
           </div>
 
           <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-            <h3 className="font-semibold text-base mb-2">3. Food Access and Preferences</h3>
+            <h3 className="font-semibold text-base mb-2">3. Tiếp cận Thực phẩm và Sở thích</h3>
             <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-              <li><strong>Food quality and variety</strong>: Limited options, unappealing textures, or foods that don't match cultural preferences.</li>
-              <li><strong>Dietary restrictions</strong>: Therapeutic diets (e.g., low-sodium, diabetic, renal) may limit palatable options.</li>
-              <li><strong>Texture modifications</strong>: Pureed or minced diets may be unappealing, leading to reduced intake.</li>
-              <li><strong>Limited access</strong>: No kitchen facilities, difficulty shopping, or financial constraints.</li>
+              <li><strong>Chất lượng và đa dạng thực phẩm</strong>: Lựa chọn hạn chế, kết cấu không hấp dẫn, hoặc thực phẩm không phù hợp với sở thích văn hóa.</li>
+              <li><strong>Hạn chế chế độ ăn</strong>: Chế độ ăn điều trị (ví dụ: ít natri, tiểu đường, thận) có thể giới hạn lựa chọn ngon miệng.</li>
+              <li><strong>Điều chỉnh kết cấu</strong>: Chế độ ăn xay nhuyễn hoặc băm nhỏ có thể không hấp dẫn, dẫn đến giảm lượng ăn.</li>
+              <li><strong>Tiếp cận hạn chế</strong>: Không có cơ sở bếp, khó mua sắm, hoặc ràng buộc tài chính.</li>
             </ul>
           </div>
 
           <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-            <h3 className="font-semibold text-base mb-2">4. System and Documentation Issues</h3>
+            <h3 className="font-semibold text-base mb-2">4. Vấn đề Hệ thống và Tài liệu</h3>
             <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-              <li><strong>Incomplete documentation</strong>: Snacks, family-provided food, or supplements not recorded in charts.</li>
-              <li><strong>Miscommunication</strong>: Orders not clearly communicated, or staff not aware of nutrition goals.</li>
-              <li><strong>Staffing constraints</strong>: Not enough time to assist with meals, monitor intake, or provide encouragement.</li>
-              <li><strong>Equipment problems</strong>: Feeding pumps malfunction, tube clogs, or delivery systems fail.</li>
+              <li><strong>Tài liệu không đầy đủ</strong>: Đồ ăn nhẹ, thực phẩm do gia đình cung cấp, hoặc bổ sung không được ghi chép trong biểu đồ.</li>
+              <li><strong>Giao tiếp sai</strong>: Lệnh không được truyền đạt rõ ràng, hoặc nhân viên không biết mục tiêu dinh dưỡng.</li>
+              <li><strong>Hạn chế nhân sự</strong>: Không đủ thời gian để hỗ trợ bữa ăn, theo dõi lượng ăn, hoặc cung cấp khuyến khích.</li>
+              <li><strong>Vấn đề thiết bị</strong>: Máy bơm cho ăn hỏng, ống tắc, hoặc hệ thống cung cấp thất bại.</li>
             </ul>
           </div>
 
           <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-            <h3 className="font-semibold text-base mb-2">5. Psychological and Social Factors</h3>
+            <h3 className="font-semibold text-base mb-2">5. Yếu tố Tâm lý và Xã hội</h3>
             <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-              <li><strong>Depression or anxiety</strong>: Reduce appetite and motivation to eat.</li>
-              <li><strong>Social isolation</strong>: Eating alone reduces intake compared to eating with others.</li>
-              <li><strong>Loss of independence</strong>: Frustration with needing help to eat, leading to refusal.</li>
-              <li><strong>Fear or misconceptions</strong>: Worry that eating will worsen symptoms or that certain foods are "forbidden."</li>
+              <li><strong>Trầm cảm hoặc lo âu</strong>: Giảm cảm giác ngon miệng và động lực ăn.</li>
+              <li><strong>Cô lập xã hội</strong>: Ăn một mình làm giảm lượng ăn so với ăn cùng người khác.</li>
+              <li><strong>Mất độc lập</strong>: Thất vọng với việc cần giúp đỡ để ăn, dẫn đến từ chối.</li>
+              <li><strong>Sợ hãi hoặc hiểu lầm</strong>: Lo lắng rằng ăn sẽ làm xấu đi triệu chứng hoặc một số thực phẩm bị "cấm."</li>
             </ul>
           </div>
         </div>
 
         <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2">
-            Clinical Insight:
+            Hiểu biết Lâm sàng:
           </p>
           <p className="text-sm text-blue-800">
-            When intake falls short, it's rarely just "the patient won't eat." There's usually a <strong>reason</strong>—symptoms, procedures,
-            system issues, or psychological factors. Identifying and addressing these reasons is more effective than simply increasing the prescription
-            or adding more supplements that may also go uneaten.
+            Khi lượng ăn thiếu, hiếm khi chỉ là "bệnh nhân sẽ không ăn." Thường có một <strong>lý do</strong>—triệu chứng, thủ thuật,
+            vấn đề hệ thống, hoặc yếu tố tâm lý. Nhận diện và giải quyết những lý do này hiệu quả hơn chỉ đơn giản tăng kê đơn
+            hoặc thêm nhiều bổ sung có thể cũng không được ăn.
           </p>
         </div>
       </section>
@@ -171,82 +171,82 @@ export default function IntakeAssessmentPage() {
           id="trends-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          The Importance of Trend Over Single-Day Data
+          Tầm quan trọng của Xu hướng So với Dữ liệu Một Ngày
         </h2>
         <p className="text-base text-neutral-700">
-          A single day of intake data can be misleading. Clinicians focus on <strong>patterns over time</strong> because:
+          Dữ liệu lượng ăn một ngày có thể gây hiểu lầm. Các bác sĩ lâm sàng tập trung vào <strong>mô hình theo thời gian</strong> vì:
         </p>
         <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
           <li>
-            <strong>Day-to-day variation is normal</strong>: People don't eat the same amount every day. A low day after a procedure or during
-            a bad symptom day is expected and may not be concerning if it's isolated.
+            <strong>Biến đổi từng ngày là bình thường</strong>: Mọi người không ăn cùng một lượng mỗi ngày. Một ngày thấp sau thủ thuật hoặc trong
+            một ngày triệu chứng xấu là dự kiến và có thể không đáng lo ngại nếu nó đơn lẻ.
           </li>
           <li>
-            <strong>Single days can be outliers</strong>: One day might be unusually high (special occasion, family visit) or unusually low
-            (procedure, severe symptoms). The trend shows the real pattern.
+            <strong>Ngày đơn lẻ có thể là ngoại lệ</strong>: Một ngày có thể cao bất thường (dịp đặc biệt, thăm gia đình) hoặc thấp bất thường
+            (thủ thuật, triệu chứng nghiêm trọng). Xu hướng cho thấy mô hình thực sự.
           </li>
           <li>
-            <strong>Small deficits accumulate</strong>: Missing 200–300 kcal/day might not seem like much, but over a week that's 1,400–2,100 kcal,
-            which can contribute to weight loss and poor outcomes.
+            <strong>Thiếu hụt nhỏ tích lũy</strong>: Thiếu 200–300 kcal/ngày có thể không có vẻ nhiều, nhưng trong một tuần đó là 1.400–2.100 kcal,
+            có thể góp phần vào sụt cân và kết quả kém.
           </li>
           <li>
-            <strong>Trends show response to interventions</strong>: Is intake improving after starting anti-nausea medication? Is it declining
-            as a condition worsens? Trends answer these questions better than single snapshots.
+            <strong>Xu hướng cho thấy phản ứng với can thiệp</strong>: Lượng ăn có đang cải thiện sau khi bắt đầu thuốc chống buồn nôn không? Nó có đang giảm
+            khi tình trạng xấu đi không? Xu hướng trả lời những câu hỏi này tốt hơn các ảnh chụp đơn lẻ.
           </li>
         </ul>
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Clinical Example: Interpreting Trends
+            Ví dụ Lâm sàng: Diễn giải Xu hướng
           </p>
           <p className="text-sm text-neutral-700 mb-2">
-            A hospitalized patient's daily intake over 7 days:
+            Lượng ăn hàng ngày của một bệnh nhân nằm viện trong 7 ngày:
           </p>
           <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-            <li>Day 1: 1,200 kcal (admission day, many tests)</li>
-            <li>Day 2: 1,800 kcal (good day)</li>
-            <li>Day 3: 600 kcal (surgery, NPO most of day)</li>
-            <li>Day 4: 1,000 kcal (post-op, some nausea)</li>
-            <li>Day 5: 1,400 kcal (improving)</li>
-            <li>Day 6: 1,600 kcal (continuing to improve)</li>
-            <li>Day 7: 1,800 kcal (back to baseline)</li>
+            <li>Ngày 1: 1.200 kcal (ngày nhập viện, nhiều xét nghiệm)</li>
+            <li>Ngày 2: 1.800 kcal (ngày tốt)</li>
+            <li>Ngày 3: 600 kcal (phẫu thuật, NPO hầu hết ngày)</li>
+            <li>Ngày 4: 1.000 kcal (sau phẫu thuật, một chút buồn nôn)</li>
+            <li>Ngày 5: 1.400 kcal (đang cải thiện)</li>
+            <li>Ngày 6: 1.600 kcal (tiếp tục cải thiện)</li>
+            <li>Ngày 7: 1.800 kcal (trở lại mức cơ bản)</li>
           </ul>
           <p className="text-sm text-neutral-700 mt-2">
-            <strong>Single-day view</strong>: Day 3 looks alarming (only 600 kcal), but it's expected post-surgery.
+            <strong>Xem ngày đơn lẻ</strong>: Ngày 3 trông đáng báo động (chỉ 600 kcal), nhưng nó là dự kiến sau phẫu thuật.
           </p>
           <p className="text-sm text-neutral-700">
-            <strong>Trend view</strong>: The overall pattern shows recovery—intake dropped around surgery but is trending upward.
-            Average over 7 days is ~1,340 kcal/day. If estimated needs are 1,600–1,800 kcal/day, there's still a gap, but the trend is positive.
-            The care team might focus on supporting continued improvement rather than drastic interventions.
+            <strong>Xem xu hướng</strong>: Mô hình tổng thể cho thấy phục hồi—lượng ăn giảm xung quanh phẫu thuật nhưng đang có xu hướng tăng.
+            Trung bình trong 7 ngày là ~1.340 kcal/ngày. Nếu nhu cầu ước tính là 1.600–1.800 kcal/ngày, vẫn còn khoảng cách, nhưng xu hướng là tích cực.
+            Nhóm chăm sóc có thể tập trung vào hỗ trợ cải thiện tiếp tục thay vì can thiệp mạnh mẽ.
           </p>
         </div>
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Clinical Example: Concerning Trend
+            Ví dụ Lâm sàng: Xu hướng Đáng lo ngại
           </p>
           <p className="text-sm text-neutral-700 mb-2">
-            Another patient's intake over 7 days:
+            Lượng ăn của một bệnh nhân khác trong 7 ngày:
           </p>
           <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-            <li>Day 1: 1,600 kcal</li>
-            <li>Day 2: 1,400 kcal</li>
-            <li>Day 3: 1,200 kcal</li>
-            <li>Day 4: 1,000 kcal</li>
-            <li>Day 5: 900 kcal</li>
-            <li>Day 6: 800 kcal</li>
-            <li>Day 7: 700 kcal</li>
+            <li>Ngày 1: 1.600 kcal</li>
+            <li>Ngày 2: 1.400 kcal</li>
+            <li>Ngày 3: 1.200 kcal</li>
+            <li>Ngày 4: 1.000 kcal</li>
+            <li>Ngày 5: 900 kcal</li>
+            <li>Ngày 6: 800 kcal</li>
+            <li>Ngày 7: 700 kcal</li>
           </ul>
           <p className="text-sm text-neutral-700 mt-2">
-            <strong>Trend view</strong>: This is a <strong>declining trend</strong> without an obvious reason (like surgery).
-            Even though no single day is catastrophically low, the consistent downward pattern signals a problem that needs investigation.
-            Possible causes: worsening symptoms, medication side effects, depression, or an underlying condition progression.
+            <strong>Xem xu hướng</strong>: Đây là một <strong>xu hướng giảm</strong> không có lý do rõ ràng (như phẫu thuật).
+            Ngay cả khi không có ngày đơn lẻ nào thấp thảm khốc, mô hình giảm nhất quán báo hiệu một vấn đề cần điều tra.
+            Nguyên nhân có thể: triệu chứng xấu đi, tác dụng phụ thuốc, trầm cảm, hoặc tiến triển tình trạng cơ bản.
           </p>
         </div>
 
         <p className="text-base text-neutral-700 mt-4">
-          Clinicians typically look at <strong>3–7 days of intake data</strong> to assess trends, depending on the setting and urgency.
-          In critical care, daily review is common. In stable outpatient settings, weekly or monthly reviews may be sufficient.
+          Các bác sĩ lâm sàng thường xem <strong>3–7 ngày dữ liệu lượng ăn</strong> để đánh giá xu hướng, tùy thuộc vào môi trường và mức độ khẩn cấp.
+          Trong chăm sóc tối quan trọng, xem xét hàng ngày là phổ biến. Trong môi trường ngoại trú ổn định, xem xét hàng tuần hoặc hàng tháng có thể đủ.
         </p>
       </section>
 
@@ -259,33 +259,33 @@ export default function IntakeAssessmentPage() {
           id="how-assess-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          How Clinicians Assess Intake
+          Cách Các Bác sĩ Lâm sàng Đánh giá Lượng Ăn
         </h2>
         <p className="text-base text-neutral-700">
-          Methods vary by setting and resources:
+          Phương pháp thay đổi theo môi trường và nguồn lực:
         </p>
         <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
           <li>
-            <strong>Food records and charts</strong>: Documentation of what was ordered, served, and consumed (often as percentages: "ate 50% of breakfast").
+            <strong>Ghi chép và biểu đồ thực phẩm</strong>: Tài liệu về những gì được chỉ định, phục vụ, và tiêu thụ (thường dưới dạng phần trăm: "ăn 50% bữa sáng").
           </li>
           <li>
-            <strong>24-hour recalls</strong>: Asking the person (or caregiver) to describe everything eaten in the last 24 hours.
+            <strong>Nhớ lại 24 giờ</strong>: Yêu cầu người đó (hoặc người chăm sóc) mô tả mọi thứ đã ăn trong 24 giờ qua.
           </li>
           <li>
-            <strong>Food frequency questionnaires</strong>: How often certain foods or food groups are consumed.
+            <strong>Bảng câu hỏi tần suất thực phẩm</strong>: Tần suất một số thực phẩm hoặc nhóm thực phẩm được tiêu thụ.
           </li>
           <li>
-            <strong>Weighed food records</strong>: More accurate but time-consuming; weighing food before and after meals.
+            <strong>Ghi chép thực phẩm cân</strong>: Chính xác hơn nhưng tốn thời gian; cân thực phẩm trước và sau bữa ăn.
           </li>
           <li>
-            <strong>Tube feed records</strong>: Volume delivered, rate, holds, and residuals.
+            <strong>Ghi chép cho ăn qua ống</strong>: Thể tích được cung cấp, tốc độ, tạm dừng, và dịch dư thừa.
           </li>
           <li>
-            <strong>Combined methods</strong>: Using multiple approaches to get a complete picture.
+            <strong>Phương pháp kết hợp</strong>: Sử dụng nhiều cách tiếp cận để có bức tranh hoàn chỉnh.
           </li>
         </ul>
         <p className="text-base text-neutral-700">
-          All methods have limitations (memory, estimation errors, incomplete documentation), which is another reason why <strong>trends matter more than perfect single-day accuracy</strong>.
+          Tất cả phương pháp đều có giới hạn (trí nhớ, lỗi ước tính, tài liệu không đầy đủ), đó là lý do khác tại sao <strong>xu hướng quan trọng hơn độ chính xác hoàn hảo một ngày</strong>.
         </p>
       </section>
 
@@ -298,23 +298,23 @@ export default function IntakeAssessmentPage() {
           id="summary-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Summary: Key Principles
+          Tóm tắt: Nguyên tắc Chính
         </h2>
         <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
           <li>
-            There's often a gap between <strong>prescribed</strong> (what was ordered/planned) and <strong>delivered</strong> (what was actually consumed).
-            Only delivered nutrition affects outcomes.
+            Thường có khoảng cách giữa <strong>kê đơn</strong> (những gì được chỉ định/lập kế hoạch) và <strong>cung cấp</strong> (những gì thực sự được tiêu thụ).
+            Chỉ dinh dưỡng được cung cấp ảnh hưởng đến kết quả.
           </li>
           <li>
-            Intake often falls short due to <strong>symptoms, procedures, food access, system issues, or psychological factors</strong>.
-            Understanding the "why" helps address root causes.
+            Lượng ăn thường thiếu do <strong>triệu chứng, thủ thuật, tiếp cận thực phẩm, vấn đề hệ thống, hoặc yếu tố tâm lý</strong>.
+            Hiểu "vì sao" giúp giải quyết nguyên nhân gốc rễ.
           </li>
           <li>
-            <strong>Trends over 3–7 days</strong> are more meaningful than single-day data because they show patterns, account for normal variation,
-            and reveal accumulating deficits or improvements.
+            <strong>Xu hướng trong 3–7 ngày</strong> có ý nghĩa hơn dữ liệu một ngày vì chúng cho thấy mô hình, tính đến biến đổi bình thường,
+            và tiết lộ thiếu hụt hoặc cải thiện tích lũy.
           </li>
           <li>
-            Regular intake assessment helps identify gaps early, monitor response to interventions, and guide adjustments to the nutrition plan.
+            Đánh giá lượng ăn thường xuyên giúp nhận diện khoảng cách sớm, theo dõi phản ứng với can thiệp, và hướng dẫn điều chỉnh kế hoạch dinh dưỡng.
           </li>
         </ul>
       </section>
@@ -322,18 +322,18 @@ export default function IntakeAssessmentPage() {
       {/* Link to Tool */}
       <section className="space-y-4 rounded-lg border-2 border-blue-300 bg-blue-50 p-6">
         <h2 className="text-xl font-semibold text-blue-900 sm:text-2xl">
-          Try It Yourself: Intake Assessment Worksheet
+          Thử Bạn: Bảng Đánh giá Lượng Ăn
         </h2>
         <p className="text-base text-blue-800">
-          Our interactive worksheet helps you systematically review intake over time and compare it with estimated needs.
-          Use it to practice identifying gaps and understanding why intake might fall short.
+          Bảng tương tác của chúng tôi giúp bạn xem xét có hệ thống lượng ăn theo thời gian và so sánh nó với nhu cầu ước tính.
+          Sử dụng nó để thực hành nhận diện khoảng cách và hiểu vì sao lượng ăn có thể thiếu.
         </p>
         <div className="mt-4">
           <Link
             href="/tools/intake-assessment"
             className="inline-flex items-center rounded-md bg-blue-700 px-4 py-2 text-base font-medium text-white hover:bg-blue-800 transition-colors"
           >
-            Open Intake Assessment Worksheet →
+            Mở Bảng Đánh giá Lượng Ăn →
           </Link>
         </div>
       </section>
@@ -341,8 +341,8 @@ export default function IntakeAssessmentPage() {
       {/* Safety Disclaimer */}
       <section className="space-y-2 rounded-lg border border-neutral-200 bg-white p-4">
         <p className="text-xs text-neutral-600 sm:text-sm">
-          This page is for <strong>education only</strong>. It does not provide medical advice, diagnosis, or treatment,
-          does not create a clinician–patient relationship, and must not be used for clinical decision-making, orders, or prescriptions.
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị,
+          không tạo mối quan hệ bác sĩ–bệnh nhân, và không được sử dụng để ra quyết định lâm sàng, lệnh, hoặc kê đơn.
         </p>
       </section>
     </main>
