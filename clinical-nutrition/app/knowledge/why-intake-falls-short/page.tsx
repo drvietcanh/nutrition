@@ -401,7 +401,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Dyspnea (Breathing Difficulties)</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Khó Thở (Dyspnea)</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Khi bệnh nhân gặp khó khăn khi thở, ăn trở nên thách thức:
             </p>
