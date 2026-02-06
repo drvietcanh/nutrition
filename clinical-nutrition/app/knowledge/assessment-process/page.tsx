@@ -552,100 +552,100 @@ export default function AssessmentProcessPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Prescribed vs. Delivered: The Gap Between Plan and Reality
+              Kê đơn vs. Cung cấp: Khoảng cách Giữa Kế hoạch và Thực tế
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              In clinical settings, there's often a difference between:
+              Trong môi trường lâm sàng, thường có sự khác biệt giữa:
             </p>
             <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
               <li>
-                <strong>Prescribed nutrition</strong>: What was ordered, planned, or recommended (e.g., "1,800 kcal/day via oral diet + supplements"
-                or "tube feed at 60 mL/hour providing 1,500 kcal/day").
+                <strong>Dinh dưỡng được kê đơn</strong>: Những gì được chỉ định, lập kế hoạch, hoặc khuyến nghị (ví dụ: "1.800 kcal/ngày qua chế độ ăn miệng + bổ sung"
+                hoặc "cho ăn qua ống 60 mL/giờ cung cấp 1.500 kcal/ngày").
               </li>
               <li>
-                <strong>Delivered nutrition</strong>: What the person actually consumed or received (e.g., they ate half their meals, refused supplements,
-                or the tube feed was held for 8 hours due to procedures).
+                <strong>Dinh dưỡng được cung cấp</strong>: Những gì người đó thực sự tiêu thụ hoặc nhận được (ví dụ: họ ăn một nửa bữa ăn, từ chối bổ sung,
+                hoặc cho ăn qua ống bị tạm dừng 8 giờ do thủ thuật).
               </li>
             </ul>
             <p className="text-base text-neutral-700 mt-2">
-              This gap matters because <strong>only delivered nutrition affects health outcomes</strong>. A perfect plan that isn't followed doesn't help.
+              Khoảng cách này quan trọng vì <strong>chỉ dinh dưỡng được cung cấp ảnh hưởng đến kết quả sức khỏe</strong>. Một kế hoạch hoàn hảo không được tuân theo không giúp ích.
             </p>
 
             <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
               <p className="text-sm font-semibold text-neutral-900 mb-2">
-                Clinical Example 1: Hospital Meal Service
+                Ví dụ Lâm sàng 1: Dịch vụ Bữa ăn Bệnh viện
               </p>
               <p className="text-sm text-neutral-700 mb-2">
-                A patient is prescribed a "regular diet" estimated to provide ~1,800 kcal/day. However:
+                Một bệnh nhân được kê đơn "chế độ ăn thường" ước tính cung cấp ~1.800 kcal/ngày. Tuy nhiên:
               </p>
               <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-                <li>They're nauseous and only eat 30% of each meal.</li>
-                <li>Meals are delayed due to tests, so they miss lunch entirely.</li>
-                <li>They don't like the food choices and skip several items.</li>
-                <li>Family brings snacks, but these aren't documented in the chart.</li>
+                <li>Họ buồn nôn và chỉ ăn 30% mỗi bữa ăn.</li>
+                <li>Bữa ăn bị trì hoãn do xét nghiệm, nên họ bỏ lỡ bữa trưa hoàn toàn.</li>
+                <li>Họ không thích lựa chọn thực phẩm và bỏ qua nhiều món.</li>
+                <li>Gia đình mang đồ ăn nhẹ, nhưng những thứ này không được ghi chép trong biểu đồ.</li>
               </ul>
               <p className="text-sm text-neutral-700 mt-2">
-                <strong>Result</strong>: Prescribed ~1,800 kcal/day, but actual delivered intake may be closer to 800–1,000 kcal/day.
-                Without assessing actual intake, the care team might assume the patient is meeting needs when they're not.
+                <strong>Kết quả</strong>: Kê đơn ~1.800 kcal/ngày, nhưng lượng ăn thực tế được cung cấp có thể gần 800–1.000 kcal/ngày.
+                Không đánh giá lượng ăn thực tế, nhóm chăm sóc có thể giả định bệnh nhân đang đáp ứng nhu cầu khi họ không.
               </p>
             </div>
 
             <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
               <p className="text-sm font-semibold text-neutral-900 mb-2">
-                Clinical Example 2: Enteral (Tube) Feeding
+                Ví dụ Lâm sàng 2: Cho ăn Qua Ống (Enteral)
               </p>
               <p className="text-sm text-neutral-700 mb-2">
-                A patient has a nasogastric tube with orders for "continuous feed at 80 mL/hour, providing 1,600 kcal/day." However:
+                Một bệnh nhân có ống thông mũi dạ dày với lệnh "cho ăn liên tục 80 mL/giờ, cung cấp 1.600 kcal/ngày." Tuy nhiên:
               </p>
               <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-                <li>The feed is held for 4 hours before and after a procedure (8 hours total).</li>
-                <li>The pump malfunctions overnight, and no one notices until morning.</li>
-                <li>The patient experiences high gastric residuals, so the rate is reduced to 40 mL/hour for tolerance.</li>
-                <li>Flushes with water aren't counted toward nutrition, but they do add volume.</li>
+                <li>Cho ăn bị tạm dừng 4 giờ trước và sau thủ thuật (tổng 8 giờ).</li>
+                <li>Máy bơm bị hỏng qua đêm, và không ai nhận thấy cho đến sáng.</li>
+                <li>Bệnh nhân có dịch dạ dày dư thừa cao, nên tốc độ giảm xuống 40 mL/giờ để dung nạp.</li>
+                <li>Rửa bằng nước không được tính vào dinh dưỡng, nhưng chúng có thêm thể tích.</li>
               </ul>
               <p className="text-sm text-neutral-700 mt-2">
-                <strong>Result</strong>: Prescribed 1,600 kcal/day, but actual delivered may be closer to 800–1,000 kcal/day due to holds,
-                rate reductions, and interruptions. Regular intake assessment helps identify these gaps early.
+                <strong>Kết quả</strong>: Kê đơn 1.600 kcal/ngày, nhưng thực tế được cung cấp có thể gần 800–1.000 kcal/ngày do tạm dừng,
+                giảm tốc độ, và gián đoạn. Đánh giá lượng ăn thường xuyên giúp nhận diện những khoảng cách này sớm.
               </p>
             </div>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Why Intake Often Falls Short in Practice
+              Vì sao Lượng Ăn Thường Thiếu trong Thực hành
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              Understanding <strong>why</strong> intake falls short helps clinicians address root causes, not just symptoms. Common reasons include:
+              Hiểu <strong>vì sao</strong> lượng ăn thiếu giúp các bác sĩ lâm sàng giải quyết nguyên nhân gốc rễ, không chỉ triệu chứng. Lý do phổ biến bao gồm:
             </p>
             <div className="space-y-3 mt-3">
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-                <h4 className="font-semibold text-sm mb-2">Symptoms and Side Effects</h4>
+                <h4 className="font-semibold text-sm mb-2">Triệu chứng và Tác dụng Phụ</h4>
                 <p className="text-sm text-neutral-700">
-                  Nausea, vomiting, early satiety, pain, fatigue, or altered taste can make eating unpleasant or impossible.
+                  Buồn nôn, nôn, no sớm, đau, mệt mỏi, hoặc thay đổi vị giác có thể làm cho việc ăn khó chịu hoặc không thể.
                 </p>
               </div>
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-                <h4 className="font-semibold text-sm mb-2">Medical Procedures and Scheduling</h4>
+                <h4 className="font-semibold text-sm mb-2">Thủ thuật Y tế và Lịch trình</h4>
                 <p className="text-sm text-neutral-700">
-                  Fasting orders, procedure delays, meal timing conflicts, or multiple appointments during usual meal times.
+                  Lệnh nhịn ăn, trì hoãn thủ thuật, xung đột thời gian bữa ăn, hoặc nhiều cuộc hẹn trong giờ ăn thông thường.
                 </p>
               </div>
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-                <h4 className="font-semibold text-sm mb-2">Food Access and Preferences</h4>
+                <h4 className="font-semibold text-sm mb-2">Tiếp cận Thực phẩm và Sở thích</h4>
                 <p className="text-sm text-neutral-700">
-                  Limited options, unappealing textures, foods that don't match cultural preferences, or dietary restrictions that limit palatable choices.
+                  Lựa chọn hạn chế, kết cấu không hấp dẫn, thực phẩm không phù hợp với sở thích văn hóa, hoặc hạn chế chế độ ăn giới hạn lựa chọn ngon miệng.
                 </p>
               </div>
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-                <h4 className="font-semibold text-sm mb-2">System and Documentation Issues</h4>
+                <h4 className="font-semibold text-sm mb-2">Vấn đề Hệ thống và Tài liệu</h4>
                 <p className="text-sm text-neutral-700">
-                  Incomplete documentation (snacks, family-provided food not recorded), miscommunication, staffing constraints, or equipment problems.
+                  Tài liệu không đầy đủ (đồ ăn nhẹ, thực phẩm do gia đình cung cấp không được ghi chép), giao tiếp sai, hạn chế nhân sự, hoặc vấn đề thiết bị.
                 </p>
               </div>
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-                <h4 className="font-semibold text-sm mb-2">Psychological and Social Factors</h4>
+                <h4 className="font-semibold text-sm mb-2">Yếu tố Tâm lý và Xã hội</h4>
                 <p className="text-sm text-neutral-700">
-                  Depression, anxiety, social isolation, loss of independence, or fear/misconceptions about eating.
+                  Trầm cảm, lo âu, cô lập xã hội, mất độc lập, hoặc sợ hãi/hiểu lầm về ăn uống.
                 </p>
               </div>
             </div>
@@ -663,53 +663,53 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              The Importance of Trend Over Single-Day Data
+              Tầm quan trọng của Xu hướng So với Dữ liệu Một Ngày
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              A single day of intake data can be misleading. Clinicians focus on <strong>patterns over time</strong> because:
+              Dữ liệu lượng ăn một ngày có thể gây hiểu lầm. Các bác sĩ lâm sàng tập trung vào <strong>mô hình theo thời gian</strong> vì:
             </p>
             <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
               <li>
-                <strong>Day-to-day variation is normal</strong>: People don't eat the same amount every day. A low day after a procedure or during
-                a bad symptom day is expected and may not be concerning if it's isolated.
+                <strong>Biến đổi từng ngày là bình thường</strong>: Mọi người không ăn cùng một lượng mỗi ngày. Một ngày thấp sau thủ thuật hoặc trong
+                một ngày triệu chứng xấu là dự kiến và có thể không đáng lo ngại nếu nó đơn lẻ.
               </li>
               <li>
-                <strong>Single days can be outliers</strong>: One day might be unusually high (special occasion, family visit) or unusually low
-                (procedure, severe symptoms). The trend shows the real pattern.
+                <strong>Ngày đơn lẻ có thể là ngoại lệ</strong>: Một ngày có thể cao bất thường (dịp đặc biệt, thăm gia đình) hoặc thấp bất thường
+                (thủ thuật, triệu chứng nghiêm trọng). Xu hướng cho thấy mô hình thực sự.
               </li>
               <li>
-                <strong>Small deficits accumulate</strong>: Missing 200–300 kcal/day might not seem like much, but over a week that's 1,400–2,100 kcal,
-                which can contribute to weight loss and poor outcomes.
+                <strong>Thiếu hụt nhỏ tích lũy</strong>: Thiếu 200–300 kcal/ngày có thể không có vẻ nhiều, nhưng trong một tuần đó là 1.400–2.100 kcal,
+                có thể góp phần vào sụt cân và kết quả kém.
               </li>
               <li>
-                <strong>Trends show response to changes</strong>: Is intake improving after symptom management? Is it declining
-                as a condition worsens? Trends answer these questions better than single snapshots.
+                <strong>Xu hướng cho thấy phản ứng với thay đổi</strong>: Lượng ăn có đang cải thiện sau quản lý triệu chứng không? Nó có đang giảm
+                khi tình trạng xấu đi không? Xu hướng trả lời những câu hỏi này tốt hơn các ảnh chụp đơn lẻ.
               </li>
             </ul>
 
             <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
               <p className="text-sm font-semibold text-neutral-900 mb-2">
-                Clinical Example: Interpreting Trends
+                Ví dụ Lâm sàng: Diễn giải Xu hướng
               </p>
               <p className="text-sm text-neutral-700 mb-2">
-                A hospitalized patient's daily intake over 7 days:
+                Lượng ăn hàng ngày của một bệnh nhân nằm viện trong 7 ngày:
               </p>
               <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
-                <li>Day 1: 1,200 kcal (admission day, many tests)</li>
-                <li>Day 2: 1,800 kcal (good day)</li>
-                <li>Day 3: 600 kcal (surgery, NPO most of day)</li>
-                <li>Day 4: 1,000 kcal (post-op, some nausea)</li>
-                <li>Day 5: 1,400 kcal (improving)</li>
-                <li>Day 6: 1,600 kcal (continuing to improve)</li>
-                <li>Day 7: 1,800 kcal (back to baseline)</li>
+                <li>Ngày 1: 1.200 kcal (ngày nhập viện, nhiều xét nghiệm)</li>
+                <li>Ngày 2: 1.800 kcal (ngày tốt)</li>
+                <li>Ngày 3: 600 kcal (phẫu thuật, NPO hầu hết ngày)</li>
+                <li>Ngày 4: 1.000 kcal (sau phẫu thuật, một chút buồn nôn)</li>
+                <li>Ngày 5: 1.400 kcal (đang cải thiện)</li>
+                <li>Ngày 6: 1.600 kcal (tiếp tục cải thiện)</li>
+                <li>Ngày 7: 1.800 kcal (trở lại mức cơ bản)</li>
               </ul>
               <p className="text-sm text-neutral-700 mt-2">
-                <strong>Single-day view</strong>: Day 3 looks alarming (only 600 kcal), but it's expected post-surgery.
+                <strong>Xem ngày đơn lẻ</strong>: Ngày 3 trông đáng báo động (chỉ 600 kcal), nhưng nó là dự kiến sau phẫu thuật.
               </p>
               <p className="text-sm text-neutral-700">
-                <strong>Trend view</strong>: The overall pattern shows recovery—intake dropped around surgery but is trending upward.
-                Average over 7 days is ~1,340 kcal/day. If estimated needs are 1,600–1,800 kcal/day, there's still a gap, but the trend is positive.
-                The care team might focus on supporting continued improvement rather than making drastic changes.
+                <strong>Xem xu hướng</strong>: Mô hình tổng thể cho thấy phục hồi—lượng ăn giảm xung quanh phẫu thuật nhưng đang có xu hướng tăng.
+                Trung bình trong 7 ngày là ~1.340 kcal/ngày. Nếu nhu cầu ước tính là 1.600–1.800 kcal/ngày, vẫn còn khoảng cách, nhưng xu hướng là tích cực.
+                Nhóm chăm sóc có thể tập trung vào hỗ trợ cải thiện tiếp tục thay vì thay đổi mạnh mẽ.
               </p>
             </div>
 
@@ -776,109 +776,109 @@ export default function AssessmentProcessPage() {
         </div>
         <div className="space-y-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
           <p>
-            These three steps—screening, needs estimation, and intake assessment—work together to reveal the full picture. But remember:
-            <strong>assessment is about clinical reasoning, not just running formulas</strong>. The numbers are tools, not answers.
+            Ba bước này—sàng lọc, ước tính nhu cầu, và đánh giá lượng ăn—hoạt động cùng nhau để tiết lộ toàn bộ bức tranh. Nhưng hãy nhớ:
+            <strong>đánh giá là về lập luận lâm sàng, không chỉ chạy công thức</strong>. Các con số là công cụ, không phải câu trả lời.
           </p>
         </div>
 
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              How Clinicians Synthesize Information
+              Cách Các Bác sĩ Lâm sàng Tổng hợp Thông tin
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              Experienced clinicians don't just collect data—they <strong>synthesize</strong> it. They take information from screening,
-              needs estimation, and intake assessment and weave it together with other clinical information:
+              Các bác sĩ lâm sàng có kinh nghiệm không chỉ thu thập dữ liệu—họ <strong>tổng hợp</strong> nó. Họ lấy thông tin từ sàng lọc,
+              ước tính nhu cầu, và đánh giá lượng ăn và kết hợp nó với thông tin lâm sàng khác:
             </p>
             <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
               <li>
-                <strong>Medical history</strong>: What conditions does this person have? How do those conditions affect nutrition needs or tolerance?
+                <strong>Tiền sử y tế</strong>: Người này có những tình trạng gì? Các tình trạng đó ảnh hưởng đến nhu cầu dinh dưỡng hoặc khả năng dung nạp như thế nào?
               </li>
               <li>
-                <strong>Current symptoms</strong>: Are they nauseous? In pain? Fatigued? These affect what they can actually eat.
+                <strong>Triệu chứng hiện tại</strong>: Họ có buồn nôn không? Đau? Mệt mỏi? Những điều này ảnh hưởng đến những gì họ thực sự có thể ăn.
               </li>
               <li>
-                <strong>Functional status</strong>: Can they feed themselves? Do they have difficulty chewing or swallowing?
+                <strong>Tình trạng chức năng</strong>: Họ có thể tự ăn không? Họ có khó khăn nhai hoặc nuốt không?
               </li>
               <li>
-                <strong>Laboratory data</strong>: What do labs tell us about organ function, inflammation, or nutrient status?
+                <strong>Dữ liệu xét nghiệm</strong>: Xét nghiệm cho chúng ta biết gì về chức năng cơ quan, viêm, hoặc tình trạng chất dinh dưỡng?
               </li>
               <li>
-                <strong>Social context</strong>: Who helps with meals? What are their food preferences? What are practical constraints?
+                <strong>Bối cảnh xã hội</strong>: Ai giúp với bữa ăn? Sở thích thực phẩm của họ là gì? Các ràng buộc thực tế là gì?
               </li>
               <li>
-                <strong>Goals of care</strong>: What are we trying to achieve? Recovery? Maintenance? Comfort? Quality of life?
+                <strong>Mục tiêu chăm sóc</strong>: Chúng ta đang cố gắng đạt được gì? Phục hồi? Duy trì? Thoải mái? Chất lượng cuộc sống?
               </li>
             </ul>
             <p className="text-base text-neutral-700 mt-3">
-              Synthesis means seeing how all these pieces fit together. A person might have a calculated need of 1,800 calories,
-              but if they're actively dying and goals have shifted to comfort care, that number becomes less relevant. A person might
-              be eating "enough" according to calculations, but if they're losing weight and have poor wound healing, something isn't working.
+              Tổng hợp có nghĩa là thấy cách tất cả các mảnh này khớp với nhau. Một người có thể có nhu cầu đã tính là 1.800 calo,
+              nhưng nếu họ đang chết dần và mục tiêu đã chuyển sang chăm sóc thoải mái, con số đó trở nên ít liên quan hơn. Một người có thể
+              đang ăn "đủ" theo tính toán, nhưng nếu họ đang sụt cân và có vết thương chữa lành kém, có điều gì đó không hoạt động.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Why Numbers Never Replace Judgment
+              Vì sao Số liệu Không bao giờ Thay thế Phán đoán
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              Numbers from screening tools, needs calculations, and intake assessments are <strong>informative, not prescriptive</strong>.
-              They help structure thinking, but they don't make decisions for you.
+              Số liệu từ công cụ sàng lọc, tính toán nhu cầu, và đánh giá lượng ăn là <strong>cung cấp thông tin, không chỉ đạo</strong>.
+              Chúng giúp cấu trúc tư duy, nhưng chúng không đưa ra quyết định cho bạn.
             </p>
             <div className="space-y-3 mt-3">
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
                 <p className="text-sm text-neutral-700">
-                  <strong>Example</strong>: A calculation says someone needs 1,800 calories. But they're nauseous, in pain, and
-                  struggling with depression. The number tells you what they <em>should</em> get, but clinical judgment tells you
-                  they can't tolerate that much right now. You might start lower, address symptoms first, then gradually increase.
-                  The number guides you, but judgment determines the plan.
+                  <strong>Ví dụ</strong>: Một phép tính nói ai đó cần 1.800 calo. Nhưng họ buồn nôn, đau, và
+                  đang vật lộn với trầm cảm. Con số cho bạn biết những gì họ <em>nên</em> nhận được, nhưng phán đoán lâm sàng cho bạn biết
+                  họ không thể dung nạp nhiều như vậy ngay bây giờ. Bạn có thể bắt đầu thấp hơn, giải quyết triệu chứng trước, sau đó tăng dần.
+                  Con số hướng dẫn bạn, nhưng phán đoán xác định kế hoạch.
                 </p>
               </div>
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
                 <p className="text-sm text-neutral-700">
-                  <strong>Example</strong>: Screening shows low risk, but you notice the person looks frail, has poor wound healing,
-                  and seems weaker than last visit. The screening number says "low risk," but your clinical judgment says "something's
-                  not right." You investigate further, even though the number suggests you don't need to.
+                  <strong>Ví dụ</strong>: Sàng lọc cho thấy nguy cơ thấp, nhưng bạn nhận thấy người đó trông yếu ớt, có vết thương chữa lành kém,
+                  và có vẻ yếu hơn lần thăm khám trước. Số sàng lọc nói "nguy cơ thấp," nhưng phán đoán lâm sàng của bạn nói "có điều gì đó
+                  không đúng." Bạn điều tra thêm, ngay cả khi con số gợi ý bạn không cần.
                 </p>
               </div>
             </div>
             <p className="text-base text-neutral-700 mt-3">
-              Numbers can't see the whole person. They can't sense when something feels "off." They can't weigh competing priorities.
-              They can't adapt when circumstances change. <strong>That's why clinical judgment is irreplaceable</strong>.
+              Số liệu không thể thấy toàn bộ con người. Chúng không thể cảm nhận khi có điều gì đó cảm thấy "sai." Chúng không thể cân nhắc các ưu tiên cạnh tranh.
+              Chúng không thể thích ứng khi hoàn cảnh thay đổi. <strong>Đó là lý do phán đoán lâm sàng là không thể thay thế</strong>.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              The Importance of Context: Illness Severity and Goals of Care
+              Tầm quan trọng của Bối cảnh: Mức độ Nghiêm trọng của Bệnh và Mục tiêu Chăm sóc
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              The same numbers mean different things in different contexts. Two people might both need 1,800 calories, but their
-              situations require completely different approaches:
+              Cùng một con số có ý nghĩa khác nhau trong các bối cảnh khác nhau. Hai người có thể đều cần 1.800 calo, nhưng tình huống của họ
+              đòi hỏi các cách tiếp cận hoàn toàn khác nhau:
             </p>
             <div className="space-y-3 mt-3">
               <div className="rounded-md bg-blue-50 border border-blue-200 p-4">
-                <h4 className="font-semibold text-sm mb-2 text-blue-900">Illness Severity</h4>
+                <h4 className="font-semibold text-sm mb-2 text-blue-900">Mức độ Nghiêm trọng của Bệnh</h4>
                 <p className="text-sm text-blue-800 mb-2">
-                  A person with mild illness might tolerate aggressive nutrition support, while someone with severe illness might need
-                  a more cautious approach. Someone with organ dysfunction (e.g., kidney or liver disease) needs different considerations
-                  than someone with intact organ function.
+                  Một người bệnh nhẹ có thể dung nạp hỗ trợ dinh dưỡng tích cực, trong khi người bệnh nghiêm trọng có thể cần
+                  cách tiếp cận thận trọng hơn. Người có rối loạn chức năng cơ quan (ví dụ: bệnh thận hoặc gan) cần cân nhắc khác
+                  với người có chức năng cơ quan nguyên vẹn.
                 </p>
                 <p className="text-sm text-blue-800">
-                  <strong>Reflection</strong>: The same calorie and protein targets might be appropriate for both, but how you achieve
-                  them—and how quickly—depends on what their body can handle.
+                  <strong>Suy ngẫm</strong>: Cùng mục tiêu calo và protein có thể phù hợp cho cả hai, nhưng cách bạn đạt được
+                  chúng—và nhanh như thế nào—phụ thuộc vào những gì cơ thể họ có thể xử lý.
                 </p>
               </div>
               <div className="rounded-md bg-blue-50 border border-blue-200 p-4">
-                <h4 className="font-semibold text-sm mb-2 text-blue-900">Goals of Care</h4>
+                <h4 className="font-semibold text-sm mb-2 text-blue-900">Mục tiêu Chăm sóc</h4>
                 <p className="text-sm text-blue-800 mb-2">
-                  A person recovering from surgery has different goals than someone with advanced cancer receiving palliative care.
-                  Someone trying to gain strength has different goals than someone trying to maintain current status.
+                  Một người đang phục hồi sau phẫu thuật có mục tiêu khác với người có ung thư tiến triển đang nhận chăm sóc giảm nhẹ.
+                  Người đang cố gắng tăng sức mạnh có mục tiêu khác với người đang cố gắng duy trì tình trạng hiện tại.
                 </p>
                 <p className="text-sm text-blue-800">
-                  <strong>Reflection</strong>: The numbers might be similar, but the meaning changes. For someone in recovery, meeting
-                  needs supports healing. For someone at end of life, forcing nutrition might cause discomfort without benefit.
-                  Context determines whether the numbers are even relevant.
+                  <strong>Suy ngẫm</strong>: Các con số có thể tương tự, nhưng ý nghĩa thay đổi. Đối với người đang phục hồi, đáp ứng
+                  nhu cầu hỗ trợ chữa lành. Đối với người ở cuối đời, ép dinh dưỡng có thể gây khó chịu mà không có lợi ích.
+                  Bối cảnh xác định liệu các con số có liên quan hay không.
                 </p>
               </div>
             </div>
@@ -890,46 +890,46 @@ export default function AssessmentProcessPage() {
 
           <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 my-4">
             <p className="text-sm font-semibold text-neutral-900 mb-2">
-              Example: Putting it all together
+              Ví dụ: Tổng hợp tất cả
             </p>
             <ol className="list-decimal space-y-2 pl-5 text-sm text-neutral-700">
               <li>
-                <strong>Screening</strong> shows unintentional weight loss → signals moderate-to-high risk, needs attention soon.
+                <strong>Sàng lọc</strong> cho thấy sụt cân không chủ ý → báo hiệu nguy cơ trung bình đến cao, cần chú ý sớm.
               </li>
               <li>
-                <strong>Needs estimation</strong> calculates ~1,800 calories and 75g protein/day (higher than usual due to recovery from surgery).
+                <strong>Ước tính nhu cầu</strong> tính ~1.800 calo và 75g protein/ngày (cao hơn bình thường do phục hồi sau phẫu thuật).
               </li>
               <li>
-                <strong>Intake assessment</strong> reveals they're only getting ~1,000 calories and 30g protein/day.
+                <strong>Đánh giá lượng ăn</strong> tiết lộ họ chỉ nhận được ~1.000 calo và 30g protein/ngày.
               </li>
               <li>
-                <strong>Clinical synthesis</strong>: They're post-op day 5, still having some nausea, wound healing is slow, and they're
-                frustrated with hospital food. Goals: support healing and get them home safely.
+                <strong>Tổng hợp lâm sàng</strong>: Họ đang ngày 5 sau phẫu thuật, vẫn có một chút buồn nôn, vết thương chữa lành chậm, và họ
+                thất vọng với thức ăn bệnh viện. Mục tiêu: hỗ trợ chữa lành và đưa họ về nhà an toàn.
               </li>
               <li>
-                <strong>Judgment</strong>: Simply increasing the prescription may not work—they may not eat more of what they don't like. Considerations might include
-                addressing symptoms, working with food service on preferences, involving family in bringing preferred foods, and considering supplements they might
-                actually take.
+                <strong>Phán đoán</strong>: Chỉ tăng kê đơn có thể không hiệu quả—họ có thể không ăn nhiều hơn những gì họ không thích. Cân nhắc có thể bao gồm
+                giải quyết triệu chứng, làm việc với dịch vụ thực phẩm về sở thích, liên quan gia đình trong việc mang thực phẩm ưa thích, và xem xét bổ sung họ có thể
+                thực sự dùng.
               </li>
               <li>
-                <strong>Context-aware approach</strong>: The care team might consider various options such as addressing symptoms, involving family in meal planning, providing preferred foods, and reassessing in 2–3 days. The numbers reveal a gap; clinical reasoning helps determine how to address it.
+                <strong>Cách tiếp cận nhận thức bối cảnh</strong>: Nhóm chăm sóc có thể xem xét các lựa chọn khác nhau như giải quyết triệu chứng, liên quan gia đình trong lập kế hoạch bữa ăn, cung cấp thực phẩm ưa thích, và đánh giá lại trong 2–3 ngày. Các con số tiết lộ khoảng cách; lập luận lâm sàng giúp xác định cách giải quyết nó.
               </li>
             </ol>
           </div>
 
           <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-4">
             <p className="text-sm font-semibold text-blue-900 mb-2">
-              Reflection: The Art and Science of Assessment
+              Suy ngẫm: Nghệ thuật và Khoa học của Đánh giá
             </p>
             <p className="text-sm text-blue-800 mb-2">
-              Assessment is both <strong>science</strong> (using tools, calculations, and structured methods) and <strong>art</strong>
-              (synthesizing information, applying judgment, adapting to context). The science gives you data. The art helps you understand
-              what that data means for this specific person in this specific situation.
+              Đánh giá vừa là <strong>khoa học</strong> (sử dụng công cụ, tính toán, và phương pháp có cấu trúc) vừa là <strong>nghệ thuật</strong>
+              (tổng hợp thông tin, áp dụng phán đoán, thích ứng với bối cảnh). Khoa học cho bạn dữ liệu. Nghệ thuật giúp bạn hiểu
+              dữ liệu đó có ý nghĩa gì cho người cụ thể này trong tình huống cụ thể này.
             </p>
             <p className="text-sm text-blue-800">
-              As you develop your assessment skills, remember: numbers are starting points, not destinations. Clinical judgment,
-              patient preferences, and goals of care determine where you go from there. Trust the process, but also trust your judgment
-              when something doesn't fit the numbers.
+              Khi bạn phát triển kỹ năng đánh giá của mình, hãy nhớ: số liệu là điểm khởi đầu, không phải điểm đến. Phán đoán lâm sàng,
+              sở thích bệnh nhân, và mục tiêu chăm sóc xác định nơi bạn đi từ đó. Tin tưởng quy trình, nhưng cũng tin tưởng phán đoán của bạn
+              khi có điều gì đó không phù hợp với các con số.
             </p>
           </div>
         </div>
@@ -953,77 +953,77 @@ export default function AssessmentProcessPage() {
         <div className="space-y-4">
           <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              ❌ "If I calculate the needs, the job is done"
+              ❌ "Nếu tôi tính nhu cầu, công việc đã xong"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Reality</strong>: Calculating needs is just the beginning. Assessment typically involves evaluating actual intake, identifying gaps,
-              considering interventions, monitoring response, and reassessing regularly.
+              <strong>Thực tế</strong>: Tính nhu cầu chỉ là khởi đầu. Đánh giá thường bao gồm đánh giá lượng ăn thực tế, nhận diện khoảng cách,
+              xem xét can thiệp, theo dõi phản ứng, và đánh giá lại thường xuyên.
             </p>
             <p className="text-sm text-amber-800">
-              Needs estimation provides a target, but assessment is an ongoing process, not a one-time calculation.
+              Ước tính nhu cầu cung cấp mục tiêu, nhưng đánh giá là quy trình đang diễn ra, không phải một phép tính một lần.
             </p>
           </div>
 
           <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              ❌ "Adequate intake today means no risk"
+              ❌ "Lượng ăn đầy đủ hôm nay có nghĩa là không có nguy cơ"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Reality</strong>: One good day doesn't erase risk. Look at trends over several days. A person might eat well today
-              but have been eating poorly for weeks, or they might eat well today but struggle tomorrow.
+              <strong>Thực tế</strong>: Một ngày tốt không xóa bỏ nguy cơ. Hãy xem xu hướng trong vài ngày. Một người có thể ăn tốt hôm nay
+              nhưng đã ăn kém trong nhiều tuần, hoặc họ có thể ăn tốt hôm nay nhưng vật lộn ngày mai.
             </p>
             <p className="text-sm text-amber-800">
-              Risk is assessed over time, not by a single snapshot. Patterns matter more than isolated days.
+              Nguy cơ được đánh giá theo thời gian, không phải bằng một ảnh chụp đơn lẻ. Mô hình quan trọng hơn các ngày riêng lẻ.
             </p>
           </div>
 
           <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              ❌ "Screening tools diagnose malnutrition"
+              ❌ "Công cụ sàng lọc chẩn đoán suy dinh dưỡng"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Reality</strong>: Screening tools identify risk, not diagnosis. They tell you who needs further assessment, not who
-              definitely has malnutrition.
+              <strong>Thực tế</strong>: Công cụ sàng lọc xác định nguy cơ, không phải chẩn đoán. Chúng cho bạn biết ai cần đánh giá thêm, không phải ai
+              chắc chắn có suy dinh dưỡng.
             </p>
             <p className="text-sm text-amber-800">
-              Diagnosis requires comprehensive assessment including detailed history, physical examination, laboratory data, and clinical judgment.
-              Screening is a filter, not a diagnostic tool.
+              Chẩn đoán đòi hỏi đánh giá toàn diện bao gồm tiền sử chi tiết, khám thực thể, dữ liệu xét nghiệm, và phán đoán lâm sàng.
+              Sàng lọc là bộ lọc, không phải công cụ chẩn đoán.
             </p>
           </div>
 
           <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              ❌ "The formula gives the correct answer"
+              ❌ "Công thức cho câu trả lời đúng"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Reality</strong>: Formulas provide estimates, not exact requirements. Different methods produce different numbers, and that's normal.
+              <strong>Thực tế</strong>: Công thức cung cấp ước tính, không phải yêu cầu chính xác. Các phương pháp khác nhau tạo ra các con số khác nhau, và đó là bình thường.
             </p>
             <p className="text-sm text-amber-800">
-              Use formulas to structure thinking, then adjust based on clinical judgment and patient response.
+              Sử dụng công thức để cấu trúc tư duy, sau đó điều chỉnh dựa trên phán đoán lâm sàng và phản ứng bệnh nhân.
             </p>
           </div>
 
           <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              ❌ "If it's ordered, it's being delivered"
+              ❌ "Nếu nó được chỉ định, nó đang được cung cấp"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Reality</strong>: There's often a gap between what's prescribed (ordered/planned) and what's actually consumed.
+              <strong>Thực tế</strong>: Thường có khoảng cách giữa những gì được kê đơn (chỉ định/lập kế hoạch) và những gì thực sự được tiêu thụ.
             </p>
             <p className="text-sm text-amber-800">
-              Assessing actual intake, not just what was ordered, is important. Only delivered nutrition affects outcomes.
+              Đánh giá lượng ăn thực tế, không chỉ những gì được chỉ định, là quan trọng. Chỉ dinh dưỡng được cung cấp ảnh hưởng đến kết quả.
             </p>
           </div>
 
           <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              ❌ "More is always better"
+              ❌ "Nhiều hơn luôn tốt hơn"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Reality</strong>: Overfeeding can be harmful, especially in critical illness or refeeding situations.
+              <strong>Thực tế</strong>: Cho ăn quá mức có thể có hại, đặc biệt trong bệnh nặng hoặc tình huống tái cho ăn.
             </p>
             <p className="text-sm text-amber-800">
-              The goal is meeting needs safely, not maximizing intake regardless of tolerance or clinical context.
+              Mục tiêu là đáp ứng nhu cầu một cách an toàn, không phải tối đa hóa lượng ăn bất kể khả năng dung nạp hoặc bối cảnh lâm sàng.
             </p>
           </div>
         </div>
@@ -1047,123 +1047,123 @@ export default function AssessmentProcessPage() {
         <div className="space-y-6">
           <div className="rounded-md bg-red-50 border border-red-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-red-900">
-              ⚠️ Important Disclaimer
+              ⚠️ Lưu ý Quan trọng
             </h3>
             <p className="text-sm text-red-800 mb-2">
-              <strong>This site and its tools are for educational purposes only.</strong> They do not provide medical advice, diagnosis, or treatment.
-              They do not create a clinician–patient relationship. They must not be used for clinical decision-making, prescribing diets or feeds,
-              or making treatment decisions.
+              <strong>Trang web này và các công cụ của nó chỉ dùng cho mục đích giáo dục.</strong> Chúng không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị.
+              Chúng không tạo mối quan hệ bác sĩ–bệnh nhân. Chúng không được sử dụng để ra quyết định lâm sàng, kê đơn chế độ ăn hoặc thức ăn,
+              hoặc đưa ra quyết định điều trị.
             </p>
             <p className="text-sm text-red-800">
-              If you have concerns about nutrition status or health, consult with a qualified healthcare provider or registered dietitian
-              for a personalized, clinical assessment.
+              Nếu bạn có mối quan tâm về tình trạng dinh dưỡng hoặc sức khỏe, hãy tham khảo với nhà cung cấp y tế có trình độ hoặc chuyên gia dinh dưỡng đã đăng ký
+              để có đánh giá lâm sàng cá nhân hóa.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Tools Support Understanding, Not Decisions
+              Công cụ Hỗ trợ Hiểu biết, Không phải Quyết định
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              The tools on this site are designed to <strong>support learning and understanding</strong> of clinical nutrition assessment concepts.
-              They help you practice the thinking process and see how different factors influence estimates and assessments.
+              Các công cụ trên trang web này được thiết kế để <strong>hỗ trợ học tập và hiểu biết</strong> các khái niệm đánh giá dinh dưỡng lâm sàng.
+              Chúng giúp bạn thực hành quá trình tư duy và xem cách các yếu tố khác nhau ảnh hưởng đến ước tính và đánh giá.
             </p>
             <p className="text-sm text-amber-800">
-              However, these tools <strong>cannot and should not be used to make clinical decisions</strong>. Real clinical assessment requires
-              comprehensive evaluation, professional judgment, and consideration of the full clinical context—none of which can be captured
-              by online tools alone.
+              Tuy nhiên, các công cụ này <strong>không thể và không nên được sử dụng để đưa ra quyết định lâm sàng</strong>. Đánh giá lâm sàng thực sự đòi hỏi
+              đánh giá toàn diện, phán đoán chuyên nghiệp, và xem xét toàn bộ bối cảnh lâm sàng—không có điều nào trong số này có thể được nắm bắt
+              chỉ bởi các công cụ trực tuyến.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Clinical Assessment Is Multidisciplinary
+              Đánh giá Lâm sàng Là Đa ngành
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              Effective nutrition assessment in clinical practice involves a <strong>multidisciplinary team</strong>. Different team members
-              contribute different perspectives:
+              Đánh giá dinh dưỡng hiệu quả trong thực hành lâm sàng liên quan đến <strong>nhóm đa ngành</strong>. Các thành viên nhóm khác nhau
+              đóng góp các quan điểm khác nhau:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-amber-800">
-              <li><strong>Dietitians</strong> provide specialized nutrition expertise and comprehensive assessment</li>
-              <li><strong>Physicians</strong> contribute medical diagnosis, treatment plans, and overall care coordination</li>
-              <li><strong>Nurses</strong> observe daily intake, monitor symptoms, and implement care plans</li>
-              <li><strong>Pharmacists</strong> review medications that might affect nutrition or appetite</li>
-              <li><strong>Speech therapists</strong> assess swallowing function when relevant</li>
-              <li><strong>Social workers</strong> address barriers to food access and social support</li>
+              <li><strong>Chuyên gia Dinh dưỡng</strong> cung cấp chuyên môn dinh dưỡng chuyên biệt và đánh giá toàn diện</li>
+              <li><strong>Bác sĩ</strong> đóng góp chẩn đoán y tế, kế hoạch điều trị, và điều phối chăm sóc tổng thể</li>
+              <li><strong>Điều dưỡng</strong> quan sát lượng ăn hàng ngày, theo dõi triệu chứng, và thực hiện kế hoạch chăm sóc</li>
+              <li><strong>Dược sĩ</strong> xem xét thuốc có thể ảnh hưởng đến dinh dưỡng hoặc cảm giác ngon miệng</li>
+              <li><strong>Chuyên gia Ngôn ngữ Trị liệu</strong> đánh giá chức năng nuốt khi liên quan</li>
+              <li><strong>Nhân viên Xã hội</strong> giải quyết rào cản tiếp cận thực phẩm và hỗ trợ xã hội</li>
             </ul>
             <p className="text-sm text-amber-800 mt-2">
-              Online tools cannot replicate this collaborative, multidisciplinary approach. They provide educational examples, not comprehensive
-              clinical care.
+              Công cụ trực tuyến không thể sao chép cách tiếp cận hợp tác, đa ngành này. Chúng cung cấp ví dụ giáo dục, không phải
+              chăm sóc lâm sàng toàn diện.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Reassessment Is Essential
+              Đánh giá lại Là Cần thiết
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              Nutrition assessment is <strong>not a one-time event</strong>. It's an ongoing process that requires regular reassessment:
+              Đánh giá dinh dưỡng <strong>không phải là sự kiện một lần</strong>. Nó là quy trình đang diễn ra đòi hỏi đánh giá lại thường xuyên:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-amber-800">
-              <li>When clinical status changes (improvement or deterioration)</li>
-              <li>When interventions are started or modified</li>
-              <li>When goals of care shift</li>
-              <li>On a regular schedule (e.g., weekly in hospital, monthly in outpatient settings)</li>
-              <li>When monitoring shows unexpected patterns or concerns</li>
+              <li>Khi tình trạng lâm sàng thay đổi (cải thiện hoặc xấu đi)</li>
+              <li>Khi can thiệp được bắt đầu hoặc điều chỉnh</li>
+              <li>Khi mục tiêu chăm sóc thay đổi</li>
+              <li>Theo lịch trình thường xuyên (ví dụ: hàng tuần trong bệnh viện, hàng tháng trong môi trường ngoại trú)</li>
+              <li>Khi theo dõi cho thấy mô hình hoặc mối quan tâm bất ngờ</li>
             </ul>
             <p className="text-sm text-amber-800 mt-2">
-              Online tools provide snapshots at a point in time. They cannot replace the continuous monitoring and reassessment that real
-              clinical care requires.
+              Công cụ trực tuyến cung cấp ảnh chụp tại một thời điểm. Chúng không thể thay thế theo dõi liên tục và đánh giá lại mà
+              chăm sóc lâm sàng thực sự đòi hỏi.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Limitations of Online Tools
+              Giới hạn của Công cụ Trực tuyến
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              Online tools have significant limitations:
+              Công cụ trực tuyến có giới hạn đáng kể:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-amber-800">
-              <li>They cannot perform physical examination or observe clinical signs</li>
-              <li>They cannot access or interpret laboratory data in context</li>
-              <li>They cannot assess the full medical history and current clinical situation</li>
-              <li>They cannot apply professional judgment or adapt to unique circumstances</li>
-              <li>They cannot provide ongoing monitoring or follow-up</li>
-              <li>They cannot coordinate with a multidisciplinary team</li>
+              <li>Chúng không thể thực hiện khám thực thể hoặc quan sát dấu hiệu lâm sàng</li>
+              <li>Chúng không thể truy cập hoặc diễn giải dữ liệu xét nghiệm trong ngữ cảnh</li>
+              <li>Chúng không thể đánh giá toàn bộ tiền sử y tế và tình huống lâm sàng hiện tại</li>
+              <li>Chúng không thể áp dụng phán đoán chuyên nghiệp hoặc thích ứng với hoàn cảnh độc đáo</li>
+              <li>Chúng không thể cung cấp theo dõi hoặc theo dõi tiếp tục</li>
+              <li>Chúng không thể phối hợp với nhóm đa ngành</li>
             </ul>
             <p className="text-sm text-amber-800 mt-2">
-              Comprehensive clinical assessment requires all of these elements. Use online tools to <strong>learn and practice</strong>,
-              not to replace professional clinical evaluation.
+              Đánh giá lâm sàng toàn diện đòi hỏi tất cả các yếu tố này. Sử dụng công cụ trực tuyến để <strong>học và thực hành</strong>,
+              không phải để thay thế đánh giá lâm sàng chuyên nghiệp.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              When to Seek Professional Help
+              Khi nào Tìm kiếm Hỗ trợ Chuyên nghiệp
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              Consult with a qualified healthcare provider or registered dietitian if:
+              Tham khảo với nhà cung cấp y tế có trình độ hoặc chuyên gia dinh dưỡng đã đăng ký nếu:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-amber-800">
-              <li>Screening suggests moderate or high nutrition risk</li>
-              <li>You have concerns about nutrition status or eating patterns</li>
-              <li>There are unexplained changes in weight, appetite, or intake</li>
-              <li>You need personalized nutrition recommendations</li>
-              <li>You're managing a medical condition that affects nutrition</li>
+              <li>Sàng lọc gợi ý nguy cơ dinh dưỡng trung bình hoặc cao</li>
+              <li>Bạn có mối quan tâm về tình trạng dinh dưỡng hoặc mô hình ăn uống</li>
+              <li>Có thay đổi không giải thích được về cân nặng, cảm giác ngon miệng, hoặc lượng ăn</li>
+              <li>Bạn cần khuyến nghị dinh dưỡng cá nhân hóa</li>
+              <li>Bạn đang quản lý tình trạng y tế ảnh hưởng đến dinh dưỡng</li>
             </ul>
             <p className="text-sm text-amber-800 mt-2">
-              Professional clinical assessment provides personalized care that online tools cannot.
+              Đánh giá lâm sàng chuyên nghiệp cung cấp chăm sóc cá nhân hóa mà công cụ trực tuyến không thể.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Emergency Situations
+              Tình huống Cấp cứu
             </h3>
             <p className="text-sm text-amber-800">
-              <strong>This site is not for emergency care.</strong> If you have a medical emergency, seek immediate professional medical attention.
-              Do not use this site or its tools in emergency situations.
+              <strong>Trang web này không dùng cho chăm sóc cấp cứu.</strong> Nếu bạn có cấp cứu y tế, hãy tìm kiếm chú ý y tế chuyên nghiệp ngay lập tức.
+              Không sử dụng trang web này hoặc các công cụ của nó trong tình huống cấp cứu.
             </p>
           </div>
         </div>
@@ -1185,34 +1185,34 @@ export default function AssessmentProcessPage() {
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
         </div>
         <p className="text-base text-blue-800">
-          Each step in the assessment process has a corresponding interactive tool. These tools help you practice the thinking process
-          and see how the concepts you've learned apply in practice.
+          Mỗi bước trong quy trình đánh giá có một công cụ tương tác tương ứng. Các công cụ này giúp bạn thực hành quá trình tư duy
+          và xem cách các khái niệm bạn đã học áp dụng trong thực hành.
         </p>
 
         <div className="mt-4 space-y-4">
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              New to Clinical Nutrition Assessment?
+              Mới với Đánh giá Dinh dưỡng Lâm sàng?
             </h3>
             <p className="text-sm text-blue-800 mb-3">
-              If you're just getting started, we recommend beginning with <strong>Tool 01: Malnutrition Screening</strong>. This tool
-              introduces you to the first step of assessment and helps you understand how screening works in practice.
+              Nếu bạn mới bắt đầu, chúng tôi khuyến nghị bắt đầu với <strong>Công cụ 01: Sàng lọc Suy Dinh dưỡng</strong>. Công cụ này
+              giới thiệu bạn với bước đầu tiên của đánh giá và giúp bạn hiểu cách sàng lọc hoạt động trong thực hành.
             </p>
             <Link
               href="/tools/malnutrition-screening"
               className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
             >
-              Start with Tool 01: Malnutrition Screening →
+              Bắt đầu với Công cụ 01: Sàng lọc Suy Dinh dưỡng →
             </Link>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-3 text-blue-900">
-              Using the Tools Sequentially
+              Sử dụng Các Công cụ Theo Trình tự
             </h3>
             <p className="text-sm text-blue-800 mb-3">
-              The tools are designed to work together, following the assessment sequence you've learned. Using them in order helps you
-              see how each step builds on the previous one:
+              Các công cụ được thiết kế để hoạt động cùng nhau, theo trình tự đánh giá bạn đã học. Sử dụng chúng theo thứ tự giúp bạn
+              thấy cách mỗi bước xây dựng trên bước trước:
             </p>
             <div className="grid gap-4 sm:grid-cols-3">
               <div className="rounded-md bg-white border border-blue-200 p-4">
@@ -1220,16 +1220,16 @@ export default function AssessmentProcessPage() {
                   <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-semibold">
                     1
                   </span>
-                  <h4 className="font-semibold text-sm text-blue-900">Screening</h4>
+                  <h4 className="font-semibold text-sm text-blue-900">Sàng lọc</h4>
                 </div>
                 <p className="text-xs text-blue-700 mb-2">
-                  Quick check for nutrition risk
+                  Kiểm tra nhanh nguy cơ dinh dưỡng
                 </p>
                 <Link
                   href="/tools/malnutrition-screening"
                   className="inline-flex items-center text-xs font-medium text-blue-700 hover:text-blue-900 underline"
                 >
-                  Tool 01 →
+                  Công cụ 01 →
                 </Link>
               </div>
               <div className="rounded-md bg-white border border-blue-200 p-4">
@@ -1237,16 +1237,16 @@ export default function AssessmentProcessPage() {
                   <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-semibold">
                     2
                   </span>
-                  <h4 className="font-semibold text-sm text-blue-900">Needs</h4>
+                  <h4 className="font-semibold text-sm text-blue-900">Nhu cầu</h4>
                 </div>
                 <p className="text-xs text-blue-700 mb-2">
-                  Estimate energy & protein requirements
+                  Ước tính nhu cầu năng lượng & protein
                 </p>
                 <Link
                   href="/tools/energy-protein-calculator"
                   className="inline-flex items-center text-xs font-medium text-blue-700 hover:text-blue-900 underline"
                 >
-                  Tool 02 →
+                  Công cụ 02 →
                 </Link>
               </div>
               <div className="rounded-md bg-white border border-blue-200 p-4">
@@ -1254,43 +1254,43 @@ export default function AssessmentProcessPage() {
                   <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-semibold">
                     3
                   </span>
-                  <h4 className="font-semibold text-sm text-blue-900">Intake</h4>
+                  <h4 className="font-semibold text-sm text-blue-900">Lượng ăn</h4>
                 </div>
                 <p className="text-xs text-blue-700 mb-2">
-                  Assess actual intake vs. needs
+                  Đánh giá lượng ăn thực tế vs. nhu cầu
                 </p>
                 <Link
                   href="/tools/intake-assessment"
                   className="inline-flex items-center text-xs font-medium text-blue-700 hover:text-blue-900 underline"
                 >
-                  Tool 03 →
+                  Công cụ 03 →
                 </Link>
               </div>
             </div>
             <p className="text-sm text-blue-800 mt-3 italic">
-              You can use the tools in any order, but following the sequence helps reinforce the logical flow of assessment.
+              Bạn có thể sử dụng các công cụ theo bất kỳ thứ tự nào, nhưng tuân theo trình tự giúp củng cố luồng logic của đánh giá.
             </p>
           </div>
 
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Coming Soon: Case-Based Learning
+              Sắp Ra mắt: Học tập Dựa trên Ca bệnh
             </h3>
             <p className="text-sm text-blue-800">
-              We're working on case-based learning modules that will let you practice the full assessment process with realistic patient scenarios.
-              These will help you apply everything you've learned in a more integrated way. Check back soon!
+              Chúng tôi đang làm việc trên các mô-đun học tập dựa trên ca bệnh sẽ cho phép bạn thực hành quy trình đánh giá đầy đủ với các tình huống bệnh nhân thực tế.
+              Những điều này sẽ giúp bạn áp dụng tất cả những gì bạn đã học theo cách tích hợp hơn. Hãy quay lại sớm!
             </p>
           </div>
         </div>
 
         <div className="mt-6 p-4 bg-white rounded-md border border-blue-200">
           <p className="text-sm font-semibold text-blue-900 mb-2">
-            A Gentle Reminder
+            Lời Nhắc nhẹ nhàng
           </p>
           <p className="text-sm text-blue-800">
-            Take your time exploring these tools. There's no rush, and there are no "right" or "wrong" answers—these are learning tools,
-            not tests. Use them to practice thinking through assessment scenarios and to deepen your understanding of the concepts.
-            If you have questions or want to discuss what you're learning, consider talking with a mentor, colleague, or instructor.
+            Hãy dành thời gian khám phá các công cụ này. Không có gấp gáp, và không có câu trả lời "đúng" hoặc "sai"—đây là công cụ học tập,
+            không phải bài kiểm tra. Sử dụng chúng để thực hành tư duy qua các tình huống đánh giá và để đào sâu hiểu biết của bạn về các khái niệm.
+            Nếu bạn có câu hỏi hoặc muốn thảo luận những gì bạn đang học, hãy cân nhắc nói chuyện với người cố vấn, đồng nghiệp, hoặc người hướng dẫn.
           </p>
         </div>
       </section>
