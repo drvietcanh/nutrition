@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": ".next",
+  "outputDirectory": "clinical-nutrition/.next",
   "installCommand": "npm install",
   "framework": "nextjs"
 }

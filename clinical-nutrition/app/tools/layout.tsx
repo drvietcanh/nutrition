@@ -6,7 +6,7 @@ export default function ToolsLayout({ children }: { children: ReactNode }) {
 
   return (
     <section className="space-y-6">
-      <aside className="rounded-md border border-amber-200 bg-amber-50 px 4 py-3 text-xs text-amber-900 sm:text-sm">
+      <aside className="rounded-md border border-amber-200 bg-amber-50 px-4 py-3 text-xs text-amber-900 sm:text-sm">
         <p className="font-semibold">{copy.header}</p>
         <p className="mt-1">{copy.advisory}</p>
       </aside>

@@ -10,7 +10,7 @@ export default function KnowledgePage() {
           <BookOpen className="w-8 h-8 text-blue-600" aria-hidden="true" />
           <h1 className="text-3xl font-bold sm:text-4xl text-gray-900">
             Cơ sở Kiến thức Dinh dưỡng Lâm sàng
-          </h1>
+        </h1>
         </div>
         <p className="text-lg text-gray-700 leading-relaxed">
           Nội dung giáo dục giải thích các khái niệm dinh dưỡng lâm sàng, quy trình đánh giá, và lập luận lâm sàng.
@@ -132,24 +132,24 @@ export default function KnowledgePage() {
         <CardContent>
           <p className="text-gray-700 leading-relaxed mb-4">
             Thực hành những gì bạn đã học với các công cụ tương tác của chúng tôi:
-          </p>
+        </p>
           <ul className="list-disc space-y-2 pl-6 text-gray-700">
-            <li>
-              <Link href="/tools/malnutrition-screening" className="text-blue-700 hover:text-blue-900 hover:underline">
+          <li>
+            <Link href="/tools/malnutrition-screening" className="text-blue-700 hover:text-blue-900 hover:underline">
                 Công cụ Sàng lọc Suy Dinh dưỡng
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/energy-protein-calculator" className="text-blue-700 hover:text-blue-900 hover:underline">
+            </Link>
+          </li>
+          <li>
+            <Link href="/tools/energy-protein-calculator" className="text-blue-700 hover:text-blue-900 hover:underline">
                 Máy tính Năng lượng & Protein
-              </Link>
-            </li>
-            <li>
-              <Link href="/tools/intake-assessment" className="text-blue-700 hover:text-blue-900 hover:underline">
+            </Link>
+          </li>
+          <li>
+            <Link href="/tools/intake-assessment" className="text-blue-700 hover:text-blue-900 hover:underline">
                 Bảng Đánh giá Lượng Ăn
-              </Link>
-            </li>
-          </ul>
+            </Link>
+          </li>
+        </ul>
         </CardContent>
       </Card>
     </main>

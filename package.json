@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "description": "Clinical nutrition knowledge base and tools",
+  "scripts": {
+    "dev": "npm --workspace clinical-nutrition run dev",
+    "build": "npm --workspace clinical-nutrition run build",
+    "start": "npm --workspace clinical-nutrition run start",
+    "lint": "npm --workspace clinical-nutrition run lint"
+  },
   "workspaces": [
     "clinical-nutrition"
   ]
