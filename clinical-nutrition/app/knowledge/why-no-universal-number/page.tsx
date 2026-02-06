@@ -40,34 +40,34 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <header className="space-y-4 sm:space-y-5 border-b border-neutral-200 pb-6 sm:pb-8">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight text-neutral-900">
-          Why There's No Universal Number for Nutrition Needs
+          Tại Sao Không Có Con Số Phổ Quát Cho Nhu Cầu Dinh Dưỡng
         </h1>
         <ContentBlock>
           <p className="text-xl font-medium text-neutral-800 mb-4">
-            "Why can't we just calculate the number and follow it?"
+            "Tại sao chúng ta không thể chỉ tính toán con số và làm theo nó?"
           </p>
           <p>
-            It's a question many of us have asked—whether you're a clinician early in practice, a nurse involved
-            in nutrition care, a medical student learning the ropes, or someone curious about how clinical nutrition
-            actually works. It seems like it should be straightforward: enter the patient's weight, age, and condition,
-            get the answer, and follow it.
+            Đó là câu hỏi nhiều người trong chúng ta đã hỏi—dù bạn là bác sĩ lâm sàng mới vào nghề, y tá tham gia
+            chăm sóc dinh dưỡng, sinh viên y khoa đang học, hoặc ai đó tò mò về cách dinh dưỡng lâm sàng
+            thực sự hoạt động. Có vẻ như nó nên đơn giản: nhập cân nặng, tuổi và tình trạng của bệnh nhân,
+            nhận câu trả lời, và làm theo nó.
           </p>
           <p>
-            And honestly, that would be easier. A single, clear number would make planning simpler and decisions
-            more straightforward. But here's the thing: <strong>clinical nutrition doesn't work that way</strong>.
-            There's no universal number that applies to everyone, or even to the same person in different situations.
+            Và thành thật mà nói, điều đó sẽ dễ hơn. Một con số duy nhất, rõ ràng sẽ làm cho việc lập kế hoạch đơn giản hơn và quyết định
+            thẳng thắn hơn. Nhưng đây là điều: <strong>dinh dưỡng lâm sàng không hoạt động theo cách đó</strong>.
+            Không có con số phổ quát nào áp dụng cho tất cả mọi người, hoặc thậm chí cho cùng một người trong các tình huống khác nhau.
           </p>
           <p>
-            This page explores why that is—and why understanding this actually helps us provide better, safer
-            nutrition care. We'll look at why patients with the same weight may have different needs, why needs
-            change over time, what formulas really do (and don't do), and how experienced clinicians actually
-            approach this in practice.
+            Trang này khám phá tại sao lại như vậy—và tại sao hiểu điều này thực sự giúp chúng ta cung cấp tốt hơn, an toàn hơn
+            chăm sóc dinh dưỡng. Chúng ta sẽ xem tại sao bệnh nhân có cùng cân nặng có thể có nhu cầu khác nhau, tại sao nhu cầu
+            thay đổi theo thời gian, công thức thực sự làm gì (và không làm gì), và các bác sĩ lâm sàng có kinh nghiệm thực sự
+            tiếp cận điều này trong thực hành như thế nào.
           </p>
           <p className="text-base text-neutral-600 italic border-l-4 border-blue-200 pl-4 py-2 bg-blue-50/50 rounded-r">
-            This content is designed for educational purposes to help you understand nutrition needs estimation
-            and reduce overconfidence in numbers. It does not provide treatment recommendations or replace clinical
-            guidelines or professional training. If you're new to clinical nutrition, take your time with these
-            concepts—they form the foundation for safe and effective nutrition care.
+            Nội dung này được thiết kế cho mục đích giáo dục để giúp bạn hiểu ước tính nhu cầu dinh dưỡng
+            và giảm sự tự tin quá mức vào số liệu. Nó không cung cấp khuyến nghị điều trị hoặc thay thế
+            hướng dẫn lâm sàng hoặc đào tạo chuyên nghiệp. Nếu bạn mới làm quen với dinh dưỡng lâm sàng, hãy dành thời gian với những
+            khái niệm này—chúng tạo nền tảng cho chăm sóc dinh dưỡng an toàn và hiệu quả.
           </p>
         </ContentBlock>
       </header>
