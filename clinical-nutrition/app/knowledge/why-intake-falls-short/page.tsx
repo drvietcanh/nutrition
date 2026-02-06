@@ -419,17 +419,17 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-purple-500 bg-purple-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Functional Limitations</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Hạn Chế Chức Năng</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Illness can limit a patient's ability to physically eat:
+              Bệnh tật có thể hạn chế khả năng ăn về mặt thể chất của bệnh nhân:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Weakness or paralysis preventing self-feeding</li>
-              <li>Difficulty swallowing (dysphagia) requiring modified textures or tube feeding</li>
-              <li>Hand tremors, coordination problems, or weakness making it hard to hold utensils</li>
-              <li>Positioning restrictions (e.g., must stay flat, can't sit up to eat)</li>
-              <li>Dependence on others to feed them, which may not always be available</li>
-              <li>Fatigue making the physical act of eating too exhausting</li>
+              <li>Yếu hoặc liệt ngăn cản tự cho ăn</li>
+              <li>Khó nuốt (dysphagia) yêu cầu kết cấu được sửa đổi hoặc cho ăn qua ống</li>
+              <li>Run tay, vấn đề phối hợp, hoặc yếu làm khó khăn để cầm dụng cụ</li>
+              <li>Hạn chế tư thế (ví dụ, phải nằm phẳng, không thể ngồi dậy để ăn)</li>
+              <li>Phụ thuộc vào người khác để cho ăn, có thể không luôn có sẵn</li>
+              <li>Mệt mỏi làm cho hành động thể chất của việc ăn quá kiệt sức</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Hạn chế chức năng là hậu quả của bệnh tật 
@@ -474,10 +474,10 @@ export default function WhyIntakeFallsShortPage() {
             Được Kê Đơn ≠ Được Cung Cấp
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
-            What is <strong>prescribed</strong> (ordered, planned, recommended) is often different from what 
-            is <strong>delivered</strong> (actually consumed or received). This gap is common and expected. 
-            Only delivered nutrition affects patient outcomes—a perfect prescription that isn't consumed 
-            doesn't help the patient.
+            Những gì được <strong>kê đơn</strong> (đặt, lên kế hoạch, khuyến nghị) thường khác với những gì 
+            được <strong>cung cấp</strong> (thực sự được tiêu thụ hoặc nhận được). Khoảng cách này là phổ biến và được mong đợi. 
+            Chỉ dinh dưỡng được cung cấp ảnh hưởng đến kết quả bệnh nhân—một đơn thuốc hoàn hảo không được tiêu thụ 
+            không giúp bệnh nhân.
           </p>
         </div>
         <p className="text-base text-gray-700 leading-relaxed">
