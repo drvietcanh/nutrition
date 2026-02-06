@@ -486,135 +486,135 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="examples-heading">
         <SectionHeading id="examples-heading">
-          Clinical Examples Illustrating Variability
+          Ví Dụ Lâm Sàng Minh Họa Sự Biến Đổi
         </SectionHeading>
         <ContentBlock>
           <p>
-            Real clinical examples help illustrate why there's no universal number. These scenarios show how
-            the same calculation can mean different things in different situations, and why clinical judgment
-            matters more than formulas.
+            Các ví dụ lâm sàng thực tế giúp minh họa tại sao không có con số phổ quát. Các tình huống này cho thấy cách
+            cùng một tính toán có thể có ý nghĩa khác nhau trong các tình huống khác nhau, và tại sao phán đoán lâm sàng
+            quan trọng hơn công thức.
           </p>
         </ContentBlock>
 
         <div className="mt-6 space-y-6">
           <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4">
             <h3 className="font-semibold text-base mb-3 text-neutral-900">
-              Example 1: Two Patients, Same Weight, Different Illness Severity
+              Ví Dụ 1: Hai Bệnh Nhân, Cùng Cân Nặng, Mức Độ Bệnh Khác Nhau
             </h3>
             <p className="text-sm text-neutral-700 mb-3">
-              Two patients both weigh 70 kg and are 65 years old. Both have heart failure. A simple weight-based
-              calculation might suggest the same target for both. However:
+              Hai bệnh nhân đều nặng 70 kg và 65 tuổi. Cả hai đều bị suy tim. Một tính toán đơn giản dựa trên cân nặng
+              có thể gợi ý cùng một mục tiêu cho cả hai. Tuy nhiên:
             </p>
             <div className="grid gap-4 sm:grid-cols-2 mb-3">
               <div className="bg-white rounded p-3 border border-neutral-200">
-                <p className="text-xs font-semibold text-neutral-900 mb-2">Patient A:</p>
+                <p className="text-xs font-semibold text-neutral-900 mb-2">Bệnh Nhân A:</p>
                 <ul className="list-disc space-y-1 pl-4 text-xs text-neutral-700">
-                  <li>Stable heart failure, well-controlled</li>
-                  <li>Walking daily, independent with activities</li>
-                  <li>Good appetite, eating regular meals</li>
-                  <li>No recent hospitalizations</li>
+                  <li>Suy tim ổn định, được kiểm soát tốt</li>
+                  <li>Đi bộ hàng ngày, độc lập với các hoạt động</li>
+                  <li>Cảm giác ngon miệng tốt, ăn bữa ăn đều đặn</li>
+                  <li>Không có nhập viện gần đây</li>
                 </ul>
               </div>
               <div className="bg-white rounded p-3 border border-neutral-200">
-                <p className="text-xs font-semibold text-neutral-900 mb-2">Patient B:</p>
+                <p className="text-xs font-semibold text-neutral-900 mb-2">Bệnh Nhân B:</p>
                 <ul className="list-disc space-y-1 pl-4 text-xs text-neutral-700">
-                  <li>Severe heart failure, recently decompensated</li>
-                  <li>Short of breath with minimal activity, mostly bedbound</li>
-                  <li>Poor appetite, feeling full quickly</li>
-                  <li>Multiple recent hospitalizations</li>
+                  <li>Suy tim nặng, mất bù gần đây</li>
+                  <li>Khó thở với hoạt động tối thiểu, chủ yếu nằm liệt giường</li>
+                  <li>Cảm giác ngon miệng kém, cảm thấy no nhanh</li>
+                  <li>Nhiều lần nhập viện gần đây</li>
                 </ul>
               </div>
             </div>
             <p className="text-sm text-neutral-700">
-              <strong>The reasoning:</strong> Patient A is stable and active, so their body needs energy for daily
-              activities and maintaining their current status. Patient B is in severe heart failure, which increases
-              metabolic demands, but they're also less active and struggling with appetite. The same calculation
-              doesn't account for these differences. The care team needs to consider illness severity, activity level,
-              and what the patient can actually tolerate—not just weight. This is why nurses observing activity and
-              clinicians assessing illness severity matter so much.
+              <strong>Lý luận:</strong> Bệnh nhân A ổn định và hoạt động, vì vậy cơ thể họ cần năng lượng cho các hoạt động hàng ngày
+              và duy trì tình trạng hiện tại của họ. Bệnh nhân B đang trong suy tim nặng, điều này làm tăng
+              nhu cầu chuyển hóa, nhưng họ cũng ít hoạt động hơn và đang vật lộn với cảm giác ngon miệng. Cùng một tính toán
+              không tính đến những khác biệt này. Nhóm chăm sóc cần xem xét mức độ nghiêm trọng của bệnh, mức độ hoạt động,
+              và những gì bệnh nhân thực sự có thể chịu đựng—không chỉ cân nặng. Đây là lý do tại sao y tá quan sát hoạt động và
+              bác sĩ lâm sàng đánh giá mức độ nghiêm trọng của bệnh quan trọng như vậy.
             </p>
           </div>
 
           <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4">
             <h3 className="font-semibold text-base mb-3 text-neutral-900">
-              Example 2: Same Patient, Different Stages of Illness
+              Ví Dụ 2: Cùng Bệnh Nhân, Các Giai Đoạn Bệnh Khác Nhau
             </h3>
             <p className="text-sm text-neutral-700 mb-3">
-              A 60-year-old patient is admitted with pneumonia. Over the course of their hospital stay, their needs
-              change as their condition changes:
+              Một bệnh nhân 60 tuổi được nhập viện với viêm phổi. Trong quá trình nằm viện, nhu cầu của họ
+              thay đổi khi tình trạng của họ thay đổi:
             </p>
             <div className="space-y-3 mb-3">
               <div className="bg-white rounded p-3 border border-neutral-200">
                 <p className="text-xs font-semibold text-neutral-900 mb-2">
-                  <strong>Day 1 (Acute illness):</strong>
+                  <strong>Ngày 1 (Bệnh cấp tính):</strong>
                 </p>
                 <ul className="list-disc space-y-1 pl-4 text-xs text-neutral-700">
-                  <li>Fever, infection, body fighting illness</li>
-                  <li>Bedbound, minimal activity</li>
-                  <li>Poor appetite, feeling unwell</li>
-                  <li>Body needs energy to fight infection, but patient can't eat much</li>
+                  <li>Sốt, nhiễm trùng, cơ thể chống lại bệnh tật</li>
+                  <li>Nằm liệt giường, hoạt động tối thiểu</li>
+                  <li>Cảm giác ngon miệng kém, cảm thấy không khỏe</li>
+                  <li>Cơ thể cần năng lượng để chống nhiễm trùng, nhưng bệnh nhân không thể ăn nhiều</li>
                 </ul>
               </div>
               <div className="bg-white rounded p-3 border border-neutral-200">
                 <p className="text-xs font-semibold text-neutral-900 mb-2">
-                  <strong>Day 5 (Recovery):</strong>
+                  <strong>Ngày 5 (Phục hồi):</strong>
                 </p>
                 <ul className="list-disc space-y-1 pl-4 text-xs text-neutral-700">
-                  <li>Infection improving, fever resolved</li>
-                  <li>Starting to walk, more active</li>
-                  <li>Appetite returning, eating better</li>
-                  <li>Body needs energy for both recovery and increased activity</li>
+                  <li>Nhiễm trùng cải thiện, sốt đã hết</li>
+                  <li>Bắt đầu đi bộ, hoạt động nhiều hơn</li>
+                  <li>Cảm giác ngon miệng trở lại, ăn tốt hơn</li>
+                  <li>Cơ thể cần năng lượng cho cả phục hồi và hoạt động tăng lên</li>
                 </ul>
               </div>
               <div className="bg-white rounded p-3 border border-neutral-200">
                 <p className="text-xs font-semibold text-neutral-900 mb-2">
-                  <strong>Day 10 (Rehabilitation):</strong>
+                  <strong>Ngày 10 (Phục hồi chức năng):</strong>
                 </p>
                 <ul className="list-disc space-y-1 pl-4 text-xs text-neutral-700">
-                  <li>Infection resolved, stable</li>
-                  <li>Very active, doing physical therapy</li>
-                  <li>Good appetite, eating well</li>
-                  <li>Body needs energy for activity and rebuilding strength</li>
+                  <li>Nhiễm trùng đã hết, ổn định</li>
+                  <li>Rất hoạt động, đang làm vật lý trị liệu</li>
+                  <li>Cảm giác ngon miệng tốt, ăn tốt</li>
+                  <li>Cơ thể cần năng lượng cho hoạt động và tái tạo sức mạnh</li>
                 </ul>
               </div>
             </div>
             <p className="text-sm text-neutral-700">
-              <strong>The reasoning:</strong> During acute illness, the body needs energy to fight infection, but
-              the patient often can't eat much. During recovery, needs increase because the body is both fighting
-              illness and healing, and activity is increasing. During rehabilitation, needs may be highest because
-              the person is very active and rebuilding strength. A single calculation from Day 1 wouldn't fit Days
-              5 or 10. This is why reassessment matters—the person's needs change as their situation changes. Nurses
-              monitoring daily intake and clinicians reassessing regularly catch these changes.
+              <strong>Lý luận:</strong> Trong bệnh cấp tính, cơ thể cần năng lượng để chống nhiễm trùng, nhưng
+              bệnh nhân thường không thể ăn nhiều. Trong phục hồi, nhu cầu tăng lên vì cơ thể vừa chống lại
+              bệnh tật vừa chữa lành, và hoạt động đang tăng lên. Trong phục hồi chức năng, nhu cầu có thể cao nhất vì
+              người đó rất hoạt động và đang tái tạo sức mạnh. Một tính toán duy nhất từ Ngày 1 sẽ không phù hợp với Ngày
+              5 hoặc 10. Đây là lý do tại sao đánh giá lại quan trọng—nhu cầu của người đó thay đổi khi tình huống của họ thay đổi. Y tá
+              theo dõi lượng ăn vào hàng ngày và bác sĩ lâm sàng đánh giá lại thường xuyên nắm bắt những thay đổi này.
             </p>
           </div>
 
           <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4">
             <h3 className="font-semibold text-base mb-3 text-neutral-900">
-              Example 3: Adequate Energy, But Insufficient Protein
+              Ví Dụ 3: Năng Lượng Đầy Đủ, Nhưng Protein Không Đủ
             </h3>
             <p className="text-sm text-neutral-700 mb-3">
-              A patient recovering from surgery is eating well and meeting their estimated energy needs. However,
-              the nurse notices:
+              Một bệnh nhân đang phục hồi sau phẫu thuật đang ăn tốt và đáp ứng nhu cầu năng lượng ước tính của họ. Tuy nhiên,
+              y tá nhận thấy:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700 mb-3">
-              <li>Wound healing is slow</li>
-              <li>Patient is losing muscle mass despite eating enough calories</li>
-              <li>Patient reports feeling weak</li>
-              <li>Looking at what they're actually eating: mostly carbohydrates (bread, pasta, fruit), very little
-              protein (meat, eggs, dairy)</li>
+              <li>Vết thương lành chậm</li>
+              <li>Bệnh nhân đang mất khối lượng cơ mặc dù ăn đủ calo</li>
+              <li>Bệnh nhân báo cáo cảm thấy yếu</li>
+              <li>Nhìn vào những gì họ thực sự đang ăn: chủ yếu carbohydrate (bánh mì, mì ống, trái cây), rất ít
+              protein (thịt, trứng, sữa)</li>
             </ul>
             <p className="text-sm text-neutral-700 mb-3">
-              The patient is getting enough energy (calories), but not enough protein to support healing and maintain
-              muscle mass.
+              Bệnh nhân đang nhận đủ năng lượng (calo), nhưng không đủ protein để hỗ trợ chữa lành và duy trì
+              khối lượng cơ.
             </p>
             <p className="text-sm text-neutral-700">
-              <strong>The reasoning:</strong> Energy and protein needs are different. Someone can meet their energy
-              needs but still not get enough protein. This is especially important during recovery, when the body
-              needs protein to heal wounds and rebuild tissue. Simply looking at total calories misses this. The care
-              team needs to consider not just how much the patient is eating, but what they're eating. This is why
-              nurses documenting what patients actually consume (not just how much) is so valuable—it reveals gaps
-              that calculations might miss. The solution isn't necessarily more calories, but ensuring adequate protein
-              within what the patient can tolerate.
+              <strong>Lý luận:</strong> Nhu cầu năng lượng và protein là khác nhau. Ai đó có thể đáp ứng nhu cầu năng lượng
+              của họ nhưng vẫn không nhận đủ protein. Điều này đặc biệt quan trọng trong phục hồi, khi cơ thể
+              cần protein để chữa lành vết thương và tái tạo mô. Chỉ nhìn vào tổng calo bỏ lỡ điều này. Nhóm chăm sóc
+              cần xem xét không chỉ bệnh nhân đang ăn bao nhiêu, mà còn những gì họ đang ăn. Đây là lý do tại sao
+              y tá ghi chép những gì bệnh nhân thực sự tiêu thụ (không chỉ bao nhiêu) rất có giá trị—nó tiết lộ khoảng trống
+              mà tính toán có thể bỏ lỡ. Giải pháp không nhất thiết là nhiều calo hơn, mà là đảm bảo protein đầy đủ
+              trong những gì bệnh nhân có thể chịu đựng.
             </p>
           </div>
         </div>
