@@ -651,12 +651,12 @@ export default function AssessmentProcessPage() {
             </div>
             <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-3">
               <p className="text-sm font-semibold text-blue-900 mb-1">
-                Clinical Insight:
+                Hiểu Biết Lâm Sàng:
               </p>
               <p className="text-sm text-blue-800">
-                When intake falls short, it's rarely just "the patient won't eat." There's usually a <strong>reason</strong>—symptoms, procedures,
-                system issues, or psychological factors. Identifying and addressing these reasons is more effective than simply increasing the prescription
-                or adding more supplements that may also go uneaten.
+                Khi lượng ăn vào thiếu, hiếm khi chỉ là "bệnh nhân không chịu ăn." Thường có một <strong>lý do</strong>—triệu chứng, thủ thuật,
+                vấn đề hệ thống, hoặc yếu tố tâm lý. Xác định và giải quyết những lý do này hiệu quả hơn so với chỉ đơn giản tăng đơn thuốc
+                hoặc thêm nhiều bổ sung hơn mà cũng có thể không được ăn.
               </p>
             </div>
           </div>
