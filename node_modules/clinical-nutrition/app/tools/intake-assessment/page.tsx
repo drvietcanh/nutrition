@@ -1,6 +1,26 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
+
+export const metadata: Metadata = {
+  title: "Đánh giá Lượng Ăn",
+  description:
+    "Hiểu sự khác biệt giữa dinh dưỡng được kê đơn và được cung cấp, vì sao lượng ăn thường thiếu, và tầm quan trọng của xu hướng so với dữ liệu một ngày. Công cụ giáo dục để so sánh nhu cầu ước tính với lượng ăn thực tế.",
+  keywords: [
+    "đánh giá lượng ăn",
+    "intake assessment",
+    "lượng ăn",
+    "dinh dưỡng lâm sàng",
+    "nhu cầu vs lượng ăn",
+  ],
+  openGraph: {
+    title: "Đánh giá Lượng Ăn – Công cụ Giảng dạy",
+    description:
+      "Hiểu sự khác biệt giữa dinh dưỡng được kê đơn và được cung cấp, vì sao lượng ăn thường thiếu, và tầm quan trọng của xu hướng so với dữ liệu một ngày. Công cụ giáo dục để so sánh nhu cầu ước tính với lượng ăn thực tế.",
+    url: "https://clinical-nutrition.edu.vn/tools/intake-assessment",
+  },
+};
 
 const InteractiveSection = dynamic(() => import("./InteractiveSection").then(mod => ({ default: mod.InteractiveSection })), {
   loading: () => (

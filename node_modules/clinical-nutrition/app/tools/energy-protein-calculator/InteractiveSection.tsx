@@ -102,11 +102,11 @@ export function InteractiveSection() {
     const input = toClinicalInput();
 
     try {
-      if (activeMethod === "simple-weight-based" || activeMethod === "both") {
-        setSimpleResult(calculateSimpleWeightBasedNeeds(input));
-      }
-      if (activeMethod === "equation-educational" || activeMethod === "both") {
-        setEquationResult(calculateEquationStyleNeeds(input));
+    if (activeMethod === "simple-weight-based" || activeMethod === "both") {
+      setSimpleResult(calculateSimpleWeightBasedNeeds(input));
+    }
+    if (activeMethod === "equation-educational" || activeMethod === "both") {
+      setEquationResult(calculateEquationStyleNeeds(input));
       }
     } catch (error) {
       console.error("Error calculating needs:", error);
@@ -155,12 +155,17 @@ interface MethodSelectorProps {
 function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
   return (
     <section aria-labelledby="method-selector-heading" className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-      <h2
-        id="method-selector-heading"
-        className="text-lg font-semibold text-gray-900 sm:text-xl"
-      >
-        3. Chọn phương pháp ước tính
-      </h2>
+      <div className="flex items-center gap-2 mb-3">
+        <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+          3
+        </span>
+        <h2
+          id="method-selector-heading"
+          className="text-lg font-semibold text-gray-900 sm:text-xl"
+        >
+          Chọn phương pháp ước tính
+        </h2>
+      </div>
       <p className="text-sm leading-relaxed text-neutral-700 sm:text-base">
         Các cách tiếp cận khác nhau để ước tính nhu cầu trả lời
         các câu hỏi hơi khác nhau. Sử dụng phần này để so sánh một
@@ -225,19 +230,41 @@ function InputForm({ form, onChange, onEstimate, errors, onClearError }: InputFo
     value: FormState[K]
   ) => onChange({ ...form, [key]: value });
 
+  const fillExample = () => {
+    onChange({
+      ageYears: "65",
+      sex: "male",
+      weightKg: "70",
+      heightCm: "170",
+      diseaseContextCode: "general_medical",
+      activityLevel: "light",
+      bodySizeFlag: "",
+    });
+  };
+
   return (
     <section aria-labelledby="inputs-heading" className="space-y-4">
       <div className="rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-        <h2 id="inputs-heading" className="text-lg font-semibold text-gray-900 sm:text-xl mb-3">
-          4. Nhập thông tin lâm sàng ví dụ
-        </h2>
-        <p className="text-sm leading-relaxed text-neutral-700 sm:text-base mb-5">
-          Chỉ sử dụng giá trị giả định, ẩn danh. Mục đích là hiểu cách
-          cân nặng và bối cảnh lâm sàng định hình nhu cầu ước tính, không phải để
-          quản lý bệnh nhân thực tế.
-        </p>
+        <div className="flex items-start justify-between gap-4 mb-3">
+          <div className="flex-1">
+            <h2 id="inputs-heading" className="text-lg font-semibold text-gray-900 sm:text-xl mb-2">
+              Nhập thông tin để tính toán
+            </h2>
+            <p className="text-sm leading-relaxed text-neutral-700 sm:text-base mb-4">
+              Bạn có thể nhập thông tin của mình hoặc dùng nút "Điền ví dụ" bên dưới để xem cách công cụ hoạt động. 
+              Tất cả thông tin chỉ được sử dụng để tính toán, không được lưu trữ.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={fillExample}
+            className="px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors focus-ring whitespace-nowrap"
+          >
+            Điền ví dụ
+          </button>
+        </div>
 
-        <form
+      <form
           className="grid gap-5 sm:grid-cols-2 sm:gap-6"
         onSubmit={(event) => {
           event.preventDefault();
@@ -553,15 +580,23 @@ function ResultPanel({
     activeMethod === "equation-educational" || activeMethod === "both";
 
   return (
-    <section aria-labelledby="results-heading" className="space-y-3">
-      <h2 id="results-heading" className="text-base font-semibold sm:text-lg">
-        5. Phạm vi giáo dục (không phải chỉ định)
-      </h2>
-      <p className="text-sm text-neutral-700 sm:text-base">
-        Các phạm vi này cho thấy cách các phương pháp khác nhau có thể khung nhu cầu năng lượng và
-        protein hàng ngày. Chúng nhằm hỗ trợ lý luận và thảo luận,
-        không phải để tạo kế hoạch ăn uống hoặc chỉ định.
-      </p>
+    <section aria-labelledby="results-heading" className="space-y-4">
+      <div className="flex items-center gap-2 mb-3">
+        <span className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+          5
+        </span>
+        <h2 id="results-heading" className="text-lg font-semibold text-gray-900 sm:text-xl">
+          Kết quả Tính toán
+        </h2>
+      </div>
+      <div className="rounded-lg border border-green-200 bg-green-50 p-4 mb-4">
+        <p className="text-sm text-green-900">
+          <strong>Giải thích kết quả:</strong> Dưới đây là khoảng năng lượng (kcal) và protein (g) 
+          mà cơ thể cần mỗi ngày dựa trên thông tin bạn đã nhập. Đây là <strong>khoảng ước tính</strong>, 
+          không phải số chính xác. Trong thực tế, nhu cầu có thể thay đổi và cần được điều chỉnh 
+          dựa trên phản ứng của cơ thể.
+        </p>
+      </div>
 
       <div className="grid gap-4 md:grid-cols-2">
         {showSimple && (

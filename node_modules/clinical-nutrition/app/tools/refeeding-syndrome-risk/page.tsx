@@ -1,9 +1,30 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
 import { ToolStepIndicator } from "../components/ToolStepIndicator";
 import { ToolNavigation } from "../components/ToolNavigation";
 import { AlertTriangle } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Đánh giá Nguy cơ Hội chứng Tái cho Ăn",
+  description:
+    "Đánh giá nguy cơ hội chứng tái cho ăn dựa trên các yếu tố nguy cơ lâm sàng. Công cụ giáo dục để hiểu tầm quan trọng của đánh giá nguy cơ trước khi bắt đầu dinh dưỡng.",
+  keywords: [
+    "hội chứng tái cho ăn",
+    "refeeding syndrome",
+    "đánh giá nguy cơ",
+    "dinh dưỡng lâm sàng",
+    "điện giải",
+    "phosphorus",
+  ],
+  openGraph: {
+    title: "Đánh giá Nguy cơ Hội chứng Tái cho Ăn – Công cụ Giảng dạy",
+    description:
+      "Đánh giá nguy cơ hội chứng tái cho ăn dựa trên các yếu tố nguy cơ lâm sàng. Công cụ giáo dục để hiểu tầm quan trọng của đánh giá nguy cơ trước khi bắt đầu dinh dưỡng.",
+    url: "https://clinical-nutrition.edu.vn/tools/refeeding-syndrome-risk",
+  },
+};
 
 const InteractiveSection = dynamic(
   () =>

@@ -14,3 +14,9 @@ export { MainNav } from './MainNav';
 export { MobileNav } from './MobileNav';
 export { Search } from './Search';
 export { SearchModal } from './SearchModal';
+// Visual components
+export { ComparisonCard } from './ComparisonCard';
+export { ExampleBox } from './ExampleBox';
+export { TipCard } from './TipCard';
+export { NutrientTable } from './NutrientTable';
+export { PortionSizeGuide } from './PortionSizeGuide';

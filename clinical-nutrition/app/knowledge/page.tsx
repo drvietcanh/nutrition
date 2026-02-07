@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, Activity, ArrowRight, AlertCircle, ClipboardCheck, Calculator, FileText, UtensilsCrossed } from "lucide-react";
+import { BookOpen, Activity, ArrowRight, AlertCircle, ClipboardCheck, Calculator, FileText, UtensilsCrossed, Heart, TrendingUp, Leaf, AlertTriangle, Wheat, Users, Droplet, PieChart } from "lucide-react";
 import { Card, CardHeader, CardContent, CardFooter } from "../components/Card";
 import { Breadcrumb } from "../components/Breadcrumb";
 
@@ -179,6 +179,111 @@ export default function KnowledgePage() {
           </CardFooter>
         </Card>
 
+        <Card href="/knowledge/glycemic-index-load">
+          <CardHeader
+            icon={Calculator}
+            title="Chỉ số Đường huyết (GI) và Tải lượng Đường huyết (GL)"
+          />
+          <CardContent>
+            <p className="text-body">
+              Hiểu về GI và GL - cách thực phẩm ảnh hưởng đến đường huyết. 
+              Tìm hiểu cách chọn thực phẩm phù hợp cho người đái tháo đường và quản lý đường huyết.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/glycemic-index-load"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/knowledge/dietary-fats">
+          <CardHeader
+            icon={Heart}
+            title="Chất béo trong Chế độ Ăn: Hiểu các Loại và Ảnh hưởng Sức khỏe"
+          />
+          <CardContent>
+            <p className="text-body">
+              Tìm hiểu về các loại chất béo - chất béo bão hòa, không bão hòa, và trans fat. 
+              Hiểu cách chúng ảnh hưởng đến sức khỏe tim mạch và cách chọn lựa đúng.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/dietary-fats"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/knowledge/dietary-fiber">
+          <CardHeader
+            icon={Leaf}
+            title="Chất xơ trong Dinh dưỡng Lâm sàng"
+          />
+          <CardContent>
+            <p className="text-body">
+              Tìm hiểu về chất xơ hòa tan và không hòa tan, lợi ích sức khỏe, nguồn thực phẩm, 
+              và cách tăng lượng chất xơ trong chế độ ăn.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/dietary-fiber"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/knowledge/sodium-health">
+          <CardHeader
+            icon={AlertTriangle}
+            title="Natri (Muối) và Sức khỏe"
+          />
+          <CardContent>
+            <p className="text-body">
+              Hiểu về natri trong chế độ ăn - vai trò, tác hại của thừa natri, 
+              và cách giảm natri cho người tăng huyết áp, suy tim, bệnh thận.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/sodium-health"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/knowledge/carbohydrates">
+          <CardHeader
+            icon={Wheat}
+            title="Carbohydrate (Tinh bột và Đường)"
+          />
+          <CardContent>
+            <p className="text-body">
+              Hiểu về carbohydrate - nguồn năng lượng chính, các loại carbohydrate, 
+              và cách chọn lựa đúng cho sức khỏe, đặc biệt cho người đái tháo đường.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/carbohydrates"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
+            </Link>
+          </CardFooter>
+        </Card>
+
         <Card href="/knowledge/chronic-diseases">
           <CardHeader
             icon={Activity}
@@ -202,6 +307,70 @@ export default function KnowledgePage() {
               className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
             >
               Xem tất cả bài viết <ArrowRight className="w-4 h-4 ml-1" />
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/knowledge/elderly-nutrition">
+          <CardHeader
+            icon={Users}
+            title="Dinh dưỡng cho Người cao tuổi"
+          />
+          <CardContent>
+            <p className="text-body">
+              Hướng dẫn về dinh dưỡng cho người cao tuổi - nhu cầu đặc biệt, thách thức, 
+              và cách đảm bảo dinh dưỡng đầy đủ. Tìm hiểu về sarcopenia, vitamin D, 
+              và các vấn đề dinh dưỡng phổ biến ở tuổi già.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/elderly-nutrition"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/knowledge/hydration">
+          <CardHeader
+            icon={Droplet}
+            title="Hydration: Nước và Dịch"
+          />
+          <CardContent>
+            <p className="text-body">
+              Hiểu về nhu cầu nước và dịch, tầm quan trọng của hydration, dấu hiệu thiếu nước, 
+              và cách đảm bảo đủ nước cho sức khỏe tốt.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/hydration"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/knowledge/macronutrients-overview">
+          <CardHeader
+            icon={PieChart}
+            title="Tổng quan về các Chất Dinh dưỡng Đa lượng"
+          />
+          <CardContent>
+            <p className="text-body">
+              Tổng quan về ba chất dinh dưỡng đa lượng chính - carbohydrate, protein, và chất béo. 
+              Hiểu vai trò, nhu cầu, và cách cân bằng chúng trong chế độ ăn.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/macronutrients-overview"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
             </Link>
           </CardFooter>
         </Card>
