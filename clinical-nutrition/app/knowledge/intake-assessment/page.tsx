@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { CheckCircle } from "lucide-react";
+import { Card, CardHeader, CardContent } from "../../components/Card";
 
 export default function IntakeAssessmentPage() {
   return (
@@ -335,6 +337,48 @@ export default function IntakeAssessmentPage() {
           >
             Mở Bảng Đánh giá Lượng Ăn →
           </Link>
+        </div>
+      </section>
+
+      {/* Related Tools */}
+      <section aria-labelledby="tools-heading" className="space-y-4">
+        <h2 id="tools-heading" className="text-xl font-semibold sm:text-2xl">
+          Công cụ Liên quan
+        </h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Card href="/tools/intake-assessment">
+            <CardHeader icon={CheckCircle} title="Đánh giá Lượng Ăn" />
+            <CardContent>
+              <p className="text-body-sm">
+                Công cụ tương tác để so sánh lượng dinh dưỡng thực tế ăn vào với nhu cầu ước tính,
+                giúp hiểu khoảng cách và các yếu tố ảnh hưởng.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/intake-vs-needs">
+            <CardHeader icon={CheckCircle} title="Lượng Ăn vs Nhu Cầu" />
+            <CardContent>
+              <p className="text-body-sm">
+                Công cụ so sánh trực quan để đánh giá lượng ăn thực tế so với nhu cầu ước tính.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/energy-protein-calculator">
+            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính toán nhu cầu năng lượng và protein để so sánh với lượng ăn thực tế.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/malnutrition-screening">
+            <CardHeader icon={CheckCircle} title="Nguy cơ Suy Dinh dưỡng" />
+            <CardContent>
+              <p className="text-body-sm">
+                Đánh giá nguy cơ suy dinh dưỡng, một yếu tố quan trọng trong đánh giá lượng ăn.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
 

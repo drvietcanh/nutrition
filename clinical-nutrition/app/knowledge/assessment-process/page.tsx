@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { CheckCircle } from "lucide-react";
+import { Card, CardHeader, CardContent } from "../components/Card";
 
 export default function AssessmentProcessPage() {
   return (
@@ -1292,6 +1294,63 @@ export default function AssessmentProcessPage() {
             không phải bài kiểm tra. Sử dụng chúng để thực hành tư duy qua các tình huống đánh giá và để đào sâu hiểu biết của bạn về các khái niệm.
             Nếu bạn có câu hỏi hoặc muốn thảo luận những gì bạn đang học, hãy cân nhắc nói chuyện với người cố vấn, đồng nghiệp, hoặc người hướng dẫn.
           </p>
+        </div>
+      </section>
+
+      {/* Related Tools */}
+      <section aria-labelledby="tools-heading" className="space-y-4">
+        <h2 id="tools-heading" className="text-xl font-semibold sm:text-2xl">
+          Tất cả Công cụ Đánh giá Dinh dưỡng
+        </h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Card href="/tools/malnutrition-screening">
+            <CardHeader icon={CheckCircle} title="Nguy cơ Suy Dinh dưỡng" />
+            <CardContent>
+              <p className="text-body-sm">
+                Công cụ sàng lọc để đánh giá nguy cơ suy dinh dưỡng sử dụng NRS-2002 và PG-SGA.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/energy-protein-calculator">
+            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardContent>
+              <p className="text-body-sm">
+                Ước tính nhu cầu năng lượng và protein hàng ngày dựa trên các phương trình tiêu chuẩn.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/intake-assessment">
+            <CardHeader icon={CheckCircle} title="Đánh giá Lượng Ăn" />
+            <CardContent>
+              <p className="text-body-sm">
+                So sánh lượng dinh dưỡng thực tế ăn vào với nhu cầu ước tính.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/bmi-body-composition">
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính BMI, IBW, ABW, và BSA - các chỉ số cơ bản trong đánh giá dinh dưỡng.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/fluid-requirements">
+            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính nhu cầu dịch hàng ngày với các điều chỉnh lâm sàng.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/micronutrient-assessment">
+            <CardHeader icon={CheckCircle} title="Đánh giá Vi chất" />
+            <CardContent>
+              <p className="text-body-sm">
+                Ước tính nhu cầu vi chất (vitamin và khoáng chất) dựa trên tuổi, giới tính, và tình trạng lâm sàng.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </main>

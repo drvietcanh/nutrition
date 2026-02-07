@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { CheckCircle } from "lucide-react";
+import { Card, CardHeader, CardContent } from "../../components/Card";
 
 export default function NeedsEstimationPage() {
   return (
@@ -314,6 +316,49 @@ export default function NeedsEstimationPage() {
           >
             Mở Máy tính Năng lượng & Protein →
           </Link>
+        </div>
+      </section>
+
+      {/* Related Tools */}
+      <section aria-labelledby="tools-heading" className="space-y-4">
+        <h2 id="tools-heading" className="text-xl font-semibold sm:text-2xl">
+          Công cụ Liên quan
+        </h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Card href="/tools/energy-protein-calculator">
+            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardContent>
+              <p className="text-body-sm">
+                Công cụ giáo dục để ước tính nhu cầu năng lượng và protein hàng ngày dựa trên các phương trình tiêu chuẩn
+                và quy tắc dựa trên cân nặng, minh họa các khoảng giá trị thay vì con số chính xác.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/fluid-requirements">
+            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính nhu cầu dịch hàng ngày sử dụng các quy tắc Holliday-Segar và 30-35 ml/kg,
+                minh họa cách ước tính nhu cầu dịch.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/bmi-body-composition">
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính BMI, IBW, ABW, và BSA - các chỉ số cơ bản được sử dụng trong ước tính nhu cầu dinh dưỡng.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/micronutrient-assessment">
+            <CardHeader icon={CheckCircle} title="Đánh giá Vi chất" />
+            <CardContent>
+              <p className="text-body-sm">
+                Ước tính nhu cầu vi chất (vitamin và khoáng chất) dựa trên tuổi, giới tính, và tình trạng lâm sàng.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
