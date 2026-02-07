@@ -427,7 +427,7 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
               const value = e.target.value;
               if (value === "" || value === "oral" || value === "mixed" || value === "unspecified") {
                 update("routeLabel", value as IntakeState["routeLabel"]);
-              }
+            }
             }}
           >
             <option value="">Chọn (ví dụ: qua đường miệng)</option>

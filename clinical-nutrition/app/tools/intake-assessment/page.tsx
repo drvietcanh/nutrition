@@ -67,7 +67,7 @@ export default function IntakeAssessmentPage() {
           <LoadingSpinner size="lg" text="Đang tải công cụ..." />
         </div>
       }>
-        <InteractiveSection />
+      <InteractiveSection />
       </Suspense>
 
       {/* 6. Common clinical reasons for gaps */}
