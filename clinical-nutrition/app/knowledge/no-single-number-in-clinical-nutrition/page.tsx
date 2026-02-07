@@ -4,7 +4,7 @@ import { SectionHeading } from "../nutrition-assessment-overview/components/Sect
 import { ContentSection } from "../nutrition-assessment-overview/components/ContentSection";
 import { EducationalNote } from "../nutrition-assessment-overview/components/EducationalNote";
 import { ContentBlock } from "../nutrition-assessment-overview/components/ContentBlock";
-import { Card, CardHeader, CardContent } from "../components/Card";
+import { Card, CardHeader, CardContent } from "../../components/Card";
 
 /**
  * Why There's No Universal Number for Nutrition Needs

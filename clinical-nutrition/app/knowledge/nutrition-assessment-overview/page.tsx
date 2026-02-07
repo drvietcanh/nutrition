@@ -4,7 +4,7 @@ import { SectionHeading } from "./components/SectionHeading";
 import { ContentSection } from "./components/ContentSection";
 import { EducationalNote } from "./components/EducationalNote";
 import { ContentBlock } from "./components/ContentBlock";
-import { Card, CardHeader, CardContent } from "../components/Card";
+import { Card, CardHeader, CardContent } from "../../components/Card";
 
 /**
  * Nutrition Assessment Overview Page

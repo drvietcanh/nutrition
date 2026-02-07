@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
-import { Card, CardHeader, CardContent } from '../components/Card';
+import { Card, CardHeader, CardContent } from '../../components/Card';
 
 interface Myth {
   id: string;

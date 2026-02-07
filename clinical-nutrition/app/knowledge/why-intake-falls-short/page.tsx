@@ -23,7 +23,7 @@ import KnowledgeSection from './components/KnowledgeSection';
 import ClinicalRealityCallout from './components/ClinicalRealityCallout';
 import CommonPitfallCallout from './components/CommonPitfallCallout';
 import FactorCard from './components/FactorCard';
-import { Card, CardHeader, CardContent } from '../components/Card';
+import { Card, CardHeader, CardContent } from '../../components/Card';
 
 export default function WhyIntakeFallsShortPage() {
   return (

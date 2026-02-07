@@ -16,7 +16,7 @@ import Link from 'next/link';
 import { CheckCircle } from 'lucide-react';
 import MythCard from './components/MythCard';
 import { myths, type Myth } from './data/myths';
-import { Card, CardHeader, CardContent } from '../components/Card';
+import { Card, CardHeader, CardContent } from '../../components/Card';
 
 export default function MythsInClinicalNutritionPage() {
   const [expandedMyth, setExpandedMyth] = useState<string | null>(null);

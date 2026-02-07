@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
-import { Card, CardHeader, CardContent } from "../components/Card";
+import { Card, CardHeader, CardContent } from "../../components/Card";
 
 export default function AssessmentProcessPage() {
   return (
