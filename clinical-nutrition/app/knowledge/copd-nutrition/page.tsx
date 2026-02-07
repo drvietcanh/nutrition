@@ -101,6 +101,35 @@ export default function COPDNutritionPage() {
 
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <h3 className="heading-3">Carbohydrate & Chất béo</h3>
+          
+          {/* Macronutrient Distribution Table */}
+          <div className="overflow-x-auto my-4">
+            <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+              <thead className="bg-neutral-50">
+                <tr>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Chất dinh dưỡng</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khuyến nghị</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Lý do</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-neutral-200">
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Carbohydrate</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Giảm nếu COPD nặng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Tăng CO2 production, tăng gánh hô hấp</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Có thể cần &lt; 40% tổng năng lượng</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chất béo</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Tăng nếu COPD nặng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Tạo ít CO2 hơn carbohydrate</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Có thể cần &gt; 40% tổng năng lượng, cân bằng tim mạch</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
           <p className="text-body-sm mb-3">
             <strong>Carbohydrate:</strong> Quá nhiều carbohydrate có thể tăng CO2 production, làm tăng gánh
             hô hấp. Có thể cần giảm carbohydrate và tăng chất béo.
@@ -138,6 +167,88 @@ export default function COPDNutritionPage() {
             </p>
           </CardContent>
         </Card>
+      </section>
+
+      {/* Monitoring Section */}
+      <section aria-labelledby="monitoring-heading" className="space-y-5">
+        <div className="flex items-center gap-3">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+          <h2 id="monitoring-heading" className="heading-2 whitespace-nowrap">
+            Theo dõi & Đánh giá lại
+          </h2>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+        </div>
+        <div className="space-y-4 text-body-lg">
+          <p>
+            Theo dõi đều đặn là quan trọng để đánh giá hiệu quả của can thiệp dinh dưỡng và điều chỉnh khi cần:
+          </p>
+          
+          {/* Monitoring Parameters Table */}
+          <div className="overflow-x-auto my-4">
+            <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+              <thead className="bg-neutral-50">
+                <tr>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thông số</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tần suất</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu/Giá trị bình thường</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-neutral-200">
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cân nặng</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi lần khám, hàng tuần nếu đang giảm</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Duy trì ổn định, BMI 20-25</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Theo dõi suy dinh dưỡng, thừa cân</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Albumin</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&gt; 3.5 g/dL</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá tình trạng dinh dưỡng</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chức năng hô hấp</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi lần khám</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">FEV1, SpO2</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá mức độ COPD</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Sức mạnh cơ</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Duy trì hoặc cải thiện</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Quan trọng cho cơ hô hấp</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Tools */}
+      <section aria-labelledby="tools-heading" className="space-y-4">
+        <h2 id="tools-heading" className="heading-3">
+          Công cụ Liên quan
+        </h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Card href="/tools/energy-protein-calculator">
+            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính toán nhu cầu năng lượng cao (30-35 kcal/kg) và protein (1.2-1.5 g/kg) cho bệnh nhân COPD,
+                đặc biệt quan trọng để phòng ngừa suy dinh dưỡng.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/bmi-body-composition">
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardContent>
+              <p className="text-body-sm">
+                Đánh giá BMI và thành phần cơ thể, quan trọng để theo dõi tình trạng dinh dưỡng và phát hiện suy dinh dưỡng.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
       </section>
 
       <section aria-labelledby="safety-heading" className="space-y-4">
