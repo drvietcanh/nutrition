@@ -1,6 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import { CheckCircle } from 'lucide-react';
+import { Card, CardHeader, CardContent } from '../components/Card';
 
 interface Myth {
   id: string;
@@ -634,6 +637,54 @@ export default function MythsAndMisconceptionsPage() {
             </p>
           </div>
         </div>
+
+        {/* Related Tools */}
+        <section className="mb-12 space-y-4" aria-labelledby="tools-heading">
+          <h2 id="tools-heading" className="text-2xl font-bold text-gray-900">
+            Công cụ Liên quan
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            Các công cụ giáo dục này giúp bạn thực hành các nguyên tắc đã học và hiểu cách áp dụng chúng trong đánh giá dinh dưỡng:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Card href="/tools/energy-protein-calculator">
+              <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+              <CardContent>
+                <p className="text-body-sm">
+                  Công cụ giáo dục để ước tính nhu cầu năng lượng và protein, minh họa các khoảng giá trị
+                  và cách các bác sĩ lâm sàng sử dụng ước tính trong thực hành.
+                </p>
+              </CardContent>
+            </Card>
+            <Card href="/tools/malnutrition-screening">
+              <CardHeader icon={CheckCircle} title="Nguy cơ Suy Dinh dưỡng" />
+              <CardContent>
+                <p className="text-body-sm">
+                  Khám phá cách các công cụ sàng lọc đánh giá nguy cơ suy dinh dưỡng,
+                  hiểu rằng sàng lọc là điểm khởi đầu, không phải chẩn đoán.
+                </p>
+              </CardContent>
+            </Card>
+            <Card href="/tools/intake-assessment">
+              <CardHeader icon={CheckCircle} title="Đánh giá Lượng Ăn" />
+              <CardContent>
+                <p className="text-body-sm">
+                  So sánh lượng dinh dưỡng thực tế ăn vào với nhu cầu ước tính,
+                  minh họa khoảng cách thường gặp trong thực hành lâm sàng.
+                </p>
+              </CardContent>
+            </Card>
+            <Card href="/tools/bmi-body-composition">
+              <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+              <CardContent>
+                <p className="text-body-sm">
+                  Tính các chỉ số cơ bản như BMI, IBW, ABW, và BSA,
+                  hiểu rằng các chỉ số này là công cụ hỗ trợ, không phải câu trả lời cuối cùng.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
       </div>
     </div>
   );
