@@ -219,11 +219,15 @@ export default function CarbohydratesPage() {
               </p>
               <ul className="list-disc list-inside space-y-1 text-sm">
                 <li>Bữa sáng: Yến mạch (50g) + trái cây (20g) = 70g</li>
-                <li>Bữa trưa: Cơm (80g) + rau củ (10g) = 90g</li>
-                <li>Bữa tối: Khoai tây (60g) + rau củ (10g) = 70g</li>
+                <li>Bữa trưa: <strong>Cơm (80g) + rau củ (10g) = 90g</strong> - Bữa ăn Việt Nam</li>
+                <li>Bữa tối: <strong>Bún bò (60g) + rau sống (10g) = 70g</strong> - Món ăn Việt Nam</li>
                 <li>Snack: Trái cây (20g) = 20g</li>
                 <li><strong>Tổng: ~250g carbohydrate</strong></li>
               </ul>
+              <p className="text-xs text-gray-600 mt-2">
+                <strong>Lưu ý:</strong> Cơm, bún, phở là nguồn carbohydrate phổ biến trong bữa ăn Việt Nam. 
+                Có thể kết hợp với gạo lứt, khoai lang để có nhiều chất xơ hơn.
+              </p>
             </ExampleBox>
           </div>
         </Card>
@@ -232,18 +236,22 @@ export default function CarbohydratesPage() {
       {/* Portion Examples */}
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Khẩu phần Carbohydrate</h2>
-        <PortionSizeGuide
-          title="Khẩu phần Carbohydrate Phổ biến"
-          items={[
-            { food: "Cơm trắng (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~200 calo, 45g carb" },
-            { food: "Gạo lứt (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~200 calo, 45g carb" },
-            { food: "Bánh mì nguyên cám", portion: "1 lát", visual: "Bằng lòng bàn tay", calories: "~80 calo, 15g carb" },
-            { food: "Yến mạch (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~150 calo, 27g carb" },
-            { food: "Khoai tây (nướng)", portion: "1 củ vừa", visual: "Bằng nắm tay", calories: "~150 calo, 35g carb" },
-            { food: "Chuối", portion: "1 quả vừa", visual: "Bằng nắm tay", calories: "~100 calo, 27g carb" },
-            { food: "Táo", portion: "1 quả vừa", visual: "Bằng nắm tay", calories: "~80 calo, 21g carb" },
-          ]}
-        />
+            <PortionSizeGuide
+              title="Khẩu phần Carbohydrate Phổ biến"
+              items={[
+                { food: "Cơm trắng (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~200 calo, 45g carb" },
+                { food: "Gạo lứt (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~200 calo, 45g carb" },
+                { food: "Bún (Việt Nam)", portion: "1 tô", visual: "Bằng nắm tay", calories: "~110 calo, 25g carb" },
+                { food: "Phở (bánh phở)", portion: "1 tô", visual: "Bằng nắm tay", calories: "~100 calo, 22g carb" },
+                { food: "Bánh cuốn (Việt Nam)", portion: "1 đĩa", visual: "Bằng nắm tay", calories: "~120 calo, 25g carb" },
+                { food: "Bánh mì nguyên cám", portion: "1 lát", visual: "Bằng lòng bàn tay", calories: "~80 calo, 15g carb" },
+                { food: "Yến mạch (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~150 calo, 27g carb" },
+                { food: "Khoai tây (nướng)", portion: "1 củ vừa", visual: "Bằng nắm tay", calories: "~150 calo, 35g carb" },
+                { food: "Khoai lang (Việt Nam)", portion: "1 củ vừa", visual: "Bằng nắm tay", calories: "~86 calo, 20g carb" },
+                { food: "Chuối", portion: "1 quả vừa", visual: "Bằng nắm tay", calories: "~100 calo, 27g carb" },
+                { food: "Táo", portion: "1 quả vừa", visual: "Bằng nắm tay", calories: "~80 calo, 21g carb" },
+              ]}
+            />
       </section>
 
       {/* Choosing Good Carbs */}

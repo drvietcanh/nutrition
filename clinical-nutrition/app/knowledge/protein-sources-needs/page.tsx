@@ -155,6 +155,9 @@ export default function ProteinSourcesNeedsPage() {
                 { food: "Thịt bò nạc", portion: "100g", visual: "Bằng lòng bàn tay", calories: "250 calo, 26g protein" },
                 { food: "Cá hồi", portion: "100g", visual: "Bằng lòng bàn tay", calories: "200 calo, 25g protein" },
                 { food: "Cá thu, cá ngừ", portion: "100g", visual: "Bằng lòng bàn tay", calories: "200 calo, 25g protein" },
+                { food: "Cá basa (Việt Nam)", portion: "100g", visual: "Bằng lòng bàn tay", calories: "150 calo, 20g protein" },
+                { food: "Tôm", portion: "100g", visual: "Bằng lòng bàn tay", calories: "100 calo, 24g protein" },
+                { food: "Cua", portion: "100g", visual: "Bằng lòng bàn tay", calories: "87 calo, 18g protein" },
                 { food: "Trứng", portion: "2 quả", visual: "2 quả trứng gà", calories: "140 calo, 12g protein" },
                 { food: "Sữa", portion: "250ml (1 cốc)", visual: "1 cốc sữa", calories: "150 calo, 8g protein" },
                 { food: "Sữa chua", portion: "200g (1 hộp)", visual: "1 hộp sữa chua", calories: "120 calo, 10g protein" },
@@ -182,6 +185,10 @@ export default function ProteinSourcesNeedsPage() {
                 Kết hợp nhiều loại protein thực vật trong ngày để có đủ axit amin. 
                 Ví dụ: Đậu + gạo, đậu phụ + rau, quả hạch + ngũ cốc.
               </p>
+              <p className="text-body-sm mt-2">
+                <strong>Ví dụ món ăn Việt Nam:</strong> Đậu phụ sốt cà chua + cơm, 
+                đậu đen nấu chè + sữa chua, chả chay (từ đậu phụ) + rau.
+              </p>
             </Callout>
           </Card>
         </div>
@@ -195,7 +202,8 @@ export default function ProteinSourcesNeedsPage() {
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• 2 quả trứng (12g) + 1 lát bánh mì nguyên cám + rau</li>
               <li>• Sữa chua (10g) + yến mạch + quả hạch (6g) + trái cây</li>
-              <li>• Đậu phụ xào (12g) + rau + cơm</li>
+              <li>• <strong>Đậu phụ xào (12g) + rau + cơm</strong> - Món ăn Việt Nam phổ biến</li>
+              <li>• <strong>Cháo thịt gà (15g) + rau thơm</strong> - Bữa sáng Việt Nam</li>
             </ul>
           </Card>
 
@@ -203,8 +211,10 @@ export default function ProteinSourcesNeedsPage() {
             <h3 className="heading-4 mb-3">Bữa Trưa (~25g protein)</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• Thịt gà nạc 100g (31g) + rau + cơm</li>
-              <li>• Cá hồi 100g (25g) + salad + khoai tây</li>
+              <li>• <strong>Cá kho tộ 100g (25g) + rau muống luộc + cơm</strong> - Món ăn Việt Nam</li>
+              <li>• <strong>Canh chua cá (20g) + cơm + rau</strong> - Protein từ cá trong canh</li>
               <li>• Đậu đen 150g (10g) + gạo lứt + rau + quả hạch (7g)</li>
+              <li>• <strong>Tôm rang me 100g (24g) + rau + cơm</strong> - Protein từ tôm</li>
             </ul>
           </Card>
 
@@ -212,7 +222,9 @@ export default function ProteinSourcesNeedsPage() {
             <h3 className="heading-4 mb-3">Bữa Tối (~25g protein)</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• Thịt heo nạc 100g (26g) + rau luộc + cơm</li>
+              <li>• <strong>Thịt kho tiêu 100g (26g) + rau cải xào + cơm</strong> - Món ăn Việt Nam</li>
               <li>• Cá thu 100g (25g) + rau xào + khoai tây</li>
+              <li>• <strong>Cá hấp gừng 100g (25g) + rau luộc + cơm</strong> - Phương pháp hấp lành mạnh</li>
               <li>• Đậu phụ 200g (16g) + đậu đỏ (10g) + rau + cơm</li>
             </ul>
           </Card>

@@ -38,6 +38,9 @@ import {
   Pill,
   AlertTriangle,
   Milk,
+  Gift,
+  ShoppingCart,
+  MapPin,
 } from 'lucide-react';
 
 // Icon mapping for categories and common topics
@@ -158,6 +161,20 @@ function getArticleIcon(slug: string, tags: string[]): React.ComponentType<{ cla
   if (slug.includes('needs') || slug.includes('estimation')) return Calculator;
   if (slug.includes('intake')) return UtensilsCrossed;
   if (slug.includes('myth')) return AlertCircle;
+  
+  // Vietnamese food and practices
+  if (slug.includes('vietnamese-food') || slug.includes('vietnamese-foods')) return Apple;
+  if (slug.includes('vietnamese-cooking') || slug.includes('cooking-methods')) return UtensilsCrossed;
+  if (slug.includes('smart-shopping') || slug.includes('shopping')) return DollarSign;
+  if (slug.includes('family-meal') || slug.includes('family-meals')) return UtensilsCrossed;
+  if (slug.includes('street-food')) return UtensilsCrossed;
+  if (slug.includes('festival') || slug.includes('tet') || slug.includes('trung-thu')) return Gift;
+  if (slug.includes('fermented-food') || slug.includes('nuoc-mam')) return UtensilsCrossed;
+  if (slug.includes('manual-labor') || slug.includes('cong-nhan')) return Activity;
+  if (slug.includes('night-shift') || slug.includes('ca-dem')) return Moon;
+  if (slug.includes('rural') || slug.includes('nong-thon')) return Leaf;
+  if (slug.includes('seasonal') || slug.includes('theo-mua')) return Calendar;
+  if (slug.includes('regional') || slug.includes('vung-mien')) return Activity;
   
   // Default to category icon
   return FileText;
