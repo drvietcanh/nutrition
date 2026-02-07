@@ -121,21 +121,71 @@ export default function HypertensionNutritionPage() {
               hạn chế natri.
             </p>
             <h3 className="heading-4 mb-3">Các thành phần chính của DASH diet:</h3>
-            <ul className="list-disc space-y-2 pl-6 text-body-sm">
+            
+            {/* DASH Diet Table */}
+            <div className="overflow-x-auto my-4">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+                <thead className="bg-neutral-50">
+                  <tr>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Nhóm thực phẩm</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khẩu phần/ngày</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ví dụ (1 khẩu phần)</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Lợi ích</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trái cây</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">4-5 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 quả táo, 1/2 cốc nước ép, 1/4 cốc trái cây khô</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Kali, magie, chất xơ</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Rau quả</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">4-5 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 cốc rau sống, 1/2 cốc rau nấu chín</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Kali, magie, chất xơ</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Sữa ít béo</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">2-3 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 cốc sữa, 1 cốc sữa chua, 45g phô mai</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Canxi, protein</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Ngũ cốc nguyên hạt</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">6-8 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 lát bánh mì, 1/2 cốc cơm/mì, 30g ngũ cốc</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Chất xơ, năng lượng</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Protein nạc</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">≤ 6 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">85g thịt/cá, 1 quả trứng, 1/2 cốc đậu nấu</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Protein, sắt</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chất béo</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">2-3 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 thìa dầu, 1 thìa bơ thực vật</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Chất béo không bão hòa</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <Callout variant="info" title="Lưu ý về Khẩu phần">
+              <p className="text-body-sm">
+                Khẩu phần trong DASH diet là <strong>ước tính giáo dục</strong>. Trong thực hành, các bác sĩ lâm sàng
+                sẽ điều chỉnh dựa trên nhu cầu năng lượng, sở thích, văn hóa, và khả năng của từng bệnh nhân.
+                Mục tiêu là hướng tới chế độ ăn giàu trái cây, rau, ngũ cốc nguyên hạt, và protein nạc.
+              </p>
+            </Callout>
+            
+            <ul className="list-disc space-y-2 pl-6 text-body-sm mt-4">
               <li>
-                <strong>Trái cây và rau quả:</strong> 4-5 phần mỗi ngày. Cung cấp kali, magie, và chất xơ.
-              </li>
-              <li>
-                <strong>Sản phẩm sữa ít béo:</strong> 2-3 phần mỗi ngày. Cung cấp canxi và protein.
-              </li>
-              <li>
-                <strong>Ngũ cốc nguyên hạt:</strong> 6-8 phần mỗi ngày. Cung cấp chất xơ và năng lượng.
-              </li>
-              <li>
-                <strong>Protein nạc:</strong> Thịt nạc, cá, gia cầm, đậu. Hạn chế thịt đỏ.
-              </li>
-              <li>
-                <strong>Hạn chế:</strong> Natri, chất béo bão hòa, đường, và thực phẩm chế biến sẵn.
+                <strong>Hạn chế:</strong> Natri &lt; 2.3g/ngày (hoặc &lt; 1.5g/ngày nếu có nguy cơ cao), 
+                chất béo bão hòa, đường, và thực phẩm chế biến sẵn.
               </li>
             </ul>
             <p className="text-body-sm mt-4 italic">
@@ -148,6 +198,47 @@ export default function HypertensionNutritionPage() {
         {/* Sodium */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <h3 className="heading-3">Natri (Muối)</h3>
+          
+          {/* Sodium Recommendations Table */}
+          <div className="overflow-x-auto my-4">
+            <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+              <thead className="bg-neutral-50">
+                <tr>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Nhóm</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khuyến nghị Natri</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tương đương Muối</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-neutral-200">
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Người lớn khỏe mạnh</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2.3g/ngày</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 6g/ngày</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Khuyến nghị chung</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Tăng huyết áp</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2.3g/ngày</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 6g/ngày</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Mục tiêu ban đầu</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Nguy cơ cao</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 1.5g/ngày</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 4g/ngày</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">THA độ 2, suy tim, CKD</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bệnh thận mạn</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2g/ngày</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 5g/ngày</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Tùy giai đoạn CKD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
           <div className="space-y-3 text-body">
             <p>
               <strong>Khuyến nghị:</strong> Hầu hết các hướng dẫn khuyến nghị hạn chế natri xuống{" "}
@@ -448,6 +539,52 @@ export default function HypertensionNutritionPage() {
             khi cần:
           </p>
 
+          {/* Monitoring Parameters Table */}
+          <div className="overflow-x-auto my-4">
+            <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+              <thead className="bg-neutral-50">
+                <tr>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thông số</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tần suất</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu/Giá trị bình thường</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-neutral-200">
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Huyết áp</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Hàng ngày (tại nhà), mỗi lần khám</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 130/80 mmHg (hoặc theo mục tiêu cá nhân)</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá đáp ứng với thay đổi chế độ ăn</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cân nặng</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Hàng tuần (nếu giảm cân), mỗi lần khám</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">BMI 18.5-24.9 (hoặc mục tiêu cá nhân)</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Giảm 5-10% cân nặng có thể giảm HA đáng kể</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Kali máu</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Khi bắt đầu/thay đổi thuốc, định kỳ nếu có nguy cơ</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">3.5-5.0 mEq/L</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Quan trọng nếu dùng lợi tiểu, ACE/ARB</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Creatinine/eGFR</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Định kỳ 3-6 tháng, hoặc khi có nguy cơ</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">eGFR &gt; 60, Creatinine bình thường</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá chức năng thận, điều chỉnh kali</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Lượng natri ăn vào</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Ước tính qua nhật ký thực phẩm</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2.3g/ngày (hoặc &lt; 1.5g nếu nguy cơ cao)</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Ước tính, không chính xác hoàn toàn</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <div className="grid gap-4 sm:grid-cols-2">
             <Card>
               <CardHeader icon={CheckCircle} title="Huyết áp" />
@@ -632,6 +769,22 @@ export default function HypertensionNutritionPage() {
             <CardContent>
               <p className="text-body-sm">
                 Đánh giá BMI và thành phần cơ thể, quan trọng trong quản lý cân nặng cho bệnh nhân tăng huyết áp.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/fluid-requirements">
+            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính nhu cầu dịch, đặc biệt quan trọng nếu bệnh nhân có suy tim hoặc bệnh thận kèm theo.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/micronutrient-assessment">
+            <CardHeader icon={CheckCircle} title="Đánh giá Vi chất" />
+            <CardContent>
+              <p className="text-body-sm">
+                Ước tính nhu cầu vi chất như kali, magie, canxi - quan trọng trong quản lý tăng huyết áp.
               </p>
             </CardContent>
           </Card>
