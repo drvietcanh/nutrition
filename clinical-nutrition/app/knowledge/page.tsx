@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, Activity, ArrowRight } from "lucide-react";
+import { BookOpen, Activity, ArrowRight, AlertCircle, ClipboardCheck, Calculator, FileText, UtensilsCrossed } from "lucide-react";
 import { Card, CardHeader, CardContent, CardFooter } from "../components/Card";
 import { Breadcrumb } from "../components/Breadcrumb";
 
@@ -66,6 +66,14 @@ export default function KnowledgePage() {
 
       {/* Chronic Diseases Section */}
       <section className="space-y-6 mt-8">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+          <h2 className="heading-2 whitespace-nowrap">
+            Dinh dưỡng trong Bệnh Mạn tính
+          </h2>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+        </div>
+
         <Card href="/knowledge/myths-in-clinical-nutrition">
           <CardHeader
             icon={AlertCircle}
@@ -170,15 +178,6 @@ export default function KnowledgePage() {
             </Link>
           </CardFooter>
         </Card>
-      </section>
-
-        <div className="flex items-center gap-3">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
-          <h2 className="heading-2 whitespace-nowrap">
-            Dinh dưỡng trong Bệnh Mạn tính
-          </h2>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
-        </div>
 
         <Card href="/knowledge/chronic-diseases">
           <CardHeader
@@ -208,7 +207,9 @@ export default function KnowledgePage() {
         </Card>
       </section>
 
-      <Card>
+      {/* Tools Section */}
+      <section className="space-y-6 mt-8">
+        <Card>
         <CardHeader
           icon={Activity}
           title="Công cụ Tương tác"
@@ -236,6 +237,7 @@ export default function KnowledgePage() {
         </ul>
         </CardContent>
       </Card>
+      </section>
     </main>
   );
 }

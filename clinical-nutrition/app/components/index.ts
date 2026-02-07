@@ -9,3 +9,8 @@ export { LoadingSpinner } from './LoadingSpinner';
 export { SkipLinks } from './SkipLinks';
 export { Breadcrumb } from './Breadcrumb';
 export { BackToTop } from './BackToTop';
+export { Header } from './Header';
+export { MainNav } from './MainNav';
+export { MobileNav } from './MobileNav';
+export { Search } from './Search';
+export { SearchModal } from './SearchModal';

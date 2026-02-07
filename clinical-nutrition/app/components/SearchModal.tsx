@@ -1,0 +1,256 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Search, X, BookOpen, Calculator, FileText } from "lucide-react";
+
+interface SearchResult {
+  title: string;
+  href: string;
+  category: "knowledge" | "tool";
+  description?: string;
+}
+
+// Simple search index - in production, this could be generated from MDX files
+const searchIndex: SearchResult[] = [
+  // Knowledge pages
+  {
+    title: "Hiểu lầm & Quan niệm Sai trong Dinh dưỡng Lâm sàng",
+    href: "/knowledge/myths-in-clinical-nutrition",
+    category: "knowledge",
+    description: "Điều chỉnh dựa trên bằng chứng cho các hiểu lầm phổ biến",
+  },
+  {
+    title: "Quy trình Đánh giá Dinh dưỡng Lâm sàng",
+    href: "/knowledge/assessment-process",
+    category: "knowledge",
+    description: "Hướng dẫn đầy đủ về đánh giá dinh dưỡng lâm sàng",
+  },
+  {
+    title: "Ước tính Nhu cầu Dinh dưỡng",
+    href: "/knowledge/needs-estimation",
+    category: "knowledge",
+    description: "Vì sao khoảng quan trọng hơn số chính xác",
+  },
+  {
+    title: "Đánh giá Lượng Ăn",
+    href: "/knowledge/intake-assessment",
+    category: "knowledge",
+    description: "Hiểu người bệnh thực sự nhận được gì",
+  },
+  {
+    title: "Vì sao Lượng Ăn Thường Thiếu",
+    href: "/knowledge/why-intake-falls-short",
+    category: "knowledge",
+    description: "Các yếu tố thực tế tạo ra khoảng cách",
+  },
+  {
+    title: "Dinh dưỡng Đái tháo đường",
+    href: "/knowledge/diabetes-nutrition",
+    category: "knowledge",
+  },
+  {
+    title: "Dinh dưỡng Tăng huyết áp",
+    href: "/knowledge/hypertension-nutrition",
+    category: "knowledge",
+  },
+  {
+    title: "Dinh dưỡng Suy tim",
+    href: "/knowledge/heart-failure-nutrition",
+    category: "knowledge",
+  },
+  // Tools
+  {
+    title: "Sàng lọc Suy Dinh dưỡng",
+    href: "/tools/malnutrition-screening",
+    category: "tool",
+    description: "Công cụ sàng lọc nguy cơ suy dinh dưỡng",
+  },
+  {
+    title: "Máy tính Năng lượng & Protein",
+    href: "/tools/energy-protein-calculator",
+    category: "tool",
+    description: "Tính toán nhu cầu năng lượng và protein",
+  },
+  {
+    title: "Đánh giá Lượng Ăn",
+    href: "/tools/intake-assessment",
+    category: "tool",
+    description: "Đánh giá lượng dinh dưỡng thực tế",
+  },
+  {
+    title: "BMI & Thành phần Cơ thể",
+    href: "/tools/bmi-body-composition",
+    category: "tool",
+    description: "Tính BMI, IBW, ABW, BSA",
+  },
+  {
+    title: "Nhu cầu Dịch",
+    href: "/tools/fluid-requirements",
+    category: "tool",
+    description: "Tính nhu cầu dịch hàng ngày",
+  },
+];
+
+function highlightText(text: string, query: string): React.ReactNode {
+  if (!query.trim()) return text;
+
+  const parts = text.split(new RegExp(`(${query})`, "gi"));
+  return (
+    <>
+      {parts.map((part, i) =>
+        part.toLowerCase() === query.toLowerCase() ? (
+          <mark key={i} className="bg-yellow-200 font-medium">
+            {part}
+          </mark>
+        ) : (
+          part
+        )
+      )}
+    </>
+  );
+}
+
+interface SearchModalProps {
+  onClose: () => void;
+}
+
+export function SearchModal({ onClose }: SearchModalProps) {
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState<SearchResult[]>([]);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
+  useEffect(() => {
+    if (!query.trim()) {
+      setResults([]);
+      return;
+    }
+
+    const lowerQuery = query.toLowerCase();
+    const filtered = searchIndex.filter(
+      (item) =>
+        item.title.toLowerCase().includes(lowerQuery) ||
+        item.description?.toLowerCase().includes(lowerQuery)
+    );
+    setResults(filtered);
+  }, [query]);
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape") {
+      onClose();
+    } else if (e.key === "Enter" && results.length > 0) {
+      router.push(results[0].href);
+      onClose();
+    }
+  };
+
+  const handleResultClick = (href: string) => {
+    router.push(href);
+    onClose();
+  };
+
+  return (
+    <>
+      <div
+        className="fixed inset-0 bg-black/50 z-50"
+        onClick={onClose}
+        aria-hidden="true"
+      />
+      <div className="fixed inset-x-4 top-20 mx-auto max-w-2xl bg-white rounded-lg shadow-xl z-50 max-h-[80vh] flex flex-col">
+        <div className="flex items-center gap-3 p-4 border-b border-gray-200">
+          <Search className="w-5 h-5 text-gray-400" aria-hidden="true" />
+          <input
+            ref={inputRef}
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder="Tìm kiếm kiến thức hoặc công cụ..."
+            className="flex-1 outline-none text-base"
+            aria-label="Tìm kiếm"
+          />
+          <button
+            type="button"
+            onClick={onClose}
+            className="p-1 rounded hover:bg-gray-100 focus-ring"
+            aria-label="Đóng"
+          >
+            <X className="w-5 h-5 text-gray-400" aria-hidden="true" />
+          </button>
+        </div>
+
+        <div className="overflow-y-auto flex-1">
+          {query.trim() && results.length === 0 && (
+            <div className="p-8 text-center text-gray-500">
+              <p>Không tìm thấy kết quả cho &quot;{query}&quot;</p>
+              <p className="text-sm mt-2">
+                Thử tìm kiếm với từ khóa khác
+              </p>
+            </div>
+          )}
+
+          {!query.trim() && (
+            <div className="p-8 text-center text-gray-500">
+              <p>Nhập từ khóa để tìm kiếm...</p>
+            </div>
+          )}
+
+          {results.length > 0 && (
+            <div className="p-2">
+              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide px-3 py-2">
+                {results.length} kết quả
+              </div>
+              <ul className="space-y-1">
+                {results.map((result) => (
+                  <li key={result.href}>
+                    <button
+                      type="button"
+                      onClick={() => handleResultClick(result.href)}
+                      className="w-full text-left px-3 py-3 rounded-lg hover:bg-gray-100 focus-ring flex items-start gap-3"
+                    >
+                      {result.category === "knowledge" ? (
+                        <BookOpen
+                          className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0"
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <Calculator
+                          className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"
+                          aria-hidden="true"
+                        />
+                      )}
+                      <div className="flex-1 min-w-0">
+                        <div className="font-medium text-gray-900">
+                          {highlightText(result.title, query)}
+                        </div>
+                        {result.description && (
+                          <div className="text-sm text-gray-600 mt-1">
+                            {highlightText(result.description, query)}
+                          </div>
+                        )}
+                        <div className="text-xs text-gray-400 mt-1">
+                          {result.href}
+                        </div>
+                      </div>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+
+        <div className="p-3 border-t border-gray-200 text-xs text-gray-500">
+          <kbd className="px-2 py-1 bg-gray-100 rounded">Esc</kbd> để đóng •{" "}
+          <kbd className="px-2 py-1 bg-gray-100 rounded">Enter</kbd> để chọn
+        </div>
+      </div>
+    </>
+  );
+}

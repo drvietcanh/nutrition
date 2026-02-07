@@ -39,15 +39,57 @@ export default function EnergyProteinCalculatorPage() {
       {/* 1. Title + brief explanation */}
       <header className="space-y-3">
         <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-          Nhu cầu Năng lượng & Protein – Công cụ Giảng dạy
+          Cơ thể cần bao nhiêu Năng lượng & Protein mỗi ngày?
         </h1>
         <p className="text-body-lg">
-          Trang này minh họa cách các bác sĩ lâm sàng thường ước tính nhu cầu năng lượng và
-          protein hàng ngày sử dụng các quy tắc đơn giản dựa trên cân nặng và phương pháp
-          dạng phương trình. Các con số hiển thị là{" "}
-          <strong>khoảng giáo dục, không phải kê đơn</strong>.
+          Công cụ này giúp bạn hiểu cách tính toán nhu cầu năng lượng (calo) và protein 
+          mà cơ thể cần mỗi ngày. Bạn có thể thử với các số liệu khác nhau để xem 
+          các yếu tố như tuổi, cân nặng, và tình trạng bệnh ảnh hưởng như thế nào.
         </p>
+        <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+          <p className="text-sm text-blue-900">
+            <strong>Lưu ý quan trọng:</strong> Các con số hiển thị là{" "}
+            <strong>khoảng ước tính để học tập</strong>, không phải đơn thuốc. 
+            Trong thực tế, cần có đánh giá từ chuyên gia dinh dưỡng.
+          </p>
+        </div>
       </header>
+
+      {/* How to Use Section */}
+      <section
+        aria-labelledby="how-to-use-heading"
+        className="space-y-3 rounded-lg border border-green-200 bg-green-50 p-5 shadow-sm sm:p-6"
+      >
+        <h2
+          id="how-to-use-heading"
+          className="text-lg font-semibold text-gray-900 sm:text-xl flex items-center gap-2"
+        >
+          <span className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+            1
+          </span>
+          Hướng dẫn Sử dụng
+        </h2>
+        <ol className="list-decimal space-y-3 pl-6 text-sm leading-relaxed text-gray-700 sm:text-base">
+          <li>
+            <strong>Chọn phương pháp tính:</strong> Bạn có thể chọn phương pháp đơn giản 
+            (dựa trên cân nặng) hoặc phương pháp chi tiết hơn (dùng công thức). 
+            Hoặc chọn "So sánh cả hai" để xem sự khác biệt.
+          </li>
+          <li>
+            <strong>Nhập thông tin:</strong> Điền các thông tin cơ bản như tuổi, giới tính, 
+            cân nặng, chiều cao. Bạn có thể dùng nút "Điền ví dụ" để xem cách công cụ hoạt động.
+          </li>
+          <li>
+            <strong>Chọn tình trạng bệnh (nếu có):</strong> Nếu người đó đang bị bệnh, 
+            hãy chọn tình trạng phù hợp. Điều này giúp tính toán chính xác hơn.
+          </li>
+          <li>
+            <strong>Xem kết quả:</strong> Sau khi nhấn "Hiển thị phạm vi giáo dục", 
+            bạn sẽ thấy khoảng năng lượng và protein được đề xuất. 
+            Hãy đọc phần giải thích để hiểu rõ hơn.
+          </li>
+        </ol>
+      </section>
 
       {/* 2. Why estimate needs? */}
       <section
@@ -56,31 +98,35 @@ export default function EnergyProteinCalculatorPage() {
       >
         <h2
           id="why-estimate-heading"
-          className="text-lg font-semibold text-gray-900 sm:text-xl"
+          className="text-lg font-semibold text-gray-900 sm:text-xl flex items-center gap-2"
         >
-          2. Vì sao chúng ta ước tính nhu cầu năng lượng & protein?
+          <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+            2
+          </span>
+          Vì sao chúng ta ước tính nhu cầu?
         </h2>
-        <p className="text-body-sm">
-          Trong dinh dưỡng lâm sàng, chúng ta hiếm khi biết chính xác nhu cầu của một
-          người cụ thể. Thay vào đó, chúng ta sử dụng <strong>khoảng hợp lý</strong>{" "}
-          dựa trên cân nặng, bối cảnh lâm sàng, và hướng dẫn, sau đó điều chỉnh dựa
-          trên cách người đó phản ứng theo thời gian.
+        <p className="text-body">
+          Không có cách nào để biết chính xác cơ thể một người cần bao nhiêu năng lượng và protein. 
+          Mỗi người khác nhau, và nhu cầu thay đổi theo thời gian. Vì vậy, chúng ta sử dụng{" "}
+          <strong>khoảng hợp lý</strong> dựa trên:
         </p>
-        <ul className="list-disc space-y-2 pl-6 text-sm leading-relaxed text-neutral-700 sm:text-base">
+        <ul className="list-disc space-y-2 pl-6 text-sm leading-relaxed text-gray-700 sm:text-base">
           <li>
-            Ước tính năng lượng nhằm tránh cả việc cho ăn thiếu và cho ăn quá,
-            đặc biệt trong thời gian bệnh và phục hồi.
+            <strong>Cân nặng:</strong> Người nặng hơn thường cần nhiều năng lượng hơn
           </li>
           <li>
-            Khoảng protein hỗ trợ duy trì hoặc tái xây dựng khối nạc,
-            nhưng phải được cân bằng với chức năng cơ quan và khả năng dung nạp.
+            <strong>Tuổi và giới tính:</strong> Người trẻ và nam giới thường cần nhiều hơn
           </li>
           <li>
-            Các phương pháp khác nhau (đơn giản dựa trên cân nặng, dựa trên phương trình, hệ số
-            stress) là <strong>công cụ để cấu trúc tư duy</strong>, không phải
-            câu trả lời cuối cùng.
+            <strong>Tình trạng bệnh:</strong> Khi bị bệnh nặng, cơ thể cần nhiều năng lượng hơn để phục hồi
+          </li>
+          <li>
+            <strong>Mức độ hoạt động:</strong> Người vận động nhiều cần nhiều năng lượng hơn
           </li>
         </ul>
+        <p className="text-body-sm text-gray-600 mt-3">
+          Sau đó, chúng ta theo dõi xem người đó phản ứng như thế nào và điều chỉnh nếu cần.
+        </p>
       </section>
 
       {/* 3–5. Method selector, inputs, and educational result ranges */}
@@ -96,26 +142,33 @@ export default function EnergyProteinCalculatorPage() {
       <section aria-labelledby="learning-heading" className="space-y-4">
         <h2
           id="learning-heading"
-          className="text-lg font-semibold text-gray-900 sm:text-xl"
+          className="text-lg font-semibold text-gray-900 sm:text-xl flex items-center gap-2"
         >
-          6. Diễn giải & điểm học tập
+          <span className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+            6
+          </span>
+          Hiểu Kết quả
         </h2>
-        <ul className="list-disc space-y-3 pl-6 text-sm leading-relaxed text-neutral-700 sm:text-base">
-          <li>
-            Khoảng thường hữu ích hơn các con số "đúng" đơn lẻ,
-            vì nhu cầu thực tế thay đổi theo thời gian, stress, và hoạt động.
-          </li>
-          <li>
-            Quy tắc đơn giản và phương trình hoạt động tốt nhất khi chúng được{" "}
-            <strong>kết hợp với phán đoán lâm sàng</strong>, quy trình địa phương,
-            và đánh giá thường xuyên.
-          </li>
-          <li>
-            Khi còn nghi ngờ, các bác sĩ lâm sàng thường bắt đầu thận trọng, theo dõi
-            khả năng dung nạp và tiến triển, và điều chỉnh thay vì dựa vào một
-            phép tính duy nhất.
-          </li>
-        </ul>
+        <div className="space-y-3">
+          <p className="text-body">
+            Khi bạn nhận được kết quả, đây là những điều quan trọng cần nhớ:
+          </p>
+          <ul className="list-disc space-y-3 pl-6 text-sm leading-relaxed text-gray-700 sm:text-base">
+            <li>
+              <strong>Khoảng giá trị hữu ích hơn số chính xác:</strong> Thay vì nói "cần chính xác 2000 kcal", 
+              chúng ta nói "cần khoảng 1800-2200 kcal". Điều này phản ánh thực tế rằng nhu cầu thay đổi 
+              theo thời gian và tình trạng sức khỏe.
+            </li>
+            <li>
+              <strong>Đây chỉ là điểm khởi đầu:</strong> Kết quả tính toán giúp chúng ta biết nên bắt đầu từ đâu, 
+              nhưng cần theo dõi và điều chỉnh dựa trên phản ứng thực tế của người đó.
+            </li>
+            <li>
+              <strong>Kết hợp với đánh giá toàn diện:</strong> Các con số này chỉ là một phần của bức tranh lớn. 
+              Cần xem xét nhiều yếu tố khác như khả năng ăn, tình trạng bệnh, và chức năng các cơ quan.
+            </li>
+          </ul>
+        </div>
       </section>
 
       {/* 7. Common clinical pitfalls */}
@@ -125,24 +178,29 @@ export default function EnergyProteinCalculatorPage() {
       >
         <h2
           id="pitfalls-heading"
-          className="text-lg font-semibold text-amber-900 sm:text-xl"
+          className="text-lg font-semibold text-amber-900 sm:text-xl flex items-center gap-2"
         >
-          7. Các cạm bẫy lâm sàng phổ biến
+          <span className="w-8 h-8 bg-amber-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+            7
+          </span>
+          Những Điều Cần Tránh
         </h2>
+        <p className="text-body-sm text-amber-900 mb-3">
+          Khi sử dụng công cụ này, hãy cẩn thận với những điều sau:
+        </p>
         <ul className="list-disc space-y-2 pl-6 text-sm leading-relaxed text-amber-900 sm:text-base">
           <li>
-            Dựa vào cân nặng thực tế một mình ở những người có{" "}
-            <strong>phù, cổ trướng, hoặc dịch chuyển</strong> đáng kể, có thể che giấu
-            mất mô nạc.
+            <strong>Không chỉ dựa vào cân nặng:</strong> Nếu người đó bị phù (sưng do nước), 
+            cổ trướng (nước trong bụng), hoặc có dịch trong cơ thể, cân nặng có thể không phản ánh 
+            đúng tình trạng dinh dưỡng thực tế.
           </li>
           <li>
-            Áp dụng cùng một khoảng cho mọi người mà không xem xét{" "}
-            <strong>chức năng cơ quan</strong> (ví dụ, bệnh thận hoặc
-            gan tiến triển) hoặc <strong>nguy cơ hội chứng tái cho ăn</strong>.
+            <strong>Xem xét chức năng cơ quan:</strong> Nếu người đó có bệnh thận hoặc gan nặng, 
+            cần điều chỉnh đặc biệt. Không thể áp dụng cùng một công thức cho mọi người.
           </li>
           <li>
-            Coi một phép tính như một kê đơn thay vì{" "}
-            <strong>điểm khởi đầu cho một kế hoạch được theo dõi</strong>.
+            <strong>Không coi đây là đơn thuốc:</strong> Kết quả chỉ là ước tính để bắt đầu. 
+            Cần theo dõi và điều chỉnh dựa trên phản ứng thực tế.
           </li>
         </ul>
       </section>

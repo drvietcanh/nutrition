@@ -72,12 +72,12 @@ export function InteractiveSection() {
     const input = toClinicalInput();
 
     try {
-      // Run only the selected tool(s); both results remain purely in memory.
-      if (activeTool === "nrs-2002" || activeTool === "both") {
-        setNrsResult(calculateEducationalNrs2002(input));
-      }
-      if (activeTool === "pg-sga" || activeTool === "both") {
-        setPgResult(calculateEducationalPgSga(input));
+    // Run only the selected tool(s); both results remain purely in memory.
+    if (activeTool === "nrs-2002" || activeTool === "both") {
+      setNrsResult(calculateEducationalNrs2002(input));
+    }
+    if (activeTool === "pg-sga" || activeTool === "both") {
+      setPgResult(calculateEducationalPgSga(input));
       }
     } catch (error) {
       console.error("Error running screening:", error);
