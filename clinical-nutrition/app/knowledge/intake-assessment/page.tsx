@@ -6,11 +6,11 @@ export default function IntakeAssessmentPage() {
       {/* Header */}
       <header className="space-y-3">
         <h1 className="text-2xl font-semibold sm:text-3xl">
-          Đánh giá Lượng Ăn: Hiểu Những gì Mọi người Thực sự Nhận được
+          Đánh giá Lượng Ăn: Hiểu Người bệnh Thực sự Nhận được Gì
         </h1>
         <p className="text-base text-neutral-700 sm:text-lg">
-          Biết những gì ai đó <em>nên</em> nhận được (nhu cầu ước tính) chỉ là một nửa bức tranh.
-          Hiểu những gì họ <strong>thực sự nhận được</strong>—và vì sao thường có khoảng cách—là cần thiết cho chăm sóc dinh dưỡng hiệu quả.
+          Biết người bệnh <em>nên</em> nhận được gì (nhu cầu ước tính) chỉ là một nửa bức tranh.
+          Phần còn lại là hiểu <strong>thực tế họ nhận được gì</strong>—và vì sao thường có khoảng cách—để hỗ trợ chăm sóc dinh dưỡng hiệu quả.
         </p>
       </header>
 
@@ -178,8 +178,8 @@ export default function IntakeAssessmentPage() {
         </p>
         <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
           <li>
-            <strong>Biến đổi từng ngày là bình thường</strong>: Mọi người không ăn cùng một lượng mỗi ngày. Một ngày thấp sau thủ thuật hoặc trong
-            một ngày triệu chứng xấu là dự kiến và có thể không đáng lo ngại nếu nó đơn lẻ.
+            <strong>Biến đổi từng ngày là bình thường</strong>: Người bệnh không ăn cùng một lượng mỗi ngày. Một ngày thấp sau thủ thuật hoặc khi
+            triệu chứng nặng hơn là điều thường gặp và có thể không đáng lo ngại nếu chỉ xảy ra đơn lẻ.
           </li>
           <li>
             <strong>Ngày đơn lẻ có thể là ngoại lệ</strong>: Một ngày có thể cao bất thường (dịp đặc biệt, thăm gia đình) hoặc thấp bất thường

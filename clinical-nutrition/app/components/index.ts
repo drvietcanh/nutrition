@@ -4,3 +4,4 @@ export { Callout } from './Callout';
 export { Card, CardHeader, CardContent, CardFooter } from './Card';
 export { Icon } from './Icon';
 export { GlobalDisclaimerBanner } from './GlobalDisclaimerBanner';
+export { ErrorBoundary } from './ErrorBoundary';

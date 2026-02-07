@@ -1,7 +1,17 @@
-import { InteractiveSection } from "./InteractiveSection";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import { ToolStepIndicator } from "../components/ToolStepIndicator";
 import { ToolNavigation } from "../components/ToolNavigation";
 import { Activity, AlertCircle, CheckCircle } from "lucide-react";
+import { LoadingSpinner } from "../../components/LoadingSpinner";
+
+const InteractiveSection = dynamic(() => import("./InteractiveSection").then(mod => ({ default: mod.InteractiveSection })), {
+  loading: () => (
+    <div className="flex justify-center py-12">
+      <LoadingSpinner size="lg" text="Đang tải công cụ..." />
+    </div>
+  ),
+});
 
 export default function MalnutritionScreeningPage() {
   return (
@@ -49,7 +59,13 @@ export default function MalnutritionScreeningPage() {
       </section>
 
       {/* 2–5. Tool selector, input form, and interactive educational result */}
-      <InteractiveSection />
+      <Suspense fallback={
+        <div className="flex justify-center py-12">
+          <LoadingSpinner size="lg" text="Đang tải công cụ..." />
+        </div>
+      }>
+        <InteractiveSection />
+      </Suspense>
 
       {/* 6. Interpretation & learning points */}
       <section aria-labelledby="learning-heading" className="space-y-4">
@@ -115,7 +131,7 @@ export default function MalnutritionScreeningPage() {
             </h3>
             <ul className="list-disc space-y-1 pl-5 text-xs text-neutral-700 sm:text-sm">
               <li>
-                Đưa ra quyết định lâm sàng cho một bệnh nhân cụ thể (ví dụ:
+                Đưa ra quyết định lâm sàng cho một người bệnh cụ thể (ví dụ:
                 nhập viện, đường cho ăn, kê đơn).
               </li>
               <li>

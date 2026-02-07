@@ -33,28 +33,28 @@ export default function WhyIntakeFallsShortPage() {
           Uses relatable timeline (Monday to Friday) to help readers identify with the situation. */}
       <header className="space-y-4">
         <h1 className="text-2xl font-semibold sm:text-3xl text-gray-900">
-          Vì sao Lượng Dinh dưỡng Thường Thiếu so với Yêu cầu Tính toán
+          Vì sao lượng ăn thường thấp hơn nhu cầu ước tính
         </h1>
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
           <p className="text-base text-gray-700 leading-relaxed mb-4">
-            <strong>Sáng thứ Hai:</strong> Bạn đánh giá một bệnh nhân 65 tuổi đang phục hồi sau phẫu thuật. 
-            Sử dụng các phương trình tiêu chuẩn, bạn tính nhu cầu dinh dưỡng của họ: 1.800 kcal và 80g protein mỗi ngày. 
-            Bạn chỉ định chế độ ăn thường với bổ sung protein cao hai lần mỗi ngày. Kế hoạch trông vững chắc.
+            <strong>Sáng thứ Hai:</strong> Bạn đánh giá một người bệnh 65 tuổi đang phục hồi sau phẫu thuật.
+            Dựa trên các phương trình tiêu chuẩn, bạn ước tính nhu cầu: 1.800&nbsp;kcal và 80&nbsp;g protein mỗi ngày.
+            Bạn chỉ định chế độ ăn thường kèm bổ sung giàu protein 2 lần/ngày. Kế hoạch có vẻ hợp lý.
           </p>
           <p className="text-base text-gray-700 leading-relaxed mb-4">
-            <strong>Chiều thứ Sáu:</strong> Bạn xem xét ghi chép lượng ăn trong tuần. Mặc dù tính toán cẩn thận 
-            và lệnh phù hợp của bạn, bệnh nhân chỉ tiêu thụ khoảng 1.200 kcal và 50g 
-            protein mỗi ngày—khoảng 65% những gì bạn tính họ cần. Bạn tự hỏi: "Vì sao có khoảng cách như vậy?"
+            <strong>Chiều thứ Sáu:</strong> Bạn xem lại ghi chép lượng ăn trong tuần. Dù đã ước tính cẩn thận
+            và y lệnh phù hợp, người bệnh chỉ dùng khoảng 1.200&nbsp;kcal và 50&nbsp;g protein mỗi ngày—tương đương ~65%
+            so với nhu cầu ước tính. Bạn đặt câu hỏi: “Vì sao có khoảng cách như vậy?”
           </p>
           <p className="text-base text-gray-700 leading-relaxed mb-3">
-            Nếu tình huống này cảm thấy quen thuộc, bạn không đơn độc. Khoảng cách giữa yêu cầu tính toán và 
-            lượng ăn thực tế xảy ra mỗi ngày trong thực hành lâm sàng. Đó không phải là thất bại—đó là thực tế của 
-            việc cung cấp chăm sóc dinh dưỡng cho những người đang bệnh.
+            Nếu tình huống này quen thuộc, bạn không đơn độc. Khoảng cách giữa nhu cầu ước tính và
+            lượng ăn thực tế xuất hiện mỗi ngày trong thực hành. Đây không phải là “thất bại” — đó là thực tế thường gặp
+            khi chăm sóc dinh dưỡng cho người bệnh.
           </p>
           <p className="text-base text-gray-700 leading-relaxed">
-            Hiểu vì sao điều này xảy ra—và rằng nó được dự kiến—giúp chúng ta diễn giải khoảng cách lượng ăn với 
-            sự đồng cảm thay vì thất vọng, đưa ra quyết định thực tế, và cung cấp chăm sóc tốt hơn. Trang này 
-            khám phá các yếu tố thực tế tạo ra những khoảng cách này và cách suy nghĩ về chúng một cách thực tế.
+            Hiểu vì sao điều này xảy ra—và rằng điều này thường gặp—giúp chúng ta diễn giải khoảng cách với
+            thái độ thực tế, giảm “đổ lỗi”, và ra quyết định phù hợp bối cảnh. Trang này tổng hợp các yếu tố hay gặp
+            tạo nên khoảng cách và gợi ý cách tiếp cận theo lập luận lâm sàng.
           </p>
         </div>
       </header>
@@ -80,7 +80,7 @@ export default function WhyIntakeFallsShortPage() {
             between calculated requirements (ideal) and actual intake (reality). */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Yêu cầu Tính toán</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Nhu cầu ước tính</h3>
             <p className="text-sm text-gray-700">
               Nhu cầu dinh dưỡng ước tính dựa trên phương trình, đánh giá lâm sàng, và hướng dẫn. 
               Điều này đại diện cho những gì chúng ta <em>hướng tới</em>, không nhất thiết những gì chúng ta có thể đạt được.
@@ -89,8 +89,8 @@ export default function WhyIntakeFallsShortPage() {
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
             <h3 className="font-semibold text-gray-900 mb-2">Lượng Ăn Thực tế</h3>
             <p className="text-sm text-gray-700">
-              Những gì bệnh nhân <em>thực sự</em> tiêu thụ hoặc nhận được. Đây là điều ảnh hưởng đến 
-              kết quả sức khỏe, và nó thường ít hơn nhu cầu tính toán—và điều đó là ổn.
+              Những gì người bệnh <em>thực sự</em> tiêu thụ hoặc nhận được. Đây là dữ liệu liên quan trực tiếp
+              đến diễn tiến lâm sàng, và thường thấp hơn nhu cầu ước tính—điều này không hiếm gặp.
             </p>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function WhyIntakeFallsShortPage() {
             <div>
               <p className="text-gray-700 font-medium mb-1">Là điều dưỡng ghi chép lượng ăn:</p>
               <p className="text-gray-600">
-                Bạn ghi chú rằng một bệnh nhân được chỉ định 1.800 kcal/ngày chỉ ăn khoảng 50% mỗi bữa ăn. 
+                Bạn ghi chú rằng một người bệnh được chỉ định 1.800&nbsp;kcal/ngày chỉ ăn khoảng 50% mỗi bữa ăn. 
                 Điều này không bất thường—đặc biệt nếu họ có thủ thuật hôm nay hoặc đang trải qua buồn nôn. 
                 Ghi chép những gì họ thực sự tiêu thụ. Nhóm cần biết lượng ăn thực tế, không phải những gì được phục vụ.
               </p>
@@ -172,15 +172,15 @@ export default function WhyIntakeFallsShortPage() {
             <div>
               <p className="text-gray-700 font-medium mb-1">Là bác sĩ lâm sàng xem xét lượng ăn:</p>
               <p className="text-gray-600">
-                Bạn thấy một bệnh nhân nhận được 70% nhu cầu tính toán. Trước khi điều chỉnh lệnh, hãy cân nhắc: 
-                Điều này có được dự kiến cho tình huống lâm sàng của họ không? Họ có đang cải thiện không? Đôi khi 70% là 
+                Bạn thấy một người bệnh đạt 70% nhu cầu ước tính. Trước khi điều chỉnh y lệnh, hãy cân nhắc: 
+                Điều này có thường gặp trong bối cảnh lâm sàng của họ không? Họ có đang cải thiện không? Đôi khi 70% vẫn 
                 đầy đủ cho bối cảnh hiện tại, và lượng ăn sẽ cải thiện khi họ phục hồi.
               </p>
             </div>
             <div>
               <p className="text-gray-700 font-medium mb-1">Là sinh viên y khoa trong hội chẩn:</p>
               <p className="text-gray-600">
-                Bạn nghe rằng một bệnh nhân không đáp ứng mục tiêu dinh dưỡng của họ. Đây là cơ hội học tập 
+                Bạn nghe rằng một người bệnh không đáp ứng mục tiêu dinh dưỡng. Đây là cơ hội học tập 
                 —hãy hỏi vì sao. Hiểu các yếu tố (thủ thuật, triệu chứng, vấn đề hệ thống) 
                 giúp bạn học cách diễn giải khoảng cách lượng ăn một cách thực tế.
               </p>
@@ -476,13 +476,13 @@ export default function WhyIntakeFallsShortPage() {
           <p className="text-sm text-gray-700 leading-relaxed">
             Những gì được <strong>kê đơn</strong> (đặt, lên kế hoạch, khuyến nghị) thường khác với những gì 
             được <strong>cung cấp</strong> (thực sự được tiêu thụ hoặc nhận được). Khoảng cách này là phổ biến và được mong đợi. 
-            Chỉ dinh dưỡng được cung cấp ảnh hưởng đến kết quả bệnh nhân—một đơn thuốc hoàn hảo không được tiêu thụ 
-            không giúp bệnh nhân.
+            Chỉ dinh dưỡng được cung cấp ảnh hưởng đến <strong>kết cục lâm sàng</strong>—một “đơn” hoàn hảo nhưng không được tiêu thụ
+            sẽ không cải thiện kết cục.
           </p>
         </div>
         <p className="text-base text-gray-700 leading-relaxed">
-          How care is delivered—from meal service to feeding tube management—affects intake. These practical 
-          issues are inherent to providing care in busy clinical environments:
+          Cách chăm sóc được triển khai—từ cung cấp suất ăn đến quản lý nuôi ăn qua ống—tác động trực tiếp đến lượng ăn thực tế.
+          Đây là những yếu tố “đời thường” nhưng gần như không thể tránh trong môi trường lâm sàng bận rộn:
         </p>
 
         <div className="space-y-4 mt-4">
@@ -901,7 +901,7 @@ export default function WhyIntakeFallsShortPage() {
           Điều Cần Rút ra
         </h2>
         <p className="text-base text-gray-700 leading-relaxed mb-4">
-          Khi bạn làm việc với bệnh nhân trải qua khoảng cách lượng ăn, hãy nhớ ba điểm cần thiết này:
+          Khi bạn chăm sóc người bệnh có khoảng cách lượng ăn, hãy nhớ ba điểm sau:
         </p>
 
         <div className="space-y-4">
@@ -909,12 +909,12 @@ export default function WhyIntakeFallsShortPage() {
             <h3 className="font-semibold text-gray-900 mb-3 text-lg">Thiếu hụt Lượng Ăn Là Phổ biến</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Khoảng cách lượng ăn không bất thường, không mong đợi, hoặc dấu hiệu rằng có điều gì đó đã sai. Chúng là 
-              phổ biến và được dự kiến, đặc biệt trong bệnh cấp tính. Nhiều yếu tố—liên quan đến bệnh nhân, 
+              thường gặp và có thể dự đoán, đặc biệt trong bệnh cấp tính. Nhiều yếu tố—liên quan đến người bệnh, 
               liên quan đến bệnh tật, cung cấp chăm sóc, và yếu tố hệ thống—hoạt động cùng nhau để tạo ra những khoảng cách này.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Hãy nhớ:</strong> Khi bạn thấy một bệnh nhân ăn 60-70% nhu cầu tính toán, đây không phải là 
-              khủng hoảng—nó thường bình thường cho tình huống lâm sàng đó. Khoảng cách lượng ăn là quy tắc, không phải ngoại lệ, 
+              <strong>Hãy nhớ:</strong> Khi bạn thấy một người bệnh chỉ đạt 60–70% nhu cầu ước tính, điều này không nhất thiết là
+              tình huống khẩn cấp—và có thể vẫn phù hợp với bối cảnh lâm sàng cụ thể. Khoảng cách lượng ăn là “quy tắc”, không phải ngoại lệ, 
               trong thực hành dinh dưỡng lâm sàng.
             </p>
           </div>
@@ -924,12 +924,12 @@ export default function WhyIntakeFallsShortPage() {
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Tính toán nhu cầu dinh dưỡng cho chúng ta một mục tiêu để hướng tới, nhưng nó chỉ là khởi đầu. 
               Tính toán giả định điều kiện lý tưởng hiếm khi tồn tại trong môi trường lâm sàng thực tế. Chúng không 
-              tính đến nhiều rào cản mà bệnh nhân phải đối mặt—thay đổi cảm giác ngon miệng, thủ thuật, triệu chứng, ràng buộc hệ thống 
-              , và nhiều hơn nữa.
+              tính đến nhiều rào cản mà người bệnh phải đối mặt—thay đổi cảm giác ngon miệng, thủ thuật, triệu chứng, ràng buộc hệ thống,
+              và nhiều yếu tố khác.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Hãy nhớ:</strong> Yêu cầu tính toán là hướng dẫn, không phải mệnh lệnh. Nó giúp chúng ta 
-              hiểu những gì chúng ta đang hướng tới, nhưng lượng ăn thực tế thường sẽ khác—và điều đó là ổn. 
+              <strong>Hãy nhớ:</strong> Nhu cầu ước tính là tham chiếu, không phải “mệnh lệnh”. Nó giúp chúng ta
+              hình dung mục tiêu hợp lý, nhưng lượng ăn thực tế thường sẽ khác—và điều đó không hiếm gặp. 
               Tính toán là điểm khởi đầu cho lập kế hoạch, không phải mục tiêu cứng nhắc phải được đáp ứng.
             </p>
           </div>
@@ -937,13 +937,13 @@ export default function WhyIntakeFallsShortPage() {
           <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-5">
             <h3 className="font-semibold text-gray-900 mb-3 text-lg">Theo dõi và Điều chỉnh Quan trọng Hơn Sự Hoàn hảo</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
-              Điều quan trọng nhất không phải là đạt được 100% nhu cầu tính toán, mà là:
+              Điều quan trọng nhất không phải là đạt được 100% nhu cầu ước tính, mà là:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
-              <li><strong>Theo dõi lượng ăn thực tế</strong> để hiểu những gì bệnh nhân thực sự đang nhận được</li>
+              <li><strong>Theo dõi lượng ăn thực tế</strong> để hiểu những gì người bệnh thực sự đang nhận được</li>
               <li><strong>Xem xu hướng</strong> theo thời gian, không chỉ giá trị một ngày</li>
               <li><strong>Điều chỉnh cách tiếp cận</strong> dựa trên những gì thực sự đang xảy ra</li>
-              <li><strong>Đánh giá lại</strong> khi tình trạng bệnh nhân phát triển</li>
+              <li><strong>Đánh giá lại</strong> khi tình trạng người bệnh thay đổi</li>
               <li><strong>Tập trung vào những gì có thể đạt được</strong> và phù hợp cho bối cảnh lâm sàng</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed">
@@ -960,10 +960,9 @@ export default function WhyIntakeFallsShortPage() {
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Thiếu hụt lượng ăn là phổ biến. Tính toán cho chúng ta điểm khởi đầu, nhưng chúng không đảm bảo 
-            lượng ăn. Điều quan trọng nhất là theo dõi những gì bệnh nhân thực sự nhận được, hiểu vì sao khoảng cách 
+            lượng ăn. Điều quan trọng nhất là theo dõi những gì người bệnh thực sự nhận được, hiểu vì sao khoảng cách 
             xảy ra, và thực hiện điều chỉnh thực tế dựa trên hoàn cảnh thực tế. Cách tiếp cận này—tập trung 
-            vào theo dõi và điều chỉnh thay vì sự hoàn hảo—dẫn đến chăm sóc dinh dưỡng tốt hơn và kết quả bệnh nhân tốt hơn 
-            .
+            vào theo dõi và điều chỉnh thay vì sự hoàn hảo—thường giúp chăm sóc dinh dưỡng tốt hơn và kết cục lâm sàng tốt hơn.
           </p>
         </div>
       </section>
@@ -994,12 +993,12 @@ export default function WhyIntakeFallsShortPage() {
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
               <Link href="/tools/intake-assessment" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
                 Công cụ So sánh Lượng Ăn vs. Nhu cầu
-              </Link> giúp bạn thấy khoảng cách giữa yêu cầu tính toán và lượng ăn thực tế. 
+              </Link> giúp bạn thấy khoảng cách giữa nhu cầu ước tính và lượng ăn thực tế. 
               Hình dung này làm cho việc hiểu mức độ khoảng cách và nhận diện 
               mô hình theo thời gian dễ dàng hơn.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Thử nó:</strong> Nhập nhu cầu tính toán của bệnh nhân và lượng ăn thực tế của họ. 
+              <strong>Thử nó:</strong> Nhập nhu cầu ước tính của người bệnh và lượng ăn thực tế. 
               Công cụ sẽ cho bạn thấy khoảng cách một cách trực quan, giúp bạn thấy liệu thiếu hụt là trong 
               năng lượng, protein, hoặc cả hai. Hình dung thực tế này củng cố rằng khoảng cách là bình thường 
               và giúp bạn diễn giải chúng trong ngữ cảnh.

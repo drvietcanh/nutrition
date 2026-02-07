@@ -71,12 +71,18 @@ export function InteractiveSection() {
   const handleRunScreening = () => {
     const input = toClinicalInput();
 
-    // Run only the selected tool(s); both results remain purely in memory.
-    if (activeTool === "nrs-2002" || activeTool === "both") {
-      setNrsResult(calculateEducationalNrs2002(input));
-    }
-    if (activeTool === "pg-sga" || activeTool === "both") {
-      setPgResult(calculateEducationalPgSga(input));
+    try {
+      // Run only the selected tool(s); both results remain purely in memory.
+      if (activeTool === "nrs-2002" || activeTool === "both") {
+        setNrsResult(calculateEducationalNrs2002(input));
+      }
+      if (activeTool === "pg-sga" || activeTool === "both") {
+        setPgResult(calculateEducationalPgSga(input));
+      }
+    } catch (error) {
+      console.error("Error running screening:", error);
+      // The calculation functions should handle errors gracefully,
+      // but we catch any unexpected errors here
     }
   };
 
@@ -185,7 +191,7 @@ function InputForm({ form, onChange, onRunScreening }: InputFormProps) {
       <p className="text-sm text-neutral-700 sm:text-base">
         Chỉ sử dụng giá trị giả định, ẩn danh. Các trường này được giữ
         cố ý nhỏ: chúng ở đây để minh họa các thành phần mà
-        công cụ sàng lọc quan tâm, không phải để ghi lại hồ sơ bệnh nhân thực tế.
+        công cụ sàng lọc quan tâm, không phải để ghi lại hồ sơ người bệnh thực tế.
       </p>
 
       <form
@@ -229,9 +235,10 @@ function InputForm({ form, onChange, onRunScreening }: InputFormProps) {
           <select
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
             value={form.sex ?? ""}
-            onChange={(e) =>
-              update("sex", (e.target.value || null) as MalnutritionFormState["sex"])
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              update("sex", value === "" ? null : (value as ClinicalInput["sex"]));
+            }}
           >
             <option value="">Chọn (ví dụ: nữ)</option>
             <option value="female">Nữ</option>
@@ -375,12 +382,13 @@ function InputForm({ form, onChange, onRunScreening }: InputFormProps) {
           <select
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
             value={form.diseaseContextCode ?? ""}
-            onChange={(e) =>
+            onChange={(e) => {
+              const value = e.target.value;
               update(
                 "diseaseContextCode",
-                (e.target.value || null) as MalnutritionFormState["diseaseContextCode"]
-              )
-            }
+                value === "" ? null : (value as ClinicalInput["diseaseContextCode"])
+              );
+            }}
           >
             <option value="">
               Chọn (tùy chọn, ví dụ: nội khoa chung)

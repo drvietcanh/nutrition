@@ -1,4 +1,14 @@
-import { InteractiveSection } from "./InteractiveSection";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
+import { LoadingSpinner } from "../../components/LoadingSpinner";
+
+const InteractiveSection = dynamic(() => import("./InteractiveSection").then(mod => ({ default: mod.InteractiveSection })), {
+  loading: () => (
+    <div className="flex justify-center py-12">
+      <LoadingSpinner size="lg" text="Đang tải công cụ..." />
+    </div>
+  ),
+});
 
 export default function IntakeAssessmentPage() {
   return (
@@ -28,8 +38,8 @@ export default function IntakeAssessmentPage() {
           2. Vì sao so sánh nhu cầu ước tính với lượng ăn thực tế?
         </h2>
         <p className="text-sm text-neutral-700 sm:text-base">
-          Trong môi trường lâm sàng, bệnh nhân thường nhận được ít hơn (hoặc đôi khi
-          nhiều hơn) so với ước tính giáo dục về nhu cầu năng lượng và protein của họ.
+          Trong môi trường lâm sàng, người bệnh thường nhận được ít hơn (hoặc đôi khi
+          nhiều hơn) so với ước tính giáo dục về nhu cầu năng lượng và protein.
           Nhìn thấy khoảng cách này rõ ràng có thể hỗ trợ lập luận lâm sàng về{" "}
           <strong>vì sao lượng ăn trông như vậy</strong> và các xu hướng
           có thể có ý nghĩa gì theo thời gian.
@@ -52,7 +62,13 @@ export default function IntakeAssessmentPage() {
       </section>
 
       {/* 3–5. Needs range, intake estimate, and comparison */}
-      <InteractiveSection />
+      <Suspense fallback={
+        <div className="flex justify-center py-12">
+          <LoadingSpinner size="lg" text="Đang tải công cụ..." />
+        </div>
+      }>
+        <InteractiveSection />
+      </Suspense>
 
       {/* 6. Common clinical reasons for gaps */}
       <section
@@ -68,7 +84,7 @@ export default function IntakeAssessmentPage() {
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
             Triệu chứng như đau, buồn nôn, no sớm, hoặc khó thở có thể
-            hạn chế những gì bệnh nhân cảm thấy có thể ăn hoặc uống.
+            hạn chế những gì người bệnh cảm thấy có thể ăn hoặc uống.
           </li>
           <li>
             Xét nghiệm, thủ thuật, lệnh nhịn ăn, và lịch trình có thể giảm thời gian

@@ -10,24 +10,24 @@ export default function AssessmentProcessPage() {
         </h1>
         <div className="space-y-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
           <p>
-            Đánh giá dinh dưỡng là <strong>một quy trình, không phải một phép tính đơn lẻ</strong>. Nó không phải về việc tìm một con số "đúng"
-            hoặc chạy một công thức một lần. Thay vào đó, nó là cách có cấu trúc để thu thập thông tin, hiểu nó, và sử dụng sự hiểu biết đó
-            để hướng dẫn chăm sóc.
+            Đánh giá dinh dưỡng là <strong>một quy trình, không phải một phép tính đơn lẻ</strong>. Mục tiêu không phải là “tìm một con số đúng”
+            hay chạy một công thức một lần rồi kết luận. Thay vào đó, đây là cách tiếp cận có cấu trúc để thu thập dữ liệu, diễn giải,
+            và dùng kết quả để định hướng chăm sóc.
           </p>
           <p>
-            Đánh giá cũng là <strong>động, không tĩnh</strong>. Nhu cầu dinh dưỡng của một người thay đổi theo thời gian—với bệnh tật, phục hồi,
-            mức độ hoạt động, và hoàn cảnh cuộc sống. Điều phù hợp tuần trước có thể không đúng hôm nay. Đó là lý do đánh giá bao gồm
-            đánh giá lại và điều chỉnh thường xuyên.
+            Đánh giá cũng là <strong>động, không tĩnh</strong>. Nhu cầu dinh dưỡng thay đổi theo thời gian—theo diễn tiến bệnh, giai đoạn phục hồi,
+            mức độ hoạt động và hoàn cảnh. Điều phù hợp tuần trước có thể không còn phù hợp hôm nay. Vì vậy, đánh giá luôn đi kèm theo dõi,
+            đánh giá lại và điều chỉnh.
           </p>
           <p>
-            Quan trọng nhất, đánh giá là <strong>phụ thuộc vào bối cảnh</strong>. Cùng một con số có ý nghĩa khác nhau cho những người khác nhau
-            trong các tình huống khác nhau. Một người đang phục hồi sau phẫu thuật có nhu cầu khác với người quản lý tình trạng mạn tính.
-            Người có bệnh thận cần cân nhắc khác với người có bệnh tim. Bối cảnh định hình mọi thứ.
+            Quan trọng hơn, đánh giá <strong>phụ thuộc vào bối cảnh</strong>. Cùng một con số có thể mang ý nghĩa khác nhau ở những người khác nhau
+            và trong các tình huống khác nhau. Người đang hồi phục sau phẫu thuật sẽ khác người có bệnh mạn tính ổn định; người bệnh thận cần cân nhắc
+            khác người bệnh tim. Bối cảnh quyết định cách diễn giải.
           </p>
           <p className="text-base text-neutral-600 italic border-l-4 border-blue-200 pl-4 py-2 bg-blue-50/50 rounded-r">
-            Dù bạn là bác sĩ lâm sàng mới với dinh dưỡng, điều dưỡng làm sàng lọc, sinh viên y khoa, hoặc người đang học về quy trình,
-            trang này sẽ giúp bạn hiểu cách sàng lọc, ước tính nhu cầu, và đánh giá lượng ăn hoạt động cùng nhau—và cách các công cụ của chúng tôi hỗ trợ
-            từng bước. Hãy dành thời gian, và nhớ: đánh giá là một kỹ năng phát triển với thực hành.
+            Trang này dành cho bác sĩ, điều dưỡng và sinh viên y khoa đang học về dinh dưỡng lâm sàng. Bạn sẽ thấy 3 phần
+            (sàng lọc → ước tính nhu cầu → đánh giá lượng ăn) liên kết với nhau như thế nào, và cách các công cụ của chúng tôi hỗ trợ từng bước.
+            Bạn có thể đọc theo nhịp của mình—đánh giá là một kỹ năng cải thiện dần qua thực hành.
           </p>
         </div>
       </header>
@@ -49,8 +49,8 @@ export default function AssessmentProcessPage() {
         </div>
         <div className="space-y-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
           <p>
-            Suy dinh dưỡng phổ biến trong môi trường lâm sàng, nhưng nó thường bị bỏ qua. Mọi người có thể không đề cập đến thay đổi về cảm giác ngon miệng hoặc cân nặng,
-            hoặc những thay đổi này có thể có vẻ ít khẩn cấp hơn các mối quan tâm y tế khác. Đánh giá giúp đưa dinh dưỡng vào tầm nhìn.
+            Suy dinh dưỡng phổ biến trong môi trường lâm sàng nhưng thường bị bỏ qua. Người bệnh có thể không chủ động nói về thay đổi cảm giác ngon miệng
+            hoặc cân nặng; hoặc những thay đổi này có thể bị “xếp sau” các vấn đề lâm sàng khác. Đánh giá giúp đưa dinh dưỡng trở lại đúng vị trí trong bức tranh chung.
           </p>
           <p>
             Nhận diện sớm hỗ trợ lập kế hoạch chăm sóc tốt hơn. Khi chúng ta nhận thấy mối quan tâm dinh dưỡng sớm, chúng ta có nhiều lựa chọn hơn và có thể
@@ -104,7 +104,7 @@ export default function AssessmentProcessPage() {
             <div className="space-y-5">
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold text-lg">
-                  1️⃣
+                  1
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-base mb-1">Nhận diện Nguy cơ Dinh dưỡng</h3>
@@ -115,7 +115,7 @@ export default function AssessmentProcessPage() {
               </div>
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold text-lg">
-                  2️⃣
+                  2
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-base mb-1">Ước tính Nhu cầu Dinh dưỡng</h3>
@@ -126,7 +126,7 @@ export default function AssessmentProcessPage() {
               </div>
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold text-lg">
-                  3️⃣
+                  3
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-base mb-1">So sánh Nhu cầu với Lượng Ăn Thực tế</h3>
@@ -404,107 +404,107 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Different Methods and Why They Differ
+              Các phương pháp ước tính và vì sao kết quả khác nhau
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              Clinicians use various methods to estimate needs. Each has strengths and limitations, and they often produce different numbers.
-              This is <strong>normal and expected</strong>, not a sign that one is "wrong."
+              Các bác sĩ lâm sàng sử dụng nhiều phương pháp để ước tính nhu cầu. Mỗi phương pháp có điểm mạnh và giới hạn riêng,
+              nên kết quả có thể khác nhau. Điều này <strong>thường gặp và có thể dự đoán</strong>, không có nghĩa là “một bên sai”.
             </p>
             <div className="space-y-3 mt-3">
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-                <h4 className="font-semibold text-sm mb-2">Simple Weight-Based Rules</h4>
+                <h4 className="font-semibold text-sm mb-2">Quy tắc đơn giản theo cân nặng</h4>
                 <p className="text-sm text-neutral-700">
-                  Examples: "25–30 kcal/kg/day for energy" or "1.2–1.5 g protein/kg/day". Quick and easy to remember, work reasonably well
-                  for many stable adults. Don't account for activity, illness severity, or body composition.
+                  Ví dụ: “25–30 kcal/kg/ngày” (năng lượng) hoặc “1,2–1,5 g protein/kg/ngày”. Nhanh, dễ nhớ, dùng được cho nhiều người lớn ổn định.
+                  Tuy nhiên, cách này chưa phản ánh đầy đủ hoạt động, mức độ nặng của bệnh, hoặc thành phần cơ thể.
                 </p>
               </div>
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-                <h4 className="font-semibold text-sm mb-2">Predictive Equations</h4>
+                <h4 className="font-semibold text-sm mb-2">Phương trình dự đoán</h4>
                 <p className="text-sm text-neutral-700">
-                  Examples: Harris-Benedict, Mifflin-St Jeor, Schofield equations (often adjusted with activity and stress factors).
-                  More detailed, account for age, sex, height, weight, and sometimes activity. Still based on population averages, not individual needs.
+                  Ví dụ: Harris–Benedict, Mifflin–St Jeor, Schofield (thường có hệ số hoạt động/stress). Chi tiết hơn, tính đến tuổi, giới,
+                  chiều cao, cân nặng và đôi khi hoạt động. Dù vậy, chúng vẫn dựa trên trung bình quần thể, không “đo” được đúng nhu cầu cá thể.
                 </p>
               </div>
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-                <h4 className="font-semibold text-sm mb-2">Clinical Judgment + Guidelines</h4>
+                <h4 className="font-semibold text-sm mb-2">Phán đoán lâm sàng + hướng dẫn</h4>
                 <p className="text-sm text-neutral-700">
-                  Combining experience, published guidelines, and patient-specific factors. Considers the whole picture: condition, goals,
-                  tolerance, organ function, and practical constraints. Requires training and experience.
+                  Kết hợp kinh nghiệm, hướng dẫn và yếu tố riêng của người bệnh. Cân nhắc toàn cảnh: tình trạng, mục tiêu,
+                  dung nạp, chức năng cơ quan và ràng buộc thực tế. Cách này đòi hỏi nền tảng và trải nghiệm lâm sàng.
                 </p>
               </div>
             </div>
             <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-3">
               <p className="text-sm font-semibold text-blue-900 mb-1">
-                Key Takeaway:
+                Thông điệp chính:
               </p>
               <p className="text-sm text-blue-800">
-                Different methods exist because <strong>no single approach fits all situations</strong>. Experienced clinicians often use multiple
-                methods, compare results, and choose a reasonable range based on the clinical context. The goal is not to find the "correct answer,"
-                but to establish a <strong>safe, reasonable starting point</strong> that can be monitored and adjusted.
+                Có nhiều phương pháp vì <strong>không có cách nào phù hợp cho mọi tình huống</strong>. Người làm lâm sàng có kinh nghiệm thường
+                đối chiếu nhiều cách ước tính, so sánh kết quả và chọn một khoảng hợp lý theo bối cảnh. Mục tiêu không phải “đáp án đúng”,
+                mà là một <strong>điểm khởi đầu an toàn, hợp lý</strong> để theo dõi và điều chỉnh.
               </p>
             </div>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              The Importance of Ranges and Reassessment
+              Tầm quan trọng của Khoảng và Đánh giá lại
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              Instead of saying "this person needs exactly 1,800 calories," clinicians think in ranges:
+              Thay vì nói “người này cần chính xác 1.800 kcal”, các bác sĩ lâm sàng thường nghĩ theo <strong>khoảng</strong>:
             </p>
             <ul className="list-disc space-y-1 pl-6 text-base text-neutral-700">
-              <li><strong>Energy ranges</strong>: e.g., "1,600–2,000 kcal/day" or "25–30 kcal/kg/day"</li>
-              <li><strong>Protein ranges</strong>: e.g., "60–90 g/day" or "1.0–1.5 g/kg/day"</li>
+              <li><strong>Khoảng năng lượng</strong>: ví dụ “1.600–2.000 kcal/ngày” hoặc “25–30 kcal/kg/ngày”</li>
+              <li><strong>Khoảng protein</strong>: ví dụ “60–90 g/ngày” hoặc “1,0–1,5 g/kg/ngày”</li>
             </ul>
             <p className="text-base text-neutral-700 mt-2">
-              Why ranges matter:
+              Vì sao “khoảng” quan trọng:
             </p>
             <ul className="list-disc space-y-1 pl-6 text-base text-neutral-700">
-              <li>They acknowledge uncertainty—we don't know the exact need, so a range reflects realistic variation</li>
-              <li>They allow flexibility—a person might do well anywhere within the range, depending on appetite, tolerance, and other factors</li>
-              <li>They guide monitoring—if someone consistently falls below (or above) the range, it signals a need to reassess</li>
-              <li>They prevent overconfidence—a single number can feel like a "target" to hit precisely, which isn't how nutrition works</li>
+              <li>Thừa nhận bất định: ta không biết “đúng tuyệt đối”, nên khoảng phản ánh biến thiên thực tế.</li>
+              <li>Linh hoạt: người bệnh có thể đáp ứng tốt ở nhiều mức trong khoảng, tuỳ cảm giác ngon miệng, dung nạp và các yếu tố khác.</li>
+              <li>Hỗ trợ theo dõi: nếu liên tục thấp hơn (hoặc cao hơn) khoảng, đó là tín hiệu cần đánh giá lại.</li>
+              <li>Giảm “ảo giác chính xác”: một con số đơn lẻ dễ bị hiểu như mục tiêu phải đạt bằng mọi giá.</li>
             </ul>
             <p className="text-base text-neutral-700 mt-3">
-              <strong>Reassessment is essential</strong>. Initial estimates are not set in stone. Regular reassessment is a core part of clinical nutrition practice.
-              When and why to reassess:
+              <strong>Đánh giá lại là thiết yếu</strong>. Ước tính ban đầu không phải “đóng đinh”. Đánh giá lại định kỳ là phần cốt lõi của thực hành dinh dưỡng lâm sàng.
+              Khi nào nên đánh giá lại:
             </p>
             <ul className="list-disc space-y-1 pl-6 text-base text-neutral-700">
-              <li>Clinical changes (condition improves or worsens)</li>
-              <li>Weight changes (unintentional loss or gain)</li>
-              <li>Functional changes (more or less active)</li>
-              <li>Tolerance issues (can't tolerate the estimated amount)</li>
-              <li>Time-based review (periodic review even without obvious changes)</li>
+              <li>Thay đổi lâm sàng (cải thiện hoặc xấu đi)</li>
+              <li>Thay đổi cân nặng (tăng/giảm không chủ ý)</li>
+              <li>Thay đổi chức năng/hoạt động (vận động nhiều hoặc ít hơn)</li>
+              <li>Vấn đề dung nạp (không dung nạp mức đang nhắm tới)</li>
+              <li>Rà soát theo thời gian (định kỳ, kể cả khi chưa có thay đổi rõ)</li>
             </ul>
             <p className="text-base text-neutral-700 mt-2">
-              The process is <strong>iterative</strong>: estimate → implement → monitor → reassess → adjust → repeat.
+              Quy trình mang tính <strong>lặp</strong>: ước tính → triển khai → theo dõi → đánh giá lại → điều chỉnh → lặp lại.
             </p>
           </div>
 
           <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Avoid Treating Formulas as "Correct Answers"
+              Tránh coi công thức là “đáp án đúng”
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              It's tempting to treat formulas as if they produce "correct answers." This mindset can lead to:
+              Rất dễ xem công thức như thể cho ra “đáp án đúng”. Cách nghĩ này có thể dẫn đến:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-amber-800">
               <li>
-                <strong>Over-reliance on numbers</strong>: Ignoring clinical signs (like poor wound healing, fatigue, or muscle loss) because
-                "the calculation says they're getting enough."
+                <strong>Phụ thuộc quá mức vào con số</strong>: Bỏ qua dấu hiệu lâm sàng (ví dụ: vết thương liền kém, mệt mỏi, mất khối cơ) vì
+                “công thức cho thấy đã đủ”.
               </li>
               <li>
-                <strong>Rigid plans</strong>: Insisting someone must reach an exact number, even when it's causing problems or isn't realistic.
+                <strong>Kế hoạch cứng nhắc</strong>: Cố “ép đạt” một con số, ngay cả khi không thực tế hoặc gây vấn đề.
               </li>
               <li>
-                <strong>Missing the bigger picture</strong>: Focusing on calories and protein while overlooking other important factors
-                (like hydration, micronutrients, food quality, or quality of life).
+                <strong>Bỏ sót bức tranh lớn</strong>: Chỉ nhìn kcal/protein mà bỏ qua các yếu tố quan trọng khác
+                (dịch, vi chất, chất lượng bữa ăn, chất lượng sống).
               </li>
             </ul>
             <p className="text-sm text-amber-800 mt-2">
-              Instead, think of estimates as <strong>tools to structure thinking</strong>, not final answers. They help answer: "Is this person
-              likely getting too little, too much, or somewhere in a reasonable range?" The answer guides action, but clinical judgment,
-              patient preferences, and ongoing monitoring determine the actual plan.
+              Thay vào đó, hãy xem ước tính là <strong>công cụ để cấu trúc tư duy</strong>, không phải kết luận cuối cùng. Ước tính giúp trả lời:
+              “Người bệnh có khả năng đang nhận quá ít, quá nhiều hay nằm trong khoảng hợp lý?”. Câu trả lời gợi ý hướng tiếp cận, nhưng
+              phán đoán lâm sàng, ưu tiên của người bệnh và theo dõi liên tục mới quyết định kế hoạch thực tế.
             </p>
           </div>
         </div>
@@ -670,8 +670,8 @@ export default function AssessmentProcessPage() {
             </p>
             <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
               <li>
-                <strong>Biến đổi từng ngày là bình thường</strong>: Mọi người không ăn cùng một lượng mỗi ngày. Một ngày thấp sau thủ thuật hoặc trong
-                một ngày triệu chứng xấu là dự kiến và có thể không đáng lo ngại nếu nó đơn lẻ.
+                <strong>Biến đổi từng ngày là bình thường</strong>: Người bệnh không ăn cùng một lượng mỗi ngày. Một ngày thấp sau thủ thuật hoặc khi
+                triệu chứng nặng hơn là điều thường gặp và có thể không đáng lo ngại nếu chỉ xảy ra đơn lẻ.
               </li>
               <li>
                 <strong>Ngày đơn lẻ có thể là ngoại lệ</strong>: Một ngày có thể cao bất thường (dịp đặc biệt, thăm gia đình) hoặc thấp bất thường
@@ -883,8 +883,8 @@ export default function AssessmentProcessPage() {
               </div>
             </div>
             <p className="text-base text-neutral-700 mt-3">
-              Useful questions to consider: <em>"What are we trying to achieve here?"</em> and <em>"What can this person realistically tolerate?"</em>
-              The answers help shape how clinicians interpret and act on the numbers.
+              Câu hỏi gợi ý: <em>“Mục tiêu ở đây là gì?”</em> và <em>“Người bệnh có thể dung nạp thực tế đến mức nào?”</em>
+              Câu trả lời sẽ định hình cách diễn giải và cách “hành động” với các con số.
             </p>
           </div>
 

@@ -115,10 +115,9 @@ export default function IntakeVsNeedsPage() {
           2. Tại sao đánh giá lượng ăn vào quan trọng
         </h2>
         <p className="text-sm text-neutral-700 sm:text-base">
-          Trong nhiều môi trường lâm sàng, bệnh nhân nhận được ít dinh dưỡng hơn
-          so với các ước tính đơn giản gợi ý. Hiểu khoảng cách này giúp giải thích thay đổi
-          cân nặng, mệt mỏi, và mẫu phục hồi, nhưng nó vẫn cần được
-          giải thích trong toàn bộ bối cảnh lâm sàng.
+          Trong nhiều môi trường lâm sàng, người bệnh thường nhận được ít hơn so với
+          nhu cầu ước tính. Nhìn rõ khoảng cách này giúp giải thích thay đổi cân nặng,
+          mệt mỏi và tốc độ hồi phục; tuy nhiên, luôn cần diễn giải trong toàn bộ bối cảnh lâm sàng.
         </p>
       </section>
 
@@ -424,12 +423,12 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
           <select
             className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
             value={state.routeLabel}
-            onChange={(e) =>
-              update(
-                "routeLabel",
-                e.target.value as IntakeState["routeLabel"]
-              )
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              if (value === "" || value === "oral" || value === "mixed" || value === "unspecified") {
+                update("routeLabel", value as IntakeState["routeLabel"]);
+              }
+            }}
           >
             <option value="">Chọn (ví dụ: qua đường miệng)</option>
             <option value="oral">Chủ yếu lượng ăn vào qua đường miệng</option>

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GlobalDisclaimerBanner } from "./components/GlobalDisclaimerBanner";
+import { ErrorBoundary } from "./components/ErrorBoundary";
+import { SkipLinks } from "./components/SkipLinks";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +16,52 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Giáo dục Dinh dưỡng Lâm sàng & Công cụ",
+  title: {
+    default: "Giáo dục Dinh dưỡng Lâm sàng & Công cụ",
+    template: "%s | Giáo dục Dinh dưỡng Lâm sàng",
+  },
   description:
     "Nền tảng giáo dục công cộng giải thích các khái niệm dinh dưỡng lâm sàng và cung cấp công cụ tương tác hỗ trợ (nhưng không thay thế) tư duy lâm sàng.",
+  keywords: [
+    "dinh dưỡng lâm sàng",
+    "giáo dục y tế",
+    "đánh giá dinh dưỡng",
+    "sàng lọc suy dinh dưỡng",
+    "nhu cầu năng lượng",
+    "nhu cầu protein",
+    "NRS-2002",
+    "PG-SGA",
+  ],
+  authors: [{ name: "Clinical Nutrition Education" }],
+  openGraph: {
+    type: "website",
+    locale: "vi_VN",
+    url: "https://clinical-nutrition.edu.vn",
+    title: "Giáo dục Dinh dưỡng Lâm sàng & Công cụ",
+    description:
+      "Nền tảng giáo dục công cộng giải thích các khái niệm dinh dưỡng lâm sàng và cung cấp công cụ tương tác hỗ trợ (nhưng không thay thế) tư duy lâm sàng.",
+    siteName: "Giáo dục Dinh dưỡng Lâm sàng",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Giáo dục Dinh dưỡng Lâm sàng & Công cụ",
+    description:
+      "Nền tảng giáo dục công cộng giải thích các khái niệm dinh dưỡng lâm sàng và cung cấp công cụ tương tác.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    // Add verification codes if available
+  },
 };
 
 export default function RootLayout({
@@ -29,8 +74,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <GlobalDisclaimerBanner />
-        {children}
+        <ErrorBoundary>
+          <SkipLinks />
+          <GlobalDisclaimerBanner />
+          <main id="main-content">{children}</main>
+        </ErrorBoundary>
       </body>
     </html>
   );

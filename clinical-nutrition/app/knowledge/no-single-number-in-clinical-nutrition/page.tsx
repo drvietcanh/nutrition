@@ -49,12 +49,12 @@ export default function WhyNoUniversalNumberPage() {
           <p>
             Đó là câu hỏi nhiều người trong chúng ta đã hỏi—dù bạn là bác sĩ lâm sàng mới vào nghề, y tá tham gia
             chăm sóc dinh dưỡng, sinh viên y khoa đang học, hoặc ai đó tò mò về cách dinh dưỡng lâm sàng
-            thực sự hoạt động. Có vẻ như nó nên đơn giản: nhập cân nặng, tuổi và tình trạng của bệnh nhân,
-            nhận câu trả lời, và làm theo nó.
+            thực sự hoạt động. Có vẻ như nó nên đơn giản: nhập cân nặng, tuổi và bối cảnh lâm sàng,
+            nhận một con số, và “làm theo”.
           </p>
           <p>
-            Và thành thật mà nói, điều đó sẽ dễ hơn. Một con số duy nhất, rõ ràng sẽ làm cho việc lập kế hoạch đơn giản hơn và quyết định
-            thẳng thắn hơn. Nhưng đây là điều: <strong>dinh dưỡng lâm sàng không hoạt động theo cách đó</strong>.
+            Thực tế, điều đó sẽ dễ hơn. Một con số duy nhất, rõ ràng sẽ làm cho việc lập kế hoạch đơn giản hơn và quyết định
+            nhanh hơn. Nhưng <strong>dinh dưỡng lâm sàng không vận hành theo cách đó</strong>.
             Không có con số phổ quát nào áp dụng cho tất cả mọi người, hoặc thậm chí cho cùng một người trong các tình huống khác nhau.
           </p>
           <p>

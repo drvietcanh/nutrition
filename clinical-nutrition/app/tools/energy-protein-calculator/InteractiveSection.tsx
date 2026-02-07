@@ -8,6 +8,12 @@ import {
   type EnergyProteinEducationalResult,
   type EstimationMethod,
 } from "../../../lib/calculators/energyProtein";
+import {
+  validateWeight,
+  validateHeight,
+  validateAge,
+} from "../../../lib/utils/validation";
+import { parseNumber } from "../../../lib/utils/formatting";
 
 type MethodTab = EstimationMethod | "both";
 
@@ -38,6 +44,7 @@ export function InteractiveSection() {
     useState<EnergyProteinEducationalResult | null>(null);
   const [equationResult, setEquationResult] =
     useState<EnergyProteinEducationalResult | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
 
   const toClinicalInput = (): ClinicalInput => {
     const toNumberOrNull = (value: string): number | null => {
@@ -59,13 +66,53 @@ export function InteractiveSection() {
   };
 
   const handleEstimate = () => {
+    // Validate required fields
+    const errors: Record<string, string> = {};
+    
+    const weight = parseNumber(form.weightKg);
+    const weightValidation = validateWeight(weight);
+    if (!weightValidation.isValid && weightValidation.error) {
+      errors.weightKg = weightValidation.error;
+    }
+
+    // Height is required for equation method
+    if (activeMethod === "equation-educational" || activeMethod === "both") {
+      const height = parseNumber(form.heightCm);
+      const heightValidation = validateHeight(height);
+      if (!heightValidation.isValid && heightValidation.error) {
+        errors.heightCm = heightValidation.error;
+      }
+    }
+
+    const age = parseNumber(form.ageYears);
+    if (age != null) {
+      const ageValidation = validateAge(age);
+      if (!ageValidation.isValid && ageValidation.error) {
+        errors.ageYears = ageValidation.error;
+      }
+    }
+
+    setFieldErrors(errors);
+
+    // If there are errors, don't proceed
+    if (Object.keys(errors).length > 0) {
+      return;
+    }
+
     const input = toClinicalInput();
 
-    if (activeMethod === "simple-weight-based" || activeMethod === "both") {
-      setSimpleResult(calculateSimpleWeightBasedNeeds(input));
-    }
-    if (activeMethod === "equation-educational" || activeMethod === "both") {
-      setEquationResult(calculateEquationStyleNeeds(input));
+    try {
+      if (activeMethod === "simple-weight-based" || activeMethod === "both") {
+        setSimpleResult(calculateSimpleWeightBasedNeeds(input));
+      }
+      if (activeMethod === "equation-educational" || activeMethod === "both") {
+        setEquationResult(calculateEquationStyleNeeds(input));
+      }
+    } catch (error) {
+      console.error("Error calculating needs:", error);
+      setFieldErrors({
+        _general: "Đã xảy ra lỗi khi tính toán. Vui lòng kiểm tra lại các giá trị đã nhập.",
+      });
     }
   };
 
@@ -80,6 +127,14 @@ export function InteractiveSection() {
         form={form}
         onChange={setForm}
         onEstimate={handleEstimate}
+        errors={fieldErrors}
+        onClearError={(field) => {
+          setFieldErrors((prev) => {
+            const next = { ...prev };
+            delete next[field];
+            return next;
+          });
+        }}
       />
 
       <ResultPanel
@@ -99,27 +154,27 @@ interface MethodSelectorProps {
 // Lets the user switch between simple weight-based and equation-style views.
 function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
   return (
-    <section aria-labelledby="method-selector-heading" className="space-y-3">
+    <section aria-labelledby="method-selector-heading" className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
       <h2
         id="method-selector-heading"
-        className="text-base font-semibold sm:text-lg"
+        className="text-lg font-semibold text-gray-900 sm:text-xl"
       >
         3. Chọn phương pháp ước tính
       </h2>
-      <p className="text-sm text-neutral-700 sm:text-base">
+      <p className="text-sm leading-relaxed text-neutral-700 sm:text-base">
         Các cách tiếp cận khác nhau để ước tính nhu cầu trả lời
         các câu hỏi hơi khác nhau. Sử dụng phần này để so sánh một
         quy tắc đơn giản dựa trên cân nặng với một ước tính
         điều chỉnh stress, kiểu phương trình.
       </p>
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3 pt-2">
         <button
           type="button"
           onClick={() => onChange("simple-weight-based")}
-          className={`rounded-md border px-3 py-2 text-sm shadow-sm ${
+          className={`rounded-lg border-2 px-4 py-2.5 text-sm font-medium transition-all focus-ring ${
             activeMethod === "simple-weight-based"
-              ? "border-neutral-800 bg-neutral-900 text-white"
-              : "border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50"
+              ? "border-blue-600 bg-blue-600 text-white shadow-md hover:bg-blue-700"
+              : "border-neutral-300 bg-white text-neutral-900 shadow-sm hover:border-blue-300 hover:bg-blue-50"
           }`}
         >
           Đơn giản dựa trên cân nặng
@@ -127,10 +182,10 @@ function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
         <button
           type="button"
           onClick={() => onChange("equation-educational")}
-          className={`rounded-md border px-3 py-2 text-sm shadow-sm ${
+          className={`rounded-lg border-2 px-4 py-2.5 text-sm font-medium transition-all focus-ring ${
             activeMethod === "equation-educational"
-              ? "border-neutral-800 bg-neutral-900 text-white"
-              : "border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50"
+              ? "border-blue-600 bg-blue-600 text-white shadow-md hover:bg-blue-700"
+              : "border-neutral-300 bg-white text-neutral-900 shadow-sm hover:border-blue-300 hover:bg-blue-50"
           }`}
         >
           Kiểu phương trình (giáo dục)
@@ -138,10 +193,10 @@ function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
         <button
           type="button"
           onClick={() => onChange("both")}
-          className={`rounded-md border px-3 py-2 text-sm shadow-sm ${
+          className={`rounded-lg border-2 px-4 py-2.5 text-sm font-medium transition-all focus-ring ${
             activeMethod === "both"
-              ? "border-neutral-800 bg-neutral-900 text-white"
-              : "border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50"
+              ? "border-blue-600 bg-blue-600 text-white shadow-md hover:bg-blue-700"
+              : "border-neutral-300 bg-white text-neutral-900 shadow-sm hover:border-blue-300 hover:bg-blue-50"
           }`}
         >
           So sánh cả hai
@@ -159,70 +214,101 @@ interface InputFormProps {
   form: FormState;
   onChange: (next: FormState) => void;
   onEstimate: () => void;
+  errors: Record<string, string>;
+  onClearError: (field: string) => void;
 }
 
 // Collects anonymous, session-only inputs needed for weight-based reasoning.
-function InputForm({ form, onChange, onEstimate }: InputFormProps) {
+function InputForm({ form, onChange, onEstimate, errors, onClearError }: InputFormProps) {
   const update = <K extends keyof FormState>(
     key: K,
     value: FormState[K]
   ) => onChange({ ...form, [key]: value });
 
   return (
-    <section aria-labelledby="inputs-heading" className="space-y-3">
-      <h2 id="inputs-heading" className="text-base font-semibold sm:text-lg">
-        4. Nhập thông tin lâm sàng ví dụ
-      </h2>
-      <p className="text-sm text-neutral-700 sm:text-base">
-        Chỉ sử dụng giá trị giả định, ẩn danh. Mục đích là hiểu cách
-        cân nặng và bối cảnh lâm sàng định hình nhu cầu ước tính, không phải để
-        quản lý bệnh nhân thực tế.
-      </p>
+    <section aria-labelledby="inputs-heading" className="space-y-4">
+      <div className="rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
+        <h2 id="inputs-heading" className="text-lg font-semibold text-gray-900 sm:text-xl mb-3">
+          4. Nhập thông tin lâm sàng ví dụ
+        </h2>
+        <p className="text-sm leading-relaxed text-neutral-700 sm:text-base mb-5">
+          Chỉ sử dụng giá trị giả định, ẩn danh. Mục đích là hiểu cách
+          cân nặng và bối cảnh lâm sàng định hình nhu cầu ước tính, không phải để
+          quản lý bệnh nhân thực tế.
+        </p>
 
-      <form
-        className="grid gap-4 rounded-md border border-neutral-200 bg-white p-4 sm:grid-cols-2 sm:gap-6"
+        <form
+          className="grid gap-5 sm:grid-cols-2 sm:gap-6"
         onSubmit={(event) => {
           event.preventDefault();
           onEstimate();
         }}
+        aria-label="Form nhập thông tin lâm sàng để tính toán nhu cầu năng lượng và protein"
+        noValidate
       >
+        <div role="alert" aria-live="polite" aria-atomic="true" className="sr-only">
+          {Object.keys(errors).length > 0 && (
+            <span>
+              Có {Object.keys(errors).length} lỗi trong form. Vui lòng kiểm tra lại.
+            </span>
+          )}
+        </div>
         {/* Age */}
-        <div className="space-y-1">
+        <div className="space-y-2">
           <label
-            className="block text-xs font-medium text-neutral-800 sm:text-sm"
+            htmlFor="ageYears"
+            className="block text-sm font-medium text-neutral-800 sm:text-base"
             title="Tại sao quan trọng: một số phương trình và hướng dẫn điều chỉnh nhu cầu cho người lớn tuổi hoặc trẻ hơn."
           >
             Tuổi (năm)
           </label>
           <input
+            id="ageYears"
             type="number"
             inputMode="numeric"
             min={0}
-            className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
+            className={`w-full rounded-lg border px-3 py-2 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
+              errors.ageYears 
+                ? "border-red-500 bg-red-50" 
+                : "border-neutral-300 bg-white hover:border-neutral-400"
+            }`}
             placeholder="ví dụ: 65"
             value={form.ageYears}
-            onChange={(e) => update("ageYears", e.target.value)}
+            onChange={(e) => {
+              update("ageYears", e.target.value);
+              if (errors.ageYears) onClearError("ageYears");
+            }}
+            aria-invalid={!!errors.ageYears}
+            aria-describedby={errors.ageYears ? "ageYears-error ageYears-help" : "ageYears-help"}
           />
-          <p className="text-xs text-neutral-600">
+          {errors.ageYears && (
+            <p id="ageYears-error" className="text-xs font-medium text-red-600" role="alert">
+              {errors.ageYears}
+            </p>
+          )}
+          <p id="ageYears-help" className="text-xs leading-relaxed text-neutral-600">
             Ví dụ: một người 30 tuổi và một người 85 tuổi với cùng cân nặng có thể
             có nhu cầu và khả năng chịu đựng khác nhau.
           </p>
         </div>
 
         {/* Sex */}
-        <div className="space-y-1">
+        <div className="space-y-2">
           <label
-            className="block text-xs font-medium text-neutral-800 sm:text-sm"
+            htmlFor="sex"
+            className="block text-sm font-medium text-neutral-800 sm:text-base"
             title="Tại sao quan trọng: giá trị tham chiếu và thành phần cơ thể thường khác nhau theo giới tính."
           >
             Giới tính (cho giá trị tham chiếu)
           </label>
           <select
-            className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
+            id="sex"
+            className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm transition-colors hover:border-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             value={form.sex ?? ""}
-            onChange={(e) =>
-              update("sex", (e.target.value || null) as FormState["sex"])
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              update("sex", value === "" ? null : (value as ClinicalInput["sex"]));
+            }}
           >
             <option value="">Chọn (tùy chọn)</option>
             <option value="female">Nữ</option>
@@ -231,74 +317,112 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
             <option value="unspecified">Không xác định</option>
             <option value="unknown">Không biết</option>
           </select>
-          <p className="text-xs text-neutral-600">
+          <p className="text-xs leading-relaxed text-neutral-600">
             Ví dụ: một số phương trình sử dụng giới tính như một trong nhiều biến đầu vào.
           </p>
         </div>
 
         {/* Weight */}
-        <div className="space-y-1">
+        <div className="space-y-2">
           <label
-            className="block text-xs font-medium text-neutral-800 sm:text-sm"
+            htmlFor="weightKg"
+            className="block text-sm font-medium text-neutral-800 sm:text-base"
             title="Tại sao quan trọng: hầu hết các phương pháp tại giường sử dụng cân nặng cơ thể như điểm neo chính cho phạm vi năng lượng và protein."
           >
-            Cân nặng hiện tại (kg)
+            Cân nặng hiện tại (kg) <span className="text-red-600">*</span>
           </label>
           <input
+            id="weightKg"
             type="number"
             inputMode="decimal"
             min={0}
-            className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
+            step="0.1"
+            className={`w-full rounded-lg border px-3 py-2 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
+              errors.weightKg 
+                ? "border-red-500 bg-red-50" 
+                : "border-neutral-300 bg-white hover:border-neutral-400"
+            }`}
             placeholder="ví dụ: 70"
             value={form.weightKg}
-            onChange={(e) => update("weightKg", e.target.value)}
+            onChange={(e) => {
+              update("weightKg", e.target.value);
+              if (errors.weightKg) onClearError("weightKg");
+            }}
+            aria-invalid={!!errors.weightKg}
+            aria-describedby={errors.weightKg ? "weightKg-error weightKg-help" : "weightKg-help"}
+            required
           />
-          <p className="text-xs text-neutral-600">
+          {errors.weightKg && (
+            <p id="weightKg-error" className="text-xs font-medium text-red-600" role="alert">
+              {errors.weightKg}
+            </p>
+          )}
+          <p id="weightKg-help" className="text-xs leading-relaxed text-neutral-600">
             Ví dụ: sử dụng 70&nbsp;kg với quy tắc 25–30 kcal/kg cho khoảng
             1750–2100&nbsp;kcal/ngày như một phạm vi khởi đầu.
           </p>
         </div>
 
         {/* Height */}
-        <div className="space-y-1">
+        <div className="space-y-2">
           <label
-            className="block text-xs font-medium text-neutral-800 sm:text-sm"
+            htmlFor="heightCm"
+            className="block text-sm font-medium text-neutral-800 sm:text-base"
             title="Tại sao quan trọng: chiều cao giúp giải thích cân nặng (ví dụ, qua BMI hoặc cân nặng điều chỉnh trong béo phì)."
           >
             Chiều cao (cm)
           </label>
           <input
+            id="heightCm"
             type="number"
             inputMode="decimal"
             min={0}
-            className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
+            step="0.1"
+            className={`w-full rounded-lg border px-3 py-2 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
+              errors.heightCm 
+                ? "border-red-500 bg-red-50" 
+                : "border-neutral-300 bg-white hover:border-neutral-400"
+            }`}
             placeholder="ví dụ: 170"
             value={form.heightCm}
-            onChange={(e) => update("heightCm", e.target.value)}
+            onChange={(e) => {
+              update("heightCm", e.target.value);
+              if (errors.heightCm) onClearError("heightCm");
+            }}
+            aria-invalid={!!errors.heightCm}
+            aria-describedby={errors.heightCm ? "heightCm-error heightCm-help" : "heightCm-help"}
           />
-          <p className="text-xs text-neutral-600">
+          {errors.heightCm && (
+            <p id="heightCm-error" className="text-xs font-medium text-red-600" role="alert">
+              {errors.heightCm}
+            </p>
+          )}
+          <p id="heightCm-help" className="text-xs leading-relaxed text-neutral-600">
             Ví dụ: 70&nbsp;kg ở 170&nbsp;cm có bối cảnh khác với
             70&nbsp;kg ở 150&nbsp;cm.
           </p>
         </div>
 
         {/* Disease context */}
-        <div className="space-y-1 sm:col-span-2">
+        <div className="space-y-2 sm:col-span-2">
           <label
-            className="block text-xs font-medium text-neutral-800 sm:text-sm"
+            htmlFor="diseaseContextCode"
+            className="block text-sm font-medium text-neutral-800 sm:text-base"
             title="Tại sao quan trọng: bối cảnh lâm sàng stress cao hơn (ví dụ: phẫu thuật lớn, nhiễm trùng huyết, ICU) thường dẫn đến nhu cầu ước tính cao hơn."
           >
             Bối cảnh lâm sàng (bệnh tật / mức độ stress, tùy chọn)
           </label>
           <select
-            className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
+            id="diseaseContextCode"
+            className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm transition-colors hover:border-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             value={form.diseaseContextCode ?? ""}
-            onChange={(e) =>
+            onChange={(e) => {
+              const value = e.target.value;
               update(
                 "diseaseContextCode",
-                (e.target.value || null) as FormState["diseaseContextCode"]
-              )
-            }
+                value === "" ? null : (value as ClinicalInput["diseaseContextCode"])
+              );
+            }}
           >
             <option value="">
               Chọn (tùy chọn, ví dụ: ổn định / bệnh nhẹ)
@@ -322,7 +446,7 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
             <option value="hepatic">Bệnh gan</option>
             <option value="other">Khác / hỗn hợp</option>
           </select>
-          <p className="text-xs text-neutral-600">
+          <p className="text-xs leading-relaxed text-neutral-600">
             Ví dụ: chọn &quot;Bệnh nặng / chăm sóc cấp cứu&quot; sẽ
             minh họa cách điều chỉnh stress có thể đẩy phạm vi lên cao hơn so
             với khoa nội khoa chung ổn định.
@@ -330,15 +454,17 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
         </div>
 
         {/* Activity level (optional) */}
-        <div className="space-y-1">
+        <div className="space-y-2">
           <label
-            className="block text-xs font-medium text-neutral-800 sm:text-sm"
+            htmlFor="activityLevel"
+            className="block text-sm font-medium text-neutral-800 sm:text-base"
             title="Tại sao quan trọng: bệnh nhân di chuyển nhiều hơn thường có tiêu hao năng lượng cao hơn một chút so với những người nằm liệt giường nghiêm ngặt."
           >
             Mức độ hoạt động (tùy chọn)
           </label>
           <select
-            className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
+            id="activityLevel"
+            className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm transition-colors hover:border-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             value={form.activityLevel}
             onChange={(e) =>
               update("activityLevel", e.target.value as FormState["activityLevel"])
@@ -353,22 +479,24 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
               Di chuyển trong khoa (đi bộ độc lập, phục hồi chức năng)
             </option>
           </select>
-          <p className="text-xs text-neutral-600">
+          <p className="text-xs leading-relaxed text-neutral-600">
             Ví dụ: một bệnh nhân di chuyển độc lập có thể dung nạp cuối cao hơn
             của phạm vi năng lượng dễ dàng hơn so với ai đó nằm liệt giường nghiêm ngặt.
           </p>
         </div>
 
         {/* Obesity / underweight flag (optional, educational) */}
-        <div className="space-y-1">
+        <div className="space-y-2">
           <label
-            className="block text-xs font-medium text-neutral-800 sm:text-sm"
+            htmlFor="bodySizeFlag"
+            className="block text-sm font-medium text-neutral-800 sm:text-base"
             title="Tại sao quan trọng: kích thước cơ thể rất thấp hoặc rất cao có thể thay đổi cách các bác sĩ lâm sàng sử dụng quy tắc đơn giản dựa trên cân nặng và khi nào họ xem xét cân nặng điều chỉnh."
           >
             Bối cảnh kích thước cơ thể (tùy chọn, giáo dục)
           </label>
           <select
-            className="w-full rounded-md border border-neutral-300 px-2 py-1 text-sm"
+            id="bodySizeFlag"
+            className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm transition-colors hover:border-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             value={form.bodySizeFlag}
             onChange={(e) =>
               update("bodySizeFlag", e.target.value as FormState["bodySizeFlag"])
@@ -380,21 +508,29 @@ function InputForm({ form, onChange, onEstimate }: InputFormProps) {
               Béo phì (nơi cân nặng điều chỉnh có thể được thảo luận)
             </option>
           </select>
-          <p className="text-xs text-neutral-600">
+          <p className="text-xs leading-relaxed text-neutral-600">
             Ví dụ: trong béo phì nặng, một số nhóm thảo luận sử dụng cân nặng điều chỉnh hoặc
             cân nặng lý tưởng khi áp dụng quy tắc g/kg.
           </p>
         </div>
 
-        <div className="sm:col-span-2">
+        {errors._general && (
+          <div className="sm:col-span-2 rounded-lg border-2 border-red-300 bg-red-50 p-4">
+            <p className="text-sm font-medium text-red-800" role="alert">
+              {errors._general}
+            </p>
+          </div>
+        )}
+        <div className="sm:col-span-2 pt-2">
           <button
             type="submit"
-            className="inline-flex items-center rounded-md border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800"
+            className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-blue-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 active:bg-blue-800"
           >
             Hiển thị phạm vi giáo dục
           </button>
         </div>
       </form>
+      </div>
     </section>
   );
 }
@@ -453,7 +589,7 @@ interface SingleMethodResultProps {
 function SingleMethodResult({ heading, result }: SingleMethodResultProps) {
   if (!result) {
     return (
-      <div className="rounded-md border border-dashed border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-700">
+      <div className="rounded-lg border-2 border-dashed border-neutral-300 bg-neutral-50 p-6 text-center text-sm leading-relaxed text-neutral-700">
         Nhập giá trị ví dụ và chạy ước tính để xem cách tiếp cận này
         khung nhu cầu năng lượng và protein hàng ngày.
       </div>

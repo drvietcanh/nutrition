@@ -71,7 +71,7 @@ export default function ToolsIndexPage() {
           <CardContent>
             <p className="text-gray-700 leading-relaxed">
               So sánh lượng dinh dưỡng thực tế ăn vào với nhu cầu ước tính. Hiểu khoảng cách giữa 
-              nhu cầu tính toán và lượng ăn thực tế, và các yếu tố thực tế tạo ra những khoảng cách này.
+              nhu cầu ước tính và lượng ăn thực tế, cùng các yếu tố thực tế tạo ra những khoảng cách này.
             </p>
           </CardContent>
           <CardFooter>
