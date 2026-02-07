@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Activity, Calculator, UtensilsCrossed, ArrowRight } from "lucide-react";
+import { Activity, Calculator, UtensilsCrossed, ArrowRight, Ruler, Droplet, AlertTriangle, Pill } from "lucide-react";
 import { Card, CardHeader, CardContent, CardFooter } from "../components/Card";
 import { Breadcrumb } from "../components/Breadcrumb";
 
@@ -79,6 +79,90 @@ export default function ToolsIndexPage() {
           <CardFooter>
             <Link
               href="/tools/intake-vs-needs"
+              className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
+            >
+              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/tools/bmi-body-composition">
+          <CardHeader
+            icon={Ruler}
+            title="BMI & Thành phần Cơ thể – Công cụ Giảng dạy"
+          />
+          <CardContent>
+            <p className="text-body">
+              Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt Cơ thể (BSA).
+              Hiểu cách các chỉ số này được sử dụng trong đánh giá dinh dưỡng lâm sàng.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/tools/bmi-body-composition"
+              className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
+            >
+              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/tools/fluid-requirements">
+          <CardHeader
+            icon={Droplet}
+            title="Nhu cầu Dịch – Công cụ Giảng dạy"
+          />
+          <CardContent>
+            <p className="text-body">
+              Tính nhu cầu dịch hàng ngày sử dụng các quy tắc giáo dục và điều chỉnh dựa trên
+              tình trạng lâm sàng. Hiểu cách cân bằng dịch được quản lý trong thực hành lâm sàng.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/tools/fluid-requirements"
+              className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
+            >
+              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/tools/refeeding-syndrome-risk">
+          <CardHeader
+            icon={AlertTriangle}
+            title="Đánh giá Nguy cơ Hội chứng Tái cho Ăn – Công cụ Giảng dạy"
+          />
+          <CardContent>
+            <p className="text-body">
+              Đánh giá nguy cơ hội chứng tái cho ăn dựa trên các yếu tố nguy cơ lâm sàng.
+              Hiểu tầm quan trọng của đánh giá nguy cơ trước khi bắt đầu dinh dưỡng.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/tools/refeeding-syndrome-risk"
+              className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
+            >
+              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+            </Link>
+          </CardFooter>
+        </Card>
+
+        <Card href="/tools/micronutrient-assessment">
+          <CardHeader
+            icon={Pill}
+            title="Đánh giá Vi chất – Công cụ Giảng dạy"
+          />
+          <CardContent>
+            <p className="text-body">
+              Ước tính nhu cầu vi chất (vitamin và khoáng chất) dựa trên tuổi, giới tính,
+              và tình trạng lâm sàng. Hiểu tầm quan trọng của vi chất trong dinh dưỡng lâm sàng.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/tools/micronutrient-assessment"
               className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
             >
               Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
