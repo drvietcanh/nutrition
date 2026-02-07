@@ -156,6 +156,27 @@ export default function KnowledgePage() {
             </Link>
           </CardFooter>
         </Card>
+
+        <Card href="/knowledge/diabetes-nutrition">
+          <CardHeader
+            icon={Activity}
+            title="Dinh dưỡng trong Đái tháo đường"
+          />
+          <CardContent>
+            <p className="text-body">
+              Hướng dẫn giáo dục về carbohydrate counting, quản lý đường huyết, và các nguyên tắc dinh dưỡng
+              dựa trên bằng chứng để kiểm soát đái tháo đường type 1 và type 2.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/diabetes-nutrition"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
+            </Link>
+          </CardFooter>
+        </Card>
       </section>
 
       <Card>
