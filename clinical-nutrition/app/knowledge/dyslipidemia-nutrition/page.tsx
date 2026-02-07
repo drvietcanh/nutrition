@@ -301,6 +301,32 @@ export default function DyslipidemiaNutritionPage() {
         </div>
       </section>
 
+      {/* Related Tools */}
+      <section aria-labelledby="tools-heading" className="space-y-4">
+        <h2 id="tools-heading" className="heading-3">
+          Công cụ Liên quan
+        </h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Card href="/tools/energy-protein-calculator">
+            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính toán nhu cầu năng lượng và protein, đặc biệt hữu ích nếu bệnh nhân cần giảm cân
+                để cải thiện lipid profile.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/bmi-body-composition">
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardContent>
+              <p className="text-body-sm">
+                Đánh giá BMI và thành phần cơ thể, quan trọng trong quản lý cân nặng cho bệnh nhân rối loạn lipid máu.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       <section aria-labelledby="safety-heading" className="space-y-4">
         <h2 id="safety-heading" className="heading-3">Nhắc nhở An toàn</h2>
         <Callout variant="error" title="Quan trọng">
