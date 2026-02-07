@@ -1,9 +1,33 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
 import { ToolStepIndicator } from "../components/ToolStepIndicator";
 import { ToolNavigation } from "../components/ToolNavigation";
 import { Ruler } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "BMI & Thành phần Cơ thể",
+  description:
+    "Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt Cơ thể (BSA). Công cụ giáo dục để hiểu cách các chỉ số này được sử dụng trong đánh giá dinh dưỡng lâm sàng.",
+  keywords: [
+    "BMI",
+    "body mass index",
+    "IBW",
+    "ideal body weight",
+    "ABW",
+    "adjusted body weight",
+    "BSA",
+    "body surface area",
+    "dinh dưỡng lâm sàng",
+  ],
+  openGraph: {
+    title: "BMI & Thành phần Cơ thể – Công cụ Giảng dạy",
+    description:
+      "Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt Cơ thể (BSA). Công cụ giáo dục để hiểu cách các chỉ số này được sử dụng trong đánh giá dinh dưỡng lâm sàng.",
+    url: "https://clinical-nutrition.edu.vn/tools/bmi-body-composition",
+  },
+};
 
 const InteractiveSection = dynamic(
   () =>

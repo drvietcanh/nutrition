@@ -1,6 +1,29 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
+
+export const metadata: Metadata = {
+  title: "Nhu cầu Năng lượng & Protein",
+  description:
+    "Tính toán nhu cầu năng lượng và protein ước tính dựa trên các phương trình tiêu chuẩn. Hiểu vì sao nhu cầu là ước tính (khoảng) chứ không phải số chính xác, và cách các yếu tố như tuổi, giới tính, và bối cảnh bệnh ảnh hưởng đến tính toán.",
+  keywords: [
+    "nhu cầu năng lượng",
+    "nhu cầu protein",
+    "energy requirements",
+    "protein requirements",
+    "dinh dưỡng lâm sàng",
+    "BEE",
+    "BMR",
+    "REE",
+  ],
+  openGraph: {
+    title: "Nhu cầu Năng lượng & Protein – Công cụ Giảng dạy",
+    description:
+      "Tính toán nhu cầu năng lượng và protein ước tính dựa trên các phương trình tiêu chuẩn. Hiểu vì sao nhu cầu là ước tính (khoảng) chứ không phải số chính xác, và cách các yếu tố như tuổi, giới tính, và bối cảnh bệnh ảnh hưởng đến tính toán.",
+    url: "https://clinical-nutrition.edu.vn/tools/energy-protein-calculator",
+  },
+};
 
 const InteractiveSection = dynamic(() => import("./InteractiveSection").then(mod => ({ default: mod.InteractiveSection })), {
   loading: () => (

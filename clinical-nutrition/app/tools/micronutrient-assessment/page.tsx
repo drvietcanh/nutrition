@@ -1,9 +1,31 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
 import { ToolStepIndicator } from "../components/ToolStepIndicator";
 import { ToolNavigation } from "../components/ToolNavigation";
 import { Pill } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Đánh giá Vi chất",
+  description:
+    "Ước tính nhu cầu vi chất (vitamin và khoáng chất) dựa trên tuổi, giới tính, và tình trạng lâm sàng. Công cụ giáo dục để hiểu tầm quan trọng của vi chất trong dinh dưỡng lâm sàng.",
+  keywords: [
+    "vi chất",
+    "micronutrients",
+    "vitamin",
+    "khoáng chất",
+    "RDA",
+    "DRI",
+    "dinh dưỡng lâm sàng",
+  ],
+  openGraph: {
+    title: "Đánh giá Vi chất – Công cụ Giảng dạy",
+    description:
+      "Ước tính nhu cầu vi chất (vitamin và khoáng chất) dựa trên tuổi, giới tính, và tình trạng lâm sàng. Công cụ giáo dục để hiểu tầm quan trọng của vi chất trong dinh dưỡng lâm sàng.",
+    url: "https://clinical-nutrition.edu.vn/tools/micronutrient-assessment",
+  },
+};
 
 const InteractiveSection = dynamic(
   () =>

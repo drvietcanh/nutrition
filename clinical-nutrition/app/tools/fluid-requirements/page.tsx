@@ -1,9 +1,30 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
 import { ToolStepIndicator } from "../components/ToolStepIndicator";
 import { ToolNavigation } from "../components/ToolNavigation";
 import { Droplet } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Nhu cầu Dịch",
+  description:
+    "Tính nhu cầu dịch hàng ngày sử dụng các quy tắc giáo dục (Holliday-Segar, 30-35ml/kg) và điều chỉnh dựa trên tình trạng lâm sàng. Công cụ giáo dục để hiểu cách cân bằng dịch được quản lý trong thực hành lâm sàng.",
+  keywords: [
+    "nhu cầu dịch",
+    "fluid requirements",
+    "Holliday-Segar",
+    "cân bằng dịch",
+    "fluid balance",
+    "dinh dưỡng lâm sàng",
+  ],
+  openGraph: {
+    title: "Nhu cầu Dịch – Công cụ Giảng dạy",
+    description:
+      "Tính nhu cầu dịch hàng ngày sử dụng các quy tắc giáo dục (Holliday-Segar, 30-35ml/kg) và điều chỉnh dựa trên tình trạng lâm sàng. Công cụ giáo dục để hiểu cách cân bằng dịch được quản lý trong thực hành lâm sàng.",
+    url: "https://clinical-nutrition.edu.vn/tools/fluid-requirements",
+  },
+};
 
 const InteractiveSection = dynamic(
   () =>

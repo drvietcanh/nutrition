@@ -1,9 +1,30 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { ToolStepIndicator } from "../components/ToolStepIndicator";
 import { ToolNavigation } from "../components/ToolNavigation";
 import { Activity, AlertCircle, CheckCircle } from "lucide-react";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
+
+export const metadata: Metadata = {
+  title: "Nguy cơ Suy Dinh dưỡng",
+  description:
+    "Khám phá cách các công cụ sàng lọc phổ biến (NRS-2002, PG-SGA) đánh giá nguy cơ suy dinh dưỡng sử dụng các đầu vào ví dụ đơn giản. Hiểu cách sụt cân, giảm lượng ăn, và bối cảnh bệnh ảnh hưởng đến đánh giá nguy cơ.",
+  keywords: [
+    "sàng lọc suy dinh dưỡng",
+    "malnutrition screening",
+    "NRS-2002",
+    "PG-SGA",
+    "đánh giá nguy cơ",
+    "dinh dưỡng lâm sàng",
+  ],
+  openGraph: {
+    title: "Nguy cơ Suy Dinh dưỡng – Công cụ Giảng dạy",
+    description:
+      "Khám phá cách các công cụ sàng lọc phổ biến (NRS-2002, PG-SGA) đánh giá nguy cơ suy dinh dưỡng sử dụng các đầu vào ví dụ đơn giản. Hiểu cách sụt cân, giảm lượng ăn, và bối cảnh bệnh ảnh hưởng đến đánh giá nguy cơ.",
+    url: "https://clinical-nutrition.edu.vn/tools/malnutrition-screening",
+  },
+};
 
 const InteractiveSection = dynamic(() => import("./InteractiveSection").then(mod => ({ default: mod.InteractiveSection })), {
   loading: () => (
