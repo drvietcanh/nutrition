@@ -1,7 +1,12 @@
 import Link from "next/link";
-import { AlertCircle, ClipboardCheck, Calculator, FileText, UtensilsCrossed, BookOpen, Activity } from "lucide-react";
+import { BookOpen, Activity, ArrowRight } from "lucide-react";
 import { Card, CardHeader, CardContent, CardFooter } from "../components/Card";
 import { Breadcrumb } from "../components/Breadcrumb";
+
+export const metadata = {
+  title: "Cơ sở Kiến thức Dinh dưỡng Lâm sàng",
+  description: "Nội dung giáo dục về dinh dưỡng lâm sàng, bao gồm cơ sở kiến thức và dinh dưỡng trong bệnh mạn tính.",
+};
 
 export default function KnowledgePage() {
   return (
@@ -12,14 +17,55 @@ export default function KnowledgePage() {
           <BookOpen className="w-8 h-8 text-blue-600" aria-hidden="true" />
           <h1 className="heading-1">
             Cơ sở Kiến thức Dinh dưỡng Lâm sàng
-        </h1>
+          </h1>
         </div>
         <p className="text-body-lg">
-          Nội dung giáo dục giải thích các khái niệm dinh dưỡng lâm sàng, quy trình đánh giá, và lập luận lâm sàng.
+          Nội dung giáo dục về dinh dưỡng lâm sàng được tổ chức thành hai phần chính:
+          <strong> Cơ sở Kiến thức Dinh dưỡng Lâm sàng</strong> và <strong>Dinh dưỡng trong Bệnh Mạn tính</strong>.
         </p>
       </header>
 
+      {/* Clinical Foundations Section */}
       <section className="space-y-6">
+        <div className="flex items-center gap-3">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+          <h2 className="heading-2 whitespace-nowrap">
+            Cơ sở Kiến thức Dinh dưỡng Lâm sàng
+          </h2>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+        </div>
+        
+        <Card href="/knowledge/clinical-foundations">
+          <CardHeader
+            icon={BookOpen}
+            title="Cơ sở Kiến thức Dinh dưỡng Lâm sàng"
+          />
+          <CardContent>
+            <p className="text-body">
+              Nội dung giáo dục giải thích các khái niệm dinh dưỡng lâm sàng, quy trình đánh giá, và lập luận lâm sàng.
+              Tìm hiểu cách các bác sĩ lâm sàng suy nghĩ về dinh dưỡng và cách áp dụng các nguyên tắc này trong thực hành.
+            </p>
+            <ul className="list-disc space-y-2 pl-6 text-body-sm mt-4 text-neutral-700">
+              <li>Hiểu lầm & Quan niệm Sai trong Dinh dưỡng Lâm sàng</li>
+              <li>Đánh giá Dinh dưỡng Lâm sàng: Quy trình Đầy đủ</li>
+              <li>Ước tính Nhu cầu Dinh dưỡng</li>
+              <li>Đánh giá Lượng Ăn</li>
+              <li>Và nhiều hơn nữa...</li>
+            </ul>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/clinical-foundations"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Xem tất cả bài viết <ArrowRight className="w-4 h-4 ml-1" />
+            </Link>
+          </CardFooter>
+        </Card>
+      </section>
+
+      {/* Chronic Diseases Section */}
+      <section className="space-y-6 mt-8">
         <Card href="/knowledge/myths-in-clinical-nutrition">
           <CardHeader
             icon={AlertCircle}
@@ -126,8 +172,6 @@ export default function KnowledgePage() {
         </Card>
       </section>
 
-      {/* Chronic Disease Nutrition Section */}
-      <section className="space-y-6 mt-8">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 className="heading-2 whitespace-nowrap">
@@ -136,212 +180,29 @@ export default function KnowledgePage() {
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        <Card href="/knowledge/hypertension-nutrition">
+        <Card href="/knowledge/chronic-diseases">
           <CardHeader
             icon={Activity}
-            title="Dinh dưỡng trong Tăng huyết áp"
+            title="Dinh dưỡng trong Bệnh Mạn tính"
           />
           <CardContent>
             <p className="text-body">
-              Hướng dẫn giáo dục về DASH diet, quản lý natri và kali, và các nguyên tắc dinh dưỡng
-              dựa trên bằng chứng để kiểm soát tăng huyết áp.
+              Hướng dẫn giáo dục về dinh dưỡng trong các bệnh mạn tính phổ biến. Mỗi bài viết bao gồm các nguyên tắc dinh dưỡng
+              dựa trên bằng chứng, điều chỉnh theo giai đoạn bệnh, quản lý biến chứng, và theo dõi.
             </p>
+            <ul className="list-disc space-y-2 pl-6 text-body-sm mt-4 text-neutral-700">
+              <li>Tăng huyết áp, Đái tháo đường, Suy tim</li>
+              <li>Rối loạn Lipid máu, Bệnh thận mạn (CKD), Lọc máu</li>
+              <li>Bệnh gan mạn, Bệnh viêm ruột (IBD), COPD</li>
+              <li>Ung thư (Tổng quan)</li>
+            </ul>
           </CardContent>
           <CardFooter>
             <Link
-              href="/knowledge/hypertension-nutrition"
+              href="/knowledge/chronic-diseases"
               className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
             >
-              Đọc thêm →
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card href="/knowledge/diabetes-nutrition">
-          <CardHeader
-            icon={Activity}
-            title="Dinh dưỡng trong Đái tháo đường"
-          />
-          <CardContent>
-            <p className="text-body">
-              Hướng dẫn giáo dục về carbohydrate counting, quản lý đường huyết, và các nguyên tắc dinh dưỡng
-              dựa trên bằng chứng để kiểm soát đái tháo đường type 1 và type 2.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/knowledge/diabetes-nutrition"
-              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
-            >
-              Đọc thêm →
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card href="/knowledge/heart-failure-nutrition">
-          <CardHeader
-            icon={Activity}
-            title="Dinh dưỡng trong Suy tim"
-          />
-          <CardContent>
-            <p className="text-body">
-              Hướng dẫn giáo dục về quản lý natri, dịch, và cân nặng trong suy tim. Bao gồm điều chỉnh theo
-              mức độ suy tim (NYHA class) và quản lý biến chứng.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/knowledge/heart-failure-nutrition"
-              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
-            >
-              Đọc thêm →
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card href="/knowledge/dyslipidemia-nutrition">
-          <CardHeader
-            icon={Activity}
-            title="Dinh dưỡng trong Rối loạn Lipid máu"
-          />
-          <CardContent>
-            <p className="text-body">
-              Hướng dẫn giáo dục về quản lý chất béo, cholesterol, và triglycerides. Bao gồm chế độ ăn
-              lành mạnh cho tim mạch và điều chỉnh theo loại rối loạn lipid.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/knowledge/dyslipidemia-nutrition"
-              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
-            >
-              Đọc thêm →
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card href="/knowledge/ckd-nutrition">
-          <CardHeader
-            icon={Activity}
-            title="Dinh dưỡng trong Bệnh thận mạn (CKD)"
-          />
-          <CardContent>
-            <p className="text-body">
-              Hướng dẫn giáo dục về dinh dưỡng trong bệnh thận mạn theo giai đoạn. Bao gồm quản lý protein,
-              phosphorus, potassium, natri, và dịch để làm chậm tiến triển và quản lý biến chứng.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/knowledge/ckd-nutrition"
-              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
-            >
-              Đọc thêm →
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card href="/knowledge/dialysis-nutrition">
-          <CardHeader
-            icon={Activity}
-            title="Dinh dưỡng trong Lọc máu"
-          />
-          <CardContent>
-            <p className="text-body">
-              Hướng dẫn giáo dục về dinh dưỡng cho bệnh nhân lọc máu (hemodialysis và peritoneal dialysis).
-              Bao gồm điều chỉnh protein, phosphorus, potassium, và dịch.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/knowledge/dialysis-nutrition"
-              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
-            >
-              Đọc thêm →
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card href="/knowledge/liver-disease-nutrition">
-          <CardHeader
-            icon={Activity}
-            title="Dinh dưỡng trong Bệnh gan mạn"
-          />
-          <CardContent>
-            <p className="text-body">
-              Hướng dẫn giáo dục về dinh dưỡng trong bệnh gan mạn (viêm gan, xơ gan). Bao gồm quản lý protein,
-              natri, dịch, và vi chất, cũng như quản lý cổ trướng và bệnh não gan.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/knowledge/liver-disease-nutrition"
-              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
-            >
-              Đọc thêm →
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card href="/knowledge/ibd-nutrition">
-          <CardHeader
-            icon={Activity}
-            title="Dinh dưỡng trong Bệnh viêm ruột (IBD)"
-          />
-          <CardContent>
-            <p className="text-body">
-              Hướng dẫn giáo dục về dinh dưỡng trong Crohn's disease và Ulcerative Colitis. Bao gồm quản lý
-              năng lượng, protein, vi chất, và điều chỉnh theo đợt cấp và thời kỳ ổn định.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/knowledge/ibd-nutrition"
-              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
-            >
-              Đọc thêm →
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card href="/knowledge/copd-nutrition">
-          <CardHeader
-            icon={Activity}
-            title="Dinh dưỡng trong COPD"
-          />
-          <CardContent>
-            <p className="text-body">
-              Hướng dẫn giáo dục về dinh dưỡng trong bệnh phổi tắc nghẽn mạn tính. Bao gồm quản lý năng lượng,
-              protein, và điều chỉnh carbohydrate/chất béo để giảm gánh hô hấp.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/knowledge/copd-nutrition"
-              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
-            >
-              Đọc thêm →
-            </Link>
-          </CardFooter>
-        </Card>
-
-        <Card href="/knowledge/cancer-nutrition">
-          <CardHeader
-            icon={Activity}
-            title="Dinh dưỡng trong Ung thư (Tổng quan)"
-          />
-          <CardContent>
-            <p className="text-body">
-              Hướng dẫn giáo dục tổng quan về dinh dưỡng trong ung thư. Bao gồm quản lý năng lượng, protein,
-              vi chất, quản lý tác dụng phụ điều trị, và hỗ trợ điều trị.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/knowledge/cancer-nutrition"
-              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
-            >
-              Đọc thêm →
+              Xem tất cả bài viết <ArrowRight className="w-4 h-4 ml-1" />
             </Link>
           </CardFooter>
         </Card>
