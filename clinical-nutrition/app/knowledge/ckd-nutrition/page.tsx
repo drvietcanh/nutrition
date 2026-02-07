@@ -357,16 +357,37 @@ export default function CKDNutritionPage() {
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">Công cụ Liên quan</h2>
         <div className="grid gap-4 sm:grid-cols-2">
-          <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Máy tính Nhu cầu Dịch" />
+          <Card href="/tools/energy-protein-calculator">
+            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
             <CardContent>
-              <p className="text-body-sm">Tính toán nhu cầu dịch với điều chỉnh cho bệnh thận.</p>
+              <p className="text-body-sm">
+                Tính toán nhu cầu protein theo giai đoạn CKD, đặc biệt quan trọng để cân bằng giữa hạn chế protein
+                và phòng ngừa suy dinh dưỡng.
+              </p>
             </CardContent>
           </Card>
           <Card href="/tools/micronutrient-assessment">
             <CardHeader icon={CheckCircle} title="Đánh giá Vi chất" />
             <CardContent>
-              <p className="text-body-sm">Đánh giá nhu cầu vi chất với điều chỉnh cho bệnh thận.</p>
+              <p className="text-body-sm">
+                Ước tính nhu cầu vi chất như phosphorus, potassium, vitamin D - rất quan trọng trong quản lý CKD.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/fluid-requirements">
+            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính nhu cầu dịch, đặc biệt quan trọng từ giai đoạn 4-5 khi cần hạn chế dịch dựa trên lượng nước tiểu.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/bmi-body-composition">
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardContent>
+              <p className="text-body-sm">
+                Đánh giá BMI và thành phần cơ thể, quan trọng để theo dõi tình trạng dinh dưỡng và phát hiện suy dinh dưỡng.
+              </p>
             </CardContent>
           </Card>
         </div>
