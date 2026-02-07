@@ -1,8 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Activity, AlertCircle, CheckCircle, Info, AlertTriangle } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong Ung thư (Tổng quan)",
+  description:
+    "Hướng dẫn giáo dục tổng quan về dinh dưỡng trong ung thư. Bao gồm quản lý năng lượng, protein, vi chất, quản lý tác dụng phụ điều trị, và hỗ trợ điều trị.",
+  keywords: [
+    "ung thư",
+    "cancer",
+    "dinh dưỡng ung thư",
+    "cancer nutrition",
+    "tác dụng phụ điều trị",
+    "hỗ trợ điều trị",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong Ung thư (Tổng quan)",
+    description:
+      "Hướng dẫn giáo dục tổng quan về dinh dưỡng trong ung thư. Bao gồm quản lý năng lượng, protein, vi chất, quản lý tác dụng phụ điều trị, và hỗ trợ điều trị.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/cancer-nutrition",
+  },
+};
 
 export default function CancerNutritionPage() {
   return (

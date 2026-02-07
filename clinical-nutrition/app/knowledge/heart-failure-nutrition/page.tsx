@@ -1,8 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Heart, AlertCircle, CheckCircle, Info, AlertTriangle } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong Suy tim",
+  description:
+    "Hướng dẫn giáo dục về quản lý natri, dịch, và cân nặng trong suy tim. Bao gồm điều chỉnh theo mức độ suy tim (NYHA class) và quản lý biến chứng.",
+  keywords: [
+    "suy tim",
+    "dinh dưỡng suy tim",
+    "quản lý natri",
+    "quản lý dịch",
+    "NYHA",
+    "heart failure",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong Suy tim",
+    description:
+      "Hướng dẫn giáo dục về quản lý natri, dịch, và cân nặng trong suy tim. Bao gồm điều chỉnh theo mức độ suy tim (NYHA class) và quản lý biến chứng.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/heart-failure-nutrition",
+  },
+};
 
 export default function HeartFailureNutritionPage() {
   return (

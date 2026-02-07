@@ -1,8 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Activity, AlertCircle, CheckCircle, Info, AlertTriangle } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong Đái tháo đường",
+  description:
+    "Hướng dẫn giáo dục về carbohydrate counting, quản lý đường huyết, và các nguyên tắc dinh dưỡng dựa trên bằng chứng để kiểm soát đái tháo đường type 1 và type 2.",
+  keywords: [
+    "đái tháo đường",
+    "dinh dưỡng đái tháo đường",
+    "carbohydrate counting",
+    "quản lý đường huyết",
+    "type 1 diabetes",
+    "type 2 diabetes",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong Đái tháo đường",
+    description:
+      "Hướng dẫn giáo dục về carbohydrate counting, quản lý đường huyết, và các nguyên tắc dinh dưỡng dựa trên bằng chứng để kiểm soát đái tháo đường type 1 và type 2.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/diabetes-nutrition",
+  },
+};
 
 export default function DiabetesNutritionPage() {
   return (

@@ -1,8 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Activity, AlertCircle, CheckCircle, Info } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong COPD",
+  description:
+    "Hướng dẫn giáo dục về dinh dưỡng trong bệnh phổi tắc nghẽn mạn tính. Bao gồm quản lý năng lượng, protein, và điều chỉnh carbohydrate/chất béo để giảm gánh hô hấp.",
+  keywords: [
+    "COPD",
+    "bệnh phổi tắc nghẽn mạn tính",
+    "dinh dưỡng COPD",
+    "gánh hô hấp",
+    "carbohydrate",
+    "chất béo",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong COPD",
+    description:
+      "Hướng dẫn giáo dục về dinh dưỡng trong bệnh phổi tắc nghẽn mạn tính. Bao gồm quản lý năng lượng, protein, và điều chỉnh carbohydrate/chất béo để giảm gánh hô hấp.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/copd-nutrition",
+  },
+};
 
 export default function COPDNutritionPage() {
   return (

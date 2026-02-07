@@ -1,8 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Heart, AlertCircle, CheckCircle, Info } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong Tăng huyết áp",
+  description:
+    "Hướng dẫn giáo dục về DASH diet, quản lý natri và kali, và các nguyên tắc dinh dưỡng dựa trên bằng chứng để kiểm soát tăng huyết áp.",
+  keywords: [
+    "tăng huyết áp",
+    "dinh dưỡng tăng huyết áp",
+    "DASH diet",
+    "quản lý natri",
+    "kali",
+    "bệnh tim mạch",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong Tăng huyết áp",
+    description:
+      "Hướng dẫn giáo dục về DASH diet, quản lý natri và kali, và các nguyên tắc dinh dưỡng dựa trên bằng chứng để kiểm soát tăng huyết áp.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/hypertension-nutrition",
+  },
+};
 
 export default function HypertensionNutritionPage() {
   return (

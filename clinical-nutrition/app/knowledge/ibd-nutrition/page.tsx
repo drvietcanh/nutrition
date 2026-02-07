@@ -1,8 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Activity, AlertCircle, CheckCircle, Info } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong Bệnh viêm ruột (IBD)",
+  description:
+    "Hướng dẫn giáo dục về dinh dưỡng trong Crohn's disease và Ulcerative Colitis. Bao gồm quản lý năng lượng, protein, vi chất, và điều chỉnh theo đợt cấp và thời kỳ ổn định.",
+  keywords: [
+    "bệnh viêm ruột",
+    "IBD",
+    "Crohn's disease",
+    "Ulcerative Colitis",
+    "viêm ruột",
+    "dinh dưỡng IBD",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong Bệnh viêm ruột (IBD)",
+    description:
+      "Hướng dẫn giáo dục về dinh dưỡng trong Crohn's disease và Ulcerative Colitis. Bao gồm quản lý năng lượng, protein, vi chất, và điều chỉnh theo đợt cấp và thời kỳ ổn định.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/ibd-nutrition",
+  },
+};
 
 export default function IBDNutritionPage() {
   return (

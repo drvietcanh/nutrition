@@ -1,8 +1,30 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Activity, AlertCircle, CheckCircle, Info } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong Lọc máu",
+  description:
+    "Hướng dẫn giáo dục về dinh dưỡng cho bệnh nhân lọc máu (hemodialysis và peritoneal dialysis). Bao gồm điều chỉnh protein, phosphorus, potassium, và dịch.",
+  keywords: [
+    "lọc máu",
+    "dialysis",
+    "hemodialysis",
+    "peritoneal dialysis",
+    "dinh dưỡng lọc máu",
+    "protein",
+    "phosphorus",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong Lọc máu",
+    description:
+      "Hướng dẫn giáo dục về dinh dưỡng cho bệnh nhân lọc máu (hemodialysis và peritoneal dialysis). Bao gồm điều chỉnh protein, phosphorus, potassium, và dịch.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/dialysis-nutrition",
+  },
+};
 
 export default function DialysisNutritionPage() {
   return (

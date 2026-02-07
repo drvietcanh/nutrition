@@ -1,8 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Activity, AlertCircle, CheckCircle, Info, AlertTriangle } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong Bệnh thận mạn (CKD)",
+  description:
+    "Hướng dẫn giáo dục về dinh dưỡng trong bệnh thận mạn theo giai đoạn. Bao gồm quản lý protein, phosphorus, potassium, natri, và dịch để làm chậm tiến triển và quản lý biến chứng.",
+  keywords: [
+    "bệnh thận mạn",
+    "CKD",
+    "chronic kidney disease",
+    "protein restriction",
+    "phosphorus",
+    "potassium",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong Bệnh thận mạn (CKD)",
+    description:
+      "Hướng dẫn giáo dục về dinh dưỡng trong bệnh thận mạn theo giai đoạn. Bao gồm quản lý protein, phosphorus, potassium, natri, và dịch để làm chậm tiến triển và quản lý biến chứng.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/ckd-nutrition",
+  },
+};
 
 export default function CKDNutritionPage() {
   return (

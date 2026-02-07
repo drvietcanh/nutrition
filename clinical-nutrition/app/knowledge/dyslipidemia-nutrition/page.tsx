@@ -1,8 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Activity, AlertCircle, CheckCircle, Info } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong Rối loạn Lipid máu",
+  description:
+    "Hướng dẫn giáo dục về quản lý chất béo, cholesterol, và triglycerides. Bao gồm chế độ ăn lành mạnh cho tim mạch và điều chỉnh theo loại rối loạn lipid.",
+  keywords: [
+    "rối loạn lipid máu",
+    "dyslipidemia",
+    "cholesterol",
+    "triglycerides",
+    "chế độ ăn tim mạch",
+    "chất béo",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong Rối loạn Lipid máu",
+    description:
+      "Hướng dẫn giáo dục về quản lý chất béo, cholesterol, và triglycerides. Bao gồm chế độ ăn lành mạnh cho tim mạch và điều chỉnh theo loại rối loạn lipid.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/dyslipidemia-nutrition",
+  },
+};
 
 export default function DyslipidemiaNutritionPage() {
   return (

@@ -1,8 +1,30 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Activity, AlertCircle, CheckCircle, Info, AlertTriangle } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Dinh dưỡng trong Bệnh gan mạn",
+  description:
+    "Hướng dẫn giáo dục về dinh dưỡng trong bệnh gan mạn (viêm gan, xơ gan). Bao gồm quản lý protein, natri, dịch, và vi chất, cũng như quản lý cổ trướng và bệnh não gan.",
+  keywords: [
+    "bệnh gan mạn",
+    "xơ gan",
+    "cirrhosis",
+    "viêm gan",
+    "hepatitis",
+    "cổ trướng",
+    "bệnh não gan",
+  ],
+  openGraph: {
+    title: "Dinh dưỡng trong Bệnh gan mạn",
+    description:
+      "Hướng dẫn giáo dục về dinh dưỡng trong bệnh gan mạn (viêm gan, xơ gan). Bao gồm quản lý protein, natri, dịch, và vi chất, cũng như quản lý cổ trướng và bệnh não gan.",
+    url: "https://clinical-nutrition.edu.vn/knowledge/liver-disease-nutrition",
+  },
+};
 
 export default function LiverDiseaseNutritionPage() {
   return (
