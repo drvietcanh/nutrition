@@ -126,6 +126,38 @@ export default function KnowledgePage() {
         </Card>
       </section>
 
+      {/* Chronic Disease Nutrition Section */}
+      <section className="space-y-6 mt-8">
+        <div className="flex items-center gap-3">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+          <h2 className="heading-2 whitespace-nowrap">
+            Dinh dưỡng trong Bệnh Mạn tính
+          </h2>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+        </div>
+
+        <Card href="/knowledge/hypertension-nutrition">
+          <CardHeader
+            icon={Activity}
+            title="Dinh dưỡng trong Tăng huyết áp"
+          />
+          <CardContent>
+            <p className="text-body">
+              Hướng dẫn giáo dục về DASH diet, quản lý natri và kali, và các nguyên tắc dinh dưỡng
+              dựa trên bằng chứng để kiểm soát tăng huyết áp.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/knowledge/hypertension-nutrition"
+              className="inline-flex items-center text-base font-medium text-blue-700 hover:text-blue-900"
+            >
+              Đọc thêm →
+            </Link>
+          </CardFooter>
+        </Card>
+      </section>
+
       <Card>
         <CardHeader
           icon={Activity}
