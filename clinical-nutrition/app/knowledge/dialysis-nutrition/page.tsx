@@ -390,16 +390,37 @@ export default function DialysisNutritionPage() {
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">Công cụ Liên quan</h2>
         <div className="grid gap-4 sm:grid-cols-2">
-          <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Máy tính Nhu cầu Dịch" />
+          <Card href="/tools/energy-protein-calculator">
+            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
             <CardContent>
-              <p className="text-body-sm">Tính toán nhu cầu dịch với điều chỉnh cho lọc máu.</p>
+              <p className="text-body-sm">
+                Tính toán nhu cầu protein cao (1.2-1.5 g/kg) và năng lượng cho bệnh nhân lọc máu,
+                đặc biệt quan trọng để phòng ngừa suy dinh dưỡng.
+              </p>
             </CardContent>
           </Card>
           <Card href="/tools/micronutrient-assessment">
             <CardHeader icon={CheckCircle} title="Đánh giá Vi chất" />
             <CardContent>
-              <p className="text-body-sm">Đánh giá nhu cầu vi chất với điều chỉnh cho lọc máu.</p>
+              <p className="text-body-sm">
+                Ước tính nhu cầu vi chất như phosphorus, potassium, vitamin D - rất quan trọng trong quản lý lọc máu.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/fluid-requirements">
+            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính nhu cầu dịch với điều chỉnh cho lọc máu, đặc biệt quan trọng trong quản lý quá tải dịch.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/bmi-body-composition">
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardContent>
+              <p className="text-body-sm">
+                Đánh giá BMI và thành phần cơ thể, quan trọng để theo dõi tình trạng dinh dưỡng và phát hiện suy dinh dưỡng.
+              </p>
             </CardContent>
           </Card>
         </div>

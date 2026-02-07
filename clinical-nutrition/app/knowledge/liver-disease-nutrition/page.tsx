@@ -139,6 +139,37 @@ export default function LiverDiseaseNutritionPage() {
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
+        {/* Liver Disease Stages Table */}
+        <div className="overflow-x-auto my-4">
+          <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+            <thead className="bg-neutral-50">
+              <tr>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mức độ Bệnh</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Protein</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Natri</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Dịch</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-neutral-200">
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Viêm gan / Xơ gan bù</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">1.2-1.5 g/kg</td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Bình thường hoặc hạn chế nếu cổ trướng</td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Bình thường hoặc hạn chế nếu cổ trướng</td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Dinh dưỡng tương đối bình thường</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Xơ gan mất bù</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">1.2-1.5 g/kg (giảm tạm thời nếu bệnh não gan)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2g/ngày</td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Hạn chế nghiêm ngặt</td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Quản lý cổ trướng, bệnh não gan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
         <div className="space-y-4 rounded-lg border border-blue-200 bg-blue-50/50 p-5">
           <h3 className="heading-4">Viêm gan / Xơ gan bù</h3>
           <ul className="list-disc space-y-2 pl-6 text-body-sm">
@@ -223,13 +254,61 @@ export default function LiverDiseaseNutritionPage() {
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          <ul className="list-disc space-y-2 pl-6 text-body-sm">
-            <li>Chức năng gan (ALT, AST, bilirubin, albumin)</li>
-            <li>Cân nặng</li>
-            <li>Dấu hiệu cổ trướng</li>
-            <li>Dấu hiệu bệnh não gan</li>
-            <li>Vi chất (kẽm, vitamin D)</li>
-          </ul>
+          <p>
+            Theo dõi đều đặn là quan trọng để đánh giá hiệu quả của can thiệp dinh dưỡng và điều chỉnh khi cần:
+          </p>
+          
+          {/* Monitoring Parameters Table */}
+          <div className="overflow-x-auto my-4">
+            <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+              <thead className="bg-neutral-50">
+                <tr>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thông số</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tần suất</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu/Giá trị bình thường</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-neutral-200">
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Albumin</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&gt; 3.5 g/dL</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá chức năng gan và tình trạng dinh dưỡng</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>ALT, AST, Bilirubin</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Theo mức độ bệnh</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá chức năng gan</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cân nặng</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Hàng ngày (nếu có cổ trướng)</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Duy trì ổn định</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Theo dõi cổ trướng, suy dinh dưỡng</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Kẽm</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Nếu có triệu chứng hoặc nghi ngờ thiếu</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">70-120 mcg/dL</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Thường thiếu trong bệnh gan</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Vitamin D</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 6-12 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">&gt; 20 ng/mL</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Thường thiếu, có thể cần bổ sung</td>
+                </tr>
+                <tr className="bg-neutral-50">
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Dấu hiệu bệnh não gan</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi lần khám</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Không có</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá lâm sàng, có thể cần điều chỉnh protein</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -263,6 +342,31 @@ export default function LiverDiseaseNutritionPage() {
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">Công cụ Liên quan</h2>
         <div className="grid gap-4 sm:grid-cols-2">
+          <Card href="/tools/energy-protein-calculator">
+            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính toán nhu cầu protein cao (1.2-1.5 g/kg) và năng lượng cho bệnh nhân bệnh gan,
+                đặc biệt quan trọng để phòng ngừa suy dinh dưỡng.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/micronutrient-assessment">
+            <CardHeader icon={CheckCircle} title="Đánh giá Vi chất" />
+            <CardContent>
+              <p className="text-body-sm">
+                Ước tính nhu cầu vi chất như kẽm, vitamin D - rất quan trọng trong quản lý bệnh gan.
+              </p>
+            </CardContent>
+          </Card>
+          <Card href="/tools/fluid-requirements">
+            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardContent>
+              <p className="text-body-sm">
+                Tính nhu cầu dịch với điều chỉnh cho bệnh gan, đặc biệt quan trọng nếu có cổ trướng.
+              </p>
+            </CardContent>
+          </Card>
           <Card href="/tools/refeeding-syndrome-risk">
             <CardHeader icon={CheckCircle} title="Đánh giá Nguy cơ Tái cho Ăn" />
             <CardContent>
