@@ -19,6 +19,16 @@ import {
   AlertTriangle,
   Pill,
   Search,
+  TrendingUp,
+  Leaf,
+  Wheat,
+  Sun,
+  Shield,
+  Calendar,
+  Baby,
+  Users,
+  DollarSign,
+  Apple,
 } from "lucide-react";
 
 interface NavItem {
@@ -63,6 +73,46 @@ const knowledgeGroups: NavGroup[] = [
         href: "/knowledge/why-intake-falls-short",
         icon: FileText,
       },
+      {
+        label: "Chỉ số Đường huyết (GI) và GL",
+        href: "/knowledge/glycemic-index-load",
+        icon: Calculator,
+      },
+      {
+        label: "Chất béo trong Chế độ Ăn",
+        href: "/knowledge/dietary-fats",
+        icon: Heart,
+      },
+      {
+        label: "Chất xơ trong Dinh dưỡng",
+        href: "/knowledge/dietary-fiber",
+        icon: FileText,
+      },
+      {
+        label: "Natri (Muối) và Sức khỏe",
+        href: "/knowledge/sodium-health",
+        icon: AlertCircle,
+      },
+      {
+        label: "Carbohydrate (Tinh bột và Đường)",
+        href: "/knowledge/carbohydrates",
+        icon: Calculator,
+      },
+      {
+        label: "Dinh dưỡng Người cao tuổi",
+        href: "/knowledge/elderly-nutrition",
+        icon: FileText,
+      },
+      {
+        label: "Hydration: Nước và Dịch",
+        href: "/knowledge/hydration",
+        icon: Droplet,
+      },
+      {
+        label: "Tổng quan Chất Dinh dưỡng Đa lượng",
+        href: "/knowledge/macronutrients-overview",
+        icon: FileText,
+      },
     ],
   },
   {
@@ -103,6 +153,130 @@ const knowledgeGroups: NavGroup[] = [
         label: "Ung thư",
         href: "/knowledge/cancer-nutrition",
         icon: Heart,
+      },
+    ],
+  },
+  {
+    label: "Vitamin & Khoáng chất",
+    href: "/knowledge/vitamins-minerals",
+    items: [
+      {
+        label: "Vitamin D và Sức khỏe Xương",
+        href: "/knowledge/vitamins-minerals/vitamin-d",
+        icon: Sun,
+      },
+      {
+        label: "Sắt và Thiếu máu",
+        href: "/knowledge/vitamins-minerals/iron-anemia",
+        icon: Droplet,
+      },
+      {
+        label: "Canxi và Sức khỏe Xương",
+        href: "/knowledge/vitamins-minerals/calcium-bone-health",
+        icon: Heart,
+      },
+      {
+        label: "Vitamin B12 và Năng lượng",
+        href: "/knowledge/vitamins-minerals/vitamin-b12-energy",
+        icon: Activity,
+      },
+      {
+        label: "Kali và Huyết áp",
+        href: "/knowledge/vitamins-minerals/potassium-blood-pressure",
+        icon: Heart,
+      },
+      {
+        label: "Kẽm và Miễn dịch",
+        href: "/knowledge/vitamins-minerals/zinc-immunity",
+        icon: Shield,
+      },
+    ],
+  },
+  {
+    label: "Dinh dưỡng Hàng ngày",
+    href: "/knowledge/daily-practices",
+    items: [
+      {
+        label: "Đọc Nhãn Thực phẩm",
+        href: "/knowledge/daily-practices/reading-food-labels",
+        icon: FileText,
+      },
+      {
+        label: "Lập Kế hoạch Bữa ăn",
+        href: "/knowledge/daily-practices/meal-planning",
+        icon: Calendar,
+      },
+      {
+        label: "Phương pháp Nấu ăn Lành mạnh",
+        href: "/knowledge/daily-practices/healthy-cooking-methods",
+        icon: UtensilsCrossed,
+      },
+      {
+        label: "Ăn uống Lành mạnh khi Đi ăn Ngoài",
+        href: "/knowledge/daily-practices/eating-out-healthy",
+        icon: UtensilsCrossed,
+      },
+      {
+        label: "Snacking Thông minh",
+        href: "/knowledge/daily-practices/smart-snacking",
+        icon: Leaf,
+      },
+      {
+        label: "Dinh dưỡng với Ngân sách Hạn hẹp",
+        href: "/knowledge/daily-practices/nutrition-on-budget",
+        icon: DollarSign,
+      },
+    ],
+  },
+  {
+    label: "Dinh dưỡng Theo Độ tuổi",
+    href: "/knowledge/life-stages",
+    items: [
+      {
+        label: "Dinh dưỡng cho Phụ nữ Mang thai",
+        href: "/knowledge/life-stages/pregnancy-nutrition",
+        icon: Baby,
+      },
+      {
+        label: "Dinh dưỡng Người cao tuổi",
+        href: "/knowledge/elderly-nutrition",
+        icon: Users,
+      },
+      {
+        label: "Dinh dưỡng cho Trẻ em và Thanh thiếu niên",
+        href: "/knowledge/life-stages/children-nutrition",
+        icon: Baby,
+      },
+    ],
+  },
+  {
+    label: "Chủ đề Đặc biệt",
+    href: "/knowledge/special-topics",
+    items: [
+      {
+        label: "Sức khỏe Đường ruột và Probiotics",
+        href: "/knowledge/special-topics/gut-health-probiotics",
+        icon: Heart,
+      },
+      {
+        label: "Omega-3 và Sức khỏe Tim mạch",
+        href: "/knowledge/special-topics/omega-3-heart-health",
+        icon: Heart,
+      },
+      {
+        label: "Quản lý Cân nặng Lành mạnh",
+        href: "/knowledge/special-topics/healthy-weight-management",
+        icon: TrendingUp,
+      },
+      {
+        label: "Hiểu lầm Dinh dưỡng Phổ biến",
+        href: "/knowledge/special-topics/nutrition-myths-public",
+        icon: AlertCircle,
+      },
+      {
+        label: "Chất chống Oxy hóa trong Thực phẩm",
+        href: "/knowledge/special-topics/antioxidants-foods",
+        icon: Leaf,
       },
     ],
   },

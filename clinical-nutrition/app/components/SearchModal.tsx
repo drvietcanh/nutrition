@@ -40,6 +40,54 @@ const searchIndex: SearchResult[] = [
     description: "Hiểu người bệnh thực sự nhận được gì",
   },
   {
+    title: "Chỉ số Đường huyết (GI) và Tải lượng Đường huyết (GL)",
+    href: "/knowledge/glycemic-index-load",
+    category: "knowledge",
+    description: "Hiểu cách thực phẩm ảnh hưởng đến đường huyết",
+  },
+  {
+    title: "Chất béo trong Chế độ Ăn",
+    href: "/knowledge/dietary-fats",
+    category: "knowledge",
+    description: "Hiểu các loại chất béo và ảnh hưởng sức khỏe",
+  },
+  {
+    title: "Chất xơ trong Dinh dưỡng Lâm sàng",
+    href: "/knowledge/dietary-fiber",
+    category: "knowledge",
+    description: "Hiểu về chất xơ hòa tan và không hòa tan, lợi ích sức khỏe",
+  },
+  {
+    title: "Natri (Muối) và Sức khỏe",
+    href: "/knowledge/sodium-health",
+    category: "knowledge",
+    description: "Hiểu về natri trong chế độ ăn và cách giảm natri",
+  },
+  {
+    title: "Carbohydrate (Tinh bột và Đường)",
+    href: "/knowledge/carbohydrates",
+    category: "knowledge",
+    description: "Hiểu về carbohydrate - nguồn năng lượng chính",
+  },
+  {
+    title: "Dinh dưỡng cho Người cao tuổi",
+    href: "/knowledge/elderly-nutrition",
+    category: "knowledge",
+    description: "Hướng dẫn dinh dưỡng cho người cao tuổi",
+  },
+  {
+    title: "Hydration: Nước và Dịch",
+    href: "/knowledge/hydration",
+    category: "knowledge",
+    description: "Hiểu về nhu cầu nước và hydration",
+  },
+  {
+    title: "Tổng quan về các Chất Dinh dưỡng Đa lượng",
+    href: "/knowledge/macronutrients-overview",
+    category: "knowledge",
+    description: "Tổng quan về carbohydrate, protein, và chất béo",
+  },
+  {
     title: "Vì sao Lượng Ăn Thường Thiếu",
     href: "/knowledge/why-intake-falls-short",
     category: "knowledge",
@@ -59,6 +107,125 @@ const searchIndex: SearchResult[] = [
     title: "Dinh dưỡng Suy tim",
     href: "/knowledge/heart-failure-nutrition",
     category: "knowledge",
+  },
+  // Vitamin & Khoáng chất
+  {
+    title: "Vitamin D và Sức khỏe Xương",
+    href: "/knowledge/vitamins-minerals/vitamin-d",
+    category: "knowledge",
+    description: "Hiểu về vitamin D - vai trò quan trọng trong sức khỏe xương, nguồn thực phẩm, và cách đảm bảo đủ vitamin D",
+  },
+  {
+    title: "Sắt và Thiếu máu",
+    href: "/knowledge/vitamins-minerals/iron-anemia",
+    category: "knowledge",
+    description: "Hiểu về sắt - khoáng chất quan trọng để tạo máu, nguồn thực phẩm giàu sắt, và cách phòng ngừa thiếu máu",
+  },
+  {
+    title: "Canxi và Sức khỏe Xương",
+    href: "/knowledge/vitamins-minerals/calcium-bone-health",
+    category: "knowledge",
+    description: "Hiểu về canxi - khoáng chất quan trọng nhất cho xương chắc khỏe, nguồn thực phẩm giàu canxi",
+  },
+  {
+    title: "Vitamin B12 và Năng lượng",
+    href: "/knowledge/vitamins-minerals/vitamin-b12-energy",
+    category: "knowledge",
+    description: "Hiểu về vitamin B12 - vitamin quan trọng cho năng lượng, tạo máu, và chức năng thần kinh",
+  },
+  {
+    title: "Kali và Huyết áp",
+    href: "/knowledge/vitamins-minerals/potassium-blood-pressure",
+    category: "knowledge",
+    description: "Hiểu về kali - khoáng chất quan trọng giúp kiểm soát huyết áp, nguồn thực phẩm giàu kali",
+  },
+  {
+    title: "Kẽm và Miễn dịch",
+    href: "/knowledge/vitamins-minerals/zinc-immunity",
+    category: "knowledge",
+    description: "Hiểu về kẽm - khoáng chất quan trọng cho hệ miễn dịch, chữa lành vết thương, và tăng trưởng",
+  },
+  // Dinh dưỡng Hàng ngày
+  {
+    title: "Đọc Nhãn Thực phẩm: Hướng dẫn Đơn giản",
+    href: "/knowledge/daily-practices/reading-food-labels",
+    category: "knowledge",
+    description: "Hướng dẫn cách đọc và hiểu nhãn thực phẩm để chọn lựa thực phẩm lành mạnh",
+  },
+  {
+    title: "Lập Kế hoạch Bữa ăn Hàng ngày",
+    href: "/knowledge/daily-practices/meal-planning",
+    category: "knowledge",
+    description: "Hướng dẫn cách lập kế hoạch bữa ăn đơn giản, thực tế để đảm bảo dinh dưỡng đầy đủ",
+  },
+  // Dinh dưỡng Theo Độ tuổi
+  {
+    title: "Dinh dưỡng cho Phụ nữ Mang thai",
+    href: "/knowledge/life-stages/pregnancy-nutrition",
+    category: "knowledge",
+    description: "Hướng dẫn dinh dưỡng cho phụ nữ mang thai - nhu cầu đặc biệt về sắt, axit folic, canxi",
+  },
+  // Dinh dưỡng Hàng ngày (tiếp)
+  {
+    title: "Phương pháp Nấu ăn Lành mạnh",
+    href: "/knowledge/daily-practices/healthy-cooking-methods",
+    category: "knowledge",
+    description: "Hướng dẫn các phương pháp nấu ăn lành mạnh giúp giữ lại dinh dưỡng, giảm chất béo",
+  },
+  {
+    title: "Ăn uống Lành mạnh khi Đi ăn Ngoài",
+    href: "/knowledge/daily-practices/eating-out-healthy",
+    category: "knowledge",
+    description: "Hướng dẫn cách chọn lựa thực phẩm lành mạnh khi đi ăn ngoài, tips cho nhà hàng",
+  },
+  {
+    title: "Snacking Thông minh",
+    href: "/knowledge/daily-practices/smart-snacking",
+    category: "knowledge",
+    description: "Hướng dẫn cách snack thông minh - chọn snack lành mạnh, kiểm soát khẩu phần",
+  },
+  {
+    title: "Dinh dưỡng với Ngân sách Hạn hẹp",
+    href: "/knowledge/daily-practices/nutrition-on-budget",
+    category: "knowledge",
+    description: "Hướng dẫn cách ăn uống lành mạnh với ngân sách hạn hẹp - chọn thực phẩm giá trị dinh dưỡng cao",
+  },
+  // Chủ đề Đặc biệt
+  {
+    title: "Sức khỏe Đường ruột và Probiotics",
+    href: "/knowledge/special-topics/gut-health-probiotics",
+    category: "knowledge",
+    description: "Hiểu về sức khỏe đường ruột, probiotics, và prebiotics - vai trò trong tiêu hóa, miễn dịch",
+  },
+  {
+    title: "Omega-3 và Sức khỏe Tim mạch",
+    href: "/knowledge/special-topics/omega-3-heart-health",
+    category: "knowledge",
+    description: "Hiểu về omega-3 - chất béo tốt quan trọng cho sức khỏe tim mạch, não bộ, và viêm",
+  },
+  {
+    title: "Quản lý Cân nặng Lành mạnh",
+    href: "/knowledge/special-topics/healthy-weight-management",
+    category: "knowledge",
+    description: "Hướng dẫn cách quản lý cân nặng lành mạnh - thay đổi lối sống bền vững, cân bằng dinh dưỡng",
+  },
+  {
+    title: "Hiểu lầm Dinh dưỡng Phổ biến (Cho Công chúng)",
+    href: "/knowledge/special-topics/nutrition-myths-public",
+    category: "knowledge",
+    description: "Điều chỉnh các hiểu lầm dinh dưỡng phổ biến trong công chúng - từ ăn đêm đến carbs",
+  },
+  {
+    title: "Dinh dưỡng cho Trẻ em và Thanh thiếu niên",
+    href: "/knowledge/life-stages/children-nutrition",
+    category: "knowledge",
+    description: "Hướng dẫn dinh dưỡng cho trẻ em và thanh thiếu niên - nhu cầu đặc biệt cho tăng trưởng",
+  },
+  {
+    title: "Chất chống Oxy hóa trong Thực phẩm",
+    href: "/knowledge/special-topics/antioxidants-foods",
+    category: "knowledge",
+    description: "Hiểu về chất chống oxy hóa - hợp chất tự nhiên trong thực phẩm giúp bảo vệ tế bào",
   },
   // Tools
   {
