@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { CheckCircle } from "lucide-react";
 import { SectionHeading } from "../nutrition-assessment-overview/components/SectionHeading";
 import { ContentSection } from "../nutrition-assessment-overview/components/ContentSection";
 import { EducationalNote } from "../nutrition-assessment-overview/components/EducationalNote";
 import { ContentBlock } from "../nutrition-assessment-overview/components/ContentBlock";
+import { Card, CardHeader, CardContent } from "../components/Card";
 
 /**
  * Why There's No Universal Number for Nutrition Needs
@@ -1023,6 +1025,53 @@ export default function WhyNoUniversalNumberPage() {
             </p>
           </div>
         </div>
+      </ContentSection>
+
+      {/* Related Tools */}
+      <ContentSection ariaLabelledBy="tools-heading">
+        <SectionHeading id="tools-heading" variant="default">
+          Công cụ Liên quan
+        </SectionHeading>
+        <ContentBlock>
+          <p className="mb-4">
+            Các công cụ giáo dục này giúp bạn thực hành các nguyên tắc đã học về ước tính nhu cầu dinh dưỡng:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Card href="/tools/energy-protein-calculator">
+              <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+              <CardContent>
+                <p className="text-body-sm">
+                  Công cụ giáo dục để ước tính nhu cầu năng lượng và protein, minh họa các khoảng giá trị
+                  và cách các bác sĩ lâm sàng sử dụng ước tính trong thực hành.
+                </p>
+              </CardContent>
+            </Card>
+            <Card href="/tools/fluid-requirements">
+              <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+              <CardContent>
+                <p className="text-body-sm">
+                  Tính nhu cầu dịch hàng ngày, minh họa cách ước tính nhu cầu dịch với các điều chỉnh lâm sàng.
+                </p>
+              </CardContent>
+            </Card>
+            <Card href="/tools/bmi-body-composition">
+              <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+              <CardContent>
+                <p className="text-body-sm">
+                  Tính các chỉ số cơ bản như BMI, IBW, ABW, và BSA - các chỉ số được sử dụng trong ước tính nhu cầu dinh dưỡng.
+                </p>
+              </CardContent>
+            </Card>
+            <Card href="/tools/micronutrient-assessment">
+              <CardHeader icon={CheckCircle} title="Đánh giá Vi chất" />
+              <CardContent>
+                <p className="text-body-sm">
+                  Ước tính nhu cầu vi chất (vitamin và khoáng chất), minh họa cách ước tính nhu cầu vi chất.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </ContentBlock>
       </ContentSection>
 
       {/* 
