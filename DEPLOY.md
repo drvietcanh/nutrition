@@ -22,11 +22,11 @@
    - Vercel sẽ tự động phát hiện Next.js và cấu hình
 
 3. **Cấu hình Project Settings:**
-   - **Root Directory:** `clinical-nutrition`
-   - **Framework Preset:** Next.js
+   - **Root Directory:** `clinical-nutrition` (QUAN TRỌNG: Set trong Vercel Dashboard → Settings → General → Root Directory)
+   - **Framework Preset:** Next.js (tự động phát hiện)
    - **Build Command:** `npm run build` (tự động)
    - **Output Directory:** `.next` (tự động)
-   - **Install Command:** `npm install` (tự động)
+   - **Install Command:** `npm install --include=optional` (đã cấu hình trong vercel.json)
 
 4. **Deploy:**
    - Click "Deploy"

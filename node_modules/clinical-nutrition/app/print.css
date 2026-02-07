@@ -1,0 +1,79 @@
+/**
+ * Print Styles
+ * Optimizes the page for printing
+ */
+
+@media print {
+  /* Hide non-essential elements */
+  .no-print,
+  nav,
+  button,
+  .focus-ring,
+  [role="button"],
+  .BackToTop,
+  .SkipLinks,
+  .GlobalDisclaimerBanner {
+    display: none !important;
+  }
+
+  /* Optimize page layout */
+  @page {
+    margin: 1.5cm;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+  }
+
+  /* Ensure headings are visible */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    color: #000;
+  }
+
+  /* Prevent page breaks inside important sections */
+  section,
+  article {
+    page-break-inside: avoid;
+  }
+
+  /* Optimize links */
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  /* Remove shadows and borders for cleaner print */
+  .card,
+  .callout {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+
+  /* Ensure good contrast */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Keep some background colors for callouts */
+  .callout-info,
+  .callout-warning,
+  .callout-error,
+  .callout-success {
+    background: #f5f5f5 !important;
+    border-left: 4px solid #000 !important;
+  }
+}
