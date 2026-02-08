@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Users, AlertCircle, CheckCircle, Info, AlertTriangle } from "lucide-react";
-import { Callout } from "../../../components/Callout";
-import { Card, CardHeader, CardContent } from "../../../components/Card";
-import { Breadcrumb } from "../../../components/Breadcrumb";
-import { RelatedContent } from "../../../components/RelatedContent";
-import { articles } from "../../../../lib/content/articles";
+import { Callout } from "../../components/Callout";
+import { Card, CardHeader, CardContent } from "../../components/Card";
+import { Breadcrumb } from "../../components/Breadcrumb";
+import { RelatedContent } from "../../components/RelatedContent";
+import { articles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
   title: "Dinh dưỡng cho Người cao tuổi",

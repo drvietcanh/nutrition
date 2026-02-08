@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Activity, AlertCircle, CheckCircle, Info } from "lucide-react";
-import { Callout } from "../../../components/Callout";
-import { Card, CardHeader, CardContent } from "../../../components/Card";
-import { Breadcrumb } from "../../../components/Breadcrumb";
-import { RelatedContent } from "../../../components/RelatedContent";
-import { articles } from "../../../../lib/content/articles";
+import { Callout } from "../../components/Callout";
+import { Card, CardHeader, CardContent } from "../../components/Card";
+import { Breadcrumb } from "../../components/Breadcrumb";
+import { RelatedContent } from "../../components/RelatedContent";
+import { articles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
   title: "Dinh dưỡng trong Hội chứng Ruột kích thích (IBS)",
