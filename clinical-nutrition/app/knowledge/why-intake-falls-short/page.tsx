@@ -203,7 +203,7 @@ export default function WhyIntakeFallsShortPage() {
           id="patient-factors-heading"
           className="heading-3"
         >
-          Yếu tố Liên quan đến Bệnh nhân
+          Yếu tố liên quan đến Bệnh nhân
         </h2>
         <p className="text-body">
           Trong bệnh tật, cơ thể và tâm trí phản ứng theo cách tự nhiên làm giảm lượng ăn. Đây không phải là 
@@ -338,7 +338,7 @@ export default function WhyIntakeFallsShortPage() {
           id="illness-factors-heading"
           className="heading-3"
         >
-          Yếu tố Liên quan đến Bệnh tật
+          Yếu tố liên quan đến Bệnh tật
         </h2>
         <p className="text-body">
           Bệnh tật tự nó tạo ra rào cản cho việc ăn. Đây là hậu quả trực tiếp của việc bị bệnh, không phải 
@@ -1065,7 +1065,7 @@ export default function WhyIntakeFallsShortPage() {
       {/* Related Tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="text-xl font-semibold sm:text-2xl">
-          Công cụ Liên quan
+          Công cụ liên quan
         </h2>
         <p className="text-gray-700 leading-relaxed">
           Các công cụ giáo dục này giúp bạn thực hành đánh giá lượng ăn và hiểu khoảng cách giữa nhu cầu ước tính và lượng ăn thực tế:

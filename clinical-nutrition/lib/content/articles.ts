@@ -1154,7 +1154,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'food-combining',
-    title: 'Kết hợp Thực phẩm Đúng cách',
+    title: 'Kết hợp Thực phẩm đúng cách',
     description: 'Hiểu về cách kết hợp thực phẩm để tăng hấp thu dinh dưỡng, cải thiện tiêu hóa, và tạo bữa ăn cân bằng',
     category: 'daily-practices',
     tags: ['food-combining', 'kết-hợp-thực-phẩm', 'hấp-thu-dinh-dưỡng', 'tiêu-hóa', 'bữa-ăn-cân-bằng'],

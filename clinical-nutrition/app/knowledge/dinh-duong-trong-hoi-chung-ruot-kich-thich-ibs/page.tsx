@@ -100,7 +100,7 @@ export default function DinhDuongTrongHoiChungRuotKichThichIBSPage() {
               <div>
                 <h3 className="heading-5 mb-2">FODMAP bao gồm:</h3>
                 <ul className="list-disc space-y-1 pl-6 text-body-sm">
-                  <li><strong>F</strong>ermentable (Lên men)</li>
+                  <li><strong>F</strong>ermentable (lên men)</li>
                   <li><strong>O</strong>ligosaccharides (Fructans, GOS)</li>
                   <li><strong>D</strong>isaccharides (Lactose)</li>
                   <li><strong>M</strong>onosaccharides (Fructose dư thừa)</li>

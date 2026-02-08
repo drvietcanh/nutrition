@@ -663,7 +663,7 @@ export default function CarbohydratesPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Ví dụ Bữa ăn Việt Nam Đúng cách</h3>
+          <h3 className="heading-4 mb-3">Ví dụ Bữa ăn Việt Nam đúng cách</h3>
           <div className="space-y-3">
             <div className="border-l-4 border-green-500 pl-4">
               <p className="font-medium text-gray-900 mb-1">✅ Bữa ăn tốt:</p>
@@ -885,7 +885,7 @@ export default function CarbohydratesPage() {
 
       {/* Related Articles */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/macronutrients-overview">
             <h3 className="heading-5 mb-2">Tổng quan về các Chất Dinh dưỡng Đa lượng</h3>

@@ -86,7 +86,7 @@ export default function VietnameseFermentedFoodsPage() {
             </p>
           </ExampleBox>
           <div className="bg-blue-50 rounded-lg p-3 border border-blue-200 mt-3">
-            <p className="text-sm font-semibold text-gray-900 mb-1">Cách Dùng Đúng:</p>
+            <p className="text-sm font-semibold text-gray-900 mb-1">Cách dùng đúng:</p>
             <ul className="text-xs text-gray-700 space-y-1">
               <li>• Pha loãng với nước, chanh, đường (nước mắm pha)</li>
               <li>• Dùng ít (1-2 muỗng canh cho cả bữa)</li>
@@ -187,7 +187,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Sử dụng Đúng cách</h2>
+        <h2 className="heading-2">Cách Sử dụng đúng cách</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -219,7 +219,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/sodium-health">
             <h3 className="heading-5 mb-2">Sodium và Sức khỏe</h3>

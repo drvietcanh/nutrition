@@ -193,7 +193,7 @@ export default function COPDNutritionPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={Info} title="🍚 Carbohydrate & 🧈 Chất béo – Liên quan đến CO₂" />
+          <CardHeader icon={Info} title="🍚 Carbohydrate & 🧈 Chất béo – liên quan đến CO₂" />
           <CardContent>
             <div className="space-y-4">
               <div>
@@ -397,7 +397,7 @@ export default function COPDNutritionPage() {
             <li>Mức độ COPD</li>
             <li>Tình trạng cân nặng</li>
             <li>Có tăng CO₂ hay không</li>
-            <li>Bệnh lý tim mạch kèm theo</li>
+            <li>bệnh lý tim mạch kèm theo</li>
           </ul>
           <div className="mt-3 p-2 bg-white rounded border border-red-200">
             <p className="text-sm text-red-900">

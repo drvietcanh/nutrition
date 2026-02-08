@@ -385,7 +385,7 @@ export default function NutritionAssessmentOverviewPage() {
       {/* Related Tools */}
       <ContentSection ariaLabelledBy="tools-heading">
         <SectionHeading id="tools-heading" variant="default">
-          Công cụ Liên quan
+          Công cụ liên quan
         </SectionHeading>
         <ContentBlock>
           <p className="mb-4">

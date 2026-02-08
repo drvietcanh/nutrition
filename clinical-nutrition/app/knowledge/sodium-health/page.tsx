@@ -437,7 +437,7 @@ export default function SodiumHealthPage() {
             className="mt-4"
           />
 
-          <ExampleBox variant="info" title="Cách Dùng Nước Mắm Đúng cách (Việt Nam)">
+          <ExampleBox variant="info" title="Cách Dùng Nước Mắm đúng cách (Việt Nam)">
             <p className="text-sm mb-2">
               <strong>Nước mắm</strong> là gia vị phổ biến ở Việt Nam nhưng có rất nhiều natri (15,000-20,000mg/100ml).
             </p>
@@ -445,7 +445,7 @@ export default function SodiumHealthPage() {
               <li><strong>Pha loãng:</strong> Pha nước mắm với nước, chanh, đường (nước mắm pha) - giảm natri</li>
               <li><strong>Dùng ít:</strong> Chỉ dùng 1-2 muỗng canh cho cả bữa ăn</li>
               <li><strong>Chọn loại ít natri:</strong> Nếu có, chọn nước mắm ít natri</li>
-              <li><strong>Thay thế:</strong> Dùng chanh, ớt, tỏi để tăng hương vị thay vì nhiều nước mắm</li>
+              <li><strong>thay thế:</strong> Dùng chanh, ớt, tỏi để tăng hương vị thay vì nhiều nước mắm</li>
             </ul>
             <p className="text-sm">
               <strong>Ví dụ:</strong> Nước mắm pha: 1 muỗng nước mắm + 2 muỗng nước + 1 muỗng chanh + 1/2 muỗng đường.
@@ -535,7 +535,7 @@ export default function SodiumHealthPage() {
 
       {/* Related Articles */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {getRelatedArticles('sodium-health').map((article) => (
             <Card key={article.slug} href={article.href}>

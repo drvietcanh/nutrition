@@ -66,7 +66,7 @@ export default function VietnameseCookingMethodsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Phương pháp Nấu Ăn Truyền thống Việt Nam</h2>
+        <h2 className="heading-2">Phương pháp Nấu Ăn truyền thống Việt Nam</h2>
         <div className="space-y-4">
           <p className="text-body">
             Người Việt Nam có nhiều phương pháp nấu ăn truyền thống, mỗi phương pháp có ưu và nhược điểm 
@@ -163,7 +163,7 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">3. Kho - Phương pháp Truyền thống</h2>
+        <h2 className="heading-2">3. Kho - Phương pháp truyền thống</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Kho lành mạnh vs Không lành mạnh</h3>
@@ -417,7 +417,7 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/healthy-cooking-methods">
             <h3 className="heading-5 mb-2">Phương pháp Nấu ăn lành mạnh</h3>

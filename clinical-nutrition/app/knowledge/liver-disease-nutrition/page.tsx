@@ -267,7 +267,7 @@ export default function LiverDiseaseNutritionPage() {
                 <p className="text-sm font-semibold text-gray-900 mb-2">Vitamin D</p>
                 <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
                   <li>Thường thiếu</li>
-                  <li>Liên quan đến xương, miễn dịch</li>
+                  <li>liên quan đến xương, miễn dịch</li>
                   <li>Có thể cần bổ sung</li>
                 </ul>
               </div>
@@ -517,7 +517,7 @@ export default function LiverDiseaseNutritionPage() {
       </section>
 
       <section aria-labelledby="tools-heading" className="space-y-4">
-        <h2 id="tools-heading" className="heading-3">Công cụ Liên quan</h2>
+        <h2 id="tools-heading" className="heading-3">Công cụ liên quan</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">
             <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />

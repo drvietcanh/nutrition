@@ -343,7 +343,7 @@ export default function IntakeAssessmentPage() {
       {/* Related Tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="text-xl font-semibold sm:text-2xl">
-          Công cụ Liên quan
+          Công cụ liên quan
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/intake-assessment">

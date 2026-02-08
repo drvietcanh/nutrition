@@ -49,7 +49,7 @@ export function RelatedContent({
         <section>
           <h2 className="heading-3 mb-6 flex items-center gap-2">
             <BookOpen className="w-6 h-6 text-blue-600" aria-hidden="true" />
-            Bài viết Liên quan
+            Bài viết liên quan
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {allRelated.map((article) => (
@@ -86,7 +86,7 @@ export function RelatedContent({
         <section>
           <h2 className="heading-3 mb-6 flex items-center gap-2">
             <Calculator className="w-6 h-6 text-green-600" aria-hidden="true" />
-            Công cụ Liên quan
+            Công cụ liên quan
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {relatedTools.map((toolSlug) => {

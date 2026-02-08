@@ -8,7 +8,7 @@ import { UtensilsCrossed, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Kết hợp Thực phẩm Đúng cách",
+  title: "Kết hợp Thực phẩm đúng cách",
   description:
     "Hiểu về cách kết hợp thực phẩm để tăng hấp thu dinh dưỡng, cải thiện tiêu hóa, và tạo bữa ăn cân bằng. Ví dụ thực tế và mẹo.",
   keywords: [
@@ -28,14 +28,14 @@ export default function FoodCombiningPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Kết hợp Thực phẩm Đúng cách" },
+          { label: "Kết hợp Thực phẩm đúng cách" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <UtensilsCrossed className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Kết hợp Thực phẩm Đúng cách</h1>
+          <h1 className="heading-1">Kết hợp Thực phẩm đúng cách</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Cách kết hợp thực phẩm có thể ảnh hưởng đến hấp thu dinh dưỡng và tiêu hóa. 
@@ -338,7 +338,7 @@ export default function FoodCombiningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/healthy-plate">
             <h3 className="heading-5 mb-2">Cân bằng Bữa ăn</h3>

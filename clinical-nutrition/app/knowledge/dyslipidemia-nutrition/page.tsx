@@ -211,7 +211,7 @@ export default function DyslipidemiaNutritionPage() {
         </div>
 
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">🍚 Tinh bột & Đường – Liên quan Chặt chẽ với Triglycerides</h3>
+          <h3 className="heading-3">🍚 Tinh bột & Đường – liên quan Chặt chẽ với Triglycerides</h3>
           <div className="space-y-3 text-body">
             <p>
               Ăn nhiều đường và tinh bột tinh chế → triglycerides tăng
@@ -381,7 +381,7 @@ export default function DyslipidemiaNutritionPage() {
       {/* Related Tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">
-          Công cụ Liên quan
+          Công cụ liên quan
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">

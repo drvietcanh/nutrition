@@ -66,12 +66,12 @@ export default function VietnameseFermentedFoodsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nước mắm: Gia vị Truyền thống</h2>
+        <h2 className="heading-2">Nước mắm: Gia vị truyền thống</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Giá trị Dinh dưỡng Nước mắm</h3>
+            <h3 className="heading-4 mb-3">Giá trị dinh dưỡng Nước mắm</h3>
             <NutrientTable
-              title="Giá trị Dinh dưỡng Nước mắm (1 thìa canh = 15ml)"
+              title="Giá trị dinh dưỡng Nước mắm (1 thìa canh = 15ml)"
               rows={[
                 { nutrient: "năng lượng", amount: "10", unit: "calo", highlight: "good", note: "Rất ít calo" },
                 { nutrient: "Protein", amount: "2", unit: "g", highlight: "good", note: "Protein từ cá" },
@@ -93,7 +93,7 @@ export default function VietnameseFermentedFoodsPage() {
           </ExampleBox>
 
           <Card>
-            <h3 className="heading-4 mb-3">Cách Dùng Nước mắm Đúng cách</h3>
+            <h3 className="heading-4 mb-3">Cách dùng Nước mắm đúng cách</h3>
             <div className="space-y-3">
               <div className="bg-green-50 rounded-lg p-3 border border-green-200">
                 <p className="text-sm font-semibold text-green-900 mb-1">✓ Dùng Đúng:</p>
@@ -129,7 +129,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tương: Gia vị Thay thế Nước mắm</h2>
+        <h2 className="heading-2">Tương: Gia vị thay thế Nước mắm</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Các loại Tương</h3>
@@ -156,7 +156,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chao: Thực phẩm Lên men Tốt</h2>
+        <h2 className="heading-2">Chao: Thực phẩm lên men tốt</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Giá trị Dinh dưỡng Chao</h3>
@@ -185,7 +185,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Mắm tôm, Mắm ruốc: Dùng Ít</h2>
+        <h2 className="heading-2">Mắm tôm, Mắm ruốc: Dùng ít</h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
             <h3 className="heading-4 text-red-900 mb-3">Lưu ý về Mắm tôm, Mắm ruốc</h3>
@@ -249,7 +249,7 @@ export default function VietnameseFermentedFoodsPage() {
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Thay thế:</strong> Dùng tương thay nước mắm trong một số món để giảm natri.
+                <strong>thay thế:</strong> Dùng tương thay nước mắm trong một số món để giảm natri.
               </p>
             </div>
             <div className="flex items-start gap-2">
@@ -271,7 +271,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Điều chỉnh Cho Người có Bệnh lý</h2>
+        <h2 className="heading-2">Điều chỉnh cho Người có bệnh lý</h2>
         <Card>
           <h3 className="heading-4 mb-3">Người Tăng huyết áp, Suy tim, Bệnh thận</h3>
           <div className="space-y-2 text-body-sm">
@@ -280,7 +280,7 @@ export default function VietnameseFermentedFoodsPage() {
               hoặc thậm chí ít hơn. Pha loãng nhiều.
             </p>
             <p>
-              <strong>Thay thế:</strong> Dùng tương, chao thay nước mắm. Tăng gia vị tự nhiên.
+              <strong>thay thế:</strong> Dùng tương, chao thay nước mắm. Tăng gia vị tự nhiên.
             </p>
             <p>
               <strong>Tránh:</strong> Mắm tôm, mắm ruốc - quá nhiều natri.
@@ -319,7 +319,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/sodium-health">
             <h3 className="heading-5 mb-2">Natri (Muối) và Sức khỏe</h3>

@@ -189,7 +189,7 @@ export default function FestivalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Điều chỉnh Cho Người có Bệnh lý</h2>
+        <h2 className="heading-2">Điều chỉnh cho Người có bệnh lý</h2>
         <Card>
           <h3 className="heading-4 mb-3">Người Đái tháo đường</h3>
           <p className="text-body-sm mb-2">
@@ -261,7 +261,7 @@ export default function FestivalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/healthy-weight-management">
             <h3 className="heading-5 mb-2">Quản lý Cân nặng lành mạnh</h3>

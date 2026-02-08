@@ -426,7 +426,7 @@ export default function WhyNoUniversalNumberPage() {
               trên stress, giấc ngủ, biến động bệnh tật, hoặc các yếu tố động khác.
             </li>
             <li>
-              <strong>Thay thế phán đoán lâm sàng</strong>: Chúng không thể nhìn thấy toàn bộ con người, đánh giá khả năng chịu đựng, xem xét
+              <strong>thay thế phán đoán lâm sàng</strong>: Chúng không thể nhìn thấy toàn bộ con người, đánh giá khả năng chịu đựng, xem xét
               mục tiêu chăm sóc, hoặc thích ứng với hoàn cảnh độc đáo. Điều đó đòi hỏi phán đoán lâm sàng.
             </li>
             <li>
@@ -1030,7 +1030,7 @@ export default function WhyNoUniversalNumberPage() {
       {/* Related Tools */}
       <ContentSection ariaLabelledBy="tools-heading">
         <SectionHeading id="tools-heading" variant="default">
-          Công cụ Liên quan
+          Công cụ liên quan
         </SectionHeading>
         <ContentBlock>
           <p className="mb-4">

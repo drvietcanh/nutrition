@@ -345,7 +345,7 @@ export default function VietnameseSoupsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/vietnamese-family-meals">
             <h3 className="heading-5 mb-2">Bữa ăn Gia đình Việt Nam</h3>

@@ -167,7 +167,7 @@ export default function SmartShoppingVietnamPage() {
         <Card>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Chợ Truyền thống:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Chợ truyền thống:</p>
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>✓ Rẻ hơn (thường)</li>
                 <li>✓ Tươi hơn (mua sáng sớm)</li>
@@ -265,7 +265,7 @@ export default function SmartShoppingVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/seasonal-foods-vietnam">
             <h3 className="heading-5 mb-2">Thực phẩm Theo Mùa</h3>

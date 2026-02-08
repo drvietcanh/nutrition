@@ -170,7 +170,7 @@ export default function HealthyCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/dietary-fats">
             <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>

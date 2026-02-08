@@ -821,7 +821,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Vì sao Số liệu Không bao giờ Thay thế Phán đoán
+              Vì sao Số liệu Không bao giờ thay thế Phán đoán
             </h3>
             <p className="text-base text-neutral-700 mb-2">
               Số liệu từ công cụ sàng lọc, tính toán nhu cầu, và đánh giá lượng ăn là <strong>cung cấp thông tin, không chỉ đạo</strong>.

@@ -641,7 +641,7 @@ export default function MythsAndMisconceptionsPage() {
         {/* Related Tools */}
         <section className="mb-12 space-y-4" aria-labelledby="tools-heading">
           <h2 id="tools-heading" className="text-2xl font-bold text-gray-900">
-            Công cụ Liên quan
+            Công cụ liên quan
           </h2>
           <p className="text-gray-700 leading-relaxed">
             Các công cụ giáo dục này giúp bạn thực hành các nguyên tắc đã học và hiểu cách áp dụng chúng trong đánh giá dinh dưỡng:

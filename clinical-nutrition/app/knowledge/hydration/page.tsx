@@ -141,7 +141,7 @@ export default function HydrationPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                  <span><strong>Bệnh lý</strong> - tim, thận cần điều chỉnh</span>
+                  <span><strong>bệnh lý</strong> - tim, thận cần điều chỉnh</span>
                 </li>
               </ul>
             </div>
@@ -558,7 +558,7 @@ export default function HydrationPage() {
 
       {/* Related Articles */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {getRelatedArticles('hydration').map((article) => (
             <Card key={article.slug} href={article.href}>

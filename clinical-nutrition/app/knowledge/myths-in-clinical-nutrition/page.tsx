@@ -216,7 +216,7 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl" aria-hidden="true">3.</span>
-                Số liệu Hỗ trợ Tư duy, Không Thay thế Nó
+                Số liệu Hỗ trợ Tư duy, Không thay thế Nó
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Tính toán, giá trị xét nghiệm, và đo lường là công cụ để cung cấp thông tin cho phán đoán lâm sàng của bạn, không phải để thay thế nó. 
@@ -342,7 +342,7 @@ export default function MythsInClinicalNutritionPage() {
 
               <article className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Chúng Không Thay thế Chăm sóc Đa ngành
+                  Chúng Không thay thế Chăm sóc Đa ngành
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Không có công cụ, tính toán, hoặc hướng dẫn nào có thể thay thế chuyên môn và hợp tác của nhóm đa ngành. 
@@ -501,7 +501,7 @@ export default function MythsInClinicalNutritionPage() {
         {/* Related Tools */}
         <section className="mb-12 space-y-4" aria-labelledby="tools-heading">
           <h2 id="tools-heading" className="text-2xl font-bold text-gray-900">
-            Công cụ Liên quan
+            Công cụ liên quan
           </h2>
           <p className="text-gray-700 leading-relaxed">
             Các công cụ giáo dục này giúp bạn thực hành các nguyên tắc đã học và hiểu cách áp dụng chúng trong đánh giá dinh dưỡng:

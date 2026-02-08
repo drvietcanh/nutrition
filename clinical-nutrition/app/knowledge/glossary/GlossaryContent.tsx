@@ -13,7 +13,7 @@ export function GlossaryContent() {
     { value: "basic", label: "Cơ bản" },
     { value: "calculation", label: "Tính toán" },
     { value: "assessment", label: "Đánh giá" },
-    { value: "disease", label: "Bệnh lý" },
+    { value: "disease", label: "bệnh lý" },
   ];
 
   const filteredTerms = glossaryTerms.filter((term) => {
@@ -88,7 +88,7 @@ function GlossaryCard({ term }: { term: GlossaryTerm }) {
     basic: "Cơ bản",
     calculation: "Tính toán",
     assessment: "Đánh giá",
-    disease: "Bệnh lý",
+    disease: "bệnh lý",
   };
 
   const categoryColors: Record<string, string> = {

@@ -62,7 +62,7 @@ export default function FestivalNutritionVietnamPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tết - Món Ăn Truyền thống</h2>
+        <h2 className="heading-2">Tết - Món Ăn truyền thống</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Tết có nhiều món ăn đặc biệt, giàu calo và natri. Hiểu về giá trị dinh dưỡng giúp bạn ăn vừa phải.
@@ -190,7 +190,7 @@ export default function FestivalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Liên quan</h2>
+        <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/healthy-weight-management">
             <h3 className="heading-5 mb-2">Quản lý Cân nặng lành mạnh</h3>

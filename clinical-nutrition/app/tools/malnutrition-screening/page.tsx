@@ -156,7 +156,7 @@ export default function MalnutritionScreeningPage() {
                 nhập viện, đường cho ăn, kê đơn).
               </li>
               <li>
-                Thay thế đánh giá dinh dưỡng đầy đủ hoặc đánh giá đa ngành
+                thay thế đánh giá dinh dưỡng đầy đủ hoặc đánh giá đa ngành
                 của nhóm.
               </li>
               <li>

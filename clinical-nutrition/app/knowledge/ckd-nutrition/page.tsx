@@ -188,7 +188,7 @@ export default function CKDNutritionPage() {
           <ul className="list-disc space-y-1 pl-6 text-sm text-amber-900">
             <li>Cân nặng, tình trạng dinh dưỡng</li>
             <li>Kết quả xét nghiệm</li>
-            <li>Bệnh lý kèm (THA, suy tim, ĐTĐ)</li>
+            <li>bệnh lý kèm (THA, suy tim, ĐTĐ)</li>
             <li>Khả năng ăn uống thực tế</li>
           </ul>
           <div className="mt-3 p-2 bg-white rounded border border-amber-200">
@@ -525,7 +525,7 @@ export default function CKDNutritionPage() {
           <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
             <li>Giai đoạn bệnh thận</li>
             <li>Xét nghiệm</li>
-            <li>Bệnh lý kèm</li>
+            <li>bệnh lý kèm</li>
             <li>Khả năng ăn uống thực tế</li>
           </ul>
           <div className="mt-3 p-2 bg-white rounded border border-red-200">
@@ -541,7 +541,7 @@ export default function CKDNutritionPage() {
       </section>
 
       <section aria-labelledby="tools-heading" className="space-y-4">
-        <h2 id="tools-heading" className="heading-3">Công cụ Liên quan</h2>
+        <h2 id="tools-heading" className="heading-3">Công cụ liên quan</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">
             <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />

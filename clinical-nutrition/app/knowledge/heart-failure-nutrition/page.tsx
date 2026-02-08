@@ -684,7 +684,7 @@ export default function HeartFailureNutritionPage() {
       {/* Related Tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">
-          Công cụ Liên quan
+          Công cụ liên quan
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/fluid-requirements">

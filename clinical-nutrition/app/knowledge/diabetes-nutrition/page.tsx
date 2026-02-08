@@ -593,7 +593,7 @@ export default function DiabetesNutritionPage() {
           </div>
 
           <div className="space-y-4 rounded-lg border border-amber-200 bg-amber-50/50 p-5">
-            <h3 className="heading-4">Theo Bệnh lý Kèm</h3>
+            <h3 className="heading-4">Theo bệnh lý Kèm</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li>
                 <strong>Bệnh thận (Diabetic Nephropathy):</strong> Có thể cần hạn chế protein (0.8 g/kg)
@@ -1058,7 +1058,7 @@ export default function DiabetesNutritionPage() {
       {/* Related Tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">
-          Công cụ Liên quan
+          Công cụ liên quan
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">

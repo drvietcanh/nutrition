@@ -291,6 +291,60 @@ def fix_file(file_path):
             
             # Pattern: "Nguồn Muối" → "Nguồn muối" (khi không phải đầu câu)
             (r'Nguồn Muối', 'Nguồn muối'),
+            
+            # Pattern: "Truyền thống" → "truyền thống" (khi không phải đầu câu)
+            (r'Truyền thống', 'truyền thống'),
+            
+            # Pattern: "Giá trị Dinh dưỡng Nước mắm" → "Giá trị dinh dưỡng Nước mắm"
+            (r'Giá trị Dinh dưỡng Nước mắm', 'Giá trị dinh dưỡng Nước mắm'),
+            
+            # Pattern: "Cách Dùng Nước mắm Đúng cách" → "Cách dùng Nước mắm đúng cách"
+            (r'Cách Dùng Nước mắm Đúng cách', 'Cách dùng Nước mắm đúng cách'),
+            
+            # Pattern: "Cách Dùng Đúng" → "Cách dùng đúng"
+            (r'Cách Dùng Đúng', 'Cách dùng đúng'),
+            
+            # Pattern: "Gia vị Thay thế" → "Gia vị thay thế"
+            (r'Gia vị Thay thế', 'Gia vị thay thế'),
+            
+            # Pattern: "Thực phẩm Lên men Tốt" → "Thực phẩm lên men tốt"
+            (r'Thực phẩm Lên men Tốt', 'Thực phẩm lên men tốt'),
+            
+            # Pattern: "Dùng Ít" → "Dùng ít"
+            (r'Dùng Ít', 'Dùng ít'),
+            
+            # Pattern: "Bài viết Liên quan" → "Bài viết liên quan"
+            (r'Bài viết Liên quan', 'Bài viết liên quan'),
+            
+            # Pattern: "Điều chỉnh Cho Người có Bệnh lý" → "Điều chỉnh cho Người có bệnh lý"
+            (r'Điều chỉnh Cho Người có Bệnh lý', 'Điều chỉnh cho Người có bệnh lý'),
+            
+            # Pattern: "Món Ăn Truyền thống" → "Món ăn truyền thống"
+            (r'Món Ăn Truyền thống', 'Món ăn truyền thống'),
+            
+            # Pattern: "Phương pháp Truyền thống" → "Phương pháp truyền thống"
+            (r'Phương pháp Truyền thống', 'Phương pháp truyền thống'),
+            
+            # Pattern: "Chợ Truyền thống" → "Chợ truyền thống"
+            (r'Chợ Truyền thống', 'Chợ truyền thống'),
+            
+            # Pattern: "Gia vị Truyền thống" → "Gia vị truyền thống"
+            (r'Gia vị Truyền thống', 'Gia vị truyền thống'),
+            
+            # Pattern: "Thay thế" → "thay thế" (khi không phải đầu câu)
+            (r'Thay thế', 'thay thế'),
+            
+            # Pattern: "Lên men" → "lên men" (khi không phải đầu câu)
+            (r'Lên men', 'lên men'),
+            
+            # Pattern: "Liên quan" → "liên quan" (khi không phải đầu câu)
+            (r'Liên quan', 'liên quan'),
+            
+            # Pattern: "Bệnh lý" → "bệnh lý" (khi không phải đầu câu)
+            (r'Bệnh lý', 'bệnh lý'),
+            
+            # Pattern: "Đúng cách" → "đúng cách" (khi không phải đầu câu)
+            (r'Đúng cách', 'đúng cách'),
         ]
         
         for pattern, replacement in replacements:
