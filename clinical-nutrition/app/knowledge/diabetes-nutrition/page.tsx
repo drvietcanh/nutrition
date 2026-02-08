@@ -393,7 +393,7 @@ export default function DiabetesNutritionPage() {
 
         {/* Practical Application Vietnamese */}
         <Card className="border-blue-200 bg-blue-50/30">
-          <CardHeader icon={Lightbulb} title="Áp dụng Nhanh trong Đời sống Việt Nam" />
+          <CardHeader icon={Lightbulb} title="Áp dụng Nhanh trong đời sống Việt Nam" />
           <CardContent>
             <div className="space-y-4">
               <div>

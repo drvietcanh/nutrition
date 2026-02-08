@@ -209,7 +209,7 @@ export default function IronAnemiaPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cần Bao nhiêu Sắt?</h2>
+        <h2 className="heading-2">Cần bao nhiêu Sắt?</h2>
         <Card>
           <div className="space-y-4">
             <p className="text-body">
@@ -247,7 +247,7 @@ export default function IronAnemiaPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế</h2>
+        <h2 className="heading-2">Ví dụ thực tế</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 1: Phụ nữ trẻ, hành kinh nhiều</h3>

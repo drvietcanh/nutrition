@@ -73,7 +73,7 @@ export default function WhyIntakeFallsShortPage() {
           id="reality-gap-heading"
           className="heading-3"
         >
-          Khoảng cách Giữa Tính toán và Thực tế
+          Khoảng cách Giữa Tính toán và thực tế
         </h2>
         <p className="text-body">
           Trong dinh dưỡng lâm sàng, thường có sự khác biệt giữa:
@@ -89,7 +89,7 @@ export default function WhyIntakeFallsShortPage() {
             </p>
           </div>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Lượng Ăn Thực tế</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Lượng Ăn thực tế</h3>
             <p className="text-sm text-gray-700">
               Những gì người bệnh <em>thực sự</em> tiêu thụ hoặc nhận được. Đây là dữ liệu liên quan trực tiếp
               đến diễn tiến lâm sàng, và thường thấp hơn nhu cầu ước tính—điều này không hiếm gặp.
@@ -117,7 +117,7 @@ export default function WhyIntakeFallsShortPage() {
           {/* Educational: Explains compounding effect of multiple barriers.
               Helps readers understand why gaps are so common. */}
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Bệnh nhân Thực tế Đối mặt Nhiều Rào cản</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Bệnh nhân thực tế Đối mặt Nhiều Rào cản</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               Không giống như điều kiện lý tưởng được giả định bởi tính toán, bệnh nhân thực tế đối mặt với nhiều rào cản 
               đồng thời. Một bệnh nhân có thể buồn nôn do thuốc, bỏ lỡ bữa ăn do thủ thuật, 
@@ -161,7 +161,7 @@ export default function WhyIntakeFallsShortPage() {
             in the scenarios. Reduces frustration by normalizing the experience. */}
         {/* Practical Examples for Different Roles */}
         <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 mt-4">
-          <h3 className="font-semibold text-gray-900 mb-3 text-sm">Tình huống Thực tế Bạn có thể Gặp:</h3>
+          <h3 className="font-semibold text-gray-900 mb-3 text-sm">Tình huống thực tế Bạn có thể Gặp:</h3>
           <div className="space-y-3 text-sm">
             <div>
               <p className="text-gray-700 font-medium mb-1">Là điều dưỡng ghi chép lượng ăn:</p>
@@ -608,7 +608,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Thực tế lâm sàng
+            thực tế lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Dinh dưỡng được kê đơn (những gì được chỉ định) và dinh dưỡng được cung cấp (những gì thực sự được tiêu thụ) 
@@ -877,7 +877,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Thực tế lâm sàng
+            thực tế lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Các bác sĩ lâm sàng có kinh nghiệm không mong đợi lượng ăn hoàn hảo. Họ xem xu hướng, ưu tiên điều quan trọng nhất 
@@ -958,7 +958,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-6">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Thực tế lâm sàng
+            thực tế lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Thiếu hụt lượng ăn là phổ biến. Tính toán cho chúng ta điểm khởi đầu, nhưng chúng không đảm bảo 

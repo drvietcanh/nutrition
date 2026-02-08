@@ -131,7 +131,7 @@ export default function AssessmentProcessPage() {
                   3
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-base mb-1">So sánh Nhu cầu với Lượng Ăn Thực tế</h3>
+                  <h3 className="font-semibold text-base mb-1">So sánh Nhu cầu với Lượng Ăn thực tế</h3>
                   <p className="text-sm text-neutral-700">
                     Đo lường những gì họ thực sự đang nhận được. Điều này tiết lộ <strong>khoảng cách</strong> giữa nhu cầu và thực tế.
                   </p>
@@ -538,7 +538,7 @@ export default function AssessmentProcessPage() {
             id="intake-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Bước 3: Đánh giá Lượng Ăn Thực tế
+            Bước 3: Đánh giá Lượng Ăn thực tế
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -554,7 +554,7 @@ export default function AssessmentProcessPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Kê đơn vs. Cung cấp: Khoảng cách Giữa Kế hoạch và Thực tế
+              Kê đơn vs. Cung cấp: Khoảng cách Giữa Kế hoạch và thực tế
             </h3>
             <p className="text-base text-neutral-700 mb-2">
               Trong môi trường lâm sàng, thường có sự khác biệt giữa:
@@ -958,7 +958,7 @@ export default function AssessmentProcessPage() {
               ❌ "Nếu tôi tính nhu cầu, công việc đã xong"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Thực tế</strong>: Tính nhu cầu chỉ là khởi đầu. Đánh giá thường bao gồm đánh giá lượng ăn thực tế, nhận diện khoảng cách,
+              <strong>thực tế</strong>: Tính nhu cầu chỉ là khởi đầu. Đánh giá thường bao gồm đánh giá lượng ăn thực tế, nhận diện khoảng cách,
               xem xét can thiệp, theo dõi phản ứng, và đánh giá lại thường xuyên.
             </p>
             <p className="text-sm text-amber-800">
@@ -971,7 +971,7 @@ export default function AssessmentProcessPage() {
               ❌ "Lượng ăn đầy đủ hôm nay có nghĩa là không có nguy cơ"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Thực tế</strong>: Một ngày tốt không xóa bỏ nguy cơ. Hãy xem xu hướng trong vài ngày. Một người có thể ăn tốt hôm nay
+              <strong>thực tế</strong>: Một ngày tốt không xóa bỏ nguy cơ. Hãy xem xu hướng trong vài ngày. Một người có thể ăn tốt hôm nay
               nhưng đã ăn kém trong nhiều tuần, hoặc họ có thể ăn tốt hôm nay nhưng vật lộn ngày mai.
             </p>
             <p className="text-sm text-amber-800">
@@ -984,7 +984,7 @@ export default function AssessmentProcessPage() {
               ❌ "Công cụ sàng lọc chẩn đoán suy dinh dưỡng"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Thực tế</strong>: Công cụ sàng lọc xác định nguy cơ, không phải chẩn đoán. Chúng cho bạn biết ai cần đánh giá thêm, không phải ai
+              <strong>thực tế</strong>: Công cụ sàng lọc xác định nguy cơ, không phải chẩn đoán. Chúng cho bạn biết ai cần đánh giá thêm, không phải ai
               chắc chắn có suy dinh dưỡng.
             </p>
             <p className="text-sm text-amber-800">
@@ -998,7 +998,7 @@ export default function AssessmentProcessPage() {
               ❌ "Công thức cho câu trả lời đúng"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Thực tế</strong>: Công thức cung cấp ước tính, không phải yêu cầu chính xác. Các phương pháp khác nhau tạo ra các con số khác nhau, và đó là bình thường.
+              <strong>thực tế</strong>: Công thức cung cấp ước tính, không phải yêu cầu chính xác. Các phương pháp khác nhau tạo ra các con số khác nhau, và đó là bình thường.
             </p>
             <p className="text-sm text-amber-800">
               Sử dụng công thức để cấu trúc tư duy, sau đó điều chỉnh dựa trên phán đoán lâm sàng và phản ứng bệnh nhân.
@@ -1010,7 +1010,7 @@ export default function AssessmentProcessPage() {
               ❌ "Nếu nó được chỉ định, nó đang được cung cấp"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Thực tế</strong>: Thường có khoảng cách giữa những gì được kê đơn (chỉ định/lập kế hoạch) và những gì thực sự được tiêu thụ.
+              <strong>thực tế</strong>: Thường có khoảng cách giữa những gì được kê đơn (chỉ định/lập kế hoạch) và những gì thực sự được tiêu thụ.
             </p>
             <p className="text-sm text-amber-800">
               Đánh giá lượng ăn thực tế, không chỉ những gì được chỉ định, là quan trọng. Chỉ dinh dưỡng được cung cấp ảnh hưởng đến kết quả.
@@ -1022,7 +1022,7 @@ export default function AssessmentProcessPage() {
               ❌ "Nhiều hơn luôn tốt hơn"
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              <strong>Thực tế</strong>: Cho ăn quá mức có thể có hại, đặc biệt trong bệnh nặng hoặc tình huống tái cho ăn.
+              <strong>thực tế</strong>: Cho ăn quá mức có thể có hại, đặc biệt trong bệnh nặng hoặc tình huống tái cho ăn.
             </p>
             <p className="text-sm text-amber-800">
               Mục tiêu là đáp ứng nhu cầu một cách an toàn, không phải tối đa hóa lượng ăn bất kể khả năng dung nạp hoặc bối cảnh lâm sàng.

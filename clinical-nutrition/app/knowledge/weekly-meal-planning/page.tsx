@@ -292,7 +292,7 @@ export default function WeeklyMealPlanningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế</h2>
+        <h2 className="heading-2">Ví dụ thực tế</h2>
         <ExampleBox variant="info" title="Tình huống: Gia đình 4 người">
           <p className="mb-2">
             <strong>Bước 1:</strong> Xem lịch - Thứ 2-5 bận, Thứ 6 đi ăn ngoài, Thứ 7-Chủ nhật có thời gian nấu.

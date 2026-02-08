@@ -150,7 +150,7 @@ export default function NutritionTravelPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế</h2>
+        <h2 className="heading-2">Ví dụ thực tế</h2>
         <ExampleBox variant="info" title="Tình huống: Du lịch 3 ngày">
           <p className="mb-2">
             <strong>Ngày 1 (Đi máy bay):</strong> Mang snack (trái cây, quả hạch), uống nhiều nước, 

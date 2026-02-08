@@ -71,7 +71,7 @@ export function ComparisonChart({
           />
           <Tooltip content={<CustomTooltip />} />
           <Legend />
-          <Bar dataKey="actual" fill="#3b82f6" name="Thực tế" />
+          <Bar dataKey="actual" fill="#3b82f6" name="thực tế" />
           <Bar dataKey="target" fill="#22c55e" name="Mục tiêu" />
         </BarChart>
       </ResponsiveContainer>

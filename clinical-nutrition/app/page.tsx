@@ -96,7 +96,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-amber-600">4</span>
               </div>
-              <h3 className="heading-5 mb-2">Áp dụng Thực tế</h3>
+              <h3 className="heading-5 mb-2">Áp dụng thực tế</h3>
               <p className="text-body-sm text-gray-600 mb-4">
                 Tìm hiểu về dinh dưỡng cho các bệnh mạn tính
               </p>

@@ -202,7 +202,7 @@ export default function PotassiumBloodPressurePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cần Bao nhiêu Kali?</h2>
+        <h2 className="heading-2">Cần bao nhiêu Kali?</h2>
         <Card>
           <div className="space-y-4">
             <p className="text-body">
@@ -254,7 +254,7 @@ export default function PotassiumBloodPressurePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế</h2>
+        <h2 className="heading-2">Ví dụ thực tế</h2>
         <Card>
           <h3 className="heading-5 mb-2">Ví dụ: Người tăng huyết áp</h3>
           <p className="text-body-sm mb-2">

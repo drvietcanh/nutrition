@@ -110,7 +110,7 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bữa ăn Thực tế cho Người Lao động</h2>
+        <h2 className="heading-2">Bữa ăn thực tế cho Người Lao động</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Bữa Sáng (600-800 calo, 25-30g protein)</h3>
@@ -255,7 +255,7 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế: Bữa ăn Cho Công nhân</h2>
+        <h2 className="heading-2">Ví dụ thực tế: Bữa ăn Cho Công nhân</h2>
         <Card>
           <h3 className="heading-4 mb-3">Bữa ăn Một Ngày (3,000 calo, 105g protein)</h3>
           <div className="space-y-3">

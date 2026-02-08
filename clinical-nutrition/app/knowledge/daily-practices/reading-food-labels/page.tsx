@@ -201,7 +201,7 @@ export default function ReadingFoodLabelsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế: So sánh Nhãn</h2>
+        <h2 className="heading-2">Ví dụ thực tế: So sánh Nhãn</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 1: So sánh Ngũ cốc Ăn sáng</h3>

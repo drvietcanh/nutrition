@@ -174,7 +174,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
         <Card>
           <CardHeader
             icon={AlertTriangle}
-            title="🧂 Giảm Muối (Natri)"
+            title="🧂 giảm muối (Natri)"
           />
           <CardContent>
             <p className="text-body mb-4">

@@ -114,7 +114,7 @@ export default function IodineThyroidPage() {
           />
         </Card>
 
-        <ExampleBox variant="tip" title="Ví dụ Thực tế">
+        <ExampleBox variant="tip" title="Ví dụ thực tế">
           <p className="mb-2">
             <strong>150mcg iodine/ngày có thể đạt được từ:</strong>
           </p>

@@ -232,7 +232,7 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế</h2>
+        <h2 className="heading-2">Ví dụ thực tế</h2>
         <ExampleBox variant="info" title="Phở Gà">
           <p className="text-sm mb-2">
             <strong>Yêu cầu:</strong> "Cho ít nước mắm, nhiều rau thơm"

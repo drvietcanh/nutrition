@@ -156,7 +156,7 @@ export default function Omega3HeartHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cần Bao nhiêu Omega-3?</h2>
+        <h2 className="heading-2">Cần bao nhiêu Omega-3?</h2>
         <Card>
           <div className="space-y-4">
             <p className="text-body">

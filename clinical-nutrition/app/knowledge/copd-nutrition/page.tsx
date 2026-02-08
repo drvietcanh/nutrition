@@ -244,7 +244,7 @@ export default function COPDNutritionPage() {
                   <li>Cần cân bằng với nguy cơ tim mạch</li>
                 </ul>
                 <p className="text-sm text-amber-900">
-                  <strong>👉 Thực tế:</strong> Chỉ điều chỉnh tỷ lệ này khi COPD nặng, tăng CO₂, khó cai máy thở
+                  <strong>👉 thực tế:</strong> Chỉ điều chỉnh tỷ lệ này khi COPD nặng, tăng CO₂, khó cai máy thở
                 </p>
               </div>
             </div>

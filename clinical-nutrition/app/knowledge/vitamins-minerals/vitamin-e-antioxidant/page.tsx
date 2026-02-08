@@ -114,7 +114,7 @@ export default function VitaminEAntioxidantPage() {
           />
         </Card>
 
-        <ExampleBox variant="tip" title="Ví dụ Thực tế">
+        <ExampleBox variant="tip" title="Ví dụ thực tế">
           <p className="mb-2">
             <strong>15mg vitamin E/ngày có thể đạt được từ:</strong>
           </p>

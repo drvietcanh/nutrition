@@ -429,7 +429,7 @@ export default function HydrationPage() {
 
       {/* Vietnamese Water Sources Table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng nguồn Nước trong Đời sống</h2>
+        <h2 className="heading-2">Bảng nguồn Nước trong đời sống</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Bảng dưới đây giúp bạn hiểu loại nước nào được tính vào tổng lượng nước hàng ngày.

@@ -75,7 +75,7 @@ export default function PortionSizesPage() {
                 trên nhãn thực phẩm hoặc hướng dẫn dinh dưỡng. Đây là lượng tiêu chuẩn để tính toán dinh dưỡng.
               </p>
               <p>
-                <strong>Portion Size (Khẩu phần Thực tế):</strong> Lượng thực phẩm bạn thực sự ăn. 
+                <strong>Portion Size (Khẩu phần thực tế):</strong> Lượng thực phẩm bạn thực sự ăn. 
                 Có thể lớn hơn hoặc nhỏ hơn serving size.
               </p>
             </div>

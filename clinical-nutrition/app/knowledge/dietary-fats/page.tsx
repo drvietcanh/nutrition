@@ -484,7 +484,7 @@ export default function DietaryFatsPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Áp dụng Thực tế trong Bữa ăn Việt Nam
+          Áp dụng thực tế trong Bữa ăn Việt Nam
         </h2>
         <Card className="border-green-200 bg-green-50/30">
           <h3 className="heading-4 mb-3">Nguyên tắc cơ bản</h3>
@@ -555,7 +555,7 @@ export default function DietaryFatsPage() {
 
       {/* How Much Fat */}
       <section className="space-y-4">
-        <h2 className="heading-2">Nên Ăn Bao nhiêu Chất béo?</h2>
+        <h2 className="heading-2">Nên ăn bao nhiêu Chất béo?</h2>
         <Card>
           <p className="text-body mb-4">
             Theo khuyến nghị, chất béo nên chiếm <strong>20-35%</strong> tổng năng lượng hàng ngày:

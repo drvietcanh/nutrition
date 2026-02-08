@@ -155,7 +155,7 @@ export default function SmartShoppingVietnamPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="tip" title="Ví dụ Thực tế">
+          <ExampleBox variant="tip" title="Ví dụ thực tế">
             <p className="mb-2">
               <strong>Rau muống tươi:</strong> Lá xanh tươi, thân cứng, không héo. 
               Khi bẻ thân, có tiếng "rắc" - dấu hiệu rau tươi.

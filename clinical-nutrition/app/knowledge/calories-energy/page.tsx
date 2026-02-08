@@ -156,7 +156,7 @@ export default function CaloriesEnergyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Calo trong Thực phẩm: Ví dụ Thực tế</h2>
+        <h2 className="heading-2">Calo trong Thực phẩm: Ví dụ thực tế</h2>
         <div className="space-y-4">
           <ComparisonCard
             title="So sánh Calo trong Thực phẩm"
@@ -217,7 +217,7 @@ export default function CaloriesEnergyPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="info" title="Ví dụ Thực tế">
+          <ExampleBox variant="info" title="Ví dụ thực tế">
             <p className="mb-2">
               <strong>Tình huống:</strong> Bạn muốn giảm cân. TDEE của bạn là 2,000 calo/ngày.
             </p>

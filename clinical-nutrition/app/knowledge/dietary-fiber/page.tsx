@@ -408,7 +408,7 @@ export default function DietaryFiberPage() {
 
       {/* How Much Fiber */}
       <section className="space-y-4">
-        <h2 className="heading-2">Nên Ăn Bao nhiêu Chất xơ?</h2>
+        <h2 className="heading-2">Nên ăn bao nhiêu Chất xơ?</h2>
         <Card>
           <div className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -112,7 +112,7 @@ export default function SodiumHealthPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <AlertTriangle className="w-6 h-6 text-red-600" aria-hidden="true" />
-          Ăn nhiều Muối có hại gì?
+          Ăn nhiều muối có hại gì?
         </h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
@@ -165,7 +165,7 @@ export default function SodiumHealthPage() {
 
       {/* How Much Sodium */}
       <section className="space-y-4">
-        <h2 className="heading-2">Nên Ăn Bao nhiêu Natri?</h2>
+        <h2 className="heading-2">Nên ăn bao nhiêu Natri?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-4 text-blue-900 mb-3">Người khỏe mạnh</h3>
@@ -191,7 +191,7 @@ export default function SodiumHealthPage() {
         </div>
 
         <Card>
-          <h3 className="heading-4 mb-3">Thực tế hiện tại</h3>
+          <h3 className="heading-4 mb-3">thực tế hiện tại</h3>
           <p className="text-body mb-3">
             Hầu hết người Việt Nam ăn khoảng <strong>3,000-5,000mg natri/ngày</strong>, 
             cao hơn nhiều so với khuyến nghị. Lý do chính:
@@ -223,7 +223,7 @@ export default function SodiumHealthPage() {
 
       {/* Vietnamese Sodium Sources Table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Muối Phổ biến trong Bữa ăn Việt Nam</h2>
+        <h2 className="heading-2">Nguồn muối phổ biến trong Bữa ăn Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Bảng dưới đây giúp bạn nhận biết các nguồn muối phổ biến trong bữa ăn Việt Nam.
@@ -369,11 +369,11 @@ export default function SodiumHealthPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Áp dụng Thực tế
+          Áp dụng thực tế
         </h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50/30">
-            <h3 className="heading-4 mb-3">Nguyên tắc Giảm Muối trong Đời sống Việt Nam</h3>
+            <h3 className="heading-4 mb-3">Nguyên tắc giảm muối trong đời sống Việt Nam</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />

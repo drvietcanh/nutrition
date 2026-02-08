@@ -293,7 +293,7 @@ export default function NutritionAssessmentOverviewPage() {
         <div className="space-y-4">
           <EducationalNote variant="warning" title='❌ "Nếu tôi tính toán nhu cầu, công việc đã xong"'>
             <p>
-              <strong>Thực tế</strong>: Tính toán nhu cầu chỉ là khởi đầu. Đánh giá thường bao gồm
+              <strong>thực tế</strong>: Tính toán nhu cầu chỉ là khởi đầu. Đánh giá thường bao gồm
               đánh giá lượng ăn vào thực tế, xác định khoảng trống, xem xét các lựa chọn, theo dõi phản ứng và
               đánh giá lại thường xuyên. Ước tính nhu cầu cung cấp mục tiêu, nhưng đánh giá là một quy trình liên tục.
             </p>
@@ -301,7 +301,7 @@ export default function NutritionAssessmentOverviewPage() {
 
           <EducationalNote variant="warning" title='❌ "Công cụ sàng lọc chẩn đoán suy dinh dưỡng"'>
             <p>
-              <strong>Thực tế</strong>: Công cụ sàng lọc xác định nguy cơ, không phải chẩn đoán. Chúng chỉ ra ai có thể
+              <strong>thực tế</strong>: Công cụ sàng lọc xác định nguy cơ, không phải chẩn đoán. Chúng chỉ ra ai có thể
               hưởng lợi từ đánh giá thêm, không phải ai chắc chắn bị suy dinh dưỡng. Chẩn đoán đòi hỏi
               đánh giá toàn diện bao gồm tiền sử chi tiết, khám thực thể, dữ liệu phòng thí nghiệm,
               và phán đoán lâm sàng.
@@ -310,7 +310,7 @@ export default function NutritionAssessmentOverviewPage() {
 
           <EducationalNote variant="warning" title='❌ "Công thức cho câu trả lời đúng"'>
             <p>
-              <strong>Thực tế</strong>: Công thức cung cấp ước tính, không phải yêu cầu chính xác. Các phương pháp khác nhau
+              <strong>thực tế</strong>: Công thức cung cấp ước tính, không phải yêu cầu chính xác. Các phương pháp khác nhau
               tạo ra các con số khác nhau, và điều đó là bình thường. Công thức giúp cấu trúc suy nghĩ, nhưng phán đoán
               lâm sàng và phản ứng bệnh nhân hướng dẫn quyết định thực tế.
             </p>

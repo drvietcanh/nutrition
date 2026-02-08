@@ -258,6 +258,39 @@ def fix_file(file_path):
             
             # Pattern: "Nôn mửa" → "nôn mửa" (khi không phải đầu câu)
             (r'Nôn mửa', 'nôn mửa'),
+            
+            # Pattern: "Nước và Dịch trong Dinh dưỡng Lâm sàng" → "Nước và Dịch trong Dinh dưỡng lâm sàng"
+            (r'Nước và Dịch trong Dinh dưỡng Lâm sàng', 'Nước và Dịch trong Dinh dưỡng lâm sàng'),
+            
+            # Pattern: "Ăn nhiều Muối" → "Ăn nhiều muối"
+            (r'Ăn nhiều Muối', 'Ăn nhiều muối'),
+            
+            # Pattern: "Nên Ăn Bao nhiêu" → "Nên ăn bao nhiêu"
+            (r'Nên Ăn Bao nhiêu', 'Nên ăn bao nhiêu'),
+            
+            # Pattern: "Nguồn Muối Phổ biến trong Bữa ăn" → "Nguồn muối phổ biến trong Bữa ăn"
+            (r'Nguồn Muối Phổ biến trong Bữa ăn', 'Nguồn muối phổ biến trong Bữa ăn'),
+            
+            # Pattern: "Áp dụng Thực tế" → "Áp dụng thực tế"
+            (r'Áp dụng Thực tế', 'Áp dụng thực tế'),
+            
+            # Pattern: "Nguyên tắc Giảm Muối trong Đời sống" → "Nguyên tắc giảm muối trong Đời sống"
+            (r'Nguyên tắc Giảm Muối trong Đời sống', 'Nguyên tắc giảm muối trong Đời sống'),
+            
+            # Pattern: "Giảm Muối" → "giảm muối" (khi không phải đầu câu)
+            (r'Giảm Muối', 'giảm muối'),
+            
+            # Pattern: "Thực tế" → "thực tế" (khi không phải đầu câu)
+            (r'Thực tế', 'thực tế'),
+            
+            # Pattern: "Đời sống" → "đời sống" (khi không phải đầu câu)
+            (r'Đời sống', 'đời sống'),
+            
+            # Pattern: "Bao nhiêu" → "bao nhiêu" (khi không phải đầu câu)
+            (r'Bao nhiêu', 'bao nhiêu'),
+            
+            # Pattern: "Nguồn Muối" → "Nguồn muối" (khi không phải đầu câu)
+            (r'Nguồn Muối', 'Nguồn muối'),
         ]
         
         for pattern, replacement in replacements:

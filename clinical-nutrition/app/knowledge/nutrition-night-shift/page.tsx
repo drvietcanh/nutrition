@@ -111,7 +111,7 @@ export default function NutritionNightShiftPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="tip" title="Ví dụ Thực tế">
+          <ExampleBox variant="tip" title="Ví dụ thực tế">
             <p className="mb-2">
               <strong>18:00 - Bữa chính:</strong> Cơm + thịt gà kho + rau + canh (600 calo, 30g protein)
             </p>
@@ -280,7 +280,7 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế: Một Ngày Làm Ca Đêm</h2>
+        <h2 className="heading-2">Ví dụ thực tế: Một Ngày Làm Ca Đêm</h2>
         <Card>
           <h3 className="heading-4 mb-3">Timeline Bữa ăn</h3>
           <div className="space-y-3">

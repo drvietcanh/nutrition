@@ -195,7 +195,7 @@ export default function CalciumBoneHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cần Bao nhiêu Canxi?</h2>
+        <h2 className="heading-2">Cần bao nhiêu Canxi?</h2>
         <Card>
           <div className="space-y-4">
             <p className="text-body">
@@ -233,7 +233,7 @@ export default function CalciumBoneHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế</h2>
+        <h2 className="heading-2">Ví dụ thực tế</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 1: Thiếu niên 15 tuổi</h3>

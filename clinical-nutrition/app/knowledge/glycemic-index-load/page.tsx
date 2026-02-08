@@ -772,7 +772,7 @@ export default function GlycemicIndexLoadPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách Áp dụng trong Thực tế
+          Cách Áp dụng trong thực tế
         </h2>
         <div className="space-y-4">
           <Card>

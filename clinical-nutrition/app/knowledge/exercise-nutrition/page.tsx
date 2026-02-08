@@ -193,7 +193,7 @@ export default function ExerciseNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế</h2>
+        <h2 className="heading-2">Ví dụ thực tế</h2>
         <ExampleBox variant="info" title="Tình huống: Tập thể dục 1 giờ, 3 lần/tuần">
           <p className="mb-2">
             <strong>Trước tập (30 phút):</strong> 1 quả chuối hoặc không ăn gì nếu tập sáng sớm

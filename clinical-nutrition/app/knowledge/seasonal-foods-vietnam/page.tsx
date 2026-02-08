@@ -313,7 +313,7 @@ export default function SeasonalFoodsVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế</h2>
+        <h2 className="heading-2">Ví dụ thực tế</h2>
         <ExampleBox variant="tip" title="Ví dụ Mua sắm Theo Mùa">
           <p className="mb-2">
             <strong>Mùa hè (tháng 6):</strong> Mua xoài (30,000đ/kg), ổi (20,000đ/kg), thanh long (25,000đ/kg). 

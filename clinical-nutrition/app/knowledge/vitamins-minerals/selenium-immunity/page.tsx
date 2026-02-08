@@ -114,7 +114,7 @@ export default function SeleniumImmunityPage() {
           />
         </Card>
 
-        <ExampleBox variant="tip" title="Ví dụ Thực tế">
+        <ExampleBox variant="tip" title="Ví dụ thực tế">
           <p className="mb-2">
             <strong>55mcg selenium/ngày có thể đạt được từ:</strong>
           </p>

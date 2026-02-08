@@ -55,7 +55,7 @@ export default function WhyNoUniversalNumberPage() {
             nhận một con số, và “làm theo”.
           </p>
           <p>
-            Thực tế, điều đó sẽ dễ hơn. Một con số duy nhất, rõ ràng sẽ làm cho việc lập kế hoạch đơn giản hơn và quyết định
+            thực tế, điều đó sẽ dễ hơn. Một con số duy nhất, rõ ràng sẽ làm cho việc lập kế hoạch đơn giản hơn và quyết định
             nhanh hơn. Nhưng <strong>dinh dưỡng lâm sàng không vận hành theo cách đó</strong>.
             Không có con số phổ quát nào áp dụng cho tất cả mọi người, hoặc thậm chí cho cùng một người trong các tình huống khác nhau.
           </p>

@@ -507,7 +507,7 @@ export default function CarbohydratesPage() {
 
       {/* How Much Sugar */}
       <section className="space-y-4">
-        <h2 className="heading-2">Ăn Đường Bao nhiêu là Hợp lý?</h2>
+        <h2 className="heading-2">Ăn Đường bao nhiêu là Hợp lý?</h2>
         <Card className="border-blue-200 bg-blue-50/30">
           <div className="space-y-3">
             <p className="text-body">
@@ -538,9 +538,9 @@ export default function CarbohydratesPage() {
 
       {/* Practical Application Sugar */}
       <section className="space-y-4">
-        <h2 className="heading-2">Áp dụng Thực tế</h2>
+        <h2 className="heading-2">Áp dụng thực tế</h2>
         <Card className="border-green-200 bg-green-50/30">
-          <h3 className="heading-4 mb-3">Mẹo Giảm Đường trong Đời sống Việt Nam</h3>
+          <h3 className="heading-4 mb-3">Mẹo Giảm Đường trong đời sống Việt Nam</h3>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -601,7 +601,7 @@ export default function CarbohydratesPage() {
 
       {/* How Much Carbs */}
       <section className="space-y-4">
-        <h2 className="heading-2">Nên Ăn Bao nhiêu Carbohydrate?</h2>
+        <h2 className="heading-2">Nên ăn bao nhiêu Carbohydrate?</h2>
         <Card>
           <div className="space-y-4">
             <p className="text-body">
@@ -615,7 +615,7 @@ export default function CarbohydratesPage() {
                 { nutrient: "Người tập thể dục nhiều", amount: "Có thể cao hơn", note: "Cần nhiều năng lượng" },
               ]}
             />
-            <ExampleBox variant="tip" title="Ví dụ Thực tế">
+            <ExampleBox variant="tip" title="Ví dụ thực tế">
               <p className="mb-2">
                 <strong>2000 calo/ngày = 225-325g carbohydrate:</strong>
               </p>

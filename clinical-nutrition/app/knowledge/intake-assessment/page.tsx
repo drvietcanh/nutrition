@@ -25,7 +25,7 @@ export default function IntakeAssessmentPage() {
           id="prescribed-vs-delivered-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Kê đơn vs. Cung cấp: Khoảng cách Giữa Kế hoạch và Thực tế
+          Kê đơn vs. Cung cấp: Khoảng cách Giữa Kế hoạch và thực tế
         </h2>
         <p className="text-base text-neutral-700">
           Trong môi trường lâm sàng, thường có sự khác biệt giữa:
