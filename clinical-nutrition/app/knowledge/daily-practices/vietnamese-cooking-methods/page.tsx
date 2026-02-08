@@ -179,26 +179,22 @@ export default function VietnameseCookingMethodsPage() {
         <h2 className="heading-2">So sánh Phương pháp Tốt vs Không Tốt</h2>
         <ComparisonCard
           title="Phương pháp Nấu Ăn"
-          better={{
-            title: "Phương pháp Tốt",
-            items: [
-              "Luộc: Giữ dinh dưỡng, không dầu mỡ",
-              "Hấp: Giữ dinh dưỡng, hương vị tự nhiên",
-              "Kho (ít muối): Hương vị đậm đà, ít dầu",
-              "Nướng (không cháy): Ít dầu, hương vị thơm",
-              "Xào (ít dầu): Nhanh, giữ độ giòn",
-            ],
-          }}
-          worse={{
-            title: "Phương pháp Nên Hạn chế",
-            items: [
-              "Chiên ngập dầu: Nhiều dầu mỡ, mất dinh dưỡng",
-              "Kho (nhiều muối): Quá nhiều natri",
-              "Nướng (cháy): Có thể chứa chất độc hại",
-              "Xào (nhiều dầu): Nhiều chất béo không cần thiết",
-              "Rang (nhiều dầu): Nhiều dầu mỡ",
-            ],
-          }}
+          goodTitle="Phương pháp Tốt"
+          goodItems={[
+            "Luộc: Giữ dinh dưỡng, không dầu mỡ",
+            "Hấp: Giữ dinh dưỡng, hương vị tự nhiên",
+            "Kho (ít muối): Hương vị đậm đà, ít dầu",
+            "Nướng (không cháy): Ít dầu, hương vị thơm",
+            "Xào (ít dầu): Nhanh, giữ độ giòn",
+          ]}
+          badTitle="Phương pháp Nên Hạn chế"
+          badItems={[
+            "Chiên ngập dầu: Nhiều dầu mỡ, mất dinh dưỡng",
+            "Kho (nhiều muối): Quá nhiều natri",
+            "Nướng (cháy): Có thể chứa chất độc hại",
+            "Xào (nhiều dầu): Nhiều chất béo không cần thiết",
+            "Rang (nhiều dầu): Nhiều dầu mỡ",
+          ]}
         />
       </section>
 

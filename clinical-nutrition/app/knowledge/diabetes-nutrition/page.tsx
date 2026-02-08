@@ -4,6 +4,8 @@ import { Activity, AlertCircle, CheckCircle, Info, AlertTriangle, Lightbulb } fr
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
+import { RelatedContent } from "../../components/RelatedContent";
+import { articles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
   title: "Dinh dưỡng trong Đái tháo đường",

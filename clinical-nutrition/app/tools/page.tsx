@@ -169,6 +169,27 @@ export default function ToolsIndexPage() {
             </Link>
           </CardFooter>
         </Card>
+
+        <Card href="/tools/food-database">
+          <CardHeader
+            icon={UtensilsCrossed}
+            title="Cơ sở Dữ liệu Thực phẩm Việt Nam"
+          />
+          <CardContent>
+            <p className="text-body">
+              Tìm kiếm và xem thông tin dinh dưỡng của các thực phẩm Việt Nam phổ biến.
+              Tính toán giá trị dinh dưỡng cho nhiều khẩu phần khác nhau.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/tools/food-database"
+              className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
+            >
+              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+            </Link>
+          </CardFooter>
+        </Card>
       </section>
     </main>
   );

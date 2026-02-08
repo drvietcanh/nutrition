@@ -179,24 +179,20 @@ export default function RegionalNutritionVietnamPage() {
         <h2 className="heading-2">So sánh Vùng miền</h2>
         <ComparisonCard
           title="Đặc điểm Dinh dưỡng"
-          better={{
-            title: "Ưu Điểm Chung",
-            items: [
-              "Nhiều rau củ - giàu vitamin, chất xơ",
-              "Đa dạng hải sản - giàu protein, omega-3",
-              "Gia vị tự nhiên - có lợi ích sức khỏe",
-              "Cân bằng dinh dưỡng - có đủ carbohydrate, protein, rau",
-            ],
-          }}
-          worse={{
-            title: "Nhược Điểm Cần Chú ý",
-            items: [
-              "Miền Bắc: Một số món nhiều muối",
-              "Miền Trung: Nhiều muối, cay quá",
-              "Miền Nam: Nhiều đường",
-              "Một số món nhiều dầu mỡ",
-            ],
-          }}
+          goodTitle="Ưu Điểm Chung"
+          goodItems={[
+            "Nhiều rau củ - giàu vitamin, chất xơ",
+            "Đa dạng hải sản - giàu protein, omega-3",
+            "Gia vị tự nhiên - có lợi ích sức khỏe",
+            "Cân bằng dinh dưỡng - có đủ carbohydrate, protein, rau",
+          ]}
+          badTitle="Nhược Điểm Cần Chú ý"
+          badItems={[
+            "Miền Bắc: Một số món nhiều muối",
+            "Miền Trung: Nhiều muối, cay quá",
+            "Miền Nam: Nhiều đường",
+            "Một số món nhiều dầu mỡ",
+          ]}
         />
       </section>
 

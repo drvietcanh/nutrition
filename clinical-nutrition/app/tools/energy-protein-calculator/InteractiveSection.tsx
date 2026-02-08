@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import type { ClinicalInput } from "../../../lib/clinical-input";
 import {
   calculateSimpleWeightBasedNeeds,
@@ -14,6 +14,7 @@ import {
   validateAge,
 } from "../../../lib/utils/validation";
 import { parseNumber } from "../../../lib/utils/formatting";
+import { ComparisonChart } from "../../components/Charts";
 
 type MethodTab = EstimationMethod | "both";
 

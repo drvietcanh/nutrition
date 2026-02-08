@@ -171,22 +171,18 @@ export default function VietnameseFermentedFoodsPage() {
         <h2 className="heading-2">So sánh Gia vị</h2>
         <ComparisonCard
           title="Gia vị Việt Nam"
-          better={{
-            title: "Tốt hơn (Ít Natri)",
-            items: [
-              "Tương - ít natri hơn nước mắm",
-              "Chao - có probiotics, ít natri",
-              "Nước mắm pha loãng - giảm natri",
-            ],
-          }}
-          worse={{
-            title: "Nên Hạn chế (Nhiều Natri)",
-            items: [
-              "Nước mắm nguyên chất - rất nhiều natri",
-              "Mắm tôm, mắm ruốc - rất nhiều natri",
-              "Gia vị chế biến sẵn - có thể nhiều natri",
-            ],
-          }}
+          goodTitle="Tốt hơn (Ít Natri)"
+          goodItems={[
+            "Tương - ít natri hơn nước mắm",
+            "Chao - có probiotics, ít natri",
+            "Nước mắm pha loãng - giảm natri",
+          ]}
+          badTitle="Nên Hạn chế (Nhiều Natri)"
+          badItems={[
+            "Nước mắm nguyên chất - rất nhiều natri",
+            "Mắm tôm, mắm ruốc - rất nhiều natri",
+            "Gia vị chế biến sẵn - có thể nhiều natri",
+          ]}
         />
       </section>
 

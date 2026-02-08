@@ -199,25 +199,21 @@ export default function NutritionNightShiftPage() {
         <h2 className="heading-2">So sánh Thực phẩm</h2>
         <ComparisonCard
           title="Thực phẩm cho Ca Đêm"
-          better={{
-            title: "Thực phẩm Tốt",
-            items: [
-              "Protein (thịt, cá, đậu phụ) - duy trì năng lượng",
-              "Carbohydrate phức tạp (cơm, bánh mì) - năng lượng bền vững",
-              "Rau củ - vitamin, chất xơ",
-              "Sữa, sữa chua - giúp ngủ tốt",
-              "Nước lọc - hydration",
-            ],
-          }}
-          worse={{
-            title: "Thực phẩm Nên Tránh",
-            items: [
-              "Caffeine (4-6 giờ trước khi ngủ) - ảnh hưởng giấc ngủ",
-              "Đồ ngọt quá nhiều - tăng năng lượng tạm thời",
-              "Đồ chiên, nhiều dầu mỡ - khó tiêu",
-              "Rượu bia - ảnh hưởng giấc ngủ",
-            ],
-          }}
+          goodTitle="Thực phẩm Tốt"
+          goodItems={[
+            "Protein (thịt, cá, đậu phụ) - duy trì năng lượng",
+            "Carbohydrate phức tạp (cơm, bánh mì) - năng lượng bền vững",
+            "Rau củ - vitamin, chất xơ",
+            "Sữa, sữa chua - giúp ngủ tốt",
+            "Nước lọc - hydration",
+          ]}
+          badTitle="Thực phẩm Nên Tránh"
+          badItems={[
+            "Caffeine (4-6 giờ trước khi ngủ) - ảnh hưởng giấc ngủ",
+            "Đồ ngọt quá nhiều - tăng năng lượng tạm thời",
+            "Đồ chiên, nhiều dầu mỡ - khó tiêu",
+            "Rượu bia - ảnh hưởng giấc ngủ",
+          ]}
         />
       </section>
 

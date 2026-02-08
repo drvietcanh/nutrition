@@ -1,48 +1,106 @@
 "use client";
 
-import { useState } from "react";
-import { Info } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
+import { HelpCircle } from "lucide-react";
 
 interface TooltipProps {
-  term: string;
-  definition: string;
-  children: React.ReactNode;
+  content: React.ReactNode;
+  children?: React.ReactNode;
+  icon?: boolean;
+  position?: "top" | "bottom" | "left" | "right";
 }
 
-export function Tooltip({ term, definition, children }: TooltipProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export function Tooltip({
+  content,
+  children,
+  icon = false,
+  position = "top",
+}: TooltipProps) {
+  const [isVisible, setIsVisible] = useState(false);
+  const tooltipRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (isVisible && tooltipRef.current && triggerRef.current) {
+      const tooltip = tooltipRef.current;
+      const trigger = triggerRef.current;
+      const rect = trigger.getBoundingClientRect();
+
+      // Position tooltip
+      switch (position) {
+        case "top":
+          tooltip.style.bottom = `${window.innerHeight - rect.top + 8}px`;
+          tooltip.style.left = `${rect.left + rect.width / 2}px`;
+          tooltip.style.transform = "translateX(-50%)";
+          break;
+        case "bottom":
+          tooltip.style.top = `${rect.bottom + 8}px`;
+          tooltip.style.left = `${rect.left + rect.width / 2}px`;
+          tooltip.style.transform = "translateX(-50%)";
+          break;
+        case "left":
+          tooltip.style.right = `${window.innerWidth - rect.left + 8}px`;
+          tooltip.style.top = `${rect.top + rect.height / 2}px`;
+          tooltip.style.transform = "translateY(-50%)";
+          break;
+        case "right":
+          tooltip.style.left = `${rect.right + 8}px`;
+          tooltip.style.top = `${rect.top + rect.height / 2}px`;
+          tooltip.style.transform = "translateY(-50%)";
+          break;
+      }
+    }
+  }, [isVisible, position]);
+
+  const positionClasses = {
+    top: "bottom-full left-1/2 -translate-x-1/2 mb-2",
+    bottom: "top-full left-1/2 -translate-x-1/2 mt-2",
+    left: "right-full top-1/2 -translate-y-1/2 mr-2",
+    right: "left-full top-1/2 -translate-y-1/2 ml-2",
+  };
 
   return (
-    <span className="relative inline-block">
-      <span
-        className="underline decoration-dotted decoration-blue-500 cursor-help"
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
-        onFocus={() => setIsOpen(true)}
-        onBlur={() => setIsOpen(false)}
-        tabIndex={0}
-        aria-describedby={`tooltip-${term}`}
-      >
-        {children}
-      </span>
-      {isOpen && (
+    <div
+      ref={triggerRef}
+      className="relative inline-block"
+      onMouseEnter={() => setIsVisible(true)}
+      onMouseLeave={() => setIsVisible(false)}
+      onFocus={() => setIsVisible(true)}
+      onBlur={() => setIsVisible(false)}
+    >
+      {icon ? (
+        <button
+          type="button"
+          className="inline-flex items-center text-gray-400 hover:text-gray-600 focus-ring rounded"
+          aria-label="Thông tin"
+        >
+          <HelpCircle className="w-4 h-4" aria-hidden="true" />
+        </button>
+      ) : (
+        children
+      )}
+
+      {isVisible && (
         <div
-          id={`tooltip-${term}`}
-          className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 p-3 bg-gray-900 text-white text-sm rounded-lg shadow-lg z-50 pointer-events-none"
+          ref={tooltipRef}
+          className={`absolute z-50 px-3 py-2 text-sm text-white bg-gray-900 rounded-lg shadow-lg max-w-xs ${positionClasses[position]}`}
           role="tooltip"
         >
-          <div className="flex items-start gap-2">
-            <Info className="w-4 h-4 text-blue-300 mt-0.5 flex-shrink-0" aria-hidden="true" />
-            <div>
-              <div className="font-semibold mb-1">{term}</div>
-              <div className="text-gray-200">{definition}</div>
-            </div>
-          </div>
-          <div className="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1">
-            <div className="w-2 h-2 bg-gray-900 transform rotate-45"></div>
-          </div>
+          <div className="whitespace-normal">{content}</div>
+          {/* Arrow */}
+          <div
+            className={`absolute ${
+              position === "top"
+                ? "top-full left-1/2 -translate-x-1/2 border-t-gray-900 border-t-4 border-x-transparent border-x-4"
+                : position === "bottom"
+                ? "bottom-full left-1/2 -translate-x-1/2 border-b-gray-900 border-b-4 border-x-transparent border-x-4"
+                : position === "left"
+                ? "left-full top-1/2 -translate-y-1/2 border-l-gray-900 border-l-4 border-y-transparent border-y-4"
+                : "right-full top-1/2 -translate-y-1/2 border-r-gray-900 border-r-4 border-y-transparent border-y-4"
+            }`}
+          />
         </div>
       )}
-    </span>
+    </div>
   );
 }

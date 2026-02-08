@@ -1416,6 +1416,28 @@ export const articles: ArticleMetadata[] = [
     targetAudience: 'general',
     href: '/knowledge/special-topics/festival-nutrition-vietnam',
   },
+  {
+    slug: 'emergency-nutrition',
+    title: 'Dinh dưỡng trong Cấp cứu',
+    description: 'Hướng dẫn về dinh dưỡng trong các tình huống cấp cứu, chấn thương, và phẫu thuật. Hiểu về stress metabolism và nhu cầu dinh dưỡng đặc biệt.',
+    category: 'clinical-foundations',
+    tags: ['cấp cứu', 'chấn thương', 'phẫu thuật', 'stress metabolism', 'nhiễm trùng'],
+    relatedArticles: ['assessment-process', 'needs-estimation', 'dinh-duong-sau-phau-thuat'],
+    level: 'intermediate',
+    targetAudience: 'professional',
+    href: '/knowledge/emergency-nutrition',
+  },
+  {
+    slug: 'sports-nutrition',
+    title: 'Dinh dưỡng Thể thao',
+    description: 'Hướng dẫn về dinh dưỡng cho vận động viên và người tập thể dục. Nhu cầu năng lượng, protein, carbohydrate, và hydration trong thể thao.',
+    category: 'special-topics',
+    tags: ['thể thao', 'vận động viên', 'protein', 'carbohydrate', 'hydration', 'exercise'],
+    relatedArticles: ['exercise-nutrition', 'protein-sources-needs', 'hydration'],
+    level: 'intermediate',
+    targetAudience: 'both',
+    href: '/knowledge/sports-nutrition',
+  },
 ];
 
 /**

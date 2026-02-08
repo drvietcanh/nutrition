@@ -196,26 +196,22 @@ export default function VietnameseFamilyMealsPage() {
         <h2 className="heading-2">Bữa ăn Cân bằng vs Không Cân bằng</h2>
         <ComparisonCard
           title="So sánh Bữa ăn"
-          better={{
-            title: "Bữa ăn Cân bằng",
-            items: [
-              "Cơm (1-2 bát) - carbohydrate",
-              "Canh (1 bát) - nước, vitamin",
-              "Món mặn (1 phần) - protein",
-              "Rau (1 phần) - vitamin, chất xơ",
-              "Đa dạng thực phẩm",
-            ],
-          }}
-          worse={{
-            title: "Bữa ăn Không Cân bằng",
-            items: [
-              "Quá nhiều cơm, ít rau",
-              "Quá nhiều thịt, ít rau",
-              "Không có canh",
-              "Quá nhiều dầu mỡ",
-              "Ít đa dạng",
-            ],
-          }}
+          goodTitle="Bữa ăn Cân bằng"
+          goodItems={[
+            "Cơm (1-2 bát) - carbohydrate",
+            "Canh (1 bát) - nước, vitamin",
+            "Món mặn (1 phần) - protein",
+            "Rau (1 phần) - vitamin, chất xơ",
+            "Đa dạng thực phẩm",
+          ]}
+          badTitle="Bữa ăn Không Cân bằng"
+          badItems={[
+            "Quá nhiều cơm, ít rau",
+            "Quá nhiều thịt, ít rau",
+            "Không có canh",
+            "Quá nhiều dầu mỡ",
+            "Ít đa dạng",
+          ]}
         />
       </section>
 

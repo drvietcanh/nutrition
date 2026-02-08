@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Search as SearchIcon } from "lucide-react";
-import { SearchModal } from "./SearchModal";
+import { SearchModalEnhanced } from "./SearchModalEnhanced";
 
 export function Search() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ export function Search() {
         <SearchIcon className="w-5 h-5" aria-hidden="true" />
         <span className="hidden lg:inline">Tìm kiếm</span>
       </button>
-      {isOpen && <SearchModal onClose={() => setIsOpen(false)} />}
+      {isOpen && <SearchModalEnhanced onClose={() => setIsOpen(false)} />}
     </>
   );
 }

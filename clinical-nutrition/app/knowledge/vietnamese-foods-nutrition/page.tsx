@@ -173,26 +173,22 @@ export default function VietnameseFoodsNutritionPage() {
         <h2 className="heading-2">So sánh Thực phẩm Việt Nam vs Phương Tây</h2>
         <ComparisonCard
           title="Ưu điểm Thực phẩm Việt Nam"
-          better={{
-            title: "Thực phẩm Việt Nam",
-            items: [
-              "Đa dạng rau củ tươi",
-              "Hải sản phong phú (cá, tôm, cua)",
-              "Trái cây nhiệt đới giàu vitamin C",
-              "Gia vị tự nhiên (gừng, nghệ, sả)",
-              "Phương pháp nấu lành mạnh (luộc, hấp, kho)",
-            ],
-          }}
-          worse={{
-            title: "Thực phẩm Phương Tây (một số)",
-            items: [
-              "Ít rau củ tươi hơn",
-              "Nhiều thịt đỏ, ít hải sản",
-              "Trái cây nhập khẩu có thể kém tươi",
-              "Nhiều gia vị chế biến sẵn",
-              "Nhiều phương pháp chiên, nướng",
-            ],
-          }}
+          goodTitle="Thực phẩm Việt Nam"
+          goodItems={[
+            "Đa dạng rau củ tươi",
+            "Hải sản phong phú (cá, tôm, cua)",
+            "Trái cây nhiệt đới giàu vitamin C",
+            "Gia vị tự nhiên (gừng, nghệ, sả)",
+            "Phương pháp nấu lành mạnh (luộc, hấp, kho)",
+          ]}
+          badTitle="Thực phẩm Phương Tây (một số)"
+          badItems={[
+            "Ít rau củ tươi hơn",
+            "Nhiều thịt đỏ, ít hải sản",
+            "Trái cây nhập khẩu có thể kém tươi",
+            "Nhiều gia vị chế biến sẵn",
+            "Nhiều phương pháp chiên, nướng",
+          ]}
         />
       </section>
 

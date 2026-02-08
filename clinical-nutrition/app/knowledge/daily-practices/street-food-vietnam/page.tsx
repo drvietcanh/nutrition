@@ -148,26 +148,22 @@ export default function StreetFoodVietnamPage() {
         <h2 className="heading-2">So sánh Lựa chọn</h2>
         <ComparisonCard
           title="Đồ Ăn Đường phố"
-          better={{
-            title: "Lựa chọn Tốt",
-            items: [
-              "Phở gà - có đủ dinh dưỡng, ít béo",
-              "Bánh mì (ít pate, nhiều rau) - cân bằng",
-              "Bún chả - có protein, rau",
-              "Cháo gà - dễ tiêu, giàu dinh dưỡng",
-              "Bánh cuốn - ít dầu, có protein",
-            ],
-          }}
-          worse={{
-            title: "Lựa chọn Nên Hạn chế",
-            items: [
-              "Bánh rán, nem rán - nhiều dầu mỡ",
-              "Chè, bánh ngọt - nhiều đường",
-              "Đồ chiên ngập dầu - nhiều calo",
-              "Nước ngọt - nhiều đường",
-              "Món quá mặn - nhiều natri",
-            ],
-          }}
+          goodTitle="Lựa chọn Tốt"
+          goodItems={[
+            "Phở gà - có đủ dinh dưỡng, ít béo",
+            "Bánh mì (ít pate, nhiều rau) - cân bằng",
+            "Bún chả - có protein, rau",
+            "Cháo gà - dễ tiêu, giàu dinh dưỡng",
+            "Bánh cuốn - ít dầu, có protein",
+          ]}
+          badTitle="Lựa chọn Nên Hạn chế"
+          badItems={[
+            "Bánh rán, nem rán - nhiều dầu mỡ",
+            "Chè, bánh ngọt - nhiều đường",
+            "Đồ chiên ngập dầu - nhiều calo",
+            "Nước ngọt - nhiều đường",
+            "Món quá mặn - nhiều natri",
+          ]}
         />
       </section>
 

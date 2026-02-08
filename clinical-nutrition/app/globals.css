@@ -26,3 +26,36 @@ body {
   font-family: var(--font-sans);
   line-height: var(--line-height-relaxed);
 }
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  /* Improve touch targets */
+  button,
+  a[role="button"],
+  input[type="button"],
+  input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Better spacing on mobile */
+  .space-y-8 > * + * {
+    margin-top: 1.5rem;
+  }
+
+  /* Improve text readability */
+  .text-body {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible improvements */
+*:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}

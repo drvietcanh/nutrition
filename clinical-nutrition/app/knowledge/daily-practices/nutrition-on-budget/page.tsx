@@ -189,26 +189,22 @@ export default function NutritionOnBudgetPage() {
 
         <ComparisonCard
           title="So sánh Giá: Chợ vs Siêu thị"
-          better={{
-            title: "Chợ Truyền thống",
-            items: [
-              "Rẻ hơn 20-30% (thường)",
-              "Tươi hơn (mua sáng sớm)",
-              "Có thể mặc cả",
-              "Thực phẩm địa phương",
-              "Rau củ, thịt, cá tươi",
-            ],
-          }}
-          worse={{
-            title: "Siêu thị",
-            items: [
-              "Đắt hơn 20-30% (thường)",
-              "Có nhãn, dễ đọc",
-              "Bảo quản tốt",
-              "Nhiều lựa chọn",
-              "Thực phẩm đóng gói",
-            ],
-          }}
+          goodTitle="Chợ Truyền thống"
+          goodItems={[
+            "Rẻ hơn 20-30% (thường)",
+            "Tươi hơn (mua sáng sớm)",
+            "Có thể mặc cả",
+            "Thực phẩm địa phương",
+            "Rau củ, thịt, cá tươi",
+          ]}
+          badTitle="Siêu thị"
+          badItems={[
+            "Đắt hơn 20-30% (thường)",
+            "Có nhãn, dễ đọc",
+            "Bảo quản tốt",
+            "Nhiều lựa chọn",
+            "Thực phẩm đóng gói",
+          ]}
         />
       </section>
 

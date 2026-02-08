@@ -7,6 +7,8 @@ import { ErrorBoundary } from "./components/ErrorBoundary";
 import { SkipLinks } from "./components/SkipLinks";
 import { BackToTop } from "./components/BackToTop";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { ToastProvider } from "./components/ToastProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -82,7 +84,9 @@ export default function RootLayout({
         <GlobalDisclaimerBanner />
               <Header />
               <main id="main-content">{children}</main>
+              <Footer />
               <BackToTop />
+              <ToastProvider />
             </ErrorBoundary>
       </body>
     </html>

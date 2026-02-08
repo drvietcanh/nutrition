@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { Card } from "../../components/Card";
-import { Callout } from "../../../components/Callout";
-import { ExampleBox } from "../../../components/ExampleBox";
-import { ComparisonCard } from "../../../components/ComparisonCard";
-import { NutrientTable } from "../../../components/NutrientTable";
+import { Callout } from "../../components/Callout";
+import { ExampleBox } from "../../components/ExampleBox";
+import { ComparisonCard } from "../../components/ComparisonCard";
+import { NutrientTable } from "../../components/NutrientTable";
 import { Coffee, Droplet, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
