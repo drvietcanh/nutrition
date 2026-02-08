@@ -58,7 +58,7 @@ export default function TeenNutritionPage() {
             <strong>Quan trọng:</strong> Đủ calo, protein, canxi, sắt, vitamin D
           </li>
           <li>
-            <strong>Bữa sáng:</strong> Đặc biệt quan trọng cho thanh thiếu niên
+            <strong>Bữa sáng:</strong> đặc biệt quan trọng cho thanh thiếu niên
           </li>
         </ul>
       </Callout>
@@ -108,7 +108,7 @@ export default function TeenNutritionPage() {
             <div>
               <p className="text-sm font-semibold text-gray-900 mb-1">Thiếu canxi và sắt</p>
               <p className="text-sm text-gray-700">
-                Đặc biệt phụ nữ có thể thiếu sắt do kinh nguyệt. Thiếu canxi ảnh hưởng đến xương.
+                đặc biệt phụ nữ có thể thiếu sắt do kinh nguyệt. Thiếu canxi ảnh hưởng đến xương.
               </p>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function TeenNutritionPage() {
             { type: 'tip', text: 'Ăn đủ canxi: Sữa, sữa chua, phô mai, rau xanh đậm cho xương chắc khỏe' },
             { type: 'tip', text: 'Chú ý sắt: Phụ nữ cần nhiều sắt hơn. Ăn thịt nạc, đậu, rau xanh đậm' },
             { type: 'check', text: 'Uống nước: Thay vì nước ngọt, uống nước lọc' },
-            { type: 'check', text: 'Ăn đa dạng: Đảm bảo đủ các nhóm thực phẩm' },
+            { type: 'check', text: 'Ăn đa dạng: đảm bảo đủ các nhóm thực phẩm' },
             { type: 'warning', text: 'Tránh ăn quá ít: Tăng trưởng cần năng lượng, không nên ăn quá ít để "giảm cân"' },
             { type: 'info', text: 'Tập thể dục: Kết hợp với dinh dưỡng tốt để có sức khỏe tốt' },
           ]}

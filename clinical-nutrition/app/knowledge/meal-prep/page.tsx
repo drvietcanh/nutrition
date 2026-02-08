@@ -173,7 +173,7 @@ export default function MealPrepPage() {
               <div className="flex-1">
                 <h3 className="heading-4 mb-2">Mua sắm</h3>
                 <p className="text-body-sm">
-                  Mua tất cả nguyên liệu cần thiết. Đảm bảo có đủ hộp đựng phù hợp.
+                  Mua tất cả nguyên liệu cần thiết. đảm bảo có đủ hộp đựng phù hợp.
                 </p>
               </div>
             </div>
@@ -279,7 +279,7 @@ export default function MealPrepPage() {
             { type: 'tip', text: 'Sử dụng hộp đựng phù hợp: Hộp có ngăn riêng, có thể hâm nóng' },
             { type: 'tip', text: 'Dán nhãn: Ghi ngày tháng để biết món nào cũ, món nào mới' },
             { type: 'check', text: 'Bảo quản đúng cách: Tủ lạnh (3-4 ngày), tủ đông (lâu hơn)' },
-            { type: 'check', text: 'Hâm nóng đúng cách: Đảm bảo thức ăn nóng đều trước khi ăn' },
+            { type: 'check', text: 'Hâm nóng đúng cách: đảm bảo thức ăn nóng đều trước khi ăn' },
             { type: 'warning', text: 'Không để quá lâu: Thức ăn đã nấu chỉ giữ được 3-4 ngày trong tủ lạnh' },
             { type: 'info', text: 'Kết hợp meal prep với nấu tươi: Một số món prep, một số món nấu tươi' },
           ]}

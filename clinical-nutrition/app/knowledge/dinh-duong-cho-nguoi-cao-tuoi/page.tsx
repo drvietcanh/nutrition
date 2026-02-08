@@ -57,7 +57,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
               <strong>👉 Nguyên tắc: Ăn đủ – Ăn đúng – Ăn đều – Ăn an toàn:</strong>
             </p>
             <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
-              <li>Ăn đủ: Đảm bảo đủ năng lượng và chất dinh dưỡng</li>
+              <li>Ăn đủ: đảm bảo đủ năng lượng và chất dinh dưỡng</li>
               <li>Ăn đúng: Chọn thực phẩm phù hợp với tình trạng sức khỏe</li>
               <li>Ăn đều: Chia nhỏ bữa ăn, ăn đều đặn</li>
               <li>Ăn an toàn: Tránh ngộ độc, nghẹn, sặc</li>
@@ -86,7 +86,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Đặc biệt Quan trọng ở Người cao tuổi?
+            Vì sao Dinh dưỡng đặc biệt Quan trọng ở Người cao tuổi?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

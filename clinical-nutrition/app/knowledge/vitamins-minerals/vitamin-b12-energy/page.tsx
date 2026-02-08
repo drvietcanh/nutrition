@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Vitamin B12 và năng lượng",
   description:
-    "Hiểu về vitamin B12 - vitamin quan trọng cho năng lượng, tạo máu, và chức năng thần kinh. Đặc biệt quan trọng cho người ăn chay.",
+    "Hiểu về vitamin B12 - vitamin quan trọng cho năng lượng, tạo máu, và chức năng thần kinh. đặc biệt quan trọng cho người ăn chay.",
   keywords: [
     "vitamin B12",
     "năng lượng",

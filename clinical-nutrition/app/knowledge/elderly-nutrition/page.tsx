@@ -239,7 +239,7 @@ export default function ElderlyNutritionPage() {
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>
-                  <strong>Kiểm tra răng giả:</strong> Đảm bảo răng giả vừa vặn và thoải mái
+                  <strong>Kiểm tra răng giả:</strong> đảm bảo răng giả vừa vặn và thoải mái
                 </span>
               </li>
             </ul>
@@ -317,7 +317,7 @@ export default function ElderlyNutritionPage() {
           <Card>
             <h3 className="heading-5 mb-3">Bữa ăn lành mạnh</h3>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li>• Đảm bảo có protein trong mỗi bữa</li>
+              <li>• đảm bảo có protein trong mỗi bữa</li>
               <li>• Nhiều rau củ (dễ nhai, nấu mềm)</li>
               <li>• Ngũ cốc nguyên cám (nếu có thể)</li>
               <li>• Sữa hoặc sản phẩm từ sữa</li>

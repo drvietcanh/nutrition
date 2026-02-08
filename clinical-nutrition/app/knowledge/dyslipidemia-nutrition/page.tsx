@@ -217,7 +217,7 @@ export default function DyslipidemiaNutritionPage() {
               Ăn nhiều đường và tinh bột tinh chế → triglycerides tăng
             </p>
             <div>
-              <p className="text-sm font-semibold text-gray-900 mb-2">Đặc biệt là:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-2">đặc biệt là:</p>
               <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
                 <li>Nước ngọt</li>
                 <li>Trà sữa</li>

@@ -22,8 +22,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Giáo dục Dinh dưỡng Lâm sàng & Công cụ",
-    template: "%s | Giáo dục Dinh dưỡng Lâm sàng",
+    default: "Giáo dục Dinh dưỡng lâm sàng & Công cụ",
+    template: "%s | Giáo dục Dinh dưỡng lâm sàng",
   },
   description:
     "Nền tảng giáo dục công cộng giải thích các khái niệm dinh dưỡng lâm sàng và cung cấp công cụ tương tác hỗ trợ (nhưng không thay thế) tư duy lâm sàng.",
@@ -42,14 +42,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "vi_VN",
     url: "https://clinical-nutrition.edu.vn",
-    title: "Giáo dục Dinh dưỡng Lâm sàng & Công cụ",
+    title: "Giáo dục Dinh dưỡng lâm sàng & Công cụ",
     description:
       "Nền tảng giáo dục công cộng giải thích các khái niệm dinh dưỡng lâm sàng và cung cấp công cụ tương tác hỗ trợ (nhưng không thay thế) tư duy lâm sàng.",
-    siteName: "Giáo dục Dinh dưỡng Lâm sàng",
+    siteName: "Giáo dục Dinh dưỡng lâm sàng",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Giáo dục Dinh dưỡng Lâm sàng & Công cụ",
+    title: "Giáo dục Dinh dưỡng lâm sàng & Công cụ",
     description:
       "Nền tảng giáo dục công cộng giải thích các khái niệm dinh dưỡng lâm sàng và cung cấp công cụ tương tác.",
   },

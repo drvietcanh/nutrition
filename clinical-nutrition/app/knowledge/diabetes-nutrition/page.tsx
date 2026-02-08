@@ -84,7 +84,7 @@ export default function DiabetesNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Đặc biệt Quan trọng trong Đái tháo đường?
+            Vì sao Dinh dưỡng đặc biệt Quan trọng trong Đái tháo đường?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -674,7 +674,7 @@ export default function DiabetesNutritionPage() {
               </p>
               <ul className="list-disc space-y-1 pl-6 text-body-sm mb-3">
                 <li>Điều chỉnh lượng carbohydrate</li>
-                <li>Đảm bảo tuân thủ thuốc/insulin</li>
+                <li>đảm bảo tuân thủ thuốc/insulin</li>
                 <li>Uống đủ nước (nếu không có hạn chế dịch)</li>
                 <li>Theo dõi ketone nếu đường huyết rất cao (type 1)</li>
               </ul>
@@ -942,7 +942,7 @@ export default function DiabetesNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy Lâm sàng Phổ biến
+            Các Cạm bẫy lâm sàng Phổ biến
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

@@ -274,7 +274,7 @@ export default function NutritionDuringIllnessPage() {
         <Callout variant="error" title="Cần Tham khảo Bác sĩ">
           <div className="space-y-2 text-sm">
             <p>
-              <strong>Khi không thể giữ nước:</strong> Nôn mửa liên tục, không thể uống nước, 
+              <strong>Khi không thể giữ nước:</strong> nôn mửa liên tục, không thể uống nước, 
               hoặc có dấu hiệu mất nước nghiêm trọng (khô miệng, không đi tiểu, yếu).
             </p>
             <p>

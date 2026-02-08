@@ -528,7 +528,7 @@ export default function MythsAndMisconceptionsPage() {
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Tất cả thông tin dựa trên hướng dẫn lâm sàng hiện tại từ các tổ chức dinh dưỡng hàng đầu bao gồm 
-                  ASPEN (Hiệp hội Dinh dưỡng Đường Tĩnh Mạch và Đường Ruột Hoa Kỳ), ESPEN (Hiệp hội Dinh dưỡng Lâm sàng và Chuyển hóa Châu Âu), 
+                  ASPEN (Hiệp hội Dinh dưỡng Đường Tĩnh Mạch và Đường Ruột Hoa Kỳ), ESPEN (Hiệp hội Dinh dưỡng lâm sàng và Chuyển hóa Châu Âu), 
                   và Học viện Dinh dưỡng và Chế độ ăn uống. Mục tiêu của chúng tôi là hỗ trợ thực hành dinh dưỡng an toàn, 
                   dựa trên bằng chứng thông qua giáo dục và suy ngẫm, không phải chỉ trích. Cập nhật thường xuyên đảm bảo 
                   phù hợp với bằng chứng mới nhất.

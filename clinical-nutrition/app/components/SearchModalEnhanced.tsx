@@ -167,7 +167,7 @@ export function SearchModalEnhanced({ onClose }: SearchModalEnhancedProps) {
                   <option value="vitamins-minerals">Vitamin & Khoáng chất</option>
                   <option value="daily-practices">Dinh dưỡng Hàng ngày</option>
                   <option value="life-stages">Theo Độ tuổi</option>
-                  <option value="special-topics">Chủ đề Đặc biệt</option>
+                  <option value="special-topics">Chủ đề đặc biệt</option>
                   <option value="general-nutrition">Dinh dưỡng Tổng quát</option>
                 </select>
               </div>

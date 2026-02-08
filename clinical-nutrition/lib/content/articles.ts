@@ -41,7 +41,7 @@ export const articles: ArticleMetadata[] = [
   // Clinical Foundations
   {
     slug: 'myths-in-clinical-nutrition',
-    title: 'Hiểu lầm & Quan niệm Sai trong Dinh dưỡng Lâm sàng',
+    title: 'Hiểu lầm & Quan niệm Sai trong Dinh dưỡng lâm sàng',
     description: 'Điều chỉnh dựa trên bằng chứng cho các hiểu lầm phổ biến',
     category: 'clinical-foundations',
     tags: ['myths', 'misconceptions', 'clinical', 'evidence-based'],
@@ -52,7 +52,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'assessment-process',
-    title: 'Quy trình Đánh giá Dinh dưỡng Lâm sàng',
+    title: 'Quy trình Đánh giá Dinh dưỡng lâm sàng',
     description: 'Hướng dẫn đầy đủ về đánh giá dinh dưỡng lâm sàng',
     category: 'clinical-foundations',
     tags: ['assessment', 'screening', 'evaluation', 'clinical'],
@@ -167,7 +167,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'dietary-fiber',
-    title: 'Chất xơ trong Dinh dưỡng Lâm sàng',
+    title: 'Chất xơ trong Dinh dưỡng lâm sàng',
     description: 'Hiểu về chất xơ hòa tan và không hòa tan, lợi ích sức khỏe',
     category: 'general-nutrition',
     tags: ['fiber', 'digestion', 'gut-health', 'diabetes'],

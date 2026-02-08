@@ -115,7 +115,7 @@ export default function NeedsEstimationPage() {
           </div>
 
           <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-            <h3 className="font-semibold text-base mb-2">4. Phán đoán Lâm sàng + Hướng dẫn</h3>
+            <h3 className="font-semibold text-base mb-2">4. Phán đoán lâm sàng + Hướng dẫn</h3>
             <p className="text-sm text-neutral-700 mb-2">
               Kết hợp kinh nghiệm, hướng dẫn đã xuất bản, và yếu tố cụ thể cho bệnh nhân
             </p>
@@ -181,7 +181,7 @@ export default function NeedsEstimationPage() {
         </ul>
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Ví dụ Lâm sàng:
+            Ví dụ lâm sàng:
           </p>
           <p className="text-sm text-neutral-700">
             Một phụ nữ 70 tuổi đang phục hồi sau phẫu thuật hông có thể có khoảng năng lượng ước tính 1.500–1.800 kcal/ngày.

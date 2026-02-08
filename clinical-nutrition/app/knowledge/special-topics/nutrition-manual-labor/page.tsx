@@ -27,7 +27,7 @@ export default function NutritionManualLaborPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề Đặc biệt", href: "/knowledge/special-topics" },
+          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng cho Người Lao động Chân tay" },
         ]}
       />
@@ -174,7 +174,7 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hydration - Uống Đủ Nước</h2>
+        <h2 className="heading-2">Hydration - Uống đủ nước</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Người lao động chân tay cần uống nhiều nước hơn vì mất nước qua mồ hôi.

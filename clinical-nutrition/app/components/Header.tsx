@@ -18,7 +18,7 @@ export function Header() {
             aria-label="Về trang chủ"
           >
             <BookOpen className="w-6 h-6 text-blue-600" aria-hidden="true" />
-            <span className="hidden sm:inline">Dinh dưỡng Lâm sàng</span>
+            <span className="hidden sm:inline">Dinh dưỡng lâm sàng</span>
             <span className="sm:hidden">Dinh dưỡng</span>
           </Link>
 

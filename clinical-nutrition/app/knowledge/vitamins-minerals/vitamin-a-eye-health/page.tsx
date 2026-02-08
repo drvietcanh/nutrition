@@ -163,7 +163,7 @@ export default function VitaminAEyeHealthPage() {
               <li>Tổn thương gan (nếu dùng liều cao lâu dài)</li>
             </ul>
             <p className="mt-2">
-              <strong>Đặc biệt nguy hiểm khi mang thai:</strong> Quá nhiều retinol có thể gây dị tật thai nhi. 
+              <strong>đặc biệt nguy hiểm khi mang thai:</strong> Quá nhiều retinol có thể gây dị tật thai nhi. 
               Phụ nữ mang thai nên tránh gan và bổ sung retinol liều cao.
             </p>
             <p className="mt-2">

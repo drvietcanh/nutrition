@@ -80,7 +80,7 @@ export default function CKDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Đặc biệt Quan trọng trong CKD?
+            Vì sao Dinh dưỡng đặc biệt Quan trọng trong CKD?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

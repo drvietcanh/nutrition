@@ -8,7 +8,7 @@ export default function AssessmentProcessPage() {
       {/* 1. Page title & introduction */}
       <header className="space-y-5 border-b border-neutral-200 pb-8">
         <h1 className="text-3xl font-semibold leading-tight text-neutral-900 sm:text-4xl">
-          Đánh giá Dinh dưỡng Lâm sàng: Hiểu Quy trình
+          Đánh giá Dinh dưỡng lâm sàng: Hiểu Quy trình
         </h1>
         <div className="space-y-4 text-body-lg">
           <p>
@@ -575,7 +575,7 @@ export default function AssessmentProcessPage() {
 
             <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
               <p className="text-sm font-semibold text-neutral-900 mb-2">
-                Ví dụ Lâm sàng 1: Dịch vụ Bữa ăn Bệnh viện
+                Ví dụ lâm sàng 1: Dịch vụ Bữa ăn Bệnh viện
               </p>
               <p className="text-sm text-neutral-700 mb-2">
                 Một bệnh nhân được kê đơn "chế độ ăn thường" ước tính cung cấp ~1.800 kcal/ngày. Tuy nhiên:
@@ -594,7 +594,7 @@ export default function AssessmentProcessPage() {
 
             <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
               <p className="text-sm font-semibold text-neutral-900 mb-2">
-                Ví dụ Lâm sàng 2: Cho ăn Qua Ống (Enteral)
+                Ví dụ lâm sàng 2: Cho ăn Qua Ống (Enteral)
               </p>
               <p className="text-sm text-neutral-700 mb-2">
                 Một bệnh nhân có ống thông mũi dạ dày với lệnh "cho ăn liên tục 80 mL/giờ, cung cấp 1.600 kcal/ngày." Tuy nhiên:
@@ -691,7 +691,7 @@ export default function AssessmentProcessPage() {
 
             <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
               <p className="text-sm font-semibold text-neutral-900 mb-2">
-                Ví dụ Lâm sàng: Diễn giải Xu hướng
+                Ví dụ lâm sàng: Diễn giải Xu hướng
               </p>
               <p className="text-sm text-neutral-700 mb-2">
                 Lượng ăn hàng ngày của một bệnh nhân nằm viện trong 7 ngày:
@@ -786,7 +786,7 @@ export default function AssessmentProcessPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Cách Các Bác sĩ Lâm sàng Tổng hợp Thông tin
+              Cách Các Bác sĩ lâm sàng Tổng hợp Thông tin
             </h3>
             <p className="text-base text-neutral-700 mb-2">
               Các bác sĩ lâm sàng có kinh nghiệm không chỉ thu thập dữ liệu—họ <strong>tổng hợp</strong> nó. Họ lấy thông tin từ sàng lọc,
@@ -1079,7 +1079,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Đánh giá Lâm sàng Là Đa ngành
+              Đánh giá lâm sàng Là Đa ngành
             </h3>
             <p className="text-sm text-amber-800 mb-2">
               Đánh giá dinh dưỡng hiệu quả trong thực hành lâm sàng liên quan đến <strong>nhóm đa ngành</strong>. Các thành viên nhóm khác nhau
@@ -1194,7 +1194,7 @@ export default function AssessmentProcessPage() {
         <div className="mt-4 space-y-4">
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Mới với Đánh giá Dinh dưỡng Lâm sàng?
+              Mới với Đánh giá Dinh dưỡng lâm sàng?
             </h3>
             <p className="text-sm text-blue-800 mb-3">
               Nếu bạn mới bắt đầu, chúng tôi khuyến nghị bắt đầu với <strong>Công cụ 01: Sàng lọc Suy Dinh dưỡng</strong>. Công cụ này

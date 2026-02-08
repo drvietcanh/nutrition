@@ -72,7 +72,7 @@ export default function DinhDuongChoNguoiSauDotQuyPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="🍽️ Đảm bảo Đủ Dinh dưỡng" />
+          <CardHeader icon={CheckCircle} title="🍽️ đảm bảo Đủ Dinh dưỡng" />
           <CardContent>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Đủ năng lượng: hỗ trợ phục hồi</li>

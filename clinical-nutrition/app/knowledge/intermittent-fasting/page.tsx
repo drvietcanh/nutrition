@@ -26,7 +26,7 @@ export default function IntermittentFastingPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề Đặc biệt", href: "/knowledge/special-topics" },
+          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Intermittent Fasting" },
         ]}
       />
@@ -133,7 +133,7 @@ export default function IntermittentFastingPage() {
           <Card>
             <h3 className="heading-4 mb-3">Rủi ro và Tác dụng phụ</h3>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li>• <strong>Đói, mệt mỏi:</strong> Đặc biệt khi mới bắt đầu</li>
+              <li>• <strong>Đói, mệt mỏi:</strong> đặc biệt khi mới bắt đầu</li>
               <li>• <strong>Đau đầu:</strong> Có thể xảy ra khi nhịn ăn</li>
               <li>• <strong>Khó tập trung:</strong> Một số người khó tập trung khi đói</li>
               <li>• <strong>Nguy cơ ăn quá nhiều:</strong> Sau khi nhịn, dễ ăn quá nhiều</li>

@@ -5,7 +5,7 @@ import { Card, CardHeader, CardContent, CardFooter } from "../../components/Card
 import { Breadcrumb } from "../../components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Cơ sở Kiến thức Dinh dưỡng Lâm sàng",
+  title: "Cơ sở Kiến thức Dinh dưỡng lâm sàng",
   description: "Nội dung giáo dục giải thích các khái niệm dinh dưỡng lâm sàng, quy trình đánh giá, và lập luận lâm sàng.",
 };
 
@@ -14,14 +14,14 @@ export default function ClinicalFoundationsPage() {
     <main className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6 lg:px-8 sm:py-12">
       <Breadcrumb items={[
         { label: "Cơ sở Kiến thức", href: "/knowledge" },
-        { label: "Cơ sở Kiến thức Dinh dưỡng Lâm sàng" }
+        { label: "Cơ sở Kiến thức Dinh dưỡng lâm sàng" }
       ]} />
       
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <BookOpen className="w-8 h-8 text-blue-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Cơ sở Kiến thức Dinh dưỡng Lâm sàng
+            Cơ sở Kiến thức Dinh dưỡng lâm sàng
           </h1>
         </div>
         <p className="text-body-lg">
@@ -34,7 +34,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/myths-in-clinical-nutrition">
           <CardHeader
             icon={AlertCircle}
-            title="Hiểu lầm & Quan niệm Sai trong Dinh dưỡng Lâm sàng"
+            title="Hiểu lầm & Quan niệm Sai trong Dinh dưỡng lâm sàng"
           />
           <CardContent>
             <p className="text-body">
@@ -55,7 +55,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/assessment-process">
           <CardHeader
             icon={ClipboardCheck}
-            title="Đánh giá Dinh dưỡng Lâm sàng: Hướng dẫn Đơn giản về Toàn bộ Quy trình"
+            title="Đánh giá Dinh dưỡng lâm sàng: Hướng dẫn Đơn giản về Toàn bộ Quy trình"
           />
           <CardContent>
             <p className="text-body">
@@ -201,7 +201,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/myths-and-misconceptions">
           <CardHeader
             icon={AlertCircle}
-            title="Hiểu lầm phổ biến trong Dinh dưỡng Lâm sàng"
+            title="Hiểu lầm phổ biến trong Dinh dưỡng lâm sàng"
           />
           <CardContent>
             <p className="text-body">

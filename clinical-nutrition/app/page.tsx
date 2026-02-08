@@ -14,7 +14,7 @@ export default function Home() {
             <span>Nền tảng giáo dục dinh dưỡng lâm sàng</span>
           </div>
           <h1 className="heading-1 mb-6">
-            Hiểu Dinh dưỡng Lâm sàng một Cách Đơn giản
+            Hiểu Dinh dưỡng lâm sàng một Cách Đơn giản
           </h1>
           <p className="text-body-lg max-w-3xl mx-auto mb-8 text-gray-700">
             Học các khái niệm dinh dưỡng lâm sàng và sử dụng công cụ tương tác để thực hành. 

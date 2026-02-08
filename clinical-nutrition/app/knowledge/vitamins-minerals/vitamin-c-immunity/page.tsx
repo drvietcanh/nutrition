@@ -150,7 +150,7 @@ export default function VitaminCImmunityPage() {
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Ăn trái cây và rau củ mỗi ngày:</strong> Đảm bảo có ít nhất 1-2 phần trái cây và rau củ giàu vitamin C
+                <strong>Ăn trái cây và rau củ mỗi ngày:</strong> đảm bảo có ít nhất 1-2 phần trái cây và rau củ giàu vitamin C
               </p>
             </div>
             <div className="flex items-start gap-2">

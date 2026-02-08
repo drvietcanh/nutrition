@@ -46,7 +46,7 @@ export default function IntakeAssessmentPage() {
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Ví dụ Lâm sàng 1: Dịch vụ Bữa ăn Bệnh viện
+            Ví dụ lâm sàng 1: Dịch vụ Bữa ăn Bệnh viện
           </p>
           <p className="text-sm text-neutral-700 mb-2">
             Một bệnh nhân được kê đơn "chế độ ăn thường" ước tính cung cấp ~1.800 kcal/ngày. Tuy nhiên:
@@ -65,7 +65,7 @@ export default function IntakeAssessmentPage() {
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Ví dụ Lâm sàng 2: Cho ăn Qua Ống (Enteral)
+            Ví dụ lâm sàng 2: Cho ăn Qua Ống (Enteral)
           </p>
           <p className="text-sm text-neutral-700 mb-2">
             Một bệnh nhân có ống thông mũi dạ dày với lệnh "cho ăn liên tục 80 mL/giờ, cung cấp 1.600 kcal/ngày." Tuy nhiên:
@@ -154,7 +154,7 @@ export default function IntakeAssessmentPage() {
 
         <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2">
-            Hiểu biết Lâm sàng:
+            Hiểu biết lâm sàng:
           </p>
           <p className="text-sm text-blue-800">
             Khi lượng ăn thiếu, hiếm khi chỉ là "bệnh nhân sẽ không ăn." Thường có một <strong>lý do</strong>—triệu chứng, thủ thuật,
@@ -199,7 +199,7 @@ export default function IntakeAssessmentPage() {
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Ví dụ Lâm sàng: Diễn giải Xu hướng
+            Ví dụ lâm sàng: Diễn giải Xu hướng
           </p>
           <p className="text-sm text-neutral-700 mb-2">
             Lượng ăn hàng ngày của một bệnh nhân nằm viện trong 7 ngày:
@@ -225,7 +225,7 @@ export default function IntakeAssessmentPage() {
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Ví dụ Lâm sàng: Xu hướng Đáng lo ngại
+            Ví dụ lâm sàng: Xu hướng Đáng lo ngại
           </p>
           <p className="text-sm text-neutral-700 mb-2">
             Lượng ăn của một bệnh nhân khác trong 7 ngày:
@@ -261,7 +261,7 @@ export default function IntakeAssessmentPage() {
           id="how-assess-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Cách Các Bác sĩ Lâm sàng Đánh giá Lượng Ăn
+          Cách Các Bác sĩ lâm sàng Đánh giá Lượng Ăn
         </h2>
         <p className="text-base text-neutral-700">
           Phương pháp thay đổi theo môi trường và nguồn lực:

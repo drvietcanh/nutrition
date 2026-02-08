@@ -9,7 +9,7 @@ import Link from "next/link";
 import { getRelatedArticles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
-  title: "Chất xơ trong Dinh dưỡng Lâm sàng",
+  title: "Chất xơ trong Dinh dưỡng lâm sàng",
   description:
     "Tìm hiểu về chất xơ - chất xơ hòa tan và không hòa tan, lợi ích sức khỏe, nhu cầu, nguồn thực phẩm, và cách áp dụng trong dinh dưỡng lâm sàng.",
   keywords: [
@@ -29,7 +29,7 @@ export default function DietaryFiberPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chất xơ trong Dinh dưỡng Lâm sàng" },
+          { label: "Chất xơ trong Dinh dưỡng lâm sàng" },
         ]}
       />
 
@@ -37,7 +37,7 @@ export default function DietaryFiberPage() {
         <div className="flex items-center gap-3">
           <Leaf className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Chất xơ trong Dinh dưỡng Lâm sàng
+            Chất xơ trong Dinh dưỡng lâm sàng
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">
@@ -571,7 +571,7 @@ export default function DietaryFiberPage() {
 
       {/* Clinical Considerations */}
       <section className="space-y-4">
-        <h2 className="heading-2">Lưu ý trong Dinh dưỡng Lâm sàng</h2>
+        <h2 className="heading-2">Lưu ý trong Dinh dưỡng lâm sàng</h2>
         <div className="space-y-4">
           <Callout variant="warning" title="Một số tình trạng cần cẩn thận">
             <ul className="space-y-2 text-sm">

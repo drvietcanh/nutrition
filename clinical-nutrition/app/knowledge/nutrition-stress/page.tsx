@@ -26,7 +26,7 @@ export default function NutritionStressPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề Đặc biệt", href: "/knowledge/special-topics" },
+          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng và Stress" },
         ]}
       />
@@ -145,7 +145,7 @@ export default function NutritionStressPage() {
             { type: 'tip', text: 'Bữa sáng quan trọng: Bắt đầu ngày với bữa sáng cân bằng giúp ổn định tâm trạng' },
             { type: 'tip', text: 'Snack lành mạnh: Mang theo snack lành mạnh (quả hạch, trái cây) để tránh chọn đồ không tốt khi stress' },
             { type: 'check', text: 'Uống đủ nước: Mất nước có thể làm tăng stress và mệt mỏi' },
-            { type: 'check', text: 'Ăn đa dạng: Đảm bảo đủ các nhóm thực phẩm để có đủ dinh dưỡng' },
+            { type: 'check', text: 'Ăn đa dạng: đảm bảo đủ các nhóm thực phẩm để có đủ dinh dưỡng' },
             { type: 'warning', text: 'Tránh "comfort food" không tốt: Khi stress, dễ chọn đồ ngọt, đồ chiên - cố gắng chọn đồ lành mạnh hơn' },
             { type: 'info', text: 'Kết hợp với quản lý stress khác: Dinh dưỡng chỉ là một phần, cần ngủ đủ, tập thể dục, quản lý stress' },
           ]}

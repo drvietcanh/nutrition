@@ -199,7 +199,7 @@ export default function StreetFoodVietnamPage() {
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Nấu chín kỹ:</strong> Đảm bảo thịt, cá được nấu chín kỹ. 
+                <strong>Nấu chín kỹ:</strong> đảm bảo thịt, cá được nấu chín kỹ. 
                 Tránh thịt cá sống hoặc tái.
               </p>
             </div>

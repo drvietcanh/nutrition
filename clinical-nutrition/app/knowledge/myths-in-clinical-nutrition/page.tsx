@@ -41,7 +41,7 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Sets context and explains the purpose without judgment */}
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Hiểu lầm phổ biến trong Dinh dưỡng Lâm sàng
+            Hiểu lầm phổ biến trong Dinh dưỡng lâm sàng
           </h1>
           <div className="max-w-3xl mx-auto text-left space-y-6">
             <section className="bg-blue-50 border border-blue-200 rounded-lg p-6">
@@ -119,7 +119,7 @@ export default function MythsInClinicalNutritionPage() {
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Trộn lẫn Lời khuyên Dinh dưỡng Cộng đồng với Chăm sóc Lâm sàng</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Trộn lẫn Lời khuyên Dinh dưỡng Cộng đồng với Chăm sóc lâm sàng</h3>
               <p className="text-sm text-gray-700">
                 Lời khuyên dinh dưỡng chung cho dân số khỏe mạnh (như "ăn ít carb" hoặc "nhiều protein hơn là tốt hơn") 
                 không phải lúc nào cũng áp dụng cho bệnh nhân bệnh, nằm viện. Điều phù hợp cho sức khỏe cộng đồng có thể không 
@@ -355,7 +355,7 @@ export default function MythsInClinicalNutritionPage() {
 
               <article className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Phán đoán Lâm sàng Vẫn là Trung tâm
+                  Phán đoán lâm sàng Vẫn là Trung tâm
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Phán đoán lâm sàng—khả năng của bạn để đánh giá, diễn giải, và ra quyết định dựa trên toàn bộ bức tranh lâm sàng—là 
@@ -375,9 +375,9 @@ export default function MythsInClinicalNutritionPage() {
                 </p>
                 <ul className="text-sm text-gray-700 space-y-1 list-disc pl-6">
                   <li><strong>Chuyên gia Dinh dưỡng Đã Đăng ký:</strong> Chuyên gia đánh giá và lập kế hoạch dinh dưỡng</li>
-                  <li><strong>Nhóm Hỗ trợ Dinh dưỡng Lâm sàng:</strong> Cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
-                  <li><strong>Nhóm Lâm sàng Của Bạn:</strong> Bác sĩ, điều dưỡng, và các nhà cung cấp khác biết bệnh nhân</li>
-                  <li><strong>Hướng dẫn Lâm sàng:</strong> Khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
+                  <li><strong>Nhóm Hỗ trợ Dinh dưỡng lâm sàng:</strong> Cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
+                  <li><strong>Nhóm lâm sàng Của Bạn:</strong> Bác sĩ, điều dưỡng, và các nhà cung cấp khác biết bệnh nhân</li>
+                  <li><strong>Hướng dẫn lâm sàng:</strong> Khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
                 </ul>
               </div>
 
@@ -387,7 +387,7 @@ export default function MythsInClinicalNutritionPage() {
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Tất cả thông tin dựa trên hướng dẫn lâm sàng hiện tại từ các tổ chức dinh dưỡng hàng đầu bao gồm 
-                  ASPEN (Hiệp hội Dinh dưỡng Tĩnh mạch và Ống thông Hoa Kỳ), ESPEN (Hiệp hội Dinh dưỡng Lâm sàng và Chuyển hóa Châu Âu), 
+                  ASPEN (Hiệp hội Dinh dưỡng Tĩnh mạch và Ống thông Hoa Kỳ), ESPEN (Hiệp hội Dinh dưỡng lâm sàng và Chuyển hóa Châu Âu), 
                   và Học viện Dinh dưỡng và Chế độ ăn. Mục tiêu của chúng tôi là hỗ trợ thực hành dinh dưỡng an toàn, 
                   dựa trên bằng chứng thông qua giáo dục và suy ngẫm, không phải chỉ trích. Cập nhật thường xuyên đảm bảo 
                   phù hợp với bằng chứng mới nhất.

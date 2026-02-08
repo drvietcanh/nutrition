@@ -2,7 +2,7 @@ import { Breadcrumb } from "../../components/Breadcrumb";
 import { GlossaryContent } from "./GlossaryContent";
 
 export const metadata = {
-  title: "Thuật ngữ - Từ điển Dinh dưỡng Lâm sàng",
+  title: "Thuật ngữ - Từ điển Dinh dưỡng lâm sàng",
   description: "Từ điển các thuật ngữ dinh dưỡng lâm sàng được giải thích một cách đơn giản và dễ hiểu.",
 };
 
@@ -13,7 +13,7 @@ export default function GlossaryPage() {
       
       <header className="space-y-4">
         <h1 className="heading-1">
-          Từ điển Thuật ngữ Dinh dưỡng Lâm sàng
+          Từ điển Thuật ngữ Dinh dưỡng lâm sàng
         </h1>
         <p className="text-body-lg text-gray-700">
           Tất cả thuật ngữ chuyên môn được giải thích bằng ngôn ngữ đơn giản, dễ hiểu. 

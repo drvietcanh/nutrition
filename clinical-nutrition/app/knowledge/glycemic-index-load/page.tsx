@@ -362,7 +362,7 @@ export default function GlycemicIndexLoadPage() {
 
       {/* Why Important */}
       <section className="space-y-4">
-        <h2 className="heading-2">Tại sao GI và GL quan trọng trong Dinh dưỡng Lâm sàng?</h2>
+        <h2 className="heading-2">Tại sao GI và GL quan trọng trong Dinh dưỡng lâm sàng?</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">1. Đối với người đái tháo đường</h3>

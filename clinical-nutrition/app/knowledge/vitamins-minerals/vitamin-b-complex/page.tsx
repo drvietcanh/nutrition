@@ -160,7 +160,7 @@ export default function VitaminBComplexPage() {
           <Card>
             <h3 className="heading-4 mb-3">B9 (Folate) - Tế bào Máu và Phụ nữ Mang thai</h3>
             <p className="text-body-sm mb-2">
-              Quan trọng cho tạo tế bào máu và phát triển thai nhi. Đặc biệt quan trọng cho phụ nữ mang thai.
+              Quan trọng cho tạo tế bào máu và phát triển thai nhi. đặc biệt quan trọng cho phụ nữ mang thai.
             </p>
             <p className="text-xs text-gray-700">
               <strong>Nguồn:</strong> Rau xanh, đậu, ngũ cốc nguyên cám. 

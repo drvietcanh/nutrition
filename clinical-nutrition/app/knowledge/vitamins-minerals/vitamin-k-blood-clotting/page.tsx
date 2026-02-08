@@ -38,7 +38,7 @@ export default function VitaminKBloodClottingPage() {
         </div>
         <p className="text-body-lg text-gray-700">
           Vitamin K là một vitamin quan trọng cho quá trình đông máu và sức khỏe xương. 
-          Đặc biệt quan trọng cho người dùng warfarin (thuốc chống đông máu) - cần chú ý đến lượng vitamin K.
+          đặc biệt quan trọng cho người dùng warfarin (thuốc chống đông máu) - cần chú ý đến lượng vitamin K.
         </p>
       </header>
 

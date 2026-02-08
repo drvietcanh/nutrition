@@ -127,7 +127,7 @@ export default function EmergencyNutritionPage() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="heading-2">Các Tình huống Đặc biệt</h2>
+        <h2 className="heading-2">Các Tình huống đặc biệt</h2>
 
         <Card>
           <h3 className="heading-4 mb-4">Chấn thương Nặng</h3>
@@ -154,7 +154,7 @@ export default function EmergencyNutritionPage() {
             <ul className="list-disc pl-6 space-y-2">
               <li>năng lượng: 1.3-1.6 x BMR</li>
               <li>Protein: 1.5-2.0 g/kg/ngày</li>
-              <li>Đảm bảo đủ vitamin và khoáng chất</li>
+              <li>đảm bảo đủ vitamin và khoáng chất</li>
             </ul>
           </div>
         </Card>

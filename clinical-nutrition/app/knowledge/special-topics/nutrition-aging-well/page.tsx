@@ -28,7 +28,7 @@ export default function NutritionAgingWellPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề Đặc biệt", href: "/knowledge/special-topics" },
+          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng Lão hóa Khỏe mạnh" },
         ]}
       />
@@ -106,7 +106,7 @@ export default function NutritionAgingWellPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nhu cầu Dinh dưỡng Đặc biệt</h2>
+        <h2 className="heading-2">Nhu cầu Dinh dưỡng đặc biệt</h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
             <h3 className="heading-4 mb-3 text-red-900">1. Protein (Tăng)</h3>
@@ -184,7 +184,7 @@ export default function NutritionAgingWellPage() {
             </div>
             <ExampleBox variant="warning" title="Lưu ý">
               <p className="text-sm">
-                Tăng chất xơ từ từ để cơ thể quen. Đảm bảo uống đủ nước. 
+                Tăng chất xơ từ từ để cơ thể quen. đảm bảo uống đủ nước. 
                 Rau củ nấu mềm dễ tiêu hơn rau sống cho người cao tuổi.
               </p>
             </ExampleBox>

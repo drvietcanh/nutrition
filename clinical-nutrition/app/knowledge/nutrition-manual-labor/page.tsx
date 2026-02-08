@@ -27,7 +27,7 @@ export default function NutritionManualLaborPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề Đặc biệt", href: "/knowledge/special-topics" },
+          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng cho Người Lao động Chân tay" },
         ]}
       />
@@ -166,7 +166,7 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hydration: Uống Đủ Nước</h2>
+        <h2 className="heading-2">Hydration: Uống đủ nước</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-4 text-blue-900 mb-3">Nhu cầu Nước cho Người Lao động</h3>
@@ -343,7 +343,7 @@ export default function NutritionManualLaborPage() {
             </p>
           </Card>
           <Card href="/knowledge/hydration">
-            <h3 className="heading-5 mb-2">Hydration: Uống Đủ Nước</h3>
+            <h3 className="heading-5 mb-2">Hydration: Uống đủ nước</h3>
             <p className="text-sm text-gray-600">
               Tầm quan trọng của nước khi lao động
             </p>

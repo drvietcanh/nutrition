@@ -228,7 +228,7 @@ export default function BreakfastImportancePage() {
             <h3 className="heading-4 mb-3">Cải thiện Tập trung</h3>
             <p className="text-body-sm">
               Bữa sáng cung cấp glucose (đường) cho não, giúp cải thiện tập trung, trí nhớ, 
-              và khả năng học tập. Đặc biệt quan trọng cho học sinh, sinh viên.
+              và khả năng học tập. đặc biệt quan trọng cho học sinh, sinh viên.
             </p>
           </Card>
 

@@ -112,7 +112,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Chất xơ Hòa tan",
     definition: "Loại chất xơ hòa tan trong nước, tạo thành gel",
     simpleExplanation: "Chất xơ hòa tan hòa tan trong nước và tạo thành gel trong ruột. Giúp giảm cholesterol, ổn định đường huyết, và cảm thấy no lâu hơn.",
-    example: "Yến mạch, đậu, táo, cà rốt chứa nhiều chất xơ hòa tan. Đặc biệt tốt cho người đái tháo đường và rối loạn lipid máu.",
+    example: "Yến mạch, đậu, táo, cà rốt chứa nhiều chất xơ hòa tan. đặc biệt tốt cho người đái tháo đường và rối loạn lipid máu.",
     category: "basic",
   },
   {

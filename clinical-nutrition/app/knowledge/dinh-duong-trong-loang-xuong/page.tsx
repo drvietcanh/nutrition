@@ -87,7 +87,7 @@ export default function DinhDuongTrongLoangXuongPage() {
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Cần thiết cho cấu trúc xương</li>
               <li>Nguồn: thịt, cá, trứng, sữa, đậu đỗ</li>
-              <li>Đảm bảo đủ protein nhưng không quá nhiều</li>
+              <li>đảm bảo đủ protein nhưng không quá nhiều</li>
             </ul>
           </CardContent>
         </Card>

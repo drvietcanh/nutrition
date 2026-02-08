@@ -61,7 +61,7 @@ export default function ChildrenNutritionPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nhu cầu Dinh dưỡng Đặc biệt</h2>
+        <h2 className="heading-2">Nhu cầu Dinh dưỡng đặc biệt</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-4 text-blue-900 mb-3">Canxi và Vitamin D</h3>

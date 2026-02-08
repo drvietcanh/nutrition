@@ -4,7 +4,7 @@ import { Card, CardHeader, CardContent, CardFooter } from "../components/Card";
 import { Breadcrumb } from "../components/Breadcrumb";
 
 export const metadata = {
-  title: "Cơ sở Kiến thức Dinh dưỡng Lâm sàng",
+  title: "Cơ sở Kiến thức Dinh dưỡng lâm sàng",
   description: "Nội dung giáo dục về dinh dưỡng lâm sàng, bao gồm cơ sở kiến thức và dinh dưỡng trong bệnh mạn tính.",
 };
 
@@ -16,12 +16,12 @@ export default function KnowledgePage() {
         <div className="flex items-center gap-3">
           <BookOpen className="w-8 h-8 text-blue-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Cơ sở Kiến thức Dinh dưỡng Lâm sàng
+            Cơ sở Kiến thức Dinh dưỡng lâm sàng
           </h1>
         </div>
         <p className="text-body-lg">
           Nội dung giáo dục về dinh dưỡng lâm sàng được tổ chức thành hai phần chính:
-          <strong> Cơ sở Kiến thức Dinh dưỡng Lâm sàng</strong> và <strong>Dinh dưỡng trong Bệnh Mạn tính</strong>.
+          <strong> Cơ sở Kiến thức Dinh dưỡng lâm sàng</strong> và <strong>Dinh dưỡng trong Bệnh Mạn tính</strong>.
         </p>
       </header>
 
@@ -30,7 +30,7 @@ export default function KnowledgePage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 className="heading-2 whitespace-nowrap">
-            Cơ sở Kiến thức Dinh dưỡng Lâm sàng
+            Cơ sở Kiến thức Dinh dưỡng lâm sàng
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -38,7 +38,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/clinical-foundations">
           <CardHeader
             icon={BookOpen}
-            title="Cơ sở Kiến thức Dinh dưỡng Lâm sàng"
+            title="Cơ sở Kiến thức Dinh dưỡng lâm sàng"
           />
           <CardContent>
             <p className="text-body">
@@ -46,8 +46,8 @@ export default function KnowledgePage() {
               Tìm hiểu cách các bác sĩ lâm sàng suy nghĩ về dinh dưỡng và cách áp dụng các nguyên tắc này trong thực hành.
             </p>
             <ul className="list-disc space-y-2 pl-6 text-body-sm mt-4 text-neutral-700">
-              <li>Hiểu lầm & Quan niệm Sai trong Dinh dưỡng Lâm sàng</li>
-              <li>Đánh giá Dinh dưỡng Lâm sàng: Quy trình Đầy đủ</li>
+              <li>Hiểu lầm & Quan niệm Sai trong Dinh dưỡng lâm sàng</li>
+              <li>Đánh giá Dinh dưỡng lâm sàng: Quy trình Đầy đủ</li>
               <li>Ước tính Nhu cầu Dinh dưỡng</li>
               <li>Đánh giá Lượng Ăn</li>
               <li>Và nhiều hơn nữa...</li>
@@ -77,7 +77,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/myths-in-clinical-nutrition">
           <CardHeader
             icon={AlertCircle}
-            title="Hiểu lầm & Quan niệm Sai trong Dinh dưỡng Lâm sàng"
+            title="Hiểu lầm & Quan niệm Sai trong Dinh dưỡng lâm sàng"
           />
           <CardContent>
             <p className="text-body">
@@ -98,7 +98,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/assessment-process">
           <CardHeader
             icon={ClipboardCheck}
-            title="Đánh giá Dinh dưỡng Lâm sàng: Hướng dẫn Đơn giản về Toàn bộ Quy trình"
+            title="Đánh giá Dinh dưỡng lâm sàng: Hướng dẫn Đơn giản về Toàn bộ Quy trình"
           />
           <CardContent>
             <p className="text-body">
@@ -224,7 +224,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/dietary-fiber">
           <CardHeader
             icon={Leaf}
-            title="Chất xơ trong Dinh dưỡng Lâm sàng"
+            title="Chất xơ trong Dinh dưỡng lâm sàng"
           />
           <CardContent>
             <p className="text-body">

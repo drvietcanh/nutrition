@@ -282,7 +282,7 @@ export default function SodiumHealthPage() {
 
       {/* Sources of Sodium */}
       <section className="space-y-4">
-        <h2 className="heading-2">Natri đến từ Đâu?</h2>
+        <h2 className="heading-2">Natri đến từ đâu?</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Nguồn natri chính trong chế độ ăn</h3>
@@ -494,7 +494,7 @@ export default function SodiumHealthPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Heart className="w-6 h-6 text-blue-600" aria-hidden="true" />
-          Ứng dụng trong Dinh dưỡng Lâm sàng
+          Ứng dụng trong Dinh dưỡng lâm sàng
         </h2>
         <div className="space-y-4">
           <Card>

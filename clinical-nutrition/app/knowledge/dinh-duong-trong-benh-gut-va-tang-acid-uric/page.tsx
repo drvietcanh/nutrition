@@ -93,7 +93,7 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
           <CardContent>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Rượu bia làm tăng acid uric và giảm đào thải</li>
-              <li>Đặc biệt tránh bia trong cơn gout cấp</li>
+              <li>đặc biệt tránh bia trong cơn gout cấp</li>
               <li>Tốt nhất là không uống</li>
             </ul>
           </CardContent>

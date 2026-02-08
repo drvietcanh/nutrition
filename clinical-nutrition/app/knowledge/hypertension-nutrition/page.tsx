@@ -679,7 +679,7 @@ export default function HypertensionNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy Lâm sàng Phổ biến
+            Các Cạm bẫy lâm sàng Phổ biến
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

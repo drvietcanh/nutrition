@@ -140,7 +140,7 @@ export default function NutritionTravelPage() {
           tips={[
             { type: 'tip', text: 'Nghiên cứu trước: Tìm nhà hàng lành mạnh ở điểm đến trước khi đi' },
             { type: 'tip', text: 'Mang snack: Trái cây, quả hạch để tránh đói và chọn đồ không tốt' },
-            { type: 'tip', text: 'Uống nước: Đặc biệt quan trọng khi đi du lịch, dễ quên uống nước' },
+            { type: 'tip', text: 'Uống nước: đặc biệt quan trọng khi đi du lịch, dễ quên uống nước' },
             { type: 'check', text: 'Bữa sáng tại khách sạn: Chọn trứng, yến mạch, trái cây thay vì bánh ngọt' },
             { type: 'check', text: 'Đi bộ khám phá: Vừa tập thể dục, vừa tìm nhà hàng địa phương tốt' },
             { type: 'warning', text: 'Chú ý an toàn thực phẩm: Ở một số nơi, tránh nước máy, rau sống, đồ ăn đường phố không rõ nguồn gốc' },

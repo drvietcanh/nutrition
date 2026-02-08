@@ -10,7 +10,7 @@ import { Wheat, TrendingUp, Lightbulb, CheckCircle2, AlertCircle, XCircle } from
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Carbohydrate (Tinh bột và Đường) trong Dinh dưỡng Lâm sàng",
+  title: "Carbohydrate (Tinh bột và Đường) trong Dinh dưỡng lâm sàng",
   description:
     "Hiểu về carbohydrate - nguồn năng lượng chính của cơ thể, các loại carbohydrate, vai trò, và cách chọn lựa đúng cho sức khỏe.",
   keywords: [
@@ -38,7 +38,7 @@ export default function CarbohydratesPage() {
         <div className="flex items-center gap-3">
           <Wheat className="w-8 h-8 text-amber-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Carbohydrate (Tinh bột và Đường) trong Dinh dưỡng Lâm sàng
+            Carbohydrate (Tinh bột và Đường) trong Dinh dưỡng lâm sàng
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">
@@ -786,7 +786,7 @@ export default function CarbohydratesPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <TrendingUp className="w-6 h-6 text-blue-600" aria-hidden="true" />
-          Ứng dụng trong Dinh dưỡng Lâm sàng
+          Ứng dụng trong Dinh dưỡng lâm sàng
         </h2>
         <div className="space-y-4">
           <Card>

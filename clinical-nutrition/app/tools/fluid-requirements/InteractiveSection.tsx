@@ -204,7 +204,7 @@ export function InteractiveSection() {
           {/* Clinical Conditions */}
           <div className="sm:col-span-2 space-y-3">
             <h3 className="text-sm font-semibold text-neutral-900">
-              Tình trạng Lâm sàng (chọn nếu có):
+              Tình trạng lâm sàng (chọn nếu có):
             </h3>
             <div className="grid gap-3 sm:grid-cols-2">
               <label className="flex items-center gap-2 cursor-pointer">
@@ -365,7 +365,7 @@ export function InteractiveSection() {
             {result.clinicalNotes.length > 0 && (
               <div className="border-t border-neutral-200 pt-4 space-y-2">
                 <h3 className="text-sm font-semibold text-neutral-900">
-                  Ghi chú Lâm sàng:
+                  Ghi chú lâm sàng:
                 </h3>
                 <ul className="list-disc space-y-1 pl-5 text-xs text-neutral-700">
                   {result.clinicalNotes.map((note, idx) => (

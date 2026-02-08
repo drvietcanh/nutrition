@@ -543,7 +543,7 @@ export default function HeartFailureNutritionPage() {
               <CardContent>
                 <ul className="list-disc space-y-1 pl-6 text-body-sm">
                   <li>Creatinine, eGFR</li>
-                  <li>Đặc biệt quan trọng nếu có suy tim + suy thận</li>
+                  <li>đặc biệt quan trọng nếu có suy tim + suy thận</li>
                 </ul>
               </CardContent>
             </Card>
@@ -577,7 +577,7 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy Lâm sàng Phổ biến
+            Các Cạm bẫy lâm sàng Phổ biến
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

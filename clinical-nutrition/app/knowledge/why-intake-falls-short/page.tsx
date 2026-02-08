@@ -608,7 +608,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Thực tế Lâm sàng
+            Thực tế lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Dinh dưỡng được kê đơn (những gì được chỉ định) và dinh dưỡng được cung cấp (những gì thực sự được tiêu thụ) 
@@ -768,7 +768,7 @@ export default function WhyIntakeFallsShortPage() {
           id="interpretation-heading"
           className="heading-3"
         >
-          Cách Các Bác sĩ Lâm sàng Diễn giải Thiếu hụt Lượng Ăn
+          Cách Các Bác sĩ lâm sàng Diễn giải Thiếu hụt Lượng Ăn
         </h2>
         <p className="text-base text-gray-700 leading-relaxed mb-4">
           Hiểu rằng khoảng cách lượng ăn là bình thường và được dự kiến giúp các bác sĩ lâm sàng diễn giải chúng một cách thực tế 
@@ -877,7 +877,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Thực tế Lâm sàng
+            Thực tế lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Các bác sĩ lâm sàng có kinh nghiệm không mong đợi lượng ăn hoàn hảo. Họ xem xu hướng, ưu tiên điều quan trọng nhất 
@@ -958,7 +958,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-6">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Thực tế Lâm sàng
+            Thực tế lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Thiếu hụt lượng ăn là phổ biến. Tính toán cho chúng ta điểm khởi đầu, nhưng chúng không đảm bảo 

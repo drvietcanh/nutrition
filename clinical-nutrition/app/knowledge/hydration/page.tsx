@@ -10,7 +10,7 @@ import Link from "next/link";
 import { getRelatedArticles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
-  title: "Hydration: Nước và Dịch trong Dinh dưỡng Lâm sàng",
+  title: "Hydration: Nước và Dịch trong Dinh dưỡng lâm sàng",
   description:
     "Hiểu về nhu cầu nước và dịch, tầm quan trọng của hydration, dấu hiệu thiếu nước, và cách đảm bảo đủ nước cho sức khỏe tốt.",
   keywords: [
@@ -38,7 +38,7 @@ export default function HydrationPage() {
         <div className="flex items-center gap-3">
           <Droplet className="w-8 h-8 text-blue-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Hydration: Nước và Dịch trong Dinh dưỡng Lâm sàng
+            Hydration: Nước và Dịch trong Dinh dưỡng lâm sàng
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">
@@ -118,7 +118,7 @@ export default function HydrationPage() {
 
       {/* How Much Water */}
       <section className="space-y-4">
-        <h2 className="heading-2">Uống Bao nhiêu Nước là Đủ?</h2>
+        <h2 className="heading-2">Uống bao nhiêu nước là đủ?</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50/30">
             <h3 className="heading-4 mb-3">Không có con số cố định cho mọi người</h3>
@@ -234,7 +234,7 @@ export default function HydrationPage() {
 
       {/* Sources of Water */}
       <section className="space-y-4">
-        <h2 className="heading-2">Nước đến từ Đâu?</h2>
+        <h2 className="heading-2">Nước đến từ đâu?</h2>
         <Card>
           <div className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -276,11 +276,11 @@ export default function HydrationPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <AlertTriangle className="w-6 h-6 text-red-600" aria-hidden="true" />
-          Thiếu Nước (Dehydration)
+          Thiếu nước (Dehydration)
         </h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
-            <h3 className="heading-4 text-red-900 mb-3">Dấu hiệu Thiếu Nước</h3>
+            <h3 className="heading-4 text-red-900 mb-3">Dấu hiệu Thiếu nước</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <p className="text-sm font-semibold text-gray-900 mb-2">Dấu hiệu thường gặp:</p>
@@ -311,7 +311,7 @@ export default function HydrationPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Ai dễ bị Thiếu Nước?</h3>
+            <h3 className="heading-4 mb-3">Ai dễ bị Thiếu nước?</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -352,7 +352,7 @@ export default function HydrationPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Heart className="w-6 h-6 text-blue-600" aria-hidden="true" />
-          Ứng dụng trong Dinh dưỡng Lâm sàng
+          Ứng dụng trong Dinh dưỡng lâm sàng
         </h2>
         <div className="space-y-4">
           <Card>
@@ -381,13 +381,13 @@ export default function HydrationPage() {
           <Card>
             <h3 className="heading-4 mb-3">Sau Phẫu thuật</h3>
             <p className="text-body">
-              Đảm bảo đủ nước sau phẫu thuật rất quan trọng cho quá trình phục hồi. 
+              đảm bảo đủ nước sau phẫu thuật rất quan trọng cho quá trình phục hồi. 
               Có thể cần truyền dịch nếu không thể uống đủ.
             </p>
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Tiêu chảy và Nôn mửa</h3>
+            <h3 className="heading-4 mb-3">Tiêu chảy và nôn mửa</h3>
             <p className="text-body">
               Cần bù nước ngay để tránh thiếu nước. Có thể dùng dung dịch bù nước (ORS) 
               hoặc nước có pha chút muối và đường.
@@ -400,7 +400,7 @@ export default function HydrationPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Mẹo Đảm bảo Đủ Nước
+          Mẹo đảm bảo đủ nước
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <TipCard
@@ -493,7 +493,7 @@ export default function HydrationPage() {
 
       {/* Special Notes */}
       <section className="space-y-4">
-        <h2 className="heading-2">Lưu ý Đặc biệt</h2>
+        <h2 className="heading-2">Lưu ý đặc biệt</h2>
         <Card className="border-amber-200 bg-amber-50/30">
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -521,7 +521,7 @@ export default function HydrationPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Cách Uống Nước Đúng</h3>
+          <h3 className="heading-4 mb-3">Cách uống nước đúng</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>• <strong>Uống đều đặn:</strong> Chia đều trong ngày, không uống dồn</li>
             <li>• <strong>Uống trước khi khát:</strong> Khát là dấu hiệu cơ thể đã thiếu nước</li>

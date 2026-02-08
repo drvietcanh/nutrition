@@ -235,7 +235,7 @@ export default function DinhDuongTrongHoiChungRuotKichThichIBSPage() {
                 <strong>3. Tránh ăn quá no:</strong> Chia nhỏ bữa ăn.
               </li>
               <li>
-                <strong>4. Uống đủ nước:</strong> Đặc biệt khi tăng chất xơ.
+                <strong>4. Uống đủ nước:</strong> đặc biệt khi tăng chất xơ.
               </li>
               <li>
                 <strong>5. Ghi nhật ký thực phẩm:</strong> Theo dõi thực phẩm và triệu chứng.

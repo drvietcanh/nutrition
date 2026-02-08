@@ -13,7 +13,7 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <BookOpen className="w-6 h-6 text-blue-600" aria-hidden="true" />
               <span className="text-lg font-bold text-gray-900">
-                Dinh dưỡng Lâm sàng
+                Dinh dưỡng lâm sàng
               </span>
             </div>
             <p className="text-sm text-gray-600">
@@ -130,7 +130,7 @@ export function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-200">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-600">
-              © {currentYear} Dinh dưỡng Lâm sàng. Tất cả quyền được bảo lưu.
+              © {currentYear} Dinh dưỡng lâm sàng. Tất cả quyền được bảo lưu.
             </p>
             <div className="flex items-center gap-6 text-sm text-gray-600">
               <Link

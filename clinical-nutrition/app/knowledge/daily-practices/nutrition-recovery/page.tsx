@@ -238,7 +238,7 @@ export default function NutritionRecoveryPage() {
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Ưu tiên protein:</strong> Đảm bảo có đủ protein trong mỗi bữa - thịt nạc, cá, trứng, đậu phụ.
+                <strong>Ưu tiên protein:</strong> đảm bảo có đủ protein trong mỗi bữa - thịt nạc, cá, trứng, đậu phụ.
               </p>
             </div>
             <div className="flex items-start gap-2">

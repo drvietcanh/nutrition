@@ -295,7 +295,7 @@ export default function DietaryFatsPage() {
 
           <div className="mt-4 p-3 bg-white rounded border border-green-200">
             <p className="text-sm text-gray-700">
-              <strong>Omega-3:</strong> Đặc biệt quan trọng, có trong cá béo. Giúp giảm viêm, 
+              <strong>Omega-3:</strong> đặc biệt quan trọng, có trong cá béo. Giúp giảm viêm, 
             hỗ trợ sức khỏe tim và não. Nên ăn cá 2-3 lần/tuần hoặc bổ sung.
             </p>
           </div>
@@ -431,7 +431,7 @@ export default function DietaryFatsPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Heart className="w-6 h-6 text-blue-600" aria-hidden="true" />
-          Ứng dụng trong Dinh dưỡng Lâm sàng
+          Ứng dụng trong Dinh dưỡng lâm sàng
         </h2>
         <div className="space-y-4">
           <Card>

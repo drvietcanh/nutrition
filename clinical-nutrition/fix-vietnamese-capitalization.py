@@ -207,6 +207,57 @@ def fix_file(file_path):
             
             # Pattern: "Cơ thể" → "cơ thể" (khi không phải đầu câu)
             (r'Cơ thể', 'cơ thể'),
+            
+            # Pattern: "Uống Bao nhiêu Nước là Đủ" → "Uống bao nhiêu nước là đủ"
+            (r'Uống Bao nhiêu Nước là Đủ', 'Uống bao nhiêu nước là đủ'),
+            
+            # Pattern: "Thiếu Nước" → "Thiếu nước"
+            (r'Thiếu Nước', 'Thiếu nước'),
+            
+            # Pattern: "Dấu hiệu Thiếu Nước" → "Dấu hiệu thiếu nước"
+            (r'Dấu hiệu Thiếu Nước', 'Dấu hiệu thiếu nước'),
+            
+            # Pattern: "Ai dễ bị Thiếu Nước" → "Ai dễ bị thiếu nước"
+            (r'Ai dễ bị Thiếu Nước', 'Ai dễ bị thiếu nước'),
+            
+            # Pattern: "Tiêu chảy và Nôn mửa" → "Tiêu chảy và nôn mửa"
+            (r'Tiêu chảy và Nôn mửa', 'Tiêu chảy và nôn mửa'),
+            
+            # Pattern: "Mẹo Đảm bảo Đủ Nước" → "Mẹo đảm bảo đủ nước"
+            (r'Mẹo Đảm bảo Đủ Nước', 'Mẹo đảm bảo đủ nước'),
+            
+            # Pattern: "Lưu ý Đặc biệt" → "Lưu ý đặc biệt"
+            (r'Lưu ý Đặc biệt', 'Lưu ý đặc biệt'),
+            
+            # Pattern: "Cách Uống Nước Đúng" → "Cách uống nước đúng"
+            (r'Cách Uống Nước Đúng', 'Cách uống nước đúng'),
+            
+            # Pattern: "Ứng dụng trong Dinh dưỡng Lâm sàng" → "Ứng dụng trong Dinh dưỡng lâm sàng"
+            (r'Ứng dụng trong Dinh dưỡng Lâm sàng', 'Ứng dụng trong Dinh dưỡng lâm sàng'),
+            
+            # Pattern: "Dinh dưỡng Lâm sàng" → "Dinh dưỡng lâm sàng"
+            (r'Dinh dưỡng Lâm sàng', 'Dinh dưỡng lâm sàng'),
+            
+            # Pattern: "Lâm sàng" → "lâm sàng" (khi không phải đầu câu)
+            (r'Lâm sàng', 'lâm sàng'),
+            
+            # Pattern: "đến từ Đâu" → "đến từ đâu"
+            (r'đến từ Đâu', 'đến từ đâu'),
+            
+            # Pattern: "Bảng Nguồn Nước trong Đời sống" → "Bảng nguồn nước trong Đời sống"
+            (r'Bảng Nguồn Nước trong Đời sống', 'Bảng nguồn nước trong Đời sống'),
+            
+            # Pattern: "Đảm bảo" → "đảm bảo" (khi không phải đầu câu)
+            (r'Đảm bảo', 'đảm bảo'),
+            
+            # Pattern: "Đủ Nước" → "đủ nước" (khi không phải đầu câu)
+            (r'Đủ Nước', 'đủ nước'),
+            
+            # Pattern: "Đặc biệt" → "đặc biệt" (khi không phải đầu câu)
+            (r'Đặc biệt', 'đặc biệt'),
+            
+            # Pattern: "Nôn mửa" → "nôn mửa" (khi không phải đầu câu)
+            (r'Nôn mửa', 'nôn mửa'),
         ]
         
         for pattern, replacement in replacements:
