@@ -64,28 +64,39 @@ export default function DietaryFatsPage() {
         </ul>
       </Callout>
 
-      {/* Why Fats Matter */}
+      {/* What is Fat */}
       <section className="space-y-4">
-        <h2 className="heading-2">Tại sao Chất béo Quan trọng?</h2>
+        <h2 className="heading-2">Chất béo là gì?</h2>
         <div className="space-y-4">
           <p className="text-body">
-            Chất béo không phải là "kẻ thù". Cơ thể chúng ta cần chất béo để:
+            <strong>Chất béo</strong> cung cấp năng lượng, giúp hấp thu vitamin (A, D, E, K) 
+            và bảo vệ cơ quan nội tạng.
           </p>
+
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <p className="text-sm text-blue-900">
+              <strong>👉 Không có chất béo → cơ thể hoạt động kém.</strong>
+            </p>
+            <p className="text-sm text-blue-900 mt-2">
+              Chất béo không phải là "kẻ thù". Cơ thể chúng ta cần chất béo để hoạt động tốt.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card>
               <h3 className="heading-5 mb-2">Chức năng cơ thể</h3>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Hấp thu vitamin A, D, E, K</li>
-                <li>• Cung cấp năng lượng</li>
-                <li>• Bảo vệ các cơ quan</li>
+                <li>• <strong>Hấp thu vitamin A, D, E, K</strong> - không có chất béo, cơ thể không hấp thu được các vitamin này</li>
+                <li>• <strong>Cung cấp năng lượng</strong> - 1g chất béo = 9 calo (nhiều hơn protein và carbohydrate)</li>
+                <li>• <strong>Bảo vệ các cơ quan</strong> - như lớp đệm bảo vệ tim, gan, thận</li>
                 <li>• Giữ ấm cơ thể</li>
               </ul>
             </Card>
             <Card>
               <h3 className="heading-5 mb-2">Sức khỏe</h3>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Hỗ trợ sức khỏe não bộ</li>
-                <li>• Giúp sản xuất hormone</li>
+                <li>• <strong>Hỗ trợ sức khỏe não bộ</strong> - não cần chất béo để hoạt động</li>
+                <li>• <strong>Giúp sản xuất hormone</strong> - nhiều hormone cần chất béo để tạo ra</li>
                 <li>• Duy trì làn da khỏe mạnh</li>
                 <li>• Hỗ trợ chức năng tế bào</li>
               </ul>
@@ -96,6 +107,150 @@ export default function DietaryFatsPage() {
             <strong>lượng chất béo</strong> bạn ăn.
           </p>
         </div>
+      </section>
+
+      {/* Not All Fats Are The Same */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Không phải chất béo nào cũng giống nhau</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Card className="border-green-200 bg-green-50/30">
+            <h3 className="heading-4 mb-3 text-green-900">✅ Có loại nên dùng</h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <span><strong>Dầu thực vật</strong> - dầu đậu nành, dầu mè, dầu hướng dương</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <span><strong>Cá béo</strong> - cá thu, cá hồi, cá basa</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <span><strong>Chất béo tự nhiên từ hạt, đậu</strong> - đậu phộng, mè</span>
+              </li>
+            </ul>
+          </Card>
+
+          <Card className="border-red-200 bg-red-50/30">
+            <h3 className="heading-4 mb-3 text-red-900">❌ Có loại nên hạn chế</h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2">
+                <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <span><strong>Mỡ động vật nhiều</strong> - mỡ heo, mỡ bò</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <span><strong>Đồ chiên rán</strong> - khoai tây chiên, gà rán</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <span><strong>Thức ăn nhanh</strong> - hamburger, pizza nhiều phô mai</span>
+              </li>
+            </ul>
+          </Card>
+        </div>
+      </section>
+
+      {/* Vietnamese Fat Sources Table */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Bảng Nguồn Chất béo Phổ biến ở Việt Nam</h2>
+        <Callout variant="info" title="Lưu ý">
+          <p className="text-sm">
+            Bảng dưới đây giúp bạn chọn lựa chất béo phù hợp trong bữa ăn Việt Nam.
+          </p>
+        </Callout>
+
+        <div className="overflow-x-auto">
+          <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+            <thead className="bg-green-100">
+              <tr>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Nguồn chất béo</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Nhóm</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-neutral-200">
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Dầu đậu nành</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nên dùng</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Dùng vừa phải, phổ biến ở Việt Nam</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Dầu mè</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nên dùng</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Mùi thơm, tốt cho sức khỏe</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Dầu hướng dương</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nên dùng</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Chất béo không bão hòa tốt</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cá béo</strong> (cá thu, cá hồi, cá basa)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nên dùng</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Có lợi tim mạch, giàu Omega-3</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đậu phộng</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nên dùng</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Chất béo tự nhiên, ăn vừa phải</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Mỡ heo</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Hạn chế</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Dùng ít, nhiều chất béo bão hòa</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bơ động vật</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Hạn chế</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Nhiều béo bão hòa</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đồ chiên</strong> (khoai tây chiên, gà rán)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Tránh thường xuyên</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Dễ tăng cân, nhiều calo</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Thức ăn nhanh</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Tránh thường xuyên</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Nhiều chất béo xấu, calo cao</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Does Fat Make You Fat */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Ăn béo có làm béo không?</h2>
+        <Card className="border-blue-200 bg-blue-50/30">
+          <div className="space-y-3">
+            <p className="text-body">
+              <strong>👉 Không hẳn.</strong>
+            </p>
+            <p className="text-body-sm">
+              Tăng cân phụ thuộc vào <strong>tổng năng lượng</strong> bạn ăn vào, không chỉ chất béo.
+            </p>
+            
+            <div className="bg-white rounded-lg p-4 border border-blue-200 mt-3">
+              <p className="text-sm font-semibold text-gray-900 mb-2">⚠️ Vấn đề thường là:</p>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• <strong>Ăn nhiều</strong> - tổng năng lượng vượt quá nhu cầu</li>
+                <li>• <strong>Ít vận động</strong> - không đốt cháy năng lượng</li>
+                <li>• <strong>Kết hợp nhiều đường + chất béo</strong> - như bánh ngọt, snack</li>
+              </ul>
+            </div>
+
+            <ExampleBox variant="tip" title="Ví dụ dễ hiểu">
+              <p className="text-sm mb-2">
+                <strong>Ăn cá hấp với dầu mè</strong> (chất béo tốt) + rau + cơm = không làm tăng cân nếu lượng vừa phải
+              </p>
+              <p className="text-sm">
+                <strong>Ăn nhiều đồ chiên</strong> (chất béo xấu) + nước ngọt + snack = dễ tăng cân vì quá nhiều calo
+              </p>
+            </ExampleBox>
+          </div>
+        </Card>
       </section>
 
       {/* Types of Fats */}
@@ -325,28 +480,75 @@ export default function DietaryFatsPage() {
         </div>
       </section>
 
-      {/* Practical Tips */}
+      {/* Practical Application Vietnamese */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Mẹo Thực tế
+          Áp dụng Thực tế trong Bữa ăn Việt Nam
         </h2>
+        <Card className="border-green-200 bg-green-50/30">
+          <h3 className="heading-4 mb-3">Nguyên tắc cơ bản</h3>
+          <div className="space-y-3">
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <p className="text-sm text-gray-700">
+                <strong>Dùng dầu thực vật</strong> - dầu đậu nành, dầu mè, dầu hướng dương thay vì mỡ heo
+              </p>
+            </div>
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <p className="text-sm text-gray-700">
+                <strong>Hạn chế chiên rán</strong> - thay bằng luộc, hấp, kho, xào ít dầu
+              </p>
+            </div>
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <p className="text-sm text-gray-700">
+                <strong>Người tim mạch → càng cần chọn chất béo kỹ</strong> - ưu tiên cá, dầu thực vật, tránh mỡ động vật
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="heading-4 mb-3">Ví dụ Cách Chọn Chất béo trong Món ăn Việt Nam</h3>
+          <div className="space-y-3">
+            <div className="border-l-4 border-green-500 pl-4">
+              <p className="font-medium text-gray-900 mb-1">✅ Cách tốt:</p>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• <strong>Cá kho</strong> - dùng ít dầu, cá tự nhiên có chất béo tốt</li>
+                <li>• <strong>Rau xào</strong> - dùng dầu đậu nành hoặc dầu mè, xào nhanh</li>
+                <li>• <strong>Canh chua</strong> - ít chất béo, tốt cho sức khỏe</li>
+                <li>• <strong>Thịt gà luộc</strong> - bỏ da, ít chất béo</li>
+              </ul>
+            </div>
+            <div className="border-l-4 border-red-500 pl-4">
+              <p className="font-medium text-gray-900 mb-1">❌ Nên hạn chế:</p>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>• <strong>Thịt kho mỡ</strong> - nhiều mỡ heo, chất béo bão hòa</li>
+                <li>• <strong>Đồ chiên</strong> - chả giò chiên, khoai tây chiên</li>
+                <li>• <strong>Thịt nướng mỡ</strong> - thịt ba chỉ nướng, nhiều mỡ</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
         <ComparisonCard
           goodTitle="Nên làm"
           goodItems={[
-            "Dùng dầu ô liu, dầu hạt cải để nấu ăn",
-            "Ăn cá 2-3 lần/tuần (cá hồi, cá thu, cá trích)",
-            "Thêm quả hạch, hạt vào bữa ăn (một nắm nhỏ)",
+            "Dùng dầu đậu nành, dầu mè, dầu hướng dương để nấu ăn",
+            "Ăn cá 2-3 lần/tuần (cá thu, cá basa, cá hồi)",
+            "Luộc, hấp, kho thay vì chiên rán",
             "Chọn thịt nạc, bỏ da và mỡ",
             "Đọc nhãn thực phẩm để tránh trans fat"
           ]}
           badTitle="Nên tránh"
           badItems={[
-            "Thực phẩm chế biến sẵn, đóng gói",
-            "Đồ chiên rán, fast food",
-            "Bánh kẹo, snack đóng gói",
+            "Dùng nhiều mỡ heo, mỡ động vật",
+            "Đồ chiên rán thường xuyên (chả giò, khoai tây chiên)",
+            "Thức ăn nhanh, thực phẩm chế biến sẵn",
             "Thịt đỏ nhiều mỡ, thường xuyên",
-            "Margarine cứng (kiểm tra nhãn)"
+            "Bánh kẹo, snack đóng gói"
           ]}
         />
       </section>

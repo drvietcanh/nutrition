@@ -94,6 +94,24 @@ export default function NutritionBusyLifestylePage() {
                 </p>
               </div>
             </div>
+            <div className="flex items-start gap-3">
+              <Zap className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-gray-900 mb-1">Cháo thịt gà (5 phút - nấu sẵn hoặc mua)</p>
+                <p className="text-sm text-gray-700">
+                  <strong>Món ăn Việt Nam:</strong> Cháo thịt gà với rau thơm - nhanh, dễ tiêu, đủ dinh dưỡng
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <Zap className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-gray-900 mb-1">Bánh mì + Thịt/Trứng (3 phút)</p>
+                <p className="text-sm text-gray-700">
+                  <strong>Món ăn Việt Nam:</strong> Bánh mì với thịt nướng hoặc trứng - nhanh, tiện lợi, có thể mang đi
+                </p>
+              </div>
+            </div>
           </div>
         </Card>
       </section>
@@ -130,6 +148,26 @@ export default function NutritionBusyLifestylePage() {
                 </p>
               </div>
             </div>
+            <div className="flex items-start gap-3">
+              <Zap className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-gray-900 mb-1">Phở/Bún nhanh (10 phút hoặc mua)</p>
+                <p className="text-sm text-gray-700">
+                  <strong>Món ăn Việt Nam:</strong> Phở hoặc bún với nhiều rau sống và thịt nạc - 
+                  có thể mua sẵn hoặc nấu nhanh, yêu cầu nhiều rau, ít bánh phở/bún
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <Zap className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-gray-900 mb-1">Cơm + Món mặn sẵn (5 phút)</p>
+                <p className="text-sm text-gray-700">
+                  <strong>Món ăn Việt Nam:</strong> Cơm nấu sẵn + thịt kho/cá kho sẵn + rau luộc nhanh - 
+                  nấu nhiều món mặn một lần, dùng nhiều bữa
+                </p>
+              </div>
+            </div>
           </div>
         </Card>
       </section>
@@ -142,11 +180,12 @@ export default function NutritionBusyLifestylePage() {
             <div>
               <p className="text-sm font-semibold text-gray-900 mb-2">Snack Tốt (Mang theo):</p>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Trái cây tươi (táo, chuối)</li>
+                <li>• Trái cây tươi (táo, chuối, <strong>ổi, xoài</strong>)</li>
                 <li>• Quả hạch (hạnh nhân, óc chó)</li>
                 <li>• Sữa chua</li>
                 <li>• Rau củ cắt sẵn (cà rốt, dưa chuột)</li>
                 <li>• Bánh mì nguyên cám + bơ đậu phộng</li>
+                <li>• <strong>Bánh mì + chả/giò (món ăn Việt Nam)</strong></li>
               </ul>
             </div>
             <div>
@@ -192,8 +231,13 @@ export default function NutritionBusyLifestylePage() {
           <p className="mb-2">
             <strong>Snack chiều (2 phút):</strong> Sữa chua + quả hạch
           </p>
-          <p>
-            <strong>Bữa tối (15 phút):</strong> Cá nướng nhanh + rau củ đông lạnh + cơm (nấu sẵn)
+          <p className="mb-2">
+            <strong>Bữa tối (15 phút):</strong> Cá nướng nhanh + rau củ đông lạnh + cơm (nấu sẵn) hoặc
+            <strong> Cơm + thịt kho sẵn + rau luộc nhanh (món ăn Việt Nam)</strong>
+          </p>
+          <p className="text-xs text-gray-600 mt-2">
+            <strong>Lưu ý:</strong> Món ăn Việt Nam như thịt kho, cá kho có thể nấu nhiều một lần, 
+            để dành dùng nhiều bữa, tiết kiệm thời gian.
           </p>
         </ExampleBox>
       </section>

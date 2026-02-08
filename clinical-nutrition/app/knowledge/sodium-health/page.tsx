@@ -66,38 +66,45 @@ export default function SodiumHealthPage() {
 
       {/* What is Sodium */}
       <section className="space-y-4">
-        <h2 className="heading-2">Natri là gì và Tại sao Cần thiết?</h2>
+        <h2 className="heading-2">Muối là gì?</h2>
         <div className="space-y-4">
           <p className="text-body">
-            <strong>Natri</strong> là một khoáng chất cần thiết cho cơ thể. Nó giúp:
+            <strong>Muối (natri)</strong> giúp:
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Card>
-              <h3 className="heading-5 mb-2">Chức năng cơ thể</h3>
-              <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Duy trì cân bằng nước</li>
-                <li>• Hỗ trợ chức năng thần kinh</li>
-                <li>• Hỗ trợ co cơ</li>
-                <li>• Điều hòa huyết áp</li>
-              </ul>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card className="border-blue-200 bg-blue-50/30">
+              <h3 className="heading-5 mb-2 text-center">🩺 Duy trì huyết áp</h3>
+              <p className="text-sm text-gray-700 text-center">Giúp điều hòa huyết áp bình thường</p>
             </Card>
-            <Card>
-              <h3 className="heading-5 mb-2">Nguồn natri</h3>
-              <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Muối ăn (NaCl)</li>
-                <li>• Thực phẩm tự nhiên</li>
-                <li>• Thực phẩm chế biến sẵn</li>
-                <li>• Gia vị, nước chấm</li>
-              </ul>
+            <Card className="border-green-200 bg-green-50/30">
+              <h3 className="heading-5 mb-2 text-center">🧠 Truyền tín hiệu thần kinh</h3>
+              <p className="text-sm text-gray-700 text-center">Hỗ trợ chức năng thần kinh</p>
+            </Card>
+            <Card className="border-amber-200 bg-amber-50/30">
+              <h3 className="heading-5 mb-2 text-center">💪 Co cơ</h3>
+              <p className="text-sm text-gray-700 text-center">Hỗ trợ co cơ bắp</p>
             </Card>
           </div>
 
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
             <p className="text-sm text-blue-900">
-              <strong>Lưu ý quan trọng:</strong> Cơ thể chỉ cần khoảng 500mg natri/ngày để hoạt động, 
+              <strong>👉 Cơ thể vẫn cần muối, nhưng không cần nhiều.</strong>
+            </p>
+            <p className="text-sm text-blue-900 mt-2">
+              Cơ thể chỉ cần khoảng 500mg natri/ngày để hoạt động, 
               nhưng hầu hết chúng ta ăn nhiều hơn gấp 4-5 lần. Lượng thừa này gây ra các vấn đề sức khỏe.
             </p>
           </div>
+
+          <Card>
+            <h3 className="heading-5 mb-2">Nguồn natri</h3>
+            <ul className="space-y-1 text-sm text-gray-700">
+              <li>• Muối ăn (NaCl)</li>
+              <li>• Thực phẩm tự nhiên</li>
+              <li>• Thực phẩm chế biến sẵn</li>
+              <li>• Gia vị, nước chấm (nước mắm, nước tương)</li>
+            </ul>
+          </Card>
         </div>
       </section>
 
@@ -105,11 +112,11 @@ export default function SodiumHealthPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <AlertTriangle className="w-6 h-6 text-red-600" aria-hidden="true" />
-          Tác hại của Quá nhiều Natri
+          Ăn nhiều Muối có hại gì?
         </h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
-            <h3 className="heading-4 text-red-900 mb-3">1. Tăng Huyết áp</h3>
+            <h3 className="heading-4 text-red-900 mb-3">1. Tăng huyết áp</h3>
             <p className="text-body text-red-900 mb-3">
               Khi bạn ăn quá nhiều natri, cơ thể giữ nước để pha loãng natri. 
               Điều này làm tăng lượng máu và áp lực lên thành mạch máu, dẫn đến tăng huyết áp.
@@ -123,34 +130,35 @@ export default function SodiumHealthPage() {
           </Card>
 
           <Card className="border-red-200 bg-red-50">
-            <h3 className="heading-4 text-red-900 mb-3">2. Suy tim</h3>
+            <h3 className="heading-4 text-red-900 mb-3">2. Giữ nước</h3>
             <p className="text-body text-red-900">
-              Quá nhiều natri làm tim phải làm việc nhiều hơn để bơm máu, 
-              có thể làm nặng thêm tình trạng suy tim. Người suy tim thường cần hạn chế natri nghiêm ngặt.
+              Quá nhiều natri làm cơ thể giữ nước, gây phù ở chân, tay, và mặt. 
+              Điều này đặc biệt nguy hiểm cho người suy tim, bệnh thận.
             </p>
           </Card>
 
           <Card className="border-red-200 bg-red-50">
-            <h3 className="heading-4 text-red-900 mb-3">3. Bệnh Thận</h3>
+            <h3 className="heading-4 text-red-900 mb-3">3. Tăng nguy cơ tim mạch, đột quỵ</h3>
             <p className="text-body text-red-900">
-              Thận phải làm việc nhiều hơn để loại bỏ natri thừa. Quá nhiều natri có thể 
-              làm tổn thương thận và làm nặng thêm bệnh thận mạn tính.
+              Tăng huyết áp do quá nhiều natri làm tăng nguy cơ bệnh tim mạch, đột quỵ. 
+              Tim phải làm việc nhiều hơn để bơm máu, có thể dẫn đến suy tim.
             </p>
           </Card>
 
-          <Card className="border-red-200 bg-red-50">
-            <h3 className="heading-4 text-red-900 mb-3">4. Phù (Sưng)</h3>
-            <p className="text-body text-red-900">
-              Quá nhiều natri có thể gây phù ở chân, tay, và mặt do cơ thể giữ nước.
+          <div className="mt-4 p-3 bg-red-50 rounded border border-red-200">
+            <p className="text-sm text-red-900">
+              <strong>⚠️ Nhiều người ăn mặn mà không biết.</strong> 
+              Muối có thể ẩn trong nhiều thực phẩm mà bạn không nghĩ đến, 
+              như mì gói, đồ chế biến sẵn, nước chấm.
             </p>
-          </Card>
+          </div>
 
-          <Card className="border-red-200 bg-red-50">
-            <h3 className="heading-4 text-red-900 mb-3">5. Loãng Xương</h3>
-            <p className="text-body text-red-900">
-              Quá nhiều natri có thể làm tăng bài tiết canxi qua nước tiểu, 
-              có thể ảnh hưởng đến sức khỏe xương.
-            </p>
+          <Card className="border-amber-200 bg-amber-50">
+            <h3 className="heading-4 text-amber-900 mb-3">Các tác hại khác:</h3>
+            <ul className="space-y-1 text-sm text-gray-700">
+              <li>• <strong>Bệnh Thận:</strong> Thận phải làm việc nhiều hơn để loại bỏ natri thừa</li>
+              <li>• <strong>Loãng Xương:</strong> Tăng bài tiết canxi qua nước tiểu</li>
+            </ul>
           </Card>
         </div>
       </section>
@@ -213,6 +221,65 @@ export default function SodiumHealthPage() {
         </Card>
       </section>
 
+      {/* Vietnamese Sodium Sources Table */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Nguồn Muối Phổ biến trong Bữa ăn Việt Nam</h2>
+        <Callout variant="info" title="Lưu ý">
+          <p className="text-sm">
+            Bảng dưới đây giúp bạn nhận biết các nguồn muối phổ biến trong bữa ăn Việt Nam.
+          </p>
+        </Callout>
+
+        <div className="overflow-x-auto">
+          <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+            <thead className="bg-red-100">
+              <tr>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thực phẩm</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Lượng muối</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-neutral-200">
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Muối, nước mắm</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Cao</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Dùng nêm nếm, 1 thìa nước mắm ~1,000mg natri</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đồ muối chua</strong> (dưa muối, cà muối)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Cao</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Nên hạn chế, rửa sạch trước khi ăn</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Mì gói</strong> (1 gói)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Rất cao (~2,000mg)</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Không nên ăn thường xuyên</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Thức ăn chế biến</strong> (giò chả, xúc xích)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Cao</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Ít kiểm soát, nên hạn chế</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Thức ăn tươi</strong> (thịt, cá, rau tươi)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Thấp</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">An toàn hơn, tự kiểm soát khi nấu</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh mì</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Trung bình</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Có muối trong bánh, cần lưu ý</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Nước tương, tương ớt</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Cao</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Dùng ít, pha loãng</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       {/* Sources of Sodium */}
       <section className="space-y-4">
         <h2 className="heading-2">Natri đến từ Đâu?</h2>
@@ -265,15 +332,84 @@ export default function SodiumHealthPage() {
         </div>
       </section>
 
+      {/* Not Too Little */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Không phải ăn nhạt tuyệt đối là tốt</h2>
+        <Card className="border-blue-200 bg-blue-50/30">
+          <div className="space-y-3">
+            <p className="text-body">
+              <strong>Ăn quá nhạt</strong> cũng không tốt:
+            </p>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <span><strong>Ăn không ngon</strong> - dễ bỏ bữa, thiếu dinh dưỡng</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <span><strong>Dễ bỏ bữa</strong> - không có động lực ăn uống</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <span><strong>Người lao động nặng, ra mồ hôi</strong> → cần muối hơn để bù lại natri mất đi</span>
+              </li>
+            </ul>
+            <Callout variant="info" title="👉 Quan trọng là giảm dần và phù hợp từng người">
+              <p className="text-body-sm">
+                Không cần ăn nhạt tuyệt đối. Mục tiêu là giảm muối từ từ, 
+                vẫn giữ được hương vị món ăn nhưng ở mức an toàn. 
+                Mỗi người có nhu cầu khác nhau tùy theo tình trạng sức khỏe và mức độ hoạt động.
+              </p>
+            </Callout>
+          </div>
+        </Card>
+      </section>
+
       {/* How to Reduce Sodium */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách Giảm Natri trong Chế độ Ăn
+          Áp dụng Thực tế
         </h2>
         <div className="space-y-4">
+          <Card className="border-green-200 bg-green-50/30">
+            <h3 className="heading-4 mb-3">Nguyên tắc Giảm Muối trong Đời sống Việt Nam</h3>
+            <div className="space-y-3">
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <p className="text-sm text-gray-700">
+                  <strong>Nêm nhạt dần</strong> - giảm muối từ từ khi nấu ăn, vị giác sẽ quen dần
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <p className="text-sm text-gray-700">
+                  <strong>Giảm nước chấm</strong> - dùng ít nước mắm, nước tương, pha loãng hoặc dùng chanh, ớt thay thế
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <p className="text-sm text-gray-700">
+                  <strong>Hạn chế mì gói, đồ chế biến</strong> - chứa rất nhiều muối, không nên ăn thường xuyên
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <p className="text-sm text-gray-700">
+                  <strong>Dùng gia vị thay muối</strong> - tỏi, gừng, chanh, ớt, các loại thảo mộc để tăng hương vị
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <p className="text-sm text-gray-700">
+                  <strong>Chọn thực phẩm tươi</strong> - tự nấu giúp kiểm soát lượng muối tốt hơn
+                </p>
+              </div>
+            </div>
+          </Card>
+
           <TipCard
-            title="Mẹo giảm natri"
+            title="Mẹo giảm natri chi tiết"
             tips={[
               "Đọc nhãn thực phẩm: Kiểm tra hàm lượng natri. Chọn sản phẩm có ít natri hơn (< 140mg/khẩu phần là 'thấp')",
               "Nấu ăn ở nhà: Tự nấu giúp bạn kiểm soát lượng muối",
@@ -300,6 +436,57 @@ export default function SodiumHealthPage() {
             ]}
             className="mt-4"
           />
+
+          <ExampleBox variant="info" title="Cách Dùng Nước Mắm Đúng cách (Việt Nam)">
+            <p className="text-sm mb-2">
+              <strong>Nước mắm</strong> là gia vị phổ biến ở Việt Nam nhưng có rất nhiều natri (15,000-20,000mg/100ml).
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-sm mb-2">
+              <li><strong>Pha loãng:</strong> Pha nước mắm với nước, chanh, đường (nước mắm pha) - giảm natri</li>
+              <li><strong>Dùng ít:</strong> Chỉ dùng 1-2 muỗng canh cho cả bữa ăn</li>
+              <li><strong>Chọn loại ít natri:</strong> Nếu có, chọn nước mắm ít natri</li>
+              <li><strong>Thay thế:</strong> Dùng chanh, ớt, tỏi để tăng hương vị thay vì nhiều nước mắm</li>
+            </ul>
+            <p className="text-sm">
+              <strong>Ví dụ:</strong> Nước mắm pha: 1 muỗng nước mắm + 2 muỗng nước + 1 muỗng chanh + 1/2 muỗng đường.
+            </p>
+          </ExampleBox>
+
+          <Card className="border-blue-200 bg-blue-50">
+            <h3 className="heading-4 mb-3 text-blue-900">So sánh Các Loại Gia vị Việt Nam</h3>
+            <div className="bg-white rounded-lg p-3 border border-blue-200">
+              <p className="text-xs font-semibold text-gray-900 mb-2">Natri trong Gia vị (100ml/g):</p>
+              <ul className="text-xs text-gray-700 space-y-1">
+                <li>• <strong>Nước mắm:</strong> 15,000-20,000mg - rất cao</li>
+                <li>• <strong>Mắm tôm, mắm ruốc:</strong> 10,000-15,000mg - rất cao</li>
+                <li>• <strong>Tương:</strong> 3,000-5,000mg - vừa phải</li>
+                <li>• <strong>Chao:</strong> 2,000-3,000mg - ít hơn</li>
+                <li>• <strong>Gia vị tự nhiên:</strong> Tỏi, gừng, chanh - rất ít natri</li>
+              </ul>
+            </div>
+            <p className="text-xs text-blue-800 mt-2">
+              <strong>Tips:</strong> Ưu tiên tương, chao thay vì nước mắm. Dùng gia vị tự nhiên (tỏi, gừng, chanh) để tăng hương vị.
+            </p>
+          </Card>
+
+          <ExampleBox variant="tip" title="Cách Giảm Natri trong Món Ăn Việt Nam">
+            <p className="text-sm mb-2">
+              <strong>Canh:</strong>
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-sm mb-2">
+              <li>Giảm nước mắm, tăng gia vị tự nhiên (tỏi, gừng, sả)</li>
+              <li>Thêm cà chua, dứa để tăng vị ngọt tự nhiên, giảm muối</li>
+              <li>Ví dụ: Canh chua cá - thêm cà chua, dứa, giảm nước mắm</li>
+            </ul>
+            <p className="text-sm mb-2">
+              <strong>Kho:</strong>
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Giảm nước mắm, tăng gia vị tự nhiên (gừng, nghệ, sả)</li>
+              <li>Thêm cà chua, dứa để tăng vị ngọt tự nhiên</li>
+              <li>Ví dụ: Cá kho tộ - thêm cà chua, giảm nước mắm</li>
+            </ul>
+          </ExampleBox>
         </div>
       </section>
 

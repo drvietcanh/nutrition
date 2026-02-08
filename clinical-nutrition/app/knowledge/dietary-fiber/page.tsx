@@ -4,7 +4,7 @@ import { Card } from "../../components/Card";
 import { Callout } from "../../components/Callout";
 import { ExampleBox } from "../../components/ExampleBox";
 import { TipCard } from "../../components/TipCard";
-import { Leaf, Heart, Lightbulb, CheckCircle2 } from "lucide-react";
+import { Leaf, Heart, Lightbulb, CheckCircle2, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { getRelatedArticles } from "../../../lib/content/articles";
 
@@ -65,19 +65,207 @@ export default function DietaryFiberPage() {
         <h2 className="heading-2">Chất xơ là gì?</h2>
         <div className="space-y-4">
           <p className="text-body">
-            <strong>Chất xơ</strong> là phần của thực vật mà cơ thể chúng ta không thể tiêu hóa. 
-            Không giống như các chất dinh dưỡng khác (protein, carbohydrate, chất béo) được hấp thu, 
-            chất xơ đi qua hệ tiêu hóa và có nhiều tác dụng quan trọng.
+            <strong>Chất xơ</strong> là phần của thực vật không tiêu hóa, nhưng rất cần cho ruột.
           </p>
 
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
             <p className="text-sm text-blue-900">
-              <strong>Ví dụ đơn giản:</strong> Khi bạn ăn một quả táo, phần thịt táo được tiêu hóa 
-              và hấp thu, nhưng phần vỏ và chất xơ trong táo đi qua ruột và giúp làm sạch, 
-              giống như một cây chổi quét dọn đường ruột.
+              <strong>👉 Có thể ví:</strong> Chất xơ là "chổi quét" của hệ tiêu hóa. 
+              Nó giúp làm sạch đường ruột, đẩy thức ăn đi qua hệ tiêu hóa một cách trơn tru.
             </p>
           </div>
+
+          <p className="text-body-sm text-gray-700">
+            Không giống như các chất dinh dưỡng khác (protein, carbohydrate, chất béo) được hấp thu, 
+            chất xơ đi qua hệ tiêu hóa và có nhiều tác dụng quan trọng cho sức khỏe.
+          </p>
         </div>
+      </section>
+
+      {/* Benefits of Fiber */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Lợi ích của chất xơ</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Card className="border-green-200 bg-green-50/30">
+            <h3 className="heading-5 mb-2">Giúp tiêu hóa tốt</h3>
+            <p className="text-sm text-gray-700">
+              Chất xơ giúp thức ăn di chuyển qua ruột dễ dàng, ngăn ngừa táo bón và giữ cho hệ tiêu hóa khỏe mạnh.
+            </p>
+          </Card>
+
+          <Card className="border-green-200 bg-green-50/30">
+            <h3 className="heading-5 mb-2">Giảm táo bón</h3>
+            <p className="text-sm text-gray-700">
+              Chất xơ không hòa tan giúp phân mềm và dễ đi ngoài, đặc biệt quan trọng cho người hay bị táo bón.
+            </p>
+          </Card>
+
+          <Card className="border-blue-200 bg-blue-50/30">
+            <h3 className="heading-5 mb-2">Giúp đường huyết tăng chậm</h3>
+            <p className="text-sm text-gray-700">
+              Chất xơ làm chậm hấp thu đường, giúp đường huyết tăng chậm và ổn định hơn. 
+              Rất tốt cho người đái tháo đường.
+            </p>
+          </Card>
+
+          <Card className="border-blue-200 bg-blue-50/30">
+            <h3 className="heading-5 mb-2">Hỗ trợ giảm mỡ máu</h3>
+            <p className="text-sm text-gray-700">
+              Chất xơ hòa tan giúp giảm cholesterol xấu (LDL), từ đó giảm nguy cơ bệnh tim mạch.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      {/* Not More is Better */}
+      <section className="space-y-4">
+        <h2 className="heading-2 flex items-center gap-2">
+          <AlertTriangle className="w-6 h-6 text-amber-600" aria-hidden="true" />
+          Không phải ăn càng nhiều chất xơ càng tốt
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Card className="border-red-200 bg-red-50/30">
+            <h3 className="heading-4 mb-3 text-red-900">❌ Thiếu chất xơ:</h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• <strong>Táo bón</strong> - khó đi ngoài, phân cứng</li>
+              <li>• <strong>Đường huyết dao động</strong> - tăng nhanh sau ăn</li>
+              <li>• <strong>Tăng mỡ máu</strong> - cholesterol cao</li>
+              <li>• Dễ tăng cân - không no lâu</li>
+            </ul>
+          </Card>
+
+          <Card className="border-amber-200 bg-amber-50/30">
+            <h3 className="heading-4 mb-3 text-amber-900">⚠️ Quá nhiều chất xơ:</h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• <strong>Đầy bụng</strong> - khó chịu, chướng bụng</li>
+              <li>• <strong>Khó tiêu</strong> - đầy hơi, khí trong ruột</li>
+              <li>• <strong>Không phù hợp người già</strong> - hệ tiêu hóa yếu</li>
+              <li>• <strong>Không phù hợp bệnh ruột</strong> - viêm ruột, hẹp ruột</li>
+            </ul>
+          </Card>
+        </div>
+
+        <Callout variant="info" title="👉 Vì vậy">
+          <p className="text-body-sm">
+            <strong>Ăn đủ chất xơ</strong> (25-30g/ngày) là tốt nhất. Không cần quá nhiều, 
+            nhưng cũng không nên thiếu. Mỗi người có nhu cầu khác nhau tùy theo tuổi và tình trạng sức khỏe.
+          </p>
+        </Callout>
+      </section>
+
+      {/* Vietnamese Fiber Table */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Bảng Chất xơ trong Thực phẩm Việt Nam</h2>
+        <Callout variant="info" title="Lưu ý">
+          <p className="text-sm">
+            Hàm lượng chất xơ dưới đây là ước tính, có thể thay đổi tùy theo cách chế biến và từng loại thực phẩm.
+          </p>
+        </Callout>
+
+        <div className="overflow-x-auto">
+          <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+            <thead className="bg-green-100">
+              <tr>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thực phẩm</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Hàm lượng xơ</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-neutral-200">
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Rau xanh</strong> (rau muống, rau cải, rau lang)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Cao</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Nên ăn hàng ngày, 1-2 bát/ngày</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Rau muống</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Trung bình</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Dễ ăn, phổ biến</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đậu xanh</strong> (nấu chín)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Cao</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">No lâu, tốt cho đường huyết</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đậu đen, đậu đỏ</strong> (nấu chín)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Cao</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Nhiều chất xơ, giàu dinh dưỡng</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Táo</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Trung bình</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Tốt cho ruột, nên ăn cả vỏ</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chuối</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Trung bình</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Không nên ăn quá nhiều (1-2 quả/ngày)</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Ổi</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Cao</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Trái cây Việt Nam giàu chất xơ</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Gạo lứt</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Trung bình</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Tốt hơn gạo trắng (gạo trắng ít chất xơ)</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Khoai lang</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Trung bình</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Nhiều chất xơ, tốt cho tiêu hóa</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đậu bắp, mướp, bầu</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Cao</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Rau quả Việt Nam giàu chất xơ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Fiber and Blood Sugar */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Chất xơ & Đường huyết</h2>
+        <Card className="border-blue-200 bg-blue-50/30">
+          <div className="space-y-3">
+            <p className="text-body">
+              Chất xơ có vai trò quan trọng trong kiểm soát đường huyết:
+            </p>
+            
+            <div className="bg-white rounded-lg p-4 border border-blue-200">
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                  <span><strong>Có chất xơ → đường huyết tăng chậm</strong> - chất xơ làm chậm hấp thu đường vào máu</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                  <span><strong>Bữa ăn nhiều rau → GL thấp hơn</strong> - rau giúp giảm tải lượng đường huyết của bữa ăn</span>
+                </li>
+              </ul>
+            </div>
+
+            <Callout variant="info" title="👉 Đây là lý do nên ăn rau trước hoặc cùng bữa chính">
+              <p className="text-body-sm">
+                Khi bạn ăn rau trước hoặc cùng với cơm, chất xơ trong rau sẽ làm chậm hấp thu đường từ cơm, 
+                giúp đường huyết tăng chậm và ổn định hơn. Điều này đặc biệt quan trọng cho người đái tháo đường.
+              </p>
+            </Callout>
+
+            <ExampleBox variant="tip" title="Ví dụ thực tế">
+              <p className="text-sm mb-2">
+                <strong>Bữa ăn tốt:</strong> Ăn rau luộc trước → sau đó ăn cơm + thịt = đường huyết tăng chậm
+              </p>
+              <p className="text-sm">
+                <strong>Bữa ăn không tốt:</strong> Chỉ ăn cơm + thịt, không có rau = đường huyết tăng nhanh
+              </p>
+            </ExampleBox>
+          </div>
+        </Card>
       </section>
 
       {/* Types of Fiber */}
@@ -119,7 +307,8 @@ export default function DietaryFiberPage() {
                 <p className="text-xs font-semibold text-gray-900 mb-1">Nguồn thực phẩm:</p>
                 <p className="text-xs text-gray-700">
                   Yến mạch, lúa mạch, đậu, đậu lăng, táo, cam, cà rốt, 
-                  bông cải xanh, quả bơ
+                  bông cải xanh, quả bơ. <strong>Ở Việt Nam:</strong> Đậu đen, đậu đỏ, đậu bắp, 
+                  mướp, bầu, cà chua, cà rốt.
                 </p>
               </div>
             </div>
@@ -159,7 +348,8 @@ export default function DietaryFiberPage() {
                 <p className="text-xs font-semibold text-gray-900 mb-1">Nguồn thực phẩm:</p>
                 <p className="text-xs text-gray-700">
                   Gạo lứt, bánh mì nguyên cám, các loại hạt, rau xanh, 
-                  cà rốt, cà chua, dưa chuột
+                  cà rốt, cà chua, dưa chuột. <strong>Ở Việt Nam:</strong> Rau muống, rau cải, 
+                  rau lang, đậu bắp, mướp, bầu, khoai lang.
                 </p>
               </div>
             </div>
@@ -236,16 +426,87 @@ export default function DietaryFiberPage() {
 
             <ExampleBox title="Ví dụ thực tế để đạt 25g chất xơ/ngày" className="mt-4">
               <div className="space-y-2">
+                <p className="text-sm text-gray-700 mb-2">
+                  <strong>Ví dụ 1 (Tổng quát):</strong>
+                </p>
                 <p className="text-sm text-gray-700">
                   <strong>1 bát yến mạch</strong> (4g) + <strong>1 quả táo</strong> (4g) + 
                   <strong>1 bát đậu</strong> (8g) + <strong>1 bát rau xanh</strong> (5g) + 
                   <strong>1 lát bánh mì nguyên cám</strong> (2g) + <strong>1 quả chuối</strong> (3g)
                 </p>
-                <p className="text-sm font-semibold text-green-700">
+                <p className="text-sm font-semibold text-green-700 mb-3">
                   = 26g chất xơ (đạt mục tiêu!)
+                </p>
+                <p className="text-sm text-gray-700 mb-2">
+                  <strong>Ví dụ 2 (Món ăn Việt Nam):</strong>
+                </p>
+                <p className="text-sm text-gray-700">
+                  <strong>1 bát cơm gạo lứt</strong> (3g) + <strong>1 bát canh rau muống</strong> (3g) + 
+                  <strong>1 đĩa rau cải luộc</strong> (4g) + <strong>1 bát đậu đen</strong> (8g) + 
+                  <strong>1 quả ổi</strong> (5g) + <strong>1 quả xoài</strong> (3g)
+                </p>
+                <p className="text-sm font-semibold text-green-700">
+                  = 26g chất xơ (đạt mục tiêu với món ăn Việt Nam!)
                 </p>
               </div>
             </ExampleBox>
+          </div>
+        </Card>
+      </section>
+
+      {/* Application in Vietnamese Meals */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Áp dụng trong Bữa ăn Việt Nam</h2>
+        <Card className="border-green-200 bg-green-50/30">
+          <h3 className="heading-4 mb-3">Nguyên tắc cơ bản</h3>
+          <div className="space-y-3">
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <p className="text-sm text-gray-700">
+                <strong>Mỗi bữa có rau</strong> - không cần quá nhiều, chỉ cần 1-2 món rau mỗi bữa
+              </p>
+            </div>
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <p className="text-sm text-gray-700">
+                <strong>Không cần quá nhiều</strong> - 25-30g/ngày là đủ, không cần ăn quá mức
+              </p>
+            </div>
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <p className="text-sm text-gray-700">
+                <strong>Ưu tiên đa dạng rau củ</strong> - ăn nhiều loại rau khác nhau để có đủ chất xơ và dinh dưỡng
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="heading-4 mb-3">Ví dụ Bữa ăn Việt Nam Có Đủ Chất xơ</h3>
+          <div className="space-y-3">
+            <div className="border-l-4 border-green-500 pl-4">
+              <p className="font-medium text-gray-900 mb-1">Bữa trưa mẫu:</p>
+              <p className="text-sm text-gray-700">
+                1 bát cơm + thịt kho + <strong>canh rau muống</strong> + <strong>rau cải luộc</strong> = ~8-10g chất xơ
+              </p>
+            </div>
+            <div className="border-l-4 border-blue-500 pl-4">
+              <p className="font-medium text-gray-900 mb-1">Bữa tối mẫu:</p>
+              <p className="text-sm text-gray-700">
+                1 bát cơm gạo lứt + cá kho + <strong>canh mướp</strong> + <strong>đậu bắp luộc</strong> = ~10-12g chất xơ
+              </p>
+            </div>
+            <div className="border-l-4 border-amber-500 pl-4">
+              <p className="font-medium text-gray-900 mb-1">Bữa phụ:</p>
+              <p className="text-sm text-gray-700">
+                <strong>1 quả ổi</strong> hoặc <strong>1 quả táo</strong> = ~4-5g chất xơ
+              </p>
+            </div>
+            <div className="bg-green-50 rounded-lg p-3 border border-green-200 mt-3">
+              <p className="text-sm font-semibold text-green-900">
+                Tổng trong ngày: ~25-30g chất xơ - đạt mục tiêu!
+              </p>
+            </div>
           </div>
         </Card>
       </section>
@@ -274,24 +535,33 @@ export default function DietaryFiberPage() {
               <div>
                 <p className="text-sm font-semibold mb-1">Bữa sáng:</p>
                 <p className="text-sm text-gray-700">
-                  Yến mạch với quả mọng và hạt chia (~8g chất xơ)
+                  Yến mạch với quả mọng và hạt chia (~8g chất xơ) hoặc 
+                  <strong> Cháo đậu đen + rau thơm (~6g chất xơ)</strong>
                 </p>
               </div>
               <div>
                 <p className="text-sm font-semibold mb-1">Bữa trưa:</p>
                 <p className="text-sm text-gray-700">
-                  Salad với đậu, rau xanh, và bánh mì nguyên cám (~12g chất xơ)
+                  Salad với đậu, rau xanh, và bánh mì nguyên cám (~12g chất xơ) hoặc
+                  <strong> Cơm + canh rau muống + đậu bắp luộc (~10g chất xơ)</strong>
                 </p>
               </div>
               <div>
                 <p className="text-sm font-semibold mb-1">Bữa tối:</p>
                 <p className="text-sm text-gray-700">
-                  Cơm gạo lứt với thịt và rau xanh (~6g chất xơ)
+                  Cơm gạo lứt với thịt và rau xanh (~6g chất xơ) hoặc
+                  <strong> Cơm + canh mướp + rau cải xào (~8g chất xơ)</strong>
+                </p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold mb-1">Trái cây:</p>
+                <p className="text-sm text-gray-700">
+                  <strong>Ổi, xoài, thanh long</strong> - trái cây Việt Nam giàu chất xơ (~5g chất xơ)
                 </p>
               </div>
               <div className="bg-green-50 rounded p-3 border border-green-200 mt-3">
                 <p className="text-sm font-semibold text-green-900">
-                  Tổng cộng: ~26g chất xơ - đạt mục tiêu hàng ngày!
+                  Tổng cộng: ~26-29g chất xơ - đạt mục tiêu hàng ngày!
                 </p>
               </div>
             </div>

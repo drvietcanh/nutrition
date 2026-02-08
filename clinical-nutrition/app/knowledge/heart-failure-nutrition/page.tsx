@@ -40,20 +40,44 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <Heart className="w-8 h-8 text-red-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Dinh dưỡng trong Suy tim: Hướng dẫn Giáo dục
+            ❤️ Dinh dưỡng trong Suy tim: Hướng dẫn Giáo dục
           </h1>
         </div>
-        <p className="text-body-lg">
-          Suy tim là một hội chứng lâm sàng phức tạp ảnh hưởng đến khả năng bơm máu của tim. Dinh dưỡng
-          đóng vai trò quan trọng trong quản lý suy tim, đặc biệt là quản lý natri, dịch, và cân nặng.
-          Trang này cung cấp hướng dẫn giáo dục về các nguyên tắc dinh dưỡng dựa trên bằng chứng cho
-          bệnh nhân suy tim.
-        </p>
+        <div className="space-y-4">
+          <p className="text-body-lg">
+            Suy tim là tình trạng tim bơm máu kém hơn bình thường, khiến cơ thể dễ bị:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body">
+            <li>Khó thở</li>
+            <li>Phù chân, phù tay</li>
+            <li>Mệt mỏi</li>
+            <li>Tăng cân do ứ nước</li>
+          </ul>
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <p className="text-sm text-blue-900 mb-2">
+              <strong>👉 Dinh dưỡng đóng vai trò rất quan trọng trong suy tim, đặc biệt là:</strong>
+            </p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+              <li>Ăn nhạt hơn</li>
+              <li>Kiểm soát lượng nước uống</li>
+              <li>Theo dõi cân nặng mỗi ngày</li>
+            </ul>
+          </div>
+          <p className="text-body">
+            Trang này cung cấp kiến thức dinh dưỡng mang tính giáo dục, giúp người bệnh và nhân viên y tế 
+            hiểu và áp dụng đúng trong cuộc sống hàng ngày.
+          </p>
+        </div>
         <Callout variant="info" title="Mục đích Giáo dục">
-          <p className="text-body-sm">
-            Trang này được thiết kế cho <strong>mục đích giáo dục</strong>, giúp các bác sĩ, điều dưỡng,
-            và sinh viên y khoa hiểu các nguyên tắc dinh dưỡng trong quản lý suy tim. Nó không thay thế
-            phán đoán lâm sàng hoặc tư vấn từ chuyên gia dinh dưỡng đã đăng ký.
+          <p className="text-body-sm mb-2">
+            Nội dung nhằm:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm">
+            <li>Giúp bác sĩ, điều dưỡng, sinh viên y khoa và người bệnh hiểu các nguyên tắc dinh dưỡng trong suy tim</li>
+            <li>Hỗ trợ quản lý bệnh song song với thuốc</li>
+          </ul>
+          <p className="text-body-sm mt-3 font-semibold text-red-600">
+            ⚠️ Lưu ý: Thông tin này không thay thế đánh giá và chỉ định cá nhân của bác sĩ điều trị.
           </p>
         </Callout>
       </header>
@@ -63,32 +87,42 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Quan trọng trong Suy tim?
+            Vì sao Dinh dưỡng Rất Quan trọng trong Suy tim?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
           <p>
-            Dinh dưỡng trong suy tim tập trung vào việc giảm gánh cho tim và quản lý các triệu chứng:
+            Trong suy tim, tim đã yếu, nếu ăn uống không phù hợp sẽ làm tim phải làm việc nhiều hơn.
           </p>
-          <ul className="list-disc space-y-2 pl-6">
-            <li>
-              <strong>Quản lý dịch:</strong> Hạn chế natri và dịch giúp giảm quá tải dịch, một trong những
-              nguyên nhân chính gây khó thở và phù ở bệnh nhân suy tim.
-            </li>
-            <li>
-              <strong>Giảm gánh tim:</strong> Quá tải dịch làm tăng gánh cho tim, khiến tim phải làm việc
-              nhiều hơn. Giảm dịch giúp giảm gánh này.
-            </li>
-            <li>
-              <strong>Quản lý cân nặng:</strong> Thừa cân làm tăng gánh cho tim, trong khi suy dinh dưỡng
-              (cardiac cachexia) có thể làm suy yếu cơ tim. Cần cân bằng giữa hai cực này.
-            </li>
-            <li>
-              <strong>Phòng ngừa biến chứng:</strong> Quản lý dinh dưỡng tốt giúp giảm nguy cơ nhập viện
-              và cải thiện chất lượng cuộc sống.
-            </li>
-          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Card className="border-blue-200 bg-blue-50/30">
+              <h3 className="heading-5 mb-2">🔹 Giữ nước (ứ dịch)</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Muối làm cơ thể giữ nước</li>
+                <li>• Giữ nước nhiều → tim phải bơm nhiều hơn → dễ khó thở, phù</li>
+              </ul>
+            </Card>
+            <Card className="border-green-200 bg-green-50/30">
+              <h3 className="heading-5 mb-2">🔹 Tăng gánh cho tim</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Dịch dư thừa làm tim quá tải</li>
+                <li>• Giảm muối và nước giúp giảm gánh cho tim</li>
+              </ul>
+            </Card>
+            <Card className="border-amber-200 bg-amber-50/30 md:col-span-2">
+              <h3 className="heading-5 mb-2">🔹 Cân nặng</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Thừa cân → tim làm việc nặng hơn</li>
+                <li>• Nhưng sụt cân quá mức hoặc suy dinh dưỡng cũng rất nguy hiểm</li>
+              </ul>
+              <div className="mt-2 p-2 bg-white rounded border border-amber-200">
+                <p className="text-sm text-amber-900">
+                  <strong>👉 Mục tiêu là giữ cân nặng ổn định, không tăng nhanh, không sụt nhiều.</strong>
+                </p>
+              </div>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -104,160 +138,180 @@ export default function HeartFailureNutritionPage() {
 
         {/* Sodium */}
         <Card>
-          <CardHeader icon={AlertCircle} title="Natri (Muối)" />
+          <CardHeader icon={AlertCircle} title="🧂 Muối (Natri) – Yếu tố Quan trọng nhất" />
           <CardContent>
             <p className="text-body mb-4">
-              Hạn chế natri là nền tảng của quản lý dinh dưỡng trong suy tim. Natri giữ nước trong cơ thể,
-              làm tăng thể tích máu và gánh cho tim.
+              Muối làm cơ thể giữ nước, vì vậy hạn chế muối là nền tảng trong suy tim.
             </p>
+            <h4 className="heading-4 mb-3">Khuyến nghị chung theo mức độ suy tim</h4>
             {/* Sodium Recommendations by NYHA Class Table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-                <thead className="bg-neutral-50">
+                <thead className="bg-red-100">
                   <tr>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">NYHA Class</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mức độ</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khuyến nghị Natri</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tương đương Muối</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mức độ suy tim</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Lượng natri/ngày</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Tương đương muối</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-neutral-200">
                   <tr>
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>I-II</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Nhẹ-trung bình</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2-3g/ngày</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">&lt; 5-7.5g/ngày</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Hạn chế nhẹ, có thể linh hoạt hơn</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Nhẹ – trung bình (NYHA I–II)</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 2–3 g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 5–7,5 g</td>
                   </tr>
                   <tr className="bg-neutral-50">
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>III-IV</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Nặng</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2g/ngày</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">&lt; 5g/ngày</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Hạn chế nghiêm ngặt, có thể cần &lt; 1.5g/ngày</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Nặng (NYHA III–IV)</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 2 g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 5 g</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Một số trường hợp nặng</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">Có thể &lt; 1,5 g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">Theo chỉ định bác sĩ</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             
-            <p className="text-body-sm mb-3">
-              <strong>Khuyến nghị:</strong>
-            </p>
-            <ul className="list-disc space-y-2 pl-6 text-body-sm mb-4">
-              <li>
-                <strong>Suy tim nhẹ-trung bình (NYHA I-II):</strong> Hạn chế natri &lt; 2-3g/ngày
-                (tương đương &lt; 5-7.5g muối/ngày)
-              </li>
-              <li>
-                <strong>Suy tim nặng (NYHA III-IV):</strong> Hạn chế natri &lt; 2g/ngày
-                (tương đương &lt; 5g muối/ngày), có thể cần &lt; 1.5g/ngày trong một số trường hợp
-              </li>
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 mb-4">
+              <p className="text-sm text-blue-900">
+                <strong>👉 Không cần ăn nhạt tuyệt đối, nhưng không được ăn mặn.</strong>
+              </p>
+            </div>
+            
+            <h4 className="heading-4 mb-3">Nguồn muối "ẩn" người bệnh hay bỏ sót</h4>
+            <ul className="list-disc space-y-1 pl-6 text-body-sm mb-3">
+              <li><strong>Mì gói</strong></li>
+              <li><strong>Đồ hộp</strong></li>
+              <li><strong>Thức ăn nhanh</strong></li>
+              <li><strong>Nước mắm, nước tương, gia vị</strong></li>
+              <li><strong>Xúc xích, thịt nguội</strong></li>
+              <li><strong>Bánh mì, phô mai</strong></li>
             </ul>
-            <p className="text-body-sm mb-3">
-              <strong>Nguồn natri ẩn:</strong> Tương tự như trong tăng huyết áp, phần lớn natri đến từ
-              thực phẩm chế biến sẵn, đồ hộp, và thức ăn nhanh.
-            </p>
-            <p className="text-body-sm">
-              <strong>Lưu ý:</strong> Hạn chế natri quá mức (&lt; 1g/ngày) có thể không cần thiết và
-              ảnh hưởng đến chất lượng cuộc sống. Mục tiêu là giảm đủ để quản lý triệu chứng mà vẫn
-              duy trì tuân thủ.
-            </p>
+            <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+              <p className="text-sm font-semibold text-green-900 mb-1">📌 Mẹo nhớ nhanh:</p>
+              <p className="text-sm text-green-900">
+                Phần lớn muối không đến từ muối chấm, mà từ thực phẩm chế biến sẵn.
+              </p>
+            </div>
           </CardContent>
         </Card>
 
         {/* Fluid */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Dịch (Nước)</h3>
+          <h3 className="heading-3">💧 Nước (Dịch)</h3>
           <div className="space-y-3 text-body">
             <p>
-              <strong>Khuyến nghị:</strong> Hạn chế dịch thường được khuyến nghị ở bệnh nhân suy tim,
-              đặc biệt khi có triệu chứng quá tải dịch hoặc suy tim nặng.
+              Ở suy tim, uống quá nhiều nước có thể làm:
             </p>
+            <ul className="list-disc space-y-1 pl-6 text-body-sm mb-4">
+              <li>Phù nặng hơn</li>
+              <li>Khó thở nhiều hơn</li>
+              <li>Dễ nhập viện</li>
+            </ul>
+            <h4 className="heading-4 mb-3">Khuyến nghị chung</h4>
             {/* Fluid Recommendations Table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-                <thead className="bg-neutral-50">
+                <thead className="bg-blue-100">
                   <tr>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">NYHA Class</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khuyến nghị Dịch</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mức độ suy tim</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Lượng nước/ngày</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-neutral-200">
                   <tr>
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>I-II</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">1.5-2L/ngày hoặc không hạn chế nghiêm ngặt</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Tùy triệu chứng, có thể linh hoạt</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Nhẹ – trung bình</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1,5–2 L</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Có thể linh hoạt</td>
                   </tr>
                   <tr className="bg-neutral-50">
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>III-IV</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">1.5L/ngày hoặc ít hơn</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Tùy triệu chứng và đáp ứng, có thể cần &lt; 1L/ngày</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Nặng</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">≈ 1,5 L hoặc ít hơn</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Tùy triệu chứng</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Rất nặng</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">Có thể &lt; 1 L</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Theo chỉ định</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             
-            <ul className="list-disc space-y-1 pl-6 text-body-sm">
-              <li>
-                <strong>Lưu ý:</strong> Bao gồm tất cả dịch (nước, nước trái cây, súp, cà phê, trà, v.v.)
-              </li>
-              <li>
-                <strong>Theo dõi cân nặng:</strong> Tăng cân nhanh (1-2 kg trong 1-2 ngày) có thể báo hiệu quá tải dịch
-              </li>
-            </ul>
-            <p>
-              <strong>Theo dõi cân nặng:</strong> Cân nặng hàng ngày là một công cụ quan trọng để theo dõi
-              quá tải dịch. Tăng cân nhanh (1-2 kg trong 1-2 ngày) có thể báo hiệu quá tải dịch.
-            </p>
-            <Callout variant="warning" title="Lưu ý quan trọng">
-              <p className="text-body-sm">
-                Hạn chế dịch quá mức có thể dẫn đến mất nước và suy thận, đặc biệt ở người lớn tuổi hoặc
-                trong thời tiết nóng. Luôn đánh giá dấu hiệu quá tải dịch (phù, khó thở) và điều chỉnh
-                dựa trên đáp ứng lâm sàng.
+            <div className="bg-red-50 rounded-lg p-3 border border-red-200">
+              <p className="text-sm text-red-900">
+                <strong>⚠️ Tất cả đều tính là nước:</strong> nước lọc, nước trái cây, canh, súp, trà, cà phê…
               </p>
-            </Callout>
+            </div>
+          </div>
+        </div>
+
+        {/* Weight Monitoring */}
+        <div className="space-y-4 rounded-lg border border-green-200 bg-green-50/30 p-5 shadow-sm sm:p-6">
+          <h3 className="heading-3">Theo dõi Cân nặng – Dấu hiệu Rất Quan trọng</h3>
+          <div className="space-y-3 text-body">
+            <ul className="list-disc space-y-2 pl-6 text-body-sm">
+              <li><strong>Cân mỗi sáng, sau khi đi vệ sinh, trước ăn</strong></li>
+              <li><strong>Tăng &gt; 1–2 kg trong 1–2 ngày → nghi ngờ ứ dịch</strong></li>
+            </ul>
+            <div className="rounded-lg border border-green-200 bg-white p-3">
+              <p className="text-sm text-green-900">
+                <strong>👉 Đây là dấu hiệu sớm để đi khám kịp thời.</strong>
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Energy & Weight */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Năng lượng & Cân nặng</h3>
+          <h3 className="heading-3">⚖️ Năng lượng & Cân nặng</h3>
           <div className="space-y-3 text-body">
-            <p>
-              <strong>Thừa cân:</strong> Thừa cân làm tăng gánh cho tim. Giảm cân có thể giúp cải thiện
-              triệu chứng và chức năng tim, nhưng cần thận trọng và từ từ.
-            </p>
-            <p>
-              <strong>Suy dinh dưỡng (Cardiac Cachexia):</strong> Một số bệnh nhân suy tim, đặc biệt suy tim
-              nặng, có thể bị suy dinh dưỡng và mất cơ. Điều này có thể làm suy yếu cơ tim và làm trầm trọng
-              suy tim. Cần tăng năng lượng và protein, nhưng phải cân bằng với hạn chế dịch.
-            </p>
-            <p>
-              <strong>Mục tiêu:</strong> Duy trì cân nặng ổn định, tránh cả thừa cân và suy dinh dưỡng.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+                <p className="text-sm font-semibold text-blue-900 mb-2">Thừa cân</p>
+                <ul className="space-y-1 text-sm text-gray-700">
+                  <li>• Làm tim phải làm việc nhiều hơn</li>
+                  <li>• Giảm cân từ từ có thể giúp giảm triệu chứng</li>
+                </ul>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3 border border-red-200">
+                <p className="text-sm font-semibold text-red-900 mb-2">Suy dinh dưỡng (Cardiac cachexia)</p>
+                <ul className="space-y-1 text-sm text-gray-700">
+                  <li>• Gặp ở suy tim nặng</li>
+                  <li>• Gây yếu cơ, yếu cả cơ tim</li>
+                  <li>• Làm bệnh nặng hơn</li>
+                </ul>
+              </div>
+            </div>
+            <div className="rounded-lg border border-amber-200 bg-amber-50 p-3 mt-3">
+              <p className="text-sm text-amber-900">
+                <strong>👉 Mục tiêu:</strong> Không tăng cân nhanh – không sụt cân nhiều – giữ ổn định.
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Protein */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Protein</h3>
+          <h3 className="heading-3">🥩 Protein (Chất đạm)</h3>
           <div className="space-y-3 text-body">
             <p>
-              <strong>Nhu cầu:</strong> Đủ protein để duy trì khối nạc, đặc biệt quan trọng ở bệnh nhân có
-              nguy cơ suy dinh dưỡng. Khuyến nghị: 1.0-1.2 g/kg cân nặng/ngày.
+              Cần đủ đạm để giữ cơ
             </p>
             <p>
-              <strong>Lưu ý:</strong> Tránh quá nhiều protein một lúc vì có thể tăng gánh thận. Phân bố
-              đều trong ngày.
+              <strong>Khuyến nghị chung:</strong> 1,0–1,2 g/kg/ngày
             </p>
-            <Callout variant="warning" title="Lưu ý quan trọng">
-              <p className="text-body-sm">
-                Ở những người có <strong>suy tim kèm suy thận</strong>, có thể cần hạn chế protein
-                (0.8 g/kg). Luôn đánh giá chức năng thận.
-              </p>
-            </Callout>
+            <div className="bg-amber-50 rounded-lg p-3 border border-amber-200 mt-3">
+              <p className="text-sm font-semibold text-amber-900 mb-2">📌 Lưu ý:</p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-amber-900">
+                <li>Chia đều trong ngày</li>
+                <li>Không ăn quá nhiều đạm một lúc</li>
+                <li>Nếu có suy thận kèm theo → có thể cần giảm đạm</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -267,38 +321,37 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="adjustments-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Dinh dưỡng Theo Mức độ Suy tim
+            Điều chỉnh Theo Mức độ Suy tim
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
           <div className="space-y-4 rounded-lg border border-blue-200 bg-blue-50/50 p-5">
-            <h3 className="heading-4">NYHA Class I-II (Suy tim nhẹ-trung bình)</h3>
+            <h3 className="heading-4">🔹 Suy tim nhẹ – trung bình (NYHA I–II)</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>Natri: &lt; 2-3g/ngày</li>
-              <li>Dịch: 1.5-2L/ngày hoặc không cần hạn chế nghiêm ngặt</li>
-              <li>Quản lý cân nặng: Giảm cân nếu thừa cân, duy trì nếu bình thường</li>
-              <li>Protein: 1.0-1.2 g/kg</li>
+              <li>Muối: &lt; 2–3 g/ngày</li>
+              <li>Nước: 1,5–2 L/ngày</li>
+              <li>Đạm: 1,0–1,2 g/kg</li>
+              <li>Giảm cân nếu thừa cân</li>
             </ul>
           </div>
 
           <div className="space-y-4 rounded-lg border border-red-200 bg-red-50/50 p-5">
-            <h3 className="heading-4">NYHA Class III-IV (Suy tim nặng)</h3>
+            <h3 className="heading-4">🔹 Suy tim nặng (NYHA III–IV)</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>Natri: &lt; 2g/ngày, có thể cần &lt; 1.5g/ngày</li>
-              <li>Dịch: 1.5L/ngày hoặc ít hơn, tùy thuộc vào triệu chứng</li>
-              <li>Quản lý cân nặng: Cẩn thận với suy dinh dưỡng, có thể cần tăng năng lượng và protein</li>
-              <li>Protein: 1.2 g/kg hoặc cao hơn nếu có suy dinh dưỡng (cẩn thận với dịch)</li>
-              <li>Theo dõi chặt chẽ cân nặng hàng ngày</li>
+              <li>Muối: &lt; 2 g/ngày (có thể &lt; 1,5 g)</li>
+              <li>Nước: ≈ 1,5 L hoặc ít hơn</li>
+              <li>Theo dõi cân nặng hàng ngày</li>
+              <li>Cẩn thận suy dinh dưỡng</li>
             </ul>
           </div>
 
           <div className="space-y-4 rounded-lg border border-amber-200 bg-amber-50/50 p-5">
-            <h3 className="heading-4">Suy tim + Suy thận</h3>
+            <h3 className="heading-4">🔹 Suy tim kèm suy thận</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>Điều chỉnh kép: Hạn chế natri, dịch, và có thể protein</li>
-              <li>Điều chỉnh potassium và phosphorus tùy theo chức năng thận</li>
-              <li>Cần đánh giá và quản lý cẩn thận bởi nhóm đa ngành</li>
+              <li>Cần điều chỉnh muối – nước – đạm – kali – phospho</li>
+              <li>Nên có kế hoạch dinh dưỡng riêng</li>
+              <li>Theo dõi sát xét nghiệm</li>
             </ul>
           </div>
         </div>
@@ -309,75 +362,46 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="complications-heading" className="heading-2 whitespace-nowrap">
-            Quản lý Biến chứng Dinh dưỡng
+            Các Vấn đề Dinh dưỡng Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        <Card>
-          <CardHeader icon={AlertTriangle} title="Quá tải Dịch" />
+        <Card className="border-red-200 bg-red-50">
+          <CardHeader icon={AlertTriangle} title="🚨 Quá tải dịch" />
           <CardContent>
-            <p className="text-body-sm mb-3">
-              <strong>Dấu hiệu:</strong> Phù (chân, tay, mặt), tăng cân nhanh, khó thở, tăng khi nằm,
-              ho khan, mệt mỏi.
-            </p>
-            <p className="text-body-sm mb-3">
-              <strong>Xử trí:</strong>
-            </p>
-            <ul className="list-disc space-y-1 pl-6 text-body-sm mb-3">
-              <li>Tăng hạn chế natri và dịch</li>
-              <li>Tăng liều lợi tiểu (theo chỉ định bác sĩ)</li>
-              <li>Theo dõi cân nặng hàng ngày</li>
-              <li>Đánh giá dấu hiệu sinh tồn</li>
-            </ul>
-            <p className="text-body-sm">
-              <strong>Phòng ngừa:</strong> Tuân thủ hạn chế natri và dịch, theo dõi cân nặng hàng ngày,
-              nhận biết sớm các dấu hiệu quá tải dịch.
-            </p>
+            <div className="space-y-3">
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Dấu hiệu:</p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Phù chân, tay, mặt</li>
+                  <li>Khó thở, đặc biệt khi nằm</li>
+                  <li>Tăng cân nhanh</li>
+                  <li>Mệt nhiều</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Xử trí:</p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Ăn nhạt hơn</li>
+                  <li>Hạn chế nước</li>
+                  <li>Dùng thuốc lợi tiểu theo chỉ định</li>
+                  <li>Đi khám sớm</li>
+                </ul>
+              </div>
+            </div>
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader icon={Info} title="Suy dinh dưỡng (Cardiac Cachexia)" />
+        <Card className="border-amber-200 bg-amber-50">
+          <CardHeader icon={Info} title="⚠️ Suy dinh dưỡng" />
           <CardContent>
-            <p className="text-body-sm mb-3">
-              <strong>Vấn đề:</strong> Một số bệnh nhân suy tim nặng có thể bị suy dinh dưỡng và mất cơ,
-              làm suy yếu cơ tim và làm trầm trọng suy tim.
-            </p>
-            <p className="text-body-sm mb-3">
-              <strong>Giải pháp:</strong>
-            </p>
-            <ul className="list-disc space-y-1 pl-6 text-body-sm mb-3">
-              <li>Tăng năng lượng và protein (cẩn thận với dịch)</li>
-              <li>Sử dụng thực phẩm giàu năng lượng nhưng ít dịch</li>
-              <li>Bổ sung dinh dưỡng nếu cần (dưới sự giám sát)</li>
-              <li>Theo dõi albumin, prealbumin</li>
+            <p className="text-sm font-semibold text-gray-900 mb-2">Giải pháp:</p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+              <li>Tăng năng lượng và đạm nhưng không tăng nước</li>
+              <li>Ưu tiên thức ăn đậm năng lượng, ít nước</li>
+              <li>Bổ sung dinh dưỡng khi cần (theo hướng dẫn)</li>
             </ul>
-            <p className="text-body-sm">
-              <strong>Thách thức:</strong> Cần tăng năng lượng và protein nhưng vẫn hạn chế dịch, đòi hỏi
-              kế hoạch dinh dưỡng cẩn thận.
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader icon={AlertCircle} title="Rối loạn Điện giải" />
-          <CardContent>
-            <p className="text-body-sm mb-3">
-              <strong>Hạ kali:</strong> Do lợi tiểu, có thể cần bổ sung kali hoặc tăng kali trong chế độ ăn
-              (nếu không có bệnh thận).
-            </p>
-            <p className="text-body-sm mb-3">
-              <strong>Tăng kali:</strong> Có thể xảy ra với ACE inhibitors/ARBs, đặc biệt nếu có bệnh thận.
-              Có thể cần hạn chế kali.
-            </p>
-            <p className="text-body-sm mb-3">
-              <strong>Hạ magie:</strong> Cũng có thể xảy ra với lợi tiểu, có thể cần bổ sung.
-            </p>
-            <p className="text-body-sm">
-              <strong>Theo dõi:</strong> Điện giải nên được theo dõi thường xuyên, đặc biệt khi thay đổi
-              thuốc hoặc có triệu chứng.
-            </p>
           </CardContent>
         </Card>
       </section>
@@ -387,70 +411,29 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="interactions-heading" className="heading-2 whitespace-nowrap">
-            Tương tác Dinh dưỡng-Thuốc
+            Điện giải & Thuốc – Điều Người bệnh Cần biết
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-            <h3 className="heading-4">Lợi tiểu (Diuretics)</h3>
-            <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>
-                <strong>Thiazide và loop diuretics:</strong> Gây mất kali và magie. Có thể cần bổ sung
-                hoặc tăng kali trong chế độ ăn (nếu không có bệnh thận).
-              </li>
-              <li>
-                <strong>Potassium-sparing diuretics:</strong> Giữ kali, có thể dẫn đến tăng kali máu,
-                đặc biệt nếu kết hợp với ACE inhibitors/ARBs hoặc chế độ ăn giàu kali.
-              </li>
-              <li>
-                <strong>Lưu ý:</strong> Theo dõi kali máu thường xuyên, điều chỉnh dựa trên kết quả.
-              </li>
+          <Card className="border-amber-200 bg-amber-50/30">
+            <h3 className="heading-4 mb-3">Tương tác quan trọng</h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• <strong>Lợi tiểu</strong> có thể làm hạ kali, magie</li>
+              <li>• <strong>ACEi/ARB</strong> có thể làm tăng kali</li>
+              <li>• <strong>Digoxin</strong> dễ ngộ độc nếu thiếu kali/magie</li>
+              <li>• <strong>Warfarin:</strong> rau xanh vẫn ăn được, nhưng ăn đều, không lúc nhiều lúc ít</li>
             </ul>
-          </div>
-
-          <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-            <h3 className="heading-4">ACE Inhibitors và ARBs</h3>
-            <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>
-                Có thể gây tăng kali máu, đặc biệt ở bệnh nhân có bệnh thận hoặc đang dùng
-                potassium-sparing diuretics.
-              </li>
-              <li>
-                Có thể cần hạn chế kali trong chế độ ăn ở một số bệnh nhân.
-              </li>
-              <li>
-                Theo dõi kali máu, đặc biệt khi bắt đầu thuốc hoặc thay đổi chế độ ăn.
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-            <h3 className="heading-4">Digoxin</h3>
-            <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>
-                Hạ kali và magie có thể làm tăng nguy cơ độc tính digoxin.
-              </li>
-              <li>
-                Cần đảm bảo đủ kali và magie, đặc biệt nếu đang dùng lợi tiểu.
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-            <h3 className="heading-4">Warfarin</h3>
-            <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>
-                Vitamin K trong rau lá xanh có thể ảnh hưởng đến tác dụng của warfarin.
-              </li>
-              <li>
-                Không nên tránh hoàn toàn rau lá xanh, nhưng nên ăn đều đặn với lượng ổn định.
-              </li>
-              <li>
-                Theo dõi INR thường xuyên.
-              </li>
-            </ul>
-          </div>
+            <div className="rounded-lg border border-amber-200 bg-white p-3 mt-3">
+              <p className="text-sm text-amber-900">
+                <strong>👉 Vì vậy:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-amber-900 mt-2">
+                <li>Cần xét nghiệm định kỳ</li>
+                <li>Không tự ý thay đổi chế độ ăn khi đang dùng thuốc</li>
+              </ul>
+            </div>
+          </Card>
         </div>
       </section>
 
@@ -566,16 +549,24 @@ export default function HeartFailureNutritionPage() {
             </Card>
           </div>
 
-          <Callout variant="info" title="Tần suất Đánh giá lại">
-            <p className="text-body-sm">
-              Đánh giá lại dinh dưỡng nên được thực hiện:
-            </p>
-            <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
-              <li>Sau 1-2 tuần khi bắt đầu hoặc thay đổi hạn chế natri/dịch</li>
-              <li>Khi có triệu chứng quá tải dịch hoặc thay đổi cân nặng</li>
-              <li>Khi có thay đổi thuốc</li>
-              <li>Khi có bệnh lý mới hoặc thay đổi tình trạng sức khỏe</li>
-              <li>Định kỳ mỗi 1-3 tháng nếu ổn định</li>
+          <div className="space-y-3">
+            <h3 className="heading-4">Theo dõi & Đánh giá</h3>
+            <ul className="list-disc space-y-2 pl-6 text-body-sm">
+              <li><strong>Cân nặng:</strong> hàng ngày</li>
+              <li><strong>Triệu chứng:</strong> khó thở, phù, mệt</li>
+              <li><strong>Điện giải</strong> (kali, magie)</li>
+              <li><strong>Chức năng thận</strong></li>
+              <li><strong>Tái khám đúng hẹn</strong></li>
+            </ul>
+          </div>
+          
+          <Callout variant="info" title="Khi nào cần gặp chuyên gia dinh dưỡng?">
+            <ul className="list-disc space-y-1 pl-6 text-body-sm">
+              <li>Suy tim nặng</li>
+              <li>Suy tim + suy thận</li>
+              <li>Sụt cân nhiều</li>
+              <li>Khó tuân thủ ăn nhạt – hạn nước</li>
+              <li>Cần kế hoạch ăn chi tiết</li>
             </ul>
           </Callout>
         </div>
@@ -662,13 +653,24 @@ export default function HeartFailureNutritionPage() {
       {/* 10. Safety */}
       <section aria-labelledby="safety-heading" className="space-y-4">
         <h2 id="safety-heading" className="heading-3">
-          Nhắc nhở An toàn
+          ⚠️ Nhắc nhở An toàn
         </h2>
         <Callout variant="error" title="Quan trọng">
+          <p className="text-body-sm mb-2">
+            Nội dung này chỉ mang tính giáo dục sức khỏe.
+          </p>
           <p className="text-body-sm">
-            Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp tư vấn y tế,
-            chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân, và không được sử dụng để
-            ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
+            Mọi khuyến nghị cần được cá nhân hóa dựa trên:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
+            <li>Mức độ suy tim</li>
+            <li>Thuốc đang dùng</li>
+            <li>Chức năng thận</li>
+            <li>Tình trạng dinh dưỡng thực tế</li>
+          </ul>
+          <p className="text-body-sm mt-2">
+            Trang này không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân, 
+            và không được sử dụng để ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
           </p>
           <p className="text-body-sm mt-2">
             Tất cả các khuyến nghị dinh dưỡng cần được điều chỉnh dựa trên đánh giá lâm sàng toàn diện,

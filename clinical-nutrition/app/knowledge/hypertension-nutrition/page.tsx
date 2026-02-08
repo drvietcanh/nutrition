@@ -43,17 +43,37 @@ export default function HypertensionNutritionPage() {
             Dinh dưỡng trong Tăng huyết áp: Hướng dẫn Giáo dục
           </h1>
         </div>
-        <p className="text-body-lg">
-          Tăng huyết áp là một trong những bệnh mạn tính phổ biến nhất, ảnh hưởng đến hàng triệu người
-          trên toàn thế giới. Dinh dưỡng đóng vai trò quan trọng trong cả phòng ngừa và kiểm soát
-          tăng huyết áp. Trang này cung cấp hướng dẫn giáo dục về các nguyên tắc dinh dưỡng dựa trên
-          bằng chứng cho bệnh nhân tăng huyết áp.
-        </p>
+        <div className="space-y-4">
+          <p className="text-body-lg">
+            Tăng huyết áp là một bệnh mạn tính rất phổ biến. Nhiều người mắc bệnh trong thời gian dài mà không có 
+            triệu chứng rõ ràng, nhưng nếu không kiểm soát tốt có thể gây biến chứng tim mạch, đột quỵ, suy thận.
+          </p>
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <p className="text-sm text-blue-900 mb-2">
+              <strong>👉 Dinh dưỡng đóng vai trò rất quan trọng trong việc:</strong>
+            </p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+              <li>Phòng ngừa tăng huyết áp</li>
+              <li>Hỗ trợ kiểm soát huyết áp bên cạnh thuốc</li>
+              <li>Giảm nguy cơ biến chứng lâu dài</li>
+            </ul>
+          </div>
+          <p className="text-body">
+            Trang này cung cấp kiến thức dinh dưỡng mang tính giáo dục, dựa trên các khuyến cáo y khoa hiện nay, 
+            giúp hiểu đúng và áp dụng hợp lý trong cuộc sống hàng ngày.
+          </p>
+        </div>
         <Callout variant="info" title="Mục đích Giáo dục">
-          <p className="text-body-sm">
-            Trang này được thiết kế cho <strong>mục đích giáo dục</strong>, giúp các bác sĩ, điều dưỡng,
-            và sinh viên y khoa hiểu các nguyên tắc dinh dưỡng trong quản lý tăng huyết áp. Nó không
-            thay thế phán đoán lâm sàng hoặc tư vấn từ chuyên gia dinh dưỡng đã đăng ký.
+          <p className="text-body-sm mb-2">
+            Nội dung này nhằm:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm">
+            <li>Giúp bác sĩ, điều dưỡng, sinh viên y, và người bệnh hiểu các nguyên tắc dinh dưỡng trong tăng huyết áp</li>
+            <li>Hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
+          </ul>
+          <p className="text-body-sm mt-3 font-semibold text-red-600">
+            ⚠️ Lưu ý: Thông tin này không thay thế đánh giá lâm sàng cá nhân hoặc tư vấn trực tiếp từ bác sĩ 
+            hay chuyên gia dinh dưỡng.
           </p>
         </Callout>
       </header>
@@ -69,32 +89,38 @@ export default function HypertensionNutritionPage() {
         </div>
         <div className="space-y-4 text-body-lg">
           <p>
-            Nhiều nghiên cứu đã chứng minh mối liên hệ chặt chẽ giữa chế độ ăn và huyết áp. Các yếu tố
-            dinh dưỡng có thể ảnh hưởng trực tiếp đến huyết áp bao gồm:
+            Chế độ ăn ảnh hưởng trực tiếp đến huyết áp. Một số yếu tố dinh dưỡng quan trọng gồm:
           </p>
-          <ul className="list-disc space-y-2 pl-6">
-            <li>
-              <strong>Natri (muối):</strong> Lượng natri cao trong chế độ ăn có liên quan đến tăng huyết áp
-              ở nhiều người. Giảm natri có thể giúp giảm huyết áp, đặc biệt ở những người nhạy cảm với muối.
-            </li>
-            <li>
-              <strong>Kali:</strong> Kali có tác dụng bảo vệ, giúp giảm huyết áp bằng cách đối kháng với
-              tác dụng của natri và thư giãn mạch máu.
-            </li>
-            <li>
-              <strong>Cân nặng:</strong> Thừa cân và béo phì là yếu tố nguy cơ quan trọng của tăng huyết áp.
-              Giảm cân có thể giúp giảm huyết áp đáng kể.
-            </li>
-            <li>
-              <strong>Chế độ ăn tổng thể:</strong> Các nghiên cứu như DASH (Dietary Approaches to Stop
-              Hypertension) đã chứng minh rằng một chế độ ăn giàu trái cây, rau quả, và sản phẩm sữa ít béo
-              có thể giúp giảm huyết áp.
-            </li>
-          </ul>
-          <p>
-            Hiểu các nguyên tắc dinh dưỡng này giúp các bác sĩ lâm sàng tư vấn bệnh nhân một cách hiệu quả
-            và hỗ trợ kiểm soát huyết áp thông qua thay đổi lối sống.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Card className="border-blue-200 bg-blue-50/30">
+              <h3 className="heading-5 mb-2">🔹 Muối (natri)</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Ăn mặn làm huyết áp tăng ở nhiều người</li>
+                <li>• Giảm muối có thể giúp hạ huyết áp, đặc biệt ở người nhạy cảm với muối</li>
+              </ul>
+            </Card>
+            <Card className="border-green-200 bg-green-50/30">
+              <h3 className="heading-5 mb-2">🔹 Kali</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Giúp cân bằng tác dụng của muối</li>
+                <li>• Hỗ trợ mạch máu giãn ra → huyết áp giảm</li>
+              </ul>
+            </Card>
+            <Card className="border-amber-200 bg-amber-50/30">
+              <h3 className="heading-5 mb-2">🔹 Cân nặng</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Thừa cân, béo phì làm tăng nguy cơ tăng huyết áp</li>
+                <li>• Giảm cân giúp huyết áp giảm rõ rệt</li>
+              </ul>
+            </Card>
+            <Card className="border-purple-200 bg-purple-50/30">
+              <h3 className="heading-5 mb-2">🔹 Chế độ ăn tổng thể</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Chế độ ăn lành mạnh (như DASH) giúp hạ huyết áp rõ ràng</li>
+                <li>• Không chỉ một chất, mà toàn bộ cách ăn uống đều quan trọng</li>
+              </ul>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -112,73 +138,88 @@ export default function HypertensionNutritionPage() {
         <Card>
           <CardHeader
             icon={CheckCircle}
-            title="Chế độ Ăn DASH (Dietary Approaches to Stop Hypertension)"
+            title="🍽️ Chế độ Ăn DASH (Dietary Approaches to Stop Hypertension)"
           />
           <CardContent>
             <p className="text-body mb-4">
-              DASH diet là một chế độ ăn được thiết kế đặc biệt để giúp giảm huyết áp. Nhiều nghiên cứu
-              đã chứng minh hiệu quả của DASH diet trong việc giảm huyết áp, đặc biệt khi kết hợp với
-              hạn chế natri.
+              DASH là chế độ ăn được thiết kế để hỗ trợ giảm huyết áp một cách tự nhiên.
             </p>
-            <h3 className="heading-4 mb-3">Các thành phần chính của DASH diet:</h3>
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 mb-4">
+              <p className="text-sm text-blue-900">
+                <strong>👉 Nhiều nghiên cứu cho thấy:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900 mt-2">
+                <li>DASH giúp giảm huyết áp</li>
+                <li>Hiệu quả rõ hơn khi ăn nhạt hơn</li>
+              </ul>
+            </div>
+            <h3 className="heading-4 mb-3">Các thành phần chính của DASH:</h3>
             
             {/* DASH Diet Table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-                <thead className="bg-neutral-50">
+                <thead className="bg-green-100">
                   <tr>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Nhóm thực phẩm</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khẩu phần/ngày</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ví dụ (1 khẩu phần)</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Lượng khuyến nghị</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ví dụ dễ hiểu</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Lợi ích</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-neutral-200">
                   <tr>
                     <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trái cây</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">4-5 phần</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">1 quả táo, 1/2 cốc nước ép, 1/4 cốc trái cây khô</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Kali, magie, chất xơ</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">4–5 phần/ngày</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Táo, cam, chuối</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Giàu kali, chất xơ</td>
                   </tr>
                   <tr className="bg-neutral-50">
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Rau quả</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">4-5 phần</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">1 cốc rau sống, 1/2 cốc rau nấu chín</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Kali, magie, chất xơ</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Rau</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">4–5 phần/ngày</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Rau xanh, rau luộc</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Kali, magie</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 text-sm text-neutral-700"><strong>Sữa ít béo</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">2-3 phần</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">1 cốc sữa, 1 cốc sữa chua, 45g phô mai</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Canxi, protein</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">2–3 phần/ngày</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Sữa, sữa chua</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Canxi, đạm</td>
                   </tr>
                   <tr className="bg-neutral-50">
                     <td className="px-4 py-3 text-sm text-neutral-700"><strong>Ngũ cốc nguyên hạt</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">6-8 phần</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">1 lát bánh mì, 1/2 cốc cơm/mì, 30g ngũ cốc</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Chất xơ, năng lượng</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">6–8 phần/ngày</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Gạo lứt, bánh mì nguyên cám</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Chất xơ</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Protein nạc</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">≤ 6 phần</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">85g thịt/cá, 1 quả trứng, 1/2 cốc đậu nấu</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Protein, sắt</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đạm nạc</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">≤ 6 phần/ngày</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Cá, thịt nạc, trứng, đậu</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Đạm</td>
                   </tr>
                   <tr className="bg-neutral-50">
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chất béo</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">2-3 phần</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">1 thìa dầu, 1 thìa bơ thực vật</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Chất béo không bão hòa</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chất béo tốt</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">2–3 phần/ngày</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Dầu thực vật</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Tốt cho tim mạch</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             
-            <Callout variant="info" title="Lưu ý về Khẩu phần">
-              <p className="text-body-sm">
-                Khẩu phần trong DASH diet là <strong>ước tính giáo dục</strong>. Trong thực hành, các bác sĩ lâm sàng
-                sẽ điều chỉnh dựa trên nhu cầu năng lượng, sở thích, văn hóa, và khả năng của từng bệnh nhân.
-                Mục tiêu là hướng tới chế độ ăn giàu trái cây, rau, ngũ cốc nguyên hạt, và protein nạc.
+            <Callout variant="info" title="Lưu ý về khẩu phần">
+              <p className="text-body-sm mb-2">
+                Các con số trên mang tính hướng dẫn chung. Trong thực tế, cần điều chỉnh theo:
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-body-sm">
+                <li>Tuổi</li>
+                <li>Cân nặng</li>
+                <li>Mức độ vận động</li>
+                <li>Văn hóa ăn uống</li>
+                <li>Khả năng kinh tế</li>
+              </ul>
+              <p className="text-body-sm mt-3 font-semibold">
+                👉 Mục tiêu chính: Ăn đa dạng, nhiều rau – trái cây, ít muối, ít đồ chế biến sẵn.
               </p>
             </Callout>
             
@@ -197,7 +238,8 @@ export default function HypertensionNutritionPage() {
 
         {/* Sodium */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Natri (Muối)</h3>
+          <h3 className="heading-3">🧂 Muối (Natri) – Yếu tố quan trọng nhất</h3>
+          <h4 className="heading-4 mb-3">Khuyến nghị chung</h4>
           
           {/* Sodium Recommendations Table */}
           <div className="overflow-x-auto my-4">
@@ -240,62 +282,53 @@ export default function HypertensionNutritionPage() {
           </div>
           
           <div className="space-y-3 text-body">
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+              <p className="text-sm text-blue-900">
+                <strong>👉 Không cần ăn nhạt tuyệt đối, nhưng không nên ăn mặn.</strong>
+              </p>
+            </div>
+            <h4 className="heading-4 mb-3">Nguồn muối "ẩn" thường gặp</h4>
             <p>
-              <strong>Khuyến nghị:</strong> Hầu hết các hướng dẫn khuyến nghị hạn chế natri xuống{" "}
-              <strong>&lt; 2.3g/ngày</strong> (tương đương &lt; 6g muối/ngày) cho người lớn. Một số hướng dẫn
-              khuyến nghị mục tiêu thấp hơn (&lt; 1.5g/ngày) cho những người có nguy cơ cao hoặc đã bị
-              tăng huyết áp.
-            </p>
-            <p>
-              <strong>Nguồn natri ẩn:</strong> Phần lớn natri trong chế độ ăn không đến từ muối ăn mà từ
-              thực phẩm chế biến sẵn, thực phẩm đóng hộp, và thức ăn nhanh. Các nguồn chính bao gồm:
+              Phần lớn muối không đến từ muối chấm, mà từ:
             </p>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
-              <li>Thực phẩm chế biến sẵn (đồ hộp, đông lạnh)</li>
-              <li>Thức ăn nhanh và nhà hàng</li>
-              <li>Nước sốt, gia vị (nước tương, tương ớt, mayonnaise)</li>
-              <li>Thịt chế biến (xúc xích, thịt nguội, thịt xông khói)</li>
-              <li>Bánh mì và các sản phẩm bánh nướng</li>
-              <li>Phô mai và các sản phẩm sữa chế biến</li>
+              <li><strong>Mì gói</strong></li>
+              <li><strong>Đồ hộp, đồ đông lạnh</strong></li>
+              <li><strong>Thức ăn nhanh</strong></li>
+              <li><strong>Nước mắm, nước tương, gia vị</strong></li>
+              <li><strong>Xúc xích, thịt nguội</strong></li>
+              <li><strong>Bánh mì, phô mai</strong></li>
             </ul>
-            <p>
-              <strong>Đọc nhãn thực phẩm:</strong> Hướng dẫn bệnh nhân đọc nhãn dinh dưỡng để nhận biết
-              lượng natri. Một sản phẩm được coi là "ít natri" nếu có &lt; 140mg natri mỗi khẩu phần.
-            </p>
+            <div className="bg-green-50 rounded-lg p-3 border border-green-200 mt-3">
+              <p className="text-sm font-semibold text-green-900 mb-1">📌 Mẹo:</p>
+              <p className="text-sm text-green-900">
+                Thực phẩm được coi là "ít muối" nếu &lt; 140 mg natri/khẩu phần.
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Potassium */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Kali (Potassium)</h3>
+          <h3 className="heading-3">🥬 Kali – Cần nhưng phải đúng người</h3>
           <div className="space-y-3 text-body">
-            <p>
-              <strong>Vai trò:</strong> Kali giúp giảm huyết áp bằng cách:
-            </p>
+            <h4 className="heading-4 mb-2">Vai trò của kali</h4>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
-              <li>Đối kháng với tác dụng của natri</li>
-              <li>Thư giãn mạch máu</li>
-              <li>Giảm tác động của hệ renin-angiotensin-aldosterone</li>
+              <li>Giúp giảm tác dụng của muối</li>
+              <li>Hỗ trợ mạch máu giãn ra</li>
+              <li>Có lợi cho huyết áp</li>
             </ul>
-            <p>
-              <strong>Khuyến nghị:</strong> Người lớn nên tiêu thụ khoảng <strong>3.5-4.7g kali/ngày</strong>{" "}
-              từ thực phẩm. Tuy nhiên, cần thận trọng ở những người có bệnh thận hoặc đang dùng thuốc
-              ảnh hưởng đến kali.
-            </p>
-            <p>
-              <strong>Nguồn kali tốt:</strong>
-            </p>
+            <h4 className="heading-4 mb-2 mt-4">Nguồn kali tốt</h4>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
-              <li>Trái cây: chuối, cam, dưa hấu, bơ</li>
-              <li>Rau quả: khoai tây, cà chua, rau lá xanh, đậu</li>
-              <li>Sản phẩm sữa ít béo</li>
-              <li>Cá và thịt nạc</li>
+              <li><strong>Trái cây:</strong> chuối, cam, bơ</li>
+              <li><strong>Rau:</strong> rau xanh, cà chua, khoai</li>
+              <li>Đậu, sữa ít béo</li>
+              <li>Cá, thịt nạc</li>
             </ul>
-            <Callout variant="warning" title="Lưu ý quan trọng">
+            <Callout variant="warning" title="⚠️ Lưu ý quan trọng">
               <p className="text-body-sm">
-                Ở những người có <strong>bệnh thận mạn</strong> hoặc đang dùng thuốc ảnh hưởng đến kali
-                (ví dụ: ACE inhibitors, potassium-sparing diuretics), cần theo dõi kali máu và có thể
-                cần hạn chế kali. Luôn xem xét bệnh lý kèm và thuốc đang dùng.
+                Người bệnh thận hoặc đang dùng một số thuốc huyết áp (ACEi, ARB, lợi tiểu giữ kali) 
+                cần theo dõi kali máu, không nên tự ý tăng kali.
               </p>
             </Callout>
           </div>
@@ -385,12 +418,12 @@ export default function HypertensionNutritionPage() {
         </div>
       </section>
 
-      {/* 5. Managing Nutritional Complications */}
-      <section aria-labelledby="complications-heading" className="space-y-5">
+      {/* 5. Common Difficulties & Solutions */}
+      <section aria-labelledby="difficulties-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
-          <h2 id="complications-heading" className="heading-2 whitespace-nowrap">
-            Quản lý Biến chứng Dinh dưỡng
+          <h2 id="difficulties-heading" className="heading-2 whitespace-nowrap">
+            Một số Khó khăn Thường gặp & Cách Xử lý
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -400,59 +433,48 @@ export default function HypertensionNutritionPage() {
           </p>
 
           <Card>
-            <CardHeader icon={AlertCircle} title="Khó tuân thủ Hạn chế Natri" />
+            <CardHeader icon={AlertCircle} title="Khó ăn nhạt" />
             <CardContent>
               <p className="text-body-sm mb-3">
-                <strong>Vấn đề:</strong> Nhiều bệnh nhân gặp khó khăn trong việc giảm natri do thói quen ăn uống
-                và sự phổ biến của thực phẩm chế biến sẵn.
-              </p>
-              <p className="text-body-sm mb-3">
-                <strong>Giải pháp:</strong>
+                <strong>👉 Giải pháp:</strong>
               </p>
               <ul className="list-disc space-y-1 pl-6 text-body-sm">
-                <li>Giáo dục về nguồn natri ẩn trong thực phẩm</li>
+                <li><strong>Giảm từ từ</strong> - không cần cắt giảm đột ngột</li>
+                <li><strong>Dùng gia vị tự nhiên</strong> - chanh, gừng, tỏi để tăng hương vị</li>
+                <li><strong>Nấu ăn tại nhà</strong> - tự kiểm soát lượng muối</li>
                 <li>Hướng dẫn đọc nhãn dinh dưỡng</li>
-                <li>Sử dụng gia vị thay thế (tỏi, gừng, chanh, thảo mộc)</li>
-                <li>Giảm dần natri thay vì cắt giảm đột ngột</li>
-                <li>Nấu ăn tại nhà thay vì ăn ngoài</li>
+                <li>Giáo dục về nguồn natri ẩn trong thực phẩm</li>
               </ul>
             </CardContent>
           </Card>
 
           <Card>
-            <CardHeader icon={Info} title="Tăng Kali ở Bệnh nhân Có Bệnh Thận" />
+            <CardHeader icon={Info} title="Tăng kali không phù hợp" />
             <CardContent>
               <p className="text-body-sm mb-3">
-                <strong>Vấn đề:</strong> DASH diet khuyến khích tăng kali, nhưng ở bệnh nhân có bệnh thận mạn
-                (đặc biệt giai đoạn 3-5), tăng kali có thể nguy hiểm.
-              </p>
-              <p className="text-body-sm mb-3">
-                <strong>Giải pháp:</strong>
+                <strong>👉 Giải pháp:</strong>
               </p>
               <ul className="list-disc space-y-1 pl-6 text-body-sm">
-                <li>Đánh giá chức năng thận trước khi khuyến nghị tăng kali</li>
-                <li>Điều chỉnh DASH diet cho bệnh nhân có bệnh thận</li>
-                <li>Theo dõi kali máu thường xuyên</li>
+                <li><strong>Đánh giá thận trước</strong> - kiểm tra chức năng thận</li>
+                <li><strong>Theo dõi xét nghiệm</strong> - kiểm tra kali máu thường xuyên</li>
+                <li><strong>Điều chỉnh DASH cho phù hợp</strong> - không áp dụng cứng nhắc</li>
                 <li>Tham khảo chuyên gia dinh dưỡng khi cần</li>
               </ul>
             </CardContent>
           </Card>
 
           <Card>
-            <CardHeader icon={AlertCircle} title="Thiếu Dinh dưỡng do Hạn chế Quá mức" />
+            <CardHeader icon={AlertCircle} title="Kiêng quá mức" />
             <CardContent>
               <p className="text-body-sm mb-3">
-                <strong>Vấn đề:</strong> Một số bệnh nhân có thể hạn chế quá mức, dẫn đến thiếu dinh dưỡng
-                hoặc giảm chất lượng cuộc sống.
-              </p>
-              <p className="text-body-sm mb-3">
-                <strong>Giải pháp:</strong>
+                <strong>👉 Nhấn mạnh:</strong>
               </p>
               <ul className="list-disc space-y-1 pl-6 text-body-sm">
-                <li>Nhấn mạnh cân bằng, không phải loại bỏ hoàn toàn</li>
+                <li><strong>Ăn là để sống khỏe</strong> - không phải để khổ sở</li>
+                <li><strong>Không cần cắt bỏ cực đoan</strong> - cân bằng là chìa khóa</li>
+                <li><strong>Điều chỉnh theo khả năng thực tế</strong> - từng bước một</li>
                 <li>Giáo dục về thực phẩm lành mạnh thay vì chỉ tập trung vào hạn chế</li>
                 <li>Theo dõi tình trạng dinh dưỡng tổng thể</li>
-                <li>Điều chỉnh dựa trên đáp ứng và khả năng tuân thủ</li>
               </ul>
             </CardContent>
           </Card>
@@ -631,16 +653,22 @@ export default function HypertensionNutritionPage() {
             </Card>
           </div>
 
-          <Callout variant="info" title="Tần suất Đánh giá lại">
-            <p className="text-body-sm">
-              Đánh giá lại dinh dưỡng nên được thực hiện:
-            </p>
-            <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
-              <li>Sau 2-4 tuần khi bắt đầu thay đổi chế độ ăn</li>
-              <li>Khi huyết áp không đạt mục tiêu</li>
-              <li>Khi có thay đổi thuốc</li>
-              <li>Khi có bệnh lý mới hoặc thay đổi tình trạng sức khỏe</li>
-              <li>Định kỳ mỗi 3-6 tháng nếu ổn định</li>
+          <div className="space-y-3">
+            <h3 className="heading-4">Theo dõi & Đánh giá</h3>
+            <ul className="list-disc space-y-2 pl-6 text-body-sm">
+              <li><strong>Đo huyết áp thường xuyên</strong> - tại nhà và khi khám</li>
+              <li><strong>Theo dõi cân nặng</strong> - đặc biệt nếu đang giảm cân</li>
+              <li><strong>Kiểm tra điện giải khi cần</strong> - kali, natri nếu có triệu chứng</li>
+              <li><strong>Đánh giá lại sau 2–4 tuần</strong> khi thay đổi chế độ ăn</li>
+            </ul>
+          </div>
+          
+          <Callout variant="info" title="Khi nào cần gặp chuyên gia dinh dưỡng?">
+            <ul className="list-disc space-y-1 pl-6 text-body-sm">
+              <li>Có nhiều bệnh kèm</li>
+              <li>Khó tuân thủ</li>
+              <li>Cần kế hoạch ăn chi tiết</li>
+              <li>Có bệnh thận, suy tim kèm tăng huyết áp</li>
             </ul>
           </Callout>
         </div>
@@ -734,13 +762,19 @@ export default function HypertensionNutritionPage() {
       {/* 10. Safety Disclaimer */}
       <section aria-labelledby="safety-heading" className="space-y-4">
         <h2 id="safety-heading" className="heading-3">
-          Nhắc nhở An toàn
+          ⚠️ Nhắc nhở An toàn
         </h2>
         <Callout variant="error" title="Quan trọng">
+          <p className="text-body-sm mb-2">
+            Nội dung này chỉ mang tính giáo dục.
+          </p>
           <p className="text-body-sm">
-            Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp tư vấn y tế,
-            chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân, và không được sử dụng để
-            ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
+            Mọi khuyến nghị cần được điều chỉnh theo từng người, dựa trên bệnh lý, thuốc đang dùng và 
+            đánh giá của bác sĩ điều trị.
+          </p>
+          <p className="text-body-sm mt-2">
+            Trang này không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân, 
+            và không được sử dụng để ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
           </p>
           <p className="text-body-sm mt-2">
             Tất cả các khuyến nghị dinh dưỡng cần được điều chỉnh dựa trên đánh giá lâm sàng toàn diện,

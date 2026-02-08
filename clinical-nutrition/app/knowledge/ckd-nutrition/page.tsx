@@ -39,18 +39,39 @@ export default function CKDNutritionPage() {
         <div className="flex items-center gap-3">
           <Activity className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Dinh dưỡng trong Bệnh thận mạn (CKD): Hướng dẫn Giáo dục
+            🧑‍⚕️ Dinh dưỡng trong Bệnh thận mạn (CKD): Hướng dẫn Giáo dục
           </h1>
         </div>
-        <p className="text-body-lg">
-          Bệnh thận mạn (CKD) là tình trạng suy giảm chức năng thận kéo dài. Dinh dưỡng đóng vai trò quan trọng
-          trong làm chậm tiến triển bệnh và quản lý biến chứng. Điều chỉnh dinh dưỡng thay đổi theo giai đoạn
-          bệnh thận.
-        </p>
+        <div className="space-y-4">
+          <p className="text-body-lg">
+            Bệnh thận mạn (CKD) là tình trạng chức năng thận suy giảm kéo dài theo thời gian. Khi thận yếu đi, cơ thể khó đào thải chất thải, nước và muối, dễ gây biến chứng.
+          </p>
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <p className="text-sm text-blue-900 mb-2">
+              <strong>👉 Dinh dưỡng giữ vai trò rất quan trọng trong bệnh thận mạn:</strong>
+            </p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+              <li>Giúp làm chậm tiến triển bệnh</li>
+              <li>Giảm biến chứng (phù, tăng kali, rối loạn xương)</li>
+              <li>Phòng ngừa suy dinh dưỡng</li>
+            </ul>
+          </div>
+          <div className="bg-red-50 rounded-lg p-3 border border-red-200">
+            <p className="text-sm text-red-900">
+              <strong>⚠️ Điều quan trọng:</strong> Chế độ ăn phải thay đổi theo từng giai đoạn bệnh thận, không áp dụng một cách cho tất cả.
+            </p>
+          </div>
+        </div>
         <Callout variant="info" title="Mục đích Giáo dục">
-          <p className="text-body-sm">
-            Trang này được thiết kế cho <strong>mục đích giáo dục</strong>, giúp hiểu các nguyên tắc dinh dưỡng
-            trong quản lý CKD theo giai đoạn.
+          <p className="text-body-sm mb-2">
+            Nội dung này nhằm:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm">
+            <li>Giúp nhân viên y tế và người bệnh hiểu các nguyên tắc dinh dưỡng trong CKD</li>
+            <li>Hỗ trợ quản lý bệnh an toàn, lâu dài</li>
+          </ul>
+          <p className="text-body-sm mt-3 font-semibold text-red-600">
+            ⚠️ Lưu ý: Thông tin mang tính giáo dục, không thay thế đánh giá cá nhân của bác sĩ hoặc chuyên gia dinh dưỡng.
           </p>
         </Callout>
       </header>
@@ -59,15 +80,36 @@ export default function CKDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Quan trọng?
+            Vì sao Dinh dưỡng Đặc biệt Quan trọng trong CKD?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
           <p>
-            Dinh dưỡng trong CKD nhằm: (1) Làm chậm tiến triển bệnh, (2) Quản lý biến chứng (rối loạn xương-khoáng,
-            thiếu máu), (3) Phòng ngừa suy dinh dưỡng.
+            Dinh dưỡng trong bệnh thận mạn nhằm đạt 3 mục tiêu chính:
           </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card className="border-blue-200 bg-blue-50/30">
+              <h3 className="heading-5 mb-2">1️⃣ Làm chậm suy thận tiến triển</h3>
+            </Card>
+            <Card className="border-green-200 bg-green-50/30">
+              <h3 className="heading-5 mb-2">2️⃣ Kiểm soát biến chứng</h3>
+              <p className="text-sm text-gray-700">(tăng kali, tăng phospho, phù, thiếu máu)</p>
+            </Card>
+            <Card className="border-amber-200 bg-amber-50/30">
+              <h3 className="heading-5 mb-2">3️⃣ Tránh suy dinh dưỡng và mất cơ</h3>
+            </Card>
+          </div>
+          <div className="rounded-lg border border-red-200 bg-red-50 p-4">
+            <p className="text-sm text-red-900 mb-2">
+              <strong>👉 Nếu ăn không phù hợp:</strong>
+            </p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-red-900">
+              <li>Thận phải làm việc nặng hơn</li>
+              <li>Biến chứng xuất hiện sớm hơn</li>
+              <li>Người bệnh dễ mệt, yếu, sụt cân</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -83,74 +125,78 @@ export default function CKDNutritionPage() {
         {/* CKD Stages Table */}
         <div className="overflow-x-auto my-4">
           <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-            <thead className="bg-neutral-50">
+            <thead className="bg-green-100">
               <tr>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Giai đoạn</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">GFR (ml/min/1.73m²)</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Protein (g/kg)</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Phosphorus</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Potassium</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Natri</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Dịch</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Giai đoạn CKD</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Mức lọc cầu thận (eGFR)</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Đạm (protein)</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Phospho</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Kali</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Muối</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Nước</th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-neutral-200">
               <tr>
-                <td className="px-4 py-3 text-sm font-semibold text-neutral-700">Giai đoạn 1-2</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">≥ 60</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">0.8-1.0 g/kg</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Theo dõi</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Bình thường</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Hạn chế nếu THA/phù</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Bình thường</td>
+                <td className="px-4 py-3 text-sm font-semibold text-neutral-700">Giai đoạn 1–2</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">≥ 60</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">0,8–1,0 g/kg</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Theo dõi</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Bình thường</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Giảm nếu THA/phù</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Bình thường</td>
               </tr>
               <tr className="bg-neutral-50">
                 <td className="px-4 py-3 text-sm font-semibold text-neutral-700">Giai đoạn 3</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">30-59</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">0.8 g/kg</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 800-1000 mg/ngày</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Theo dõi, hạn chế nếu tăng</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2-3g/ngày</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Theo dõi, hạn chế nếu phù</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">30–59</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">~0,8 g/kg</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 800–1000 mg</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Theo dõi</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 2–3 g</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Theo dõi</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 text-sm font-semibold text-neutral-700">Giai đoạn 4</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">15-29</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">0.6-0.8 g/kg</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 800 mg/ngày</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2-3g/ngày</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2g/ngày</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Lượng nước tiểu + 500ml</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">15–29</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">0,6–0,8 g/kg</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 800 mg</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 2–3 g</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 2 g</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Nước tiểu + 500 ml</td>
               </tr>
               <tr className="bg-neutral-50">
                 <td className="px-4 py-3 text-sm font-semibold text-neutral-700">Giai đoạn 5 (chưa lọc máu)</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 15</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">0.6-0.8 g/kg</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 800 mg/ngày</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2-3g/ngày</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2g/ngày</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Lượng nước tiểu + 500ml</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 15</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">0,6–0,8 g/kg</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 800 mg</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 2–3 g</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 2 g</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Nước tiểu + 500 ml</td>
               </tr>
             </tbody>
           </table>
         </div>
         
-        <Callout variant="warning" title="Lưu ý quan trọng">
-          <p className="text-body-sm">
-            Các khuyến nghị này là <strong>ước tính giáo dục</strong> và cần được điều chỉnh dựa trên:
+        <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
+          <p className="text-sm font-semibold text-amber-900 mb-2">📌 Lưu ý rất quan trọng</p>
+          <p className="text-sm text-amber-900 mb-2">
+            Các con số trên là hướng dẫn chung
           </p>
-          <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
-            <li>Tình trạng dinh dưỡng hiện tại (tránh suy dinh dưỡng)</li>
-            <li>Kết quả xét nghiệm (phosphorus, potassium, albumin)</li>
-            <li>Bệnh lý kèm (tăng huyết áp, suy tim, đái tháo đường)</li>
-            <li>Đáp ứng và tuân thủ của bệnh nhân</li>
-            <li>Hướng dẫn địa phương và phán đoán lâm sàng</li>
+          <p className="text-sm text-amber-900 mb-2">
+            Luôn điều chỉnh theo:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-sm text-amber-900">
+            <li>Cân nặng, tình trạng dinh dưỡng</li>
+            <li>Kết quả xét nghiệm</li>
+            <li>Bệnh lý kèm (THA, suy tim, ĐTĐ)</li>
+            <li>Khả năng ăn uống thực tế</li>
           </ul>
-          <p className="text-body-sm mt-2">
-            <strong>Hạn chế protein quá mức có thể dẫn đến suy dinh dưỡng.</strong> Cần cân bằng giữa làm chậm tiến triển
-            và phòng ngừa suy dinh dưỡng. Tham khảo chuyên gia dinh dưỡng khi cần.
-          </p>
-        </Callout>
+          <div className="mt-3 p-2 bg-white rounded border border-amber-200">
+            <p className="text-sm text-amber-900">
+              <strong>👉 Kiêng quá mức có thể gây suy dinh dưỡng, nguy hiểm không kém suy thận.</strong>
+            </p>
+          </div>
+        </div>
       </section>
 
       <section aria-labelledby="nutrients-heading" className="space-y-5">
@@ -162,37 +208,120 @@ export default function CKDNutritionPage() {
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Protein</h3>
-          <p className="text-body-sm mb-3">
-            Hạn chế protein giúp giảm gánh thận và làm chậm tiến triển, nhưng cần tránh suy dinh dưỡng.
-            Ưu tiên protein chất lượng cao (thịt, cá, trứng, sữa).
-          </p>
-        </div>
+        <Card>
+          <CardHeader icon={CheckCircle} title="🥩 Protein (Chất đạm)" />
+          <CardContent>
+            <ul className="space-y-2 text-sm text-gray-700 mb-3">
+              <li>• Ăn nhiều đạm → thận phải làm việc nhiều hơn</li>
+              <li>• Nhưng ăn quá ít đạm → suy dinh dưỡng, mất cơ</li>
+            </ul>
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-3">
+              <p className="text-sm text-blue-900 mb-2">
+                <strong>👉 Nguyên tắc:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+                <li>Giảm vừa đủ, không cắt hoàn toàn</li>
+                <li>Ưu tiên đạm chất lượng cao:</li>
+              </ul>
+              <ul className="list-disc space-y-1 pl-12 text-sm text-blue-900 mt-1">
+                <li>Thịt nạc</li>
+                <li>Cá</li>
+                <li>Trứng</li>
+                <li>Sữa (theo chỉ định)</li>
+              </ul>
+            </div>
+            <div className="bg-red-50 rounded-lg p-2 border border-red-200 mt-3">
+              <p className="text-sm text-red-900">
+                <strong>⚠️ CKD + sụt cân → cần theo dõi sát dinh dưỡng.</strong>
+              </p>
+            </div>
+          </CardContent>
+        </Card>
 
-        <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Phosphorus</h3>
-          <p className="text-body-sm mb-3">
-            Nguồn: sữa, đậu, hạt, thịt, thực phẩm chế biến sẵn (phosphate additives). Phosphate binders:
-            uống với bữa ăn để giảm hấp thu phosphorus.
-          </p>
-        </div>
+        <Card>
+          <CardHeader icon={AlertCircle} title="🦴 Phospho" />
+          <CardContent>
+            <p className="text-sm text-gray-700 mb-2">
+              Thận yếu → khó thải phospho
+            </p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">Phospho cao gây:</p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-3">
+              <li>Loãng xương</li>
+              <li>Ngứa</li>
+              <li>Vôi hoá mạch máu</li>
+            </ul>
+            <p className="text-sm font-semibold text-gray-900 mb-2">Nguồn phospho thường gặp</p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-3">
+              <li>Sữa, phô mai</li>
+              <li>Đậu, hạt</li>
+              <li>Thịt</li>
+              <li>Thực phẩm chế biến sẵn (phosphate additives)</li>
+            </ul>
+            <div className="rounded-lg border border-green-200 bg-green-50 p-3">
+              <p className="text-sm text-green-900 mb-1">
+                <strong>👉 Thuốc gắn phospho:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-green-900">
+                <li>Uống cùng bữa ăn</li>
+                <li>Giúp giảm hấp thu phospho từ thức ăn</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
 
-        <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Potassium</h3>
-          <p className="text-body-sm mb-3">
-            Nguồn: trái cây, rau, đậu. Một số phương pháp chế biến (ngâm, luộc) có thể giảm kali. Theo dõi
-            kali máu và điều chỉnh dựa trên kết quả.
-          </p>
-        </div>
+        <Card>
+          <CardHeader icon={Info} title="🍌 Kali" />
+          <CardContent>
+            <p className="text-sm text-gray-700 mb-2">
+              Kali cao có thể gây rối loạn nhịp tim
+            </p>
+            <p className="text-sm text-gray-700 mb-3">
+              Nguy hiểm nhưng không phải ai cũng cần kiêng nghiêm ngặt
+            </p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">Nguồn kali cao</p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-3">
+              <li>Chuối, cam, bơ</li>
+              <li>Rau xanh đậm</li>
+              <li>Đậu</li>
+            </ul>
+            <div className="bg-amber-50 rounded-lg p-3 border border-amber-200 mb-3">
+              <p className="text-sm font-semibold text-amber-900 mb-1">📌 Mẹo giảm kali:</p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-amber-900">
+                <li>Ngâm rau, củ trước khi nấu</li>
+                <li>Luộc bỏ nước đầu</li>
+              </ul>
+            </div>
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-2">
+              <p className="text-sm text-blue-900">
+                <strong>👉 Chỉ hạn chế kali khi kali máu tăng, không nên kiêng máy móc.</strong>
+              </p>
+            </div>
+          </CardContent>
+        </Card>
 
-        <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Natri & Dịch</h3>
-          <p className="text-body-sm">
-            Hạn chế natri giúp kiểm soát huyết áp và dịch. Hạn chế dịch dựa trên lượng nước tiểu và dấu hiệu
-            quá tải dịch.
-          </p>
-        </div>
+        <Card>
+          <CardHeader icon={AlertTriangle} title="🧂 Muối & 💧 Nước" />
+          <CardContent>
+            <ul className="space-y-2 text-sm text-gray-700 mb-3">
+              <li>• Muối giữ nước → phù, tăng huyết áp</li>
+              <li>• Nước quá nhiều → khó thở, phù nặng</li>
+            </ul>
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-3">
+              <p className="text-sm text-blue-900 mb-2">
+                <strong>👉 Nguyên tắc:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+                <li>Ăn nhạt vừa</li>
+                <li>Hạn chế đồ mặn, đồ chế biến</li>
+                <li>Lượng nước uống:</li>
+              </ul>
+              <ul className="list-disc space-y-1 pl-12 text-sm text-blue-900 mt-1">
+                <li>Thường = lượng nước tiểu + 500 ml</li>
+                <li>Điều chỉnh theo phù, khó thở</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
       </section>
 
       <section aria-labelledby="complications-heading" className="space-y-5">
@@ -204,33 +333,70 @@ export default function CKDNutritionPage() {
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        <Card>
-          <CardHeader icon={Info} title="Rối loạn Xương-Khoáng" />
+        <Card className="border-blue-200 bg-blue-50/30">
+          <CardHeader icon={Info} title="🦴 Rối loạn xương – khoáng" />
           <CardContent>
-            <p className="text-body-sm">
-              Phosphorus cao, vitamin D thấp, PTH cao. Quản lý: hạn chế phosphorus, bổ sung vitamin D,
-              phosphate binders.
-            </p>
+            <ul className="space-y-1 text-sm text-gray-700 mb-3">
+              <li>• Phospho cao</li>
+              <li>• Vitamin D thấp</li>
+              <li>• PTH tăng</li>
+            </ul>
+            <div className="rounded-lg border border-blue-200 bg-white p-3">
+              <p className="text-sm text-blue-900 mb-2">
+                <strong>👉 Xử trí:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+                <li>Giảm phospho</li>
+                <li>Bổ sung vitamin D (theo chỉ định)</li>
+                <li>Dùng thuốc gắn phospho</li>
+              </ul>
+            </div>
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader icon={Info} title="Thiếu máu" />
+        <Card className="border-red-200 bg-red-50/30">
+          <CardHeader icon={Info} title="🩸 Thiếu máu" />
           <CardContent>
-            <p className="text-body-sm">
-              Sắt, B12, folate có thể cần bổ sung. Sắt: cách xa phosphate binders. Theo dõi hemoglobin,
-              ferritin.
+            <p className="text-sm text-gray-700 mb-2">
+              Thường gặp trong CKD
             </p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">Có thể cần bổ sung:</p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-3">
+              <li>Sắt</li>
+              <li>Vitamin B12</li>
+              <li>Acid folic</li>
+            </ul>
+            <div className="bg-amber-50 rounded-lg p-2 border border-amber-200">
+              <p className="text-sm font-semibold text-amber-900 mb-1">📌 Lưu ý:</p>
+              <p className="text-sm text-amber-900">
+                Sắt uống cách xa thuốc gắn phospho 1–2 giờ
+              </p>
+            </div>
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader icon={AlertTriangle} title="Suy dinh dưỡng" />
+        <Card className="border-amber-200 bg-amber-50/30">
+          <CardHeader icon={AlertTriangle} title="⚠️ Suy dinh dưỡng" />
           <CardContent>
-            <p className="text-body-sm">
-              Nguy cơ cao trong CKD. Theo dõi albumin, prealbumin. Cân bằng giữa hạn chế protein và đủ
-              dinh dưỡng.
+            <p className="text-sm text-gray-700 mb-2">
+              Nguy cơ cao, đặc biệt CKD giai đoạn muộn
             </p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">Dấu hiệu:</p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-3">
+              <li>Sụt cân</li>
+              <li>Mệt</li>
+              <li>Albumin thấp</li>
+            </ul>
+            <div className="rounded-lg border border-amber-200 bg-white p-3">
+              <p className="text-sm text-amber-900 mb-2">
+                <strong>👉 Cần:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-amber-900">
+                <li>Điều chỉnh lại chế độ ăn</li>
+                <li>Bổ sung dinh dưỡng khi cần</li>
+                <li>Không kiêng quá mức</li>
+              </ul>
+            </div>
           </CardContent>
         </Card>
       </section>
@@ -239,17 +405,24 @@ export default function CKDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="interactions-heading" className="heading-2 whitespace-nowrap">
-            Tương tác Thuốc-Dinh dưỡng
+            Tương tác Thuốc – Dinh dưỡng
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          <ul className="list-disc space-y-2 pl-6 text-body-sm">
-            <li>Phosphate binders: uống với bữa ăn</li>
-            <li>Vitamin D: với bữa ăn</li>
-            <li>Sắt: cách xa phosphate binders (ít nhất 1-2 giờ)</li>
-            <li>Thuốc huyết áp: với natri</li>
-          </ul>
+          <Card className="border-amber-200 bg-amber-50/30">
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• <strong>Thuốc gắn phospho:</strong> uống cùng bữa ăn</li>
+              <li>• <strong>Vitamin D:</strong> uống cùng bữa ăn</li>
+              <li>• <strong>Sắt:</strong> tránh uống chung với thuốc gắn phospho</li>
+              <li>• <strong>Thuốc huyết áp:</strong> ăn nhạt giúp thuốc hiệu quả hơn</li>
+            </ul>
+            <div className="rounded-lg border border-amber-200 bg-white p-3 mt-3">
+              <p className="text-sm text-amber-900">
+                <strong>👉 Không tự ý thay đổi chế độ ăn khi đang dùng thuốc.</strong>
+              </p>
+            </div>
+          </Card>
         </div>
       </section>
 
@@ -269,56 +442,50 @@ export default function CKDNutritionPage() {
           {/* Monitoring Parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-              <thead className="bg-neutral-50">
+              <thead className="bg-blue-100">
                 <tr>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thông số</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tần suất</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu/Giá trị bình thường</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Chỉ số</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Tần suất</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Mục tiêu</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ý nghĩa</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-neutral-200">
                 <tr>
-                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>GFR/Creatinine</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng (tùy giai đoạn)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">GFR &gt; 60 (giai đoạn 1-2), theo dõi tiến triển</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá chức năng thận, tiến triển bệnh</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Creatinine / eGFR</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">3–6 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Theo giai đoạn</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Theo dõi tiến triển</td>
                 </tr>
                 <tr className="bg-neutral-50">
-                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Phosphorus</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng (giai đoạn 3-5)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">2.5-4.5 mg/dL (bình thường), &lt; 5.5 mg/dL (giai đoạn 3-5)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Quan trọng từ giai đoạn 3, đánh giá rối loạn xương-khoáng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Phospho</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">3–6 tháng (CKD 3–5)</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 5,5 mg/dL</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Rối loạn xương</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Potassium</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng (giai đoạn 3-5)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">3.5-5.0 mEq/L</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Quan trọng từ giai đoạn 3, điều chỉnh chế độ ăn</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Kali</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">3–6 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">3,5–5,0 mEq/L</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Nguy cơ tim</td>
                 </tr>
                 <tr className="bg-neutral-50">
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Albumin</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">&gt; 3.5 g/dL</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá tình trạng dinh dưỡng, nguy cơ suy dinh dưỡng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">3–6 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">&gt; 3,5 g/dL</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Dinh dưỡng</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>PTH</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 6-12 tháng (giai đoạn 3-5)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Theo giai đoạn CKD (tăng dần theo giai đoạn)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá rối loạn xương-khoáng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">6–12 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Theo giai đoạn</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Xương – khoáng</td>
                 </tr>
                 <tr className="bg-neutral-50">
-                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Vitamin D</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 6-12 tháng (giai đoạn 3-5)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">&gt; 20 ng/mL (25-OH vitamin D)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Có thể cần bổ sung</td>
-                </tr>
-                <tr>
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cân nặng</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi lần khám</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Duy trì cân nặng ổn định</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Theo dõi suy dinh dưỡng, quá tải dịch</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Mỗi lần khám</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Ổn định</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">Phù / suy dinh dưỡng</td>
                 </tr>
               </tbody>
             </table>
@@ -330,26 +497,45 @@ export default function CKDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy
+            Những Sai lầm Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          <ul className="list-disc space-y-2 pl-6 text-body-sm">
-            <li>Hạn chế protein quá mức dẫn đến suy dinh dưỡng</li>
-            <li>Không theo dõi phosphorus và potassium</li>
-            <li>Bỏ qua phosphate additives trong thực phẩm chế biến</li>
-            <li>Không điều chỉnh theo giai đoạn bệnh</li>
-          </ul>
+          <Card className="border-red-200 bg-red-50/30">
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• Kiêng đạm quá mức → suy dinh dưỡng</li>
+              <li>• Không chú ý phospho ẩn trong thực phẩm chế biến</li>
+              <li>• Kiêng kali không cần thiết</li>
+              <li>• Áp dụng cùng một chế độ ăn cho mọi giai đoạn CKD</li>
+            </ul>
+          </Card>
         </div>
       </section>
 
       <section aria-labelledby="safety-heading" className="space-y-4">
-        <h2 id="safety-heading" className="heading-3">Nhắc nhở An toàn</h2>
+        <h2 id="safety-heading" className="heading-3">⚠️ Nhắc nhở An toàn</h2>
         <Callout variant="error" title="Quan trọng">
+          <p className="text-body-sm mb-2">
+            Dinh dưỡng trong bệnh thận mạn phức tạp và phải cá nhân hóa.
+          </p>
           <p className="text-body-sm">
-            Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Quản lý dinh dưỡng trong CKD phức tạp
-            và cần được điều chỉnh dựa trên giai đoạn bệnh, chức năng thận, và đáp ứng cá nhân.
+            Mọi khuyến nghị cần điều chỉnh theo:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
+            <li>Giai đoạn bệnh thận</li>
+            <li>Xét nghiệm</li>
+            <li>Bệnh lý kèm</li>
+            <li>Khả năng ăn uống thực tế</li>
+          </ul>
+          <div className="mt-3 p-2 bg-white rounded border border-red-200">
+            <p className="text-sm text-red-900">
+              <strong>👉 Khi có nghi ngờ, nên tham khảo bác sĩ hoặc chuyên gia dinh dưỡng.</strong>
+            </p>
+          </div>
+          <p className="text-body-sm mt-2">
+            Trang này không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân, 
+            và không được sử dụng để ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
           </p>
         </Callout>
       </section>

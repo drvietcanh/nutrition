@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Breadcrumb } from "../../../components/Breadcrumb";
 import { Card } from "../../../components/Card";
 import { Callout } from "../../../components/Callout";
+import { ExampleBox } from "../../../components/ExampleBox";
+import { ComparisonCard } from "../../../components/ComparisonCard";
 import { DollarSign, CheckCircle2, AlertCircle, ShoppingCart } from "lucide-react";
 import Link from "next/link";
 
@@ -98,6 +100,37 @@ export default function NutritionOnBudgetPage() {
             </div>
           </div>
         </Card>
+
+        <ExampleBox variant="info" title="Thực phẩm Giá rẻ ở Chợ Việt Nam">
+          <p className="text-sm mb-2">
+            <strong>Ở chợ Việt Nam:</strong>
+          </p>
+          <ul className="list-disc list-inside space-y-1 text-sm mb-2">
+            <li><strong>Đậu đen, đậu đỏ:</strong> ~20,000-30,000đ/kg - giàu protein, chất xơ</li>
+            <li><strong>Trứng:</strong> ~3,000-4,000đ/quả - giàu protein, vitamin</li>
+            <li><strong>Rau muống, rau cải:</strong> ~10,000-15,000đ/kg (theo mùa) - giàu vitamin, chất xơ</li>
+            <li><strong>Khoai lang:</strong> ~15,000-20,000đ/kg - giàu carbohydrate, beta-carotene</li>
+            <li><strong>Cá nhỏ (cá cơm, cá khô):</strong> ~50,000-80,000đ/kg - giàu protein, calcium</li>
+          </ul>
+          <p className="text-sm">
+            <strong>Tips:</strong> Mua ở chợ thường rẻ hơn siêu thị 20-30%. Mua theo mùa để có giá tốt nhất.
+          </p>
+        </ExampleBox>
+
+        <ExampleBox variant="tip" title="Thực phẩm Theo Mùa ở Việt Nam">
+          <p className="text-sm mb-2">
+            <strong>Mua theo mùa giúp tiết kiệm 30-50%:</strong>
+          </p>
+          <ul className="list-disc list-inside space-y-1 text-sm mb-2">
+            <li><strong>Mùa hè:</strong> Dưa hấu, thanh long, xoài, ổi - rẻ, tươi, nhiều nước</li>
+            <li><strong>Mùa đông:</strong> Bắp cải, cà rốt, khoai lang, cam, quýt - rẻ, tươi, giàu vitamin C</li>
+            <li><strong>Rau theo mùa:</strong> Rau muống, rau cải - rẻ hơn khi mua đúng mùa</li>
+          </ul>
+          <p className="text-sm">
+            <strong>Ví dụ:</strong> Xoài mùa hè ~20,000đ/kg, trái mùa ~50,000đ/kg. 
+            Mua theo mùa giúp tiết kiệm và có thực phẩm tươi ngon hơn.
+          </p>
+        </ExampleBox>
       </section>
 
       <section className="space-y-4">
@@ -136,6 +169,47 @@ export default function NutritionOnBudgetPage() {
             </div>
           </div>
         </Card>
+
+        <ExampleBox variant="tip" title="Cách Mua sắm ở Chợ để Tiết kiệm">
+          <p className="text-sm mb-2">
+            <strong>Tips mua sắm ở chợ Việt Nam:</strong>
+          </p>
+          <ul className="list-disc list-inside space-y-1 text-sm mb-2">
+            <li><strong>Đi sáng sớm:</strong> Thực phẩm tươi nhất, có thể mặc cả</li>
+            <li><strong>So sánh giá:</strong> Đi nhiều gian hàng để so sánh giá</li>
+            <li><strong>Mua theo mùa:</strong> Rau củ, trái cây theo mùa rẻ hơn 30-50%</li>
+            <li><strong>Mua số lượng lớn:</strong> Đậu, gạo mua số lượng lớn rẻ hơn</li>
+            <li><strong>Mặc cả:</strong> Ở chợ có thể mặc cả để có giá tốt hơn</li>
+          </ul>
+          <p className="text-sm">
+            <strong>Ví dụ:</strong> Mua đậu đen 5kg thay vì 1kg - tiết kiệm 10-15%. 
+            Mua rau muống mùa hè thay vì trái mùa - tiết kiệm 30-40%.
+          </p>
+        </ExampleBox>
+
+        <ComparisonCard
+          title="So sánh Giá: Chợ vs Siêu thị"
+          better={{
+            title: "Chợ Truyền thống",
+            items: [
+              "Rẻ hơn 20-30% (thường)",
+              "Tươi hơn (mua sáng sớm)",
+              "Có thể mặc cả",
+              "Thực phẩm địa phương",
+              "Rau củ, thịt, cá tươi",
+            ],
+          }}
+          worse={{
+            title: "Siêu thị",
+            items: [
+              "Đắt hơn 20-30% (thường)",
+              "Có nhãn, dễ đọc",
+              "Bảo quản tốt",
+              "Nhiều lựa chọn",
+              "Thực phẩm đóng gói",
+            ],
+          }}
+        />
       </section>
 
       <section className="space-y-4">

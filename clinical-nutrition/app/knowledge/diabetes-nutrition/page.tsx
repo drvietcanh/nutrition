@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Activity, AlertCircle, CheckCircle, Info, AlertTriangle } from "lucide-react";
+import { Activity, AlertCircle, CheckCircle, Info, AlertTriangle, Lightbulb } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
@@ -43,17 +43,36 @@ export default function DiabetesNutritionPage() {
             Dinh dưỡng trong Đái tháo đường: Hướng dẫn Giáo dục
           </h1>
         </div>
-        <p className="text-body-lg">
-          Đái tháo đường là một bệnh mạn tính phổ biến ảnh hưởng đến cách cơ thể sử dụng glucose (đường).
-          Dinh dưỡng đóng vai trò trung tâm trong quản lý đái tháo đường, giúp kiểm soát đường huyết,
-          phòng ngừa biến chứng, và duy trì sức khỏe tổng thể. Trang này cung cấp hướng dẫn giáo dục về
-          các nguyên tắc dinh dưỡng dựa trên bằng chứng cho bệnh nhân đái tháo đường.
-        </p>
+        <div className="space-y-4">
+          <p className="text-body-lg">
+            Đái tháo đường là bệnh mạn tính ảnh hưởng đến cách cơ thể sử dụng đường trong máu. 
+            Nếu không kiểm soát tốt, bệnh có thể gây biến chứng ở tim, thận, mắt, thần kinh.
+          </p>
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <p className="text-sm text-blue-900 mb-2">
+              <strong>👉 Dinh dưỡng giữ vai trò trung tâm trong quản lý đái tháo đường:</strong>
+            </p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+              <li>Giúp kiểm soát đường huyết</li>
+              <li>Giảm nguy cơ biến chứng</li>
+              <li>Hỗ trợ dùng thuốc hiệu quả hơn</li>
+              <li>Giữ sức khỏe lâu dài</li>
+            </ul>
+          </div>
+          <p className="text-body">
+            Trang này cung cấp kiến thức dinh dưỡng mang tính giáo dục, dựa trên các khuyến cáo y khoa hiện nay.
+          </p>
+        </div>
         <Callout variant="info" title="Mục đích Giáo dục">
-          <p className="text-body-sm">
-            Trang này được thiết kế cho <strong>mục đích giáo dục</strong>, giúp các bác sĩ, điều dưỡng,
-            và sinh viên y khoa hiểu các nguyên tắc dinh dưỡng trong quản lý đái tháo đường. Nó không
-            thay thế phán đoán lâm sàng hoặc tư vấn từ chuyên gia dinh dưỡng đã đăng ký.
+          <p className="text-body-sm mb-2">
+            Nội dung nhằm:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm">
+            <li>Giúp nhân viên y tế và người bệnh hiểu các nguyên tắc dinh dưỡng trong đái tháo đường</li>
+            <li>Hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
+          </ul>
+          <p className="text-body-sm mt-3 font-semibold text-red-600">
+            ⚠️ Lưu ý: Thông tin này không thay thế đánh giá cá nhân của bác sĩ hoặc chuyên gia dinh dưỡng.
           </p>
         </Callout>
       </header>
@@ -63,39 +82,49 @@ export default function DiabetesNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Quan trọng trong Đái tháo đường?
+            Vì sao Dinh dưỡng Đặc biệt Quan trọng trong Đái tháo đường?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
           <p>
-            Dinh dưỡng là nền tảng của quản lý đái tháo đường. Không giống như nhiều bệnh mạn tính khác,
-            đái tháo đường yêu cầu sự chú ý liên tục đến lượng và loại thực phẩm tiêu thụ vì chúng ảnh hưởng
-            trực tiếp đến đường huyết.
+            Khác với nhiều bệnh mạn tính khác, những gì và bao nhiêu bạn ăn sẽ ảnh hưởng trực tiếp đến đường huyết.
           </p>
-          <ul className="list-disc space-y-2 pl-6">
-            <li>
-              <strong>Kiểm soát đường huyết:</strong> Carbohydrate trong thức ăn được chuyển hóa thành glucose,
-              ảnh hưởng trực tiếp đến đường huyết. Hiểu cách quản lý carbohydrate là chìa khóa để kiểm soát
-              đường huyết.
-            </li>
-            <li>
-              <strong>Phòng ngừa biến chứng:</strong> Quản lý đường huyết tốt giúp phòng ngừa các biến chứng
-              mạn tính như bệnh thận, bệnh mắt, bệnh thần kinh, và bệnh tim mạch.
-            </li>
-            <li>
-              <strong>Quản lý cân nặng:</strong> Nhiều người đái tháo đường type 2 có thừa cân hoặc béo phì.
-              Giảm cân có thể cải thiện kiểm soát đường huyết và giảm nhu cầu thuốc.
-            </li>
-            <li>
-              <strong>Sức khỏe tim mạch:</strong> Người đái tháo đường có nguy cơ cao bị bệnh tim mạch.
-              Chế độ ăn lành mạnh giúp quản lý cholesterol, huyết áp, và các yếu tố nguy cơ tim mạch khác.
-            </li>
-          </ul>
-          <p>
-            Hiểu các nguyên tắc dinh dưỡng này giúp các bác sĩ lâm sàng tư vấn bệnh nhân một cách hiệu quả
-            và hỗ trợ quản lý đái tháo đường thông qua thay đổi lối sống và điều chỉnh chế độ ăn.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Card className="border-blue-200 bg-blue-50/30">
+              <h3 className="heading-5 mb-2">🔹 Kiểm soát đường huyết</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Tinh bột và đường trong thức ăn sẽ chuyển thành glucose</li>
+                <li>• Hiểu và kiểm soát lượng carbohydrate là chìa khóa để ổn định đường huyết</li>
+              </ul>
+            </Card>
+            <Card className="border-green-200 bg-green-50/30">
+              <h3 className="heading-5 mb-2">🔹 Phòng ngừa biến chứng</h3>
+              <p className="text-sm text-gray-700 mb-2">
+                Đường huyết ổn định giúp giảm nguy cơ:
+              </p>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Bệnh thận</li>
+                <li>• Bệnh mắt</li>
+                <li>• Tổn thương thần kinh</li>
+                <li>• Bệnh tim mạch</li>
+              </ul>
+            </Card>
+            <Card className="border-amber-200 bg-amber-50/30">
+              <h3 className="heading-5 mb-2">🔹 Quản lý cân nặng</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Nhiều người đái tháo đường type 2 bị thừa cân</li>
+                <li>• Giảm cân giúp đường huyết dễ kiểm soát hơn, có thể giảm nhu cầu thuốc</li>
+              </ul>
+            </Card>
+            <Card className="border-purple-200 bg-purple-50/30">
+              <h3 className="heading-5 mb-2">🔹 Bảo vệ tim mạch</h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Người đái tháo đường có nguy cơ tim mạch cao</li>
+                <li>• Chế độ ăn đúng giúp kiểm soát mỡ máu và huyết áp</li>
+              </ul>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -111,77 +140,85 @@ export default function DiabetesNutritionPage() {
 
         {/* Carbohydrate */}
         <Card>
-          <CardHeader icon={CheckCircle} title="Carbohydrate (Tinh bột/Đường)" />
+          <CardHeader icon={CheckCircle} title="🍚 Carbohydrate (Tinh bột – Đường)" />
           <CardContent>
             <p className="text-body mb-4">
-              Carbohydrate là chất dinh dưỡng có tác động lớn nhất đến đường huyết. Quản lý carbohydrate
-              là nền tảng của dinh dưỡng trong đái tháo đường.
+              Carbohydrate là nhóm chất ảnh hưởng mạnh nhất đến đường huyết.
             </p>
-            <h3 className="heading-4 mb-3">Carbohydrate Counting</h3>
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 mb-4">
+              <p className="text-sm text-blue-900">
+                <strong>👉 Không cần loại bỏ tinh bột, nhưng cần quản lý đúng cách.</strong>
+              </p>
+            </div>
+            <h3 className="heading-4 mb-3">📏 Đếm Carbohydrate (Carbohydrate Counting)</h3>
             <p className="text-body-sm mb-3">
-              Đếm carbohydrate là một phương pháp phổ biến để quản lý đường huyết. Một "serving" carbohydrate
-              thường tương đương với 15g carbohydrate và làm tăng đường huyết khoảng 30-50 mg/dL (tùy thuộc
-              vào độ nhạy cảm insulin).
+              Đây là cách phổ biến để kiểm soát đường huyết.
             </p>
+            <ul className="list-disc space-y-1 pl-6 text-body-sm mb-3">
+              <li><strong>1 phần carbohydrate ≈ 15g carbohydrate</strong></li>
+              <li>Mỗi phần có thể làm đường huyết tăng khoảng 30–50 mg/dL (tùy từng người)</li>
+            </ul>
             
             {/* Carbohydrate Counting Table */}
+            <h4 className="heading-5 mb-3">Gợi ý phân bố carbohydrate</h4>
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-                <thead className="bg-neutral-50">
+                <thead className="bg-green-100">
                   <tr>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thời điểm</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khuyến nghị Carbohydrate</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Số "serving" (15g mỗi serving)</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Lượng carb</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Số phần (15g/phần)</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-neutral-200">
                   <tr>
                     <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bữa sáng</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">45-60g</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">3-4 serving</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Điều chỉnh theo nhu cầu cá nhân</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">45–60 g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">3–4</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Điều chỉnh theo cá nhân</td>
                   </tr>
                   <tr className="bg-neutral-50">
                     <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bữa trưa</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">45-60g</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">3-4 serving</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Điều chỉnh theo nhu cầu cá nhân</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">45–60 g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">3–4</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Điều chỉnh theo cá nhân</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bữa tối</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">45-60g</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">3-4 serving</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Điều chỉnh theo nhu cầu cá nhân</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">45–60 g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">3–4</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Điều chỉnh theo cá nhân</td>
                   </tr>
                   <tr className="bg-neutral-50">
                     <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bữa phụ</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">15-30g</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">1-2 serving</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Nếu cần, giữa các bữa chính</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">15–30 g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1–2</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Nếu cần</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trước tập thể dục</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">15-30g</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">1-2 serving</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trước tập</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">15–30 g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1–2</td>
                     <td className="px-4 py-3 text-sm text-neutral-700">Nếu đường huyết &lt; 100 mg/dL</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             
-            <Callout variant="info" title="Lưu ý về Carbohydrate Counting">
-              <p className="text-body-sm">
-                Các khuyến nghị này là <strong>ước tính giáo dục</strong>. Trong thực hành, lượng carbohydrate
-                cần được điều chỉnh dựa trên:
+            <Callout variant="info" title="Lưu ý quan trọng">
+              <p className="text-body-sm mb-2">
+                Các con số trên chỉ mang tính hướng dẫn. Cần điều chỉnh theo:
               </p>
-              <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
-                <li>Độ nhạy cảm insulin của từng bệnh nhân</li>
-                <li>Loại thuốc/insulin đang dùng</li>
-                <li>Mức độ hoạt động thể chất</li>
-                <li>Mục tiêu đường huyết cá nhân</li>
-                <li>Sở thích và khả năng tuân thủ</li>
+              <ul className="list-disc space-y-1 pl-6 text-body-sm">
+                <li>Loại thuốc/insulin</li>
+                <li>Mức vận động</li>
+                <li>Mục tiêu đường huyết</li>
+                <li>Khả năng ăn uống thực tế</li>
               </ul>
+              <p className="text-body-sm mt-3 font-semibold">
+                👉 Quan trọng hơn số lượng là phân bố đều trong ngày.
+              </p>
             </Callout>
             
             <ul className="list-disc space-y-2 pl-6 text-body-sm mb-4 mt-4">
@@ -194,37 +231,33 @@ export default function DiabetesNutritionPage() {
               </li>
             </ul>
 
-            <h3 className="heading-4 mb-3">Glycemic Index (GI) và Glycemic Load (GL)</h3>
+            <h3 className="heading-4 mb-3 mt-4">📊 GI & GL – Hiểu đúng để dùng đúng</h3>
             
             {/* Glycemic Index Table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-                <thead className="bg-neutral-50">
+                <thead className="bg-blue-100">
                   <tr>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Phân loại GI</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Giá trị GI</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ví dụ thực phẩm</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ảnh hưởng đường huyết</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Nhóm GI</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ví dụ</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ảnh hưởng</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-neutral-200">
                   <tr>
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>GI Thấp</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">&lt; 55</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Yến mạch, đậu, hầu hết trái cây, rau không tinh bột</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Tăng chậm, ổn định</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>GI thấp</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Rau, đậu, yến mạch</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Đường huyết tăng chậm</td>
                   </tr>
                   <tr className="bg-neutral-50">
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>GI Trung bình</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">55-70</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Gạo lứt, mì ống, một số trái cây (nho, dứa)</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Tăng vừa phải</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>GI trung bình</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Gạo lứt, mì</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Tăng vừa</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>GI Cao</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">&gt; 70</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Bánh mì trắng, gạo trắng, khoai tây, kẹo, nước ngọt</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Tăng nhanh, đột ngột</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>GI cao</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Cơm trắng, bánh mì trắng, nước ngọt</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Tăng nhanh</td>
                   </tr>
                 </tbody>
               </table>
@@ -232,103 +265,273 @@ export default function DiabetesNutritionPage() {
             
             <div className="space-y-3 text-body-sm">
               <p>
-                <strong>Glycemic Index (GI):</strong> Đo tốc độ carbohydrate làm tăng đường huyết. Thực phẩm có
-                GI thấp (&lt; 55) làm tăng đường huyết chậm hơn so với thực phẩm có GI cao (&gt; 70).
+                <strong>GI:</strong> tốc độ làm tăng đường huyết
               </p>
               <p>
-                <strong>Glycemic Load (GL):</strong> Tính đến cả GI và lượng carbohydrate. 
-                <span className="font-mono text-xs bg-neutral-100 px-2 py-1 rounded">GL = (GI × lượng carbohydrate) / 100</span>
+                <strong>GL:</strong> vừa tốc độ, vừa lượng ăn vào
               </p>
-              <p>
-                <strong>Ứng dụng:</strong> Ưu tiên thực phẩm có GI thấp đến trung bình có thể giúp kiểm soát
-                đường huyết tốt hơn, nhưng <strong>tổng lượng carbohydrate vẫn quan trọng hơn</strong>.
-              </p>
+              <div className="rounded-lg border border-blue-200 bg-blue-50 p-3">
+                <p className="text-sm text-blue-900">
+                  <strong>👉 Tổng lượng carbohydrate vẫn quan trọng hơn GI đơn thuần.</strong>
+                </p>
+              </div>
             </div>
 
-            <h3 className="heading-4 mb-3 mt-4">Chất xơ</h3>
-            <p className="text-body-sm">
-              Chất xơ, đặc biệt là chất xơ hòa tan, có thể làm chậm hấp thu carbohydrate và giúp kiểm soát
-              đường huyết. Khuyến nghị: 25-30g chất xơ mỗi ngày từ trái cây, rau quả, ngũ cốc nguyên hạt, và đậu.
+            <h3 className="heading-4 mb-3 mt-4">🥬 Chất xơ</h3>
+            <div className="space-y-2 text-body-sm">
+              <ul className="list-disc space-y-1 pl-6">
+                <li>Làm chậm hấp thu đường</li>
+                <li>Giúp đường huyết ổn định hơn</li>
+                <li>Tốt cho tim mạch và tiêu hóa</li>
+              </ul>
+              <div className="rounded-lg border border-green-200 bg-green-50 p-3 mt-3">
+                <p className="text-sm text-green-900">
+                  <strong>👉 Khuyến nghị:</strong> 25–30g/ngày từ rau, trái cây, đậu, ngũ cốc nguyên hạt.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Vietnamese Food Carbohydrate Table */}
+        <Card className="border-green-200 bg-green-50/30">
+          <CardHeader icon={Info} title="Carbohydrate trong Món ăn Việt Nam" />
+          <CardContent>
+            <p className="text-body-sm mb-4">
+              Bảng dưới đây giúp bạn ước tính carbohydrate trong các món ăn phổ biến ở Việt Nam:
             </p>
+            
+            <div className="overflow-x-auto my-4">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-green-100">
+                  <tr>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Món ăn</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khẩu phần</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Carbohydrate (g)</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Số phần (15g)</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cơm trắng</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 bát vừa</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">~45g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">3 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">GI cao, nên giảm lượng hoặc dùng gạo lứt</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cơm gạo lứt</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 bát vừa</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">~45g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">3 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">GI trung bình, tốt hơn cơm trắng</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bún</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 tô vừa</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">~25g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1.5 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Ăn kèm nhiều rau và protein</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Phở</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 tô vừa (bánh phở)</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">~22g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1.5 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Phụ thuộc lượng bánh phở</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh mì</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 ổ vừa</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">~30g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">2 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">GI cao, nên ăn kèm đạm và rau</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh cuốn</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 đĩa vừa</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">~25g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1.5 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Có đạm từ thịt bên trong</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Khoai lang</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 củ vừa</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">~20g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1.3 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">GI trung bình, nhiều chất xơ</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chuối</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 quả vừa</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">~27g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1.8 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Chuối càng chín, GI càng cao</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Xoài chín</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1/2 quả vừa</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">~15g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">1 phần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">GI trung bình-cao, nên ăn ít</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <Callout variant="info" title="Lưu ý">
+              <p className="text-body-sm">
+                Các giá trị trên là ước tính. Lượng carbohydrate thực tế có thể thay đổi tùy theo cách nấu, 
+                khẩu phần, và từng người. Nên theo dõi đường huyết sau ăn để điều chỉnh phù hợp.
+              </p>
+            </Callout>
+          </CardContent>
+        </Card>
+
+        {/* Practical Application Vietnamese */}
+        <Card className="border-blue-200 bg-blue-50/30">
+          <CardHeader icon={Lightbulb} title="Áp dụng Nhanh trong Đời sống Việt Nam" />
+          <CardContent>
+            <div className="space-y-4">
+              <div>
+                <h4 className="heading-5 mb-2">Khi ăn cơm</h4>
+                <ul className="list-disc space-y-1 pl-6 text-body-sm">
+                  <li>Giảm lượng cơm trắng: thay 1 bát bằng 1/2 bát cơm trắng + 1/2 bát cơm gạo lứt</li>
+                  <li>Ăn kèm nhiều rau xanh, thịt/cá để làm chậm hấp thu đường</li>
+                  <li>Ăn rau trước, sau đó mới ăn cơm và thức ăn</li>
+                  <li>Ví dụ: 1/2 bát cơm + thịt kho + canh chua + rau luộc = ~45g carb</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="heading-5 mb-2">Khi ăn bún/phở</h4>
+                <ul className="list-disc space-y-1 pl-6 text-body-sm">
+                  <li>Chú ý lượng bánh: không nên ăn quá nhiều bánh phở/bún</li>
+                  <li>Ăn kèm nhiều rau thơm, giá đỗ, rau sống</li>
+                  <li>Thêm thịt/cá để có đạm, giúp làm chậm hấp thu đường</li>
+                  <li>Hạn chế nước dùng quá ngọt hoặc quá mặn</li>
+                  <li>Ví dụ: 1 tô phở vừa + nhiều rau + thịt bò = ~25-30g carb</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="heading-5 mb-2">Trái cây</h4>
+                <ul className="list-disc space-y-1 pl-6 text-body-sm">
+                  <li>Ăn sau bữa ăn chính, không ăn khi đói</li>
+                  <li>Chọn trái cây GI thấp: táo, cam, ổi (thay vì xoài chín, chuối chín nẫu)</li>
+                  <li>Ăn lượng vừa phải: 1-2 phần mỗi lần (15-30g carb)</li>
+                  <li>Tránh ép nước, nên ăn nguyên quả để có chất xơ</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="heading-5 mb-2">Ví dụ bữa ăn trong ngày</h4>
+                <div className="bg-white rounded-lg p-3 border border-blue-200">
+                  <p className="text-sm font-semibold mb-2">Bữa sáng:</p>
+                  <p className="text-sm text-gray-700 mb-2">
+                    Cháo yến mạch + trái cây = ~45g carb (3 phần)
+                  </p>
+                  
+                  <p className="text-sm font-semibold mb-2 mt-3">Bữa trưa:</p>
+                  <p className="text-sm text-gray-700 mb-2">
+                    1/2 bát cơm gạo lứt + thịt gà kho + canh chua + rau luộc = ~45g carb (3 phần)
+                  </p>
+                  
+                  <p className="text-sm font-semibold mb-2 mt-3">Bữa tối:</p>
+                  <p className="text-sm text-gray-700 mb-2">
+                    1 tô phở vừa + nhiều rau + thịt bò = ~25g carb (1.5 phần)
+                  </p>
+                  
+                  <p className="text-sm font-semibold mb-2 mt-3">Bữa phụ (nếu cần):</p>
+                  <p className="text-sm text-gray-700">
+                    1 quả táo = ~15g carb (1 phần)
+                  </p>
+                  
+                  <p className="text-xs text-gray-600 mt-3">
+                    <strong>Tổng:</strong> ~130g carbohydrate (8-9 phần) - phù hợp cho nhiều người đái tháo đường
+                  </p>
+                </div>
+              </div>
+            </div>
           </CardContent>
         </Card>
 
         {/* Protein */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Protein</h3>
+          <h3 className="heading-3">🥩 Protein (Chất đạm)</h3>
           <div className="space-y-3 text-body">
             <p>
-              <strong>Nhu cầu:</strong> Người đái tháo đường thường không cần nhiều protein hơn người không
-              bị đái tháo đường. Khuyến nghị: 0.8-1.0 g/kg cân nặng/ngày (tương tự người khỏe mạnh).
+              Người đái tháo đường không cần ăn nhiều đạm hơn người bình thường
             </p>
             <p>
-              <strong>Lưu ý:</strong> Một số nghiên cứu cho thấy protein có thể làm tăng đường huyết nhẹ,
-              nhưng tác động này thường nhỏ so với carbohydrate. Protein không nên được sử dụng để "bù" cho
-              carbohydrate thấp.
+              <strong>Khuyến nghị chung:</strong> 0.8–1.0 g/kg/ngày
             </p>
-            <p>
-              <strong>Nguồn tốt:</strong> Thịt nạc, cá, gia cầm, đậu, sản phẩm sữa ít béo, trứng. Ưu tiên
-              protein thực vật và cá có thể tốt cho sức khỏe tim mạch.
+            <div className="bg-amber-50 rounded-lg p-3 border border-amber-200 mt-3">
+              <p className="text-sm font-semibold text-amber-900 mb-2">📌 Lưu ý:</p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-amber-900">
+                <li>Đạm không nên dùng để "bù" tinh bột</li>
+                <li>Người có bệnh thận cần đánh giá kỹ trước khi tăng đạm</li>
+              </ul>
+            </div>
+            <p className="text-body-sm mt-3">
+              <strong>Nguồn tốt:</strong> Thịt nạc, cá, gia cầm, đậu, sản phẩm sữa ít béo, trứng. 
+              Ưu tiên protein thực vật và cá có thể tốt cho sức khỏe tim mạch.
             </p>
-            <Callout variant="warning" title="Lưu ý quan trọng">
-              <p className="text-body-sm">
-                Ở những người có <strong>bệnh thận mạn</strong> (một biến chứng phổ biến của đái tháo đường),
-                có thể cần hạn chế protein. Luôn đánh giá chức năng thận trước khi khuyến nghị protein.
-              </p>
-            </Callout>
           </div>
         </div>
 
         {/* Fat */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Chất béo</h3>
+          <h3 className="heading-3">🧈 Chất béo</h3>
           <div className="space-y-3 text-body">
             <p>
-              <strong>Vai trò:</strong> Chất béo không ảnh hưởng trực tiếp đến đường huyết, nhưng quan trọng
-              cho sức khỏe tim mạch. Người đái tháo đường có nguy cơ cao bị bệnh tim mạch, vì vậy loại chất béo
-              rất quan trọng.
+              Không làm tăng đường huyết trực tiếp, nhưng <strong>rất quan trọng cho tim mạch</strong>.
             </p>
-            <p>
-              <strong>Chất béo tốt (nên ăn):</strong>
-            </p>
-            <ul className="list-disc space-y-1 pl-6 text-body-sm">
-              <li>Chất béo không bão hòa đơn: dầu ô liu, bơ, các loại hạt</li>
-              <li>Chất béo không bão hòa đa: cá béo (cá hồi, cá thu), hạt lanh, quả óc chó</li>
-              <li>Omega-3: cá béo, hạt chia, quả óc chó</li>
-            </ul>
-            <p>
-              <strong>Chất béo cần hạn chế:</strong>
-            </p>
-            <ul className="list-disc space-y-1 pl-6 text-body-sm">
-              <li>Chất béo bão hòa: thịt đỏ, bơ, phô mai, thực phẩm chế biến sẵn</li>
-              <li>Chất béo trans: thực phẩm chế biến sẵn, đồ chiên, bánh ngọt</li>
-            </ul>
-            <p>
-              <strong>Khuyến nghị:</strong> Hạn chế chất béo bão hòa &lt; 7% tổng năng lượng, tránh chất béo trans.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                <p className="text-sm font-semibold text-green-900 mb-2">Nên ưu tiên:</p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Dầu thực vật</li>
+                  <li>Cá béo</li>
+                  <li>Các loại hạt</li>
+                </ul>
+              </div>
+              <div className="bg-red-50 rounded-lg p-3 border border-red-200">
+                <p className="text-sm font-semibold text-red-900 mb-2">Nên hạn chế:</p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Mỡ động vật</li>
+                  <li>Đồ chiên</li>
+                  <li>Thức ăn chế biến sẵn</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Energy & Weight Management */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Năng lượng & Quản lý Cân nặng</h3>
+          <h3 className="heading-3">⚖️ Năng lượng & Cân nặng</h3>
           <div className="space-y-3 text-body">
-            <p>
-              <strong>Đái tháo đường Type 2:</strong> Nhiều người có thừa cân hoặc béo phì. Giảm cân 5-10%
-              có thể cải thiện đáng kể kiểm soát đường huyết và giảm nhu cầu thuốc.
-            </p>
-            <p>
-              <strong>Calorie deficit:</strong> Để giảm cân, cần tạo calorie deficit 500-750 kcal/ngày,
-              thường dẫn đến giảm 0.5-1 kg/tuần. Tuy nhiên, cần đảm bảo đủ dinh dưỡng và không giảm quá nhanh.
-            </p>
-            <p>
-              <strong>Đái tháo đường Type 1:</strong> Thường không cần giảm cân. Mục tiêu là duy trì cân nặng
-              ổn định và kiểm soát đường huyết tốt.
-            </p>
-            <p>
-              <strong>Lưu ý:</strong> Giảm cân quá nhanh hoặc quá nhiều có thể nguy hiểm, đặc biệt ở người lớn tuổi
-              hoặc có bệnh lý kèm. Luôn theo dõi và điều chỉnh dựa trên đáp ứng.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
+                <p className="text-sm font-semibold text-blue-900 mb-2">Đái tháo đường type 2</p>
+                <p className="text-sm text-gray-700">
+                  Giảm 5–10% cân nặng có thể cải thiện rõ đường huyết
+                </p>
+              </div>
+              <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+                <p className="text-sm font-semibold text-green-900 mb-2">Đái tháo đường type 1</p>
+                <p className="text-sm text-gray-700">
+                  Không cần giảm cân. Mục tiêu là ăn đều – kiểm soát đường huyết
+                </p>
+              </div>
+            </div>
+            <div className="bg-red-50 rounded-lg p-3 border border-red-200 mt-3">
+              <p className="text-sm text-red-900">
+                <strong>⚠️ Không giảm cân quá nhanh hoặc quá mức.</strong>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -338,7 +541,7 @@ export default function DiabetesNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="adjustments-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Dinh dưỡng Theo Loại Thuốc & Hoạt động
+            Điều chỉnh Dinh dưỡng Theo Thuốc & Vận động
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -349,46 +552,40 @@ export default function DiabetesNutritionPage() {
           </p>
 
           <div className="space-y-4 rounded-lg border border-blue-200 bg-blue-50/50 p-5">
-            <h3 className="heading-4">Theo Loại Thuốc</h3>
+            <h3 className="heading-4">Theo Thuốc</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li>
-                <strong>Insulin:</strong> Timing với bữa ăn là quan trọng. Insulin tác dụng nhanh được
-                tiêm trước bữa ăn dựa trên lượng carbohydrate. Insulin tác dụng dài cung cấp nền tảng và
-                không phụ thuộc vào bữa ăn.
+                <strong>Insulin / thuốc dễ gây hạ đường huyết → không được bỏ bữa</strong>
               </li>
               <li>
-                <strong>Metformin:</strong> Uống với bữa ăn để giảm tác dụng phụ đường tiêu hóa. Không
-                ảnh hưởng trực tiếp đến timing carbohydrate.
+                <strong>Metformin:</strong> Uống với bữa ăn để giảm tác dụng phụ đường tiêu hóa
               </li>
               <li>
-                <strong>Sulfonylureas (ví dụ: glipizide, glyburide):</strong> Kích thích tiết insulin,
-                có thể gây hạ đường huyết nếu bỏ bữa ăn hoặc ăn ít carbohydrate. Cần ăn đều đặn.
+                <strong>Sulfonylureas:</strong> Cần ăn đều đặn, không bỏ bữa
               </li>
               <li>
-                <strong>DPP-4 inhibitors, GLP-1 agonists:</strong> Ít nguy cơ hạ đường huyết, linh hoạt
-                hơn về timing bữa ăn.
+                <strong>DPP-4 inhibitors, GLP-1 agonists:</strong> Ít nguy cơ hạ đường huyết, linh hoạt hơn
               </li>
             </ul>
           </div>
 
           <div className="space-y-4 rounded-lg border border-green-200 bg-green-50/50 p-5">
-            <h3 className="heading-4">Theo Hoạt động Thể chất</h3>
+            <h3 className="heading-4">Theo Vận động</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li>
-                <strong>Trước tập thể dục:</strong> Nếu đường huyết &lt; 100 mg/dL, có thể cần ăn 15-30g
-                carbohydrate trước khi tập. Nếu đường huyết 100-250 mg/dL, có thể tập mà không cần ăn thêm.
+                <strong>Tập thể dục có thể làm đường huyết giảm</strong>
               </li>
               <li>
-                <strong>Sau tập thể dục:</strong> Tập thể dục có thể làm giảm đường huyết trong và sau
-                khi tập. Có thể cần ăn thêm carbohydrate hoặc giảm insulin sau tập.
+                <strong>Cần theo dõi đường huyết trước – trong – sau tập</strong>
               </li>
               <li>
-                <strong>Tập thể dục kéo dài:</strong> Có thể cần ăn carbohydrate trong khi tập (15-30g
-                mỗi 30-60 phút) để tránh hạ đường huyết.
+                <strong>Trước tập:</strong> Nếu đường huyết &lt; 100 mg/dL, có thể cần ăn 15-30g carbohydrate
               </li>
               <li>
-                <strong>Lưu ý:</strong> Điều chỉnh dựa trên đáp ứng cá nhân và theo dõi đường huyết trước,
-                trong, và sau tập.
+                <strong>Sau tập:</strong> Có thể cần ăn thêm carbohydrate hoặc giảm insulin
+              </li>
+              <li>
+                <strong>Tập kéo dài:</strong> Có thể cần ăn carbohydrate trong khi tập (15-30g mỗi 30-60 phút)
               </li>
             </ul>
           </div>
@@ -429,29 +626,34 @@ export default function DiabetesNutritionPage() {
             Trong quá trình quản lý đái tháo đường, có thể gặp một số vấn đề dinh dưỡng cần được giải quyết:
           </p>
 
-          <Card>
-            <CardHeader icon={AlertTriangle} title="Hạ đường huyết (Hypoglycemia)" />
+          <Card className="border-red-200 bg-red-50">
+            <CardHeader icon={AlertTriangle} title="Hạ đường huyết – Điều Người bệnh Cần biết" />
             <CardContent>
               <p className="text-body-sm mb-3">
-                <strong>Vấn đề:</strong> Đường huyết &lt; 70 mg/dL, có thể xảy ra do quá nhiều insulin,
-                quá ít carbohydrate, hoặc tập thể dục quá mức.
+                <strong>Khi đường huyết &lt; 70 mg/dL</strong>
               </p>
-              <p className="text-body-sm mb-3">
-                <strong>Triệu chứng:</strong> Run, đổ mồ hôi, lo lắng, đói, yếu, lú lẫn, nhức đầu.
-              </p>
-              <p className="text-body-sm mb-3">
-                <strong>Xử trí ngay:</strong>
-              </p>
-              <ul className="list-disc space-y-1 pl-6 text-body-sm mb-3">
-                <li>Ăn 15-20g carbohydrate tác dụng nhanh (nước trái cây, kẹo, glucose tablets)</li>
-                <li>Kiểm tra đường huyết sau 15 phút</li>
-                <li>Nếu vẫn thấp, lặp lại</li>
-                <li>Sau khi đường huyết ổn định, ăn bữa ăn hoặc bữa phụ để tránh hạ đường huyết lại</li>
-              </ul>
-              <p className="text-body-sm">
-                <strong>Phòng ngừa:</strong> Ăn đều đặn, không bỏ bữa, điều chỉnh insulin/thuốc dựa trên
-                lượng ăn và hoạt động, theo dõi đường huyết thường xuyên.
-              </p>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-sm font-semibold text-gray-900 mb-2">Triệu chứng:</p>
+                  <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                    <li>Run tay, đói, vã mồ hôi</li>
+                    <li>Hoa mắt, mệt, lú lẫn</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900 mb-2">Xử trí nhanh:</p>
+                  <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                    <li><strong>Ăn 15–20g đường nhanh</strong> (nước trái cây, kẹo, glucose tablets)</li>
+                    <li><strong>Kiểm tra lại sau 15 phút</strong></li>
+                    <li><strong>Ăn bữa phụ khi ổn định</strong> để tránh hạ đường huyết lại</li>
+                  </ul>
+                </div>
+                <div className="bg-red-100 rounded-lg p-3 border border-red-300 mt-3">
+                  <p className="text-sm text-red-900">
+                    <strong>👉 Không được bỏ qua hạ đường huyết.</strong>
+                  </p>
+                </div>
+              </div>
             </CardContent>
           </Card>
 
@@ -712,16 +914,22 @@ export default function DiabetesNutritionPage() {
             </Card>
           </div>
 
-          <Callout variant="info" title="Tần suất Đánh giá lại">
-            <p className="text-body-sm">
-              Đánh giá lại dinh dưỡng nên được thực hiện:
-            </p>
-            <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
-              <li>Sau 2-4 tuần khi bắt đầu thay đổi chế độ ăn hoặc thuốc</li>
-              <li>Khi HbA1c không đạt mục tiêu</li>
-              <li>Khi có thay đổi thuốc</li>
-              <li>Khi có biến chứng mới hoặc thay đổi tình trạng sức khỏe</li>
-              <li>Định kỳ mỗi 3-6 tháng nếu ổn định</li>
+          <div className="space-y-3">
+            <h3 className="heading-4">Theo dõi & Đánh giá</h3>
+            <ul className="list-disc space-y-2 pl-6 text-body-sm">
+              <li><strong>HbA1c:</strong> mỗi 3–6 tháng</li>
+              <li><strong>Đường huyết trước ăn:</strong> 80–130 mg/dL</li>
+              <li><strong>Sau ăn:</strong> &lt; 180 mg/dL</li>
+              <li>Theo dõi cân nặng, mỡ máu, huyết áp</li>
+            </ul>
+          </div>
+          
+          <Callout variant="info" title="Khi nào cần gặp chuyên gia dinh dưỡng?">
+            <ul className="list-disc space-y-1 pl-6 text-body-sm">
+              <li>Mới chẩn đoán</li>
+              <li>Đường huyết khó kiểm soát</li>
+              <li>Có biến chứng (thận, tim)</li>
+              <li>Cần kế hoạch ăn chi tiết</li>
             </ul>
           </Callout>
         </div>
@@ -821,13 +1029,19 @@ export default function DiabetesNutritionPage() {
       {/* 10. Safety Disclaimer */}
       <section aria-labelledby="safety-heading" className="space-y-4">
         <h2 id="safety-heading" className="heading-3">
-          Nhắc nhở An toàn
+          ⚠️ Nhắc nhở An toàn
         </h2>
         <Callout variant="error" title="Quan trọng">
+          <p className="text-body-sm mb-2">
+            Nội dung này chỉ mang tính giáo dục.
+          </p>
           <p className="text-body-sm">
-            Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp tư vấn y tế,
-            chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân, và không được sử dụng để
-            ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
+            Mọi khuyến nghị cần được cá nhân hóa theo loại đái tháo đường, thuốc đang dùng, 
+            mức vận động và bệnh lý kèm.
+          </p>
+          <p className="text-body-sm mt-2">
+            Trang này không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân, 
+            và không được sử dụng để ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
           </p>
           <p className="text-body-sm mt-2">
             Tất cả các khuyến nghị dinh dưỡng cần được điều chỉnh dựa trên đánh giá lâm sàng toàn diện,

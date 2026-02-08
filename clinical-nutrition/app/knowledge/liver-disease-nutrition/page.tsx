@@ -40,18 +40,39 @@ export default function LiverDiseaseNutritionPage() {
         <div className="flex items-center gap-3">
           <Activity className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Dinh dưỡng trong Bệnh gan mạn: Hướng dẫn Giáo dục
+            🧡 Dinh dưỡng trong Bệnh gan mạn: Hướng dẫn Giáo dục
           </h1>
         </div>
-        <p className="text-body-lg">
-          Bệnh gan mạn (viêm gan, xơ gan, suy gan) ảnh hưởng đến chức năng gan và chuyển hóa dinh dưỡng.
-          Dinh dưỡng đóng vai trò quan trọng trong hỗ trợ chức năng gan và quản lý biến chứng. Trang này
-          cung cấp hướng dẫn giáo dục về các nguyên tắc dinh dưỡng.
-        </p>
+        <div className="space-y-4">
+          <p className="text-body-lg">
+            Bệnh gan mạn (viêm gan mạn, xơ gan, suy gan) là tình trạng gan bị tổn thương kéo dài, làm giảm khả năng:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body">
+            <li>Chuyển hóa dinh dưỡng</li>
+            <li>Dự trữ năng lượng</li>
+            <li>Khử độc</li>
+          </ul>
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <p className="text-sm text-blue-900 mb-2">
+              <strong>👉 Dinh dưỡng đóng vai trò rất quan trọng trong bệnh gan mạn:</strong>
+            </p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+              <li>Giúp duy trì chức năng gan còn lại</li>
+              <li>Phòng ngừa suy dinh dưỡng</li>
+              <li>Giảm biến chứng như cổ trướng, bệnh não gan</li>
+            </ul>
+          </div>
+        </div>
         <Callout variant="info" title="Mục đích Giáo dục">
-          <p className="text-body-sm">
-            Trang này được thiết kế cho <strong>mục đích giáo dục</strong>, giúp hiểu các nguyên tắc dinh dưỡng
-            trong quản lý bệnh gan mạn.
+          <p className="text-body-sm mb-2">
+            Nội dung này nhằm:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm">
+            <li>Giúp nhân viên y tế, người bệnh và người nhà hiểu đúng về dinh dưỡng trong bệnh gan mạn</li>
+            <li>Tránh các sai lầm phổ biến như kiêng quá mức, đặc biệt là kiêng đạm</li>
+          </ul>
+          <p className="text-body-sm mt-3 font-semibold text-red-600">
+            ⚠️ Lưu ý: Thông tin mang tính giáo dục, không thay thế đánh giá và tư vấn cá nhân của bác sĩ.
           </p>
         </Callout>
       </header>
@@ -60,15 +81,37 @@ export default function LiverDiseaseNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Quan trọng?
+            Vì sao Dinh dưỡng Đặc biệt Quan trọng trong Bệnh gan Mạn?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
           <p>
-            Bệnh nhân bệnh gan mạn có nguy cơ cao suy dinh dưỡng do giảm cảm giác thèm ăn, rối loạn chuyển hóa,
-            và mất chất dinh dưỡng. Dinh dưỡng đầy đủ giúp duy trì chức năng gan và phòng ngừa biến chứng.
+            Người bệnh gan mạn rất dễ suy dinh dưỡng, vì:
           </p>
+          <ul className="list-disc space-y-2 pl-6 text-body">
+            <li>Ăn kém, chán ăn</li>
+            <li>Rối loạn chuyển hóa</li>
+            <li>Hấp thu kém</li>
+            <li>Dự trữ năng lượng của gan giảm</li>
+          </ul>
+          <div className="rounded-lg border border-red-200 bg-red-50 p-4">
+            <p className="text-sm text-red-900 mb-2">
+              <strong>👉 Suy dinh dưỡng sẽ làm:</strong>
+            </p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-red-900">
+              <li>Gan yếu hơn</li>
+              <li>Biến chứng nặng hơn</li>
+              <li>Tăng nguy cơ nhiễm trùng</li>
+              <li>Giảm sống còn</li>
+            </ul>
+          </div>
+          <div className="bg-green-50 rounded-lg p-3 border border-green-200">
+            <p className="text-sm font-semibold text-green-900 mb-1">📌 Nguyên tắc quan trọng nhất:</p>
+            <p className="text-sm text-green-900">
+              <strong>Bệnh gan không phải là ăn ít, mà là ăn đúng và đủ.</strong>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -81,53 +124,167 @@ export default function LiverDiseaseNutritionPage() {
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        <Card>
-          <CardHeader icon={CheckCircle} title="Protein" />
+        <Card className="border-red-200 bg-red-50/30">
+          <CardHeader icon={CheckCircle} title="🥩 Protein (Chất đạm) – KHÔNG ĐƯỢC KIÊNG KÉO DÀI" />
           <CardContent>
-            <p className="text-body-sm mb-3">
-              <strong>Nhu cầu:</strong> 1.2-1.5 g/kg/ngày (đủ để duy trì khối nạc, tránh suy dinh dưỡng).
-            </p>
-            <p className="text-body-sm mb-3">
-              <strong>Lưu ý:</strong> Bệnh não gan (hepatic encephalopathy) có thể cần giảm protein tạm thời,
-              nhưng không nên hạn chế lâu dài vì có thể dẫn đến suy dinh dưỡng.
-            </p>
-            <p className="text-body-sm">
-              <strong>Chất lượng:</strong> Protein thực vật có thể tốt hơn protein động vật ở một số bệnh nhân
-              có bệnh não gan.
-            </p>
+            <div className="bg-red-100 rounded-lg p-3 mb-3 border border-red-300">
+              <p className="text-sm font-semibold text-red-900">
+                Đây là điểm hay bị hiểu sai nhất.
+              </p>
+            </div>
+            <div className="space-y-3">
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Nhu cầu protein</p>
+                <p className="text-sm text-gray-700 mb-2">
+                  1,2 – 1,5 g/kg cân nặng/ngày
+                </p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Cần để:</p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Giữ cơ</li>
+                  <li>Phòng suy dinh dưỡng</li>
+                  <li>Hỗ trợ phục hồi gan</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Về bệnh não gan</p>
+                <p className="text-sm text-gray-700 mb-1">
+                  Khi có bệnh não gan nặng, có thể:
+                </p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Giảm protein tạm thời</li>
+                </ul>
+                <div className="bg-red-50 rounded-lg p-2 border border-red-200 mt-2">
+                  <p className="text-sm text-red-900">
+                    <strong>❌ Không được kiêng đạm lâu dài, vì sẽ gây suy dinh dưỡng nặng</strong>
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Chất lượng protein</p>
+                <p className="text-sm text-gray-700 mb-1">
+                  Protein thực vật (đậu, đậu phụ):
+                </p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Có thể dễ dung nạp hơn</li>
+                  <li>Ít gây nặng bệnh não gan ở một số người</li>
+                  <li>Có thể kết hợp đạm động vật + thực vật</li>
+                </ul>
+              </div>
+              <div className="rounded-lg border border-blue-200 bg-blue-50 p-3 mt-3">
+                <p className="text-sm text-blue-900">
+                  <strong>👉 Mục tiêu:</strong> đủ đạm – chia đều trong ngày – không dồn 1 bữa.
+                </p>
+              </div>
+            </div>
           </CardContent>
         </Card>
 
-        <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Natri & Dịch</h3>
-          <p className="text-body-sm mb-3">
-            <strong>Natri:</strong> &lt; 2g/ngày nếu có cổ trướng/phù.
-          </p>
-          <p className="text-body-sm">
-            <strong>Dịch:</strong> Hạn chế nếu có cổ trướng. Theo dõi cân nặng hàng ngày.
-          </p>
-        </div>
+        <Card>
+          <CardHeader icon={AlertTriangle} title="🧂 Muối & 💧 Nước" />
+          <CardContent>
+            <div className="space-y-4">
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Muối (Natri)</p>
+                <p className="text-sm text-gray-700 mb-2">
+                  Nếu có cổ trướng hoặc phù:
+                </p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Hạn chế muối &lt; 2 g natri/ngày</li>
+                  <li>Ăn mặn → giữ nước → cổ trướng nặng hơn</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Nước (Dịch)</p>
+                <p className="text-sm text-gray-700 mb-2">
+                  Chỉ hạn chế khi:
+                </p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-2">
+                  <li>Có cổ trướng nhiều</li>
+                  <li>Hạ natri máu</li>
+                </ul>
+                <p className="text-sm text-gray-700 mb-2">Cần:</p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Theo dõi cân nặng hàng ngày</li>
+                  <li>Điều chỉnh theo chỉ định bác sĩ</li>
+                </ul>
+              </div>
+              <div className="bg-amber-50 rounded-lg p-2 border border-amber-200">
+                <p className="text-sm text-amber-900">
+                  <strong>📌 Không phải ai bệnh gan cũng phải uống ít nước.</strong>
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
-        <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Vi chất</h3>
-          <p className="text-body-sm mb-3">
-            <strong>Kẽm:</strong> Thường thiếu, có thể cần bổ sung. Mất qua đường tiêu hóa.
-          </p>
-          <p className="text-body-sm mb-3">
-            <strong>Vitamin D:</strong> Thường thiếu, có thể cần bổ sung.
-          </p>
-            <p className="text-body-sm">
-            <strong>Vitamin A:</strong> Cẩn thận độc tính, không bổ sung quá mức.
-          </p>
-        </div>
+        <Card>
+          <CardHeader icon={CheckCircle} title="🔥 Năng lượng (Calories)" />
+          <CardContent>
+            <p className="text-sm text-gray-700 mb-2">
+              Người bệnh gan mạn cần đủ năng lượng để tránh sụt cân
+            </p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">Khuyến nghị chung: 30–35 kcal/kg/ngày</p>
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-3 mb-3">
+              <p className="text-sm text-blue-900 mb-2">
+                <strong>👉 Nếu ăn kém:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+                <li>Chia bữa nhỏ</li>
+                <li>Ăn thêm bữa phụ, đặc biệt bữa tối muộn</li>
+              </ul>
+            </div>
+            <div className="bg-green-50 rounded-lg p-2 border border-green-200">
+              <p className="text-sm font-semibold text-green-900 mb-1">📌 Bữa tối muộn giúp:</p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-green-900">
+                <li>Giảm dị hóa</li>
+                <li>Giữ cơ tốt hơn ở bệnh nhân xơ gan</li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
 
-        <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Năng lượng</h3>
-          <p className="text-body-sm">
-            Đủ để duy trì cân nặng và phòng ngừa suy dinh dưỡng. Khuyến nghị: 30-35 kcal/kg/ngày
-            (điều chỉnh dựa trên tình trạng dinh dưỡng).
-          </p>
-        </div>
+        <Card>
+          <CardHeader icon={Info} title="🧬 Vi chất Dinh dưỡng Thường Thiếu" />
+          <CardContent>
+            <div className="space-y-4">
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Kẽm</p>
+                <p className="text-sm text-gray-700 mb-2">
+                  Hay thiếu trong bệnh gan
+                </p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Thiếu kẽm có thể làm:</p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-2">
+                  <li>Ăn kém</li>
+                  <li>Nặng bệnh não gan</li>
+                </ul>
+                <div className="rounded-lg border border-blue-200 bg-blue-50 p-2">
+                  <p className="text-sm text-blue-900">
+                    <strong>👉 Có thể cần bổ sung theo chỉ định.</strong>
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Vitamin D</p>
+                <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                  <li>Thường thiếu</li>
+                  <li>Liên quan đến xương, miễn dịch</li>
+                  <li>Có thể cần bổ sung</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Vitamin A</p>
+                <div className="bg-red-50 rounded-lg p-2 border border-red-200">
+                  <p className="text-sm text-red-900 mb-1">
+                    <strong>⚠️ Rất dễ ngộ độc ở bệnh gan</strong>
+                  </p>
+                  <p className="text-sm text-red-900">
+                    <strong>❌ Không tự ý bổ sung liều cao</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </section>
 
       <section aria-labelledby="stages-heading" className="space-y-5">
@@ -142,51 +299,39 @@ export default function LiverDiseaseNutritionPage() {
         {/* Liver Disease Stages Table */}
         <div className="overflow-x-auto my-4">
           <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-            <thead className="bg-neutral-50">
+            <thead className="bg-green-100">
               <tr>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mức độ Bệnh</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Protein</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Natri</th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Dịch</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mức độ bệnh</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Protein</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Muối</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Nước</th>
                 <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-neutral-200">
               <tr>
-                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Viêm gan / Xơ gan bù</strong></td>
-                <td className="px-4 py-3 text-sm text-neutral-700">1.2-1.5 g/kg</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Bình thường hoặc hạn chế nếu cổ trướng</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Bình thường hoặc hạn chế nếu cổ trướng</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Dinh dưỡng tương đối bình thường</td>
+                <td className="px-4 py-3 text-sm font-semibold text-neutral-700">Viêm gan / Xơ gan bù</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">1,2–1,5 g/kg</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Bình thường</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Bình thường</td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Ăn gần như người khỏe</td>
               </tr>
               <tr className="bg-neutral-50">
-                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Xơ gan mất bù</strong></td>
-                <td className="px-4 py-3 text-sm text-neutral-700">1.2-1.5 g/kg (giảm tạm thời nếu bệnh não gan)</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2g/ngày</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Hạn chế nghiêm ngặt</td>
-                <td className="px-4 py-3 text-sm text-neutral-700">Quản lý cổ trướng, bệnh não gan</td>
+                <td className="px-4 py-3 text-sm font-semibold text-neutral-700">Xơ gan mất bù</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">1,2–1,5 g/kg (giảm tạm nếu não gan)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 2 g</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Hạn chế</td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Theo dõi sát cổ trướng</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm font-semibold text-neutral-700">Suy dinh dưỡng</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Tăng năng lượng & đạm</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Theo tình trạng</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center">Cẩn thận</td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Cần hỗ trợ dinh dưỡng</td>
               </tr>
             </tbody>
           </table>
-        </div>
-        
-        <div className="space-y-4 rounded-lg border border-blue-200 bg-blue-50/50 p-5">
-          <h3 className="heading-4">Viêm gan / Xơ gan bù</h3>
-          <ul className="list-disc space-y-2 pl-6 text-body-sm">
-            <li>Dinh dưỡng tương đối bình thường</li>
-            <li>Đủ protein (1.2-1.5 g/kg)</li>
-            <li>Hạn chế natri/dịch nếu có cổ trướng</li>
-          </ul>
-        </div>
-
-        <div className="space-y-4 rounded-lg border border-red-200 bg-red-50/50 p-5">
-          <h3 className="heading-4">Xơ gan mất bù</h3>
-          <ul className="list-disc space-y-2 pl-6 text-body-sm">
-            <li>Hạn chế natri/dịch nghiêm ngặt hơn</li>
-            <li>Đủ protein (cẩn thận với bệnh não gan)</li>
-            <li>Tăng năng lượng và protein nếu có suy dinh dưỡng</li>
-            <li>Bổ sung vi chất (kẽm, vitamin D)</li>
-          </ul>
         </div>
       </section>
 
@@ -199,31 +344,52 @@ export default function LiverDiseaseNutritionPage() {
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        <Card>
-          <CardHeader icon={AlertTriangle} title="Cổ trướng" />
+        <Card className="border-blue-200 bg-blue-50/30">
+          <CardHeader icon={AlertTriangle} title="💧 Cổ trướng" />
           <CardContent>
-            <p className="text-body-sm">
-              Hạn chế natri và dịch. Theo dõi cân nặng hàng ngày. Paracentesis nếu cần.
-            </p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+              <li>Ăn nhạt</li>
+              <li>Hạn chế nước (khi cần)</li>
+              <li>Theo dõi cân nặng mỗi ngày</li>
+              <li>Chọc tháo dịch nếu cần (theo chỉ định)</li>
+            </ul>
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader icon={Info} title="Bệnh não gan" />
+        <Card className="border-amber-200 bg-amber-50/30">
+          <CardHeader icon={Info} title="🧠 Bệnh não gan" />
           <CardContent>
-            <p className="text-body-sm mb-3">
-              Giảm protein tạm thời nếu cần, nhưng không hạn chế lâu dài. Protein thực vật có thể tốt hơn.
-              Lactulose: không phải dinh dưỡng nhưng quan trọng.
-            </p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-3">
+              <li>Giảm đạm ngắn hạn nếu cần</li>
+              <li>Ưu tiên đạm thực vật</li>
+              <li>Lactulose giúp giảm hấp thu độc tố (không phải dinh dưỡng nhưng rất quan trọng)</li>
+            </ul>
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader icon={AlertCircle} title="Suy dinh dưỡng" />
+        <Card className="border-red-200 bg-red-50/30">
+          <CardHeader icon={AlertCircle} title="⚠️ Suy dinh dưỡng" />
           <CardContent>
-            <p className="text-body-sm">
-              Rất phổ biến. Tăng năng lượng và protein (cẩn thận với dịch). Theo dõi albumin, prealbumin.
+            <p className="text-sm text-gray-700 mb-2">
+              Rất thường gặp
             </p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">Biểu hiện:</p>
+            <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-3">
+              <li>Sụt cân</li>
+              <li>Mệt</li>
+              <li>Giảm khối cơ</li>
+            </ul>
+            <div className="rounded-lg border border-red-200 bg-white p-3">
+              <p className="text-sm text-red-900 mb-2">
+                <strong>👉 Giải pháp:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-red-900">
+                <li>Tăng năng lượng</li>
+                <li>Đủ protein</li>
+                <li>Chia nhỏ bữa</li>
+                <li>Theo dõi albumin, prealbumin</li>
+              </ul>
+            </div>
           </CardContent>
         </Card>
       </section>
@@ -232,16 +398,18 @@ export default function LiverDiseaseNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="interactions-heading" className="heading-2 whitespace-nowrap">
-            Tương tác Thuốc-Dinh dưỡng
+            Tương tác Thuốc – Dinh dưỡng
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          <ul className="list-disc space-y-2 pl-6 text-body-sm">
-            <li>Lactulose: với bữa ăn</li>
-            <li>Diuretics: bổ sung kali nếu cần</li>
-            <li>Vitamin và khoáng chất: cẩn thận độc tính (đặc biệt vitamin A)</li>
-          </ul>
+          <Card className="border-amber-200 bg-amber-50/30">
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• <strong>Lactulose:</strong> dùng đều, có thể uống cùng bữa ăn</li>
+              <li>• <strong>Lợi tiểu:</strong> theo dõi kali</li>
+              <li>• <strong>Vitamin:</strong> không tự ý dùng liều cao, đặc biệt vitamin A</li>
+            </ul>
+          </Card>
         </div>
       </section>
 
@@ -261,50 +429,43 @@ export default function LiverDiseaseNutritionPage() {
           {/* Monitoring Parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-              <thead className="bg-neutral-50">
+              <thead className="bg-blue-100">
                 <tr>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thông số</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tần suất</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu/Giá trị bình thường</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Chỉ số</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Tần suất</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Mục tiêu</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-neutral-200">
                 <tr>
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Albumin</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">&gt; 3.5 g/dL</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá chức năng gan và tình trạng dinh dưỡng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">3–6 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">&gt; 3,5 g/dL</td>
                 </tr>
                 <tr className="bg-neutral-50">
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>ALT, AST, Bilirubin</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 3-6 tháng</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Theo mức độ bệnh</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá chức năng gan</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">3–6 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Theo mức độ bệnh</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cân nặng</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Hàng ngày (nếu có cổ trướng)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Duy trì ổn định</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Theo dõi cổ trướng, suy dinh dưỡng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Hàng ngày nếu cổ trướng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Ổn định</td>
                 </tr>
                 <tr className="bg-neutral-50">
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Kẽm</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Nếu có triệu chứng hoặc nghi ngờ thiếu</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">70-120 mcg/dL</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Thường thiếu trong bệnh gan</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Khi nghi ngờ thiếu</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">70–120 mcg/dL</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Vitamin D</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 6-12 tháng</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">&gt; 20 ng/mL</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Thường thiếu, có thể cần bổ sung</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">6–12 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">&gt; 20 ng/mL</td>
                 </tr>
                 <tr className="bg-neutral-50">
-                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Dấu hiệu bệnh não gan</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi lần khám</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Không có</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá lâm sàng, có thể cần điều chỉnh protein</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Dấu hiệu não gan</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Mỗi lần khám</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Không có</td>
                 </tr>
               </tbody>
             </table>
@@ -316,25 +477,41 @@ export default function LiverDiseaseNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy
+            Những Sai lầm Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          <ul className="list-disc space-y-2 pl-6 text-body-sm">
-            <li>Hạn chế protein quá mức dẫn đến suy dinh dưỡng</li>
-            <li>Không theo dõi vi chất</li>
-            <li>Bỏ qua cổ trướng và dịch</li>
-          </ul>
+          <Card className="border-red-200 bg-red-50/30">
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• Kiêng đạm kéo dài → suy dinh dưỡng</li>
+              <li>• Sợ ăn → ăn quá ít</li>
+              <li>• Không chú ý vi chất</li>
+              <li>• Không theo dõi cân nặng khi có cổ trướng</li>
+            </ul>
+          </Card>
         </div>
       </section>
 
       <section aria-labelledby="safety-heading" className="space-y-4">
-        <h2 id="safety-heading" className="heading-3">Nhắc nhở An toàn</h2>
+        <h2 id="safety-heading" className="heading-3">⚠️ Nhắc nhở An toàn</h2>
         <Callout variant="error" title="Quan trọng">
-          <p className="text-body-sm">
-            Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Quản lý dinh dưỡng trong bệnh gan
-            phức tạp và cần được điều chỉnh dựa trên mức độ bệnh và đáp ứng cá nhân.
+          <p className="text-body-sm mb-2">
+            Dinh dưỡng trong bệnh gan mạn phải cá nhân hóa theo:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm">
+            <li>Mức độ tổn thương gan</li>
+            <li>Có hay không cổ trướng, não gan</li>
+            <li>Tình trạng dinh dưỡng thực tế</li>
+          </ul>
+          <div className="mt-3 p-2 bg-white rounded border border-red-200">
+            <p className="text-sm text-red-900">
+              <strong>👉 Khi có nghi ngờ, nên trao đổi với bác sĩ hoặc chuyên gia dinh dưỡng.</strong>
+            </p>
+          </div>
+          <p className="text-body-sm mt-2">
+            Trang này không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân, 
+            và không được sử dụng để ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
           </p>
         </Callout>
       </section>

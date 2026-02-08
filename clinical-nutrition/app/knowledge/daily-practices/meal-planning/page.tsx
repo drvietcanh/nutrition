@@ -153,6 +153,45 @@ export default function MealPlanningPage() {
               </div>
             </div>
           </Card>
+
+          <Card className="border-blue-200 bg-blue-50">
+            <h3 className="heading-4 mb-3 text-blue-900">Cấu trúc Bữa ăn Gia đình Việt Nam</h3>
+            <p className="text-body-sm text-blue-900 mb-3">
+              Bữa ăn gia đình Việt Nam truyền thống thường có 4 thành phần chính, tạo thành bữa ăn cân bằng:
+            </p>
+            <div className="space-y-3">
+              <div className="bg-white rounded-lg p-3 border border-blue-200">
+                <p className="text-sm font-semibold text-gray-900 mb-1">1. Cơm (Carbohydrate)</p>
+                <p className="text-xs text-gray-700">
+                  Nguồn năng lượng chính. Có thể chọn gạo lứt thay vì gạo trắng để có nhiều chất xơ hơn.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-3 border border-blue-200">
+                <p className="text-sm font-semibold text-gray-900 mb-1">2. Canh (Soup với Rau/Protein)</p>
+                <p className="text-xs text-gray-700">
+                  Canh chua cá, canh rau muống, canh mướp - cung cấp nước, rau củ, và có thể có protein từ cá/thịt.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-3 border border-blue-200">
+                <p className="text-sm font-semibold text-gray-900 mb-1">3. Món mặn (Protein chính)</p>
+                <p className="text-xs text-gray-700">
+                  Thịt kho, cá kho, tôm rang me, đậu phụ sốt cà chua - nguồn protein chính.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-3 border border-blue-200">
+                <p className="text-sm font-semibold text-gray-900 mb-1">4. Rau (Rau củ)</p>
+                <p className="text-xs text-gray-700">
+                  Rau muống luộc, rau cải xào, rau lang luộc - cung cấp vitamin, khoáng chất, chất xơ.
+                </p>
+              </div>
+            </div>
+            <div className="mt-3 bg-white rounded-lg p-3 border border-blue-200">
+              <p className="text-xs font-semibold text-gray-900 mb-1">Ví dụ bữa ăn Việt Nam:</p>
+              <p className="text-xs text-gray-700">
+                <strong>Cơm + Canh chua cá + Cá kho tộ + Rau muống luộc</strong> = Bữa ăn cân bằng với đủ carbohydrate, protein, và rau củ.
+              </p>
+            </div>
+          </Card>
         </div>
       </section>
 
@@ -228,6 +267,24 @@ export default function MealPlanningPage() {
                 <p><strong>Tối:</strong> Mì + thịt heo + rau sống</p>
               </div>
             </div>
+            <div>
+              <p className="text-sm font-semibold text-gray-900 mb-2">Ví dụ Bữa ăn Việt Nam (3 ngày):</p>
+              <div className="bg-amber-50 rounded-lg p-3 border border-amber-200 text-xs text-gray-700">
+                <p className="mb-2"><strong>Ngày 1:</strong></p>
+                <p className="mb-1"><strong>Trưa:</strong> Cơm + Canh chua cá + Cá kho tộ + Rau muống luộc</p>
+                <p><strong>Tối:</strong> Cơm + Canh rau cải + Thịt kho tiêu + Rau cải xào</p>
+              </div>
+              <div className="bg-amber-50 rounded-lg p-3 border border-amber-200 text-xs text-gray-700 mt-2">
+                <p className="mb-2"><strong>Ngày 2:</strong></p>
+                <p className="mb-1"><strong>Trưa:</strong> Cơm + Canh mướp + Tôm rang me + Đậu bắp luộc</p>
+                <p><strong>Tối:</strong> Cơm + Canh rau lang + Đậu phụ sốt cà chua + Rau lang luộc</p>
+              </div>
+              <div className="bg-amber-50 rounded-lg p-3 border border-amber-200 text-xs text-gray-700 mt-2">
+                <p className="mb-2"><strong>Ngày 3:</strong></p>
+                <p className="mb-1"><strong>Trưa:</strong> Cơm + Canh chua tôm + Cá hấp gừng + Rau cải xào</p>
+                <p><strong>Tối:</strong> Cơm + Canh bầu + Thịt heo luộc + Rau muống xào</p>
+              </div>
+            </div>
           </div>
         </Card>
       </section>
@@ -273,10 +330,16 @@ export default function MealPlanningPage() {
               Hiểu về tinh bột trong bữa ăn
             </p>
           </Card>
-          <Card href="/knowledge/protein-co-ban-trong-lam-sang">
-            <h3 className="heading-5 mb-2">Protein cơ bản</h3>
+          <Card href="/knowledge/protein-sources-needs">
+            <h3 className="heading-5 mb-2">Protein: Nguồn và Nhu cầu</h3>
             <p className="text-sm text-gray-600">
               Hiểu về đạm trong bữa ăn
+            </p>
+          </Card>
+          <Card href="/knowledge/vietnamese-family-meals">
+            <h3 className="heading-5 mb-2">Bữa Ăn Gia đình Việt Nam</h3>
+            <p className="text-sm text-gray-600">
+              Cấu trúc bữa ăn Việt Nam và cách cân bằng dinh dưỡng
             </p>
           </Card>
           <Card href="/knowledge/dietary-fiber">

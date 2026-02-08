@@ -68,49 +68,95 @@ export default function HydrationPage() {
 
       {/* Why Water Matters */}
       <section className="space-y-4">
-        <h2 className="heading-2">Tại sao Nước Quan trọng?</h2>
+        <h2 className="heading-2">Nước Quan trọng thế nào?</h2>
         <div className="space-y-4">
           <p className="text-body">
-            Nước tham gia vào hầu hết các chức năng của cơ thể:
+            <strong>Nước chiếm 60-70% cơ thể</strong>, cần cho:
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Card>
-              <h3 className="heading-5 mb-2">Chức năng cơ thể</h3>
-              <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Vận chuyển chất dinh dưỡng</li>
-                <li>• Loại bỏ chất thải</li>
-                <li>• Điều hòa thân nhiệt</li>
-                <li>• Bôi trơn khớp</li>
-                <li>• Bảo vệ các cơ quan</li>
-              </ul>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card className="border-blue-200 bg-blue-50/30">
+              <h3 className="heading-5 mb-2 text-center">🩺 Tuần hoàn</h3>
+              <p className="text-sm text-gray-700 text-center">Vận chuyển chất dinh dưỡng và oxy đến tế bào</p>
             </Card>
-            <Card>
-              <h3 className="heading-5 mb-2">Sức khỏe</h3>
-              <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Duy trì huyết áp</li>
-                <li>• Hỗ trợ tiêu hóa</li>
-                <li>• Giữ da khỏe mạnh</li>
-                <li>• Hỗ trợ chức năng thận</li>
-                <li>• Ngăn ngừa táo bón</li>
-              </ul>
+            <Card className="border-green-200 bg-green-50/30">
+              <h3 className="heading-5 mb-2 text-center">🌡️ Điều hòa nhiệt</h3>
+              <p className="text-sm text-gray-700 text-center">Giữ nhiệt độ cơ thể ổn định</p>
+            </Card>
+            <Card className="border-amber-200 bg-amber-50/30">
+              <h3 className="heading-5 mb-2 text-center">🧹 Thải độc</h3>
+              <p className="text-sm text-gray-700 text-center">Loại bỏ chất thải qua thận, da</p>
             </Card>
           </div>
 
           <div className="rounded-lg border border-red-200 bg-red-50 p-4">
             <p className="text-sm text-red-900">
-              <strong>Thiếu nước nghiêm trọng:</strong> Cơ thể có thể sống nhiều tuần không có thức ăn, 
+              <strong>👉 Thiếu nước → cơ thể hoạt động kém.</strong>
+            </p>
+            <p className="text-sm text-red-900 mt-2">
+              Cơ thể có thể sống nhiều tuần không có thức ăn, 
               nhưng chỉ vài ngày không có nước. Thiếu nước nghiêm trọng có thể đe dọa tính mạng.
             </p>
           </div>
+
+          <Card>
+            <h3 className="heading-5 mb-2">Các chức năng khác của nước:</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Bôi trơn khớp</li>
+                <li>• Bảo vệ các cơ quan</li>
+                <li>• Hỗ trợ tiêu hóa</li>
+              </ul>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• Duy trì huyết áp</li>
+                <li>• Giữ da khỏe mạnh</li>
+                <li>• Ngăn ngừa táo bón</li>
+              </ul>
+            </div>
+          </Card>
         </div>
       </section>
 
       {/* How Much Water */}
       <section className="space-y-4">
-        <h2 className="heading-2">Nên Uống Bao nhiêu Nước?</h2>
+        <h2 className="heading-2">Uống Bao nhiêu Nước là Đủ?</h2>
         <div className="space-y-4">
+          <Card className="border-blue-200 bg-blue-50/30">
+            <h3 className="heading-4 mb-3">Không có con số cố định cho mọi người</h3>
+            <p className="text-body mb-3">
+              Lượng nước cần thiết <strong>phụ thuộc vào:</strong>
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                  <span><strong>Cân nặng</strong> - người nặng cần nhiều nước hơn</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                  <span><strong>Thời tiết</strong> - nóng cần nhiều nước hơn</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                  <span><strong>Hoạt động</strong> - vận động nhiều cần nhiều nước hơn</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                  <span><strong>Bệnh lý</strong> - tim, thận cần điều chỉnh</span>
+                </li>
+              </ul>
+            </div>
+          </Card>
+
+          <Callout variant="info" title="👉 Nguyên tắc đơn giản">
+            <p className="text-body-sm">
+              <strong>Nước tiểu vàng nhạt là dấu hiệu tốt.</strong> 
+              Nếu nước tiểu vàng đậm → cần uống thêm nước. 
+              Nếu nước tiểu trong suốt → có thể uống đủ hoặc hơi nhiều.
+            </p>
+          </Callout>
+
           <Card>
-            <h3 className="heading-4 mb-3">Người khỏe mạnh</h3>
+            <h3 className="heading-4 mb-3">Hướng dẫn chung cho người khỏe mạnh</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
                 <p className="text-2xl font-bold text-blue-600 mb-1">1.5-2 lít/ngày</p>
@@ -237,13 +283,13 @@ export default function HydrationPage() {
             <h3 className="heading-4 text-red-900 mb-3">Dấu hiệu Thiếu Nước</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Dấu hiệu sớm:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Dấu hiệu thường gặp:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
-                  <li>• Khô miệng, khát nước</li>
-                  <li>• Mệt mỏi, yếu sức</li>
-                  <li>• Nước tiểu sẫm màu, ít</li>
-                  <li>• Đau đầu nhẹ</li>
-                  <li>• Táo bón</li>
+                  <li>• <strong>Khát</strong> - cảm giác khát nước</li>
+                  <li>• <strong>Nước tiểu sẫm màu</strong> - vàng đậm thay vì vàng nhạt</li>
+                  <li>• <strong>Mệt mỏi</strong> - thiếu năng lượng</li>
+                  <li>• <strong>Táo bón</strong> - phân khô, khó đi ngoài</li>
+                  <li>• Khô miệng</li>
                 </ul>
               </div>
               <div>
@@ -379,6 +425,111 @@ export default function HydrationPage() {
             variant="info"
           />
         </div>
+      </section>
+
+      {/* Vietnamese Water Sources Table */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Bảng Nguồn Nước trong Đời sống</h2>
+        <Callout variant="info" title="Lưu ý">
+          <p className="text-sm">
+            Bảng dưới đây giúp bạn hiểu loại nước nào được tính vào tổng lượng nước hàng ngày.
+          </p>
+        </Callout>
+
+        <div className="overflow-x-auto">
+          <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
+            <thead className="bg-blue-100">
+              <tr>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Nguồn</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Có tính là nước không?</th>
+                <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-neutral-200">
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Nước lọc</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Có</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Nên ưu tiên, tốt nhất</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Canh, súp</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Có</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Tính vào tổng lượng nước hàng ngày</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trà nhạt</strong> (không đường)</td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Có</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Không đường, tốt cho sức khỏe</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cà phê</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Một phần</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Không thay thế nước, có caffeine</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Nước ngọt</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Không nên</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Có đường, không tốt cho sức khỏe</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trà sữa</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Không nên</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Nhiều đường, nhiều calo</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Nước ép trái cây</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Hạn chế</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Nhiều đường, nên ăn trái cây nguyên quả</td>
+              </tr>
+              <tr className="bg-neutral-50">
+                <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trái cây, rau củ</strong></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Có</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700">Chứa nhiều nước, tốt cho sức khỏe</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Special Notes */}
+      <section className="space-y-4">
+        <h2 className="heading-2">Lưu ý Đặc biệt</h2>
+        <Card className="border-amber-200 bg-amber-50/30">
+          <div className="space-y-3">
+            <div className="flex items-start gap-2">
+              <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <p className="text-sm text-gray-700">
+                <strong>Người bệnh tim, thận → hỏi ý kiến bác sĩ</strong> - 
+                một số bệnh cần hạn chế nước, không phải tăng nước
+              </p>
+            </div>
+            <div className="flex items-start gap-2">
+              <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <p className="text-sm text-gray-700">
+                <strong>Không uống dồn nhiều nước một lúc</strong> - 
+                uống từng ngụm nhỏ, đều đặn trong ngày
+              </p>
+            </div>
+            <div className="flex items-start gap-2">
+              <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <p className="text-sm text-gray-700">
+                <strong>Chia đều trong ngày</strong> - 
+                không đợi đến khi khát mới uống
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="heading-4 mb-3">Cách Uống Nước Đúng</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li>• <strong>Uống đều đặn:</strong> Chia đều trong ngày, không uống dồn</li>
+            <li>• <strong>Uống trước khi khát:</strong> Khát là dấu hiệu cơ thể đã thiếu nước</li>
+            <li>• <strong>Uống trong bữa ăn:</strong> Uống canh, súp cũng tính vào tổng nước</li>
+            <li>• <strong>Uống sau vận động:</strong> Bù nước sau khi đổ mồ hôi</li>
+            <li>• <strong>Kiểm tra nước tiểu:</strong> Màu vàng nhạt = đủ nước</li>
+          </ul>
+        </Card>
       </section>
 
       {/* What Counts as Water */}

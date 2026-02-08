@@ -141,6 +141,9 @@ export default function PortionSizesPage() {
                 { food: "Bánh mì", portion: "1 lát", visual: "Bằng lòng bàn tay", calories: "80 calo" },
                 { food: "Khoai tây", portion: "1 củ vừa", visual: "Bằng nắm tay", calories: "150 calo" },
                 { food: "Mì ống (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "200 calo" },
+                { food: "Bún (Việt Nam)", portion: "1 tô", visual: "Bằng nắm tay", calories: "~110 calo" },
+                { food: "Phở (bánh phở)", portion: "1 tô", visual: "Bằng nắm tay", calories: "~100 calo" },
+                { food: "Bánh cuốn (Việt Nam)", portion: "1 đĩa", visual: "Bằng nắm tay", calories: "~120 calo" },
               ]}
             />
           </Card>
@@ -153,6 +156,9 @@ export default function PortionSizesPage() {
                 { food: "Cà rốt, cà chua", portion: "100g", visual: "Bằng 1-2 bàn tay", calories: "30-40 calo" },
                 { food: "Táo", portion: "1 quả vừa", visual: "Bằng nắm tay", calories: "80 calo" },
                 { food: "Chuối", portion: "1 quả vừa", visual: "Bằng nắm tay", calories: "100 calo" },
+                { food: "Ổi (Việt Nam)", portion: "1 quả vừa", visual: "Bằng nắm tay", calories: "~60 calo" },
+                { food: "Xoài (Việt Nam)", portion: "1 quả nhỏ", visual: "Bằng nắm tay", calories: "~100 calo" },
+                { food: "Thanh long (Việt Nam)", portion: "1 quả nhỏ", visual: "Bằng nắm tay", calories: "~60 calo" },
               ]}
             />
           </Card>
@@ -175,6 +181,18 @@ export default function PortionSizesPage() {
               good: "1 lòng bàn tay cá + 1 nắm tay khoai tây + 2 bàn tay rau = ~400 calo",
               bad: "2 lòng bàn tay cá + 2 nắm tay khoai tây + ít rau = ~750 calo",
               note: "Chú ý đến tổng khẩu phần, không chỉ một loại thực phẩm"
+            },
+            {
+              label: "Bữa ăn Việt Nam (Phở)",
+              good: "1 tô phở với ít bánh phở + nhiều rau sống + thịt nạc = ~400 calo",
+              bad: "1 tô phở lớn với nhiều bánh phở + ít rau + nhiều thịt mỡ = ~700 calo",
+              note: "Có thể điều chỉnh khẩu phần phở bằng cách yêu cầu ít bánh phở, nhiều rau"
+            },
+            {
+              label: "Bữa ăn Việt Nam (Bún)",
+              good: "1 tô bún với ít bún + nhiều rau + tôm/cá nạc = ~350 calo",
+              bad: "1 tô bún lớn với nhiều bún + ít rau + nhiều dầu mỡ = ~600 calo",
+              note: "Bún có thể là bữa ăn lành mạnh nếu có đủ rau và protein nạc"
             },
           ]}
         />

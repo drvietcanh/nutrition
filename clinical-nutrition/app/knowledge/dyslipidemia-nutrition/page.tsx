@@ -42,15 +42,34 @@ export default function DyslipidemiaNutritionPage() {
             Dinh dưỡng trong Rối loạn Lipid máu: Hướng dẫn Giáo dục
           </h1>
         </div>
-        <p className="text-body-lg">
-          Rối loạn lipid máu (tăng cholesterol, triglycerides) là yếu tố nguy cơ quan trọng của bệnh tim mạch.
-          Dinh dưỡng đóng vai trò trung tâm trong quản lý lipid máu, cùng với thuốc và lối sống. Trang này
-          cung cấp hướng dẫn giáo dục về các nguyên tắc dinh dưỡng dựa trên bằng chứng.
-        </p>
+        <div className="space-y-4">
+          <p className="text-body-lg">
+            Rối loạn lipid máu là tình trạng mỡ máu cao hoặc mất cân bằng, thường gặp nhất là:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body">
+            <li>Cholesterol xấu (LDL) cao</li>
+            <li>Triglycerides cao</li>
+            <li>Cholesterol tốt (HDL) thấp</li>
+          </ul>
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <p className="text-sm text-blue-900 mb-2">
+              <strong>👉 Đây là yếu tố nguy cơ quan trọng của bệnh tim mạch, đột quỵ.</strong>
+            </p>
+            <p className="text-sm text-blue-900">
+              Dinh dưỡng đóng vai trò trung tâm trong kiểm soát mỡ máu, bên cạnh thuốc và vận động.
+            </p>
+          </div>
+        </div>
         <Callout variant="info" title="Mục đích Giáo dục">
-          <p className="text-body-sm">
-            Trang này được thiết kế cho <strong>mục đích giáo dục</strong>, giúp các bác sĩ, điều dưỡng,
-            và sinh viên y khoa hiểu các nguyên tắc dinh dưỡng trong quản lý rối loạn lipid máu.
+          <p className="text-body-sm mb-2">
+            Nội dung này nhằm:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm">
+            <li>Giúp bác sĩ, điều dưỡng, sinh viên y khoa và người bệnh hiểu các nguyên tắc dinh dưỡng trong rối loạn lipid máu</li>
+            <li>Hỗ trợ thay đổi lối sống một cách đúng – bền vững</li>
+          </ul>
+          <p className="text-body-sm mt-3 font-semibold text-red-600">
+            ⚠️ Lưu ý: Thông tin mang tính giáo dục, không thay thế đánh giá và chỉ định cá nhân của bác sĩ.
           </p>
         </Callout>
       </header>
@@ -59,15 +78,24 @@ export default function DyslipidemiaNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Quan trọng?
+            Vì sao Dinh dưỡng Quan trọng trong Rối loạn Lipid máu?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
           <p>
-            Chế độ ăn ảnh hưởng trực tiếp đến lipid máu. Thay đổi chế độ ăn có thể giúp giảm LDL cholesterol,
-            tăng HDL cholesterol, và giảm triglycerides.
+            Những gì bạn ăn ảnh hưởng trực tiếp đến mỡ máu:
           </p>
+          <ul className="list-disc space-y-2 pl-6 text-body">
+            <li>Một số loại chất béo làm LDL tăng</li>
+            <li>Một số loại thực phẩm giúp giảm LDL, giảm triglycerides</li>
+            <li>Ăn uống không hợp lý có thể làm thuốc kém hiệu quả</li>
+          </ul>
+          <div className="rounded-lg border border-green-200 bg-green-50 p-4">
+            <p className="text-sm text-green-900">
+              <strong>👉 Chỉ cần điều chỉnh ăn uống đúng cách, nhiều người đã cải thiện mỡ máu rõ rệt.</strong>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -81,79 +109,132 @@ export default function DyslipidemiaNutritionPage() {
         </div>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="Chất béo" />
+          <CardHeader icon={CheckCircle} title="🧈 Chất béo – Hiểu đúng để Chọn đúng" />
           <CardContent>
+            <p className="text-body mb-4">
+              Không phải chất béo nào cũng xấu. <strong>Loại chất béo quan trọng hơn số lượng.</strong>
+            </p>
+            <h4 className="heading-4 mb-3">Các loại chất béo và ảnh hưởng</h4>
             {/* Fat Types Table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-                <thead className="bg-neutral-50">
+                <thead className="bg-green-100">
                   <tr>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Loại chất béo</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khuyến nghị</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Nguồn</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ảnh hưởng Lipid</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Nên hay hạn chế</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thường có trong</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ảnh hưởng mỡ máu</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-neutral-200">
                   <tr>
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bão hòa</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">&lt; 7% tổng năng lượng</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Thịt đỏ, bơ, phô mai, thực phẩm chế biến</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chất béo bão hòa</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Hạn chế</span></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Thịt đỏ, mỡ heo, bơ, phô mai</td>
                     <td className="px-4 py-3 text-sm text-neutral-700">Tăng LDL</td>
                   </tr>
                   <tr className="bg-neutral-50">
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trans</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Tránh hoàn toàn</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Thực phẩm chế biến, đồ chiên, bánh ngọt</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chất béo trans</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Tránh</span></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Đồ chiên, bánh ngọt, đồ chế biến</td>
                     <td className="px-4 py-3 text-sm text-neutral-700">Tăng LDL, giảm HDL</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Không bão hòa đơn</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Thay thế chất béo bão hòa</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Dầu ô liu, bơ, các loại hạt</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chất béo không bão hòa đơn</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nên dùng</span></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Dầu ô liu, bơ, hạt</td>
                     <td className="px-4 py-3 text-sm text-neutral-700">Giảm LDL, tăng HDL</td>
                   </tr>
                   <tr className="bg-neutral-50">
-                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Không bão hòa đa</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Thay thế chất béo bão hòa</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Cá béo, hạt lanh, quả óc chó</td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Giảm LDL, giảm triglycerides</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chất béo không bão hòa đa</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nên dùng</span></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Cá béo, hạt lanh, óc chó</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Giảm LDL</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 text-sm text-neutral-700"><strong>Omega-3</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">Cá béo 2 lần/tuần</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nên bổ sung</span></td>
                     <td className="px-4 py-3 text-sm text-neutral-700">Cá hồi, cá thu, cá mòi</td>
                     <td className="px-4 py-3 text-sm text-neutral-700">Giảm triglycerides</td>
                   </tr>
                 </tbody>
               </table>
             </div>
+            <div className="bg-green-50 rounded-lg p-3 border border-green-200 mt-4">
+              <p className="text-sm font-semibold text-green-900 mb-1">📌 Mẹo nhớ nhanh:</p>
+              <p className="text-sm text-green-900">
+                Bớt mỡ động vật – tăng dầu thực vật và cá.
+              </p>
+            </div>
           </CardContent>
         </Card>
 
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Cholesterol trong Thực phẩm</h3>
-          <p className="text-body-sm">
-            Cholesterol trong thực phẩm (ví dụ: trứng, tôm) có ít ảnh hưởng đến cholesterol máu hơn so với
-            chất béo bão hòa. Hầu hết hướng dẫn không còn khuyến nghị hạn chế nghiêm ngặt cholesterol trong
-            thực phẩm, nhưng vẫn nên ăn có chừng mực.
-          </p>
+          <h3 className="heading-3">🥚 Cholesterol trong Thực phẩm – Đừng Quá lo</h3>
+          <div className="space-y-3 text-body">
+            <p>
+              Cholesterol trong thức ăn (trứng, tôm…) ảnh hưởng ít hơn so với chất béo bão hòa
+            </p>
+            <p>
+              Không cần kiêng tuyệt đối trứng hay tôm
+            </p>
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-3">
+              <p className="text-sm text-blue-900">
+                <strong>👉 Nguyên tắc:</strong> Ăn vừa phải – không ăn quá thường xuyên – chú ý cách chế biến.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Chất xơ</h3>
-          <p className="text-body-sm mb-3">
-            Chất xơ hòa tan có thể giúp giảm LDL cholesterol. Nguồn: yến mạch, lúa mạch, đậu, trái cây, rau quả.
-            Khuyến nghị: 25-30g chất xơ/ngày.
-          </p>
+          <h3 className="heading-3">🥬 Chất xơ – "Trợ thủ" Giảm LDL</h3>
+          <div className="space-y-3 text-body">
+            <ul className="list-disc space-y-1 pl-6 text-body-sm">
+              <li>Chất xơ hòa tan giúp giảm LDL cholesterol</li>
+              <li>Còn giúp no lâu, tốt cho tiêu hóa</li>
+            </ul>
+            <div>
+              <p className="text-sm font-semibold text-gray-900 mb-2">Nguồn chất xơ tốt:</p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                <li>Yến mạch</li>
+                <li>Đậu, đậu lăng</li>
+                <li>Rau xanh</li>
+                <li>Trái cây</li>
+              </ul>
+            </div>
+            <div className="rounded-lg border border-green-200 bg-green-50 p-3 mt-3">
+              <p className="text-sm text-green-900">
+                <strong>👉 Khuyến nghị:</strong> 25–30 g chất xơ/ngày
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Carbohydrate & Triglycerides</h3>
-          <p className="text-body-sm">
-            Carbohydrate tinh chế và đường có thể làm tăng triglycerides. Hạn chế đường bổ sung và carbohydrate
-            tinh chế, ưu tiên ngũ cốc nguyên hạt.
-          </p>
+          <h3 className="heading-3">🍚 Tinh bột & Đường – Liên quan Chặt chẽ với Triglycerides</h3>
+          <div className="space-y-3 text-body">
+            <p>
+              Ăn nhiều đường và tinh bột tinh chế → triglycerides tăng
+            </p>
+            <div>
+              <p className="text-sm font-semibold text-gray-900 mb-2">Đặc biệt là:</p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
+                <li>Nước ngọt</li>
+                <li>Trà sữa</li>
+                <li>Bánh kẹo</li>
+                <li>Cơm trắng, bún, bánh mì trắng ăn nhiều</li>
+              </ul>
+            </div>
+            <div className="rounded-lg border border-blue-200 bg-blue-50 p-3 mt-3">
+              <p className="text-sm text-blue-900 mb-2">
+                <strong>👉 Nên:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
+                <li>Giảm đường thêm vào</li>
+                <li>Ưu tiên ngũ cốc nguyên hạt</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -161,37 +242,38 @@ export default function DyslipidemiaNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="adjustments-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Theo Loại Rối loạn
+            Điều chỉnh Theo Từng Loại Rối loạn Lipid
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
           <div className="space-y-4 rounded-lg border border-blue-200 bg-blue-50/50 p-5">
-            <h3 className="heading-4">Tăng LDL Cholesterol</h3>
+            <h3 className="heading-4">🔹 LDL cholesterol cao</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>Hạn chế chất béo bão hòa và trans</li>
+              <li>Giảm mỡ động vật</li>
+              <li>Tránh chất béo trans</li>
               <li>Tăng chất xơ hòa tan</li>
-              <li>Chế độ ăn Địa Trung Hải hoặc DASH diet</li>
+              <li>Áp dụng chế độ ăn Địa Trung Hải hoặc DASH</li>
             </ul>
           </div>
 
           <div className="space-y-4 rounded-lg border border-green-200 bg-green-50/50 p-5">
-            <h3 className="heading-4">Tăng Triglycerides</h3>
+            <h3 className="heading-4">🔹 Triglycerides cao</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>Hạn chế đường bổ sung và carbohydrate tinh chế</li>
-              <li>Hạn chế alcohol</li>
-              <li>Tăng omega-3 (cá béo)</li>
-              <li>Quản lý cân nặng nếu thừa cân</li>
+              <li>Giảm đường và tinh bột tinh chế</li>
+              <li>Hạn chế rượu bia</li>
+              <li>Tăng cá béo (omega-3)</li>
+              <li>Giảm cân nếu thừa cân</li>
             </ul>
           </div>
 
           <div className="space-y-4 rounded-lg border border-amber-200 bg-amber-50/50 p-5">
-            <h3 className="heading-4">HDL Thấp</h3>
+            <h3 className="heading-4">🔹 HDL thấp</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
-              <li>Tăng hoạt động thể chất</li>
+              <li>Tăng vận động thể chất</li>
               <li>Bỏ thuốc lá</li>
-              <li>Chất béo không bão hòa có thể giúp tăng HDL nhẹ</li>
-              <li>Hạn chế carbohydrate tinh chế</li>
+              <li>Dùng chất béo tốt (dầu thực vật, cá)</li>
+              <li>Tránh ăn quá nhiều tinh bột tinh chế</li>
             </ul>
           </div>
         </div>
@@ -201,18 +283,27 @@ export default function DyslipidemiaNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="interactions-heading" className="heading-2 whitespace-nowrap">
-            Tương tác Dinh dưỡng-Thuốc
+            Tương tác Dinh dưỡng – Thuốc
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-            <h3 className="heading-4">Statins</h3>
-            <p className="text-body-sm">
-              Một số statins có thể tương tác với nước bưởi (grapefruit juice). Nên tránh hoặc hạn chế
-              nước bưởi khi dùng statins. Kiểm tra hướng dẫn thuốc cụ thể.
-            </p>
-          </div>
+          <Card className="border-amber-200 bg-amber-50/30">
+            <h3 className="heading-4 mb-3">Statins</h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• Một số statins không nên dùng chung với nước bưởi</li>
+              <li>• Nước bưởi có thể làm tăng tác dụng phụ của thuốc</li>
+            </ul>
+            <div className="rounded-lg border border-amber-200 bg-white p-3 mt-3">
+              <p className="text-sm text-amber-900 mb-2">
+                <strong>👉 Khuyên bệnh nhân:</strong>
+              </p>
+              <ul className="list-disc space-y-1 pl-6 text-sm text-amber-900">
+                <li>Tránh hoặc hạn chế nước bưởi</li>
+                <li>Hỏi bác sĩ hoặc đọc kỹ hướng dẫn thuốc</li>
+              </ul>
+            </div>
+          </Card>
         </div>
       </section>
 
@@ -220,67 +311,50 @@ export default function DyslipidemiaNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="monitoring-heading" className="heading-2 whitespace-nowrap">
-            Theo dõi
+            Theo dõi & Đánh giá
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          <p>
-            Theo dõi đều đặn là quan trọng để đánh giá hiệu quả của can thiệp dinh dưỡng và điều chỉnh khi cần:
-          </p>
-          
           {/* Monitoring Parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
-              <thead className="bg-neutral-50">
+              <thead className="bg-blue-100">
                 <tr>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thông số</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tần suất</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Chỉ số</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Tần suất</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Mục tiêu</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-neutral-200">
                 <tr>
-                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>LDL Cholesterol</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 4-12 tuần (sau thay đổi), 6-12 tháng (ổn định)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 100 mg/dL (hoặc &lt; 70 nếu nguy cơ cao)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mục tiêu chính trong quản lý</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>LDL-C</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">4–12 tuần sau thay đổi, sau đó 6–12 tháng</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 100 mg/dL (&lt; 70 nếu nguy cơ cao)</td>
                 </tr>
                 <tr className="bg-neutral-50">
-                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>HDL Cholesterol</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Cùng với lipid profile</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">&gt; 40 mg/dL (nam), &gt; 50 mg/dL (nữ)</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">HDL cao hơn = tốt hơn</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>HDL-C</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Cùng lipid profile</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">&gt; 40 (nam), &gt; 50 (nữ)</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Triglycerides</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Cùng với lipid profile</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 150 mg/dL</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Quan trọng, đặc biệt nếu tăng cao</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Cùng lipid profile</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 150 mg/dL</td>
                 </tr>
                 <tr className="bg-neutral-50">
-                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Total Cholesterol</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Cùng với lipid profile</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">&lt; 200 mg/dL</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Ít quan trọng hơn LDL</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cholesterol toàn phần</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Cùng lipid profile</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt; 200 mg/dL</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cân nặng</strong></td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Mỗi lần khám</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">BMI 18.5-24.9</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Quan trọng, đặc biệt cho triglycerides</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">Mỗi lần khám</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700 text-center">BMI 18.5–24.9</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          
-          <Callout variant="info" title="Tần suất Đánh giá lại">
-            <p className="text-body-sm">
-              Lipid profile nên được đo mỗi 4-12 tuần sau khi bắt đầu thay đổi chế độ ăn hoặc thuốc, sau đó
-              mỗi 6-12 tháng nếu ổn định.
-            </p>
-          </Callout>
         </div>
       </section>
 
@@ -288,16 +362,19 @@ export default function DyslipidemiaNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy Lâm sàng
+            Những Sai lầm Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          <ul className="list-disc space-y-2 pl-6 text-body-sm">
-            <li>Chỉ tập trung vào cholesterol mà bỏ qua triglycerides</li>
-            <li>Không xem xét tương tác với thuốc (ví dụ: nước bưởi và statins)</li>
-            <li>Bỏ qua các yếu tố khác (cân nặng, hoạt động thể chất)</li>
-          </ul>
+          <Card className="border-red-200 bg-red-50/30">
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>• Chỉ quan tâm cholesterol mà bỏ qua triglycerides</li>
+              <li>• Kiêng mỡ cực đoan nhưng vẫn ăn nhiều đường</li>
+              <li>• Không chú ý tương tác thuốc (nước bưởi – statins)</li>
+              <li>• Bỏ qua vai trò của vận động và cân nặng</li>
+            </ul>
+          </Card>
         </div>
       </section>
 
@@ -328,11 +405,23 @@ export default function DyslipidemiaNutritionPage() {
       </section>
 
       <section aria-labelledby="safety-heading" className="space-y-4">
-        <h2 id="safety-heading" className="heading-3">Nhắc nhở An toàn</h2>
+        <h2 id="safety-heading" className="heading-3">⚠️ Nhắc nhở An toàn</h2>
         <Callout variant="error" title="Quan trọng">
+          <p className="text-body-sm mb-2">
+            Nội dung này chỉ mang tính giáo dục sức khỏe.
+          </p>
           <p className="text-body-sm">
-            Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Tất cả các khuyến nghị cần được
-            điều chỉnh dựa trên đánh giá lâm sàng toàn diện.
+            Mọi khuyến nghị cần được cá nhân hóa dựa trên:
+          </p>
+          <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
+            <li>Mức độ rối loạn lipid</li>
+            <li>Nguy cơ tim mạch</li>
+            <li>Thuốc đang dùng</li>
+            <li>Thói quen sinh hoạt và khả năng tuân thủ</li>
+          </ul>
+          <p className="text-body-sm mt-2">
+            Trang này không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân, 
+            và không được sử dụng để ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
           </p>
         </Callout>
       </section>
