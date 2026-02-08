@@ -197,7 +197,7 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Cân bằng</h2>
+        <h2 className="heading-2">Cách cân bằng</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

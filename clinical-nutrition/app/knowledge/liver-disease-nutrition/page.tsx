@@ -218,7 +218,7 @@ export default function LiverDiseaseNutritionPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="🔥 Năng lượng (Calories)" />
+          <CardHeader icon={CheckCircle} title="🔥 năng lượng (Calories)" />
           <CardContent>
             <p className="text-sm text-gray-700 mb-2">
               Người bệnh gan mạn cần đủ năng lượng để tránh sụt cân
@@ -520,7 +520,7 @@ export default function LiverDiseaseNutritionPage() {
         <h2 id="tools-heading" className="heading-3">Công cụ Liên quan</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu protein cao (1.2-1.5 g/kg) và năng lượng cho bệnh nhân bệnh gan,

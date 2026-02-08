@@ -270,7 +270,7 @@ export default function SmartShoppingVietnamPage() {
           <Card href="/knowledge/seasonal-foods-vietnam">
             <h3 className="heading-5 mb-2">Thực phẩm Theo Mùa</h3>
             <p className="text-sm text-gray-600">
-              Chi tiết về thực phẩm theo mùa ở Việt Nam
+              chi tiết về thực phẩm theo mùa ở Việt Nam
             </p>
           </Card>
           <Card href="/knowledge/nutrition-on-budget">

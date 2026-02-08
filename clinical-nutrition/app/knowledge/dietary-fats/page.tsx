@@ -10,7 +10,7 @@ import Link from "next/link";
 import { getRelatedArticles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
-  title: "Chất béo trong Chế độ Ăn: Hiểu các Loại và Ảnh hưởng Sức khỏe",
+  title: "Chất béo trong Chế độ ăn: Hiểu các loại và Ảnh hưởng sức khỏe",
   description:
     "Tìm hiểu về các loại chất béo trong chế độ ăn - chất béo bão hòa, không bão hòa, trans fat - và cách chúng ảnh hưởng đến sức khỏe tim mạch và dinh dưỡng lâm sàng.",
   keywords: [
@@ -31,7 +31,7 @@ export default function DietaryFatsPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chất béo trong Chế độ Ăn" },
+          { label: "Chất béo trong Chế độ ăn" },
         ]}
       />
 
@@ -39,7 +39,7 @@ export default function DietaryFatsPage() {
         <div className="flex items-center gap-3">
           <Heart className="w-8 h-8 text-red-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Chất béo trong Chế độ Ăn: Hiểu các Loại và Ảnh hưởng Sức khỏe
+            Chất béo trong Chế độ ăn: Hiểu các loại và Ảnh hưởng sức khỏe
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">
@@ -78,7 +78,7 @@ export default function DietaryFatsPage() {
               <strong>👉 Không có chất béo → cơ thể hoạt động kém.</strong>
             </p>
             <p className="text-sm text-blue-900 mt-2">
-              Chất béo không phải là "kẻ thù". Cơ thể chúng ta cần chất béo để hoạt động tốt.
+              Chất béo không phải là "kẻ thù". cơ thể chúng ta cần chất béo để hoạt động tốt.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ export default function DietaryFatsPage() {
 
       {/* Vietnamese Fat Sources Table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng Nguồn Chất béo Phổ biến ở Việt Nam</h2>
+        <h2 className="heading-2">Bảng nguồn Chất béo Phổ biến ở Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Bảng dưới đây giúp bạn chọn lựa chất béo phù hợp trong bữa ăn Việt Nam.
@@ -255,7 +255,7 @@ export default function DietaryFatsPage() {
 
       {/* Types of Fats */}
       <section className="space-y-6">
-        <h2 className="heading-2">Các Loại Chất béo</h2>
+        <h2 className="heading-2">Các loại Chất béo</h2>
 
         {/* Unsaturated Fats - Good */}
         <Card className="border-green-200 bg-green-50">
@@ -329,7 +329,7 @@ export default function DietaryFatsPage() {
           <div className="flex items-start gap-3 mb-4">
             <AlertTriangle className="w-6 h-6 text-yellow-600 mt-1 flex-shrink-0" aria-hidden="true" />
             <div className="flex-1">
-              <h3 className="heading-3 text-yellow-900 mb-2">Chất béo Bão hòa (Nên Hạn chế)</h3>
+              <h3 className="heading-3 text-yellow-900 mb-2">Chất béo bão hòa (Nên hạn chế)</h3>
               <p className="text-body text-yellow-900 mb-3">
                 Có thể làm tăng cholesterol xấu (LDL) và nguy cơ bệnh tim. 
                 Nên hạn chế, không quá 10% tổng năng lượng hàng ngày.
@@ -360,7 +360,7 @@ export default function DietaryFatsPage() {
           <div className="flex items-start gap-3 mb-4">
             <XCircle className="w-6 h-6 text-red-600 mt-1 flex-shrink-0" aria-hidden="true" />
             <div className="flex-1">
-              <h3 className="heading-3 text-red-900 mb-2">Trans Fat (Nên Tránh Hoàn toàn)</h3>
+              <h3 className="heading-3 text-red-900 mb-2">Trans Fat (Nên tránh Hoàn toàn)</h3>
               <p className="text-body text-red-900 mb-3">
                 Đây là loại chất béo xấu nhất. Làm tăng cholesterol xấu (LDL), 
                 giảm cholesterol tốt (HDL), và tăng nguy cơ bệnh tim, đột quỵ.
@@ -376,7 +376,7 @@ export default function DietaryFatsPage() {
                 để làm cho chúng cứng hơn và bảo quản lâu hơn.
               </p>
               <p className="text-sm text-gray-700">
-                <strong>Vấn đề:</strong> Cơ thể chúng ta không thể xử lý tốt trans fat, 
+                <strong>Vấn đề:</strong> cơ thể chúng ta không thể xử lý tốt trans fat, 
                 dẫn đến nhiều vấn đề sức khỏe.
               </p>
             </div>

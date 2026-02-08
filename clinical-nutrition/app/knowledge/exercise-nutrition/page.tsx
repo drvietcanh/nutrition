@@ -212,7 +212,7 @@ export default function ExerciseNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -244,7 +244,7 @@ export default function ExerciseNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

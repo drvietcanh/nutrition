@@ -135,7 +135,7 @@ export default function NutritionTravelPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <TipCard
           tips={[
             { type: 'tip', text: 'Nghiên cứu trước: Tìm nhà hàng lành mạnh ở điểm đến trước khi đi' },

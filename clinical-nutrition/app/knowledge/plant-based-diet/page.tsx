@@ -68,7 +68,7 @@ export default function PlantBasedDietPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Plant-based Diet là gì?</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Các Loại Chế độ Ăn Dựa trên Thực vật</h3>
+          <h3 className="heading-4 mb-3">Các loại Chế độ ăn Dựa trên Thực vật</h3>
           <div className="space-y-3 text-body-sm">
             <p>
               <strong>Plant-based (Linh hoạt):</strong> Ưu tiên thực vật, nhưng vẫn có thể ăn một ít thịt, cá, sữa
@@ -230,7 +230,7 @@ export default function PlantBasedDietPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -262,7 +262,7 @@ export default function PlantBasedDietPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -299,7 +299,7 @@ export default function PlantBasedDietPage() {
             </p>
           </Card>
           <Card href="/knowledge/vitamins-minerals/vitamin-b12-energy">
-            <h3 className="heading-5 mb-2">Vitamin B12 và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Vitamin B12 và năng lượng</h3>
             <p className="text-sm text-gray-600">
               Quan trọng cho người ăn chay/vegan
             </p>

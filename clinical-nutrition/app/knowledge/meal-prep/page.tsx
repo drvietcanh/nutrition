@@ -272,7 +272,7 @@ export default function MealPrepPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <TipCard
           tips={[
             { type: 'tip', text: 'Bắt đầu đơn giản: Chỉ chuẩn bị 2-3 món đầu tiên, sau đó mở rộng' },
@@ -287,7 +287,7 @@ export default function MealPrepPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -331,7 +331,7 @@ export default function MealPrepPage() {
             </p>
           </Card>
           <Card href="/knowledge/daily-practices/healthy-cooking-methods">
-            <h3 className="heading-5 mb-2">Phương pháp Nấu ăn Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Phương pháp Nấu ăn lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Cách nấu ăn phù hợp cho meal prep
             </p>

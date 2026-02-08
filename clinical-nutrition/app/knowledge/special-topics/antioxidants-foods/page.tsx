@@ -143,7 +143,7 @@ export default function AntioxidantsFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -175,7 +175,7 @@ export default function AntioxidantsFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -200,7 +200,7 @@ export default function AntioxidantsFoodsPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/healthy-cooking-methods">
-            <h3 className="heading-5 mb-2">Phương pháp Nấu ăn Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Phương pháp Nấu ăn lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Nấu đúng cách giúp giữ lại chất chống oxy hóa
             </p>

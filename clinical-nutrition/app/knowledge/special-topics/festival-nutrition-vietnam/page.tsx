@@ -76,7 +76,7 @@ export default function FestivalNutritionVietnamPage() {
               { nutrient: "Mứt", amount: "300", unit: "calo", note: "Nhiều đường" },
             ]}
           />
-          <ExampleBox variant="tip" title="Cách Ăn Tết Lành mạnh">
+          <ExampleBox variant="tip" title="Cách ăn Tết lành mạnh">
             <p className="text-sm mb-2">
               <strong>Tips:</strong>
             </p>
@@ -111,7 +111,7 @@ export default function FestivalNutritionVietnamPage() {
               </p>
             </div>
           </div>
-          <ExampleBox variant="tip" title="Cách Ăn Trung thu Lành mạnh">
+          <ExampleBox variant="tip" title="Cách ăn Trung thu lành mạnh">
             <p className="text-sm mb-2">
               <strong>Tips:</strong>
             </p>
@@ -152,7 +152,7 @@ export default function FestivalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -193,7 +193,7 @@ export default function FestivalNutritionVietnamPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/healthy-weight-management">
-            <h3 className="heading-5 mb-2">Quản lý Cân nặng Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Quản lý Cân nặng lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Cách quản lý cân nặng trong lễ hội
             </p>

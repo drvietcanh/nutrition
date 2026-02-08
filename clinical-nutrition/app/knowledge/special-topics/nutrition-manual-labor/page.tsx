@@ -61,13 +61,13 @@ export default function NutritionManualLaborPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nhu cầu Năng lượng</h2>
+        <h2 className="heading-2">Nhu cầu năng lượng</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Người lao động chân tay cần nhiều năng lượng hơn vì hoạt động thể chất nhiều.
           </p>
           <NutrientTable
-            title="Nhu cầu Năng lượng Theo Mức độ Lao động"
+            title="Nhu cầu năng lượng Theo Mức độ Lao động"
             rows={[
               { nutrient: "Lao động nhẹ (văn phòng)", amount: "2,000-2,200", unit: "calo/ngày", note: "Người bình thường" },
               { nutrient: "Lao động vừa (công nhân)", amount: "2,500-3,000", unit: "calo/ngày", note: "Tăng 25-50%" },
@@ -113,7 +113,7 @@ export default function NutritionManualLaborPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Bữa ăn cho Công nhân</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <ExampleBox variant="info" title="Bữa Sáng">
+          <ExampleBox variant="info" title="Bữa sáng">
             <p className="text-sm mb-2">
               <strong>Thực đơn:</strong>
             </p>
@@ -127,7 +127,7 @@ export default function NutritionManualLaborPage() {
             </p>
           </ExampleBox>
 
-          <ExampleBox variant="info" title="Bữa Trưa">
+          <ExampleBox variant="info" title="Bữa trưa">
             <p className="text-sm mb-2">
               <strong>Thực đơn:</strong>
             </p>
@@ -142,7 +142,7 @@ export default function NutritionManualLaborPage() {
             </p>
           </ExampleBox>
 
-          <ExampleBox variant="info" title="Bữa Tối">
+          <ExampleBox variant="info" title="Bữa tối">
             <p className="text-sm mb-2">
               <strong>Thực đơn:</strong>
             </p>
@@ -204,7 +204,7 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -239,7 +239,7 @@ export default function NutritionManualLaborPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/calories-energy">
-            <h3 className="heading-5 mb-2">Hiểu về Calo và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Calo và năng lượng</h3>
             <p className="text-sm text-gray-600">
               Nhu cầu năng lượng cho người lao động
             </p>

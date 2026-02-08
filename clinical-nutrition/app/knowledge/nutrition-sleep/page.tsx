@@ -93,7 +93,7 @@ export default function NutritionSleepPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Nên Tránh Trước Khi Ngủ</h2>
+        <h2 className="heading-2">Thực phẩm Nên tránh Trước Khi Ngủ</h2>
         <Card>
           <h3 className="heading-4 mb-3">Thực phẩm Ảnh hưởng Giấc ngủ</h3>
           <div className="space-y-3">
@@ -127,7 +127,7 @@ export default function NutritionSleepPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <TipCard
           tips={[
             { type: 'tip', text: 'Bữa tối nhẹ: Ăn bữa tối nhẹ, cân bằng 2-3 giờ trước khi ngủ' },
@@ -144,7 +144,7 @@ export default function NutritionSleepPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Bữa Tối và Snack Trước Ngủ</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Tối Lành mạnh (2-3 giờ trước ngủ)</h3>
+          <h3 className="heading-4 mb-3">Bữa Tối lành mạnh (2-3 giờ trước ngủ)</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>• Cá hồi nướng + rau xanh + khoai tây (nhẹ, cân bằng)</p>
             <p>• Thịt gà nạc + rau luộc + cơm (protein + carb + rau)</p>

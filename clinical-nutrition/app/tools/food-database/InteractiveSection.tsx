@@ -173,7 +173,7 @@ export function InteractiveSection() {
 
         {/* Selected Food Details */}
         <div className="space-y-4">
-          <h2 className="heading-3">Chi tiết Dinh dưỡng</h2>
+          <h2 className="heading-3">chi tiết Dinh dưỡng</h2>
           {selectedFood ? (
             <Card>
               <div className="space-y-6">
@@ -252,7 +252,7 @@ export function InteractiveSection() {
                     </h4>
                     <div className="space-y-2">
                       <div className="flex justify-between py-2 border-b border-gray-200">
-                        <span className="text-gray-700">Năng lượng</span>
+                        <span className="text-gray-700">năng lượng</span>
                         <span className="font-semibold">{nutrition.calories.toFixed(0)} cal</span>
                       </div>
                       <div className="flex justify-between py-2 border-b border-gray-200">

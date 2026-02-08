@@ -128,7 +128,7 @@ export default function CancerNutritionPage() {
         </div>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="🔥 Năng lượng (Calories)" />
+          <CardHeader icon={CheckCircle} title="🔥 năng lượng (Calories)" />
           <CardContent>
             <div className="space-y-4">
               <div>
@@ -355,7 +355,7 @@ export default function CancerNutritionPage() {
                       </tr>
                       <tr className="bg-neutral-50">
                         <td className="px-4 py-2 text-xs text-neutral-700">Khoai lang</td>
-                        <td className="px-4 py-2 text-xs text-neutral-700">Năng lượng + xơ nhẹ</td>
+                        <td className="px-4 py-2 text-xs text-neutral-700">năng lượng + xơ nhẹ</td>
                       </tr>
                       <tr>
                         <td className="px-4 py-2 text-xs text-neutral-700">Bánh mì mềm</td>
@@ -489,7 +489,7 @@ export default function CancerNutritionPage() {
                     <tbody className="bg-white divide-y divide-neutral-200">
                       <tr>
                         <td className="px-4 py-2 text-xs text-neutral-700">Dầu đậu nành, dầu mè</td>
-                        <td className="px-4 py-2 text-xs text-neutral-700">Năng lượng cao</td>
+                        <td className="px-4 py-2 text-xs text-neutral-700">năng lượng cao</td>
                       </tr>
                       <tr className="bg-neutral-50">
                         <td className="px-4 py-2 text-xs text-neutral-700">Dầu ô liu</td>
@@ -635,7 +635,7 @@ export default function CancerNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="myths-heading" className="heading-2 whitespace-nowrap">
-            🚫 Những Hiểu lầm Phổ biến (Cần ghi rõ)
+            🚫 Những Hiểu lầm phổ biến (Cần ghi rõ)
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -717,7 +717,7 @@ export default function CancerNutritionPage() {
             <thead className="bg-green-100">
               <tr>
                 <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Giai đoạn</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Năng lượng</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">năng lượng</th>
                 <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Protein</th>
                 <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu</th>
               </tr>
@@ -1048,7 +1048,7 @@ export default function CancerNutritionPage() {
         <h2 id="tools-heading" className="heading-3">Công cụ Liên quan</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu năng lượng cao (30-40 kcal/kg) và protein (1.5-2.0 g/kg) cho bệnh nhân ung thư,
@@ -1066,7 +1066,7 @@ export default function CancerNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/bmi-body-composition">
-            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
             <CardContent>
               <p className="text-body-sm">
                 Đánh giá BMI và thành phần cơ thể, quan trọng để theo dõi tình trạng dinh dưỡng và phát hiện suy dinh dưỡng.

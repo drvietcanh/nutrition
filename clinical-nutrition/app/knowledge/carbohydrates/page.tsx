@@ -443,7 +443,7 @@ export default function CarbohydratesPage() {
 
       {/* Vietnamese Sugar Sources Table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng Nguồn Đường Phổ biến ở Việt Nam</h2>
+        <h2 className="heading-2">Bảng nguồn Đường Phổ biến ở Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Bảng dưới đây giúp bạn nhận biết các nguồn đường phổ biến và lượng đường tương đối.
@@ -734,7 +734,7 @@ export default function CarbohydratesPage() {
         </h2>
         <div className="space-y-4">
           <ComparisonCard
-            title="So sánh: Carbohydrate Tốt vs Nên Hạn chế"
+            title="So sánh: Carbohydrate Tốt vs Nên hạn chế"
             items={[
               {
                 label: "Ngũ cốc",
@@ -852,7 +852,7 @@ export default function CarbohydratesPage() {
 
       {/* Common Misconceptions */}
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến về Carbohydrate</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến về Carbohydrate</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-5 mb-2">"Carbohydrate làm tăng cân"</h3>
@@ -912,7 +912,7 @@ export default function CarbohydratesPage() {
             </p>
           </Card>
           <Card href="/knowledge/calories-energy">
-            <h3 className="heading-5 mb-2">Hiểu về Calo và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Calo và năng lượng</h3>
             <p className="text-sm text-gray-600">
               Carbohydrate cung cấp năng lượng
             </p>

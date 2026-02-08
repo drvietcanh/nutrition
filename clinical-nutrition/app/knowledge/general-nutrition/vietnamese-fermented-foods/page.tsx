@@ -177,7 +177,7 @@ export default function VietnameseFermentedFoodsPage() {
             "Chao - có probiotics, ít natri",
             "Nước mắm pha loãng - giảm natri",
           ]}
-          badTitle="Nên Hạn chế (Nhiều Natri)"
+          badTitle="Nên hạn chế (Nhiều Natri)"
           badItems={[
             "Nước mắm nguyên chất - rất nhiều natri",
             "Mắm tôm, mắm ruốc - rất nhiều natri",

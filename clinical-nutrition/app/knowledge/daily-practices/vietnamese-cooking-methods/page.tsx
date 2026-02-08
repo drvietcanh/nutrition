@@ -8,7 +8,7 @@ import { UtensilsCrossed, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cách Nấu Ăn Lành mạnh Kiểu Việt Nam",
+  title: "Cách Nấu Ăn lành mạnh Kiểu Việt Nam",
   description:
     "Hướng dẫn các phương pháp nấu ăn truyền thống Việt Nam lành mạnh - luộc, hấp, kho, nướng, xào. Cách giữ dinh dưỡng và giảm dầu mỡ, muối.",
   keywords: [
@@ -30,14 +30,14 @@ export default function VietnameseCookingMethodsPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Thực hành Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Cách Nấu Ăn Lành mạnh Kiểu Việt Nam" },
+          { label: "Cách Nấu Ăn lành mạnh Kiểu Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <UtensilsCrossed className="w-8 h-8 text-orange-600" aria-hidden="true" />
-          <h1 className="heading-1">Cách Nấu Ăn Lành mạnh Kiểu Việt Nam</h1>
+          <h1 className="heading-1">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Phương pháp nấu ăn truyền thống Việt Nam có nhiều cách lành mạnh, giúp giữ dinh dưỡng và tạo hương vị đậm đà. 
@@ -66,7 +66,7 @@ export default function VietnameseCookingMethodsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Phương pháp Nấu Ăn Lành mạnh</h2>
+        <h2 className="heading-2">Phương pháp Nấu Ăn lành mạnh</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 mb-3 text-green-900">1. Luộc</h3>
@@ -176,10 +176,10 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh Phương pháp Tốt vs Không Tốt</h2>
+        <h2 className="heading-2">So sánh Phương pháp tốt vs Không tốt</h2>
         <ComparisonCard
           title="Phương pháp Nấu Ăn"
-          goodTitle="Phương pháp Tốt"
+          goodTitle="Phương pháp tốt"
           goodItems={[
             "Luộc: Giữ dinh dưỡng, không dầu mỡ",
             "Hấp: Giữ dinh dưỡng, hương vị tự nhiên",
@@ -187,7 +187,7 @@ export default function VietnameseCookingMethodsPage() {
             "Nướng (không cháy): Ít dầu, hương vị thơm",
             "Xào (ít dầu): Nhanh, giữ độ giòn",
           ]}
-          badTitle="Phương pháp Nên Hạn chế"
+          badTitle="Phương pháp Nên hạn chế"
           badItems={[
             "Chiên ngập dầu: Nhiều dầu mỡ, mất dinh dưỡng",
             "Kho (nhiều muối): Quá nhiều natri",
@@ -286,7 +286,7 @@ export default function VietnameseCookingMethodsPage() {
             </p>
           </Card>
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ Ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Hiểu về chất béo và cách sử dụng dầu mỡ
             </p>

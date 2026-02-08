@@ -554,7 +554,7 @@ export default function WhyNoUniversalNumberPage() {
                   <li>Sốt, nhiễm trùng, cơ thể chống lại bệnh tật</li>
                   <li>Nằm liệt giường, hoạt động tối thiểu</li>
                   <li>Cảm giác ngon miệng kém, cảm thấy không khỏe</li>
-                  <li>Cơ thể cần năng lượng để chống nhiễm trùng, nhưng bệnh nhân không thể ăn nhiều</li>
+                  <li>cơ thể cần năng lượng để chống nhiễm trùng, nhưng bệnh nhân không thể ăn nhiều</li>
                 </ul>
               </div>
               <div className="bg-white rounded p-3 border border-neutral-200">
@@ -565,7 +565,7 @@ export default function WhyNoUniversalNumberPage() {
                   <li>Nhiễm trùng cải thiện, sốt đã hết</li>
                   <li>Bắt đầu đi bộ, hoạt động nhiều hơn</li>
                   <li>Cảm giác ngon miệng trở lại, ăn tốt hơn</li>
-                  <li>Cơ thể cần năng lượng cho cả phục hồi và hoạt động tăng lên</li>
+                  <li>cơ thể cần năng lượng cho cả phục hồi và hoạt động tăng lên</li>
                 </ul>
               </div>
               <div className="bg-white rounded p-3 border border-neutral-200">
@@ -576,7 +576,7 @@ export default function WhyNoUniversalNumberPage() {
                   <li>Nhiễm trùng đã hết, ổn định</li>
                   <li>Rất hoạt động, đang làm vật lý trị liệu</li>
                   <li>Cảm giác ngon miệng tốt, ăn tốt</li>
-                  <li>Cơ thể cần năng lượng cho hoạt động và tái tạo sức mạnh</li>
+                  <li>cơ thể cần năng lượng cho hoạt động và tái tạo sức mạnh</li>
                 </ul>
               </div>
             </div>
@@ -706,7 +706,7 @@ export default function WhyNoUniversalNumberPage() {
             <p>
               <strong>Tại sao đây là vấn đề:</strong> Trong bệnh cấp tính sớm, cơ thể đang trong trạng thái stress.
               Cho ăn quá mức trong giai đoạn này có thể tăng stress chuyển hóa, làm xấu đi chức năng cơ quan, hoặc gây
-              biến chứng. Cơ thể có thể không thể xử lý lượng dinh dưỡng lớn một cách hiệu quả trong
+              biến chứng. cơ thể có thể không thể xử lý lượng dinh dưỡng lớn một cách hiệu quả trong
               bệnh nặng. Bắt đầu với cho ăn tích cực có thể không phù hợp.
             </p>
             <p>
@@ -1038,7 +1038,7 @@ export default function WhyNoUniversalNumberPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card href="/tools/energy-protein-calculator">
-              <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+              <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
               <CardContent>
                 <p className="text-body-sm">
                   Công cụ giáo dục để ước tính nhu cầu năng lượng và protein, minh họa các khoảng giá trị
@@ -1055,7 +1055,7 @@ export default function WhyNoUniversalNumberPage() {
               </CardContent>
             </Card>
             <Card href="/tools/bmi-body-composition">
-              <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+              <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
               <CardContent>
                 <p className="text-body-sm">
                   Tính các chỉ số cơ bản như BMI, IBW, ABW, và BSA - các chỉ số được sử dụng trong ước tính nhu cầu dinh dưỡng.

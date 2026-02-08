@@ -68,9 +68,9 @@ export default function NutritionManualLaborPage() {
         <h2 className="heading-2">Nhu cầu Dinh dưỡng cho Người Lao động Chân tay</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Nhu cầu Năng lượng</h3>
+            <h3 className="heading-4 mb-3">Nhu cầu năng lượng</h3>
             <NutrientTable
-              title="Nhu cầu Năng lượng Theo Mức độ Lao động"
+              title="Nhu cầu năng lượng Theo Mức độ Lao động"
               rows={[
                 { nutrient: "Lao động nhẹ (văn phòng)", amount: "2,000", unit: "calo/ngày", highlight: "good", note: "Nhu cầu cơ bản" },
                 { nutrient: "Lao động vừa (công nhân nhẹ)", amount: "2,500", unit: "calo/ngày", highlight: "moderate", note: "Tăng 25%" },
@@ -97,7 +97,7 @@ export default function NutritionManualLaborPage() {
               <strong>Người lao động nặng, 70kg:</strong>
             </p>
             <p className="mb-2">
-              <strong>Năng lượng:</strong> 3,000 calo/ngày
+              <strong>năng lượng:</strong> 3,000 calo/ngày
             </p>
             <p>
               <strong>Protein:</strong> 70kg × 1.5g/kg = 105g protein/ngày
@@ -110,7 +110,7 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bữa Ăn Thực tế cho Người Lao động</h2>
+        <h2 className="heading-2">Bữa ăn Thực tế cho Người Lao động</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Bữa Sáng (600-800 calo, 25-30g protein)</h3>
@@ -205,7 +205,7 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -255,9 +255,9 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực tế: Bữa Ăn Cho Công nhân</h2>
+        <h2 className="heading-2">Ví dụ Thực tế: Bữa ăn Cho Công nhân</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Ăn Một Ngày (3,000 calo, 105g protein)</h3>
+          <h3 className="heading-4 mb-3">Bữa ăn Một Ngày (3,000 calo, 105g protein)</h3>
           <div className="space-y-3">
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
               <p className="text-sm font-semibold text-blue-900 mb-1">Bữa Sáng (7:00):</p>
@@ -299,7 +299,7 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -331,7 +331,7 @@ export default function NutritionManualLaborPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/calories-energy">
-            <h3 className="heading-5 mb-2">Hiểu về Calo và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Calo và năng lượng</h3>
             <p className="text-sm text-gray-600">
               Nhu cầu năng lượng cho người lao động
             </p>
@@ -349,7 +349,7 @@ export default function NutritionManualLaborPage() {
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-family-meals">
-            <h3 className="heading-5 mb-2">Bữa Ăn Gia đình Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn Gia đình Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Cấu trúc bữa ăn cho người lao động
             </p>

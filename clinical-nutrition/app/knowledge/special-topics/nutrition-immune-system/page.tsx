@@ -201,7 +201,7 @@ export default function NutritionImmuneSystemPage() {
         <h2 className="heading-2">Ví dụ Bữa ăn Tăng cường Miễn dịch</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Sáng</h3>
+            <h3 className="heading-4 mb-3">Bữa sáng</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cháo thịt gà + rau thơm (Việt Nam):</strong>
             </p>
@@ -213,7 +213,7 @@ export default function NutritionImmuneSystemPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Trưa</h3>
+            <h3 className="heading-4 mb-3">Bữa trưa</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Canh chua cá + Rau muống luộc (Việt Nam):</strong>
             </p>
@@ -226,7 +226,7 @@ export default function NutritionImmuneSystemPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Tối</h3>
+            <h3 className="heading-4 mb-3">Bữa tối</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Tôm rang me + Rau cải xào (Việt Nam):</strong>
             </p>
@@ -297,7 +297,7 @@ export default function NutritionImmuneSystemPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -331,19 +331,19 @@ export default function NutritionImmuneSystemPage() {
           <Card href="/knowledge/vitamins-minerals/vitamin-c-immunity">
             <h3 className="heading-5 mb-2">Vitamin C và Miễn dịch</h3>
             <p className="text-sm text-gray-600">
-              Chi tiết về vitamin C cho hệ miễn dịch
+              chi tiết về vitamin C cho hệ miễn dịch
             </p>
           </Card>
           <Card href="/knowledge/vitamins-minerals/zinc-immunity">
             <h3 className="heading-5 mb-2">Kẽm và Miễn dịch</h3>
             <p className="text-sm text-gray-600">
-              Chi tiết về zinc cho hệ miễn dịch
+              chi tiết về zinc cho hệ miễn dịch
             </p>
           </Card>
           <Card href="/knowledge/vitamins-minerals/selenium-immunity">
             <h3 className="heading-5 mb-2">Selenium và Miễn dịch</h3>
             <p className="text-sm text-gray-600">
-              Chi tiết về selenium cho hệ miễn dịch
+              chi tiết về selenium cho hệ miễn dịch
             </p>
           </Card>
           <Card href="/knowledge/protein-sources-needs">

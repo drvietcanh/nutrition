@@ -138,7 +138,7 @@ export default function HypertensionNutritionPage() {
         <Card>
           <CardHeader
             icon={CheckCircle}
-            title="🍽️ Chế độ Ăn DASH (Dietary Approaches to Stop Hypertension)"
+            title="🍽️ Chế độ ăn DASH (Dietary Approaches to Stop Hypertension)"
           />
           <CardContent>
             <p className="text-body mb-4">
@@ -791,7 +791,7 @@ export default function HypertensionNutritionPage() {
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu năng lượng và protein, đặc biệt hữu ích nếu bệnh nhân cần giảm cân.
@@ -799,7 +799,7 @@ export default function HypertensionNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/bmi-body-composition">
-            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
             <CardContent>
               <p className="text-body-sm">
                 Đánh giá BMI và thành phần cơ thể, quan trọng trong quản lý cân nặng cho bệnh nhân tăng huyết áp.

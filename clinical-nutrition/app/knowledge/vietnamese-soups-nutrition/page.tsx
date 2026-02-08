@@ -123,7 +123,7 @@ export default function VietnameseSoupsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Các Loại Canh Việt Nam Phổ biến</h2>
+        <h2 className="heading-2">Các loại Canh Việt Nam Phổ biến</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 mb-3 text-green-900">1. Canh Chua (Sour Soup)</h3>
@@ -149,7 +149,7 @@ export default function VietnameseSoupsNutritionPage() {
                   <li>⚠ Chú ý: Có thể nhiều natri nếu nêm nhiều muối/nước mắm</li>
                 </ul>
               </div>
-              <ExampleBox variant="tip" title="Mẹo nấu Canh chua Lành mạnh">
+              <ExampleBox variant="tip" title="Mẹo nấu Canh chua lành mạnh">
                 <p className="text-sm">
                   Chọn cá/tôm nạc, thêm nhiều rau củ (cà chua, đậu bắp, dứa), 
                   nêm ít muối/nước mắm, và thêm nhiều rau thơm để có vitamin.
@@ -184,7 +184,7 @@ export default function VietnameseSoupsNutritionPage() {
                   <li>✓ Protein từ tôm/thịt (nếu có)</li>
                 </ul>
               </div>
-              <ExampleBox variant="tip" title="Mẹo nấu Canh rau Lành mạnh">
+              <ExampleBox variant="tip" title="Mẹo nấu Canh rau lành mạnh">
                 <p className="text-sm">
                   Thêm nhiều rau, nấu nhanh để giữ vitamin, nêm ít muối/nước mắm, 
                   và có thể thêm một chút tôm khô hoặc thịt nạc để có protein.
@@ -235,9 +235,9 @@ export default function VietnameseSoupsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Nấu Canh Lành mạnh</h2>
+        <h2 className="heading-2">Cách Nấu Canh lành mạnh</h2>
         <ComparisonCard
-          title="So sánh: Canh Lành mạnh vs Nên Cải thiện"
+          title="So sánh: Canh lành mạnh vs Nên cải thiện"
           items={[
             {
               label: "Nguyên liệu",
@@ -262,7 +262,7 @@ export default function VietnameseSoupsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -300,10 +300,10 @@ export default function VietnameseSoupsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Canh Lành mạnh</h2>
+        <h2 className="heading-2">Ví dụ Canh lành mạnh</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-5 mb-2">Canh chua cá Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Canh chua cá lành mạnh</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Nguyên liệu:</strong> Cá nạc (100g) + nhiều cà chua + đậu bắp + dứa + rau thơm + ít muối/nước mắm
             </p>
@@ -313,7 +313,7 @@ export default function VietnameseSoupsNutritionPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Canh rau muống Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Canh rau muống lành mạnh</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Nguyên liệu:</strong> Nhiều rau muống + nước dùng + một chút tôm khô + ít muối
             </p>
@@ -323,7 +323,7 @@ export default function VietnameseSoupsNutritionPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Canh mướp Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Canh mướp lành mạnh</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Nguyên liệu:</strong> Nhiều mướp + nước dùng + tôm nạc (50g) + ít muối
             </p>
@@ -333,7 +333,7 @@ export default function VietnameseSoupsNutritionPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Canh thịt băm Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Canh thịt băm lành mạnh</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Nguyên liệu:</strong> Thịt heo nạc băm (50g) + nhiều rau củ + nước dùng + ít muối
             </p>
@@ -348,13 +348,13 @@ export default function VietnameseSoupsNutritionPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/vietnamese-family-meals">
-            <h3 className="heading-5 mb-2">Bữa Ăn Gia đình Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn Gia đình Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Vai trò của canh trong bữa ăn gia đình Việt Nam
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-cooking-methods">
-            <h3 className="heading-5 mb-2">Cách Nấu Ăn Lành mạnh Kiểu Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Phương pháp nấu canh lành mạnh
             </p>

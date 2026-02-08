@@ -66,7 +66,7 @@ export default function EmergencyNutritionPage() {
           </h3>
           <ul className="space-y-3 text-body">
             <li>
-              <strong>Tăng nhu cầu năng lượng:</strong> Cơ thể cần nhiều năng
+              <strong>Tăng nhu cầu năng lượng:</strong> cơ thể cần nhiều năng
               lượng hơn để phục hồi và chống lại stress
             </li>
             <li>
@@ -74,7 +74,7 @@ export default function EmergencyNutritionPage() {
               và tạo ra các protein miễn dịch
             </li>
             <li>
-              <strong>Kháng insulin:</strong> Cơ thể có thể kháng insulin tạm
+              <strong>Kháng insulin:</strong> cơ thể có thể kháng insulin tạm
               thời, dẫn đến tăng đường huyết
             </li>
             <li>
@@ -100,7 +100,7 @@ export default function EmergencyNutritionPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Dịch: 30-35 ml/kg/ngày (điều chỉnh theo tình trạng)</li>
-              <li>Năng lượng: Có thể bắt đầu với 50-70% nhu cầu ước tính</li>
+              <li>năng lượng: Có thể bắt đầu với 50-70% nhu cầu ước tính</li>
               <li>Protein: 1.2-1.5 g/kg/ngày</li>
               <li>Điện giải: Theo dõi và bù đắp khi cần</li>
             </ul>
@@ -117,7 +117,7 @@ export default function EmergencyNutritionPage() {
               <strong>Ưu tiên:</strong> Tăng dần dinh dưỡng để hỗ trợ phục hồi
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Năng lượng: 1.2-1.5 x BMR (tùy mức độ stress)</li>
+              <li>năng lượng: 1.2-1.5 x BMR (tùy mức độ stress)</li>
               <li>Protein: 1.5-2.0 g/kg/ngày</li>
               <li>Carbohydrate: Đủ để tránh dị hóa protein</li>
               <li>Chất béo: 25-30% tổng năng lượng</li>
@@ -137,7 +137,7 @@ export default function EmergencyNutritionPage() {
               nhu cầu năng lượng lên 1.5-2.0 lần BMR.
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Năng lượng: 1.5-2.0 x BMR</li>
+              <li>năng lượng: 1.5-2.0 x BMR</li>
               <li>Protein: 1.5-2.5 g/kg/ngày</li>
               <li>Theo dõi sát tình trạng dịch và điện giải</li>
             </ul>
@@ -152,7 +152,7 @@ export default function EmergencyNutritionPage() {
               protein đáng kể.
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Năng lượng: 1.3-1.6 x BMR</li>
+              <li>năng lượng: 1.3-1.6 x BMR</li>
               <li>Protein: 1.5-2.0 g/kg/ngày</li>
               <li>Đảm bảo đủ vitamin và khoáng chất</li>
             </ul>
@@ -167,8 +167,8 @@ export default function EmergencyNutritionPage() {
               mức độ xâm lấn.
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Phẫu thuật nhỏ: Năng lượng 1.0-1.2 x BMR</li>
-              <li>Phẫu thuật lớn: Năng lượng 1.2-1.5 x BMR</li>
+              <li>Phẫu thuật nhỏ: năng lượng 1.0-1.2 x BMR</li>
+              <li>Phẫu thuật lớn: năng lượng 1.2-1.5 x BMR</li>
               <li>Protein: 1.2-1.8 g/kg/ngày</li>
             </ul>
           </div>

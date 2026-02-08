@@ -27,9 +27,9 @@ const myths: Myth[] = [
     id: 'protein-more-is-better',
     myth: 'Nhiều protein hơn luôn tốt hơn cho phục hồi',
     whyItSoundsRight: 'Tư duy "nhiều hơn là tốt hơn" hấp dẫn vì protein rõ ràng quan trọng cho việc chữa lành. Cảm giác an toàn hơn khi sai lệch về phía nhiều hơn là ít hơn. Niềm tin này được củng cố bởi văn hóa thể dục và tiếp thị thực phẩm bổ sung, quảng bá lượng protein cao như có lợi phổ quát.',
-    whatActuallyHappens: 'Mặc dù protein đầy đủ là cần thiết cho việc lành vết thương và bảo tồn cơ, nhưng protein quá mức (vượt quá 2.0-2.5 g/kg/ngày trong hầu hết các trường hợp) không mang lại lợi ích bổ sung và có thể làm xấu đi chức năng thận, tăng các triệu chứng urê huyết (tích tụ chất thải trong máu), và tạo ra stress chuyển hóa. Cơ thể không thể lưu trữ protein dư thừa như có thể lưu trữ chất béo.',
+    whatActuallyHappens: 'Mặc dù protein đầy đủ là cần thiết cho việc lành vết thương và bảo tồn cơ, nhưng protein quá mức (vượt quá 2.0-2.5 g/kg/ngày trong hầu hết các trường hợp) không mang lại lợi ích bổ sung và có thể làm xấu đi chức năng thận, tăng các triệu chứng urê huyết (tích tụ chất thải trong máu), và tạo ra stress chuyển hóa. cơ thể không thể lưu trữ protein dư thừa như có thể lưu trữ chất béo.',
     whatToUnderstandInstead: 'Lượng protein quá mức có thể không cải thiện kết quả vượt quá phạm vi tối ưu và có thể gây vấn đề, đặc biệt ở bệnh nhân suy thận. Bằng chứng cho thấy hầu hết bệnh nhân nằm viện cần khoảng 1.2-2.0 g/kg/ngày, với nhu cầu cao hơn (lên đến 2.5 g/kg/ngày) trong các tình trạng cụ thể như bỏng nặng, chấn thương lớn, hoặc bệnh nặng.',
-    clinicalInsight: 'Đầy đủ là mục tiêu, không phải tối đa hóa. Theo dõi chức năng thận (creatinine, BUN) có thể giúp hướng dẫn quyết định lượng protein. Cơ thể chỉ có thể sử dụng một lượng protein nhất định cùng một lúc, vì vậy phân bổ lượng ăn vào trong suốt ngày có thể hiệu quả hơn so với liều lớn đơn lẻ.'
+    clinicalInsight: 'Đầy đủ là mục tiêu, không phải tối đa hóa. Theo dõi chức năng thận (creatinine, BUN) có thể giúp hướng dẫn quyết định lượng protein. cơ thể chỉ có thể sử dụng một lượng protein nhất định cùng một lúc, vì vậy phân bổ lượng ăn vào trong suốt ngày có thể hiệu quả hơn so với liều lớn đơn lẻ.'
   },
   {
     id: 'npo-before-surgery',
@@ -529,7 +529,7 @@ export default function MythsAndMisconceptionsPage() {
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Tất cả thông tin dựa trên hướng dẫn lâm sàng hiện tại từ các tổ chức dinh dưỡng hàng đầu bao gồm 
                   ASPEN (Hiệp hội Dinh dưỡng Đường Tĩnh Mạch và Đường Ruột Hoa Kỳ), ESPEN (Hiệp hội Dinh dưỡng Lâm sàng và Chuyển hóa Châu Âu), 
-                  và Học viện Dinh dưỡng và Chế độ Ăn uống. Mục tiêu của chúng tôi là hỗ trợ thực hành dinh dưỡng an toàn, 
+                  và Học viện Dinh dưỡng và Chế độ ăn uống. Mục tiêu của chúng tôi là hỗ trợ thực hành dinh dưỡng an toàn, 
                   dựa trên bằng chứng thông qua giáo dục và suy ngẫm, không phải chỉ trích. Cập nhật thường xuyên đảm bảo 
                   phù hợp với bằng chứng mới nhất.
                 </p>
@@ -648,7 +648,7 @@ export default function MythsAndMisconceptionsPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card href="/tools/energy-protein-calculator">
-              <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+              <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
               <CardContent>
                 <p className="text-body-sm">
                   Công cụ giáo dục để ước tính nhu cầu năng lượng và protein, minh họa các khoảng giá trị
@@ -675,7 +675,7 @@ export default function MythsAndMisconceptionsPage() {
               </CardContent>
             </Card>
             <Card href="/tools/bmi-body-composition">
-              <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+              <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
               <CardContent>
                 <p className="text-body-sm">
                   Tính các chỉ số cơ bản như BMI, IBW, ABW, và BSA,

@@ -161,7 +161,7 @@ export default function NutritionRecoveryPage() {
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-4 mb-3 text-blue-900">4. Calo và Nước</h3>
             <p className="text-body-sm text-blue-900 mb-3">
-              Cơ thể cần năng lượng (calo) và nước để phục hồi.
+              cơ thể cần năng lượng (calo) và nước để phục hồi.
             </p>
             <div className="bg-white rounded-lg p-3 border border-blue-200">
               <p className="text-xs font-semibold text-gray-900 mb-1">Nhu cầu:</p>
@@ -179,7 +179,7 @@ export default function NutritionRecoveryPage() {
         <h2 className="heading-2">Ví dụ Bữa ăn Phục hồi</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Sáng</h3>
+            <h3 className="heading-4 mb-3">Bữa sáng</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cháo thịt gà + rau thơm (Việt Nam):</strong>
             </p>
@@ -192,7 +192,7 @@ export default function NutritionRecoveryPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Trưa</h3>
+            <h3 className="heading-4 mb-3">Bữa trưa</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Canh chua cá + Rau muống luộc (Việt Nam):</strong>
             </p>
@@ -206,7 +206,7 @@ export default function NutritionRecoveryPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Tối</h3>
+            <h3 className="heading-4 mb-3">Bữa tối</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Tôm hấp + Canh mướp + Rau cải luộc (Việt Nam):</strong>
             </p>
@@ -232,7 +232,7 @@ export default function NutritionRecoveryPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

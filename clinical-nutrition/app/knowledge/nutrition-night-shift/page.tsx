@@ -63,7 +63,7 @@ export default function NutritionNightShiftPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Timeline Bữa Ăn Cho Ca Đêm</h2>
+        <h2 className="heading-2">Timeline Bữa ăn Cho Ca Đêm</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Ví dụ: Ca Đêm 22:00 - 6:00</h3>
@@ -129,7 +129,7 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Nên Tránh Khi Làm Ca Đêm</h2>
+        <h2 className="heading-2">Thực phẩm Nên tránh Khi Làm Ca Đêm</h2>
         <Card className="border-red-200 bg-red-50">
           <h3 className="heading-4 text-red-900 mb-3">Tránh Trong Ca Đêm</h3>
           <div className="space-y-2 text-sm text-red-900">
@@ -208,9 +208,9 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Cách Ăn Tốt vs Không Tốt</h2>
+        <h2 className="heading-2">So sánh: Cách ăn Tốt vs Không Tốt</h2>
         <ComparisonCard
-          goodTitle="Cách Ăn Tốt"
+          goodTitle="Cách ăn Tốt"
           goodItems={[
             "Bữa chính trước ca: Cơm + thịt/cá + rau + canh - đầy đủ dinh dưỡng",
             "Snack trong ca: Bánh mì + thịt, trứng luộc - nhẹ, dễ tiêu",
@@ -218,7 +218,7 @@ export default function NutritionNightShiftPage() {
             "Uống nước lọc - giữ hydration",
             "Tránh caffeine cuối ca - không ảnh hưởng giấc ngủ"
           ]}
-          badTitle="Cách Ăn Không Tốt"
+          badTitle="Cách ăn Không Tốt"
           badItems={[
             "Bỏ bữa chính trước ca - thiếu năng lượng, mệt mỏi",
             "Snack nhiều cà phê, bánh kẹo - khó ngủ sau ca",
@@ -230,7 +230,7 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -282,7 +282,7 @@ export default function NutritionNightShiftPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Thực tế: Một Ngày Làm Ca Đêm</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Timeline Bữa Ăn</h3>
+          <h3 className="heading-4 mb-3">Timeline Bữa ăn</h3>
           <div className="space-y-3">
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
               <p className="text-sm font-semibold text-blue-900 mb-1">18:00 - Bữa Chính Trước Ca</p>
@@ -312,7 +312,7 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -356,7 +356,7 @@ export default function NutritionNightShiftPage() {
             </p>
           </Card>
           <Card href="/knowledge/calories-energy">
-            <h3 className="heading-5 mb-2">Hiểu về Calo và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Calo và năng lượng</h3>
             <p className="text-sm text-gray-600">
               Nhu cầu năng lượng cho người làm ca đêm
             </p>

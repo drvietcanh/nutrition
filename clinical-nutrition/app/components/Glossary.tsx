@@ -14,9 +14,9 @@ export interface GlossaryTerm {
 
 export const glossaryTerms: GlossaryTerm[] = [
   {
-    term: "Năng lượng (Energy)",
+    term: "năng lượng (Energy)",
     definition: "Lượng calo cơ thể cần để hoạt động",
-    simpleExplanation: "Năng lượng là nhiên liệu cho cơ thể, giống như xăng cho xe. Chúng ta đo năng lượng bằng đơn vị kcal (kilocalo).",
+    simpleExplanation: "năng lượng là nhiên liệu cho cơ thể, giống như xăng cho xe. Chúng ta đo năng lượng bằng đơn vị kcal (kilocalo).",
     example: "Một người trung bình cần khoảng 2000 kcal mỗi ngày để duy trì hoạt động bình thường.",
     category: "basic",
   },
@@ -29,7 +29,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: "BEE (Basal Energy Expenditure)",
-    definition: "Năng lượng cơ bản - lượng năng lượng cơ thể cần khi nghỉ ngơi hoàn toàn",
+    definition: "năng lượng cơ bản - lượng năng lượng cơ thể cần khi nghỉ ngơi hoàn toàn",
     simpleExplanation: "Đây là lượng năng lượng cơ thể bạn cần khi bạn chỉ nằm yên, không làm gì cả - không ăn, không vận động, chỉ để tim đập, phổi thở, và các cơ quan hoạt động.",
     example: "Một người 70kg có thể cần khoảng 1500-1700 kcal mỗi ngày chỉ để duy trì các chức năng cơ bản.",
     category: "calculation",
@@ -125,7 +125,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Natri (Sodium)",
     definition: "Khoáng chất trong muối, cần thiết nhưng quá nhiều gây hại",
-    simpleExplanation: "Natri là một khoáng chất trong muối ăn. Cơ thể cần natri để hoạt động, nhưng quá nhiều natri có thể gây tăng huyết áp, suy tim, bệnh thận. Hầu hết natri đến từ thực phẩm chế biến sẵn.",
+    simpleExplanation: "Natri là một khoáng chất trong muối ăn. cơ thể cần natri để hoạt động, nhưng quá nhiều natri có thể gây tăng huyết áp, suy tim, bệnh thận. Hầu hết natri đến từ thực phẩm chế biến sẵn.",
     example: "1 thìa cà phê muối chứa khoảng 2,300mg natri. Khuyến nghị: &lt; 2,300mg/ngày cho người khỏe mạnh, &lt; 2,000mg/ngày cho người tăng huyết áp/suy tim.",
     category: "basic",
   },

@@ -218,9 +218,9 @@ export default function WeeklyMealPlanningPage() {
               <thead className="bg-neutral-50">
                 <tr>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ngày</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Bữa Sáng</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Bữa Trưa</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Bữa Tối</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Bữa sáng</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Bữa trưa</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Bữa tối</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-neutral-200">
@@ -277,7 +277,7 @@ export default function WeeklyMealPlanningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <TipCard
           tips={[
             { type: 'tip', text: 'Bắt đầu đơn giản: Lập kế hoạch cho 2-3 bữa đầu tiên, sau đó mở rộng dần' },
@@ -310,7 +310,7 @@ export default function WeeklyMealPlanningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

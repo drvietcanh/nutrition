@@ -41,7 +41,7 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Sets context and explains the purpose without judgment */}
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Hiểu lầm Phổ biến trong Dinh dưỡng Lâm sàng
+            Hiểu lầm phổ biến trong Dinh dưỡng Lâm sàng
           </h1>
           <div className="max-w-3xl mx-auto text-left space-y-6">
             <section className="bg-blue-50 border border-blue-200 rounded-lg p-6">
@@ -148,7 +148,7 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Each myth card provides structured learning about misconceptions */}
         <section className="mb-12" aria-labelledby="myths-heading">
           <h2 id="myths-heading" className="text-2xl font-bold text-gray-900 mb-6">
-            Hiểu lầm Phổ biến trong Thực hành
+            Hiểu lầm phổ biến trong Thực hành
           </h2>
           {filteredMyths.length === 0 ? (
             <div className="text-center py-12 text-gray-500" role="status" aria-live="polite">
@@ -388,7 +388,7 @@ export default function MythsInClinicalNutritionPage() {
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Tất cả thông tin dựa trên hướng dẫn lâm sàng hiện tại từ các tổ chức dinh dưỡng hàng đầu bao gồm 
                   ASPEN (Hiệp hội Dinh dưỡng Tĩnh mạch và Ống thông Hoa Kỳ), ESPEN (Hiệp hội Dinh dưỡng Lâm sàng và Chuyển hóa Châu Âu), 
-                  và Học viện Dinh dưỡng và Chế độ Ăn. Mục tiêu của chúng tôi là hỗ trợ thực hành dinh dưỡng an toàn, 
+                  và Học viện Dinh dưỡng và Chế độ ăn. Mục tiêu của chúng tôi là hỗ trợ thực hành dinh dưỡng an toàn, 
                   dựa trên bằng chứng thông qua giáo dục và suy ngẫm, không phải chỉ trích. Cập nhật thường xuyên đảm bảo 
                   phù hợp với bằng chứng mới nhất.
                 </p>
@@ -508,7 +508,7 @@ export default function MythsInClinicalNutritionPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card href="/tools/energy-protein-calculator">
-              <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+              <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
               <CardContent>
                 <p className="text-body-sm">
                   Công cụ giáo dục để ước tính nhu cầu năng lượng và protein, minh họa các khoảng giá trị
@@ -535,7 +535,7 @@ export default function MythsInClinicalNutritionPage() {
               </CardContent>
             </Card>
             <Card href="/tools/bmi-body-composition">
-              <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+              <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
               <CardContent>
                 <p className="text-body-sm">
                   Tính các chỉ số cơ bản như BMI, IBW, ABW, và BSA,

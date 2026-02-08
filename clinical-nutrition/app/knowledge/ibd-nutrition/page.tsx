@@ -130,11 +130,11 @@ export default function IBDNutritionPage() {
         </div>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="🔥 Năng lượng & 🥩 Protein" />
+          <CardHeader icon={CheckCircle} title="🔥 năng lượng & 🥩 Protein" />
           <CardContent>
             <div className="space-y-4">
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Năng lượng</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">năng lượng</p>
                 <p className="text-sm text-gray-700 mb-2">Cần đủ năng lượng để:</p>
                 <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-2">
                   <li>Duy trì cân nặng</li>
@@ -169,7 +169,7 @@ export default function IBDNutritionPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={Info} title="🍽️ Chế độ Ăn Theo Từng Giai đoạn Bệnh" />
+          <CardHeader icon={Info} title="🍽️ Chế độ ăn Theo Từng Giai đoạn Bệnh" />
           <CardContent>
             <div className="space-y-4">
               <div className="border-l-4 border-red-500 pl-4">
@@ -266,7 +266,7 @@ export default function IBDNutritionPage() {
             <thead className="bg-green-100">
               <tr>
                 <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tình trạng</th>
-                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Năng lượng</th>
+                <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">năng lượng</th>
                 <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Protein</th>
                 <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Chế độ ăn</th>
                 <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>

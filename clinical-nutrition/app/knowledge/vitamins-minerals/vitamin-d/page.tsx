@@ -47,7 +47,7 @@ export default function VitaminDPage() {
             <strong>Vitamin D</strong> giúp cơ thể hấp thu canxi - cần thiết cho xương chắc khỏe
           </li>
           <li>
-            Cơ thể có thể tạo vitamin D từ <strong>ánh nắng mặt trời</strong>
+            cơ thể có thể tạo vitamin D từ <strong>ánh nắng mặt trời</strong>
           </li>
           <li>
             Một số thực phẩm như <strong>cá béo, lòng đỏ trứng, sữa tăng cường</strong> chứa vitamin D
@@ -133,7 +133,7 @@ export default function VitaminDPage() {
               Ánh nắng Mặt trời (Nguồn chính)
             </h3>
             <p className="text-body text-yellow-900 mb-3">
-              Cơ thể tạo vitamin D khi da tiếp xúc với ánh nắng. Chỉ cần 10-15 phút mỗi ngày, 
+              cơ thể tạo vitamin D khi da tiếp xúc với ánh nắng. Chỉ cần 10-15 phút mỗi ngày, 
               vài lần một tuần là đủ cho hầu hết mọi người.
             </p>
             <div className="bg-white rounded-lg p-3 border border-yellow-200">
@@ -263,7 +263,7 @@ export default function VitaminDPage() {
 
       {/* Tips */}
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -296,7 +296,7 @@ export default function VitaminDPage() {
 
       {/* Misconceptions */}
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

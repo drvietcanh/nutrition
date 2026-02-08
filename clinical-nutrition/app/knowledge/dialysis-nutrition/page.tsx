@@ -274,7 +274,7 @@ export default function DialysisNutritionPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="🔥 Năng lượng (Calories)" />
+          <CardHeader icon={CheckCircle} title="🔥 năng lượng (Calories)" />
           <CardContent>
             <p className="text-sm text-gray-700 mb-2">
               Cần đủ năng lượng để không sụt cân
@@ -585,7 +585,7 @@ export default function DialysisNutritionPage() {
         <h2 id="tools-heading" className="heading-3">Công cụ Liên quan</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu protein cao (1.2-1.5 g/kg) và năng lượng cho bệnh nhân lọc máu,
@@ -610,7 +610,7 @@ export default function DialysisNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/bmi-body-composition">
-            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
             <CardContent>
               <p className="text-body-sm">
                 Đánh giá BMI và thành phần cơ thể, quan trọng để theo dõi tình trạng dinh dưỡng và phát hiện suy dinh dưỡng.

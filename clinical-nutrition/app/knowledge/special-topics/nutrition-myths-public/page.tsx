@@ -60,7 +60,7 @@ export default function NutritionMythsPublicPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
             <div className="flex items-start gap-3">
@@ -183,13 +183,13 @@ export default function NutritionMythsPublicPage() {
             </p>
           </Card>
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ Ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Hiểu đúng về chất béo
             </p>
           </Card>
           <Card href="/knowledge/special-topics/healthy-weight-management">
-            <h3 className="heading-5 mb-2">Quản lý Cân nặng Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Quản lý Cân nặng lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Cách quản lý cân nặng đúng
             </p>

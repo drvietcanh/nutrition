@@ -91,7 +91,7 @@ export default function VietnameseBreakfastOptionsPage() {
                   <li>✓ Có thể nấu sẵn, hâm nóng nhanh</li>
                 </ul>
               </div>
-              <ExampleBox variant="tip" title="Mẹo cho Cháo Lành mạnh">
+              <ExampleBox variant="tip" title="Mẹo cho Cháo lành mạnh">
                 <p className="text-sm">
                   Chọn cháo với thịt nạc (gà, cá) thay vì lòng hoặc thịt mỡ. 
                   Thêm nhiều rau thơm (hành, ngò, rau răm) để có vitamin. 
@@ -116,17 +116,17 @@ export default function VietnameseBreakfastOptionsPage() {
                 </ul>
               </div>
               <ComparisonCard
-                title="Phở Lành mạnh vs Nên Cải thiện"
+                title="Phở lành mạnh vs Nên cải thiện"
                 items={[
                   {
-                    label: "Phở Lành mạnh",
+                    label: "Phở lành mạnh",
                     good: "Nhiều rau sống (rau thơm, giá, hành) + thịt nạc (tái, gà) + ít bánh phở + nước dùng ít mỡ",
                     bad: "Ít rau + thịt mỡ + nhiều bánh phở + nước dùng nhiều mỡ",
                     note: "Yêu cầu nhiều rau, thịt nạc, và có thể yêu cầu ít bánh phở nếu muốn giảm carbohydrate"
                   },
                 ]}
               />
-              <ExampleBox variant="tip" title="Mẹo cho Phở Lành mạnh">
+              <ExampleBox variant="tip" title="Mẹo cho Phở lành mạnh">
                 <p className="text-sm mb-2">
                   <strong>Yêu cầu nhiều rau sống:</strong> Rau thơm, giá, hành, chanh - cung cấp vitamin và chất xơ.
                 </p>
@@ -157,17 +157,17 @@ export default function VietnameseBreakfastOptionsPage() {
                 </ul>
               </div>
               <ComparisonCard
-                title="Bánh mì Lành mạnh vs Nên Cải thiện"
+                title="Bánh mì lành mạnh vs Nên cải thiện"
                 items={[
                   {
-                    label: "Bánh mì Lành mạnh",
+                    label: "Bánh mì lành mạnh",
                     good: "Bánh mì + thịt nạc/chả/trứng + nhiều rau (rau thơm, dưa chuột, cà rốt) + ít pate/mayonnaise",
                     bad: "Bánh mì + nhiều pate/mayonnaise + ít rau + thịt mỡ",
                     note: "Yêu cầu nhiều rau, ít pate/mayonnaise để có bữa sáng cân bằng hơn"
                   },
                 ]}
               />
-              <ExampleBox variant="tip" title="Mẹo cho Bánh mì Lành mạnh">
+              <ExampleBox variant="tip" title="Mẹo cho Bánh mì lành mạnh">
                 <p className="text-sm mb-2">
                   <strong>Yêu cầu nhiều rau:</strong> Rau thơm, dưa chuột, cà rốt, hành - cung cấp vitamin và chất xơ.
                 </p>
@@ -198,10 +198,10 @@ export default function VietnameseBreakfastOptionsPage() {
                 </ul>
               </div>
               <ComparisonCard
-                title="Xôi Lành mạnh vs Nên Hạn chế"
+                title="Xôi lành mạnh vs Nên hạn chế"
                 items={[
                   {
-                    label: "Xôi Lành mạnh",
+                    label: "Xôi lành mạnh",
                     good: "Xôi đậu xanh, xôi gấc, xôi mặn với thịt nạc - có protein, ít đường",
                     bad: "Xôi ngọt với nhiều đường, đậu phộng rang muối - nhiều đường và natri",
                     note: "Chọn xôi có protein (đậu, thịt) và ít đường hơn"
@@ -227,7 +227,7 @@ export default function VietnameseBreakfastOptionsPage() {
               <p>• <strong>Bún riêu:</strong> Bún + cua + nước dùng chua + rau</p>
               <p>• <strong>Bún chả:</strong> Bún + thịt nướng + rau sống</p>
             </div>
-            <ExampleBox variant="tip" title="Mẹo cho Bún Lành mạnh">
+            <ExampleBox variant="tip" title="Mẹo cho Bún lành mạnh">
               <p className="text-sm">
                 Tương tự phở: yêu cầu nhiều rau sống, chọn thịt nạc, và có thể yêu cầu ít bún 
                 nếu muốn giảm carbohydrate. Bún chả với nhiều rau sống là lựa chọn tốt.
@@ -252,7 +252,7 @@ export default function VietnameseBreakfastOptionsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Chọn Bữa sáng Lành mạnh</h2>
+        <h2 className="heading-2">Tips Chọn Bữa sáng lành mạnh</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -293,7 +293,7 @@ export default function VietnameseBreakfastOptionsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa sáng Việt Nam Lành mạnh</h2>
+        <h2 className="heading-2">Ví dụ Bữa sáng Việt Nam lành mạnh</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
             <h3 className="heading-5 mb-2">Bữa sáng 1: Cháo + Bánh mì</h3>

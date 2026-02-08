@@ -401,7 +401,7 @@ export default function NutritionAssessmentOverviewPage() {
               </CardContent>
             </Card>
             <Card href="/tools/energy-protein-calculator">
-              <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+              <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
               <CardContent>
                 <p className="text-body-sm">
                   Ước tính nhu cầu năng lượng và protein hàng ngày dựa trên các phương trình tiêu chuẩn.
@@ -417,7 +417,7 @@ export default function NutritionAssessmentOverviewPage() {
               </CardContent>
             </Card>
             <Card href="/tools/bmi-body-composition">
-              <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+              <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
               <CardContent>
                 <p className="text-body-sm">
                   Tính BMI, IBW, ABW, và BSA - các chỉ số cơ bản trong đánh giá dinh dưỡng.

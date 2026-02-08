@@ -128,13 +128,13 @@ export default function BreakfastImportancePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cấu trúc Bữa sáng Lành mạnh</h2>
+        <h2 className="heading-2">Cấu trúc Bữa sáng lành mạnh</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Bữa sáng tốt nên có 3 thành phần:</h3>
             <div className="space-y-3">
               <div className="bg-yellow-50 rounded-lg p-3 border border-yellow-200">
-                <p className="text-sm font-semibold text-gray-900 mb-1">1. Carbohydrate (Năng lượng)</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">1. Carbohydrate (năng lượng)</p>
                 <p className="text-xs text-gray-700">
                   Cơm, bánh mì, yến mạch, khoai lang - cung cấp năng lượng nhanh
                 </p>
@@ -155,7 +155,7 @@ export default function BreakfastImportancePage() {
           </Card>
 
           <ComparisonCard
-            title="So sánh: Bữa sáng Tốt vs Nên Cải thiện"
+            title="So sánh: Bữa sáng Tốt vs Nên cải thiện"
             items={[
               {
                 label: "Bữa sáng Tốt",
@@ -175,7 +175,7 @@ export default function BreakfastImportancePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa sáng Lành mạnh</h2>
+        <h2 className="heading-2">Ví dụ Bữa sáng lành mạnh</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Bữa sáng Nhanh (5-10 phút)</h3>
@@ -199,7 +199,7 @@ export default function BreakfastImportancePage() {
             </div>
           </Card>
 
-          <ExampleBox variant="tip" title="Bữa sáng Việt Nam Lành mạnh">
+          <ExampleBox variant="tip" title="Bữa sáng Việt Nam lành mạnh">
             <p className="mb-2">
               <strong>Cháo thịt gà/cháo cá</strong> là bữa sáng phổ biến ở Việt Nam, dễ tiêu, 
               cung cấp protein và carbohydrate. Thêm rau thơm (hành, ngò) để có vitamin.
@@ -241,7 +241,7 @@ export default function BreakfastImportancePage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Tăng Năng lượng</h3>
+            <h3 className="heading-4 mb-3">Tăng năng lượng</h3>
             <p className="text-body-sm">
               Bữa sáng cung cấp năng lượng để bắt đầu ngày mới. Không có bữa sáng, bạn có thể cảm thấy 
               mệt mỏi, uể oải vào buổi sáng.
@@ -259,7 +259,7 @@ export default function BreakfastImportancePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -301,7 +301,7 @@ export default function BreakfastImportancePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -345,7 +345,7 @@ export default function BreakfastImportancePage() {
             </p>
           </Card>
           <Card href="/knowledge/calories-energy">
-            <h3 className="heading-5 mb-2">Hiểu về Calo và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Calo và năng lượng</h3>
             <p className="text-sm text-gray-600">
               Bữa sáng cung cấp năng lượng cho ngày mới
             </p>

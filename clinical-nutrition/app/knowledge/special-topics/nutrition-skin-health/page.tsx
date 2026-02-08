@@ -197,7 +197,7 @@ export default function NutritionSkinHealthPage() {
         <h2 className="heading-2">Ví dụ Bữa ăn Tốt cho Da</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Sáng</h3>
+            <h3 className="heading-5 mb-2">Bữa sáng</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Yến mạch + trái cây (ổi, xoài) + quả hạch:</strong>
             </p>
@@ -249,9 +249,9 @@ export default function NutritionSkinHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Tốt vs Nên Hạn chế cho Da</h2>
+        <h2 className="heading-2">Thực phẩm Tốt vs Nên hạn chế cho Da</h2>
         <ComparisonCard
-          title="So sánh: Thực phẩm Tốt vs Nên Hạn chế cho Da"
+          title="So sánh: Thực phẩm Tốt vs Nên hạn chế cho Da"
           items={[
             {
               label: "Đường",
@@ -282,7 +282,7 @@ export default function NutritionSkinHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -321,13 +321,13 @@ export default function NutritionSkinHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
               <p className="text-sm font-semibold mb-1">"Cần bổ sung collagen để có da đẹp"</p>
               <p className="text-sm">
-                <strong>Sự thật:</strong> Cơ thể tự tạo collagen từ protein và vitamin C. 
+                <strong>Sự thật:</strong> cơ thể tự tạo collagen từ protein và vitamin C. 
                 Ăn đủ protein và vitamin C từ thực phẩm thường đủ. Bổ sung collagen không tự động 
                 làm da đẹp hơn.
               </p>
@@ -366,7 +366,7 @@ export default function NutritionSkinHealthPage() {
             </p>
           </Card>
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ Ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Omega-3 và chất béo tốt cho da
             </p>

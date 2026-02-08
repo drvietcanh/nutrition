@@ -24,7 +24,7 @@ const toolsIndex: SearchResult[] = [
     description: "Công cụ sàng lọc nguy cơ suy dinh dưỡng",
   },
   {
-    title: "Máy tính Năng lượng & Protein",
+    title: "Máy tính năng lượng & Protein",
     href: "/tools/energy-protein-calculator",
     category: "tool",
     description: "Tính toán nhu cầu năng lượng và protein",
@@ -36,7 +36,7 @@ const toolsIndex: SearchResult[] = [
     description: "Đánh giá lượng dinh dưỡng thực tế",
   },
   {
-    title: "BMI & Thành phần Cơ thể",
+    title: "BMI & Thành phần cơ thể",
     href: "/tools/bmi-body-composition",
     category: "tool",
     description: "Tính BMI, IBW, ABW, BSA",

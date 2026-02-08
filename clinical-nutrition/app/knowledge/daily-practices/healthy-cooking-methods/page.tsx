@@ -6,7 +6,7 @@ import { ChefHat, CheckCircle2, AlertCircle, Flame } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Phương pháp Nấu ăn Lành mạnh",
+  title: "Phương pháp Nấu ăn lành mạnh",
   description:
     "Hướng dẫn các phương pháp nấu ăn lành mạnh giúp giữ lại dinh dưỡng, giảm chất béo, và tăng hương vị tự nhiên của thực phẩm.",
   keywords: [
@@ -23,14 +23,14 @@ export default function HealthyCookingMethodsPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Phương pháp Nấu ăn Lành mạnh" },
+          { label: "Phương pháp Nấu ăn lành mạnh" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <ChefHat className="w-8 h-8 text-orange-600" aria-hidden="true" />
-          <h1 className="heading-1">Phương pháp Nấu ăn Lành mạnh</h1>
+          <h1 className="heading-1">Phương pháp Nấu ăn lành mạnh</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Cách bạn nấu ăn ảnh hưởng đến dinh dưỡng và sức khỏe. 
@@ -138,7 +138,7 @@ export default function HealthyCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -173,7 +173,7 @@ export default function HealthyCookingMethodsPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ Ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Hiểu về chất béo và cách chọn dầu tốt
             </p>

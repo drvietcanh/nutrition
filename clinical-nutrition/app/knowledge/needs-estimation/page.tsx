@@ -92,7 +92,7 @@ export default function NeedsEstimationPage() {
               Ví dụ: Harris-Benedict, Mifflin-St Jeor, Schofield (thường điều chỉnh với yếu tố hoạt động và stress)
             </p>
             <p className="text-sm text-neutral-700">
-              <strong>Vì sao chúng được sử dụng</strong>: Chi tiết hơn, tính đến tuổi, giới tính, chiều cao, cân nặng, và đôi khi hoạt động.
+              <strong>Vì sao chúng được sử dụng</strong>: chi tiết hơn, tính đến tuổi, giới tính, chiều cao, cân nặng, và đôi khi hoạt động.
             </p>
             <p className="text-sm text-neutral-700">
               <strong>Giới hạn</strong>: Vẫn dựa trên trung bình dân số, không phải nhu cầu cá nhân. Các phương trình khác nhau có thể cho kết quả khác nhau
@@ -303,7 +303,7 @@ export default function NeedsEstimationPage() {
       {/* Link to Tool */}
       <section className="space-y-4 rounded-lg border-2 border-blue-300 bg-blue-50 p-6">
         <h2 className="text-xl font-semibold text-blue-900 sm:text-2xl">
-          Thử Bạn: Máy tính Năng lượng & Protein
+          Thử Bạn: Máy tính năng lượng & Protein
         </h2>
         <p className="text-base text-blue-800">
           Máy tính tương tác của chúng tôi minh họa cách các phương pháp khác nhau tạo ra các ước tính khác nhau và vì sao khoảng quan trọng.
@@ -314,7 +314,7 @@ export default function NeedsEstimationPage() {
             href="/tools/energy-protein-calculator"
             className="inline-flex items-center rounded-md bg-blue-700 px-4 py-2 text-base font-medium text-white hover:bg-blue-800 transition-colors"
           >
-            Mở Máy tính Năng lượng & Protein →
+            Mở Máy tính năng lượng & Protein →
           </Link>
         </div>
       </section>
@@ -326,7 +326,7 @@ export default function NeedsEstimationPage() {
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Công cụ giáo dục để ước tính nhu cầu năng lượng và protein hàng ngày dựa trên các phương trình tiêu chuẩn
@@ -344,7 +344,7 @@ export default function NeedsEstimationPage() {
             </CardContent>
           </Card>
           <Card href="/tools/bmi-body-composition">
-            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
             <CardContent>
               <p className="text-body-sm">
                 Tính BMI, IBW, ABW, và BSA - các chỉ số cơ bản được sử dụng trong ước tính nhu cầu dinh dưỡng.

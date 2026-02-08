@@ -133,7 +133,7 @@ export default function MealPlanningPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Ví dụ Bữa ăn Cân bằng</h3>
+            <h3 className="heading-4 mb-3">Ví dụ Bữa ăn cân bằng</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <p className="text-sm font-semibold text-gray-900 mb-2">Bữa sáng:</p>
@@ -290,7 +290,7 @@ export default function MealPlanningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -337,7 +337,7 @@ export default function MealPlanningPage() {
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-family-meals">
-            <h3 className="heading-5 mb-2">Bữa Ăn Gia đình Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn Gia đình Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Cấu trúc bữa ăn Việt Nam và cách cân bằng dinh dưỡng
             </p>

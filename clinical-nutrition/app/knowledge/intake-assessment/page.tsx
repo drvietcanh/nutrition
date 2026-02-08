@@ -364,7 +364,7 @@ export default function IntakeAssessmentPage() {
             </CardContent>
           </Card>
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu năng lượng và protein để so sánh với lượng ăn thực tế.

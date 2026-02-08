@@ -46,7 +46,7 @@ export default function CalciumBoneHealthPage() {
             <strong>Canxi</strong> là khoáng chất chính tạo nên xương và răng
           </li>
           <li>
-            Cơ thể tích trữ canxi trong xương khi còn trẻ - <strong>quan trọng cho tuổi thiếu niên</strong>
+            cơ thể tích trữ canxi trong xương khi còn trẻ - <strong>quan trọng cho tuổi thiếu niên</strong>
           </li>
           <li>
             <strong>Sữa, sữa chua, phô mai</strong> là nguồn canxi tốt nhất
@@ -273,7 +273,7 @@ export default function CalciumBoneHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -305,7 +305,7 @@ export default function CalciumBoneHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

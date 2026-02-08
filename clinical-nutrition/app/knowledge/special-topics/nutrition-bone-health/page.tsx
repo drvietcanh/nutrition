@@ -199,7 +199,7 @@ export default function NutritionBoneHealthPage() {
         <h2 className="heading-2">Ví dụ Bữa ăn Tốt cho Xương</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Sáng</h3>
+            <h3 className="heading-5 mb-2">Bữa sáng</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Sữa chua + trái cây + quả hạch:</strong>
             </p>
@@ -250,7 +250,7 @@ export default function NutritionBoneHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -315,7 +315,7 @@ export default function NutritionBoneHealthPage() {
           <Card href="/knowledge/calcium-bone-health">
             <h3 className="heading-5 mb-2">Calcium và Sức khỏe Xương</h3>
             <p className="text-sm text-gray-600">
-              Chi tiết về calcium cho xương
+              chi tiết về calcium cho xương
             </p>
           </Card>
           <Card href="/knowledge/vitamins-minerals/vitamin-d">

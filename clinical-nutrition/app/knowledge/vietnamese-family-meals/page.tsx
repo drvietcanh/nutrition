@@ -8,7 +8,7 @@ import { UtensilsCrossed, Carrot, Fish, Wheat, Apple, CheckCircle2 } from "lucid
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Bữa Ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng",
+  title: "Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng",
   description:
     "Cách tổ chức bữa ăn gia đình kiểu Việt Nam (cơm + canh + món mặn + rau) để đảm bảo cân bằng dinh dưỡng. Ví dụ thực tế bữa trưa, bữa tối.",
   keywords: [
@@ -27,14 +27,14 @@ export default function VietnameseFamilyMealsPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Bữa Ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng" },
+          { label: "Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <UtensilsCrossed className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Bữa Ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng</h1>
+          <h1 className="heading-1">Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Bữa ăn gia đình Việt Nam truyền thống có cấu trúc cân bằng tự nhiên: cơm (carbohydrate), 
@@ -67,7 +67,7 @@ export default function VietnameseFamilyMealsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cấu trúc Bữa Ăn Gia đình Việt Nam</h2>
+        <h2 className="heading-2">Cấu trúc Bữa ăn Gia đình Việt Nam</h2>
         <div className="space-y-4">
           <p className="text-body">
             Bữa ăn gia đình Việt Nam truyền thống thường có <strong>4 thành phần chính</strong>, 
@@ -143,7 +143,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa Ăn Cụ thể</h2>
+        <h2 className="heading-2">Ví dụ Bữa ăn Cụ thể</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Bữa Trưa Gia đình</h3>
@@ -235,7 +235,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Cân bằng Dinh dưỡng trong Bữa Ăn</h2>
+        <h2 className="heading-2">Cách cân bằng Dinh dưỡng trong Bữa ăn</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Tỷ lệ Khuyến nghị</h3>
@@ -276,18 +276,18 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Bữa Ăn Cân bằng vs Không Cân bằng</h2>
+        <h2 className="heading-2">So sánh: Bữa ăn cân bằng vs Không Cân bằng</h2>
         <ComparisonCard
           title="Ví dụ So sánh"
           items={[
             {
-              label: "Bữa Trưa",
+              label: "Bữa trưa",
               good: "Cơm + canh chua cá + cá kho + rau muống luộc = Cân bằng carbohydrate, protein, rau củ, dịch",
               bad: "Cơm + thịt kho + không có canh + ít rau = Thiếu rau củ, thiếu dịch",
               note: "Bữa ăn cân bằng có đủ các nhóm thực phẩm, bữa không cân bằng thiếu rau củ"
             },
             {
-              label: "Bữa Tối",
+              label: "Bữa tối",
               good: "Cơm + canh rau + thịt kho + rau cải xào = Đầy đủ dinh dưỡng",
               bad: "Cơm + thịt kho + không có canh + không có rau = Thiếu vitamin, chất xơ",
               note: "Rau củ rất quan trọng - không nên bỏ qua"
@@ -297,7 +297,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -362,7 +362,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -394,7 +394,7 @@ export default function VietnameseFamilyMealsPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/healthy-plate">
-            <h3 className="heading-5 mb-2">Cân bằng Bữa ăn: Đĩa Ăn Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Cân bằng Bữa ăn: Đĩa ăn lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Hướng dẫn cách chia đĩa ăn với món ăn Việt Nam
             </p>

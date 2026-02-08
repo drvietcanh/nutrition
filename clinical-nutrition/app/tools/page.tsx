@@ -46,7 +46,7 @@ export default function ToolsIndexPage() {
         <Card href="/tools/energy-protein-calculator">
           <CardHeader
             icon={Calculator}
-            title="Nhu cầu Năng lượng & Protein – Máy tính Giảng dạy"
+            title="Nhu cầu năng lượng & Protein – Máy tính Giảng dạy"
           />
           <CardContent>
             <p className="text-body">
@@ -89,11 +89,11 @@ export default function ToolsIndexPage() {
         <Card href="/tools/bmi-body-composition">
           <CardHeader
             icon={Ruler}
-            title="BMI & Thành phần Cơ thể – Công cụ Giảng dạy"
+            title="BMI & Thành phần cơ thể – Công cụ Giảng dạy"
           />
           <CardContent>
             <p className="text-body">
-              Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt Cơ thể (BSA).
+              Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt cơ thể (BSA).
               Hiểu cách các chỉ số này được sử dụng trong đánh giá dinh dưỡng lâm sàng.
             </p>
           </CardContent>

@@ -93,7 +93,7 @@ export default function HydrationPage() {
               <strong>👉 Thiếu nước → cơ thể hoạt động kém.</strong>
             </p>
             <p className="text-sm text-red-900 mt-2">
-              Cơ thể có thể sống nhiều tuần không có thức ăn, 
+              cơ thể có thể sống nhiều tuần không có thức ăn, 
               nhưng chỉ vài ngày không có nước. Thiếu nước nghiêm trọng có thể đe dọa tính mạng.
             </p>
           </div>
@@ -218,7 +218,7 @@ export default function HydrationPage() {
               <div className="flex items-start gap-2">
                 <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>
-                  <strong>Thời tiết nóng:</strong> Cơ thể mất nước qua mồ hôi nhiều hơn
+                  <strong>Thời tiết nóng:</strong> cơ thể mất nước qua mồ hôi nhiều hơn
                 </span>
               </div>
               <div className="flex items-start gap-2">
@@ -429,7 +429,7 @@ export default function HydrationPage() {
 
       {/* Vietnamese Water Sources Table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng Nguồn Nước trong Đời sống</h2>
+        <h2 className="heading-2">Bảng nguồn Nước trong Đời sống</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Bảng dưới đây giúp bạn hiểu loại nước nào được tính vào tổng lượng nước hàng ngày.

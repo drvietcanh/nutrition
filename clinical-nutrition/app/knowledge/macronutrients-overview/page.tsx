@@ -40,7 +40,7 @@ export default function MacronutrientsOverviewPage() {
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">
-          Cơ thể chúng ta cần ba chất dinh dưỡng đa lượng chính: <strong>Carbohydrate</strong>, 
+          cơ thể chúng ta cần ba chất dinh dưỡng đa lượng chính: <strong>Carbohydrate</strong>, 
           <strong> Protein</strong>, và <strong>Chất béo</strong>. Hiểu về vai trò và cách cân bằng 
           chúng giúp bạn có chế độ ăn lành mạnh.
         </p>
@@ -221,7 +221,7 @@ export default function MacronutrientsOverviewPage() {
             <p className="text-xs text-gray-600">
               Xem chi tiết:{" "}
               <Link href="/knowledge/dietary-fats" className="text-blue-600 hover:underline">
-                Chất béo trong Chế độ Ăn
+                Chất béo trong Chế độ ăn
               </Link>
             </p>
           </div>
@@ -232,7 +232,7 @@ export default function MacronutrientsOverviewPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách Cân bằng các Chất Dinh dưỡng Đa lượng
+          Cách cân bằng các Chất Dinh dưỡng Đa lượng
         </h2>
         <div className="space-y-4">
           <Card>
@@ -291,7 +291,7 @@ export default function MacronutrientsOverviewPage() {
 
       {/* Common Mistakes */}
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-5 mb-2">"Loại bỏ hoàn toàn một chất dinh dưỡng"</h3>
@@ -323,7 +323,7 @@ export default function MacronutrientsOverviewPage() {
 
       {/* Related Articles */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bài viết Chi tiết</h2>
+        <h2 className="heading-2">Bài viết chi tiết</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {getRelatedArticles('macronutrients-overview').map((article) => (
             <Card key={article.slug} href={article.href}>

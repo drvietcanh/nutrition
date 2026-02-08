@@ -218,7 +218,7 @@ export default function NutritionOnBudgetPage() {
             </p>
           </Card>
           <Card href="/knowledge/daily-practices/healthy-cooking-methods">
-            <h3 className="heading-5 mb-2">Phương pháp Nấu ăn Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Phương pháp Nấu ăn lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Nấu ở nhà rẻ hơn và lành mạnh hơn
             </p>

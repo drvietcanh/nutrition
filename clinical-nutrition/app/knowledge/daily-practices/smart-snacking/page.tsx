@@ -60,7 +60,7 @@ export default function SmartSnackingPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Snack Lành mạnh</h2>
+        <h2 className="heading-2">Snack lành mạnh</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 text-green-900 mb-3">✓ Snack Tốt</h3>
@@ -97,7 +97,7 @@ export default function SmartSnackingPage() {
           </Card>
 
           <Card className="border-red-200 bg-red-50">
-            <h3 className="heading-4 text-red-900 mb-3">✗ Snack Nên Tránh</h3>
+            <h3 className="heading-4 text-red-900 mb-3">✗ Snack Nên tránh</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <AlertCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -117,7 +117,7 @@ export default function SmartSnackingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

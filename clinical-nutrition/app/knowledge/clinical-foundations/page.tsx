@@ -201,7 +201,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/myths-and-misconceptions">
           <CardHeader
             icon={AlertCircle}
-            title="Hiểu lầm Phổ biến trong Dinh dưỡng Lâm sàng"
+            title="Hiểu lầm phổ biến trong Dinh dưỡng Lâm sàng"
           />
           <CardContent>
             <p className="text-body">

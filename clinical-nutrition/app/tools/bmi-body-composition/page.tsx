@@ -7,9 +7,9 @@ import { ToolNavigation } from "../components/ToolNavigation";
 import { Ruler } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "BMI & Thành phần Cơ thể",
+  title: "BMI & Thành phần cơ thể",
   description:
-    "Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt Cơ thể (BSA). Công cụ giáo dục để hiểu cách các chỉ số này được sử dụng trong đánh giá dinh dưỡng lâm sàng.",
+    "Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt cơ thể (BSA). Công cụ giáo dục để hiểu cách các chỉ số này được sử dụng trong đánh giá dinh dưỡng lâm sàng.",
   keywords: [
     "BMI",
     "body mass index",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     "dinh dưỡng lâm sàng",
   ],
   openGraph: {
-    title: "BMI & Thành phần Cơ thể – Công cụ Giảng dạy",
+    title: "BMI & Thành phần cơ thể – Công cụ Giảng dạy",
     description:
-      "Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt Cơ thể (BSA). Công cụ giáo dục để hiểu cách các chỉ số này được sử dụng trong đánh giá dinh dưỡng lâm sàng.",
+      "Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt cơ thể (BSA). Công cụ giáo dục để hiểu cách các chỉ số này được sử dụng trong đánh giá dinh dưỡng lâm sàng.",
     url: "https://clinical-nutrition.edu.vn/tools/bmi-body-composition",
   },
 };
@@ -53,12 +53,12 @@ export default function BMIBodyCompositionPage() {
         <div className="flex items-center gap-3">
           <Ruler className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
-            BMI & Thành phần Cơ thể – Công cụ Giảng dạy
+            BMI & Thành phần cơ thể – Công cụ Giảng dạy
           </h1>
         </div>
         <p className="text-body-lg">
           Trang này minh họa cách tính BMI (Body Mass Index), Cân nặng Lý tưởng (IBW),
-          Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt Cơ thể (BSA). Các con số hiển thị là{" "}
+          Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt cơ thể (BSA). Các con số hiển thị là{" "}
           <strong>khoảng giáo dục, không phải chẩn đoán</strong>.
         </p>
       </header>
@@ -88,7 +88,7 @@ export default function BMIBodyCompositionPage() {
             vì cân nặng thực tế có thể dẫn đến ước tính quá cao.
           </li>
           <li>
-            <strong>Diện tích Bề mặt Cơ thể (BSA)</strong> được sử dụng trong một số tính toán dược lý và lâm sàng.
+            <strong>Diện tích Bề mặt cơ thể (BSA)</strong> được sử dụng trong một số tính toán dược lý và lâm sàng.
           </li>
         </ul>
       </section>

@@ -63,7 +63,7 @@ export default function NutritionBusyLifestylePage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Quick Tips cho Bữa Sáng</h2>
+        <h2 className="heading-2">Quick Tips cho Bữa sáng</h2>
         <Card>
           <h3 className="heading-4 mb-3">Bữa Sáng Nhanh (5-10 phút)</h3>
           <div className="space-y-3">
@@ -117,7 +117,7 @@ export default function NutritionBusyLifestylePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Quick Tips cho Bữa Trưa</h2>
+        <h2 className="heading-2">Quick Tips cho Bữa trưa</h2>
         <Card>
           <h3 className="heading-4 mb-3">Bữa Trưa Nhanh (10-15 phút hoặc Meal Prep)</h3>
           <div className="space-y-3">
@@ -175,7 +175,7 @@ export default function NutritionBusyLifestylePage() {
       <section className="space-y-4">
         <h2 className="heading-2">Snacking Thông minh</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Snack Nhanh và Lành mạnh</h3>
+          <h3 className="heading-4 mb-3">Snack Nhanh và lành mạnh</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <p className="text-sm font-semibold text-gray-900 mb-2">Snack Tốt (Mang theo):</p>
@@ -202,7 +202,7 @@ export default function NutritionBusyLifestylePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <TipCard
           tips={[
             { type: 'tip', text: 'Chuẩn bị snack lành mạnh: Mang theo trái cây, quả hạch để tránh chọn đồ không tốt khi đói' },
@@ -243,7 +243,7 @@ export default function NutritionBusyLifestylePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

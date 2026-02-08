@@ -163,7 +163,7 @@ export default function MindfulEatingPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Quan hệ Lành mạnh với Thức ăn</h3>
+            <h3 className="heading-4 mb-3">Quan hệ lành mạnh với Thức ăn</h3>
             <p className="text-body-sm">
               Ăn chánh niệm giúp bạn hiểu rõ hơn về mối quan hệ với thức ăn, 
               giảm ăn theo cảm xúc, và có quan hệ lành mạnh hơn.
@@ -173,7 +173,7 @@ export default function MindfulEatingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Thực hành Ăn uống Chánh niệm</h2>
+        <h2 className="heading-2">Cách thực hành Ăn uống Chánh niệm</h2>
         <Card>
           <div className="space-y-4">
             <div className="flex items-start gap-3">
@@ -229,7 +229,7 @@ export default function MindfulEatingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Thực hành</h2>
+        <h2 className="heading-2">Ví dụ thực hành</h2>
         <ExampleBox variant="tip" title="Ví dụ: Ăn một Bữa ăn Chánh niệm">
           <div className="space-y-3">
             <div>
@@ -271,7 +271,7 @@ export default function MindfulEatingPage() {
           title="Ví dụ So sánh"
           items={[
             {
-              label: "Bữa Trưa",
+              label: "Bữa trưa",
               good: "Ngồi xuống, tắt TV, ăn chậm, nhai kỹ, dừng khi no = ăn đủ, hài lòng, tiêu hóa tốt",
               bad: "Vừa ăn vừa xem TV, ăn nhanh, nuốt vội, ăn hết đĩa = ăn quá nhiều, đầy bụng",
               note: "Ăn chánh niệm giúp nhận biết khi no và ăn đúng lượng"
@@ -287,7 +287,7 @@ export default function MindfulEatingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -325,7 +325,7 @@ export default function MindfulEatingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -369,7 +369,7 @@ export default function MindfulEatingPage() {
             </p>
           </Card>
           <Card href="/knowledge/healthy-weight-management">
-            <h3 className="heading-5 mb-2">Quản lý Cân nặng Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Quản lý Cân nặng lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Ăn chánh niệm hỗ trợ kiểm soát cân nặng
             </p>

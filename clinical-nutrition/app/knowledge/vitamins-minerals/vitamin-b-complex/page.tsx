@@ -9,7 +9,7 @@ import { Zap, Wheat, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Vitamin B Complex và Năng lượng",
+  title: "Vitamin B Complex và năng lượng",
   description:
     "Hiểu về vitamin B complex - nhóm vitamin quan trọng cho năng lượng, chức năng não, và sức khỏe tổng thể. Các loại vitamin B, nguồn thực phẩm, và nhu cầu.",
   keywords: [
@@ -31,14 +31,14 @@ export default function VitaminBComplexPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Vitamin & Khoáng chất", href: "/knowledge/vitamins-minerals" },
-          { label: "Vitamin B Complex và Năng lượng" },
+          { label: "Vitamin B Complex và năng lượng" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Zap className="w-8 h-8 text-yellow-600" aria-hidden="true" />
-          <h1 className="heading-1">Vitamin B Complex và Năng lượng</h1>
+          <h1 className="heading-1">Vitamin B Complex và năng lượng</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Vitamin B Complex là nhóm 8 vitamin B khác nhau, mỗi loại có vai trò riêng nhưng cùng làm việc 
@@ -111,10 +111,10 @@ export default function VitaminBComplexPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Các Loại Vitamin B và Vai trò</h2>
+        <h2 className="heading-2">Các loại Vitamin B và Vai trò</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">B1 (Thiamine) - Năng lượng</h3>
+            <h3 className="heading-4 mb-3">B1 (Thiamine) - năng lượng</h3>
             <p className="text-body-sm mb-2">
               Giúp chuyển đổi carbohydrate thành năng lượng.
             </p>
@@ -125,7 +125,7 @@ export default function VitaminBComplexPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">B2 (Riboflavin) - Năng lượng và Da</h3>
+            <h3 className="heading-4 mb-3">B2 (Riboflavin) - năng lượng và Da</h3>
             <p className="text-body-sm mb-2">
               Giúp chuyển đổi thực phẩm thành năng lượng, hỗ trợ sức khỏe da và mắt.
             </p>
@@ -136,7 +136,7 @@ export default function VitaminBComplexPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">B3 (Niacin) - Năng lượng và Cholesterol</h3>
+            <h3 className="heading-4 mb-3">B3 (Niacin) - năng lượng và Cholesterol</h3>
             <p className="text-body-sm mb-2">
               Giúp chuyển đổi thực phẩm thành năng lượng, có thể hỗ trợ sức khỏe tim mạch.
             </p>
@@ -266,7 +266,7 @@ export default function VitaminBComplexPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -304,7 +304,7 @@ export default function VitaminBComplexPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/calories-energy">
-            <h3 className="heading-5 mb-2">Hiểu về Calo và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Calo và năng lượng</h3>
             <p className="text-sm text-gray-600">
               Vitamin B giúp chuyển đổi thực phẩm thành năng lượng
             </p>

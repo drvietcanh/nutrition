@@ -66,7 +66,7 @@ export default function VietnameseDrinksNutritionPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Các Loại Đồ uống Phổ biến ở Việt Nam</h2>
+        <h2 className="heading-2">Các loại Đồ uống Phổ biến ở Việt Nam</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 mb-3 text-green-900">1. Trà Xanh (Green Tea)</h3>
@@ -93,7 +93,7 @@ export default function VietnameseDrinksNutritionPage() {
                 </ul>
               </div>
               <ComparisonCard
-                title="Trà Xanh Lành mạnh vs Nên Cải thiện"
+                title="Trà Xanh lành mạnh vs Nên cải thiện"
                 items={[
                   {
                     label: "Trà Xanh",
@@ -128,7 +128,7 @@ export default function VietnameseDrinksNutritionPage() {
                 </ul>
               </div>
               <ComparisonCard
-                title="Cà phê Lành mạnh vs Nên Hạn chế"
+                title="Cà phê lành mạnh vs Nên hạn chế"
                 items={[
                   {
                     label: "Cà phê",
@@ -163,7 +163,7 @@ export default function VietnameseDrinksNutritionPage() {
                 </ul>
               </div>
               <ComparisonCard
-                title="Nước Dừa Lành mạnh vs Nên Hạn chế"
+                title="Nước Dừa lành mạnh vs Nên hạn chế"
                 items={[
                   {
                     label: "Nước Dừa",
@@ -249,7 +249,7 @@ export default function VietnameseDrinksNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Chọn Đồ uống Lành mạnh</h2>
+        <h2 className="heading-2">Tips Chọn Đồ uống lành mạnh</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

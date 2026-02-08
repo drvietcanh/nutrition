@@ -218,7 +218,7 @@ export default function Home() {
                 <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
                   <Calculator className="w-5 h-5 text-green-600" aria-hidden="true" />
                 </div>
-                <h3 className="heading-5">Máy tính Năng lượng & Protein</h3>
+                <h3 className="heading-5">Máy tính năng lượng & Protein</h3>
               </div>
               <p className="text-sm text-gray-600">
                 Tính toán nhu cầu dinh dưỡng một cách đơn giản và dễ hiểu

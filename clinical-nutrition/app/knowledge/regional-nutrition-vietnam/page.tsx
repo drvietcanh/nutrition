@@ -109,7 +109,7 @@ export default function RegionalNutritionVietnamPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="tip" title="Cách Cân bằng">
+          <ExampleBox variant="tip" title="Cách cân bằng">
             <p className="mb-2">
               <strong>Giảm natri:</strong> Pha loãng nước mắm, giảm mắm tôm. 
               Tăng gia vị tự nhiên (tỏi, gừng).
@@ -164,7 +164,7 @@ export default function RegionalNutritionVietnamPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="warning" title="Cách Cân bằng">
+          <ExampleBox variant="warning" title="Cách cân bằng">
             <p className="mb-2">
               <strong>Giảm cay:</strong> Yêu cầu ít cay nếu không ăn được cay. 
               Cay quá có thể gây kích ứng dạ dày.
@@ -227,7 +227,7 @@ export default function RegionalNutritionVietnamPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="warning" title="Cách Cân bằng">
+          <ExampleBox variant="warning" title="Cách cân bằng">
             <p className="mb-2">
               <strong>Giảm đường:</strong> Yêu cầu ít đường trong món ăn. 
               Đường quá nhiều không tốt cho sức khỏe.
@@ -271,7 +271,7 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Cân bằng Dinh dưỡng Theo Vùng</h2>
+        <h2 className="heading-2">Cách cân bằng Dinh dưỡng Theo Vùng</h2>
         <Card>
           <h3 className="heading-4 mb-3">Tips Điều chỉnh</h3>
           <div className="space-y-3">
@@ -307,7 +307,7 @@ export default function RegionalNutritionVietnamPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Kết hợp Món Ăn Từ Nhiều Vùng</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Ví dụ Bữa Ăn Đa dạng</h3>
+          <h3 className="heading-4 mb-3">Ví dụ Bữa ăn Đa dạng</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>
               <strong>Bữa trưa:</strong> Cơm (chung) + <strong>cá kho</strong> (miền Bắc - ít cay) + 
@@ -322,7 +322,7 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -355,7 +355,7 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -399,7 +399,7 @@ export default function RegionalNutritionVietnamPage() {
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-cooking-methods">
-            <h3 className="heading-5 mb-2">Cách Nấu Ăn Lành mạnh Kiểu Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Phương pháp nấu ăn theo vùng miền
             </p>

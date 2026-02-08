@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
 
 export const metadata: Metadata = {
-  title: "Nhu cầu Năng lượng & Protein",
+  title: "Nhu cầu năng lượng & Protein",
   description:
     "Tính toán nhu cầu năng lượng và protein ước tính dựa trên các phương trình tiêu chuẩn. Hiểu vì sao nhu cầu là ước tính (khoảng) chứ không phải số chính xác, và cách các yếu tố như tuổi, giới tính, và bối cảnh bệnh ảnh hưởng đến tính toán.",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "REE",
   ],
   openGraph: {
-    title: "Nhu cầu Năng lượng & Protein – Công cụ Giảng dạy",
+    title: "Nhu cầu năng lượng & Protein – Công cụ Giảng dạy",
     description:
       "Tính toán nhu cầu năng lượng và protein ước tính dựa trên các phương trình tiêu chuẩn. Hiểu vì sao nhu cầu là ước tính (khoảng) chứ không phải số chính xác, và cách các yếu tố như tuổi, giới tính, và bối cảnh bệnh ảnh hưởng đến tính toán.",
     url: "https://clinical-nutrition.edu.vn/tools/energy-protein-calculator",
@@ -39,7 +39,7 @@ export default function EnergyProteinCalculatorPage() {
       {/* 1. Title + brief explanation */}
       <header className="space-y-3">
         <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-          Cơ thể cần bao nhiêu Năng lượng & Protein mỗi ngày?
+          cơ thể cần bao nhiêu năng lượng & Protein mỗi ngày?
         </h1>
         <p className="text-body-lg">
           Công cụ này giúp bạn hiểu cách tính toán nhu cầu năng lượng (calo) và protein 

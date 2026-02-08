@@ -124,7 +124,7 @@ export default function COPDNutritionPage() {
         </div>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="🔥 Năng lượng (Calories)" />
+          <CardHeader icon={CheckCircle} title="🔥 năng lượng (Calories)" />
           <CardContent>
             <div className="space-y-4">
               <div>

@@ -45,11 +45,11 @@ export default function SportsNutritionPage() {
       </header>
 
       <section className="space-y-6">
-        <h2 className="heading-2">Nhu cầu Năng lượng</h2>
+        <h2 className="heading-2">Nhu cầu năng lượng</h2>
         <Card>
           <h3 className="heading-4 mb-4 flex items-center gap-2">
             <Zap className="w-5 h-5 text-yellow-600" aria-hidden="true" />
-            Năng lượng cho Vận động
+            năng lượng cho Vận động
           </h3>
           <div className="space-y-3 text-body">
             <p>
@@ -111,7 +111,7 @@ export default function SportsNutritionPage() {
       <section className="space-y-6">
         <h2 className="heading-2">Carbohydrate cho Hiệu suất</h2>
         <Card>
-          <h3 className="heading-4 mb-4">Carbohydrate là Nguồn Năng lượng Chính</h3>
+          <h3 className="heading-4 mb-4">Carbohydrate là Nguồn năng lượng Chính</h3>
           <div className="space-y-3 text-body">
             <p>
               Carbohydrate là nguồn năng lượng chính cho hoạt động thể chất cường độ cao.

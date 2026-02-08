@@ -97,11 +97,11 @@ export default function VitaminAEyeHealthPage() {
           <div className="space-y-3 text-body-sm">
             <p>
               <strong>Retinol (Preformed Vitamin A):</strong> Có sẵn trong thực phẩm động vật. 
-              Cơ thể sử dụng trực tiếp. Có thể tích tụ và gây độc nếu quá nhiều.
+              cơ thể sử dụng trực tiếp. Có thể tích tụ và gây độc nếu quá nhiều.
             </p>
             <p>
               <strong>Beta-carotene (Provitamin A):</strong> Có trong thực phẩm thực vật. 
-              Cơ thể chuyển đổi thành vitamin A khi cần. An toàn hơn vì cơ thể chỉ chuyển đổi khi cần.
+              cơ thể chuyển đổi thành vitamin A khi cần. An toàn hơn vì cơ thể chỉ chuyển đổi khi cần.
             </p>
           </div>
         </Card>
@@ -167,7 +167,7 @@ export default function VitaminAEyeHealthPage() {
               Phụ nữ mang thai nên tránh gan và bổ sung retinol liều cao.
             </p>
             <p className="mt-2">
-              <strong>Beta-carotene an toàn hơn:</strong> Cơ thể chỉ chuyển đổi khi cần, không tích tụ. 
+              <strong>Beta-carotene an toàn hơn:</strong> cơ thể chỉ chuyển đổi khi cần, không tích tụ. 
               Ăn nhiều cà rốt, khoai lang không gây độc (chỉ có thể làm da hơi vàng).
             </p>
           </div>
@@ -175,7 +175,7 @@ export default function VitaminAEyeHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

@@ -93,9 +93,9 @@ export function RelatedContent({
               // Map tool slugs to names (simplified - should be in a config)
               const toolNames: Record<string, string> = {
                 "malnutrition-screening": "Sàng lọc Suy Dinh dưỡng",
-                "energy-protein-calculator": "Máy tính Năng lượng & Protein",
+                "energy-protein-calculator": "Máy tính năng lượng & Protein",
                 "intake-assessment": "Đánh giá Lượng Ăn",
-                "bmi-body-composition": "BMI & Thành phần Cơ thể",
+                "bmi-body-composition": "BMI & Thành phần cơ thể",
                 "fluid-requirements": "Nhu cầu Dịch",
                 "refeeding-syndrome-risk": "Đánh giá Nguy cơ Hội chứng Tái cho Ăn",
                 "micronutrient-assessment": "Đánh giá Vi chất",

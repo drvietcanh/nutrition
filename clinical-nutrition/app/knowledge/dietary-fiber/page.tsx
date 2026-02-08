@@ -515,7 +515,7 @@ export default function DietaryFiberPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách Tăng Lượng Chất xơ trong Chế độ Ăn
+          Cách Tăng Lượng Chất xơ trong Chế độ ăn
         </h2>
         <div className="space-y-4">
           <TipCard

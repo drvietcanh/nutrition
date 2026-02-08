@@ -279,7 +279,7 @@ export default function NutritionRuralVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -320,7 +320,7 @@ export default function NutritionRuralVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa Ăn với Thực phẩm Địa phương</h2>
+        <h2 className="heading-2">Ví dụ Bữa ăn với Thực phẩm Địa phương</h2>
         <Card>
           <h3 className="heading-4 mb-3">Bữa Trưa Địa phương</h3>
           <div className="space-y-2 text-sm text-gray-700">
@@ -354,7 +354,7 @@ export default function NutritionRuralVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

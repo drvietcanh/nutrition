@@ -180,7 +180,7 @@ export default function NutritionRuralVietnamPage() {
 
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Bữa ăn với Thực phẩm Địa phương</h2>
-        <ExampleBox variant="info" title="Bữa Trưa">
+        <ExampleBox variant="info" title="Bữa trưa">
           <p className="text-sm mb-2">
             <strong>Thực đơn:</strong>
           </p>

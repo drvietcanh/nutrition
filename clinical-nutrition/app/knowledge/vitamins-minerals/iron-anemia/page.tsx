@@ -285,7 +285,7 @@ export default function IronAnemiaPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -317,7 +317,7 @@ export default function IronAnemiaPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -349,7 +349,7 @@ export default function IronAnemiaPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/vitamins-minerals/vitamin-b12-energy">
-            <h3 className="heading-5 mb-2">Vitamin B12 và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Vitamin B12 và năng lượng</h3>
             <p className="text-sm text-gray-600">
               B12 cũng quan trọng cho tạo máu và năng lượng
             </p>

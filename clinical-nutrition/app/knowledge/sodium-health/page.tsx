@@ -88,10 +88,10 @@ export default function SodiumHealthPage() {
 
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
             <p className="text-sm text-blue-900">
-              <strong>👉 Cơ thể vẫn cần muối, nhưng không cần nhiều.</strong>
+              <strong>👉 cơ thể vẫn cần muối, nhưng không cần nhiều.</strong>
             </p>
             <p className="text-sm text-blue-900 mt-2">
-              Cơ thể chỉ cần khoảng 500mg natri/ngày để hoạt động, 
+              cơ thể chỉ cần khoảng 500mg natri/ngày để hoạt động, 
               nhưng hầu hết chúng ta ăn nhiều hơn gấp 4-5 lần. Lượng thừa này gây ra các vấn đề sức khỏe.
             </p>
           </div>
@@ -453,7 +453,7 @@ export default function SodiumHealthPage() {
           </ExampleBox>
 
           <Card className="border-blue-200 bg-blue-50">
-            <h3 className="heading-4 mb-3 text-blue-900">So sánh Các Loại Gia vị Việt Nam</h3>
+            <h3 className="heading-4 mb-3 text-blue-900">So sánh Các loại Gia vị Việt Nam</h3>
             <div className="bg-white rounded-lg p-3 border border-blue-200">
               <p className="text-xs font-semibold text-gray-900 mb-2">Natri trong Gia vị (100ml/g):</p>
               <ul className="text-xs text-gray-700 space-y-1">

@@ -179,7 +179,7 @@ export default function IntakeVsNeedsPage() {
             giàu carbohydrate.
           </li>
           <li>
-            Năng lượng có thể xuất hiện đầy đủ trong khi protein tương đối thấp,
+            năng lượng có thể xuất hiện đầy đủ trong khi protein tương đối thấp,
             làm nổi bật tầm quan trọng của việc xem xét{" "}
             <strong>cả năng lượng và protein</strong>.
           </li>

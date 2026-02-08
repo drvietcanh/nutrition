@@ -88,7 +88,7 @@ export default function GettingStartedPage() {
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Thử <strong>Máy tính Năng lượng & Protein</strong> với dữ liệu mẫu</span>
+                    <span>Thử <strong>Máy tính năng lượng & Protein</strong> với dữ liệu mẫu</span>
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />

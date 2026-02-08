@@ -171,13 +171,13 @@ export default function PortionSizesPage() {
           title="Ví dụ So sánh"
           items={[
             {
-              label: "Bữa Trưa",
+              label: "Bữa trưa",
               good: "1 lòng bàn tay thịt gà + 1 nắm tay cơm + 2 bàn tay rau = ~450 calo",
               bad: "2 lòng bàn tay thịt gà + 2 nắm tay cơm + ít rau = ~800 calo",
               note: "Khẩu phần quá nhiều có thể gấp đôi calo!"
             },
             {
-              label: "Bữa Tối",
+              label: "Bữa tối",
               good: "1 lòng bàn tay cá + 1 nắm tay khoai tây + 2 bàn tay rau = ~400 calo",
               bad: "2 lòng bàn tay cá + 2 nắm tay khoai tây + ít rau = ~750 calo",
               note: "Chú ý đến tổng khẩu phần, không chỉ một loại thực phẩm"
@@ -199,7 +199,7 @@ export default function PortionSizesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -233,7 +233,7 @@ export default function PortionSizesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -277,13 +277,13 @@ export default function PortionSizesPage() {
             </p>
           </Card>
           <Card href="/knowledge/calories-energy">
-            <h3 className="heading-5 mb-2">Hiểu về Calo và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Calo và năng lượng</h3>
             <p className="text-sm text-gray-600">
               Mối liên hệ giữa khẩu phần và calo
             </p>
           </Card>
           <Card href="/knowledge/healthy-weight-management">
-            <h3 className="heading-5 mb-2">Quản lý Cân nặng Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Quản lý Cân nặng lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Cách sử dụng khẩu phần để quản lý cân nặng
             </p>

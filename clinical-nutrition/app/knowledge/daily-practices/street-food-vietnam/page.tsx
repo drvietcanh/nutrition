@@ -8,7 +8,7 @@ import { Utensils, AlertCircle, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thực phẩm Đường phố Việt Nam: Ăn Uống Lành mạnh",
+  title: "Thực phẩm Đường phố Việt Nam: Ăn Uống lành mạnh",
   description:
     "Hướng dẫn cách ăn uống lành mạnh với đồ ăn đường phố Việt Nam. Lựa chọn tốt (phở, bánh mì, bún) và lựa chọn nên hạn chế. Tips an toàn và cách điều chỉnh.",
   keywords: [
@@ -36,7 +36,7 @@ export default function StreetFoodVietnamPage() {
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Utensils className="w-8 h-8 text-orange-600" aria-hidden="true" />
-          <h1 className="heading-1">Thực phẩm Đường phố Việt Nam: Ăn Uống Lành mạnh</h1>
+          <h1 className="heading-1">Thực phẩm Đường phố Việt Nam: Ăn Uống lành mạnh</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Đồ ăn đường phố Việt Nam rất đa dạng và ngon miệng, nhưng không phải tất cả đều lành mạnh. 
@@ -119,7 +119,7 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Lựa chọn Nên Hạn chế</h2>
+        <h2 className="heading-2">Lựa chọn Nên hạn chế</h2>
         <Card>
           <div className="space-y-3">
             <div className="bg-red-50 rounded-lg p-3 border border-red-200">
@@ -156,7 +156,7 @@ export default function StreetFoodVietnamPage() {
             "Cháo gà - dễ tiêu, giàu dinh dưỡng",
             "Bánh cuốn - ít dầu, có protein",
           ]}
-          badTitle="Lựa chọn Nên Hạn chế"
+          badTitle="Lựa chọn Nên hạn chế"
           badItems={[
             "Bánh rán, nem rán - nhiều dầu mỡ",
             "Chè, bánh ngọt - nhiều đường",
@@ -256,7 +256,7 @@ export default function StreetFoodVietnamPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/eating-out-healthy">
-            <h3 className="heading-5 mb-2">Ăn Ngoài Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Ăn Ngoài lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Cách ăn ngoài lành mạnh
             </p>

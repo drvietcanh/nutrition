@@ -385,7 +385,7 @@ export default function DyslipidemiaNutritionPage() {
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu năng lượng và protein, đặc biệt hữu ích nếu bệnh nhân cần giảm cân
@@ -394,7 +394,7 @@ export default function DyslipidemiaNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/bmi-body-composition">
-            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
             <CardContent>
               <p className="text-body-sm">
                 Đánh giá BMI và thành phần cơ thể, quan trọng trong quản lý cân nặng cho bệnh nhân rối loạn lipid máu.

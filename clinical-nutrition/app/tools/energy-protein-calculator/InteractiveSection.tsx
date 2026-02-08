@@ -662,7 +662,7 @@ function SingleMethodResult({ heading, result }: SingleMethodResultProps) {
         </p>
         <ul className="space-y-0.5 text-xs text-neutral-700">
           <li>
-            Năng lượng:{" "}
+            năng lượng:{" "}
             <strong>{energyText ?? "dữ liệu không đủ để minh họa"}</strong>
           </li>
           <li>

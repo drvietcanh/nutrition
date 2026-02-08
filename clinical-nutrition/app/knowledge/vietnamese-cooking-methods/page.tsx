@@ -244,7 +244,7 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">5. Xào - Cần Điều chỉnh</h2>
+        <h2 className="heading-2">5. Xào - Cần điều chỉnh</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Xào Lành mạnh</h3>
@@ -281,9 +281,9 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Phương pháp Tốt vs Nên Tránh</h2>
+        <h2 className="heading-2">So sánh: Phương pháp tốt vs Nên tránh</h2>
         <ComparisonCard
-          goodTitle="Phương pháp Tốt"
+          goodTitle="Phương pháp tốt"
           goodItems={[
             "Luộc: Rau muống luộc, thịt luộc - ít chất béo, giữ dinh dưỡng",
             "Hấp: Cá hấp, rau hấp - giữ dinh dưỡng tối đa",
@@ -291,7 +291,7 @@ export default function VietnameseCookingMethodsPage() {
             "Nướng (cẩn thận): Cá nướng không cháy, với rau củ",
             "Xào (ít dầu): Rau xào với ít dầu, nhiều rau củ"
           ]}
-          badTitle="Phương pháp Nên Hạn chế"
+          badTitle="Phương pháp nên hạn chế"
           badItems={[
             "Chiên ngập dầu: Chả giò chiên, khoai tây chiên - nhiều chất béo, mất dinh dưỡng",
             "Kho quá mặn: Cá kho quá nhiều nước mắm, đường - nhiều natri",
@@ -303,7 +303,7 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -343,9 +343,9 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa Ăn với Phương pháp Lành mạnh</h2>
+        <h2 className="heading-2">Ví dụ Bữa ăn với Phương pháp lành mạnh</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Trưa Lành mạnh</h3>
+          <h3 className="heading-4 mb-3">Bữa Trưa lành mạnh</h3>
           <div className="space-y-3">
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
               <p className="text-sm font-semibold text-green-900 mb-1">Cơm (nấu bình thường)</p>
@@ -367,7 +367,7 @@ export default function VietnameseCookingMethodsPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Tối Lành mạnh</h3>
+          <h3 className="heading-4 mb-3">Bữa Tối lành mạnh</h3>
           <div className="space-y-3">
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
               <p className="text-sm font-semibold text-green-900 mb-1">Cơm</p>
@@ -388,7 +388,7 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -420,7 +420,7 @@ export default function VietnameseCookingMethodsPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/healthy-cooking-methods">
-            <h3 className="heading-5 mb-2">Phương pháp Nấu ăn Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Phương pháp Nấu ăn lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Hướng dẫn chung về phương pháp nấu ăn lành mạnh
             </p>
@@ -432,7 +432,7 @@ export default function VietnameseCookingMethodsPage() {
             </p>
           </Card>
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ Ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Hiểu về chất béo trong phương pháp nấu ăn
             </p>

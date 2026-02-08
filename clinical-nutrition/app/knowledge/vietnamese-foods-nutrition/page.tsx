@@ -128,7 +128,7 @@ export default function VietnameseFoodsNutritionPage() {
           <NutrientTable
             title="Giá trị Carbohydrate trong Món ăn Việt Nam (1 phần)"
             rows={[
-              { nutrient: "Cơm trắng (1 bát)", amount: "45-50", unit: "g carb", note: "Năng lượng chính" },
+              { nutrient: "Cơm trắng (1 bát)", amount: "45-50", unit: "g carb", note: "năng lượng chính" },
               { nutrient: "Bún (1 tô)", amount: "50-60", unit: "g carb", note: "Từ gạo" },
               { nutrient: "Phở (1 tô)", amount: "60-70", unit: "g carb", note: "Từ bánh phở" },
               { nutrient: "Bánh cuốn (1 đĩa)", amount: "40-50", unit: "g carb", note: "Từ bột gạo" },
@@ -246,7 +246,7 @@ export default function VietnameseFoodsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -283,7 +283,7 @@ export default function VietnameseFoodsNutritionPage() {
           <Card href="/knowledge/protein-sources-needs">
             <h3 className="heading-5 mb-2">Protein: Nguồn và Nhu cầu</h3>
             <p className="text-sm text-gray-600">
-              Chi tiết về protein trong thực phẩm Việt Nam
+              chi tiết về protein trong thực phẩm Việt Nam
             </p>
           </Card>
           <Card href="/knowledge/carbohydrates">

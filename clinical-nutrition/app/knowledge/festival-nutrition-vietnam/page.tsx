@@ -83,7 +83,7 @@ export default function FestivalNutritionVietnamPage() {
             />
           </Card>
 
-          <ExampleBox variant="tip" title="Cách Ăn Tết Lành mạnh">
+          <ExampleBox variant="tip" title="Cách ăn Tết lành mạnh">
             <p className="mb-2">
               <strong>Bánh chưng/bánh tét:</strong> Ăn 1-2 miếng nhỏ (50-100g) mỗi bữa, không ăn quá nhiều. 
               Kết hợp với dưa hành, củ kiệu để có vitamin và giảm cảm giác ngán.
@@ -122,7 +122,7 @@ export default function FestivalNutritionVietnamPage() {
             </p>
           </Callout>
 
-          <ExampleBox variant="tip" title="Cách Ăn Trung thu Lành mạnh">
+          <ExampleBox variant="tip" title="Cách ăn Trung thu lành mạnh">
             <p className="mb-2">
               <strong>Chia nhỏ:</strong> Ăn 1/4-1/2 cái bánh mỗi lần, không ăn cả cái một lúc. 
               Chia với gia đình, bạn bè.
@@ -140,7 +140,7 @@ export default function FestivalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành cho Lễ hội</h2>
+        <h2 className="heading-2">Tips thực hành cho Lễ hội</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -232,7 +232,7 @@ export default function FestivalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -264,7 +264,7 @@ export default function FestivalNutritionVietnamPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/healthy-weight-management">
-            <h3 className="heading-5 mb-2">Quản lý Cân nặng Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Quản lý Cân nặng lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Cách quản lý cân nặng trong lễ hội
             </p>

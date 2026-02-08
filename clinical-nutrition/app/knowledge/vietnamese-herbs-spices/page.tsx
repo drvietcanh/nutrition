@@ -173,7 +173,7 @@ export default function VietnameseHerbsSpicesPage() {
         <h2 className="heading-2">Rau Thơm Việt Nam</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Các Loại Rau Thơm Phổ biến</h3>
+            <h3 className="heading-4 mb-3">Các loại Rau Thơm Phổ biến</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-green-50 rounded-lg p-3 border border-green-200">
                 <p className="text-sm font-semibold text-gray-900 mb-1">Ngò (Cilantro/Coriander)</p>
@@ -266,7 +266,7 @@ export default function VietnameseHerbsSpicesPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Cách Sử dụng Gia vị và Thảo mộc</h2>
         <ComparisonCard
-          title="So sánh: Cách Dùng Tốt vs Nên Tránh"
+          title="So sánh: Cách dùng tốt vs Nên tránh"
           items={[
             {
               label: "Thời điểm thêm",
@@ -336,7 +336,7 @@ export default function VietnameseHerbsSpicesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -375,7 +375,7 @@ export default function VietnameseHerbsSpicesPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/vietnamese-cooking-methods">
-            <h3 className="heading-5 mb-2">Cách Nấu Ăn Lành mạnh Kiểu Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Cách sử dụng gia vị trong nấu ăn Việt Nam
             </p>

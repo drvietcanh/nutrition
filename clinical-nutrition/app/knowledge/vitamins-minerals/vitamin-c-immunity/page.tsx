@@ -39,7 +39,7 @@ export default function VitaminCImmunityPage() {
         </div>
         <p className="text-body-lg text-gray-700">
           Vitamin C là một vitamin quan trọng cho hệ miễn dịch, chữa lành vết thương, và sức khỏe tổng thể. 
-          Cơ thể không thể tự tạo vitamin C, nên cần lấy từ thực phẩm mỗi ngày.
+          cơ thể không thể tự tạo vitamin C, nên cần lấy từ thực phẩm mỗi ngày.
         </p>
       </header>
 
@@ -144,7 +144,7 @@ export default function VitaminCImmunityPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -177,7 +177,7 @@ export default function VitaminCImmunityPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

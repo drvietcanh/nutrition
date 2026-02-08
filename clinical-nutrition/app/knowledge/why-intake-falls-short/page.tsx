@@ -518,7 +518,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-indigo-500 bg-indigo-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Bữa Ăn Bị Bỏ Lỡ</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Bữa ăn Bị Bỏ Lỡ</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Bữa ăn có thể bị bỏ lỡ vì những lý do ngoài nhịn ăn:
             </p>
@@ -576,7 +576,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-amber-500 bg-amber-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Thời Gian Bữa Ăn Kém</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Thời Gian Bữa ăn Kém</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Thời gian bữa ăn có thể không khớp với khi bệnh nhân thực sự có thể ăn:
             </p>
@@ -1013,7 +1013,7 @@ export default function WhyIntakeFallsShortPage() {
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
               <Link href="/tools/energy-protein-calculator" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
-                Máy tính Năng lượng & Protein (Công cụ 02)
+                Máy tính năng lượng & Protein (Công cụ 02)
               </Link> giúp bạn ước tính nhu cầu dinh dưỡng. Bây giờ bạn đã hiểu khoảng cách lượng ăn, 
               hãy xem lại công cụ này với quan điểm mới.
             </p>
@@ -1090,7 +1090,7 @@ export default function WhyIntakeFallsShortPage() {
             </CardContent>
           </Card>
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu năng lượng và protein để so sánh với lượng ăn thực tế.

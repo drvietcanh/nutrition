@@ -203,7 +203,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/dietary-fats">
           <CardHeader
             icon={Heart}
-            title="Chất béo trong Chế độ Ăn: Hiểu các Loại và Ảnh hưởng Sức khỏe"
+            title="Chất béo trong Chế độ ăn: Hiểu các loại và Ảnh hưởng sức khỏe"
           />
           <CardContent>
             <p className="text-body">
@@ -395,7 +395,7 @@ export default function KnowledgePage() {
           </li>
           <li>
             <Link href="/tools/energy-protein-calculator" className="text-blue-700 hover:text-blue-900 hover:underline">
-                Máy tính Năng lượng & Protein
+                Máy tính năng lượng & Protein
             </Link>
           </li>
           <li>

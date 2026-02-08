@@ -6,7 +6,7 @@ import { TrendingUp, CheckCircle2, AlertCircle, Activity } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Quản lý Cân nặng Lành mạnh",
+  title: "Quản lý Cân nặng lành mạnh",
   description:
     "Hướng dẫn cách quản lý cân nặng lành mạnh - không phải ăn kiêng cực đoan mà là thay đổi lối sống bền vững, cân bằng dinh dưỡng và vận động.",
   keywords: [
@@ -24,14 +24,14 @@ export default function HealthyWeightManagementPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Quản lý Cân nặng Lành mạnh" },
+          { label: "Quản lý Cân nặng lành mạnh" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <TrendingUp className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Quản lý Cân nặng Lành mạnh</h1>
+          <h1 className="heading-1">Quản lý Cân nặng lành mạnh</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Quản lý cân nặng lành mạnh không phải là ăn kiêng cực đoan hay bỏ đói bản thân. 
@@ -65,7 +65,7 @@ export default function HealthyWeightManagementPage() {
         <Card>
           <div className="space-y-4">
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-              <h3 className="text-sm font-semibold text-gray-900 mb-2">Cân bằng Năng lượng</h3>
+              <h3 className="text-sm font-semibold text-gray-900 mb-2">Cân bằng năng lượng</h3>
               <p className="text-sm text-gray-700 mb-2">
                 Cân nặng thay đổi khi có sự mất cân bằng giữa năng lượng ăn vào và năng lượng tiêu hao:
               </p>
@@ -88,7 +88,7 @@ export default function HealthyWeightManagementPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -126,7 +126,7 @@ export default function HealthyWeightManagementPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

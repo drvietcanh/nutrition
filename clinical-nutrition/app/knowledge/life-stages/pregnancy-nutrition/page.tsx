@@ -105,7 +105,7 @@ export default function PregnancyNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Nên Tránh</h2>
+        <h2 className="heading-2">Thực phẩm Nên tránh</h2>
         <Callout variant="warning" title="Quan trọng">
           <div className="space-y-2 text-sm">
             <p><strong>Rượu:</strong> Tránh hoàn toàn - có thể gây dị tật thai nhi</p>

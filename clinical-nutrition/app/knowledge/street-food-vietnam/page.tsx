@@ -133,9 +133,9 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Lựa chọn Nên Hạn chế</h2>
+        <h2 className="heading-2">Lựa chọn Nên hạn chế</h2>
         <Card className="border-red-200 bg-red-50">
-          <h3 className="heading-4 text-red-900 mb-3">Đồ Ăn Nên Hạn chế</h3>
+          <h3 className="heading-4 text-red-900 mb-3">Đồ Ăn Nên hạn chế</h3>
           <div className="space-y-3">
             <div>
               <p className="text-sm font-semibold text-red-900 mb-1">Đồ Chiên</p>
@@ -160,7 +160,7 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Lựa chọn Tốt vs Nên Hạn chế</h2>
+        <h2 className="heading-2">So sánh: Lựa chọn Tốt vs Nên hạn chế</h2>
         <ComparisonCard
           goodTitle="Lựa chọn Tốt"
           goodItems={[
@@ -169,7 +169,7 @@ export default function StreetFoodVietnamPage() {
             "Bún bò + nhiều rau sống + ít nước mắm = Cân bằng, nhiều rau củ",
             "Cháo thịt + rau củ = Dễ tiêu, phù hợp nhiều người"
           ]}
-          badTitle="Lựa chọn Nên Hạn chế"
+          badTitle="Lựa chọn Nên hạn chế"
           badItems={[
             "Chả giò chiên + nước ngọt = Nhiều chất béo, đường, ít dinh dưỡng",
             "Bánh mì nhiều pate, bơ, thịt mỡ = Nhiều chất béo, calo cao",
@@ -288,7 +288,7 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -326,7 +326,7 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

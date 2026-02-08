@@ -128,7 +128,7 @@ export default function NutritionNightShiftPage() {
               </ul>
             </div>
             <div className="bg-red-50 rounded-lg p-3 border border-red-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Thực phẩm Nên Tránh:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Thực phẩm Nên tránh:</p>
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>• Caffeine (cà phê, trà) - 4-6 giờ trước khi ngủ</li>
                 <li>• Đồ ngọt quá nhiều</li>
@@ -141,7 +141,7 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Nên Tránh</h2>
+        <h2 className="heading-2">Thực phẩm Nên tránh</h2>
         <Callout variant="warning" title="Caffeine và Đồ Ngọt">
           <div className="space-y-2 text-sm">
             <p>
@@ -207,7 +207,7 @@ export default function NutritionNightShiftPage() {
             "Sữa, sữa chua - giúp ngủ tốt",
             "Nước lọc - hydration",
           ]}
-          badTitle="Thực phẩm Nên Tránh"
+          badTitle="Thực phẩm Nên tránh"
           badItems={[
             "Caffeine (4-6 giờ trước khi ngủ) - ảnh hưởng giấc ngủ",
             "Đồ ngọt quá nhiều - tăng năng lượng tạm thời",
@@ -218,7 +218,7 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

@@ -105,7 +105,7 @@ export default function NutritionStressPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Nên Tránh Khi Stress</h2>
+        <h2 className="heading-2">Thực phẩm Nên tránh Khi Stress</h2>
         <Card>
           <h3 className="heading-4 mb-3">Thực phẩm Có thể Tăng Stress</h3>
           <div className="space-y-3">
@@ -138,7 +138,7 @@ export default function NutritionStressPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <TipCard
           tips={[
             { type: 'tip', text: 'Ăn đều đặn: Bỏ bữa có thể làm tăng stress. Ăn đều đặn giúp ổn định đường huyết và tâm trạng' },

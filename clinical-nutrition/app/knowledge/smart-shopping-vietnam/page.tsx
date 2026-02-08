@@ -268,7 +268,7 @@ export default function SmartShoppingVietnamPage() {
                 <p className="text-sm font-semibold text-blue-900 mb-2">Thông tin Quan trọng:</p>
                 <ul className="space-y-1 text-sm text-blue-900">
                   <li>• <strong>Khẩu phần (serving size):</strong> Lượng thực phẩm trong một khẩu phần</li>
-                  <li>• <strong>Năng lượng (calo):</strong> Số calo trong một khẩu phần</li>
+                  <li>• <strong>năng lượng (calo):</strong> Số calo trong một khẩu phần</li>
                   <li>• <strong>Protein:</strong> Lượng protein (g)</li>
                   <li>• <strong>Carbohydrate:</strong> Lượng carbohydrate (g)</li>
                   <li>• <strong>Chất béo:</strong> Lượng chất béo (g)</li>
@@ -292,7 +292,7 @@ export default function SmartShoppingVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -384,7 +384,7 @@ export default function SmartShoppingVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

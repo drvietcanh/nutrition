@@ -35,9 +35,9 @@ export const myths: Myth[] = [
     id: 'protein-more-is-better',
     myth: 'Nhiều protein hơn luôn tốt hơn cho phục hồi',
     whyItSoundsRight: 'Tư duy "nhiều hơn là tốt hơn" hấp dẫn vì protein rõ ràng quan trọng cho chữa lành. Cảm thấy an toàn hơn khi sai lệch về phía nhiều hơn thay vì ít hơn. Niềm tin này được củng cố bởi văn hóa thể dục và tiếp thị bổ sung thúc đẩy lượng ăn vào protein cao như có lợi phổ quát.',
-    whatActuallyHappens: 'Mặc dù protein đầy đủ là cần thiết cho chữa lành vết thương và bảo tồn cơ, protein quá mức (vượt quá 2.0-2.5 g/kg/ngày trong hầu hết các trường hợp) không cung cấp lợi ích bổ sung và có thể làm xấu đi chức năng thận, tăng triệu chứng urê huyết (tích tụ sản phẩm thải trong máu), và tạo ra stress chuyển hóa. Cơ thể không thể lưu trữ protein dư thừa như nó có thể lưu trữ chất béo.',
+    whatActuallyHappens: 'Mặc dù protein đầy đủ là cần thiết cho chữa lành vết thương và bảo tồn cơ, protein quá mức (vượt quá 2.0-2.5 g/kg/ngày trong hầu hết các trường hợp) không cung cấp lợi ích bổ sung và có thể làm xấu đi chức năng thận, tăng triệu chứng urê huyết (tích tụ sản phẩm thải trong máu), và tạo ra stress chuyển hóa. cơ thể không thể lưu trữ protein dư thừa như nó có thể lưu trữ chất béo.',
     whatToUnderstandInstead: 'Lượng ăn vào protein quá mức có thể không cải thiện kết quả vượt quá phạm vi tối ưu và có thể có vấn đề, đặc biệt ở bệnh nhân suy giảm chức năng thận. Bằng chứng gợi ý rằng hầu hết bệnh nhân nằm viện cần khoảng 1.2-2.0 g/kg/ngày, với nhu cầu cao hơn (lên đến 2.5 g/kg/ngày) trong các tình trạng cụ thể như bỏng nặng, chấn thương lớn, hoặc bệnh nặng.',
-    clinicalInsight: 'Tính đầy đủ là mục tiêu, không phải tối đa hóa. Theo dõi chức năng thận (creatinine, BUN) có thể giúp hướng dẫn quyết định lượng ăn vào protein. Cơ thể chỉ có thể sử dụng một lượng protein nhất định cùng một lúc, vì vậy phân phối lượng ăn vào trong suốt ngày có thể hiệu quả hơn so với liều đơn lớn.'
+    clinicalInsight: 'Tính đầy đủ là mục tiêu, không phải tối đa hóa. Theo dõi chức năng thận (creatinine, BUN) có thể giúp hướng dẫn quyết định lượng ăn vào protein. cơ thể chỉ có thể sử dụng một lượng protein nhất định cùng một lúc, vì vậy phân phối lượng ăn vào trong suốt ngày có thể hiệu quả hơn so với liều đơn lớn.'
   },
   {
     id: 'npo-before-surgery',

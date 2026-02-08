@@ -35,7 +35,7 @@ export default function Omega3HeartHealthPage() {
         </div>
         <p className="text-body-lg text-gray-700">
           Omega-3 là một loại chất béo tốt (chất béo không bão hòa) quan trọng cho sức khỏe tim mạch, 
-          não bộ, và giảm viêm. Cơ thể không thể tự tạo ra omega-3, nên cần lấy từ thực phẩm.
+          não bộ, và giảm viêm. cơ thể không thể tự tạo ra omega-3, nên cần lấy từ thực phẩm.
         </p>
       </header>
 
@@ -179,7 +179,7 @@ export default function Omega3HeartHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -214,7 +214,7 @@ export default function Omega3HeartHealthPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ Ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Omega-3 là chất béo tốt
             </p>

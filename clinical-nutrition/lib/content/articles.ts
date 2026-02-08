@@ -101,7 +101,7 @@ export const articles: ArticleMetadata[] = [
   // General Nutrition
   {
     slug: 'calories-energy',
-    title: 'Hiểu về Calo và Năng lượng',
+    title: 'Hiểu về Calo và năng lượng',
     description: 'Giải thích calo, TDEE, BMR với ví dụ thực tế. Hiểu về năng lượng trong thực phẩm',
     category: 'general-nutrition',
     tags: ['calories', 'energy', 'TDEE', 'BMR', 'metabolism', 'weight-management'],
@@ -112,7 +112,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'healthy-plate',
-    title: 'Cân bằng Bữa ăn: Đĩa Ăn Lành mạnh',
+    title: 'Cân bằng Bữa ăn: Đĩa ăn lành mạnh',
     description: 'Hướng dẫn cách cân bằng bữa ăn với đĩa ăn lành mạnh. Visual guide với color coding',
     category: 'general-nutrition',
     tags: ['healthy-plate', 'meal-balance', 'nutrition', 'meal-planning'],
@@ -156,7 +156,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'dietary-fats',
-    title: 'Chất béo trong Chế độ Ăn',
+    title: 'Chất béo trong Chế độ ăn',
     description: 'Hiểu các loại chất béo và ảnh hưởng sức khỏe',
     category: 'general-nutrition',
     tags: ['fats', 'cholesterol', 'heart-health', 'omega-3'],
@@ -546,7 +546,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vitamin-b12-energy',
-    title: 'Vitamin B12 và Năng lượng',
+    title: 'Vitamin B12 và năng lượng',
     description: 'Hiểu về vitamin B12 - vitamin quan trọng cho năng lượng',
     category: 'vitamins-minerals',
     tags: ['vitamin-b12', 'energy', 'anemia', 'vegan'],
@@ -636,7 +636,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'healthy-cooking-methods',
-    title: 'Phương pháp Nấu ăn Lành mạnh',
+    title: 'Phương pháp Nấu ăn lành mạnh',
     description: 'Hướng dẫn các phương pháp nấu ăn lành mạnh',
     category: 'daily-practices',
     tags: ['cooking', 'preparation', 'healthy'],
@@ -647,7 +647,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'eating-out-healthy',
-    title: 'Ăn uống Lành mạnh khi Đi ăn Ngoài',
+    title: 'Ăn uống lành mạnh khi Đi ăn Ngoài',
     description: 'Hướng dẫn cách chọn lựa thực phẩm lành mạnh khi đi ăn ngoài',
     category: 'daily-practices',
     tags: ['eating-out', 'restaurants', 'healthy-choices'],
@@ -849,7 +849,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'healthy-weight-management',
-    title: 'Quản lý Cân nặng Lành mạnh',
+    title: 'Quản lý Cân nặng lành mạnh',
     description: 'Hướng dẫn cách quản lý cân nặng lành mạnh',
     category: 'special-topics',
     tags: ['weight-management', 'weight-loss', 'calories'],
@@ -895,7 +895,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-cooking-methods',
-    title: 'Cách Nấu Ăn Lành mạnh Kiểu Việt Nam',
+    title: 'Cách Nấu Ăn lành mạnh Kiểu Việt Nam',
     description: 'Hướng dẫn phương pháp nấu ăn truyền thống Việt Nam (luộc, hấp, kho, nướng, xào) và cách tối ưu dinh dưỡng',
     category: 'daily-practices',
     tags: ['cooking', 'vietnamese-cooking', 'phương-pháp-nấu', 'luộc', 'hấp', 'kho'],
@@ -917,7 +917,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-family-meals',
-    title: 'Bữa Ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng',
+    title: 'Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng',
     description: 'Cách tổ chức bữa ăn gia đình kiểu Việt Nam (cơm + canh + món mặn + rau) để đảm bảo cân bằng dinh dưỡng',
     category: 'daily-practices',
     tags: ['family-meals', 'bữa-ăn-gia-đình', 'cơm-canh', 'cân-bằng-dinh-dưỡng'],
@@ -928,7 +928,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'street-food-vietnam',
-    title: 'Thực phẩm Đường phố Việt Nam: Ăn Uống Lành mạnh',
+    title: 'Thực phẩm Đường phố Việt Nam: Ăn Uống lành mạnh',
     description: 'Cách chọn lựa đồ ăn đường phố lành mạnh, tránh rủi ro. Hướng dẫn với phở, bánh mì, bún, chè',
     category: 'daily-practices',
     tags: ['street-food', 'đồ-ăn-đường-phố', 'phở', 'bánh-mì', 'ăn-ngoài'],
@@ -1132,7 +1132,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-snacks-healthy',
-    title: 'Snack Lành mạnh Kiểu Việt Nam',
+    title: 'Snack lành mạnh Kiểu Việt Nam',
     description: 'Các lựa chọn snack lành mạnh phù hợp với văn hóa Việt Nam. Từ trái cây địa phương đến các món ăn vặt truyền thống',
     category: 'general-nutrition',
     tags: ['snack-việt-nam', 'vietnamese-snacks', 'ăn-vặt-lành-mạnh', 'healthy-snacks', 'trái-cây'],
@@ -1220,7 +1220,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vitamin-b-complex',
-    title: 'Vitamin B Complex và Năng lượng',
+    title: 'Vitamin B Complex và năng lượng',
     description: 'Hiểu về vitamin B complex - nhóm vitamin quan trọng cho năng lượng, chức năng não, và sức khỏe tổng thể. Các loại vitamin B, nguồn thực phẩm, và nhu cầu.',
     category: 'vitamins-minerals',
     tags: ['vitamin-b', 'vitamin-b-complex', 'năng-lượng', 'energy', 'chức-năng-não', 'thiamine', 'riboflavin'],
@@ -1253,7 +1253,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-cooking-methods',
-    title: 'Cách Nấu Ăn Lành mạnh Kiểu Việt Nam',
+    title: 'Cách Nấu Ăn lành mạnh Kiểu Việt Nam',
     description: 'Hướng dẫn các phương pháp nấu ăn truyền thống Việt Nam lành mạnh - luộc, hấp, kho, nướng, xào. Cách giữ dinh dưỡng và giảm dầu mỡ, muối.',
     category: 'daily-practices',
     tags: ['nấu-ăn-việt-nam', 'phương-pháp-nấu-ăn', 'luộc', 'hấp', 'kho', 'lành-mạnh'],
@@ -1275,7 +1275,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-family-meals',
-    title: 'Bữa Ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng',
+    title: 'Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng',
     description: 'Hiểu về cấu trúc bữa ăn gia đình Việt Nam truyền thống - cơm + canh + món mặn + rau. Cách cân bằng dinh dưỡng và ví dụ bữa ăn lành mạnh.',
     category: 'daily-practices',
     tags: ['bữa-ăn-gia-đình', 'cấu-trúc-bữa-ăn', 'bữa-ăn-việt-nam', 'cân-bằng-dinh-dưỡng'],
@@ -1286,7 +1286,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'street-food-vietnam',
-    title: 'Thực phẩm Đường phố Việt Nam: Ăn Uống Lành mạnh',
+    title: 'Thực phẩm Đường phố Việt Nam: Ăn Uống lành mạnh',
     description: 'Hướng dẫn cách ăn uống lành mạnh với đồ ăn đường phố Việt Nam. Lựa chọn tốt (phở, bánh mì, bún) và lựa chọn nên hạn chế. Tips an toàn và cách điều chỉnh.',
     category: 'daily-practices',
     tags: ['đồ-ăn-đường-phố', 'street-food', 'phở', 'bánh-mì', 'ăn-uống-lành-mạnh'],

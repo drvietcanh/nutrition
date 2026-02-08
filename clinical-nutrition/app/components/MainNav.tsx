@@ -28,7 +28,7 @@ const toolsItems: NavItem[] = [
     icon: Activity,
   },
   {
-    label: "Máy tính Năng lượng & Protein",
+    label: "Máy tính năng lượng & Protein",
     href: "/tools/energy-protein-calculator",
     icon: Calculator,
   },
@@ -43,7 +43,7 @@ const toolsItems: NavItem[] = [
     icon: UtensilsCrossed,
   },
   {
-    label: "BMI & Thành phần Cơ thể",
+    label: "BMI & Thành phần cơ thể",
     href: "/tools/bmi-body-composition",
     icon: Ruler,
   },

@@ -66,11 +66,11 @@ export default function TeenNutritionPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Nhu cầu Dinh dưỡng Tăng lên</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Nhu cầu Năng lượng và Protein</h3>
+          <h3 className="heading-4 mb-3">Nhu cầu năng lượng và Protein</h3>
           <NutrientTable
             rows={[
-              { nutrient: "Năng lượng (Nữ 13-18)", amount: "1,800-2,400", unit: "calo/ngày", note: "Tùy hoạt động" },
-              { nutrient: "Năng lượng (Nam 13-18)", amount: "2,200-3,200", unit: "calo/ngày", note: "Tùy hoạt động" },
+              { nutrient: "năng lượng (Nữ 13-18)", amount: "1,800-2,400", unit: "calo/ngày", note: "Tùy hoạt động" },
+              { nutrient: "năng lượng (Nam 13-18)", amount: "2,200-3,200", unit: "calo/ngày", note: "Tùy hoạt động" },
               { nutrient: "Protein (Nữ 13-18)", amount: "46", unit: "g/ngày" },
               { nutrient: "Protein (Nam 13-18)", amount: "52", unit: "g/ngày" },
               { nutrient: "Canxi", amount: "1,300", unit: "mg/ngày", note: "Tăng từ 1,000mg (trẻ em)" },
@@ -116,7 +116,7 @@ export default function TeenNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <TipCard
           tips={[
             { type: 'tip', text: 'Không bỏ bữa sáng: Bữa sáng quan trọng cho năng lượng và học tập. Chuẩn bị sẵn hoặc ăn nhanh' },
@@ -134,7 +134,7 @@ export default function TeenNutritionPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Bữa ăn</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Sáng Nhanh và Lành mạnh</h3>
+          <h3 className="heading-4 mb-3">Bữa Sáng Nhanh và lành mạnh</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>• Yến mạch + sữa + trái cây + quả hạch</p>
             <p>• Trứng + bánh mì nguyên cám + trái cây</p>

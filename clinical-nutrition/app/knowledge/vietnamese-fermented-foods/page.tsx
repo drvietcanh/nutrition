@@ -73,7 +73,7 @@ export default function VietnameseFermentedFoodsPage() {
             <NutrientTable
               title="Giá trị Dinh dưỡng Nước mắm (1 thìa canh = 15ml)"
               rows={[
-                { nutrient: "Năng lượng", amount: "10", unit: "calo", highlight: "good", note: "Rất ít calo" },
+                { nutrient: "năng lượng", amount: "10", unit: "calo", highlight: "good", note: "Rất ít calo" },
                 { nutrient: "Protein", amount: "2", unit: "g", highlight: "good", note: "Protein từ cá" },
                 { nutrient: "Natri", amount: "1,000", unit: "mg", highlight: "low", note: "Rất nhiều natri!" },
                 { nutrient: "Canxi", amount: "10", unit: "mg", highlight: "good", note: "Một ít canxi" },
@@ -132,7 +132,7 @@ export default function VietnameseFermentedFoodsPage() {
         <h2 className="heading-2">Tương: Gia vị Thay thế Nước mắm</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Các Loại Tương</h3>
+            <h3 className="heading-4 mb-3">Các loại Tương</h3>
             <NutrientTable
               title="Giá trị Dinh dưỡng Tương (1 thìa canh = 15ml)"
               rows={[
@@ -163,7 +163,7 @@ export default function VietnameseFermentedFoodsPage() {
             <NutrientTable
               title="Giá trị Dinh dưỡng Chao (100g)"
               rows={[
-                { nutrient: "Năng lượng", amount: "100", unit: "calo", highlight: "good", note: "Ít calo" },
+                { nutrient: "năng lượng", amount: "100", unit: "calo", highlight: "good", note: "Ít calo" },
                 { nutrient: "Protein", amount: "10", unit: "g", highlight: "good", note: "Giàu protein" },
                 { nutrient: "Canxi", amount: "150", unit: "mg", highlight: "good", note: "Giàu canxi" },
                 { nutrient: "Natri", amount: "800", unit: "mg", highlight: "moderate", note: "Natri vừa phải" },
@@ -202,16 +202,16 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Gia vị Tốt vs Nên Hạn chế</h2>
+        <h2 className="heading-2">So sánh: Gia vị tốt vs Nên hạn chế</h2>
         <ComparisonCard
-          goodTitle="Cách Dùng Tốt"
+          goodTitle="Cách dùng tốt"
           goodItems={[
             "Nước mắm pha loãng: 1 thìa nước mắm + 2-3 thìa nước + chanh + đường",
             "Tương: Dùng thay nước mắm để giảm natri",
             "Chao: Dùng 1-2 miếng nhỏ, giàu protein và canxi",
             "Kết hợp với gia vị tự nhiên: tỏi, gừng, ớt, chanh"
           ]}
-          badTitle="Cách Dùng Nên Hạn chế"
+          badTitle="Cách dùng nên hạn chế"
           badItems={[
             "Nước mắm nguyên chất không pha: Quá nhiều natri",
             "Dùng nhiều nước mắm: 2-3 thìa canh/bữa",
@@ -222,7 +222,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -290,7 +290,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -334,7 +334,7 @@ export default function VietnameseFermentedFoodsPage() {
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-cooking-methods">
-            <h3 className="heading-5 mb-2">Cách Nấu Ăn Lành mạnh Kiểu Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Cách sử dụng gia vị trong nấu ăn
             </p>

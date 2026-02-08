@@ -79,7 +79,7 @@ export default function IntermittentFastingPage() {
           </ExampleBox>
 
           <Card>
-            <h3 className="heading-4 mb-3">Các Phương pháp Phổ biến</h3>
+            <h3 className="heading-4 mb-3">Các Phương pháp phổ biến</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
                 <thead className="bg-neutral-50">
@@ -163,7 +163,7 @@ export default function IntermittentFastingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành (Nếu Thử)</h2>
+        <h2 className="heading-2">Tips thực hành (Nếu Thử)</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -195,7 +195,7 @@ export default function IntermittentFastingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -227,13 +227,13 @@ export default function IntermittentFastingPage() {
         <h2 className="heading-2">Bài viết Liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/healthy-weight-management">
-            <h3 className="heading-5 mb-2">Quản lý Cân nặng Lành mạnh</h3>
+            <h3 className="heading-5 mb-2">Quản lý Cân nặng lành mạnh</h3>
             <p className="text-sm text-gray-600">
               Các cách quản lý cân nặng khác
             </p>
           </Card>
           <Card href="/knowledge/calories-energy">
-            <h3 className="heading-5 mb-2">Hiểu về Calo và Năng lượng</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Calo và năng lượng</h3>
             <p className="text-sm text-gray-600">
               Hiểu về calorie deficit
             </p>

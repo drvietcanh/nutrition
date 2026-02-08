@@ -216,7 +216,7 @@ export default function FoodCombiningPage() {
         <h2 className="heading-2">Ví dụ Bữa ăn Kết hợp Tốt</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Ăn Việt Nam 1</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn Việt Nam 1</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Canh chua cá + Rau muống luộc:</strong>
             </p>
@@ -229,7 +229,7 @@ export default function FoodCombiningPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Ăn Việt Nam 2</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn Việt Nam 2</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Đậu đen kho + Rau cải xào:</strong>
             </p>
@@ -242,7 +242,7 @@ export default function FoodCombiningPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Ăn Việt Nam 3</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn Việt Nam 3</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Bánh mì + Trứng + Rau sống:</strong>
             </p>
@@ -255,7 +255,7 @@ export default function FoodCombiningPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Ăn Tổng quát</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn Tổng quát</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Yến mạch + Sữa + Trái cây:</strong>
             </p>
@@ -270,7 +270,7 @@ export default function FoodCombiningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
@@ -291,7 +291,7 @@ export default function FoodCombiningPage() {
               <p className="text-sm font-semibold mb-1">"Phải kết hợp đậu và gạo trong cùng một bữa"</p>
               <p className="text-sm">
                 <strong>Sự thật:</strong> Đậu và gạo có thể ăn trong cùng một ngày, không cần cùng một bữa. 
-                Cơ thể lưu trữ axit amin và kết hợp chúng.
+                cơ thể lưu trữ axit amin và kết hợp chúng.
               </p>
             </div>
           </div>
@@ -299,7 +299,7 @@ export default function FoodCombiningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -347,7 +347,7 @@ export default function FoodCombiningPage() {
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-family-meals">
-            <h3 className="heading-5 mb-2">Bữa Ăn Gia đình Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn Gia đình Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Bữa ăn Việt Nam tự nhiên kết hợp tốt nhiều chất dinh dưỡng
             </p>

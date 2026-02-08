@@ -67,7 +67,7 @@ export default function AssessmentProcessPage() {
             <strong>Có vấn đề không?</strong> Có dấu hiệu nguy cơ dinh dưỡng cần chú ý ngay bây giờ không?
           </li>
           <li>
-            <strong>Người này cần gì?</strong> Cơ thể họ cần khoảng bao nhiêu năng lượng, protein, và các chất dinh dưỡng khác?
+            <strong>Người này cần gì?</strong> cơ thể họ cần khoảng bao nhiêu năng lượng, protein, và các chất dinh dưỡng khác?
           </li>
           <li>
             <strong>Họ thực sự đang nhận được gì?</strong> Lượng ăn hiện tại của họ so với những gì họ cần như thế nào?
@@ -355,7 +355,7 @@ export default function AssessmentProcessPage() {
             id="needs-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Bước 2: Ước tính Nhu cầu Năng lượng & Protein
+            Bước 2: Ước tính Nhu cầu năng lượng & Protein
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -423,7 +423,7 @@ export default function AssessmentProcessPage() {
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
                 <h4 className="font-semibold text-sm mb-2">Phương trình dự đoán</h4>
                 <p className="text-sm text-neutral-700">
-                  Ví dụ: Harris–Benedict, Mifflin–St Jeor, Schofield (thường có hệ số hoạt động/stress). Chi tiết hơn, tính đến tuổi, giới,
+                  Ví dụ: Harris–Benedict, Mifflin–St Jeor, Schofield (thường có hệ số hoạt động/stress). chi tiết hơn, tính đến tuổi, giới,
                   chiều cao, cân nặng và đôi khi hoạt động. Dù vậy, chúng vẫn dựa trên trung bình quần thể, không “đo” được đúng nhu cầu cá thể.
                 </p>
               </div>
@@ -519,7 +519,7 @@ export default function AssessmentProcessPage() {
             href="/tools/energy-protein-calculator"
             className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
           >
-            Máy tính Năng lượng & Protein (Công cụ 02) →
+            Máy tính năng lượng & Protein (Công cụ 02) →
           </Link>
           <p className="text-xs text-blue-700 mt-2">
             Hoặc <Link href="/knowledge/needs-estimation" className="underline">tìm hiểu thêm về ước tính nhu cầu</Link>
@@ -948,7 +948,7 @@ export default function AssessmentProcessPage() {
             id="misunderstandings-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Hiểu lầm Phổ biến
+            Hiểu lầm phổ biến
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -1312,7 +1312,7 @@ export default function AssessmentProcessPage() {
             </CardContent>
           </Card>
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Ước tính nhu cầu năng lượng và protein hàng ngày dựa trên các phương trình tiêu chuẩn.
@@ -1328,7 +1328,7 @@ export default function AssessmentProcessPage() {
             </CardContent>
           </Card>
           <Card href="/tools/bmi-body-composition">
-            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
             <CardContent>
               <p className="text-body-sm">
                 Tính BMI, IBW, ABW, và BSA - các chỉ số cơ bản trong đánh giá dinh dưỡng.

@@ -6,7 +6,7 @@ import { Zap, CheckCircle2, AlertCircle, Beef, Milk, Egg } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Vitamin B12 và Năng lượng",
+  title: "Vitamin B12 và năng lượng",
   description:
     "Hiểu về vitamin B12 - vitamin quan trọng cho năng lượng, tạo máu, và chức năng thần kinh. Đặc biệt quan trọng cho người ăn chay.",
   keywords: [
@@ -24,14 +24,14 @@ export default function VitaminB12EnergyPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Vitamin B12 và Năng lượng" },
+          { label: "Vitamin B12 và năng lượng" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Zap className="w-8 h-8 text-yellow-600" aria-hidden="true" />
-          <h1 className="heading-1">Vitamin B12 và Năng lượng</h1>
+          <h1 className="heading-1">Vitamin B12 và năng lượng</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Vitamin B12 là vitamin quan trọng giúp cơ thể tạo ra năng lượng, tạo máu, và duy trì chức năng thần kinh. 
@@ -272,7 +272,7 @@ export default function VitaminB12EnergyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -304,7 +304,7 @@ export default function VitaminB12EnergyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hiểu lầm Phổ biến</h2>
+        <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>

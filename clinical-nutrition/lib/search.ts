@@ -21,7 +21,7 @@ const toolsIndex = [
     tags: ["sàng lọc", "suy dinh dưỡng", "NRS-2002", "PG-SGA"],
   },
   {
-    title: "Máy tính Năng lượng & Protein",
+    title: "Máy tính năng lượng & Protein",
     href: "/tools/energy-protein-calculator",
     category: "tool" as const,
     description: "Tính toán nhu cầu năng lượng và protein",
@@ -35,7 +35,7 @@ const toolsIndex = [
     tags: ["lượng ăn", "đánh giá", "dinh dưỡng"],
   },
   {
-    title: "BMI & Thành phần Cơ thể",
+    title: "BMI & Thành phần cơ thể",
     href: "/tools/bmi-body-composition",
     category: "tool" as const,
     description: "Tính BMI, IBW, ABW, BSA",

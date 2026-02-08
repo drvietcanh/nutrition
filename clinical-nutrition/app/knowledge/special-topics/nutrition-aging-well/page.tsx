@@ -218,7 +218,7 @@ export default function NutritionAgingWellPage() {
         <h2 className="heading-2">Ví dụ Bữa ăn cho Người cao tuổi</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Sáng</h3>
+            <h3 className="heading-5 mb-2">Bữa sáng</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cháo thịt gà + rau thơm (Việt Nam):</strong>
             </p>
@@ -231,7 +231,7 @@ export default function NutritionAgingWellPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Trưa</h3>
+            <h3 className="heading-5 mb-2">Bữa trưa</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm mềm + Cá kho mềm + Canh rau muống:</strong>
             </p>
@@ -245,7 +245,7 @@ export default function NutritionAgingWellPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Tối</h3>
+            <h3 className="heading-5 mb-2">Bữa tối</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm mềm + Đậu phụ sốt cà chua + Canh mướp:</strong>
             </p>
@@ -274,7 +274,7 @@ export default function NutritionAgingWellPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành cho Người cao tuổi</h2>
+        <h2 className="heading-2">Tips thực hành cho Người cao tuổi</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -323,7 +323,7 @@ export default function NutritionAgingWellPage() {
           <Card href="/knowledge/elderly-nutrition">
             <h3 className="heading-5 mb-2">Dinh dưỡng Người cao tuổi</h3>
             <p className="text-sm text-gray-600">
-              Chi tiết về dinh dưỡng cho người cao tuổi
+              chi tiết về dinh dưỡng cho người cao tuổi
             </p>
           </Card>
           <Card href="/knowledge/protein-sources-needs">

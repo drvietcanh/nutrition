@@ -19,13 +19,13 @@ export function ToolNavigation(props: {
       ? null
       : currentStep === 2
       ? { href: "/tools/malnutrition-screening", label: "Bước 1 – Nguy cơ Suy Dinh dưỡng" }
-      : { href: "/tools/energy-protein-calculator", label: "Bước 2 – Nhu cầu Năng lượng & Protein" };
+      : { href: "/tools/energy-protein-calculator", label: "Bước 2 – Nhu cầu năng lượng & Protein" };
 
   const next =
     currentStep === 3
       ? null
       : currentStep === 1
-      ? { href: "/tools/energy-protein-calculator", label: "Bước 2 – Nhu cầu Năng lượng & Protein" }
+      ? { href: "/tools/energy-protein-calculator", label: "Bước 2 – Nhu cầu năng lượng & Protein" }
       : { href: "/tools/intake-vs-needs", label: "Bước 3 – Lượng Ăn vs Nhu Cầu" };
 
   return (

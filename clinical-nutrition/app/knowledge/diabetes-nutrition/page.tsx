@@ -513,7 +513,7 @@ export default function DiabetesNutritionPage() {
 
         {/* Energy & Weight Management */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">⚖️ Năng lượng & Cân nặng</h3>
+          <h3 className="heading-3">⚖️ năng lượng & Cân nặng</h3>
           <div className="space-y-3 text-body">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
@@ -1062,7 +1062,7 @@ export default function DiabetesNutritionPage() {
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/energy-protein-calculator">
-            <CardHeader icon={CheckCircle} title="Máy tính Năng lượng & Protein" />
+            <CardHeader icon={CheckCircle} title="Máy tính năng lượng & Protein" />
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu năng lượng và protein, đặc biệt hữu ích nếu bệnh nhân cần giảm cân
@@ -1071,7 +1071,7 @@ export default function DiabetesNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/bmi-body-composition">
-            <CardHeader icon={CheckCircle} title="BMI & Thành phần Cơ thể" />
+            <CardHeader icon={CheckCircle} title="BMI & Thành phần cơ thể" />
             <CardContent>
               <p className="text-body-sm">
                 Đánh giá BMI và thành phần cơ thể, quan trọng trong quản lý cân nặng cho bệnh nhân đái tháo đường.

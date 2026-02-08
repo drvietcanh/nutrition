@@ -9,7 +9,7 @@ import { Apple, Coffee, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Snack Lành mạnh Kiểu Việt Nam",
+  title: "Snack lành mạnh Kiểu Việt Nam",
   description:
     "Các lựa chọn snack lành mạnh phù hợp với văn hóa Việt Nam. Từ trái cây địa phương đến các món ăn vặt truyền thống, cách snack thông minh.",
   keywords: [
@@ -28,14 +28,14 @@ export default function VietnameseSnacksHealthyPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Snack Lành mạnh Kiểu Việt Nam" },
+          { label: "Snack lành mạnh Kiểu Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Apple className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Snack Lành mạnh Kiểu Việt Nam</h1>
+          <h1 className="heading-1">Snack lành mạnh Kiểu Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Snack (ăn vặt) là phần quan trọng của chế độ ăn, giúp duy trì năng lượng giữa các bữa ăn. 
@@ -65,12 +65,12 @@ export default function VietnameseSnacksHealthyPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Snack Lành mạnh là gì?</h2>
+        <h2 className="heading-2">Snack lành mạnh là gì?</h2>
         <div className="space-y-4">
           <Card>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Snack Lành mạnh:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Snack lành mạnh:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -91,7 +91,7 @@ export default function VietnameseSnacksHealthyPage() {
                 </ul>
               </div>
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Snack Nên Hạn chế:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Snack Nên hạn chế:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li className="flex items-start gap-2">
                     <AlertCircle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -125,7 +125,7 @@ export default function VietnameseSnacksHealthyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Snack Lành mạnh Kiểu Việt Nam</h2>
+        <h2 className="heading-2">Snack lành mạnh Kiểu Việt Nam</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 mb-3 text-green-900">1. Trái cây Việt Nam</h3>
@@ -218,9 +218,9 @@ export default function VietnameseSnacksHealthyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Snack Nên Hạn chế</h2>
+        <h2 className="heading-2">Snack Nên hạn chế</h2>
         <ComparisonCard
-          title="So sánh: Snack Lành mạnh vs Nên Hạn chế"
+          title="So sánh: Snack lành mạnh vs Nên hạn chế"
           items={[
             {
               label: "Trái cây",
@@ -251,7 +251,7 @@ export default function VietnameseSnacksHealthyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Snack Lành mạnh trong Ngày</h2>
+        <h2 className="heading-2">Ví dụ Snack lành mạnh trong Ngày</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
             <h3 className="heading-5 mb-2">Snack Sáng (Giữa bữa sáng và trưa)</h3>
@@ -292,7 +292,7 @@ export default function VietnameseSnacksHealthyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

@@ -45,7 +45,7 @@ export default function BreastfeedingNutritionPage() {
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
-            <strong>Năng lượng:</strong> Cần thêm 500 calo/ngày so với trước khi mang thai
+            <strong>năng lượng:</strong> Cần thêm 500 calo/ngày so với trước khi mang thai
           </li>
           <li>
             <strong>Protein:</strong> Cần thêm 25g protein/ngày
@@ -68,7 +68,7 @@ export default function BreastfeedingNutritionPage() {
           <h3 className="heading-4 mb-3">Nhu cầu Tăng lên</h3>
           <NutrientTable
             rows={[
-              { nutrient: "Năng lượng", amount: "+500", unit: "calo/ngày", note: "So với trước khi mang thai" },
+              { nutrient: "năng lượng", amount: "+500", unit: "calo/ngày", note: "So với trước khi mang thai" },
               { nutrient: "Protein", amount: "+25", unit: "g/ngày", note: "Tổng cộng ~71g/ngày" },
               { nutrient: "Chất lỏng", amount: "~3", unit: "L/ngày", note: "Nước, sữa, soup" },
               { nutrient: "Canxi", amount: "1,000", unit: "mg/ngày", note: "Giống như khi mang thai" },
@@ -124,7 +124,7 @@ export default function BreastfeedingNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Thực hành</h2>
+        <h2 className="heading-2">Tips thực hành</h2>
         <TipCard
           tips={[
             { type: 'tip', text: 'Uống nước khi cho con bú: Để sẵn nước bên cạnh khi cho con bú' },
