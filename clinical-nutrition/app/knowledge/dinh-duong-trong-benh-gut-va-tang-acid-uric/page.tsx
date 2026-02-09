@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Activity, CheckCircle, AlertCircle } from "lucide-react";
+import { Activity, CheckCircle, AlertCircle, Info } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
