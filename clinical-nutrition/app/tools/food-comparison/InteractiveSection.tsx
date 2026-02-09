@@ -58,7 +58,8 @@ export function InteractiveSection() {
       case 'kidney':
         return food.kidney;
       case 'hypertension':
-        return food.hypertension;
+        // Sodium is already in FoodItem, return object with sodium for consistency
+        return food.sodium !== undefined ? { sodium: food.sodium } : null;
       case 'cardiovascular':
         return food.cardiovascular;
       default:
@@ -269,7 +270,7 @@ export function InteractiveSection() {
                         )}
                         {selectedDisease === 'hypertension' && (
                           <td className="text-right p-2">
-                            {food.hypertension ? (food.hypertension.sodium * multiplier).toFixed(0) : '-'}
+                            {food.sodium ? (food.sodium * multiplier).toFixed(0) : '-'}
                           </td>
                         )}
                         {selectedDisease === 'cardiovascular' && (
