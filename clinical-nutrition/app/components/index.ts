@@ -20,3 +20,8 @@ export { ExampleBox } from './ExampleBox';
 export { TipCard } from './TipCard';
 export { NutrientTable } from './NutrientTable';
 export { PortionSizeGuide } from './PortionSizeGuide';
+export { PDFExportButton } from './PDFExportButton';
+export { ShareButton } from './ShareButton';
+export { ShareModal } from './ShareModal';
+export { HistoryPanel } from './HistoryPanel';
+export { RecipeSuggestions } from './RecipeSuggestions';

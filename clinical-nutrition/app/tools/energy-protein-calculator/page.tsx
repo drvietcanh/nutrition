@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
+import { ShareButton } from "../../components/ShareButton";
 
 export const metadata: Metadata = {
   title: "Nhu cầu năng lượng & Protein",
@@ -38,9 +39,18 @@ export default function EnergyProteinCalculatorPage() {
     <main className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6 lg:px-8 sm:py-12">
       {/* 1. Title + brief explanation */}
       <header className="space-y-3">
-        <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-          cơ thể cần bao nhiêu năng lượng & Protein mỗi ngày?
-        </h1>
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+              cơ thể cần bao nhiêu năng lượng & Protein mỗi ngày?
+            </h1>
+          </div>
+          <ShareButton
+            title="Nhu cầu năng lượng & Protein – Công cụ giảng dạy"
+            description="Tính toán nhu cầu năng lượng và protein ước tính dựa trên các phương trình tiêu chuẩn."
+            size="sm"
+          />
+        </div>
         <p className="text-body-lg">
           Công cụ này giúp bạn hiểu cách tính toán nhu cầu năng lượng (calo) và protein 
           mà cơ thể cần mỗi ngày. Bạn có thể thử với các số liệu khác nhau để xem 

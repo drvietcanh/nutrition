@@ -15,6 +15,7 @@ import {
 } from "../../../lib/utils/validation";
 import { parseNumber } from "../../../lib/utils/formatting";
 import { ComparisonChart } from "../../components/Charts";
+import { PDFExportButton } from "../../components/PDFExportButton";
 
 type MethodTab = EstimationMethod | "both";
 
@@ -582,13 +583,23 @@ function ResultPanel({
 
   return (
     <section aria-labelledby="results-heading" className="space-y-4">
-      <div className="flex items-center gap-2 mb-3">
-        <span className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
-          5
-        </span>
-        <h2 id="results-heading" className="text-lg font-semibold text-gray-900 sm:text-xl">
-          Kết quả Tính toán
-        </h2>
+      <div className="flex items-center justify-between gap-4 mb-3">
+        <div className="flex items-center gap-2">
+          <span className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+            5
+          </span>
+          <h2 id="results-heading" className="text-lg font-semibold text-gray-900 sm:text-xl">
+            Kết quả Tính toán
+          </h2>
+        </div>
+        {(simpleResult || equationResult) && (
+          <PDFExportButton
+            elementId="energy-protein-results"
+            title="Báo cáo Nhu cầu Năng lượng & Protein"
+            filename={`nhu-cau-nang-luong-protein-${Date.now()}.pdf`}
+            size="sm"
+          />
+        )}
       </div>
       <div className="rounded-lg border border-green-200 bg-green-50 p-4 mb-4">
         <p className="text-sm text-green-900">
@@ -599,7 +610,7 @@ function ResultPanel({
         </p>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2">
+      <div id="energy-protein-results" className="grid gap-4 md:grid-cols-2">
         {showSimple && (
           <SingleMethodResult
             heading="Simple weight-based"

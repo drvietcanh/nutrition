@@ -17,6 +17,7 @@ import { CheckCircle } from 'lucide-react';
 import MythCard from './components/MythCard';
 import { myths, type Myth } from './data/myths';
 import { Card, CardHeader, CardContent } from '../../components/Card';
+import { ShareButton } from '../../components/ShareButton';
 
 export default function MythsInClinicalNutritionPage() {
   const [expandedMyth, setExpandedMyth] = useState<string | null>(null);
@@ -40,9 +41,16 @@ export default function MythsInClinicalNutritionPage() {
         {/* Section 1: Title & Introduction */}
         {/* Educational: Sets context and explains the purpose without judgment */}
         <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Hiểu lầm phổ biến trong Dinh dưỡng lâm sàng
-          </h1>
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <h1 className="text-4xl font-bold text-gray-900">
+              Hiểu lầm phổ biến trong Dinh dưỡng lâm sàng
+            </h1>
+            <ShareButton
+              title="Hiểu lầm & Quan niệm Sai trong Dinh dưỡng lâm sàng"
+              description="Điều chỉnh dựa trên bằng chứng cho các hiểu lầm phổ biến"
+              size="sm"
+            />
+          </div>
           <div className="max-w-3xl mx-auto text-left space-y-6">
             <section className="bg-blue-50 border border-blue-200 rounded-lg p-6">
               <p className="text-gray-700 leading-relaxed mb-4">
@@ -375,7 +383,7 @@ export default function MythsInClinicalNutritionPage() {
                 </p>
                 <ul className="text-sm text-gray-700 space-y-1 list-disc pl-6">
                   <li><strong>Chuyên gia Dinh dưỡng Đã đăng ký:</strong> Chuyên gia đánh giá và lập kế hoạch dinh dưỡng</li>
-                  <li><strong>Nhóm hỗ trợ Dinh dưỡng lâm sàng:</strong> Cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
+                  <li><strong>Nhóm hỗ trợ Dinh dưỡng lâm sàng:</strong> cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
                   <li><strong>Nhóm lâm sàng Của bạn:</strong> Bác sĩ, điều dưỡng, và các nhà cung cấp khác biết bệnh nhân</li>
                   <li><strong>Hướng dẫn lâm sàng:</strong> khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
                 </ul>
@@ -402,7 +410,7 @@ export default function MythsInClinicalNutritionPage() {
         <section className="mb-8 p-8 bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg" aria-labelledby="cta-heading">
           <div className="text-center mb-6">
             <h2 id="cta-heading" className="text-2xl font-bold text-gray-900 mb-3">
-              Sẵn sàng Áp dụng Những gì Bạn đã Học?
+              Sẵn sàng Áp dụng Những gì bạn đã Học?
             </h2>
             <p className="text-gray-700 max-w-2xl mx-auto leading-relaxed">
               Hiểu những hiểu lầm này là có giá trị, nhưng đưa kiến thức đó vào thực hành là nơi học tập thực sự xảy ra. 

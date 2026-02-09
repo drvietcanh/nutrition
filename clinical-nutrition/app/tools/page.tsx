@@ -190,6 +190,27 @@ export default function ToolsIndexPage() {
             </Link>
           </CardFooter>
         </Card>
+
+        <Card href="/tools/meal-planner">
+          <CardHeader
+            icon={UtensilsCrossed}
+            title="Lập kế hoạch Bữa ăn"
+          />
+          <CardContent>
+            <p className="text-body">
+              Lập kế hoạch bữa ăn dựa trên nhu cầu dinh dưỡng. Chọn thực phẩm từ cơ sở dữ liệu 
+              và phân bổ vào các bữa ăn để đáp ứng nhu cầu hàng ngày.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <Link
+              href="/tools/meal-planner"
+              className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
+            >
+              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+            </Link>
+          </CardFooter>
+        </Card>
       </section>
     </main>
   );

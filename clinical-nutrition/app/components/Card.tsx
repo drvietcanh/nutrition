@@ -10,7 +10,7 @@ interface CardProps {
 
 export function Card({ children, className = '', href, onClick }: CardProps) {
   const baseClasses =
-    'bg-white rounded-xl border border-gray-200 p-6 sm:p-8 shadow-sm hover:shadow-md transition-all';
+    'bg-white rounded-xl border border-gray-200 p-6 sm:p-8 shadow-sm hover:shadow-md transition-all space-y-4';
 
   const interactiveClasses = href || onClick
     ? 'cursor-pointer hover:border-blue-300 active:scale-[0.99]'
@@ -58,8 +58,8 @@ export function CardHeader({
   className = '',
 }: CardHeaderProps) {
   return (
-    <div className={`mb-4 ${className}`}>
-      <div className="flex items-center gap-4 mb-2">
+    <div className={`${className}`}>
+      <div className="flex items-center gap-4 mb-3">
         {Icon && (
           <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
             <Icon className="w-6 h-6 text-blue-600" aria-hidden="true" />
@@ -68,7 +68,7 @@ export function CardHeader({
         <h2 className="heading-3">{title}</h2>
       </div>
       {description && (
-        <p className="text-gray-700 leading-relaxed">{description}</p>
+        <p className="text-gray-700 leading-relaxed text-body">{description}</p>
       )}
     </div>
   );
@@ -90,7 +90,7 @@ interface CardFooterProps {
 
 export function CardFooter({ children, className = '' }: CardFooterProps) {
   return (
-    <div className={`mt-4 pt-4 border-t border-gray-200 ${className}`}>
+    <div className={`pt-4 mt-4 border-t border-gray-200 ${className}`}>
       {children}
     </div>
   );

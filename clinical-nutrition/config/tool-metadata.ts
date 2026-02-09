@@ -27,11 +27,19 @@ export const TOOL_CATALOG: ToolMetadata[] = [
   },
   {
     id: "intake-assessment",
-    title: "Bảng Đánh giá Lượng Ăn",
+    title: "Bảng đánh giá Lượng Ăn",
     category: "worksheet",
     summary: "Hướng dẫn đánh giá có hệ thống lượng ăn qua đường miệng/ống thông/tĩnh mạch theo thời gian.",
     educationalFocus:
       "Hỗ trợ tư duy có cấu trúc về mức độ đầy đủ của lượng ăn so với nhu cầu ước tính.",
+  },
+  {
+    id: "meal-planner",
+    title: "Lập kế hoạch Bữa ăn",
+    category: "calculator",
+    summary: "Công cụ lập kế hoạch bữa ăn dựa trên nhu cầu dinh dưỡng. Chọn thực phẩm và phân bổ vào các bữa ăn.",
+    educationalFocus:
+      "Giúp hiểu cách lập kế hoạch bữa ăn để đáp ứng nhu cầu dinh dưỡng hàng ngày.",
   },
 ];
 
