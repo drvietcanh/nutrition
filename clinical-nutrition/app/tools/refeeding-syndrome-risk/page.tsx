@@ -69,7 +69,7 @@ export default function RefeedingSyndromeRiskPage() {
         </h2>
         <p className="text-body-sm">
           Hội chứng tái cho ăn là một biến chứng nghiêm trọng có thể xảy ra khi bắt đầu dinh dưỡng
-          sau một thời gian nhịn ăn hoặc giảm ăn đáng kể. Nó liên quan đến sự dịch chuyển điện giải
+          sau một thời gian nhịn ăn hoặc giảm ăn đáng kể. nó liên quan đến sự dịch chuyển điện giải
           (đặc biệt là phosphorus, magnesium, potassium) khi cơ thể chuyển từ trạng thái catabolic
           sang anabolic.
         </p>
@@ -155,7 +155,7 @@ export default function RefeedingSyndromeRiskPage() {
           6. Nhắc nhở an toàn
         </h2>
         <p className="text-body-sm">
-          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. nó không cung cấp
           tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân,
           và không được sử dụng để ra quyết định lâm sàng hoặc quản lý hội chứng tái cho ăn.
         </p>

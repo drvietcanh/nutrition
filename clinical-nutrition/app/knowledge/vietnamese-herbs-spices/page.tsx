@@ -76,11 +76,11 @@ export default function VietnameseHerbsSpicesPage() {
             </p>
             <div className="space-y-3">
               <div className="bg-white rounded-lg p-3 border border-purple-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Vitamin C, K</li>
                   <li>✓ Chất chống oxy hóa</li>
-                  <li>✓ Hỗ trợ sức khỏe tim mạch</li>
+                  <li>✓ hỗ trợ sức khỏe tim mạch</li>
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-3 border border-purple-200">
@@ -100,12 +100,12 @@ export default function VietnameseHerbsSpicesPage() {
             </p>
             <div className="space-y-3">
               <div className="bg-white rounded-lg p-3 border border-yellow-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Allicin - hợp chất kháng khuẩn</li>
                   <li>✓ Chất chống oxy hóa</li>
-                  <li>✓ Hỗ trợ sức khỏe tim mạch</li>
-                  <li>✓ Hỗ trợ hệ miễn dịch</li>
+                  <li>✓ hỗ trợ sức khỏe tim mạch</li>
+                  <li>✓ hỗ trợ hệ miễn dịch</li>
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-3 border border-yellow-200">
@@ -125,12 +125,12 @@ export default function VietnameseHerbsSpicesPage() {
             </p>
             <div className="space-y-3">
               <div className="bg-white rounded-lg p-3 border border-orange-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Gingerol - hợp chất chống viêm</li>
-                  <li>✓ Hỗ trợ tiêu hóa</li>
+                  <li>✓ hỗ trợ tiêu hóa</li>
                   <li>✓ Giảm buồn nôn</li>
-                  <li>✓ Hỗ trợ hệ miễn dịch</li>
+                  <li>✓ hỗ trợ hệ miễn dịch</li>
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-3 border border-orange-200">
@@ -150,7 +150,7 @@ export default function VietnameseHerbsSpicesPage() {
             </p>
             <div className="space-y-3">
               <div className="bg-white rounded-lg p-3 border border-red-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Capsaicin - hợp chất tạo vị cay</li>
                   <li>✓ Vitamin C</li>
@@ -246,7 +246,7 @@ export default function VietnameseHerbsSpicesPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Hỗ trợ Tiêu hóa</h3>
+            <h3 className="heading-4 mb-3">hỗ trợ Tiêu hóa</h3>
             <p className="text-body-sm">
               Gừng, rau răm có thể hỗ trợ tiêu hóa, giảm đầy hơi, chướng bụng. 
               Chúng thường được dùng trong món ăn khó tiêu.

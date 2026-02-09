@@ -77,7 +77,7 @@ export default function FolatePregnancyPage() {
               <strong>Tạo tế bào máu:</strong> Folate cần thiết để tạo tế bào máu cho cả mẹ và con.
             </p>
             <p>
-              <strong>Phát triển DNA:</strong> Folate cần thiết cho sự phát triển và phân chia tế bào.
+              <strong>phát triển DNA:</strong> Folate cần thiết cho sự phát triển và phân chia tế bào.
             </p>
           </div>
         </Card>

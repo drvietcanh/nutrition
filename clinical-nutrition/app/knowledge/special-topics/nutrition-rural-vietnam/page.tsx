@@ -28,7 +28,7 @@ export default function NutritionRuralVietnamPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
+          { label: "chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng cho Người sống ở Nông thôn" },
         ]}
       />
@@ -68,7 +68,7 @@ export default function NutritionRuralVietnamPage() {
             Rau vườn và trái cây tự trồng là nguồn dinh dưỡng tốt, tươi, và không có thuốc trừ sâu.
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng Rau vườn (100g)"
+            title="giá trị Dinh dưỡng Rau vườn (100g)"
             rows={[
               { nutrient: "Rau muống", amount: "2.5", unit: "g chất xơ", note: "Giàu vitamin A, C, sắt" },
               { nutrient: "Rau cải", amount: "2.0", unit: "g chất xơ", note: "Giàu vitamin K, folate" },
@@ -215,7 +215,7 @@ export default function NutritionRuralVietnamPage() {
           <Card href="/knowledge/vietnamese-foods-nutrition">
             <h3 className="heading-5 mb-2">Thực phẩm Việt Nam</h3>
             <p className="text-sm text-gray-600">
-              Giá trị dinh dưỡng thực phẩm Việt Nam
+              giá trị dinh dưỡng thực phẩm Việt Nam
             </p>
           </Card>
         </div>

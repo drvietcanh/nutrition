@@ -54,7 +54,7 @@ export default function HypertensionNutritionPage() {
             </p>
             <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
               <li>Phòng ngừa tăng huyết áp</li>
-              <li>Hỗ trợ kiểm soát huyết áp bên cạnh thuốc</li>
+              <li>hỗ trợ kiểm soát huyết áp bên cạnh thuốc</li>
               <li>Giảm nguy cơ biến chứng lâu dài</li>
             </ul>
           </div>
@@ -69,7 +69,7 @@ export default function HypertensionNutritionPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body-sm">
             <li>Giúp bác sĩ, điều dưỡng, sinh viên y, và người bệnh hiểu các nguyên tắc dinh dưỡng trong tăng huyết áp</li>
-            <li>Hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
+            <li>hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
           </ul>
           <p className="text-body-sm mt-3 font-semibold text-red-600">
             ⚠️ Lưu ý: Thông tin này không thay thế đánh giá lâm sàng cá nhân hoặc tư vấn trực tiếp từ bác sĩ 
@@ -103,7 +103,7 @@ export default function HypertensionNutritionPage() {
               <h3 className="heading-5 mb-2">🔹 Kali</h3>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Giúp cân bằng tác dụng của muối</li>
-                <li>• Hỗ trợ mạch máu giãn ra → huyết áp giảm</li>
+                <li>• hỗ trợ mạch máu giãn ra → huyết áp giảm</li>
               </ul>
             </Card>
             <Card className="border-amber-200 bg-amber-50/30">
@@ -315,7 +315,7 @@ export default function HypertensionNutritionPage() {
             <h4 className="heading-4 mb-2">Vai trò của kali</h4>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Giúp giảm tác dụng của muối</li>
-              <li>Hỗ trợ mạch máu giãn ra</li>
+              <li>hỗ trợ mạch máu giãn ra</li>
               <li>Có lợi cho huyết áp</li>
             </ul>
             <h4 className="heading-4 mb-2 mt-4">Nguồn kali tốt</h4>
@@ -568,7 +568,7 @@ export default function HypertensionNutritionPage() {
                 <tr>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thông số</th>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tần suất</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu/Giá trị bình thường</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu/giá trị bình thường</th>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
                 </tr>
               </thead>

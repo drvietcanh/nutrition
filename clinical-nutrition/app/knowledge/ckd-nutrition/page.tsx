@@ -68,7 +68,7 @@ export default function CKDNutritionPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body-sm">
             <li>Giúp nhân viên y tế và người bệnh hiểu các nguyên tắc dinh dưỡng trong CKD</li>
-            <li>Hỗ trợ quản lý bệnh an toàn, lâu dài</li>
+            <li>hỗ trợ quản lý bệnh an toàn, lâu dài</li>
           </ul>
           <p className="text-body-sm mt-3 font-semibold text-red-600">
             ⚠️ Lưu ý: Thông tin mang tính giáo dục, không thay thế đánh giá cá nhân của bác sĩ hoặc chuyên gia dinh dưỡng.
@@ -524,7 +524,7 @@ export default function CKDNutritionPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body-sm mt-2">
             <li>Giai đoạn bệnh thận</li>
-            <li>Xét nghiệm</li>
+            <li>xét nghiệm</li>
             <li>bệnh lý kèm</li>
             <li>Khả năng ăn uống thực tế</li>
           </ul>

@@ -28,7 +28,7 @@ interface ProgressChartProps {
 export function ProgressChart({
   data,
   title,
-  yAxisLabel = "Giá trị",
+  yAxisLabel = "giá trị",
   dataKey = "value",
   color = "#3b82f6",
 }: ProgressChartProps) {

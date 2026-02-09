@@ -95,7 +95,7 @@ export default function VietnameseCookingMethodsPage() {
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Đơn giản, không cần kỹ thuật phức tạp</span>
+                <span>đơn giản, không cần kỹ thuật phức tạp</span>
               </li>
             </ul>
           </Card>

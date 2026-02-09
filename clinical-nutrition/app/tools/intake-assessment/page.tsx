@@ -107,7 +107,7 @@ export default function IntakeAssessmentPage() {
             hạn chế những gì người bệnh cảm thấy có thể ăn hoặc uống.
           </li>
           <li>
-            Xét nghiệm, thủ thuật, lệnh nhịn ăn, và lịch trình có thể giảm thời gian
+            xét nghiệm, thủ thuật, lệnh nhịn ăn, và lịch trình có thể giảm thời gian
             có sẵn cho bữa ăn và đồ ăn nhẹ.
           </li>
           <li>
@@ -127,7 +127,7 @@ export default function IntakeAssessmentPage() {
           id="trends-heading"
           className="heading-4"
         >
-          7. Tư duy theo xu hướng, không phải ngày đơn lẻ
+          7. tư duy theo xu hướng, không phải ngày đơn lẻ
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-sm text-neutral-700 sm:text-base">
           <li>
@@ -154,7 +154,7 @@ export default function IntakeAssessmentPage() {
           8. Nhắc nhở an toàn
         </h2>
         <p className="text-xs text-neutral-600 sm:text-sm">
-          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. nó không cung cấp
           tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ
           bác sĩ–bệnh nhân, và không được sử dụng để ra quyết định lâm sàng,
           lệnh, hoặc kê đơn.

@@ -27,7 +27,7 @@ export default function RegionalNutritionVietnamPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
+          { label: "chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng Theo vùng miền Việt Nam" },
         ]}
       />
@@ -389,7 +389,7 @@ export default function RegionalNutritionVietnamPage() {
           <Card href="/knowledge/vietnamese-foods-nutrition">
             <h3 className="heading-5 mb-2">Thực phẩm Việt Nam</h3>
             <p className="text-sm text-gray-600">
-              Giá trị dinh dưỡng thực phẩm Việt Nam
+              giá trị dinh dưỡng thực phẩm Việt Nam
             </p>
           </Card>
           <Card href="/knowledge/sodium-health">

@@ -83,7 +83,7 @@ export default function Omega3HeartHealthPage() {
               </li>
               <li className="flex items-start gap-2">
                 <Heart className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Hỗ trợ chức năng não bộ, trí nhớ</span>
+                <span>hỗ trợ chức năng não bộ, trí nhớ</span>
               </li>
               <li className="flex items-start gap-2">
                 <Heart className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -91,7 +91,7 @@ export default function Omega3HeartHealthPage() {
               </li>
               <li className="flex items-start gap-2">
                 <Heart className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Hỗ trợ sức khỏe mắt</span>
+                <span>hỗ trợ sức khỏe mắt</span>
               </li>
             </ul>
           </Card>

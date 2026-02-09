@@ -71,7 +71,7 @@ export default function VietnameseFoodsNutritionPage() {
             Rau củ Việt Nam rất đa dạng và giàu dinh dưỡng. Chúng cung cấp vitamin, khoáng chất, và chất xơ.
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng Rau củ Việt Nam (100g)"
+            title="giá trị Dinh dưỡng Rau củ Việt Nam (100g)"
             rows={[
               { nutrient: "Rau muống", amount: "2.5", unit: "g chất xơ", note: "Giàu vitamin A, C, sắt" },
               { nutrient: "Rau cải", amount: "2.0", unit: "g chất xơ", note: "Giàu vitamin K, folate" },
@@ -96,7 +96,7 @@ export default function VietnameseFoodsNutritionPage() {
             Việt Nam có nhiều nguồn protein tốt, từ hải sản đến đậu phụ, từ thịt đến chả giò.
           </p>
           <NutrientTable
-            title="Giá trị Protein trong thực phẩm Việt Nam (100g)"
+            title="giá trị Protein trong thực phẩm Việt Nam (100g)"
             rows={[
               { nutrient: "Cá (cá basa, cá tra)", amount: "20-25", unit: "g protein", note: "Protein hoàn chỉnh, ít béo" },
               { nutrient: "Tôm", amount: "24", unit: "g protein", note: "Protein hoàn chỉnh, giàu selenium" },
@@ -126,7 +126,7 @@ export default function VietnameseFoodsNutritionPage() {
             Carbohydrate là nguồn năng lượng chính trong bữa ăn Việt Nam, từ cơm đến bún, phở.
           </p>
           <NutrientTable
-            title="Giá trị Carbohydrate trong món ăn Việt Nam (1 phần)"
+            title="giá trị Carbohydrate trong món ăn Việt Nam (1 phần)"
             rows={[
               { nutrient: "Cơm trắng (1 bát)", amount: "45-50", unit: "g carb", note: "năng lượng chính" },
               { nutrient: "Bún (1 tô)", amount: "50-60", unit: "g carb", note: "Từ gạo" },
@@ -151,7 +151,7 @@ export default function VietnameseFoodsNutritionPage() {
             Trái cây Việt Nam rất đa dạng, từ trái cây nhiệt đới đến trái cây theo mùa.
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng Trái cây Việt Nam (100g)"
+            title="giá trị Dinh dưỡng Trái cây Việt Nam (100g)"
             rows={[
               { nutrient: "Xoài", amount: "1.6", unit: "g chất xơ", note: "Giàu vitamin C, A, beta-carotene" },
               { nutrient: "Ổi", amount: "5.4", unit: "g chất xơ", note: "Giàu vitamin C (gấp 4 lần cam)" },
@@ -309,7 +309,7 @@ export default function VietnameseFoodsNutritionPage() {
 
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
-          Thông tin này chỉ dành cho mục đích giáo dục. Giá trị dinh dưỡng có thể thay đổi tùy theo 
+          Thông tin này chỉ dành cho mục đích giáo dục. giá trị dinh dưỡng có thể thay đổi tùy theo 
           cách chế biến và nguồn thực phẩm. Để có chế độ ăn lành mạnh, hãy ăn đa dạng thực phẩm và 
           tham khảo chuyên gia dinh dưỡng nếu cần.
         </p>

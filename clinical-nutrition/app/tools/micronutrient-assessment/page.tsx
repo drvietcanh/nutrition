@@ -157,7 +157,7 @@ export default function MicronutrientAssessmentPage() {
           6. Nhắc nhở an toàn
         </h2>
         <p className="text-body-sm">
-          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. nó không cung cấp
           tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân,
           và không được sử dụng để ra quyết định lâm sàng hoặc kê đơn bổ sung vi chất.
         </p>

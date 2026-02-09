@@ -70,7 +70,7 @@ export default function VitaminCImmunityPage() {
             <div>
               <p className="text-sm font-semibold text-gray-900 mb-2">Chức năng chính:</p>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Hỗ trợ hệ miễn dịch</li>
+                <li>• hỗ trợ hệ miễn dịch</li>
                 <li>• Chữa lành vết thương</li>
                 <li>• Chất chống oxy hóa</li>
                 <li>• Hấp thu sắt từ thực phẩm</li>
@@ -92,7 +92,7 @@ export default function VitaminCImmunityPage() {
 
         <ExampleBox variant="info" title="Ví dụ đơn giản">
           <p>
-            Vitamin C giống như "người bảo vệ" cho cơ thể. Nó giúp hệ miễn dịch chống lại vi khuẩn, 
+            Vitamin C giống như "người bảo vệ" cho cơ thể. nó giúp hệ miễn dịch chống lại vi khuẩn, 
             virus, và giúp cơ thể sửa chữa khi bị tổn thương. Giống như cơ thể cần "bảo vệ" mỗi ngày, 
             bạn cần vitamin C mỗi ngày từ thực phẩm.
           </p>

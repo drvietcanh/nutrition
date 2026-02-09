@@ -103,7 +103,7 @@ export default function CarbohydratesPage() {
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• <strong>Cung cấp năng lượng nhanh</strong> - cho hoạt động tức thì</li>
                   <li>• <strong>Giúp cơ thể hoạt động tỉnh táo</strong> - não cần glucose</li>
-                  <li>• <strong>Hỗ trợ vận động và lao động trí óc</strong> - cơ bắp và não cần năng lượng</li>
+                  <li>• <strong>hỗ trợ vận động và lao động trí óc</strong> - cơ bắp và não cần năng lượng</li>
                   <li>• Dự trữ năng lượng (glycogen)</li>
                   <li>• Tiết kiệm protein (không dùng protein làm năng lượng)</li>
                 </ul>

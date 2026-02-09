@@ -113,7 +113,7 @@ export default function VietnameseSoupsNutritionPage() {
 
           <ExampleBox variant="info" title="Ví dụ đơn giản">
             <p>
-              Canh giống như "cầu nối" trong bữa ăn Việt Nam. Nó cung cấp nước để dễ ăn cơm, 
+              Canh giống như "cầu nối" trong bữa ăn Việt Nam. nó cung cấp nước để dễ ăn cơm, 
               cung cấp rau củ để có vitamin, và có thể cung cấp protein từ cá/thịt. 
               Một bát canh chua cá có thể có: protein từ cá, vitamin từ cà chua và đậu bắp, 
               và nước để hydration - tất cả trong một món ăn.
@@ -140,7 +140,7 @@ export default function VietnameseSoupsNutritionPage() {
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-3 border border-green-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Protein từ cá/tôm (15-20g protein/100g cá)</li>
                   <li>✓ Vitamin C từ cà chua, đậu bắp, dứa</li>
@@ -175,7 +175,7 @@ export default function VietnameseSoupsNutritionPage() {
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-3 border border-blue-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Vitamin A, C, K từ rau củ</li>
                   <li>✓ Chất xơ từ rau</li>
@@ -208,7 +208,7 @@ export default function VietnameseSoupsNutritionPage() {
                 </ul>
               </div>
               <div className="bg-white rounded-lg p-3 border border-purple-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Protein từ thịt (20-25g protein/100g thịt)</li>
                   <li>✓ Vitamin từ rau củ</li>
@@ -222,9 +222,9 @@ export default function VietnameseSoupsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Giá trị Dinh dưỡng của Canh</h2>
+        <h2 className="heading-2">giá trị Dinh dưỡng của Canh</h2>
         <NutrientTable
-          title="Giá trị Dinh dưỡng Canh Việt Nam (Ước tính cho 1 bát)"
+          title="giá trị Dinh dưỡng Canh Việt Nam (Ước tính cho 1 bát)"
           rows={[
             { nutrient: "Canh chua cá (1 bát)", amount: "~80", unit: "calo", note: "Protein: 15g, Vitamin C: có, Nước: nhiều" },
             { nutrient: "Canh rau muống (1 bát)", amount: "~30", unit: "calo", note: "Vitamin A, C: có, Chất xơ: có, Nước: nhiều" },

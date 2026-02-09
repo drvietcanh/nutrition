@@ -29,7 +29,7 @@ export default function FestivalNutritionVietnamPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
+          { label: "chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng trong Lễ hội Việt Nam" },
         ]}
       />
@@ -69,9 +69,9 @@ export default function FestivalNutritionVietnamPage() {
         <h2 className="heading-2">Tết: Bánh chưng, Bánh tét, Mứt, Thịt kho</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Giá trị Dinh dưỡng món ăn Tết</h3>
+            <h3 className="heading-4 mb-3">giá trị Dinh dưỡng món ăn Tết</h3>
             <NutrientTable
-              title="Giá trị Dinh dưỡng món ăn Tết (100g)"
+              title="giá trị Dinh dưỡng món ăn Tết (100g)"
               rows={[
                 { nutrient: "Bánh chưng", amount: "181", unit: "calo, 4g protein, 40g carb", highlight: "moderate", note: "Nhiều carbohydrate, ít protein" },
                 { nutrient: "Bánh tét", amount: "181", unit: "calo, 4g protein, 40g carb", highlight: "moderate", note: "Tương tự bánh chưng" },
@@ -104,9 +104,9 @@ export default function FestivalNutritionVietnamPage() {
         <h2 className="heading-2">Trung thu: Bánh trung thu</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Giá trị Dinh dưỡng Bánh trung thu</h3>
+            <h3 className="heading-4 mb-3">giá trị Dinh dưỡng Bánh trung thu</h3>
             <NutrientTable
-              title="Giá trị Dinh dưỡng Bánh trung thu (1 cái ~100g)"
+              title="giá trị Dinh dưỡng Bánh trung thu (1 cái ~100g)"
               rows={[
                 { nutrient: "Bánh nướng đậu xanh", amount: "350", unit: "calo, 15g chất béo, 45g đường", highlight: "low", note: "Nhiều đường, chất béo, calo cao" },
                 { nutrient: "Bánh nướng thập cẩm", amount: "400", unit: "calo, 20g chất béo, 50g đường", highlight: "low", note: "Nhiều đường, chất béo, calo cao" },

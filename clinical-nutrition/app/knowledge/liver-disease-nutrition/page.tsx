@@ -142,7 +142,7 @@ export default function LiverDiseaseNutritionPage() {
                 <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">
                   <li>Giữ cơ</li>
                   <li>Phòng suy dinh dưỡng</li>
-                  <li>Hỗ trợ phục hồi gan</li>
+                  <li>hỗ trợ phục hồi gan</li>
                 </ul>
               </div>
               <div>

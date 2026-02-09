@@ -28,7 +28,7 @@ export default function FestivalNutritionVietnamPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
+          { label: "chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng trong Lễ hội Việt Nam" },
         ]}
       />
@@ -68,7 +68,7 @@ export default function FestivalNutritionVietnamPage() {
             Tết có nhiều món ăn đặc biệt, giàu calo và natri. Hiểu về giá trị dinh dưỡng giúp bạn ăn vừa phải.
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng món ăn tết (100g)"
+            title="giá trị Dinh dưỡng món ăn tết (100g)"
             rows={[
               { nutrient: "Bánh chưng", amount: "181", unit: "calo", note: "Nhiều carbohydrate, ít protein" },
               { nutrient: "Bánh tét", amount: "200", unit: "calo", note: "Nhiều carbohydrate, ít protein" },

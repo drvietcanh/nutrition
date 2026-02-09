@@ -82,7 +82,7 @@ export default function GutHealthProbioticsPage() {
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Hỗ trợ tiêu hóa, giảm đầy hơi, táo bón</span>
+                <span>hỗ trợ tiêu hóa, giảm đầy hơi, táo bón</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -94,7 +94,7 @@ export default function GutHealthProbioticsPage() {
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Hỗ trợ sức khỏe tinh thần (mối liên hệ ruột-não)</span>
+                <span>hỗ trợ sức khỏe tinh thần (mối liên hệ ruột-não)</span>
               </li>
             </ul>
           </Card>

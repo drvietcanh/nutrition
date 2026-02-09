@@ -197,7 +197,7 @@ export function calculateBMIBodyComposition(
   }
 
   clinicalNotes.push(
-    "BMI là một công cụ sàng lọc hữu ích nhưng không phải là thước đo hoàn chỉnh về tình trạng dinh dưỡng. Nó không phân biệt giữa khối mỡ và khối nạc.",
+    "BMI là một công cụ sàng lọc hữu ích nhưng không phải là thước đo hoàn chỉnh về tình trạng dinh dưỡng. nó không phân biệt giữa khối mỡ và khối nạc.",
     "Trong thực hành lâm sàng, các bác sĩ lâm sàng sẽ kết hợp BMI với đánh giá lâm sàng, tiền sử, và các chỉ số khác để đánh giá toàn diện tình trạng dinh dưỡng.",
     "Cân nặng lý tưởng (IBW) và cân nặng điều chỉnh (ABW) là các ước tính giáo dục. Các công thức khác nhau (Devine, Hamwi, Robinson) có thể cho kết quả khác nhau.",
     "Trong các trường hợp có phù, cổ trướng, hoặc dịch chuyển đáng kể, cân nặng thực tế có thể không phản ánh chính xác khối nạc và cần được diễn giải cẩn thận."

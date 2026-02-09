@@ -248,7 +248,7 @@ export function InteractiveSection() {
                 {nutrition && (
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3">
-                      Giá trị Dinh dưỡng ({servings} khẩu phần)
+                      giá trị Dinh dưỡng ({servings} khẩu phần)
                     </h4>
                     <div className="space-y-2">
                       <div className="flex justify-between py-2 border-b border-gray-200">

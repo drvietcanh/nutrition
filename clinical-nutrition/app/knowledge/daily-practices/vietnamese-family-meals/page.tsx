@@ -265,7 +265,7 @@ export default function VietnameseFamilyMealsPage() {
           <Card href="/knowledge/vietnamese-foods-nutrition">
             <h3 className="heading-5 mb-2">Thực phẩm Việt Nam</h3>
             <p className="text-sm text-gray-600">
-              Giá trị dinh dưỡng thực phẩm Việt Nam
+              giá trị dinh dưỡng thực phẩm Việt Nam
             </p>
           </Card>
           <Card href="/knowledge/healthy-plate">

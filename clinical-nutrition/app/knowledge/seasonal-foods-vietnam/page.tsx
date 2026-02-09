@@ -85,7 +85,7 @@ export default function SeasonalFoodsVietnamPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Hỗ trợ nông dân địa phương</span>
+                    <span>hỗ trợ nông dân địa phương</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -225,7 +225,7 @@ export default function SeasonalFoodsVietnamPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Lợi ích Dinh dưỡng Thực phẩm Theo mùa</h2>
         <Card>
-          <h3 className="heading-4 mb-3">So sánh Giá trị Dinh dưỡng</h3>
+          <h3 className="heading-4 mb-3">So sánh giá trị Dinh dưỡng</h3>
           <NutrientTable
             title="Ví dụ: Xoài mùa vs Trái mùa"
             rows={[
@@ -370,7 +370,7 @@ export default function SeasonalFoodsVietnamPage() {
           <Card href="/knowledge/vietnamese-foods-nutrition">
             <h3 className="heading-5 mb-2">Thực phẩm Việt Nam</h3>
             <p className="text-sm text-gray-600">
-              Giá trị dinh dưỡng thực phẩm Việt Nam
+              giá trị dinh dưỡng thực phẩm Việt Nam
             </p>
           </Card>
         </div>

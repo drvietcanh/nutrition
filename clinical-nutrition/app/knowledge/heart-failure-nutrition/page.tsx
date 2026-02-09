@@ -74,7 +74,7 @@ export default function HeartFailureNutritionPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body-sm">
             <li>Giúp bác sĩ, điều dưỡng, sinh viên y khoa và người bệnh hiểu các nguyên tắc dinh dưỡng trong suy tim</li>
-            <li>Hỗ trợ quản lý bệnh song song với thuốc</li>
+            <li>hỗ trợ quản lý bệnh song song với thuốc</li>
           </ul>
           <p className="text-body-sm mt-3 font-semibold text-red-600">
             ⚠️ Lưu ý: Thông tin này không thay thế đánh giá và chỉ định cá nhân của bác sĩ điều trị.
@@ -87,7 +87,7 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Rất quan trọng trong Suy tim?
+            Vì sao Dinh dưỡng rất quan trọng trong Suy tim?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -251,7 +251,7 @@ export default function HeartFailureNutritionPage() {
 
         {/* Weight monitoring */}
         <div className="space-y-4 rounded-lg border border-green-200 bg-green-50/30 p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Theo dõi Cân nặng – Dấu hiệu Rất quan trọng</h3>
+          <h3 className="heading-3">Theo dõi Cân nặng – Dấu hiệu rất quan trọng</h3>
           <div className="space-y-3 text-body">
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li><strong>Cân mỗi sáng, sau khi đi vệ sinh, trước ăn</strong></li>
@@ -458,7 +458,7 @@ export default function HeartFailureNutritionPage() {
                 <tr>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thông số</th>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tần suất</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu/Giá trị bình thường</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Mục tiêu/giá trị bình thường</th>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
                 </tr>
               </thead>

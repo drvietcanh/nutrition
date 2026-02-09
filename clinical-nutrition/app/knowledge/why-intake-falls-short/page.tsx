@@ -219,7 +219,7 @@ export default function WhyIntakeFallsShortPage() {
             <h3 className="font-semibold text-gray-900 mb-2">Cảm giác Ngon miệng Kém</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Mất cảm giác ngon miệng (chán ăn) là một trong những lý do phổ biến nhất cho giảm lượng ăn trong bệnh tật. 
-              Nó có thể được gây ra bởi:
+              nó có thể được gây ra bởi:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
               <li>Phản ứng stress của cơ thể với bệnh tật (cytokine viêm ức chế cảm giác ngon miệng)</li>
@@ -784,8 +784,8 @@ export default function WhyIntakeFallsShortPage() {
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
               <li>Lượng ăn có đang cải thiện trong vài ngày không?</li>
-              <li>Nó có ổn định ở mức hợp lý không?</li>
-              <li>Nó có đang giảm theo thời gian không?</li>
+              <li>nó có ổn định ở mức hợp lý không?</li>
+              <li>nó có đang giảm theo thời gian không?</li>
               <li>Có mô hình liên quan đến thủ thuật hoặc triệu chứng không?</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed">
@@ -832,7 +832,7 @@ export default function WhyIntakeFallsShortPage() {
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
               <li><strong>Cân nhắc thiếu ăn:</strong> Dinh dưỡng không đầy đủ có thể làm suy yếu chữa lành, suy yếu 
               chức năng miễn dịch, và dẫn đến mất cơ</li>
-              <li><strong>Cân nhắc thừa ăn:</strong> Hỗ trợ dinh dưỡng tích cực có thể gây biến chứng 
+              <li><strong>Cân nhắc thừa ăn:</strong> hỗ trợ dinh dưỡng tích cực có thể gây biến chứng 
               (hội chứng tái cho ăn, tăng đường huyết, quá tải dịch) đặc biệt ở bệnh nhân có rối loạn chức năng cơ quan</li>
               <li><strong>Bối cảnh quan trọng:</strong> Sự cân bằng thay đổi dựa trên tình trạng bệnh nhân, mức độ nghiêm trọng, 
               và quỹ đạo lâm sàng</li>
@@ -850,7 +850,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Đánh giá lại Khi tình trạng Phát triển</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Đánh giá lại Khi tình trạng phát triển</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Tình trạng bệnh nhân thay đổi, và nhu cầu dinh dưỡng và khả năng lượng ăn thay đổi cùng với chúng. Các bác sĩ lâm sàng 
               thường xuyên đánh giá lại:
@@ -930,7 +930,7 @@ export default function WhyIntakeFallsShortPage() {
               và nhiều yếu tố khác.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Hãy nhớ:</strong> Nhu cầu ước tính là tham chiếu, không phải “mệnh lệnh”. Nó giúp chúng ta
+              <strong>Hãy nhớ:</strong> Nhu cầu ước tính là tham chiếu, không phải “mệnh lệnh”. nó giúp chúng ta
               hình dung mục tiêu hợp lý, nhưng lượng ăn thực tế thường sẽ khác—và điều đó không hiếm gặp. 
               Tính toán là điểm khởi đầu cho lập kế hoạch, không phải mục tiêu cứng nhắc phải được đáp ứng.
             </p>
@@ -1094,7 +1094,7 @@ export default function WhyIntakeFallsShortPage() {
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu năng lượng và protein để so sánh với lượng ăn thực tế.
-                Nhớ rằng các con số này là điểm khởi đầu, không phải mục tiêu cứng nhắc.
+                nhớ rằng các con số này là điểm khởi đầu, không phải mục tiêu cứng nhắc.
               </p>
             </CardContent>
           </Card>

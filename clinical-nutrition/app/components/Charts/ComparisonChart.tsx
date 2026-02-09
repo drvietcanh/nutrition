@@ -27,7 +27,7 @@ interface ComparisonChartProps {
 export function ComparisonChart({
   data,
   title,
-  yAxisLabel = "Giá trị",
+  yAxisLabel = "giá trị",
   unit = "",
 }: ComparisonChartProps) {
   const CustomTooltip = ({ active, payload, label }: any) => {

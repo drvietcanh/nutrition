@@ -94,7 +94,7 @@ export default function VitaminBComplexPage() {
                 <li>• Chức năng não</li>
                 <li>• Tạo tế bào máu</li>
                 <li>• Sản xuất DNA</li>
-                <li>• Hỗ trợ hệ thần kinh</li>
+                <li>• hỗ trợ hệ thần kinh</li>
               </ul>
             </div>
           </div>

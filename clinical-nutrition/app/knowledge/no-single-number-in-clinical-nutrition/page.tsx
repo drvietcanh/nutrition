@@ -66,7 +66,7 @@ export default function WhyNoUniversalNumberPage() {
           </p>
           <p className="text-base text-neutral-600 italic border-l-4 border-blue-200 pl-4 py-2 bg-blue-50/50 rounded-r">
             Nội dung này được thiết kế cho mục đích giáo dục để giúp bạn hiểu ước tính nhu cầu dinh dưỡng
-            và giảm sự tự tin quá mức vào số liệu. Nó không cung cấp khuyến nghị điều trị hoặc thay thế
+            và giảm sự tự tin quá mức vào số liệu. nó không cung cấp khuyến nghị điều trị hoặc thay thế
             hướng dẫn lâm sàng hoặc đào tạo chuyên nghiệp. Nếu bạn mới làm quen với dinh dưỡng lâm sàng, hãy dành thời gian với những
             khái niệm này—chúng tạo nền tảng cho chăm sóc dinh dưỡng an toàn và hiệu quả.
           </p>
@@ -119,9 +119,9 @@ export default function WhyNoUniversalNumberPage() {
             "có lẽ đâu đó giữa 1,600 và 2,000, tùy thuộc vào cách họ phản ứng."
           </p>
           <p>
-            Số liệu cũng <strong>đơn giản hóa các quyết định phức tạp</strong>. Dinh dưỡng lâm sàng liên quan đến việc cân nhắc nhiều
+            số liệu cũng <strong>đơn giản hóa các quyết định phức tạp</strong>. Dinh dưỡng lâm sàng liên quan đến việc cân nhắc nhiều
             yếu tố: tình trạng bệnh nhân, mục tiêu chăm sóc của họ, những gì họ có thể chịu đựng, những gì thực tế
-            có thể, và cách họ đang phản ứng. Một con số duy nhất cắt qua sự phức tạp đó. Nó cho bạn
+            có thể, và cách họ đang phản ứng. Một con số duy nhất cắt qua sự phức tạp đó. nó cho bạn
             một cái gì đó cụ thể để làm việc, một cái gì đó bạn có thể ghi chép, một cái gì đó bạn có thể bảo vệ nếu bị chất vấn.
           </p>
           <p>
@@ -337,7 +337,7 @@ export default function WhyNoUniversalNumberPage() {
             </ul>
             <p className="mt-2">
               Quy trình liên tục này của đánh giá, theo dõi và điều chỉnh là điều làm cho chăm sóc dinh dưỡng hiệu quả.
-              Nó không phải về việc tìm "con số đúng" một lần—nó là về việc luôn phản ứng với thay đổi.
+              nó không phải về việc tìm "con số đúng" một lần—nó là về việc luôn phản ứng với thay đổi.
             </p>
           </EducationalNote>
           <p>
@@ -442,7 +442,7 @@ export default function WhyNoUniversalNumberPage() {
             lâm sàng kết hợp với hướng dẫn.
           </p>
           <p>
-            <strong>Các phương pháp này thường tạo ra các con số khác nhau, và điều đó là bình thường.</strong> Nó không phải là dấu hiệu
+            <strong>Các phương pháp này thường tạo ra các con số khác nhau, và điều đó là bình thường.</strong> nó không phải là dấu hiệu
             rằng một cái "sai" hoặc cái khác "đúng." Các phương pháp khác nhau tồn tại vì chúng được phát triển cho
             mục đích, dân số hoặc tình huống khác nhau. Ví dụ:
           </p>
@@ -465,7 +465,7 @@ export default function WhyNoUniversalNumberPage() {
             dựa trên bối cảnh lâm sàng. Mục tiêu không phải là tìm "câu trả lời đúng," mà là thiết lập một
             <strong>điểm khởi đầu an toàn, hợp lý</strong> có thể được theo dõi và điều chỉnh.
           </p>
-          <EducationalNote variant="warning" title="Rủi ro của Sự tự tin Quá mức">
+          <EducationalNote variant="warning" title="Rủi ro của Sự tự tin quá mức">
             <p>
               Đối xử với công thức như thể chúng cung cấp câu trả lời chính xác có thể dẫn đến tự tin quá mức vào số liệu. Đây là
               một cạm bẫy phổ biến cho các bác sĩ lâm sàng mới vào nghề, y tá tuân theo giao thức và sinh viên học
@@ -689,7 +689,7 @@ export default function WhyNoUniversalNumberPage() {
             </p>
           </EducationalNote>
 
-          <EducationalNote variant="common-pitfall" title='Cho ăn Quá mức Trong bệnh Cấp tính Sớm'>
+          <EducationalNote variant="common-pitfall" title='Cho ăn quá mức Trong bệnh Cấp tính Sớm'>
             <p>
               <strong>Điều gì xảy ra:</strong> Một bệnh nhân được nhập viện với nhiễm trùng nặng hoặc bệnh nặng. Nhóm
               chăm sóc tính toán nhu cầu và ngay lập tức cố gắng đáp ứng mục tiêu đầy đủ, mặc dù bệnh nhân
@@ -772,8 +772,8 @@ export default function WhyNoUniversalNumberPage() {
                 dựa trên trung bình dân số, không phải đo lường cá nhân.
               </p>
               <p>
-                Làm việc với phạm vi trung thực hơn so với tuyên bố một con số chính xác. Nó phản ánh thực tế rằng
-                các phương pháp ước tính khác nhau tạo ra kết quả khác nhau, và điều đó là bình thường. Nó cũng thừa nhận
+                Làm việc với phạm vi trung thực hơn so với tuyên bố một con số chính xác. nó phản ánh thực tế rằng
+                các phương pháp ước tính khác nhau tạo ra kết quả khác nhau, và điều đó là bình thường. nó cũng thừa nhận
                 rằng sự biến đổi cá nhân có nghĩa là cùng một tính toán có thể không phù hợp với tất cả mọi người, hoặc thậm chí cùng một
                 người trong các tình huống khác nhau.
               </p>
@@ -876,7 +876,7 @@ export default function WhyNoUniversalNumberPage() {
         <ContentBlock>
           <p>
             Hiểu tại sao không có con số phổ quát cho nhu cầu dinh dưỡng có thể cảm thấy quá tải lúc đầu, nhưng
-            nó thực sự yên tâm. Nó có nghĩa là bạn không cần tìm con số "hoàn hảo"—bạn cần suy nghĩ
+            nó thực sự yên tâm. nó có nghĩa là bạn không cần tìm con số "hoàn hảo"—bạn cần suy nghĩ
             cẩn thận về những gì phù hợp cho mỗi người trong tình huống cụ thể của họ. Đây là những điểm chính
             cần rút ra để hướng dẫn thực hành của bạn:
           </p>
@@ -888,7 +888,7 @@ export default function WhyNoUniversalNumberPage() {
               Không có Con số đúng Duy nhất tồn tại
             </h3>
             <p className="text-blue-800 mb-2">
-              Đây thực sự là tin tốt. Nó có nghĩa là bạn không cần lo lắng về việc tìm câu trả lời "hoàn hảo".
+              Đây thực sự là tin tốt. nó có nghĩa là bạn không cần lo lắng về việc tìm câu trả lời "hoàn hảo".
               Các phương pháp ước tính khác nhau tạo ra các con số khác nhau, và điều đó là bình thường. Bệnh nhân có cùng
               cân nặng có thể có nhu cầu khác nhau. Nhu cầu thay đổi theo thời gian. Sự biến đổi này là thực tế và dự kiến—nó
               không phải là lỗi trong đánh giá của bạn hoặc dấu hiệu rằng bạn đang làm sai điều gì đó.
@@ -902,7 +902,7 @@ export default function WhyNoUniversalNumberPage() {
 
           <div className="rounded-md bg-blue-50 border border-blue-200 p-5">
             <h3 className="text-lg font-semibold text-blue-900 mb-3">
-              Số liệu hỗ Trợ suy nghĩ, Không phải quyết Định
+              số liệu hỗ Trợ suy nghĩ, Không phải quyết Định
             </h3>
             <p className="text-blue-800 mb-2">
               Công cụ lâm sàng—máy tính, công thức, công cụ sàng lọc—có giá trị. Chúng giúp bạn ước tính nhu cầu,
@@ -910,7 +910,7 @@ export default function WhyNoUniversalNumberPage() {
               các yếu tố quan trọng. Nhưng chúng không đưa ra quyết định cho bạn.
             </p>
             <p className="text-blue-800">
-              Số liệu thông báo suy nghĩ của bạn, nhưng phán đoán lâm sàng hướng dẫn quyết định của bạn. Toàn bộ con người—các
+              số liệu thông báo suy nghĩ của bạn, nhưng phán đoán lâm sàng hướng dẫn quyết định của bạn. Toàn bộ con người—các
               triệu chứng của họ, bối cảnh của họ, phản ứng của họ, mục tiêu chăm sóc của họ—quan trọng hơn bất kỳ tính toán nào.
               sử dụng công cụ để hỗ trợ suy nghĩ của bạn, nhưng để phán đoán xác định kế hoạch. Đây không phải về việc bỏ qua
               số liệu—nó là về việc sử dụng chúng một cách phù hợp, như hỗ trợ cho suy nghĩ thay vì thay thế cho phán đoán.
@@ -930,7 +930,7 @@ export default function WhyNoUniversalNumberPage() {
               Đánh giá lại là trung tâm của dinh dưỡng lâm sàng. Ước tính ban đầu là điểm khởi đầu, không phải mục tiêu
               cố định. Đánh giá lại thường xuyên—được thông báo bởi theo dõi hàng ngày của y tá, phản ứng bệnh nhân và
               thay đổi lâm sàng—đảm bảo rằng hỗ trợ dinh dưỡng vẫn phù hợp khi hoàn cảnh thay đổi. Quy trình liên tục
-              này của đánh giá, theo dõi và điều chỉnh là điều làm cho chăm sóc dinh dưỡng hiệu quả. Nó không
+              này của đánh giá, theo dõi và điều chỉnh là điều làm cho chăm sóc dinh dưỡng hiệu quả. nó không
               phải về việc tìm con số đúng một lần—nó là về việc luôn phản ứng với thay đổi.
             </p>
           </div>
@@ -1094,7 +1094,7 @@ export default function WhyNoUniversalNumberPage() {
         <ContentBlock className="mt-6">
           <p>
             Nội dung này được thiết kế để hỗ trợ học tập và hiểu biết về các khái niệm dinh dưỡng lâm sàng.
-            Nó giúp bạn hiểu tại sao nhu cầu dinh dưỡng không thể được giảm xuống thành các con số phổ quát và cách
+            nó giúp bạn hiểu tại sao nhu cầu dinh dưỡng không thể được giảm xuống thành các con số phổ quát và cách
             các bác sĩ lâm sàng suy nghĩ về ước tính nhu cầu trong thực hành.
           </p>
           <p>

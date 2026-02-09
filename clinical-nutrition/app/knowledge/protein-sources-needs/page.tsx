@@ -87,7 +87,7 @@ export default function ProteinSourcesNeedsPage() {
                 <p className="text-sm font-semibold text-gray-900 mb-2">Chức năng chính:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• <strong>Giữ và phát triển cơ bắp</strong> - giúp cơ bắp khỏe mạnh</li>
-                  <li>• <strong>Hỗ trợ miễn dịch</strong> - tạo kháng thể chống bệnh</li>
+                  <li>• <strong>hỗ trợ miễn dịch</strong> - tạo kháng thể chống bệnh</li>
                   <li>• <strong>Giúp lành vết thương</strong> - hồi phục sau bệnh, sau phẫu thuật</li>
                   <li>• <strong>Duy trì sức khỏe người cao tuổi</strong> - giữ cơ bắp, tránh té ngã</li>
                   <li>• Tạo enzyme và hormone</li>
@@ -184,7 +184,7 @@ export default function ProteinSourcesNeedsPage() {
         <h2 className="heading-2">Bảng hàm lượng Đạm trong thực phẩm Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
-            Số liệu dưới đây mang tính ước tính giáo dục, có thể thay đổi tùy theo cách chế biến và từng loại thực phẩm. 
+            số liệu dưới đây mang tính ước tính giáo dục, có thể thay đổi tùy theo cách chế biến và từng loại thực phẩm. 
             Không thay thế tư vấn cá nhân.
           </p>
         </Callout>

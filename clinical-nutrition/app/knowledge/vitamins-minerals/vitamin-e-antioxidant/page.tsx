@@ -73,10 +73,10 @@ export default function VitaminEAntioxidantPage() {
                 <p className="text-sm font-semibold text-gray-900 mb-2">Chức năng chính:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Chất chống oxy hóa - bảo vệ tế bào</li>
-                  <li>• Hỗ trợ sức khỏe da</li>
-                  <li>• Hỗ trợ hệ miễn dịch</li>
+                  <li>• hỗ trợ sức khỏe da</li>
+                  <li>• hỗ trợ hệ miễn dịch</li>
                   <li>• Bảo vệ mắt</li>
-                  <li>• Hỗ trợ sức khỏe tim mạch</li>
+                  <li>• hỗ trợ sức khỏe tim mạch</li>
                 </ul>
               </div>
               <div>

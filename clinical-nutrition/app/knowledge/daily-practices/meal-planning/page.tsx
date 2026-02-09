@@ -196,7 +196,7 @@ export default function MealPlanningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách lập Kế hoạch Đơn giản</h2>
+        <h2 className="heading-2">Cách lập Kế hoạch đơn giản</h2>
         <Card>
           <div className="space-y-4">
             <div className="flex items-start gap-3">

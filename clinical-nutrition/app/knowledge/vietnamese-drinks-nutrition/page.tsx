@@ -11,7 +11,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Đồ uống Việt Nam và Dinh dưỡng",
   description:
-    "Các loại đồ uống phổ biến ở Việt Nam - trà, cà phê, nước dừa, nước mía. Giá trị dinh dưỡng, lợi ích, và cách chọn đồ uống lành mạnh.",
+    "Các loại đồ uống phổ biến ở Việt Nam - trà, cà phê, nước dừa, nước mía. giá trị dinh dưỡng, lợi ích, và cách chọn đồ uống lành mạnh.",
   keywords: [
     "đồ uống Việt Nam",
     "vietnamese drinks",
@@ -75,7 +75,7 @@ export default function VietnameseDrinksNutritionPage() {
             </p>
             <div className="space-y-3">
               <div className="bg-white rounded-lg p-3 border border-green-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Chất chống oxy hóa (polyphenols, EGCG)</li>
                   <li>✓ Caffeine (ít hơn cà phê)</li>
@@ -119,7 +119,7 @@ export default function VietnameseDrinksNutritionPage() {
             </p>
             <div className="space-y-3">
               <div className="bg-white rounded-lg p-3 border border-amber-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Caffeine (tăng tỉnh táo)</li>
                   <li>✓ Chất chống oxy hóa</li>
@@ -154,7 +154,7 @@ export default function VietnameseDrinksNutritionPage() {
             </p>
             <div className="space-y-3">
               <div className="bg-white rounded-lg p-3 border border-blue-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>✓ Điện giải (kali, natri)</li>
                   <li>✓ Ít calo (nước dừa tươi, ~45 calo/250ml)</li>
@@ -189,7 +189,7 @@ export default function VietnameseDrinksNutritionPage() {
             </p>
             <div className="space-y-3">
               <div className="bg-white rounded-lg p-3 border border-yellow-200">
-                <p className="text-xs font-semibold text-gray-900 mb-1">Giá trị dinh dưỡng:</p>
+                <p className="text-xs font-semibold text-gray-900 mb-1">giá trị dinh dưỡng:</p>
                 <ul className="text-xs text-gray-700 space-y-1">
                   <li>⚠ Nhiều đường (~50g đường/250ml)</li>
                   <li>⚠ Nhiều calo (~200 calo/250ml)</li>
@@ -218,7 +218,7 @@ export default function VietnameseDrinksNutritionPage() {
               <div className="bg-green-50 rounded-lg p-3 border border-green-200">
                 <p className="text-sm font-semibold text-gray-900 mb-1">Trà gừng (Ginger tea):</p>
                 <p className="text-xs text-gray-700">
-                  Hỗ trợ tiêu hóa, giảm buồn nôn, ít calo (không đường). Tốt khi bị cảm.
+                  hỗ trợ tiêu hóa, giảm buồn nôn, ít calo (không đường). Tốt khi bị cảm.
                 </p>
               </div>
               <div className="bg-red-50 rounded-lg p-3 border border-red-200">
@@ -233,9 +233,9 @@ export default function VietnameseDrinksNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh Giá trị Dinh dưỡng</h2>
+        <h2 className="heading-2">So sánh giá trị Dinh dưỡng</h2>
         <NutrientTable
-          title="Giá trị Dinh dưỡng Đồ uống Việt Nam (Ước tính cho 250ml)"
+          title="giá trị Dinh dưỡng Đồ uống Việt Nam (Ước tính cho 250ml)"
           rows={[
             { nutrient: "Nước lọc", amount: "0", unit: "calo", note: "Tốt nhất cho hydration" },
             { nutrient: "Trà xanh không đường", amount: "~2", unit: "calo", note: "Chất chống oxy hóa, tốt" },

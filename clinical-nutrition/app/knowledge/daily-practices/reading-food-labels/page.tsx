@@ -6,7 +6,7 @@ import { FileText, CheckCircle2, AlertCircle, Info } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Đọc nhãn Thực phẩm: Hướng dẫn Đơn giản",
+  title: "Đọc nhãn Thực phẩm: Hướng dẫn đơn giản",
   description:
     "Hướng dẫn cách đọc và hiểu nhãn thực phẩm để chọn lựa thực phẩm lành mạnh. Hiểu về thành phần dinh dưỡng, đường, muối, và chất béo.",
   keywords: [
@@ -31,7 +31,7 @@ export default function ReadingFoodLabelsPage() {
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <FileText className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Đọc nhãn Thực phẩm: Hướng dẫn Đơn giản</h1>
+          <h1 className="heading-1">Đọc nhãn Thực phẩm: Hướng dẫn đơn giản</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Biết cách đọc nhãn thực phẩm giúp bạn chọn lựa thực phẩm lành mạnh hơn. 
@@ -72,7 +72,7 @@ export default function ReadingFoodLabelsPage() {
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
             <p className="text-sm text-blue-900">
               <strong>Ví dụ đơn giản:</strong> Nhãn thực phẩm giống như "bảng thông tin" của thực phẩm. 
-              Nó cho biết thực phẩm chứa gì, giúp bạn quyết định có nên mua và ăn hay không.
+              nó cho biết thực phẩm chứa gì, giúp bạn quyết định có nên mua và ăn hay không.
             </p>
           </div>
 

@@ -64,7 +64,7 @@ export default function IBDNutritionPage() {
             <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
               <li>Giảm triệu chứng</li>
               <li>Phòng suy dinh dưỡng</li>
-              <li>Hỗ trợ điều trị và hồi phục</li>
+              <li>hỗ trợ điều trị và hồi phục</li>
             </ul>
           </div>
         </div>

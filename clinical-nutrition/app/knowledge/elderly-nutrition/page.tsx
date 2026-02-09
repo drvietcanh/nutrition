@@ -286,7 +286,7 @@ export default function ElderlyNutritionPage() {
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>
-                  <strong>Hỗ trợ từ gia đình:</strong> Giúp mua sắm, chuẩn bị bữa ăn
+                  <strong>hỗ trợ từ gia đình:</strong> Giúp mua sắm, chuẩn bị bữa ăn
                 </span>
               </li>
               <li className="flex items-start gap-2">

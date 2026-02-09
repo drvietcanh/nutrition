@@ -403,7 +403,7 @@ export default function GlycemicIndexLoadPage() {
         </h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm mb-2">
-            Giá trị dưới đây là ước tính trung bình, có thể thay đổi theo cách nấu và từng người.
+            giá trị dưới đây là ước tính trung bình, có thể thay đổi theo cách nấu và từng người.
           </p>
         </Callout>
 

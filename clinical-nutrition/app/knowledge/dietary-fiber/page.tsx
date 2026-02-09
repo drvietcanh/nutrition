@@ -71,7 +71,7 @@ export default function DietaryFiberPage() {
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
             <p className="text-sm text-blue-900">
               <strong>👉 Có thể ví:</strong> Chất xơ là "chổi quét" của hệ tiêu hóa. 
-              Nó giúp làm sạch đường ruột, đẩy thức ăn đi qua hệ tiêu hóa một cách trơn tru.
+              nó giúp làm sạch đường ruột, đẩy thức ăn đi qua hệ tiêu hóa một cách trơn tru.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export default function DietaryFiberPage() {
           </Card>
 
           <Card className="border-blue-200 bg-blue-50/30">
-            <h3 className="heading-5 mb-2">Hỗ trợ giảm mỡ máu</h3>
+            <h3 className="heading-5 mb-2">hỗ trợ giảm mỡ máu</h3>
             <p className="text-sm text-gray-700">
               Chất xơ hòa tan giúp giảm cholesterol xấu (LDL), từ đó giảm nguy cơ bệnh tim mạch.
             </p>
@@ -298,7 +298,7 @@ export default function DietaryFiberPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Hỗ trợ sức khỏe tim mạch</span>
+                    <span>hỗ trợ sức khỏe tim mạch</span>
                   </li>
                 </ul>
               </div>
@@ -339,7 +339,7 @@ export default function DietaryFiberPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Hỗ trợ sức khỏe đường ruột</span>
+                    <span>hỗ trợ sức khỏe đường ruột</span>
                   </li>
                 </ul>
               </div>
@@ -392,7 +392,7 @@ export default function DietaryFiberPage() {
             <h3 className="heading-4 mb-3">Sức khỏe Tiêu hóa</h3>
             <p className="text-body-sm">
               Chất xơ giúp ngăn ngừa táo bón, giảm nguy cơ bệnh trĩ, và có thể giảm nguy cơ 
-              ung thư đại tràng. Nó cũng hỗ trợ vi khuẩn tốt trong ruột.
+              ung thư đại tràng. nó cũng hỗ trợ vi khuẩn tốt trong ruột.
             </p>
           </Card>
 

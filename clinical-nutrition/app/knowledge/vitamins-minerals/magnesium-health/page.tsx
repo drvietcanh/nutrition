@@ -94,7 +94,7 @@ export default function MagnesiumHealthPage() {
 
         <ExampleBox variant="info" title="Ví dụ đơn giản">
           <p>
-            Magnesium giống như "dầu bôi trơn" cho cơ thể. Nó giúp cơ bắp hoạt động mượt mà, 
+            Magnesium giống như "dầu bôi trơn" cho cơ thể. nó giúp cơ bắp hoạt động mượt mà, 
             thần kinh truyền tín hiệu tốt, và tim đập đều. Khi thiếu magnesium, cơ thể có thể 
             "kẹt" - cơ bắp dễ chuột rút, thần kinh căng thẳng.
           </p>

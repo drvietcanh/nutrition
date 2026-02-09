@@ -11,7 +11,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Thực phẩm Chức năng Việt Nam: Nước mắm, Tương, Chao",
   description:
-    "Tìm hiểu về các loại gia vị và thực phẩm lên men Việt Nam - nước mắm, tương, chao, mắm tôm. Giá trị dinh dưỡng, cách sử dụng, và lưu ý về natri.",
+    "Tìm hiểu về các loại gia vị và thực phẩm lên men Việt Nam - nước mắm, tương, chao, mắm tôm. giá trị dinh dưỡng, cách sử dụng, và lưu ý về natri.",
   keywords: [
     "nước mắm",
     "tương",
@@ -72,7 +72,7 @@ export default function VietnameseFermentedFoodsPage() {
             Nước mắm là gia vị phổ biến nhất ở Việt Nam, được làm từ cá lên men.
           </p>
           <NutrientTable
-            title="Giá trị dinh dưỡng Nước mắm (100ml)"
+            title="giá trị dinh dưỡng Nước mắm (100ml)"
             rows={[
               { nutrient: "Protein", amount: "10-15", unit: "g", note: "Từ cá lên men" },
               { nutrient: "Natri", amount: "15,000-20,000", unit: "mg", note: "Rất cao - cần dùng ít" },
@@ -104,7 +104,7 @@ export default function VietnameseFermentedFoodsPage() {
             Tương là gia vị làm từ đậu nành lên men, có nhiều loại: tương đen, tương ớt, tương cà.
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng Tương (100g)"
+            title="giá trị Dinh dưỡng Tương (100g)"
             rows={[
               { nutrient: "Protein", amount: "8-12", unit: "g", note: "Từ đậu nành" },
               { nutrient: "Natri", amount: "3,000-5,000", unit: "mg", note: "Ít hơn nước mắm" },
@@ -129,7 +129,7 @@ export default function VietnameseFermentedFoodsPage() {
             Chao là đậu phụ lên men, giàu protein và probiotics (lợi khuẩn).
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng Chao (100g)"
+            title="giá trị Dinh dưỡng Chao (100g)"
             rows={[
               { nutrient: "Protein", amount: "12-15", unit: "g", note: "Từ đậu phụ lên men" },
               { nutrient: "Natri", amount: "2,000-3,000", unit: "mg", note: "Vừa phải" },
@@ -152,7 +152,7 @@ export default function VietnameseFermentedFoodsPage() {
             Mắm tôm, mắm ruốc là gia vị đậm đà, giàu protein nhưng cũng nhiều natri.
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng Mắm (100g)"
+            title="giá trị Dinh dưỡng Mắm (100g)"
             rows={[
               { nutrient: "Protein", amount: "15-20", unit: "g", note: "Từ tôm/ruốc lên men" },
               { nutrient: "Natri", amount: "10,000-15,000", unit: "mg", note: "Rất cao - dùng ít" },

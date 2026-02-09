@@ -265,7 +265,7 @@ export default function VitaminB12EnergyPage() {
               <li>Ăn thịt, cá, trứng 2-3 lần/tuần</li>
               <li>Uống sữa, sữa chua mỗi ngày</li>
               <li>tham khảo bác sĩ về viên bổ sung B12 (có thể cần liều cao hơn)</li>
-              <li>Xét nghiệm máu để kiểm tra mức B12</li>
+              <li>xét nghiệm máu để kiểm tra mức B12</li>
             </ul>
           </Card>
         </div>

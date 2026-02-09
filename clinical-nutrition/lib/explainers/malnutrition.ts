@@ -30,7 +30,7 @@ export function buildMalnutritionInterpretation(
     return {
       whatItUsuallyMeans: [
         "Trong thực hành lâm sàng, một mẫu sàng lọc nguy cơ thấp hơn thường có nghĩa là không có dấu hiệu cảnh báo mạnh ngay lập tức cho giảm cân gần đây hoặc vấn đề lượng ăn vào kéo dài.",
-        "Nó không chứng minh rằng dinh dưỡng là đầy đủ, nhưng gợi ý rằng các vấn đề khác có thể cấp bách hơn để giải quyết trước.",
+        "nó không chứng minh rằng dinh dưỡng là đầy đủ, nhưng gợi ý rằng các vấn đề khác có thể cấp bách hơn để giải quyết trước.",
       ],
       whatCliniciansOftenConsiderNext: [
         "Tiếp tục quan sát cân nặng, lượng ăn vào, và tình trạng chức năng theo thời gian.",
@@ -48,7 +48,7 @@ export function buildMalnutritionInterpretation(
     return {
       whatItUsuallyMeans: [
         "Trong thực hành lâm sàng, một mẫu sàng lọc nguy cơ cao hơn thường được đối xử như một tín hiệu rằng dinh dưỡng có thể là một đóng góp quan trọng cho nguy cơ tổng thể.",
-        "Nó không xác nhận suy dinh dưỡng, nhưng nó thường khiến các bác sĩ lâm sàng xem xét kỹ hơn về lượng ăn vào, tiền sử cân nặng, và chức năng.",
+        "nó không xác nhận suy dinh dưỡng, nhưng nó thường khiến các bác sĩ lâm sàng xem xét kỹ hơn về lượng ăn vào, tiền sử cân nặng, và chức năng.",
       ],
       whatCliniciansOftenConsiderNext: [
         "Sắp xếp một đánh giá dinh dưỡng đầy đủ hơn, nơi có sẵn, để khám phá nguyên nhân, mức độ nghiêm trọng, và hỗ trợ tiềm năng.",
@@ -68,7 +68,7 @@ export function buildMalnutritionInterpretation(
     return {
       whatItUsuallyMeans: [
         "Trong thực hành lâm sàng, một mẫu 'nguy cơ tăng' thường được đối xử như một tín hiệu sớm rằng chú ý gần hơn đến dinh dưỡng có thể hữu ích.",
-        "Nó gợi ý rằng có một số đặc điểm đáng quan tâm, nhưng toàn bộ bức tranh vẫn cần được xác nhận với chi tiết hơn.",
+        "nó gợi ý rằng có một số đặc điểm đáng quan tâm, nhưng toàn bộ bức tranh vẫn cần được xác nhận với chi tiết hơn.",
       ],
       whatCliniciansOftenConsiderNext: [
         "Làm rõ quá trình thời gian của giảm cân và giảm lượng ăn vào.",

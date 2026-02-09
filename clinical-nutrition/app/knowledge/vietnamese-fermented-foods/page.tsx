@@ -11,7 +11,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Thực phẩm Chức năng Việt Nam: Nước mắm, Tương, Chao",
   description:
-    "Giá trị dinh dưỡng và cách sử dụng các loại gia vị/thực phẩm lên men Việt Nam (nước mắm, tương, chao, mắm tôm). Hướng dẫn sử dụng đúng cách và giảm natri.",
+    "giá trị dinh dưỡng và cách sử dụng các loại gia vị/thực phẩm lên men Việt Nam (nước mắm, tương, chao, mắm tôm). Hướng dẫn sử dụng đúng cách và giảm natri.",
   keywords: [
     "nước mắm",
     "tương",
@@ -69,9 +69,9 @@ export default function VietnameseFermentedFoodsPage() {
         <h2 className="heading-2">Nước mắm: Gia vị truyền thống</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Giá trị dinh dưỡng Nước mắm</h3>
+            <h3 className="heading-4 mb-3">giá trị dinh dưỡng Nước mắm</h3>
             <NutrientTable
-              title="Giá trị dinh dưỡng Nước mắm (1 thìa canh = 15ml)"
+              title="giá trị dinh dưỡng Nước mắm (1 thìa canh = 15ml)"
               rows={[
                 { nutrient: "năng lượng", amount: "10", unit: "calo", highlight: "good", note: "Rất ít calo" },
                 { nutrient: "Protein", amount: "2", unit: "g", highlight: "good", note: "Protein từ cá" },
@@ -134,7 +134,7 @@ export default function VietnameseFermentedFoodsPage() {
           <Card>
             <h3 className="heading-4 mb-3">Các loại Tương</h3>
             <NutrientTable
-              title="Giá trị Dinh dưỡng Tương (1 thìa canh = 15ml)"
+              title="giá trị Dinh dưỡng Tương (1 thìa canh = 15ml)"
               rows={[
                 { nutrient: "Tương đen", amount: "15", unit: "calo, 2g protein, 900mg natri", highlight: "moderate", note: "Nhiều natri nhưng ít hơn nước mắm" },
                 { nutrient: "Tương ớt", amount: "10", unit: "calo, 1g protein, 800mg natri", highlight: "moderate", note: "Có vị cay, ít natri hơn" },
@@ -159,9 +159,9 @@ export default function VietnameseFermentedFoodsPage() {
         <h2 className="heading-2">Chao: Thực phẩm lên men tốt</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Giá trị Dinh dưỡng Chao</h3>
+            <h3 className="heading-4 mb-3">giá trị Dinh dưỡng Chao</h3>
             <NutrientTable
-              title="Giá trị Dinh dưỡng Chao (100g)"
+              title="giá trị Dinh dưỡng Chao (100g)"
               rows={[
                 { nutrient: "năng lượng", amount: "100", unit: "calo", highlight: "good", note: "Ít calo" },
                 { nutrient: "Protein", amount: "10", unit: "g", highlight: "good", note: "Giàu protein" },
@@ -342,7 +342,7 @@ export default function VietnameseFermentedFoodsPage() {
           <Card href="/knowledge/vietnamese-foods-nutrition">
             <h3 className="heading-5 mb-2">Thực phẩm Việt Nam</h3>
             <p className="text-sm text-gray-600">
-              Giá trị dinh dưỡng thực phẩm Việt Nam
+              giá trị dinh dưỡng thực phẩm Việt Nam
             </p>
           </Card>
         </div>

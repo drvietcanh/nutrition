@@ -238,9 +238,9 @@ export default function VietnameseBreakfastOptionsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh Giá trị Dinh dưỡng</h2>
+        <h2 className="heading-2">So sánh giá trị Dinh dưỡng</h2>
         <NutrientTable
-          title="Giá trị Dinh dưỡng Bữa sáng Việt Nam (Ước tính)"
+          title="giá trị Dinh dưỡng Bữa sáng Việt Nam (Ước tính)"
           rows={[
             { nutrient: "Cháo thịt gà (1 bát)", amount: "~250", unit: "calo", note: "Protein: 15g, Carb: 35g, Rau: có" },
             { nutrient: "Phở bò (1 tô, nhiều rau)", amount: "~400", unit: "calo", note: "Protein: 20g, Carb: 50g, Rau: nhiều" },
@@ -365,7 +365,7 @@ export default function VietnameseBreakfastOptionsPage() {
           <Card href="/knowledge/vietnamese-foods-nutrition">
             <h3 className="heading-5 mb-2">Thực phẩm Việt Nam</h3>
             <p className="text-sm text-gray-600">
-              Giá trị dinh dưỡng thực phẩm Việt Nam
+              giá trị dinh dưỡng thực phẩm Việt Nam
             </p>
           </Card>
         </div>

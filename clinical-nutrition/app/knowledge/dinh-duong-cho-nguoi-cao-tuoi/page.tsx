@@ -73,7 +73,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body-sm">
             <li>Giúp nhân viên y tế và người chăm sóc hiểu các nguyên tắc dinh dưỡng cho người cao tuổi</li>
-            <li>Hỗ trợ tư vấn và chăm sóc dinh dưỡng một cách an toàn</li>
+            <li>hỗ trợ tư vấn và chăm sóc dinh dưỡng một cách an toàn</li>
           </ul>
           <p className="text-body-sm mt-3 font-semibold text-red-600">
             ⚠️ Lưu ý: Thông tin này không thay thế đánh giá cá nhân của bác sĩ hoặc chuyên gia dinh dưỡng.
@@ -238,7 +238,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="tips-heading" className="heading-2 whitespace-nowrap">
-            Lời khuyên thực hành
+            lời khuyên thực hành
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

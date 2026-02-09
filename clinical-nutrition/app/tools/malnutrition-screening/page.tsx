@@ -74,7 +74,7 @@ export default function MalnutritionScreeningPage() {
         <p className="text-body-sm">
           Công cụ giảng dạy này tập trung vào cách các công cụ sàng lọc này sử dụng thông tin như
           sụt cân gần đây, giảm lượng ăn, và bối cảnh bệnh để tăng hoặc
-          giảm mức quan ngại. Nó không đưa ra quyết định lâm sàng hoặc khuyến nghị
+          giảm mức quan ngại. nó không đưa ra quyết định lâm sàng hoặc khuyến nghị
           điều trị.
         </p>
       </section>
@@ -176,7 +176,7 @@ export default function MalnutritionScreeningPage() {
           Nhắc nhở an toàn
         </h2>
         <p className="text-sm text-gray-600 sm:text-base leading-relaxed">
-          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. nó không cung cấp
           tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ
           bác sĩ–bệnh nhân, và không được sử dụng để ra quyết định lâm sàng
           hoặc chăm sóc cấp cứu.

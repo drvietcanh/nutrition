@@ -26,7 +26,7 @@ export default function IntermittentFastingPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
+          { label: "chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Intermittent fasting" },
         ]}
       />
@@ -124,7 +124,7 @@ export default function IntermittentFastingPage() {
             <h3 className="heading-4 mb-3">Lợi ích Tiềm năng</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• <strong>Giảm cân:</strong> Có thể giúp giảm cân bằng cách giảm tổng calo</li>
-              <li>• <strong>Đơn giản:</strong> Không cần đếm calo, chỉ cần chú ý thời gian</li>
+              <li>• <strong>đơn giản:</strong> Không cần đếm calo, chỉ cần chú ý thời gian</li>
               <li>• <strong>Linh hoạt:</strong> Có thể điều chỉnh theo lịch trình</li>
               <li>• <strong>Một số nghiên cứu:</strong> Có thể cải thiện đường huyết, cholesterol (cần nghiên cứu thêm)</li>
             </ul>

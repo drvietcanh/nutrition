@@ -50,7 +50,7 @@ export default function CopperHealthPage() {
             <strong>Đồng</strong> là khoáng chất vi lượng thiết yếu
           </li>
           <li>
-            Hỗ trợ <strong>sản xuất tế bào máu</strong> và <strong>chức năng miễn dịch</strong>
+            hỗ trợ <strong>sản xuất tế bào máu</strong> và <strong>chức năng miễn dịch</strong>
           </li>
           <li>
             Là một <strong>chất chống oxy hóa</strong>
@@ -78,8 +78,8 @@ export default function CopperHealthPage() {
                 <li>• Sản xuất tế bào máu (hồng cầu)</li>
                 <li>• Chức năng miễn dịch</li>
                 <li>• Chất chống oxy hóa</li>
-                <li>• Hỗ trợ sức khỏe xương</li>
-                <li>• Hỗ trợ chức năng thần kinh</li>
+                <li>• hỗ trợ sức khỏe xương</li>
+                <li>• hỗ trợ chức năng thần kinh</li>
               </ul>
             </div>
             <div>
@@ -96,7 +96,7 @@ export default function CopperHealthPage() {
 
         <ExampleBox variant="info" title="Ví dụ đơn giản">
           <p>
-            Đồng giống như "công nhân hỗ trợ" trong nhà máy cơ thể. Nó giúp các enzyme hoạt động đúng cách, 
+            Đồng giống như "công nhân hỗ trợ" trong nhà máy cơ thể. nó giúp các enzyme hoạt động đúng cách, 
             đặc biệt là enzyme liên quan đến sản xuất tế bào máu và bảo vệ tế bào. 
             Không có đồng, cơ thể không thể sản xuất đủ tế bào máu, dẫn đến thiếu máu.
           </p>
@@ -109,7 +109,7 @@ export default function CopperHealthPage() {
           <Card className="border-red-200 bg-red-50">
             <h3 className="heading-4 mb-3 text-red-900">1. Sản xuất Tế bào Máu</h3>
             <p className="text-body-sm text-red-900 mb-2">
-              Đồng cần thiết để sản xuất hồng cầu (tế bào máu đỏ). Nó giúp hấp thu sắt và sử dụng sắt để tạo hồng cầu.
+              Đồng cần thiết để sản xuất hồng cầu (tế bào máu đỏ). nó giúp hấp thu sắt và sử dụng sắt để tạo hồng cầu.
             </p>
             <p className="text-xs text-red-800">
               <strong>Khi thiếu đồng:</strong> Có thể dẫn đến thiếu máu, ngay cả khi có đủ sắt.

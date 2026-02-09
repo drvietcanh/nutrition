@@ -147,7 +147,7 @@ export default function NutritionMythsPublicPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Sự thật về Dinh dưỡng Lành mạnh</h2>
         <Card className="border-green-200 bg-green-50">
-          <h3 className="heading-4 text-green-900 mb-3">Nguyên tắc Đơn giản</h3>
+          <h3 className="heading-4 text-green-900 mb-3">Nguyên tắc đơn giản</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li className="flex items-start gap-2">
               <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />

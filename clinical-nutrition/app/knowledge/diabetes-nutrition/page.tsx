@@ -57,7 +57,7 @@ export default function DiabetesNutritionPage() {
             <ul className="list-disc space-y-1 pl-6 text-sm text-blue-900">
               <li>Giúp kiểm soát đường huyết</li>
               <li>Giảm nguy cơ biến chứng</li>
-              <li>Hỗ trợ dùng thuốc hiệu quả hơn</li>
+              <li>hỗ trợ dùng thuốc hiệu quả hơn</li>
               <li>Giữ sức khỏe lâu dài</li>
             </ul>
           </div>
@@ -71,7 +71,7 @@ export default function DiabetesNutritionPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body-sm">
             <li>Giúp nhân viên y tế và người bệnh hiểu các nguyên tắc dinh dưỡng trong đái tháo đường</li>
-            <li>Hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
+            <li>hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
           </ul>
           <p className="text-body-sm mt-3 font-semibold text-red-600">
             ⚠️ Lưu ý: Thông tin này không thay thế đánh giá cá nhân của bác sĩ hoặc chuyên gia dinh dưỡng.

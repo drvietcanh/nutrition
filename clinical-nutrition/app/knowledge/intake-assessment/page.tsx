@@ -115,7 +115,7 @@ export default function IntakeAssessmentPage() {
             <h3 className="font-semibold text-base mb-2">2. Thủ thuật Y tế và Lịch trình</h3>
             <ul className="list-disc space-y-1 pl-5 text-sm text-neutral-700">
               <li><strong>Lệnh nhịn ăn</strong>: NPO (không ăn uống) trước thủ thuật, phẫu thuật, hoặc xét nghiệm.</li>
-              <li><strong>Trì hoãn thủ thuật</strong>: Xét nghiệm chạy muộn, kéo dài thời gian nhịn ăn vượt quá kế hoạch.</li>
+              <li><strong>Trì hoãn thủ thuật</strong>: xét nghiệm chạy muộn, kéo dài thời gian nhịn ăn vượt quá kế hoạch.</li>
               <li><strong>Xung đột thời gian bữa ăn</strong>: Bữa ăn đến trong lúc hội chẩn, xét nghiệm, hoặc khi bệnh nhân đang ngủ.</li>
               <li><strong>Nhiều cuộc hẹn</strong>: Thăm khám ngoại trú được lên lịch trong giờ ăn thông thường.</li>
             </ul>
@@ -192,7 +192,7 @@ export default function IntakeAssessmentPage() {
             có thể góp phần vào sụt cân và kết quả kém.
           </li>
           <li>
-            <strong>Xu hướng cho thấy phản ứng với can thiệp</strong>: Lượng ăn có đang cải thiện sau khi bắt đầu thuốc chống buồn nôn không? Nó có đang giảm
+            <strong>Xu hướng cho thấy phản ứng với can thiệp</strong>: Lượng ăn có đang cải thiện sau khi bắt đầu thuốc chống buồn nôn không? nó có đang giảm
             khi tình trạng xấu đi không? Xu hướng trả lời những câu hỏi này tốt hơn các ảnh chụp đơn lẻ.
           </li>
         </ul>
@@ -271,7 +271,7 @@ export default function IntakeAssessmentPage() {
             <strong>Ghi chép và biểu đồ thực phẩm</strong>: Tài liệu về những gì được chỉ định, phục vụ, và tiêu thụ (thường dưới dạng phần trăm: "ăn 50% bữa sáng").
           </li>
           <li>
-            <strong>Nhớ lại 24 giờ</strong>: Yêu cầu người đó (hoặc người chăm sóc) mô tả mọi thứ đã ăn trong 24 giờ qua.
+            <strong>nhớ lại 24 giờ</strong>: Yêu cầu người đó (hoặc người chăm sóc) mô tả mọi thứ đã ăn trong 24 giờ qua.
           </li>
           <li>
             <strong>Bảng câu hỏi tần suất thực phẩm</strong>: Tần suất một số thực phẩm hoặc nhóm thực phẩm được tiêu thụ.
@@ -385,7 +385,7 @@ export default function IntakeAssessmentPage() {
       {/* Safety disclaimer */}
       <section className="space-y-2 rounded-lg border border-neutral-200 bg-white p-4">
         <p className="text-xs text-neutral-600 sm:text-sm">
-          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị,
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. nó không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị,
           không tạo mối quan hệ bác sĩ–bệnh nhân, và không được sử dụng để ra quyết định lâm sàng, lệnh, hoặc kê đơn.
         </p>
       </section>

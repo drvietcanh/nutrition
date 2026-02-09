@@ -84,7 +84,7 @@ export default function ZincImmunityPage() {
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li className="flex items-start gap-2">
                     <Shield className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Hỗ trợ hệ miễn dịch</span>
+                    <span>hỗ trợ hệ miễn dịch</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Shield className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -96,7 +96,7 @@ export default function ZincImmunityPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Shield className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Hỗ trợ chức năng vị giác và khứu giác</span>
+                    <span>hỗ trợ chức năng vị giác và khứu giác</span>
                   </li>
                 </ul>
               </div>
@@ -233,9 +233,9 @@ export default function ZincImmunityPage() {
             </p>
             <ul className="space-y-2 text-sm text-gray-700 list-disc pl-6">
               <li>Giúp tạo ra các tế bào miễn dịch (tế bào T, tế bào B)</li>
-              <li>Hỗ trợ chức năng của các tế bào miễn dịch</li>
+              <li>hỗ trợ chức năng của các tế bào miễn dịch</li>
               <li>Giúp chống lại vi khuẩn và virus</li>
-              <li>Hỗ trợ chữa lành vết thương và viêm</li>
+              <li>hỗ trợ chữa lành vết thương và viêm</li>
             </ul>
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <p className="text-sm text-blue-900">

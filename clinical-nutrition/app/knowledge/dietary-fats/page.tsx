@@ -95,10 +95,10 @@ export default function DietaryFatsPage() {
             <Card>
               <h3 className="heading-5 mb-2">Sức khỏe</h3>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li>• <strong>Hỗ trợ sức khỏe não bộ</strong> - não cần chất béo để hoạt động</li>
+                <li>• <strong>hỗ trợ sức khỏe não bộ</strong> - não cần chất béo để hoạt động</li>
                 <li>• <strong>Giúp sản xuất hormone</strong> - nhiều hormone cần chất béo để tạo ra</li>
                 <li>• Duy trì làn da khỏe mạnh</li>
-                <li>• Hỗ trợ chức năng tế bào</li>
+                <li>• hỗ trợ chức năng tế bào</li>
               </ul>
             </Card>
           </div>

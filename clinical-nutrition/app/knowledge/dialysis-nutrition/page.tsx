@@ -194,7 +194,7 @@ export default function DialysisNutritionPage() {
               </p>
               <ul className="list-disc space-y-1 pl-6 text-sm text-green-900">
                 <li>Uống cùng bữa ăn</li>
-                <li>Rất quan trọng, không được quên</li>
+                <li>rất quan trọng, không được quên</li>
               </ul>
             </div>
           </CardContent>
@@ -566,7 +566,7 @@ export default function DialysisNutritionPage() {
             <li>Loại lọc máu</li>
             <li>Tần suất lọc</li>
             <li>Lượng nước tiểu còn lại</li>
-            <li>Xét nghiệm</li>
+            <li>xét nghiệm</li>
             <li>Tình trạng dinh dưỡng thực tế</li>
           </ul>
           <div className="mt-3 p-2 bg-white rounded border border-red-200">

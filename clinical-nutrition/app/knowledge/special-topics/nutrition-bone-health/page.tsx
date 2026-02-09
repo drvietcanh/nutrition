@@ -29,7 +29,7 @@ export default function NutritionBoneHealthPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
+          { label: "chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng và Sức khỏe Xương" },
         ]}
       />

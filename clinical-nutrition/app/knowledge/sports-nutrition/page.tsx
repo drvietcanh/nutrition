@@ -90,7 +90,7 @@ export default function SportsNutritionPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Sửa chữa và xây dựng cơ bắp sau tập luyện</li>
-              <li>Hỗ trợ phục hồi</li>
+              <li>hỗ trợ phục hồi</li>
               <li>Cung cấp năng lượng khi carbohydrate thiếu</li>
             </ul>
             <p>

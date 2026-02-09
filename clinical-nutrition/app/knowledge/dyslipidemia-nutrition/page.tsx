@@ -66,7 +66,7 @@ export default function DyslipidemiaNutritionPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body-sm">
             <li>Giúp bác sĩ, điều dưỡng, sinh viên y khoa và người bệnh hiểu các nguyên tắc dinh dưỡng trong rối loạn lipid máu</li>
-            <li>Hỗ trợ thay đổi lối sống một cách đúng – bền vững</li>
+            <li>hỗ trợ thay đổi lối sống một cách đúng – bền vững</li>
           </ul>
           <p className="text-body-sm mt-3 font-semibold text-red-600">
             ⚠️ Lưu ý: Thông tin mang tính giáo dục, không thay thế đánh giá và chỉ định cá nhân của bác sĩ.

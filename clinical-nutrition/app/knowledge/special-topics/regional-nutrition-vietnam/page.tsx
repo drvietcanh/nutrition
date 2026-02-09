@@ -27,7 +27,7 @@ export default function RegionalNutritionVietnamPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
+          { label: "chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng Theo vùng miền Việt Nam" },
         ]}
       />
@@ -221,7 +221,7 @@ export default function RegionalNutritionVietnamPage() {
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Chung:</strong> Tăng rau củ, giảm dầu mỡ - áp dụng cho tất cả vùng miền.
+                <strong>chung:</strong> Tăng rau củ, giảm dầu mỡ - áp dụng cho tất cả vùng miền.
               </p>
             </div>
           </div>
@@ -234,7 +234,7 @@ export default function RegionalNutritionVietnamPage() {
           <Card href="/knowledge/vietnamese-foods-nutrition">
             <h3 className="heading-5 mb-2">Thực phẩm Việt Nam</h3>
             <p className="text-sm text-gray-600">
-              Giá trị dinh dưỡng thực phẩm Việt Nam
+              giá trị dinh dưỡng thực phẩm Việt Nam
             </p>
           </Card>
           <Card href="/knowledge/sodium-health">

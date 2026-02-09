@@ -84,7 +84,7 @@ export default function HealthyCookingMethodsPage() {
               Luộc (Boiling)
             </h3>
             <p className="text-body text-blue-900 mb-3">
-              Đơn giản, không cần dầu, nhưng một số vitamin có thể mất vào nước.
+              đơn giản, không cần dầu, nhưng một số vitamin có thể mất vào nước.
             </p>
             <div className="bg-white rounded-lg p-3 border border-blue-200">
               <p className="text-xs font-semibold text-gray-900 mb-1">Lưu ý:</p>

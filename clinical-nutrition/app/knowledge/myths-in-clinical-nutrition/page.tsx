@@ -64,7 +64,7 @@ export default function MythsInClinicalNutritionPage() {
               </p>
             </section>
             <section className="bg-purple-50 border border-purple-200 rounded-lg p-6">
-              <h2 className="font-semibold text-gray-900 mb-3">Cách sử dụng Tài nguyên Này</h2>
+              <h2 className="font-semibold text-gray-900 mb-3">Cách sử dụng Tài nguyên này</h2>
               <p className="text-gray-700 text-sm leading-relaxed mb-3">
                 Dù bạn là điều dưỡng ghi chép lượng ăn, sinh viên y khoa trong buổi hội chẩn, hay bác sĩ viết lệnh dinh dưỡng, 
                 bạn có thể đã gặp những quan niệm phổ biến này. Tài nguyên này giúp bạn:
@@ -87,31 +87,31 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Helps readers understand the logical origins of misconceptions */}
         <section className="mb-12 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-8" aria-labelledby="why-myths-persist-heading">
           <h2 id="why-myths-persist-heading" className="text-2xl font-bold text-gray-900 mb-4">
-            Vì sao Những quan niệm Này vẫn tồn tại?
+            Vì sao những quan niệm này vẫn tồn tại?
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Hiểu vì sao hiểu lầm vẫn tồn tại giúp chúng ta nhận diện chúng trong thực hành và tiếp cận thay đổi với sự đồng cảm. 
-            Những quan niệm này thường tiếp tục vì:
+            những quan niệm này thường tiếp tục vì:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <article className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Mong muốn Quy tắc Đơn giản</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Mong muốn quy tắc đơn giản</h3>
               <p className="text-sm text-gray-700">
-                Quy tắc đơn giản cảm thấy an toàn và dễ áp dụng hơn các cách tiếp cận phức tạp, cá thể hóa. 
+                quy tắc đơn giản cảm thấy an toàn và dễ áp dụng hơn các cách tiếp cận phức tạp, cá thể hóa. 
                 "2000 kcal cho mọi người" dễ nhớ hơn tính toán nhu cầu cá nhân, dù kém chính xác hơn. 
                 Trong môi trường lâm sàng bận rộn, quy tắc đơn giản giảm mệt mỏi quyết định và cảm thấy dễ quản lý hơn.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Phụ thuộc Quá mức vào Số liệu hoặc Xét nghiệm</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Phụ thuộc quá mức vào số liệu hoặc xét nghiệm</h3>
               <p className="text-sm text-gray-700">
-                Số liệu và giá trị xét nghiệm cảm thấy khách quan và chắc chắn, nhưng chúng không kể toàn bộ câu chuyện. 
+                số liệu và giá trị xét nghiệm cảm thấy khách quan và chắc chắn, nhưng chúng không kể toàn bộ câu chuyện. 
                 Chỉ tập trung vào một giá trị xét nghiệm (như albumin) hoặc một con số cụ thể (như BMI) có thể khiến chúng ta 
                 bỏ lỡ bức tranh lâm sàng rộng hơn và nhu cầu cá nhân của bệnh nhân.
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Diễn giải Sai hướng dẫn</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Diễn giải sai hướng dẫn</h3>
               <p className="text-sm text-gray-700">
                 Hướng dẫn lâm sàng cung cấp khuyến nghị dựa trên bằng chứng, nhưng chúng nhằm hướng dẫn phán đoán, 
                 không thay thế nó. Khi hướng dẫn được áp dụng quá cứng nhắc hoặc không xem xét bối cảnh bệnh nhân, 
@@ -119,9 +119,9 @@ export default function MythsInClinicalNutritionPage() {
               </p>
             </article>
             <article className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Trộn lẫn Lời khuyên Dinh dưỡng Cộng đồng với Chăm sóc lâm sàng</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Trộn lẫn lời khuyên dinh dưỡng cộng đồng với chăm sóc lâm sàng</h3>
               <p className="text-sm text-gray-700">
-                Lời khuyên dinh dưỡng chung cho dân số khỏe mạnh (như "ăn ít carb" hoặc "nhiều protein hơn là tốt hơn") 
+                lời khuyên dinh dưỡng chung cho dân số khỏe mạnh (như "ăn ít carb" hoặc "nhiều protein hơn là tốt hơn") 
                 không phải lúc nào cũng áp dụng cho bệnh nhân bệnh, nằm viện. Điều phù hợp cho sức khỏe cộng đồng có thể không 
                 phù hợp trong môi trường lâm sàng nơi bệnh nhân có nhu cầu chuyển hóa khác nhau.
               </p>
@@ -148,7 +148,7 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Each myth card provides structured learning about misconceptions */}
         <section className="mb-12" aria-labelledby="myths-heading">
           <h2 id="myths-heading" className="text-2xl font-bold text-gray-900 mb-6">
-            Hiểu lầm phổ biến trong Thực hành
+            Hiểu lầm phổ biến trong thực hành
           </h2>
           {filteredMyths.length === 0 ? (
             <div className="text-center py-12 text-gray-500" role="status" aria-live="polite">
@@ -173,7 +173,7 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Helps readers identify patterns across misconceptions */}
         <section className="mb-12 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-lg" aria-labelledby="common-themes-heading">
           <h2 id="common-themes-heading" className="text-2xl font-bold text-gray-900 mb-4">
-            Chủ đề Chung xuyên suốt Các hiểu lầm Này
+            Chủ đề chung xuyên suốt các hiểu lầm này
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Khi bạn suy ngẫm về những hiểu lầm này, bạn sẽ nhận thấy một số chủ đề lặp lại xuất hiện xuyên suốt các quan niệm khác nhau. 
@@ -183,7 +183,7 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl" aria-hidden="true">1.</span>
-                Bối cảnh Quan trọng
+                Bối cảnh quan trọng
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Cùng một can thiệp có thể phù hợp hoặc không phù hợp tùy thuộc vào tình trạng bệnh nhân, tiên lượng, 
@@ -200,11 +200,11 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl" aria-hidden="true">2.</span>
-                Xu hướng quan trọng hơn Giá trị Đơn lẻ
+                Xu hướng quan trọng hơn giá trị đơn lẻ
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Một giá trị xét nghiệm, đo cân nặng, hoặc đếm calo đơn lẻ cho bạn biết rất ít. Điều quan trọng là xu hướng theo thời gian. 
-                Bệnh nhân có đang cải thiện? Xấu đi? Ổn định? Giá trị đơn lẻ có thể gây hiểu lầm, nhưng xu hướng tiết lộ 
+                Bệnh nhân có đang cải thiện? Xấu đi? Ổn định? giá trị đơn lẻ có thể gây hiểu lầm, nhưng xu hướng tiết lộ 
                 bức tranh lâm sàng thực sự. Tập trung vào mô hình và thay đổi thay vì các con số riêng lẻ.
               </p>
               <p className="text-gray-600 text-sm mt-3 italic">
@@ -216,11 +216,11 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl" aria-hidden="true">3.</span>
-                Số liệu Hỗ trợ Tư duy, Không thay thế Nó
+                Số liệu hỗ trợ tư duy, không thay thế nó
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Tính toán, giá trị xét nghiệm, và đo lường là công cụ để cung cấp thông tin cho phán đoán lâm sàng của bạn, không phải để thay thế nó. 
-                Số liệu cung cấp dữ liệu, nhưng bạn cung cấp cách diễn giải. sử dụng tính toán và đo lường để hỗ trợ tư duy của bạn, 
+                số liệu cung cấp dữ liệu, nhưng bạn cung cấp cách diễn giải. sử dụng tính toán và đo lường để hỗ trợ tư duy của bạn, 
                 nhưng luôn xem xét hoàn cảnh cá nhân của bệnh nhân, phản ứng với can thiệp, và toàn bộ bức tranh lâm sàng. 
                 Con số là điểm khởi đầu, không phải điểm kết thúc.
               </p>
@@ -236,7 +236,7 @@ export default function MythsInClinicalNutritionPage() {
         {/* Educational: Key principles to guide practice */}
         <section className="mb-12 p-6 bg-blue-50 border border-blue-200 rounded-lg" aria-labelledby="remember-heading">
           <h2 id="remember-heading" className="text-2xl font-bold text-gray-900 mb-4">
-            Điều cần Nhớ
+            Điều cần nhớ
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Khi bạn suy ngẫm về những hiểu lầm phổ biến này, hãy ghi nhớ những nguyên tắc chính sau:
@@ -245,7 +245,7 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">1.</span>
-                Cá thể hóa Quan trọng
+                Cá thể hóa quan trọng
               </h3>
               <p className="text-sm text-gray-700">
                 Nhu cầu dinh dưỡng khác biệt đáng kể giữa các bệnh nhân. Điều hiệu quả với một bệnh nhân có thể không hiệu quả với bệnh nhân khác, 
@@ -255,7 +255,7 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">2.</span>
-                Nhiều không phải Luôn tốt hơn
+                Nhiều không phải luôn tốt hơn
               </h3>
               <p className="text-sm text-gray-700">
                 Mức đầy đủ thường là mục tiêu, không phải tối đa hóa. Chất dinh dưỡng quá mức có thể không mang lại lợi ích thêm và có thể gây vấn đề. Trọng tâm thường là đáp ứng nhu cầu thay vì vượt quá chúng.
@@ -264,7 +264,7 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">3.</span>
-                Bối cảnh Rất quan trọng
+                Bối cảnh rất quan trọng
               </h3>
               <p className="text-sm text-gray-700">
                 Cùng một can thiệp có thể phù hợp hoặc không phù hợp tùy thuộc vào tình trạng bệnh nhân, 
@@ -274,7 +274,7 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">4.</span>
-                Bằng chứng Phát triển
+                Bằng chứng phát triển
               </h3>
               <p className="text-sm text-gray-700">
                 Thực hành từng là tiêu chuẩn nhiều thập kỷ trước có thể không phù hợp với bằng chứng hiện tại. Cập nhật 
@@ -294,7 +294,7 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600" aria-hidden="true">6.</span>
-                Hợp tác Cải thiện Chăm sóc
+                Hợp tác cải thiện chăm sóc
               </h3>
               <p className="text-sm text-gray-700">
                 Làm việc với chuyên gia dinh dưỡng, điều dưỡng, bác sĩ, và các thành viên nhóm khác. Các quan điểm khác nhau giúp nhận diện 
@@ -325,7 +325,7 @@ export default function MythsInClinicalNutritionPage() {
           {/* Main content */}
           <div className="p-6 bg-amber-50 border border-amber-200 rounded-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              An toàn & Quan điểm
+              An toàn & quan điểm
             </h2>
             <div className="space-y-6">
               <article className="bg-white p-5 rounded-lg border border-gray-200">
@@ -361,7 +361,7 @@ export default function MythsInClinicalNutritionPage() {
                   Phán đoán lâm sàng—khả năng của bạn để đánh giá, diễn giải, và ra quyết định dựa trên toàn bộ bức tranh lâm sàng—là 
                   không thể thay thế. Công cụ cung cấp dữ liệu và gợi ý, nhưng bạn phải diễn giải thông tin đó trong bối cảnh 
                   tình huống bệnh nhân độc đáo. Xem xét tình trạng bệnh nhân, tiên lượng, mục tiêu chăm sóc, sở thích gia đình, 
-                  và nguồn lực cơ sở. Số liệu và hướng dẫn cung cấp thông tin cho phán đoán của bạn; chúng không thay thế nó. Khi công cụ 
+                  và nguồn lực cơ sở. số liệu và hướng dẫn cung cấp thông tin cho phán đoán của bạn; chúng không thay thế nó. Khi công cụ 
                   và phán đoán lâm sàng xung đột, hãy tin vào phán đoán của bạn và tham khảo với nhóm của bạn.
                 </p>
               </article>
@@ -383,7 +383,7 @@ export default function MythsInClinicalNutritionPage() {
 
               <div className="border-t border-gray-300 pt-4">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  Về tài nguyên Này
+                  Về tài nguyên này
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Tất cả thông tin dựa trên hướng dẫn lâm sàng hiện tại từ các tổ chức dinh dưỡng hàng đầu bao gồm 

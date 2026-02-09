@@ -40,7 +40,7 @@ export default function NutritionAssessmentOverviewPage() {
           </p>
           <p>
             Nội dung này được thiết kế cho mục đích giáo dục để giúp bạn hiểu các khái niệm đánh giá.
-            Nó không cung cấp khuyến nghị điều trị hoặc thay thế hướng dẫn lâm sàng hoặc đào tạo chuyên nghiệp.
+            nó không cung cấp khuyến nghị điều trị hoặc thay thế hướng dẫn lâm sàng hoặc đào tạo chuyên nghiệp.
           </p>
         </ContentBlock>
       </header>
@@ -57,7 +57,7 @@ export default function NutritionAssessmentOverviewPage() {
         <ContentBlock>
           <p>
             Đánh giá dinh dưỡng là <strong>một quy trình có hệ thống</strong> để thu thập và giải thích
-            thông tin về tình trạng dinh dưỡng của một người. Nó không phải là một xét nghiệm hoặc tính toán đơn lẻ,
+            thông tin về tình trạng dinh dưỡng của một người. nó không phải là một xét nghiệm hoặc tính toán đơn lẻ,
             mà là một cách suy nghĩ về dinh dưỡng trong bối cảnh sức khỏe và bệnh tật.
           </p>
           <p>
@@ -95,7 +95,7 @@ export default function NutritionAssessmentOverviewPage() {
         <ContentBlock>
           <p>
             Đánh giá dinh dưỡng giúp các nhóm chăm sóc sức khỏe trả lời các câu hỏi quan trọng về
-            tình trạng dinh dưỡng của một người. Nó cung cấp cấu trúc cho việc suy nghĩ về dinh dưỡng trong môi trường lâm sàng
+            tình trạng dinh dưỡng của một người. nó cung cấp cấu trúc cho việc suy nghĩ về dinh dưỡng trong môi trường lâm sàng
             và giúp xác định các tình huống nơi dinh dưỡng có thể là mối quan tâm.
           </p>
           <p>
@@ -109,7 +109,7 @@ export default function NutritionAssessmentOverviewPage() {
               Cung cấp khung để hiểu cách dinh dưỡng liên quan đến sức khỏe tổng thể của một người
             </li>
             <li>
-              Hỗ trợ lý luận lâm sàng bằng cách tổ chức thông tin một cách có cấu trúc
+              hỗ trợ lý luận lâm sàng bằng cách tổ chức thông tin một cách có cấu trúc
             </li>
             <li>
               Giúp ưu tiên sự chú ý và nguồn lực dựa trên nhu cầu đã xác định
@@ -263,11 +263,11 @@ export default function NutritionAssessmentOverviewPage() {
 
           <div>
             <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-              Số liệu thông Báo, Không chỉ Định
+              số liệu thông Báo, Không chỉ Định
             </h3>
             <ContentBlock>
               <p>
-                Số liệu từ công cụ sàng lọc, tính toán nhu cầu và đánh giá lượng ăn vào là thông tin,
+                số liệu từ công cụ sàng lọc, tính toán nhu cầu và đánh giá lượng ăn vào là thông tin,
                 không phải chỉ định. Chúng giúp cấu trúc suy nghĩ, nhưng chúng không tự động đưa ra quyết định.
                 Phán đoán lâm sàng, sở thích bệnh nhân và mục tiêu chăm sóc đều đóng vai trò thiết yếu.
               </p>
@@ -446,7 +446,7 @@ export default function NutritionAssessmentOverviewPage() {
         <ContentBlock className="mt-6">
           <p>
             Nội dung này được thiết kế để hỗ trợ học tập và hiểu biết về các khái niệm đánh giá dinh dưỡng lâm sàng.
-            Nó giúp bạn thực hành quy trình suy nghĩ và xem cách các yếu tố khác nhau ảnh hưởng đến
+            nó giúp bạn thực hành quy trình suy nghĩ và xem cách các yếu tố khác nhau ảnh hưởng đến
             ước tính và đánh giá.
           </p>
           <p>

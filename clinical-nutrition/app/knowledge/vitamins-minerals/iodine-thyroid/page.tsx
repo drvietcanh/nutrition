@@ -74,8 +74,8 @@ export default function IodineThyroidPage() {
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Tạo hormone tuyến giáp</li>
                   <li>• Điều chỉnh sự trao đổi chất</li>
-                  <li>• Phát triển não bộ (quan trọng cho trẻ em)</li>
-                  <li>• Phát triển xương</li>
+                  <li>• phát triển não bộ (quan trọng cho trẻ em)</li>
+                  <li>• phát triển xương</li>
                   <li>• Điều chỉnh nhiệt độ cơ thể</li>
                 </ul>
               </div>
@@ -199,7 +199,7 @@ export default function IodineThyroidPage() {
                 <li>• Sự trao đổi chất (tốc độ đốt calo)</li>
                 <li>• Nhiệt độ cơ thể</li>
                 <li>• Nhịp tim</li>
-                <li>• Phát triển và tăng trưởng</li>
+                <li>• phát triển và tăng trưởng</li>
               </ul>
             </div>
             <div>

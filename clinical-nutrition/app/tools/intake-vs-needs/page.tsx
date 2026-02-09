@@ -101,7 +101,7 @@ export default function IntakeVsNeedsPage() {
         <p className="text-body-sm">
           Trang này so sánh một <strong>ước tính giáo dục</strong> về nhu cầu năng lượng
           và protein với những gì thực sự được cung cấp trong một khoảng thời gian gần đây.
-          Nó được thiết kế để làm cho các khoảng cách hiển thị và hỗ trợ lý luận,
+          nó được thiết kế để làm cho các khoảng cách hiển thị và hỗ trợ lý luận,
           không phải để chỉ định can thiệp.
         </p>
       </header>
@@ -199,7 +199,7 @@ export default function IntakeVsNeedsPage() {
           8. Nhắc nhở an toàn
         </h2>
         <p className="text-xs text-neutral-600 sm:text-sm">
-          Công cụ này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          Công cụ này chỉ dùng cho <strong>mục đích giáo dục</strong>. nó không cung cấp
           tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ
           bác sĩ–bệnh nhân, và không được sử dụng để chỉ định
           chế độ ăn, thức ăn, hoặc các can thiệp khác.

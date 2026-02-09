@@ -951,7 +951,7 @@ export const articles: ArticleMetadata[] = [
   {
     slug: 'vietnamese-fermented-foods',
     title: 'Thực phẩm Chức năng Việt Nam: Nước mắm, Tương, Chao',
-    description: 'Giá trị dinh dưỡng và cách sử dụng các loại gia vị/thực phẩm lên men Việt Nam (nước mắm, tương, chao, mắm tôm)',
+    description: 'giá trị dinh dưỡng và cách sử dụng các loại gia vị/thực phẩm lên men Việt Nam (nước mắm, tương, chao, mắm tôm)',
     category: 'general-nutrition',
     tags: ['fermented-foods', 'nước-mắm', 'tương', 'chao', 'gia-vị', 'thực-phẩm-lên-men'],
     relatedArticles: ['sodium-health', 'protein-sources-needs'],
@@ -1199,7 +1199,7 @@ export const articles: ArticleMetadata[] = [
   {
     slug: 'vietnamese-drinks-nutrition',
     title: 'Đồ uống Việt Nam và Dinh dưỡng',
-    description: 'Các loại đồ uống phổ biến ở Việt Nam - trà, cà phê, nước dừa, nước mía. Giá trị dinh dưỡng và cách chọn đồ uống lành mạnh',
+    description: 'Các loại đồ uống phổ biến ở Việt Nam - trà, cà phê, nước dừa, nước mía. giá trị dinh dưỡng và cách chọn đồ uống lành mạnh',
     category: 'general-nutrition',
     tags: ['đồ-uống-việt-nam', 'vietnamese-drinks', 'trà', 'cà-phê', 'nước-dừa', 'hydration'],
     relatedArticles: ['hydration', 'sugar-health', 'antioxidants-foods'],
@@ -1309,7 +1309,7 @@ export const articles: ArticleMetadata[] = [
   {
     slug: 'vietnamese-fermented-foods',
     title: 'Thực phẩm Chức năng Việt Nam: Nước mắm, Tương, Chao',
-    description: 'Tìm hiểu về các loại gia vị và thực phẩm lên men Việt Nam - nước mắm, tương, chao, mắm tôm. Giá trị dinh dưỡng, cách sử dụng, và lưu ý về natri.',
+    description: 'Tìm hiểu về các loại gia vị và thực phẩm lên men Việt Nam - nước mắm, tương, chao, mắm tôm. giá trị dinh dưỡng, cách sử dụng, và lưu ý về natri.',
     category: 'general-nutrition',
     tags: ['nước-mắm', 'tương', 'chao', 'mắm-tôm', 'gia-vị-việt-nam', 'thực-phẩm-lên-men'],
     relatedArticles: ['sodium-health', 'protein-sources-needs', 'probiotics-gut-health'],

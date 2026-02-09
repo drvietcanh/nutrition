@@ -350,7 +350,7 @@ export default function Home() {
         </section>
 
         {/* About section */}
-        <Callout variant="info" title="Về nền tảng Này">
+        <Callout variant="info" title="Về nền tảng này">
           <p className="mb-3">
             Nền tảng này được thiết kế để giúp mọi người hiểu các khái niệm dinh dưỡng lâm sàng 
             một cách đơn giản và dễ tiếp cận. Tất cả nội dung được trình bày bằng ngôn ngữ dễ hiểu, 

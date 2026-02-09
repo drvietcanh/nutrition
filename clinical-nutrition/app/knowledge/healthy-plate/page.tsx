@@ -81,7 +81,7 @@ export default function HealthyPlatePage() {
               <li>1 phần (1/4 đĩa) = Carbohydrate</li>
             </ul>
             <p className="mt-2">
-              Đơn giản vậy thôi! Không cần cân đo đong đếm phức tạp.
+              đơn giản vậy thôi! Không cần cân đo đong đếm phức tạp.
             </p>
           </ExampleBox>
 

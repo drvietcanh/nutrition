@@ -51,7 +51,7 @@ export default function FoodDatabasePage() {
         </p>
         <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">
           <p className="text-sm text-blue-900">
-            <strong>Lưu ý:</strong> Giá trị dinh dưỡng là ước tính trung bình và có thể
+            <strong>Lưu ý:</strong> giá trị dinh dưỡng là ước tính trung bình và có thể
             thay đổi tùy theo cách chế biến và nguồn gốc thực phẩm.
           </p>
         </div>

@@ -50,14 +50,14 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Suy dinh dưỡng (Malnutrition)",
     definition: "Tình trạng thiếu hoặc thừa dinh dưỡng",
-    simpleExplanation: "Suy dinh dưỡng không chỉ có nghĩa là thiếu ăn. Nó có thể là thiếu dinh dưỡng (không đủ), hoặc thừa dinh dưỡng (quá nhiều), hoặc mất cân bằng dinh dưỡng.",
+    simpleExplanation: "Suy dinh dưỡng không chỉ có nghĩa là thiếu ăn. nó có thể là thiếu dinh dưỡng (không đủ), hoặc thừa dinh dưỡng (quá nhiều), hoặc mất cân bằng dinh dưỡng.",
     example: "Một người có thể bị suy dinh dưỡng nếu họ ăn quá ít protein, hoặc quá nhiều đường, hoặc thiếu vitamin.",
     category: "assessment",
   },
   {
     term: "NRS-2002",
     definition: "Công cụ sàng lọc suy dinh dưỡng được sử dụng rộng rãi",
-    simpleExplanation: "Đây là một bộ câu hỏi đơn giản giúp xác định xem một người có nguy cơ bị suy dinh dưỡng không. Nó hỏi về cân nặng, lượng ăn, và tình trạng bệnh.",
+    simpleExplanation: "Đây là một bộ câu hỏi đơn giản giúp xác định xem một người có nguy cơ bị suy dinh dưỡng không. nó hỏi về cân nặng, lượng ăn, và tình trạng bệnh.",
     category: "assessment",
   },
   {
@@ -104,7 +104,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Trans fat (Chất béo chuyển hóa)",
     definition: "Loại chất béo xấu nhất, nên tránh hoàn toàn",
-    simpleExplanation: "Trans fat được tạo ra khi dầu thực vật được xử lý để cứng hơn. Nó làm tăng cholesterol xấu, giảm cholesterol tốt, và tăng nguy cơ bệnh tim. Có trong thực phẩm chế biến sẵn, đồ chiên rán.",
+    simpleExplanation: "Trans fat được tạo ra khi dầu thực vật được xử lý để cứng hơn. nó làm tăng cholesterol xấu, giảm cholesterol tốt, và tăng nguy cơ bệnh tim. Có trong thực phẩm chế biến sẵn, đồ chiên rán.",
     example: "Bánh quy, bánh ngọt, khoai tây chiên, margarine cứng thường chứa trans fat. Nên đọc nhãn và tránh các sản phẩm có 'partially hydrogenated oil'.",
     category: "basic",
   },

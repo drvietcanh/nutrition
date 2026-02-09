@@ -29,7 +29,7 @@ export default function NutritionImmuneSystemPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
+          { label: "chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng và Hệ miễn dịch" },
         ]}
       />
@@ -187,7 +187,7 @@ export default function NutritionImmuneSystemPage() {
           title="Chất dinh dưỡng Quan trọng cho Hệ miễn dịch"
           rows={[
             { nutrient: "Protein", amount: "0.8-1.0", unit: "g/kg/ngày", note: "Tạo tế bào miễn dịch" },
-            { nutrient: "Vitamin C", amount: "75-90", unit: "mg/ngày", note: "Hỗ trợ tế bào miễn dịch" },
+            { nutrient: "Vitamin C", amount: "75-90", unit: "mg/ngày", note: "hỗ trợ tế bào miễn dịch" },
             { nutrient: "Vitamin D", amount: "600-800", unit: "IU/ngày", note: "Điều chỉnh miễn dịch" },
             { nutrient: "Zinc", amount: "8-11", unit: "mg/ngày", note: "Chức năng tế bào miễn dịch" },
             { nutrient: "Selenium", amount: "55", unit: "mcg/ngày", note: "Chất chống oxy hóa" },

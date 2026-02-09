@@ -183,7 +183,7 @@ function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
               : "border-neutral-300 bg-white text-neutral-900 shadow-sm hover:border-blue-300 hover:bg-blue-50"
           }`}
         >
-          Đơn giản dựa trên cân nặng
+          đơn giản dựa trên cân nặng
         </button>
         <button
           type="button"

@@ -28,7 +28,7 @@ export default function ExerciseNutritionPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
+          { label: "chủ đề đặc biệt", href: "/knowledge/special-topics" },
           { label: "Dinh dưỡng cho Người tập thể dục" },
         ]}
       />
@@ -118,7 +118,7 @@ export default function ExerciseNutritionPage() {
               <p className="text-sm font-semibold text-gray-900 mb-2">Carbohydrate:</p>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Bổ sung glycogen (dự trữ năng lượng)</li>
-                <li>• Hỗ trợ phục hồi</li>
+                <li>• hỗ trợ phục hồi</li>
                 <li>• Cung cấp năng lượng</li>
               </ul>
             </div>

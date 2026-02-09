@@ -87,7 +87,7 @@ export default function PotassiumBloodPressurePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Heart className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Hỗ trợ chức năng tim</span>
+                    <span>hỗ trợ chức năng tim</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Heart className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -95,7 +95,7 @@ export default function PotassiumBloodPressurePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Heart className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Hỗ trợ chức năng cơ và thần kinh</span>
+                    <span>hỗ trợ chức năng cơ và thần kinh</span>
                   </li>
                 </ul>
               </div>

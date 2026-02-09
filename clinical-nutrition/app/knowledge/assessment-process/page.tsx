@@ -74,7 +74,7 @@ export default function AssessmentProcessPage() {
           </li>
         </ul>
           <p>
-            Quan trọng, đánh giá giúp <strong>ưu tiên sự chú ý, không chỉ đạo điều trị</strong>. Nó hướng dẫn lập luận lâm sàng
+            Quan trọng, đánh giá giúp <strong>ưu tiên sự chú ý, không chỉ đạo điều trị</strong>. nó hướng dẫn lập luận lâm sàng
             và giúp xác định điều gì cần tập trung, nhưng nó không thay thế phán đoán chuyên nghiệp hoặc sở thích bệnh nhân. Đánh giá cung cấp thông tin cho
             quyết định—nó không tự động đưa ra chúng.
           </p>
@@ -200,7 +200,7 @@ export default function AssessmentProcessPage() {
         </div>
         <div className="space-y-4 text-body-lg">
           <p>
-            <strong>Quá trình tư duy</strong>: Sàng lọc là kiểm tra nhanh đầu tiên để nhận diện mức độ khẩn cấp. Nó đặt các câu hỏi đơn giản:
+            <strong>Quá trình tư duy</strong>: Sàng lọc là kiểm tra nhanh đầu tiên để nhận diện mức độ khẩn cấp. nó đặt các câu hỏi đơn giản:
           </p>
           <ul className="list-disc space-y-2 pl-6">
           <li>Sụt cân hoặc tăng cân gần đây?</li>
@@ -222,11 +222,11 @@ export default function AssessmentProcessPage() {
               <ul className="list-disc space-y-3 pl-6">
               <li>
                 <strong>NRS-2002 (Sàng lọc Nguy cơ Dinh dưỡng 2002)</strong>: Một công cụ đơn giản kết hợp BMI, sụt cân, và mức độ nghiêm trọng của bệnh.
-                Nó được sử dụng rộng rãi trong bệnh viện và cho điểm số chỉ ra nguy cơ thấp, trung bình, hoặc cao.
+                nó được sử dụng rộng rãi trong bệnh viện và cho điểm số chỉ ra nguy cơ thấp, trung bình, hoặc cao.
               </li>
               <li>
                 <strong>PG-SGA (Đánh giá Toàn cầu Chủ quan do Bệnh nhân Tạo ra)</strong>: Một công cụ chi tiết hơn bao gồm
-                triệu chứng do bệnh nhân báo cáo và khả năng chức năng. Nó thường được sử dụng trong ung thư và các môi trường chuyên khoa khác.
+                triệu chứng do bệnh nhân báo cáo và khả năng chức năng. nó thường được sử dụng trong ung thư và các môi trường chuyên khoa khác.
               </li>
             </ul>
               <p className="mt-2">
@@ -271,7 +271,7 @@ export default function AssessmentProcessPage() {
               Vì sao Sàng lọc ≠ Chẩn đoán
             </h3>
             <p className="text-base text-neutral-700">
-              Sàng lọc là một <strong>bộ lọc</strong>, không phải chẩn đoán. Nó xác định ai cần đánh giá thêm, không phải vấn đề dinh dưỡng cụ thể của họ là gì. 
+              Sàng lọc là một <strong>bộ lọc</strong>, không phải chẩn đoán. nó xác định ai cần đánh giá thêm, không phải vấn đề dinh dưỡng cụ thể của họ là gì. 
               Kết quả sàng lọc nguy cơ cao có nghĩa là "người này cần đánh giá đầy đủ," không phải "người này chắc chắn có suy dinh dưỡng."
             </p>
             <p className="text-base text-neutral-700 mt-2">
@@ -310,7 +310,7 @@ export default function AssessmentProcessPage() {
             <ul className="list-disc space-y-2 pl-5 text-sm text-red-800">
               <li>
                 <strong>Dựa vào albumin một mình</strong>: Albumin thấp thường phản ánh viêm hoặc mức độ nghiêm trọng của bệnh, không chỉ dinh dưỡng kém.
-                Nó không phải là công cụ sàng lọc đáng tin cậy và thường không được sử dụng riêng lẻ.
+                nó không phải là công cụ sàng lọc đáng tin cậy và thường không được sử dụng riêng lẻ.
               </li>
               <li>
                 <strong>Coi sàng lọc như chẩn đoán</strong>: Sàng lọc cho thấy nguy cơ thấp không nhất thiết có nghĩa là đánh giá đầy đủ không cần thiết, đặc biệt
@@ -414,7 +414,7 @@ export default function AssessmentProcessPage() {
             </p>
             <div className="space-y-3 mt-3">
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-                <h4 className="font-semibold text-sm mb-2">Quy tắc đơn giản theo cân nặng</h4>
+                <h4 className="font-semibold text-sm mb-2">quy tắc đơn giản theo cân nặng</h4>
                 <p className="text-sm text-neutral-700">
                   Ví dụ: “25–30 kcal/kg/ngày” (năng lượng) hoặc “1,2–1,5 g protein/kg/ngày”. Nhanh, dễ nhớ, dùng được cho nhiều người lớn ổn định.
                   Tuy nhiên, cách này chưa phản ánh đầy đủ hoạt động, mức độ nặng của bệnh, hoặc thành phần cơ thể.
@@ -464,7 +464,7 @@ export default function AssessmentProcessPage() {
             <ul className="list-disc space-y-1 pl-6 text-base text-neutral-700">
               <li>Thừa nhận bất định: ta không biết “đúng tuyệt đối”, nên khoảng phản ánh biến thiên thực tế.</li>
               <li>Linh hoạt: người bệnh có thể đáp ứng tốt ở nhiều mức trong khoảng, tuỳ cảm giác ngon miệng, dung nạp và các yếu tố khác.</li>
-              <li>Hỗ trợ theo dõi: nếu liên tục thấp hơn (hoặc cao hơn) khoảng, đó là tín hiệu cần đánh giá lại.</li>
+              <li>hỗ trợ theo dõi: nếu liên tục thấp hơn (hoặc cao hơn) khoảng, đó là tín hiệu cần đánh giá lại.</li>
               <li>Giảm “ảo giác chính xác”: một con số đơn lẻ dễ bị hiểu như mục tiêu phải đạt bằng mọi giá.</li>
             </ul>
             <p className="text-base text-neutral-700 mt-3">
@@ -684,7 +684,7 @@ export default function AssessmentProcessPage() {
                 có thể góp phần vào sụt cân và kết quả kém.
               </li>
               <li>
-                <strong>Xu hướng cho thấy phản ứng với thay đổi</strong>: Lượng ăn có đang cải thiện sau quản lý triệu chứng không? Nó có đang giảm
+                <strong>Xu hướng cho thấy phản ứng với thay đổi</strong>: Lượng ăn có đang cải thiện sau quản lý triệu chứng không? nó có đang giảm
                 khi tình trạng xấu đi không? Xu hướng trả lời những câu hỏi này tốt hơn các ảnh chụp đơn lẻ.
               </li>
             </ul>
@@ -803,7 +803,7 @@ export default function AssessmentProcessPage() {
                 <strong>Tình trạng chức năng</strong>: Họ có thể tự ăn không? Họ có khó khăn nhai hoặc nuốt không?
               </li>
               <li>
-                <strong>Dữ liệu xét nghiệm</strong>: Xét nghiệm cho chúng ta biết gì về chức năng cơ quan, viêm, hoặc tình trạng chất dinh dưỡng?
+                <strong>Dữ liệu xét nghiệm</strong>: xét nghiệm cho chúng ta biết gì về chức năng cơ quan, viêm, hoặc tình trạng chất dinh dưỡng?
               </li>
               <li>
                 <strong>Bối cảnh xã hội</strong>: Ai giúp với bữa ăn? Sở thích thực phẩm của họ là gì? Các ràng buộc thực tế là gì?
@@ -821,10 +821,10 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Vì sao Số liệu Không bao giờ thay thế Phán đoán
+              Vì sao số liệu Không bao giờ thay thế Phán đoán
             </h3>
             <p className="text-base text-neutral-700 mb-2">
-              Số liệu từ công cụ sàng lọc, tính toán nhu cầu, và đánh giá lượng ăn là <strong>cung cấp thông tin, không chỉ đạo</strong>.
+              số liệu từ công cụ sàng lọc, tính toán nhu cầu, và đánh giá lượng ăn là <strong>cung cấp thông tin, không chỉ đạo</strong>.
               Chúng giúp cấu trúc tư duy, nhưng chúng không đưa ra quyết định cho bạn.
             </p>
             <div className="space-y-3 mt-3">
@@ -845,7 +845,7 @@ export default function AssessmentProcessPage() {
               </div>
             </div>
             <p className="text-base text-neutral-700 mt-3">
-              Số liệu không thể thấy toàn bộ con người. Chúng không thể cảm nhận khi có điều gì đó cảm thấy "sai." Chúng không thể cân nhắc các ưu tiên cạnh tranh.
+              số liệu không thể thấy toàn bộ con người. Chúng không thể cảm nhận khi có điều gì đó cảm thấy "sai." Chúng không thể cân nhắc các ưu tiên cạnh tranh.
               Chúng không thể thích ứng khi hoàn cảnh thay đổi. <strong>Đó là lý do phán đoán lâm sàng là không thể thay thế</strong>.
             </p>
           </div>
@@ -1064,7 +1064,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Công cụ Hỗ trợ Hiểu biết, Không phải Quyết định
+              Công cụ hỗ trợ Hiểu biết, Không phải Quyết định
             </h3>
             <p className="text-sm text-amber-800 mb-2">
               Các công cụ trên trang web này được thiết kế để <strong>hỗ trợ học tập và hiểu biết</strong> các khái niệm đánh giá dinh dưỡng lâm sàng.
@@ -1104,7 +1104,7 @@ export default function AssessmentProcessPage() {
               Đánh giá lại Là cần thiết
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              Đánh giá dinh dưỡng <strong>không phải là sự kiện một lần</strong>. Nó là quy trình đang diễn ra đòi hỏi đánh giá lại thường xuyên:
+              Đánh giá dinh dưỡng <strong>không phải là sự kiện một lần</strong>. nó là quy trình đang diễn ra đòi hỏi đánh giá lại thường xuyên:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-amber-800">
               <li>Khi tình trạng lâm sàng thay đổi (cải thiện hoặc xấu đi)</li>
@@ -1142,7 +1142,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Khi nào Tìm kiếm Hỗ trợ Chuyên nghiệp
+              Khi nào Tìm kiếm hỗ trợ Chuyên nghiệp
             </h3>
             <p className="text-sm text-amber-800 mb-2">
               tham khảo với nhà cung cấp y tế có trình độ hoặc chuyên gia dinh dưỡng đã đăng ký nếu:

@@ -26,7 +26,7 @@ const myths: Myth[] = [
   {
     id: 'protein-more-is-better',
     myth: 'Nhiều protein hơn luôn tốt hơn cho phục hồi',
-    whyItSoundsRight: 'Tư duy "nhiều hơn là tốt hơn" hấp dẫn vì protein rõ ràng quan trọng cho việc chữa lành. Cảm giác an toàn hơn khi sai lệch về phía nhiều hơn là ít hơn. Niềm tin này được củng cố bởi văn hóa thể dục và tiếp thị thực phẩm bổ sung, quảng bá lượng protein cao như có lợi phổ quát.',
+    whyItSoundsRight: 'tư duy "nhiều hơn là tốt hơn" hấp dẫn vì protein rõ ràng quan trọng cho việc chữa lành. Cảm giác an toàn hơn khi sai lệch về phía nhiều hơn là ít hơn. Niềm tin này được củng cố bởi văn hóa thể dục và tiếp thị thực phẩm bổ sung, quảng bá lượng protein cao như có lợi phổ quát.',
     whatActuallyHappens: 'Mặc dù protein đầy đủ là cần thiết cho việc lành vết thương và bảo tồn cơ, nhưng protein quá mức (vượt quá 2.0-2.5 g/kg/ngày trong hầu hết các trường hợp) không mang lại lợi ích bổ sung và có thể làm xấu đi chức năng thận, tăng các triệu chứng urê huyết (tích tụ chất thải trong máu), và tạo ra stress chuyển hóa. cơ thể không thể lưu trữ protein dư thừa như có thể lưu trữ chất béo.',
     whatToUnderstandInstead: 'Lượng protein quá mức có thể không cải thiện kết quả vượt quá phạm vi tối ưu và có thể gây vấn đề, đặc biệt ở bệnh nhân suy thận. Bằng chứng cho thấy hầu hết bệnh nhân nằm viện cần khoảng 1.2-2.0 g/kg/ngày, với nhu cầu cao hơn (lên đến 2.5 g/kg/ngày) trong các tình trạng cụ thể như bỏng nặng, chấn thương lớn, hoặc bệnh nặng.',
     clinicalInsight: 'Đầy đủ là mục tiêu, không phải tối đa hóa. Theo dõi chức năng thận (creatinine, BUN) có thể giúp hướng dẫn quyết định lượng protein. cơ thể chỉ có thể sử dụng một lượng protein nhất định cùng một lúc, vì vậy phân bổ lượng ăn vào trong suốt ngày có thể hiệu quả hơn so với liều lớn đơn lẻ.'
@@ -34,8 +34,8 @@ const myths: Myth[] = [
   {
     id: 'npo-before-surgery',
     myth: 'Tất cả bệnh nhân phải NPO (không ăn uống) từ nửa đêm trước phẫu thuật',
-    whyItSoundsRight: 'Quy tắc "NPO sau nửa đêm" đã là thực hành tiêu chuẩn trong nhiều thập kỷ và có vẻ như một cách tiếp cận an toàn, bảo thủ. Nỗi sợ hít sặc trong gây mê là dễ hiểu, và sự đơn giản của một quy tắc phổ quát làm cho nó dễ thực hiện.',
-    whatActuallyHappens: 'Quy tắc truyền thống "NPO sau nửa đêm" dựa trên những lo ngại lỗi thời về nguy cơ hít sặc (thức ăn/chất lỏng vào phổi trong gây mê). Bằng chứng cho thấy cho phép chất lỏng trong suốt lên đến 2 giờ trước phẫu thuật thực sự giảm biến chứng, cải thiện sự thoải mái của bệnh nhân, duy trì hydrat hóa, và có thể cải thiện kiểm soát đường huyết. Nhịn ăn kéo dài làm tăng kháng insulin và dị hóa (phá vỡ cơ).',
+    whyItSoundsRight: 'quy tắc "NPO sau nửa đêm" đã là thực hành tiêu chuẩn trong nhiều thập kỷ và có vẻ như một cách tiếp cận an toàn, bảo thủ. Nỗi sợ hít sặc trong gây mê là dễ hiểu, và sự đơn giản của một quy tắc phổ quát làm cho nó dễ thực hiện.',
+    whatActuallyHappens: 'quy tắc truyền thống "NPO sau nửa đêm" dựa trên những lo ngại lỗi thời về nguy cơ hít sặc (thức ăn/chất lỏng vào phổi trong gây mê). Bằng chứng cho thấy cho phép chất lỏng trong suốt lên đến 2 giờ trước phẫu thuật thực sự giảm biến chứng, cải thiện sự thoải mái của bệnh nhân, duy trì hydrat hóa, và có thể cải thiện kiểm soát đường huyết. Nhịn ăn kéo dài làm tăng kháng insulin và dị hóa (phá vỡ cơ).',
     whatToUnderstandInstead: 'Hướng dẫn hiện đại cho phép chất lỏng trong suốt lên đến 2 giờ trước phẫu thuật và bữa ăn nhẹ lên đến 6 giờ trước, giảm biến chứng. Tuân theo giao thức ERAS (Phục hồi nhanh sau phẫu thuật) khi phù hợp. Ngoại lệ bao gồm bệnh nhân có làm rỗng dạ dày chậm, tắc ruột, hoặc yêu cầu phẫu thuật cụ thể.',
     clinicalInsight: 'Bằng chứng cho thấy chất lỏng trong suốt (nước, nước ép trong, cà phê đen) có thể phù hợp 2+ giờ trước phẫu thuật cho nhiều bệnh nhân. Dạ dày làm rỗng chất lỏng trong suốt tương đối nhanh, có thể giảm nguy cơ hít sặc trong khi duy trì hydrat hóa và chức năng chuyển hóa.'
   },
@@ -67,7 +67,7 @@ const myths: Myth[] = [
     id: 'weight-loss-always-good',
     myth: 'Giảm cân luôn có lợi cho bệnh nhân nằm viện',
     whyItSoundsRight: 'Thông điệp sức khỏe chung rằng "giảm cân là tốt" phổ biến đến mức dễ áp dụng nó một cách phổ quát. Đối với bệnh nhân béo phì, giảm cân trong khi nằm viện có vẻ như một điểm tích cực. Sự khác biệt giữa giảm cân có chủ ý (cho sức khỏe) và giảm cân không chủ ý (dấu hiệu bệnh) không phải lúc nào cũng rõ ràng trong thực hành.',
-    whatActuallyHappens: 'Mặc dù giảm cân có chủ ý có thể có lợi cho bệnh nhân ngoại trú béo phì, nhưng giảm cân không chủ ý ở bệnh nhân nằm viện thường là mối quan tâm. Nó thường đại diện cho mất khối lượng cơ thể nạc (cơ), có thể làm chậm phục hồi, tăng nguy cơ nhiễm trùng, kéo dài thời gian nằm viện, và liên quan đến kết quả kém hơn. Ngay cả bệnh nhân béo phì thường cần dinh dưỡng đầy đủ trong bệnh cấp tính - cơ thể họ cần nhiên liệu để chữa lành, ngay cả khi họ có dự trữ chất béo dư thừa.',
+    whatActuallyHappens: 'Mặc dù giảm cân có chủ ý có thể có lợi cho bệnh nhân ngoại trú béo phì, nhưng giảm cân không chủ ý ở bệnh nhân nằm viện thường là mối quan tâm. nó thường đại diện cho mất khối lượng cơ thể nạc (cơ), có thể làm chậm phục hồi, tăng nguy cơ nhiễm trùng, kéo dài thời gian nằm viện, và liên quan đến kết quả kém hơn. Ngay cả bệnh nhân béo phì thường cần dinh dưỡng đầy đủ trong bệnh cấp tính - cơ thể họ cần nhiên liệu để chữa lành, ngay cả khi họ có dự trữ chất béo dư thừa.',
     whatToUnderstandInstead: 'Giảm cân không chủ ý ở bệnh nhân nằm viện thường liên quan đến kết quả kém và có thể chỉ ra suy dinh dưỡng hoặc bệnh tiềm ẩn. Theo dõi xu hướng cân nặng có thể hữu ích: mất không chủ ý >5% trong 1 tháng hoặc >10% trong 6 tháng thường được coi là đáng kể. Bệnh nhân béo phì vẫn thường cần protein và vi chất dinh dưỡng đầy đủ trong bệnh cấp tính.',
     clinicalInsight: 'Tập trung vào bảo tồn khối lượng cơ thể nạc (cơ), không chỉ tổng trọng lượng - mất cơ là vấn đề thực sự. Điều tra nguyên nhân: lượng ăn vào không đủ, kém hấp thu (hấp thu chất dinh dưỡng kém), tăng chuyển hóa (tỷ lệ chuyển hóa tăng), hoặc bệnh tiềm ẩn. sử dụng công cụ sàng lọc đã được xác nhận (MUST, NRS-2002) để xác định bệnh nhân có nguy cơ.'
   },
@@ -77,7 +77,7 @@ const myths: Myth[] = [
     whyItSoundsRight: 'Thực phẩm bổ sung tiện lợi, có thể đo lường, và có vẻ như một can thiệp được kiểm soát. Khi bệnh nhân gặp khó khăn khi ăn, thực phẩm bổ sung có vẻ như một giải pháp đáng tin cậy. Độ chính xác của việc biết chính xác chất dinh dưỡng mà bệnh nhân đang nhận được có thể hấp dẫn so với sự biến đổi của lượng thức ăn.',
     whatActuallyHappens: 'Mặc dù thực phẩm bổ sung đường uống (ONS như Ensure, Boost) là công cụ có giá trị để đáp ứng nhu cầu dinh dưỡng, chúng nên bổ sung, không thay thế, bữa ăn khi có thể. Thực phẩm nguyên chất cung cấp chất xơ, phytochemical (hợp chất thực vật có lợi ích sức khỏe), và các hợp chất hoạt tính sinh học khác không tìm thấy trong thực phẩm bổ sung. Ngoài ra, hành động ăn có lợi ích xã hội, tâm lý và cảm giác mà thực phẩm bổ sung không thể cung cấp.',
     whatToUnderstandInstead: 'Thực phẩm bổ sung được thiết kế để bổ sung, không thay thế, chế độ ăn cân bằng. sử dụng thực phẩm bổ sung để lấp đầy khoảng trống dinh dưỡng, không phải như thay thế bữa ăn khi có thể - nghĩ về chúng như "bảo hiểm dinh dưỡng." Khuyến khích cách tiếp cận ưu tiên thực phẩm khi bệnh nhân có thể ăn - ngay cả một lượng nhỏ thực phẩm thật cũng có giá trị.',
-    clinicalInsight: 'Thực phẩm bổ sung phù hợp khi: lượng ăn vào đường uống không đủ, nhu cầu tăng (chữa lành, tăng trưởng), hoặc thiếu hụt chất dinh dưỡng cụ thể. Cung cấp thực phẩm bổ sung giữa các bữa ăn, không phải với bữa ăn, để tránh giảm lượng thức ăn. Nhớ: thực phẩm bổ sung hỗ trợ dinh dưỡng, nhưng thực phẩm cung cấp nhiều hơn chất dinh dưỡng - ăn là về nhiều hơn dinh dưỡng.'
+    clinicalInsight: 'Thực phẩm bổ sung phù hợp khi: lượng ăn vào đường uống không đủ, nhu cầu tăng (chữa lành, tăng trưởng), hoặc thiếu hụt chất dinh dưỡng cụ thể. Cung cấp thực phẩm bổ sung giữa các bữa ăn, không phải với bữa ăn, để tránh giảm lượng thức ăn. nhớ: thực phẩm bổ sung hỗ trợ dinh dưỡng, nhưng thực phẩm cung cấp nhiều hơn chất dinh dưỡng - ăn là về nhiều hơn dinh dưỡng.'
   }
 ];
 
@@ -155,17 +155,17 @@ export default function MythsAndMisconceptionsPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Mong muốn Quy tắc đơn giản</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Mong muốn quy tắc đơn giản</h3>
               <p className="text-sm text-gray-700">
-                Quy tắc đơn giản cảm thấy an toàn hơn và dễ áp dụng hơn so với các cách tiếp cận phức tạp, cá nhân hóa. 
+                quy tắc đơn giản cảm thấy an toàn hơn và dễ áp dụng hơn so với các cách tiếp cận phức tạp, cá nhân hóa. 
                 "2000 kcal cho mọi người" dễ nhớ hơn so với tính toán nhu cầu cá nhân, ngay cả khi kém chính xác hơn. 
                 Trong môi trường lâm sàng bận rộn, quy tắc đơn giản giảm mệt mỏi quyết định và cảm thấy dễ quản lý hơn.
               </p>
             </div>
             <div className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Phụ thuộc quá Mức vào Số liệu hoặc Xét nghiệm</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Phụ thuộc quá Mức vào số liệu hoặc xét nghiệm</h3>
               <p className="text-sm text-gray-700">
-                Số liệu và giá trị xét nghiệm có vẻ khách quan và dứt khoát, nhưng chúng không kể toàn bộ câu chuyện. 
+                số liệu và giá trị xét nghiệm có vẻ khách quan và dứt khoát, nhưng chúng không kể toàn bộ câu chuyện. 
                 Chỉ tập trung vào một giá trị xét nghiệm duy nhất (như albumin) hoặc một con số cụ thể (như BMI) có thể khiến chúng ta 
                 bỏ lỡ bức tranh lâm sàng rộng hơn và nhu cầu cá nhân của bệnh nhân.
               </p>
@@ -179,9 +179,9 @@ export default function MythsAndMisconceptionsPage() {
               </p>
             </div>
             <div className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Trộn lẫn Lời khuyên Dinh dưỡng Cộng đồng với Chăm sóc lâm sàng</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Trộn lẫn lời khuyên dinh dưỡng cộng đồng với chăm sóc lâm sàng</h3>
               <p className="text-sm text-gray-700">
-                Lời khuyên dinh dưỡng chung cho dân số khỏe mạnh (như "ăn ít carb" hoặc "nhiều protein hơn là tốt hơn") 
+                lời khuyên dinh dưỡng chung cho dân số khỏe mạnh (như "ăn ít carb" hoặc "nhiều protein hơn là tốt hơn") 
                 không phải lúc nào cũng áp dụng cho bệnh nhân bệnh, nằm viện. Điều phù hợp cho sức khỏe cộng đồng có thể không 
                 phù hợp trong môi trường lâm sàng nơi bệnh nhân có nhu cầu chuyển hóa khác nhau.
               </p>
@@ -316,7 +316,7 @@ export default function MythsAndMisconceptionsPage() {
         {/* Section 4: Common themes */}
         <div className="mb-12 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Các chủ đề Chung trong những quan Niệm sai Lầm này
+            Các chủ đề chung trong những quan Niệm sai Lầm này
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Khi bạn suy ngẫm về những quan niệm sai lầm này, bạn sẽ nhận thấy một số chủ đề lặp lại xuất hiện trong các niềm tin khác nhau. 
@@ -347,7 +347,7 @@ export default function MythsAndMisconceptionsPage() {
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Một giá trị xét nghiệm đơn lẻ, đo cân nặng, hoặc đếm calo cho bạn biết rất ít. Điều quan trọng là xu hướng theo thời gian. 
-                Bệnh nhân có đang cải thiện không? Trở nên tệ hơn? Giữ ổn định? Giá trị đơn lẻ có thể gây hiểu lầm, nhưng xu hướng tiết lộ 
+                Bệnh nhân có đang cải thiện không? Trở nên tệ hơn? Giữ ổn định? giá trị đơn lẻ có thể gây hiểu lầm, nhưng xu hướng tiết lộ 
                 bức tranh lâm sàng thực sự. Tập trung vào các mô hình và thay đổi thay vì các con số cô lập.
               </p>
               <p className="text-gray-600 text-sm mt-3 italic">
@@ -359,11 +359,11 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl">3.</span>
-                Số liệu hỗ Trợ tư duy, Không thay Thế nó
+                số liệu hỗ Trợ tư duy, Không thay Thế nó
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Tính toán, giá trị xét nghiệm và đo lường là công cụ để thông báo phán đoán lâm sàng của bạn, không phải để thay thế nó. 
-                Số liệu cung cấp dữ liệu, nhưng bạn cung cấp sự giải thích. sử dụng tính toán và đo lường để hỗ trợ suy nghĩ của bạn, 
+                số liệu cung cấp dữ liệu, nhưng bạn cung cấp sự giải thích. sử dụng tính toán và đo lường để hỗ trợ suy nghĩ của bạn, 
                 nhưng luôn xem xét hoàn cảnh cá nhân của bệnh nhân, phản ứng với can thiệp và bức tranh lâm sàng tổng thể. 
                 Con số là điểm khởi đầu, không phải điểm kết thúc.
               </p>
@@ -502,7 +502,7 @@ export default function MythsAndMisconceptionsPage() {
                   Phán đoán lâm sàng—khả năng của bạn để đánh giá, giải thích và đưa ra quyết định dựa trên toàn bộ bức tranh lâm sàng—là 
                   không thể thay thế. Công cụ cung cấp dữ liệu và gợi ý, nhưng bạn phải giải thích thông tin đó trong ngữ cảnh của 
                   mỗi tình huống bệnh nhân độc đáo. Xem xét tình trạng bệnh nhân, tiên lượng, mục tiêu chăm sóc, sở thích gia đình, 
-                  và nguồn lực tổ chức. Số liệu và hướng dẫn thông báo phán đoán của bạn; chúng không thay thế nó. Khi công cụ 
+                  và nguồn lực tổ chức. số liệu và hướng dẫn thông báo phán đoán của bạn; chúng không thay thế nó. Khi công cụ 
                   và phán đoán lâm sàng xung đột, hãy tin tưởng phán đoán của bạn và tư vấn với nhóm của bạn.
                 </p>
               </div>

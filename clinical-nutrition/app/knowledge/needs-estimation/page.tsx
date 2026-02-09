@@ -73,7 +73,7 @@ export default function NeedsEstimationPage() {
 
         <div className="space-y-4 mt-4">
           <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-            <h3 className="font-semibold text-base mb-2">1. Quy tắc Đơn giản Dựa trên Cân nặng</h3>
+            <h3 className="font-semibold text-base mb-2">1. quy tắc đơn giản Dựa trên Cân nặng</h3>
             <p className="text-sm text-neutral-700 mb-2">
               Ví dụ: "25–30 kcal/kg/ngày cho năng lượng" hoặc "1.2–1.5 g protein/kg/ngày"
             </p>
@@ -247,7 +247,7 @@ export default function NeedsEstimationPage() {
           Tránh cạm bẫy "Câu trả lời Đúng"
         </h2>
         <p className="text-base text-amber-800">
-          Rất dễ coi công thức như thể chúng tạo ra "câu trả lời đúng." Tư duy này có thể dẫn đến:
+          Rất dễ coi công thức như thể chúng tạo ra "câu trả lời đúng." tư duy này có thể dẫn đến:
         </p>
         <ul className="list-disc space-y-2 pl-6 text-base text-amber-800">
           <li>
@@ -365,7 +365,7 @@ export default function NeedsEstimationPage() {
       {/* Safety disclaimer */}
       <section className="space-y-2 rounded-lg border border-neutral-200 bg-white p-4">
         <p className="text-xs text-neutral-600 sm:text-sm">
-          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị,
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. nó không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị,
           không tạo mối quan hệ bác sĩ–bệnh nhân, và không được sử dụng để ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
         </p>
       </section>

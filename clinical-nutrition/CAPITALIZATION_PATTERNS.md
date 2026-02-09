@@ -311,6 +311,56 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Cơ bản` | `cơ bản` |
 | `Món ăn` | `món ăn` |
 
+## Pattern Hiểu Lầm và Quan Niệm
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Vì sao Những quan niệm Này vẫn tồn tại` | `Vì sao những quan niệm này vẫn tồn tại` |
+| `Trộn lẫn Lời khuyên Dinh dưỡng Cộng đồng với Chăm sóc lâm sàng` | `Trộn lẫn lời khuyên dinh dưỡng cộng đồng với chăm sóc lâm sàng` |
+| `Phụ thuộc Quá mức vào Số liệu hoặc Xét nghiệm` | `Phụ thuộc quá mức vào số liệu hoặc xét nghiệm` |
+| `Mong muốn Quy tắc Đơn giản` | `Mong muốn quy tắc đơn giản` |
+| `Diễn giải Sai hướng dẫn` | `Diễn giải sai hướng dẫn` |
+| `Hiểu lầm phổ biến trong Thực hành` | `Hiểu lầm phổ biến trong thực hành` |
+| `Chủ đề Chung xuyên suốt Các hiểu lầm Này` | `Chủ đề chung xuyên suốt các hiểu lầm này` |
+| `Bối cảnh Quan trọng` | `Bối cảnh quan trọng` |
+| `Xu hướng quan trọng hơn Giá trị Đơn lẻ` | `Xu hướng quan trọng hơn giá trị đơn lẻ` |
+| `Số liệu Hỗ trợ Tư duy, Không thay thế Nó` | `Số liệu hỗ trợ tư duy, không thay thế nó` |
+| `Điều cần Nhớ` | `Điều cần nhớ` |
+| `Nhiều không phải Luôn tốt hơn` | `Nhiều không phải luôn tốt hơn` |
+| `Bằng chứng Phát triển` | `Bằng chứng phát triển` |
+| `Hợp tác Cải thiện Chăm sóc` | `Hợp tác cải thiện chăm sóc` |
+| `Cá thể hóa Quan trọng` | `Cá thể hóa quan trọng` |
+| `Bối cảnh Rất quan trọng` | `Bối cảnh rất quan trọng` |
+| `An toàn & Quan điểm` | `An toàn & quan điểm` |
+
+## Pattern Từ Đơn Lẻ Bổ Sung (Hiểu Lầm)
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Những quan niệm` | `những quan niệm` |
+| `Này` | `này` |
+| `Lời khuyên` | `lời khuyên` |
+| `Cộng đồng` | `cộng đồng` |
+| `Quá mức` | `quá mức` |
+| `Số liệu` | `số liệu` |
+| `Xét nghiệm` | `xét nghiệm` |
+| `Quy tắc` | `quy tắc` |
+| `Đơn giản` | `đơn giản` |
+| `Sai hướng dẫn` | `sai hướng dẫn` |
+| `Chủ đề` | `chủ đề` |
+| `Chung` | `chung` |
+| `xuyên suốt` | `xuyên suốt` |
+| `Các hiểu lầm` | `các hiểu lầm` |
+| `Giá trị` | `giá trị` |
+| `Hỗ trợ` | `hỗ trợ` |
+| `Tư duy` | `tư duy` |
+| `Nó` | `nó` |
+| `Nhớ` | `nhớ` |
+| `Luôn tốt hơn` | `luôn tốt hơn` |
+| `Phát triển` | `phát triển` |
+| `Rất quan trọng` | `rất quan trọng` |
+| `Quan điểm` | `quan điểm` |
+
 ## Danh Từ Riêng (Giữ Nguyên)
 
 Các từ sau được giữ nguyên viết hoa (trong whitelist):

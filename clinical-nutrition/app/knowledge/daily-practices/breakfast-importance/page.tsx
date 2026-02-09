@@ -81,7 +81,7 @@ export default function BreakfastImportancePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Hỗ trợ kiểm soát cân nặng</span>
+                    <span>hỗ trợ kiểm soát cân nặng</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />

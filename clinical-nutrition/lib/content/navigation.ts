@@ -108,7 +108,7 @@ const categoryConfig: Record<ArticleCategory, { label: string; href: string; ico
     icon: Baby,
   },
   'special-topics': {
-    label: 'Chủ đề đặc biệt',
+    label: 'chủ đề đặc biệt',
     href: '/knowledge/special-topics',
     icon: Leaf,
   },

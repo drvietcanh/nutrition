@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function DinhDuongTrongHoiChungRuotKichThichIBSPage() {
+export default function DinhDuongTrongHoichungRuotKichThichIBSPage() {
   const article = articles.find(a => a.slug === 'dinh-duong-trong-hoi-chung-ruot-kich-thich-ibs');
   
   return (
@@ -70,7 +70,7 @@ export default function DinhDuongTrongHoiChungRuotKichThichIBSPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body-sm">
             <li>Giúp nhân viên y tế và người bệnh hiểu các nguyên tắc dinh dưỡng trong IBS</li>
-            <li>Hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
+            <li>hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
           </ul>
           <p className="text-body-sm mt-3 font-semibold text-red-600">
             ⚠️ Lưu ý: Thông tin này không thay thế đánh giá cá nhân của bác sĩ hoặc chuyên gia dinh dưỡng.
@@ -217,7 +217,7 @@ export default function DinhDuongTrongHoiChungRuotKichThichIBSPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="tips-heading" className="heading-2 whitespace-nowrap">
-            Lời khuyên thực hành
+            lời khuyên thực hành
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

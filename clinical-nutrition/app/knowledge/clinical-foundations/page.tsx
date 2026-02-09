@@ -55,7 +55,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/assessment-process">
           <CardHeader
             icon={ClipboardCheck}
-            title="Đánh giá Dinh dưỡng lâm sàng: Hướng dẫn Đơn giản về Toàn bộ Quy trình"
+            title="Đánh giá Dinh dưỡng lâm sàng: Hướng dẫn đơn giản về Toàn bộ Quy trình"
           />
           <CardContent>
             <p className="text-body">

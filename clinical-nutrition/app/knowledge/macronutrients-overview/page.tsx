@@ -124,7 +124,7 @@ export default function MacronutrientsOverviewPage() {
                 <h3 className="heading-4 mb-2">Vai trò</h3>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Nguồn năng lượng chính của cơ thể</li>
-                  <li>• Hỗ trợ chức năng não bộ</li>
+                  <li>• hỗ trợ chức năng não bộ</li>
                   <li>• Dự trữ năng lượng (glycogen)</li>
                 </ul>
               </div>
@@ -163,7 +163,7 @@ export default function MacronutrientsOverviewPage() {
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Xây dựng và sửa chữa cơ bắp, da, tóc</li>
                   <li>• Tạo enzyme và hormone</li>
-                  <li>• Hỗ trợ hệ miễn dịch</li>
+                  <li>• hỗ trợ hệ miễn dịch</li>
                   <li>• Cung cấp năng lượng (khi cần)</li>
                 </ul>
               </div>
@@ -204,7 +204,7 @@ export default function MacronutrientsOverviewPage() {
                   <li>• Cung cấp năng lượng (nhiều calo nhất)</li>
                   <li>• Hấp thu vitamin A, D, E, K</li>
                   <li>• Bảo vệ các cơ quan</li>
-                  <li>• Hỗ trợ sức khỏe não và tim</li>
+                  <li>• hỗ trợ sức khỏe não và tim</li>
                 </ul>
               </div>
               <div className="text-right">

@@ -78,11 +78,11 @@ export default function SodiumHealthPage() {
             </Card>
             <Card className="border-green-200 bg-green-50/30">
               <h3 className="heading-5 mb-2 text-center">🧠 Truyền tín hiệu thần kinh</h3>
-              <p className="text-sm text-gray-700 text-center">Hỗ trợ chức năng thần kinh</p>
+              <p className="text-sm text-gray-700 text-center">hỗ trợ chức năng thần kinh</p>
             </Card>
             <Card className="border-amber-200 bg-amber-50/30">
               <h3 className="heading-5 mb-2 text-center">💪 Co cơ</h3>
-              <p className="text-sm text-gray-700 text-center">Hỗ trợ co cơ bắp</p>
+              <p className="text-sm text-gray-700 text-center">hỗ trợ co cơ bắp</p>
             </Card>
           </div>
 

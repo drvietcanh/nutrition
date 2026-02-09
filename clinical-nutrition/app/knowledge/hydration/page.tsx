@@ -104,7 +104,7 @@ export default function HydrationPage() {
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Bôi trơn khớp</li>
                 <li>• Bảo vệ các cơ quan</li>
-                <li>• Hỗ trợ tiêu hóa</li>
+                <li>• hỗ trợ tiêu hóa</li>
               </ul>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Duy trì huyết áp</li>

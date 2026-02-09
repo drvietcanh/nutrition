@@ -111,7 +111,7 @@ export default function BMIBodyCompositionPage() {
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-body-sm">
           <li>
-            BMI là một công cụ sàng lọc, không phải là thước đo hoàn chỉnh. Nó không phân biệt giữa khối mỡ và khối nạc,
+            BMI là một công cụ sàng lọc, không phải là thước đo hoàn chỉnh. nó không phân biệt giữa khối mỡ và khối nạc,
             và có thể bị ảnh hưởng bởi phù, cổ trướng, hoặc khối lượng cơ cao.
           </li>
           <li>
@@ -159,7 +159,7 @@ export default function BMIBodyCompositionPage() {
           6. Nhắc nhở an toàn
         </h2>
         <p className="text-body-sm">
-          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp
+          Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. nó không cung cấp
           tư vấn y tế, chẩn đoán, hoặc điều trị, không tạo mối quan hệ bác sĩ–bệnh nhân,
           và không được sử dụng để ra quyết định lâm sàng hoặc kê đơn chế độ ăn, thức ăn, hoặc thuốc.
         </p>

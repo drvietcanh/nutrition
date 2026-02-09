@@ -72,7 +72,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body-sm">
             <li>Giúp nhân viên y tế và người bệnh hiểu các nguyên tắc dinh dưỡng sau nhồi máu cơ tim</li>
-            <li>Hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
+            <li>hỗ trợ tư vấn và thay đổi lối sống một cách an toàn</li>
           </ul>
           <p className="text-body-sm mt-3 font-semibold text-red-600">
             ⚠️ Lưu ý: Thông tin này không thay thế đánh giá cá nhân của bác sĩ hoặc chuyên gia dinh dưỡng.
@@ -107,7 +107,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Giảm muối (natri)</li>
                 <li>• Tăng kali từ rau củ quả</li>
-                <li>• Hỗ trợ kiểm soát huyết áp</li>
+                <li>• hỗ trợ kiểm soát huyết áp</li>
               </ul>
             </Card>
             <Card className="border-green-200 bg-green-50/30">
@@ -233,7 +233,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="tips-heading" className="heading-2 whitespace-nowrap">
-            Lời khuyên thực hành
+            lời khuyên thực hành
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

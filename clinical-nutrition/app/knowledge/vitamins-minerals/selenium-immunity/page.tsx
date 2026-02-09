@@ -72,7 +72,7 @@ export default function SeleniumImmunityPage() {
               <div>
                 <p className="text-sm font-semibold text-gray-900 mb-2">Chức năng chính:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
-                  <li>• Hỗ trợ hệ miễn dịch</li>
+                  <li>• hỗ trợ hệ miễn dịch</li>
                   <li>• Chức năng tuyến giáp</li>
                   <li>• Chất chống oxy hóa</li>
                   <li>• Sản xuất DNA</li>
@@ -93,7 +93,7 @@ export default function SeleniumImmunityPage() {
 
           <ExampleBox variant="info" title="Ví dụ đơn giản">
             <p>
-              Selenium giống như "người hỗ trợ" cho hệ miễn dịch. Nó giúp các tế bào miễn dịch hoạt động tốt, 
+              Selenium giống như "người hỗ trợ" cho hệ miễn dịch. nó giúp các tế bào miễn dịch hoạt động tốt, 
               giống như cung cấp "công cụ" cần thiết để chống lại bệnh tật. Selenium cũng giúp tuyến giáp 
               hoạt động đúng, điều chỉnh sự trao đổi chất.
             </p>
@@ -197,7 +197,7 @@ export default function SeleniumImmunityPage() {
           <Card>
             <h3 className="heading-4 mb-3">Chức năng Tuyến giáp</h3>
             <p className="text-body-sm">
-              Selenium cần thiết cho chức năng tuyến giáp. Nó giúp chuyển đổi hormone tuyến giáp 
+              Selenium cần thiết cho chức năng tuyến giáp. nó giúp chuyển đổi hormone tuyến giáp 
               sang dạng hoạt động, điều chỉnh sự trao đổi chất.
             </p>
           </Card>

@@ -733,6 +733,130 @@ def fix_file(file_path):
             
             # Pattern: "Hàm lượng.*trong Thực phẩm Việt Nam" → "Hàm lượng...trong thực phẩm Việt Nam"
             (r'Hàm lượng ([^t]+) trong Thực phẩm Việt Nam', r'Hàm lượng \1 trong thực phẩm Việt Nam'),
+            
+            # Pattern: "Vì sao Những quan niệm Này vẫn tồn tại" → "Vì sao những quan niệm này vẫn tồn tại"
+            (r'Vì sao Những quan niệm Này vẫn tồn tại', 'Vì sao những quan niệm này vẫn tồn tại'),
+            
+            # Pattern: "Trộn lẫn Lời khuyên Dinh dưỡng Cộng đồng với Chăm sóc lâm sàng" → "Trộn lẫn lời khuyên dinh dưỡng cộng đồng với chăm sóc lâm sàng"
+            (r'Trộn lẫn Lời khuyên Dinh dưỡng Cộng đồng với Chăm sóc lâm sàng', 'Trộn lẫn lời khuyên dinh dưỡng cộng đồng với chăm sóc lâm sàng'),
+            
+            # Pattern: "Phụ thuộc Quá mức vào Số liệu hoặc Xét nghiệm" → "Phụ thuộc quá mức vào số liệu hoặc xét nghiệm"
+            (r'Phụ thuộc Quá mức vào Số liệu hoặc Xét nghiệm', 'Phụ thuộc quá mức vào số liệu hoặc xét nghiệm'),
+            
+            # Pattern: "Mong muốn Quy tắc Đơn giản" → "Mong muốn quy tắc đơn giản"
+            (r'Mong muốn Quy tắc Đơn giản', 'Mong muốn quy tắc đơn giản'),
+            
+            # Pattern: "Mong muốn Quy tắc đơn giản" → "Mong muốn quy tắc đơn giản" (đã đúng một phần)
+            (r'Mong muốn Quy tắc đơn giản', 'Mong muốn quy tắc đơn giản'),
+            
+            # Pattern: "Diễn giải Sai hướng dẫn" → "Diễn giải sai hướng dẫn"
+            (r'Diễn giải Sai hướng dẫn', 'Diễn giải sai hướng dẫn'),
+            
+            # Pattern: "Hiểu lầm phổ biến trong Thực hành" → "Hiểu lầm phổ biến trong thực hành"
+            (r'Hiểu lầm phổ biến trong Thực hành', 'Hiểu lầm phổ biến trong thực hành'),
+            
+            # Pattern: "Chủ đề Chung xuyên suốt Các hiểu lầm Này" → "Chủ đề chung xuyên suốt các hiểu lầm này"
+            (r'Chủ đề Chung xuyên suốt Các hiểu lầm Này', 'Chủ đề chung xuyên suốt các hiểu lầm này'),
+            
+            # Pattern: "Bối cảnh Quan trọng" → "Bối cảnh quan trọng"
+            (r'Bối cảnh Quan trọng', 'Bối cảnh quan trọng'),
+            
+            # Pattern: "Xu hướng quan trọng hơn Giá trị Đơn lẻ" → "Xu hướng quan trọng hơn giá trị đơn lẻ"
+            (r'Xu hướng quan trọng hơn Giá trị Đơn lẻ', 'Xu hướng quan trọng hơn giá trị đơn lẻ'),
+            
+            # Pattern: "Số liệu Hỗ trợ Tư duy, Không thay thế Nó" → "Số liệu hỗ trợ tư duy, Không thay thế nó"
+            (r'Số liệu Hỗ trợ Tư duy, Không thay thế Nó', 'Số liệu hỗ trợ tư duy, Không thay thế nó'),
+            
+            # Pattern: "Điều cần Nhớ" → "Điều cần nhớ"
+            (r'Điều cần Nhớ', 'Điều cần nhớ'),
+            
+            # Pattern: "Nhiều không phải Luôn tốt hơn" → "Nhiều không phải luôn tốt hơn"
+            (r'Nhiều không phải Luôn tốt hơn', 'Nhiều không phải luôn tốt hơn'),
+            
+            # Pattern: "Bằng chứng Phát triển" → "Bằng chứng phát triển"
+            (r'Bằng chứng Phát triển', 'Bằng chứng phát triển'),
+            
+            # Pattern: "Hợp tác Cải thiện Chăm sóc" → "Hợp tác cải thiện chăm sóc"
+            (r'Hợp tác Cải thiện Chăm sóc', 'Hợp tác cải thiện chăm sóc'),
+            
+            # Pattern: "Cá thể hóa Quan trọng" → "Cá thể hóa quan trọng"
+            (r'Cá thể hóa Quan trọng', 'Cá thể hóa quan trọng'),
+            
+            # Pattern: "Bối cảnh Rất quan trọng" → "Bối cảnh rất quan trọng"
+            (r'Bối cảnh Rất quan trọng', 'Bối cảnh rất quan trọng'),
+            
+            # Pattern: "An toàn & Quan điểm" → "An toàn & quan điểm"
+            (r'An toàn & Quan điểm', 'An toàn & quan điểm'),
+            
+            # Pattern: "Những quan niệm" → "những quan niệm" (khi không phải đầu câu)
+            (r'Những quan niệm', 'những quan niệm'),
+            
+            # Pattern: "Này" → "này" (khi không phải đầu câu)
+            (r'\bNày\b', 'này'),
+            
+            # Pattern: "Lời khuyên" → "lời khuyên" (khi không phải đầu câu)
+            (r'Lời khuyên', 'lời khuyên'),
+            
+            # Pattern: "Cộng đồng" → "cộng đồng" (khi không phải đầu câu)
+            (r'Cộng đồng', 'cộng đồng'),
+            
+            # Pattern: "Quá mức" → "quá mức" (khi không phải đầu câu)
+            (r'Quá mức', 'quá mức'),
+            
+            # Pattern: "Số liệu" → "số liệu" (khi không phải đầu câu)
+            (r'Số liệu', 'số liệu'),
+            
+            # Pattern: "Xét nghiệm" → "xét nghiệm" (khi không phải đầu câu)
+            (r'Xét nghiệm', 'xét nghiệm'),
+            
+            # Pattern: "Quy tắc" → "quy tắc" (khi không phải đầu câu)
+            (r'Quy tắc', 'quy tắc'),
+            
+            # Pattern: "Đơn giản" → "đơn giản" (khi không phải đầu câu)
+            (r'Đơn giản', 'đơn giản'),
+            
+            # Pattern: "Sai hướng dẫn" → "sai hướng dẫn" (khi không phải đầu câu)
+            (r'Sai hướng dẫn', 'sai hướng dẫn'),
+            
+            # Pattern: "Thực hành" → "thực hành" (khi không phải đầu câu, đã có nhưng cần đảm bảo)
+            # Pattern: "Chủ đề" → "chủ đề" (khi không phải đầu câu)
+            (r'Chủ đề', 'chủ đề'),
+            
+            # Pattern: "Chung" → "chung" (khi không phải đầu câu)
+            (r'Chung', 'chung'),
+            
+            # Pattern: "xuyên suốt" → "xuyên suốt" (khi không phải đầu câu)
+            (r'xuyên suốt', 'xuyên suốt'),
+            
+            # Pattern: "Các hiểu lầm" → "các hiểu lầm" (khi không phải đầu câu)
+            (r'Các hiểu lầm', 'các hiểu lầm'),
+            
+            # Pattern: "Giá trị" → "giá trị" (khi không phải đầu câu)
+            (r'Giá trị', 'giá trị'),
+            
+            # Pattern: "Hỗ trợ" → "hỗ trợ" (khi không phải đầu câu)
+            (r'Hỗ trợ', 'hỗ trợ'),
+            
+            # Pattern: "Tư duy" → "tư duy" (khi không phải đầu câu)
+            (r'Tư duy', 'tư duy'),
+            
+            # Pattern: "Nó" → "nó" (khi không phải đầu câu)
+            (r'\bNó\b', 'nó'),
+            
+            # Pattern: "Nhớ" → "nhớ" (khi không phải đầu câu)
+            (r'Nhớ', 'nhớ'),
+            
+            # Pattern: "Luôn tốt hơn" → "luôn tốt hơn" (khi không phải đầu câu)
+            (r'Luôn tốt hơn', 'luôn tốt hơn'),
+            
+            # Pattern: "Phát triển" → "phát triển" (khi không phải đầu câu)
+            (r'Phát triển', 'phát triển'),
+            
+            # Pattern: "Rất quan trọng" → "rất quan trọng" (khi không phải đầu câu)
+            (r'Rất quan trọng', 'rất quan trọng'),
+            
+            # Pattern: "Quan điểm" → "quan điểm" (khi không phải đầu câu)
+            (r'Quan điểm', 'quan điểm'),
         ]
         
         # Tự động phát hiện các pattern mới và áp dụng trực tiếp
