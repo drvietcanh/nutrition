@@ -369,7 +369,7 @@ export function InteractiveSection() {
                               {getAssessmentLabel(assessment.assessment)}
                             </div>
                             <p className="text-xs text-gray-700 mt-1">{assessment.notes}</p>
-                            {assessment.glycemicLoad !== undefined && (
+                            {'glycemicLoad' in assessment && assessment.glycemicLoad !== undefined && (
                               <p className="text-xs text-gray-600 mt-1">
                                 GL: {assessment.glycemicLoad}
                               </p>
@@ -422,7 +422,7 @@ export function InteractiveSection() {
                               </span>
                             </div>
                             <p className="text-sm text-gray-700">{assessment.notes}</p>
-                            {assessment.glycemicLoad !== undefined && (
+                            {'glycemicLoad' in assessment && assessment.glycemicLoad !== undefined && (
                               <p className="text-xs text-gray-600 mt-2">
                                 Glycemic Load: {assessment.glycemicLoad}
                               </p>
