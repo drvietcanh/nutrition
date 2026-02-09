@@ -49,6 +49,7 @@ interface CardHeaderProps {
   title: string;
   description?: string;
   className?: string;
+  action?: React.ReactNode;
 }
 
 export function CardHeader({
@@ -56,6 +57,7 @@ export function CardHeader({
   title,
   description,
   className = '',
+  action,
 }: CardHeaderProps) {
   return (
     <div className={`${className}`}>
@@ -65,7 +67,12 @@ export function CardHeader({
             <Icon className="w-6 h-6 text-blue-600" aria-hidden="true" />
           </div>
         )}
-        <h2 className="heading-3">{title}</h2>
+        <h2 className="heading-3 flex-1">{title}</h2>
+        {action && (
+          <div className="flex-shrink-0">
+            {action}
+          </div>
+        )}
       </div>
       {description && (
         <p className="text-gray-700 leading-relaxed text-body">{description}</p>
