@@ -50,10 +50,32 @@ const categoryLabels: Record<FoodCategory, string> = {
   desserts: "Tráng miệng",
 };
 
+// Ước tính nhu cầu/ngày cho người lớn khỏe mạnh (tham khảo, dùng cho mục đích giáo dục)
+const DAILY_INTAKE = {
+  sodium: 2000, // mg
+  potassium: 3500, // mg
+  phosphorus: 700, // mg
+  calcium: 1000, // mg
+  magnesium: 320, // mg
+  zinc: 11, // mg
+  vitaminC: 75, // mg
+  vitaminA: 700, // mcg RAE
+} as const;
+
+type Level = "low" | "medium" | "high";
+
+const classifyLevel = (value: number | undefined, low: number, medium: number): Level | null => {
+  if (value === undefined) return null;
+  if (value < low) return "low";
+  if (value <= medium) return "medium";
+  return "high";
+};
+
 export function InteractiveSection() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<FoodCategory | "all">("all");
   const [selectedKcalRange, setSelectedKcalRange] = useState<KcalRange>("all");
+  const [sodiumFilter, setSodiumFilter] = useState<"all" | Level>("all");
   const [selectedFood, setSelectedFood] = useState<FoodItem | null>(null);
   const nutritionDetailRef = useRef<HTMLDivElement>(null);
 
@@ -62,29 +84,39 @@ export function InteractiveSection() {
 
     const { sodium, potassium, phosphorus, calcium, magnesium, zinc } = selectedFood;
 
-    const classify = (value: number | undefined, low: number, medium: number) => {
-      if (value === undefined) return null;
-      if (value < low) return "low";
-      if (value <= medium) return "medium";
-      return "high";
+    const toPercent = (value: number | undefined, daily: number) => {
+      if (value === undefined || !daily) return undefined;
+      return Math.round((value / daily) * 100);
     };
 
     return {
       sodium: {
         value: sodium,
-        level: classify(sodium, 120, 400),
+        level: classifyLevel(sodium, 120, 400),
+        percent: toPercent(sodium, DAILY_INTAKE.sodium),
       },
       potassium: {
         value: potassium,
-        level: classify(potassium, 150, 300),
+        level: classifyLevel(potassium, 150, 300),
+        percent: toPercent(potassium, DAILY_INTAKE.potassium),
       },
       phosphorus: {
         value: phosphorus,
-        level: classify(phosphorus, 100, 200),
+        level: classifyLevel(phosphorus, 100, 200),
+        percent: toPercent(phosphorus, DAILY_INTAKE.phosphorus),
       },
-      calcium,
-      magnesium,
-      zinc,
+      calcium: {
+        value: calcium,
+        percent: toPercent(calcium, DAILY_INTAKE.calcium),
+      },
+      magnesium: {
+        value: magnesium,
+        percent: toPercent(magnesium, DAILY_INTAKE.magnesium),
+      },
+      zinc: {
+        value: zinc,
+        percent: toPercent(zinc, DAILY_INTAKE.zinc),
+      },
     };
   }, [selectedFood]);
 
@@ -93,11 +125,18 @@ export function InteractiveSection() {
 
     const { vitaminA, vitaminC } = selectedFood;
 
+    const toPercent = (value: number | undefined, daily: number) => {
+      if (value === undefined || !daily) return undefined;
+      return Math.round((value / daily) * 100);
+    };
+
     return {
       vitaminA,
       vitaminC,
       isRichInVitaminC: vitaminC !== undefined && vitaminC >= 20,
       isRichInVitaminA: vitaminA !== undefined && vitaminA >= 300,
+      vitaminAPercent: toPercent(vitaminA, DAILY_INTAKE.vitaminA),
+      vitaminCPercent: toPercent(vitaminC, DAILY_INTAKE.vitaminC),
     };
   }, [selectedFood]);
 
@@ -114,11 +153,20 @@ export function InteractiveSection() {
       foods = foods.filter((food) => food.category === selectedCategory);
     }
 
+    // Apply sodium filter (hỗ trợ bệnh tăng huyết áp, tim mạch, thận)
+    if (sodiumFilter !== "all") {
+      foods = foods.filter((food) => {
+        const level = classifyLevel(food.sodium, 120, 400);
+        if (!level) return false;
+        return level === sodiumFilter;
+      });
+    }
+
     // Apply kcal filter
     foods = filterFoodsByKcalRange(foods, selectedKcalRange);
 
     return foods;
-  }, [searchQuery, selectedCategory, selectedKcalRange]);
+  }, [searchQuery, selectedCategory, selectedKcalRange, sodiumFilter]);
 
   const nutritionPer100g = useMemo(() => {
     if (!selectedFood) return null;
@@ -134,6 +182,7 @@ export function InteractiveSection() {
     setSearchQuery("");
     setSelectedCategory("all");
     setSelectedKcalRange("all");
+    setSodiumFilter("all");
     setSelectedFood(null);
     toast.success("Đã làm mới");
   };
@@ -257,7 +306,9 @@ export function InteractiveSection() {
               </label>
               <select
                 value={selectedCategory}
-                onChange={(e) => setSelectedCategory(e.target.value as FoodCategory | "all")}
+                onChange={(e) =>
+                  setSelectedCategory(e.target.value as FoodCategory | "all")
+                }
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               >
                 <option value="all">Tất cả</option>
@@ -276,7 +327,9 @@ export function InteractiveSection() {
               </label>
               <select
                 value={selectedKcalRange}
-                onChange={(e) => setSelectedKcalRange(e.target.value as KcalRange)}
+                onChange={(e) =>
+                  setSelectedKcalRange(e.target.value as KcalRange)
+                }
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               >
                 {kcalRanges.map((range) => (
@@ -284,6 +337,25 @@ export function InteractiveSection() {
                     {range.label}
                   </option>
                 ))}
+              </select>
+            </div>
+
+            {/* Sodium filter */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Natri cho người THA/CKD
+              </label>
+              <select
+                value={sodiumFilter}
+                onChange={(e) =>
+                  setSodiumFilter(e.target.value as "all" | Level)
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              >
+                <option value="all">Tất cả mức natri</option>
+                <option value="low">Thấp (&lt; 120 mg/100g)</option>
+                <option value="medium">Vừa (120–400 mg/100g)</option>
+                <option value="high">Cao (&gt; 400 mg/100g)</option>
               </select>
             </div>
           </div>
@@ -496,9 +568,16 @@ export function InteractiveSection() {
                           {mineralProfile.sodium.value !== undefined && (
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Natri (Na)</span>
-                              <span className="font-medium text-gray-900">
-                                {mineralProfile.sodium.value} mg
-                              </span>
+                              <div className="text-right">
+                                <div className="font-medium text-gray-900">
+                                  {mineralProfile.sodium.value} mg
+                                </div>
+                                {mineralProfile.sodium.percent !== undefined && (
+                                  <div className="text-[11px] text-gray-500">
+                                    ≈ {mineralProfile.sodium.percent}% nhu cầu/ngày
+                                  </div>
+                                )}
+                              </div>
                               {mineralProfile.sodium.level && (
                                 <span
                                   className={`ml-2 inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium ${
@@ -521,9 +600,16 @@ export function InteractiveSection() {
                           {mineralProfile.potassium.value !== undefined && (
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Kali (K)</span>
-                              <span className="font-medium text-gray-900">
-                                {mineralProfile.potassium.value} mg
-                              </span>
+                              <div className="text-right">
+                                <div className="font-medium text-gray-900">
+                                  {mineralProfile.potassium.value} mg
+                                </div>
+                                {mineralProfile.potassium.percent !== undefined && (
+                                  <div className="text-[11px] text-gray-500">
+                                    ≈ {mineralProfile.potassium.percent}% nhu cầu/ngày
+                                  </div>
+                                )}
+                              </div>
                               {mineralProfile.potassium.level && (
                                 <span
                                   className={`ml-2 inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium ${
@@ -546,9 +632,16 @@ export function InteractiveSection() {
                           {mineralProfile.phosphorus.value !== undefined && (
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Phốt pho (P)</span>
-                              <span className="font-medium text-gray-900">
-                                {mineralProfile.phosphorus.value} mg
-                              </span>
+                              <div className="text-right">
+                                <div className="font-medium text-gray-900">
+                                  {mineralProfile.phosphorus.value} mg
+                                </div>
+                                {mineralProfile.phosphorus.percent !== undefined && (
+                                  <div className="text-[11px] text-gray-500">
+                                    ≈ {mineralProfile.phosphorus.percent}% nhu cầu/ngày
+                                  </div>
+                                )}
+                              </div>
                               {mineralProfile.phosphorus.level && (
                                 <span
                                   className={`ml-2 inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium ${
@@ -571,25 +664,46 @@ export function InteractiveSection() {
                           {mineralProfile.calcium !== undefined && (
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Canxi (Ca)</span>
-                              <span className="font-medium text-gray-900">
-                                {mineralProfile.calcium} mg
-                              </span>
+                              <div className="text-right">
+                                <div className="font-medium text-gray-900">
+                                  {mineralProfile.calcium.value} mg
+                                </div>
+                                {mineralProfile.calcium.percent !== undefined && (
+                                  <div className="text-[11px] text-gray-500">
+                                    ≈ {mineralProfile.calcium.percent}% nhu cầu/ngày
+                                  </div>
+                                )}
+                              </div>
                             </div>
                           )}
                           {mineralProfile.magnesium !== undefined && (
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Magie (Mg)</span>
-                              <span className="font-medium text-gray-900">
-                                {mineralProfile.magnesium} mg
-                              </span>
+                              <div className="text-right">
+                                <div className="font-medium text-gray-900">
+                                  {mineralProfile.magnesium.value} mg
+                                </div>
+                                {mineralProfile.magnesium.percent !== undefined && (
+                                  <div className="text-[11px] text-gray-500">
+                                    ≈ {mineralProfile.magnesium.percent}% nhu cầu/ngày
+                                  </div>
+                                )}
+                              </div>
                             </div>
                           )}
                           {mineralProfile.zinc !== undefined && (
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Kẽm (Zn)</span>
-                              <span className="font-medium text-gray-900">
-                                {mineralProfile.zinc} mg
-                              </span>
+                              <div className="text-right">
+                                <div className="font-medium text-gray-900">
+                                  {mineralProfile.zinc.value} mg
+                                </div>
+                                {mineralProfile.zinc.percent !== undefined && (
+                                  <div className="text-[11px] text-gray-500">
+                                    ≈ {mineralProfile.zinc.percent}% nhu cầu/ngày
+                                  </div>
+                                )}
+                              </div>
                             </div>
                           )}
                         </div>
@@ -608,9 +722,16 @@ export function InteractiveSection() {
                             {vitaminProfile.vitaminC !== undefined && (
                               <div className="flex items-center justify-between">
                                 <span className="text-gray-700">Vitamin C</span>
-                                <span className="font-medium text-gray-900">
-                                  {vitaminProfile.vitaminC} mg
-                                </span>
+                                <div className="text-right">
+                                  <div className="font-medium text-gray-900">
+                                    {vitaminProfile.vitaminC} mg
+                                  </div>
+                                  {vitaminProfile.vitaminCPercent !== undefined && (
+                                    <div className="text-[11px] text-gray-500">
+                                      ≈ {vitaminProfile.vitaminCPercent}% nhu cầu/ngày
+                                    </div>
+                                  )}
+                                </div>
                                 {vitaminProfile.isRichInVitaminC && (
                                   <span className="ml-2 inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[11px] font-medium text-emerald-800">
                                     Nguồn tốt vitamin C
@@ -621,9 +742,16 @@ export function InteractiveSection() {
                             {vitaminProfile.vitaminA !== undefined && (
                               <div className="flex items-center justify-between">
                                 <span className="text-gray-700">Vitamin A (RAE)</span>
-                                <span className="font-medium text-gray-900">
-                                  {vitaminProfile.vitaminA} mcg
-                                </span>
+                                <div className="text-right">
+                                  <div className="font-medium text-gray-900">
+                                    {vitaminProfile.vitaminA} mcg
+                                  </div>
+                                  {vitaminProfile.vitaminAPercent !== undefined && (
+                                    <div className="text-[11px] text-gray-500">
+                                      ≈ {vitaminProfile.vitaminAPercent}% nhu cầu/ngày
+                                    </div>
+                                  )}
+                                </div>
                                 {vitaminProfile.isRichInVitaminA && (
                                   <span className="ml-2 inline-flex items-center rounded-full bg-orange-100 px-2 py-0.5 text-[11px] font-medium text-orange-800">
                                     Nguồn tốt vitamin A
@@ -634,6 +762,142 @@ export function InteractiveSection() {
                           </div>
                         </div>
                       )}
+                    </div>
+                  )}
+
+                  {/* Micronutrient table: amount per 100g và % nhu cầu/ngày */}
+                  {(mineralProfile || vitaminProfile) && (
+                    <div>
+                      <h4 className="mt-4 mb-2 text-sm font-semibold text-gray-900">
+                        Vitamin & Khoáng chất (trên 100g thực phẩm)
+                      </h4>
+                      <div className="border border-gray-200 rounded-lg overflow-hidden">
+                        <table className="min-w-full divide-y divide-gray-200">
+                          <thead className="bg-gray-50">
+                            <tr>
+                              <th className="px-4 py-2 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                                Vi chất
+                              </th>
+                              <th className="px-4 py-2 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                                Hàm lượng /100g
+                              </th>
+                              <th className="px-4 py-2 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                                Ước tính % nhu cầu/ngày*
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody className="bg-white divide-y divide-gray-200 text-sm">
+                            {mineralProfile?.sodium.value !== undefined && (
+                              <tr>
+                                <td className="px-4 py-2 text-gray-900">Natri (Na)</td>
+                                <td className="px-4 py-2 text-gray-900">
+                                  {mineralProfile.sodium.value} mg
+                                </td>
+                                <td className="px-4 py-2 text-gray-700">
+                                  {mineralProfile.sodium.percent !== undefined
+                                    ? `${mineralProfile.sodium.percent}%`
+                                    : "—"}
+                                </td>
+                              </tr>
+                            )}
+                            {mineralProfile?.potassium.value !== undefined && (
+                              <tr>
+                                <td className="px-4 py-2 text-gray-900">Kali (K)</td>
+                                <td className="px-4 py-2 text-gray-900">
+                                  {mineralProfile.potassium.value} mg
+                                </td>
+                                <td className="px-4 py-2 text-gray-700">
+                                  {mineralProfile.potassium.percent !== undefined
+                                    ? `${mineralProfile.potassium.percent}%`
+                                    : "—"}
+                                </td>
+                              </tr>
+                            )}
+                            {mineralProfile?.phosphorus.value !== undefined && (
+                              <tr>
+                                <td className="px-4 py-2 text-gray-900">Phốt pho (P)</td>
+                                <td className="px-4 py-2 text-gray-900">
+                                  {mineralProfile.phosphorus.value} mg
+                                </td>
+                                <td className="px-4 py-2 text-gray-700">
+                                  {mineralProfile.phosphorus.percent !== undefined
+                                    ? `${mineralProfile.phosphorus.percent}%`
+                                    : "—"}
+                                </td>
+                              </tr>
+                            )}
+                            {mineralProfile?.calcium.value !== undefined && (
+                              <tr>
+                                <td className="px-4 py-2 text-gray-900">Canxi (Ca)</td>
+                                <td className="px-4 py-2 text-gray-900">
+                                  {mineralProfile.calcium.value} mg
+                                </td>
+                                <td className="px-4 py-2 text-gray-700">
+                                  {mineralProfile.calcium.percent !== undefined
+                                    ? `${mineralProfile.calcium.percent}%`
+                                    : "—"}
+                                </td>
+                              </tr>
+                            )}
+                            {mineralProfile?.magnesium.value !== undefined && (
+                              <tr>
+                                <td className="px-4 py-2 text-gray-900">Magie (Mg)</td>
+                                <td className="px-4 py-2 text-gray-900">
+                                  {mineralProfile.magnesium.value} mg
+                                </td>
+                                <td className="px-4 py-2 text-gray-700">
+                                  {mineralProfile.magnesium.percent !== undefined
+                                    ? `${mineralProfile.magnesium.percent}%`
+                                    : "—"}
+                                </td>
+                              </tr>
+                            )}
+                            {mineralProfile?.zinc.value !== undefined && (
+                              <tr>
+                                <td className="px-4 py-2 text-gray-900">Kẽm (Zn)</td>
+                                <td className="px-4 py-2 text-gray-900">
+                                  {mineralProfile.zinc.value} mg
+                                </td>
+                                <td className="px-4 py-2 text-gray-700">
+                                  {mineralProfile.zinc.percent !== undefined
+                                    ? `${mineralProfile.zinc.percent}%`
+                                    : "—"}
+                                </td>
+                              </tr>
+                            )}
+                            {vitaminProfile?.vitaminC !== undefined && (
+                              <tr>
+                                <td className="px-4 py-2 text-gray-900">Vitamin C</td>
+                                <td className="px-4 py-2 text-gray-900">
+                                  {vitaminProfile.vitaminC} mg
+                                </td>
+                                <td className="px-4 py-2 text-gray-700">
+                                  {vitaminProfile.vitaminCPercent !== undefined
+                                    ? `${vitaminProfile.vitaminCPercent}%`
+                                    : "—"}
+                                </td>
+                              </tr>
+                            )}
+                            {vitaminProfile?.vitaminA !== undefined && (
+                              <tr>
+                                <td className="px-4 py-2 text-gray-900">Vitamin A (RAE)</td>
+                                <td className="px-4 py-2 text-gray-900">
+                                  {vitaminProfile.vitaminA} mcg
+                                </td>
+                                <td className="px-4 py-2 text-gray-700">
+                                  {vitaminProfile.vitaminAPercent !== undefined
+                                    ? `${vitaminProfile.vitaminAPercent}%`
+                                    : "—"}
+                                </td>
+                              </tr>
+                            )}
+                          </tbody>
+                        </table>
+                      </div>
+                      <p className="mt-1 text-[11px] text-gray-500">
+                        *Ước tính so với nhu cầu/ngày của người lớn khỏe mạnh, dùng cho mục đích
+                        giáo dục – không thay thế tư vấn cá nhân hóa.
+                      </p>
                     </div>
                   )}
 
