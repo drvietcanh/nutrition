@@ -391,7 +391,7 @@ export function InteractiveSection() {
                                   }`}>
                                     {item.value}
                                   </span>
-                                  {item.level && (
+                                  {'level' in item && item.level && (
                                     <span className={`ml-2 px-1.5 py-0.5 rounded text-xs ${
                                       item.color === 'red' ? 'bg-red-100 text-red-800' :
                                       item.color === 'yellow' ? 'bg-yellow-100 text-yellow-800' :
@@ -436,7 +436,7 @@ export function InteractiveSection() {
                                 }`}>
                                   {item.value}
                                 </span>
-                                {item.level && (
+                                {'level' in item && item.level && (
                                   <span className={`px-2 py-0.5 rounded text-xs ${
                                     item.color === 'red' ? 'bg-red-100 text-red-800' :
                                     item.color === 'yellow' ? 'bg-yellow-100 text-yellow-800' :
