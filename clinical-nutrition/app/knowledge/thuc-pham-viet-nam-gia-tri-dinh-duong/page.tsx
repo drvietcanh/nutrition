@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Apple, CheckCircle, Leaf, Fish, Wheat } from "lucide-react";
+import { Apple, CheckCircle, Leaf, Fish, Wheat, UtensilsCrossed } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
