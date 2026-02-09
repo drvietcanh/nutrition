@@ -32,8 +32,8 @@ export type NutrientKey =
 export interface NutrientReference {
   /** Daily recommended amount (adult), in base unit below */
   value: number;
-  /** Base unit for `value` (kcal, g, mg, µg IU-equivalent for vitamin A) */
-  unit: "kcal" | "g" | "mg" | "µg";
+  /** Base unit for `value` (kcal, g, mg, µg, hoặc IU cho một số vitamin) */
+  unit: "kcal" | "g" | "mg" | "µg" | "IU";
   /** Short label to show next to % (optional) */
   label?: string;
 }
