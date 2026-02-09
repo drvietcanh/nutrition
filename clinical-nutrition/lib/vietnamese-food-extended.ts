@@ -43,7 +43,7 @@ export interface DiseaseSpecificInfo {
 export interface ExtendedFoodItem extends Omit<FoodItem, 'code'>, DiseaseSpecificInfo {
   // Đơn vị Việt Nam
   vietnameseUnits?: {
-    unit: 'bat' | 'thia-canh' | 'thia-ca-phe' | 'dia' | 'to' | 'cai' | 'qua' | 'mieng';
+    unit: 'bat' | 'thia-canh' | 'thia-ca-phe' | 'dia' | 'to' | 'cai' | 'qua' | 'mieng' | 'bo';
     weight: number; // grams
     description: string;
   }[];
