@@ -39,6 +39,31 @@ export function InteractiveSection() {
   const [filterLevel, setFilterLevel] = useState<'all' | 'good' | 'moderate' | 'poor'>('all');
   const [selectedDish, setSelectedDish] = useState<VietnameseDish | null>(null);
 
+  const macroDistribution = useMemo(() => {
+    if (!selectedDish) return null;
+
+    const { calories, protein, carbs, fat } = selectedDish.nutrition;
+    const proteinKcal = protein * 4;
+    const carbKcal = carbs * 4;
+    const fatKcal = fat * 9;
+    const totalCalories = calories || proteinKcal + carbKcal + fatKcal;
+
+    if (!totalCalories) return null;
+
+    const toPercent = (value: number) =>
+      Math.round((value / totalCalories) * 100);
+
+    return {
+      totalCalories,
+      proteinKcal,
+      carbKcal,
+      fatKcal,
+      proteinPercent: toPercent(proteinKcal),
+      carbPercent: toPercent(carbKcal),
+      fatPercent: toPercent(fatKcal),
+    };
+  }, [selectedDish]);
+
   const filteredDishes = useMemo(() => {
     let dishes = searchDishes(searchQuery);
 
@@ -319,37 +344,88 @@ export function InteractiveSection() {
 
                 {/* Nutrition */}
                 <div>
-                  <h4 className="font-semibold text-sm text-gray-900 mb-2">Dinh dưỡng (khẩu phần thông thường)</h4>
+                  <h4 className="font-semibold text-sm text-gray-900 mb-2">
+                    Dinh dưỡng (khẩu phần thông thường)
+                  </h4>
                   <div className="grid grid-cols-2 gap-2 text-sm">
                     <div>
                       <span className="text-gray-600">Calories:</span>{' '}
-                      <span className="font-medium">{selectedDish.nutrition.calories} kcal</span>
+                      <span className="font-medium">
+                        {selectedDish.nutrition.calories} kcal
+                      </span>
                     </div>
                     <div>
                       <span className="text-gray-600">Đạm:</span>{' '}
-                      <span className="font-medium">{selectedDish.nutrition.protein}g</span>
+                      <span className="font-medium">
+                        {selectedDish.nutrition.protein}g
+                      </span>
                     </div>
                     <div>
                       <span className="text-gray-600">Carb:</span>{' '}
-                      <span className="font-medium">{selectedDish.nutrition.carbs}g</span>
+                      <span className="font-medium">
+                        {selectedDish.nutrition.carbs}g
+                      </span>
                     </div>
                     <div>
                       <span className="text-gray-600">Chất béo:</span>{' '}
-                      <span className="font-medium">{selectedDish.nutrition.fat}g</span>
+                      <span className="font-medium">
+                        {selectedDish.nutrition.fat}g
+                      </span>
                     </div>
-                    {selectedDish.nutrition.fiber && (
+                    {selectedDish.nutrition.fiber !== undefined && (
                       <div>
                         <span className="text-gray-600">Chất xơ:</span>{' '}
-                        <span className="font-medium">{selectedDish.nutrition.fiber}g</span>
+                        <span className="font-medium">
+                          {selectedDish.nutrition.fiber}g
+                        </span>
                       </div>
                     )}
-                    {selectedDish.nutrition.sodium && (
+                    {selectedDish.nutrition.sodium !== undefined && (
                       <div>
                         <span className="text-gray-600">Natri:</span>{' '}
-                        <span className="font-medium">{selectedDish.nutrition.sodium}mg</span>
+                        <span className="font-medium">
+                          {selectedDish.nutrition.sodium}mg
+                        </span>
                       </div>
                     )}
                   </div>
+
+                  {macroDistribution && (
+                    <div className="mt-3 border-t border-dashed border-gray-200 pt-3">
+                      <h5 className="text-xs font-semibold text-gray-700 mb-2">
+                        Phân bố năng lượng ước tính
+                      </h5>
+                      <div className="grid grid-cols-3 gap-2 text-xs">
+                        <div className="rounded-md bg-blue-50 px-2 py-1.5">
+                          <div className="text-[11px] text-gray-600">Từ đạm</div>
+                          <div className="font-semibold text-gray-900">
+                            ~{macroDistribution.proteinPercent}%{' '}
+                            <span className="text-[11px] text-gray-500">
+                              ({macroDistribution.proteinKcal} kcal)
+                            </span>
+                          </div>
+                        </div>
+                        <div className="rounded-md bg-green-50 px-2 py-1.5">
+                          <div className="text-[11px] text-gray-600">Từ carb</div>
+                          <div className="font-semibold text-gray-900">
+                            ~{macroDistribution.carbPercent}%{' '}
+                            <span className="text-[11px] text-gray-500">
+                              ({macroDistribution.carbKcal} kcal)
+                            </span>
+                          </div>
+                        </div>
+                        <div className="rounded-md bg-yellow-50 px-2 py-1.5">
+                          <div className="text-[11px] text-gray-600">Từ chất béo</div>
+                          <div className="font-semibold text-gray-900">
+                            ~{macroDistribution.fatPercent}%{' '}
+                            <span className="text-[11px] text-gray-500">
+                              ({macroDistribution.fatKcal} kcal)
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Disease Assessment */}
