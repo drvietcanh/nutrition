@@ -91,7 +91,7 @@ if start_pos in processed_positions:
 
 ## So Sánh Hiệu Suất
 
-| Phiên Bản | Thời Gian (280 files) | Tốc Độ |
+| Phiên bản | Thời Gian (280 files) | Tốc độ |
 |-----------|----------------------|--------|
 | Gốc | ~2-3 giây | 1x |
 | Optimized | ~1-1.5 giây | 2x |
