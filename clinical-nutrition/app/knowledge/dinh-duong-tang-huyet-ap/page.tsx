@@ -370,12 +370,12 @@ export default function DinhDuongTangHuyetApPage() {
                   <tbody className="bg-white divide-y divide-neutral-200">
                     <tr>
                       <td className="px-4 py-3 text-sm text-neutral-700"><strong>Hầu hết rau củ quả tươi</strong></td>
-                      <td className="px-4 py-3 text-sm text-neutral-700 text-center"><10</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt;10</td>
                       <td className="px-4 py-3 text-sm text-neutral-700">Rau muống, rau cải, cà chua, dưa chuột...</td>
                     </tr>
                     <tr className="bg-neutral-50">
                       <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trái cây tươi</strong></td>
-                      <td className="px-4 py-3 text-sm text-neutral-700 text-center"><10</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt;10</td>
                       <td className="px-4 py-3 text-sm text-neutral-700">Chuối, cam, táo, ổi...</td>
                     </tr>
                     <tr>

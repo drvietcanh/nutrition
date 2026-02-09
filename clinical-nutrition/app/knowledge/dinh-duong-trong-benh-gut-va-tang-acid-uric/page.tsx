@@ -305,7 +305,7 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
                   <tbody className="bg-white divide-y divide-neutral-200">
                     <tr>
                       <td className="px-4 py-3 text-sm text-neutral-700"><strong>Hầu hết rau củ quả</strong></td>
-                      <td className="px-4 py-3 text-sm text-neutral-700 text-center"><50</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt;50</td>
                       <td className="px-4 py-3 text-sm text-neutral-700">Rau muống, rau cải, cà chua, dưa chuột...</td>
                     </tr>
                     <tr className="bg-neutral-50">

@@ -325,7 +325,7 @@ export default function CKDNutritionPage() {
               </p>
 
               {/* Very High Potassium */}
-              <h4 className="heading-5 mb-2 mt-4">🔴 Rất Cao (>300mg/100g) - Hạn chế Nghiêm ngặt khi Kali Máu Tăng</h4>
+              <h4 className="heading-5 mb-2 mt-4">🔴 Rất Cao (&gt;300mg/100g) - Hạn chế Nghiêm ngặt khi Kali Máu Tăng</h4>
               <div className="overflow-x-auto my-3">
                 <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
                   <thead className="bg-red-100">
@@ -407,7 +407,7 @@ export default function CKDNutritionPage() {
               </div>
 
               {/* Low Potassium */}
-              <h4 className="heading-5 mb-2 mt-4">🟢 Thấp (<100mg/100g) - Ăn Tự do</h4>
+              <h4 className="heading-5 mb-2 mt-4">🟢 Thấp (&lt;100mg/100g) - Ăn Tự do</h4>
               <div className="overflow-x-auto my-3">
                 <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
                   <thead className="bg-green-100">
