@@ -62,6 +62,16 @@ const toolsItems: NavItem[] = [
     href: "/tools/micronutrient-assessment",
     icon: Pill,
   },
+  {
+    label: "Cơ sở Dữ liệu Thực phẩm",
+    href: "/tools/food-database",
+    icon: UtensilsCrossed,
+  },
+  {
+    label: "Tra cứu Nhanh Thực phẩm",
+    href: "/tools/quick-lookup",
+    icon: UtensilsCrossed,
+  },
 ];
 
 interface DropdownMenuProps {
