@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 
 interface PDFExportButtonProps {
   elementId?: string;
-  elementRef?: React.RefObject<HTMLElement>;
+  elementRef?: React.RefObject<HTMLElement | null>;
   title?: string;
   filename?: string;
   className?: string;
