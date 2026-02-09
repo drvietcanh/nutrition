@@ -5,7 +5,6 @@ import { Search, RefreshCw, CheckCircle, AlertCircle, Info, ArrowRight } from "l
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import {
   searchExtendedFoods,
-  getFoodsByCategory,
   extendedFoodDatabase,
   type ExtendedFoodItem,
 } from "../../../lib/vietnamese-food-extended";
