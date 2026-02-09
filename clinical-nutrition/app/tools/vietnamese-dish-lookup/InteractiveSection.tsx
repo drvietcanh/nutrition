@@ -397,14 +397,14 @@ export function InteractiveSection() {
                       return (
                         <div className="space-y-2">
                           <div className={`p-3 rounded-lg border-2 ${
-                            assessment.assessment === 'good' || assessment.assessment === 'excellent' 
+                            assessment.assessment === 'good'
                               ? 'bg-green-50 border-green-200' 
                               : assessment.assessment === 'moderate'
                               ? 'bg-yellow-50 border-yellow-200'
                               : 'bg-red-50 border-red-200'
                           }`}>
                             <div className="flex items-center gap-2 mb-2">
-                              {assessment.assessment === 'good' || assessment.assessment === 'excellent' ? (
+                              {assessment.assessment === 'good' ? (
                                 <CheckCircle className="w-5 h-5 text-green-600" />
                               ) : assessment.assessment === 'moderate' ? (
                                 <Info className="w-5 h-5 text-yellow-600" />
@@ -412,7 +412,7 @@ export function InteractiveSection() {
                                 <AlertCircle className="w-5 h-5 text-red-600" />
                               )}
                               <span className={`font-semibold ${
-                                assessment.assessment === 'good' || assessment.assessment === 'excellent'
+                                assessment.assessment === 'good'
                                   ? 'text-green-900'
                                   : assessment.assessment === 'moderate'
                                   ? 'text-yellow-900'
