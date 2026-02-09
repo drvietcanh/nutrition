@@ -11,6 +11,12 @@ import toast from "react-hot-toast";
 
 type DiseaseType = 'diabetes' | 'gout' | 'kidney' | 'hypertension' | 'cardiovascular';
 
+// Type for assessment result with optional suitability
+type DiseaseAssessment = {
+  suitability?: 'good' | 'moderate' | 'poor';
+  [key: string]: any;
+} | null;
+
 const diseases: { value: DiseaseType; label: string; icon: string }[] = [
   { value: 'diabetes', label: 'Đái tháo đường', icon: '🩺' },
   { value: 'gout', label: 'Bệnh gút', icon: '🦴' },
@@ -56,14 +62,14 @@ export function InteractiveSection() {
     return 'poor';
   };
 
-  const getDiseaseAssessment = (food: ExtendedFoodItem) => {
+  const getDiseaseAssessment = (food: ExtendedFoodItem): DiseaseAssessment => {
     switch (selectedDisease) {
       case 'diabetes':
-        return food.diabetes;
+        return food.diabetes as DiseaseAssessment;
       case 'gout':
-        return food.gout;
+        return food.gout as DiseaseAssessment;
       case 'kidney':
-        return food.kidney;
+        return food.kidney as DiseaseAssessment;
       case 'hypertension':
         // Sodium is already in FoodItem, return object with sodium and suitability
         return food.sodium !== undefined 
@@ -73,7 +79,7 @@ export function InteractiveSection() {
             } 
           : null;
       case 'cardiovascular':
-        return food.cardiovascular;
+        return food.cardiovascular as DiseaseAssessment;
       default:
         return null;
     }
