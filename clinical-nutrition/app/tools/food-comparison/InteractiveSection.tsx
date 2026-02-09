@@ -49,6 +49,13 @@ export function InteractiveSection() {
     toast.success('Đã xóa');
   };
 
+  const getSuitabilityForHypertension = (sodium: number | undefined): 'good' | 'moderate' | 'poor' | undefined => {
+    if (sodium === undefined) return undefined;
+    if (sodium < 100) return 'good';
+    if (sodium <= 400) return 'moderate';
+    return 'poor';
+  };
+
   const getDiseaseAssessment = (food: ExtendedFoodItem) => {
     switch (selectedDisease) {
       case 'diabetes':
@@ -58,8 +65,13 @@ export function InteractiveSection() {
       case 'kidney':
         return food.kidney;
       case 'hypertension':
-        // Sodium is already in FoodItem, return object with sodium for consistency
-        return food.sodium !== undefined ? { sodium: food.sodium } : null;
+        // Sodium is already in FoodItem, return object with sodium and suitability
+        return food.sodium !== undefined 
+          ? { 
+              sodium: food.sodium, 
+              suitability: getSuitabilityForHypertension(food.sodium) 
+            } 
+          : null;
       case 'cardiovascular':
         return food.cardiovascular;
       default:
