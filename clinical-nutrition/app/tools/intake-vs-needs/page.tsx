@@ -96,7 +96,7 @@ export default function IntakeVsNeedsPage() {
       {/* 1. Title + short explanation */}
       <header className="space-y-2">
         <h1 className="heading-1">
-          Lượng ăn vs Nhu cầu ước tính – Công cụ Giảng dạy
+          Lượng ăn vs Nhu cầu ước tính – Công cụ giảng dạy
         </h1>
         <p className="text-body-sm">
           Trang này so sánh một <strong>ước tính giáo dục</strong> về nhu cầu năng lượng
@@ -328,7 +328,7 @@ function IntakeInput({ state, onChange, onCompare }: IntakeInputProps) {
         4. Lượng ăn vào hàng ngày gần đúng trong một khoảng thời gian gần đây
       </h2>
       <p className="text-sm text-neutral-700 sm:text-base">
-        Sử dụng thông tin tốt nhất có sẵn (ví dụ: lượng ăn vào qua đường miệng đã ghi chép,
+        sử dụng thông tin tốt nhất có sẵn (ví dụ: lượng ăn vào qua đường miệng đã ghi chép,
         hồ sơ hỗ trợ dinh dưỡng, hoặc nhớ lại 24 giờ). Các giá trị này là
         ước tính giáo dục, không phải tài liệu pháp lý.
       </p>

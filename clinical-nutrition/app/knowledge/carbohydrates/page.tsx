@@ -10,7 +10,7 @@ import { Wheat, TrendingUp, Lightbulb, CheckCircle2, AlertCircle, XCircle } from
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Carbohydrate (Tinh bột và Đường) trong Dinh dưỡng lâm sàng",
+  title: "Carbohydrate (tinh bột và đường) trong Dinh dưỡng lâm sàng",
   description:
     "Hiểu về carbohydrate - nguồn năng lượng chính của cơ thể, các loại carbohydrate, vai trò, và cách chọn lựa đúng cho sức khỏe.",
   keywords: [
@@ -30,7 +30,7 @@ export default function CarbohydratesPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Carbohydrate (Tinh bột và Đường)" },
+          { label: "Carbohydrate (tinh bột và đường)" },
         ]}
       />
 
@@ -38,7 +38,7 @@ export default function CarbohydratesPage() {
         <div className="flex items-center gap-3">
           <Wheat className="w-8 h-8 text-amber-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Carbohydrate (Tinh bột và Đường) trong Dinh dưỡng lâm sàng
+            Carbohydrate (tinh bột và đường) trong Dinh dưỡng lâm sàng
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">
@@ -135,7 +135,7 @@ export default function CarbohydratesPage() {
         <h2 className="heading-2">Không phải tinh bột nào cũng giống nhau</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card className="border-yellow-200 bg-yellow-50/30">
-            <h3 className="heading-4 mb-3 text-yellow-900">Tinh bột Tinh chế</h3>
+            <h3 className="heading-4 mb-3 text-yellow-900">Tinh bột tinh chế</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• <strong>Dễ làm đường huyết tăng nhanh</strong> - không tốt cho sức khỏe</li>
               <li>• Ít chất xơ, ít dinh dưỡng</li>
@@ -147,7 +147,7 @@ export default function CarbohydratesPage() {
           </Card>
 
           <Card className="border-green-200 bg-green-50/30">
-            <h3 className="heading-4 mb-3 text-green-900">Tinh bột Nguyên cám</h3>
+            <h3 className="heading-4 mb-3 text-green-900">Tinh bột nguyên cám</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• <strong>Tăng đường huyết chậm hơn</strong> - tốt cho sức khỏe</li>
               <li>• <strong>No lâu hơn</strong> - có nhiều chất xơ</li>
@@ -189,37 +189,37 @@ export default function CarbohydratesPage() {
             <tbody className="bg-white divide-y divide-neutral-200">
               <tr>
                 <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cơm trắng</strong></td>
-                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Tinh chế</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">tinh chế</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Tăng nhanh</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700">Ăn nhiều dễ tăng đường</td>
               </tr>
               <tr className="bg-neutral-50">
                 <td className="px-4 py-3 text-sm text-neutral-700"><strong>Gạo lứt</strong></td>
-                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nguyên cám</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">nguyên cám</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Tăng chậm hơn</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700">Cần kiểm soát lượng</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bún</strong></td>
-                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Tinh chế</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">tinh chế</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Tăng nhanh</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700">Ít chất xơ</td>
               </tr>
               <tr className="bg-neutral-50">
                 <td className="px-4 py-3 text-sm text-neutral-700"><strong>Phở</strong></td>
-                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Tinh chế</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">tinh chế</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Trung bình</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700">Phụ thuộc lượng bánh</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh mì trắng</strong></td>
-                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Tinh chế</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">tinh chế</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-red-600 font-medium">Tăng nhanh</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700">Nhanh đói</td>
               </tr>
               <tr className="bg-neutral-50">
                 <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh mì nguyên cám</strong></td>
-                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">Nguyên cám</span></td>
+                <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-green-600 font-medium">nguyên cám</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700 text-center"><span className="text-yellow-600 font-medium">Chậm hơn</span></td>
                 <td className="px-4 py-3 text-sm text-neutral-700">Tốt hơn bánh mì trắng</td>
               </tr>
@@ -507,7 +507,7 @@ export default function CarbohydratesPage() {
 
       {/* How much Sugar */}
       <section className="space-y-4">
-        <h2 className="heading-2">Ăn đường bao nhiêu là Hợp lý?</h2>
+        <h2 className="heading-2">Ăn đường bao nhiêu là hợp lý?</h2>
         <Card className="border-blue-200 bg-blue-50/30">
           <div className="space-y-3">
             <p className="text-body">
@@ -576,7 +576,7 @@ export default function CarbohydratesPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Ví dụ Cách giảm đường</h3>
+          <h3 className="heading-4 mb-3">Ví dụ cách giảm đường</h3>
           <div className="space-y-3">
             <div className="border-l-4 border-red-500 pl-4">
               <p className="font-medium text-gray-900 mb-1">❌ Trước:</p>
@@ -637,7 +637,7 @@ export default function CarbohydratesPage() {
 
       {/* Application in Vietnamese meals */}
       <section className="space-y-4">
-        <h2 className="heading-2">Áp dụng trong Bữa ăn Việt Nam</h2>
+        <h2 className="heading-2">Áp dụng trong bữa ăn Việt Nam</h2>
         <Card className="border-green-200 bg-green-50/30">
           <h3 className="heading-4 mb-3">Nguyên tắc cơ bản</h3>
           <div className="space-y-3">
@@ -705,9 +705,9 @@ export default function CarbohydratesPage() {
 
       {/* Portion examples */}
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Khẩu phần Carbohydrate</h2>
+        <h2 className="heading-2">Ví dụ khẩu phần Carbohydrate</h2>
             <PortionSizeGuide
-              title="Khẩu phần Carbohydrate phổ biến"
+              title="khẩu phần Carbohydrate phổ biến"
               items={[
                 { food: "Cơm trắng (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~200 calo, 45g carb" },
                 { food: "Gạo lứt (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~200 calo, 45g carb" },
@@ -840,7 +840,7 @@ export default function CarbohydratesPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Hoạt động Thể chất</h3>
+            <h3 className="heading-4 mb-3">Hoạt động thể chất</h3>
             <p className="text-body">
               Carbohydrate là nguồn năng lượng chính cho hoạt động thể chất. 
               Người vận động nhiều có thể cần nhiều carbohydrate hơn, nhưng vẫn nên 
@@ -888,7 +888,7 @@ export default function CarbohydratesPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan về các Chất dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan về các chất dinh dưỡng đa lượng</h3>
             <p className="text-sm text-gray-600">
               Carbohydrate trong tổng thể dinh dưỡng
             </p>

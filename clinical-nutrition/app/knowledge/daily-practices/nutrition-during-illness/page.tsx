@@ -293,7 +293,7 @@ export default function NutritionDuringIllnessPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/hydration">
-            <h3 className="heading-5 mb-2">Hydration: Nước và Dịch</h3>
+            <h3 className="heading-5 mb-2">Hydration: Nước và dịch</h3>
             <p className="text-sm text-gray-600">
               Giữ nước quan trọng khi bị bệnh
             </p>

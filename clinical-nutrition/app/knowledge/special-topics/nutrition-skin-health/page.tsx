@@ -366,13 +366,13 @@ export default function NutritionSkinHealthPage() {
             </p>
           </Card>
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Omega-3 và chất béo tốt cho da
             </p>
           </Card>
           <Card href="/knowledge/hydration">
-            <h3 className="heading-5 mb-2">Hydration: Nước và Dịch</h3>
+            <h3 className="heading-5 mb-2">Hydration: Nước và dịch</h3>
             <p className="text-sm text-gray-600">
               Nước giữ ẩm da từ bên trong
             </p>

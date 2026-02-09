@@ -48,7 +48,7 @@ const toolsItems: NavItem[] = [
     icon: Ruler,
   },
   {
-    label: "Nhu cầu Dịch",
+    label: "Nhu cầu dịch",
     href: "/tools/fluid-requirements",
     icon: Droplet,
   },

@@ -282,7 +282,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Trường hợp Sử dụng Điển hình
+              Trường hợp sử dụng Điển hình
             </h3>
             <ul className="list-disc space-y-2 pl-6 text-base text-neutral-700">
               <li>
@@ -324,7 +324,7 @@ export default function AssessmentProcessPage() {
                 những công cụ chỉ dựa vào đo lường khách quan.
               </li>
               <li>
-                <strong>Sử dụng công cụ sai cho môi trường</strong>: Một số công cụ hoạt động tốt hơn ở một số quần thể nhất định. Chọn công cụ đã được xác thực
+                <strong>sử dụng công cụ sai cho môi trường</strong>: Một số công cụ hoạt động tốt hơn ở một số quần thể nhất định. Chọn công cụ đã được xác thực
                 cho quần thể bệnh nhân và môi trường của bạn.
               </li>
             </ul>
@@ -575,7 +575,7 @@ export default function AssessmentProcessPage() {
 
             <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
               <p className="text-sm font-semibold text-neutral-900 mb-2">
-                Ví dụ lâm sàng 1: Dịch vụ Bữa ăn Bệnh viện
+                Ví dụ lâm sàng 1: dịch vụ Bữa ăn Bệnh viện
               </p>
               <p className="text-sm text-neutral-700 mb-2">
                 Một bệnh nhân được kê đơn "chế độ ăn thường" ước tính cung cấp ~1.800 kcal/ngày. Tuy nhiên:
@@ -1001,7 +1001,7 @@ export default function AssessmentProcessPage() {
               <strong>thực tế</strong>: Công thức cung cấp ước tính, không phải yêu cầu chính xác. Các phương pháp khác nhau tạo ra các con số khác nhau, và đó là bình thường.
             </p>
             <p className="text-sm text-amber-800">
-              Sử dụng công thức để cấu trúc tư duy, sau đó điều chỉnh dựa trên phán đoán lâm sàng và phản ứng bệnh nhân.
+              sử dụng công thức để cấu trúc tư duy, sau đó điều chỉnh dựa trên phán đoán lâm sàng và phản ứng bệnh nhân.
             </p>
           </div>
 
@@ -1135,7 +1135,7 @@ export default function AssessmentProcessPage() {
               <li>Chúng không thể phối hợp với nhóm đa ngành</li>
             </ul>
             <p className="text-sm text-amber-800 mt-2">
-              Đánh giá lâm sàng toàn diện đòi hỏi tất cả các yếu tố này. Sử dụng công cụ trực tuyến để <strong>học và thực hành</strong>,
+              Đánh giá lâm sàng toàn diện đòi hỏi tất cả các yếu tố này. sử dụng công cụ trực tuyến để <strong>học và thực hành</strong>,
               không phải để thay thế đánh giá lâm sàng chuyên nghiệp.
             </p>
           </div>
@@ -1145,7 +1145,7 @@ export default function AssessmentProcessPage() {
               Khi nào Tìm kiếm Hỗ trợ Chuyên nghiệp
             </h3>
             <p className="text-sm text-amber-800 mb-2">
-              Tham khảo với nhà cung cấp y tế có trình độ hoặc chuyên gia dinh dưỡng đã đăng ký nếu:
+              tham khảo với nhà cung cấp y tế có trình độ hoặc chuyên gia dinh dưỡng đã đăng ký nếu:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-amber-800">
               <li>Sàng lọc gợi ý nguy cơ dinh dưỡng trung bình hoặc cao</li>
@@ -1210,10 +1210,10 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-3 text-blue-900">
-              Sử dụng Các công cụ Theo trình tự
+              sử dụng Các công cụ Theo trình tự
             </h3>
             <p className="text-sm text-blue-800 mb-3">
-              Các công cụ được thiết kế để hoạt động cùng nhau, theo trình tự đánh giá bạn đã học. Sử dụng chúng theo thứ tự giúp bạn
+              Các công cụ được thiết kế để hoạt động cùng nhau, theo trình tự đánh giá bạn đã học. sử dụng chúng theo thứ tự giúp bạn
               thấy cách mỗi bước xây dựng trên bước trước:
             </p>
             <div className="grid gap-4 sm:grid-cols-3">
@@ -1291,7 +1291,7 @@ export default function AssessmentProcessPage() {
           </p>
           <p className="text-sm text-blue-800">
             Hãy dành thời gian khám phá các công cụ này. Không có gấp gáp, và không có câu trả lời "đúng" hoặc "sai"—đây là công cụ học tập,
-            không phải bài kiểm tra. Sử dụng chúng để thực hành tư duy qua các tình huống đánh giá và để đào sâu hiểu biết của bạn về các khái niệm.
+            không phải bài kiểm tra. sử dụng chúng để thực hành tư duy qua các tình huống đánh giá và để đào sâu hiểu biết của bạn về các khái niệm.
             Nếu bạn có câu hỏi hoặc muốn thảo luận những gì bạn đang học, hãy cân nhắc nói chuyện với người cố vấn, đồng nghiệp, hoặc người hướng dẫn.
           </p>
         </div>
@@ -1336,7 +1336,7 @@ export default function AssessmentProcessPage() {
             </CardContent>
           </Card>
           <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardHeader icon={CheckCircle} title="Nhu cầu dịch" />
             <CardContent>
               <p className="text-body-sm">
                 Tính nhu cầu dịch hàng ngày với các điều chỉnh lâm sàng.

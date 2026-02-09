@@ -302,7 +302,7 @@ export default function NutritionBoneHealthPage() {
               không hút thuốc, hạn chế rượu.
             </p>
             <p>
-              <strong>Nếu có nguy cơ:</strong> Tham khảo bác sĩ về bổ sung calcium và vitamin D, 
+              <strong>Nếu có nguy cơ:</strong> tham khảo bác sĩ về bổ sung calcium và vitamin D, 
               và kiểm tra mật độ xương.
             </p>
           </div>

@@ -42,7 +42,7 @@ const toolsIndex: SearchResult[] = [
     description: "Tính BMI, IBW, ABW, BSA",
   },
   {
-    title: "Nhu cầu Dịch",
+    title: "Nhu cầu dịch",
     href: "/tools/fluid-requirements",
     category: "tool",
     description: "Tính nhu cầu dịch hàng ngày",

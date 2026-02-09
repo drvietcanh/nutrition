@@ -519,6 +519,123 @@ def fix_file(file_path):
             
             # Pattern: "Là Ước tính" → "là ước tính" (khi không phải đầu câu)
             (r'Là Ước tính', 'là ước tính'),
+            
+            # Pattern: "Tinh bột và Đường" → "tinh bột và đường" (khi không phải đầu câu)
+            (r'Tinh bột và Đường', 'tinh bột và đường'),
+            
+            # Pattern: "Tinh chế" → "tinh chế" (khi không phải đầu câu)
+            (r'Tinh chế', 'tinh chế'),
+            
+            # Pattern: "Nguyên cám" → "nguyên cám" (khi không phải đầu câu)
+            (r'Nguyên cám', 'nguyên cám'),
+            
+            # Pattern: "Hợp lý" → "hợp lý" (khi không phải đầu câu)
+            (r'Hợp lý', 'hợp lý'),
+            
+            # Pattern: "Ví dụ Cách giảm đường" → "Ví dụ cách giảm đường"
+            (r'Ví dụ Cách giảm đường', 'Ví dụ cách giảm đường'),
+            
+            # Pattern: "Áp dụng trong Bữa ăn" → "Áp dụng trong bữa ăn"
+            (r'Áp dụng trong Bữa ăn', 'Áp dụng trong bữa ăn'),
+            
+            # Pattern: "Khẩu phần" → "khẩu phần" (khi không phải đầu câu)
+            (r'Khẩu phần', 'khẩu phần'),
+            
+            # Pattern: "Thể chất" → "thể chất" (khi không phải đầu câu)
+            (r'Thể chất', 'thể chất'),
+            
+            # Pattern: "các Chất dinh dưỡng Đa lượng" → "các chất dinh dưỡng đa lượng"
+            (r'các Chất dinh dưỡng Đa lượng', 'các chất dinh dưỡng đa lượng'),
+            
+            # Pattern: "Chất dinh dưỡng Đa lượng" → "chất dinh dưỡng đa lượng" (khi không phải đầu câu)
+            (r'Chất dinh dưỡng Đa lượng', 'chất dinh dưỡng đa lượng'),
+            
+            # Pattern: "trong Chế độ ăn" → "trong chế độ ăn"
+            (r'trong Chế độ ăn', 'trong chế độ ăn'),
+            
+            # Pattern: "nguồn Chất béo Phổ biến" → "nguồn chất béo phổ biến"
+            (r'nguồn Chất béo Phổ biến', 'nguồn chất béo phổ biến'),
+            
+            # Pattern: "Chất béo Không bão hòa" → "Chất béo không bão hòa"
+            (r'Chất béo Không bão hòa', 'Chất béo không bão hòa'),
+            
+            # Pattern: "Nên tránh Hoàn toàn" → "Nên tránh hoàn toàn"
+            (r'Nên tránh Hoàn toàn', 'Nên tránh hoàn toàn'),
+            
+            # Pattern: "Vì sao Dinh dưỡng Quan trọng" → "Vì sao dinh dưỡng quan trọng"
+            (r'Vì sao Dinh dưỡng Quan trọng', 'Vì sao dinh dưỡng quan trọng'),
+            
+            # Pattern: "Tài liệu Tham khảo & Hướng dẫn" → "Tài liệu tham khảo & Hướng dẫn"
+            (r'Tài liệu Tham khảo & Hướng dẫn', 'Tài liệu tham khảo & Hướng dẫn'),
+            
+            # Pattern: "Nhu cầu Dịch – Công cụ Giảng dạy" → "Nhu cầu dịch – Công cụ giảng dạy"
+            (r'Nhu cầu Dịch – Công cụ Giảng dạy', 'Nhu cầu dịch – Công cụ giảng dạy'),
+            
+            # Pattern: "Hướng dẫn Sử dụng" → "Hướng dẫn sử dụng"
+            (r'Hướng dẫn Sử dụng', 'Hướng dẫn sử dụng'),
+            
+            # Pattern: "Những điều Cần tránh" → "Những điều cần tránh"
+            (r'Những điều Cần tránh', 'Những điều cần tránh'),
+            
+            # Pattern: "Canh Việt Nam và Dinh dưỡng" → "Canh Việt Nam và dinh dưỡng"
+            (r'Canh Việt Nam và Dinh dưỡng', 'Canh Việt Nam và dinh dưỡng'),
+            
+            # Pattern: "Các loại Canh Việt Nam Phổ biến" → "Các loại Canh Việt Nam phổ biến"
+            (r'Các loại Canh Việt Nam Phổ biến', 'Các loại Canh Việt Nam phổ biến'),
+            
+            # Pattern: "Hoạt động Thể chất" → "Hoạt động thể chất"
+            (r'Hoạt động Thể chất', 'Hoạt động thể chất'),
+            
+            # Pattern: "Tinh bột Tinh chế" → "Tinh bột tinh chế"
+            (r'Tinh bột Tinh chế', 'Tinh bột tinh chế'),
+            
+            # Pattern: "Tinh bột Nguyên cám" → "Tinh bột nguyên cám"
+            (r'Tinh bột Nguyên cám', 'Tinh bột nguyên cám'),
+            
+            # Pattern: "Đa lượng" → "đa lượng" (khi không phải đầu câu)
+            (r'Đa lượng', 'đa lượng'),
+            
+            # Pattern: "Không bão hòa" → "không bão hòa" (khi không phải đầu câu)
+            (r'Không bão hòa', 'không bão hòa'),
+            
+            # Pattern: "Hoàn toàn" → "hoàn toàn" (khi không phải đầu câu)
+            (r'Hoàn toàn', 'hoàn toàn'),
+            
+            # Pattern: "Tham khảo" → "tham khảo" (khi không phải đầu câu)
+            (r'Tham khảo', 'tham khảo'),
+            
+            # Pattern: "Giảng dạy" → "giảng dạy" (khi không phải đầu câu)
+            (r'Giảng dạy', 'giảng dạy'),
+            
+            # Pattern: "Sử dụng" → "sử dụng" (khi không phải đầu câu)
+            (r'Sử dụng', 'sử dụng'),
+            
+            # Pattern: "Nhu cầu Dịch" → "Nhu cầu dịch" (trừ khi là tên tool riêng)
+            (r'Nhu cầu Dịch', 'Nhu cầu dịch'),
+            
+            # Pattern: "Máy tính Nhu cầu Dịch" → "Máy tính nhu cầu dịch"
+            (r'Máy tính Nhu cầu Dịch', 'Máy tính nhu cầu dịch'),
+            
+            # Pattern: "Khẩu phần Đồ" → "Khẩu phần đồ"
+            (r'Khẩu phần Đồ', 'Khẩu phần đồ'),
+            
+            # Pattern: "Lưu ý về Khẩu phần" → "Lưu ý về khẩu phần"
+            (r'Lưu ý về Khẩu phần', 'Lưu ý về khẩu phần'),
+            
+            # Pattern: "Ví dụ Khẩu phần" → "Ví dụ khẩu phần"
+            (r'Ví dụ Khẩu phần', 'Ví dụ khẩu phần'),
+            
+            # Pattern: "Cách ước lượng Khẩu phần" → "Cách ước lượng khẩu phần"
+            (r'Cách ước lượng Khẩu phần', 'Cách ước lượng khẩu phần'),
+            
+            # Pattern: "So sánh: Khẩu phần" → "So sánh: khẩu phần"
+            (r'So sánh: Khẩu phần', 'So sánh: khẩu phần'),
+            
+            # Pattern: "Khẩu phần Carbohydrate" → "Khẩu phần carbohydrate"
+            (r'Khẩu phần Carbohydrate', 'Khẩu phần carbohydrate'),
+            
+            # Pattern: "Dịch" → "dịch" (khi không phải đầu câu và không phải tên riêng)
+            (r'\bDịch\b', 'dịch'),
         ]
         
         # Tự động phát hiện các pattern mới và áp dụng trực tiếp

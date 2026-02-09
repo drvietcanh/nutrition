@@ -238,7 +238,7 @@ export function InteractiveSection() {
                   <div>
                     <NutrientChart
                       data={chartData}
-                      title="Phân tích Chất dinh dưỡng Đa lượng"
+                      title="Phân tích chất dinh dưỡng đa lượng"
                       unit="g"
                     />
                   </div>

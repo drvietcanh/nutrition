@@ -46,7 +46,7 @@ export default function IntakeAssessmentPage() {
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Ví dụ lâm sàng 1: Dịch vụ Bữa ăn Bệnh viện
+            Ví dụ lâm sàng 1: dịch vụ Bữa ăn Bệnh viện
           </p>
           <p className="text-sm text-neutral-700 mb-2">
             Một bệnh nhân được kê đơn "chế độ ăn thường" ước tính cung cấp ~1.800 kcal/ngày. Tuy nhiên:
@@ -283,7 +283,7 @@ export default function IntakeAssessmentPage() {
             <strong>Ghi chép cho ăn qua ống</strong>: Thể tích được cung cấp, tốc độ, tạm dừng, và dịch dư thừa.
           </li>
           <li>
-            <strong>Phương pháp kết hợp</strong>: Sử dụng nhiều cách tiếp cận để có bức tranh hoàn chỉnh.
+            <strong>Phương pháp kết hợp</strong>: sử dụng nhiều cách tiếp cận để có bức tranh hoàn chỉnh.
           </li>
         </ul>
         <p className="text-base text-neutral-700">
@@ -328,7 +328,7 @@ export default function IntakeAssessmentPage() {
         </h2>
         <p className="text-base text-blue-800">
           Bảng tương tác của chúng tôi giúp bạn xem xét có hệ thống lượng ăn theo thời gian và so sánh nó với nhu cầu ước tính.
-          Sử dụng nó để thực hành nhận diện khoảng cách và hiểu vì sao lượng ăn có thể thiếu.
+          sử dụng nó để thực hành nhận diện khoảng cách và hiểu vì sao lượng ăn có thể thiếu.
         </p>
         <div className="mt-4">
           <Link

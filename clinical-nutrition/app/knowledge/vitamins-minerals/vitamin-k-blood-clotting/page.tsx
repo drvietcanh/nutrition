@@ -123,7 +123,7 @@ export default function VitaminKBloodClottingPage() {
               <li>Ăn lượng vitamin K ổn định mỗi ngày</li>
               <li>Nếu muốn thay đổi, thay đổi từ từ</li>
               <li>Theo dõi INR (xét nghiệm đông máu) thường xuyên</li>
-              <li>Tham khảo bác sĩ trước khi thay đổi chế độ ăn</li>
+              <li>tham khảo bác sĩ trước khi thay đổi chế độ ăn</li>
             </ul>
           </div>
         </Callout>

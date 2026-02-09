@@ -266,7 +266,7 @@ export default function CalciumBoneHealthPage() {
               <li>Uống sữa không lactose hoặc sữa chua (dễ tiêu hóa hơn)</li>
               <li>Ăn cá nhỏ (cá cơm, cá mòi) thường xuyên</li>
               <li>Ăn đậu phụ, rau xanh đậm</li>
-              <li>Tham khảo bác sĩ về viên bổ sung canxi + vitamin D</li>
+              <li>tham khảo bác sĩ về viên bổ sung canxi + vitamin D</li>
             </ul>
           </Card>
         </div>

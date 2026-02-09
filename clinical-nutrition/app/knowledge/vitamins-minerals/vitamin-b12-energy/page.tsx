@@ -248,7 +248,7 @@ export default function VitaminB12EnergyPage() {
               <li>Ăn ngũ cốc ăn sáng tăng cường B12</li>
               <li>Dùng men dinh dưỡng (nutritional yeast) tăng cường B12</li>
               <li>Uống viên bổ sung B12 (25-100mcg/ngày hoặc 1000mcg/tuần)</li>
-              <li>Tham khảo bác sĩ để xét nghiệm và tư vấn</li>
+              <li>tham khảo bác sĩ để xét nghiệm và tư vấn</li>
             </ul>
           </Card>
 
@@ -264,7 +264,7 @@ export default function VitaminB12EnergyPage() {
             <ul className="space-y-1 text-sm text-gray-700 list-disc pl-6">
               <li>Ăn thịt, cá, trứng 2-3 lần/tuần</li>
               <li>Uống sữa, sữa chua mỗi ngày</li>
-              <li>Tham khảo bác sĩ về viên bổ sung B12 (có thể cần liều cao hơn)</li>
+              <li>tham khảo bác sĩ về viên bổ sung B12 (có thể cần liều cao hơn)</li>
               <li>Xét nghiệm máu để kiểm tra mức B12</li>
             </ul>
           </Card>

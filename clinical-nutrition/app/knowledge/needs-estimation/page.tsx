@@ -294,7 +294,7 @@ export default function NeedsEstimationPage() {
             <strong>Đánh giá lại là cần thiết</strong>—nhu cầu thay đổi với tình trạng lâm sàng, hoạt động, khả năng dung nạp, và thời gian.
           </li>
           <li>
-            Tránh coi công thức như "câu trả lời đúng." Sử dụng ước tính để <strong>cấu trúc tư duy và hướng dẫn điểm khởi đầu an toàn</strong>,
+            Tránh coi công thức như "câu trả lời đúng." sử dụng ước tính để <strong>cấu trúc tư duy và hướng dẫn điểm khởi đầu an toàn</strong>,
             sau đó điều chỉnh dựa trên cách người đó phản ứng.
           </li>
         </ul>
@@ -307,7 +307,7 @@ export default function NeedsEstimationPage() {
         </h2>
         <p className="text-base text-blue-800">
           Máy tính tương tác của chúng tôi minh họa cách các phương pháp khác nhau tạo ra các ước tính khác nhau và vì sao khoảng quan trọng.
-          Sử dụng nó để khám phá cách đặc điểm bệnh nhân ảnh hưởng đến nhu cầu ước tính.
+          sử dụng nó để khám phá cách đặc điểm bệnh nhân ảnh hưởng đến nhu cầu ước tính.
         </p>
         <div className="mt-4">
           <Link
@@ -335,7 +335,7 @@ export default function NeedsEstimationPage() {
             </CardContent>
           </Card>
           <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardHeader icon={CheckCircle} title="Nhu cầu dịch" />
             <CardContent>
               <p className="text-body-sm">
                 Tính nhu cầu dịch hàng ngày sử dụng các quy tắc Holliday-Segar và 30-35 ml/kg,

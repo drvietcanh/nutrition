@@ -207,7 +207,7 @@ export default function NutritionBusyLifestylePage() {
           tips={[
             { type: 'tip', text: 'Chuẩn bị snack lành mạnh: Mang theo trái cây, quả hạch để tránh chọn đồ không tốt khi đói' },
             { type: 'tip', text: 'Meal prep cuối tuần: Chuẩn bị 2-3 món để dùng trong tuần' },
-            { type: 'tip', text: 'Sử dụng thực phẩm tiện lợi: Rau củ đông lạnh, thịt nướng sẵn, đậu đóng hộp' },
+            { type: 'tip', text: 'sử dụng thực phẩm tiện lợi: Rau củ đông lạnh, thịt nướng sẵn, đậu đóng hộp' },
             { type: 'check', text: 'Ưu tiên bữa quan trọng: Nếu chỉ có thời gian cho 1 bữa lành mạnh, chọn bữa trưa hoặc tối' },
             { type: 'check', text: 'Linh hoạt: Không cần hoàn hảo, một vài bữa lành mạnh tốt hơn không có bữa nào' },
             { type: 'warning', text: 'Tránh bỏ bữa: Bỏ bữa làm bạn đói hơn và dễ chọn đồ không tốt sau đó' },

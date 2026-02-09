@@ -106,7 +106,7 @@ export default function NutritionTravelPage() {
               tips={[
                 { type: 'tip', text: 'Đọc menu trước: Tìm món có rau củ, protein nạc, không chiên' },
                 { type: 'tip', text: 'Yêu cầu điều chỉnh: Có thể yêu cầu rau thay khoai tây chiên, nước sốt riêng' },
-                { type: 'tip', text: 'Chia đôi khẩu phần: Khẩu phần nhà hàng thường lớn, có thể chia đôi hoặc mang về' },
+                { type: 'tip', text: 'Chia đôi khẩu phần: khẩu phần nhà hàng thường lớn, có thể chia đôi hoặc mang về' },
                 { type: 'check', text: 'Chọn món nướng, hấp thay vì chiên' },
                 { type: 'check', text: 'Bắt đầu với salad hoặc soup để no hơn' },
                 { type: 'warning', text: 'Chú ý đồ uống: Nước ngọt, rượu có thể thêm nhiều calo' },
@@ -124,7 +124,7 @@ export default function NutritionTravelPage() {
                 <strong>Chọn món:</strong> Tìm món có rau củ, protein nạc, không quá nhiều dầu mỡ
               </p>
               <p>
-                <strong>Khẩu phần:</strong> Chia sẻ món với người đi cùng để thử nhiều món mà không ăn quá nhiều
+                <strong>khẩu phần:</strong> Chia sẻ món với người đi cùng để thử nhiều món mà không ăn quá nhiều
               </p>
               <p>
                 <strong>Cân bằng:</strong> Một bữa "đặc biệt" không sao, nhưng cố gắng ăn lành mạnh ở các bữa khác

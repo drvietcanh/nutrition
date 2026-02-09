@@ -180,7 +180,7 @@ export default function VitaminBComplexPage() {
             <ExampleBox variant="warning" title="Lưu ý cho Người ăn chay">
               <p className="text-sm">
                 Vitamin B12 chỉ có trong thực phẩm động vật. Người ăn chay nghiêm ngặt có thể cần bổ sung B12. 
-                Tham khảo bác sĩ nếu cần.
+                tham khảo bác sĩ nếu cần.
               </p>
             </ExampleBox>
           </Card>
@@ -193,7 +193,7 @@ export default function VitaminBComplexPage() {
           <h3 className="heading-4 mb-3">Thực phẩm Giàu vitamin B</h3>
           <div className="space-y-3">
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Ngũ cốc Nguyên cám:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Ngũ cốc nguyên cám:</p>
               <p className="text-xs text-gray-700">
                 Gạo lứt, yến mạch, bánh mì nguyên cám - có nhiều vitamin B (B1, B3, B6, B9). 
                 <strong> Ở Việt Nam:</strong> Gạo lứt là lựa chọn tốt thay vì gạo trắng.

@@ -82,7 +82,7 @@ export default function ReadingFoodLabelsPage() {
               <div className="flex items-start gap-3">
                 <Info className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div>
-                  <p className="text-sm font-semibold text-gray-900 mb-1">1. Khẩu phần (Serving size)</p>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">1. khẩu phần (Serving size)</p>
                   <p className="text-sm text-gray-700">
                     Cho biết một phần ăn là bao nhiêu. Tất cả thông tin dinh dưỡng dưới đây là cho một phần này.
                   </p>
@@ -336,7 +336,7 @@ export default function ReadingFoodLabelsPage() {
             </p>
           </Card>
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Hiểu về chất béo trên nhãn
             </p>

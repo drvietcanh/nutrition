@@ -83,7 +83,7 @@ export default function HypertensionNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Quan trọng trong Tăng huyết áp?
+            Vì sao dinh dưỡng quan trọng trong Tăng huyết áp?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -458,7 +458,7 @@ export default function HypertensionNutritionPage() {
                 <li><strong>Đánh giá thận trước</strong> - kiểm tra chức năng thận</li>
                 <li><strong>Theo dõi xét nghiệm</strong> - kiểm tra kali máu thường xuyên</li>
                 <li><strong>Điều chỉnh DASH cho phù hợp</strong> - không áp dụng cứng nhắc</li>
-                <li>Tham khảo chuyên gia dinh dưỡng khi cần</li>
+                <li>tham khảo chuyên gia dinh dưỡng khi cần</li>
               </ul>
             </CardContent>
           </Card>
@@ -719,7 +719,7 @@ export default function HypertensionNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="references-heading" className="heading-2 whitespace-nowrap">
-            Tài liệu Tham khảo & Hướng dẫn
+            Tài liệu tham khảo & Hướng dẫn
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -807,7 +807,7 @@ export default function HypertensionNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardHeader icon={CheckCircle} title="Nhu cầu dịch" />
             <CardContent>
               <p className="text-body-sm">
                 Tính nhu cầu dịch, đặc biệt quan trọng nếu bệnh nhân có suy tim hoặc bệnh thận kèm theo.

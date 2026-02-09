@@ -288,7 +288,7 @@ export default function ExerciseNutritionPage() {
             </p>
           </Card>
           <Card href="/knowledge/hydration">
-            <h3 className="heading-5 mb-2">Hydration: Nước và Dịch</h3>
+            <h3 className="heading-5 mb-2">Hydration: Nước và dịch</h3>
             <p className="text-sm text-gray-600">
               Tầm quan trọng của nước khi tập thể dục
             </p>

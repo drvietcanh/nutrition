@@ -55,7 +55,7 @@ export default function MealPrepPage() {
             Có thể chuẩn bị <strong>toàn bộ bữa ăn</strong> hoặc chỉ <strong>một phần</strong>
           </li>
           <li>
-            Sử dụng <strong>hộp đựng phù hợp</strong> để bảo quản
+            sử dụng <strong>hộp đựng phù hợp</strong> để bảo quản
           </li>
           <li>
             <strong>Bắt đầu đơn giản</strong> - chỉ chuẩn bị 2-3 món đầu tiên
@@ -276,7 +276,7 @@ export default function MealPrepPage() {
         <TipCard
           tips={[
             { type: 'tip', text: 'Bắt đầu đơn giản: Chỉ chuẩn bị 2-3 món đầu tiên, sau đó mở rộng' },
-            { type: 'tip', text: 'Sử dụng hộp đựng phù hợp: Hộp có ngăn riêng, có thể hâm nóng' },
+            { type: 'tip', text: 'sử dụng hộp đựng phù hợp: Hộp có ngăn riêng, có thể hâm nóng' },
             { type: 'tip', text: 'Dán nhãn: Ghi ngày tháng để biết món nào cũ, món nào mới' },
             { type: 'check', text: 'Bảo quản đúng cách: Tủ lạnh (3-4 ngày), tủ đông (lâu hơn)' },
             { type: 'check', text: 'Hâm nóng đúng cách: đảm bảo thức ăn nóng đều trước khi ăn' },

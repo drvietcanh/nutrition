@@ -283,7 +283,7 @@ export function InteractiveSection() {
               type="submit"
               className="inline-flex items-center rounded-md border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800 focus-ring touch-target"
             >
-              Tính nhu cầu Dịch
+              Tính nhu cầu dịch
             </button>
           </div>
         </form>
@@ -302,7 +302,7 @@ export function InteractiveSection() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-medium text-neutral-700">
-                    Nhu cầu Dịch cơ bản:
+                    Nhu cầu dịch cơ bản:
                   </span>
                   <span className="text-lg font-bold text-neutral-900">
                     {formatNumber(result.basicRequirement)} ml/ngày
@@ -323,7 +323,7 @@ export function InteractiveSection() {
                 <div className="space-y-2 border-t border-neutral-200 pt-4">
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium text-neutral-700">
-                      Nhu cầu Dịch điều chỉnh:
+                      Nhu cầu dịch điều chỉnh:
                     </span>
                     <span className="text-lg font-bold text-neutral-900">
                       {formatNumber(result.adjustedRequirement)} ml/ngày

@@ -308,7 +308,7 @@ export default function DiabetesNutritionPage() {
                 <thead className="bg-green-100">
                   <tr>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Món ăn</th>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khẩu phần</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">khẩu phần</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Carbohydrate (g)</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Số phần (15g)</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
@@ -988,7 +988,7 @@ export default function DiabetesNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="references-heading" className="heading-2 whitespace-nowrap">
-            Tài liệu Tham khảo & Hướng dẫn
+            Tài liệu tham khảo & Hướng dẫn
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

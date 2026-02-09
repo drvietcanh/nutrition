@@ -65,7 +65,7 @@ export default function CardiovascularDiseaseNutritionPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Vì sao Dinh dưỡng Quan trọng cho Tim mạch?</h2>
+        <h2 className="heading-2">Vì sao dinh dưỡng quan trọng cho Tim mạch?</h2>
         <Card>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -261,7 +261,7 @@ export default function CardiovascularDiseaseNutritionPage() {
             </p>
           </Card>
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Hiểu về các loại chất béo và ảnh hưởng tim mạch
             </p>

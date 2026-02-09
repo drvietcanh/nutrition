@@ -134,7 +134,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'macronutrients-overview',
-    title: 'Tổng quan về các Chất dinh dưỡng Đa lượng',
+    title: 'Tổng quan về các chất dinh dưỡng đa lượng',
     description: 'Tổng quan về carbohydrate, protein, và chất béo',
     category: 'general-nutrition',
     tags: ['macronutrients', 'carbohydrates', 'protein', 'fats', 'basics'],
@@ -145,7 +145,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'carbohydrates',
-    title: 'Carbohydrate (Tinh bột và Đường)',
+    title: 'Carbohydrate (tinh bột và đường)',
     description: 'Hiểu về carbohydrate - nguồn năng lượng chính',
     category: 'general-nutrition',
     tags: ['carbohydrates', 'sugar', 'energy', 'diabetes', 'glycemic-index'],
@@ -156,7 +156,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'dietary-fats',
-    title: 'Chất béo trong Chế độ ăn',
+    title: 'Chất béo trong chế độ ăn',
     description: 'Hiểu các loại chất béo và ảnh hưởng sức khỏe',
     category: 'general-nutrition',
     tags: ['fats', 'cholesterol', 'heart-health', 'omega-3'],
@@ -200,7 +200,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'hydration',
-    title: 'Hydration: Nước và Dịch',
+    title: 'Hydration: Nước và dịch',
     description: 'Hiểu về nhu cầu nước và hydration',
     category: 'general-nutrition',
     tags: ['hydration', 'water', 'fluids', 'health'],
@@ -614,7 +614,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'portion-sizes',
-    title: 'Hiểu về Portion sizes (Khẩu phần)',
+    title: 'Hiểu về Portion sizes (khẩu phần)',
     description: 'Hướng dẫn cách ước lượng khẩu phần đúng với visual guide và comparisons',
     category: 'daily-practices',
     tags: ['portion-sizes', 'serving-size', 'measurement', 'hand-guide'],
@@ -1066,7 +1066,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-soups-nutrition',
-    title: 'Canh Việt Nam và Dinh dưỡng',
+    title: 'Canh Việt Nam và dinh dưỡng',
     description: 'Canh (soup) là món ăn phổ biến trong bữa ăn Việt Nam. Hiểu về giá trị dinh dưỡng của các loại canh, cách nấu canh lành mạnh',
     category: 'general-nutrition',
     tags: ['canh-việt-nam', 'vietnamese-soup', 'canh-chua', 'canh-rau', 'hydration'],

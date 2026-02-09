@@ -174,6 +174,91 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Dùng Ít` | `Dùng ít` |
 | `Bài viết Liên quan` | `Bài viết liên quan` |
 
+## Pattern Tinh Bột và Đường
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Tinh bột và Đường` | `tinh bột và đường` |
+| `Tinh chế` | `tinh chế` |
+| `Nguyên cám` | `nguyên cám` |
+| `Tinh bột Tinh chế` | `Tinh bột tinh chế` |
+| `Tinh bột Nguyên cám` | `Tinh bột nguyên cám` |
+
+## Pattern Carbohydrate và Dinh Dưỡng
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Ví dụ Cách giảm đường` | `Ví dụ cách giảm đường` |
+| `Áp dụng trong Bữa ăn` | `Áp dụng trong bữa ăn` |
+| `các Chất dinh dưỡng Đa lượng` | `các chất dinh dưỡng đa lượng` |
+| `Chất dinh dưỡng Đa lượng` | `chất dinh dưỡng đa lượng` |
+| `trong Chế độ ăn` | `trong chế độ ăn` |
+| `nguồn Chất béo Phổ biến` | `nguồn chất béo phổ biến` |
+| `Chất béo Không bão hòa` | `Chất béo không bão hòa` |
+| `Nên tránh Hoàn toàn` | `Nên tránh hoàn toàn` |
+
+## Pattern Khẩu Phần
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Khẩu phần` | `khẩu phần` (khi không phải đầu câu) |
+| `Khẩu phần Đồ` | `Khẩu phần đồ` |
+| `Lưu ý về Khẩu phần` | `Lưu ý về khẩu phần` |
+| `Ví dụ Khẩu phần` | `Ví dụ khẩu phần` |
+| `Cách ước lượng Khẩu phần` | `Cách ước lượng khẩu phần` |
+| `So sánh: Khẩu phần` | `So sánh: khẩu phần` |
+| `Khẩu phần Carbohydrate` | `Khẩu phần carbohydrate` |
+
+## Pattern Thể Chất và Hoạt Động
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Thể chất` | `thể chất` (khi không phải đầu câu) |
+| `Hoạt động Thể chất` | `Hoạt động thể chất` |
+
+## Pattern Dinh Dưỡng Quan Trọng
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Vì sao Dinh dưỡng Quan trọng` | `Vì sao dinh dưỡng quan trọng` |
+| `Vì sao Dinh dưỡng Quan trọng trong` | `Vì sao dinh dưỡng quan trọng trong` |
+
+## Pattern Tài Liệu và Hướng Dẫn
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Tài liệu Tham khảo & Hướng dẫn` | `Tài liệu tham khảo & Hướng dẫn` |
+| `Hướng dẫn Sử dụng` | `Hướng dẫn sử dụng` |
+| `Những điều Cần tránh` | `Những điều cần tránh` |
+
+## Pattern Nhu Cầu Dịch
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Nhu cầu Dịch` | `Nhu cầu dịch` |
+| `Nhu cầu Dịch – Công cụ Giảng dạy` | `Nhu cầu dịch – Công cụ giảng dạy` |
+| `Máy tính Nhu cầu Dịch` | `Máy tính nhu cầu dịch` |
+
+## Pattern Canh Việt Nam
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Canh Việt Nam và Dinh dưỡng` | `Canh Việt Nam và dinh dưỡng` |
+| `Các loại Canh Việt Nam Phổ biến` | `Các loại Canh Việt Nam phổ biến` |
+
+## Pattern Từ Đơn Lẻ (Khi Không Phải Đầu Câu)
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Hợp lý` | `hợp lý` |
+| `Đa lượng` | `đa lượng` |
+| `Không bão hòa` | `không bão hòa` |
+| `Hoàn toàn` | `hoàn toàn` |
+| `Tham khảo` | `tham khảo` |
+| `Giảng dạy` | `giảng dạy` |
+| `Sử dụng` | `sử dụng` |
+| `Dịch` | `dịch` |
+
 ## Danh Từ Riêng (Giữ Nguyên)
 
 Các từ sau được giữ nguyên viết hoa (trong whitelist):

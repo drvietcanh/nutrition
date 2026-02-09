@@ -170,7 +170,7 @@ export default function IodineThyroidPage() {
 
           <ExampleBox variant="info" title="Iodine trong Món ăn Việt Nam">
             <p className="mb-2">
-              <strong>Muối iod</strong> là nguồn iodine chính ở Việt Nam. Sử dụng muối iod trong nấu ăn 
+              <strong>Muối iod</strong> là nguồn iodine chính ở Việt Nam. sử dụng muối iod trong nấu ăn 
               hàng ngày giúp đảm bảo đủ iodine.
             </p>
             <p className="mb-2">
@@ -237,7 +237,7 @@ export default function IodineThyroidPage() {
           <h3 className="heading-4 mb-3">Phòng ngừa Thiếu iodine</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>
-              <strong>Sử dụng muối iod:</strong> Đây là cách đơn giản và hiệu quả nhất để đảm bảo đủ iodine. 
+              <strong>sử dụng muối iod:</strong> Đây là cách đơn giản và hiệu quả nhất để đảm bảo đủ iodine. 
               Ở Việt Nam, nên sử dụng muối iod trong nấu ăn hàng ngày.
             </p>
             <p>
@@ -257,7 +257,7 @@ export default function IodineThyroidPage() {
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Sử dụng muối iod:</strong> Chọn muối iod thay vì muối thường. Chỉ cần một lượng nhỏ là đủ.
+                <strong>sử dụng muối iod:</strong> Chọn muối iod thay vì muối thường. Chỉ cần một lượng nhỏ là đủ.
               </p>
             </div>
             <div className="flex items-start gap-2">

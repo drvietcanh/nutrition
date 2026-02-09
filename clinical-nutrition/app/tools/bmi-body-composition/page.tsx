@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "dinh dưỡng lâm sàng",
   ],
   openGraph: {
-    title: "BMI & Thành phần cơ thể – Công cụ Giảng dạy",
+    title: "BMI & Thành phần cơ thể – Công cụ giảng dạy",
     description:
       "Tính BMI, Cân nặng Lý tưởng (IBW), Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt cơ thể (BSA). Công cụ giáo dục để hiểu cách các chỉ số này được sử dụng trong đánh giá dinh dưỡng lâm sàng.",
     url: "https://clinical-nutrition.edu.vn/tools/bmi-body-composition",
@@ -53,7 +53,7 @@ export default function BMIBodyCompositionPage() {
         <div className="flex items-center gap-3">
           <Ruler className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
-            BMI & Thành phần cơ thể – Công cụ Giảng dạy
+            BMI & Thành phần cơ thể – Công cụ giảng dạy
           </h1>
         </div>
         <p className="text-body-lg">
@@ -143,7 +143,7 @@ export default function BMIBodyCompositionPage() {
             có thể che giấu tình trạng dinh dưỡng thực tế.
           </li>
           <li>
-            Sử dụng cân nặng thực tế cho tất cả tính toán trong <strong>béo phì nặng</strong>
+            sử dụng cân nặng thực tế cho tất cả tính toán trong <strong>béo phì nặng</strong>
             mà không xem xét ABW hoặc IBW, có thể dẫn đến ước tính nhu cầu quá cao.
           </li>
           <li>

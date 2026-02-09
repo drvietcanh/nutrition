@@ -96,7 +96,7 @@ export function RelatedContent({
                 "energy-protein-calculator": "Máy tính năng lượng & Protein",
                 "intake-assessment": "Đánh giá Lượng ăn",
                 "bmi-body-composition": "BMI & Thành phần cơ thể",
-                "fluid-requirements": "Nhu cầu Dịch",
+                "fluid-requirements": "Nhu cầu dịch",
                 "refeeding-syndrome-risk": "Đánh giá Nguy cơ Hội chứng Tái cho Ăn",
                 "micronutrient-assessment": "Đánh giá Vi chất",
               };
@@ -119,7 +119,7 @@ export function RelatedContent({
                     <div className="flex-1 min-w-0">
                       <h3 className="heading-5 mb-1">{toolName}</h3>
                       <div className="mt-2 flex items-center gap-2 text-sm text-green-600">
-                        <span>Sử dụng công cụ</span>
+                        <span>sử dụng công cụ</span>
                         <ArrowRight className="w-4 h-4" aria-hidden="true" />
                       </div>
                     </div>

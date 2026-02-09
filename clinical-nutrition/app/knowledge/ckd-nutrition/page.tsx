@@ -561,7 +561,7 @@ export default function CKDNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardHeader icon={CheckCircle} title="Nhu cầu dịch" />
             <CardContent>
               <p className="text-body-sm">
                 Tính nhu cầu dịch, đặc biệt quan trọng từ giai đoạn 4-5 khi cần hạn chế dịch dựa trên lượng nước tiểu.

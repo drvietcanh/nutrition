@@ -42,7 +42,7 @@ const toolsIndex = [
     tags: ["BMI", "cân nặng", "chiều cao", "IBW", "BSA"],
   },
   {
-    title: "Nhu cầu Dịch",
+    title: "Nhu cầu dịch",
     href: "/tools/fluid-requirements",
     category: "tool" as const,
     description: "Tính nhu cầu dịch hàng ngày",

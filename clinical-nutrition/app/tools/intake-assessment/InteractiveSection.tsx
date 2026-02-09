@@ -120,7 +120,7 @@ function NeedsForm({ state, onChange }: NeedsFormProps) {
         3. Nhập nhu cầu hàng ngày ước tính (phạm vi giáo dục)
       </h2>
       <p className="text-sm text-neutral-700 sm:text-base">
-        Sử dụng một phạm vi giáo dục từ hướng dẫn hoặc từ công cụ năng lượng &amp;
+        sử dụng một phạm vi giáo dục từ hướng dẫn hoặc từ công cụ năng lượng &amp;
         protein (ví dụ: 1750–2100 kcal/ngày và 70–105 g/ngày).
         Mục đích là so sánh phạm vi này với những gì thực sự đang được nhận.
       </p>
@@ -232,7 +232,7 @@ function IntakeForm({ state, onChange, onCompare }: IntakeFormProps) {
         4. Nhập lượng ăn vào gần đúng trong một khoảng thời gian gần đây
       </h2>
       <p className="text-sm text-neutral-700 sm:text-base">
-        Sử dụng thông tin tốt nhất có sẵn (ví dụ: lượng ăn vào qua đường miệng đã ghi chép,
+        sử dụng thông tin tốt nhất có sẵn (ví dụ: lượng ăn vào qua đường miệng đã ghi chép,
         hồ sơ dinh dưỡng qua ống thông/tĩnh mạch, hoặc nhớ lại 24 giờ). Mục tiêu là
         hiểu khoảng cách giữa nhu cầu ước tính và lượng ăn vào thực tế, không phải để
         tạo chỉ định.

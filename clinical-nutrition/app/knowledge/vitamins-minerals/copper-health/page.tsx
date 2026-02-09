@@ -181,7 +181,7 @@ export default function CopperHealthPage() {
               </p>
             </div>
             <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Ngũ cốc Nguyên cám:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Ngũ cốc nguyên cám:</p>
               <p className="text-xs text-gray-700">
                 Gạo lứt, yến mạch - có đồng. 
                 <strong> Ở Việt Nam:</strong> Gạo lứt là lựa chọn tốt.

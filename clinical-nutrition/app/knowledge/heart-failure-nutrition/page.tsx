@@ -106,7 +106,7 @@ export default function HeartFailureNutritionPage() {
             <Card className="border-green-200 bg-green-50/30">
               <h3 className="heading-5 mb-2">🔹 Tăng gánh cho tim</h3>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li>• Dịch dư thừa làm tim quá tải</li>
+                <li>• dịch dư thừa làm tim quá tải</li>
                 <li>• Giảm muối và nước giúp giảm gánh cho tim</li>
               </ul>
             </Card>
@@ -200,7 +200,7 @@ export default function HeartFailureNutritionPage() {
 
         {/* Fluid */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">💧 Nước (Dịch)</h3>
+          <h3 className="heading-3">💧 Nước (dịch)</h3>
           <div className="space-y-3 text-body">
             <p>
               Ở suy tim, uống quá nhiều nước có thể làm:
@@ -617,7 +617,7 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="references-heading" className="heading-2 whitespace-nowrap">
-            Tài liệu Tham khảo & Hướng dẫn
+            Tài liệu tham khảo & Hướng dẫn
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -688,7 +688,7 @@ export default function HeartFailureNutritionPage() {
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardHeader icon={CheckCircle} title="Nhu cầu dịch" />
             <CardContent>
               <p className="text-body-sm">
                 Tính nhu cầu dịch với điều chỉnh cho suy tim, đặc biệt quan trọng trong quản lý quá tải dịch.
@@ -722,7 +722,7 @@ export default function HeartFailureNutritionPage() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Máy tính Nhu cầu Dịch" />
+            <CardHeader icon={CheckCircle} title="Máy tính Nhu cầu dịch" />
             <CardContent>
               <p className="text-body-sm">
                 Tính toán nhu cầu dịch với điều chỉnh cho suy tim, giúp xác định mức hạn chế dịch phù hợp.

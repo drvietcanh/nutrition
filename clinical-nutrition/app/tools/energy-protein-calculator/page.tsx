@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "REE",
   ],
   openGraph: {
-    title: "Nhu cầu năng lượng & Protein – Công cụ Giảng dạy",
+    title: "Nhu cầu năng lượng & Protein – Công cụ giảng dạy",
     description:
       "Tính toán nhu cầu năng lượng và protein ước tính dựa trên các phương trình tiêu chuẩn. Hiểu vì sao nhu cầu là ước tính (khoảng) chứ không phải số chính xác, và cách các yếu tố như tuổi, giới tính, và bối cảnh bệnh ảnh hưởng đến tính toán.",
     url: "https://clinical-nutrition.edu.vn/tools/energy-protein-calculator",
@@ -67,7 +67,7 @@ export default function EnergyProteinCalculatorPage() {
           <span className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
             1
           </span>
-          Hướng dẫn Sử dụng
+          Hướng dẫn sử dụng
         </h2>
         <ol className="list-decimal space-y-3 pl-6 text-sm leading-relaxed text-gray-700 sm:text-base">
           <li>
@@ -183,7 +183,7 @@ export default function EnergyProteinCalculatorPage() {
           <span className="w-8 h-8 bg-amber-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
             7
           </span>
-          Những điều Cần tránh
+          Những điều cần tránh
         </h2>
         <p className="text-body-sm text-amber-900 mb-3">
           Khi sử dụng công cụ này, hãy cẩn thận với những điều sau:

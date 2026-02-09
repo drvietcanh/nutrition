@@ -214,7 +214,7 @@ export default function Omega3HeartHealthPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/dietary-fats">
-            <h3 className="heading-5 mb-2">Chất béo trong Chế độ ăn</h3>
+            <h3 className="heading-5 mb-2">Chất béo trong chế độ ăn</h3>
             <p className="text-sm text-gray-600">
               Omega-3 là chất béo tốt
             </p>

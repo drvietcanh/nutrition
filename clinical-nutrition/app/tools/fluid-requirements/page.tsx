@@ -7,7 +7,7 @@ import { ToolNavigation } from "../components/ToolNavigation";
 import { Droplet } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Nhu cầu Dịch",
+  title: "Nhu cầu dịch",
   description:
     "Tính nhu cầu dịch hàng ngày sử dụng các quy tắc giáo dục (Holliday-Segar, 30-35ml/kg) và điều chỉnh dựa trên tình trạng lâm sàng. Công cụ giáo dục để hiểu cách cân bằng dịch được quản lý trong thực hành lâm sàng.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "dinh dưỡng lâm sàng",
   ],
   openGraph: {
-    title: "Nhu cầu Dịch – Công cụ Giảng dạy",
+    title: "Nhu cầu dịch – Công cụ giảng dạy",
     description:
       "Tính nhu cầu dịch hàng ngày sử dụng các quy tắc giáo dục (Holliday-Segar, 30-35ml/kg) và điều chỉnh dựa trên tình trạng lâm sàng. Công cụ giáo dục để hiểu cách cân bằng dịch được quản lý trong thực hành lâm sàng.",
     url: "https://clinical-nutrition.edu.vn/tools/fluid-requirements",
@@ -50,7 +50,7 @@ export default function FluidRequirementsPage() {
         <div className="flex items-center gap-3">
           <Droplet className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Nhu cầu Dịch – Công cụ Giảng dạy
+            Nhu cầu dịch – Công cụ giảng dạy
           </h1>
         </div>
         <p className="text-body-lg">

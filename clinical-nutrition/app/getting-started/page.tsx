@@ -82,7 +82,7 @@ export default function GettingStartedPage() {
               <div className="flex-1">
                 <h3 className="heading-3 mb-3">Thực hành với Công cụ</h3>
                 <p className="text-body mb-4">
-                  Sử dụng các công cụ tương tác để hiểu cách tính toán nhu cầu dinh dưỡng. 
+                  sử dụng các công cụ tương tác để hiểu cách tính toán nhu cầu dinh dưỡng. 
                   Đây là cách tốt nhất để áp dụng kiến thức bạn đã học.
                 </p>
                 <ul className="space-y-2 mb-4">
@@ -208,7 +208,7 @@ export default function GettingStartedPage() {
             />
             <CardContent>
               <p className="text-body-sm">
-                Sử dụng các công cụ với dữ liệu mẫu để hiểu cách chúng hoạt động. 
+                sử dụng các công cụ với dữ liệu mẫu để hiểu cách chúng hoạt động. 
                 Thử thay đổi các giá trị để xem kết quả thay đổi như thế nào.
               </p>
             </CardContent>
@@ -228,7 +228,7 @@ export default function GettingStartedPage() {
           <Card>
             <CardHeader
               icon={Users}
-              title="Tham khảo khi cần"
+              title="tham khảo khi cần"
             />
             <CardContent>
               <p className="text-body-sm">

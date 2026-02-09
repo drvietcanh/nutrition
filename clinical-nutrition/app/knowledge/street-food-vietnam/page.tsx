@@ -59,7 +59,7 @@ export default function StreetFoodVietnamPage() {
             <strong>Điều chỉnh:</strong> Yêu cầu ít muối, ít đường, nhiều rau
           </li>
           <li>
-            <strong>Khẩu phần:</strong> Chú ý đến khẩu phần - đồ ăn đường phố thường lớn
+            <strong>khẩu phần:</strong> Chú ý đến khẩu phần - đồ ăn đường phố thường lớn
           </li>
         </ul>
       </Callout>
@@ -266,9 +266,9 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Khẩu phần Đồ ăn đường phố</h2>
+        <h2 className="heading-2">khẩu phần Đồ ăn đường phố</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Lưu ý về Khẩu phần</h3>
+          <h3 className="heading-4 mb-3">Lưu ý về khẩu phần</h3>
           <div className="space-y-3 text-body-sm">
             <p>
               Đồ ăn đường phố thường có <strong>khẩu phần lớn</strong> hơn bữa ăn ở nhà. 

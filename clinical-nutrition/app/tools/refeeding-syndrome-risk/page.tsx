@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "phosphorus",
   ],
   openGraph: {
-    title: "Đánh giá Nguy cơ Hội chứng Tái cho Ăn – Công cụ Giảng dạy",
+    title: "Đánh giá Nguy cơ Hội chứng Tái cho Ăn – Công cụ giảng dạy",
     description:
       "Đánh giá nguy cơ hội chứng tái cho ăn dựa trên các yếu tố nguy cơ lâm sàng. Công cụ giáo dục để hiểu tầm quan trọng của đánh giá nguy cơ trước khi bắt đầu dinh dưỡng.",
     url: "https://clinical-nutrition.edu.vn/tools/refeeding-syndrome-risk",
@@ -50,7 +50,7 @@ export default function RefeedingSyndromeRiskPage() {
         <div className="flex items-center gap-3">
           <AlertTriangle className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Đánh giá Nguy cơ Hội chứng Tái cho Ăn – Công cụ Giảng dạy
+            Đánh giá Nguy cơ Hội chứng Tái cho Ăn – Công cụ giảng dạy
           </h1>
         </div>
         <p className="text-body-lg">

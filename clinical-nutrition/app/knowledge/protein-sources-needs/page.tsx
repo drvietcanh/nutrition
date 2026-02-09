@@ -397,7 +397,7 @@ export default function ProteinSourcesNeedsPage() {
 
       {/* Application in Vietnamese meals */}
       <section className="space-y-4">
-        <h2 className="heading-2">Áp dụng trong Bữa ăn Việt Nam</h2>
+        <h2 className="heading-2">Áp dụng trong bữa ăn Việt Nam</h2>
         <Card className="border-green-200 bg-green-50/30">
           <h3 className="heading-4 mb-3">Nguyên tắc cơ bản</h3>
           <div className="space-y-3">
@@ -512,7 +512,7 @@ export default function ProteinSourcesNeedsPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan về các Chất dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan về các chất dinh dưỡng đa lượng</h3>
             <p className="text-sm text-gray-600">
               Hiểu về protein trong tổng thể dinh dưỡng
             </p>

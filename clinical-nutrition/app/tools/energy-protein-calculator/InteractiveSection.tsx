@@ -169,7 +169,7 @@ function MethodSelector({ activeMethod, onChange }: MethodSelectorProps) {
       </div>
       <p className="text-sm leading-relaxed text-neutral-700 sm:text-base">
         Các cách tiếp cận khác nhau để ước tính nhu cầu trả lời
-        các câu hỏi hơi khác nhau. Sử dụng phần này để so sánh một
+        các câu hỏi hơi khác nhau. sử dụng phần này để so sánh một
         quy tắc đơn giản dựa trên cân nặng với một ước tính
         điều chỉnh stress, kiểu phương trình.
       </p>
@@ -685,7 +685,7 @@ function SingleMethodResult({ heading, result }: SingleMethodResultProps) {
               <div className="h-2 w-3/4 rounded-full bg-sky-100" />
             </div>
             <p className="text-[11px] text-neutral-500">
-              Chỉ là dải trực quan (không theo tỷ lệ). Sử dụng các con số ở trên cho
+              Chỉ là dải trực quan (không theo tỷ lệ). sử dụng các con số ở trên cho
               phạm vi gần đúng.
             </p>
           </div>

@@ -293,7 +293,7 @@ export default function VietnameseFoodsNutritionPage() {
             </p>
           </Card>
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan Dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan Dinh dưỡng đa lượng</h3>
             <p className="text-sm text-gray-600">
               Hiểu về các chất dinh dưỡng đa lượng
             </p>

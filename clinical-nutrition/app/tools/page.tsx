@@ -24,7 +24,7 @@ export default function ToolsIndexPage() {
         <Card href="/tools/malnutrition-screening">
           <CardHeader
             icon={Activity}
-            title="Nguy cơ Suy dinh dưỡng – Công cụ Giảng dạy"
+            title="Nguy cơ Suy dinh dưỡng – Công cụ giảng dạy"
           />
           <CardContent>
             <p className="text-body">
@@ -38,7 +38,7 @@ export default function ToolsIndexPage() {
               href="/tools/malnutrition-screening"
               className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
             >
-              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
             </Link>
           </CardFooter>
         </Card>
@@ -46,7 +46,7 @@ export default function ToolsIndexPage() {
         <Card href="/tools/energy-protein-calculator">
           <CardHeader
             icon={Calculator}
-            title="Nhu cầu năng lượng & Protein – Máy tính Giảng dạy"
+            title="Nhu cầu năng lượng & Protein – Máy tính giảng dạy"
           />
           <CardContent>
             <p className="text-body">
@@ -60,7 +60,7 @@ export default function ToolsIndexPage() {
               href="/tools/energy-protein-calculator"
               className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
             >
-              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
             </Link>
           </CardFooter>
         </Card>
@@ -81,7 +81,7 @@ export default function ToolsIndexPage() {
               href="/tools/intake-vs-needs"
               className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
             >
-              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
             </Link>
           </CardFooter>
         </Card>
@@ -89,7 +89,7 @@ export default function ToolsIndexPage() {
         <Card href="/tools/bmi-body-composition">
           <CardHeader
             icon={Ruler}
-            title="BMI & Thành phần cơ thể – Công cụ Giảng dạy"
+            title="BMI & Thành phần cơ thể – Công cụ giảng dạy"
           />
           <CardContent>
             <p className="text-body">
@@ -102,7 +102,7 @@ export default function ToolsIndexPage() {
               href="/tools/bmi-body-composition"
               className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
             >
-              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
             </Link>
           </CardFooter>
         </Card>
@@ -110,7 +110,7 @@ export default function ToolsIndexPage() {
         <Card href="/tools/fluid-requirements">
           <CardHeader
             icon={Droplet}
-            title="Nhu cầu Dịch – Công cụ Giảng dạy"
+            title="Nhu cầu dịch – Công cụ giảng dạy"
           />
           <CardContent>
             <p className="text-body">
@@ -123,7 +123,7 @@ export default function ToolsIndexPage() {
               href="/tools/fluid-requirements"
               className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
             >
-              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
             </Link>
           </CardFooter>
         </Card>
@@ -131,7 +131,7 @@ export default function ToolsIndexPage() {
         <Card href="/tools/refeeding-syndrome-risk">
           <CardHeader
             icon={AlertTriangle}
-            title="Đánh giá Nguy cơ Hội chứng Tái cho Ăn – Công cụ Giảng dạy"
+            title="Đánh giá Nguy cơ Hội chứng Tái cho Ăn – Công cụ giảng dạy"
           />
           <CardContent>
             <p className="text-body">
@@ -144,7 +144,7 @@ export default function ToolsIndexPage() {
               href="/tools/refeeding-syndrome-risk"
               className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
             >
-              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
             </Link>
           </CardFooter>
         </Card>
@@ -152,7 +152,7 @@ export default function ToolsIndexPage() {
         <Card href="/tools/micronutrient-assessment">
           <CardHeader
             icon={Pill}
-            title="Đánh giá Vi chất – Công cụ Giảng dạy"
+            title="Đánh giá Vi chất – Công cụ giảng dạy"
           />
           <CardContent>
             <p className="text-body">
@@ -165,7 +165,7 @@ export default function ToolsIndexPage() {
               href="/tools/micronutrient-assessment"
               className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
             >
-              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
             </Link>
           </CardFooter>
         </Card>
@@ -186,7 +186,7 @@ export default function ToolsIndexPage() {
               href="/tools/food-database"
               className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
             >
-              Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
             </Link>
           </CardFooter>
         </Card>

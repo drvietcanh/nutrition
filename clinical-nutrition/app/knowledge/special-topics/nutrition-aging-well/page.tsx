@@ -163,7 +163,7 @@ export default function NutritionAgingWellPage() {
             <ExampleBox variant="warning" title="Lưu ý">
               <p className="text-sm">
                 Một số người cao tuổi có thể cần bổ sung vitamin B12 nếu hấp thu kém. 
-                Tham khảo bác sĩ nếu cần.
+                tham khảo bác sĩ nếu cần.
               </p>
             </ExampleBox>
           </Card>

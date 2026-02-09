@@ -66,7 +66,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-green-600">2</span>
               </div>
-              <h3 className="heading-5 mb-2">Sử dụng Công cụ</h3>
+              <h3 className="heading-5 mb-2">sử dụng Công cụ</h3>
               <p className="text-body-sm text-gray-600 mb-4">
                 Thực hành với các công cụ tính toán và đánh giá
               </p>
@@ -156,7 +156,7 @@ export default function Home() {
             <Card href="/tools">
               <CardHeader
                 icon={Calculator}
-                title="Sử dụng Công cụ"
+                title="sử dụng Công cụ"
               />
               <CardContent>
                 <p className="text-body mb-4">
@@ -180,7 +180,7 @@ export default function Home() {
               </CardContent>
               <CardFooter>
                 <span className="inline-flex items-center text-green-600 font-medium group-hover:text-green-800">
-                  Sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+                  sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
                 </span>
               </CardFooter>
             </Card>

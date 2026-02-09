@@ -10,7 +10,7 @@ import Link from "next/link";
 import { getRelatedArticles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
-  title: "Chất béo trong Chế độ ăn: Hiểu các loại và Ảnh hưởng sức khỏe",
+  title: "Chất béo trong chế độ ăn: Hiểu các loại và Ảnh hưởng sức khỏe",
   description:
     "Tìm hiểu về các loại chất béo trong chế độ ăn - chất béo bão hòa, không bão hòa, trans fat - và cách chúng ảnh hưởng đến sức khỏe tim mạch và dinh dưỡng lâm sàng.",
   keywords: [
@@ -31,7 +31,7 @@ export default function DietaryFatsPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chất béo trong Chế độ ăn" },
+          { label: "Chất béo trong chế độ ăn" },
         ]}
       />
 
@@ -39,7 +39,7 @@ export default function DietaryFatsPage() {
         <div className="flex items-center gap-3">
           <Heart className="w-8 h-8 text-red-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Chất béo trong Chế độ ăn: Hiểu các loại và Ảnh hưởng sức khỏe
+            Chất béo trong chế độ ăn: Hiểu các loại và Ảnh hưởng sức khỏe
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">
@@ -153,7 +153,7 @@ export default function DietaryFatsPage() {
 
       {/* Vietnamese fat Sources table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng nguồn Chất béo Phổ biến ở Việt Nam</h2>
+        <h2 className="heading-2">Bảng nguồn chất béo phổ biến ở Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Bảng dưới đây giúp bạn chọn lựa chất béo phù hợp trong bữa ăn Việt Nam.
@@ -262,7 +262,7 @@ export default function DietaryFatsPage() {
           <div className="flex items-start gap-3 mb-4">
             <CheckCircle2 className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
             <div className="flex-1">
-              <h3 className="heading-3 text-green-900 mb-2">Chất béo Không bão hòa (Tốt)</h3>
+              <h3 className="heading-3 text-green-900 mb-2">Chất béo không bão hòa (Tốt)</h3>
               <p className="text-body text-green-900 mb-3">
                 Đây là loại chất béo tốt cho sức khỏe. Nên chiếm phần lớn chất béo trong chế độ ăn.
               </p>
@@ -271,7 +271,7 @@ export default function DietaryFatsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white rounded-lg p-4 border border-green-200">
-              <h4 className="font-semibold text-gray-900 mb-2">Không bão hòa đơn</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">không bão hòa đơn</h4>
               <p className="text-sm text-gray-700 mb-2">
                 Giúp giảm cholesterol xấu (LDL) và tăng cholesterol tốt (HDL).
               </p>
@@ -282,7 +282,7 @@ export default function DietaryFatsPage() {
             </div>
 
             <div className="bg-white rounded-lg p-4 border border-green-200">
-              <h4 className="font-semibold text-gray-900 mb-2">Không bão hòa đa</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">không bão hòa đa</h4>
               <p className="text-sm text-gray-700 mb-2">
                 Quan trọng cho sức khỏe tim mạch và não bộ.
               </p>
@@ -360,7 +360,7 @@ export default function DietaryFatsPage() {
           <div className="flex items-start gap-3 mb-4">
             <XCircle className="w-6 h-6 text-red-600 mt-1 flex-shrink-0" aria-hidden="true" />
             <div className="flex-1">
-              <h3 className="heading-3 text-red-900 mb-2">Trans fat (Nên tránh Hoàn toàn)</h3>
+              <h3 className="heading-3 text-red-900 mb-2">Trans fat (Nên tránh hoàn toàn)</h3>
               <p className="text-body text-red-900 mb-3">
                 Đây là loại chất béo xấu nhất. Làm tăng cholesterol xấu (LDL), 
                 giảm cholesterol tốt (HDL), và tăng nguy cơ bệnh tim, đột quỵ.

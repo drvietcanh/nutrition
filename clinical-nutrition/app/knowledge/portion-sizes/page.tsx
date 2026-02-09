@@ -9,9 +9,9 @@ import { Ruler, Hand, Apple, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Hiểu về Portion sizes (Khẩu phần)",
+  title: "Hiểu về Portion sizes (khẩu phần)",
   description:
-    "Hướng dẫn cách ước lượng khẩu phần đúng với visual guide và comparisons. Sử dụng bàn tay và các công cụ đơn giản để đo khẩu phần.",
+    "Hướng dẫn cách ước lượng khẩu phần đúng với visual guide và comparisons. sử dụng bàn tay và các công cụ đơn giản để đo khẩu phần.",
   keywords: [
     "portion sizes",
     "khẩu phần",
@@ -35,10 +35,10 @@ export default function PortionSizesPage() {
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Hand className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Hiểu về Portion sizes (Khẩu phần)</h1>
+          <h1 className="heading-1">Hiểu về Portion sizes (khẩu phần)</h1>
         </div>
         <p className="text-body-lg text-gray-700">
-          Khẩu phần (portion size) là lượng thực phẩm bạn ăn trong một lần. Hiểu về khẩu phần giúp 
+          khẩu phần (portion size) là lượng thực phẩm bạn ăn trong một lần. Hiểu về khẩu phần giúp 
           bạn kiểm soát lượng calo và dinh dưỡng, đặc biệt quan trọng nếu bạn đang quản lý cân nặng 
           hoặc có bệnh lý cần kiểm soát lượng ăn.
         </p>
@@ -47,16 +47,16 @@ export default function PortionSizesPage() {
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
-            <strong>Khẩu phần</strong> = Lượng thực phẩm bạn ăn trong một lần
+            <strong>khẩu phần</strong> = Lượng thực phẩm bạn ăn trong một lần
           </li>
           <li>
             <strong>Serving size</strong> = Lượng thực phẩm được khuyến nghị (trên nhãn)
           </li>
           <li>
-            Sử dụng <strong>bàn tay</strong> để ước lượng khẩu phần (đơn giản, luôn có sẵn)
+            sử dụng <strong>bàn tay</strong> để ước lượng khẩu phần (đơn giản, luôn có sẵn)
           </li>
           <li>
-            Khẩu phần thực tế thường <strong>lớn hơn</strong> serving size khuyến nghị
+            khẩu phần thực tế thường <strong>lớn hơn</strong> serving size khuyến nghị
           </li>
           <li>
             Quan trọng là <strong>ước lượng đúng</strong>, không cần chính xác 100%
@@ -65,17 +65,17 @@ export default function PortionSizesPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Khẩu phần vs Serving size</h2>
+        <h2 className="heading-2">khẩu phần vs Serving size</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Sự khác biệt</h3>
             <div className="space-y-3 text-body-sm">
               <p>
-                <strong>Serving size (Khẩu phần Khuyến nghị):</strong> Lượng thực phẩm được khuyến nghị 
+                <strong>Serving size (khẩu phần Khuyến nghị):</strong> Lượng thực phẩm được khuyến nghị 
                 trên nhãn thực phẩm hoặc hướng dẫn dinh dưỡng. Đây là lượng tiêu chuẩn để tính toán dinh dưỡng.
               </p>
               <p>
-                <strong>Portion size (Khẩu phần thực tế):</strong> Lượng thực phẩm bạn thực sự ăn. 
+                <strong>Portion size (khẩu phần thực tế):</strong> Lượng thực phẩm bạn thực sự ăn. 
                 Có thể lớn hơn hoặc nhỏ hơn serving size.
               </p>
             </div>
@@ -93,10 +93,10 @@ export default function PortionSizesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách ước lượng Khẩu phần: Sử dụng Bàn tay</h2>
+        <h2 className="heading-2">Cách ước lượng khẩu phần: sử dụng Bàn tay</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Hướng dẫn Sử dụng Bàn tay</h3>
+            <h3 className="heading-4 mb-3">Hướng dẫn sử dụng Bàn tay</h3>
             <PortionSizeGuide
               items={[
                 { food: "Protein (thịt, cá, đậu)", portion: "100g", visual: "Bằng lòng bàn tay (không tính ngón tay)", calories: "~150-250 calo" },
@@ -119,7 +119,7 @@ export default function PortionSizesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Khẩu phần Cụ thể</h2>
+        <h2 className="heading-2">Ví dụ khẩu phần Cụ thể</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Protein</h3>
@@ -166,7 +166,7 @@ export default function PortionSizesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Khẩu phần Đúng vs Quá nhiều</h2>
+        <h2 className="heading-2">So sánh: khẩu phần Đúng vs Quá nhiều</h2>
         <ComparisonCard
           title="Ví dụ So sánh"
           items={[
@@ -174,7 +174,7 @@ export default function PortionSizesPage() {
               label: "Bữa trưa",
               good: "1 lòng bàn tay thịt gà + 1 nắm tay cơm + 2 bàn tay rau = ~450 calo",
               bad: "2 lòng bàn tay thịt gà + 2 nắm tay cơm + ít rau = ~800 calo",
-              note: "Khẩu phần quá nhiều có thể gấp đôi calo!"
+              note: "khẩu phần quá nhiều có thể gấp đôi calo!"
             },
             {
               label: "Bữa tối",
@@ -205,7 +205,7 @@ export default function PortionSizesPage() {
             <div className="flex items-start gap-2">
               <Ruler className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Sử dụng bàn tay:</strong> Cách đơn giản nhất, luôn có sẵn, không cần dụng cụ.
+                <strong>sử dụng bàn tay:</strong> Cách đơn giản nhất, luôn có sẵn, không cần dụng cụ.
               </p>
             </div>
             <div className="flex items-start gap-2">
@@ -218,7 +218,7 @@ export default function PortionSizesPage() {
             <div className="flex items-start gap-2">
               <Ruler className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Chú ý khi ăn ngoài:</strong> Khẩu phần ở nhà hàng thường lớn hơn khẩu phần ở nhà. 
+                <strong>Chú ý khi ăn ngoài:</strong> khẩu phần ở nhà hàng thường lớn hơn khẩu phần ở nhà. 
                 Có thể chia đôi hoặc mang về.
               </p>
             </div>
@@ -244,16 +244,16 @@ export default function PortionSizesPage() {
               </p>
             </div>
             <div>
-              <p className="text-sm font-semibold mb-1">"Khẩu phần nhỏ hơn luôn tốt hơn"</p>
+              <p className="text-sm font-semibold mb-1">"khẩu phần nhỏ hơn luôn tốt hơn"</p>
               <p className="text-sm">
-                <strong>Sự thật:</strong> Khẩu phần phù hợp với nhu cầu mới tốt. Quá nhỏ có thể thiếu 
+                <strong>Sự thật:</strong> khẩu phần phù hợp với nhu cầu mới tốt. Quá nhỏ có thể thiếu 
                 dinh dưỡng, quá lớn có thể thừa calo.
               </p>
             </div>
             <div>
               <p className="text-sm font-semibold mb-1">"Tất cả thực phẩm có cùng khẩu phần"</p>
               <p className="text-sm">
-                <strong>Sự thật:</strong> Khẩu phần khác nhau tùy loại thực phẩm. Rau củ có thể ăn nhiều, 
+                <strong>Sự thật:</strong> khẩu phần khác nhau tùy loại thực phẩm. Rau củ có thể ăn nhiều, 
                 nhưng chất béo nên ăn ít.
               </p>
             </div>
@@ -293,7 +293,7 @@ export default function PortionSizesPage() {
 
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
-          Thông tin này chỉ dành cho mục đích giáo dục. Khẩu phần khuyến nghị là hướng dẫn chung, 
+          Thông tin này chỉ dành cho mục đích giáo dục. khẩu phần khuyến nghị là hướng dẫn chung, 
           không phải quy tắc cứng nhắc. Nhu cầu của mỗi người khác nhau tùy theo tuổi, giới tính, 
           hoạt động, và tình trạng sức khỏe. Nếu bạn có bệnh lý đặc biệt hoặc cần kiểm soát khẩu phần 
           chặt chẽ, hãy tham khảo chuyên gia dinh dưỡng.

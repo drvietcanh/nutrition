@@ -753,7 +753,7 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="ranges-heading">
         <SectionHeading id="ranges-heading">
-          Cách các Bác sĩ lâm sàng Sử dụng Phạm vi thay vì Mục tiêu
+          Cách các Bác sĩ lâm sàng sử dụng Phạm vi thay vì Mục tiêu
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -912,7 +912,7 @@ export default function WhyNoUniversalNumberPage() {
             <p className="text-blue-800">
               Số liệu thông báo suy nghĩ của bạn, nhưng phán đoán lâm sàng hướng dẫn quyết định của bạn. Toàn bộ con người—các
               triệu chứng của họ, bối cảnh của họ, phản ứng của họ, mục tiêu chăm sóc của họ—quan trọng hơn bất kỳ tính toán nào.
-              Sử dụng công cụ để hỗ trợ suy nghĩ của bạn, nhưng để phán đoán xác định kế hoạch. Đây không phải về việc bỏ qua
+              sử dụng công cụ để hỗ trợ suy nghĩ của bạn, nhưng để phán đoán xác định kế hoạch. Đây không phải về việc bỏ qua
               số liệu—nó là về việc sử dụng chúng một cách phù hợp, như hỗ trợ cho suy nghĩ thay vì thay thế cho phán đoán.
             </p>
           </div>
@@ -944,7 +944,7 @@ export default function WhyNoUniversalNumberPage() {
               chăm sóc cẩn thận, phản ứng quan trọng hơn tính toán chính xác.
             </p>
             <p>
-              Sử dụng công cụ để hỗ trợ suy nghĩ của bạn. Chú ý đến những gì bệnh nhân thực sự tiêu thụ và cách họ
+              sử dụng công cụ để hỗ trợ suy nghĩ của bạn. Chú ý đến những gì bệnh nhân thực sự tiêu thụ và cách họ
               phản ứng. Xem xét bối cảnh lâm sàng. Đánh giá lại thường xuyên. Tin tưởng phán đoán của bạn. Cách tiếp cận này—suy nghĩ
               trong phạm vi, theo dõi phản ứng, điều chỉnh khi cần—là cách chăm sóc dinh dưỡng hiệu quả hoạt động. Bạn không
               cần có tất cả câu trả lời ngay lập tức. Bạn chỉ cần suy nghĩ cẩn thận và luôn phản ứng với
@@ -1043,7 +1043,7 @@ export default function WhyNoUniversalNumberPage() {
               </CardContent>
             </Card>
             <Card href="/tools/fluid-requirements">
-              <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+              <CardHeader icon={CheckCircle} title="Nhu cầu dịch" />
               <CardContent>
                 <p className="text-body-sm">
                   Tính nhu cầu dịch hàng ngày, minh họa cách ước tính nhu cầu dịch với các điều chỉnh lâm sàng.

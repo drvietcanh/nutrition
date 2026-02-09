@@ -262,7 +262,7 @@ export default function IronAnemiaPage() {
               <li>Ăn rau xanh đậm (rau bina, cải xoăn) thường xuyên</li>
               <li>Kết hợp với vitamin C: ăn ớt chuông, uống nước cam</li>
               <li>Chọn ngũ cốc tăng cường sắt</li>
-              <li>Tham khảo bác sĩ về viên uống bổ sung sắt (có thể cần)</li>
+              <li>tham khảo bác sĩ về viên uống bổ sung sắt (có thể cần)</li>
             </ul>
           </Card>
 

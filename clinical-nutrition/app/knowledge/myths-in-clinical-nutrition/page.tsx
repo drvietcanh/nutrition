@@ -220,7 +220,7 @@ export default function MythsInClinicalNutritionPage() {
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Tính toán, giá trị xét nghiệm, và đo lường là công cụ để cung cấp thông tin cho phán đoán lâm sàng của bạn, không phải để thay thế nó. 
-                Số liệu cung cấp dữ liệu, nhưng bạn cung cấp cách diễn giải. Sử dụng tính toán và đo lường để hỗ trợ tư duy của bạn, 
+                Số liệu cung cấp dữ liệu, nhưng bạn cung cấp cách diễn giải. sử dụng tính toán và đo lường để hỗ trợ tư duy của bạn, 
                 nhưng luôn xem xét hoàn cảnh cá nhân của bệnh nhân, phản ứng với can thiệp, và toàn bộ bức tranh lâm sàng. 
                 Con số là điểm khởi đầu, không phải điểm kết thúc.
               </p>

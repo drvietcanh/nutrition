@@ -73,7 +73,7 @@ const knowledgeGroups: NavGroup[] = [
         icon: Calculator,
       },
       {
-        label: "Chất béo trong Chế độ ăn",
+        label: "Chất béo trong chế độ ăn",
         href: "/knowledge/dietary-fats",
         icon: Heart,
       },
@@ -88,7 +88,7 @@ const knowledgeGroups: NavGroup[] = [
         icon: AlertCircle,
       },
       {
-        label: "Carbohydrate (Tinh bột và Đường)",
+        label: "Carbohydrate (tinh bột và đường)",
         href: "/knowledge/carbohydrates",
         icon: Calculator,
       },
@@ -98,12 +98,12 @@ const knowledgeGroups: NavGroup[] = [
         icon: FileText,
       },
       {
-        label: "Hydration: Nước và Dịch",
+        label: "Hydration: Nước và dịch",
         href: "/knowledge/hydration",
         icon: Droplet,
       },
       {
-        label: "Tổng quan Chất dinh dưỡng Đa lượng",
+        label: "Tổng quan chất dinh dưỡng đa lượng",
         href: "/knowledge/macronutrients-overview",
         icon: FileText,
       },
@@ -179,7 +179,7 @@ const toolsItems: NavItem[] = [
     icon: Ruler,
   },
   {
-    label: "Nhu cầu Dịch",
+    label: "Nhu cầu dịch",
     href: "/tools/fluid-requirements",
     icon: Droplet,
   },

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "dinh dưỡng lâm sàng",
   ],
   openGraph: {
-    title: "Đánh giá Vi chất – Công cụ Giảng dạy",
+    title: "Đánh giá Vi chất – Công cụ giảng dạy",
     description:
       "Ước tính nhu cầu vi chất (vitamin và khoáng chất) dựa trên tuổi, giới tính, và tình trạng lâm sàng. Công cụ giáo dục để hiểu tầm quan trọng của vi chất trong dinh dưỡng lâm sàng.",
     url: "https://clinical-nutrition.edu.vn/tools/micronutrient-assessment",
@@ -51,7 +51,7 @@ export default function MicronutrientAssessmentPage() {
         <div className="flex items-center gap-3">
           <Pill className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Đánh giá Vi chất – Công cụ Giảng dạy
+            Đánh giá Vi chất – Công cụ giảng dạy
           </h1>
         </div>
         <p className="text-body-lg">

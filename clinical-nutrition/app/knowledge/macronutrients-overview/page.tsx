@@ -8,7 +8,7 @@ import Link from "next/link";
 import { getRelatedArticles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
-  title: "Tổng quan về các Chất dinh dưỡng Đa lượng (Macronutrients)",
+  title: "Tổng quan về các chất dinh dưỡng đa lượng (Macronutrients)",
   description:
     "Tổng quan về ba chất dinh dưỡng đa lượng chính - carbohydrate, protein, và chất béo - vai trò, nhu cầu, và cách cân bằng trong chế độ ăn.",
   keywords: [
@@ -28,7 +28,7 @@ export default function MacronutrientsOverviewPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Tổng quan về các Chất dinh dưỡng Đa lượng" },
+          { label: "Tổng quan về các chất dinh dưỡng đa lượng" },
         ]}
       />
 
@@ -36,7 +36,7 @@ export default function MacronutrientsOverviewPage() {
         <div className="flex items-center gap-3">
           <PieChart className="w-8 h-8 text-blue-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Tổng quan về các Chất dinh dưỡng Đa lượng
+            Tổng quan về các chất dinh dưỡng đa lượng
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">
@@ -65,7 +65,7 @@ export default function MacronutrientsOverviewPage() {
 
       {/* Overview */}
       <section className="space-y-4">
-        <h2 className="heading-2">Chất dinh dưỡng Đa lượng là gì?</h2>
+        <h2 className="heading-2">Chất dinh dưỡng đa lượng là gì?</h2>
         <div className="space-y-4">
           <p className="text-body">
             <strong>Chất dinh dưỡng đa lượng (Macronutrients)</strong> là các chất dinh dưỡng mà cơ thể 
@@ -115,7 +115,7 @@ export default function MacronutrientsOverviewPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Wheat className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Carbohydrate (Tinh bột và Đường)
+          Carbohydrate (tinh bột và đường)
         </h2>
         <Card>
           <div className="space-y-3">
@@ -142,7 +142,7 @@ export default function MacronutrientsOverviewPage() {
             <p className="text-xs text-gray-600">
               Xem chi tiết:{" "}
               <Link href="/knowledge/carbohydrates" className="text-blue-600 hover:underline">
-                Carbohydrate (Tinh bột và Đường)
+                Carbohydrate (tinh bột và đường)
               </Link>
             </p>
           </div>
@@ -221,7 +221,7 @@ export default function MacronutrientsOverviewPage() {
             <p className="text-xs text-gray-600">
               Xem chi tiết:{" "}
               <Link href="/knowledge/dietary-fats" className="text-blue-600 hover:underline">
-                Chất béo trong Chế độ ăn
+                Chất béo trong chế độ ăn
               </Link>
             </p>
           </div>
@@ -232,7 +232,7 @@ export default function MacronutrientsOverviewPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách cân bằng các Chất dinh dưỡng Đa lượng
+          Cách cân bằng các chất dinh dưỡng đa lượng
         </h2>
         <div className="space-y-4">
           <Card>

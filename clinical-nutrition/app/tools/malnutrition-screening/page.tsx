@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "dinh dưỡng lâm sàng",
   ],
   openGraph: {
-    title: "Nguy cơ Suy dinh dưỡng – Công cụ Giảng dạy",
+    title: "Nguy cơ Suy dinh dưỡng – Công cụ giảng dạy",
     description:
       "Khám phá cách các công cụ sàng lọc phổ biến (NRS-2002, PG-SGA) đánh giá nguy cơ suy dinh dưỡng sử dụng các đầu vào ví dụ đơn giản. Hiểu cách sụt cân, giảm lượng ăn, và bối cảnh bệnh ảnh hưởng đến đánh giá nguy cơ.",
     url: "https://clinical-nutrition.edu.vn/tools/malnutrition-screening",
@@ -44,7 +44,7 @@ export default function MalnutritionScreeningPage() {
         <div className="flex items-center gap-3">
           <Activity className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Nguy cơ Suy dinh dưỡng – Công cụ Giảng dạy
+            Nguy cơ Suy dinh dưỡng – Công cụ giảng dạy
           </h1>
         </div>
         <p className="text-body-lg">

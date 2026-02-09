@@ -456,7 +456,7 @@ export default function DietaryFiberPage() {
 
       {/* Application in Vietnamese meals */}
       <section className="space-y-4">
-        <h2 className="heading-2">Áp dụng trong Bữa ăn Việt Nam</h2>
+        <h2 className="heading-2">Áp dụng trong bữa ăn Việt Nam</h2>
         <Card className="border-green-200 bg-green-50/30">
           <h3 className="heading-4 mb-3">Nguyên tắc cơ bản</h3>
           <div className="space-y-3">
@@ -515,7 +515,7 @@ export default function DietaryFiberPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách tăng lượng Chất xơ trong Chế độ ăn
+          Cách tăng lượng Chất xơ trong chế độ ăn
         </h2>
         <div className="space-y-4">
           <TipCard
@@ -577,7 +577,7 @@ export default function DietaryFiberPage() {
             <ul className="space-y-2 text-sm">
               <li>
                 <strong>Bệnh viêm ruột (IBD):</strong> Trong giai đoạn cấp, có thể cần giảm chất xơ 
-                tạm thời. Tham khảo ý kiến chuyên gia.
+                tạm thời. tham khảo ý kiến chuyên gia.
               </li>
               <li>
                 <strong>Hẹp ruột:</strong> Có thể cần hạn chế chất xơ không hòa tan.

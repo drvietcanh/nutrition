@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "nhu cầu vs lượng ăn",
   ],
   openGraph: {
-    title: "Đánh giá Lượng ăn – Công cụ Giảng dạy",
+    title: "Đánh giá Lượng ăn – Công cụ giảng dạy",
     description:
       "Hiểu sự khác biệt giữa dinh dưỡng được kê đơn và được cung cấp, vì sao lượng ăn thường thiếu, và tầm quan trọng của xu hướng so với dữ liệu một ngày. Công cụ giáo dục để so sánh nhu cầu ước tính với lượng ăn thực tế.",
     url: "https://clinical-nutrition.edu.vn/tools/intake-assessment",
@@ -36,7 +36,7 @@ export default function IntakeAssessmentPage() {
       {/* 1. Title + brief explanation */}
       <header className="space-y-2">
         <h1 className="heading-1">
-          Đánh giá Lượng ăn – Công cụ Giảng dạy
+          Đánh giá Lượng ăn – Công cụ giảng dạy
         </h1>
         <p className="text-body-sm">
           Trang này giúp bạn so sánh một{" "}

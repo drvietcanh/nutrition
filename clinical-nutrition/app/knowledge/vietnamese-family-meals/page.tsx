@@ -52,7 +52,7 @@ export default function VietnameseFamilyMealsPage() {
             <strong>Cơm:</strong> Carbohydrate - nguồn năng lượng chính
           </li>
           <li>
-            <strong>Canh:</strong> Dịch, rau củ, có thể có protein
+            <strong>Canh:</strong> dịch, rau củ, có thể có protein
           </li>
           <li>
             <strong>Món mặn:</strong> Protein (thịt, cá, đậu phụ)
@@ -93,7 +93,7 @@ export default function VietnameseFamilyMealsPage() {
               <div className="rounded-lg border-2 border-blue-200 bg-blue-50 p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <Fish className="w-5 h-5 text-blue-700" aria-hidden="true" />
-                  <h4 className="text-sm font-semibold text-blue-900">2. Canh (Dịch + Rau củ)</h4>
+                  <h4 className="text-sm font-semibold text-blue-900">2. Canh (dịch + Rau củ)</h4>
                 </div>
                 <p className="text-sm text-blue-900 mb-2">
                   Cung cấp dịch, rau củ, và có thể có protein (canh chua cá, canh thịt).
@@ -254,7 +254,7 @@ export default function VietnameseFamilyMealsPage() {
               </div>
               <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
                 <p className="text-sm font-semibold text-blue-900 mb-1">Canh: 1 bát nhỏ</p>
-                <p className="text-xs text-blue-800">Dịch + rau củ</p>
+                <p className="text-xs text-blue-800">dịch + rau củ</p>
               </div>
             </div>
             <p className="text-xs text-gray-600 mt-3">
@@ -406,7 +406,7 @@ export default function VietnameseFamilyMealsPage() {
             </p>
           </Card>
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan về các Chất dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan về các chất dinh dưỡng đa lượng</h3>
             <p className="text-sm text-gray-600">
               Hiểu về carbohydrate, protein, chất béo trong bữa ăn
             </p>

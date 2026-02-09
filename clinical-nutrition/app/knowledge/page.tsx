@@ -203,7 +203,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/dietary-fats">
           <CardHeader
             icon={Heart}
-            title="Chất béo trong Chế độ ăn: Hiểu các loại và Ảnh hưởng sức khỏe"
+            title="Chất béo trong chế độ ăn: Hiểu các loại và Ảnh hưởng sức khỏe"
           />
           <CardContent>
             <p className="text-body">
@@ -266,7 +266,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/carbohydrates">
           <CardHeader
             icon={Wheat}
-            title="Carbohydrate (Tinh bột và Đường)"
+            title="Carbohydrate (tinh bột và đường)"
           />
           <CardContent>
             <p className="text-body">
@@ -336,7 +336,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/hydration">
           <CardHeader
             icon={Droplet}
-            title="Hydration: Nước và Dịch"
+            title="Hydration: Nước và dịch"
           />
           <CardContent>
             <p className="text-body">
@@ -357,7 +357,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/macronutrients-overview">
           <CardHeader
             icon={PieChart}
-            title="Tổng quan về các Chất dinh dưỡng Đa lượng"
+            title="Tổng quan về các chất dinh dưỡng đa lượng"
           />
           <CardContent>
             <p className="text-body">

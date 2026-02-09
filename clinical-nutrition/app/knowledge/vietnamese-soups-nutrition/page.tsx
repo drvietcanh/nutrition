@@ -9,7 +9,7 @@ import { Soup, Droplet, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Canh Việt Nam và Dinh dưỡng",
+  title: "Canh Việt Nam và dinh dưỡng",
   description:
     "Canh (soup) là món ăn phổ biến trong bữa ăn Việt Nam. Hiểu về giá trị dinh dưỡng của các loại canh, cách nấu canh lành mạnh, và vai trò của canh trong bữa ăn.",
   keywords: [
@@ -28,14 +28,14 @@ export default function VietnameseSoupsNutritionPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Canh Việt Nam và Dinh dưỡng" },
+          { label: "Canh Việt Nam và dinh dưỡng" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Soup className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Canh Việt Nam và Dinh dưỡng</h1>
+          <h1 className="heading-1">Canh Việt Nam và dinh dưỡng</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Canh (soup) là một phần không thể thiếu trong bữa ăn gia đình Việt Nam. Từ canh chua cá thơm lừng 
@@ -123,7 +123,7 @@ export default function VietnameseSoupsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Các loại Canh Việt Nam Phổ biến</h2>
+        <h2 className="heading-2">Các loại Canh Việt Nam phổ biến</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 mb-3 text-green-900">1. Canh chua (Sour soup)</h3>
@@ -366,7 +366,7 @@ export default function VietnameseSoupsNutritionPage() {
             </p>
           </Card>
           <Card href="/knowledge/hydration">
-            <h3 className="heading-5 mb-2">Hydration: Nước và Dịch</h3>
+            <h3 className="heading-5 mb-2">Hydration: Nước và dịch</h3>
             <p className="text-sm text-gray-600">
               Canh cung cấp nước cho cơ thể
             </p>

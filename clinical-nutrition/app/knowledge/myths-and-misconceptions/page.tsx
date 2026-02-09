@@ -19,7 +19,7 @@ const myths: Myth[] = [
     id: 'universal-calorie-requirement',
     myth: 'Tất cả bệnh nhân cần cùng một nhu cầu calo (ví dụ: 2000 kcal/ngày)',
     whyItSoundsRight: 'Con số "2000 kcal" quen thuộc từ nhãn thực phẩm và thông điệp sức khỏe chung, khiến nó có vẻ như một tiêu chuẩn phổ quát. Trong môi trường lâm sàng bận rộn, sử dụng một con số duy nhất có vẻ hiệu quả hơn việc tính toán nhu cầu cá nhân.',
-    whatActuallyHappens: 'Nhu cầu năng lượng rất cá nhân hóa. Một bệnh nhân cao tuổi ít vận động có thể cần 1200-1400 kcal/ngày, trong khi một bệnh nhân bệnh nặng bị bỏng có thể cần 3000-4000 kcal/ngày. Sử dụng cách tiếp cận "một kích cỡ phù hợp tất cả" có thể không đáp ứng nhu cầu cá nhân và có thể dẫn đến cho ăn quá mức (có thể góp phần gây hội chứng tái nuôi dưỡng - một tình trạng mà dinh dưỡng nhanh gây ra sự thay đổi điện giải) hoặc cho ăn không đủ (có thể làm chậm phục hồi và lành vết thương).',
+    whatActuallyHappens: 'Nhu cầu năng lượng rất cá nhân hóa. Một bệnh nhân cao tuổi ít vận động có thể cần 1200-1400 kcal/ngày, trong khi một bệnh nhân bệnh nặng bị bỏng có thể cần 3000-4000 kcal/ngày. sử dụng cách tiếp cận "một kích cỡ phù hợp tất cả" có thể không đáp ứng nhu cầu cá nhân và có thể dẫn đến cho ăn quá mức (có thể góp phần gây hội chứng tái nuôi dưỡng - một tình trạng mà dinh dưỡng nhanh gây ra sự thay đổi điện giải) hoặc cho ăn không đủ (có thể làm chậm phục hồi và lành vết thương).',
     whatToUnderstandInstead: 'Nhu cầu calo thay đổi đáng kể dựa trên tuổi, giới tính, thành phần cơ thể, mức độ hoạt động, trạng thái chuyển hóa và tình trạng lâm sàng. Nhu cầu cá nhân có thể được tính toán bằng các công thức đã được xác nhận, điều chỉnh theo tình huống cụ thể của bệnh nhân.',
     clinicalInsight: 'Các tình trạng tăng chuyển hóa (nhiễm trùng huyết, bỏng, chấn thương) cần calo cao hơn vì cơ thể đang làm việc nhiều hơn để chữa lành. Các trạng thái giảm chuyển hóa (người cao tuổi, ít vận động, bệnh mạn tính) cần calo thấp hơn vì cơ thể cần ít năng lượng hơn.'
   },
@@ -69,14 +69,14 @@ const myths: Myth[] = [
     whyItSoundsRight: 'Thông điệp sức khỏe chung rằng "giảm cân là tốt" phổ biến đến mức dễ áp dụng nó một cách phổ quát. Đối với bệnh nhân béo phì, giảm cân trong khi nằm viện có vẻ như một điểm tích cực. Sự khác biệt giữa giảm cân có chủ ý (cho sức khỏe) và giảm cân không chủ ý (dấu hiệu bệnh) không phải lúc nào cũng rõ ràng trong thực hành.',
     whatActuallyHappens: 'Mặc dù giảm cân có chủ ý có thể có lợi cho bệnh nhân ngoại trú béo phì, nhưng giảm cân không chủ ý ở bệnh nhân nằm viện thường là mối quan tâm. Nó thường đại diện cho mất khối lượng cơ thể nạc (cơ), có thể làm chậm phục hồi, tăng nguy cơ nhiễm trùng, kéo dài thời gian nằm viện, và liên quan đến kết quả kém hơn. Ngay cả bệnh nhân béo phì thường cần dinh dưỡng đầy đủ trong bệnh cấp tính - cơ thể họ cần nhiên liệu để chữa lành, ngay cả khi họ có dự trữ chất béo dư thừa.',
     whatToUnderstandInstead: 'Giảm cân không chủ ý ở bệnh nhân nằm viện thường liên quan đến kết quả kém và có thể chỉ ra suy dinh dưỡng hoặc bệnh tiềm ẩn. Theo dõi xu hướng cân nặng có thể hữu ích: mất không chủ ý >5% trong 1 tháng hoặc >10% trong 6 tháng thường được coi là đáng kể. Bệnh nhân béo phì vẫn thường cần protein và vi chất dinh dưỡng đầy đủ trong bệnh cấp tính.',
-    clinicalInsight: 'Tập trung vào bảo tồn khối lượng cơ thể nạc (cơ), không chỉ tổng trọng lượng - mất cơ là vấn đề thực sự. Điều tra nguyên nhân: lượng ăn vào không đủ, kém hấp thu (hấp thu chất dinh dưỡng kém), tăng chuyển hóa (tỷ lệ chuyển hóa tăng), hoặc bệnh tiềm ẩn. Sử dụng công cụ sàng lọc đã được xác nhận (MUST, NRS-2002) để xác định bệnh nhân có nguy cơ.'
+    clinicalInsight: 'Tập trung vào bảo tồn khối lượng cơ thể nạc (cơ), không chỉ tổng trọng lượng - mất cơ là vấn đề thực sự. Điều tra nguyên nhân: lượng ăn vào không đủ, kém hấp thu (hấp thu chất dinh dưỡng kém), tăng chuyển hóa (tỷ lệ chuyển hóa tăng), hoặc bệnh tiềm ẩn. sử dụng công cụ sàng lọc đã được xác nhận (MUST, NRS-2002) để xác định bệnh nhân có nguy cơ.'
   },
   {
     id: 'supplements-replace-food',
     myth: 'Thực phẩm bổ sung dinh dưỡng có thể thay thế bữa ăn',
     whyItSoundsRight: 'Thực phẩm bổ sung tiện lợi, có thể đo lường, và có vẻ như một can thiệp được kiểm soát. Khi bệnh nhân gặp khó khăn khi ăn, thực phẩm bổ sung có vẻ như một giải pháp đáng tin cậy. Độ chính xác của việc biết chính xác chất dinh dưỡng mà bệnh nhân đang nhận được có thể hấp dẫn so với sự biến đổi của lượng thức ăn.',
     whatActuallyHappens: 'Mặc dù thực phẩm bổ sung đường uống (ONS như Ensure, Boost) là công cụ có giá trị để đáp ứng nhu cầu dinh dưỡng, chúng nên bổ sung, không thay thế, bữa ăn khi có thể. Thực phẩm nguyên chất cung cấp chất xơ, phytochemical (hợp chất thực vật có lợi ích sức khỏe), và các hợp chất hoạt tính sinh học khác không tìm thấy trong thực phẩm bổ sung. Ngoài ra, hành động ăn có lợi ích xã hội, tâm lý và cảm giác mà thực phẩm bổ sung không thể cung cấp.',
-    whatToUnderstandInstead: 'Thực phẩm bổ sung được thiết kế để bổ sung, không thay thế, chế độ ăn cân bằng. Sử dụng thực phẩm bổ sung để lấp đầy khoảng trống dinh dưỡng, không phải như thay thế bữa ăn khi có thể - nghĩ về chúng như "bảo hiểm dinh dưỡng." Khuyến khích cách tiếp cận ưu tiên thực phẩm khi bệnh nhân có thể ăn - ngay cả một lượng nhỏ thực phẩm thật cũng có giá trị.',
+    whatToUnderstandInstead: 'Thực phẩm bổ sung được thiết kế để bổ sung, không thay thế, chế độ ăn cân bằng. sử dụng thực phẩm bổ sung để lấp đầy khoảng trống dinh dưỡng, không phải như thay thế bữa ăn khi có thể - nghĩ về chúng như "bảo hiểm dinh dưỡng." Khuyến khích cách tiếp cận ưu tiên thực phẩm khi bệnh nhân có thể ăn - ngay cả một lượng nhỏ thực phẩm thật cũng có giá trị.',
     clinicalInsight: 'Thực phẩm bổ sung phù hợp khi: lượng ăn vào đường uống không đủ, nhu cầu tăng (chữa lành, tăng trưởng), hoặc thiếu hụt chất dinh dưỡng cụ thể. Cung cấp thực phẩm bổ sung giữa các bữa ăn, không phải với bữa ăn, để tránh giảm lượng thức ăn. Nhớ: thực phẩm bổ sung hỗ trợ dinh dưỡng, nhưng thực phẩm cung cấp nhiều hơn chất dinh dưỡng - ăn là về nhiều hơn dinh dưỡng.'
   }
 ];
@@ -363,7 +363,7 @@ export default function MythsAndMisconceptionsPage() {
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Tính toán, giá trị xét nghiệm và đo lường là công cụ để thông báo phán đoán lâm sàng của bạn, không phải để thay thế nó. 
-                Số liệu cung cấp dữ liệu, nhưng bạn cung cấp sự giải thích. Sử dụng tính toán và đo lường để hỗ trợ suy nghĩ của bạn, 
+                Số liệu cung cấp dữ liệu, nhưng bạn cung cấp sự giải thích. sử dụng tính toán và đo lường để hỗ trợ suy nghĩ của bạn, 
                 nhưng luôn xem xét hoàn cảnh cá nhân của bệnh nhân, phản ứng với can thiệp và bức tranh lâm sàng tổng thể. 
                 Con số là điểm khởi đầu, không phải điểm kết thúc.
               </p>

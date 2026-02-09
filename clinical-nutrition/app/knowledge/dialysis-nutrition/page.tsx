@@ -242,7 +242,7 @@ export default function DialysisNutritionPage() {
                 </ul>
               </div>
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Nước (Dịch)</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Nước (dịch)</p>
                 <p className="text-sm text-gray-700 mb-2">
                   Hạn chế nước rất quan trọng, đặc biệt với chạy thận nhân tạo.
                 </p>
@@ -291,7 +291,7 @@ export default function DialysisNutritionPage() {
                 <strong>👉 Lọc màng bụng:</strong>
               </p>
               <p className="text-sm text-blue-900">
-                Dịch lọc có glucose. Có thể cung cấp thêm 150–300 kcal/ngày
+                dịch lọc có glucose. Có thể cung cấp thêm 150–300 kcal/ngày
               </p>
             </div>
           </CardContent>
@@ -354,7 +354,7 @@ export default function DialysisNutritionPage() {
               <li>Protein: 1.2-1.5 g/kg/ngày</li>
               <li>Phosphorus: &lt; 800-1000 mg/ngày</li>
               <li>Potassium: &lt; 2-3g/ngày (tùy tần suất lọc)</li>
-              <li>Dịch: 500ml + lượng nước tiểu/ngày</li>
+              <li>dịch: 500ml + lượng nước tiểu/ngày</li>
               <li>Tăng cân giữa các lần lọc: 1-2 kg</li>
             </ul>
           </CardContent>
@@ -367,8 +367,8 @@ export default function DialysisNutritionPage() {
               <li>Protein: 1.2-1.5 g/kg/ngày (có thể cần cao hơn do mất protein qua dịch lọc)</li>
               <li>Phosphorus: &lt; 800-1000 mg/ngày</li>
               <li>Potassium: Có thể linh hoạt hơn do lọc liên tục</li>
-              <li>Dịch: Có thể linh hoạt hơn, nhưng vẫn cần theo dõi</li>
-              <li>Lưu ý: Dịch lọc chứa glucose có thể cung cấp năng lượng (150-300 kcal/ngày)</li>
+              <li>dịch: Có thể linh hoạt hơn, nhưng vẫn cần theo dõi</li>
+              <li>Lưu ý: dịch lọc chứa glucose có thể cung cấp năng lượng (150-300 kcal/ngày)</li>
             </ul>
           </CardContent>
         </Card>
@@ -602,7 +602,7 @@ export default function DialysisNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardHeader icon={CheckCircle} title="Nhu cầu dịch" />
             <CardContent>
               <p className="text-body-sm">
                 Tính nhu cầu dịch với điều chỉnh cho lọc máu, đặc biệt quan trọng trong quản lý quá tải dịch.

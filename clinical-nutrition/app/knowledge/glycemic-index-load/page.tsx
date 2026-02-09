@@ -217,10 +217,10 @@ export default function GlycemicIndexLoadPage() {
             <h3 className="heading-4 mb-3">Vai trò của khẩu phần và GL</h3>
             <div className="space-y-3 text-sm text-gray-700">
               <p>
-                <strong>Khẩu phần nhỏ</strong> → GL thấp → đường huyết tăng ít
+                <strong>khẩu phần nhỏ</strong> → GL thấp → đường huyết tăng ít
               </p>
               <p>
-                <strong>Khẩu phần lớn</strong> → GL cao → đường huyết tăng nhiều
+                <strong>khẩu phần lớn</strong> → GL cao → đường huyết tăng nhiều
               </p>
               <div className="bg-gray-50 rounded-lg p-3 mt-3">
                 <p className="font-medium mb-2">Ví dụ thực tế:</p>

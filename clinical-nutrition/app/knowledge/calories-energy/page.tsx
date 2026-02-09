@@ -171,7 +171,7 @@ export default function CaloriesEnergyPage() {
                 label: "Bữa trưa",
                 good: "Cơm (1 bát) + thịt nạc (100g) + rau luộc = ~450 calo",
                 bad: "Cơm (1.5 bát) + thịt mỡ (150g) + đồ chiên = ~700 calo",
-                note: "Khẩu phần và cách chế biến ảnh hưởng lớn đến calo"
+                note: "khẩu phần và cách chế biến ảnh hưởng lớn đến calo"
               },
               {
                 label: "Đồ uống",
@@ -342,7 +342,7 @@ export default function CaloriesEnergyPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan về các Chất dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan về các chất dinh dưỡng đa lượng</h3>
             <p className="text-sm text-gray-600">
               Hiểu về carbohydrate, protein, và chất béo - nguồn calo
             </p>

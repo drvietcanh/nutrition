@@ -24,7 +24,7 @@ export function PortionSizeGuide({ title, items, className = "" }: PortionSizeGu
               <div className="flex-1">
                 <p className="text-sm font-semibold text-gray-900 mb-1">{item.food}</p>
                 <p className="text-sm text-gray-700 mb-1">
-                  <strong>Khẩu phần:</strong> {item.portion}
+                  <strong>khẩu phần:</strong> {item.portion}
                 </p>
                 <p className="text-xs text-gray-600 italic">
                   <strong>So sánh:</strong> {item.visual}
@@ -41,7 +41,7 @@ export function PortionSizeGuide({ title, items, className = "" }: PortionSizeGu
       </div>
       <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
         <p className="text-xs text-blue-900">
-          <strong>Mẹo:</strong> Sử dụng bàn tay để ước lượng khẩu phần:
+          <strong>Mẹo:</strong> sử dụng bàn tay để ước lượng khẩu phần:
           <ul className="list-disc list-inside mt-1 space-y-1">
             <li>Lòng bàn tay = 1 phần protein (~100g)</li>
             <li>Nắm tay = 1 phần carbohydrate (~80g)</li>

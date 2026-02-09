@@ -10,7 +10,7 @@ import Link from "next/link";
 import { getRelatedArticles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
-  title: "Hydration: Nước và Dịch trong Dinh dưỡng lâm sàng",
+  title: "Hydration: Nước và dịch trong Dinh dưỡng lâm sàng",
   description:
     "Hiểu về nhu cầu nước và dịch, tầm quan trọng của hydration, dấu hiệu thiếu nước, và cách đảm bảo đủ nước cho sức khỏe tốt.",
   keywords: [
@@ -30,7 +30,7 @@ export default function HydrationPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Hydration: Nước và Dịch" },
+          { label: "Hydration: Nước và dịch" },
         ]}
       />
 
@@ -38,7 +38,7 @@ export default function HydrationPage() {
         <div className="flex items-center gap-3">
           <Droplet className="w-8 h-8 text-blue-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Hydration: Nước và Dịch trong Dinh dưỡng lâm sàng
+            Hydration: Nước và dịch trong Dinh dưỡng lâm sàng
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">

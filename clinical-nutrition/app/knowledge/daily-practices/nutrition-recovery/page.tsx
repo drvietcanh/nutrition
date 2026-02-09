@@ -282,7 +282,7 @@ export default function NutritionRecoveryPage() {
               Tránh đồ cay, nóng có thể gây khó chịu.
             </p>
             <p>
-              <strong>Tham khảo chuyên gia:</strong> Nếu phẫu thuật lớn, nên tham khảo chuyên gia dinh dưỡng 
+              <strong>tham khảo chuyên gia:</strong> Nếu phẫu thuật lớn, nên tham khảo chuyên gia dinh dưỡng 
               về chế độ ăn phù hợp.
             </p>
           </div>

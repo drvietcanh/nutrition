@@ -51,7 +51,7 @@ export default function WeeklyMealPlanningPage() {
             Bắt đầu với <strong>2-3 bữa</strong> đầu tiên, sau đó mở rộng
           </li>
           <li>
-            Sử dụng <strong>thực phẩm theo mùa</strong> để tiết kiệm
+            sử dụng <strong>thực phẩm theo mùa</strong> để tiết kiệm
           </li>
           <li>
             <strong>Linh hoạt</strong> - có thể điều chỉnh theo tình huống
@@ -164,7 +164,7 @@ export default function WeeklyMealPlanningPage() {
                 </p>
                 <ExampleBox variant="tip" title="Mẹo">
                   <p className="text-sm">
-                    Sử dụng "theme" cho mỗi ngày: Thứ 2 = Thịt gà, Thứ 3 = Cá, Thứ 4 = Đậu, 
+                    sử dụng "theme" cho mỗi ngày: Thứ 2 = Thịt gà, Thứ 3 = Cá, Thứ 4 = Đậu, 
                     v.v. Điều này giúp bạn không phải nghĩ quá nhiều.
                   </p>
                 </ExampleBox>
@@ -281,7 +281,7 @@ export default function WeeklyMealPlanningPage() {
         <TipCard
           tips={[
             { type: 'tip', text: 'Bắt đầu đơn giản: Lập kế hoạch cho 2-3 bữa đầu tiên, sau đó mở rộng dần' },
-            { type: 'tip', text: 'Sử dụng thực phẩm theo mùa: Rẻ hơn và tươi ngon hơn' },
+            { type: 'tip', text: 'sử dụng thực phẩm theo mùa: Rẻ hơn và tươi ngon hơn' },
             { type: 'tip', text: 'Nấu một lần, ăn hai lần: Nấu nhiều hơn để dùng cho bữa sau' },
             { type: 'tip', text: 'Linh hoạt: Có thể thay đổi nếu có tình huống đặc biệt' },
             { type: 'check', text: 'Kiểm tra tủ lạnh trước khi mua: Tránh mua trùng lặp' },

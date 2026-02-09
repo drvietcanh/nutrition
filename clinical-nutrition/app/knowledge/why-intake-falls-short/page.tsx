@@ -498,7 +498,7 @@ export default function WhyIntakeFallsShortPage() {
               <li>Khoảng thời gian nhịn ăn kéo dài khi thủ thuật bị trì hoãn</li>
               <li>Nhiều thủ thuật yêu cầu nhịn ăn lặp lại trong vài ngày</li>
               <li>Lệnh NPO không rõ ràng hoặc quá bảo thủ kéo dài vượt quá thời gian cần thiết</li>
-              <li>Dịch vụ bữa ăn bị trì hoãn sau thủ thuật, ngay cả khi NPO được gỡ bỏ</li>
+              <li>dịch vụ bữa ăn bị trì hoãn sau thủ thuật, ngay cả khi NPO được gỡ bỏ</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
               <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho bữa sáng, bữa trưa, và bữa tối có thể bỏ lỡ bữa trưa 
@@ -549,7 +549,7 @@ export default function WhyIntakeFallsShortPage() {
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
               <li>Giữ cho thủ thuật, xét nghiệm, hoặc thuốc</li>
               <li>Máy bơm hỏng hoặc ngắt kết nối</li>
-              <li>Dịch dạ dày còn lại cao yêu cầu giảm tỷ lệ hoặc giữ tạm thời</li>
+              <li>dịch dạ dày còn lại cao yêu cầu giảm tỷ lệ hoặc giữ tạm thời</li>
               <li>Ống bị lệch hoặc tắc</li>
               <li>Vấn đề tư thế bệnh nhân ảnh hưởng đến khả năng dung nạp</li>
               <li>Báo động qua đêm không được xử lý ngay lập tức</li>
@@ -990,7 +990,7 @@ export default function WhyIntakeFallsShortPage() {
         <div className="space-y-4 mt-6">
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <h3 className="font-semibold text-gray-900 mb-2 text-lg">
-              Sử dụng Công cụ 03 để Hình dung Khoảng cách
+              sử dụng Công cụ 03 để Hình dung Khoảng cách
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
               <Link href="/tools/intake-assessment" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
@@ -1020,7 +1020,7 @@ export default function WhyIntakeFallsShortPage() {
             <p className="text-sm text-gray-700 leading-relaxed">
               <strong>Hãy nhớ:</strong> Các con số từ Công cụ 02 là điểm khởi đầu, không phải mục tiêu cứng nhắc. 
               Khi bạn tính nhu cầu, hãy nhớ rằng lượng ăn thực tế có thể sẽ thấp hơn—và điều đó 
-              được dự kiến. Sử dụng khoảng tính toán như hướng dẫn cho lập kế hoạch, nhưng đừng ngạc nhiên hoặc 
+              được dự kiến. sử dụng khoảng tính toán như hướng dẫn cho lập kế hoạch, nhưng đừng ngạc nhiên hoặc 
               thất vọng khi lượng ăn thiếu. Tính toán giúp bạn hiểu những gì bạn đang hướng tới, 
               nhưng theo dõi lượng ăn thực tế cho bạn biết những gì thực sự đang xảy ra.
             </p>
@@ -1054,7 +1054,7 @@ export default function WhyIntakeFallsShortPage() {
         <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 mt-6">
           <p className="text-sm text-gray-700 leading-relaxed">
             <strong>Bạn có thể làm được.</strong> Hiểu vì sao khoảng cách lượng ăn xảy ra là bước đầu tiên. 
-            Sử dụng các công cụ này và áp dụng lập luận này trong thực hành sẽ giúp bạn diễn giải khoảng cách lượng ăn 
+            sử dụng các công cụ này và áp dụng lập luận này trong thực hành sẽ giúp bạn diễn giải khoảng cách lượng ăn 
             một cách thực tế và đưa ra quyết định thực tế về chăm sóc dinh dưỡng. Hãy nhớ: thiếu hụt lượng ăn 
             là phổ biến, tính toán là điểm khởi đầu, và theo dõi và điều chỉnh 
             quan trọng hơn sự hoàn hảo.

@@ -99,7 +99,7 @@ export default function EmergencyNutritionPage() {
               dịch và điện giải
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Dịch: 30-35 ml/kg/ngày (điều chỉnh theo tình trạng)</li>
+              <li>dịch: 30-35 ml/kg/ngày (điều chỉnh theo tình trạng)</li>
               <li>năng lượng: Có thể bắt đầu với 50-70% nhu cầu ước tính</li>
               <li>Protein: 1.2-1.5 g/kg/ngày</li>
               <li>Điện giải: Theo dõi và bù đắp khi cần</li>

@@ -255,7 +255,7 @@ export default function ElderlyNutritionPage() {
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>
-                  <strong>Tham khảo bác sĩ:</strong> Nếu thuốc làm giảm cảm giác thèm ăn, 
+                  <strong>tham khảo bác sĩ:</strong> Nếu thuốc làm giảm cảm giác thèm ăn, 
                   thảo luận với bác sĩ
                 </span>
               </li>
@@ -292,7 +292,7 @@ export default function ElderlyNutritionPage() {
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>
-                  <strong>Dịch vụ giao đồ ăn:</strong> Sử dụng dịch vụ giao thực phẩm, 
+                  <strong>dịch vụ giao đồ ăn:</strong> sử dụng dịch vụ giao thực phẩm, 
                   bữa ăn sẵn lành mạnh
                 </span>
               </li>

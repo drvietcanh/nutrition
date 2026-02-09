@@ -194,7 +194,7 @@ export default function LiverDiseaseNutritionPage() {
                 </ul>
               </div>
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Nước (Dịch)</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Nước (dịch)</p>
                 <p className="text-sm text-gray-700 mb-2">
                   Chỉ hạn chế khi:
                 </p>
@@ -537,7 +537,7 @@ export default function LiverDiseaseNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/fluid-requirements">
-            <CardHeader icon={CheckCircle} title="Nhu cầu Dịch" />
+            <CardHeader icon={CheckCircle} title="Nhu cầu dịch" />
             <CardContent>
               <p className="text-body-sm">
                 Tính nhu cầu dịch với điều chỉnh cho bệnh gan, đặc biệt quan trọng nếu có cổ trướng.

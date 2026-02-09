@@ -85,7 +85,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Quan trọng sau Nhồi máu cơ tim?
+            Vì sao dinh dưỡng quan trọng sau Nhồi máu cơ tim?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

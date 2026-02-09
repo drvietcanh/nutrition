@@ -291,7 +291,7 @@ export default function VietnameseHerbsSpicesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Sử dụng trong Món ăn Việt Nam</h2>
+        <h2 className="heading-2">Ví dụ sử dụng trong Món ăn Việt Nam</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-5 mb-2">Phở</h3>

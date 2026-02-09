@@ -255,7 +255,7 @@ export default function VitaminDPage() {
               <li>Ngồi gần cửa sổ có nắng 15-20 phút mỗi ngày (nếu có nắng)</li>
               <li>Ăn trứng, cá béo thường xuyên</li>
               <li>Uống sữa tăng cường vitamin D</li>
-              <li>Tham khảo bác sĩ về viên uống bổ sung (thường cần 800-1000 IU/ngày)</li>
+              <li>tham khảo bác sĩ về viên uống bổ sung (thường cần 800-1000 IU/ngày)</li>
             </ul>
           </Card>
         </div>

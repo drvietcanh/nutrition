@@ -267,7 +267,7 @@ export default function SmartShoppingVietnamPage() {
               <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
                 <p className="text-sm font-semibold text-blue-900 mb-2">Thông tin Quan trọng:</p>
                 <ul className="space-y-1 text-sm text-blue-900">
-                  <li>• <strong>Khẩu phần (serving size):</strong> Lượng thực phẩm trong một khẩu phần</li>
+                  <li>• <strong>khẩu phần (serving size):</strong> Lượng thực phẩm trong một khẩu phần</li>
                   <li>• <strong>năng lượng (calo):</strong> Số calo trong một khẩu phần</li>
                   <li>• <strong>Protein:</strong> Lượng protein (g)</li>
                   <li>• <strong>Carbohydrate:</strong> Lượng carbohydrate (g)</li>
@@ -375,7 +375,7 @@ export default function SmartShoppingVietnamPage() {
                 <p className="text-sm font-semibold text-gray-900">Sau khi mua:</p>
                 <ul className="text-xs text-gray-700 space-y-1 mt-1">
                   <li>• Bảo quản thực phẩm đúng cách (tủ lạnh, nơi khô ráo)</li>
-                  <li>• Sử dụng thực phẩm tươi trước (rau củ, thịt cá)</li>
+                  <li>• sử dụng thực phẩm tươi trước (rau củ, thịt cá)</li>
                 </ul>
               </div>
             </div>
