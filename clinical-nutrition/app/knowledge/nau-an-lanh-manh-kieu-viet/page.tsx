@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { UtensilsCrossed, CheckCircle, Info, Flame } from "lucide-react";
+import { UtensilsCrossed, CheckCircle, Info, Flame, Apple } from "lucide-react";
 import { Callout } from "../../components/Callout";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import { Breadcrumb } from "../../components/Breadcrumb";
