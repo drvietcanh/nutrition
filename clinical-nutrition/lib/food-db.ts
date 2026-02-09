@@ -16,6 +16,7 @@ export interface FoodItem {
   protein: number; // grams per 100g
   carbs: number; // grams per 100g
   fat: number; // grams per 100g
+  sugars?: number; // grams per 100g - tổng đường, nếu có
   water?: number; // grams per 100g
   fiber?: number; // grams per 100g
   sodium?: number; // mg per 100g

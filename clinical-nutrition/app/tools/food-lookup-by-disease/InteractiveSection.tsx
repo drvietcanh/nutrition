@@ -9,22 +9,34 @@ import {
   type ExtendedFoodItem,
 } from "../../../lib/vietnamese-food-extended";
 import toast from "react-hot-toast";
-
-type DiseaseType = 'diabetes' | 'gout' | 'kidney' | 'hypertension' | 'cardiovascular';
+import {
+  getPercentOfDiseaseTarget,
+  getPercentOfRNI,
+  type DiseaseType,
+} from "../../../lib/nutrition-reference";
 
 const diseases: { value: DiseaseType; label: string; icon: string }[] = [
-  { value: 'diabetes', label: 'Đái tháo đường', icon: '🩺' },
-  { value: 'gout', label: 'Bệnh gút', icon: '🦴' },
-  { value: 'kidney', label: 'Bệnh thận', icon: '🧪' },
-  { value: 'hypertension', label: 'Tăng huyết áp', icon: '❤️' },
-  { value: 'cardiovascular', label: 'Tim mạch', icon: '💓' },
+  { value: "diabetes", label: "Đái tháo đường", icon: "🩺" },
+  { value: "gout", label: "Bệnh gút", icon: "🦴" },
+  { value: "kidney", label: "Bệnh thận", icon: "🧪" },
+  { value: "hypertension", label: "Tăng huyết áp", icon: "❤️" },
+  { value: "cardiovascular", label: "Tim mạch", icon: "💓" },
 ];
+
+function formatPercent(value: number | null): string {
+  if (value == null || Number.isNaN(value)) return "-";
+  if (value < 1) return "<1%";
+  if (value < 10) return value.toFixed(1) + "%";
+  if (value > 999) return ">999%";
+  return Math.round(value) + "%";
+}
 
 export function InteractiveSection() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDisease, setSelectedDisease] = useState<DiseaseType | 'all'>('all');
   const [selectedFood, setSelectedFood] = useState<ExtendedFoodItem | null>(null);
   const [filterLevel, setFilterLevel] = useState<'all' | 'good' | 'moderate' | 'avoid'>('all');
+  const [nutrientFilter, setNutrientFilter] = useState<'none' | 'low-sodium' | 'high-potassium' | 'high-fiber'>('none');
 
   const filteredFoods = useMemo(() => {
     let foods = searchExtendedFoods(searchQuery);
@@ -47,8 +59,33 @@ export function InteractiveSection() {
       }
     }
 
+    // Lọc thêm theo chất dinh dưỡng nếu được chọn
+    if (nutrientFilter !== 'none') {
+      foods = foods.filter((food) => {
+        switch (nutrientFilter) {
+          case 'low-sodium': {
+            const na = food.sodium ?? 0;
+            // Ít natri: < 100 mg/100g hoặc không có dữ liệu (coi như an toàn hơn muối nhiều)
+            return na === 0 || na < 100;
+          }
+          case 'high-potassium': {
+            const k = food.kidney?.potassium ?? food.potassium ?? 0;
+            // Giàu kali: ≥ 300 mg/100g
+            return k >= 300;
+          }
+          case 'high-fiber': {
+            const fiber = food.fiber ?? 0;
+            // Giàu xơ: ≥ 3 g chất xơ/100g
+            return fiber >= 3;
+          }
+          default:
+            return true;
+        }
+      });
+    }
+
     return foods;
-  }, [searchQuery, selectedDisease, filterLevel]);
+  }, [searchQuery, selectedDisease, filterLevel, nutrientFilter]);
 
   const handleFoodSelect = (food: ExtendedFoodItem) => {
     setSelectedFood(food);
@@ -77,7 +114,7 @@ export function InteractiveSection() {
           label: 'Đái tháo đường',
           items: [
             { label: 'GI', value: gi > 0 ? `${gi}` : 'N/A', level: giLevel, color: giColor },
-            { label: 'GL', value: gl > 0 ? `${gl}` : 'N/A' },
+            { label: 'GL', value: gl > 0 ? `${gl}` : 'N/A', tooltip: 'GL (glycemic load) kết hợp GI và lượng carb trong khẩu phần; GL > 20/bữa thường được xem là cao và có thể gây tăng đường huyết mạnh.' },
             { label: 'Carb/khẩu phần', value: `${food.diabetes.carbPerPortion}g` },
           ],
         };
@@ -94,7 +131,7 @@ export function InteractiveSection() {
         return {
           label: 'Bệnh gút',
           items: [
-            { label: 'Purin', value: `${food.gout.purine}mg/100g` },
+            { label: 'Purin', value: `${food.gout.purine}mg/100g`, tooltip: 'Thực phẩm giàu purine làm tăng acid uric; ở người gút nên hạn chế/thận trọng với nhóm purine cao và rất cao.' },
             { label: 'Phân loại', value: purineLevel, level: purineLevel, color: purineColor },
           ],
         };
@@ -117,19 +154,24 @@ export function InteractiveSection() {
           ],
         };
 
-      case 'hypertension':
+      case 'hypertension': {
         const sodium = food.sodium || 0;
         let naColor = 'green';
         if (sodium >= 500) naColor = 'red';
         else if (sodium >= 100) naColor = 'yellow';
+        const percentRni = getPercentOfRNI("sodium", sodium);
+        const percentDisease = getPercentOfDiseaseTarget("hypertension", "sodium", sodium);
         return {
           label: 'Tăng huyết áp',
           items: [
             { label: 'Natri', value: `${sodium}mg/100g`, color: naColor },
+            { label: '%RNI natri', value: formatPercent(percentRni), color: 'green' },
+            { label: '% mục tiêu THA', value: formatPercent(percentDisease), color: 'yellow' },
           ],
         };
+      }
 
-      case 'cardiovascular':
+      case 'cardiovascular': {
         if (!food.cardiovascular) return null;
         const cholesterol = food.cardiovascular.cholesterol;
         const satFat = food.cardiovascular.saturatedFat;
@@ -139,13 +181,18 @@ export function InteractiveSection() {
         else if (cholesterol >= 100) cholColor = 'yellow';
         if (satFat >= 10) fatColor = 'red';
         else if (satFat >= 5) fatColor = 'yellow';
+        const cholPercentRni = getPercentOfRNI("cholesterol", cholesterol);
+        const cholPercentDisease = getPercentOfDiseaseTarget("cardiovascular", "cholesterol", cholesterol);
         return {
           label: 'Tim mạch',
           items: [
             { label: 'Cholesterol', value: `${cholesterol}mg/100g`, color: cholColor },
             { label: 'Chất béo bão hòa', value: `${satFat}g/100g`, color: fatColor },
+            { label: '%RNI cholesterol', value: formatPercent(cholPercentRni), color: 'green' },
+            { label: '% mục tiêu tim mạch', value: formatPercent(cholPercentDisease), color: 'yellow' },
           ],
         };
+      }
 
       default:
         return null;
@@ -208,6 +255,59 @@ export function InteractiveSection() {
                     {disease.icon} {disease.label}
                   </button>
                 ))}
+              </div>
+            </div>
+
+            {/* Nutrient Filter */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Lọc theo chất dinh dưỡng (tùy chọn):
+              </label>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  onClick={() => setNutrientFilter('none')}
+                  className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
+                    nutrientFilter === 'none'
+                      ? 'bg-gray-800 text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  Không lọc
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setNutrientFilter('low-sodium')}
+                  className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
+                    nutrientFilter === 'low-sodium'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  Ít natri
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setNutrientFilter('high-potassium')}
+                  className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
+                    nutrientFilter === 'high-potassium'
+                      ? 'bg-orange-600 text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  Giàu kali
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setNutrientFilter('high-fiber')}
+                  className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
+                    nutrientFilter === 'high-fiber'
+                      ? 'bg-green-600 text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  Giàu xơ
+                </button>
               </div>
             </div>
 
@@ -426,22 +526,36 @@ export function InteractiveSection() {
                       return (
                         <div className="space-y-2">
                           {info.items.map((item, idx) => (
-                            <div key={idx} className="flex items-center justify-between p-2 bg-gray-50 rounded">
-                              <span className="text-sm font-medium text-gray-700">{item.label}:</span>
+                            <div
+                              key={idx}
+                              className="flex items-center justify-between p-2 bg-gray-50 rounded"
+                              title={('tooltip' in item && (item as any).tooltip) || undefined}
+                            >
+                              <span className="text-sm font-medium text-gray-700">
+                                {item.label}:
+                              </span>
                               <div className="flex items-center gap-2">
-                                <span className={`text-sm font-semibold ${
-                                  item.color === 'red' ? 'text-red-600' :
-                                  item.color === 'yellow' ? 'text-yellow-600' :
-                                  'text-green-600'
-                                }`}>
+                                <span
+                                  className={`text-sm font-semibold ${
+                                    item.color === 'red'
+                                      ? 'text-red-600'
+                                      : item.color === 'yellow'
+                                      ? 'text-yellow-600'
+                                      : 'text-green-600'
+                                  }`}
+                                >
                                   {item.value}
                                 </span>
                                 {'level' in item && item.level && (
-                                  <span className={`px-2 py-0.5 rounded text-xs ${
-                                    item.color === 'red' ? 'bg-red-100 text-red-800' :
-                                    item.color === 'yellow' ? 'bg-yellow-100 text-yellow-800' :
-                                    'bg-green-100 text-green-800'
-                                  }`}>
+                                  <span
+                                    className={`px-2 py-0.5 rounded text-xs ${
+                                      item.color === 'red'
+                                        ? 'bg-red-100 text-red-800'
+                                        : item.color === 'yellow'
+                                        ? 'bg-yellow-100 text-yellow-800'
+                                        : 'bg-green-100 text-green-800'
+                                    }`}
+                                  >
                                     {item.level}
                                   </span>
                                 )}
