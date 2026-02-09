@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useRef } from "react";
-import { Search, UtensilsCrossed, X, Download, Printer, RefreshCw } from "lucide-react";
+import { Search, UtensilsCrossed, X, Download, Printer, RefreshCw, Info } from "lucide-react";
 import { Card } from "../../components/Card";
 import { PDFExportButton } from "../../components/PDFExportButton";
 import {
@@ -56,6 +56,50 @@ export function InteractiveSection() {
   const [selectedKcalRange, setSelectedKcalRange] = useState<KcalRange>("all");
   const [selectedFood, setSelectedFood] = useState<FoodItem | null>(null);
   const nutritionDetailRef = useRef<HTMLDivElement>(null);
+
+  const mineralProfile = useMemo(() => {
+    if (!selectedFood) return null;
+
+    const { sodium, potassium, phosphorus, calcium, magnesium, zinc } = selectedFood;
+
+    const classify = (value: number | undefined, low: number, medium: number) => {
+      if (value === undefined) return null;
+      if (value < low) return "low";
+      if (value <= medium) return "medium";
+      return "high";
+    };
+
+    return {
+      sodium: {
+        value: sodium,
+        level: classify(sodium, 120, 400),
+      },
+      potassium: {
+        value: potassium,
+        level: classify(potassium, 150, 300),
+      },
+      phosphorus: {
+        value: phosphorus,
+        level: classify(phosphorus, 100, 200),
+      },
+      calcium,
+      magnesium,
+      zinc,
+    };
+  }, [selectedFood]);
+
+  const vitaminProfile = useMemo(() => {
+    if (!selectedFood) return null;
+
+    const { vitaminA, vitaminC } = selectedFood;
+
+    return {
+      vitaminA,
+      vitaminC,
+      isRichInVitaminC: vitaminC !== undefined && vitaminC >= 20,
+      isRichInVitaminA: vitaminA !== undefined && vitaminA >= 300,
+    };
+  }, [selectedFood]);
 
   const filteredFoods = useMemo(() => {
     let foods = foodDatabase;
@@ -437,6 +481,161 @@ export function InteractiveSection() {
                       </table>
                     </div>
                   </div>
+
+                  {/* Mineral profile */}
+                  {mineralProfile && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="rounded-lg border border-blue-100 bg-blue-50 p-3">
+                        <div className="flex items-center justify-between mb-2">
+                          <h5 className="text-sm font-semibold text-blue-900">
+                            Hồ sơ khoáng chất chính
+                          </h5>
+                          <Info className="w-4 h-4 text-blue-500" aria-hidden="true" />
+                        </div>
+                        <div className="space-y-1.5 text-xs">
+                          {mineralProfile.sodium.value !== undefined && (
+                            <div className="flex items-center justify-between">
+                              <span className="text-gray-700">Natri (Na)</span>
+                              <span className="font-medium text-gray-900">
+                                {mineralProfile.sodium.value} mg
+                              </span>
+                              {mineralProfile.sodium.level && (
+                                <span
+                                  className={`ml-2 inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium ${
+                                    mineralProfile.sodium.level === "low"
+                                      ? "bg-green-100 text-green-800"
+                                      : mineralProfile.sodium.level === "medium"
+                                      ? "bg-yellow-100 text-yellow-800"
+                                      : "bg-red-100 text-red-800"
+                                  }`}
+                                >
+                                  {mineralProfile.sodium.level === "low"
+                                    ? "Thấp"
+                                    : mineralProfile.sodium.level === "medium"
+                                    ? "Vừa"
+                                    : "Cao"}
+                                </span>
+                              )}
+                            </div>
+                          )}
+                          {mineralProfile.potassium.value !== undefined && (
+                            <div className="flex items-center justify-between">
+                              <span className="text-gray-700">Kali (K)</span>
+                              <span className="font-medium text-gray-900">
+                                {mineralProfile.potassium.value} mg
+                              </span>
+                              {mineralProfile.potassium.level && (
+                                <span
+                                  className={`ml-2 inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium ${
+                                    mineralProfile.potassium.level === "low"
+                                      ? "bg-green-100 text-green-800"
+                                      : mineralProfile.potassium.level === "medium"
+                                      ? "bg-yellow-100 text-yellow-800"
+                                      : "bg-red-100 text-red-800"
+                                  }`}
+                                >
+                                  {mineralProfile.potassium.level === "low"
+                                    ? "Thấp"
+                                    : mineralProfile.potassium.level === "medium"
+                                    ? "Vừa"
+                                    : "Cao"}
+                                </span>
+                              )}
+                            </div>
+                          )}
+                          {mineralProfile.phosphorus.value !== undefined && (
+                            <div className="flex items-center justify-between">
+                              <span className="text-gray-700">Phốt pho (P)</span>
+                              <span className="font-medium text-gray-900">
+                                {mineralProfile.phosphorus.value} mg
+                              </span>
+                              {mineralProfile.phosphorus.level && (
+                                <span
+                                  className={`ml-2 inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-medium ${
+                                    mineralProfile.phosphorus.level === "low"
+                                      ? "bg-green-100 text-green-800"
+                                      : mineralProfile.phosphorus.level === "medium"
+                                      ? "bg-yellow-100 text-yellow-800"
+                                      : "bg-red-100 text-red-800"
+                                  }`}
+                                >
+                                  {mineralProfile.phosphorus.level === "low"
+                                    ? "Thấp"
+                                    : mineralProfile.phosphorus.level === "medium"
+                                    ? "Vừa"
+                                    : "Cao"}
+                                </span>
+                              )}
+                            </div>
+                          )}
+                          {mineralProfile.calcium !== undefined && (
+                            <div className="flex items-center justify-between">
+                              <span className="text-gray-700">Canxi (Ca)</span>
+                              <span className="font-medium text-gray-900">
+                                {mineralProfile.calcium} mg
+                              </span>
+                            </div>
+                          )}
+                          {mineralProfile.magnesium !== undefined && (
+                            <div className="flex items-center justify-between">
+                              <span className="text-gray-700">Magie (Mg)</span>
+                              <span className="font-medium text-gray-900">
+                                {mineralProfile.magnesium} mg
+                              </span>
+                            </div>
+                          )}
+                          {mineralProfile.zinc !== undefined && (
+                            <div className="flex items-center justify-between">
+                              <span className="text-gray-700">Kẽm (Zn)</span>
+                              <span className="font-medium text-gray-900">
+                                {mineralProfile.zinc} mg
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Vitamin profile */}
+                      {vitaminProfile && (
+                        <div className="rounded-lg border border-emerald-100 bg-emerald-50 p-3">
+                          <div className="flex items-center justify-between mb-2">
+                            <h5 className="text-sm font-semibold text-emerald-900">
+                              Hồ sơ vitamin chính
+                            </h5>
+                            <Info className="w-4 h-4 text-emerald-500" aria-hidden="true" />
+                          </div>
+                          <div className="space-y-1.5 text-xs">
+                            {vitaminProfile.vitaminC !== undefined && (
+                              <div className="flex items-center justify-between">
+                                <span className="text-gray-700">Vitamin C</span>
+                                <span className="font-medium text-gray-900">
+                                  {vitaminProfile.vitaminC} mg
+                                </span>
+                                {vitaminProfile.isRichInVitaminC && (
+                                  <span className="ml-2 inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[11px] font-medium text-emerald-800">
+                                    Nguồn tốt vitamin C
+                                  </span>
+                                )}
+                              </div>
+                            )}
+                            {vitaminProfile.vitaminA !== undefined && (
+                              <div className="flex items-center justify-between">
+                                <span className="text-gray-700">Vitamin A (RAE)</span>
+                                <span className="font-medium text-gray-900">
+                                  {vitaminProfile.vitaminA} mcg
+                                </span>
+                                {vitaminProfile.isRichInVitaminA && (
+                                  <span className="ml-2 inline-flex items-center rounded-full bg-orange-100 px-2 py-0.5 text-[11px] font-medium text-orange-800">
+                                    Nguồn tốt vitamin A
+                                  </span>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
 
                   {selectedFood.notes && (
                     <div className="rounded-lg bg-amber-50 border border-amber-200 p-3">
