@@ -8,7 +8,7 @@ import { ShoppingCart, CheckCircle2, AlertCircle, DollarSign } from "lucide-reac
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Đi chợ Thông minh ở Việt Nam",
+  title: "Đi chợ thông minh ở Việt Nam",
   description:
     "Hướng dẫn chọn thực phẩm tươi, đọc nhãn, so sánh giá, mua theo mùa ở chợ Việt Nam. Tips thực tế để mua sắm thông minh và tiết kiệm.",
   keywords: [
@@ -28,14 +28,14 @@ export default function SmartShoppingVietnamPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Đi chợ Thông minh ở Việt Nam" },
+          { label: "Đi chợ thông minh ở Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <ShoppingCart className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Đi chợ Thông minh ở Việt Nam</h1>
+          <h1 className="heading-1">Đi chợ thông minh ở Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Đi chợ thông minh giúp bạn chọn được thực phẩm tươi ngon, giàu dinh dưỡng, và tiết kiệm tiền. 
@@ -181,7 +181,7 @@ export default function SmartShoppingVietnamPage() {
           </p>
 
           <Card>
-            <h3 className="heading-4 mb-3">Thực phẩm Theo mùa ở Việt Nam</h3>
+            <h3 className="heading-4 mb-3">Thực phẩm theo mùa ở Việt Nam</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <p className="text-sm font-semibold text-gray-900 mb-2">Mùa xuân (Tháng 2-4):</p>
@@ -262,7 +262,7 @@ export default function SmartShoppingVietnamPage() {
           </p>
 
           <Card>
-            <h3 className="heading-4 mb-3">Những gì Cần kiểm tra trên Nhãn</h3>
+            <h3 className="heading-4 mb-3">Những gì cần kiểm tra trên nhãn</h3>
             <div className="space-y-3">
               <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
                 <p className="text-sm font-semibold text-blue-900 mb-2">Thông tin Quan trọng:</p>
@@ -428,7 +428,7 @@ export default function SmartShoppingVietnamPage() {
             </p>
           </Card>
           <Card href="/knowledge/seasonal-foods-vietnam">
-            <h3 className="heading-5 mb-2">Thực phẩm Theo mùa ở Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Thực phẩm theo mùa ở Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Calendar thực phẩm theo mùa
             </p>

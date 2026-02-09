@@ -34,7 +34,7 @@ Tài liệu này mô tả chiến lược tạo 30-50 bài viết dinh dưỡng 
    - Related: Heart health, Cholesterol
    - Priority: Medium
 
-5. **Carbohydrate: Nguồn Năng lượng** (`carbohydrates`) - MỞ RỘNG
+5. **Carbohydrate: Nguồn năng lượng** (`carbohydrates`) - MỞ RỘNG
    - Mở rộng với ví dụ thực tế
    - Thêm portion size guides
    - Related: Diabetes, Glycemic index
@@ -46,7 +46,7 @@ Tài liệu này mô tả chiến lược tạo 30-50 bài viết dinh dưỡng 
    - Related: Kidney health, Exercise nutrition
    - Priority: Medium
 
-### 2. Dinh dưỡng Bệnh Mạn tính (Chronic Diseases) - 6 bài
+### 2. Dinh dưỡng Bệnh mạn tính (Chronic Diseases) - 6 bài
 
 **Mục tiêu**: Hướng dẫn dinh dưỡng cho các bệnh mạn tính phổ biến
 
@@ -56,7 +56,7 @@ Tài liệu này mô tả chiến lược tạo 30-50 bài viết dinh dưỡng 
    - Related: Hypertension, Heart failure, Cholesterol
    - Priority: High
 
-2. **Dinh dưỡng cho Người Bệnh Thận** (`ckd-nutrition`) - MỞ RỘNG
+2. **Dinh dưỡng cho Người bệnh thận** (`ckd-nutrition`) - MỞ RỘNG
    - Mở rộng CKD article với visual aids
    - Thêm practical examples
    - Related: Dialysis, Sodium, Potassium
@@ -68,7 +68,7 @@ Tài liệu này mô tả chiến lược tạo 30-50 bài viết dinh dưỡng 
    - Related: Protein, Sodium, Fluid management
    - Priority: Medium
 
-4. **Dinh dưỡng cho Người Bệnh COPD** (`copd-nutrition`) - MỞ RỘNG
+4. **Dinh dưỡng cho Người bệnh COPD** (`copd-nutrition`) - MỞ RỘNG
    - Mở rộng với practical tips
    - Visual: Meal planning for COPD
    - Related: Energy needs, Protein
@@ -80,7 +80,7 @@ Tài liệu này mô tả chiến lược tạo 30-50 bài viết dinh dưỡng 
    - Related: Protein, Energy, Vitamins
    - Priority: High
 
-6. **Dinh dưỡng cho Người Bệnh IBD** (`ibd-nutrition`) - MỞ RỘNG
+6. **Dinh dưỡng cho Người bệnh IBD** (`ibd-nutrition`) - MỞ RỘNG
    - Mở rộng với flare vs remission guide
    - Visual: Food diary examples
    - Related: Fiber, Vitamins, Meal planning
@@ -124,7 +124,7 @@ Tài liệu này mô tả chiến lược tạo 30-50 bài viết dinh dưỡng 
 
 **Mục tiêu**: Practical guides cho cuộc sống hàng ngày
 
-1. **Lập Kế hoạch Bữa ăn Tuần** (`weekly-meal-planning`)
+1. **Lập kế hoạch Bữa ăn Tuần** (`weekly-meal-planning`)
    - Step-by-step guide với templates
    - Visual: Weekly meal plan template
    - Related: Meal planning, Budget nutrition
@@ -142,7 +142,7 @@ Tài liệu này mô tả chiến lược tạo 30-50 bài viết dinh dưỡng 
    - Related: Meal planning, Healthy eating
    - Priority: Low
 
-4. **Dinh dưỡng cho Người Bận rộn** (`nutrition-busy-lifestyle`)
+4. **Dinh dưỡng cho Người bận rộn** (`nutrition-busy-lifestyle`)
    - Quick tips
    - Visual: Quick meal ideas
    - Related: Meal prep, Snacking
@@ -222,7 +222,7 @@ Tài liệu này mô tả chiến lược tạo 30-50 bài viết dinh dưỡng 
    - Related: Mental health, B vitamins
    - Priority: Low
 
-5. **Dinh dưỡng cho Người Tập thể dục** (`exercise-nutrition`)
+5. **Dinh dưỡng cho Người tập thể dục** (`exercise-nutrition`)
    - Với pre/post workout
    - Visual: Exercise nutrition timing
    - Related: Protein, Carbohydrates, Hydration

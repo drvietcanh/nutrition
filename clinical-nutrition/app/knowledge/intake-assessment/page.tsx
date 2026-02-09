@@ -192,7 +192,7 @@ export default function IntakeAssessmentPage() {
             có thể góp phần vào sụt cân và kết quả kém.
           </li>
           <li>
-            <strong>Xu hướng cho thấy phản ứng với can thiệp</strong>: Lượng ăn có đang cải thiện sau khi bắt đầu thuốc chống buồn nôn không? nó có đang giảm
+            <strong>Xu hướng cho thấy phản ứng với can thiệp</strong>: Lượng ăn có đang cải thiện sau khi bắt đầu thuốc chống buồn nôn không? Nó có đang giảm
             khi tình trạng xấu đi không? Xu hướng trả lời những câu hỏi này tốt hơn các ảnh chụp đơn lẻ.
           </li>
         </ul>

@@ -73,7 +73,7 @@ export default function WhyIntakeFallsShortPage() {
           id="reality-gap-heading"
           className="heading-3"
         >
-          Khoảng cách Giữa tính toán và thực tế
+          Khoảng cách giữa tính toán và thực tế
         </h2>
         <p className="text-body">
           Trong dinh dưỡng lâm sàng, thường có sự khác biệt giữa:
@@ -103,21 +103,21 @@ export default function WhyIntakeFallsShortPage() {
           {/* Educational: Helps readers understand that calculations have limitations
               and don't account for real-world barriers. */}
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Tính toán Giả định Điều kiện Lý tưởng</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Tính toán giả định điều kiện lý tưởng</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               Phương trình và hướng dẫn dinh dưỡng dựa trên nghiên cứu được thực hiện trong điều kiện tương đối có kiểm soát. 
               Chúng giả định bệnh nhân có thể ăn khi đói, có cảm giác ngon miệng bình thường, không bị gián đoạn 
               bởi thủ thuật, và có tiếp cận thực phẩm hấp dẫn vào thời điểm thích hợp. Trong thực tế, môi trường 
               lâm sàng xa rời lý tưởng. Bệnh nhân đang bệnh, thủ thuật gián đoạn bữa ăn, thuốc ảnh hưởng đến 
               cảm giác ngon miệng, và dịch vụ thực phẩm hoạt động theo lịch trình cố định. Tính toán cho chúng ta một mục tiêu, nhưng 
-              nó không tính đến các rào cản thực tế mà bệnh nhân phải đối mặt.
+              Nó không tính đến các rào cản thực tế mà bệnh nhân phải đối mặt.
             </p>
           </div>
 
           {/* Educational: Explains compounding effect of multiple barriers.
               Helps readers understand why gaps are so common. */}
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Bệnh nhân thực tế Đối mặt Nhiều rào cản</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Bệnh nhân thực tế đối mặt nhiều rào cản</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               Không giống như điều kiện lý tưởng được giả định bởi tính toán, bệnh nhân thực tế đối mặt với nhiều rào cản 
               đồng thời. Một bệnh nhân có thể buồn nôn do thuốc, bỏ lỡ bữa ăn do thủ thuật, 
@@ -132,7 +132,7 @@ export default function WhyIntakeFallsShortPage() {
           {/* Educational: Reframes intake as dynamic process, not static event.
               Helps readers understand why monitoring and adjustment matter. */}
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Lượng ăn Là một Quy trình, Không phải Sự kiện Đơn lẻ</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Lượng ăn là một quy trình, không phải sự kiện đơn lẻ</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               Chúng ta thường nghĩ về lượng ăn dinh dưỡng như một phương trình đơn giản: chỉ định thức ăn → bệnh nhân ăn → nhu cầu được đáp ứng. 
               Nhưng lượng ăn thực sự là một quy trình phức tạp xảy ra theo thời gian, bị ảnh hưởng bởi nhiều yếu tố. 
@@ -161,7 +161,7 @@ export default function WhyIntakeFallsShortPage() {
             in the scenarios. Reduces frustration by normalizing the experience. */}
         {/* Practical examples for Different roles */}
         <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 mt-4">
-          <h3 className="font-semibold text-gray-900 mb-3 text-sm">Tình huống thực tế Bạn có thể Gặp:</h3>
+          <h3 className="font-semibold text-gray-900 mb-3 text-sm">Tình huống thực tế bạn có thể gặp:</h3>
           <div className="space-y-3 text-sm">
             <div>
               <p className="text-gray-700 font-medium mb-1">Là điều dưỡng ghi chép lượng ăn:</p>
@@ -219,14 +219,14 @@ export default function WhyIntakeFallsShortPage() {
             <h3 className="font-semibold text-gray-900 mb-2">Cảm giác Ngon miệng Kém</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Mất cảm giác ngon miệng (chán ăn) là một trong những lý do phổ biến nhất cho giảm lượng ăn trong bệnh tật. 
-              nó có thể được gây ra bởi:
+              Nó có thể được gây ra bởi:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Phản ứng stress của cơ thể với bệnh tật (cytokine viêm ức chế cảm giác ngon miệng)</li>
+              <li>Phản ứng tự nhiên của cơ thể khi bị bệnh - cơ thể tập trung năng lượng để chống lại bệnh tật, nên giảm cảm giác thèm ăn</li>
               <li>Đau, khó chịu, hoặc buồn nôn</li>
-              <li>Thuốc ảnh hưởng đến cảm giác ngon miệng</li>
-              <li>Trầm cảm hoặc lo âu</li>
-              <li>Mệt mỏi làm cho việc ăn cảm thấy như quá nhiều nỗ lực</li>
+              <li>Thuốc điều trị có thể làm mất cảm giác ngon miệng</li>
+              <li>Lo lắng, buồn bã, hoặc căng thẳng</li>
+              <li>Mệt mỏi khiến việc ăn uống trở nên khó khăn, như phải gắng sức quá nhiều</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Điều này là phổ biến và được dự kiến.</strong> Cảm giác ngon miệng kém trong bệnh tật là phản ứng 
@@ -279,7 +279,7 @@ export default function WhyIntakeFallsShortPage() {
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
               <li>Vị kim loại từ thuốc hoặc điều trị</li>
-              <li>Thay đổi nhận thức vị giác (rối loạn vị giác) làm thức ăn có vị nhạt, đắng, hoặc "sai"</li>
+              <li>Thay đổi cảm nhận vị giác - thức ăn có vị nhạt, đắng, hoặc "sai" so với bình thường</li>
               <li>Mất cảm giác vị giác</li>
               <li>Thực phẩm từng là yêu thích trở nên không hấp dẫn</li>
               <li>Thay đổi khứu giác ảnh hưởng đến nhận thức vị giác</li>
@@ -354,7 +354,7 @@ export default function WhyIntakeFallsShortPage() {
               ảnh hưởng đến ăn uống theo nhiều cách:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Tín hiệu viêm ức chế cảm giác ngon miệng—đây là cách cơ thể bảo tồn năng lượng</li>
+              <li>Khi cơ thể bị viêm, nó tự động giảm cảm giác thèm ăn để tập trung năng lượng chống lại bệnh tật</li>
               <li>Bệnh nhân có thể cảm thấy nói chung không khỏe và không muốn ăn</li>
               <li>Sốt và khó chịu làm giảm quan tâm đến thức ăn</li>
               <li>Ngay cả khi bệnh nhân muốn ăn, viêm có thể làm cho việc ăn cảm thấy khó khăn</li>
@@ -403,7 +403,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Khó thở (Dyspnea)</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Khó thở</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Khi bệnh nhân gặp khó khăn khi thở, ăn trở nên thách thức:
             </p>
@@ -421,17 +421,17 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-purple-500 bg-purple-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Hạn chế chức Năng</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Hạn chế chức năng</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Bệnh tật có thể hạn chế khả năng ăn về mặt thể chất của bệnh nhân:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Yếu hoặc liệt ngăn cản tự cho ăn</li>
-              <li>Khó nuốt (dysphagia) yêu cầu kết cấu được sửa đổi hoặc cho ăn qua ống</li>
-              <li>Run tay, vấn đề phối hợp, hoặc yếu làm khó khăn để cầm dụng cụ</li>
-              <li>Hạn chế tư thế (ví dụ, phải nằm phẳng, không thể ngồi dậy để ăn)</li>
-              <li>Phụ thuộc vào người khác để cho ăn, có thể không luôn có sẵn</li>
-              <li>Mệt mỏi làm cho hành động thể chất của việc ăn quá kiệt sức</li>
+              <li>Yếu hoặc liệt khiến không thể tự ăn được</li>
+              <li>Khó nuốt thức ăn - phải ăn thức ăn mềm, xay nhuyễn, hoặc phải cho ăn qua ống</li>
+              <li>Run tay, không phối hợp được, hoặc yếu quá nên không cầm được đũa, thìa</li>
+              <li>Phải nằm ngửa, không thể ngồi dậy để ăn</li>
+              <li>Cần người khác giúp cho ăn, nhưng không phải lúc nào cũng có người bên cạnh</li>
+              <li>Mệt mỏi khiến việc nhai, nuốt trở nên quá sức</li>
             </ul>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Hạn chế chức năng là hậu quả của bệnh tật 
@@ -466,14 +466,14 @@ export default function WhyIntakeFallsShortPage() {
           id="care-delivery-heading"
           className="heading-3"
         >
-          Yếu tố cung cấp Chăm sóc
+          Yếu tố cung cấp chăm sóc
         </h2>
         <div className="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-4 mb-4">
           <p className="text-sm font-semibold text-red-900 mb-2 uppercase tracking-wide">
             thực tế lâm sàng
           </p>
           <p className="text-base text-gray-900 leading-relaxed font-semibold mb-2">
-            Được kê Đơn ≠ Được cung cấp
+            Được kê đơn ≠ Được cung cấp
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Những gì được <strong>kê đơn</strong> (đặt, lên kế hoạch, khuyến nghị) thường khác với những gì 
@@ -489,27 +489,26 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="space-y-4 mt-4">
           <article className="border-l-4 border-red-500 bg-red-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Nhịn ăn Cho thủ Thuật</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Nhịn ăn cho thủ thuật</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Bệnh nhân thường xuyên bỏ lỡ bữa ăn do yêu cầu nhịn ăn:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
-              <li>Lệnh NPO (không ăn uống qua đường miệng) trước thủ thuật, phẫu thuật, hoặc xét nghiệm</li>
+              <li>Bác sĩ yêu cầu nhịn ăn (không được ăn uống) trước khi làm thủ thuật, phẫu thuật, hoặc xét nghiệm</li>
               <li>Khoảng thời gian nhịn ăn kéo dài khi thủ thuật bị trì hoãn</li>
               <li>Nhiều thủ thuật yêu cầu nhịn ăn lặp lại trong vài ngày</li>
               <li>Lệnh NPO không rõ ràng hoặc quá bảo thủ kéo dài vượt quá thời gian cần thiết</li>
               <li>dịch vụ bữa ăn bị trì hoãn sau thủ thuật, ngay cả khi NPO được gỡ bỏ</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho bữa sáng, bữa trưa, và bữa tối có thể bỏ lỡ bữa trưa 
-              hoàn toàn nếu họ NPO từ nửa đêm cho một thủ thuật lúc 2 giờ chiều. Ngay cả sau thủ thuật, họ 
-              có thể không nhận được bữa ăn cho đến giờ ăn tối—bỏ lỡ toàn bộ một bữa ăn.
+              <strong>Ví dụ thực tế:</strong> Bác sĩ chỉ định bệnh nhân ăn 3 bữa/ngày (sáng, trưa, tối), nhưng bệnh nhân phải nhịn ăn từ nửa đêm để chuẩn bị làm thủ thuật lúc 2 giờ chiều. 
+              Bữa sáng và bữa trưa bị bỏ qua. Sau thủ thuật, bệnh nhân có thể không được ăn ngay mà phải đợi đến bữa tối. 
+              Như vậy cả ngày chỉ ăn được 1 bữa thay vì 3 bữa như kế hoạch.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
-              <strong>Cho điều dưỡng:</strong> Bạn có thể thấy bệnh nhân NPO trong thời gian dài do 
-              trì hoãn thủ thuật hoặc nhiều xét nghiệm. Điều này được mong đợi, không phải lỗi ghi chép. 
-              <strong>Cho sinh viên y khoa:</strong> Hiểu rằng thủ thuật yêu cầu nhịn ăn giúp 
-              giải thích tại sao khoảng cách lượng ăn vào xảy ra ngay cả khi dinh dưỡng được đặt.
+              <strong>Điều này là bình thường:</strong> Nhịn ăn trước thủ thuật là cần thiết để đảm bảo an toàn. 
+              Đây không phải lỗi của ai cả, mà là yêu cầu của quy trình y tế. Gia đình và người bệnh không nên lo lắng 
+              khi thấy bữa ăn bị bỏ lỡ trong những tình huống này.
             </p>
             <p className="text-sm text-gray-600 italic mt-1">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Nhịn ăn cho thủ thuật là cần thiết cho an toàn, 
@@ -531,9 +530,15 @@ export default function WhyIntakeFallsShortPage() {
               <li>Bệnh nhân từ chối bữa ăn, và không có lựa chọn thay thế được cung cấp kịp thời</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho ba bữa ăn mỗi ngày có thể chỉ nhận được hai nếu 
-              bữa sáng đến khi họ đang ở khoa chẩn đoán hình ảnh, bữa trưa bị lấy đi vì họ sắp đi 
-              phẫu thuật, và bữa tối đến khi họ quá buồn nôn để ăn.
+              <strong>Ví dụ thực tế:</strong> Bác sĩ chỉ định bệnh nhân ăn 3 bữa/ngày (sáng, trưa, tối), nhưng:
+            </p>
+            <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mt-1">
+              <li>Bữa sáng đến lúc bệnh nhân đang đi chụp X-quang, không có mặt ở phòng</li>
+              <li>Bữa trưa bị lấy đi vì bệnh nhân sắp vào phòng mổ</li>
+              <li>Bữa tối đến lúc bệnh nhân đang buồn nôn, không ăn được</li>
+            </ul>
+            <p className="text-sm text-gray-700 leading-relaxed mt-2">
+              Kết quả: Cả ngày chỉ ăn được rất ít, hoặc không ăn được gì, dù đã được chỉ định đầy đủ.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Trong môi trường lâm sàng bận rộn, bữa ăn có thể bị bỏ lỡ 
@@ -542,31 +547,30 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-teal-500 bg-teal-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Gián đoạn cho Ăn</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Gián đoạn cho ăn</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Cho ăn qua ống thường xuyên bị gián đoạn, giảm dinh dưỡng được cung cấp:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
               <li>Giữ cho thủ thuật, xét nghiệm, hoặc thuốc</li>
               <li>Máy bơm hỏng hoặc ngắt kết nối</li>
-              <li>dịch dạ dày còn lại cao yêu cầu giảm tỷ lệ hoặc giữ tạm thời</li>
+              <li>Dạ dày còn nhiều thức ăn chưa tiêu hóa, phải giảm tốc độ cho ăn hoặc tạm dừng</li>
               <li>Ống bị lệch hoặc tắc</li>
               <li>Vấn đề tư thế bệnh nhân ảnh hưởng đến khả năng dung nạp</li>
               <li>Báo động qua đêm không được xử lý ngay lập tức</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Ví dụ:</strong> Một bệnh nhân được đặt cho 1,600 kcal/ngày qua cho ăn qua ống liên tục 
-              ở 80 mL/giờ có thể chỉ nhận được 1,000-1,200 kcal/ngày do:
+              <strong>Ví dụ thực tế:</strong> Bác sĩ chỉ định cho bệnh nhân ăn qua ống 1,600 calo/ngày, nhưng thực tế bệnh nhân chỉ nhận được khoảng 1,000-1,200 calo/ngày vì:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mt-1">
-              <li>Giữ 4 giờ trước thủ thuật + giữ 4 giờ sau = 8 giờ không cho ăn (giảm 33%)</li>
-              <li>Tỷ lệ giảm xuống 40 mL/giờ do vấn đề dung nạp (giảm 50%)</li>
-              <li>Báo động máy bơm qua đêm không được xử lý trong 2 giờ</li>
+              <li>Phải ngừng cho ăn 4 giờ trước thủ thuật + 4 giờ sau = 8 giờ không được ăn (mất 1/3 lượng ăn trong ngày)</li>
+              <li>Phải giảm tốc độ cho ăn xuống một nửa vì dạ dày không tiêu hóa kịp</li>
+              <li>Máy bơm bị tắt qua đêm và không được bật lại ngay</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Cho điều dưỡng theo dõi cho ăn qua ống:</strong> Kiểm tra <strong>thể tích được cung cấp</strong> của máy bơm, 
-              không chỉ tỷ lệ được đặt. Tỷ lệ được đặt cho bạn biết những gì đã được kê đơn, nhưng thể tích được cung cấp 
-              cho bạn biết những gì bệnh nhân thực sự nhận được.
+              <strong>Điều này có nghĩa gì:</strong> Khi người thân được cho ăn qua ống, đừng chỉ nhìn vào số lượng được chỉ định. 
+              Hãy hỏi điều dưỡng xem thực tế bệnh nhân đã nhận được bao nhiêu. Có thể có nhiều lý do khiến lượng ăn thực tế thấp hơn 
+              so với chỉ định, và điều này là bình thường.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Điều này là phổ biến và được mong đợi.</strong> Gián đoạn cho ăn qua ống là cần thiết cho 
@@ -589,9 +593,9 @@ export default function WhyIntakeFallsShortPage() {
               <li>Không có đồ ăn nhẹ có sẵn giữa các bữa ăn đã lên lịch khi bệnh nhân cảm thấy có thể ăn</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed mt-2">
-              <strong>Ví dụ:</strong> Một bệnh nhân với buồn nôn buổi sáng có thể không thể ăn bữa sáng lúc 
-              8 giờ sáng nhưng cảm thấy sẵn sàng ăn lúc 10 giờ sáng. Tuy nhiên, bữa ăn tiếp theo không đến cho đến trưa, và đến lúc đó 
-              họ có thể buồn nôn lại hoặc đã bỏ lỡ cơ hội của họ.
+              <strong>Ví dụ thực tế:</strong> Bệnh nhân thường buồn nôn vào buổi sáng, không ăn được bữa sáng lúc 8 giờ. 
+              Đến 10 giờ sáng, họ cảm thấy đỡ hơn và muốn ăn, nhưng bữa ăn tiếp theo chỉ đến lúc 12 giờ trưa. 
+              Đến lúc đó, họ lại buồn nôn hoặc đã mất cảm giác thèm ăn. Kết quả là bỏ lỡ cả bữa sáng và bữa trưa.
             </p>
             <p className="text-sm text-gray-600 italic mt-2">
               <strong>Cho điều dưỡng:</strong> Bạn có thể nhận thấy bệnh nhân không thể ăn trong thời gian bữa ăn 
@@ -631,7 +635,7 @@ export default function WhyIntakeFallsShortPage() {
           id="system-workflow-heading"
           className="heading-3"
         >
-          Yếu tố Hệ thống & Quy trình Làm việc
+          Yếu tố hệ thống & quy trình làm việc
         </h2>
         <p className="text-body">
           Hệ thống y tế và quy trình làm việc tạo ra các thách thức vốn có ảnh hưởng đến lượng ăn. Đây không phải là 
@@ -692,7 +696,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-green-500 bg-green-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Khoảng cách Giao tiếp</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Khoảng cách giao tiếp</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Thách thức giao tiếp giữa các thành viên nhóm ảnh hưởng đến chăm sóc dinh dưỡng:
             </p>
@@ -768,7 +772,7 @@ export default function WhyIntakeFallsShortPage() {
           id="interpretation-heading"
           className="heading-3"
         >
-          Cách các Bác sĩ lâm sàng Diễn giải Thiếu hụt Lượng ăn
+          Cách các bác sĩ lâm sàng diễn giải thiếu hụt lượng ăn
         </h2>
         <p className="text-base text-gray-700 leading-relaxed mb-4">
           Hiểu rằng khoảng cách lượng ăn là bình thường và được dự kiến giúp các bác sĩ lâm sàng diễn giải chúng một cách thực tế 
@@ -777,15 +781,15 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="space-y-4 mt-4">
           <article className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Xem xu hướng, Không phải Ngày đơn lẻ</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Xem xu hướng, không phải ngày đơn lẻ</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Các bác sĩ lâm sàng có kinh nghiệm hiểu rằng một ngày lượng ăn thấp thường không đáng lo ngại—nó 
               được dự kiến trong bệnh tật. Thay vào đó, họ tập trung vào mô hình theo thời gian:
             </p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
               <li>Lượng ăn có đang cải thiện trong vài ngày không?</li>
-              <li>nó có ổn định ở mức hợp lý không?</li>
-              <li>nó có đang giảm theo thời gian không?</li>
+              <li>Nó có ổn định ở mức hợp lý không?</li>
+              <li>Nó có đang giảm theo thời gian không?</li>
               <li>Có mô hình liên quan đến thủ thuật hoặc triệu chứng không?</li>
             </ul>
             <p className="text-sm text-gray-700 leading-relaxed">
@@ -801,7 +805,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Ưu tiên Khoảng cách Protein</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Ưu tiên khoảng cách protein</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Mặc dù cả năng lượng (calo) và protein đều quan trọng, các bác sĩ lâm sàng thường ưu tiên lượng ăn protein 
               vì:
@@ -825,7 +829,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Cân bằng Rủi ro Thiếu ăn vs. Thừa ăn</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Cân bằng rủi ro thiếu ăn vs. thừa ăn</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Các bác sĩ lâm sàng phải cân bằng các mối quan tâm cạnh tranh:
             </p>
@@ -908,7 +912,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="space-y-4">
           <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-5">
-            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Thiếu hụt Lượng ăn Là phổ biến</h3>
+            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Thiếu hụt lượng ăn là phổ biến</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Khoảng cách lượng ăn không bất thường, không mong đợi, hoặc dấu hiệu rằng có điều gì đó đã sai. Chúng là 
               thường gặp và có thể dự đoán, đặc biệt trong bệnh cấp tính. Nhiều yếu tố—liên quan đến người bệnh, 
@@ -922,7 +926,7 @@ export default function WhyIntakeFallsShortPage() {
           </div>
 
           <div className="bg-green-50 border-2 border-green-300 rounded-lg p-5">
-            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Tính toán Là điểm khởi đầu</h3>
+            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Tính toán là điểm khởi đầu</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Tính toán nhu cầu dinh dưỡng cho chúng ta một mục tiêu để hướng tới, nhưng nó chỉ là khởi đầu. 
               Tính toán giả định điều kiện lý tưởng hiếm khi tồn tại trong môi trường lâm sàng thực tế. Chúng không 
@@ -930,14 +934,14 @@ export default function WhyIntakeFallsShortPage() {
               và nhiều yếu tố khác.
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong>Hãy nhớ:</strong> Nhu cầu ước tính là tham chiếu, không phải “mệnh lệnh”. nó giúp chúng ta
+              <strong>Hãy nhớ:</strong> Nhu cầu ước tính là tham chiếu, không phải "mệnh lệnh". Nó giúp chúng ta
               hình dung mục tiêu hợp lý, nhưng lượng ăn thực tế thường sẽ khác—và điều đó không hiếm gặp. 
               Tính toán là điểm khởi đầu cho lập kế hoạch, không phải mục tiêu cứng nhắc phải được đáp ứng.
             </p>
           </div>
 
           <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-5">
-            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Theo dõi và Điều chỉnh quan trọng hơn Sự hoàn hảo</h3>
+            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Theo dõi và điều chỉnh quan trọng hơn sự hoàn hảo</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Điều quan trọng nhất không phải là đạt được 100% nhu cầu ước tính, mà là:
             </p>
@@ -981,7 +985,7 @@ export default function WhyIntakeFallsShortPage() {
           id="cta-heading"
           className="heading-3"
         >
-          Đưa điều này Vào thực hành
+          Đưa điều này vào thực hành
         </h2>
         <p className="text-body">
           Bây giờ bạn đã hiểu vì sao khoảng cách lượng ăn xảy ra, đây là các cách thực tế để áp dụng kiến thức này:
@@ -990,11 +994,11 @@ export default function WhyIntakeFallsShortPage() {
         <div className="space-y-4 mt-6">
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <h3 className="font-semibold text-gray-900 mb-2 text-lg">
-              sử dụng Công cụ 03 để Hình dung Khoảng cách
+              sử dụng công cụ 03 để hình dung khoảng cách
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
               <Link href="/tools/intake-assessment" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
-                Công cụ So sánh Lượng ăn vs. Nhu cầu
+                Công cụ so sánh lượng ăn vs. nhu cầu
               </Link> giúp bạn thấy khoảng cách giữa nhu cầu ước tính và lượng ăn thực tế. 
               Hình dung này làm cho việc hiểu mức độ khoảng cách và nhận diện 
               mô hình theo thời gian dễ dàng hơn.
@@ -1009,7 +1013,7 @@ export default function WhyIntakeFallsShortPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <h3 className="font-semibold text-gray-900 mb-2 text-lg">
-              Xem lại Giả định Công cụ 02
+              Xem lại giả định công cụ 02
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
               <Link href="/tools/energy-protein-calculator" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
@@ -1020,7 +1024,7 @@ export default function WhyIntakeFallsShortPage() {
             <p className="text-sm text-gray-700 leading-relaxed">
               <strong>Hãy nhớ:</strong> Các con số từ Công cụ 02 là điểm khởi đầu, không phải mục tiêu cứng nhắc. 
               Khi bạn tính nhu cầu, hãy nhớ rằng lượng ăn thực tế có thể sẽ thấp hơn—và điều đó 
-              được dự kiến. sử dụng khoảng tính toán như hướng dẫn cho lập kế hoạch, nhưng đừng ngạc nhiên hoặc 
+              được dự kiến. Sử dụng khoảng tính toán như hướng dẫn cho lập kế hoạch, nhưng đừng ngạc nhiên hoặc 
               thất vọng khi lượng ăn thiếu. Tính toán giúp bạn hiểu những gì bạn đang hướng tới, 
               nhưng theo dõi lượng ăn thực tế cho bạn biết những gì thực sự đang xảy ra.
             </p>
@@ -1059,6 +1063,90 @@ export default function WhyIntakeFallsShortPage() {
             là phổ biến, tính toán là điểm khởi đầu, và theo dõi và điều chỉnh 
             quan trọng hơn sự hoàn hảo.
           </p>
+        </div>
+      </section>
+
+      {/* 10. For Patients and Families */}
+      <section
+        aria-labelledby="for-families-heading"
+        className="space-y-6 rounded-lg border-2 border-blue-300 bg-blue-50 p-6 sm:p-8"
+      >
+        <h2
+          id="for-families-heading"
+          className="heading-3 text-blue-900"
+        >
+          Dành cho Người bệnh và Gia đình
+        </h2>
+        <div className="bg-white rounded-lg p-5 space-y-4">
+          <p className="text-body">
+            Nếu bạn hoặc người thân đang nằm viện và ăn ít hơn so với bác sĩ khuyến nghị, đây là những điều bạn cần biết:
+          </p>
+
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+            <h3 className="font-semibold text-gray-900 mb-2">Điều này là bình thường</h3>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Khi bị bệnh, cơ thể tự nhiên sẽ ăn ít hơn. Đây không phải lỗi của bạn hay người thân. 
+              Khi bị sốt, đau, buồn nôn, hoặc mệt mỏi, việc ăn uống trở nên khó khăn. Điều này xảy ra với hầu hết mọi người khi nằm viện.
+            </p>
+          </div>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <h3 className="font-semibold text-gray-900 mb-2">Tại sao lại như vậy?</h3>
+            <p className="text-sm text-gray-700 leading-relaxed mb-2">
+              Có nhiều lý do khiến người bệnh ăn ít hơn:
+            </p>
+            <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
+              <li><strong>Mất cảm giác ngon miệng:</strong> Khi bị bệnh, bạn không cảm thấy đói hoặc thèm ăn như bình thường</li>
+              <li><strong>Buồn nôn:</strong> Cảm giác buồn nôn khiến không muốn ăn, sợ ăn vào sẽ nôn ra</li>
+              <li><strong>Đau:</strong> Đau đớn khiến việc nhai, nuốt trở nên khó khăn</li>
+              <li><strong>Mệt mỏi:</strong> Quá mệt để nhai, nuốt, hoặc thậm chí để cầm đũa</li>
+              <li><strong>Thay đổi vị giác:</strong> Thức ăn có vị lạ, nhạt, hoặc đắng - không còn ngon như trước</li>
+              <li><strong>Lo lắng, căng thẳng:</strong> Lo lắng về bệnh tật khiến không muốn ăn</li>
+              <li><strong>Phải nhịn ăn:</strong> Trước khi làm thủ thuật, bác sĩ yêu cầu nhịn ăn để đảm bảo an toàn</li>
+            </ul>
+          </div>
+
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+            <h3 className="font-semibold text-gray-900 mb-2">Gia đình có thể làm gì?</h3>
+            <p className="text-sm text-gray-700 leading-relaxed mb-2">
+              Nếu bạn là người thân chăm sóc, đây là những cách bạn có thể giúp:
+            </p>
+            <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
+              <li><strong>Đừng ép ăn:</strong> Ép ăn có thể khiến người bệnh sợ hãi và căng thẳng hơn. Hãy kiên nhẫn và động viên nhẹ nhàng</li>
+              <li><strong>Chia nhỏ bữa ăn:</strong> Thay vì 3 bữa lớn, hãy chia thành 5-6 bữa nhỏ, dễ ăn hơn</li>
+              <li><strong>Chọn thức ăn dễ ăn:</strong> Cháo, súp, canh, hoặc thức ăn mềm, dễ nuốt</li>
+              <li><strong>Mang thức ăn từ nhà:</strong> Nếu bệnh viện cho phép, mang thức ăn quen thuộc từ nhà có thể giúp người bệnh ăn được nhiều hơn</li>
+              <li><strong>Ăn cùng nhau:</strong> Ngồi ăn cùng người bệnh, tạo không khí vui vẻ có thể giúp họ ăn được nhiều hơn</li>
+              <li><strong>Báo với điều dưỡng:</strong> Nếu người bệnh không ăn được, hãy báo với điều dưỡng để họ có thể hỗ trợ hoặc điều chỉnh</li>
+            </ul>
+          </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+            <h3 className="font-semibold text-gray-900 mb-2">Khi nào cần lo lắng?</h3>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Thông thường, ăn ít trong vài ngày đầu khi nằm viện là bình thường. Nhưng nếu người bệnh:
+            </p>
+            <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mt-2">
+              <li>Không ăn gì cả trong 2-3 ngày liên tiếp</li>
+              <li>Không uống được nước</li>
+              <li>Ngày càng yếu đi, không thể ngồi dậy</li>
+              <li>Bị sụt cân nhiều</li>
+            </ul>
+            <p className="text-sm text-gray-700 leading-relaxed mt-2">
+              Hãy báo ngay với bác sĩ hoặc điều dưỡng. Họ có thể cần can thiệp bằng cách cho ăn qua ống hoặc truyền dịch.
+            </p>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4">
+            <p className="text-sm font-semibold text-blue-900 mb-2">
+              💡 Lời khuyên quan trọng
+            </p>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Đừng tự trách mình hoặc người thân khi không ăn được nhiều. Khi bị bệnh, cơ thể tự nhiên sẽ ăn ít hơn. 
+              Điều quan trọng là theo dõi và hỗ trợ, không phải ép buộc. Hãy tin tưởng vào đội ngũ y tế - họ sẽ giúp 
+              đảm bảo người bệnh nhận đủ dinh dưỡng cần thiết.
+            </p>
+          </div>
         </div>
       </section>
 

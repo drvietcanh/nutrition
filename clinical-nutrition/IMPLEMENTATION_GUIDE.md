@@ -1,8 +1,8 @@
-# Hướng Dẫn Triển Khai Cải Thiện Giao Diện
+# Hướng dẫn triển Khai Cải thiện Giao Diện
 
-## 🚀 Bắt Đầu Nhanh
+## 🚀 Bắt đầu Nhanh
 
-### Bước 1: Cài Đặt Icon Library
+### Bước 1: Cài đặt Icon Library
 
 ```bash
 npm install lucide-react
@@ -18,7 +18,7 @@ npm install @heroicons/react
 
 File `design-tokens.css` đã được tạo và import vào `globals.css`. Các biến CSS có sẵn trong toàn bộ ứng dụng.
 
-### Bước 3: Sử Dụng Icons
+### Bước 3: Sử dụng Icons
 
 **Với Lucide Icons:**
 
@@ -39,7 +39,7 @@ import { BookOpenIcon, CalculatorIcon } from '@heroicons/react/24/outline';
 
 ---
 
-## 📝 Ví Dụ Component Cải Thiện
+## 📝 Ví dụ Component Cải thiện
 
 ### 1. Card Component với Icon
 
@@ -74,7 +74,7 @@ export function KnowledgeCard({ title, description, href, icon: Icon = BookOpen 
 }
 ```
 
-### 2. Callout Component Cải Thiện
+### 2. Callout Component Cải thiện
 
 ```tsx
 import { Info, AlertTriangle, CheckCircle, XCircle } from 'lucide-react';
@@ -147,7 +147,7 @@ export function Callout({
 }
 ```
 
-### 3. Button Component Cải Thiện
+### 3. Button Component Cải thiện
 
 ```tsx
 import { ArrowRight } from 'lucide-react';
@@ -208,7 +208,7 @@ export function Button({
 
 ---
 
-## 🎨 Sử Dụng Design Tokens trong Tailwind
+## 🎨 Sử dụng Design Tokens trong Tailwind
 
 ### Cấu hình Tailwind để sử dụng CSS Variables
 
@@ -313,7 +313,7 @@ export default config;
 
 ---
 
-## 🔍 Kiểm Tra Chất Lượng
+## 🔍 Kiểm Tra Chất lượng
 
 ### Accessibility Checklist
 - [ ] Tất cả interactive elements có focus states
@@ -337,7 +337,7 @@ export default config;
 
 ---
 
-## 📚 Tài Liệu Tham Khảo
+## 📚 Tài liệu Tham Khảo
 
 - **Lucide Icons**: https://lucide.dev/icons/
 - **Tailwind CSS**: https://tailwindcss.com/docs

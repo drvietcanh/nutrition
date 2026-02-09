@@ -66,7 +66,7 @@ export default function WhyNoUniversalNumberPage() {
           </p>
           <p className="text-base text-neutral-600 italic border-l-4 border-blue-200 pl-4 py-2 bg-blue-50/50 rounded-r">
             Nội dung này được thiết kế cho mục đích giáo dục để giúp bạn hiểu ước tính nhu cầu dinh dưỡng
-            và giảm sự tự tin quá mức vào số liệu. nó không cung cấp khuyến nghị điều trị hoặc thay thế
+            và giảm sự tự tin quá mức vào số liệu. Nó không cung cấp khuyến nghị điều trị hoặc thay thế
             hướng dẫn lâm sàng hoặc đào tạo chuyên nghiệp. Nếu bạn mới làm quen với dinh dưỡng lâm sàng, hãy dành thời gian với những
             khái niệm này—chúng tạo nền tảng cho chăm sóc dinh dưỡng an toàn và hiệu quả.
           </p>
@@ -82,7 +82,7 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="appeal-heading">
         <SectionHeading id="appeal-heading">
-          Sự hấp Dẫn của "Một con số Đúng"
+          Sự hấp dẫn của "Một con số đúng"
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -121,7 +121,7 @@ export default function WhyNoUniversalNumberPage() {
           <p>
             số liệu cũng <strong>đơn giản hóa các quyết định phức tạp</strong>. Dinh dưỡng lâm sàng liên quan đến việc cân nhắc nhiều
             yếu tố: tình trạng bệnh nhân, mục tiêu chăm sóc của họ, những gì họ có thể chịu đựng, những gì thực tế
-            có thể, và cách họ đang phản ứng. Một con số duy nhất cắt qua sự phức tạp đó. nó cho bạn
+            có thể, và cách họ đang phản ứng. Một con số duy nhất cắt qua sự phức tạp đó. Nó cho bạn
             một cái gì đó cụ thể để làm việc, một cái gì đó bạn có thể ghi chép, một cái gì đó bạn có thể bảo vệ nếu bị chất vấn.
           </p>
           <p>
@@ -170,10 +170,10 @@ export default function WhyNoUniversalNumberPage() {
           <ul className="list-disc space-y-3 pl-6">
             <li>
               <strong>Thành phần cơ thể</strong>: Hai người có cùng cân nặng có thể có lượng
-              cơ so với mỡ rất khác nhau. Mô cơ sử dụng nhiều năng lượng hơn mô mỡ, ngay cả khi nghỉ ngơi. Người có
-              khối lượng cơ nhiều hơn (định nghĩa cơ rõ ràng, sức nắm mạnh hơn) thường cần nhiều năng lượng hơn
-              người có khối lượng mỡ nhiều hơn, ngay cả khi họ nặng như nhau. Đây là điều y tá và bác sĩ lâm sàng
-              có thể quan sát trong đánh giá thể chất.
+              cơ so với mỡ rất khác nhau. Cơ bắp cần nhiều năng lượng hơn mỡ, ngay cả khi nghỉ ngơi. Người có
+              nhiều cơ bắp (nhìn rõ cơ, tay chân săn chắc) thường cần nhiều năng lượng hơn
+              người có nhiều mỡ hơn, ngay cả khi họ nặng như nhau. Ví dụ: một người tập thể dục thường xuyên 
+              nặng 70kg sẽ cần nhiều calo hơn một người ít vận động cũng nặng 70kg.
             </li>
             <li>
               <strong>Mức độ nghiêm trọng của bệnh</strong>: Hai bệnh nhân có cùng chẩn đoán có thể có
@@ -184,25 +184,23 @@ export default function WhyNoUniversalNumberPage() {
               chỉ biết chẩn đoán.
             </li>
             <li>
-              <strong>Viêm và phản ứng stress</strong>: Khi cơ thể đang xử lý viêm,
-              nhiễm trùng, phẫu thuật hoặc các stressor khác, nó cần nhiều năng lượng hơn. Đây là lý do tại sao người đang phục hồi sau
-              phẫu thuật có thể cần nhiều hơn cùng một người khi họ ổn định. Phản ứng stress tăng
-              nhu cầu chuyển hóa, đôi khi đáng kể. Điều này có thể thay đổi hàng ngày dựa trên thủ thuật, nhiễm trùng,
-              hoặc các sự kiện lâm sàng khác. Y tá theo dõi các dấu hiệu nhiễm trùng hoặc viêm, và bác sĩ lâm sàng
-              theo dõi thủ thuật và biến chứng, có thể quan sát những thay đổi này.
+              <strong>Khi cơ thể bị bệnh hoặc chấn thương</strong>: Khi cơ thể đang chống lại nhiễm trùng,
+              đang lành vết thương sau phẫu thuật, hoặc đang xử lý các tổn thương khác, nó cần nhiều năng lượng hơn. 
+              Đây là lý do tại sao người đang phục hồi sau phẫu thuật có thể cần nhiều calo hơn khi họ đã ổn định. 
+              Cơ thể phải làm việc nhiều hơn để chữa lành, nên cần nhiều "nhiên liệu" hơn. Điều này có thể thay đổi hàng ngày 
+              - hôm nay có thể cần nhiều hơn vì đang sốt, ngày mai có thể ít hơn khi đã đỡ.
             </li>
             <li>
-              <strong>Hoạt động thể chất</strong>: Mức độ di chuyển của ai đó ảnh hưởng đến nhu cầu năng lượng của họ. Người
-              đi bộ hàng ngày, làm vật lý trị liệu, hoặc nói chung hoạt động nhiều hơn cần nhiều năng lượng hơn người
-              nằm liệt giường hoặc chủ yếu ít vận động. Điều này có thể thay đổi trong thời gian nằm viện—ai đó có thể bắt đầu
-              nằm liệt giường sau phẫu thuật nhưng trở nên hoạt động hơn khi họ phục hồi. Y tá quan sát mức độ hoạt động
-              và bác sĩ lâm sàng theo dõi tình trạng chức năng nhận thấy những thay đổi này, điều mà công thức không thể dự đoán.
+              <strong>Mức độ vận động</strong>: Người đi lại nhiều, tập thể dục, hoặc làm việc nặng cần nhiều năng lượng hơn 
+              người nằm một chỗ hoặc ít vận động. Ví dụ: một người lao động chân tay cần nhiều calo hơn một người làm việc văn phòng. 
+              Điều này có thể thay đổi trong thời gian nằm viện—bệnh nhân có thể bắt đầu nằm liệt giường sau phẫu thuật, 
+              nhưng khi họ phục hồi và bắt đầu đi lại, nhu cầu năng lượng sẽ tăng lên.
             </li>
             <li>
-              <strong>Tuổi và tình trạng chức năng</strong>: Người cao tuổi có thể có nhu cầu khác với người trẻ
-              hơn, và tình trạng chức năng (mức độ ai đó có thể thực hiện các hoạt động hàng ngày) cũng quan trọng. Người
-              độc lập và hoạt động có thể có nhu cầu khác với người yếu đuối hoặc phụ thuộc, ngay cả
-              ở cùng tuổi. Tình trạng chức năng có thể thay đổi trong bệnh tật và phục hồi, ảnh hưởng đến nhu cầu theo thời gian.
+              <strong>Tuổi và khả năng tự chăm sóc</strong>: Người cao tuổi thường cần ít năng lượng hơn người trẻ, 
+              nhưng cũng phụ thuộc vào khả năng tự chăm sóc. Người già nhưng vẫn tự đi lại, tự ăn uống được sẽ cần nhiều calo hơn 
+              người già yếu, phải nằm một chỗ. Ngay cả cùng tuổi, hai người có thể có nhu cầu khác nhau tùy vào sức khỏe và 
+              khả năng vận động của họ.
             </li>
           </ul>
           <EducationalNote variant="clinical-insight">
@@ -251,7 +249,7 @@ export default function WhyNoUniversalNumberPage() {
           <div className="mt-6 space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Bệnh cấp tính, Phục hồi và Phục hồi chức Năng khác nhau
+                Bệnh cấp tính, Phục hồi và Phục hồi chức năng khác nhau
               </h3>
               <p>
                 Cùng một người có nhu cầu khác nhau tùy thuộc vào vị trí của họ trong bệnh tật và phục hồi:
@@ -285,7 +283,7 @@ export default function WhyNoUniversalNumberPage() {
 
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Khả năng chịu đựng Lượng ăn vào thay Đổi trước Khi nhu cầu Thay đổi
+                Khả năng chịu đựng lượng ăn vào thay đổi trước khi nhu cầu thay đổi
               </h3>
               <p>
                 Có một vấn đề thời gian quan trọng trong dinh dưỡng lâm sàng: <strong>những gì ai đó thực sự có thể chịu đựng
@@ -293,9 +291,9 @@ export default function WhyNoUniversalNumberPage() {
                 gợi ý và những gì thực sự có thể.
               </p>
               <p>
-                Ví dụ, ai đó có thể buồn nôn, đau, hoặc đang vật lộn với trầm cảm, làm cho việc ăn khó khăn.
-                Nhu cầu được tính toán của họ có thể gợi ý 1,800 calo, nhưng họ chỉ có thể chịu đựng 800–1,000
-                calo ngay bây giờ. Tính toán không thay đổi, nhưng khả năng đáp ứng của họ thì có.
+              Ví dụ thực tế: Một người bệnh có thể cần khoảng 1,800 calo/ngày theo tính toán, nhưng vì đang buồn nôn, đau, 
+              hoặc lo lắng, họ chỉ ăn được khoảng 800–1,000 calo/ngày. Tính toán không thay đổi, nhưng khả năng ăn uống của họ 
+              thì thay đổi. Đây là lý do tại sao không thể chỉ dựa vào một con số - phải xem người bệnh thực sự ăn được bao nhiêu.
               </p>
               <p>
                 Ngược lại, khi ai đó phục hồi, cảm giác ngon miệng và khả năng chịu đựng của họ thường cải thiện trước khi nhu cầu được tính toán
@@ -375,9 +373,10 @@ export default function WhyNoUniversalNumberPage() {
               ngay cả khi có, kết quả có thể thay đổi theo thời gian và điều kiện.
             </p>
             <p>
-              Công thức ước tính nhu cầu dựa trên những gì hiệu quả cho nhóm người trong các nghiên cứu. Chúng không
-              đo những gì một người cụ thể thực sự cần. Sự khác biệt này quan trọng vì nó giúp chúng ta hiểu
-              rằng công thức cung cấp điểm khởi đầu, không phải câu trả lời dứt khoát.
+              Công thức ước tính dựa trên nghiên cứu với nhiều người, cho ra con số trung bình. Chúng không
+              đo chính xác nhu cầu của từng người cụ thể. Ví dụ: nếu nghiên cứu cho thấy người 60kg cần trung bình 1,800 calo, 
+              không có nghĩa là bạn 60kg cũng cần đúng 1,800 calo - có thể bạn cần 1,600 hoặc 2,000, tùy vào nhiều yếu tố. 
+              Công thức chỉ cho bạn một điểm khởi đầu để tham khảo, không phải con số chính xác.
             </p>
           </EducationalNote>
 
@@ -442,7 +441,7 @@ export default function WhyNoUniversalNumberPage() {
             lâm sàng kết hợp với hướng dẫn.
           </p>
           <p>
-            <strong>Các phương pháp này thường tạo ra các con số khác nhau, và điều đó là bình thường.</strong> nó không phải là dấu hiệu
+            <strong>Các phương pháp này thường tạo ra các con số khác nhau, và điều đó là bình thường.</strong> Nó không phải là dấu hiệu
             rằng một cái "sai" hoặc cái khác "đúng." Các phương pháp khác nhau tồn tại vì chúng được phát triển cho
             mục đích, dân số hoặc tình huống khác nhau. Ví dụ:
           </p>
@@ -465,7 +464,7 @@ export default function WhyNoUniversalNumberPage() {
             dựa trên bối cảnh lâm sàng. Mục tiêu không phải là tìm "câu trả lời đúng," mà là thiết lập một
             <strong>điểm khởi đầu an toàn, hợp lý</strong> có thể được theo dõi và điều chỉnh.
           </p>
-          <EducationalNote variant="warning" title="Rủi ro của Sự tự tin quá mức">
+          <EducationalNote variant="warning" title="Rủi ro của sự tự tin quá mức">
             <p>
               Đối xử với công thức như thể chúng cung cấp câu trả lời chính xác có thể dẫn đến tự tin quá mức vào số liệu. Đây là
               một cạm bẫy phổ biến cho các bác sĩ lâm sàng mới vào nghề, y tá tuân theo giao thức và sinh viên học
@@ -498,7 +497,7 @@ export default function WhyNoUniversalNumberPage() {
         <div className="mt-6 space-y-6">
           <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4">
             <h3 className="font-semibold text-base mb-3 text-neutral-900">
-              Ví dụ 1: Hai bệnh nhân, Cùng cân Nặng, Mức độ Bệnh khác Nhau
+              Ví dụ 1: Hai bệnh nhân, cùng cân nặng, mức độ bệnh khác nhau
             </h3>
             <p className="text-sm text-neutral-700 mb-3">
               Hai bệnh nhân đều nặng 70 kg và 65 tuổi. Cả hai đều bị suy tim. Một tính toán đơn giản dựa trên cân nặng
@@ -628,7 +627,7 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="mistakes-heading">
         <SectionHeading id="mistakes-heading">
-          Những sai Lầm phổ Biến khi Theo đuổi con Số chính xác
+          Những sai lầm phổ biến khi theo đuổi con số chính xác
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -689,7 +688,7 @@ export default function WhyNoUniversalNumberPage() {
             </p>
           </EducationalNote>
 
-          <EducationalNote variant="common-pitfall" title='Cho ăn quá mức Trong bệnh Cấp tính Sớm'>
+          <EducationalNote variant="common-pitfall" title='Cho ăn quá mức trong bệnh cấp tính sớm'>
             <p>
               <strong>Điều gì xảy ra:</strong> Một bệnh nhân được nhập viện với nhiễm trùng nặng hoặc bệnh nặng. Nhóm
               chăm sóc tính toán nhu cầu và ngay lập tức cố gắng đáp ứng mục tiêu đầy đủ, mặc dù bệnh nhân
@@ -703,7 +702,7 @@ export default function WhyNoUniversalNumberPage() {
             <p>
               <strong>Tại sao đây là vấn đề:</strong> Trong bệnh cấp tính sớm, cơ thể đang trong trạng thái stress.
               Cho ăn quá mức trong giai đoạn này có thể tăng stress chuyển hóa, làm xấu đi chức năng cơ quan, hoặc gây
-              biến chứng. cơ thể có thể không thể xử lý lượng dinh dưỡng lớn một cách hiệu quả trong
+              biến chứng. Cơ thể có thể không thể xử lý lượng dinh dưỡng lớn một cách hiệu quả trong
               bệnh nặng. Bắt đầu với cho ăn tích cực có thể không phù hợp.
             </p>
             <p>
@@ -772,8 +771,8 @@ export default function WhyNoUniversalNumberPage() {
                 dựa trên trung bình dân số, không phải đo lường cá nhân.
               </p>
               <p>
-                Làm việc với phạm vi trung thực hơn so với tuyên bố một con số chính xác. nó phản ánh thực tế rằng
-                các phương pháp ước tính khác nhau tạo ra kết quả khác nhau, và điều đó là bình thường. nó cũng thừa nhận
+                Làm việc với phạm vi trung thực hơn so với tuyên bố một con số chính xác. Nó phản ánh thực tế rằng
+                các phương pháp ước tính khác nhau tạo ra kết quả khác nhau, và điều đó là bình thường. Nó cũng thừa nhận
                 rằng sự biến đổi cá nhân có nghĩa là cùng một tính toán có thể không phù hợp với tất cả mọi người, hoặc thậm chí cùng một
                 người trong các tình huống khác nhau.
               </p>
@@ -787,7 +786,7 @@ export default function WhyNoUniversalNumberPage() {
 
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Cách phạm vi cho Phép linh Hoạt
+                Cách phạm vi cho phép linh hoạt
               </h3>
               <p>
                 Phạm vi cho phép linh hoạt vì một người có thể làm tốt ở bất kỳ đâu trong phạm vi, tùy thuộc vào
@@ -876,7 +875,7 @@ export default function WhyNoUniversalNumberPage() {
         <ContentBlock>
           <p>
             Hiểu tại sao không có con số phổ quát cho nhu cầu dinh dưỡng có thể cảm thấy quá tải lúc đầu, nhưng
-            nó thực sự yên tâm. nó có nghĩa là bạn không cần tìm con số "hoàn hảo"—bạn cần suy nghĩ
+            nó thực sự yên tâm. Nó có nghĩa là bạn không cần tìm con số "hoàn hảo"—bạn cần suy nghĩ
             cẩn thận về những gì phù hợp cho mỗi người trong tình huống cụ thể của họ. Đây là những điểm chính
             cần rút ra để hướng dẫn thực hành của bạn:
           </p>
@@ -888,7 +887,7 @@ export default function WhyNoUniversalNumberPage() {
               Không có Con số đúng Duy nhất tồn tại
             </h3>
             <p className="text-blue-800 mb-2">
-              Đây thực sự là tin tốt. nó có nghĩa là bạn không cần lo lắng về việc tìm câu trả lời "hoàn hảo".
+              Đây thực sự là tin tốt. Nó có nghĩa là bạn không cần lo lắng về việc tìm câu trả lời "hoàn hảo".
               Các phương pháp ước tính khác nhau tạo ra các con số khác nhau, và điều đó là bình thường. Bệnh nhân có cùng
               cân nặng có thể có nhu cầu khác nhau. Nhu cầu thay đổi theo thời gian. Sự biến đổi này là thực tế và dự kiến—nó
               không phải là lỗi trong đánh giá của bạn hoặc dấu hiệu rằng bạn đang làm sai điều gì đó.
@@ -919,7 +918,7 @@ export default function WhyNoUniversalNumberPage() {
 
           <div className="rounded-md bg-blue-50 border border-blue-200 p-5">
             <h3 className="text-lg font-semibold text-blue-900 mb-3">
-              Bối cảnh lâm Sàng và đánh Giá lại quan Trọng nhất
+              Bối cảnh lâm sàng và đánh giá lại quan trọng nhất
             </h3>
             <p className="text-blue-800 mb-2">
               Các yếu tố quan trọng nhất trong chăm sóc dinh dưỡng không phải là số liệu từ tính toán—chúng là bối cảnh
@@ -930,7 +929,7 @@ export default function WhyNoUniversalNumberPage() {
               Đánh giá lại là trung tâm của dinh dưỡng lâm sàng. Ước tính ban đầu là điểm khởi đầu, không phải mục tiêu
               cố định. Đánh giá lại thường xuyên—được thông báo bởi theo dõi hàng ngày của y tá, phản ứng bệnh nhân và
               thay đổi lâm sàng—đảm bảo rằng hỗ trợ dinh dưỡng vẫn phù hợp khi hoàn cảnh thay đổi. Quy trình liên tục
-              này của đánh giá, theo dõi và điều chỉnh là điều làm cho chăm sóc dinh dưỡng hiệu quả. nó không
+              này của đánh giá, theo dõi và điều chỉnh là điều làm cho chăm sóc dinh dưỡng hiệu quả. Nó không
               phải về việc tìm con số đúng một lần—nó là về việc luôn phản ứng với thay đổi.
             </p>
           </div>
@@ -989,7 +988,7 @@ export default function WhyNoUniversalNumberPage() {
 
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Quy trình đánh Giá đầy đủ
+              Quy trình đánh giá đầy đủ
             </h3>
             <p className="text-sm text-blue-800 mb-3">
               Hiểu cách ước tính nhu cầu phù hợp với quy trình đánh giá rộng hơn, bao gồm
@@ -1066,6 +1065,77 @@ export default function WhyNoUniversalNumberPage() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </ContentBlock>
+      </ContentSection>
+
+      {/* 
+        10. What This Means for You
+        Educational intent: Provides a simple explanation for general readers
+      */}
+      <ContentSection ariaLabelledBy="what-means-for-you-heading">
+        <SectionHeading id="what-means-for-you-heading" variant="blue">
+          Điều này có nghĩa gì với bạn?
+        </SectionHeading>
+        <ContentBlock>
+          <p>
+            Nếu bạn đang đọc bài này và tự hỏi: "Vậy tôi nên ăn bao nhiêu calo mỗi ngày?", đây là câu trả lời đơn giản:
+          </p>
+          
+          <div className="mt-6 space-y-4">
+            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-3">Không có con số "đúng" cho tất cả mọi người</h3>
+              <p className="text-sm text-gray-700 leading-relaxed mb-2">
+                Mỗi người có nhu cầu khác nhau. Một người phụ nữ 50kg, ít vận động có thể chỉ cần khoảng 1,400-1,600 calo/ngày. 
+                Một người đàn ông 80kg, lao động nặng có thể cần 2,500-3,000 calo/ngày. 
+                Cùng một người, khi bị bệnh, nhu cầu có thể thay đổi.
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                <strong>Ví dụ thực tế:</strong> Bạn có thể thấy trên mạng nói "phụ nữ cần 2,000 calo/ngày", nhưng điều này chỉ là 
+                con số trung bình. Nếu bạn ít vận động, bạn có thể cần ít hơn. Nếu bạn tập thể dục nhiều, bạn cần nhiều hơn.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-3">Làm sao biết mình cần bao nhiêu?</h3>
+              <p className="text-sm text-gray-700 leading-relaxed mb-2">
+                Thay vì tìm một con số chính xác, hãy nghĩ về một khoảng (phạm vi):
+              </p>
+              <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700 mb-2">
+                <li><strong>Nghe cơ thể:</strong> Ăn khi đói, dừng khi no. Nếu bạn thấy mệt mỏi, có thể bạn cần ăn nhiều hơn.</li>
+                <li><strong>Xem cân nặng:</strong> Nếu bạn đang giảm cân không chủ ý, có thể bạn cần ăn nhiều hơn. Nếu bạn đang tăng cân quá nhanh, có thể bạn đang ăn quá nhiều.</li>
+                <li><strong>Xem mức độ hoạt động:</strong> Ngày bạn tập thể dục, bạn cần ăn nhiều hơn. Ngày bạn nghỉ ngơi, bạn cần ít hơn.</li>
+                <li><strong>Ăn đa dạng:</strong> Quan trọng hơn số lượng calo là chất lượng - ăn đủ rau, đủ đạm, đủ tinh bột.</li>
+              </ul>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                <strong>Lời khuyên thực tế:</strong> Thay vì đếm từng calo, hãy tập trung vào ăn đủ các nhóm thực phẩm, 
+                ăn khi đói, và chú ý đến cảm giác của cơ thể. Nếu bạn lo lắng về dinh dưỡng, hãy hỏi bác sĩ hoặc chuyên gia dinh dưỡng.
+              </p>
+            </div>
+
+            <div className="bg-purple-50 border border-purple-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-3">Khi nào cần chú ý đặc biệt?</h3>
+              <p className="text-sm text-gray-700 leading-relaxed mb-2">
+                Một số tình huống cần chú ý hơn về dinh dưỡng:
+              </p>
+              <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
+                <li><strong>Khi bị bệnh:</strong> Cơ thể cần nhiều năng lượng hơn để chống lại bệnh tật, nhưng lại khó ăn. Hãy cố gắng ăn những gì có thể, chia nhỏ bữa ăn.</li>
+                <li><strong>Sau phẫu thuật:</strong> Cơ thể cần nhiều protein và calo để lành vết thương. Hãy ăn đủ thịt, cá, trứng, sữa.</li>
+                <li><strong>Khi lớn tuổi:</strong> Người già thường ăn ít hơn nhưng vẫn cần đủ protein và vitamin. Hãy chọn thức ăn giàu dinh dưỡng.</li>
+                <li><strong>Khi mang thai/cho con bú:</strong> Cần nhiều calo và chất dinh dưỡng hơn bình thường.</li>
+              </ul>
+            </div>
+
+            <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4">
+              <p className="text-sm font-semibold text-amber-900 mb-2">
+                💡 Điều quan trọng nhất
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Đừng quá lo lắng về việc phải ăn đúng một con số cụ thể. Quan trọng hơn là ăn đa dạng, đủ chất, 
+                và lắng nghe cơ thể. Nếu bạn có vấn đề sức khỏe hoặc cần tư vấn dinh dưỡng cụ thể, hãy gặp bác sĩ hoặc 
+                chuyên gia dinh dưỡng để được tư vấn phù hợp với tình trạng của bạn.
+              </p>
+            </div>
           </div>
         </ContentBlock>
       </ContentSection>

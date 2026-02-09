@@ -267,16 +267,267 @@ export default function DiabetesNutritionPage() {
             
             <div className="space-y-3 text-body-sm">
               <p>
-                <strong>GI:</strong> tốc độ làm tăng đường huyết
+                <strong>GI:</strong> tốc độ làm tăng đường huyết (thang điểm 0-100, glucose = 100)
               </p>
               <p>
-                <strong>GL:</strong> vừa tốc độ, vừa lượng ăn vào
+                <strong>GL:</strong> vừa tốc độ, vừa lượng ăn vào. GL = (GI × lượng carb trong khẩu phần) ÷ 100
               </p>
               <div className="rounded-lg border border-blue-200 bg-blue-50 p-3">
                 <p className="text-sm text-blue-900">
                   <strong>👉 Tổng lượng carbohydrate vẫn quan trọng hơn GI đơn thuần.</strong>
                 </p>
               </div>
+            </div>
+
+            {/* Detailed GI/GL table for Vietnamese foods */}
+            <h3 className="heading-4 mb-3 mt-6">📋 Bảng GI và GL cho Thực phẩm Việt Nam</h3>
+            <p className="text-body-sm mb-4">
+              Bảng dưới đây giúp bạn hiểu GI và GL của các thực phẩm phổ biến ở Việt Nam:
+            </p>
+
+            {/* GI Table for Starches */}
+            <h4 className="heading-5 mb-3">Tinh bột và Ngũ cốc</h4>
+            <div className="overflow-x-auto my-4">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-green-100">
+                  <tr>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Thực phẩm</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">GI</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Phân loại</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr className="bg-red-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cơm trắng</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~73</td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Cao</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Nên giảm lượng hoặc dùng gạo lứt</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Gạo lứt</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~55</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Tốt hơn cơm trắng, nhiều chất xơ</td>
+                  </tr>
+                  <tr className="bg-red-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh mì trắng</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~75</td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Cao</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Nên chọn bánh mì nguyên cám</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh mì nguyên cám</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~53</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Tốt hơn bánh mì trắng</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bún</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~53</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Ăn kèm nhiều rau và đạm</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Phở (bánh phở)</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~40-50</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Phụ thuộc vào lượng bánh phở</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh cuốn</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~50</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Có đạm từ thịt bên trong</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Khoai lang</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~54</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Nhiều chất xơ, có thể thay thế cơm</td>
+                  </tr>
+                  <tr className="bg-red-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Khoai tây</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~78</td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Cao</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Nên ăn ít, khoai lang tốt hơn</td>
+                  </tr>
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Yến mạch</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~55</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Trung bình-thấp</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Rất tốt, nhiều chất xơ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* GL Table for Vietnamese dishes */}
+            <h4 className="heading-5 mb-3 mt-6">GL của các Món Ăn Việt Nam (tính cho khẩu phần thực tế)</h4>
+            <div className="overflow-x-auto my-4">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-blue-100">
+                  <tr>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Món ăn</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Khẩu phần</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Carb (g)</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">GI</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">GL</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Phân loại GL</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr className="bg-red-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cơm trắng</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1 bát vừa (~150g)</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~45g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">73</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~33</td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Cao</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cơm gạo lứt</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1 bát vừa (~150g)</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~45g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">55</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~25</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Phở bò</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1 tô vừa (bánh phở ~80g)</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~22g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">45</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~10</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bún bò</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1 tô vừa (bún ~100g)</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~25g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">53</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~13</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh mì</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1 ổ vừa (~60g)</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~30g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">75</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~23</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bánh cuốn</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1 đĩa vừa (~100g)</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~25g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">50</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~13</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                  </tr>
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Khoai lang</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">1 củ vừa (~150g)</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~20g</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">54</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~11</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-4">
+              <p className="text-sm font-semibold text-blue-900 mb-2">📊 Phân loại GL:</p>
+              <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
+                <li><strong>GL thấp:</strong> ≤10 - Tốt, đường huyết tăng chậm</li>
+                <li><strong>GL trung bình:</strong> 11-19 - Chấp nhận được, ăn vừa phải</li>
+                <li><strong>GL cao:</strong> ≥20 - Nên hạn chế, đường huyết tăng nhanh</li>
+              </ul>
+            </div>
+
+            {/* Fruits GI table */}
+            <h4 className="heading-5 mb-3 mt-6">Trái cây Việt Nam</h4>
+            <div className="overflow-x-auto my-4">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-purple-100">
+                  <tr>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Trái cây</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">GI</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Phân loại</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Táo</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~36</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Rất tốt, nhiều chất xơ</td>
+                  </tr>
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Ổi</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~33</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Rất tốt, nhiều vitamin C</td>
+                  </tr>
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cam</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~42</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Tốt, nhiều vitamin C</td>
+                  </tr>
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Bưởi</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~25</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Rất tốt, GI thấp nhất</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Xoài</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~51</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Ăn vừa phải, xoài chín có GI cao hơn</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chuối chín vừa</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~51</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Chuối càng chín, GI càng cao</td>
+                  </tr>
+                  <tr className="bg-red-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chuối chín nẫu</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~62</td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Cao</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Nên tránh, chọn chuối chín vừa</td>
+                  </tr>
+                  <tr className="bg-red-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Dưa hấu</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~72</td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Cao</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Nên ăn ít, nhưng GL thấp vì ít carb</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đu đủ</strong></td>
+                    <td className="px-4 py-3 text-sm text-neutral-700 text-center">~59</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình-cao</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Ăn vừa phải</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4 mt-4">
+              <p className="text-sm font-semibold text-amber-900 mb-2">
+                💡 Mẹo sử dụng GI/GL trong thực tế
+              </p>
+              <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
+                <li><strong>Kết hợp thực phẩm:</strong> Ăn thực phẩm GI cao cùng với rau và đạm → GL tổng thể thấp hơn</li>
+                <li><strong>Thứ tự ăn:</strong> Ăn rau và đạm trước, sau đó mới ăn cơm → đường huyết tăng chậm hơn</li>
+                <li><strong>Chọn thực phẩm GI thấp-trung bình:</strong> Gạo lứt, bún, phở tốt hơn cơm trắng</li>
+                <li><strong>Chú ý GL hơn GI:</strong> Một món có GI cao nhưng GL thấp (như dưa hấu) vẫn có thể ăn được với lượng vừa phải</li>
+                <li><strong>Theo dõi đường huyết:</strong> Mỗi người phản ứng khác nhau, nên đo đường huyết sau ăn để điều chỉnh</li>
+              </ul>
             </div>
 
             <h3 className="heading-4 mb-3 mt-4">🥬 Chất xơ</h3>
@@ -1028,7 +1279,191 @@ export default function DiabetesNutritionPage() {
         </div>
       </section>
 
-      {/* 10. Safety disclaimer */}
+      {/* 10. Vietnamese Meal Planning */}
+      <section aria-labelledby="vietnamese-meals-heading" className="space-y-5">
+        <div className="flex items-center gap-3">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+          <h2 id="vietnamese-meals-heading" className="heading-2 whitespace-nowrap">
+            Thực đơn Mẫu và Hướng dẫn Ăn Cơm/Phở cho Người Tiểu đường
+          </h2>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+        </div>
+        <div className="space-y-4">
+          <p className="text-body-lg">
+            Người Việt thường lo lắng về việc ăn cơm và phở khi bị tiểu đường. 
+            Thực tế, bạn vẫn có thể ăn những món này, chỉ cần biết cách ăn đúng.
+          </p>
+
+          {/* How to eat rice */}
+          <Card className="border-blue-200 bg-blue-50/30">
+            <CardHeader icon={Lightbulb} title="🍚 Cách Ăn Cơm khi Bị Tiểu đường" />
+            <CardContent>
+              <p className="text-body-sm mb-3">
+                <strong>Bạn vẫn có thể ăn cơm, nhưng cần chú ý:</strong>
+              </p>
+              <ul className="list-disc space-y-2 pl-6 text-body-sm mb-3">
+                <li>
+                  <strong>Lượng cơm:</strong> Mỗi bữa nên ăn khoảng 1 bát cơm (khoảng 150-200g cơm chín). 
+                  Nếu bạn hoạt động nhiều, có thể ăn 1.5 bát. Nếu ít vận động, chỉ nên ăn 0.5-1 bát.
+                </li>
+                <li>
+                  <strong>Loại gạo:</strong> Nên chọn gạo lứt hoặc trộn gạo lứt với gạo trắng. 
+                  Gạo lứt có nhiều chất xơ, giúp đường huyết tăng chậm hơn.
+                </li>
+                <li>
+                  <strong>Cách ăn:</strong> Ăn cơm cùng với nhiều rau và đạm. Rau và đạm giúp làm chậm hấp thu đường từ cơm.
+                </li>
+                <li>
+                  <strong>Thứ tự ăn:</strong> Nên ăn rau trước, sau đó ăn đạm, cuối cùng mới ăn cơm. 
+                  Điều này giúp đường huyết tăng chậm hơn.
+                </li>
+              </ul>
+              <div className="bg-white rounded-lg border border-blue-200 p-4 mt-3">
+                <p className="text-sm font-semibold text-blue-900 mb-2">💡 Ví dụ bữa ăn với cơm:</p>
+                <p className="text-sm text-gray-700 mb-1">
+                  <strong>Bữa trưa:</strong> 1 bát cơm + Canh chua cá (nhiều rau) + Rau muống xào + 1 miếng cá + Rau sống
+                </p>
+                <p className="text-xs text-gray-600 italic">
+                  → Có đủ: Cơm (tinh bột) + Cá (đạm) + Rau (chất xơ, vitamin). Rau giúp làm chậm hấp thu đường từ cơm.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* How to eat pho */}
+          <Card className="border-green-200 bg-green-50/30">
+            <CardHeader icon={Lightbulb} title="🍜 Cách Ăn Phở khi Bị Tiểu đường" />
+            <CardContent>
+              <p className="text-body-sm mb-3">
+                <strong>Phở vẫn có thể ăn được, nhưng cần điều chỉnh:</strong>
+              </p>
+              <ul className="list-disc space-y-2 pl-6 text-body-sm mb-3">
+                <li>
+                  <strong>Lượng bánh phở:</strong> Chọn tô phở nhỏ hoặc vừa, không nên ăn tô lớn. 
+                  Có thể yêu cầu ít bánh phở, nhiều thịt và rau hơn.
+                </li>
+                <li>
+                  <strong>Nước phở:</strong> Nước phở thường có nhiều đường và muối. 
+                  Nên ăn ít nước, hoặc pha loãng nước phở với nước lọc.
+                </li>
+                <li>
+                  <strong>Thịt và rau:</strong> Yêu cầu nhiều thịt nạc và rau hơn (hành, rau thơm, giá đỗ). 
+                  Thịt và rau giúp làm chậm hấp thu đường từ bánh phở.
+                </li>
+                <li>
+                  <strong>Không nên:</strong> Không nên ăn quẩy (giò cháo quẩy) vì có nhiều dầu mỡ và tinh bột. 
+                  Hạn chế chanh, ớt ngâm đường.
+                </li>
+                <li>
+                  <strong>Tần suất:</strong> Chỉ nên ăn phở 1-2 lần/tuần, không nên ăn hàng ngày.
+                </li>
+              </ul>
+              <div className="bg-white rounded-lg border border-green-200 p-4 mt-3">
+                <p className="text-sm font-semibold text-green-900 mb-2">💡 Cách ăn phở tốt nhất:</p>
+                <p className="text-sm text-gray-700 mb-1">
+                  Gọi tô phở nhỏ, yêu cầu ít bánh phở, nhiều thịt nạc, nhiều rau. 
+                  Ăn ít nước phở, ăn nhiều thịt và rau trước, sau đó mới ăn bánh phở.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Sample Vietnamese menu */}
+          <Card className="border-purple-200 bg-purple-50/30">
+            <CardHeader icon={CheckCircle} title="📋 Thực đơn Mẫu Một Tuần cho Người Tiểu đường" />
+            <CardContent>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Thứ Hai</h3>
+                  <div className="bg-white rounded p-3 border border-purple-200 text-sm">
+                    <p className="mb-1"><strong>Sáng:</strong> 1 tô phở nhỏ (ít bánh, nhiều thịt, nhiều rau)</p>
+                    <p className="mb-1"><strong>Trưa:</strong> 1 bát cơm + Canh chua cá + Rau muống xào + Cá rán</p>
+                    <p><strong>Tối:</strong> 1 bát cơm + Thịt kho tàu (thịt nạc) + Canh rau cải + Đậu bắp luộc</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Thứ Ba</h3>
+                  <div className="bg-white rounded p-3 border border-purple-200 text-sm">
+                    <p className="mb-1"><strong>Sáng:</strong> 1 bát cháo thịt + Rau mùi</p>
+                    <p className="mb-1"><strong>Trưa:</strong> 1 bát cơm + Cá hấp + Canh mướp + Rau sống</p>
+                    <p><strong>Tối:</strong> 1 bát cơm + Đậu phụ sốt cà chua + Canh chua tôm + Rau cải xào</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Thứ Tư</h3>
+                  <div className="bg-white rounded p-3 border border-purple-200 text-sm">
+                    <p className="mb-1"><strong>Sáng:</strong> 1 ổ bánh mì thịt nạc + 1 ly sữa tươi không đường</p>
+                    <p className="mb-1"><strong>Trưa:</strong> 1 bát cơm + Thịt gà luộc + Canh rau ngót + Rau sống</p>
+                    <p><strong>Tối:</strong> 1 bát cơm + Cá kho + Canh chua + Rau muống luộc</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Thứ Năm</h3>
+                  <div className="bg-white rounded p-3 border border-purple-200 text-sm">
+                    <p className="mb-1"><strong>Sáng:</strong> 1 tô bún bò (ít bún, nhiều thịt, nhiều rau)</p>
+                    <p className="mb-1"><strong>Trưa:</strong> 1 bát cơm + Tôm rang + Canh khổ qua + Rau cải xào</p>
+                    <p><strong>Tối:</strong> 1 bát cơm + Thịt bò xào + Canh rau cải + Đậu bắp luộc</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Thứ Sáu</h3>
+                  <div className="bg-white rounded p-3 border border-purple-200 text-sm">
+                    <p className="mb-1"><strong>Sáng:</strong> 1 bát cháo đậu xanh</p>
+                    <p className="mb-1"><strong>Trưa:</strong> 1 bát cơm + Cá hấp + Canh chua cá + Rau muống xào</p>
+                    <p><strong>Tối:</strong> 1 bát cơm + Đậu phụ rán (ít dầu) + Canh mướp + Rau sống</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4 mt-4">
+                <p className="text-sm font-semibold text-amber-900 mb-2">
+                  💡 Lưu ý quan trọng
+                </p>
+                <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
+                  <li>Mỗi bữa nên có đủ: Cơm (tinh bột) + Thịt/Cá/Đậu phụ (đạm) + Rau (chất xơ)</li>
+                  <li>Ăn nhiều rau - nên có ít nhất 2 món rau trong mỗi bữa</li>
+                  <li>Uống đủ nước, hạn chế nước ngọt, nước có đường</li>
+                  <li>Ăn đúng giờ, không bỏ bữa</li>
+                  <li>Nếu đói giữa các bữa, có thể ăn nhẹ: 1 quả táo, 1 hộp sữa chua không đường, hoặc 1 nắm hạt</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Tips for eating out */}
+          <Card className="border-orange-200 bg-orange-50/30">
+            <CardHeader icon={Info} title="🍽️ Mẹo khi Ăn Ngoài" />
+            <CardContent>
+              <p className="text-body-sm mb-3">
+                Khi ăn ở nhà hàng hoặc quán ăn:
+              </p>
+              <ul className="list-disc space-y-2 pl-6 text-body-sm">
+                <li>
+                  <strong>Chọn món:</strong> Ưu tiên món luộc, hấp, nướng. Tránh món chiên rán nhiều dầu.
+                </li>
+                <li>
+                  <strong>Yêu cầu điều chỉnh:</strong> Có thể yêu cầu ít cơm, nhiều rau, ít muối, ít đường.
+                </li>
+                <li>
+                  <strong>Ăn chậm:</strong> Ăn chậm, nhai kỹ giúp no lâu hơn và kiểm soát đường huyết tốt hơn.
+                </li>
+                <li>
+                  <strong>Uống nước:</strong> Uống nước lọc thay vì nước ngọt, nước có đường.
+                </li>
+                <li>
+                  <strong>Tráng miệng:</strong> Nếu muốn ăn tráng miệng, chọn trái cây tươi thay vì bánh ngọt, chè.
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* 11. Safety disclaimer */}
       <section aria-labelledby="safety-heading" className="space-y-4">
         <h2 id="safety-heading" className="heading-3">
           ⚠️ Nhắc nhở An toàn

@@ -120,6 +120,332 @@ export default function CardiovascularDiseaseNutritionPage() {
             </p>
           </Card>
 
+          {/* Cholesterol and Saturated Fat Tables */}
+          <Card className="border-blue-200 bg-blue-50/30">
+            <h3 className="heading-4 mb-3">Bảng Cholesterol và Chất béo Bão hòa trong Thực phẩm Việt Nam</h3>
+            <p className="text-body-sm mb-4">
+              Dưới đây là bảng phân loại thực phẩm Việt Nam theo hàm lượng cholesterol và chất béo bão hòa:
+            </p>
+
+            {/* Cholesterol Table */}
+            <h4 className="heading-5 mb-2 mt-4">🍳 Bảng Cholesterol (mg/100g)</h4>
+            <p className="text-body-sm mb-3 text-gray-600">
+              <strong>Lưu ý:</strong> Khuyến nghị cho người bệnh tim mạch: &lt; 200mg cholesterol/ngày.
+            </p>
+
+            {/* Very High Cholesterol */}
+            <h5 className="text-sm font-semibold text-gray-900 mb-2">🔴 Rất Cao (>200mg/100g) - Hạn chế Nghiêm ngặt</h5>
+            <div className="overflow-x-auto my-3">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-red-100">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                    <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Cholesterol (mg/100g)</th>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Gan lợn</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~300-500</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Nội tạng có cholesterol rất cao</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Thận lợn</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~300-400</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Nội tạng</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Tim lợn</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~200-300</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Nội tạng</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Lòng đỏ trứng</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~370</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">1 lòng đỏ trứng gà (~17g) có ~63mg cholesterol</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* High Cholesterol */}
+            <h5 className="text-sm font-semibold text-gray-900 mb-2 mt-4">🟠 Cao (100-200mg/100g) - Hạn chế</h5>
+            <div className="overflow-x-auto my-3">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-orange-100">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                    <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Cholesterol (mg/100g)</th>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Tôm</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~150-200</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Hải sản</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Cua</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~150-200</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Hải sản</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Thịt mỡ</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~100-150</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Thịt lợn mỡ, thịt bò mỡ</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Thịt nạc</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~70-100</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Thịt lợn nạc, thịt gà (bỏ da)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Low Cholesterol */}
+            <h5 className="text-sm font-semibold text-gray-900 mb-2 mt-4">🟢 Thấp (<100mg/100g) - Ăn Tự do</h5>
+            <div className="overflow-x-auto my-3">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-green-100">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                    <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Cholesterol (mg/100g)</th>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Cá</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~50-100</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Cá các loại (trừ cá có dầu)</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Lòng trắng trứng</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">0</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Không có cholesterol</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Đậu phụ</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">0</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Đạm thực vật, không có cholesterol</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Rau củ quả</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">0</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Không có cholesterol</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Sữa ít béo</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~5-10</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Sữa tách béo, sữa chua ít béo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Saturated Fat Table */}
+            <h4 className="heading-5 mb-2 mt-6">🥓 Bảng Chất béo Bão hòa (g/100g)</h4>
+            <p className="text-body-sm mb-3 text-gray-600">
+              <strong>Lưu ý:</strong> Khuyến nghị cho người bệnh tim mạch: &lt; 7% tổng calo từ chất béo bão hòa 
+              (khoảng 15-20g/ngày cho người ăn 2000 calo/ngày).
+            </p>
+
+            {/* Very High Saturated Fat */}
+            <h5 className="text-sm font-semibold text-gray-900 mb-2">🔴 Rất Cao (>10g/100g) - Tránh Hoàn Toàn</h5>
+            <div className="overflow-x-auto my-3">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-red-100">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                    <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Chất béo bão hòa (g/100g)</th>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Mỡ lợn</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~40-50</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Mỡ động vật</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Bơ</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~50</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Bơ động vật</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Dầu dừa</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~82</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Dầu thực vật nhưng nhiều bão hòa</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Thịt mỡ</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~15-20</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Thịt lợn mỡ, thịt bò mỡ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* High Saturated Fat */}
+            <h5 className="text-sm font-semibold text-gray-900 mb-2 mt-4">🟠 Cao (5-10g/100g) - Hạn chế Nghiêm ngặt</h5>
+            <div className="overflow-x-auto my-3">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-orange-100">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                    <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Chất béo bão hòa (g/100g)</th>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Phô mai</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~15-20</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Phô mai các loại</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Thịt nạc</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~5-8</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Thịt lợn nạc, thịt bò nạc</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Thịt gà (có da)</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~5-7</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Nên bỏ da để giảm chất béo bão hòa</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Sữa nguyên kem</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~3-4</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Nên chọn sữa ít béo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Low Saturated Fat */}
+            <h5 className="text-sm font-semibold text-gray-900 mb-2 mt-4">🟢 Thấp (<5g/100g) - Ăn Tự do</h5>
+            <div className="overflow-x-auto my-3">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-green-100">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                    <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Chất béo bão hòa (g/100g)</th>
+                    <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Cá</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~1-3</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Cá các loại, tốt cho tim mạch</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Thịt gà (bỏ da)</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~1-2</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Thịt gà nạc, bỏ da</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Đậu phụ</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~0.5-1</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Đạm thực vật, ít chất béo bão hòa</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Dầu thực vật</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~2-3</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Dầu đậu nành, dầu hướng dương, dầu ô liu</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Sữa ít béo</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~1-2</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Sữa tách béo, sữa chua ít béo</td>
+                  </tr>
+                  <tr className="bg-neutral-50">
+                    <td className="px-4 py-2 text-xs text-neutral-700"><strong>Rau củ quả</strong></td>
+                    <td className="px-4 py-2 text-xs text-neutral-700 text-center">~0</td>
+                    <td className="px-4 py-2 text-xs text-neutral-700">Không có chất béo bão hòa</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Vietnamese Dishes Table */}
+            <h4 className="heading-5 mb-2 mt-6">🍲 Món Ăn Việt Nam theo Cholesterol và Chất béo Bão hòa</h4>
+            <div className="overflow-x-auto my-4">
+              <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                <thead className="bg-blue-100">
+                  <tr>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Món ăn</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Cholesterol</th>
+                    <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Chất béo bão hòa</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-neutral-200">
+                  <tr className="bg-red-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Thịt kho tàu (nhiều mỡ)</strong></td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Cao</td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Rất cao</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Nhiều mỡ, nhiều cholesterol</td>
+                  </tr>
+                  <tr className="bg-red-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Canh xương (nhiều mỡ)</strong></td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Cao</td>
+                    <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Cao</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Nước dùng có nhiều mỡ</td>
+                  </tr>
+                  <tr className="bg-orange-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Tôm rang</strong></td>
+                    <td className="px-4 py-3 text-sm text-orange-700 text-center font-semibold">Cao</td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Tôm có cholesterol cao</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Thịt gà luộc (bỏ da)</strong></td>
+                    <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Tốt hơn nếu bỏ da</td>
+                  </tr>
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cá hấp</strong></td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Rất tốt cho tim mạch</td>
+                  </tr>
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đậu phụ sốt cà chua</strong></td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Rất thấp</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Rất thấp</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Đạm thực vật, tốt cho tim</td>
+                  </tr>
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-3 text-sm text-neutral-700"><strong>Rau luộc, rau xào (ít dầu)</strong></td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Rất thấp</td>
+                    <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Rất thấp</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">Rất tốt, nhiều chất xơ</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-4 mt-4">
+              <p className="text-sm font-semibold text-amber-900 mb-2">
+                💡 Mẹo Giảm Cholesterol và Chất béo Bão hòa
+              </p>
+              <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
+                <li><strong>Chọn thịt nạc:</strong> Bỏ mỡ, bỏ da gà trước khi nấu</li>
+                <li><strong>Ăn cá thay thịt:</strong> Cá có ít cholesterol và chất béo bão hòa hơn thịt</li>
+                <li><strong>Dùng dầu thực vật:</strong> Dầu đậu nành, dầu hướng dương thay vì mỡ động vật</li>
+                <li><strong>Hạn chế nội tạng:</strong> Gan, thận, tim có cholesterol rất cao</li>
+                <li><strong>Ăn đậu phụ:</strong> Đạm thực vật không có cholesterol</li>
+                <li><strong>Chọn sữa ít béo:</strong> Sữa tách béo, sữa chua ít béo</li>
+                <li><strong>Trứng:</strong> Có thể ăn nhưng hạn chế lòng đỏ (1-2 lòng đỏ/tuần), lòng trắng ăn tự do</li>
+              </ul>
+            </div>
+          </Card>
+
           <Card>
             <h3 className="heading-4 mb-3">2. Hạn chế Natri</h3>
             <p className="text-body-sm mb-3">

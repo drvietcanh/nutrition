@@ -684,7 +684,7 @@ export default function AssessmentProcessPage() {
                 có thể góp phần vào sụt cân và kết quả kém.
               </li>
               <li>
-                <strong>Xu hướng cho thấy phản ứng với thay đổi</strong>: Lượng ăn có đang cải thiện sau quản lý triệu chứng không? nó có đang giảm
+                <strong>Xu hướng cho thấy phản ứng với thay đổi</strong>: Lượng ăn có đang cải thiện sau quản lý triệu chứng không? Nó có đang giảm
                 khi tình trạng xấu đi không? Xu hướng trả lời những câu hỏi này tốt hơn các ảnh chụp đơn lẻ.
               </li>
             </ul>
@@ -852,7 +852,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Tầm quan trọng của Bối cảnh: Mức độ Nghiêm trọng của Bệnh và Mục tiêu Chăm sóc
+              Tầm quan trọng của bối cảnh: Mức độ nghiêm trọng của bệnh và mục tiêu chăm sóc
             </h3>
             <p className="text-base text-neutral-700 mb-2">
               Cùng một con số có ý nghĩa khác nhau trong các bối cảnh khác nhau. Hai người có thể đều cần 1.800 calo, nhưng tình huống của họ
@@ -860,7 +860,7 @@ export default function AssessmentProcessPage() {
             </p>
             <div className="space-y-3 mt-3">
               <div className="rounded-md bg-blue-50 border border-blue-200 p-4">
-                <h4 className="font-semibold text-sm mb-2 text-blue-900">Mức độ Nghiêm trọng của Bệnh</h4>
+                <h4 className="font-semibold text-sm mb-2 text-blue-900">Mức độ nghiêm trọng của bệnh</h4>
                 <p className="text-sm text-blue-800 mb-2">
                   Một người bệnh nhẹ có thể dung nạp hỗ trợ dinh dưỡng tích cực, trong khi người bệnh nghiêm trọng có thể cần
                   cách tiếp cận thận trọng hơn. Người có rối loạn chức năng cơ quan (ví dụ: bệnh thận hoặc gan) cần cân nhắc khác
@@ -872,7 +872,7 @@ export default function AssessmentProcessPage() {
                 </p>
               </div>
               <div className="rounded-md bg-blue-50 border border-blue-200 p-4">
-                <h4 className="font-semibold text-sm mb-2 text-blue-900">Mục tiêu Chăm sóc</h4>
+                <h4 className="font-semibold text-sm mb-2 text-blue-900">Mục tiêu chăm sóc</h4>
                 <p className="text-sm text-blue-800 mb-2">
                   Một người đang phục hồi sau phẫu thuật có mục tiêu khác với người có ung thư tiến triển đang nhận chăm sóc giảm nhẹ.
                   Người đang cố gắng tăng sức mạnh có mục tiêu khác với người đang cố gắng duy trì tình trạng hiện tại.

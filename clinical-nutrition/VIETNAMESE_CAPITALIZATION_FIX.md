@@ -1,4 +1,4 @@
-# Hướng dẫn Sửa Lỗi Viết Hoa Tiếng Việt
+# Hướng dẫn Sửa lỗi viết Hoa Tiếng Việt
 
 ## Tổng quan
 
@@ -14,7 +14,7 @@ Tài liệu này mô tả logic và cách sử dụng script tự động sửa 
 ### Ví dụ lỗi thường gặp:
 - ❌ "Nhu cầu Dinh dưỡng" → ✅ "nhu cầu dinh dưỡng" (hoặc "Nhu cầu dinh dưỡng" nếu đầu câu)
 - ❌ "Khoảng giá trị Quan trọng" → ✅ "khoảng giá trị quan trọng"
-- ❌ "Vì sao Nhu cầu Là Ước tính" → ✅ "Vì sao nhu cầu là ước tính"
+- ❌ "Vì sao Nhu cầu Là ước tính" → ✅ "Vì sao nhu cầu là ước tính"
 - ✅ "Việt Nam" (giữ nguyên - danh từ riêng)
 - ✅ "American College" (giữ nguyên - tên tổ chức)
 
@@ -24,7 +24,7 @@ Tài liệu này mô tả logic và cách sử dụng script tự động sửa 
 
 ### Cấu trúc Script
 
-#### 1. Whitelist Danh Từ Riêng
+#### 1. Whitelist Danh Từ riêng
 ```python
 PROPER_NOUNS_WHITELIST = {
     # Tên địa danh Việt Nam
@@ -38,21 +38,21 @@ PROPER_NOUNS_WHITELIST = {
 }
 ```
 
-#### 2. Hàm Kiểm Tra
+#### 2. Hàm kiểm Tra
 - `is_vietnamese_word(word)`: Kiểm tra từ có phải tiếng Việt (có dấu)
 - `is_proper_noun(word)`: Kiểm tra từ có phải danh từ riêng
 
-#### 3. Hàm Tự Động Phát Hiện
+#### 3. Hàm tự động Phát hiện
 - `auto_detect_capitalization_patterns(content)`: Tự động tìm pattern viết hoa sai
   - Pattern 1: "Từ1 Từ2" (cả hai viết hoa)
   - Pattern 2: "Từ1 Từ2 Từ3" (nhiều từ viết hoa liên tiếp)
 
-#### 4. Danh Sách Pattern Cố Định
+#### 4. Danh Sách Pattern Cố định
 Script có danh sách các pattern cụ thể đã được xác định trước trong hàm `fix_file()`.
 
-## Cách Sử Dụng
+## Cách sử dụng
 
-### 1. Quét và Xem Pattern (Không Sửa)
+### 1. Quét và Xem Pattern (Không sửa)
 ```bash
 cd clinical-nutrition
 python fix-vietnamese-capitalization.py --scan
@@ -63,7 +63,7 @@ Lệnh này sẽ:
 - Hiển thị danh sách các pattern viết hoa sai tìm thấy
 - **KHÔNG** sửa file
 
-### 2. Tự Động Sửa Tất Cả Lỗi
+### 2. Tự động sửa Tất cả lỗi
 ```bash
 cd clinical-nutrition
 python fix-vietnamese-capitalization.py
@@ -75,20 +75,20 @@ Lệnh này sẽ:
 - Sửa tất cả file có lỗi
 - Hiển thị danh sách file đã sửa
 
-### 3. Sửa File Cụ Thể (Tùy Chỉnh)
+### 3. Sửa File Cụ thể (Tùy chỉnh)
 Mở file `fix-vietnamese-capitalization.py` và thêm pattern vào danh sách `replacements` trong hàm `fix_file()`:
 
 ```python
 replacements = [
     # Pattern mới
-    (r'Pattern Mới Cần Sửa', 'pattern mới cần sửa'),
+    (r'Pattern Mới Cần sửa', 'pattern mới cần sửa'),
     # ... các pattern khác
 ]
 ```
 
-## Logic Tự Động Phát Hiện
+## Logic Tự động phát Hiện
 
-### Cách Hoạt Động:
+### Cách hoạt động:
 
 1. **Tìm Pattern**: Regex tìm các pattern "Từ1 Từ2" hoặc "Từ1 Từ2 Từ3" trong đó các từ đều viết hoa chữ cái đầu.
 
@@ -107,7 +107,7 @@ replacements = [
 
 ## Thêm Pattern Mới
 
-### Cách 1: Thêm vào Danh Sách Cố Định
+### Cách 1: Thêm vào Danh Sách Cố định
 
 Mở `fix-vietnamese-capitalization.py`, tìm hàm `fix_file()`, thêm vào danh sách `replacements`:
 
@@ -116,11 +116,11 @@ replacements = [
     # ... các pattern hiện có
     
     # Pattern mới
-    (r'Cụm Từ Cần Sửa', 'cụm từ cần sửa'),
+    (r'Cụm từ cần Sửa', 'cụm từ cần sửa'),
 ]
 ```
 
-### Cách 2: Thêm vào Whitelist (Nếu Cần Giữ Nguyên)
+### Cách 2: Thêm vào Whitelist (Nếu cần giữ Nguyên)
 
 Thêm vào `PROPER_NOUNS_WHITELIST`:
 
@@ -131,12 +131,12 @@ PROPER_NOUNS_WHITELIST = {
 }
 ```
 
-## Các Pattern Đã Được Xử Lý
+## Các Pattern Đã được xử lý
 
 ### Pattern Phổ Biến:
 - `Nhu cầu Dinh dưỡng` → `nhu cầu dinh dưỡng`
 - `Khoảng giá trị Quan trọng` → `khoảng giá trị quan trọng`
-- `Vì sao Nhu cầu Là Ước tính` → `Vì sao nhu cầu là ước tính`
+- `Vì sao Nhu cầu Là ước tính` → `Vì sao nhu cầu là ước tính`
 - `Tầm quan trọng của Khoảng giá trị` → `Tầm quan trọng của khoảng giá trị`
 - `Không phải Con số Đơn lẻ` → `Không phải con số đơn lẻ`
 
@@ -152,8 +152,7 @@ PROPER_NOUNS_WHITELIST = {
 
 ## Lưu Ý Quan Trọng
 
-### 1. Kiểm Tra Trước Khi Sửa
-Luôn chạy `--scan` trước để xem các pattern sẽ được sửa:
+### 1. Kiểm Tra Trước Khi Sửa luôn chạy `--scan` trước để xem các pattern sẽ được sửa:
 ```bash
 python fix-vietnamese-capitalization.py --scan
 ```
@@ -165,8 +164,7 @@ git add .
 git commit -m "Fix Vietnamese capitalization errors"
 ```
 
-### 3. Review Thay Đổi
-Kiểm tra các thay đổi để đảm bảo không sửa nhầm:
+### 3. Review Thay Đổi kiểm tra các thay đổi để đảm bảo không sửa nhầm:
 ```bash
 git diff
 ```
@@ -177,7 +175,7 @@ git diff
 npm run build
 ```
 
-## Xử Lý False Positive
+## Xử lý False Positive
 
 Nếu script sửa nhầm một pattern (false positive):
 
@@ -187,29 +185,28 @@ Nếu script sửa nhầm một pattern (false positive):
 
 ```python
 # Bỏ qua pattern đặc biệt
-if word1 == 'Từ' and word2 == 'Đặc Biệt':
+if word1 == 'Từ' and word2 == 'Đặc biệt':
     continue
 ```
 
-3. **Sửa Thủ Công**: Nếu cần, sửa thủ công và thêm vào whitelist để tránh sửa lại.
+3. **Sửa thủ công**: Nếu cần, sửa thủ công và thêm vào whitelist để tránh sửa lại.
 
-## Cải Thiện Script
+## Cải thiện Script
 
-### Thêm Pattern Mới Tự Động
+### Thêm Pattern Mới tự động
 Script tự động phát hiện pattern mới. Nếu muốn thêm pattern cụ thể, thêm vào danh sách `replacements`.
 
-### Cải Thiện Logic Phát Hiện
-Sửa hàm `auto_detect_capitalization_patterns()` để:
+### Cải thiện Logic Phát hiện sửa hàm `auto_detect_capitalization_patterns()` để:
 - Thêm pattern mới
 - Cải thiện logic kiểm tra context
 - Thêm exception cho các trường hợp đặc biệt
 
-### Mở Rộng Whitelist
+### Mở rộng Whitelist
 Thêm các từ cần giữ nguyên vào `PROPER_NOUNS_WHITELIST` khi phát hiện false positive.
 
-## Ví Dụ Sử Dụng
+## Ví dụ sử Dụng
 
-### Tình Huống 1: Phát Hiện Pattern Mới
+### Tình huống 1: Phát hiện Pattern Mới
 ```bash
 # 1. Quét để xem pattern mới
 python fix-vietnamese-capitalization.py --scan
@@ -222,16 +219,16 @@ git diff
 git commit -m "Fix new Vietnamese capitalization patterns"
 ```
 
-### Tình Huống 2: Sửa Pattern Cụ Thể
+### Tình huống 2: Sửa Pattern Cụ thể
 1. Mở `fix-vietnamese-capitalization.py`
 2. Tìm hàm `fix_file()`
 3. Thêm pattern vào `replacements`:
    ```python
-   (r'Pattern Cụ Thể', 'pattern cụ thể'),
+   (r'Pattern Cụ thể', 'pattern cụ thể'),
    ```
 4. Chạy script để áp dụng
 
-### Tình Huống 3: Thêm Danh Từ Riêng
+### Tình huống 3: Thêm Danh Từ riêng
 1. Mở `fix-vietnamese-capitalization.py`
 2. Tìm `PROPER_NOUNS_WHITELIST`
 3. Thêm từ cần giữ nguyên:
@@ -256,13 +253,13 @@ git commit -m "Fix new Vietnamese capitalization patterns"
 - Tối ưu regex pattern
 - Cache kết quả nếu cần
 
-## Tài Liệu Tham Khảo
+## Tài liệu Tham Khảo
 
 - Quy tắc viết hoa tiếng Việt: [Tiêu chuẩn Việt Nam về chính tả]
 - Regex Python: https://docs.python.org/3/library/re.html
 - Unicode Vietnamese: https://en.wikipedia.org/wiki/Vietnamese_alphabet
 
-## Lịch Sử Cập Nhật
+## Lịch sử cập Nhật
 
 - **2024**: Tạo script tự động phát hiện và sửa lỗi viết hoa
 - **2024**: Thêm whitelist cho danh từ riêng

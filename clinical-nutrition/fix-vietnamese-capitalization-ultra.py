@@ -172,6 +172,81 @@ def is_in_code_range(pos: int, code_ranges: List[Tuple[int, int]]) -> bool:
     return False
 
 # ============================================================================
+# DETECT LOWERCASE AT SENTENCE START
+# ============================================================================
+
+def detect_lowercase_sentence_starts(content: str) -> List[Tuple[str, str, int]]:
+    """
+    Phát hiện các câu không viết hoa ở đầu
+    Tìm pattern: dấu kết thúc câu (.!?) + khoảng trắng + chữ thường tiếng Việt
+    Trả về: [(text_sai, text_đúng, vị_trí), ...]
+    """
+    fixes = []
+    code_ranges = get_code_ranges(content)
+    sentence_boundaries = precompute_sentence_boundaries(content)
+    
+    # Pattern: dấu kết thúc câu + khoảng trắng + chữ thường tiếng Việt
+    # Các từ thường gặp ở đầu câu: nó, cơ thể, số liệu, điều, đó, đây, này, đó, v.v.
+    pattern = re.compile(
+        r'([.!?])\s+([a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ\s]*)',
+        re.UNICODE
+    )
+    
+    for match in pattern.finditer(content):
+        start_pos = match.start()
+        end_pos = match.end()
+        
+        # Skip nếu trong code range
+        if is_in_code_range(start_pos, code_ranges):
+            continue
+        
+        # Lấy phần text sau dấu kết thúc câu
+        sentence_end = match.group(1)
+        text_after = match.group(2).strip()
+        
+        if not text_after:
+            continue
+        
+        # Tách từ đầu tiên
+        first_word_match = re.match(r'^([a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)', text_after)
+        if not first_word_match:
+            continue
+        
+        first_word = first_word_match.group(1)
+        
+        # Kiểm tra xem từ đầu tiên có phải tiếng Việt không
+        if not is_vietnamese_word(first_word):
+            # Có thể là từ tiếng Anh, bỏ qua
+            continue
+        
+        # Kiểm tra xem có phải proper noun không
+        if is_proper_noun(first_word):
+            continue
+        
+        # Kiểm tra xem có phải trong JSX/TSX tag không (ví dụ: <strong>nó</strong>)
+        # Tìm vị trí bắt đầu của text
+        text_start = start_pos + len(sentence_end) + 1
+        # Kiểm tra xem có phải trong tag không
+        before_text = content[max(0, text_start - 50):text_start]
+        if '<' in before_text and '>' in before_text:
+            # Có thể là trong tag, kiểm tra kỹ hơn
+            tag_match = re.search(r'<[^>]*>$', before_text)
+            if tag_match:
+                continue
+        
+        # Viết hoa chữ cái đầu của từ đầu tiên
+        fixed_first_word = first_word[0].upper() + first_word[1:] if len(first_word) > 1 else first_word.upper()
+        fixed_text = fixed_first_word + text_after[len(first_word):]
+        
+        # Tạo replacement
+        wrong = sentence_end + ' ' + text_after
+        correct = sentence_end + ' ' + fixed_text
+        
+        fixes.append((wrong, correct, start_pos))
+    
+    return fixes
+
+# ============================================================================
 # SMART AUTO-DETECTION (Ultra Optimized)
 # ============================================================================
 
@@ -299,6 +374,10 @@ def fix_file_ultra(file_path: Path) -> Tuple[bool, int]:
         
         # Phát hiện tất cả lỗi trong một lần
         fixes = smart_auto_detect_ultra(content)
+        
+        # Phát hiện các câu không viết hoa ở đầu
+        lowercase_fixes = detect_lowercase_sentence_starts(content)
+        fixes.extend(lowercase_fixes)
         
         if not fixes:
             return (False, 0)

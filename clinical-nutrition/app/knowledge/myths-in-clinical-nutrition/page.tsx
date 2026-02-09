@@ -129,9 +129,9 @@ export default function MythsInClinicalNutritionPage() {
             <article className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2">Trộn lẫn lời khuyên dinh dưỡng cộng đồng với chăm sóc lâm sàng</h3>
               <p className="text-sm text-gray-700">
-                lời khuyên dinh dưỡng chung cho dân số khỏe mạnh (như "ăn ít carb" hoặc "nhiều protein hơn là tốt hơn") 
-                không phải lúc nào cũng áp dụng cho bệnh nhân bệnh, nằm viện. Điều phù hợp cho sức khỏe cộng đồng có thể không 
-                phù hợp trong môi trường lâm sàng nơi bệnh nhân có nhu cầu chuyển hóa khác nhau.
+                lời khuyên dinh dưỡng chung cho người khỏe mạnh (như "ăn ít tinh bột" hoặc "ăn nhiều thịt để khỏe") 
+                không phải lúc nào cũng áp dụng cho người đang bị bệnh, nằm viện. Điều phù hợp cho người khỏe mạnh có thể không 
+                phù hợp cho người bệnh, vì nhu cầu dinh dưỡng khác nhau.
               </p>
             </article>
           </div>
@@ -152,11 +152,102 @@ export default function MythsInClinicalNutritionPage() {
           />
         </div>
 
-        {/* Section 3: Myth sections */}
+        {/* Section 3: Community Myths */}
+        {/* Educational: Common misconceptions in the general public */}
+        <section className="mb-12 bg-gradient-to-r from-green-50 to-teal-50 border border-green-200 rounded-lg p-8" aria-labelledby="community-myths-heading">
+          <h2 id="community-myths-heading" className="text-2xl font-bold text-gray-900 mb-4">
+            Hiểu lầm phổ biến trong cộng đồng
+          </h2>
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            Ngoài các hiểu lầm trong thực hành y tế, còn có nhiều quan niệm sai lầm phổ biến trong cộng đồng về dinh dưỡng. 
+            Những hiểu lầm này có thể ảnh hưởng đến cách mọi người ăn uống và chăm sóc sức khỏe:
+          </p>
+          <div className="space-y-4">
+            <article className="bg-white p-5 rounded-lg border border-gray-200">
+              <h3 className="font-semibold text-gray-900 mb-3">"Ăn nhiều thịt để khỏe, tăng cơ"</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Quan niệm sai:</strong> Nhiều người nghĩ rằng ăn càng nhiều thịt càng tốt, đặc biệt là để tăng cơ bắp.
+              </p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Sự thật:</strong> Cơ thể chỉ cần một lượng protein nhất định mỗi ngày (khoảng 0.8-1.2g cho mỗi kg cân nặng). 
+                Ăn quá nhiều thịt không giúp tăng cơ thêm, mà có thể gây hại cho thận, tăng nguy cơ bệnh tim mạch. 
+                Quan trọng là ăn đủ và cân bằng, kết hợp với tập thể dục.
+              </p>
+              <p className="text-gray-600 text-xs italic">
+                <strong>Ví dụ thực tế:</strong> Một người nặng 60kg chỉ cần khoảng 48-72g protein/ngày, tương đương với 200-300g thịt nạc. 
+                Ăn 500g thịt/ngày là quá nhiều và không cần thiết.
+              </p>
+            </article>
+
+            <article className="bg-white p-5 rounded-lg border border-gray-200">
+              <h3 className="font-semibold text-gray-900 mb-3">"Kiêng hoàn toàn đường và tinh bột để giảm cân"</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Quan niệm sai:</strong> Nhiều người nghĩ rằng để giảm cân hoặc khỏe mạnh, phải kiêng hoàn toàn đường và tinh bột (cơm, bánh mì, phở).
+              </p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Sự thật:</strong> Tinh bột là nguồn năng lượng chính của cơ thể. Kiêng hoàn toàn có thể khiến bạn mệt mỏi, 
+                thiếu năng lượng, và khó duy trì lâu dài. Quan trọng là chọn tinh bột tốt (gạo lứt, bánh mì nguyên cám) 
+                và ăn với lượng vừa phải, không phải kiêng hoàn toàn.
+              </p>
+              <p className="text-gray-600 text-xs italic">
+                <strong>Ví dụ thực tế:</strong> Thay vì kiêng hoàn toàn cơm, bạn có thể ăn 1 bát cơm/bữa thay vì 2-3 bát, 
+                hoặc thay một phần cơm bằng khoai lang, bắp.
+              </p>
+            </article>
+
+            <article className="bg-white p-5 rounded-lg border border-gray-200">
+              <h3 className="font-semibold text-gray-900 mb-3">"Uống nước chanh mật ong buổi sáng để giảm cân, thải độc"</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Quan niệm sai:</strong> Nhiều người tin rằng uống nước chanh mật ong buổi sáng sẽ giúp giảm cân và "thải độc" cơ thể.
+              </p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Sự thật:</strong> Cơ thể con người không cần "thải độc" - gan và thận đã làm việc này hàng ngày. 
+                Nước chanh mật ong có vitamin C và một số lợi ích, nhưng không có tác dụng giảm cân đặc biệt. 
+                Mật ong chứa đường, uống nhiều có thể tăng cân. Uống nước lọc buổi sáng đã đủ tốt.
+              </p>
+              <p className="text-gray-600 text-xs italic">
+                <strong>Lưu ý:</strong> Nếu bạn thích uống nước chanh mật ong, hãy dùng ít mật ong (1 thìa cà phê) và không kỳ vọng nó sẽ giảm cân.
+              </p>
+            </article>
+
+            <article className="bg-white p-5 rounded-lg border border-gray-200">
+              <h3 className="font-semibold text-gray-900 mb-3">"Ăn canh chua, đồ chua để giảm cân"</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Quan niệm sai:</strong> Nhiều người nghĩ rằng ăn đồ chua (canh chua, dưa chua) sẽ giúp giảm cân vì "đốt mỡ".
+              </p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Sự thật:</strong> Đồ chua không có khả năng "đốt mỡ" hay giảm cân. Canh chua có thể tốt cho sức khỏe vì có rau củ, 
+                nhưng nếu nấu với nhiều đường (để cân bằng vị chua) thì vẫn có thể gây tăng cân. 
+                Giảm cân cần ăn ít calo hơn lượng tiêu thụ, không phải do ăn đồ chua.
+              </p>
+              <p className="text-gray-600 text-xs italic">
+                <strong>Lưu ý:</strong> Canh chua là món ăn ngon và bổ dưỡng, nhưng đừng kỳ vọng nó sẽ giúp giảm cân.
+              </p>
+            </article>
+
+            <article className="bg-white p-5 rounded-lg border border-gray-200">
+              <h3 className="font-semibold text-gray-900 mb-3">"Người bệnh phải ăn cháo, súp, không được ăn cơm"</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Quan niệm sai:</strong> Nhiều người nghĩ rằng khi bị bệnh, chỉ nên ăn cháo, súp, không được ăn cơm vì "khó tiêu".
+              </p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                <strong>Sự thật:</strong> Nếu người bệnh có thể ăn được cơm và muốn ăn cơm, thì không có lý do gì phải kiêng. 
+                Cháo, súp dễ ăn hơn khi mệt mỏi hoặc khó nuốt, nhưng không phải lúc nào cũng cần thiết. 
+                Quan trọng là người bệnh ăn được gì và muốn ăn gì, miễn là đảm bảo dinh dưỡng.
+              </p>
+              <p className="text-gray-600 text-xs italic">
+                <strong>Ví dụ thực tế:</strong> Nếu người bệnh thèm cơm với thịt kho, hãy cho họ ăn. 
+                Điều này có thể giúp họ ăn được nhiều hơn so với ép ăn cháo.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        {/* Section 4: Clinical Myth sections */}
         {/* Educational: Each myth card provides structured learning about misconceptions */}
         <section className="mb-12" aria-labelledby="myths-heading">
           <h2 id="myths-heading" className="text-2xl font-bold text-gray-900 mb-6">
-            Hiểu lầm phổ biến trong thực hành
+            Hiểu lầm phổ biến trong thực hành y tế
           </h2>
           {filteredMyths.length === 0 ? (
             <div className="text-center py-12 text-gray-500" role="status" aria-live="polite">
@@ -177,7 +268,7 @@ export default function MythsInClinicalNutritionPage() {
           )}
         </section>
 
-        {/* Section 4: Common themes */}
+        {/* Section 5: Common themes */}
         {/* Educational: Helps readers identify patterns across misconceptions */}
         <section className="mb-12 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-lg" aria-labelledby="common-themes-heading">
           <h2 id="common-themes-heading" className="text-2xl font-bold text-gray-900 mb-4">
@@ -212,7 +303,7 @@ export default function MythsInClinicalNutritionPage() {
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Một giá trị xét nghiệm, đo cân nặng, hoặc đếm calo đơn lẻ cho bạn biết rất ít. Điều quan trọng là xu hướng theo thời gian. 
-                Bệnh nhân có đang cải thiện? Xấu đi? Ổn định? giá trị đơn lẻ có thể gây hiểu lầm, nhưng xu hướng tiết lộ 
+                Bệnh nhân có đang cải thiện? Xấu đi? Ổn định? Giá trị đơn lẻ có thể gây hiểu lầm, nhưng xu hướng tiết lộ 
                 bức tranh lâm sàng thực sự. Tập trung vào mô hình và thay đổi thay vì các con số riêng lẻ.
               </p>
               <p className="text-gray-600 text-sm mt-3 italic">
@@ -240,7 +331,7 @@ export default function MythsInClinicalNutritionPage() {
           </div>
         </section>
 
-        {/* Section 5: What to Remember */}
+        {/* Section 6: What to Remember */}
         {/* Educational: Key principles to guide practice */}
         <section className="mb-12 p-6 bg-blue-50 border border-blue-200 rounded-lg" aria-labelledby="remember-heading">
           <h2 id="remember-heading" className="text-2xl font-bold text-gray-900 mb-4">
@@ -312,7 +403,7 @@ export default function MythsInClinicalNutritionPage() {
           </div>
         </section>
 
-        {/* Section 6: Safety & Perspective */}
+        {/* Section 7: Safety & Perspective */}
         {/* Educational: Important disclaimers and context about using this resource */}
         <section className="mb-12 space-y-6" aria-labelledby="safety-heading">
           {/* Clear disclaimer */}
@@ -338,7 +429,7 @@ export default function MythsInClinicalNutritionPage() {
             <div className="space-y-6">
               <article className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Công cụ Dinh dưỡng Giúp hướng dẫn Sự chú ý
+                  Công cụ Dinh dưỡng giúp hướng dẫn sự chú ý
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Công cụ đánh giá dinh dưỡng, máy tính, công cụ sàng lọc, và hướng dẫn được thiết kế để giúp bạn 
@@ -350,7 +441,7 @@ export default function MythsInClinicalNutritionPage() {
 
               <article className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Chúng không thay thế Chăm sóc Đa ngành
+                  Chúng không thay thế Chăm sóc đa ngành
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Không có công cụ, tính toán, hoặc hướng dẫn nào có thể thay thế chuyên môn và hợp tác của nhóm đa ngành. 
@@ -363,28 +454,28 @@ export default function MythsInClinicalNutritionPage() {
 
               <article className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Phán đoán lâm sàng Vẫn là Trung tâm
+                  Phán đoán lâm sàng vẫn là trung tâm
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Phán đoán lâm sàng—khả năng của bạn để đánh giá, diễn giải, và ra quyết định dựa trên toàn bộ bức tranh lâm sàng—là 
                   không thể thay thế. Công cụ cung cấp dữ liệu và gợi ý, nhưng bạn phải diễn giải thông tin đó trong bối cảnh 
                   tình huống bệnh nhân độc đáo. Xem xét tình trạng bệnh nhân, tiên lượng, mục tiêu chăm sóc, sở thích gia đình, 
-                  và nguồn lực cơ sở. số liệu và hướng dẫn cung cấp thông tin cho phán đoán của bạn; chúng không thay thế nó. Khi công cụ 
+                  và nguồn lực cơ sở. Số liệu và hướng dẫn cung cấp thông tin cho phán đoán của bạn; chúng không thay thế nó. Khi công cụ 
                   và phán đoán lâm sàng xung đột, hãy tin vào phán đoán của bạn và tham khảo với nhóm của bạn.
                 </p>
               </article>
 
               <div className="bg-blue-50 p-5 rounded-lg border border-blue-200">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  Khi còn nghi ngờ, Hãy tham khảo
+                  Khi còn nghi ngờ, hãy tham khảo
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed mb-3">
                   Nếu bạn không chắc chắn về quyết định dinh dưỡng, hãy tham khảo với:
                 </p>
                 <ul className="text-sm text-gray-700 space-y-1 list-disc pl-6">
-                  <li><strong>Chuyên gia Dinh dưỡng Đã đăng ký:</strong> Chuyên gia đánh giá và lập kế hoạch dinh dưỡng</li>
+                  <li><strong>Chuyên gia Dinh dưỡng đã đăng ký:</strong> Chuyên gia đánh giá và lập kế hoạch dinh dưỡng</li>
                   <li><strong>Nhóm hỗ trợ Dinh dưỡng lâm sàng:</strong> cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
-                  <li><strong>Nhóm lâm sàng Của bạn:</strong> Bác sĩ, điều dưỡng, và các nhà cung cấp khác biết bệnh nhân</li>
+                  <li><strong>Nhóm lâm sàng của bạn:</strong> Bác sĩ, điều dưỡng, và các nhà cung cấp khác biết bệnh nhân</li>
                   <li><strong>Hướng dẫn lâm sàng:</strong> khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
                 </ul>
               </div>
@@ -405,12 +496,12 @@ export default function MythsInClinicalNutritionPage() {
           </div>
         </section>
 
-        {/* Section 7: Call-to-Action */}
+        {/* Section 8: Call-to-Action */}
         {/* Educational: Encourages continued learning and application */}
         <section className="mb-8 p-8 bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg" aria-labelledby="cta-heading">
           <div className="text-center mb-6">
             <h2 id="cta-heading" className="text-2xl font-bold text-gray-900 mb-3">
-              Sẵn sàng Áp dụng Những gì bạn đã Học?
+              Sẵn sàng Áp dụng những gì bạn đã học?
             </h2>
             <p className="text-gray-700 max-w-2xl mx-auto leading-relaxed">
               Hiểu những hiểu lầm này là có giá trị, nhưng đưa kiến thức đó vào thực hành là nơi học tập thực sự xảy ra. 

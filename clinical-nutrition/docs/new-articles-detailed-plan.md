@@ -26,7 +26,7 @@ Tài liệu này mô tả chi tiết 15-20 bài viết mới về dinh dưỡng 
   - ExampleBox (3+): Ví dụ món ăn Việt Nam (phở, bánh mì, canh chua)
 - **Related Articles**: `protein-sources-needs`, `carbohydrates`, `macronutrients-overview`
 
-#### 2. Cách Nấu Ăn Lành mạnh Kiểu Việt Nam
+#### 2. Cách nấu Ăn Lành mạnh Kiểu Việt Nam
 - **Slug**: `vietnamese-cooking-methods`
 - **Category**: `daily-practices`
 - **Level**: `foundation`
@@ -153,7 +153,7 @@ Tài liệu này mô tả chi tiết 15-20 bài viết mới về dinh dưỡng 
   - Card: Tips hydration
 - **Related Articles**: `calories-energy`, `protein-sources-needs`, `hydration`
 
-#### 9. Dinh dưỡng cho Người Làm Ca Đêm
+#### 9. Dinh dưỡng cho Người làm Ca Đêm
 - **Slug**: `nutrition-night-shift`
 - **Category**: `special-topics`
 - **Level**: `foundation`
@@ -170,7 +170,7 @@ Tài liệu này mô tả chi tiết 15-20 bài viết mới về dinh dưỡng 
   - ComparisonCard: Thực phẩm tốt vs nên tránh
 - **Related Articles**: `nutrition-sleep`, `nutrition-busy-lifestyle`
 
-#### 10. Dinh dưỡng cho Người Sống ở Nông thôn
+#### 10. Dinh dưỡng cho Người sống ở Nông thôn
 - **Slug**: `nutrition-rural-vietnam`
 - **Category**: `special-topics`
 - **Level**: `foundation`
@@ -215,7 +215,7 @@ Tài liệu này mô tả chi tiết 15-20 bài viết mới về dinh dưỡng 
 - **Target Audience**: `both`
 - **Outline**:
   - Giới thiệu: Đặc điểm dinh dưỡng theo vùng miền
-  - Miền Bắc: Món ăn đặc trưng, ưu và nhược điểm
+  - Miền bắc: Món ăn đặc trưng, ưu và nhược điểm
   - Miền Trung: Món ăn đặc trưng, ưu và nhược điểm
   - Miền Nam: Món ăn đặc trưng, ưu và nhược điểm
   - Cách cân bằng: Điều chỉnh theo vùng
@@ -279,7 +279,7 @@ Tài liệu này mô tả chi tiết 15-20 bài viết mới về dinh dưỡng 
   - ExampleBox: Thực phẩm theo mùa ở Việt Nam
   - ComparisonCard: So sánh giá thực phẩm ở chợ vs siêu thị
 
-## Template cho Mỗi Bài viết Mới
+## Template cho Mỗi bài viết Mới
 
 ### Cấu trúc:
 1. **Metadata** (title, description, keywords)

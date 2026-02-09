@@ -113,7 +113,7 @@ Tài liệu này phân tích tất cả bài viết hiện có để xác địn
 - ❌ Không có ví dụ món ăn Việt Nam trong các bài viết
 - ❌ Không có so sánh giá trị dinh dưỡng thực phẩm Việt Nam
 
-#### B. Cách Nấu Ăn Việt Nam
+#### B. Cách nấu Ăn Việt Nam
 - ❌ Không có bài về phương pháp nấu ăn truyền thống Việt Nam
 - ❌ Không có hướng dẫn cách nấu canh, kho, luộc, hấp (phương pháp Việt Nam)
 - ❌ Không có so sánh phương pháp nấu ăn Việt Nam vs phương Tây
@@ -155,14 +155,14 @@ Tài liệu này phân tích tất cả bài viết hiện có để xác địn
 
 ## Đánh giá Tổng thể
 
-### Điểm Mạnh:
+### Điểm mạnh:
 - ✅ Cấu trúc bài viết nhất quán và rõ ràng
 - ✅ Components visual aids đầy đủ
 - ✅ Safety disclaimers có ở mọi bài
 - ✅ Related articles được link đúng
 - ✅ Ngôn ngữ dễ hiểu, phù hợp người không chuyên
 
-### Điểm Yếu:
+### Điểm yếu:
 - ❌ Thiếu ví dụ thực phẩm và món ăn Việt Nam cụ thể
 - ❌ Thiếu hướng dẫn thực hành phù hợp với bối cảnh Việt Nam
 - ❌ Thiếu bài viết về thực phẩm và thực hành dinh dưỡng đặc trưng Việt Nam
@@ -171,7 +171,7 @@ Tài liệu này phân tích tất cả bài viết hiện có để xác địn
 
 ### High Priority (Cần bổ sung ngay):
 1. Thực phẩm Việt Nam: Nguồn Dinh dưỡng Tốt
-2. Cách Nấu Ăn Lành mạnh Kiểu Việt Nam
+2. Cách nấu Ăn Lành mạnh Kiểu Việt Nam
 3. Bữa Ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng
 4. Đi Chợ Thông minh ở Việt Nam
 5. Mở rộng các bài hiện có với ví dụ Việt Nam
@@ -185,5 +185,5 @@ Tài liệu này phân tích tất cả bài viết hiện có để xác địn
 ### Lower Priority:
 10. Thực phẩm Theo Mùa ở Việt Nam
 11. Dinh dưỡng Theo Vùng miền Việt Nam
-12. Dinh dưỡng cho Người Làm Ca Đêm
-13. Dinh dưỡng cho Người Sống ở Nông thôn
+12. Dinh dưỡng cho Người làm Ca Đêm
+13. Dinh dưỡng cho Người sống ở Nông thôn

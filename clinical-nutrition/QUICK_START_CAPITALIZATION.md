@@ -1,4 +1,4 @@
-# Quick Start: Sửa Lỗi Viết Hoa Tiếng Việt
+# Quick Start: Sửa lỗi viết Hoa Tiếng Việt
 
 Hướng dẫn nhanh để sửa lỗi viết hoa tiếng Việt trong codebase.
 
@@ -10,7 +10,7 @@ cd clinical-nutrition
 python fix-vietnamese-capitalization.py --scan
 ```
 
-### 2. Tự Động Sửa
+### 2. Tự động sửa
 ```bash
 python fix-vietnamese-capitalization.py
 ```
@@ -24,17 +24,17 @@ git push
 
 ## Khi Phát Hiện Pattern Mới
 
-### Cách 1: Thêm Pattern Cố Định (Khuyến nghị)
+### Cách 1: Thêm Pattern Cố định (Khuyến nghị)
 
 1. Mở `fix-vietnamese-capitalization.py`
 2. Tìm hàm `fix_file()` → danh sách `replacements`
 3. Thêm pattern:
    ```python
-   (r'Pattern Mới Cần Sửa', 'pattern mới cần sửa'),
+   (r'Pattern Mới Cần sửa', 'pattern mới cần sửa'),
    ```
 4. Chạy lại script
 
-### Cách 2: Thêm vào Whitelist (Nếu Cần Giữ Nguyên)
+### Cách 2: Thêm vào Whitelist (Nếu cần giữ Nguyên)
 
 1. Mở `fix-vietnamese-capitalization.py`
 2. Tìm `PROPER_NOUNS_WHITELIST`
@@ -43,7 +43,7 @@ git push
    'Từ', 'Cần', 'Giữ', 'Nguyên',
    ```
 
-## Kiểm Tra Kết Quả
+## Kiểm Tra Kết quả
 
 ```bash
 # Xem file đã sửa
@@ -69,7 +69,7 @@ npm run build
 **Q: Cần thêm nhiều pattern?**
 - Thêm vào danh sách `replacements` trong hàm `fix_file()`
 
-## Tài Liệu Chi Tiết
+## Tài liệu Chi Tiết
 
 - `VIETNAMESE_CAPITALIZATION_FIX.md`: Hướng dẫn chi tiết
 - `CAPITALIZATION_PATTERNS.md`: Danh sách pattern đã xử lý

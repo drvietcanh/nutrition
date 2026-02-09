@@ -1,8 +1,8 @@
-# Danh Sách Pattern Viết Hoa Tiếng Việt Đã Xử Lý
+# Danh Sách Pattern Viết Hoa Tiếng Việt Đã Xử lý
 
 Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đã được xử lý trong script.
 
-## Pattern Từ Ghép Cơ Bản
+## Pattern Từ Ghép cơ Bản
 
 | Pattern Sai | Pattern Đúng | Ghi Chú |
 |------------|--------------|---------|
@@ -23,9 +23,9 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
-| `Bữa Trưa` | `Bữa trưa` |
-| `Bữa Tối` | `Bữa tối` |
-| `Bữa Sáng` | `Bữa sáng` |
+| `Bữa trưa` | `Bữa trưa` |
+| `Bữa tối` | `Bữa tối` |
+| `Bữa sáng` | `Bữa sáng` |
 | `Bữa Ăn` | `Bữa ăn` |
 
 ## Pattern Phức Tạp
@@ -35,7 +35,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Nhu cầu Dinh dưỡng` | `nhu cầu dinh dưỡng` |
 | `Ước tính Nhu cầu Dinh dưỡng` | `Ước tính nhu cầu dinh dưỡng` |
 | `Vì sao Khoảng giá trị Quan trọng Hơn Con số Chính xác` | `Vì sao khoảng giá trị quan trọng hơn con số chính xác` |
-| `Vì sao Nhu cầu Là Ước tính, Không phải Mục tiêu Chính xác` | `Vì sao nhu cầu là ước tính, không phải mục tiêu chính xác` |
+| `Vì sao Nhu cầu Là ước tính, Không phải Mục tiêu Chính xác` | `Vì sao nhu cầu là ước tính, không phải mục tiêu chính xác` |
 | `Tầm quan trọng của Khoảng giá trị` | `Tầm quan trọng của khoảng giá trị` |
 | `Không phải Con số Đơn lẻ` | `Không phải con số đơn lẻ` |
 | `Khoảng giá trị` | `khoảng giá trị` |
@@ -43,9 +43,9 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Con số Đơn lẻ` | `con số đơn lẻ` |
 | `Quan trọng Hơn` | `quan trọng hơn` |
 | `Mục tiêu Chính xác` | `mục tiêu chính xác` |
-| `Là Ước tính` | `là ước tính` |
+| `Là ước tính` | `là ước tính` |
 
-## Pattern Tips và Lời Khuyên
+## Pattern Tips và Lời khuyên
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -60,7 +60,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Đĩa Ăn` | `Đĩa ăn` |
 | `Cách Ăn` | `Cách ăn` |
 
-## Pattern Hiểu Lầm
+## Pattern Hiểu lầm
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -70,26 +70,26 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
-| `Nên Hạn chế` | `Nên hạn chế` |
-| `Nên Tránh` | `Nên tránh` |
-| `Nên Cải thiện` | `Nên cải thiện` |
-| `Cần Điều chỉnh` | `Cần điều chỉnh` |
+| `Nên hạn chế` | `Nên hạn chế` |
+| `Nên tránh` | `Nên tránh` |
+| `Nên cải thiện` | `Nên cải thiện` |
+| `Cần điều chỉnh` | `Cần điều chỉnh` |
 
 ## Pattern Phương Pháp
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
 | `Phương pháp Tốt` | `Phương pháp tốt` |
-| `Phương pháp Nên Hạn chế` | `Phương pháp nên hạn chế` |
-| `Các Phương pháp Phổ biến` | `Các Phương pháp phổ biến` |
+| `Phương pháp Nên hạn chế` | `Phương pháp nên hạn chế` |
+| `Các phương pháp Phổ biến` | `Các phương pháp phổ biến` |
 
-## Pattern Cách Dùng
+## Pattern Cách dùng
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
-| `Cách Dùng Tốt` | `Cách dùng tốt` |
-| `Cách Dùng Nên Hạn chế` | `Cách dùng nên hạn chế` |
-| `Cách Dùng Đúng` | `Cách dùng đúng` |
+| `Cách dùng tốt` | `Cách dùng tốt` |
+| `Cách dùng nên Hạn chế` | `Cách dùng nên hạn chế` |
+| `Cách dùng đúng` | `Cách dùng đúng` |
 
 ## Pattern Gia Vị
 
@@ -103,7 +103,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
-| `Thực phẩm Nên Tránh` | `Thực phẩm nên tránh` |
+| `Thực phẩm Nên tránh` | `Thực phẩm nên tránh` |
 | `Thực phẩm Lên men Tốt` | `Thực phẩm lên men tốt` |
 
 ## Pattern Chất Béo
@@ -118,14 +118,14 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
 | `Uống Bao nhiêu Nước là Đủ` | `Uống bao nhiêu nước là đủ` |
-| `Thiếu Nước` | `Thiếu nước` |
-| `Dấu hiệu Thiếu Nước` | `Dấu hiệu thiếu nước` |
+| `Thiếu nước` | `Thiếu nước` |
+| `Dấu hiệu Thiếu nước` | `Dấu hiệu thiếu nước` |
 | `Tiêu chảy và Nôn mửa` | `Tiêu chảy và nôn mửa` |
-| `Mẹo Đảm bảo Đủ Nước` | `Mẹo đảm bảo đủ nước` |
+| `Mẹo đảm bảo Đủ nước` | `Mẹo đảm bảo đủ nước` |
 | `Lưu ý Đặc biệt` | `Lưu ý đặc biệt` |
-| `Cách Uống Nước Đúng` | `Cách uống nước đúng` |
+| `Cách uống nước Đúng` | `Cách uống nước đúng` |
 
-## Pattern Dinh Dưỡng Lâm Sàng
+## Pattern Dinh Dưỡng lâm Sàng
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -138,16 +138,16 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 |------------|--------------|
 | `Ăn nhiều Muối` | `Ăn nhiều muối` |
 | `Nên Ăn Bao nhiêu` | `Nên ăn bao nhiêu` |
-| `Nguồn Muối Phổ biến trong Bữa ăn` | `Nguồn muối phổ biến trong Bữa ăn` |
+| `Nguồn muối phổ biến trong Bữa ăn` | `Nguồn muối phổ biến trong Bữa ăn` |
 | `Áp dụng Thực tế` | `Áp dụng thực tế` |
-| `Nguyên tắc Giảm Muối trong Đời sống` | `Nguyên tắc giảm muối trong đời sống` |
+| `Nguyên tắc Giảm muối trong Đời sống` | `Nguyên tắc giảm muối trong đời sống` |
 
 ## Pattern Nước Mắm
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
 | `Giá trị Dinh dưỡng Nước mắm` | `Giá trị dinh dưỡng Nước mắm` |
-| `Cách Dùng Nước mắm Đúng cách` | `Cách dùng Nước mắm đúng cách` |
+| `Cách dùng nước mắm Đúng cách` | `Cách dùng Nước mắm đúng cách` |
 
 ## Pattern Truyền Thống
 
@@ -155,7 +155,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 |------------|--------------|
 | `Món Ăn Truyền thống` | `Món ăn truyền thống` |
 | `Phương pháp Truyền thống` | `Phương pháp truyền thống` |
-| `Chợ Truyền thống` | `Chợ truyền thống` |
+| `Chợ truyền thống` | `Chợ truyền thống` |
 
 ## Pattern Điều Chỉnh
 
@@ -169,8 +169,8 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 |------------|--------------|
 | `Hiểu các Loại` | `Hiểu các loại` |
 | `Ảnh hưởng Sức khỏe` | `Ảnh hưởng sức khỏe` |
-| `Các Loại` | `Các loại` |
-| `Bảng Nguồn` | `Bảng nguồn` |
+| `Các loại` | `Các loại` |
+| `Bảng nguồn` | `Bảng nguồn` |
 | `Dùng Ít` | `Dùng ít` |
 | `Bài viết Liên quan` | `Bài viết liên quan` |
 
@@ -209,7 +209,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `So sánh: Khẩu phần` | `So sánh: khẩu phần` |
 | `Khẩu phần Carbohydrate` | `Khẩu phần carbohydrate` |
 
-## Pattern Thể Chất và Hoạt Động
+## Pattern Thể Chất và Hoạt động
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -223,7 +223,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Vì sao Dinh dưỡng Quan trọng` | `Vì sao dinh dưỡng quan trọng` |
 | `Vì sao Dinh dưỡng Quan trọng trong` | `Vì sao dinh dưỡng quan trọng trong` |
 
-## Pattern Tài Liệu và Hướng Dẫn
+## Pattern Tài Liệu và Hướng dẫn
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -231,7 +231,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Hướng dẫn Sử dụng` | `Hướng dẫn sử dụng` |
 | `Những điều Cần tránh` | `Những điều cần tránh` |
 
-## Pattern Nhu Cầu Dịch
+## Pattern Nhu Cầu dịch
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -246,7 +246,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Canh Việt Nam và Dinh dưỡng` | `Canh Việt Nam và dinh dưỡng` |
 | `Các loại Canh Việt Nam Phổ biến` | `Các loại Canh Việt Nam phổ biến` |
 
-## Pattern Từ Đơn Lẻ (Khi Không Phải Đầu Câu)
+## Pattern Từ Đơn lẻ (Khi Không Phải đầu Câu)
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -273,7 +273,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Bữa ăn cân bằng vs Không cân bằng` | `Bữa ăn cân bằng vs không cân bằng` |
 | `Điều chỉnh Theo nhu cầu` | `Điều chỉnh theo nhu cầu` |
 
-## Pattern Gia Vị và Thảo Mộc
+## Pattern Gia Vị và Thảo mộc
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -299,7 +299,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Bảng chất xơ trong Thực phẩm` | `Bảng chất xơ trong thực phẩm` |
 | `Bảng hàm lượng Đạm trong Thực phẩm` | `Bảng hàm lượng đạm trong thực phẩm` |
 
-## Pattern Từ Đơn Lẻ Bổ Sung
+## Pattern Từ Đơn lẻ Bổ Sung
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -311,7 +311,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Cơ bản` | `cơ bản` |
 | `Món ăn` | `món ăn` |
 
-## Pattern Hiểu Lầm và Quan Niệm
+## Pattern Hiểu lầm và Quan Niệm
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -333,7 +333,7 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Bối cảnh Rất quan trọng` | `Bối cảnh rất quan trọng` |
 | `An toàn & Quan điểm` | `An toàn & quan điểm` |
 
-## Pattern Từ Đơn Lẻ Bổ Sung (Hiểu Lầm)
+## Pattern Từ Đơn lẻ Bổ Sung (Hiểu lầm)
 
 | Pattern Sai | Pattern Đúng |
 |------------|--------------|
@@ -361,23 +361,23 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Rất quan trọng` | `rất quan trọng` |
 | `Quan điểm` | `quan điểm` |
 
-## Danh Từ Riêng (Giữ Nguyên)
+## Danh Từ Riêng (Giữ nguyên)
 
 Các từ sau được giữ nguyên viết hoa (trong whitelist):
 
 ### Địa Danh Việt Nam
 - Việt, Nam, Hà, Nội, Sài, Gòn, Đà, Nẵng, Huế, Châu, Âu
 
-### Tổ Chức, Hiệp Hội
+### Tổ chức, Hiệp hội
 - American, College, Diabetes, Association, Heart, Institute
 - World, Health, Organization
 - European, Society, International, Federation, National, Blood
 
-### Thuật Ngữ Y Khoa
+### Thuật ngữ Y Khoa
 - BMI, IBW, ABW, BSA, BMR, REE, TEE
 - GERD, IBS, CKD, COPD
 
-### Tên Riêng Khác
+### Tên riêng khác
 - Du, Bois, St, Jeor, Harris, Benedict
 
 ## Lưu Ý

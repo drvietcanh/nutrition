@@ -1,8 +1,8 @@
-# Mục Lục: Sửa Lỗi Viết Hoa Tiếng Việt
+# Mục lục: Sửa lỗi viết Hoa Tiếng Việt
 
 Tài liệu tổng hợp về hệ thống tự động sửa lỗi viết hoa tiếng Việt.
 
-## 📚 Tài Liệu
+## 📚 Tài liệu
 
 ### 1. [QUICK_START_CAPITALIZATION.md](./QUICK_START_CAPITALIZATION.md)
 **Hướng dẫn nhanh** - Bắt đầu ngay trong 3 bước
@@ -35,7 +35,7 @@ Tài liệu tổng hợp về hệ thống tự động sửa lỗi viết hoa t
 - `auto_detect_capitalization_patterns()`: Tự động phát hiện
 - `fix_file()`: Sửa file với pattern cố định
 
-## 🚀 Sử Dụng Nhanh
+## 🚀 Sử dụng Nhanh
 
 ```bash
 # 1. Quét pattern (không sửa)
@@ -48,24 +48,23 @@ python fix-vietnamese-capitalization.py
 git add . && git commit -m "Fix Vietnamese capitalization"
 ```
 
-## 📋 Quy Tắc Cơ Bản
+## 📋 Quy Tắc Cơ bản
 
 1. **Chỉ viết hoa đầu câu**: Trong tiếng Việt, chỉ từ đầu câu mới viết hoa
 2. **Từ ghép không viết hoa**: Các từ trong cụm từ không viết hoa (trừ đầu câu)
 3. **Danh từ riêng giữ nguyên**: Tên riêng, địa danh, tổ chức giữ nguyên
 
-## 🔍 Ví Dụ
+## 🔍 Ví dụ
 
 | ❌ Sai | ✅ Đúng |
 |--------|---------|
 | `Nhu cầu Dinh dưỡng` | `nhu cầu dinh dưỡng` |
 | `Khoảng giá trị Quan trọng` | `khoảng giá trị quan trọng` |
-| `Vì sao Nhu cầu Là Ước tính` | `Vì sao nhu cầu là ước tính` |
+| `Vì sao Nhu cầu Là ước tính` | `Vì sao nhu cầu là ước tính` |
 
 ## 🛠️ Thêm Pattern Mới
 
-### Cách 1: Pattern Cố Định
-Thêm vào `replacements` trong `fix_file()`:
+### Cách 1: Pattern Cố Định thêm vào `replacements` trong `fix_file()`:
 ```python
 (r'Pattern Mới', 'pattern mới'),
 ```
@@ -83,7 +82,7 @@ Thêm vào `PROPER_NOUNS_WHITELIST`:
 - Test build sau khi sửa
 - Thêm vào whitelist nếu sửa nhầm
 
-## 📞 Hỗ Trợ
+## 📞 Hỗ trợ
 
 Xem chi tiết trong:
 - [VIETNAMESE_CAPITALIZATION_FIX.md](./VIETNAMESE_CAPITALIZATION_FIX.md) - Troubleshooting section

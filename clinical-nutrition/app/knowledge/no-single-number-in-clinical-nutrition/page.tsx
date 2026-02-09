@@ -498,7 +498,7 @@ export default function WhyNoUniversalNumberPage() {
         <div className="mt-6 space-y-6">
           <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4">
             <h3 className="font-semibold text-base mb-3 text-neutral-900">
-              Ví dụ 1: Hai bệnh nhân, Cùng cân Nặng, Mức độ Bệnh khác Nhau
+              Ví dụ 1: Hai bệnh nhân, cùng cân nặng, mức độ bệnh khác nhau
             </h3>
             <p className="text-sm text-neutral-700 mb-3">
               Hai bệnh nhân đều nặng 70 kg và 65 tuổi. Cả hai đều bị suy tim. Một tính toán đơn giản dựa trên cân nặng
@@ -628,7 +628,7 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="mistakes-heading">
         <SectionHeading id="mistakes-heading">
-          Những sai Lầm phổ Biến khi Theo đuổi con Số chính xác
+          Những sai lầm phổ biến khi theo đuổi con số chính xác
         </SectionHeading>
         <ContentBlock>
           <p>

@@ -298,6 +298,362 @@ export default function CKDNutritionPage() {
             </div>
           </CardContent>
         </Card>
+      </section>
+
+      {/* Detailed Mineral Tables */}
+      <section aria-labelledby="mineral-tables-heading" className="space-y-5">
+        <div className="flex items-center gap-3">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+          <h2 id="mineral-tables-heading" className="heading-2 whitespace-nowrap">
+            Bảng Hàm lượng Kali và Phốt pho trong Thực phẩm Việt Nam
+          </h2>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
+        </div>
+
+        <div className="space-y-4">
+          <p className="text-body-lg">
+            Khi thận yếu, cơ thể khó đào thải kali và phốt pho. Dưới đây là bảng phân loại thực phẩm Việt Nam 
+            theo hàm lượng kali và phốt pho để giúp bạn lựa chọn phù hợp:
+          </p>
+
+          {/* Potassium Table */}
+          <Card className="border-purple-200 bg-purple-50/30">
+            <CardHeader icon={Info} title="🍌 Bảng Kali (Potassium) - mg/100g" />
+            <CardContent>
+              <p className="text-body-sm mb-3">
+                <strong>Lưu ý:</strong> Chỉ cần hạn chế kali khi kali máu tăng. Nếu kali máu bình thường, không cần kiêng.
+              </p>
+
+              {/* Very High Potassium */}
+              <h4 className="heading-5 mb-2 mt-4">🔴 Rất Cao (>300mg/100g) - Hạn chế Nghiêm ngặt khi Kali Máu Tăng</h4>
+              <div className="overflow-x-auto my-3">
+                <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                  <thead className="bg-red-100">
+                    <tr>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                      <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Kali (mg/100g)</th>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-neutral-200">
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Khoai tây</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~421</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Luộc bỏ nước giảm được một phần</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Khoai lang</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~337</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Luộc bỏ nước</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Rau ngót</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~457</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Rau xanh đậm</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Đậu các loại</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~400-600</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Đậu xanh, đậu đỏ, đậu đen</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Chuối</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~358</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Trái cây</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Cà chua</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~237</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Nhưng thường ăn nhiều</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* High Potassium */}
+              <h4 className="heading-5 mb-2 mt-4">🟠 Cao (200-300mg/100g) - Hạn chế khi Kali Máu Tăng</h4>
+              <div className="overflow-x-auto my-3">
+                <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                  <thead className="bg-orange-100">
+                    <tr>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                      <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Kali (mg/100g)</th>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-neutral-200">
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Bưởi</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~216</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Trái cây</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Cam</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~181</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Trái cây</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Cà rốt</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~320</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Rau củ</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Thịt, cá</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~150-200</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Nhưng thường ăn nhiều</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Low Potassium */}
+              <h4 className="heading-5 mb-2 mt-4">🟢 Thấp (<100mg/100g) - Ăn Tự do</h4>
+              <div className="overflow-x-auto my-3">
+                <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                  <thead className="bg-green-100">
+                    <tr>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                      <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Kali (mg/100g)</th>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-neutral-200">
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Gạo trắng</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~30</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Tinh bột</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Bánh mì</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~100</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Tinh bột</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Bắp cải</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~170</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Rau</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Dưa chuột</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~147</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Rau</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Táo</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~107</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Trái cây</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Lê</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~116</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Trái cây</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-3 mt-4">
+                <p className="text-xs font-semibold text-blue-900 mb-1">💡 Mẹo giảm kali trong rau củ:</p>
+                <ul className="list-disc space-y-1 pl-4 text-xs text-gray-700">
+                  <li>Ngâm rau củ trong nước 2-3 giờ trước khi nấu</li>
+                  <li>Luộc rau củ, bỏ nước luộc đầu, luộc lại lần 2</li>
+                  <li>Gọt vỏ khoai tây, khoai lang trước khi nấu</li>
+                  <li>Ăn rau củ luộc thay vì ăn sống</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Phosphorus Table */}
+          <Card className="border-blue-200 bg-blue-50/30">
+            <CardHeader icon={Info} title="🦴 Bảng Phốt pho (Phosphorus) - mg/100g" />
+            <CardContent>
+              <p className="text-body-sm mb-3">
+                Phốt pho cao gây loãng xương, ngứa, vôi hóa mạch máu. Cần hạn chế khi phốt pho máu tăng.
+              </p>
+
+              {/* Very High Phosphorus */}
+              <h4 className="heading-5 mb-2 mt-4">🔴 Rất Cao (>300mg/100g) - Hạn chế Nghiêm ngặt</h4>
+              <div className="overflow-x-auto my-3">
+                <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                  <thead className="bg-red-100">
+                    <tr>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                      <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Phốt pho (mg/100g)</th>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-neutral-200">
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Đậu các loại</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~400-600</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Đậu xanh, đậu đỏ, đậu đen</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Hạt điều, hạt óc chó</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~500-600</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Hạt các loại</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Cá nhỏ ăn cả xương</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~300-400</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Cá cơm, cá mòi</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Ngũ cốc nguyên hạt</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~300-400</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Gạo lứt, yến mạch</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* High Phosphorus */}
+              <h4 className="heading-5 mb-2 mt-4">🟠 Cao (200-300mg/100g) - Hạn chế</h4>
+              <div className="overflow-x-auto my-3">
+                <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                  <thead className="bg-orange-100">
+                    <tr>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                      <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Phốt pho (mg/100g)</th>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-neutral-200">
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Thịt, cá</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~200-250</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Nhưng cần đạm, nên ăn vừa phải</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Trứng</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~200</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Nguồn đạm tốt</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Sữa, sữa chua</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~100-200</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Nhưng uống nhiều nên tổng lượng cao</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Low Phosphorus */}
+              <h4 className="heading-5 mb-2 mt-4">🟢 Thấp (<100mg/100g) - Ăn Tự do</h4>
+              <div className="overflow-x-auto my-3">
+                <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                  <thead className="bg-green-100">
+                    <tr>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Thực phẩm</th>
+                      <th className="px-4 py-2 text-center text-xs font-semibold text-neutral-900">Phốt pho (mg/100g)</th>
+                      <th className="px-4 py-2 text-left text-xs font-semibold text-neutral-900">Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-neutral-200">
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Gạo trắng</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~30</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Tinh bột đã xay xát</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Bánh mì trắng</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">~30</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Bánh mì trắng ít phốt pho hơn nguyên cám</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Hầu hết rau củ quả</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center"><100</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Rau muống, rau cải, cà chua...</td>
+                    </tr>
+                    <tr className="bg-neutral-50">
+                      <td className="px-4 py-2 text-xs text-neutral-700"><strong>Trái cây</strong></td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center"><50</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700">Chuối, cam, táo...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-3 mt-4">
+                <p className="text-xs font-semibold text-amber-900 mb-1">💡 Lưu ý về phốt pho:</p>
+                <ul className="list-disc space-y-1 pl-4 text-xs text-gray-700">
+                  <li>Thực phẩm chế biến sẵn thường có thêm phốt pho (phosphate additives) - nên tránh</li>
+                  <li>Đọc nhãn thực phẩm: tìm "phosphate", "phosphoric acid"</li>
+                  <li>Thuốc gắn phốt pho: uống cùng bữa ăn để giảm hấp thu</li>
+                  <li>Gạo trắng, bánh mì trắng ít phốt pho hơn gạo lứt, bánh mì nguyên cám</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Vietnamese Dishes Table */}
+          <Card className="border-green-200 bg-green-50/30">
+            <CardHeader icon={Info} title="🍲 Món Ăn Việt Nam theo Hàm lượng Kali và Phốt pho" />
+            <CardContent>
+              <p className="text-body-sm mb-3">
+                Dưới đây là phân loại một số món ăn Việt Nam phổ biến:
+              </p>
+              <div className="overflow-x-auto my-4">
+                <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
+                  <thead className="bg-green-100">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Món ăn</th>
+                      <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Kali</th>
+                      <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Phốt pho</th>
+                      <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-neutral-200">
+                    <tr className="bg-red-50">
+                      <td className="px-4 py-3 text-sm text-neutral-700"><strong>Canh rau ngót</strong></td>
+                      <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Rất cao</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700 text-center">Thấp</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700">Rau ngót có kali rất cao</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 text-sm text-neutral-700"><strong>Khoai tây luộc</strong></td>
+                      <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Rất cao</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700 text-center">Trung bình</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700">Luộc bỏ nước giảm được một phần kali</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 text-sm text-neutral-700"><strong>Chuối</strong></td>
+                      <td className="px-4 py-3 text-sm text-red-700 text-center font-semibold">Rất cao</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700 text-center">Thấp</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700">Tránh khi kali máu tăng</td>
+                    </tr>
+                    <tr className="bg-orange-50">
+                      <td className="px-4 py-3 text-sm text-neutral-700"><strong>Đậu phụ sốt cà chua</strong></td>
+                      <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                      <td className="px-4 py-3 text-sm text-orange-700 text-center font-semibold">Cao</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700">Đậu có phốt pho cao</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 text-sm text-neutral-700"><strong>Thịt kho</strong></td>
+                      <td className="px-4 py-3 text-sm text-yellow-700 text-center font-semibold">Trung bình</td>
+                      <td className="px-4 py-3 text-sm text-orange-700 text-center font-semibold">Cao</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700">Thịt có phốt pho, nhưng cần đạm</td>
+                    </tr>
+                    <tr className="bg-green-50">
+                      <td className="px-4 py-3 text-sm text-neutral-700"><strong>Rau muống luộc</strong></td>
+                      <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp-trung bình</td>
+                      <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700">Tốt, luộc bỏ nước giảm kali</td>
+                    </tr>
+                    <tr className="bg-green-50">
+                      <td className="px-4 py-3 text-sm text-neutral-700"><strong>Cơm trắng</strong></td>
+                      <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                      <td className="px-4 py-3 text-sm text-green-700 text-center font-semibold">Thấp</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700">Tốt cho bệnh thận</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
 
         <Card>
           <CardHeader icon={AlertTriangle} title="🧂 Muối & 💧 Nước" />
