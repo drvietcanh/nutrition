@@ -135,8 +135,8 @@ export function InteractiveSection() {
       totalFat += fat;
       totalFiber += fiber;
 
-      if (item.food.hypertension) {
-        totalSodium += (item.food.hypertension.sodium * grams) / 100;
+      if (item.food.sodium) {
+        totalSodium += (item.food.sodium * grams) / 100;
       }
       if (item.food.kidney) {
         totalPotassium += (item.food.kidney.potassium * grams) / 100;
