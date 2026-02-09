@@ -51,7 +51,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">1</span>
               </div>
-              <h3 className="heading-5 mb-2">Tìm hiểu Cơ bản</h3>
+              <h3 className="heading-5 mb-2">Tìm hiểu cơ bản</h3>
               <p className="text-body-sm text-gray-600 mb-4">
                 Đọc về các khái niệm cơ bản và hiểu lầm phổ biến
               </p>

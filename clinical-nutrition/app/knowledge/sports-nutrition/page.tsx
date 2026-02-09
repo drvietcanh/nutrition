@@ -148,7 +148,7 @@ export default function SportsNutritionPage() {
               Hydration đúng cách là yếu tố quan trọng cho hiệu suất và an toàn.
             </p>
             <p>
-              <strong>Khuyến nghị:</strong>
+              <strong>khuyến nghị:</strong>
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Uống nước trước, trong, và sau tập luyện</li>

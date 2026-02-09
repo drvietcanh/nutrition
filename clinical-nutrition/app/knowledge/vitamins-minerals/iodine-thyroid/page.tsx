@@ -168,7 +168,7 @@ export default function IodineThyroidPage() {
             />
           </Card>
 
-          <ExampleBox variant="info" title="Iodine trong Món ăn Việt Nam">
+          <ExampleBox variant="info" title="Iodine trong món ăn Việt Nam">
             <p className="mb-2">
               <strong>Muối iod</strong> là nguồn iodine chính ở Việt Nam. sử dụng muối iod trong nấu ăn 
               hàng ngày giúp đảm bảo đủ iodine.

@@ -92,7 +92,7 @@ export default function VitaminKBloodClottingPage() {
         <Card>
           <h3 className="heading-4 mb-3">Thực phẩm Giàu vitamin K</h3>
           <NutrientTable
-            title="Hàm lượng Vitamin K trong Thực phẩm"
+            title="Hàm lượng Vitamin K trong thực phẩm"
             rows={[
               { nutrient: "Rau chân vịt (100g, sống)", amount: "483", unit: "mcg", highlight: "good", note: "Rất giàu!" },
               { nutrient: "Bông cải xanh (100g, nấu chín)", amount: "141", unit: "mcg", highlight: "good" },

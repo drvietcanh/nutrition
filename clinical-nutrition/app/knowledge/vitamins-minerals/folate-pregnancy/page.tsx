@@ -115,7 +115,7 @@ export default function FolatePregnancyPage() {
         <Card>
           <h3 className="heading-4 mb-3">Thực phẩm Giàu folate</h3>
           <NutrientTable
-            title="Hàm lượng Folate trong Thực phẩm"
+            title="Hàm lượng Folate trong thực phẩm"
             rows={[
               { nutrient: "Rau chân vịt (100g, nấu chín)", amount: "146", unit: "mcg", highlight: "good" },
               { nutrient: "Đậu đen (100g, nấu chín)", amount: "256", unit: "mcg", highlight: "good" },

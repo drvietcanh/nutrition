@@ -518,7 +518,7 @@ export default function MythsAndMisconceptionsPage() {
                   <li><strong>Chuyên gia Dinh dưỡng đã đăng Ký:</strong> Chuyên gia đánh giá và lập kế hoạch dinh dưỡng</li>
                   <li><strong>Nhóm hỗ Trợ dinh dưỡng lâm sàng:</strong> Cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
                   <li><strong>Nhóm lâm Sàng của Bạn:</strong> Bác sĩ, y tá và các nhà cung cấp khác biết bệnh nhân</li>
-                  <li><strong>Hướng dẫn lâm Sàng:</strong> Khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
+                  <li><strong>Hướng dẫn lâm Sàng:</strong> khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
                 </ul>
               </div>
 

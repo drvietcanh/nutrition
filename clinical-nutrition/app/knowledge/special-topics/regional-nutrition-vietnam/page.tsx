@@ -10,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Dinh dưỡng Theo vùng miền Việt Nam",
   description:
-    "Khám phá đặc điểm dinh dưỡng theo vùng miền Việt Nam - Miền bắc, Miền trung, Miền Nam. Món ăn đặc trưng, ưu và nhược điểm, cách cân bằng.",
+    "Khám phá đặc điểm dinh dưỡng theo vùng miền Việt Nam - Miền bắc, Miền trung, Miền Nam. món ăn đặc trưng, ưu và nhược điểm, cách cân bằng.",
   keywords: [
     "vùng miền Việt Nam",
     "miền Bắc",
@@ -47,13 +47,13 @@ export default function RegionalNutritionVietnamPage() {
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
-            <strong>Miền bắc:</strong> Món ăn nhẹ nhàng, ít cay, nhiều rau - tốt cho sức khỏe
+            <strong>Miền bắc:</strong> món ăn nhẹ nhàng, ít cay, nhiều rau - tốt cho sức khỏe
           </li>
           <li>
-            <strong>Miền trung:</strong> Món ăn đậm đà, cay, nhiều gia vị - chú ý muối
+            <strong>Miền trung:</strong> món ăn đậm đà, cay, nhiều gia vị - chú ý muối
           </li>
           <li>
-            <strong>Miền Nam:</strong> Món ăn ngọt, nhiều nước dừa, nhiều rau - chú ý đường
+            <strong>Miền Nam:</strong> món ăn ngọt, nhiều nước dừa, nhiều rau - chú ý đường
           </li>
           <li>
             <strong>Cách cân bằng:</strong> Điều chỉnh theo vùng để có chế độ ăn lành mạnh
@@ -69,7 +69,7 @@ export default function RegionalNutritionVietnamPage() {
           </p>
           <div className="space-y-3">
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Món ăn đặc trưng:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">món ăn đặc trưng:</p>
               <p className="text-xs text-gray-700">
                 Phở, bún chả, bánh cuốn, nem rán, canh chua - nhẹ nhàng, nhiều rau.
               </p>
@@ -90,7 +90,7 @@ export default function RegionalNutritionVietnamPage() {
               </ul>
             </div>
           </div>
-          <ExampleBox variant="tip" title="Ví dụ Món ăn">
+          <ExampleBox variant="tip" title="Ví dụ món ăn">
             <p className="text-sm">
               <strong>Phở gà:</strong> Bánh phở + thịt gà + rau thơm - có đủ carbohydrate, protein, vitamin. 
               Chọn phở gà thay vì phở bò để ít béo hơn.
@@ -107,7 +107,7 @@ export default function RegionalNutritionVietnamPage() {
           </p>
           <div className="space-y-3">
             <div className="bg-orange-50 rounded-lg p-3 border border-orange-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Món ăn đặc trưng:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">món ăn đặc trưng:</p>
               <p className="text-xs text-gray-700">
                 Bún bò Huế, mì Quảng, bánh bèo, nem lụi - đậm đà, cay, nhiều gia vị.
               </p>
@@ -130,7 +130,7 @@ export default function RegionalNutritionVietnamPage() {
           </div>
           <ExampleBox variant="warning" title="Lưu ý">
             <p className="text-sm">
-              Món ăn Miền trung thường <strong>nhiều muối</strong> và <strong>cay</strong>. 
+              món ăn Miền trung thường <strong>nhiều muối</strong> và <strong>cay</strong>. 
               Người cao huyết áp hoặc có vấn đề dạ dày nên điều chỉnh.
             </p>
           </ExampleBox>
@@ -145,7 +145,7 @@ export default function RegionalNutritionVietnamPage() {
           </p>
           <div className="space-y-3">
             <div className="bg-yellow-50 rounded-lg p-3 border border-yellow-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Món ăn đặc trưng:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">món ăn đặc trưng:</p>
               <p className="text-xs text-gray-700">
                 Cơm tấm, bánh mì, canh chua cá, bún riêu - ngọt, nhiều nước dừa, nhiều rau.
               </p>
@@ -168,7 +168,7 @@ export default function RegionalNutritionVietnamPage() {
           </div>
           <ExampleBox variant="warning" title="Lưu ý">
             <p className="text-sm">
-              Món ăn Miền Nam thường <strong>nhiều đường</strong> (nước dừa, đường phèn). 
+              món ăn Miền Nam thường <strong>nhiều đường</strong> (nước dừa, đường phèn). 
               Người tiểu đường hoặc cần kiểm soát đường huyết nên điều chỉnh.
             </p>
           </ExampleBox>

@@ -187,7 +187,7 @@ export default function NutritionMentalHealthPage() {
           </Card>
 
           <Card className="border-yellow-200 bg-yellow-50">
-            <h3 className="heading-4 mb-3 text-yellow-900">4. Chất chống Oxy hóa</h3>
+            <h3 className="heading-4 mb-3 text-yellow-900">4. Chất chống oxy hóa</h3>
             <p className="text-body-sm text-yellow-900 mb-3">
               Chất chống oxy hóa bảo vệ não khỏi tổn thương và có thể hỗ trợ sức khỏe tâm thần.
             </p>

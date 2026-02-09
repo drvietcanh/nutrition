@@ -308,7 +308,7 @@ export default function VietnameseDrinksNutritionPage() {
             </p>
           </Card>
           <Card href="/knowledge/special-topics/antioxidants-foods">
-            <h3 className="heading-5 mb-2">Chất chống Oxy hóa trong Thực phẩm</h3>
+            <h3 className="heading-5 mb-2">Chất chống oxy hóa trong thực phẩm</h3>
             <p className="text-sm text-gray-600">
               Trà xanh chứa chất chống oxy hóa
             </p>

@@ -44,7 +44,7 @@ export default function GettingStartedPage() {
                 <span className="text-2xl font-bold text-blue-600">1</span>
               </div>
               <div className="flex-1">
-                <h3 className="heading-3 mb-3">Hiểu các Khái niệm Cơ bản</h3>
+                <h3 className="heading-3 mb-3">Hiểu các Khái niệm cơ bản</h3>
                 <p className="text-body mb-4">
                   Bắt đầu bằng việc tìm hiểu những hiểu lầm phổ biến về dinh dưỡng lâm sàng. 
                   Điều này giúp bạn có nền tảng vững chắc trước khi học các khái niệm phức tạp hơn.

@@ -71,7 +71,7 @@ export default function PortionSizesPage() {
             <h3 className="heading-4 mb-3">Sự khác biệt</h3>
             <div className="space-y-3 text-body-sm">
               <p>
-                <strong>Serving size (khẩu phần Khuyến nghị):</strong> Lượng thực phẩm được khuyến nghị 
+                <strong>Serving size (khẩu phần khuyến nghị):</strong> Lượng thực phẩm được khuyến nghị 
                 trên nhãn thực phẩm hoặc hướng dẫn dinh dưỡng. Đây là lượng tiêu chuẩn để tính toán dinh dưỡng.
               </p>
               <p>
@@ -119,7 +119,7 @@ export default function PortionSizesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ khẩu phần Cụ thể</h2>
+        <h2 className="heading-2">Ví dụ khẩu phần cụ thể</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Protein</h3>

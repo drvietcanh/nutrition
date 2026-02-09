@@ -229,7 +229,7 @@ export default function VitaminBComplexPage() {
           </div>
         </Card>
 
-        <ExampleBox variant="info" title="Vitamin B trong Món ăn Việt Nam">
+        <ExampleBox variant="info" title="Vitamin B trong món ăn Việt Nam">
           <p className="mb-2">
             <strong>Bữa ăn Việt Nam truyền thống</strong> (cơm + thịt/cá + rau) tự nhiên cung cấp nhiều vitamin B:
           </p>

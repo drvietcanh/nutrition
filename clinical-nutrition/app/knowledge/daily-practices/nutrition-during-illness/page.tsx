@@ -97,7 +97,7 @@ export default function NutritionDuringIllnessPage() {
               Khi bị bệnh, dạ dày thường nhạy cảm. Ăn nhẹ, dễ tiêu giúp cơ thể hấp thu dinh dưỡng mà không gây khó chịu.
             </p>
             <div className="bg-white rounded-lg p-3 border border-green-200">
-              <p className="text-xs font-semibold text-gray-900 mb-1">Món ăn tốt:</p>
+              <p className="text-xs font-semibold text-gray-900 mb-1">món ăn tốt:</p>
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>• <strong>Cháo (Việt Nam):</strong> Cháo thịt gà, cháo cá - dễ tiêu, ấm bụng, có dinh dưỡng</li>
                 <li>• <strong>Canh (Việt Nam):</strong> Canh rau, canh thịt - cung cấp nước + dinh dưỡng</li>
@@ -153,10 +153,10 @@ export default function NutritionDuringIllnessPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Món ăn Việt Nam khi Bị bệnh</h2>
+        <h2 className="heading-2">món ăn Việt Nam khi Bị bệnh</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Cháo - Món ăn Lý tưởng</h3>
+            <h3 className="heading-4 mb-3">Cháo - món ăn Lý tưởng</h3>
             <p className="text-body-sm mb-3">
               Cháo là món ăn hoàn hảo khi bị bệnh: dễ tiêu, ấm bụng, có nước, và có thể có đủ dinh dưỡng.
             </p>

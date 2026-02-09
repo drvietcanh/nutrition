@@ -9,7 +9,7 @@ import { Leaf, Flower, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Gia vị và Thảo mộc Việt Nam",
+  title: "Gia vị và thảo mộc Việt Nam",
   description:
     "Gia vị và thảo mộc Việt Nam không chỉ tăng hương vị mà còn có giá trị dinh dưỡng và lợi ích sức khỏe. Hiểu về các loại gia vị, thảo mộc phổ biến và cách sử dụng.",
   keywords: [
@@ -30,14 +30,14 @@ export default function VietnameseHerbsSpicesPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Gia vị và Thảo mộc Việt Nam" },
+          { label: "Gia vị và thảo mộc Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Leaf className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Gia vị và Thảo mộc Việt Nam</h1>
+          <h1 className="heading-1">Gia vị và thảo mộc Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Gia vị và thảo mộc là "linh hồn" của món ăn Việt Nam. Từ hành, tỏi, gừng đến các loại rau thơm 
@@ -67,7 +67,7 @@ export default function VietnameseHerbsSpicesPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Gia vị Cơ bản Việt Nam</h2>
+        <h2 className="heading-2">Gia vị cơ bản Việt Nam</h2>
         <div className="space-y-4">
           <Card className="border-purple-200 bg-purple-50">
             <h3 className="heading-4 mb-3 text-purple-900">1. Hành (Scallion/Green onion)</h3>
@@ -214,7 +214,7 @@ export default function VietnameseHerbsSpicesPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="info" title="Rau thơm trong Món ăn Việt Nam">
+          <ExampleBox variant="info" title="Rau thơm trong món ăn Việt Nam">
             <p className="mb-2">
               Rau thơm không chỉ tăng hương vị mà còn cung cấp vitamin và khoáng chất. 
               Ví dụ: Phở với nhiều rau thơm (ngò, hành, húng quế) cung cấp vitamin C, K.
@@ -227,10 +227,10 @@ export default function VietnameseHerbsSpicesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Lợi ích Sức khỏe của Gia vị và Thảo mộc</h2>
+        <h2 className="heading-2">Lợi ích sức khỏe của gia vị và thảo mộc</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-4 mb-3">Chất chống Oxy hóa</h3>
+            <h3 className="heading-4 mb-3">Chất chống oxy hóa</h3>
             <p className="text-body-sm">
               Nhiều gia vị và thảo mộc chứa chất chống oxy hóa, giúp bảo vệ tế bào khỏi tổn thương, 
               làm chậm lão hóa, và giảm nguy cơ bệnh tật.
@@ -264,7 +264,7 @@ export default function VietnameseHerbsSpicesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách sử dụng Gia vị và Thảo mộc</h2>
+        <h2 className="heading-2">Cách sử dụng gia vị và thảo mộc</h2>
         <ComparisonCard
           title="So sánh: Cách dùng tốt vs Nên tránh"
           items={[
@@ -291,7 +291,7 @@ export default function VietnameseHerbsSpicesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ sử dụng trong Món ăn Việt Nam</h2>
+        <h2 className="heading-2">Ví dụ sử dụng trong món ăn Việt Nam</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-5 mb-2">Phở</h3>
@@ -387,7 +387,7 @@ export default function VietnameseHerbsSpicesPage() {
             </p>
           </Card>
           <Card href="/knowledge/special-topics/antioxidants-foods">
-            <h3 className="heading-5 mb-2">Chất chống Oxy hóa trong Thực phẩm</h3>
+            <h3 className="heading-5 mb-2">Chất chống oxy hóa trong thực phẩm</h3>
             <p className="text-sm text-gray-600">
               Gia vị và thảo mộc chứa chất chống oxy hóa
             </p>

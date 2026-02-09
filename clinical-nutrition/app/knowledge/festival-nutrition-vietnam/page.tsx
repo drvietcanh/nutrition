@@ -69,9 +69,9 @@ export default function FestivalNutritionVietnamPage() {
         <h2 className="heading-2">Tết: Bánh chưng, Bánh tét, Mứt, Thịt kho</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Giá trị Dinh dưỡng Món ăn Tết</h3>
+            <h3 className="heading-4 mb-3">Giá trị Dinh dưỡng món ăn Tết</h3>
             <NutrientTable
-              title="Giá trị Dinh dưỡng Món ăn Tết (100g)"
+              title="Giá trị Dinh dưỡng món ăn Tết (100g)"
               rows={[
                 { nutrient: "Bánh chưng", amount: "181", unit: "calo, 4g protein, 40g carb", highlight: "moderate", note: "Nhiều carbohydrate, ít protein" },
                 { nutrient: "Bánh tét", amount: "181", unit: "calo, 4g protein, 40g carb", highlight: "moderate", note: "Tương tự bánh chưng" },
@@ -220,7 +220,7 @@ export default function FestivalNutritionVietnamPage() {
         <Card>
           <h3 className="heading-4 mb-3">Người muốn giảm Cân</h3>
           <p className="text-body-sm mb-2">
-            Món ăn lễ hội có nhiều calo. Người muốn giảm cân cần:
+            món ăn lễ hội có nhiều calo. Người muốn giảm cân cần:
           </p>
           <ul className="space-y-1 text-sm text-gray-700 pl-6">
             <li>• Ăn rất ít (1-2 miếng nhỏ)</li>
@@ -292,7 +292,7 @@ export default function FestivalNutritionVietnamPage() {
 
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
-          Thông tin này chỉ dành cho mục đích giáo dục. Món ăn lễ hội có thể thưởng thức nhưng cần ăn vừa phải. 
+          Thông tin này chỉ dành cho mục đích giáo dục. món ăn lễ hội có thể thưởng thức nhưng cần ăn vừa phải. 
           Nếu bạn có bệnh lý đặc biệt (đái tháo đường, tăng huyết áp, bệnh thận), hãy tham khảo chuyên gia 
           dinh dưỡng để được tư vấn phù hợp với tình trạng của bạn.
         </p>

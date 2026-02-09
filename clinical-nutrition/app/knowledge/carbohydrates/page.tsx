@@ -515,11 +515,11 @@ export default function CarbohydratesPage() {
             </p>
             
             <div className="bg-white rounded-lg p-4 border border-blue-200">
-              <p className="text-sm font-semibold text-gray-900 mb-2">Khuyến nghị:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-2">khuyến nghị:</p>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>• <strong>Nhưng nên hạn chế đường thêm vào</strong> - đường cát, đường trong nước ngọt, bánh kẹo</li>
                 <li>• <strong>Ưu tiên vị ngọt tự nhiên từ trái cây</strong> - trái cây có đường nhưng cũng có chất xơ và vitamin</li>
-                <li>• Khuyến nghị: &lt; 50g đường/ngày (tương đương 10-12 thìa cà phê)</li>
+                <li>• khuyến nghị: &lt; 50g đường/ngày (tương đương 10-12 thìa cà phê)</li>
                 <li>• Lý tưởng: &lt; 25g đường/ngày (tương đương 5-6 thìa cà phê)</li>
               </ul>
             </div>
@@ -622,7 +622,7 @@ export default function CarbohydratesPage() {
               <ul className="list-disc list-inside space-y-1 text-sm">
                 <li>Bữa sáng: Yến mạch (50g) + trái cây (20g) = 70g</li>
                 <li>Bữa trưa: <strong>Cơm (80g) + rau củ (10g) = 90g</strong> - Bữa ăn Việt Nam</li>
-                <li>Bữa tối: <strong>Bún bò (60g) + rau sống (10g) = 70g</strong> - Món ăn Việt Nam</li>
+                <li>Bữa tối: <strong>Bún bò (60g) + rau sống (10g) = 70g</strong> - món ăn Việt Nam</li>
                 <li>Snack: Trái cây (20g) = 20g</li>
                 <li><strong>Tổng: ~250g carbohydrate</strong></li>
               </ul>
@@ -743,7 +743,7 @@ export default function CarbohydratesPage() {
                 note: "Ngũ cốc nguyên cám tốt hơn nhiều so với ngũ cốc tinh chế. Ở Việt Nam, có thể thay gạo trắng bằng gạo lứt."
               },
               {
-                label: "Món ăn Việt Nam",
+                label: "món ăn Việt Nam",
                 good: "Bún, phở với nhiều rau và protein nạc - cân bằng dinh dưỡng",
                 bad: "Bún, phở với ít rau, nhiều dầu mỡ - nhiều calo, ít dinh dưỡng",
                 note: "Bún, phở có thể là bữa ăn lành mạnh nếu có đủ rau và protein nạc"

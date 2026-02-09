@@ -8,7 +8,7 @@ import { UtensilsCrossed, Carrot, Fish, Wheat, Apple, CheckCircle2 } from "lucid
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng",
+  title: "Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng",
   description:
     "Cách tổ chức bữa ăn gia đình kiểu Việt Nam (cơm + canh + món mặn + rau) để đảm bảo cân bằng dinh dưỡng. Ví dụ thực tế bữa trưa, bữa tối.",
   keywords: [
@@ -27,14 +27,14 @@ export default function VietnameseFamilyMealsPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng" },
+          { label: "Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <UtensilsCrossed className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng</h1>
+          <h1 className="heading-1">Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Bữa ăn gia đình Việt Nam truyền thống có cấu trúc cân bằng tự nhiên: cơm (carbohydrate), 
@@ -67,7 +67,7 @@ export default function VietnameseFamilyMealsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cấu trúc Bữa ăn Gia đình Việt Nam</h2>
+        <h2 className="heading-2">Cấu trúc Bữa ăn gia đình Việt Nam</h2>
         <div className="space-y-4">
           <p className="text-body">
             Bữa ăn gia đình Việt Nam truyền thống thường có <strong>4 thành phần chính</strong>, 
@@ -143,10 +143,10 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa ăn Cụ thể</h2>
+        <h2 className="heading-2">Ví dụ bữa ăn cụ thể</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Bữa trưa Gia đình</h3>
+            <h3 className="heading-4 mb-3">Bữa trưa gia đình</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <Wheat className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -163,7 +163,7 @@ export default function VietnameseFamilyMealsPage() {
                   <p className="text-sm font-semibold text-gray-900">Canh chua cá (1 bát)</p>
                   <p className="text-sm text-gray-700">
                     Cá (protein) + cà chua, dứa, đậu bắp (rau củ) + nước dùng (dịch). 
-                    Món ăn cân bằng, giàu dinh dưỡng.
+                    món ăn cân bằng, giàu dinh dưỡng.
                   </p>
                 </div>
               </div>
@@ -235,10 +235,10 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách cân bằng Dinh dưỡng trong Bữa ăn</h2>
+        <h2 className="heading-2">Cách cân bằng dinh dưỡng trong bữa ăn</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Tỷ lệ Khuyến nghị</h3>
+            <h3 className="heading-4 mb-3">Tỷ lệ khuyến nghị</h3>
             <div className="space-y-3">
               <div className="bg-amber-50 rounded-lg p-3 border border-amber-200">
                 <p className="text-sm font-semibold text-amber-900 mb-1">Cơm: 1/4 đĩa</p>
@@ -276,7 +276,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Bữa ăn cân bằng vs Không cân bằng</h2>
+        <h2 className="heading-2">So sánh: Bữa ăn cân bằng vs không cân bằng</h2>
         <ComparisonCard
           title="Ví dụ So sánh"
           items={[
@@ -337,7 +337,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Điều chỉnh Theo nhu cầu</h2>
+        <h2 className="heading-2">Điều chỉnh theo nhu cầu</h2>
         <Card>
           <h3 className="heading-4 mb-3">Khi nào cần điều chỉnh?</h3>
           <div className="space-y-3 text-body-sm">

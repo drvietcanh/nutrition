@@ -135,7 +135,7 @@ export default function DiabetesNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Nguyên tắc Dinh dưỡng Cơ bản
+            Nguyên tắc Dinh dưỡng cơ bản
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -288,7 +288,7 @@ export default function DiabetesNutritionPage() {
               </ul>
               <div className="rounded-lg border border-green-200 bg-green-50 p-3 mt-3">
                 <p className="text-sm text-green-900">
-                  <strong>👉 Khuyến nghị:</strong> 25–30g/ngày từ rau, trái cây, đậu, ngũ cốc nguyên hạt.
+                  <strong>👉 khuyến nghị:</strong> 25–30g/ngày từ rau, trái cây, đậu, ngũ cốc nguyên hạt.
                 </p>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function DiabetesNutritionPage() {
 
         {/* Vietnamese food Carbohydrate table */}
         <Card className="border-green-200 bg-green-50/30">
-          <CardHeader icon={Info} title="Carbohydrate trong Món ăn Việt Nam" />
+          <CardHeader icon={Info} title="Carbohydrate trong món ăn Việt Nam" />
           <CardContent>
             <p className="text-body-sm mb-4">
               Bảng dưới đây giúp bạn ước tính carbohydrate trong các món ăn phổ biến ở Việt Nam:
@@ -307,7 +307,7 @@ export default function DiabetesNutritionPage() {
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
                 <thead className="bg-green-100">
                   <tr>
-                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Món ăn</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">món ăn</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">khẩu phần</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Carbohydrate (g)</th>
                     <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Số phần (15g)</th>
@@ -467,7 +467,7 @@ export default function DiabetesNutritionPage() {
               Người đái tháo đường không cần ăn nhiều đạm hơn người bình thường
             </p>
             <p>
-              <strong>Khuyến nghị chung:</strong> 0.8–1.0 g/kg/ngày
+              <strong>khuyến nghị chung:</strong> 0.8–1.0 g/kg/ngày
             </p>
             <div className="bg-amber-50 rounded-lg p-3 border border-amber-200 mt-3">
               <p className="text-sm font-semibold text-amber-900 mb-2">📌 Lưu ý:</p>
@@ -972,7 +972,7 @@ export default function DiabetesNutritionPage() {
               tăng huyết áp, hoặc các bệnh lý khác cần điều chỉnh dinh dưỡng.
             </li>
             <li>
-              <strong>Không theo dõi đáp ứng:</strong> Khuyến nghị thay đổi chế độ ăn nhưng không theo dõi
+              <strong>Không theo dõi đáp ứng:</strong> khuyến nghị thay đổi chế độ ăn nhưng không theo dõi
               HbA1c, đường huyết, hoặc các chỉ số khác để đánh giá hiệu quả.
             </li>
             <li>

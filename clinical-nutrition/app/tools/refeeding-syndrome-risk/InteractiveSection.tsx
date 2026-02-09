@@ -414,7 +414,7 @@ export function InteractiveSection() {
             {result.recommendations.length > 0 && (
               <div className="border-t border-neutral-200 pt-4 space-y-2">
                 <h3 className="text-sm font-semibold text-neutral-900">
-                  Khuyến nghị (Giáo dục):
+                  khuyến nghị (Giáo dục):
                 </h3>
                 <ul className="list-disc space-y-1 pl-5 text-xs text-neutral-700">
                   {result.recommendations.map((rec, idx) => (

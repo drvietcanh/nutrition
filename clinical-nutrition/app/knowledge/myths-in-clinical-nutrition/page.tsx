@@ -377,7 +377,7 @@ export default function MythsInClinicalNutritionPage() {
                   <li><strong>Chuyên gia Dinh dưỡng Đã đăng ký:</strong> Chuyên gia đánh giá và lập kế hoạch dinh dưỡng</li>
                   <li><strong>Nhóm hỗ trợ Dinh dưỡng lâm sàng:</strong> Cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
                   <li><strong>Nhóm lâm sàng Của bạn:</strong> Bác sĩ, điều dưỡng, và các nhà cung cấp khác biết bệnh nhân</li>
-                  <li><strong>Hướng dẫn lâm sàng:</strong> Khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
+                  <li><strong>Hướng dẫn lâm sàng:</strong> khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
                 </ul>
               </div>
 

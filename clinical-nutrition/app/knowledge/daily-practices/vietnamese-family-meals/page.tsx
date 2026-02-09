@@ -8,7 +8,7 @@ import { Utensils, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng",
+  title: "Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng",
   description:
     "Hiểu về cấu trúc bữa ăn gia đình Việt Nam truyền thống - cơm + canh + món mặn + rau. Cách cân bằng dinh dưỡng và ví dụ bữa ăn lành mạnh.",
   keywords: [
@@ -27,14 +27,14 @@ export default function VietnameseFamilyMealsPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Thực hành Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Bữa ăn Gia đình Việt Nam" },
+          { label: "Bữa ăn gia đình Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Utensils className="w-8 h-8 text-red-600" aria-hidden="true" />
-          <h1 className="heading-1">Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng</h1>
+          <h1 className="heading-1">Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Bữa ăn gia đình Việt Nam truyền thống có cấu trúc cân bằng tự nhiên: cơm (carbohydrate), 
@@ -64,7 +64,7 @@ export default function VietnameseFamilyMealsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cấu trúc Bữa ăn Gia đình Việt Nam</h2>
+        <h2 className="heading-2">Cấu trúc Bữa ăn gia đình Việt Nam</h2>
         <Card>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
@@ -158,7 +158,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa ăn Gia đình</h2>
+        <h2 className="heading-2">Ví dụ Bữa ăn gia đình</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <ExampleBox variant="info" title="Bữa trưa">
             <p className="text-sm mb-2">
@@ -193,7 +193,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bữa ăn cân bằng vs Không cân bằng</h2>
+        <h2 className="heading-2">Bữa ăn cân bằng vs không cân bằng</h2>
         <ComparisonCard
           title="So sánh Bữa ăn"
           goodTitle="Bữa ăn cân bằng"

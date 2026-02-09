@@ -106,7 +106,7 @@ export default function MealPlanningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguyên tắc Cơ bản: Cấu trúc Bữa ăn</h2>
+        <h2 className="heading-2">Nguyên tắc cơ bản: Cấu trúc Bữa ăn</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Mỗi bữa nên có 3 thành phần:</h3>
@@ -155,7 +155,7 @@ export default function MealPlanningPage() {
           </Card>
 
           <Card className="border-blue-200 bg-blue-50">
-            <h3 className="heading-4 mb-3 text-blue-900">Cấu trúc Bữa ăn Gia đình Việt Nam</h3>
+            <h3 className="heading-4 mb-3 text-blue-900">Cấu trúc Bữa ăn gia đình Việt Nam</h3>
             <p className="text-body-sm text-blue-900 mb-3">
               Bữa ăn gia đình Việt Nam truyền thống thường có 4 thành phần chính, tạo thành bữa ăn cân bằng:
             </p>
@@ -337,7 +337,7 @@ export default function MealPlanningPage() {
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-family-meals">
-            <h3 className="heading-5 mb-2">Bữa ăn Gia đình Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn gia đình Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Cấu trúc bữa ăn Việt Nam và cách cân bằng dinh dưỡng
             </p>

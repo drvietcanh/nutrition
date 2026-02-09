@@ -99,7 +99,7 @@ export default function NutritionBusyLifestylePage() {
               <div className="flex-1">
                 <p className="text-sm font-semibold text-gray-900 mb-1">Cháo thịt gà (5 phút - nấu sẵn hoặc mua)</p>
                 <p className="text-sm text-gray-700">
-                  <strong>Món ăn Việt Nam:</strong> Cháo thịt gà với rau thơm - nhanh, dễ tiêu, đủ dinh dưỡng
+                  <strong>món ăn Việt Nam:</strong> Cháo thịt gà với rau thơm - nhanh, dễ tiêu, đủ dinh dưỡng
                 </p>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function NutritionBusyLifestylePage() {
               <div className="flex-1">
                 <p className="text-sm font-semibold text-gray-900 mb-1">Bánh mì + Thịt/Trứng (3 phút)</p>
                 <p className="text-sm text-gray-700">
-                  <strong>Món ăn Việt Nam:</strong> Bánh mì với thịt nướng hoặc trứng - nhanh, tiện lợi, có thể mang đi
+                  <strong>món ăn Việt Nam:</strong> Bánh mì với thịt nướng hoặc trứng - nhanh, tiện lợi, có thể mang đi
                 </p>
               </div>
             </div>
@@ -153,7 +153,7 @@ export default function NutritionBusyLifestylePage() {
               <div className="flex-1">
                 <p className="text-sm font-semibold text-gray-900 mb-1">Phở/Bún nhanh (10 phút hoặc mua)</p>
                 <p className="text-sm text-gray-700">
-                  <strong>Món ăn Việt Nam:</strong> Phở hoặc bún với nhiều rau sống và thịt nạc - 
+                  <strong>món ăn Việt Nam:</strong> Phở hoặc bún với nhiều rau sống và thịt nạc - 
                   có thể mua sẵn hoặc nấu nhanh, yêu cầu nhiều rau, ít bánh phở/bún
                 </p>
               </div>
@@ -163,7 +163,7 @@ export default function NutritionBusyLifestylePage() {
               <div className="flex-1">
                 <p className="text-sm font-semibold text-gray-900 mb-1">Cơm + Món mặn sẵn (5 phút)</p>
                 <p className="text-sm text-gray-700">
-                  <strong>Món ăn Việt Nam:</strong> Cơm nấu sẵn + thịt kho/cá kho sẵn + rau luộc nhanh - 
+                  <strong>món ăn Việt Nam:</strong> Cơm nấu sẵn + thịt kho/cá kho sẵn + rau luộc nhanh - 
                   nấu nhiều món mặn một lần, dùng nhiều bữa
                 </p>
               </div>
@@ -236,7 +236,7 @@ export default function NutritionBusyLifestylePage() {
             <strong> Cơm + thịt kho sẵn + rau luộc nhanh (món ăn Việt Nam)</strong>
           </p>
           <p className="text-xs text-gray-600 mt-2">
-            <strong>Lưu ý:</strong> Món ăn Việt Nam như thịt kho, cá kho có thể nấu nhiều một lần, 
+            <strong>Lưu ý:</strong> món ăn Việt Nam như thịt kho, cá kho có thể nấu nhiều một lần, 
             để dành dùng nhiều bữa, tiết kiệm thời gian.
           </p>
         </ExampleBox>

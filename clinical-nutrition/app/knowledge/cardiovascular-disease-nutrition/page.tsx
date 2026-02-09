@@ -115,7 +115,7 @@ export default function CardiovascularDiseaseNutritionPage() {
               ]}
             />
             <p className="text-body-sm mt-3">
-              <strong>Khuyến nghị:</strong> Hạn chế chất béo bão hòa &lt; 7% tổng calo, 
+              <strong>khuyến nghị:</strong> Hạn chế chất béo bão hòa &lt; 7% tổng calo, 
               tránh hoàn toàn chất béo trans.
             </p>
           </Card>
@@ -127,7 +127,7 @@ export default function CardiovascularDiseaseNutritionPage() {
             </p>
             <NutrientTable
               rows={[
-                { nutrient: "Khuyến nghị", amount: "< 2,300", unit: "mg/ngày", note: "Tương đương ~6g muối" },
+                { nutrient: "khuyến nghị", amount: "< 2,300", unit: "mg/ngày", note: "Tương đương ~6g muối" },
                 { nutrient: "Nếu có tăng huyết áp", amount: "< 1,500", unit: "mg/ngày", note: "Tương đương ~4g muối" },
                 { nutrient: "1 muỗng cà phê muối", amount: "2,300", unit: "mg natri", note: "Toàn bộ nhu cầu/ngày" },
               ]}
@@ -145,7 +145,7 @@ export default function CardiovascularDiseaseNutritionPage() {
             </p>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
-                <strong>Khuyến nghị:</strong> 25-30g chất xơ/ngày
+                <strong>khuyến nghị:</strong> 25-30g chất xơ/ngày
               </p>
               <p>
                 <strong>Nguồn tốt:</strong> Ngũ cốc nguyên cám, rau củ, trái cây, đậu, đậu lăng
@@ -160,7 +160,7 @@ export default function CardiovascularDiseaseNutritionPage() {
             </p>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
-                <strong>Khuyến nghị:</strong> Ăn cá béo 2-3 lần/tuần
+                <strong>khuyến nghị:</strong> Ăn cá béo 2-3 lần/tuần
               </p>
               <p>
                 <strong>Nguồn:</strong> Cá hồi, cá thu, cá ngừ, cá mòi, hạt chia, quả óc chó

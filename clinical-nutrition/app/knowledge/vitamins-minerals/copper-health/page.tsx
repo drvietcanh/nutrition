@@ -127,7 +127,7 @@ export default function CopperHealthPage() {
           </Card>
 
           <Card className="border-green-200 bg-green-50">
-            <h3 className="heading-4 mb-3 text-green-900">3. Chất chống Oxy hóa</h3>
+            <h3 className="heading-4 mb-3 text-green-900">3. Chất chống oxy hóa</h3>
             <p className="text-body-sm text-green-900 mb-2">
               Đồng là một phần của enzyme chống oxy hóa, giúp bảo vệ tế bào khỏi tổn thương oxy hóa.
             </p>
@@ -329,7 +329,7 @@ export default function CopperHealthPage() {
             </p>
           </Card>
           <Card href="/knowledge/antioxidants">
-            <h3 className="heading-5 mb-2">Chất chống Oxy hóa</h3>
+            <h3 className="heading-5 mb-2">Chất chống oxy hóa</h3>
             <p className="text-sm text-gray-600">
               Đồng là một phần của hệ thống chống oxy hóa
             </p>

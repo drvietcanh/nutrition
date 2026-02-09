@@ -62,13 +62,13 @@ export default function FestivalNutritionVietnamPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tết - Món ăn truyền thống</h2>
+        <h2 className="heading-2">Tết - món ăn truyền thống</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Tết có nhiều món ăn đặc biệt, giàu calo và natri. Hiểu về giá trị dinh dưỡng giúp bạn ăn vừa phải.
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng Món ăn tết (100g)"
+            title="Giá trị Dinh dưỡng món ăn tết (100g)"
             rows={[
               { nutrient: "Bánh chưng", amount: "181", unit: "calo", note: "Nhiều carbohydrate, ít protein" },
               { nutrient: "Bánh tét", amount: "200", unit: "calo", note: "Nhiều carbohydrate, ít protein" },
@@ -215,7 +215,7 @@ export default function FestivalNutritionVietnamPage() {
 
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
-          Thông tin này chỉ dành cho mục đích giáo dục. Món ăn lễ hội có thể nhiều calo, đường, natri. 
+          Thông tin này chỉ dành cho mục đích giáo dục. món ăn lễ hội có thể nhiều calo, đường, natri. 
           Nếu bạn có bệnh tiểu đường, cao huyết áp, hoặc các vấn đề sức khỏe khác, 
           hãy tham khảo bác sĩ về cách ăn uống trong lễ hội.
         </p>

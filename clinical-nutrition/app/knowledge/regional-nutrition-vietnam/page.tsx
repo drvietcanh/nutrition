@@ -10,7 +10,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Dinh dưỡng Theo vùng miền Việt Nam",
   description:
-    "Đặc điểm dinh dưỡng theo vùng (Bắc, Trung, Nam), ưu và nhược điểm. Món ăn đặc trưng từng vùng. Cách cân bằng dinh dưỡng theo vùng.",
+    "Đặc điểm dinh dưỡng theo vùng (Bắc, Trung, Nam), ưu và nhược điểm. món ăn đặc trưng từng vùng. Cách cân bằng dinh dưỡng theo vùng.",
   keywords: [
     "vùng miền",
     "miền bắc",
@@ -89,7 +89,7 @@ export default function RegionalNutritionVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Món ăn đặc trưng</h3>
+            <h3 className="heading-4 mb-3">món ăn đặc trưng</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
                 <strong>Phở bò:</strong> Bánh phở + thịt bò + rau thơm - cân bằng dinh dưỡng. 
@@ -148,7 +148,7 @@ export default function RegionalNutritionVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Món ăn đặc trưng</h3>
+            <h3 className="heading-4 mb-3">món ăn đặc trưng</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
                 <strong>Bún bò Huế:</strong> Bún + thịt bò + rau sống - cân bằng. 
@@ -206,7 +206,7 @@ export default function RegionalNutritionVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Món ăn đặc trưng</h3>
+            <h3 className="heading-4 mb-3">món ăn đặc trưng</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
                 <strong>Cơm tấm:</strong> Cơm + sườn + trứng + đồ chua - cân bằng. 
@@ -305,7 +305,7 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Kết hợp Món ăn Từ nhiều Vùng</h2>
+        <h2 className="heading-2">Kết hợp món ăn Từ nhiều Vùng</h2>
         <Card>
           <h3 className="heading-4 mb-3">Ví dụ Bữa ăn Đa dạng</h3>
           <div className="space-y-2 text-sm text-gray-700">
@@ -359,7 +359,7 @@ export default function RegionalNutritionVietnamPage() {
         <Callout variant="warning" title="Hiểu lầm thường gặp">
           <div className="space-y-3">
             <div>
-              <p className="text-sm font-semibold mb-1">"Món ăn vùng nào cũng giống nhau"</p>
+              <p className="text-sm font-semibold mb-1">"món ăn vùng nào cũng giống nhau"</p>
               <p className="text-sm">
                 <strong>Sự thật:</strong> Không phải! Mỗi vùng có đặc điểm riêng về vị (cay, ngọt, mặn), 
                 cách nấu, và thành phần. Hiểu đặc điểm giúp điều chỉnh tốt hơn.

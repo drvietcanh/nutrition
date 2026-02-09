@@ -10,7 +10,7 @@ export function GlossaryContent() {
 
   const categories = [
     { value: "all", label: "Tất cả" },
-    { value: "basic", label: "Cơ bản" },
+    { value: "basic", label: "cơ bản" },
     { value: "calculation", label: "Tính toán" },
     { value: "assessment", label: "Đánh giá" },
     { value: "disease", label: "bệnh lý" },
@@ -85,7 +85,7 @@ export function GlossaryContent() {
 
 function GlossaryCard({ term }: { term: GlossaryTerm }) {
   const categoryLabels: Record<string, string> = {
-    basic: "Cơ bản",
+    basic: "cơ bản",
     calculation: "Tính toán",
     assessment: "Đánh giá",
     disease: "bệnh lý",

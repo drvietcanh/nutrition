@@ -203,7 +203,7 @@ export default function CKDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="nutrients-heading" className="heading-2 whitespace-nowrap">
-            Quản lý Các chất Dinh dưỡng Cụ thể
+            Quản lý Các chất Dinh dưỡng cụ thể
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

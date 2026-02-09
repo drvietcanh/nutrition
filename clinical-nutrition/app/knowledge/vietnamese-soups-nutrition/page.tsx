@@ -348,7 +348,7 @@ export default function VietnameseSoupsNutritionPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/vietnamese-family-meals">
-            <h3 className="heading-5 mb-2">Bữa ăn Gia đình Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Bữa ăn gia đình Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Vai trò của canh trong bữa ăn gia đình Việt Nam
             </p>

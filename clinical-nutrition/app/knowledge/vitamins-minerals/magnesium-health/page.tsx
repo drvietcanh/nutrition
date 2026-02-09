@@ -106,7 +106,7 @@ export default function MagnesiumHealthPage() {
         <Card>
           <h3 className="heading-4 mb-3">Thực phẩm Giàu magnesium</h3>
           <NutrientTable
-            title="Hàm lượng Magnesium trong Thực phẩm"
+            title="Hàm lượng Magnesium trong thực phẩm"
             rows={[
               { nutrient: "Hạnh nhân (30g)", amount: "80", unit: "mg", highlight: "good" },
               { nutrient: "Hạt điều (30g)", amount: "74", unit: "mg", highlight: "good" },

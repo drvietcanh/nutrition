@@ -289,7 +289,7 @@ export function InteractiveSection() {
                         Vi chất
                       </th>
                       <th className="text-right py-2 px-3 font-semibold text-neutral-900">
-                        Nhu cầu Khuyến nghị
+                        Nhu cầu khuyến nghị
                       </th>
                       <th className="text-left py-2 px-3 font-semibold text-neutral-900">
                         Ghi chú

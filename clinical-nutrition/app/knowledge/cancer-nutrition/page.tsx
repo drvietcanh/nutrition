@@ -122,7 +122,7 @@ export default function CancerNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Nguyên tắc Dinh dưỡng Cơ bản
+            Nguyên tắc Dinh dưỡng cơ bản
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -133,7 +133,7 @@ export default function CancerNutritionPage() {
             <div className="space-y-4">
               <div>
                 <p className="text-sm font-semibold text-gray-900 mb-2">Nhu cầu năng lượng</p>
-                <p className="text-sm font-semibold text-gray-900 mb-1">Khuyến nghị chung:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">khuyến nghị chung:</p>
                 <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-2">
                   <li>30–35 kcal/kg/ngày</li>
                   <li>Có thể cần cao hơn (35–40 kcal/kg/ngày) nếu:

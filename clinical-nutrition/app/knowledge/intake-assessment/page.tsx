@@ -55,7 +55,7 @@ export default function IntakeAssessmentPage() {
             <li>Họ buồn nôn và chỉ ăn 30% mỗi bữa ăn.</li>
             <li>Bữa ăn bị trì hoãn do xét nghiệm, nên họ bỏ lỡ bữa trưa hoàn toàn.</li>
             <li>Họ không thích lựa chọn thực phẩm và bỏ qua nhiều món.</li>
-            <li>Gia đình mang đồ ăn nhẹ, nhưng những thứ này không được ghi chép trong biểu đồ.</li>
+            <li>gia đình mang đồ ăn nhẹ, nhưng những thứ này không được ghi chép trong biểu đồ.</li>
           </ul>
           <p className="text-sm text-neutral-700 mt-2">
             <strong>Kết quả</strong>: Kê đơn ~1.800 kcal/ngày, nhưng lượng ăn thực tế được cung cấp có thể gần 800–1.000 kcal/ngày.

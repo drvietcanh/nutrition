@@ -871,7 +871,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'antioxidants-foods',
-    title: 'Chất chống Oxy hóa trong Thực phẩm',
+    title: 'Chất chống oxy hóa trong thực phẩm',
     description: 'Hiểu về chất chống oxy hóa - hợp chất tự nhiên trong thực phẩm',
     category: 'special-topics',
     tags: ['antioxidants', 'vitamins', 'health'],
@@ -917,7 +917,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-family-meals',
-    title: 'Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng',
+    title: 'Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng',
     description: 'Cách tổ chức bữa ăn gia đình kiểu Việt Nam (cơm + canh + món mặn + rau) để đảm bảo cân bằng dinh dưỡng',
     category: 'daily-practices',
     tags: ['family-meals', 'bữa-ăn-gia-đình', 'cơm-canh', 'cân-bằng-dinh-dưỡng'],
@@ -1006,7 +1006,7 @@ export const articles: ArticleMetadata[] = [
   {
     slug: 'regional-nutrition-vietnam',
     title: 'Dinh dưỡng Theo vùng miền Việt Nam',
-    description: 'Đặc điểm dinh dưỡng theo vùng (Bắc, Trung, Nam), ưu và nhược điểm. Món ăn đặc trưng từng vùng',
+    description: 'Đặc điểm dinh dưỡng theo vùng (Bắc, Trung, Nam), ưu và nhược điểm. món ăn đặc trưng từng vùng',
     category: 'special-topics',
     tags: ['regional', 'vùng-miền', 'miền-bắc', 'miền-trung', 'miền-nam', 'đặc-trưng'],
     relatedArticles: ['vietnamese-foods-nutrition', 'sodium-health'],
@@ -1018,7 +1018,7 @@ export const articles: ArticleMetadata[] = [
   // New vitamins & Minerals articles
   {
     slug: 'vitamin-e-antioxidant',
-    title: 'Vitamin E và Chất chống Oxy hóa',
+    title: 'Vitamin E và Chất chống oxy hóa',
     description: 'Hiểu về vitamin E - vitamin quan trọng cho chất chống oxy hóa, sức khỏe da, và bảo vệ tế bào',
     category: 'vitamins-minerals',
     tags: ['vitamin-e', 'antioxidants', 'skin-health', 'dầu-thực-vật', 'quả-hạch'],
@@ -1077,7 +1077,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-herbs-spices',
-    title: 'Gia vị và Thảo mộc Việt Nam',
+    title: 'Gia vị và thảo mộc Việt Nam',
     description: 'Gia vị và thảo mộc Việt Nam không chỉ tăng hương vị mà còn có giá trị dinh dưỡng và lợi ích sức khỏe',
     category: 'general-nutrition',
     tags: ['gia-vị-việt-nam', 'thảo-mộc', 'hành', 'tỏi', 'gừng', 'rau-thơm', 'antioxidants'],
@@ -1275,7 +1275,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-family-meals',
-    title: 'Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng',
+    title: 'Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng',
     description: 'Hiểu về cấu trúc bữa ăn gia đình Việt Nam truyền thống - cơm + canh + món mặn + rau. Cách cân bằng dinh dưỡng và ví dụ bữa ăn lành mạnh.',
     category: 'daily-practices',
     tags: ['bữa-ăn-gia-đình', 'cấu-trúc-bữa-ăn', 'bữa-ăn-việt-nam', 'cân-bằng-dinh-dưỡng'],
@@ -1364,7 +1364,7 @@ export const articles: ArticleMetadata[] = [
   {
     slug: 'regional-nutrition-vietnam',
     title: 'Dinh dưỡng Theo vùng miền Việt Nam',
-    description: 'Khám phá đặc điểm dinh dưỡng theo vùng miền Việt Nam - Miền bắc, Miền trung, Miền Nam. Món ăn đặc trưng, ưu và nhược điểm, cách cân bằng.',
+    description: 'Khám phá đặc điểm dinh dưỡng theo vùng miền Việt Nam - Miền bắc, Miền trung, Miền Nam. món ăn đặc trưng, ưu và nhược điểm, cách cân bằng.',
     category: 'special-topics',
     tags: ['vùng-miền-việt-nam', 'miền-bắc', 'miền-trung', 'miền-nam', 'món-ăn-đặc-trưng'],
     relatedArticles: ['vietnamese-foods-nutrition', 'sodium-health'],

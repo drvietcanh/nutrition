@@ -104,7 +104,7 @@ export default function VitaminCImmunityPage() {
         <Card>
           <h3 className="heading-4 mb-3">Thực phẩm Giàu vitamin C</h3>
           <NutrientTable
-            title="Hàm lượng Vitamin C trong Thực phẩm"
+            title="Hàm lượng Vitamin C trong thực phẩm"
             rows={[
               { nutrient: "Ớt chuông đỏ (100g)", amount: "190", unit: "mg", highlight: "good", note: "Hơn 2 lần nhu cầu/ngày!" },
               { nutrient: "Ớt chuông vàng (100g)", amount: "184", unit: "mg", highlight: "good" },
@@ -215,7 +215,7 @@ export default function VitaminCImmunityPage() {
             </p>
           </Card>
           <Card href="/knowledge/special-topics/antioxidants-foods">
-            <h3 className="heading-5 mb-2">Chất chống Oxy hóa trong Thực phẩm</h3>
+            <h3 className="heading-5 mb-2">Chất chống oxy hóa trong thực phẩm</h3>
             <p className="text-sm text-gray-600">
               Vitamin C là một chất chống oxy hóa quan trọng
             </p>

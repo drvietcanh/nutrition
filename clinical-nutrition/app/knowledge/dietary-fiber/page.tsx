@@ -155,7 +155,7 @@ export default function DietaryFiberPage() {
 
       {/* Vietnamese fiber Table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng chất xơ trong Thực phẩm Việt Nam</h2>
+        <h2 className="heading-2">Bảng chất xơ trong thực phẩm Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Hàm lượng chất xơ dưới đây là ước tính, có thể thay đổi tùy theo cách chế biến và từng loại thực phẩm.
@@ -369,7 +369,7 @@ export default function DietaryFiberPage() {
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Heart className="w-6 h-6 text-red-600" aria-hidden="true" />
-          Lợi ích Sức khỏe của Chất xơ
+          Lợi ích sức khỏe của Chất xơ
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
@@ -438,7 +438,7 @@ export default function DietaryFiberPage() {
                   = 26g chất xơ (đạt mục tiêu!)
                 </p>
                 <p className="text-sm text-gray-700 mb-2">
-                  <strong>Ví dụ 2 (Món ăn Việt Nam):</strong>
+                  <strong>Ví dụ 2 (món ăn Việt Nam):</strong>
                 </p>
                 <p className="text-sm text-gray-700">
                   <strong>1 bát cơm gạo lứt</strong> (3g) + <strong>1 bát canh rau muống</strong> (3g) + 

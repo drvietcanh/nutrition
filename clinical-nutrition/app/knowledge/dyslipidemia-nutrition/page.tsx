@@ -103,7 +103,7 @@ export default function DyslipidemiaNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Nguyên tắc Dinh dưỡng Cơ bản
+            Nguyên tắc Dinh dưỡng cơ bản
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -170,7 +170,7 @@ export default function DyslipidemiaNutritionPage() {
         </Card>
 
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">🥚 Cholesterol trong Thực phẩm – Đừng quá lo</h3>
+          <h3 className="heading-3">🥚 Cholesterol trong thực phẩm – Đừng quá lo</h3>
           <div className="space-y-3 text-body">
             <p>
               Cholesterol trong thức ăn (trứng, tôm…) ảnh hưởng ít hơn so với chất béo bão hòa
@@ -204,7 +204,7 @@ export default function DyslipidemiaNutritionPage() {
             </div>
             <div className="rounded-lg border border-green-200 bg-green-50 p-3 mt-3">
               <p className="text-sm text-green-900">
-                <strong>👉 Khuyến nghị:</strong> 25–30 g chất xơ/ngày
+                <strong>👉 khuyến nghị:</strong> 25–30 g chất xơ/ngày
               </p>
             </div>
           </div>

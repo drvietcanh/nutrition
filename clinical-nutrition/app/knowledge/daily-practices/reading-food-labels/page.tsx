@@ -137,7 +137,7 @@ export default function ReadingFoodLabelsPage() {
                 <li>• Nước ép trái cây cô đặc</li>
               </ul>
               <p className="text-xs text-amber-900 mt-2 font-semibold">
-                Khuyến nghị: &lt; 25g đường/ngày cho phụ nữ, &lt; 36g/ngày cho nam giới
+                khuyến nghị: &lt; 25g đường/ngày cho phụ nữ, &lt; 36g/ngày cho nam giới
               </p>
             </div>
           </Card>
@@ -152,7 +152,7 @@ export default function ReadingFoodLabelsPage() {
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>• <strong>Ít muối:</strong> &lt; 140mg natri/phần</li>
                 <li>• <strong>Nhiều muối:</strong> &gt; 600mg natri/phần</li>
-                <li>• <strong>Khuyến nghị:</strong> &lt; 2300mg natri/ngày (tương đương ~6g muối)</li>
+                <li>• <strong>khuyến nghị:</strong> &lt; 2300mg natri/ngày (tương đương ~6g muối)</li>
               </ul>
               <p className="text-xs text-amber-900 mt-2">
                 <strong>Mẹo:</strong> 1g natri = 2.5g muối. Nếu nhãn ghi 400mg natri = 1g muối

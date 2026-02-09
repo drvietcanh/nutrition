@@ -186,7 +186,7 @@ export function SearchModalEnhanced({ onClose }: SearchModalEnhancedProps) {
                   className="text-sm border border-gray-300 rounded px-2 py-1"
                 >
                   <option value="all">Tất cả</option>
-                  <option value="foundation">Cơ bản</option>
+                  <option value="foundation">cơ bản</option>
                   <option value="intermediate">Trung bình</option>
                   <option value="advanced">Nâng cao</option>
                 </select>

@@ -124,7 +124,7 @@ export default function IBDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Nguyên tắc Dinh dưỡng Cơ bản
+            Nguyên tắc Dinh dưỡng cơ bản
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -150,7 +150,7 @@ export default function IBDNutritionPage() {
               <div>
                 <p className="text-sm font-semibold text-gray-900 mb-2">Protein (Chất đạm)</p>
                 <p className="text-sm text-gray-700 mb-2">
-                  <strong>Khuyến nghị:</strong> 1,2 – 1,5 g/kg/ngày
+                  <strong>khuyến nghị:</strong> 1,2 – 1,5 g/kg/ngày
                 </p>
                 <p className="text-sm font-semibold text-gray-900 mb-1">Vai trò:</p>
                 <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700">

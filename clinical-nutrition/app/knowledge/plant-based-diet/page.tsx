@@ -87,7 +87,7 @@ export default function PlantBasedDietPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Lợi ích Sức khỏe</h2>
+        <h2 className="heading-2">Lợi ích sức khỏe</h2>
         <Card>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>

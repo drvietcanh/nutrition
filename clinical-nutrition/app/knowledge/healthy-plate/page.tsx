@@ -147,7 +147,7 @@ export default function HealthyPlatePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa ăn Cụ thể</h2>
+        <h2 className="heading-2">Ví dụ bữa ăn cụ thể</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Bữa trưa lành mạnh</h3>
@@ -227,7 +227,7 @@ export default function HealthyPlatePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Bữa ăn cân bằng vs Không cân bằng</h2>
+        <h2 className="heading-2">So sánh: Bữa ăn cân bằng vs không cân bằng</h2>
         <ComparisonCard
           title="Ví dụ So sánh"
           items={[

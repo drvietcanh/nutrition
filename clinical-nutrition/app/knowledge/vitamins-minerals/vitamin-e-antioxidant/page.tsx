@@ -9,7 +9,7 @@ import { Shield, Leaf, AlertCircle, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Vitamin E và Chất chống Oxy hóa",
+  title: "Vitamin E và Chất chống oxy hóa",
   description:
     "Hiểu về vitamin E - vitamin quan trọng cho chất chống oxy hóa, sức khỏe da, và bảo vệ tế bào. Nguồn thực phẩm và nhu cầu.",
   keywords: [
@@ -29,14 +29,14 @@ export default function VitaminEAntioxidantPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Vitamin & Khoáng chất", href: "/knowledge/vitamins-minerals" },
-          { label: "Vitamin E và Chất chống Oxy hóa" },
+          { label: "Vitamin E và Chất chống oxy hóa" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Shield className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Vitamin E và Chất chống Oxy hóa</h1>
+          <h1 className="heading-1">Vitamin E và Chất chống oxy hóa</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Vitamin E là một vitamin tan trong chất béo, đóng vai trò quan trọng như chất chống oxy hóa, 
@@ -167,7 +167,7 @@ export default function VitaminEAntioxidantPage() {
             />
           </Card>
 
-          <ExampleBox variant="info" title="Vitamin E trong Món ăn Việt Nam">
+          <ExampleBox variant="info" title="Vitamin E trong món ăn Việt Nam">
             <p className="mb-2">
               <strong>Dầu đậu nành và dầu mè</strong> là nguồn vitamin E phổ biến trong nấu ăn Việt Nam. 
               Chúng thường được dùng để xào rau, nấu canh.
@@ -185,10 +185,10 @@ export default function VitaminEAntioxidantPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chất chống Oxy hóa là gì?</h2>
+        <h2 className="heading-2">Chất chống oxy hóa là gì?</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Vai trò của Chất chống Oxy hóa</h3>
+            <h3 className="heading-4 mb-3">Vai trò của Chất chống oxy hóa</h3>
             <p className="text-body-sm mb-3">
               <strong>Chất chống oxy hóa</strong> là các hợp chất bảo vệ tế bào khỏi tổn thương do "gốc tự do". 
               Gốc tự do được tạo ra khi cơ thể sử dụng oxy, tiếp xúc với khói thuốc, tia UV, hoặc stress.
@@ -240,7 +240,7 @@ export default function VitaminEAntioxidantPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Lợi ích Sức khỏe của Vitamin E</h2>
+        <h2 className="heading-2">Lợi ích sức khỏe của Vitamin E</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
             <h3 className="heading-4 mb-3">Sức khỏe Da</h3>
@@ -350,7 +350,7 @@ export default function VitaminEAntioxidantPage() {
             </p>
           </Card>
           <Card href="/knowledge/special-topics/antioxidants-foods">
-            <h3 className="heading-5 mb-2">Chất chống Oxy hóa trong Thực phẩm</h3>
+            <h3 className="heading-5 mb-2">Chất chống oxy hóa trong thực phẩm</h3>
             <p className="text-sm text-gray-600">
               Tổng quan về các chất chống oxy hóa
             </p>

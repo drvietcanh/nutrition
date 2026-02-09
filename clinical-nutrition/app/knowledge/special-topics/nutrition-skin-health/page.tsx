@@ -360,7 +360,7 @@ export default function NutritionSkinHealthPage() {
             </p>
           </Card>
           <Card href="/knowledge/vitamins-minerals/vitamin-e-antioxidant">
-            <h3 className="heading-5 mb-2">Vitamin E và Chất chống Oxy hóa</h3>
+            <h3 className="heading-5 mb-2">Vitamin E và Chất chống oxy hóa</h3>
             <p className="text-sm text-gray-600">
               Vitamin E bảo vệ da khỏi tổn thương
             </p>

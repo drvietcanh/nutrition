@@ -131,7 +131,7 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Nguyên tắc Dinh dưỡng Cơ bản
+            Nguyên tắc Dinh dưỡng cơ bản
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -143,7 +143,7 @@ export default function HeartFailureNutritionPage() {
             <p className="text-body mb-4">
               Muối làm cơ thể giữ nước, vì vậy hạn chế muối là nền tảng trong suy tim.
             </p>
-            <h4 className="heading-4 mb-3">Khuyến nghị chung theo mức độ suy tim</h4>
+            <h4 className="heading-4 mb-3">khuyến nghị chung theo mức độ suy tim</h4>
             {/* Sodium recommendations by NYHA Class table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
@@ -210,7 +210,7 @@ export default function HeartFailureNutritionPage() {
               <li>Khó thở nhiều hơn</li>
               <li>Dễ nhập viện</li>
             </ul>
-            <h4 className="heading-4 mb-3">Khuyến nghị chung</h4>
+            <h4 className="heading-4 mb-3">khuyến nghị chung</h4>
             {/* Fluid recommendations Table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
@@ -302,7 +302,7 @@ export default function HeartFailureNutritionPage() {
               Cần đủ đạm để giữ cơ
             </p>
             <p>
-              <strong>Khuyến nghị chung:</strong> 1,0–1,2 g/kg/ngày
+              <strong>khuyến nghị chung:</strong> 1,0–1,2 g/kg/ngày
             </p>
             <div className="bg-amber-50 rounded-lg p-3 border border-amber-200 mt-3">
               <p className="text-sm font-semibold text-amber-900 mb-2">📌 Lưu ý:</p>

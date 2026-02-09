@@ -126,7 +126,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Natri (Sodium)",
     definition: "Khoáng chất trong muối, cần thiết nhưng quá nhiều gây hại",
     simpleExplanation: "Natri là một khoáng chất trong muối ăn. cơ thể cần natri để hoạt động, nhưng quá nhiều natri có thể gây tăng huyết áp, suy tim, bệnh thận. Hầu hết natri đến từ thực phẩm chế biến sẵn.",
-    example: "1 thìa cà phê muối chứa khoảng 2,300mg natri. Khuyến nghị: &lt; 2,300mg/ngày cho người khỏe mạnh, &lt; 2,000mg/ngày cho người tăng huyết áp/suy tim.",
+    example: "1 thìa cà phê muối chứa khoảng 2,300mg natri. khuyến nghị: &lt; 2,300mg/ngày cho người khỏe mạnh, &lt; 2,000mg/ngày cho người tăng huyết áp/suy tim.",
     category: "basic",
   },
 ];

@@ -160,7 +160,7 @@ export default function ElderlyNutritionPage() {
             </p>
             <div className="bg-white rounded-lg p-3 border border-purple-200">
               <p className="text-sm text-gray-700">
-                <strong>Khuyến nghị:</strong> Uống ít nhất 1.5-2 lít nước/ngày, 
+                <strong>khuyến nghị:</strong> Uống ít nhất 1.5-2 lít nước/ngày, 
                 hoặc 6-8 ly nước. Có thể bao gồm nước, sữa, canh, trà (ít đường).
               </p>
             </div>

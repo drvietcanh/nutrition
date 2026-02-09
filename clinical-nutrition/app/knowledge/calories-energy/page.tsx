@@ -156,10 +156,10 @@ export default function CaloriesEnergyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Calo trong Thực phẩm: Ví dụ thực tế</h2>
+        <h2 className="heading-2">Calo trong thực phẩm: Ví dụ thực tế</h2>
         <div className="space-y-4">
           <ComparisonCard
-            title="So sánh Calo trong Thực phẩm"
+            title="So sánh Calo trong thực phẩm"
             items={[
               {
                 label: "Bữa sáng",
@@ -203,7 +203,7 @@ export default function CaloriesEnergyPage() {
         <h2 className="heading-2">Calo và Quản lý Cân nặng</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Nguyên tắc Cơ bản</h3>
+            <h3 className="heading-4 mb-3">Nguyên tắc cơ bản</h3>
             <div className="space-y-3 text-body-sm">
               <p>
                 <strong>Để duy trì cân nặng:</strong> Ăn số calo bằng TDEE của bạn

@@ -6,7 +6,7 @@ import { Sparkles, CheckCircle2, Apple, Leaf, Carrot } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Chất chống Oxy hóa trong Thực phẩm",
+  title: "Chất chống oxy hóa trong thực phẩm",
   description:
     "Hiểu về chất chống oxy hóa - hợp chất tự nhiên trong thực phẩm giúp bảo vệ tế bào khỏi tổn thương. Nguồn thực phẩm giàu chất chống oxy hóa.",
   keywords: [
@@ -24,14 +24,14 @@ export default function AntioxidantsFoodsPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Chất chống Oxy hóa trong Thực phẩm" },
+          { label: "Chất chống oxy hóa trong thực phẩm" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Sparkles className="w-8 h-8 text-purple-600" aria-hidden="true" />
-          <h1 className="heading-1">Chất chống Oxy hóa trong Thực phẩm</h1>
+          <h1 className="heading-1">Chất chống oxy hóa trong thực phẩm</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Chất chống oxy hóa là các hợp chất tự nhiên trong thực phẩm giúp bảo vệ tế bào khỏi tổn thương. 
@@ -61,7 +61,7 @@ export default function AntioxidantsFoodsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chất chống Oxy hóa là gì?</h2>
+        <h2 className="heading-2">Chất chống oxy hóa là gì?</h2>
         <div className="space-y-4">
           <p className="text-body">
             <strong>Chất chống oxy hóa</strong> là các hợp chất tự nhiên trong thực phẩm giúp bảo vệ tế bào 
@@ -78,7 +78,7 @@ export default function AntioxidantsFoodsPage() {
           </div>
 
           <Card>
-            <h3 className="heading-4 mb-3">Lợi ích của Chất chống Oxy hóa</h3>
+            <h3 className="heading-4 mb-3">Lợi ích của chất chống oxy hóa</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <Sparkles className="w-4 h-4 text-purple-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -102,7 +102,7 @@ export default function AntioxidantsFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn chất chống Oxy hóa</h2>
+        <h2 className="heading-2">Nguồn chất chống oxy hóa</h2>
         <Card>
           <h3 className="heading-4 mb-3">Quy tắc "Cầu vồng" - Ăn đa dạng Màu sắc</h3>
           <p className="text-body mb-4">

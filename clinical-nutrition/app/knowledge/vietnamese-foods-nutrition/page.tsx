@@ -96,7 +96,7 @@ export default function VietnameseFoodsNutritionPage() {
             Việt Nam có nhiều nguồn protein tốt, từ hải sản đến đậu phụ, từ thịt đến chả giò.
           </p>
           <NutrientTable
-            title="Giá trị Protein trong Thực phẩm Việt Nam (100g)"
+            title="Giá trị Protein trong thực phẩm Việt Nam (100g)"
             rows={[
               { nutrient: "Cá (cá basa, cá tra)", amount: "20-25", unit: "g protein", note: "Protein hoàn chỉnh, ít béo" },
               { nutrient: "Tôm", amount: "24", unit: "g protein", note: "Protein hoàn chỉnh, giàu selenium" },
@@ -105,7 +105,7 @@ export default function VietnameseFoodsNutritionPage() {
               { nutrient: "Chả, giò", amount: "15-20", unit: "g protein", note: "Chú ý natri và chất béo" },
             ]}
           />
-          <ExampleBox variant="info" title="Món ăn Việt Nam giàu Protein">
+          <ExampleBox variant="info" title="món ăn Việt Nam giàu Protein">
             <p className="mb-2 text-sm">
               <strong>Ví dụ món ăn:</strong>
             </p>
@@ -126,7 +126,7 @@ export default function VietnameseFoodsNutritionPage() {
             Carbohydrate là nguồn năng lượng chính trong bữa ăn Việt Nam, từ cơm đến bún, phở.
           </p>
           <NutrientTable
-            title="Giá trị Carbohydrate trong Món ăn Việt Nam (1 phần)"
+            title="Giá trị Carbohydrate trong món ăn Việt Nam (1 phần)"
             rows={[
               { nutrient: "Cơm trắng (1 bát)", amount: "45-50", unit: "g carb", note: "năng lượng chính" },
               { nutrient: "Bún (1 tô)", amount: "50-60", unit: "g carb", note: "Từ gạo" },
@@ -193,7 +193,7 @@ export default function VietnameseFoodsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Món ăn Việt Nam</h2>
+        <h2 className="heading-2">Ví dụ món ăn Việt Nam</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <ExampleBox variant="info" title="Phở gà">
             <p className="text-sm mb-2">

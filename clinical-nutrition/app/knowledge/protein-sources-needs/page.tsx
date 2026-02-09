@@ -181,7 +181,7 @@ export default function ProteinSourcesNeedsPage() {
 
       {/* Vietnamese food protein Table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng hàm lượng Đạm trong Thực phẩm Việt Nam</h2>
+        <h2 className="heading-2">Bảng hàm lượng Đạm trong thực phẩm Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Số liệu dưới đây mang tính ước tính giáo dục, có thể thay đổi tùy theo cách chế biến và từng loại thực phẩm. 
@@ -363,7 +363,7 @@ export default function ProteinSourcesNeedsPage() {
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• 2 quả trứng (12g) + 1 lát bánh mì nguyên cám + rau</li>
               <li>• Sữa chua (10g) + yến mạch + quả hạch (6g) + trái cây</li>
-              <li>• <strong>Đậu phụ xào (12g) + rau + cơm</strong> - Món ăn Việt Nam phổ biến</li>
+              <li>• <strong>Đậu phụ xào (12g) + rau + cơm</strong> - món ăn Việt Nam phổ biến</li>
               <li>• <strong>Cháo thịt gà (15g) + rau thơm</strong> - Bữa sáng Việt Nam</li>
             </ul>
           </Card>
@@ -372,7 +372,7 @@ export default function ProteinSourcesNeedsPage() {
             <h3 className="heading-4 mb-3">Bữa trưa (~25g protein)</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• Thịt gà nạc 100g (31g) + rau + cơm</li>
-              <li>• <strong>Cá kho tộ 100g (25g) + rau muống luộc + cơm</strong> - Món ăn Việt Nam</li>
+              <li>• <strong>Cá kho tộ 100g (25g) + rau muống luộc + cơm</strong> - món ăn Việt Nam</li>
               <li>• <strong>Canh chua cá (20g) + cơm + rau</strong> - Protein từ cá trong canh</li>
               <li>• Đậu đen 150g (10g) + gạo lứt + rau + quả hạch (7g)</li>
               <li>• <strong>Tôm rang me 100g (24g) + rau + cơm</strong> - Protein từ tôm</li>
@@ -386,7 +386,7 @@ export default function ProteinSourcesNeedsPage() {
             <h3 className="heading-4 mb-3">Bữa tối (~25g protein)</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• Thịt heo nạc 100g (26g) + rau luộc + cơm</li>
-              <li>• <strong>Thịt kho tiêu 100g (26g) + rau cải xào + cơm</strong> - Món ăn Việt Nam</li>
+              <li>• <strong>Thịt kho tiêu 100g (26g) + rau cải xào + cơm</strong> - món ăn Việt Nam</li>
               <li>• Cá thu 100g (25g) + rau xào + khoai tây</li>
               <li>• <strong>Cá hấp gừng 100g (25g) + rau luộc + cơm</strong> - Phương pháp hấp lành mạnh</li>
               <li>• Đậu phụ 200g (16g) + đậu đỏ (10g) + rau + cơm</li>

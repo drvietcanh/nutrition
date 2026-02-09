@@ -129,7 +129,7 @@ export default function HypertensionNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Nguyên tắc Dinh dưỡng Cơ bản
+            Nguyên tắc Dinh dưỡng cơ bản
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -239,7 +239,7 @@ export default function HypertensionNutritionPage() {
         {/* Sodium */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <h3 className="heading-3">🧂 Muối (Natri) – Yếu tố quan trọng nhất</h3>
-          <h4 className="heading-4 mb-3">Khuyến nghị chung</h4>
+          <h4 className="heading-4 mb-3">khuyến nghị chung</h4>
           
           {/* Sodium recommendations table */}
           <div className="overflow-x-auto my-4">
@@ -247,7 +247,7 @@ export default function HypertensionNutritionPage() {
               <thead className="bg-neutral-50">
                 <tr>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Nhóm</th>
-                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Khuyến nghị Natri</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">khuyến nghị Natri</th>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Tương đương Muối</th>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Ghi chú</th>
                 </tr>
@@ -257,7 +257,7 @@ export default function HypertensionNutritionPage() {
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Người lớn khỏe mạnh</strong></td>
                   <td className="px-4 py-3 text-sm text-neutral-700">&lt; 2.3g/ngày</td>
                   <td className="px-4 py-3 text-sm text-neutral-700">&lt; 6g/ngày</td>
-                  <td className="px-4 py-3 text-sm text-neutral-700">Khuyến nghị chung</td>
+                  <td className="px-4 py-3 text-sm text-neutral-700">khuyến nghị chung</td>
                 </tr>
                 <tr className="bg-neutral-50">
                   <td className="px-4 py-3 text-sm text-neutral-700"><strong>Tăng huyết áp</strong></td>
@@ -703,7 +703,7 @@ export default function HypertensionNutritionPage() {
               bệnh nhân mà không xem xét bệnh thận, suy tim, hoặc các bệnh lý khác cần điều chỉnh đặc biệt.
             </li>
             <li>
-              <strong>Không theo dõi đáp ứng:</strong> Khuyến nghị thay đổi chế độ ăn nhưng không theo dõi
+              <strong>Không theo dõi đáp ứng:</strong> khuyến nghị thay đổi chế độ ăn nhưng không theo dõi
               huyết áp, cân nặng, hoặc các chỉ số khác để đánh giá hiệu quả.
             </li>
             <li>
@@ -741,7 +741,7 @@ export default function HypertensionNutritionPage() {
               DASH diet và nghiên cứu DASH.
             </li>
             <li>
-              <strong>World health organization (WHO):</strong> Khuyến nghị về giảm natri trong chế độ ăn.
+              <strong>World health organization (WHO):</strong> khuyến nghị về giảm natri trong chế độ ăn.
             </li>
           </ul>
           <Callout variant="info" title="Khi nào Cần tham khảo Chuyên gia Dinh dưỡng">

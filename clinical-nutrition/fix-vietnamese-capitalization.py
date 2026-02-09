@@ -636,6 +636,103 @@ def fix_file(file_path):
             
             # Pattern: "Dịch" → "dịch" (khi không phải đầu câu và không phải tên riêng)
             (r'\bDịch\b', 'dịch'),
+            
+            # Pattern: "Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng" → "Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng"
+            (r'Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng', 'Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng'),
+            
+            # Pattern: "Bữa ăn Gia đình Việt Nam" → "Bữa ăn gia đình Việt Nam"
+            (r'Bữa ăn Gia đình Việt Nam', 'Bữa ăn gia đình Việt Nam'),
+            
+            # Pattern: "Cấu trúc Bữa ăn Gia đình Việt Nam" → "Cấu trúc bữa ăn gia đình Việt Nam"
+            (r'Cấu trúc Bữa ăn Gia đình Việt Nam', 'Cấu trúc bữa ăn gia đình Việt Nam'),
+            
+            # Pattern: "Ví dụ Bữa ăn Cụ thể" → "Ví dụ bữa ăn cụ thể"
+            (r'Ví dụ Bữa ăn Cụ thể', 'Ví dụ bữa ăn cụ thể'),
+            
+            # Pattern: "Bữa trưa Gia đình" → "Bữa trưa gia đình"
+            (r'Bữa trưa Gia đình', 'Bữa trưa gia đình'),
+            
+            # Pattern: "Cách cân bằng Dinh dưỡng trong Bữa ăn" → "Cách cân bằng dinh dưỡng trong bữa ăn"
+            (r'Cách cân bằng Dinh dưỡng trong Bữa ăn', 'Cách cân bằng dinh dưỡng trong bữa ăn'),
+            
+            # Pattern: "Tỷ lệ Khuyến nghị" → "Tỷ lệ khuyến nghị"
+            (r'Tỷ lệ Khuyến nghị', 'Tỷ lệ khuyến nghị'),
+            
+            # Pattern: "Bữa ăn cân bằng vs Không cân bằng" → "Bữa ăn cân bằng vs không cân bằng"
+            (r'Bữa ăn cân bằng vs Không cân bằng', 'Bữa ăn cân bằng vs không cân bằng'),
+            
+            # Pattern: "Điều chỉnh Theo nhu cầu" → "Điều chỉnh theo nhu cầu"
+            (r'Điều chỉnh Theo nhu cầu', 'Điều chỉnh theo nhu cầu'),
+            
+            # Pattern: "Gia vị và Thảo mộc Việt Nam" → "Gia vị và thảo mộc Việt Nam"
+            (r'Gia vị và Thảo mộc Việt Nam', 'Gia vị và thảo mộc Việt Nam'),
+            
+            # Pattern: "Gia vị Cơ bản Việt Nam" → "Gia vị cơ bản Việt Nam"
+            (r'Gia vị Cơ bản Việt Nam', 'Gia vị cơ bản Việt Nam'),
+            
+            # Pattern: "Lợi ích Sức khỏe của Gia vị và Thảo mộc" → "Lợi ích sức khỏe của gia vị và thảo mộc"
+            (r'Lợi ích Sức khỏe của Gia vị và Thảo mộc', 'Lợi ích sức khỏe của gia vị và thảo mộc'),
+            
+            # Pattern: "Lợi ích Sức khỏe" → "Lợi ích sức khỏe" (khi không phải đầu câu)
+            (r'Lợi ích Sức khỏe', 'Lợi ích sức khỏe'),
+            
+            # Pattern: "Cách sử dụng Gia vị và Thảo mộc" → "Cách sử dụng gia vị và thảo mộc"
+            (r'Cách sử dụng Gia vị và Thảo mộc', 'Cách sử dụng gia vị và thảo mộc'),
+            
+            # Pattern: "Ví dụ Sử dụng trong Món ăn" → "Ví dụ sử dụng trong món ăn"
+            (r'Ví dụ Sử dụng trong Món ăn', 'Ví dụ sử dụng trong món ăn'),
+            
+            # Pattern: "trong Thực phẩm" → "trong thực phẩm"
+            (r'trong Thực phẩm', 'trong thực phẩm'),
+            
+            # Pattern: "Lợi ích của Chất" → "Lợi ích của chất"
+            (r'Lợi ích của Chất', 'Lợi ích của chất'),
+            
+            # Pattern: "Gia đình" → "gia đình" (khi không phải đầu câu)
+            (r'Gia đình', 'gia đình'),
+            
+            # Pattern: "Cụ thể" → "cụ thể" (khi không phải đầu câu)
+            (r'Cụ thể', 'cụ thể'),
+            
+            # Pattern: "Khuyến nghị" → "khuyến nghị" (khi không phải đầu câu)
+            (r'Khuyến nghị', 'khuyến nghị'),
+            
+            # Pattern: "Theo nhu cầu" → "theo nhu cầu" (khi không phải đầu câu)
+            (r'Theo nhu cầu', 'theo nhu cầu'),
+            
+            # Pattern: "Thảo mộc" → "thảo mộc" (khi không phải đầu câu)
+            (r'Thảo mộc', 'thảo mộc'),
+            
+            # Pattern: "Cơ bản" → "cơ bản" (khi không phải đầu câu)
+            (r'Cơ bản', 'cơ bản'),
+            
+            # Pattern: "Món ăn" → "món ăn" (khi không phải đầu câu)
+            (r'Món ăn', 'món ăn'),
+            
+            # Pattern: "Chất chống Oxy hóa trong Thực phẩm" → "Chất chống oxy hóa trong thực phẩm"
+            (r'Chất chống Oxy hóa trong Thực phẩm', 'Chất chống oxy hóa trong thực phẩm'),
+            
+            # Pattern: "Oxy hóa" → "oxy hóa" (khi không phải đầu câu)
+            (r'Oxy hóa', 'oxy hóa'),
+            
+            
+            # Pattern: "Calo trong Thực phẩm" → "Calo trong thực phẩm"
+            (r'Calo trong Thực phẩm', 'Calo trong thực phẩm'),
+            
+            # Pattern: "Cholesterol trong Thực phẩm" → "Cholesterol trong thực phẩm"
+            (r'Cholesterol trong Thực phẩm', 'Cholesterol trong thực phẩm'),
+            
+            # Pattern: "Bảng chất xơ trong Thực phẩm" → "Bảng chất xơ trong thực phẩm"
+            (r'Bảng chất xơ trong Thực phẩm', 'Bảng chất xơ trong thực phẩm'),
+            
+            # Pattern: "Bảng hàm lượng Đạm trong Thực phẩm" → "Bảng hàm lượng đạm trong thực phẩm"
+            (r'Bảng hàm lượng Đạm trong Thực phẩm', 'Bảng hàm lượng đạm trong thực phẩm'),
+            
+            # Pattern: "Hàm lượng Vitamin.*trong Thực phẩm" → "Hàm lượng Vitamin...trong thực phẩm"
+            (r'Hàm lượng (Vitamin [^t]+) trong Thực phẩm', r'Hàm lượng \1 trong thực phẩm'),
+            
+            # Pattern: "Hàm lượng.*trong Thực phẩm Việt Nam" → "Hàm lượng...trong thực phẩm Việt Nam"
+            (r'Hàm lượng ([^t]+) trong Thực phẩm Việt Nam', r'Hàm lượng \1 trong thực phẩm Việt Nam'),
         ]
         
         # Tự động phát hiện các pattern mới và áp dụng trực tiếp
@@ -655,6 +752,10 @@ def fix_file(file_path):
             content = re.sub(pattern_regex, replace_auto_pattern, content)
         
         for pattern, replacement in replacements:
+            # Bỏ qua nếu replacement là None (pattern phức tạp sẽ xử lý riêng)
+            if replacement is None:
+                continue
+                
             # Không sửa nếu là từ đầu câu
             def replace_with_context(match):
                 start = match.start()
@@ -664,9 +765,39 @@ def fix_file(file_path):
                 prev_char = content[start - 1]
                 if prev_char in '.!?\n':
                     return match.group(0)  # Sau dấu câu - giữ nguyên
+                
+                # Nếu replacement có backreference (\1, \2), xử lý đặc biệt
+                if isinstance(replacement, str) and '\\' in replacement:
+                    return re.sub(pattern, replacement, match.group(0))
                 return replacement
             
             content = re.sub(pattern, replace_with_context, content)
+        
+        # Xử lý các pattern phức tạp với group
+        # Pattern: "Hàm lượng.*trong Thực phẩm" → "Hàm lượng...trong thực phẩm"
+        def fix_ham_luong(match):
+            start = match.start()
+            if start == 0:
+                return match.group(0)
+            prev_char = content[start - 1]
+            if prev_char in '.!?\n:':
+                return match.group(0)
+            # Giữ nguyên phần đầu, sửa "trong Thực phẩm" thành "trong thực phẩm"
+            return match.group(0).replace('trong Thực phẩm', 'trong thực phẩm')
+        
+        content = re.sub(r'Hàm lượng ([^t]+) trong Thực phẩm', fix_ham_luong, content)
+        
+        # Pattern: "Bảng.*trong Thực phẩm" → "Bảng...trong thực phẩm"
+        def fix_bang(match):
+            start = match.start()
+            if start == 0:
+                return match.group(0)
+            prev_char = content[start - 1]
+            if prev_char in '.!?\n:':
+                return match.group(0)
+            return match.group(0).replace('trong Thực phẩm', 'trong thực phẩm')
+        
+        content = re.sub(r'Bảng ([^t]+) trong Thực phẩm', fix_bang, content)
         
         # Chỉ ghi file nếu có thay đổi
         if content != original_content:

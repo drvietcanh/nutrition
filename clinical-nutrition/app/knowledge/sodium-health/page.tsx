@@ -58,7 +58,7 @@ export default function SodiumHealthPage() {
           <li>
             <strong>Quá nhiều natri</strong> có thể gây tăng huyết áp, suy tim, bệnh thận
           </li>
-          <li>Khuyến nghị: <strong>&lt; 2,300mg/ngày</strong> (khoảng 1 thìa cà phê muối)</li>
+          <li>khuyến nghị: <strong>&lt; 2,300mg/ngày</strong> (khoảng 1 thìa cà phê muối)</li>
           <li>Người tăng huyết áp/suy tim: <strong>&lt; 2,000mg/ngày</strong></li>
           <li>Hầu hết natri đến từ thực phẩm chế biến sẵn, không phải muối ăn</li>
         </ul>
@@ -469,7 +469,7 @@ export default function SodiumHealthPage() {
             </p>
           </Card>
 
-          <ExampleBox variant="tip" title="Cách giảm natri trong Món ăn Việt Nam">
+          <ExampleBox variant="tip" title="Cách giảm natri trong món ăn Việt Nam">
             <p className="text-sm mb-2">
               <strong>Canh:</strong>
             </p>
@@ -504,7 +504,7 @@ export default function SodiumHealthPage() {
               Giảm 1,000mg natri/ngày có thể giảm huyết áp tâm thu 2-8 mmHg.
             </p>
             <p className="text-sm text-gray-600">
-              <strong>Khuyến nghị:</strong> &lt; 2,000mg/ngày, thậm chí &lt; 1,500mg/ngày nếu có thể.
+              <strong>khuyến nghị:</strong> &lt; 2,000mg/ngày, thậm chí &lt; 1,500mg/ngày nếu có thể.
             </p>
           </Card>
 
@@ -514,7 +514,7 @@ export default function SodiumHealthPage() {
               Người suy tim thường cần hạn chế natri nghiêm ngặt để giảm phù và giảm gánh nặng cho tim.
             </p>
             <p className="text-sm text-gray-600">
-              <strong>Khuyến nghị:</strong> Thường &lt; 2,000mg/ngày, có thể cần &lt; 1,500mg/ngày 
+              <strong>khuyến nghị:</strong> Thường &lt; 2,000mg/ngày, có thể cần &lt; 1,500mg/ngày 
               tùy tình trạng.
             </p>
           </Card>
@@ -526,7 +526,7 @@ export default function SodiumHealthPage() {
               và giảm phù.
             </p>
             <p className="text-sm text-gray-600">
-              <strong>Khuyến nghị:</strong> Thường &lt; 2,000mg/ngày, có thể cần điều chỉnh 
+              <strong>khuyến nghị:</strong> Thường &lt; 2,000mg/ngày, có thể cần điều chỉnh 
               theo chức năng thận.
             </p>
           </Card>

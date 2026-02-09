@@ -166,7 +166,7 @@ export default function SeleniumImmunityPage() {
             />
           </Card>
 
-          <ExampleBox variant="info" title="Selenium trong Món ăn Việt Nam">
+          <ExampleBox variant="info" title="Selenium trong món ăn Việt Nam">
             <p className="mb-2">
               <strong>Cá, tôm, cua, ốc</strong> là nguồn selenium tuyệt vời và phổ biến ở Việt Nam. 
               Các món như cá kho, tôm rang, cua rang, ốc xào đều cung cấp selenium.
@@ -184,7 +184,7 @@ export default function SeleniumImmunityPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Lợi ích Sức khỏe của Selenium</h2>
+        <h2 className="heading-2">Lợi ích sức khỏe của Selenium</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
             <h3 className="heading-4 mb-3">Hệ miễn dịch</h3>
@@ -203,7 +203,7 @@ export default function SeleniumImmunityPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Chất chống Oxy hóa</h3>
+            <h3 className="heading-4 mb-3">Chất chống oxy hóa</h3>
             <p className="text-body-sm">
               Selenium hoạt động như chất chống oxy hóa, bảo vệ tế bào khỏi tổn thương do gốc tự do, 
               giúp làm chậm lão hóa.

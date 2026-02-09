@@ -699,7 +699,7 @@ export default function WhyIntakeFallsShortPage() {
             <ul className="list-disc space-y-1 pl-5 text-sm text-gray-700">
               <li>Mục tiêu dinh dưỡng không được truyền đạt rõ ràng cho tất cả thành viên nhóm</li>
               <li>Mối quan tâm lượng ăn không được truyền giữa các ca một cách hiệu quả</li>
-              <li>Khuyến nghị chuyên gia dinh dưỡng không được chia sẻ nhất quán với nhân viên điều dưỡng</li>
+              <li>khuyến nghị chuyên gia dinh dưỡng không được chia sẻ nhất quán với nhân viên điều dưỡng</li>
               <li>Thay đổi tình trạng bệnh nhân ảnh hưởng đến lượng ăn không được truyền đạt kịp thời</li>
               <li>Thực phẩm hoặc bổ sung do gia đình cung cấp không được truyền đạt cho nhóm</li>
               <li>Nhiều kênh giao tiếp (biểu đồ, lời nói, điện tử) dẫn đến thông tin bị bỏ lỡ</li>

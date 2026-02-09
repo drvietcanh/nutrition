@@ -511,7 +511,7 @@ export default function DietaryFatsPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Ví dụ Cách chọn chất béo trong Món ăn Việt Nam</h3>
+          <h3 className="heading-4 mb-3">Ví dụ Cách chọn chất béo trong món ăn Việt Nam</h3>
           <div className="space-y-3">
             <div className="border-l-4 border-green-500 pl-4">
               <p className="font-medium text-gray-900 mb-1">✅ Cách tốt:</p>

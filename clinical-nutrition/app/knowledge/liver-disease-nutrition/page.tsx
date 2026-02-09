@@ -119,7 +119,7 @@ export default function LiverDiseaseNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Nguyên tắc Dinh dưỡng Cơ bản
+            Nguyên tắc Dinh dưỡng cơ bản
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -223,7 +223,7 @@ export default function LiverDiseaseNutritionPage() {
             <p className="text-sm text-gray-700 mb-2">
               Người bệnh gan mạn cần đủ năng lượng để tránh sụt cân
             </p>
-            <p className="text-sm font-semibold text-gray-900 mb-2">Khuyến nghị chung: 30–35 kcal/kg/ngày</p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">khuyến nghị chung: 30–35 kcal/kg/ngày</p>
             <div className="rounded-lg border border-blue-200 bg-blue-50 p-3 mb-3">
               <p className="text-sm text-blue-900 mb-2">
                 <strong>👉 Nếu ăn kém:</strong>

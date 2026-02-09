@@ -126,7 +126,7 @@ export default function Omega3HeartHealthPage() {
                 </li>
               </ul>
               <p className="text-xs text-blue-900 mt-2">
-                <strong>Khuyến nghị:</strong> Ăn cá béo 2-3 lần/tuần (mỗi lần ~100-150g)
+                <strong>khuyến nghị:</strong> Ăn cá béo 2-3 lần/tuần (mỗi lần ~100-150g)
               </p>
             </div>
           </Card>
@@ -164,7 +164,7 @@ export default function Omega3HeartHealthPage() {
             </p>
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
               <p className="text-sm text-blue-900">
-                <strong>Khuyến nghị chung:</strong> Ăn cá béo 2-3 lần/tuần (mỗi lần ~100-150g) 
+                <strong>khuyến nghị chung:</strong> Ăn cá béo 2-3 lần/tuần (mỗi lần ~100-150g) 
                 hoặc ~250-500mg omega-3/ngày từ thực phẩm.
               </p>
             </div>

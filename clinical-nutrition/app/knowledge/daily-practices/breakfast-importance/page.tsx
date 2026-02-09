@@ -222,7 +222,7 @@ export default function BreakfastImportancePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Lợi ích Cụ thể của Bữa sáng</h2>
+        <h2 className="heading-2">Lợi ích cụ thể của Bữa sáng</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
             <h3 className="heading-4 mb-3">Cải thiện Tập trung</h3>

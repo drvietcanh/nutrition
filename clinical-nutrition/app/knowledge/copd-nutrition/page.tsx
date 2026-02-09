@@ -118,7 +118,7 @@ export default function COPDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Nguyên tắc Dinh dưỡng Cơ bản
+            Nguyên tắc Dinh dưỡng cơ bản
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -132,7 +132,7 @@ export default function COPDNutritionPage() {
                 <p className="text-sm text-gray-700 mb-2">
                   Người COPD thường tiêu hao năng lượng nhiều hơn
                 </p>
-                <p className="text-sm font-semibold text-gray-900 mb-1">Khuyến nghị chung:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">khuyến nghị chung:</p>
                 <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-2">
                   <li>30–35 kcal/kg/ngày</li>
                   <li>Có thể cao hơn nếu:
@@ -168,7 +168,7 @@ export default function COPDNutritionPage() {
                 <li>Duy trì cơ hô hấp (cơ hoành, cơ liên sườn)</li>
               </ul>
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-1">Khuyến nghị</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">khuyến nghị</p>
                 <p className="text-sm text-gray-700 mb-3">1,2 – 1,5 g/kg/ngày</p>
               </div>
               <div className="bg-red-50 rounded-lg p-3 border border-red-200">
@@ -213,7 +213,7 @@ export default function COPDNutritionPage() {
                     <thead className="bg-green-100">
                       <tr>
                         <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Nhóm chất</th>
-                        <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">Khuyến nghị</th>
+                        <th className="px-4 py-3 text-center text-sm font-semibold text-neutral-900">khuyến nghị</th>
                         <th className="px-4 py-3 text-left text-sm font-semibold text-neutral-900">Lý do</th>
                       </tr>
                     </thead>

@@ -135,7 +135,7 @@ export default function VitaminAEyeHealthPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Nguồn vitamin A Tốt</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Hàm lượng Vitamin A trong Thực phẩm</h3>
+          <h3 className="heading-4 mb-3">Hàm lượng Vitamin A trong thực phẩm</h3>
           <NutrientTable
             rows={[
               { nutrient: "Gan bò (100g)", amount: "6,500", unit: "mcg", highlight: "low", note: "Rất giàu! Chỉ ăn 1-2 lần/tuần" },
@@ -211,7 +211,7 @@ export default function VitaminAEyeHealthPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/special-topics/antioxidants-foods">
-            <h3 className="heading-5 mb-2">Chất chống Oxy hóa trong Thực phẩm</h3>
+            <h3 className="heading-5 mb-2">Chất chống oxy hóa trong thực phẩm</h3>
             <p className="text-sm text-gray-600">
               Beta-carotene là một chất chống oxy hóa
             </p>

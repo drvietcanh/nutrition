@@ -259,6 +259,58 @@ Tài liệu này liệt kê tất cả các pattern viết hoa tiếng Việt đ
 | `Sử dụng` | `sử dụng` |
 | `Dịch` | `dịch` |
 
+## Pattern Bữa Ăn Gia Đình
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Bữa ăn Gia đình Việt Nam: Cân bằng Dinh dưỡng` | `Bữa ăn gia đình Việt Nam: Cân bằng dinh dưỡng` |
+| `Bữa ăn Gia đình Việt Nam` | `Bữa ăn gia đình Việt Nam` |
+| `Cấu trúc Bữa ăn Gia đình Việt Nam` | `Cấu trúc bữa ăn gia đình Việt Nam` |
+| `Ví dụ Bữa ăn Cụ thể` | `Ví dụ bữa ăn cụ thể` |
+| `Bữa trưa Gia đình` | `Bữa trưa gia đình` |
+| `Cách cân bằng Dinh dưỡng trong Bữa ăn` | `Cách cân bằng dinh dưỡng trong bữa ăn` |
+| `Tỷ lệ Khuyến nghị` | `Tỷ lệ khuyến nghị` |
+| `Bữa ăn cân bằng vs Không cân bằng` | `Bữa ăn cân bằng vs không cân bằng` |
+| `Điều chỉnh Theo nhu cầu` | `Điều chỉnh theo nhu cầu` |
+
+## Pattern Gia Vị và Thảo Mộc
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Gia vị và Thảo mộc Việt Nam` | `Gia vị và thảo mộc Việt Nam` |
+| `Gia vị Cơ bản Việt Nam` | `Gia vị cơ bản Việt Nam` |
+| `Lợi ích Sức khỏe của Gia vị và Thảo mộc` | `Lợi ích sức khỏe của gia vị và thảo mộc` |
+| `Lợi ích Sức khỏe` | `Lợi ích sức khỏe` |
+| `Cách sử dụng Gia vị và Thảo mộc` | `Cách sử dụng gia vị và thảo mộc` |
+| `Ví dụ Sử dụng trong Món ăn` | `Ví dụ sử dụng trong món ăn` |
+
+## Pattern Thực Phẩm
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `trong Thực phẩm` | `trong thực phẩm` |
+| `Lợi ích của Chất` | `Lợi ích của chất` |
+| `Chất chống Oxy hóa trong Thực phẩm` | `Chất chống oxy hóa trong thực phẩm` |
+| `Oxy hóa` | `oxy hóa` |
+| `Hàm lượng.*trong Thực phẩm` | `Hàm lượng...trong thực phẩm` |
+| `Bảng.*trong Thực phẩm` | `Bảng...trong thực phẩm` |
+| `Calo trong Thực phẩm` | `Calo trong thực phẩm` |
+| `Cholesterol trong Thực phẩm` | `Cholesterol trong thực phẩm` |
+| `Bảng chất xơ trong Thực phẩm` | `Bảng chất xơ trong thực phẩm` |
+| `Bảng hàm lượng Đạm trong Thực phẩm` | `Bảng hàm lượng đạm trong thực phẩm` |
+
+## Pattern Từ Đơn Lẻ Bổ Sung
+
+| Pattern Sai | Pattern Đúng |
+|------------|--------------|
+| `Gia đình` | `gia đình` |
+| `Cụ thể` | `cụ thể` |
+| `Khuyến nghị` | `khuyến nghị` |
+| `Theo nhu cầu` | `theo nhu cầu` |
+| `Thảo mộc` | `thảo mộc` |
+| `Cơ bản` | `cơ bản` |
+| `Món ăn` | `món ăn` |
+
 ## Danh Từ Riêng (Giữ Nguyên)
 
 Các từ sau được giữ nguyên viết hoa (trong whitelist):

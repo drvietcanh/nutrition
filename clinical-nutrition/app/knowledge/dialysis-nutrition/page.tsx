@@ -110,7 +110,7 @@ export default function DialysisNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Nguyên tắc Dinh dưỡng Cơ bản
+            Nguyên tắc Dinh dưỡng cơ bản
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -177,7 +177,7 @@ export default function DialysisNutritionPage() {
               <li>Đau xương</li>
               <li>Vôi hóa mạch máu</li>
             </ul>
-            <p className="text-sm font-semibold text-gray-900 mb-2">Khuyến nghị</p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">khuyến nghị</p>
             <p className="text-sm text-gray-700 mb-3">
               &lt; 800–1000 mg/ngày
             </p>
@@ -279,7 +279,7 @@ export default function DialysisNutritionPage() {
             <p className="text-sm text-gray-700 mb-2">
               Cần đủ năng lượng để không sụt cân
             </p>
-            <p className="text-sm font-semibold text-gray-900 mb-2">Khuyến nghị: 30–35 kcal/kg/ngày</p>
+            <p className="text-sm font-semibold text-gray-900 mb-2">khuyến nghị: 30–35 kcal/kg/ngày</p>
             <p className="text-sm text-gray-700 mb-2">Điều chỉnh theo:</p>
             <ul className="list-disc space-y-1 pl-6 text-sm text-gray-700 mb-3">
               <li>Tuổi</li>

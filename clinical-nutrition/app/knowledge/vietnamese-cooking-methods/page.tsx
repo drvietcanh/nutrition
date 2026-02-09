@@ -148,7 +148,7 @@ export default function VietnameseCookingMethodsPage() {
           <ExampleBox variant="tip" title="Ví dụ Món hấp">
             <p className="mb-2">
               <strong>Cá hấp:</strong> Cá hấp với gừng, hành giữ được protein và omega-3, không mất dinh dưỡng. 
-              Món ăn lành mạnh, dễ tiêu.
+              món ăn lành mạnh, dễ tiêu.
             </p>
             <p className="mb-2">
               <strong>Rau hấp:</strong> Bông cải xanh, cà rốt hấp giữ được nhiều vitamin hơn luộc. 
@@ -196,7 +196,7 @@ export default function VietnameseCookingMethodsPage() {
             </p>
             <p>
               <strong>Thịt kho tiêu:</strong> Thịt kho với ít nước mắm, nhiều tiêu, tỏi. 
-              Thêm trứng luộc, khoai tây vào kho cùng. Món ăn cân bằng dinh dưỡng.
+              Thêm trứng luộc, khoai tây vào kho cùng. món ăn cân bằng dinh dưỡng.
             </p>
           </ExampleBox>
         </div>

@@ -61,7 +61,7 @@ export default function HealthyWeightManagementPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguyên tắc Cơ bản</h2>
+        <h2 className="heading-2">Nguyên tắc cơ bản</h2>
         <Card>
           <div className="space-y-4">
             <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
