@@ -298,7 +298,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
       </section>
 
       {/* Related content */}
-      {article && <RelatedContent currentSlug={article.slug} />}
+      {article && <RelatedContent currentArticle={article} />}
     </main>
   );
 }

@@ -293,7 +293,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
       </section>
 
       {/* Related content */}
-      {article && <RelatedContent currentSlug={article.slug} />}
+      {article && <RelatedContent currentArticle={article} />}
     </main>
   );
 }

@@ -248,7 +248,7 @@ export default function DinhDuongTrongGanNhiemMoPage() {
         </Card>
       </section>
 
-      {article && <RelatedContent currentSlug={article.slug} />}
+      {article && <RelatedContent currentArticle={article} />}
     </main>
   );
 }

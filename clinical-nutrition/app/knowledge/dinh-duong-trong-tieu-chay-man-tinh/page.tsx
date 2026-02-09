@@ -96,7 +96,7 @@ export default function DinhDuongTrongTieuChayManTinhPage() {
         </Card>
       </section>
 
-      {article && <RelatedContent currentSlug={article.slug} />}
+      {article && <RelatedContent currentArticle={article} />}
     </main>
   );
 }

@@ -85,7 +85,7 @@ export default function DinhDuongTrongViemLoetDaDayTaTrangPage() {
         </Card>
       </section>
 
-      {article && <RelatedContent currentSlug={article.slug} />}
+      {article && <RelatedContent currentArticle={article} />}
     </main>
   );
 }

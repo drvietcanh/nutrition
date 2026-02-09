@@ -110,7 +110,7 @@ export default function DinhDuongTrongThieuMauPage() {
         </Card>
       </section>
 
-      {article && <RelatedContent currentSlug={article.slug} />}
+      {article && <RelatedContent currentArticle={article} />}
     </main>
   );
 }

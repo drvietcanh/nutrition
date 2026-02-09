@@ -111,7 +111,7 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
         </Card>
       </section>
 
-      {article && <RelatedContent currentSlug={article.slug} />}
+      {article && <RelatedContent currentArticle={article} />}
     </main>
   );
 }
