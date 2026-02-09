@@ -336,8 +336,8 @@ export function InteractiveSection() {
                       )}
                       {selectedDisease === 'hypertension' && (
                         <div className="text-sm">
-                          <span className="font-medium">Natri:</span> {food.sodium}mg/100g
-                          {selectedFood && (
+                          <span className="font-medium">Natri:</span> {food.sodium || 0}mg/100g
+                          {selectedFood && food.sodium !== undefined && selectedFood.sodium !== undefined && (
                             <span className="text-gray-600 ml-2">
                               ({food.sodium < selectedFood.sodium ? '↓' : '↑'} 
                               {selectedFood.sodium}mg)
