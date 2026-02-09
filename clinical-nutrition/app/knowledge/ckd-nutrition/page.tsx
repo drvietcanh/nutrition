@@ -655,6 +655,7 @@ export default function CKDNutritionPage() {
         </div>
       </section>
 
+      <section className="space-y-5">
         <Card>
           <CardHeader icon={AlertTriangle} title="🧂 Muối & 💧 Nước" />
           <CardContent>
