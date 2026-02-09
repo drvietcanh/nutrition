@@ -43,23 +43,23 @@ export interface VietnameseDish {
   diseaseAssessment: {
     diabetes?: {
       glycemicLoad?: number;
-      assessment: 'good' | 'moderate' | 'poor';
+      assessment: 'excellent' | 'good' | 'moderate' | 'poor';
       notes: string;
     };
     gout?: {
-      assessment: 'good' | 'moderate' | 'poor';
+      assessment: 'excellent' | 'good' | 'moderate' | 'poor';
       notes: string;
     };
     kidney?: {
-      assessment: 'good' | 'moderate' | 'poor';
+      assessment: 'excellent' | 'good' | 'moderate' | 'poor';
       notes: string;
     };
     hypertension?: {
-      assessment: 'good' | 'moderate' | 'poor';
+      assessment: 'excellent' | 'good' | 'moderate' | 'poor';
       notes: string;
     };
     cardiovascular?: {
-      assessment: 'good' | 'moderate' | 'poor';
+      assessment: 'excellent' | 'good' | 'moderate' | 'poor';
       notes: string;
     };
   };
@@ -736,7 +736,7 @@ export function getDishById(id: string): VietnameseDish | undefined {
  */
 export function getDishesByDisease(
   disease: 'diabetes' | 'gout' | 'kidney' | 'hypertension' | 'cardiovascular',
-  level: 'good' | 'moderate' | 'poor' = 'good'
+  level: 'excellent' | 'good' | 'moderate' | 'poor' = 'good'
 ): VietnameseDish[] {
   return vietnameseDishes.filter((dish) => {
     const assessment = dish.diseaseAssessment[disease];
