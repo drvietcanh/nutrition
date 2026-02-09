@@ -132,28 +132,46 @@ export function createMealPlan(
       fat: (f.food.fat * f.servings) / (f.food.servingSize / 100),
     }));
 
+  const breakfastNutrition = calculateMealNutrition({ foods: breakfastFoods } as Meal);
   const breakfast: Meal = {
     foods: breakfastFoods,
-    ...calculateMealNutrition({ foods: breakfastFoods } as Meal),
+    totalCalories: breakfastNutrition.calories,
+    totalProtein: breakfastNutrition.protein,
+    totalCarbs: breakfastNutrition.carbs,
+    totalFat: breakfastNutrition.fat,
   };
 
+  const lunchNutrition = calculateMealNutrition({ foods: lunchFoods } as Meal);
   const lunch: Meal = {
     foods: lunchFoods,
-    ...calculateMealNutrition({ foods: lunchFoods } as Meal),
+    totalCalories: lunchNutrition.calories,
+    totalProtein: lunchNutrition.protein,
+    totalCarbs: lunchNutrition.carbs,
+    totalFat: lunchNutrition.fat,
   };
 
+  const dinnerNutrition = calculateMealNutrition({ foods: dinnerFoods } as Meal);
   const dinner: Meal = {
     foods: dinnerFoods,
-    ...calculateMealNutrition({ foods: dinnerFoods } as Meal),
+    totalCalories: dinnerNutrition.calories,
+    totalProtein: dinnerNutrition.protein,
+    totalCarbs: dinnerNutrition.carbs,
+    totalFat: dinnerNutrition.fat,
   };
 
   const snacks: Meal[] = snackFoods.length > 0
-    ? [
-        {
-          foods: snackFoods,
-          ...calculateMealNutrition({ foods: snackFoods } as Meal),
-        },
-      ]
+    ? (() => {
+        const snackNutrition = calculateMealNutrition({ foods: snackFoods } as Meal);
+        return [
+          {
+            foods: snackFoods,
+            totalCalories: snackNutrition.calories,
+            totalProtein: snackNutrition.protein,
+            totalCarbs: snackNutrition.carbs,
+            totalFat: snackNutrition.fat,
+          },
+        ];
+      })()
     : [];
 
   const plan: MealPlan = {
