@@ -473,7 +473,7 @@ export default function CKDNutritionPage() {
               </p>
 
               {/* Very High Phosphorus */}
-              <h4 className="heading-5 mb-2 mt-4">🔴 Rất Cao (>300mg/100g) - Hạn chế Nghiêm ngặt</h4>
+              <h4 className="heading-5 mb-2 mt-4">🔴 Rất Cao (&gt;300mg/100g) - Hạn chế Nghiêm ngặt</h4>
               <div className="overflow-x-auto my-3">
                 <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
                   <thead className="bg-red-100">
@@ -540,7 +540,7 @@ export default function CKDNutritionPage() {
               </div>
 
               {/* Low Phosphorus */}
-              <h4 className="heading-5 mb-2 mt-4">🟢 Thấp (<100mg/100g) - Ăn Tự do</h4>
+              <h4 className="heading-5 mb-2 mt-4">🟢 Thấp (&lt;100mg/100g) - Ăn Tự do</h4>
               <div className="overflow-x-auto my-3">
                 <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
                   <thead className="bg-green-100">
@@ -563,12 +563,12 @@ export default function CKDNutritionPage() {
                     </tr>
                     <tr>
                       <td className="px-4 py-2 text-xs text-neutral-700"><strong>Hầu hết rau củ quả</strong></td>
-                      <td className="px-4 py-2 text-xs text-neutral-700 text-center"><100</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">&lt;100</td>
                       <td className="px-4 py-2 text-xs text-neutral-700">Rau muống, rau cải, cà chua...</td>
                     </tr>
                     <tr className="bg-neutral-50">
                       <td className="px-4 py-2 text-xs text-neutral-700"><strong>Trái cây</strong></td>
-                      <td className="px-4 py-2 text-xs text-neutral-700 text-center"><50</td>
+                      <td className="px-4 py-2 text-xs text-neutral-700 text-center">&lt;50</td>
                       <td className="px-4 py-2 text-xs text-neutral-700">Chuối, cam, táo...</td>
                     </tr>
                   </tbody>

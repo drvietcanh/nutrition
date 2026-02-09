@@ -254,7 +254,7 @@ export default function CardiovascularDiseaseNutritionPage() {
             </p>
 
             {/* Very High Saturated Fat */}
-            <h5 className="text-sm font-semibold text-gray-900 mb-2">🔴 Rất Cao (>10g/100g) - Tránh Hoàn Toàn</h5>
+            <h5 className="text-sm font-semibold text-gray-900 mb-2">🔴 Rất Cao (&gt;10g/100g) - Tránh Hoàn Toàn</h5>
             <div className="overflow-x-auto my-3">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
                 <thead className="bg-red-100">
@@ -326,7 +326,7 @@ export default function CardiovascularDiseaseNutritionPage() {
             </div>
 
             {/* Low Saturated Fat */}
-            <h5 className="text-sm font-semibold text-gray-900 mb-2 mt-4">🟢 Thấp (<5g/100g) - Ăn Tự do</h5>
+            <h5 className="text-sm font-semibold text-gray-900 mb-2 mt-4">🟢 Thấp (&lt;5g/100g) - Ăn Tự do</h5>
             <div className="overflow-x-auto my-3">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200 bg-white">
                 <thead className="bg-green-100">

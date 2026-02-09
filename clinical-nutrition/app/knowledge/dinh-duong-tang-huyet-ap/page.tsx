@@ -209,7 +209,7 @@ export default function DinhDuongTangHuyetApPage() {
 
           {/* Very High Sodium */}
           <Card className="border-red-200 bg-red-50/30">
-            <CardHeader icon={AlertCircle} title="🔴 Rất Cao (>1000mg/100g) - Tránh Hoàn Toàn" />
+            <CardHeader icon={AlertCircle} title="🔴 Rất Cao (&gt;1000mg/100g) - Tránh Hoàn Toàn" />
             <CardContent>
               <p className="text-body-sm mb-3">
                 Những thực phẩm này có rất nhiều natri, nên tránh hoàn toàn:
@@ -353,7 +353,7 @@ export default function DinhDuongTangHuyetApPage() {
 
           {/* Low Sodium */}
           <Card className="border-green-200 bg-green-50/30">
-            <CardHeader icon={CheckCircle} title="🟢 Thấp (<100mg/100g) - Ăn Tự do" />
+            <CardHeader icon={CheckCircle} title="🟢 Thấp (&lt;100mg/100g) - Ăn Tự do" />
             <CardContent>
               <p className="text-body-sm mb-3">
                 Những thực phẩm này có ít natri, có thể ăn tự do:
@@ -385,7 +385,7 @@ export default function DinhDuongTangHuyetApPage() {
                     </tr>
                     <tr className="bg-neutral-50">
                       <td className="px-4 py-3 text-sm text-neutral-700"><strong>Ngũ cốc chưa chế biến</strong></td>
-                      <td className="px-4 py-3 text-sm text-neutral-700 text-center"><10</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt;10</td>
                       <td className="px-4 py-3 text-sm text-neutral-700">Yến mạch, lúa mì nguyên hạt</td>
                     </tr>
                   </tbody>

@@ -129,7 +129,7 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
 
           {/* Very High Purine Table */}
           <Card className="border-red-200 bg-red-50/30">
-            <CardHeader icon={AlertCircle} title="🔴 Rất Cao (>200mg/100g) - Nên Tránh Hoàn Toàn" />
+            <CardHeader icon={AlertCircle} title="🔴 Rất Cao (&gt;200mg/100g) - Nên Tránh Hoàn Toàn" />
             <CardContent>
               <p className="text-body-sm mb-3">
                 Những thực phẩm này có rất nhiều purin, nên tránh hoàn toàn, đặc biệt trong cơn gút cấp:
@@ -288,7 +288,7 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
 
           {/* Low Purine Table */}
           <Card className="border-green-200 bg-green-50/30">
-            <CardHeader icon={CheckCircle} title="🟢 Thấp (<50mg/100g) - Ăn Tự do" />
+            <CardHeader icon={CheckCircle} title="🟢 Thấp (&lt;50mg/100g) - Ăn Tự do" />
             <CardContent>
               <p className="text-body-sm mb-3">
                 Những thực phẩm này có ít purin, có thể ăn tự do:
@@ -320,12 +320,12 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
                     </tr>
                     <tr className="bg-neutral-50">
                       <td className="px-4 py-3 text-sm text-neutral-700"><strong>Gạo, bánh mì</strong></td>
-                      <td className="px-4 py-3 text-sm text-neutral-700 text-center"><50</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt;50</td>
                       <td className="px-4 py-3 text-sm text-neutral-700">Tinh bột</td>
                     </tr>
                     <tr>
                       <td className="px-4 py-3 text-sm text-neutral-700"><strong>Trái cây</strong></td>
-                      <td className="px-4 py-3 text-sm text-neutral-700 text-center"><50</td>
+                      <td className="px-4 py-3 text-sm text-neutral-700 text-center">&lt;50</td>
                       <td className="px-4 py-3 text-sm text-neutral-700">Chuối, cam, táo, ổi...</td>
                     </tr>
                   </tbody>
