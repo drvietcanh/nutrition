@@ -91,7 +91,7 @@ export default function VietnameseSnacksHealthyPage() {
                 </ul>
               </div>
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Snack Nên hạn chế:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Snack nên hạn chế:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li className="flex items-start gap-2">
                     <AlertCircle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -218,7 +218,7 @@ export default function VietnameseSnacksHealthyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Snack Nên hạn chế</h2>
+        <h2 className="heading-2">Snack nên hạn chế</h2>
         <ComparisonCard
           title="So sánh: Snack lành mạnh vs Nên hạn chế"
           items={[
@@ -254,7 +254,7 @@ export default function VietnameseSnacksHealthyPage() {
         <h2 className="heading-2">Ví dụ Snack lành mạnh trong Ngày</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-5 mb-2">Snack Sáng (Giữa bữa sáng và trưa)</h3>
+            <h3 className="heading-5 mb-2">Snack sáng (Giữa bữa sáng và trưa)</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>• 1 quả ổi + 1 cốc nước</p>
               <p>• 1 quả chuối + 1 cốc trà ấm</p>
@@ -263,7 +263,7 @@ export default function VietnameseSnacksHealthyPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Snack Chiều (Giữa bữa trưa và tối)</h3>
+            <h3 className="heading-5 mb-2">Snack chiều (Giữa bữa trưa và tối)</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>• 30g đậu phộng rang không muối + 1 quả cam</p>
               <p>• 1 hộp sữa chua + trái cây</p>
@@ -272,7 +272,7 @@ export default function VietnameseSnacksHealthyPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Snack Tối (Nếu cần)</h3>
+            <h3 className="heading-5 mb-2">Snack tối (Nếu cần)</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>• 1 quả thanh long</p>
               <p>• Dưa chuột + cà rốt cắt sẵn</p>
@@ -281,7 +281,7 @@ export default function VietnameseSnacksHealthyPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Snack Khi Bận rộn (Mang theo)</h3>
+            <h3 className="heading-5 mb-2">Snack khi bận rộn (Mang theo)</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>• Trái cây (ổi, chuối) - dễ mang</p>
               <p>• 30g đậu phộng rang - tiện lợi</p>
@@ -333,13 +333,13 @@ export default function VietnameseSnacksHealthyPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/smart-snacking">
-            <h3 className="heading-5 mb-2">Snacking Thông minh</h3>
+            <h3 className="heading-5 mb-2">Snacking thông minh</h3>
             <p className="text-sm text-gray-600">
               Cách snack lành mạnh và thông minh
             </p>
           </Card>
           <Card href="/knowledge/portion-sizes">
-            <h3 className="heading-5 mb-2">Hiểu về Portion Sizes</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Portion sizes</h3>
             <p className="text-sm text-gray-600">
               Kiểm soát khẩu phần snack
             </p>
@@ -351,7 +351,7 @@ export default function VietnameseSnacksHealthyPage() {
             </p>
           </Card>
           <Card href="/knowledge/nutrition-busy-lifestyle">
-            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người Bận rộn</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người bận rộn</h3>
             <p className="text-sm text-gray-600">
               Snack lành mạnh khi bận rộn
             </p>

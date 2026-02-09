@@ -24,7 +24,7 @@ export default function ToolsIndexPage() {
         <Card href="/tools/malnutrition-screening">
           <CardHeader
             icon={Activity}
-            title="Nguy cơ Suy Dinh dưỡng – Công cụ Giảng dạy"
+            title="Nguy cơ Suy dinh dưỡng – Công cụ Giảng dạy"
           />
           <CardContent>
             <p className="text-body">
@@ -68,7 +68,7 @@ export default function ToolsIndexPage() {
         <Card href="/tools/intake-vs-needs">
           <CardHeader
             icon={UtensilsCrossed}
-            title="Lượng Ăn vs Nhu Cầu – Công cụ So sánh"
+            title="Lượng ăn vs Nhu cầu – Công cụ So sánh"
           />
           <CardContent>
             <p className="text-body">

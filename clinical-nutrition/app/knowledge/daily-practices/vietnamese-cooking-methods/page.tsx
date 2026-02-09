@@ -8,7 +8,7 @@ import { UtensilsCrossed, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cách Nấu Ăn lành mạnh Kiểu Việt Nam",
+  title: "Cách nấu ăn lành mạnh Kiểu Việt Nam",
   description:
     "Hướng dẫn các phương pháp nấu ăn truyền thống Việt Nam lành mạnh - luộc, hấp, kho, nướng, xào. Cách giữ dinh dưỡng và giảm dầu mỡ, muối.",
   keywords: [
@@ -30,14 +30,14 @@ export default function VietnameseCookingMethodsPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Thực hành Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Cách Nấu Ăn lành mạnh Kiểu Việt Nam" },
+          { label: "Cách nấu ăn lành mạnh Kiểu Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <UtensilsCrossed className="w-8 h-8 text-orange-600" aria-hidden="true" />
-          <h1 className="heading-1">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h1>
+          <h1 className="heading-1">Cách nấu ăn lành mạnh Kiểu Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Phương pháp nấu ăn truyền thống Việt Nam có nhiều cách lành mạnh, giúp giữ dinh dưỡng và tạo hương vị đậm đà. 
@@ -66,7 +66,7 @@ export default function VietnameseCookingMethodsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Phương pháp Nấu Ăn lành mạnh</h2>
+        <h2 className="heading-2">Phương pháp Nấu ăn lành mạnh</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 mb-3 text-green-900">1. Luộc</h3>
@@ -178,7 +178,7 @@ export default function VietnameseCookingMethodsPage() {
       <section className="space-y-4">
         <h2 className="heading-2">So sánh Phương pháp tốt vs Không tốt</h2>
         <ComparisonCard
-          title="Phương pháp Nấu Ăn"
+          title="Phương pháp Nấu ăn"
           goodTitle="Phương pháp tốt"
           goodItems={[
             "Luộc: Giữ dinh dưỡng, không dầu mỡ",
@@ -199,10 +199,10 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips cho Từng Phương pháp</h2>
+        <h2 className="heading-2">Tips cho Từng phương pháp</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-5 mb-2">Luộc Rau</h3>
+            <h3 className="heading-5 mb-2">Luộc rau</h3>
             <ul className="text-sm text-gray-700 space-y-1">
               <li>✓ Nước sôi mới cho rau vào</li>
               <li>✓ Luộc nhanh (2-3 phút) để giữ màu xanh</li>
@@ -212,7 +212,7 @@ export default function VietnameseCookingMethodsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Hấp Cá</h3>
+            <h3 className="heading-5 mb-2">Hấp cá</h3>
             <ul className="text-sm text-gray-700 space-y-1">
               <li>✓ Thêm gừng, sả để khử mùi tanh</li>
               <li>✓ Hấp 10-15 phút, không quá lâu</li>
@@ -222,7 +222,7 @@ export default function VietnameseCookingMethodsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Kho Thịt/Cá</h3>
+            <h3 className="heading-5 mb-2">Kho thịt/Cá</h3>
             <ul className="text-sm text-gray-700 space-y-1">
               <li>✓ Giảm nước mắm, tăng gia vị tự nhiên</li>
               <li>✓ Thêm cà chua, dứa để giảm muối</li>
@@ -232,7 +232,7 @@ export default function VietnameseCookingMethodsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Xào Rau</h3>
+            <h3 className="heading-5 mb-2">Xào rau</h3>
             <ul className="text-sm text-gray-700 space-y-1">
               <li>✓ Dùng ít dầu (1-2 muỗng canh)</li>
               <li>✓ Xào nhanh, lửa lớn</li>
@@ -244,8 +244,8 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Cách Nấu</h2>
-        <ExampleBox variant="info" title="Canh Rau Muống">
+        <h2 className="heading-2">Ví dụ Cách nấu</h2>
+        <ExampleBox variant="info" title="Canh rau muống">
           <p className="text-sm mb-2">
             <strong>Cách nấu:</strong> Nước sôi, cho rau muống vào, nấu 2-3 phút. 
             Thêm nước mắm (ít), tỏi phi. Không cần dầu mỡ nhiều.
@@ -255,7 +255,7 @@ export default function VietnameseCookingMethodsPage() {
           </p>
         </ExampleBox>
 
-        <ExampleBox variant="info" title="Cá Kho Tộ">
+        <ExampleBox variant="info" title="Cá kho Tộ">
           <p className="text-sm mb-2">
             <strong>Cách nấu:</strong> Cá + nước mắm (ít), đường (ít), gừng, nghệ, kho chín mềm. 
             Thêm cà chua để giảm muối.
@@ -265,7 +265,7 @@ export default function VietnameseCookingMethodsPage() {
           </p>
         </ExampleBox>
 
-        <ExampleBox variant="info" title="Rau Cải Luộc">
+        <ExampleBox variant="info" title="Rau cải luộc">
           <p className="text-sm mb-2">
             <strong>Cách nấu:</strong> Nước sôi, cho rau cải vào, luộc 2-3 phút, vớt ra. 
             Chấm nước mắm pha loãng.

@@ -7,21 +7,21 @@ import { ContentBlock } from "../nutrition-assessment-overview/components/Conten
 import { Card, CardHeader, CardContent } from "../../components/Card";
 
 /**
- * Why There's No Universal Number for Nutrition Needs
+ * Why there's No universal Number for Nutrition needs
  * 
- * Educational Intent:
+ * Educational intent:
  * This page explains why clinical nutrition assessment does not rely on
  * a single universal number for energy or protein needs. It helps readers
  * understand the complexity of nutrition needs and why ranges and clinical
  * judgment are essential.
  * 
- * Target Audience:
+ * Target audience:
  * - Clinicians early in practice (residents, early-career physicians)
  * - Nurses involved in nutrition care (screening, monitoring, implementation)
  * - Medical students learning about clinical nutrition
  * - Educated readers interested in understanding clinical nutrition concepts
  * 
- * Educational Approach:
+ * Educational approach:
  * - Explains concepts clearly for learners at different stages
  * - Uses accessible language while maintaining clinical accuracy
  * - Provides practical examples relevant to clinical practice
@@ -34,15 +34,14 @@ export default function WhyNoUniversalNumberPage() {
   return (
     <main className="mx-auto max-w-3xl space-y-10 sm:space-y-12 px-4 py-6 sm:py-8 sm:px-6 lg:px-8">
       {/* 
-        1. Title & Opening Question
-        Educational Intent: Introduces the central question that many
+        1. Title & Opening question educational Intent: Introduces the central question that many
         clinicians, nurses, and students ask, setting up the exploration
         of why there's no simple answer. Uses a conversational, inviting tone
         to draw readers in without judgment.
       */}
       <header className="space-y-4 sm:space-y-5 border-b border-neutral-200 pb-6 sm:pb-8">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight text-neutral-900">
-          Tại Sao Không Có Con Số Phổ Quát Cho Nhu Cầu Dinh Dưỡng
+          Tại sao Không có Con số Phổ quát Cho nhu cầu Dinh dưỡng
         </h1>
         <ContentBlock>
           <p className="text-xl font-medium text-neutral-800 mb-4">
@@ -75,15 +74,15 @@ export default function WhyNoUniversalNumberPage() {
       </header>
 
       {/* 
-        2. The Appeal of "One Correct Number"
-        Educational Intent: Acknowledges why people want a simple answer
+        2. The appeal of "One correct number"
+        Educational intent: Acknowledges why people want a simple answer
         and validates that desire, while explaining why it doesn't work
         in clinical nutrition. Explains the psychological appeal of clear
         formulas, single targets, and exact-looking results.
       */}
       <ContentSection ariaLabelledBy="appeal-heading">
         <SectionHeading id="appeal-heading">
-          Sự Hấp Dẫn Của "Một Con Số Đúng"
+          Sự hấp Dẫn của "Một con số Đúng"
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -136,7 +135,7 @@ export default function WhyNoUniversalNumberPage() {
             áp dụng cho tất cả mọi người, hoặc thậm chí cho cùng một người trong các tình huống khác nhau. Hiểu tại sao điều này là
             trường hợp—và tại sao nó thực sự là một điều tốt—giúp các nhóm chăm sóc sức khỏe cung cấp tốt hơn, an toàn hơn chăm sóc dinh dưỡng.
           </p>
-          <EducationalNote variant="info" title="Tại Sao Điều Này Quan Trọng">
+          <EducationalNote variant="info" title="Tại sao Điều này Quan trọng">
             <p>
               Mong muốn một con số đúng duy nhất có thể dẫn đến tự tin quá mức vào tính toán và thiếu tự tin
               trong phán đoán lâm sàng. Hiểu tại sao không có con số phổ quát giúp các bác sĩ lâm sàng, y tá và
@@ -149,15 +148,15 @@ export default function WhyNoUniversalNumberPage() {
       </ContentSection>
 
       {/* 
-        3. Why Nutrition Needs Vary Between Patients
-        Educational Intent: Explains the key sources of variability in
+        3. Why nutrition needs Vary between patients
+        Educational intent: Explains the key sources of variability in
         nutrition needs, using accessible language without deep biochemical
         detail. Focuses on practical factors that clinicians and nurses
         can observe and consider.
       */}
       <ContentSection ariaLabelledBy="variation-heading">
         <SectionHeading id="variation-heading">
-          Tại Sao Nhu Cầu Dinh Dưỡng Khác Nhau Giữa Các Bệnh Nhân
+          Tại sao nhu cầu Dinh dưỡng Khác nhau giữa Các bệnh nhân
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -229,15 +228,14 @@ export default function WhyNoUniversalNumberPage() {
       </ContentSection>
 
       {/* 
-        4. Why Needs Change Over Time
-        Educational Intent: Explains that needs are dynamic, not static,
+        4. Why needs Change over Time educational intent: Explains that needs are dynamic, not static,
         emphasizing that needs today may not be needs tomorrow. Highlights
         differences between acute illness, recovery, and rehabilitation, and
         emphasizes that reassessment is central to clinical nutrition.
       */}
       <ContentSection ariaLabelledBy="dynamic-heading">
         <SectionHeading id="dynamic-heading">
-          Tại Sao Nhu Cầu Thay Đổi Theo Thời Gian
+          Tại sao nhu cầu Thay đổi Theo thời Gian
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -253,7 +251,7 @@ export default function WhyNoUniversalNumberPage() {
           <div className="mt-6 space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Bệnh Cấp Tính, Phục Hồi và Phục Hồi Chức Năng Khác Nhau
+                Bệnh cấp tính, Phục hồi và Phục hồi chức Năng khác nhau
               </h3>
               <p>
                 Cùng một người có nhu cầu khác nhau tùy thuộc vào vị trí của họ trong bệnh tật và phục hồi:
@@ -287,7 +285,7 @@ export default function WhyNoUniversalNumberPage() {
 
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Khả Năng Chịu Đựng Lượng Ăn Vào Thay Đổi Trước Khi Nhu Cầu Thay Đổi
+                Khả năng chịu đựng Lượng ăn vào thay Đổi trước Khi nhu cầu Thay đổi
               </h3>
               <p>
                 Có một vấn đề thời gian quan trọng trong dinh dưỡng lâm sàng: <strong>những gì ai đó thực sự có thể chịu đựng
@@ -352,8 +350,8 @@ export default function WhyNoUniversalNumberPage() {
       </ContentSection>
 
       {/* 
-        5. What Formulas Really Do (and Don't Do)
-        Educational Intent: Explains what estimation formulas actually
+        5. What formulas Really do (and Don't Do)
+        Educational intent: Explains what estimation formulas actually
         provide, their limitations, and why different methods produce
         different numbers. Clearly states that formulas do not "measure"
         true needs and emphasizes their role as starting estimates based
@@ -361,14 +359,14 @@ export default function WhyNoUniversalNumberPage() {
       */}
       <ContentSection ariaLabelledBy="formulas-heading">
         <SectionHeading id="formulas-heading">
-          Công Thức Thực Sự Làm Gì (Và Không Làm Gì)
+          Công thức thực Sự làm gì (Và không làm gì)
         </SectionHeading>
         <ContentBlock>
           <p>
             Công thức ước tính là công cụ có giá trị, nhưng hiểu những gì chúng thực sự làm—và những gì chúng không
             làm—là cần thiết để sử dụng chúng một cách an toàn và hiệu quả.
           </p>
-          <EducationalNote variant="warning" title="Công Thức Không 'Đo' Nhu Cầu Thực Sự">
+          <EducationalNote variant="warning" title="Công thức không 'Đo' Nhu cầu Thực sự">
             <p>
               <strong>Điều quan trọng là hiểu: công thức không "đo" nhu cầu thực sự.</strong> Chúng cung cấp
               ước tính dựa trên trung bình dân số, không phải đo lường cá nhân. Để thực sự đo nhu cầu năng lượng của ai đó,
@@ -440,7 +438,7 @@ export default function WhyNoUniversalNumberPage() {
           </p>
           <p>
             Các bác sĩ lâm sàng sử dụng nhiều phương pháp để ước tính nhu cầu. Chúng bao gồm quy tắc đơn giản dựa trên cân nặng (ví dụ,
-            "25–30 kcal/kg/ngày"), phương trình dự đoán (ví dụ, Harris-Benedict, Mifflin-St Jeor), và phán đoán
+            "25–30 kcal/kg/ngày"), phương trình dự đoán (ví dụ, Harris-Benedict, Mifflin-St jeor), và phán đoán
             lâm sàng kết hợp với hướng dẫn.
           </p>
           <p>
@@ -467,7 +465,7 @@ export default function WhyNoUniversalNumberPage() {
             dựa trên bối cảnh lâm sàng. Mục tiêu không phải là tìm "câu trả lời đúng," mà là thiết lập một
             <strong>điểm khởi đầu an toàn, hợp lý</strong> có thể được theo dõi và điều chỉnh.
           </p>
-          <EducationalNote variant="warning" title="Rủi Ro Của Sự Tự Tin Quá Mức">
+          <EducationalNote variant="warning" title="Rủi ro của Sự tự tin Quá mức">
             <p>
               Đối xử với công thức như thể chúng cung cấp câu trả lời chính xác có thể dẫn đến tự tin quá mức vào số liệu. Đây là
               một cạm bẫy phổ biến cho các bác sĩ lâm sàng mới vào nghề, y tá tuân theo giao thức và sinh viên học
@@ -481,14 +479,13 @@ export default function WhyNoUniversalNumberPage() {
       </ContentSection>
 
       {/* 
-        6. Clinical Examples Illustrating Variability
-        Educational Intent: Provides concrete examples showing how
+        6. Clinical examples illustrating Variability educational intent: Provides concrete examples showing how
         needs vary in real clinical situations, helping readers understand
         the concepts through practical scenarios
       */}
       <ContentSection ariaLabelledBy="examples-heading">
         <SectionHeading id="examples-heading">
-          Ví Dụ Lâm Sàng Minh Họa Sự Biến Đổi
+          Ví dụ lâm Sàng minh họa Sự biến Đổi
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -501,7 +498,7 @@ export default function WhyNoUniversalNumberPage() {
         <div className="mt-6 space-y-6">
           <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4">
             <h3 className="font-semibold text-base mb-3 text-neutral-900">
-              Ví Dụ 1: Hai Bệnh Nhân, Cùng Cân Nặng, Mức Độ Bệnh Khác Nhau
+              Ví dụ 1: Hai bệnh nhân, Cùng cân Nặng, Mức độ Bệnh khác Nhau
             </h3>
             <p className="text-sm text-neutral-700 mb-3">
               Hai bệnh nhân đều nặng 70 kg và 65 tuổi. Cả hai đều bị suy tim. Một tính toán đơn giản dựa trên cân nặng
@@ -509,7 +506,7 @@ export default function WhyNoUniversalNumberPage() {
             </p>
             <div className="grid gap-4 sm:grid-cols-2 mb-3">
               <div className="bg-white rounded p-3 border border-neutral-200">
-                <p className="text-xs font-semibold text-neutral-900 mb-2">Bệnh Nhân A:</p>
+                <p className="text-xs font-semibold text-neutral-900 mb-2">Bệnh nhân A:</p>
                 <ul className="list-disc space-y-1 pl-4 text-xs text-neutral-700">
                   <li>Suy tim ổn định, được kiểm soát tốt</li>
                   <li>Đi bộ hàng ngày, độc lập với các hoạt động</li>
@@ -518,7 +515,7 @@ export default function WhyNoUniversalNumberPage() {
                 </ul>
               </div>
               <div className="bg-white rounded p-3 border border-neutral-200">
-                <p className="text-xs font-semibold text-neutral-900 mb-2">Bệnh Nhân B:</p>
+                <p className="text-xs font-semibold text-neutral-900 mb-2">Bệnh nhân B:</p>
                 <ul className="list-disc space-y-1 pl-4 text-xs text-neutral-700">
                   <li>Suy tim nặng, mất bù gần đây</li>
                   <li>Khó thở với hoạt động tối thiểu, chủ yếu nằm liệt giường</li>
@@ -539,7 +536,7 @@ export default function WhyNoUniversalNumberPage() {
 
           <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4">
             <h3 className="font-semibold text-base mb-3 text-neutral-900">
-              Ví Dụ 2: Cùng Bệnh Nhân, Các Giai Đoạn Bệnh Khác Nhau
+              Ví dụ 2: Cùng bệnh nhân, Các giai đoạn Bệnh khác Nhau
             </h3>
             <p className="text-sm text-neutral-700 mb-3">
               Một bệnh nhân 60 tuổi được nhập viện với viêm phổi. Trong quá trình nằm viện, nhu cầu của họ
@@ -592,7 +589,7 @@ export default function WhyNoUniversalNumberPage() {
 
           <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4">
             <h3 className="font-semibold text-base mb-3 text-neutral-900">
-              Ví Dụ 3: Năng Lượng Đầy Đủ, Nhưng Protein Không Đủ
+              Ví dụ 3: năng lượng đầy Đủ, Nhưng protein không Đủ
             </h3>
             <p className="text-sm text-neutral-700 mb-3">
               Một bệnh nhân đang phục hồi sau phẫu thuật đang ăn tốt và đáp ứng nhu cầu năng lượng ước tính của họ. Tuy nhiên,
@@ -623,15 +620,15 @@ export default function WhyNoUniversalNumberPage() {
       </ContentSection>
 
       {/* 
-        7. Common Mistakes When Chasing Exact Numbers
-        Educational Intent: Addresses common mistakes that occur when
+        7. Common mistakes When chasing Exact numbers
+        Educational intent: Addresses common mistakes that occur when
         treating estimates as exact values, correcting them gently without
         blame. Helps readers understand why these mistakes happen and how
         to avoid them.
       */}
       <ContentSection ariaLabelledBy="mistakes-heading">
         <SectionHeading id="mistakes-heading">
-          Những Sai Lầm Phổ Biến Khi Theo Đuổi Con Số Chính Xác
+          Những sai Lầm phổ Biến khi Theo đuổi con Số chính xác
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -641,7 +638,7 @@ export default function WhyNoUniversalNumberPage() {
           </p>
         </ContentBlock>
         <div className="mt-6 space-y-4 sm:space-y-5">
-          <EducationalNote variant="common-pitfall" title='Đối Xử Với Nhu Cầu Được Tính Toán Như Chỉ Định'>
+          <EducationalNote variant="common-pitfall" title='Đối xử với Nhu cầu Được tính toán như chỉ Định'>
             <p>
               <strong>Điều gì xảy ra:</strong> Một tính toán gợi ý một con số cụ thể (ví dụ: 1,800 calo), và
               nhóm chăm sóc đối xử với điều này như một chỉ định phải được đáp ứng, bất kể bệnh nhân có thể
@@ -666,7 +663,7 @@ export default function WhyNoUniversalNumberPage() {
             </p>
           </EducationalNote>
 
-          <EducationalNote variant="common-pitfall" title='Bỏ Qua Khả Năng Chịu Đựng Và Lượng Ăn Vào'>
+          <EducationalNote variant="common-pitfall" title='Bỏ qua khả Năng chịu đựng Và lượng Ăn vào'>
             <p>
               <strong>Điều gì xảy ra:</strong> Nhóm chăm sóc tập trung vào việc đáp ứng nhu cầu được tính toán nhưng không chú ý đủ
               đến những gì bệnh nhân thực sự đang ăn hoặc những gì họ có thể chịu đựng. Y tá ghi chép rằng
@@ -692,7 +689,7 @@ export default function WhyNoUniversalNumberPage() {
             </p>
           </EducationalNote>
 
-          <EducationalNote variant="common-pitfall" title='Cho Ăn Quá Mức Trong Bệnh Cấp Tính Sớm'>
+          <EducationalNote variant="common-pitfall" title='Cho ăn Quá mức Trong bệnh Cấp tính Sớm'>
             <p>
               <strong>Điều gì xảy ra:</strong> Một bệnh nhân được nhập viện với nhiễm trùng nặng hoặc bệnh nặng. Nhóm
               chăm sóc tính toán nhu cầu và ngay lập tức cố gắng đáp ứng mục tiêu đầy đủ, mặc dù bệnh nhân
@@ -718,7 +715,7 @@ export default function WhyNoUniversalNumberPage() {
             </p>
           </EducationalNote>
 
-          <EducationalNote variant="common-pitfall" title='Đánh Giá Thấp Protein Ở Bệnh Nhân Cao Tuổi'>
+          <EducationalNote variant="common-pitfall" title='Đánh giá Thấp protein Ở Bệnh nhân Cao tuổi'>
             <p>
               <strong>Điều gì xảy ra:</strong> Một bệnh nhân cao tuổi đang phục hồi sau phẫu thuật hoặc bệnh tật. Nhóm chăm sóc
               tập trung vào việc đáp ứng nhu cầu năng lượng (calo) nhưng không chú ý đủ đến protein. Bệnh nhân
@@ -750,14 +747,13 @@ export default function WhyNoUniversalNumberPage() {
       </ContentSection>
 
       {/* 
-        8. How Clinicians Use Ranges Instead of Targets
-        Educational Intent: Explains why clinicians work with ranges,
+        8. How clinicians Use ranges Instead of Targets educational intent: Explains why clinicians work with ranges,
         how ranges allow flexibility, and how monitoring guides adjustment.
         Avoids specific numeric cutoffs to focus on concepts and reasoning.
       */}
       <ContentSection ariaLabelledBy="ranges-heading">
         <SectionHeading id="ranges-heading">
-          Cách Các Bác Sĩ Lâm Sàng Sử Dụng Phạm Vi Thay Vì Mục Tiêu
+          Cách các Bác sĩ lâm sàng Sử dụng Phạm vi thay vì Mục tiêu
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -768,7 +764,7 @@ export default function WhyNoUniversalNumberPage() {
           <div className="mt-6 space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Tại Sao Các Bác Sĩ Lâm Sàng Làm Việc Với Phạm Vi
+                Tại sao các bác Sĩ lâm Sàng làm việc với Phạm vi
               </h3>
               <p>
                 Các bác sĩ lâm sàng làm việc với phạm vi vì họ nhận ra rằng nhu cầu dinh dưỡng là ước tính, không phải giá trị
@@ -791,7 +787,7 @@ export default function WhyNoUniversalNumberPage() {
 
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Cách Phạm Vi Cho Phép Linh Hoạt
+                Cách phạm vi cho Phép linh Hoạt
               </h3>
               <p>
                 Phạm vi cho phép linh hoạt vì một người có thể làm tốt ở bất kỳ đâu trong phạm vi, tùy thuộc vào
@@ -818,7 +814,7 @@ export default function WhyNoUniversalNumberPage() {
 
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-                Cách Theo Dõi Hướng Dẫn Điều Chỉnh
+                Cách theo Dõi hướng Dẫn điều Chỉnh
               </h3>
               <p>
                 Phạm vi hướng dẫn theo dõi và điều chỉnh. Nếu ai đó liên tục rơi xuống dưới phạm vi, nó báo hiệu
@@ -867,15 +863,15 @@ export default function WhyNoUniversalNumberPage() {
       </ContentSection>
 
       {/* 
-        9. What to Take Away
-        Educational Intent: Synthesizes key points with a calm, reassuring
+        9. What to Take away
+        Educational intent: Synthesizes key points with a calm, reassuring
         tone. Summarizes the three main takeaways: no single correct number
         exists, numbers support thinking not decisions, and clinical context
         and reassessment matter most.
       */}
       <ContentSection ariaLabelledBy="takeaway-heading">
         <SectionHeading id="takeaway-heading" variant="blue">
-          Điều Cần Rút Ra
+          Điều cần rút ra
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -889,7 +885,7 @@ export default function WhyNoUniversalNumberPage() {
         <div className="mt-6 space-y-6">
           <div className="rounded-md bg-blue-50 border border-blue-200 p-5">
             <h3 className="text-lg font-semibold text-blue-900 mb-3">
-              Không Có Con Số Đúng Duy Nhất Tồn Tại
+              Không có Con số đúng Duy nhất tồn tại
             </h3>
             <p className="text-blue-800 mb-2">
               Đây thực sự là tin tốt. Nó có nghĩa là bạn không cần lo lắng về việc tìm câu trả lời "hoàn hảo".
@@ -906,7 +902,7 @@ export default function WhyNoUniversalNumberPage() {
 
           <div className="rounded-md bg-blue-50 border border-blue-200 p-5">
             <h3 className="text-lg font-semibold text-blue-900 mb-3">
-              Số Liệu Hỗ Trợ Suy Nghĩ, Không Phải Quyết Định
+              Số liệu hỗ Trợ suy nghĩ, Không phải quyết Định
             </h3>
             <p className="text-blue-800 mb-2">
               Công cụ lâm sàng—máy tính, công thức, công cụ sàng lọc—có giá trị. Chúng giúp bạn ước tính nhu cầu,
@@ -923,7 +919,7 @@ export default function WhyNoUniversalNumberPage() {
 
           <div className="rounded-md bg-blue-50 border border-blue-200 p-5">
             <h3 className="text-lg font-semibold text-blue-900 mb-3">
-              Bối Cảnh Lâm Sàng Và Đánh Giá Lại Quan Trọng Nhất
+              Bối cảnh lâm Sàng và đánh Giá lại quan Trọng nhất
             </h3>
             <p className="text-blue-800 mb-2">
               Các yếu tố quan trọng nhất trong chăm sóc dinh dưỡng không phải là số liệu từ tính toán—chúng là bối cảnh
@@ -939,7 +935,7 @@ export default function WhyNoUniversalNumberPage() {
             </p>
           </div>
 
-          <EducationalNote variant="info" title="Lời Nhắc Nhở Yên Tâm">
+          <EducationalNote variant="info" title="Lời nhắc Nhở yên Tâm">
             <p>
               Nếu bạn cảm thấy không chắc chắn về ước tính nhu cầu dinh dưỡng, điều đó là dễ hiểu. Đây là phức tạp,
               và không có câu trả lời đơn giản. Nhưng hãy nhớ: bạn không cần tìm con số hoàn hảo. Bạn cần
@@ -959,13 +955,13 @@ export default function WhyNoUniversalNumberPage() {
       </ContentSection>
 
       {/* 
-        Learn More
-        Educational Intent: Guides readers to more detailed content
+        Learn more
+        Educational intent: Guides readers to more detailed content
         about needs estimation and assessment processes
       */}
       <ContentSection ariaLabelledBy="learn-more-heading">
         <SectionHeading id="learn-more-heading" variant="blue">
-          Tìm Hiểu Thêm
+          Tìm hiểu Thêm
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -977,7 +973,7 @@ export default function WhyNoUniversalNumberPage() {
         <div className="mt-6 space-y-4">
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Ước Tính Nhu Cầu Chi Tiết
+              Ước tính Nhu cầu chi tiết
             </h3>
             <p className="text-sm text-blue-800 mb-3">
               Tìm hiểu thêm về các phương pháp ước tính khác nhau, tại sao phạm vi quan trọng, và cách các bác sĩ lâm sàng
@@ -993,7 +989,7 @@ export default function WhyNoUniversalNumberPage() {
 
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Quy Trình Đánh Giá Đầy Đủ
+              Quy trình đánh Giá đầy đủ
             </h3>
             <p className="text-sm text-blue-800 mb-3">
               Hiểu cách ước tính nhu cầu phù hợp với quy trình đánh giá rộng hơn, bao gồm
@@ -1009,7 +1005,7 @@ export default function WhyNoUniversalNumberPage() {
 
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Công Cụ Tương Tác
+              Công cụ Tương tác
             </h3>
             <p className="text-sm text-blue-800 mb-3">
               Thực hành ước tính nhu cầu với máy tính tương tác của chúng tôi, được thiết kế cho việc học:
@@ -1018,7 +1014,7 @@ export default function WhyNoUniversalNumberPage() {
               href="/tools/energy-protein-calculator"
               className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
             >
-              Máy Tính Năng Lượng & Protein →
+              Máy tính năng lượng & Protein →
             </Link>
             <p className="text-xs text-blue-700 mt-2 italic">
               Công cụ này chỉ dành cho mục đích giáo dục và không nên được sử dụng để ra quyết định lâm sàng.
@@ -1027,7 +1023,7 @@ export default function WhyNoUniversalNumberPage() {
         </div>
       </ContentSection>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <ContentSection ariaLabelledBy="tools-heading">
         <SectionHeading id="tools-heading" variant="default">
           Công cụ liên quan
@@ -1075,15 +1071,14 @@ export default function WhyNoUniversalNumberPage() {
       </ContentSection>
 
       {/* 
-        Safety & Limitations
-        Educational Intent: Clearly states the educational purpose and
+        Safety & Limitations educational intent: Clearly states the educational purpose and
         limitations, ensuring readers understand this is not a clinical tool
       */}
       <ContentSection ariaLabelledBy="safety-heading">
         <SectionHeading id="safety-heading" variant="amber">
-          An Toàn & Giới Hạn
+          An toàn & Giới hạn
         </SectionHeading>
-        <EducationalNote variant="warning" title="⚠️ Tuyên Bố Miễn Trừ Trách Nhiệm Quan Trọng">
+        <EducationalNote variant="warning" title="⚠️ Tuyên bố miễn trừ trách nhiệm Quan trọng">
           <p className="mb-2">
             <strong>Trang web này và nội dung của nó chỉ dành cho mục đích giáo dục.</strong> Chúng không cung cấp
             lời khuyên y tế, chẩn đoán hoặc điều trị. Chúng không tạo mối quan hệ bác sĩ–bệnh nhân.

@@ -151,7 +151,7 @@ export default function CopperHealthPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Nhu cầu Đồng</h2>
         <NutrientTable
-          title="Nhu cầu Đồng Hàng ngày"
+          title="Nhu cầu Đồng hàng ngày"
           rows={[
             { nutrient: "Người lớn (19-70 tuổi)", amount: "900", unit: "microgram/ngày", note: "Cả nam và nữ" },
             { nutrient: "Người trên 70 tuổi", amount: "900", unit: "microgram/ngày", note: "Giữ nguyên" },
@@ -162,9 +162,9 @@ export default function CopperHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Đồng Tốt</h2>
+        <h2 className="heading-2">Nguồn đồng tốt</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Thực phẩm Giàu Đồng</h3>
+          <h3 className="heading-4 mb-3">Thực phẩm Giàu đồng</h3>
           <div className="space-y-3">
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
               <p className="text-sm font-semibold text-gray-900 mb-1">Hải sản:</p>
@@ -203,7 +203,7 @@ export default function CopperHealthPage() {
           </div>
         </Card>
 
-        <ExampleBox variant="info" title="Ví dụ Bữa ăn Giàu Đồng (Việt Nam)">
+        <ExampleBox variant="info" title="Ví dụ Bữa ăn Giàu đồng (Việt Nam)">
           <p className="mb-2">
             <strong>Bữa ăn Việt Nam</strong> có thể cung cấp đủ đồng:
           </p>
@@ -220,8 +220,8 @@ export default function CopperHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thiếu Đồng và Hậu quả</h2>
-        <Callout variant="warning" title="Hậu quả của Thiếu Đồng">
+        <h2 className="heading-2">Thiếu đồng và Hậu quả</h2>
+        <Callout variant="warning" title="Hậu quả của Thiếu đồng">
           <div className="space-y-2 text-sm">
             <p>
               <strong>Thiếu máu:</strong> Ngay cả khi có đủ sắt, thiếu đồng có thể dẫn đến thiếu máu 
@@ -242,7 +242,7 @@ export default function CopperHealthPage() {
           </div>
         </Callout>
 
-        <ExampleBox variant="tip" title="Ai có Nguy cơ Thiếu Đồng?">
+        <ExampleBox variant="tip" title="Ai có Nguy cơ Thiếu đồng?">
           <p className="text-sm">
             Thiếu đồng hiếm gặp ở người khỏe mạnh ăn đa dạng. Tuy nhiên, một số người có nguy cơ:
           </p>
@@ -255,8 +255,8 @@ export default function CopperHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thừa Đồng và Nguy cơ</h2>
-        <Callout variant="error" title="Nguy cơ Thừa Đồng">
+        <h2 className="heading-2">Thừa đồng và Nguy cơ</h2>
+        <Callout variant="error" title="Nguy cơ Thừa đồng">
           <div className="space-y-2 text-sm">
             <p>
               <strong>Thừa đồng</strong> từ thực phẩm hiếm gặp, nhưng có thể xảy ra nếu dùng quá nhiều bổ sung.

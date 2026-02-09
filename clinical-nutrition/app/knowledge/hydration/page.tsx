@@ -47,7 +47,7 @@ export default function HydrationPage() {
         </p>
       </header>
 
-      {/* Key Points */}
+      {/* Key points */}
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
@@ -66,9 +66,9 @@ export default function HydrationPage() {
         </ul>
       </Callout>
 
-      {/* Why Water Matters */}
+      {/* Why water Matters */}
       <section className="space-y-4">
-        <h2 className="heading-2">Nước Quan trọng thế nào?</h2>
+        <h2 className="heading-2">Nước quan trọng thế nào?</h2>
         <div className="space-y-4">
           <p className="text-body">
             <strong>Nước chiếm 60-70% cơ thể</strong>, cần cho:
@@ -116,7 +116,7 @@ export default function HydrationPage() {
         </div>
       </section>
 
-      {/* How Much Water */}
+      {/* How much Water */}
       <section className="space-y-4">
         <h2 className="heading-2">Uống bao nhiêu nước là đủ?</h2>
         <div className="space-y-4">
@@ -348,7 +348,7 @@ export default function HydrationPage() {
         </div>
       </section>
 
-      {/* Clinical Application */}
+      {/* Clinical application */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Heart className="w-6 h-6 text-blue-600" aria-hidden="true" />
@@ -368,7 +368,7 @@ export default function HydrationPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bệnh Thận</h3>
+            <h3 className="heading-4 mb-3">Bệnh thận</h3>
             <p className="text-body mb-3">
               Tùy thuộc vào chức năng thận, có thể cần hạn chế hoặc tăng lượng nước. 
               Người lọc máu thường cần hạn chế nước giữa các lần lọc.
@@ -379,7 +379,7 @@ export default function HydrationPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Sau Phẫu thuật</h3>
+            <h3 className="heading-4 mb-3">Sau phẫu thuật</h3>
             <p className="text-body">
               đảm bảo đủ nước sau phẫu thuật rất quan trọng cho quá trình phục hồi. 
               Có thể cần truyền dịch nếu không thể uống đủ.
@@ -396,7 +396,7 @@ export default function HydrationPage() {
         </div>
       </section>
 
-      {/* Practical Tips */}
+      {/* Practical tips */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
@@ -427,7 +427,7 @@ export default function HydrationPage() {
         </div>
       </section>
 
-      {/* Vietnamese Water Sources Table */}
+      {/* Vietnamese water Sources table */}
       <section className="space-y-4">
         <h2 className="heading-2">Bảng nguồn Nước trong đời sống</h2>
         <Callout variant="info" title="Lưu ý">
@@ -491,7 +491,7 @@ export default function HydrationPage() {
         </div>
       </section>
 
-      {/* Special Notes */}
+      {/* Special notes */}
       <section className="space-y-4">
         <h2 className="heading-2">Lưu ý đặc biệt</h2>
         <Card className="border-amber-200 bg-amber-50/30">
@@ -532,9 +532,9 @@ export default function HydrationPage() {
         </Card>
       </section>
 
-      {/* What Counts as Water */}
+      {/* What counts as Water */}
       <section className="space-y-4">
-        <h2 className="heading-2">Loại Nước nào Tốt?</h2>
+        <h2 className="heading-2">Loại nước nào Tốt?</h2>
         <ComparisonCard
           goodTitle="✓ Tốt cho Hydration"
           goodItems={[
@@ -556,7 +556,7 @@ export default function HydrationPage() {
         />
       </section>
 
-      {/* Related Articles */}
+      {/* Related articles */}
       <section className="space-y-4">
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -569,7 +569,7 @@ export default function HydrationPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
           Thông tin này chỉ dành cho mục đích giáo dục. Nếu bạn có suy tim, bệnh thận, 

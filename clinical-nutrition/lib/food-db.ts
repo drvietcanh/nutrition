@@ -1,5 +1,5 @@
 /**
- * Vietnamese Food Database
+ * Vietnamese food database
  * 
  * Nutritional information for Vietnamese foods
  */

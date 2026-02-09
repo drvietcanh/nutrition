@@ -9,7 +9,7 @@ import { Leaf, Fish, Apple, Wheat } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thực phẩm Việt Nam: Nguồn Dinh dưỡng Tốt",
+  title: "Thực phẩm Việt Nam: Nguồn dinh dưỡng Tốt",
   description:
     "Khám phá giá trị dinh dưỡng của thực phẩm truyền thống Việt Nam - rau củ, protein, carbohydrate, và trái cây. Hướng dẫn cách chọn và sử dụng thực phẩm Việt Nam để có chế độ ăn lành mạnh.",
   keywords: [
@@ -28,14 +28,14 @@ export default function VietnameseFoodsNutritionPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Thực phẩm Việt Nam: Nguồn Dinh dưỡng Tốt" },
+          { label: "Thực phẩm Việt Nam: Nguồn dinh dưỡng Tốt" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Leaf className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Thực phẩm Việt Nam: Nguồn Dinh dưỡng Tốt</h1>
+          <h1 className="heading-1">Thực phẩm Việt Nam: Nguồn dinh dưỡng Tốt</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Việt Nam có nền ẩm thực phong phú với nhiều thực phẩm giàu dinh dưỡng. 
@@ -135,7 +135,7 @@ export default function VietnameseFoodsNutritionPage() {
               { nutrient: "Khoai lang (100g)", amount: "20", unit: "g carb", note: "Giàu chất xơ, beta-carotene" },
             ]}
           />
-          <ExampleBox variant="tip" title="Chọn Carbohydrate Tốt">
+          <ExampleBox variant="tip" title="Chọn carbohydrate Tốt">
             <p className="text-sm">
               Chọn <strong>gạo lứt</strong> thay vì gạo trắng để có nhiều chất xơ và vitamin B hơn. 
               Khoai lang là lựa chọn tốt vì giàu chất xơ và beta-carotene.
@@ -170,7 +170,7 @@ export default function VietnameseFoodsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh Thực phẩm Việt Nam vs Phương Tây</h2>
+        <h2 className="heading-2">So sánh Thực phẩm Việt Nam vs Phương tây</h2>
         <ComparisonCard
           title="Ưu điểm Thực phẩm Việt Nam"
           goodTitle="Thực phẩm Việt Nam"
@@ -181,7 +181,7 @@ export default function VietnameseFoodsNutritionPage() {
             "Gia vị tự nhiên (gừng, nghệ, sả)",
             "Phương pháp nấu lành mạnh (luộc, hấp, kho)",
           ]}
-          badTitle="Thực phẩm Phương Tây (một số)"
+          badTitle="Thực phẩm Phương tây (một số)"
           badItems={[
             "Ít rau củ tươi hơn",
             "Nhiều thịt đỏ, ít hải sản",
@@ -195,7 +195,7 @@ export default function VietnameseFoodsNutritionPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Món ăn Việt Nam</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <ExampleBox variant="info" title="Phở Gà">
+          <ExampleBox variant="info" title="Phở gà">
             <p className="text-sm mb-2">
               <strong>Thành phần:</strong> Bánh phở, thịt gà, rau thơm, hành, giá
             </p>
@@ -207,7 +207,7 @@ export default function VietnameseFoodsNutritionPage() {
             </p>
           </ExampleBox>
 
-          <ExampleBox variant="info" title="Bánh Mì">
+          <ExampleBox variant="info" title="Bánh mì">
             <p className="text-sm mb-2">
               <strong>Thành phần:</strong> Bánh mì, thịt/chả, rau, pate
             </p>
@@ -219,7 +219,7 @@ export default function VietnameseFoodsNutritionPage() {
             </p>
           </ExampleBox>
 
-          <ExampleBox variant="info" title="Canh Chua Cá">
+          <ExampleBox variant="info" title="Canh chua Cá">
             <p className="text-sm mb-2">
               <strong>Thành phần:</strong> Cá, cà chua, dứa, đậu bắp, rau thơm
             </p>
@@ -231,7 +231,7 @@ export default function VietnameseFoodsNutritionPage() {
             </p>
           </ExampleBox>
 
-          <ExampleBox variant="info" title="Cơm + Thịt Kho + Rau Luộc">
+          <ExampleBox variant="info" title="Cơm + Thịt kho + Rau luộc">
             <p className="text-sm mb-2">
               <strong>Thành phần:</strong> Cơm, thịt kho, rau luộc
             </p>

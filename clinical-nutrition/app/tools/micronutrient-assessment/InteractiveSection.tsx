@@ -99,7 +99,7 @@ export function InteractiveSection() {
 
   return (
     <div className="space-y-6">
-      {/* Input Form */}
+      {/* Input form */}
       <section aria-labelledby="inputs-heading" className="space-y-3">
         <h2 id="inputs-heading" className="heading-4">
           3. Nhập thông tin
@@ -210,7 +210,7 @@ export function InteractiveSection() {
             </p>
           </div>
 
-          {/* Clinical Conditions */}
+          {/* Clinical conditions */}
           <div className="sm:col-span-2 space-y-3">
             <h3 className="text-sm font-semibold text-neutral-900">
               Tình trạng đặc biệt (chọn nếu có):
@@ -265,13 +265,13 @@ export function InteractiveSection() {
               type="submit"
               className="inline-flex items-center rounded-md border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800 focus-ring touch-target"
             >
-              Tính Nhu cầu Vi chất
+              Tính nhu cầu Vi chất
             </button>
           </div>
         </form>
       </section>
 
-      {/* Results Display */}
+      {/* Results display */}
       {result && (
         <section aria-labelledby="results-heading" className="space-y-4">
           <h2 id="results-heading" className="heading-4">
@@ -279,7 +279,7 @@ export function InteractiveSection() {
           </h2>
 
           <div className="rounded-md border border-neutral-200 bg-white p-4 space-y-4">
-            {/* Requirements Table */}
+            {/* Requirements table */}
             {result.requirements.length > 0 && (
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
@@ -346,7 +346,7 @@ export function InteractiveSection() {
               </div>
             )}
 
-            {/* Clinical Notes */}
+            {/* Clinical notes */}
             {result.clinicalNotes.length > 0 && (
               <div className="border-t border-neutral-200 pt-4 space-y-2">
                 <h3 className="text-sm font-semibold text-neutral-900">

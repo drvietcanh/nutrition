@@ -114,10 +114,10 @@ export default function FoodCombiningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Các Kết hợp Quan trọng</h2>
+        <h2 className="heading-2">Các kết hợp Quan trọng</h2>
         <div className="space-y-4">
           <Card className="border-orange-200 bg-orange-50">
-            <h3 className="heading-4 mb-3 text-orange-900">1. Vitamin C + Sắt Thực vật</h3>
+            <h3 className="heading-4 mb-3 text-orange-900">1. Vitamin C + Sắt thực vật</h3>
             <p className="text-body-sm text-orange-900 mb-3">
               Vitamin C giúp chuyển đổi sắt từ thực vật (sắt không heme) sang dạng dễ hấp thu hơn.
             </p>
@@ -188,7 +188,7 @@ export default function FoodCombiningPage() {
           </Card>
 
           <Card className="border-green-200 bg-green-50">
-            <h3 className="heading-4 mb-3 text-green-900">4. Đậu + Gạo (Protein Hoàn chỉnh)</h3>
+            <h3 className="heading-4 mb-3 text-green-900">4. Đậu + Gạo (Protein hoàn chỉnh)</h3>
             <p className="text-body-sm text-green-900 mb-3">
               Đậu và gạo kết hợp tạo ra protein hoàn chỉnh, đặc biệt quan trọng cho người ăn chay.
             </p>
@@ -201,7 +201,7 @@ export default function FoodCombiningPage() {
                 <li>• Đậu lăng + gạo</li>
               </ul>
             </div>
-            <ExampleBox variant="tip" title="Mẹo cho Người Ăn Chay">
+            <ExampleBox variant="tip" title="Mẹo cho Người ăn chay">
               <p className="text-sm">
                 Người ăn chay nên kết hợp đậu với gạo trong ngày để có đủ axit amin. 
                 Không cần ăn cùng một bữa, chỉ cần ăn trong cùng một ngày. 
@@ -353,13 +353,13 @@ export default function FoodCombiningPage() {
             </p>
           </Card>
           <Card href="/knowledge/iron-deficiency-anemia">
-            <h3 className="heading-5 mb-2">Thiếu Sắt và Thiếu máu</h3>
+            <h3 className="heading-5 mb-2">Thiếu sắt và Thiếu máu</h3>
             <p className="text-sm text-gray-600">
               Kết hợp vitamin C với sắt thực vật quan trọng cho người thiếu sắt
             </p>
           </Card>
           <Card href="/knowledge/vegetarian-vegan-nutrition">
-            <h3 className="heading-5 mb-2">Dinh dưỡng Ăn Chay</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng Ăn chay</h3>
             <p className="text-sm text-gray-600">
               Kết hợp đậu và gạo quan trọng cho người ăn chay
             </p>

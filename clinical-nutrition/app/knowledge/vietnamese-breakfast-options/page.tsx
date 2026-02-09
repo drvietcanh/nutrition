@@ -65,7 +65,7 @@ export default function VietnameseBreakfastOptionsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Các Lựa chọn Bữa sáng Phổ biến ở Việt Nam</h2>
+        <h2 className="heading-2">Các lựa chọn Bữa sáng Phổ biến ở Việt Nam</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 mb-3 text-green-900">1. Cháo (Porridge)</h3>
@@ -142,7 +142,7 @@ export default function VietnameseBreakfastOptionsPage() {
           </Card>
 
           <Card className="border-amber-200 bg-amber-50">
-            <h3 className="heading-4 mb-3 text-amber-900">3. Bánh mì (Vietnamese Baguette)</h3>
+            <h3 className="heading-4 mb-3 text-amber-900">3. Bánh mì (Vietnamese baguette)</h3>
             <p className="text-body-sm text-amber-900 mb-3">
               Bánh mì là bữa sáng tiện lợi, có thể mang đi, và rất phổ biến ở Việt Nam.
             </p>
@@ -183,7 +183,7 @@ export default function VietnameseBreakfastOptionsPage() {
           </Card>
 
           <Card className="border-purple-200 bg-purple-50">
-            <h3 className="heading-4 mb-3 text-purple-900">4. Xôi (Sticky Rice)</h3>
+            <h3 className="heading-4 mb-3 text-purple-900">4. Xôi (Sticky rice)</h3>
             <p className="text-body-sm text-purple-900 mb-3">
               Xôi là món ăn sáng phổ biến, làm từ gạo nếp. Có thể lành mạnh nếu chọn đúng loại.
             </p>
@@ -218,7 +218,7 @@ export default function VietnameseBreakfastOptionsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">5. Bún (Rice Noodles)</h3>
+            <h3 className="heading-4 mb-3">5. Bún (Rice noodles)</h3>
             <p className="text-body-sm mb-3">
               Bún là món ăn sáng phổ biến, tương tự phở nhưng dùng bún thay vì bánh phở.
             </p>
@@ -252,7 +252,7 @@ export default function VietnameseBreakfastOptionsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Chọn Bữa sáng lành mạnh</h2>
+        <h2 className="heading-2">Tips chọn Bữa sáng lành mạnh</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -307,7 +307,7 @@ export default function VietnameseBreakfastOptionsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa sáng 2: Phở với Nhiều Rau</h3>
+            <h3 className="heading-5 mb-2">Bữa sáng 2: Phở với Nhiều rau</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>1 tô phở bò tái</strong> với <strong>nhiều rau sống</strong> (rau thơm, giá, hành) + 
               <strong> thịt nạc</strong>
@@ -357,7 +357,7 @@ export default function VietnameseBreakfastOptionsPage() {
             </p>
           </Card>
           <Card href="/knowledge/nutrition-busy-lifestyle">
-            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người Bận rộn</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người bận rộn</h3>
             <p className="text-sm text-gray-600">
               Quick tips cho bữa sáng khi bận rộn
             </p>

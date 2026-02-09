@@ -8,7 +8,7 @@ import { Plane, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng khi Đi Du lịch",
+  title: "Dinh dưỡng khi Đi du lịch",
   description:
     "Practical tips về dinh dưỡng khi đi du lịch. Cách ăn uống lành mạnh khi đi máy bay, ở khách sạn, và khám phá ẩm thực địa phương.",
   keywords: [
@@ -26,14 +26,14 @@ export default function NutritionTravelPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Dinh dưỡng khi Đi Du lịch" },
+          { label: "Dinh dưỡng khi Đi du lịch" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Plane className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Dinh dưỡng khi Đi Du lịch</h1>
+          <h1 className="heading-1">Dinh dưỡng khi Đi du lịch</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Đi du lịch không có nghĩa là bạn phải từ bỏ thói quen ăn uống lành mạnh. 
@@ -62,7 +62,7 @@ export default function NutritionTravelPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Dinh dưỡng khi Đi Máy bay</h2>
+        <h2 className="heading-2">Dinh dưỡng khi Đi máy bay</h2>
         <Card>
           <h3 className="heading-4 mb-3">Tips cho Chuyến bay</h3>
           <div className="space-y-3">
@@ -98,7 +98,7 @@ export default function NutritionTravelPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ăn uống ở Điểm Đến</h2>
+        <h2 className="heading-2">Ăn uống ở Điểm đến</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Tips khi Ăn ở Nhà hàng</h3>
@@ -115,7 +115,7 @@ export default function NutritionTravelPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Thử Ẩm thực Địa phương một cách Lành mạnh</h3>
+            <h3 className="heading-4 mb-3">Thử ẩm thực Địa phương một cách Lành mạnh</h3>
             <p className="text-body-sm mb-3">
               Thử ẩm thực địa phương là một phần của trải nghiệm du lịch, nhưng bạn vẫn có thể chọn lựa thông minh:
             </p>
@@ -177,7 +177,7 @@ export default function NutritionTravelPage() {
             </p>
           </Card>
           <Card href="/knowledge/nutrition-busy-lifestyle">
-            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người Bận rộn</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người bận rộn</h3>
             <p className="text-sm text-gray-600">
               Tips dinh dưỡng khi không có nhiều thời gian
             </p>

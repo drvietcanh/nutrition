@@ -22,13 +22,13 @@ export function Header() {
             <span className="sm:hidden">Dinh dưỡng</span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop navigation */}
           <div className="flex items-center gap-4">
             <MainNav />
             <Search />
           </div>
 
-          {/* Mobile Navigation */}
+          {/* Mobile navigation */}
           <MobileNav />
         </div>
       </div>

@@ -105,7 +105,7 @@ export default function SeleniumImmunityPage() {
         <h2 className="heading-2">Nhu cầu Selenium</h2>
         <Card>
           <NutrientTable
-            title="Nhu cầu Selenium Hàng ngày"
+            title="Nhu cầu Selenium hàng ngày"
             rows={[
               { nutrient: "Người lớn (nam và nữ)", amount: "55", unit: "mcg/ngày", note: "Microgram" },
               { nutrient: "Phụ nữ mang thai", amount: "60", unit: "mcg/ngày", note: "Tăng nhẹ" },
@@ -127,10 +127,10 @@ export default function SeleniumImmunityPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Selenium Tốt</h2>
+        <h2 className="heading-2">Nguồn selenium Tốt</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Hải sản (Nguồn Tốt nhất)</h3>
+            <h3 className="heading-4 mb-3">Hải sản (Nguồn tốt nhất)</h3>
             <NutrientTable
               rows={[
                 { nutrient: "Cá ngừ (100g)", amount: "90", unit: "mcg", note: "Rất cao" },
@@ -187,7 +187,7 @@ export default function SeleniumImmunityPage() {
         <h2 className="heading-2">Lợi ích Sức khỏe của Selenium</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-4 mb-3">Hệ Miễn dịch</h3>
+            <h3 className="heading-4 mb-3">Hệ miễn dịch</h3>
             <p className="text-body-sm">
               Selenium hỗ trợ hệ miễn dịch bằng cách giúp sản xuất các tế bào miễn dịch và 
               chống lại nhiễm trùng. Thiếu selenium có thể làm suy yếu hệ miễn dịch.

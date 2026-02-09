@@ -57,7 +57,7 @@ export default function HealthyCookingMethodsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Phương pháp Nấu Lành mạnh</h2>
+        <h2 className="heading-2">Phương pháp Nấu lành mạnh</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 text-green-900 mb-3 flex items-center gap-2">
@@ -117,7 +117,7 @@ export default function HealthyCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Phương pháp Cần Hạn chế</h2>
+        <h2 className="heading-2">Phương pháp Cần hạn chế</h2>
         <Card className="border-red-200 bg-red-50">
           <h3 className="heading-4 text-red-900 mb-3 flex items-center gap-2">
             <AlertCircle className="w-5 h-5" aria-hidden="true" />
@@ -179,7 +179,7 @@ export default function HealthyCookingMethodsPage() {
             </p>
           </Card>
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Lập kế hoạch với phương pháp nấu lành mạnh
             </p>

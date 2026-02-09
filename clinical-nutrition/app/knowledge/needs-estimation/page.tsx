@@ -8,7 +8,7 @@ export default function NeedsEstimationPage() {
       {/* Header */}
       <header className="space-y-3">
         <h1 className="text-2xl font-semibold sm:text-3xl">
-          Ước tính Nhu cầu Dinh dưỡng: Vì sao Khoảng giá trị Quan trọng Hơn Con số Chính xác
+          Ước tính nhu cầu dinh dưỡng: Vì sao khoảng giá trị quan trọng hơn con số chính xác
         </h1>
         <p className="text-base text-neutral-700 sm:text-lg">
           Trong dinh dưỡng lâm sàng, chúng ta ước tính nhu cầu năng lượng, protein, và các chất dinh dưỡng khác để hướng dẫn chăm sóc.
@@ -16,7 +16,7 @@ export default function NeedsEstimationPage() {
         </p>
       </header>
 
-      {/* Why Needs Are Estimates */}
+      {/* Why needs Are estimates */}
       <section
         aria-labelledby="why-estimates-heading"
         className="space-y-4 rounded-lg border border-neutral-200 bg-white p-6"
@@ -25,7 +25,7 @@ export default function NeedsEstimationPage() {
           id="why-estimates-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Vì sao Nhu cầu Là Ước tính, Không phải Mục tiêu Chính xác
+          Vì sao nhu cầu là ước tính, không phải mục tiêu chính xác
         </h2>
         <p className="text-base text-neutral-700">
           Không có công thức nào có thể cho bạn biết yêu cầu calo hoặc protein <em>chính xác</em> cho một người cụ thể vào một ngày cụ thể.
@@ -55,7 +55,7 @@ export default function NeedsEstimationPage() {
         </p>
       </section>
 
-      {/* Different Methods and Why They Differ */}
+      {/* Different methods and Why they Differ */}
       <section
         aria-labelledby="methods-heading"
         className="space-y-4 rounded-lg border border-neutral-200 bg-white p-6"
@@ -64,7 +64,7 @@ export default function NeedsEstimationPage() {
           id="methods-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Các Phương pháp Khác nhau và Vì sao Chúng Khác nhau
+          Các phương pháp Khác nhau và Vì sao Chúng khác nhau
         </h2>
         <p className="text-base text-neutral-700">
           Các bác sĩ lâm sàng sử dụng các phương pháp khác nhau để ước tính nhu cầu. Mỗi phương pháp có điểm mạnh và giới hạn, và chúng thường tạo ra các con số khác nhau.
@@ -89,7 +89,7 @@ export default function NeedsEstimationPage() {
           <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
             <h3 className="font-semibold text-base mb-2">2. Phương trình Dự đoán</h3>
             <p className="text-sm text-neutral-700 mb-2">
-              Ví dụ: Harris-Benedict, Mifflin-St Jeor, Schofield (thường điều chỉnh với yếu tố hoạt động và stress)
+              Ví dụ: Harris-Benedict, Mifflin-St jeor, Schofield (thường điều chỉnh với yếu tố hoạt động và stress)
             </p>
             <p className="text-sm text-neutral-700">
               <strong>Vì sao chúng được sử dụng</strong>: chi tiết hơn, tính đến tuổi, giới tính, chiều cao, cân nặng, và đôi khi hoạt động.
@@ -101,7 +101,7 @@ export default function NeedsEstimationPage() {
           </div>
 
           <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
-            <h3 className="font-semibold text-base mb-2">3. Đo Nhiệt lượng Gián tiếp</h3>
+            <h3 className="font-semibold text-base mb-2">3. Đo nhiệt lượng Gián tiếp</h3>
             <p className="text-sm text-neutral-700 mb-2">
               Đo lượng tiêu thụ oxy và sản xuất carbon dioxide để tính chi tiêu năng lượng nghỉ ngơi
             </p>
@@ -130,7 +130,7 @@ export default function NeedsEstimationPage() {
 
         <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2">
-            Điểm Chính:
+            Điểm chính:
           </p>
           <p className="text-sm text-blue-800">
             Các phương pháp khác nhau tồn tại vì <strong>không có cách tiếp cận đơn lẻ nào phù hợp với tất cả tình huống</strong>. Các bác sĩ lâm sàng có kinh nghiệm thường sử dụng nhiều
@@ -149,7 +149,7 @@ export default function NeedsEstimationPage() {
           id="ranges-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Tầm quan trọng của Khoảng giá trị, Không phải Con số Đơn lẻ
+          Tầm quan trọng của khoảng giá trị, Không phải con số đơn lẻ
         </h2>
         <p className="text-base text-neutral-700">
           Thay vì nói "người này cần chính xác 1.800 calo," các bác sĩ lâm sàng nghĩ theo khoảng:
@@ -192,7 +192,7 @@ export default function NeedsEstimationPage() {
         </div>
       </section>
 
-      {/* Reassessment Is Essential */}
+      {/* Reassessment is essential */}
       <section
         aria-labelledby="reassessment-heading"
         className="space-y-4 rounded-lg border border-neutral-200 bg-white p-6"
@@ -201,7 +201,7 @@ export default function NeedsEstimationPage() {
           id="reassessment-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Đánh giá lại Là Cần thiết: Nhu cầu Thay đổi Theo Thời gian
+          Đánh giá lại Là cần thiết: Nhu cầu Thay đổi Theo thời gian
         </h2>
         <p className="text-base text-neutral-700">
           Ước tính ban đầu <strong>không được đặt trong đá</strong>. Đánh giá lại thường xuyên là phần cốt lõi của thực hành dinh dưỡng lâm sàng.
@@ -235,7 +235,7 @@ export default function NeedsEstimationPage() {
         </p>
       </section>
 
-      {/* Avoiding the "Correct Answer" Trap */}
+      {/* Avoiding the "Correct answer" Trap */}
       <section
         aria-labelledby="trap-heading"
         className="space-y-4 rounded-lg border border-amber-200 bg-amber-50 p-6"
@@ -244,7 +244,7 @@ export default function NeedsEstimationPage() {
           id="trap-heading"
           className="text-xl font-semibold text-amber-900 sm:text-2xl"
         >
-          Tránh Cạm bẫy "Câu trả lời Đúng"
+          Tránh cạm bẫy "Câu trả lời Đúng"
         </h2>
         <p className="text-base text-amber-800">
           Rất dễ coi công thức như thể chúng tạo ra "câu trả lời đúng." Tư duy này có thể dẫn đến:
@@ -303,7 +303,7 @@ export default function NeedsEstimationPage() {
       {/* Link to Tool */}
       <section className="space-y-4 rounded-lg border-2 border-blue-300 bg-blue-50 p-6">
         <h2 className="text-xl font-semibold text-blue-900 sm:text-2xl">
-          Thử Bạn: Máy tính năng lượng & Protein
+          Thử bạn: Máy tính năng lượng & Protein
         </h2>
         <p className="text-base text-blue-800">
           Máy tính tương tác của chúng tôi minh họa cách các phương pháp khác nhau tạo ra các ước tính khác nhau và vì sao khoảng quan trọng.
@@ -314,12 +314,12 @@ export default function NeedsEstimationPage() {
             href="/tools/energy-protein-calculator"
             className="inline-flex items-center rounded-md bg-blue-700 px-4 py-2 text-base font-medium text-white hover:bg-blue-800 transition-colors"
           >
-            Mở Máy tính năng lượng & Protein →
+            Mở máy tính năng lượng & Protein →
           </Link>
         </div>
       </section>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="text-xl font-semibold sm:text-2xl">
           Công cụ liên quan
@@ -362,7 +362,7 @@ export default function NeedsEstimationPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <section className="space-y-2 rounded-lg border border-neutral-200 bg-white p-4">
         <p className="text-xs text-neutral-600 sm:text-sm">
           Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị,

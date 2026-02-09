@@ -1,15 +1,15 @@
 /**
- * Analytics Utilities
+ * Analytics utilities
  * 
  * Provides analytics tracking functionality
- * Can be extended to integrate with Google Analytics, Plausible, etc.
+ * Can be extended to integrate with Google analytics, Plausible, etc.
  */
 
 // Track page views
 export function trackPageView(path: string) {
   if (typeof window === "undefined") return;
 
-  // Example: Google Analytics 4
+  // Example: Google analytics 4
   if (typeof window.gtag !== "undefined") {
     window.gtag("config", process.env.NEXT_PUBLIC_GA_ID || "", {
       page_path: path,
@@ -34,7 +34,7 @@ export function trackEvent(
 ) {
   if (typeof window === "undefined") return;
 
-  // Example: Google Analytics 4
+  // Example: Google analytics 4
   if (typeof window.gtag !== "undefined") {
     window.gtag("event", eventName, eventParams);
   }
@@ -74,7 +74,7 @@ export function trackSearch(query: string, resultCount: number) {
   });
 }
 
-// Extend Window interface for TypeScript
+// Extend window interface for TypeScript
 declare global {
   interface Window {
     gtag?: (...args: any[]) => void;

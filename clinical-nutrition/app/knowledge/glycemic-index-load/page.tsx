@@ -44,7 +44,7 @@ export default function GlycemicIndexLoadPage() {
         </p>
       </header>
 
-      {/* Key Points */}
+      {/* Key points */}
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
@@ -360,7 +360,7 @@ export default function GlycemicIndexLoadPage() {
         </div>
       </section>
 
-      {/* Why Important */}
+      {/* Why important */}
       <section className="space-y-4">
         <h2 className="heading-2">Tại sao GI và GL quan trọng trong Dinh dưỡng lâm sàng?</h2>
         <div className="space-y-4">
@@ -395,7 +395,7 @@ export default function GlycemicIndexLoadPage() {
         </div>
       </section>
 
-      {/* Vietnamese Food Table */}
+      {/* Vietnamese food table */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Apple className="w-6 h-6 text-green-600" aria-hidden="true" />
@@ -410,7 +410,7 @@ export default function GlycemicIndexLoadPage() {
         <div className="space-y-6">
           {/* Tinh bột */}
           <Card>
-            <h3 className="heading-4 mb-3">🍚 Nhóm Tinh bột – Cơm, Bún, Phở, Bánh</h3>
+            <h3 className="heading-4 mb-3">🍚 Nhóm tinh bột – Cơm, Bún, Phở, Bánh</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -471,7 +471,7 @@ export default function GlycemicIndexLoadPage() {
 
           {/* Củ */}
           <Card>
-            <h3 className="heading-4 mb-3">🥔 Nhóm Củ – Khoai</h3>
+            <h3 className="heading-4 mb-3">🥔 Nhóm củ – Khoai</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -508,7 +508,7 @@ export default function GlycemicIndexLoadPage() {
 
           {/* Trái cây */}
           <Card>
-            <h3 className="heading-4 mb-3">🍌 Nhóm Trái cây phổ biến</h3>
+            <h3 className="heading-4 mb-3">🍌 Nhóm trái cây phổ biến</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -563,7 +563,7 @@ export default function GlycemicIndexLoadPage() {
 
           {/* Đậu */}
           <Card>
-            <h3 className="heading-4 mb-3">🫘 Nhóm Đậu – Nguồn đạm thực vật</h3>
+            <h3 className="heading-4 mb-3">🫘 Nhóm đậu – Nguồn đạm thực vật</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -612,7 +612,7 @@ export default function GlycemicIndexLoadPage() {
 
           {/* Sữa và đồ uống */}
           <Card>
-            <h3 className="heading-4 mb-3">🥛 Nhóm Sữa – Đồ uống</h3>
+            <h3 className="heading-4 mb-3">🥛 Nhóm sữa – Đồ uống</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -679,7 +679,7 @@ export default function GlycemicIndexLoadPage() {
         </Callout>
       </section>
 
-      {/* Practical Application - Vietnamese Life */}
+      {/* Practical application - Vietnamese life */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
@@ -768,11 +768,11 @@ export default function GlycemicIndexLoadPage() {
         </div>
       </section>
 
-      {/* Practical Application */}
+      {/* Practical application */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách Áp dụng trong thực tế
+          Cách áp dụng trong thực tế
         </h2>
         <div className="space-y-4">
           <Card>
@@ -870,7 +870,7 @@ export default function GlycemicIndexLoadPage() {
         </Card>
       </section>
 
-      {/* Related Articles */}
+      {/* Related articles */}
       <section className="space-y-4">
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -881,7 +881,7 @@ export default function GlycemicIndexLoadPage() {
             </p>
           </Card>
           <Card href="/knowledge/needs-estimation">
-            <h3 className="heading-5 mb-2">Ước tính Nhu cầu Dinh dưỡng</h3>
+            <h3 className="heading-5 mb-2">Ước tính nhu cầu dinh dưỡng</h3>
             <p className="text-sm text-gray-600">
               Hiểu cách ước tính nhu cầu dinh dưỡng tổng thể
             </p>
@@ -921,7 +921,7 @@ export default function GlycemicIndexLoadPage() {
         </Card>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
           Thông tin này chỉ dành cho mục đích giáo dục. Không thay thế tư vấn y tế. 

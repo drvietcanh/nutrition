@@ -146,7 +146,7 @@ export default function VietnameseFamilyMealsPage() {
         <h2 className="heading-2">Ví dụ Bữa ăn Cụ thể</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Trưa Gia đình</h3>
+            <h3 className="heading-4 mb-3">Bữa trưa Gia đình</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <Wheat className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -194,7 +194,7 @@ export default function VietnameseFamilyMealsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Tối Gia đình</h3>
+            <h3 className="heading-4 mb-3">Bữa tối gia đình</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <Wheat className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -276,7 +276,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Bữa ăn cân bằng vs Không Cân bằng</h2>
+        <h2 className="heading-2">So sánh: Bữa ăn cân bằng vs Không cân bằng</h2>
         <ComparisonCard
           title="Ví dụ So sánh"
           items={[
@@ -337,7 +337,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Điều chỉnh Theo Nhu cầu</h2>
+        <h2 className="heading-2">Điều chỉnh Theo nhu cầu</h2>
         <Card>
           <h3 className="heading-4 mb-3">Khi nào cần điều chỉnh?</h3>
           <div className="space-y-3 text-body-sm">
@@ -400,13 +400,13 @@ export default function VietnameseFamilyMealsPage() {
             </p>
           </Card>
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Cách lập kế hoạch bữa ăn gia đình
             </p>
           </Card>
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan về các Chất Dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan về các Chất dinh dưỡng Đa lượng</h3>
             <p className="text-sm text-gray-600">
               Hiểu về carbohydrate, protein, chất béo trong bữa ăn
             </p>

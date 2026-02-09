@@ -102,9 +102,9 @@ export default function MagnesiumHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Magnesium Tốt</h2>
+        <h2 className="heading-2">Nguồn magnesium tốt</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Thực phẩm Giàu Magnesium</h3>
+          <h3 className="heading-4 mb-3">Thực phẩm Giàu magnesium</h3>
           <NutrientTable
             title="Hàm lượng Magnesium trong Thực phẩm"
             rows={[
@@ -139,7 +139,7 @@ export default function MagnesiumHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Symptoms của Thiếu Magnesium</h2>
+        <h2 className="heading-2">Symptoms của Thiếu magnesium</h2>
         <Card>
           <h3 className="heading-4 mb-3">Dấu hiệu Có thể Thiếu</h3>
           <div className="space-y-2 text-sm text-gray-700">

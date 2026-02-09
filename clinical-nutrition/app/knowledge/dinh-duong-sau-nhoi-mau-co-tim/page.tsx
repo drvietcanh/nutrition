@@ -80,7 +80,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
         </Callout>
       </header>
 
-      {/* 2. Why Nutrition Matters */}
+      {/* 2. Why nutrition matters */}
       <section aria-labelledby="why-matters-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -95,7 +95,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card className="border-red-200 bg-red-50/30">
-              <h3 className="heading-5 mb-2">🔹 Giảm Cholesterol</h3>
+              <h3 className="heading-5 mb-2">🔹 Giảm cholesterol</h3>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Giảm LDL cholesterol (cholesterol xấu)</li>
                 <li>• Tăng HDL cholesterol (cholesterol tốt)</li>
@@ -129,7 +129,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
         </div>
       </section>
 
-      {/* 3. Basic Nutrition Principles */}
+      {/* 3. Basic nutrition principles */}
       <section aria-labelledby="principles-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -209,7 +209,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
           />
           <CardContent>
             <p className="text-body mb-4">
-              Chế độ ăn Địa Trung Hải (Mediterranean diet) hoặc DASH được khuyến cáo cho người sau nhồi máu cơ tim.
+              Chế độ ăn Địa trung hải (Mediterranean diet) hoặc DASH được khuyến cáo cho người sau nhồi máu cơ tim.
             </p>
             <div className="space-y-3">
               <div>
@@ -228,7 +228,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
         </Card>
       </section>
 
-      {/* 4. Practical Tips */}
+      {/* 4. Practical tips */}
       <section aria-labelledby="tips-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -292,7 +292,7 @@ export default function DinhDuongSauNhoiMauCoTimPage() {
         </Callout>
       </section>
 
-      {/* Related Content */}
+      {/* Related content */}
       {article && <RelatedContent currentSlug={article.slug} />}
     </main>
   );

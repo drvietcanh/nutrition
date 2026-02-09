@@ -78,7 +78,7 @@ export default function HypertensionNutritionPage() {
         </Callout>
       </header>
 
-      {/* 2. Why Nutrition Matters in Hypertension */}
+      {/* 2. Why nutrition matters in Hypertension */}
       <section aria-labelledby="why-matters-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -124,7 +124,7 @@ export default function HypertensionNutritionPage() {
         </div>
       </section>
 
-      {/* 3. Basic Nutrition Principles */}
+      {/* 3. Basic nutrition Principles */}
       <section aria-labelledby="principles-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -138,7 +138,7 @@ export default function HypertensionNutritionPage() {
         <Card>
           <CardHeader
             icon={CheckCircle}
-            title="🍽️ Chế độ ăn DASH (Dietary Approaches to Stop Hypertension)"
+            title="🍽️ Chế độ ăn DASH (Dietary approaches to Stop hypertension)"
           />
           <CardContent>
             <p className="text-body mb-4">
@@ -155,7 +155,7 @@ export default function HypertensionNutritionPage() {
             </div>
             <h3 className="heading-4 mb-3">Các thành phần chính của DASH:</h3>
             
-            {/* DASH Diet Table */}
+            {/* DASH Diet table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
                 <thead className="bg-green-100">
@@ -241,7 +241,7 @@ export default function HypertensionNutritionPage() {
           <h3 className="heading-3">🧂 Muối (Natri) – Yếu tố quan trọng nhất</h3>
           <h4 className="heading-4 mb-3">Khuyến nghị chung</h4>
           
-          {/* Sodium Recommendations Table */}
+          {/* Sodium recommendations table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
               <thead className="bg-neutral-50">
@@ -334,9 +334,9 @@ export default function HypertensionNutritionPage() {
           </div>
         </div>
 
-        {/* Other Nutrients */}
+        {/* Other nutrients */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Các Chất Dinh dưỡng Khác</h3>
+          <h3 className="heading-3">Các chất dinh dưỡng Khác</h3>
           <div className="space-y-3 text-body-sm">
             <p>
               <strong>Magnesium:</strong> Một số nghiên cứu cho thấy magie có thể giúp giảm huyết áp nhẹ.
@@ -354,12 +354,12 @@ export default function HypertensionNutritionPage() {
         </div>
       </section>
 
-      {/* 4. Nutrition Adjustments by Disease Status */}
+      {/* 4. Nutrition adjustments by Disease status */}
       <section aria-labelledby="adjustments-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="adjustments-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Dinh dưỡng Theo Tình trạng Bệnh
+            Điều chỉnh Dinh dưỡng Theo tình trạng Bệnh
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -418,12 +418,12 @@ export default function HypertensionNutritionPage() {
         </div>
       </section>
 
-      {/* 5. Common Difficulties & Solutions */}
+      {/* 5. Common difficulties & Solutions */}
       <section aria-labelledby="difficulties-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="difficulties-heading" className="heading-2 whitespace-nowrap">
-            Một số Khó khăn Thường gặp & Cách Xử lý
+            Một số Khó khăn Thường gặp & Cách xử lý
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -481,7 +481,7 @@ export default function HypertensionNutritionPage() {
         </div>
       </section>
 
-      {/* 6. Drug-Nutrition Interactions */}
+      {/* 6. Drug-Nutrition interactions */}
       <section aria-labelledby="interactions-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -496,7 +496,7 @@ export default function HypertensionNutritionPage() {
           </p>
 
           <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-            <h3 className="heading-4">Thuốc Lợi tiểu (Diuretics)</h3>
+            <h3 className="heading-4">Thuốc lợi tiểu (Diuretics)</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li>
                 <strong>Thiazide diuretics:</strong> Có thể gây mất kali và magie. Có thể cần bổ sung
@@ -561,7 +561,7 @@ export default function HypertensionNutritionPage() {
             khi cần:
           </p>
 
-          {/* Monitoring Parameters Table */}
+          {/* Monitoring parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
               <thead className="bg-neutral-50">
@@ -674,12 +674,12 @@ export default function HypertensionNutritionPage() {
         </div>
       </section>
 
-      {/* 8. Common Clinical Pitfalls */}
+      {/* 8. Common clinical pitfalls */}
       <section aria-labelledby="pitfalls-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy lâm sàng Phổ biến
+            Các cạm bẫy lâm sàng Phổ biến
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -729,22 +729,22 @@ export default function HypertensionNutritionPage() {
           </p>
           <ul className="list-disc space-y-2 pl-6 text-body-sm">
             <li>
-              <strong>American Heart Association (AHA):</strong> Hướng dẫn về chế độ ăn và lối sống
+              <strong>American heart association (AHA):</strong> Hướng dẫn về chế độ ăn và lối sống
               để giảm huyết áp, bao gồm DASH diet.
             </li>
             <li>
-              <strong>American College of Cardiology (ACC):</strong> Hướng dẫn về quản lý tăng huyết áp,
+              <strong>American college of Cardiology (ACC):</strong> Hướng dẫn về quản lý tăng huyết áp,
               bao gồm vai trò của dinh dưỡng.
             </li>
             <li>
-              <strong>National Heart, Lung, and Blood Institute (NHLBI):</strong> Thông tin chi tiết về
+              <strong>National heart, Lung, and Blood institute (NHLBI):</strong> Thông tin chi tiết về
               DASH diet và nghiên cứu DASH.
             </li>
             <li>
-              <strong>World Health Organization (WHO):</strong> Khuyến nghị về giảm natri trong chế độ ăn.
+              <strong>World health organization (WHO):</strong> Khuyến nghị về giảm natri trong chế độ ăn.
             </li>
           </ul>
-          <Callout variant="info" title="Khi nào Cần Tham khảo Chuyên gia Dinh dưỡng">
+          <Callout variant="info" title="Khi nào Cần tham khảo Chuyên gia Dinh dưỡng">
             <p className="text-body-sm">
               Nên tham khảo chuyên gia dinh dưỡng đã đăng ký khi:
             </p>
@@ -759,7 +759,7 @@ export default function HypertensionNutritionPage() {
         </div>
       </section>
 
-      {/* 10. Safety Disclaimer */}
+      {/* 10. Safety disclaimer */}
       <section aria-labelledby="safety-heading" className="space-y-4">
         <h2 id="safety-heading" className="heading-3">
           ⚠️ Nhắc nhở An toàn
@@ -784,7 +784,7 @@ export default function HypertensionNutritionPage() {
         </Callout>
       </section>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">
           Công cụ liên quan

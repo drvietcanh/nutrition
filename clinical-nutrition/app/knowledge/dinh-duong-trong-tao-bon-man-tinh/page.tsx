@@ -65,7 +65,7 @@ export default function DinhDuongTrongTaoBonManTinhPage() {
         </div>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="🌾 Tăng Chất xơ" />
+          <CardHeader icon={CheckCircle} title="🌾 Tăng chất xơ" />
           <CardContent>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Mục tiêu: 25-30g chất xơ/ngày</li>

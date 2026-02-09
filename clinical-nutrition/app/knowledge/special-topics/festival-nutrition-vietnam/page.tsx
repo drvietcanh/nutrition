@@ -62,13 +62,13 @@ export default function FestivalNutritionVietnamPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tết - Món Ăn truyền thống</h2>
+        <h2 className="heading-2">Tết - Món ăn truyền thống</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Tết có nhiều món ăn đặc biệt, giàu calo và natri. Hiểu về giá trị dinh dưỡng giúp bạn ăn vừa phải.
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng Món Ăn Tết (100g)"
+            title="Giá trị Dinh dưỡng Món ăn tết (100g)"
             rows={[
               { nutrient: "Bánh chưng", amount: "181", unit: "calo", note: "Nhiều carbohydrate, ít protein" },
               { nutrient: "Bánh tét", amount: "200", unit: "calo", note: "Nhiều carbohydrate, ít protein" },
@@ -99,7 +99,7 @@ export default function FestivalNutritionVietnamPage() {
           </p>
           <div className="space-y-3">
             <div className="bg-red-50 rounded-lg p-3 border border-red-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Bánh Trung thu:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Bánh trung thu:</p>
               <p className="text-xs text-gray-700">
                 Nhiều đường, calo cao (200-300 calo/bánh). Nên ăn ít (1/4-1/2 bánh/ngày).
               </p>
@@ -126,7 +126,7 @@ export default function FestivalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Các Lễ hội Khác</h2>
+        <h2 className="heading-2">Các lễ hội Khác</h2>
         <Card>
           <div className="space-y-3">
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
@@ -135,7 +135,7 @@ export default function FestivalNutritionVietnamPage() {
                 Nhiều lễ hội có bánh, kẹo, đồ ngọt. Ăn vừa phải, cân bằng với bữa ăn chính.
               </p>
             </div>
-            <ExampleBox variant="tip" title="Tips Chung">
+            <ExampleBox variant="tip" title="Tips chung">
               <p className="text-sm mb-2">
                 <strong>Nguyên tắc:</strong>
               </p>

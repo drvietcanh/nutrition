@@ -112,7 +112,7 @@ export function InteractiveSection() {
       </Card>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Food List */}
+        {/* Food list */}
         <div className="space-y-4">
           <h2 className="heading-3">
             Danh sách Thực phẩm ({filteredFoods.length})
@@ -171,7 +171,7 @@ export function InteractiveSection() {
           </div>
         </div>
 
-        {/* Selected Food Details */}
+        {/* Selected food Details */}
         <div className="space-y-4">
           <h2 className="heading-3">chi tiết Dinh dưỡng</h2>
           {selectedFood ? (
@@ -194,7 +194,7 @@ export function InteractiveSection() {
                   </button>
                 </div>
 
-                {/* Servings Input */}
+                {/* Servings input */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Số khẩu phần
@@ -233,18 +233,18 @@ export function InteractiveSection() {
                   </div>
                 </div>
 
-                {/* Nutrition Chart */}
+                {/* Nutrition chart */}
                 {chartData && chartData.length > 0 && (
                   <div>
                     <NutrientChart
                       data={chartData}
-                      title="Phân tích Chất Dinh dưỡng Đa lượng"
+                      title="Phân tích Chất dinh dưỡng Đa lượng"
                       unit="g"
                     />
                   </div>
                 )}
 
-                {/* Nutrition Table */}
+                {/* Nutrition table */}
                 {nutrition && (
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3">

@@ -91,12 +91,12 @@ export default function VitaminAEyeHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Hai Loại Vitamin A</h2>
+        <h2 className="heading-2">Hai loại Vitamin A</h2>
         <Card>
           <h3 className="heading-4 mb-3">Retinol vs Beta-carotene</h3>
           <div className="space-y-3 text-body-sm">
             <p>
-              <strong>Retinol (Preformed Vitamin A):</strong> Có sẵn trong thực phẩm động vật. 
+              <strong>Retinol (Preformed vitamin A):</strong> Có sẵn trong thực phẩm động vật. 
               cơ thể sử dụng trực tiếp. Có thể tích tụ và gây độc nếu quá nhiều.
             </p>
             <p>
@@ -107,7 +107,7 @@ export default function VitaminAEyeHealthPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Nguồn Thực phẩm</h3>
+          <h3 className="heading-4 mb-3">Nguồn thực phẩm</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <p className="text-sm font-semibold text-gray-900 mb-2">Retinol (Động vật):</p>
@@ -133,7 +133,7 @@ export default function VitaminAEyeHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Vitamin A Tốt</h2>
+        <h2 className="heading-2">Nguồn vitamin A Tốt</h2>
         <Card>
           <h3 className="heading-4 mb-3">Hàm lượng Vitamin A trong Thực phẩm</h3>
           <NutrientTable

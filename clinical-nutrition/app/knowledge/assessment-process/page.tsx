@@ -8,7 +8,7 @@ export default function AssessmentProcessPage() {
       {/* 1. Page title & introduction */}
       <header className="space-y-5 border-b border-neutral-200 pb-8">
         <h1 className="text-3xl font-semibold leading-tight text-neutral-900 sm:text-4xl">
-          Đánh giá Dinh dưỡng lâm sàng: Hiểu Quy trình
+          Đánh giá Dinh dưỡng lâm sàng: Hiểu quy trình
         </h1>
         <div className="space-y-4 text-body-lg">
           <p>
@@ -120,7 +120,7 @@ export default function AssessmentProcessPage() {
                   2
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-base mb-1">Ước tính Nhu cầu Dinh dưỡng</h3>
+                  <h3 className="font-semibold text-base mb-1">Ước tính nhu cầu dinh dưỡng</h3>
                   <p className="text-sm text-neutral-700">
                     Ước tính những gì cơ thể họ có thể cần. Điều này cung cấp một <strong>khoảng mục tiêu</strong> để xem xét.
                   </p>
@@ -131,7 +131,7 @@ export default function AssessmentProcessPage() {
                   3
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-base mb-1">So sánh Nhu cầu với Lượng Ăn thực tế</h3>
+                  <h3 className="font-semibold text-base mb-1">So sánh Nhu cầu với Lượng ăn thực tế</h3>
                   <p className="text-sm text-neutral-700">
                     Đo lường những gì họ thực sự đang nhận được. Điều này tiết lộ <strong>khoảng cách</strong> giữa nhu cầu và thực tế.
                   </p>
@@ -158,7 +158,7 @@ export default function AssessmentProcessPage() {
 
           <div className="rounded-md bg-amber-50 border border-amber-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Vì sao Bỏ qua Các Bước Dẫn đến Nhầm lẫn
+              Vì sao Bỏ qua Các bước Dẫn đến Nhầm lẫn
             </h3>
             <p className="text-sm text-amber-800 mb-2">
               Khi các bước bị bỏ qua hoặc thực hiện không đúng thứ tự, đánh giá trở nên ít hữu ích hơn:
@@ -305,7 +305,7 @@ export default function AssessmentProcessPage() {
 
           <div className="rounded-md bg-red-50 border border-red-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-red-900">
-              Cạm bẫy Phổ biến Cần Tránh
+              Cạm bẫy Phổ biến Cần tránh
             </h3>
             <ul className="list-disc space-y-2 pl-5 text-sm text-red-800">
               <li>
@@ -339,7 +339,7 @@ export default function AssessmentProcessPage() {
             href="/tools/malnutrition-screening"
             className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
           >
-            Công cụ Sàng lọc Suy Dinh dưỡng (Công cụ 01) →
+            Công cụ Sàng lọc Suy dinh dưỡng (Công cụ 01) →
           </Link>
         </div>
       </section>
@@ -375,7 +375,7 @@ export default function AssessmentProcessPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Vì sao Nhu cầu Là Ước tính, Không phải Mục tiêu Chính xác
+              Vì sao nhu cầu là ước tính, không phải mục tiêu chính xác
             </h3>
             <p className="text-base text-neutral-700 mb-2">
               Không có công thức nào có thể cho bạn biết nhu cầu calo hoặc protein chính xác cho một người cụ thể vào một ngày cụ thể. Đây là lý do:
@@ -423,7 +423,7 @@ export default function AssessmentProcessPage() {
               <div className="rounded-md bg-neutral-50 border border-neutral-200 p-4">
                 <h4 className="font-semibold text-sm mb-2">Phương trình dự đoán</h4>
                 <p className="text-sm text-neutral-700">
-                  Ví dụ: Harris–Benedict, Mifflin–St Jeor, Schofield (thường có hệ số hoạt động/stress). chi tiết hơn, tính đến tuổi, giới,
+                  Ví dụ: Harris–Benedict, Mifflin–St jeor, Schofield (thường có hệ số hoạt động/stress). chi tiết hơn, tính đến tuổi, giới,
                   chiều cao, cân nặng và đôi khi hoạt động. Dù vậy, chúng vẫn dựa trên trung bình quần thể, không “đo” được đúng nhu cầu cá thể.
                 </p>
               </div>
@@ -538,7 +538,7 @@ export default function AssessmentProcessPage() {
             id="intake-heading"
             className="text-2xl font-semibold text-neutral-900 sm:text-3xl whitespace-nowrap"
           >
-            Bước 3: Đánh giá Lượng Ăn thực tế
+            Bước 3: Đánh giá Lượng ăn thực tế
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -554,7 +554,7 @@ export default function AssessmentProcessPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Kê đơn vs. Cung cấp: Khoảng cách Giữa Kế hoạch và thực tế
+              Kê đơn vs. Cung cấp: Khoảng cách Giữa kế hoạch và thực tế
             </h3>
             <p className="text-base text-neutral-700 mb-2">
               Trong môi trường lâm sàng, thường có sự khác biệt giữa:
@@ -594,7 +594,7 @@ export default function AssessmentProcessPage() {
 
             <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
               <p className="text-sm font-semibold text-neutral-900 mb-2">
-                Ví dụ lâm sàng 2: Cho ăn Qua Ống (Enteral)
+                Ví dụ lâm sàng 2: Cho ăn Qua ống (Enteral)
               </p>
               <p className="text-sm text-neutral-700 mb-2">
                 Một bệnh nhân có ống thông mũi dạ dày với lệnh "cho ăn liên tục 80 mL/giờ, cung cấp 1.600 kcal/ngày." Tuy nhiên:
@@ -614,7 +614,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Vì sao Lượng Ăn Thường Thiếu trong Thực hành
+              Vì sao Lượng ăn Thường thiếu trong Thực hành
             </h3>
             <p className="text-base text-neutral-700 mb-2">
               Hiểu <strong>vì sao</strong> lượng ăn thiếu giúp các bác sĩ lâm sàng giải quyết nguyên nhân gốc rễ, không chỉ triệu chứng. Lý do phổ biến bao gồm:
@@ -653,7 +653,7 @@ export default function AssessmentProcessPage() {
             </div>
             <div className="rounded-md bg-blue-50 border border-blue-200 p-4 mt-3">
               <p className="text-sm font-semibold text-blue-900 mb-1">
-                Hiểu Biết Lâm Sàng:
+                Hiểu biết lâm sàng:
               </p>
               <p className="text-sm text-blue-800">
                 Khi lượng ăn vào thiếu, hiếm khi chỉ là "bệnh nhân không chịu ăn." Thường có một <strong>lý do</strong>—triệu chứng, thủ thuật,
@@ -665,7 +665,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Tầm quan trọng của Xu hướng So với Dữ liệu Một Ngày
+              Tầm quan trọng của Xu hướng So với Dữ liệu Một ngày
             </h3>
             <p className="text-base text-neutral-700 mb-2">
               Dữ liệu lượng ăn một ngày có thể gây hiểu lầm. Các bác sĩ lâm sàng tập trung vào <strong>mô hình theo thời gian</strong> vì:
@@ -717,7 +717,7 @@ export default function AssessmentProcessPage() {
 
             <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
               <p className="text-sm font-semibold text-neutral-900 mb-2">
-                Clinical Example: Concerning Trend
+                Clinical example: Concerning trend
               </p>
               <p className="text-sm text-neutral-700 mb-2">
                 Another patient's intake over 7 days:
@@ -753,7 +753,7 @@ export default function AssessmentProcessPage() {
             href="/tools/intake-assessment"
             className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
           >
-            Bảng Đánh giá Lượng Ăn (Công cụ 03) →
+            Bảng đánh giá Lượng ăn (Công cụ 03) →
           </Link>
           <p className="text-xs text-blue-700 mt-2">
             Hoặc <Link href="/knowledge/intake-assessment" className="underline">tìm hiểu thêm về đánh giá lượng ăn</Link>
@@ -786,7 +786,7 @@ export default function AssessmentProcessPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-base mb-2 text-neutral-900">
-              Cách Các Bác sĩ lâm sàng Tổng hợp Thông tin
+              Cách các Bác sĩ lâm sàng Tổng hợp Thông tin
             </h3>
             <p className="text-base text-neutral-700 mb-2">
               Các bác sĩ lâm sàng có kinh nghiệm không chỉ thu thập dữ liệu—họ <strong>tổng hợp</strong> nó. Họ lấy thông tin từ sàng lọc,
@@ -1079,7 +1079,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Đánh giá lâm sàng Là Đa ngành
+              Đánh giá lâm sàng Là đa ngành
             </h3>
             <p className="text-sm text-amber-800 mb-2">
               Đánh giá dinh dưỡng hiệu quả trong thực hành lâm sàng liên quan đến <strong>nhóm đa ngành</strong>. Các thành viên nhóm khác nhau
@@ -1101,7 +1101,7 @@ export default function AssessmentProcessPage() {
 
           <div>
             <h3 className="font-semibold text-base mb-2 text-amber-900">
-              Đánh giá lại Là Cần thiết
+              Đánh giá lại Là cần thiết
             </h3>
             <p className="text-sm text-amber-800 mb-2">
               Đánh giá dinh dưỡng <strong>không phải là sự kiện một lần</strong>. Nó là quy trình đang diễn ra đòi hỏi đánh giá lại thường xuyên:
@@ -1182,7 +1182,7 @@ export default function AssessmentProcessPage() {
             id="cta-heading"
             className="text-2xl font-semibold text-blue-900 sm:text-3xl whitespace-nowrap"
           >
-            Khám phá Các Công cụ
+            Khám phá Các công cụ
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
         </div>
@@ -1197,20 +1197,20 @@ export default function AssessmentProcessPage() {
               Mới với Đánh giá Dinh dưỡng lâm sàng?
             </h3>
             <p className="text-sm text-blue-800 mb-3">
-              Nếu bạn mới bắt đầu, chúng tôi khuyến nghị bắt đầu với <strong>Công cụ 01: Sàng lọc Suy Dinh dưỡng</strong>. Công cụ này
+              Nếu bạn mới bắt đầu, chúng tôi khuyến nghị bắt đầu với <strong>Công cụ 01: Sàng lọc Suy dinh dưỡng</strong>. Công cụ này
               giới thiệu bạn với bước đầu tiên của đánh giá và giúp bạn hiểu cách sàng lọc hoạt động trong thực hành.
             </p>
             <Link
               href="/tools/malnutrition-screening"
               className="inline-flex items-center text-sm font-medium text-blue-700 hover:text-blue-900 underline"
             >
-              Bắt đầu với Công cụ 01: Sàng lọc Suy Dinh dưỡng →
+              Bắt đầu với Công cụ 01: Sàng lọc Suy dinh dưỡng →
             </Link>
           </div>
 
           <div>
             <h3 className="font-semibold text-base mb-3 text-blue-900">
-              Sử dụng Các Công cụ Theo Trình tự
+              Sử dụng Các công cụ Theo trình tự
             </h3>
             <p className="text-sm text-blue-800 mb-3">
               Các công cụ được thiết kế để hoạt động cùng nhau, theo trình tự đánh giá bạn đã học. Sử dụng chúng theo thứ tự giúp bạn
@@ -1276,7 +1276,7 @@ export default function AssessmentProcessPage() {
 
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Sắp Ra mắt: Học tập Dựa trên Ca bệnh
+              Sắp ra mắt: Học tập Dựa trên Ca bệnh
             </h3>
             <p className="text-sm text-blue-800">
               Chúng tôi đang làm việc trên các mô-đun học tập dựa trên ca bệnh sẽ cho phép bạn thực hành quy trình đánh giá đầy đủ với các tình huống bệnh nhân thực tế.
@@ -1287,7 +1287,7 @@ export default function AssessmentProcessPage() {
 
         <div className="mt-6 p-4 bg-white rounded-md border border-blue-200">
           <p className="text-sm font-semibold text-blue-900 mb-2">
-            Lời Nhắc nhẹ nhàng
+            Lời nhắc nhẹ nhàng
           </p>
           <p className="text-sm text-blue-800">
             Hãy dành thời gian khám phá các công cụ này. Không có gấp gáp, và không có câu trả lời "đúng" hoặc "sai"—đây là công cụ học tập,
@@ -1297,14 +1297,14 @@ export default function AssessmentProcessPage() {
         </div>
       </section>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="text-xl font-semibold sm:text-2xl">
           Tất cả Công cụ Đánh giá Dinh dưỡng
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/malnutrition-screening">
-            <CardHeader icon={CheckCircle} title="Nguy cơ Suy Dinh dưỡng" />
+            <CardHeader icon={CheckCircle} title="Nguy cơ Suy dinh dưỡng" />
             <CardContent>
               <p className="text-body-sm">
                 Công cụ sàng lọc để đánh giá nguy cơ suy dinh dưỡng sử dụng NRS-2002 và PG-SGA.
@@ -1320,7 +1320,7 @@ export default function AssessmentProcessPage() {
             </CardContent>
           </Card>
           <Card href="/tools/intake-assessment">
-            <CardHeader icon={CheckCircle} title="Đánh giá Lượng Ăn" />
+            <CardHeader icon={CheckCircle} title="Đánh giá Lượng ăn" />
             <CardContent>
               <p className="text-body-sm">
                 So sánh lượng dinh dưỡng thực tế ăn vào với nhu cầu ước tính.

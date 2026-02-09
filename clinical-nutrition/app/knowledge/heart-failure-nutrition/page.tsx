@@ -82,12 +82,12 @@ export default function HeartFailureNutritionPage() {
         </Callout>
       </header>
 
-      {/* 2. Why Nutrition Matters */}
+      {/* 2. Why nutrition matters */}
       <section aria-labelledby="why-matters-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="why-matters-heading" className="heading-2 whitespace-nowrap">
-            Vì sao Dinh dưỡng Rất Quan trọng trong Suy tim?
+            Vì sao Dinh dưỡng Rất quan trọng trong Suy tim?
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -126,7 +126,7 @@ export default function HeartFailureNutritionPage() {
         </div>
       </section>
 
-      {/* 3. Basic Nutrition Principles */}
+      {/* 3. Basic nutrition Principles */}
       <section aria-labelledby="principles-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -144,7 +144,7 @@ export default function HeartFailureNutritionPage() {
               Muối làm cơ thể giữ nước, vì vậy hạn chế muối là nền tảng trong suy tim.
             </p>
             <h4 className="heading-4 mb-3">Khuyến nghị chung theo mức độ suy tim</h4>
-            {/* Sodium Recommendations by NYHA Class Table */}
+            {/* Sodium recommendations by NYHA Class table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
                 <thead className="bg-red-100">
@@ -211,7 +211,7 @@ export default function HeartFailureNutritionPage() {
               <li>Dễ nhập viện</li>
             </ul>
             <h4 className="heading-4 mb-3">Khuyến nghị chung</h4>
-            {/* Fluid Recommendations Table */}
+            {/* Fluid recommendations Table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
                 <thead className="bg-blue-100">
@@ -249,9 +249,9 @@ export default function HeartFailureNutritionPage() {
           </div>
         </div>
 
-        {/* Weight Monitoring */}
+        {/* Weight monitoring */}
         <div className="space-y-4 rounded-lg border border-green-200 bg-green-50/30 p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">Theo dõi Cân nặng – Dấu hiệu Rất Quan trọng</h3>
+          <h3 className="heading-3">Theo dõi Cân nặng – Dấu hiệu Rất quan trọng</h3>
           <div className="space-y-3 text-body">
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li><strong>Cân mỗi sáng, sau khi đi vệ sinh, trước ăn</strong></li>
@@ -316,12 +316,12 @@ export default function HeartFailureNutritionPage() {
         </div>
       </section>
 
-      {/* 4. Adjustments by Disease Status */}
+      {/* 4. Adjustments by Disease status */}
       <section aria-labelledby="adjustments-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="adjustments-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Theo Mức độ Suy tim
+            Điều chỉnh Theo mức độ Suy tim
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -357,12 +357,12 @@ export default function HeartFailureNutritionPage() {
         </div>
       </section>
 
-      {/* 5. Managing Complications */}
+      {/* 5. Managing complications */}
       <section aria-labelledby="complications-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="complications-heading" className="heading-2 whitespace-nowrap">
-            Các Vấn đề Dinh dưỡng Thường gặp
+            Các vấn đề Dinh dưỡng Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -406,12 +406,12 @@ export default function HeartFailureNutritionPage() {
         </Card>
       </section>
 
-      {/* 6. Drug-Nutrition Interactions */}
+      {/* 6. Drug-Nutrition interactions */}
       <section aria-labelledby="interactions-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="interactions-heading" className="heading-2 whitespace-nowrap">
-            Điện giải & Thuốc – Điều Người bệnh Cần biết
+            Điện giải & Thuốc – Điều người bệnh Cần biết
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -451,7 +451,7 @@ export default function HeartFailureNutritionPage() {
             Theo dõi đều đặn là quan trọng để đánh giá hiệu quả của can thiệp dinh dưỡng và điều chỉnh khi cần:
           </p>
           
-          {/* Monitoring Parameters Table */}
+          {/* Monitoring parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
               <thead className="bg-neutral-50">
@@ -577,7 +577,7 @@ export default function HeartFailureNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy lâm sàng Phổ biến
+            Các cạm bẫy lâm sàng Phổ biến
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -624,18 +624,18 @@ export default function HeartFailureNutritionPage() {
         <div className="space-y-4 text-body-lg">
           <ul className="list-disc space-y-2 pl-6 text-body-sm">
             <li>
-              <strong>American Heart Association (AHA):</strong> Hướng dẫn về quản lý suy tim, bao gồm
+              <strong>American heart association (AHA):</strong> Hướng dẫn về quản lý suy tim, bao gồm
               vai trò của dinh dưỡng.
             </li>
             <li>
-              <strong>European Society of Cardiology (ESC):</strong> Hướng dẫn về chẩn đoán và điều trị
+              <strong>European society of Cardiology (ESC):</strong> Hướng dẫn về chẩn đoán và điều trị
               suy tim, bao gồm quản lý dinh dưỡng.
             </li>
             <li>
-              <strong>Heart Failure Society of America (HFSA):</strong> Hướng dẫn về quản lý suy tim.
+              <strong>Heart failure society of America (HFSA):</strong> Hướng dẫn về quản lý suy tim.
             </li>
           </ul>
-          <Callout variant="info" title="Khi nào Cần Tham khảo Chuyên gia Dinh dưỡng">
+          <Callout variant="info" title="Khi nào Cần tham khảo Chuyên gia Dinh dưỡng">
             <p className="text-body-sm">
               Nên tham khảo chuyên gia dinh dưỡng đã đăng ký khi:
             </p>
@@ -681,7 +681,7 @@ export default function HeartFailureNutritionPage() {
         </Callout>
       </section>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">
           Công cụ liên quan

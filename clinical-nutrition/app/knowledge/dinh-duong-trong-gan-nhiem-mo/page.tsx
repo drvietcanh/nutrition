@@ -48,7 +48,7 @@ export default function DinhDuongTrongGanNhiemMoPage() {
         </div>
         <div className="space-y-4">
           <p className="text-body-lg">
-            Gan nhiễm mỡ (NAFLD - Non-Alcoholic Fatty Liver Disease) là tình trạng tích tụ mỡ trong gan 
+            Gan nhiễm mỡ (NAFLD - Non-Alcoholic fatty Liver disease) là tình trạng tích tụ mỡ trong gan 
             không do rượu. Đây là bệnh gan mạn tính phổ biến nhất, thường liên quan đến béo phì, 
             đái tháo đường, và rối loạn lipid máu.
           </p>
@@ -117,7 +117,7 @@ export default function DinhDuongTrongGanNhiemMoPage() {
               </ul>
             </Card>
             <Card className="border-amber-200 bg-amber-50/30">
-              <h3 className="heading-5 mb-2">🔹 Giảm Viêm</h3>
+              <h3 className="heading-5 mb-2">🔹 Giảm viêm</h3>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Chọn thực phẩm chống viêm</li>
                 <li>• Tránh thực phẩm chế biến sẵn</li>
@@ -139,7 +139,7 @@ export default function DinhDuongTrongGanNhiemMoPage() {
         <Card>
           <CardHeader
             icon={CheckCircle}
-            title="🍽️ Giảm Cân (nếu thừa cân)"
+            title="🍽️ Giảm cân (nếu thừa cân)"
           />
           <CardContent>
             <p className="text-body mb-4">
@@ -187,7 +187,7 @@ export default function DinhDuongTrongGanNhiemMoPage() {
         <Card>
           <CardHeader
             icon={AlertTriangle}
-            title="🥑 Chọn Chất béo Đúng"
+            title="🥑 Chọn chất béo Đúng"
           />
           <CardContent>
             <p className="text-body mb-4">

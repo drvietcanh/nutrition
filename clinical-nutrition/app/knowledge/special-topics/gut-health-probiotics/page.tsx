@@ -102,7 +102,7 @@ export default function GutHealthProbioticsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Probiotics</h2>
+        <h2 className="heading-2">Nguồn probiotics</h2>
         <Card>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -145,7 +145,7 @@ export default function GutHealthProbioticsPage() {
             Ăn prebiotics giúp nuôi dưỡng probiotics trong đường ruột.
           </p>
           <div>
-            <p className="text-sm font-semibold text-green-700 mb-2">Nguồn Prebiotics:</p>
+            <p className="text-sm font-semibold text-green-700 mb-2">Nguồn prebiotics:</p>
             <ul className="space-y-1 text-sm text-gray-700">
               <li>• Tỏi, hành tây</li>
               <li>• Chuối, táo</li>
@@ -198,7 +198,7 @@ export default function GutHealthProbioticsPage() {
             </p>
           </Card>
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Bao gồm thực phẩm có probiotics
             </p>

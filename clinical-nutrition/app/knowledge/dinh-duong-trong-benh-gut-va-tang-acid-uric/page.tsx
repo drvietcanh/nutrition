@@ -7,12 +7,12 @@ import { RelatedContent } from "../../components/RelatedContent";
 import { articles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng trong Bệnh Gout",
+  title: "Dinh dưỡng trong Bệnh gout",
   description:
     "Hướng dẫn dinh dưỡng cho bệnh gout - purin, rượu bia, và cách kiểm soát. Gout là bệnh mạn, cần điều trị suốt đời. Dinh dưỡng giúp giảm cơn nhưng không thay thế thuốc hạ uric",
   keywords: ["gout", "gút", "acid uric", "purin", "dinh dưỡng"],
   openGraph: {
-    title: "Dinh dưỡng trong Bệnh Gout",
+    title: "Dinh dưỡng trong Bệnh gout",
     description: "Hướng dẫn dinh dưỡng cho bệnh gout.",
     url: "https://clinical-nutrition.edu.vn/knowledge/dinh-duong-trong-benh-gut-va-tang-acid-uric",
   },
@@ -26,7 +26,7 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
       <Breadcrumb
         items={[
           { label: "Cơ sở Kiến thức", href: "/knowledge" },
-          { label: "Dinh dưỡng trong Bệnh Gout" },
+          { label: "Dinh dưỡng trong Bệnh gout" },
         ]}
       />
 
@@ -34,12 +34,12 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
         <div className="flex items-center gap-3">
           <Activity className="w-8 h-8 text-purple-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Dinh dưỡng trong Bệnh Gout: Hướng dẫn Giáo dục
+            Dinh dưỡng trong Bệnh gout: Hướng dẫn Giáo dục
           </h1>
         </div>
         <div className="space-y-4">
           <p className="text-body-lg">
-            Bệnh Gout là bệnh mạn tính do tăng acid uric trong máu, gây viêm khớp. 
+            Bệnh gout là bệnh mạn tính do tăng acid uric trong máu, gây viêm khớp. 
             Dinh dưỡng giúp giảm cơn nhưng không thay thế thuốc hạ uric.
           </p>
           <Callout variant="warning" title="Quan trọng">
@@ -65,7 +65,7 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
         </div>
 
         <Card>
-          <CardHeader icon={AlertCircle} title="❌ Hạn chế Purin Cao" />
+          <CardHeader icon={AlertCircle} title="❌ Hạn chế Purin cao" />
           <CardContent>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Nội tạng động vật: gan, thận, tim</li>
@@ -89,7 +89,7 @@ export default function DinhDuongTrongBenhGutVaTangAcidUricPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={AlertCircle} title="🍺 Tránh Rượu bia" />
+          <CardHeader icon={AlertCircle} title="🍺 Tránh rượu bia" />
           <CardContent>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Rượu bia làm tăng acid uric và giảm đào thải</li>

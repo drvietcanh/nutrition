@@ -302,12 +302,12 @@ export default function DialysisNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="types-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Theo Loại Lọc máu
+            Điều chỉnh Theo loại lọc máu
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         
-        {/* Dialysis Types Comparison Table */}
+        {/* Dialysis types comparison table */}
         <div className="overflow-x-auto my-4">
           <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
             <thead className="bg-green-100">
@@ -361,7 +361,7 @@ export default function DialysisNutritionPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={Info} title="Peritoneal Dialysis" />
+          <CardHeader icon={Info} title="Peritoneal dialysis" />
           <CardContent>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li>Protein: 1.2-1.5 g/kg/ngày (có thể cần cao hơn do mất protein qua dịch lọc)</li>
@@ -489,7 +489,7 @@ export default function DialysisNutritionPage() {
             Theo dõi đều đặn là quan trọng để đánh giá hiệu quả của can thiệp dinh dưỡng và điều chỉnh khi cần:
           </p>
           
-          {/* Monitoring Parameters Table */}
+          {/* Monitoring parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
               <thead className="bg-blue-100">
@@ -540,7 +540,7 @@ export default function DialysisNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Những Sai lầm Thường gặp
+            Những sai lầm Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

@@ -8,7 +8,7 @@ import { Moon, CheckCircle2, AlertCircle, Clock } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng cho Người Làm Ca Đêm",
+  title: "Dinh dưỡng cho Người làm Ca đêm",
   description:
     "Cách ăn uống khi làm ca đêm, quản lý giấc ngủ và dinh dưỡng. Timeline bữa ăn cho ca đêm. Tips thực hành để giữ sức khỏe khi làm ca đêm.",
   keywords: [
@@ -27,14 +27,14 @@ export default function NutritionNightShiftPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
-          { label: "Dinh dưỡng cho Người Làm Ca Đêm" },
+          { label: "Dinh dưỡng cho Người làm Ca đêm" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Moon className="w-8 h-8 text-indigo-600" aria-hidden="true" />
-          <h1 className="heading-1">Dinh dưỡng cho Người Làm Ca Đêm</h1>
+          <h1 className="heading-1">Dinh dưỡng cho Người làm Ca đêm</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Làm ca đêm thay đổi nhịp sinh học và cách ăn uống. Tìm hiểu cách ăn uống lành mạnh khi làm ca đêm, 
@@ -63,15 +63,15 @@ export default function NutritionNightShiftPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Timeline Bữa ăn Cho Ca Đêm</h2>
+        <h2 className="heading-2">Timeline bữa ăn Cho ca Đêm</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Ví dụ: Ca Đêm 22:00 - 6:00</h3>
+            <h3 className="heading-4 mb-3">Ví dụ: Ca đêm 22:00 - 6:00</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="text-sm font-semibold text-gray-900 mb-1">18:00 - Bữa Chính Trước Ca</p>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">18:00 - Bữa chính trước ca</p>
                   <p className="text-sm text-gray-700">
                     Ăn bữa chính đầy đủ trước khi bắt đầu ca. Ví dụ: Cơm + thịt/cá + rau + canh. 
                     Cung cấp năng lượng cho cả ca đêm.
@@ -81,7 +81,7 @@ export default function NutritionNightShiftPage() {
               <div className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="text-sm font-semibold text-gray-900 mb-1">00:00 - Snack Nhẹ Giữa Ca</p>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">00:00 - Snack nhẹ giữa Ca</p>
                   <p className="text-sm text-gray-700">
                     Snack nhẹ, dễ tiêu. Ví dụ: Bánh mì + thịt, trứng luộc, chuối, sữa chua. 
                     Tránh đồ ngọt, caffeine.
@@ -91,7 +91,7 @@ export default function NutritionNightShiftPage() {
               <div className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="text-sm font-semibold text-gray-900 mb-1">03:00 - Snack Nhẹ (Nếu Cần)</p>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">03:00 - Snack nhẹ (Nếu cần)</p>
                   <p className="text-sm text-gray-700">
                     Snack nhẹ nếu đói. Ví dụ: Trái cây, sữa chua, bánh mì nhỏ. 
                     Tránh đồ nhiều chất béo, khó tiêu.
@@ -101,7 +101,7 @@ export default function NutritionNightShiftPage() {
               <div className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="text-sm font-semibold text-gray-900 mb-1">6:30 - Bữa Nhẹ Sau Ca</p>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">6:30 - Bữa nhẹ Sau ca</p>
                   <p className="text-sm text-gray-700">
                     Bữa nhẹ trước khi ngủ. Ví dụ: Sữa ấm, chuối, yến mạch. 
                     Thực phẩm giúp ngủ tốt, không quá no.
@@ -129,9 +129,9 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Nên tránh Khi Làm Ca Đêm</h2>
+        <h2 className="heading-2">Thực phẩm Nên tránh Khi làm ca Đêm</h2>
         <Card className="border-red-200 bg-red-50">
-          <h3 className="heading-4 text-red-900 mb-3">Tránh Trong Ca Đêm</h3>
+          <h3 className="heading-4 text-red-900 mb-3">Tránh trong ca Đêm</h3>
           <div className="space-y-2 text-sm text-red-900">
             <p>
               <strong>Caffeine:</strong> Cà phê, trà, nước ngọt có caffeine - làm khó ngủ sau ca. 
@@ -153,7 +153,7 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Tốt Cho Ca Đêm</h2>
+        <h2 className="heading-2">Thực phẩm Tốt cho Ca đêm</h2>
         <Card className="border-green-200 bg-green-50">
           <h3 className="heading-4 text-green-900 mb-3">Lựa chọn Tốt</h3>
           <div className="space-y-2 text-sm text-green-900">
@@ -176,10 +176,10 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Quản lý Giấc Ngủ Sau Ca Đêm</h2>
+        <h2 className="heading-2">Quản lý Giấc ngủ sau Ca đêm</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Thực phẩm Giúp Ngủ Tốt</h3>
+            <h3 className="heading-4 mb-3">Thực phẩm Giúp ngủ tốt</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
                 <strong>Sữa ấm:</strong> Chứa tryptophan, giúp ngủ tốt. Uống 1 cốc sữa ấm trước khi ngủ.
@@ -196,7 +196,7 @@ export default function NutritionNightShiftPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="tip" title="Ví dụ Bữa Nhẹ Trước Khi Ngủ">
+          <ExampleBox variant="tip" title="Ví dụ Bữa nhẹ Trước khi Ngủ">
             <p className="mb-2">
               <strong>Sau ca đêm (6:30):</strong> Sữa ấm + chuối = Giúp ngủ tốt, không quá no.
             </p>
@@ -208,7 +208,7 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Cách ăn Tốt vs Không Tốt</h2>
+        <h2 className="heading-2">So sánh: Cách ăn Tốt vs Không tốt</h2>
         <ComparisonCard
           goodTitle="Cách ăn Tốt"
           goodItems={[
@@ -218,7 +218,7 @@ export default function NutritionNightShiftPage() {
             "Uống nước lọc - giữ hydration",
             "Tránh caffeine cuối ca - không ảnh hưởng giấc ngủ"
           ]}
-          badTitle="Cách ăn Không Tốt"
+          badTitle="Cách ăn Không tốt"
           badItems={[
             "Bỏ bữa chính trước ca - thiếu năng lượng, mệt mỏi",
             "Snack nhiều cà phê, bánh kẹo - khó ngủ sau ca",
@@ -280,24 +280,24 @@ export default function NutritionNightShiftPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ thực tế: Một Ngày Làm Ca Đêm</h2>
+        <h2 className="heading-2">Ví dụ thực tế: Một ngày Làm ca Đêm</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Timeline Bữa ăn</h3>
+          <h3 className="heading-4 mb-3">Timeline bữa ăn</h3>
           <div className="space-y-3">
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-              <p className="text-sm font-semibold text-blue-900 mb-1">18:00 - Bữa Chính Trước Ca</p>
+              <p className="text-sm font-semibold text-blue-900 mb-1">18:00 - Bữa chính trước ca</p>
               <p className="text-sm text-blue-900">
                 Cơm + thịt gà kho + rau + canh = 600 calo, 30g protein
               </p>
             </div>
             <div className="bg-amber-50 rounded-lg p-3 border border-amber-200">
-              <p className="text-sm font-semibold text-amber-900 mb-1">00:00 - Snack Giữa Ca</p>
+              <p className="text-sm font-semibold text-amber-900 mb-1">00:00 - Snack giữa Ca</p>
               <p className="text-sm text-amber-900">
                 Bánh mì + thịt = 300 calo, 15g protein
               </p>
             </div>
             <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
-              <p className="text-sm font-semibold text-purple-900 mb-1">6:30 - Bữa Nhẹ Sau Ca</p>
+              <p className="text-sm font-semibold text-purple-900 mb-1">6:30 - Bữa nhẹ Sau ca</p>
               <p className="text-sm text-purple-900">
                 Sữa ấm + chuối = 200 calo, 8g protein
               </p>
@@ -344,13 +344,13 @@ export default function NutritionNightShiftPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/nutrition-sleep">
-            <h3 className="heading-5 mb-2">Dinh dưỡng và Giấc Ngủ</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng và Giấc ngủ</h3>
             <p className="text-sm text-gray-600">
               Mối liên hệ giữa dinh dưỡng và giấc ngủ
             </p>
           </Card>
           <Card href="/knowledge/nutrition-busy-lifestyle">
-            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người Bận rộn</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người bận rộn</h3>
             <p className="text-sm text-gray-600">
               Tips dinh dưỡng cho người có lịch trình đặc biệt
             </p>

@@ -117,12 +117,12 @@ export default function CKDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="stages-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Dinh dưỡng Theo Giai đoạn
+            Điều chỉnh Dinh dưỡng Theo giai đoạn
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        {/* CKD Stages Table */}
+        {/* CKD Stages table */}
         <div className="overflow-x-auto my-4">
           <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
             <thead className="bg-green-100">
@@ -203,7 +203,7 @@ export default function CKDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="nutrients-heading" className="heading-2 whitespace-nowrap">
-            Quản lý Các Chất Dinh dưỡng Cụ thể
+            Quản lý Các chất Dinh dưỡng Cụ thể
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -439,7 +439,7 @@ export default function CKDNutritionPage() {
             Theo dõi đều đặn là quan trọng để đánh giá hiệu quả của can thiệp dinh dưỡng và điều chỉnh khi cần:
           </p>
           
-          {/* Monitoring Parameters Table */}
+          {/* Monitoring parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
               <thead className="bg-blue-100">
@@ -497,7 +497,7 @@ export default function CKDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Những Sai lầm Thường gặp
+            Những sai lầm Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

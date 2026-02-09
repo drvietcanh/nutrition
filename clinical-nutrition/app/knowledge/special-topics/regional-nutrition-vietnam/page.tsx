@@ -8,9 +8,9 @@ import { Map, Utensils, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng Theo Vùng miền Việt Nam",
+  title: "Dinh dưỡng Theo vùng miền Việt Nam",
   description:
-    "Khám phá đặc điểm dinh dưỡng theo vùng miền Việt Nam - Miền Bắc, Miền Trung, Miền Nam. Món ăn đặc trưng, ưu và nhược điểm, cách cân bằng.",
+    "Khám phá đặc điểm dinh dưỡng theo vùng miền Việt Nam - Miền bắc, Miền trung, Miền Nam. Món ăn đặc trưng, ưu và nhược điểm, cách cân bằng.",
   keywords: [
     "vùng miền Việt Nam",
     "miền Bắc",
@@ -28,17 +28,17 @@ export default function RegionalNutritionVietnamPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
-          { label: "Dinh dưỡng Theo Vùng miền Việt Nam" },
+          { label: "Dinh dưỡng Theo vùng miền Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Map className="w-8 h-8 text-red-600" aria-hidden="true" />
-          <h1 className="heading-1">Dinh dưỡng Theo Vùng miền Việt Nam</h1>
+          <h1 className="heading-1">Dinh dưỡng Theo vùng miền Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
-          Việt Nam có 3 vùng miền với đặc điểm ẩm thực khác nhau - Miền Bắc, Miền Trung, Miền Nam. 
+          Việt Nam có 3 vùng miền với đặc điểm ẩm thực khác nhau - Miền bắc, Miền trung, Miền Nam. 
           Mỗi vùng có món ăn đặc trưng, ưu và nhược điểm về dinh dưỡng. Hiểu về đặc điểm này giúp bạn 
           điều chỉnh chế độ ăn phù hợp.
         </p>
@@ -47,10 +47,10 @@ export default function RegionalNutritionVietnamPage() {
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
-            <strong>Miền Bắc:</strong> Món ăn nhẹ nhàng, ít cay, nhiều rau - tốt cho sức khỏe
+            <strong>Miền bắc:</strong> Món ăn nhẹ nhàng, ít cay, nhiều rau - tốt cho sức khỏe
           </li>
           <li>
-            <strong>Miền Trung:</strong> Món ăn đậm đà, cay, nhiều gia vị - chú ý muối
+            <strong>Miền trung:</strong> Món ăn đậm đà, cay, nhiều gia vị - chú ý muối
           </li>
           <li>
             <strong>Miền Nam:</strong> Món ăn ngọt, nhiều nước dừa, nhiều rau - chú ý đường
@@ -62,20 +62,20 @@ export default function RegionalNutritionVietnamPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Miền Bắc</h2>
+        <h2 className="heading-2">Miền bắc</h2>
         <Card>
           <p className="text-body-sm mb-3">
-            Ẩm thực Miền Bắc nhẹ nhàng, ít cay, nhiều rau, phù hợp với chế độ ăn lành mạnh.
+            Ẩm thực Miền bắc nhẹ nhàng, ít cay, nhiều rau, phù hợp với chế độ ăn lành mạnh.
           </p>
           <div className="space-y-3">
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Món Ăn Đặc trưng:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Món ăn đặc trưng:</p>
               <p className="text-xs text-gray-700">
                 Phở, bún chả, bánh cuốn, nem rán, canh chua - nhẹ nhàng, nhiều rau.
               </p>
             </div>
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Ưu Điểm:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Ưu điểm:</p>
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>• Nhiều rau củ - giàu vitamin, chất xơ</li>
                 <li>• Ít cay, ít dầu mỡ - dễ tiêu hóa</li>
@@ -83,14 +83,14 @@ export default function RegionalNutritionVietnamPage() {
               </ul>
             </div>
             <div className="bg-yellow-50 rounded-lg p-3 border border-yellow-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Nhược Điểm:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Nhược điểm:</p>
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>• Một số món có thể nhiều muối (nước mắm)</li>
                 <li>• Nem rán có thể nhiều dầu mỡ</li>
               </ul>
             </div>
           </div>
-          <ExampleBox variant="tip" title="Ví dụ Món Ăn">
+          <ExampleBox variant="tip" title="Ví dụ Món ăn">
             <p className="text-sm">
               <strong>Phở gà:</strong> Bánh phở + thịt gà + rau thơm - có đủ carbohydrate, protein, vitamin. 
               Chọn phở gà thay vì phở bò để ít béo hơn.
@@ -100,20 +100,20 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Miền Trung</h2>
+        <h2 className="heading-2">Miền trung</h2>
         <Card>
           <p className="text-body-sm mb-3">
-            Ẩm thực Miền Trung đậm đà, cay, nhiều gia vị, cần chú ý muối và gia vị.
+            Ẩm thực Miền trung đậm đà, cay, nhiều gia vị, cần chú ý muối và gia vị.
           </p>
           <div className="space-y-3">
             <div className="bg-orange-50 rounded-lg p-3 border border-orange-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Món Ăn Đặc trưng:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Món ăn đặc trưng:</p>
               <p className="text-xs text-gray-700">
                 Bún bò Huế, mì Quảng, bánh bèo, nem lụi - đậm đà, cay, nhiều gia vị.
               </p>
             </div>
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Ưu Điểm:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Ưu điểm:</p>
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>• Nhiều rau củ - giàu vitamin, chất xơ</li>
                 <li>• Đa dạng hải sản - giàu protein, omega-3</li>
@@ -121,7 +121,7 @@ export default function RegionalNutritionVietnamPage() {
               </ul>
             </div>
             <div className="bg-red-50 rounded-lg p-3 border border-red-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Nhược Điểm:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Nhược điểm:</p>
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>• Nhiều muối (nước mắm, gia vị) - cần chú ý</li>
                 <li>• Một số món có thể cay quá - ảnh hưởng dạ dày</li>
@@ -130,7 +130,7 @@ export default function RegionalNutritionVietnamPage() {
           </div>
           <ExampleBox variant="warning" title="Lưu ý">
             <p className="text-sm">
-              Món ăn Miền Trung thường <strong>nhiều muối</strong> và <strong>cay</strong>. 
+              Món ăn Miền trung thường <strong>nhiều muối</strong> và <strong>cay</strong>. 
               Người cao huyết áp hoặc có vấn đề dạ dày nên điều chỉnh.
             </p>
           </ExampleBox>
@@ -145,13 +145,13 @@ export default function RegionalNutritionVietnamPage() {
           </p>
           <div className="space-y-3">
             <div className="bg-yellow-50 rounded-lg p-3 border border-yellow-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Món Ăn Đặc trưng:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Món ăn đặc trưng:</p>
               <p className="text-xs text-gray-700">
                 Cơm tấm, bánh mì, canh chua cá, bún riêu - ngọt, nhiều nước dừa, nhiều rau.
               </p>
             </div>
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Ưu Điểm:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Ưu điểm:</p>
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>• Nhiều rau củ - giàu vitamin, chất xơ</li>
                 <li>• Đa dạng hải sản - giàu protein, omega-3</li>
@@ -159,7 +159,7 @@ export default function RegionalNutritionVietnamPage() {
               </ul>
             </div>
             <div className="bg-orange-50 rounded-lg p-3 border border-orange-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Nhược Điểm:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Nhược điểm:</p>
               <ul className="text-xs text-gray-700 space-y-1">
                 <li>• Nhiều đường (nước dừa, đường phèn) - cần chú ý</li>
                 <li>• Một số món có thể nhiều dầu mỡ</li>
@@ -179,17 +179,17 @@ export default function RegionalNutritionVietnamPage() {
         <h2 className="heading-2">So sánh Vùng miền</h2>
         <ComparisonCard
           title="Đặc điểm Dinh dưỡng"
-          goodTitle="Ưu Điểm Chung"
+          goodTitle="Ưu điểm chung"
           goodItems={[
             "Nhiều rau củ - giàu vitamin, chất xơ",
             "Đa dạng hải sản - giàu protein, omega-3",
             "Gia vị tự nhiên - có lợi ích sức khỏe",
             "Cân bằng dinh dưỡng - có đủ carbohydrate, protein, rau",
           ]}
-          badTitle="Nhược Điểm Cần Chú ý"
+          badTitle="Nhược điểm Cần chú ý"
           badItems={[
-            "Miền Bắc: Một số món nhiều muối",
-            "Miền Trung: Nhiều muối, cay quá",
+            "Miền bắc: Một số món nhiều muối",
+            "Miền trung: Nhiều muối, cay quá",
             "Miền Nam: Nhiều đường",
             "Một số món nhiều dầu mỡ",
           ]}
@@ -203,13 +203,13 @@ export default function RegionalNutritionVietnamPage() {
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Miền Bắc:</strong> Giảm nước mắm, tăng rau củ - đã lành mạnh.
+                <strong>Miền bắc:</strong> Giảm nước mắm, tăng rau củ - đã lành mạnh.
               </p>
             </div>
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <p className="text-sm text-gray-700">
-                <strong>Miền Trung:</strong> Giảm muối, giảm cay - điều chỉnh gia vị.
+                <strong>Miền trung:</strong> Giảm muối, giảm cay - điều chỉnh gia vị.
               </p>
             </div>
             <div className="flex items-start gap-2">

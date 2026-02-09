@@ -23,7 +23,7 @@ const knowledgeGroups: NavGroup[] = generateNavigationGroups();
 
 const toolsItems: NavItem[] = [
   {
-    label: "Sàng lọc Suy Dinh dưỡng",
+    label: "Sàng lọc Suy dinh dưỡng",
     href: "/tools/malnutrition-screening",
     icon: Activity,
   },
@@ -33,12 +33,12 @@ const toolsItems: NavItem[] = [
     icon: Calculator,
   },
   {
-    label: "Đánh giá Lượng Ăn",
+    label: "Đánh giá Lượng ăn",
     href: "/tools/intake-assessment",
     icon: UtensilsCrossed,
   },
   {
-    label: "Lượng Ăn vs Nhu Cầu",
+    label: "Lượng ăn vs Nhu cầu",
     href: "/tools/intake-vs-needs",
     icon: UtensilsCrossed,
   },

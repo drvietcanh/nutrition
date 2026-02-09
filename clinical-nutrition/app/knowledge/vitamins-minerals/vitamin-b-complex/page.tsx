@@ -177,7 +177,7 @@ export default function VitaminBComplexPage() {
               <strong>Nguồn:</strong> Thịt, cá, trứng, sữa. 
               <strong> Ở Việt Nam:</strong> Thịt, cá, tôm, cua, trứng, sữa.
             </p>
-            <ExampleBox variant="warning" title="Lưu ý cho Người Ăn Chay">
+            <ExampleBox variant="warning" title="Lưu ý cho Người ăn chay">
               <p className="text-sm">
                 Vitamin B12 chỉ có trong thực phẩm động vật. Người ăn chay nghiêm ngặt có thể cần bổ sung B12. 
                 Tham khảo bác sĩ nếu cần.
@@ -188,9 +188,9 @@ export default function VitaminBComplexPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Vitamin B Complex Tốt</h2>
+        <h2 className="heading-2">Nguồn vitamin B Complex tốt</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Thực phẩm Giàu Vitamin B</h3>
+          <h3 className="heading-4 mb-3">Thực phẩm Giàu vitamin B</h3>
           <div className="space-y-3">
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
               <p className="text-sm font-semibold text-gray-900 mb-1">Ngũ cốc Nguyên cám:</p>
@@ -246,8 +246,8 @@ export default function VitaminBComplexPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thiếu Vitamin B và Hậu quả</h2>
-        <Callout variant="warning" title="Hậu quả của Thiếu Vitamin B">
+        <h2 className="heading-2">Thiếu vitamin B và Hậu quả</h2>
+        <Callout variant="warning" title="Hậu quả của Thiếu vitamin B">
           <div className="space-y-2 text-sm">
             <p>
               <strong>Thiếu B1 (Thiamine):</strong> Mệt mỏi, yếu, vấn đề thần kinh (beriberi).
@@ -322,7 +322,7 @@ export default function VitaminBComplexPage() {
             </p>
           </Card>
           <Card href="/knowledge/vegetarian-vegan-nutrition">
-            <h3 className="heading-5 mb-2">Dinh dưỡng Ăn Chay</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng Ăn chay</h3>
             <p className="text-sm text-gray-600">
               Người ăn chay cần chú ý vitamin B12
             </p>

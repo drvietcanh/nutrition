@@ -60,13 +60,13 @@ export default function NutritionMentalHealthPage() {
             <strong>Đường huyết ổn định:</strong> Carbohydrate phức tạp, protein - giúp tâm trạng ổn định
           </li>
           <li>
-            <strong>Chế độ ăn Địa Trung Hải:</strong> Nhiều rau củ, cá, dầu ô liu - có thể hỗ trợ sức khỏe tâm thần
+            <strong>Chế độ ăn Địa trung hải:</strong> Nhiều rau củ, cá, dầu ô liu - có thể hỗ trợ sức khỏe tâm thần
           </li>
         </ul>
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Mối Liên hệ giữa Dinh dưỡng và Tâm trạng</h2>
+        <h2 className="heading-2">Mối liên hệ giữa Dinh dưỡng và Tâm trạng</h2>
         <div className="space-y-4">
           <Card>
             <p className="text-body-sm mb-3">
@@ -131,7 +131,7 @@ export default function NutritionMentalHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chất Dinh dưỡng Quan trọng cho Sức khỏe Tâm thần</h2>
+        <h2 className="heading-2">Chất dinh dưỡng Quan trọng cho Sức khỏe Tâm thần</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-4 mb-3 text-blue-900">1. Omega-3</h3>
@@ -254,7 +254,7 @@ export default function NutritionMentalHealthPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Trưa (Việt Nam)</h3>
+            <h3 className="heading-5 mb-2">Bữa trưa (Việt Nam)</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Cá kho + Canh rau muống:</strong>
             </p>
@@ -268,7 +268,7 @@ export default function NutritionMentalHealthPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Tối (Việt Nam)</h3>
+            <h3 className="heading-5 mb-2">Bữa tối (Việt Nam)</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Tôm rang + Rau cải xào:</strong>
             </p>
@@ -297,7 +297,7 @@ export default function NutritionMentalHealthPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Stress và Dinh dưỡng</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Khi Stress, cơ thể Cần gì?</h3>
+          <h3 className="heading-4 mb-3">Khi stress, cơ thể Cần gì?</h3>
           <p className="text-body-sm mb-3">
             Khi stress, cơ thể sử dụng nhiều vitamin B và C hơn. Cần đảm bảo đủ các vitamin này.
           </p>

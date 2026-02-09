@@ -1,17 +1,17 @@
 'use client';
 
 /**
- * Why Intake Falls Short Page
+ * Why intake Falls short Page
  * 
- * Educational Purpose: This page helps readers understand:
+ * Educational purpose: This page helps readers understand:
  * - Why calculating needs does not guarantee adequate intake
  * - Why intake failure is common and expected in illness
  * - How clinicians interpret intake gaps realistically
  * 
- * Target Audience: Clinicians, nurses, dietitians, and medical students who need
+ * Target audience: Clinicians, nurses, dietitians, and medical students who need
  * to understand the gap between calculated needs and actual intake.
  * 
- * Design Philosophy: 
+ * Design philosophy: 
  * - Normalize the problem: Intake gaps are common and expected, not failures
  * - Reduce frustration and blame: Help readers understand this isn't anyone's fault
  * - Improve practical reasoning: Guide realistic interpretation of intake gaps
@@ -30,7 +30,7 @@ export default function WhyIntakeFallsShortPage() {
     <main className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6 lg:px-8 sm:py-12">
       {/* Educational: Opening scenario normalizes the experience and reduces frustration.
           Uses relatable timeline (Monday to Friday) to help readers identify with the situation. */}
-      {/* 1. Title & Opening Scenario */}
+      {/* 1. Title & Opening scenario */}
       {/* Educational: Opening scenario normalizes the experience and reduces frustration.
           Uses relatable timeline (Monday to Friday) to help readers identify with the situation. */}
       <header className="space-y-4">
@@ -61,7 +61,7 @@ export default function WhyIntakeFallsShortPage() {
         </div>
       </header>
 
-      {/* 2. The Gap Between Calculation and Reality */}
+      {/* 2. The gap Between calculation and Reality */}
       {/* Educational: Explains why calculated needs and actual intake differ.
           Normalizes gaps and sets realistic expectations. Uses visual comparison
           to help readers understand the concept. */}
@@ -73,7 +73,7 @@ export default function WhyIntakeFallsShortPage() {
           id="reality-gap-heading"
           className="heading-3"
         >
-          Khoảng cách Giữa Tính toán và thực tế
+          Khoảng cách Giữa tính toán và thực tế
         </h2>
         <p className="text-body">
           Trong dinh dưỡng lâm sàng, thường có sự khác biệt giữa:
@@ -89,7 +89,7 @@ export default function WhyIntakeFallsShortPage() {
             </p>
           </div>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Lượng Ăn thực tế</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Lượng ăn thực tế</h3>
             <p className="text-sm text-gray-700">
               Những gì người bệnh <em>thực sự</em> tiêu thụ hoặc nhận được. Đây là dữ liệu liên quan trực tiếp
               đến diễn tiến lâm sàng, và thường thấp hơn nhu cầu ước tính—điều này không hiếm gặp.
@@ -117,7 +117,7 @@ export default function WhyIntakeFallsShortPage() {
           {/* Educational: Explains compounding effect of multiple barriers.
               Helps readers understand why gaps are so common. */}
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Bệnh nhân thực tế Đối mặt Nhiều Rào cản</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Bệnh nhân thực tế Đối mặt Nhiều rào cản</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               Không giống như điều kiện lý tưởng được giả định bởi tính toán, bệnh nhân thực tế đối mặt với nhiều rào cản 
               đồng thời. Một bệnh nhân có thể buồn nôn do thuốc, bỏ lỡ bữa ăn do thủ thuật, 
@@ -132,7 +132,7 @@ export default function WhyIntakeFallsShortPage() {
           {/* Educational: Reframes intake as dynamic process, not static event.
               Helps readers understand why monitoring and adjustment matter. */}
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Lượng Ăn Là Một Quy trình, Không phải Sự kiện Đơn lẻ</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Lượng ăn Là một Quy trình, Không phải Sự kiện Đơn lẻ</h3>
             <p className="text-sm text-gray-700 leading-relaxed">
               Chúng ta thường nghĩ về lượng ăn dinh dưỡng như một phương trình đơn giản: chỉ định thức ăn → bệnh nhân ăn → nhu cầu được đáp ứng. 
               Nhưng lượng ăn thực sự là một quy trình phức tạp xảy ra theo thời gian, bị ảnh hưởng bởi nhiều yếu tố. 
@@ -159,7 +159,7 @@ export default function WhyIntakeFallsShortPage() {
 
         {/* Educational: Role-specific examples help different readers see themselves
             in the scenarios. Reduces frustration by normalizing the experience. */}
-        {/* Practical Examples for Different Roles */}
+        {/* Practical examples for Different roles */}
         <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 mt-4">
           <h3 className="font-semibold text-gray-900 mb-3 text-sm">Tình huống thực tế Bạn có thể Gặp:</h3>
           <div className="space-y-3 text-sm">
@@ -191,7 +191,7 @@ export default function WhyIntakeFallsShortPage() {
         </div>
       </section>
 
-      {/* 3. Patient-Related Factors */}
+      {/* 3. Patient-Related factors */}
       {/* Educational: Explains patient-specific barriers without blame.
           Emphasizes these are normal responses to illness, not patient failures.
           Each factor card normalizes a specific barrier. */}
@@ -236,7 +236,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-purple-500 bg-purple-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">No Sớm</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">No sớm</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Bệnh nhân có thể cảm thấy no sau khi chỉ ăn lượng nhỏ. Điều này có thể xảy ra do:
             </p>
@@ -292,7 +292,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-pink-500 bg-pink-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Stress Tâm lý</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Stress tâm lý</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Stress của bệnh tật và nhập viện ảnh hưởng đáng kể đến ăn uống:
             </p>
@@ -326,7 +326,7 @@ export default function WhyIntakeFallsShortPage() {
         </div>
       </section>
 
-      {/* 4. Illness-Related Factors */}
+      {/* 4. Illness-Related factors */}
       {/* Educational: Explains how illness itself creates barriers to eating.
           Emphasizes these are direct consequences of being unwell, not patient choices.
           Helps readers understand why intake failure is expected in illness. */}
@@ -403,7 +403,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Khó Thở (Dyspnea)</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Khó thở (Dyspnea)</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Khi bệnh nhân gặp khó khăn khi thở, ăn trở nên thách thức:
             </p>
@@ -421,7 +421,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-purple-500 bg-purple-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Hạn Chế Chức Năng</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Hạn chế chức Năng</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Bệnh tật có thể hạn chế khả năng ăn về mặt thể chất của bệnh nhân:
             </p>
@@ -443,7 +443,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mt-4">
           <p className="text-sm font-semibold text-blue-900 mb-2 uppercase tracking-wide">
-            Thực Tế Lâm Sàng
+            thực tế lâm sàng
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Các yếu tố liên quan đến bệnh tật này thường xảy ra cùng nhau. Một bệnh nhân có thể có viêm 
@@ -454,7 +454,7 @@ export default function WhyIntakeFallsShortPage() {
         </div>
       </section>
 
-      {/* 5. Care-Delivery Factors */}
+      {/* 5. Care-Delivery factors */}
       {/* Educational: Explains practical issues in care delivery that affect intake.
           Highlights "Prescribed ≠ Delivered" concept. Helps readers understand
           system-level factors without blaming individuals. */}
@@ -466,14 +466,14 @@ export default function WhyIntakeFallsShortPage() {
           id="care-delivery-heading"
           className="heading-3"
         >
-          Yếu Tố Cung Cấp Chăm Sóc
+          Yếu tố cung cấp Chăm sóc
         </h2>
         <div className="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-4 mb-4">
           <p className="text-sm font-semibold text-red-900 mb-2 uppercase tracking-wide">
-            Thực Tế Lâm Sàng
+            thực tế lâm sàng
           </p>
           <p className="text-base text-gray-900 leading-relaxed font-semibold mb-2">
-            Được Kê Đơn ≠ Được Cung Cấp
+            Được kê Đơn ≠ Được cung cấp
           </p>
           <p className="text-sm text-gray-700 leading-relaxed">
             Những gì được <strong>kê đơn</strong> (đặt, lên kế hoạch, khuyến nghị) thường khác với những gì 
@@ -489,7 +489,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="space-y-4 mt-4">
           <article className="border-l-4 border-red-500 bg-red-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Nhịn Ăn Cho Thủ Thuật</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Nhịn ăn Cho thủ Thuật</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Bệnh nhân thường xuyên bỏ lỡ bữa ăn do yêu cầu nhịn ăn:
             </p>
@@ -518,7 +518,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-indigo-500 bg-indigo-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Bữa ăn Bị Bỏ Lỡ</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Bữa ăn Bị bỏ Lỡ</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Bữa ăn có thể bị bỏ lỡ vì những lý do ngoài nhịn ăn:
             </p>
@@ -542,7 +542,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-teal-500 bg-teal-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Gián Đoạn Cho Ăn</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Gián đoạn cho Ăn</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Cho ăn qua ống thường xuyên bị gián đoạn, giảm dinh dưỡng được cung cấp:
             </p>
@@ -576,7 +576,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-amber-500 bg-amber-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Thời Gian Bữa ăn Kém</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Thời gian Bữa ăn Kém</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Thời gian bữa ăn có thể không khớp với khi bệnh nhân thực sự có thể ăn:
             </p>
@@ -619,7 +619,7 @@ export default function WhyIntakeFallsShortPage() {
         </div>
       </section>
 
-      {/* 6. System & Workflow Factors */}
+      {/* 6. System & Workflow factors */}
       {/* Educational: Explains system-level challenges that affect intake.
           Maintains system-focused tone, not blaming individuals. Helps readers
           understand structural constraints in healthcare delivery. */}
@@ -667,7 +667,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-purple-500 bg-purple-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Thiếu Theo dõi</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Thiếu theo dõi</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Theo dõi không đầy đủ lượng ăn dinh dưỡng có thể cho phép khoảng cách không được chú ý:
             </p>
@@ -717,7 +717,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="border-l-4 border-amber-500 bg-amber-50 rounded-r-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Theo dõi Không Đầy đủ</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Theo dõi Không đầy đủ</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Theo dõi hạn chế về hỗ trợ dinh dưỡng có thể cho phép khoảng cách lượng ăn tồn tại:
             </p>
@@ -756,7 +756,7 @@ export default function WhyIntakeFallsShortPage() {
         </div>
       </section>
 
-      {/* 7. How Clinicians Interpret Intake Shortfalls */}
+      {/* 7. How clinicians Interpret intake Shortfalls */}
       {/* Educational: Provides practical reasoning framework for interpreting gaps.
           Helps readers develop clinical judgment skills. Focuses on trends,
           context, and realistic expectations rather than perfection. */}
@@ -768,7 +768,7 @@ export default function WhyIntakeFallsShortPage() {
           id="interpretation-heading"
           className="heading-3"
         >
-          Cách Các Bác sĩ lâm sàng Diễn giải Thiếu hụt Lượng Ăn
+          Cách các Bác sĩ lâm sàng Diễn giải Thiếu hụt Lượng ăn
         </h2>
         <p className="text-base text-gray-700 leading-relaxed mb-4">
           Hiểu rằng khoảng cách lượng ăn là bình thường và được dự kiến giúp các bác sĩ lâm sàng diễn giải chúng một cách thực tế 
@@ -777,7 +777,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="space-y-4 mt-4">
           <article className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Xem Xu hướng, Không phải Ngày Đơn lẻ</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Xem xu hướng, Không phải Ngày đơn lẻ</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Các bác sĩ lâm sàng có kinh nghiệm hiểu rằng một ngày lượng ăn thấp thường không đáng lo ngại—nó 
               được dự kiến trong bệnh tật. Thay vào đó, họ tập trung vào mô hình theo thời gian:
@@ -850,7 +850,7 @@ export default function WhyIntakeFallsShortPage() {
           </article>
 
           <article className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
-            <h3 className="font-semibold text-gray-900 mb-2">Đánh giá lại Khi Tình trạng Phát triển</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Đánh giá lại Khi tình trạng Phát triển</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Tình trạng bệnh nhân thay đổi, và nhu cầu dinh dưỡng và khả năng lượng ăn thay đổi cùng với chúng. Các bác sĩ lâm sàng 
               thường xuyên đánh giá lại:
@@ -888,7 +888,7 @@ export default function WhyIntakeFallsShortPage() {
         </div>
       </section>
 
-      {/* 8. What to Take Away */}
+      {/* 8. What to Take away */}
       {/* Educational: Summarizes three key points for retention.
           Reinforces main messages: gaps are common, calculations are starting points,
           monitoring matters more than perfection. */}
@@ -900,7 +900,7 @@ export default function WhyIntakeFallsShortPage() {
           id="takeaway-heading"
           className="heading-3"
         >
-          Điều Cần Rút ra
+          Điều cần rút ra
         </h2>
         <p className="text-base text-gray-700 leading-relaxed mb-4">
           Khi bạn chăm sóc người bệnh có khoảng cách lượng ăn, hãy nhớ ba điểm sau:
@@ -908,7 +908,7 @@ export default function WhyIntakeFallsShortPage() {
 
         <div className="space-y-4">
           <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-5">
-            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Thiếu hụt Lượng Ăn Là Phổ biến</h3>
+            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Thiếu hụt Lượng ăn Là phổ biến</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Khoảng cách lượng ăn không bất thường, không mong đợi, hoặc dấu hiệu rằng có điều gì đó đã sai. Chúng là 
               thường gặp và có thể dự đoán, đặc biệt trong bệnh cấp tính. Nhiều yếu tố—liên quan đến người bệnh, 
@@ -922,7 +922,7 @@ export default function WhyIntakeFallsShortPage() {
           </div>
 
           <div className="bg-green-50 border-2 border-green-300 rounded-lg p-5">
-            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Tính toán Là Điểm Khởi đầu</h3>
+            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Tính toán Là điểm khởi đầu</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Tính toán nhu cầu dinh dưỡng cho chúng ta một mục tiêu để hướng tới, nhưng nó chỉ là khởi đầu. 
               Tính toán giả định điều kiện lý tưởng hiếm khi tồn tại trong môi trường lâm sàng thực tế. Chúng không 
@@ -937,7 +937,7 @@ export default function WhyIntakeFallsShortPage() {
           </div>
 
           <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-5">
-            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Theo dõi và Điều chỉnh Quan trọng Hơn Sự Hoàn hảo</h3>
+            <h3 className="font-semibold text-gray-900 mb-3 text-lg">Theo dõi và Điều chỉnh quan trọng hơn Sự hoàn hảo</h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-2">
               Điều quan trọng nhất không phải là đạt được 100% nhu cầu ước tính, mà là:
             </p>
@@ -981,7 +981,7 @@ export default function WhyIntakeFallsShortPage() {
           id="cta-heading"
           className="heading-3"
         >
-          Đưa Điều này Vào Thực hành
+          Đưa điều này Vào thực hành
         </h2>
         <p className="text-body">
           Bây giờ bạn đã hiểu vì sao khoảng cách lượng ăn xảy ra, đây là các cách thực tế để áp dụng kiến thức này:
@@ -994,7 +994,7 @@ export default function WhyIntakeFallsShortPage() {
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-3">
               <Link href="/tools/intake-assessment" className="text-blue-600 hover:text-blue-800 hover:underline font-medium">
-                Công cụ So sánh Lượng Ăn vs. Nhu cầu
+                Công cụ So sánh Lượng ăn vs. Nhu cầu
               </Link> giúp bạn thấy khoảng cách giữa nhu cầu ước tính và lượng ăn thực tế. 
               Hình dung này làm cho việc hiểu mức độ khoảng cách và nhận diện 
               mô hình theo thời gian dễ dàng hơn.
@@ -1062,7 +1062,7 @@ export default function WhyIntakeFallsShortPage() {
         </div>
       </section>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="text-xl font-semibold sm:text-2xl">
           Công cụ liên quan
@@ -1072,7 +1072,7 @@ export default function WhyIntakeFallsShortPage() {
         </p>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/intake-assessment">
-            <CardHeader icon={CheckCircle} title="Đánh giá Lượng Ăn" />
+            <CardHeader icon={CheckCircle} title="Đánh giá Lượng ăn" />
             <CardContent>
               <p className="text-body-sm">
                 So sánh lượng dinh dưỡng thực tế ăn vào với nhu cầu ước tính,
@@ -1081,7 +1081,7 @@ export default function WhyIntakeFallsShortPage() {
             </CardContent>
           </Card>
           <Card href="/tools/intake-vs-needs">
-            <CardHeader icon={CheckCircle} title="Lượng Ăn vs Nhu Cầu" />
+            <CardHeader icon={CheckCircle} title="Lượng ăn vs Nhu cầu" />
             <CardContent>
               <p className="text-body-sm">
                 Công cụ so sánh trực quan để đánh giá lượng ăn thực tế so với nhu cầu ước tính,
@@ -1099,7 +1099,7 @@ export default function WhyIntakeFallsShortPage() {
             </CardContent>
           </Card>
           <Card href="/tools/malnutrition-screening">
-            <CardHeader icon={CheckCircle} title="Nguy cơ Suy Dinh dưỡng" />
+            <CardHeader icon={CheckCircle} title="Nguy cơ Suy dinh dưỡng" />
             <CardContent>
               <p className="text-body-sm">
                 Đánh giá nguy cơ suy dinh dưỡng, một yếu tố quan trọng trong đánh giá lượng ăn
@@ -1110,7 +1110,7 @@ export default function WhyIntakeFallsShortPage() {
         </div>
       </section>
 
-      {/* Footer Note */}
+      {/* Footer note */}
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
         <p className="text-sm text-gray-700 leading-relaxed">
           <strong>Lưu ý:</strong> Tài nguyên này chỉ dùng cho mục đích giáo dục. Tình huống bệnh nhân cá nhân khác nhau, 

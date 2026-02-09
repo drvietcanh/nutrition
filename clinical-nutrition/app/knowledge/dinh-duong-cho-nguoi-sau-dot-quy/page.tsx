@@ -72,7 +72,7 @@ export default function DinhDuongChoNguoiSauDotQuyPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="🍽️ đảm bảo Đủ Dinh dưỡng" />
+          <CardHeader icon={CheckCircle} title="🍽️ đảm bảo Đủ dinh dưỡng" />
           <CardContent>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Đủ năng lượng: hỗ trợ phục hồi</li>
@@ -84,7 +84,7 @@ export default function DinhDuongChoNguoiSauDotQuyPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={CheckCircle} title="❤️ Phòng Tái phát" />
+          <CardHeader icon={CheckCircle} title="❤️ Phòng tái phát" />
           <CardContent>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Kiểm soát huyết áp: giảm muối</li>

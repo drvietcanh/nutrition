@@ -6,7 +6,7 @@ import { AlertCircle, CheckCircle2, XCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Hiểu lầm Dinh dưỡng Phổ biến (Cho Công chúng)",
+  title: "Hiểu lầm Dinh dưỡng Phổ biến (Cho công chúng)",
   description:
     "Điều chỉnh các hiểu lầm dinh dưỡng phổ biến trong công chúng - từ 'ăn đêm làm tăng cân' đến 'carbs là xấu'. Hiểu sự thật đằng sau các quan niệm sai lầm.",
   keywords: [
@@ -30,7 +30,7 @@ export default function NutritionMythsPublicPage() {
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <AlertCircle className="w-8 h-8 text-amber-600" aria-hidden="true" />
-          <h1 className="heading-1">Hiểu lầm Dinh dưỡng Phổ biến (Cho Công chúng)</h1>
+          <h1 className="heading-1">Hiểu lầm Dinh dưỡng Phổ biến (Cho công chúng)</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Có rất nhiều hiểu lầm về dinh dưỡng lan truyền trong công chúng. 

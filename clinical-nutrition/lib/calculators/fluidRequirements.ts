@@ -1,5 +1,5 @@
 /**
- * Fluid Requirements Calculator
+ * Fluid requirements Calculator
  * Educational tool for calculating daily fluid requirements
  * 
  * This is for educational purposes only and must NOT be used for clinical decision-making.

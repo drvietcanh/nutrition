@@ -8,7 +8,7 @@ import { Container, Clock, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Chuẩn bị Bữa ăn (Meal Prep)",
+  title: "Chuẩn bị Bữa ăn (Meal prep)",
   description:
     "Hướng dẫn cách chuẩn bị bữa ăn trước (meal prep) để tiết kiệm thời gian và ăn uống lành mạnh. Tips và ví dụ thực tế.",
   keywords: [
@@ -27,14 +27,14 @@ export default function MealPrepPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Chuẩn bị Bữa ăn (Meal Prep)" },
+          { label: "Chuẩn bị Bữa ăn (Meal prep)" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Container className="w-8 h-8 text-purple-600" aria-hidden="true" />
-          <h1 className="heading-1">Chuẩn bị Bữa ăn (Meal Prep)</h1>
+          <h1 className="heading-1">Chuẩn bị Bữa ăn (Meal prep)</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Meal prep (chuẩn bị bữa ăn trước) là cách nấu và chuẩn bị thực phẩm trước để tiết kiệm 
@@ -64,7 +64,7 @@ export default function MealPrepPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tại sao Meal Prep?</h2>
+        <h2 className="heading-2">Tại sao Meal prep?</h2>
         <Card>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -114,7 +114,7 @@ export default function MealPrepPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Các Cách Meal Prep</h2>
+        <h2 className="heading-2">Các cách meal Prep</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">1. Chuẩn bị Toàn bộ Bữa ăn</h3>
@@ -127,7 +127,7 @@ export default function MealPrepPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">2. Chuẩn bị Một Phần</h3>
+            <h3 className="heading-4 mb-3">2. Chuẩn bị Một phần</h3>
             <p className="text-body-sm mb-2">
               Chỉ chuẩn bị một số phần (ví dụ: nấu thịt, cơm trước), vẫn nấu rau tươi mỗi ngày.
             </p>
@@ -149,7 +149,7 @@ export default function MealPrepPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Meal Prep: 5 Bước</h2>
+        <h2 className="heading-2">Cách meal Prep: 5 Bước</h2>
         <div className="space-y-4">
           <Card>
             <div className="flex items-start gap-3 mb-3">
@@ -157,7 +157,7 @@ export default function MealPrepPage() {
                 <span className="text-sm font-bold text-purple-700">1</span>
               </div>
               <div className="flex-1">
-                <h3 className="heading-4 mb-2">Lập Kế hoạch</h3>
+                <h3 className="heading-4 mb-2">Lập kế hoạch</h3>
                 <p className="text-body-sm">
                   Quyết định bạn sẽ chuẩn bị gì (bữa nào, món gì). Chọn 2-3 món để bắt đầu.
                 </p>
@@ -225,8 +225,8 @@ export default function MealPrepPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Meal Prep</h2>
-        <ExampleBox variant="info" title="Ví dụ: Meal Prep cho 3 Ngày">
+        <h2 className="heading-2">Ví dụ Meal prep</h2>
+        <ExampleBox variant="info" title="Ví dụ: Meal prep cho 3 Ngày">
           <p className="mb-2">
             <strong>Chuẩn bị:</strong> Chủ nhật, 2-3 giờ
           </p>
@@ -246,10 +246,10 @@ export default function MealPrepPage() {
         </ExampleBox>
 
         <Card>
-          <h3 className="heading-4 mb-3">Món Phù hợp cho Meal Prep</h3>
+          <h3 className="heading-4 mb-3">Món phù hợp cho Meal prep</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p className="text-sm font-semibold text-gray-900 mb-2">Tốt cho Meal Prep:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-2">Tốt cho Meal prep:</p>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Thịt nướng, cá nướng</li>
                 <li>• Cơm, mì ống</li>
@@ -259,7 +259,7 @@ export default function MealPrepPage() {
               </ul>
             </div>
             <div>
-              <p className="text-sm font-semibold text-gray-900 mb-2">Không tốt cho Meal Prep:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-2">Không tốt cho Meal prep:</p>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Rau salad tươi (dễ héo)</li>
                 <li>• Đồ chiên (mất giòn)</li>
@@ -319,13 +319,13 @@ export default function MealPrepPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/weekly-meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn Tuần</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn Tuần</h3>
             <p className="text-sm text-gray-600">
               Cách lập kế hoạch bữa ăn trước khi meal prep
             </p>
           </Card>
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn Hàng ngày</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn Hàng ngày</h3>
             <p className="text-sm text-gray-600">
               Hướng dẫn lập kế hoạch bữa ăn cơ bản
             </p>

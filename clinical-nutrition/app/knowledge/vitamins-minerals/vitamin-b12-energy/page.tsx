@@ -128,7 +128,7 @@ export default function VitaminB12EnergyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Thực phẩm Giàu Vitamin B12</h2>
+        <h2 className="heading-2">Nguồn thực phẩm Giàu vitamin B12</h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
             <h3 className="heading-4 text-red-900 mb-3 flex items-center gap-2">
@@ -237,7 +237,7 @@ export default function VitaminB12EnergyPage() {
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 1: Người ăn chay</h3>
             <p className="text-body-sm mb-2">
-              <strong>Tình huống:</strong> Anh Minh, 30 tuổi, ăn chay 5 năm, gần đây thường mệt mỏi, 
+              <strong>Tình huống:</strong> Anh minh, 30 tuổi, ăn chay 5 năm, gần đây thường mệt mỏi, 
               tê bì tay chân. Không ăn thịt, cá, trứng, sữa.
             </p>
             <p className="text-body-sm mb-2">
@@ -255,7 +255,7 @@ export default function VitaminB12EnergyPage() {
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 2: Người cao tuổi</h3>
             <p className="text-body-sm mb-2">
-              <strong>Tình huống:</strong> Bà Hoa, 75 tuổi, ăn ít thịt, gần đây hay quên, mệt mỏi. 
+              <strong>Tình huống:</strong> Bà hoa, 75 tuổi, ăn ít thịt, gần đây hay quên, mệt mỏi. 
               Có thể hấp thu B12 kém do tuổi tác.
             </p>
             <p className="text-body-sm mb-2">

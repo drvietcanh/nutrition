@@ -108,7 +108,7 @@ export default function MicronutrientAssessmentPage() {
         </h2>
         <ul className="list-disc space-y-2 pl-5 text-body-sm">
           <li>
-            Các giá trị này dựa trên RDA (Recommended Dietary Allowance) và DRI (Dietary Reference Intake)
+            Các giá trị này dựa trên RDA (Recommended dietary Allowance) và DRI (Dietary reference intake)
             cho người khỏe mạnh. Nhu cầu thực tế có thể thay đổi dựa trên tình trạng bệnh và các yếu tố cá nhân.
           </li>
           <li>

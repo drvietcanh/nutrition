@@ -44,7 +44,7 @@ export default function ElderlyNutritionPage() {
         </p>
       </header>
 
-      {/* Key Points */}
+      {/* Key points */}
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
@@ -63,7 +63,7 @@ export default function ElderlyNutritionPage() {
         </ul>
       </Callout>
 
-      {/* Why Different */}
+      {/* Why different */}
       <section className="space-y-4">
         <h2 className="heading-2">Tại sao Dinh dưỡng cho Người cao tuổi Khác biệt?</h2>
         <div className="space-y-4">
@@ -95,9 +95,9 @@ export default function ElderlyNutritionPage() {
         </div>
       </section>
 
-      {/* Key Nutrients */}
+      {/* Key nutrients */}
       <section className="space-y-6">
-        <h2 className="heading-2">Chất Dinh dưỡng Quan trọng cho Người cao tuổi</h2>
+        <h2 className="heading-2">Chất dinh dưỡng Quan trọng cho Người cao tuổi</h2>
 
         <Card className="border-blue-200 bg-blue-50">
           <h3 className="heading-3 text-blue-900 mb-3 flex items-center gap-2">
@@ -182,15 +182,15 @@ export default function ElderlyNutritionPage() {
         </Card>
       </section>
 
-      {/* Common Challenges */}
+      {/* Common challenges */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <AlertTriangle className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Thách thức Phổ biến và Cách Giải quyết
+          Thách thức Phổ biến và Cách giải quyết
         </h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">1. Giảm Cảm giác Thèm ăn</h3>
+            <h3 className="heading-4 mb-3">1. Giảm cảm giác Thèm ăn</h3>
             <p className="text-body-sm mb-3">
               Nhiều người cao tuổi ăn ít hơn do giảm vị giác, khứu giác, hoặc các vấn đề sức khỏe.
             </p>
@@ -219,7 +219,7 @@ export default function ElderlyNutritionPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">2. Khó Nhai, Nuốt</h3>
+            <h3 className="heading-4 mb-3">2. Khó nhai, Nuốt</h3>
             <p className="text-body-sm mb-3">
               Răng yếu, răng giả không vừa, hoặc khó nuốt có thể làm giảm lượng ăn vào.
             </p>
@@ -246,7 +246,7 @@ export default function ElderlyNutritionPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">3. Bệnh Mạn tính và Thuốc</h3>
+            <h3 className="heading-4 mb-3">3. Bệnh mạn tính và Thuốc</h3>
             <p className="text-body-sm mb-3">
               Nhiều người cao tuổi có bệnh mạn tính và dùng nhiều thuốc, có thể ảnh hưởng đến 
               cảm giác thèm ăn và hấp thu dinh dưỡng.
@@ -307,7 +307,7 @@ export default function ElderlyNutritionPage() {
         </div>
       </section>
 
-      {/* Practical Tips */}
+      {/* Practical tips */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
@@ -340,7 +340,7 @@ export default function ElderlyNutritionPage() {
 
       {/* Sarcopenia */}
       <section className="space-y-4">
-        <h2 className="heading-2">Sarcopenia - Mất Cơ do Tuổi tác</h2>
+        <h2 className="heading-2">Sarcopenia - Mất cơ do Tuổi tác</h2>
         <Card className="border-amber-200 bg-amber-50">
           <h3 className="heading-4 text-amber-900 mb-3">Sarcopenia là gì?</h3>
           <p className="text-body text-amber-900 mb-3">
@@ -373,12 +373,12 @@ export default function ElderlyNutritionPage() {
         </Card>
       </section>
 
-      {/* Related Articles */}
+      {/* Related articles */}
       <section className="space-y-4">
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/needs-estimation">
-            <h3 className="heading-5 mb-2">Ước tính Nhu cầu Dinh dưỡng</h3>
+            <h3 className="heading-5 mb-2">Ước tính nhu cầu dinh dưỡng</h3>
             <p className="text-sm text-gray-600">
               Hiểu cách ước tính nhu cầu dinh dưỡng, có thể khác ở người cao tuổi
             </p>
@@ -392,7 +392,7 @@ export default function ElderlyNutritionPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
           Thông tin này chỉ dành cho mục đích giáo dục. Dinh dưỡng cho người cao tuổi cần được 

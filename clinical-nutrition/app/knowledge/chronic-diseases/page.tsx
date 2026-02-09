@@ -5,7 +5,7 @@ import { Card, CardHeader, CardContent, CardFooter } from "../../components/Card
 import { Breadcrumb } from "../../components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng trong Bệnh Mạn tính",
+  title: "Dinh dưỡng trong Bệnh mạn tính",
   description: "Hướng dẫn giáo dục về dinh dưỡng trong các bệnh mạn tính phổ biến như tăng huyết áp, đái tháo đường, bệnh thận mạn, suy tim, và nhiều hơn nữa.",
 };
 
@@ -14,14 +14,14 @@ export default function ChronicDiseasesPage() {
     <main className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6 lg:px-8 sm:py-12">
       <Breadcrumb items={[
         { label: "Cơ sở Kiến thức", href: "/knowledge" },
-        { label: "Dinh dưỡng trong Bệnh Mạn tính" }
+        { label: "Dinh dưỡng trong Bệnh mạn tính" }
       ]} />
       
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Activity className="w-8 h-8 text-blue-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Dinh dưỡng trong Bệnh Mạn tính
+            Dinh dưỡng trong Bệnh mạn tính
           </h1>
         </div>
         <p className="text-body-lg">
@@ -185,7 +185,7 @@ export default function ChronicDiseasesPage() {
           />
           <CardContent>
             <p className="text-body">
-              Hướng dẫn giáo dục về dinh dưỡng trong Crohn's disease và Ulcerative Colitis. Bao gồm quản lý
+              Hướng dẫn giáo dục về dinh dưỡng trong Crohn's disease và Ulcerative colitis. Bao gồm quản lý
               năng lượng, protein, vi chất, và điều chỉnh theo đợt cấp và thời kỳ ổn định.
             </p>
           </CardContent>

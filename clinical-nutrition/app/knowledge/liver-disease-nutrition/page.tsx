@@ -244,7 +244,7 @@ export default function LiverDiseaseNutritionPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={Info} title="🧬 Vi chất Dinh dưỡng Thường Thiếu" />
+          <CardHeader icon={Info} title="🧬 Vi chất Dinh dưỡng Thường thiếu" />
           <CardContent>
             <div className="space-y-4">
               <div>
@@ -291,12 +291,12 @@ export default function LiverDiseaseNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="stages-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Theo Mức độ Bệnh
+            Điều chỉnh Theo mức độ Bệnh
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        {/* Liver Disease Stages Table */}
+        {/* Liver disease Stages table */}
         <div className="overflow-x-auto my-4">
           <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
             <thead className="bg-green-100">
@@ -426,7 +426,7 @@ export default function LiverDiseaseNutritionPage() {
             Theo dõi đều đặn là quan trọng để đánh giá hiệu quả của can thiệp dinh dưỡng và điều chỉnh khi cần:
           </p>
           
-          {/* Monitoring Parameters Table */}
+          {/* Monitoring parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
               <thead className="bg-blue-100">
@@ -477,7 +477,7 @@ export default function LiverDiseaseNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Những Sai lầm Thường gặp
+            Những sai lầm Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

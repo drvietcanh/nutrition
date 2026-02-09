@@ -18,7 +18,7 @@ interface SearchResult {
 const toolsIndex: SearchResult[] = [
   // Tools
   {
-    title: "Sàng lọc Suy Dinh dưỡng",
+    title: "Sàng lọc Suy dinh dưỡng",
     href: "/tools/malnutrition-screening",
     category: "tool",
     description: "Công cụ sàng lọc nguy cơ suy dinh dưỡng",
@@ -30,7 +30,7 @@ const toolsIndex: SearchResult[] = [
     description: "Tính toán nhu cầu năng lượng và protein",
   },
   {
-    title: "Đánh giá Lượng Ăn",
+    title: "Đánh giá Lượng ăn",
     href: "/tools/intake-assessment",
     category: "tool",
     description: "Đánh giá lượng dinh dưỡng thực tế",

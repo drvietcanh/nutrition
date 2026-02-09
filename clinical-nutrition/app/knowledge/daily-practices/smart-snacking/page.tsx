@@ -6,7 +6,7 @@ import { Apple, CheckCircle2, AlertCircle, Leaf } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Snacking Thông minh",
+  title: "Snacking thông minh",
   description:
     "Hướng dẫn cách snack thông minh - chọn snack lành mạnh, kiểm soát khẩu phần, và snack đúng thời điểm.",
   keywords: [
@@ -23,14 +23,14 @@ export default function SmartSnackingPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Snacking Thông minh" },
+          { label: "Snacking thông minh" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Apple className="w-8 h-8 text-red-600" aria-hidden="true" />
-          <h1 className="heading-1">Snacking Thông minh</h1>
+          <h1 className="heading-1">Snacking thông minh</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Snack (ăn vặt) không phải lúc nào cũng xấu. Nếu chọn đúng, snack có thể cung cấp năng lượng, 
@@ -63,7 +63,7 @@ export default function SmartSnackingPage() {
         <h2 className="heading-2">Snack lành mạnh</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
-            <h3 className="heading-4 text-green-900 mb-3">✓ Snack Tốt</h3>
+            <h3 className="heading-4 text-green-900 mb-3">✓ Snack tốt</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <ul className="space-y-2 text-sm text-gray-700">
@@ -97,7 +97,7 @@ export default function SmartSnackingPage() {
           </Card>
 
           <Card className="border-red-200 bg-red-50">
-            <h3 className="heading-4 text-red-900 mb-3">✗ Snack Nên tránh</h3>
+            <h3 className="heading-4 text-red-900 mb-3">✗ Snack nên tránh</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <AlertCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -152,7 +152,7 @@ export default function SmartSnackingPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Lập kế hoạch bao gồm cả snack
             </p>

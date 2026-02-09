@@ -54,7 +54,7 @@ export default function DinhDuongTrongLoangXuongPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Chất Dinh dưỡng Quan trọng
+            Chất dinh dưỡng Quan trọng
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

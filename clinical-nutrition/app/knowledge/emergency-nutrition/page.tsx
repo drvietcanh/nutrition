@@ -53,7 +53,7 @@ export default function EmergencyNutritionPage() {
       </Callout>
 
       <section className="space-y-6">
-        <h2 className="heading-2">Stress Metabolism</h2>
+        <h2 className="heading-2">Stress metabolism</h2>
         <p className="text-body">
           Khi cơ thể gặp stress (chấn thương, nhiễm trùng, phẫu thuật), quá trình
           chuyển hóa thay đổi đáng kể:
@@ -86,7 +86,7 @@ export default function EmergencyNutritionPage() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="heading-2">Nhu cầu Dinh dưỡng trong Cấp cứu</h2>
+        <h2 className="heading-2">nhu cầu dinh dưỡng trong Cấp cứu</h2>
 
         <Card>
           <h3 className="heading-4 mb-4 flex items-center gap-2">
@@ -127,7 +127,7 @@ export default function EmergencyNutritionPage() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="heading-2">Các Tình huống đặc biệt</h2>
+        <h2 className="heading-2">Các tình huống đặc biệt</h2>
 
         <Card>
           <h3 className="heading-4 mb-4">Chấn thương Nặng</h3>
@@ -181,7 +181,7 @@ export default function EmergencyNutritionPage() {
         <Card>
           <h3 className="heading-4 mb-4 flex items-center gap-2">
             <Droplet className="w-5 h-5 text-blue-600" aria-hidden="true" />
-            Các Chỉ số Cần Theo dõi
+            Các chỉ số Cần theo dõi
           </h3>
           <ul className="space-y-2 text-body">
             <li>

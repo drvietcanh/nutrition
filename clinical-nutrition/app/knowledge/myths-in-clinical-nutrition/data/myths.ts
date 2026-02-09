@@ -1,7 +1,7 @@
 /**
- * Myths Data
+ * Myths data
  * 
- * Educational Purpose: This file contains the data for common misconceptions
+ * Educational purpose: This file contains the data for common misconceptions
  * in clinical nutrition. Each myth includes:
  * - The common belief (myth)
  * - Why it sounds right (helps readers understand the appeal)
@@ -9,7 +9,7 @@
  * - What to understand instead (evidence-based replacement)
  * - Optional clinical insight (additional context)
  * 
- * Content Philosophy: Non-judgmental, educational approach that helps readers
+ * Content philosophy: Non-judgmental, educational approach that helps readers
  * understand misconceptions without shaming, alarmist language, or treatment advice.
  */
 
@@ -44,7 +44,7 @@ export const myths: Myth[] = [
     myth: 'Tất cả bệnh nhân phải NPO (không ăn uống qua đường miệng) từ nửa đêm trước phẫu thuật',
     whyItSoundsRight: 'Quy tắc "NPO sau nửa đêm" đã là thực hành tiêu chuẩn trong nhiều thập kỷ và cảm thấy như một cách tiếp cận an toàn, bảo thủ. Nỗi sợ hít sặc trong gây mê là dễ hiểu, và sự đơn giản của một quy tắc phổ quát làm cho nó dễ thực hiện.',
     whatActuallyHappens: 'Quy tắc truyền thống "NPO sau nửa đêm" dựa trên mối quan tâm lỗi thời về nguy cơ hít sặc (thực phẩm/chất lỏng vào phổi trong gây mê). Bằng chứng cho thấy rằng cho phép chất lỏng trong suốt lên đến 2 giờ trước phẫu thuật thực sự giảm biến chứng, cải thiện sự thoải mái của bệnh nhân, duy trì hydrat hóa, và có thể cải thiện kiểm soát đường huyết. Nhịn ăn kéo dài tăng kháng insulin và dị hóa (phá vỡ cơ).',
-    whatToUnderstandInstead: 'Hướng dẫn hiện đại cho phép chất lỏng trong suốt lên đến 2 giờ trước phẫu thuật và bữa ăn nhẹ lên đến 6 giờ trước, giảm biến chứng. Tuân theo giao thức ERAS (Phục hồi Tăng cường Sau Phẫu thuật) khi phù hợp. Ngoại lệ bao gồm bệnh nhân có làm rỗng dạ dày chậm, tắc ruột, hoặc yêu cầu phẫu thuật cụ thể.',
+    whatToUnderstandInstead: 'Hướng dẫn hiện đại cho phép chất lỏng trong suốt lên đến 2 giờ trước phẫu thuật và bữa ăn nhẹ lên đến 6 giờ trước, giảm biến chứng. Tuân theo giao thức ERAS (Phục hồi Tăng cường Sau phẫu thuật) khi phù hợp. Ngoại lệ bao gồm bệnh nhân có làm rỗng dạ dày chậm, tắc ruột, hoặc yêu cầu phẫu thuật cụ thể.',
     clinicalInsight: 'Bằng chứng gợi ý rằng chất lỏng trong suốt (nước, nước ép trong suốt, cà phê đen) có thể phù hợp 2+ giờ trước phẫu thuật cho nhiều bệnh nhân. Dạ dày làm rỗng chất lỏng trong suốt tương đối nhanh, có thể giảm nguy cơ hít sặc trong khi duy trì hydrat hóa và chức năng chuyển hóa.'
   },
   {

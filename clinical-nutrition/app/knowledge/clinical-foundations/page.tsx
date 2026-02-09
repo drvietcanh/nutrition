@@ -76,7 +76,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/nutrition-assessment-overview">
           <CardHeader
             icon={Info}
-            title="Tổng Quan Đánh Giá Dinh Dưỡng"
+            title="Tổng quan đánh Giá dinh dưỡng"
           />
           <CardContent>
             <p className="text-body">
@@ -96,7 +96,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/needs-estimation">
           <CardHeader
             icon={Calculator}
-            title="Ước tính Nhu cầu Dinh dưỡng: Vì sao Khoảng Quan trọng Hơn Số Chính xác"
+            title="Ước tính nhu cầu dinh dưỡng: Vì sao Khoảng quan trọng hơn Số chính xác"
           />
           <CardContent>
             <p className="text-body">
@@ -117,7 +117,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/no-single-number-in-clinical-nutrition">
           <CardHeader
             icon={Info}
-            title="Tại Sao Không Có Con Số Phổ Quát Cho Nhu Cầu Dinh Dưỡng"
+            title="Tại sao không Có con số Phổ quát cho nhu Cầu dinh Dưỡng"
           />
           <CardContent>
             <p className="text-body">
@@ -138,7 +138,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/why-no-universal-number">
           <CardHeader
             icon={Info}
-            title="Tại Sao Không Có Con Số Phổ Quát"
+            title="Tại sao không Có con số Phổ quát"
           />
           <CardContent>
             <p className="text-body">
@@ -159,7 +159,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/why-intake-falls-short">
           <CardHeader
             icon={FileText}
-            title="Vì sao Lượng Dinh dưỡng Ăn vào Thường Thiếu so với Nhu cầu Đã Tính"
+            title="Vì sao Lượng dinh dưỡng Ăn vào Thường thiếu so với Nhu cầu Đã tính"
           />
           <CardContent>
             <p className="text-body">
@@ -180,7 +180,7 @@ export default function ClinicalFoundationsPage() {
         <Card href="/knowledge/intake-assessment">
           <CardHeader
             icon={UtensilsCrossed}
-            title="Đánh giá Lượng Ăn: Hiểu Người Bệnh Thực sự Nhận được Gì"
+            title="Đánh giá Lượng ăn: Hiểu người bệnh thực sự Nhận được Gì"
           />
           <CardContent>
             <p className="text-body">

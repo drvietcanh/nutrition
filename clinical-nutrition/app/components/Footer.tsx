@@ -82,7 +82,7 @@ export function Footer() {
                   href="/knowledge/chronic-diseases"
                   className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  Bệnh Mạn tính
+                  Bệnh mạn tính
                 </Link>
               </li>
               <li>
@@ -143,7 +143,7 @@ export function Footer() {
                 href="/privacy"
                 className="hover:text-blue-600 transition-colors"
               >
-                Quyền Riêng tư
+                Quyền riêng tư
               </Link>
             </div>
           </div>

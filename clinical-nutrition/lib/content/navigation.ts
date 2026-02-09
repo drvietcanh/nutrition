@@ -1,5 +1,5 @@
 /**
- * Navigation Utilities
+ * Navigation utilities
  * 
  * Generate navigation structure from article metadata
  */
@@ -88,7 +88,7 @@ const categoryConfig: Record<ArticleCategory, { label: string; href: string; ico
     icon: BookOpen,
   },
   'chronic-diseases': {
-    label: 'Dinh dưỡng Bệnh Mạn tính',
+    label: 'Dinh dưỡng Bệnh mạn tính',
     href: '/knowledge/chronic-diseases',
     icon: Activity,
   },
@@ -103,7 +103,7 @@ const categoryConfig: Record<ArticleCategory, { label: string; href: string; ico
     icon: Calendar,
   },
   'life-stages': {
-    label: 'Dinh dưỡng Theo Độ tuổi',
+    label: 'Dinh dưỡng Theo độ tuổi',
     href: '/knowledge/life-stages',
     icon: Baby,
   },

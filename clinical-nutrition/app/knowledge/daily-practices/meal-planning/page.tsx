@@ -6,7 +6,7 @@ import { Calendar, CheckCircle2, AlertCircle, UtensilsCrossed } from "lucide-rea
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Lập Kế hoạch Bữa ăn Hàng ngày",
+  title: "Lập kế hoạch Bữa ăn Hàng ngày",
   description:
     "Hướng dẫn cách lập kế hoạch bữa ăn đơn giản, thực tế để đảm bảo dinh dưỡng đầy đủ và tiết kiệm thời gian. Tips cho bữa sáng, trưa, tối.",
   keywords: [
@@ -24,14 +24,14 @@ export default function MealPlanningPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Lập Kế hoạch Bữa ăn" },
+          { label: "Lập kế hoạch Bữa ăn" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Calendar className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Lập Kế hoạch Bữa ăn Hàng ngày</h1>
+          <h1 className="heading-1">Lập kế hoạch Bữa ăn Hàng ngày</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Lập kế hoạch bữa ăn giúp bạn ăn uống lành mạnh hơn, tiết kiệm thời gian và tiền bạc. 
@@ -60,7 +60,7 @@ export default function MealPlanningPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tại sao Lập Kế hoạch Bữa ăn?</h2>
+        <h2 className="heading-2">Tại sao Lập kế hoạch Bữa ăn?</h2>
         <Card>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -196,7 +196,7 @@ export default function MealPlanningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Lập Kế hoạch Đơn giản</h2>
+        <h2 className="heading-2">Cách lập Kế hoạch Đơn giản</h2>
         <Card>
           <div className="space-y-4">
             <div className="flex items-start gap-3">

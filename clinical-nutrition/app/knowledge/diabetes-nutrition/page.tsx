@@ -79,7 +79,7 @@ export default function DiabetesNutritionPage() {
         </Callout>
       </header>
 
-      {/* 2. Why Nutrition Matters in Diabetes */}
+      {/* 2. Why nutrition matters in Diabetes */}
       <section aria-labelledby="why-matters-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -130,7 +130,7 @@ export default function DiabetesNutritionPage() {
         </div>
       </section>
 
-      {/* 3. Basic Nutrition Principles */}
+      {/* 3. Basic nutrition Principles */}
       <section aria-labelledby="principles-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -152,7 +152,7 @@ export default function DiabetesNutritionPage() {
                 <strong>👉 Không cần loại bỏ tinh bột, nhưng cần quản lý đúng cách.</strong>
               </p>
             </div>
-            <h3 className="heading-4 mb-3">📏 Đếm Carbohydrate (Carbohydrate Counting)</h3>
+            <h3 className="heading-4 mb-3">📏 Đếm carbohydrate (Carbohydrate counting)</h3>
             <p className="text-body-sm mb-3">
               Đây là cách phổ biến để kiểm soát đường huyết.
             </p>
@@ -161,7 +161,7 @@ export default function DiabetesNutritionPage() {
               <li>Mỗi phần có thể làm đường huyết tăng khoảng 30–50 mg/dL (tùy từng người)</li>
             </ul>
             
-            {/* Carbohydrate Counting Table */}
+            {/* Carbohydrate counting table */}
             <h4 className="heading-5 mb-3">Gợi ý phân bố carbohydrate</h4>
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
@@ -235,7 +235,7 @@ export default function DiabetesNutritionPage() {
 
             <h3 className="heading-4 mb-3 mt-4">📊 GI & GL – Hiểu đúng để dùng đúng</h3>
             
-            {/* Glycemic Index Table */}
+            {/* Glycemic index table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
                 <thead className="bg-blue-100">
@@ -295,7 +295,7 @@ export default function DiabetesNutritionPage() {
           </CardContent>
         </Card>
 
-        {/* Vietnamese Food Carbohydrate Table */}
+        {/* Vietnamese food Carbohydrate table */}
         <Card className="border-green-200 bg-green-50/30">
           <CardHeader icon={Info} title="Carbohydrate trong Món ăn Việt Nam" />
           <CardContent>
@@ -391,7 +391,7 @@ export default function DiabetesNutritionPage() {
           </CardContent>
         </Card>
 
-        {/* Practical Application Vietnamese */}
+        {/* Practical application Vietnamese */}
         <Card className="border-blue-200 bg-blue-50/30">
           <CardHeader icon={Lightbulb} title="Áp dụng Nhanh trong đời sống Việt Nam" />
           <CardContent>
@@ -511,7 +511,7 @@ export default function DiabetesNutritionPage() {
           </div>
         </div>
 
-        {/* Energy & Weight Management */}
+        {/* Energy & Weight management */}
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
           <h3 className="heading-3">⚖️ năng lượng & Cân nặng</h3>
           <div className="space-y-3 text-body">
@@ -538,12 +538,12 @@ export default function DiabetesNutritionPage() {
         </div>
       </section>
 
-      {/* 4. Nutrition Adjustments by Disease Status */}
+      {/* 4. Nutrition adjustments by Disease status */}
       <section aria-labelledby="adjustments-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="adjustments-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Dinh dưỡng Theo Thuốc & Vận động
+            Điều chỉnh Dinh dưỡng Theo thuốc & Vận động
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -554,7 +554,7 @@ export default function DiabetesNutritionPage() {
           </p>
 
           <div className="space-y-4 rounded-lg border border-blue-200 bg-blue-50/50 p-5">
-            <h3 className="heading-4">Theo Thuốc</h3>
+            <h3 className="heading-4">Theo thuốc</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li>
                 <strong>Insulin / thuốc dễ gây hạ đường huyết → không được bỏ bữa</strong>
@@ -572,7 +572,7 @@ export default function DiabetesNutritionPage() {
           </div>
 
           <div className="space-y-4 rounded-lg border border-green-200 bg-green-50/50 p-5">
-            <h3 className="heading-4">Theo Vận động</h3>
+            <h3 className="heading-4">Theo vận động</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li>
                 <strong>Tập thể dục có thể làm đường huyết giảm</strong>
@@ -596,7 +596,7 @@ export default function DiabetesNutritionPage() {
             <h3 className="heading-4">Theo bệnh lý Kèm</h3>
             <ul className="list-disc space-y-2 pl-6 text-body-sm">
               <li>
-                <strong>Bệnh thận (Diabetic Nephropathy):</strong> Có thể cần hạn chế protein (0.8 g/kg)
+                <strong>Bệnh thận (Diabetic nephropathy):</strong> Có thể cần hạn chế protein (0.8 g/kg)
                 và điều chỉnh natri, potassium, phosphorus tùy theo giai đoạn bệnh thận.
               </li>
               <li>
@@ -607,14 +607,14 @@ export default function DiabetesNutritionPage() {
                 bão hòa và trans.
               </li>
               <li>
-                <strong>Bệnh tim mạch:</strong> Chế độ ăn Địa Trung Hải hoặc DASH diet có thể phù hợp.
+                <strong>Bệnh tim mạch:</strong> Chế độ ăn Địa trung hải hoặc DASH diet có thể phù hợp.
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* 5. Managing Nutritional Complications */}
+      {/* 5. Managing nutritional complications */}
       <section aria-labelledby="complications-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -629,7 +629,7 @@ export default function DiabetesNutritionPage() {
           </p>
 
           <Card className="border-red-200 bg-red-50">
-            <CardHeader icon={AlertTriangle} title="Hạ đường huyết – Điều Người bệnh Cần biết" />
+            <CardHeader icon={AlertTriangle} title="Hạ đường huyết – Điều người bệnh Cần biết" />
             <CardContent>
               <p className="text-body-sm mb-3">
                 <strong>Khi đường huyết &lt; 70 mg/dL</strong>
@@ -689,7 +689,7 @@ export default function DiabetesNutritionPage() {
             <CardHeader icon={Info} title="Biến chứng Mạn tính & Dinh dưỡng" />
             <CardContent>
               <p className="text-body-sm mb-3">
-                <strong>Bệnh thận (Diabetic Nephropathy):</strong>
+                <strong>Bệnh thận (Diabetic nephropathy):</strong>
               </p>
               <ul className="list-disc space-y-1 pl-6 text-body-sm mb-3">
                 <li>Có thể cần hạn chế protein (0.8 g/kg hoặc thấp hơn tùy giai đoạn)</li>
@@ -697,14 +697,14 @@ export default function DiabetesNutritionPage() {
                 <li>Quản lý dịch nếu có phù</li>
               </ul>
               <p className="text-body-sm mb-3">
-                <strong>Bệnh thần kinh (Diabetic Neuropathy):</strong>
+                <strong>Bệnh thần kinh (Diabetic neuropathy):</strong>
               </p>
               <ul className="list-disc space-y-1 pl-6 text-body-sm mb-3">
                 <li>Chế độ ăn đặc biệt có thể không cần thiết, nhưng kiểm soát đường huyết tốt là quan trọng</li>
                 <li>Một số người có thể cần điều chỉnh do ảnh hưởng đến tiêu hóa (gastroparesis)</li>
               </ul>
               <p className="text-body-sm mb-3">
-                <strong>Bệnh mắt (Diabetic Retinopathy):</strong>
+                <strong>Bệnh mắt (Diabetic retinopathy):</strong>
               </p>
               <ul className="list-disc space-y-1 pl-6 text-body-sm">
                 <li>Chất chống oxy hóa (vitamin C, E, lutein) có thể có lợi, nhưng bằng chứng không rõ ràng</li>
@@ -715,7 +715,7 @@ export default function DiabetesNutritionPage() {
         </div>
       </section>
 
-      {/* 6. Drug-Nutrition Interactions */}
+      {/* 6. Drug-Nutrition interactions */}
       <section aria-labelledby="interactions-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -812,7 +812,7 @@ export default function DiabetesNutritionPage() {
             khi cần:
           </p>
 
-          {/* Monitoring Parameters Table */}
+          {/* Monitoring parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
               <thead className="bg-neutral-50">
@@ -849,7 +849,7 @@ export default function DiabetesNutritionPage() {
                   <td className="px-4 py-3 text-sm text-neutral-700">Quan trọng cho type 2, duy trì cho type 1</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Lipid Profile</strong></td>
+                  <td className="px-4 py-3 text-sm text-neutral-700"><strong>Lipid profile</strong></td>
                   <td className="px-4 py-3 text-sm text-neutral-700">Mỗi 6-12 tháng</td>
                   <td className="px-4 py-3 text-sm text-neutral-700">LDL &lt; 100 mg/dL, HDL &gt; 40/50</td>
                   <td className="px-4 py-3 text-sm text-neutral-700">Đánh giá nguy cơ tim mạch</td>
@@ -905,7 +905,7 @@ export default function DiabetesNutritionPage() {
             </Card>
 
             <Card>
-              <CardHeader icon={CheckCircle} title="Lipid Profile" />
+              <CardHeader icon={CheckCircle} title="Lipid profile" />
               <CardContent>
                 <ul className="list-disc space-y-1 pl-6 text-body-sm">
                   <li>Cholesterol, LDL, HDL, triglycerides</li>
@@ -937,12 +937,12 @@ export default function DiabetesNutritionPage() {
         </div>
       </section>
 
-      {/* 8. Common Clinical Pitfalls */}
+      {/* 8. Common clinical Pitfalls */}
       <section aria-labelledby="pitfalls-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy lâm sàng Phổ biến
+            Các cạm bẫy lâm sàng Phổ biến
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -998,7 +998,7 @@ export default function DiabetesNutritionPage() {
           </p>
           <ul className="list-disc space-y-2 pl-6 text-body-sm">
             <li>
-              <strong>American Diabetes Association (ADA):</strong> Hướng dẫn về dinh dưỡng và lối sống
+              <strong>American diabetes Association (ADA):</strong> Hướng dẫn về dinh dưỡng và lối sống
               trong quản lý đái tháo đường, bao gồm carbohydrate counting, glycemic index, và quản lý cân nặng.
             </li>
             <li>
@@ -1006,14 +1006,14 @@ export default function DiabetesNutritionPage() {
               trong đái tháo đường.
             </li>
             <li>
-              <strong>International Diabetes Federation (IDF):</strong> Hướng dẫn toàn cầu về quản lý đái tháo đường.
+              <strong>International diabetes Federation (IDF):</strong> Hướng dẫn toàn cầu về quản lý đái tháo đường.
             </li>
             <li>
-              <strong>European Association for the Study of Diabetes (EASD):</strong> Hướng dẫn về dinh dưỡng
+              <strong>European association for the Study of Diabetes (EASD):</strong> Hướng dẫn về dinh dưỡng
               và lối sống trong đái tháo đường.
             </li>
           </ul>
-          <Callout variant="info" title="Khi nào Cần Tham khảo Chuyên gia Dinh dưỡng">
+          <Callout variant="info" title="Khi nào Cần tham khảo Chuyên gia Dinh dưỡng">
             <p className="text-body-sm">
               Nên tham khảo chuyên gia dinh dưỡng đã đăng ký khi:
             </p>
@@ -1028,7 +1028,7 @@ export default function DiabetesNutritionPage() {
         </div>
       </section>
 
-      {/* 10. Safety Disclaimer */}
+      {/* 10. Safety disclaimer */}
       <section aria-labelledby="safety-heading" className="space-y-4">
         <h2 id="safety-heading" className="heading-3">
           ⚠️ Nhắc nhở An toàn
@@ -1055,7 +1055,7 @@ export default function DiabetesNutritionPage() {
         </Callout>
       </section>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">
           Công cụ liên quan
@@ -1088,7 +1088,7 @@ export default function DiabetesNutritionPage() {
             </CardContent>
           </Card>
           <Card href="/tools/intake-assessment">
-            <CardHeader icon={CheckCircle} title="Đánh giá Lượng Ăn" />
+            <CardHeader icon={CheckCircle} title="Đánh giá Lượng ăn" />
             <CardContent>
               <p className="text-body-sm">
                 So sánh lượng ăn thực tế với nhu cầu ước tính, hữu ích để đánh giá tuân thủ chế độ ăn

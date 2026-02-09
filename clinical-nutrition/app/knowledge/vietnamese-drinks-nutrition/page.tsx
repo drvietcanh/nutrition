@@ -69,7 +69,7 @@ export default function VietnameseDrinksNutritionPage() {
         <h2 className="heading-2">Các loại Đồ uống Phổ biến ở Việt Nam</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
-            <h3 className="heading-4 mb-3 text-green-900">1. Trà Xanh (Green Tea)</h3>
+            <h3 className="heading-4 mb-3 text-green-900">1. Trà xanh (Green tea)</h3>
             <p className="text-body-sm text-green-900 mb-3">
               Trà xanh là đồ uống phổ biến và lành mạnh ở Việt Nam, có nhiều lợi ích sức khỏe.
             </p>
@@ -93,10 +93,10 @@ export default function VietnameseDrinksNutritionPage() {
                 </ul>
               </div>
               <ComparisonCard
-                title="Trà Xanh lành mạnh vs Nên cải thiện"
+                title="Trà xanh lành mạnh vs Nên cải thiện"
                 items={[
                   {
-                    label: "Trà Xanh",
+                    label: "Trà xanh",
                     good: "Trà xanh không đường - chất chống oxy hóa, ít calo, tốt cho sức khỏe",
                     bad: "Trà xanh có đường, trà sữa - nhiều đường, nhiều calo, ít lợi ích",
                     note: "Uống trà xanh không đường để có lợi ích sức khỏe"
@@ -148,7 +148,7 @@ export default function VietnameseDrinksNutritionPage() {
           </Card>
 
           <Card className="border-blue-200 bg-blue-50">
-            <h3 className="heading-4 mb-3 text-blue-900">3. Nước Dừa (Coconut Water)</h3>
+            <h3 className="heading-4 mb-3 text-blue-900">3. Nước dừa (Coconut water)</h3>
             <p className="text-body-sm text-blue-900 mb-3">
               Nước dừa là đồ uống tự nhiên, mát lạnh, phổ biến ở Việt Nam.
             </p>
@@ -163,10 +163,10 @@ export default function VietnameseDrinksNutritionPage() {
                 </ul>
               </div>
               <ComparisonCard
-                title="Nước Dừa lành mạnh vs Nên hạn chế"
+                title="Nước dừa lành mạnh vs Nên hạn chế"
                 items={[
                   {
-                    label: "Nước Dừa",
+                    label: "Nước dừa",
                     good: "Nước dừa tươi - điện giải, ít calo, tự nhiên, tốt cho hydration",
                     bad: "Nước dừa đóng hộp có đường - nhiều đường, nhiều calo, ít lợi ích",
                     note: "Chọn nước dừa tươi thay vì đóng hộp có đường"
@@ -183,7 +183,7 @@ export default function VietnameseDrinksNutritionPage() {
           </Card>
 
           <Card className="border-yellow-200 bg-yellow-50">
-            <h3 className="heading-4 mb-3 text-yellow-900">4. Nước Mía (Sugarcane Juice)</h3>
+            <h3 className="heading-4 mb-3 text-yellow-900">4. Nước mía (Sugarcane juice)</h3>
             <p className="text-body-sm text-yellow-900 mb-3">
               Nước mía là đồ uống ngọt, phổ biến ở Việt Nam, đặc biệt vào mùa hè.
             </p>
@@ -207,22 +207,22 @@ export default function VietnameseDrinksNutritionPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">5. Các Đồ uống Khác</h3>
+            <h3 className="heading-4 mb-3">5. Các đồ uống Khác</h3>
             <div className="space-y-3">
               <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-                <p className="text-sm font-semibold text-gray-900 mb-1">Trà Atiso (Artichoke Tea):</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Trà atiso (Artichoke tea):</p>
                 <p className="text-xs text-gray-700">
                   Có thể hỗ trợ tiêu hóa, ít calo (không đường). Phổ biến ở Việt Nam.
                 </p>
               </div>
               <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-                <p className="text-sm font-semibold text-gray-900 mb-1">Trà Gừng (Ginger Tea):</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Trà gừng (Ginger tea):</p>
                 <p className="text-xs text-gray-700">
                   Hỗ trợ tiêu hóa, giảm buồn nôn, ít calo (không đường). Tốt khi bị cảm.
                 </p>
               </div>
               <div className="bg-red-50 rounded-lg p-3 border border-red-200">
-                <p className="text-sm font-semibold text-gray-900 mb-1">Nước Ngọt, Nước Có Gas:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Nước ngọt, Nước có Gas:</p>
                 <p className="text-xs text-gray-700">
                   Nhiều đường, nhiều calo, ít dinh dưỡng. Nên hạn chế hoặc tránh.
                 </p>
@@ -249,7 +249,7 @@ export default function VietnameseDrinksNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Chọn Đồ uống lành mạnh</h2>
+        <h2 className="heading-2">Tips chọn đồ uống lành mạnh</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

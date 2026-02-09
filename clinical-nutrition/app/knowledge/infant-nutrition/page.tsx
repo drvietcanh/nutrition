@@ -26,7 +26,7 @@ export default function InfantNutritionPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Dinh dưỡng Theo Độ tuổi", href: "/knowledge/life-stages" },
+          { label: "Dinh dưỡng Theo độ tuổi", href: "/knowledge/life-stages" },
           { label: "Dinh dưỡng cho Trẻ sơ sinh" },
         ]}
       />
@@ -63,7 +63,7 @@ export default function InfantNutritionPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Giai đoạn 0-6 tháng: Chỉ Sữa</h2>
+        <h2 className="heading-2">Giai đoạn 0-6 tháng: Chỉ sữa</h2>
         <Card>
           <h3 className="heading-4 mb-3">Sữa mẹ hoặc Sữa công thức</h3>
           <div className="space-y-3 text-body-sm">
@@ -94,7 +94,7 @@ export default function InfantNutritionPage() {
         <h2 className="heading-2">Giai đoạn 6-12 tháng: Bắt đầu Ăn dặm</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Dấu hiệu Trẻ Sẵn sàng Ăn dặm</h3>
+            <h3 className="heading-4 mb-3">Dấu hiệu Trẻ sẵn sàng Ăn dặm</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>Trẻ có thể bắt đầu ăn dặm khi:</p>
               <ul className="list-disc space-y-1 pl-6">
@@ -135,7 +135,7 @@ export default function InfantNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Milestones Dinh dưỡng</h2>
+        <h2 className="heading-2">Milestones dinh dưỡng</h2>
         <Card>
           <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">

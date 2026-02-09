@@ -5,7 +5,7 @@ import { Callout } from "../components/Callout";
 import { Breadcrumb } from "../components/Breadcrumb";
 
 export const metadata = {
-  title: "Bắt đầu ở đây - Hướng dẫn cho Người Mới",
+  title: "Bắt đầu ở đây - Hướng dẫn cho Người mới",
   description: "Hướng dẫn từng bước để bắt đầu học về dinh dưỡng lâm sàng một cách đơn giản và dễ hiểu.",
 };
 
@@ -27,7 +27,7 @@ export default function GettingStartedPage() {
         </p>
       </header>
 
-      {/* Learning Path */}
+      {/* Learning path */}
       <section className="space-y-6">
         <div className="text-center mb-8">
           <h2 className="heading-2 mb-3">Lộ trình Học tập</h2>
@@ -96,7 +96,7 @@ export default function GettingStartedPage() {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                    <span>Thử các công cụ khác như Sàng lọc Suy Dinh dưỡng</span>
+                    <span>Thử các công cụ khác như Sàng lọc Suy dinh dưỡng</span>
                   </li>
                 </ul>
                 <Link
@@ -116,7 +116,7 @@ export default function GettingStartedPage() {
                 <span className="text-2xl font-bold text-purple-600">3</span>
               </div>
               <div className="flex-1">
-                <h3 className="heading-3 mb-3">Học Quy trình Đánh giá</h3>
+                <h3 className="heading-3 mb-3">Học quy trình Đánh giá</h3>
                 <p className="text-body mb-4">
                   Hiểu cách các chuyên gia đánh giá dinh dưỡng từ đầu đến cuối. 
                   Đây là phần quan trọng để hiểu cách áp dụng kiến thức trong thực tế.
@@ -152,7 +152,7 @@ export default function GettingStartedPage() {
                 <span className="text-2xl font-bold text-amber-600">4</span>
               </div>
               <div className="flex-1">
-                <h3 className="heading-3 mb-3">Áp dụng cho Bệnh Cụ thể</h3>
+                <h3 className="heading-3 mb-3">Áp dụng cho Bệnh cụ thể</h3>
                 <p className="text-body mb-4">
                   Tìm hiểu về dinh dưỡng cho các bệnh mạn tính phổ biến. 
                   Đây là nơi bạn áp dụng tất cả kiến thức đã học vào các tình huống thực tế.
@@ -183,10 +183,10 @@ export default function GettingStartedPage() {
         </div>
       </section>
 
-      {/* Tips Section */}
+      {/* Tips section */}
       <section className="space-y-6">
         <div className="text-center mb-6">
-          <h2 className="heading-2 mb-3">Mẹo Học tập Hiệu quả</h2>
+          <h2 className="heading-2 mb-3">Mẹo học tập Hiệu quả</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
@@ -240,7 +240,7 @@ export default function GettingStartedPage() {
         </div>
       </section>
 
-      {/* Common Questions */}
+      {/* Common questions */}
       <section className="space-y-6">
         <div className="text-center mb-6">
           <h2 className="heading-2 mb-3">Câu hỏi Thường gặp</h2>
@@ -273,7 +273,7 @@ export default function GettingStartedPage() {
         </div>
       </section>
 
-      {/* Next Steps */}
+      {/* Next steps */}
       <Callout variant="info" title="Sẵn sàng Bắt đầu?">
         <p className="mb-3">
           Bây giờ bạn đã hiểu lộ trình học tập, hãy bắt đầu với bước đầu tiên: 

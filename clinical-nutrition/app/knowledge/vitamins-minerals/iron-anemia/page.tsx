@@ -136,12 +136,12 @@ export default function IronAnemiaPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Thực phẩm Giàu Sắt</h2>
+        <h2 className="heading-2">Nguồn thực phẩm Giàu sắt</h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
             <h3 className="heading-4 text-red-900 mb-3 flex items-center gap-2">
               <Beef className="w-5 h-5" aria-hidden="true" />
-              Sắt Heme (từ động vật) - Dễ hấp thu hơn
+              Sắt heme (từ động vật) - Dễ hấp thu hơn
             </h3>
             <p className="text-body text-red-900 mb-3">
               Sắt từ thịt, cá, gia cầm được gọi là "sắt heme" - cơ thể hấp thu tốt hơn sắt từ thực vật.
@@ -171,7 +171,7 @@ export default function IronAnemiaPage() {
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 text-green-900 mb-3 flex items-center gap-2">
               <Leaf className="w-5 h-5" aria-hidden="true" />
-              Sắt Non-heme (từ thực vật) - Cần kết hợp với Vitamin C
+              Sắt non-heme (từ thực vật) - Cần kết hợp với Vitamin C
             </h3>
             <p className="text-body text-green-900 mb-3">
               Sắt từ thực vật khó hấp thu hơn, nhưng kết hợp với vitamin C (cam, ớt chuông) sẽ giúp tăng hấp thu.
@@ -252,7 +252,7 @@ export default function IronAnemiaPage() {
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 1: Phụ nữ trẻ, hành kinh nhiều</h3>
             <p className="text-body-sm mb-2">
-              <strong>Tình huống:</strong> Chị Mai, 28 tuổi, ăn chay, hành kinh nhiều, thường xuyên mệt mỏi, da xanh xao.
+              <strong>Tình huống:</strong> Chị mai, 28 tuổi, ăn chay, hành kinh nhiều, thường xuyên mệt mỏi, da xanh xao.
             </p>
             <p className="text-body-sm mb-2">
               <strong>Giải pháp:</strong>
@@ -269,7 +269,7 @@ export default function IronAnemiaPage() {
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 2: Phụ nữ mang thai</h3>
             <p className="text-body-sm mb-2">
-              <strong>Tình huống:</strong> Chị Hoa, 30 tuổi, mang thai 3 tháng, cần 27mg sắt/ngày.
+              <strong>Tình huống:</strong> Chị hoa, 30 tuổi, mang thai 3 tháng, cần 27mg sắt/ngày.
             </p>
             <p className="text-body-sm mb-2">
               <strong>Giải pháp:</strong>

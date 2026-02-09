@@ -7,7 +7,7 @@ import { ShoppingCart, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Đi Chợ Thông minh ở Việt Nam",
+  title: "Đi chợ Thông minh ở Việt Nam",
   description:
     "Hướng dẫn cách đi chợ thông minh ở Việt Nam - chọn thực phẩm tươi, đọc nhãn, so sánh giá, mua theo mùa. Checklist đi chợ.",
   keywords: [
@@ -27,14 +27,14 @@ export default function SmartShoppingVietnamPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Thực hành Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Đi Chợ Thông minh ở Việt Nam" },
+          { label: "Đi chợ Thông minh ở Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <ShoppingCart className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Đi Chợ Thông minh ở Việt Nam</h1>
+          <h1 className="heading-1">Đi chợ Thông minh ở Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Đi chợ thông minh giúp bạn mua được thực phẩm tươi ngon, giá tốt, và đảm bảo dinh dưỡng. 
@@ -63,10 +63,10 @@ export default function SmartShoppingVietnamPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chọn Thực phẩm Tươi</h2>
+        <h2 className="heading-2">Chọn thực phẩm Tươi</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-5 mb-2">Rau Củ</h3>
+            <h3 className="heading-5 mb-2">Rau củ</h3>
             <ul className="text-sm text-gray-700 space-y-1">
               <li>✓ Lá xanh, không héo, không vàng</li>
               <li>✓ Củ cứng, không mềm, không thối</li>
@@ -133,7 +133,7 @@ export default function SmartShoppingVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Đọc Nhãn Thực phẩm</h2>
+        <h2 className="heading-2">Đọc nhãn thực phẩm</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Đọc nhãn giúp bạn hiểu về thành phần, dinh dưỡng, và hạn sử dụng của thực phẩm.
@@ -148,7 +148,7 @@ export default function SmartShoppingVietnamPage() {
                 <li>• <strong>Xuất xứ:</strong> Nơi sản xuất, nguồn gốc</li>
               </ul>
             </div>
-            <ExampleBox variant="info" title="Ví dụ Đọc Nhãn">
+            <ExampleBox variant="info" title="Ví dụ Đọc nhãn">
               <p className="text-sm mb-2">
                 <strong>Nước mắm:</strong> Xem thành phần (cá, muối), natri (mg/100ml), 
                 hạn sử dụng. Chọn nước mắm ít natri nếu có.
@@ -197,20 +197,20 @@ export default function SmartShoppingVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Mua Theo Mùa</h2>
+        <h2 className="heading-2">Mua theo Mùa</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Thực phẩm theo mùa rẻ hơn, tươi hơn, và dinh dưỡng hơn.
           </p>
           <div className="space-y-2">
             <div className="bg-yellow-50 rounded-lg p-3 border border-yellow-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Mùa Hè:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Mùa hè:</p>
               <p className="text-xs text-gray-700">
                 Dưa hấu, thanh long, xoài, ổi, rau muống, rau cải - rẻ, tươi, nhiều nước.
               </p>
             </div>
             <div className="bg-orange-50 rounded-lg p-3 border border-orange-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Mùa Đông:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Mùa đông:</p>
               <p className="text-xs text-gray-700">
                 Bắp cải, cà rốt, khoai lang, cam, quýt - rẻ, tươi, giàu vitamin C.
               </p>
@@ -227,7 +227,7 @@ export default function SmartShoppingVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Checklist Đi Chợ</h2>
+        <h2 className="heading-2">Checklist đi Chợ</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -268,7 +268,7 @@ export default function SmartShoppingVietnamPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/seasonal-foods-vietnam">
-            <h3 className="heading-5 mb-2">Thực phẩm Theo Mùa</h3>
+            <h3 className="heading-5 mb-2">Thực phẩm Theo mùa</h3>
             <p className="text-sm text-gray-600">
               chi tiết về thực phẩm theo mùa ở Việt Nam
             </p>

@@ -105,7 +105,7 @@ export default function NutritionSkinHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chất Dinh dưỡng Quan trọng cho Da</h2>
+        <h2 className="heading-2">Chất dinh dưỡng Quan trọng cho Da</h2>
         <div className="space-y-4">
           <Card className="border-orange-200 bg-orange-50">
             <h3 className="heading-4 mb-3 text-orange-900">1. Vitamin C</h3>
@@ -209,7 +209,7 @@ export default function NutritionSkinHealthPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Trưa (Việt Nam)</h3>
+            <h3 className="heading-5 mb-2">Bữa trưa (Việt Nam)</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Cá kho + Canh chua cá + Rau muống:</strong>
             </p>
@@ -222,7 +222,7 @@ export default function NutritionSkinHealthPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Tối (Việt Nam)</h3>
+            <h3 className="heading-5 mb-2">Bữa tối (Việt Nam)</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Tôm rang + Rau cải xào với dầu:</strong>
             </p>

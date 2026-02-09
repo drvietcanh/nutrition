@@ -8,19 +8,19 @@ import { Breadcrumb } from "../../components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Dinh dưỡng trong Bệnh viêm ruột (IBD)",
   description:
-    "Hướng dẫn giáo dục về dinh dưỡng trong Crohn's disease và Ulcerative Colitis. Bao gồm quản lý năng lượng, protein, vi chất, và điều chỉnh theo đợt cấp và thời kỳ ổn định.",
+    "Hướng dẫn giáo dục về dinh dưỡng trong Crohn's disease và Ulcerative colitis. Bao gồm quản lý năng lượng, protein, vi chất, và điều chỉnh theo đợt cấp và thời kỳ ổn định.",
   keywords: [
     "bệnh viêm ruột",
     "IBD",
     "Crohn's disease",
-    "Ulcerative Colitis",
+    "Ulcerative colitis",
     "viêm ruột",
     "dinh dưỡng IBD",
   ],
   openGraph: {
     title: "Dinh dưỡng trong Bệnh viêm ruột (IBD)",
     description:
-      "Hướng dẫn giáo dục về dinh dưỡng trong Crohn's disease và Ulcerative Colitis. Bao gồm quản lý năng lượng, protein, vi chất, và điều chỉnh theo đợt cấp và thời kỳ ổn định.",
+      "Hướng dẫn giáo dục về dinh dưỡng trong Crohn's disease và Ulcerative colitis. Bao gồm quản lý năng lượng, protein, vi chất, và điều chỉnh theo đợt cấp và thời kỳ ổn định.",
     url: "https://clinical-nutrition.edu.vn/knowledge/ibd-nutrition",
   },
 };
@@ -48,7 +48,7 @@ export default function IBDNutritionPage() {
           </p>
           <ul className="list-disc space-y-1 pl-6 text-body">
             <li>Crohn</li>
-            <li>Viêm loét đại tràng (Ulcerative Colitis)</li>
+            <li>Viêm loét đại tràng (Ulcerative colitis)</li>
           </ul>
           <p className="text-body">
             Đây là các bệnh viêm mạn tính của đường tiêu hóa, diễn tiến từng đợt, xen kẽ:
@@ -169,7 +169,7 @@ export default function IBDNutritionPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={Info} title="🍽️ Chế độ ăn Theo Từng Giai đoạn Bệnh" />
+          <CardHeader icon={Info} title="🍽️ Chế độ ăn Theo từng Giai đoạn Bệnh" />
           <CardContent>
             <div className="space-y-4">
               <div className="border-l-4 border-red-500 pl-4">
@@ -216,7 +216,7 @@ export default function IBDNutritionPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={AlertCircle} title="🧬 Vi chất Dinh dưỡng – Dễ Thiếu trong IBD" />
+          <CardHeader icon={AlertCircle} title="🧬 Vi chất Dinh dưỡng – Dễ thiếu trong IBD" />
           <CardContent>
             <div className="space-y-3">
               <div>
@@ -255,12 +255,12 @@ export default function IBDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="adjustments-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Theo Tình trạng Bệnh
+            Điều chỉnh Theo tình trạng Bệnh
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        {/* IBD Disease Status Comparison Table */}
+        {/* IBD Disease status comparison Table */}
         <div className="overflow-x-auto my-4">
           <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
             <thead className="bg-green-100">
@@ -351,7 +351,7 @@ export default function IBDNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Những Hiểu lầm Thường gặp
+            Những hiểu lầm Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

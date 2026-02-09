@@ -53,6 +53,24 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Vietnamese Capitalization Fix
+
+This project includes an automated tool to fix Vietnamese capitalization errors. See:
+
+- **[CAPITALIZATION_INDEX.md](./CAPITALIZATION_INDEX.md)** - Quick reference and index
+- **[QUICK_START_CAPITALIZATION.md](./QUICK_START_CAPITALIZATION.md)** - Quick start guide
+- **[VIETNAMESE_CAPITALIZATION_FIX.md](./VIETNAMESE_CAPITALIZATION_FIX.md)** - Detailed documentation
+- **[CAPITALIZATION_PATTERNS.md](./CAPITALIZATION_PATTERNS.md)** - List of handled patterns
+
+**Quick usage:**
+```bash
+# Scan for patterns (no changes)
+python fix-vietnamese-capitalization.py --scan
+
+# Auto-fix all errors
+python fix-vietnamese-capitalization.py
+```
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

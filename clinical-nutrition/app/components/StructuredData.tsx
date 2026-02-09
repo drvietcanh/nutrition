@@ -1,5 +1,5 @@
 /**
- * Structured Data Component
+ * Structured data Component
  * 
  * Provides JSON-LD structured data for SEO
  */
@@ -18,7 +18,7 @@ export function StructuredData({ data }: StructuredDataProps) {
 }
 
 /**
- * Generate Article structured data
+ * Generate article structured data
  */
 export function generateArticleStructuredData({
   title,
@@ -47,11 +47,11 @@ export function generateArticleStructuredData({
     dateModified: dateModified || new Date().toISOString(),
     author: {
       "@type": "Organization",
-      name: author || "Clinical Nutrition Education",
+      name: author || "Clinical nutrition Education",
     },
     publisher: {
       "@type": "Organization",
-      name: "Clinical Nutrition Education",
+      name: "Clinical nutrition Education",
       logo: {
         "@type": "ImageObject",
         url: image || "https://clinical-nutrition.edu.vn/logo.png",
@@ -62,7 +62,7 @@ export function generateArticleStructuredData({
 }
 
 /**
- * Generate WebSite structured data
+ * Generate webSite structured data
  */
 export function generateWebSiteStructuredData({
   name,
@@ -95,7 +95,7 @@ export function generateWebSiteStructuredData({
 }
 
 /**
- * Generate BreadcrumbList structured data
+ * Generate breadcrumbList structured data
  */
 export function generateBreadcrumbStructuredData(items: { name: string; url: string }[]) {
   return {

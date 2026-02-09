@@ -107,7 +107,7 @@ export default function NutritionImmuneSystemPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chất Dinh dưỡng Quan trọng cho Hệ miễn dịch</h2>
+        <h2 className="heading-2">Chất dinh dưỡng Quan trọng cho Hệ miễn dịch</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-4 mb-3 text-blue-900">1. Protein</h3>
@@ -182,9 +182,9 @@ export default function NutritionImmuneSystemPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng Tổng hợp Chất Dinh dưỡng cho Miễn dịch</h2>
+        <h2 className="heading-2">Bảng tổng hợp Chất dinh dưỡng cho Miễn dịch</h2>
         <NutrientTable
-          title="Chất Dinh dưỡng Quan trọng cho Hệ miễn dịch"
+          title="Chất dinh dưỡng Quan trọng cho Hệ miễn dịch"
           rows={[
             { nutrient: "Protein", amount: "0.8-1.0", unit: "g/kg/ngày", note: "Tạo tế bào miễn dịch" },
             { nutrient: "Vitamin C", amount: "75-90", unit: "mg/ngày", note: "Hỗ trợ tế bào miễn dịch" },
@@ -253,7 +253,7 @@ export default function NutritionImmuneSystemPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Tăng cường Hệ miễn dịch qua Dinh dưỡng</h2>
+        <h2 className="heading-2">Tips tăng cường Hệ miễn dịch qua Dinh dưỡng</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

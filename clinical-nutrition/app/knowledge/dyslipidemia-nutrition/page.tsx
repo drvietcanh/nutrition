@@ -115,7 +115,7 @@ export default function DyslipidemiaNutritionPage() {
               Không phải chất béo nào cũng xấu. <strong>Loại chất béo quan trọng hơn số lượng.</strong>
             </p>
             <h4 className="heading-4 mb-3">Các loại chất béo và ảnh hưởng</h4>
-            {/* Fat Types Table */}
+            {/* Fat types table */}
             <div className="overflow-x-auto my-4">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
                 <thead className="bg-green-100">
@@ -170,7 +170,7 @@ export default function DyslipidemiaNutritionPage() {
         </Card>
 
         <div className="space-y-4 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6">
-          <h3 className="heading-3">🥚 Cholesterol trong Thực phẩm – Đừng Quá lo</h3>
+          <h3 className="heading-3">🥚 Cholesterol trong Thực phẩm – Đừng quá lo</h3>
           <div className="space-y-3 text-body">
             <p>
               Cholesterol trong thức ăn (trứng, tôm…) ảnh hưởng ít hơn so với chất béo bão hòa
@@ -242,7 +242,7 @@ export default function DyslipidemiaNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="adjustments-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Theo Từng Loại Rối loạn Lipid
+            Điều chỉnh Theo từng Loại rối loạn Lipid
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -253,7 +253,7 @@ export default function DyslipidemiaNutritionPage() {
               <li>Giảm mỡ động vật</li>
               <li>Tránh chất béo trans</li>
               <li>Tăng chất xơ hòa tan</li>
-              <li>Áp dụng chế độ ăn Địa Trung Hải hoặc DASH</li>
+              <li>Áp dụng chế độ ăn Địa trung hải hoặc DASH</li>
             </ul>
           </div>
 
@@ -316,7 +316,7 @@ export default function DyslipidemiaNutritionPage() {
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
         <div className="space-y-4 text-body-lg">
-          {/* Monitoring Parameters Table */}
+          {/* Monitoring parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
               <thead className="bg-blue-100">
@@ -362,7 +362,7 @@ export default function DyslipidemiaNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Những Sai lầm Thường gặp
+            Những sai lầm Thường gặp
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -378,7 +378,7 @@ export default function DyslipidemiaNutritionPage() {
         </div>
       </section>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="heading-3">
           Công cụ liên quan

@@ -47,7 +47,7 @@ export default function DinhDuongTrongHoiChungRuotKichThichIBSPage() {
         </div>
         <div className="space-y-4">
           <p className="text-body-lg">
-            Hội chứng Ruột kích thích (IBS - Irritable Bowel Syndrome) là rối loạn chức năng tiêu hóa phổ biến, 
+            Hội chứng Ruột kích thích (IBS - Irritable bowel Syndrome) là rối loạn chức năng tiêu hóa phổ biến, 
             gây đau bụng, đầy hơi, thay đổi thói quen đi tiêu (táo bón, tiêu chảy, hoặc cả hai).
           </p>
           <div className="rounded-lg border border-blue-200 bg-blue-50 p-4">

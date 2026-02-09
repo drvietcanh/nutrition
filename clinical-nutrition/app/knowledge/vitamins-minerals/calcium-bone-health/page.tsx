@@ -128,7 +128,7 @@ export default function CalciumBoneHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Thực phẩm Giàu Canxi</h2>
+        <h2 className="heading-2">Nguồn thực phẩm Giàu canxi</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-4 text-blue-900 mb-3 flex items-center gap-2">
@@ -154,7 +154,7 @@ export default function CalciumBoneHealthPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Nguồn Khác</h3>
+            <h3 className="heading-4 mb-3">Nguồn khác</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <p className="text-sm font-semibold text-green-700 mb-2">✓ Nguồn tốt:</p>
@@ -238,7 +238,7 @@ export default function CalciumBoneHealthPage() {
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 1: Thiếu niên 15 tuổi</h3>
             <p className="text-body-sm mb-2">
-              <strong>Tình huống:</strong> Em An, 15 tuổi, không thích uống sữa, ít ăn rau, 
+              <strong>Tình huống:</strong> Em an, 15 tuổi, không thích uống sữa, ít ăn rau, 
               chỉ thích ăn thịt và cơm. Cần 1300mg canxi/ngày.
             </p>
             <p className="text-body-sm mb-2">
@@ -256,7 +256,7 @@ export default function CalciumBoneHealthPage() {
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 2: Người cao tuổi, không uống sữa</h3>
             <p className="text-body-sm mb-2">
-              <strong>Tình huống:</strong> Bà Lan, 70 tuổi, không uống được sữa (không dung nạp lactose), 
+              <strong>Tình huống:</strong> Bà lan, 70 tuổi, không uống được sữa (không dung nạp lactose), 
               cần 1200mg canxi/ngày để phòng loãng xương.
             </p>
             <p className="text-body-sm mb-2">

@@ -6,7 +6,7 @@ import { FileText, CheckCircle2, AlertCircle, Info } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Đọc Nhãn Thực phẩm: Hướng dẫn Đơn giản",
+  title: "Đọc nhãn Thực phẩm: Hướng dẫn Đơn giản",
   description:
     "Hướng dẫn cách đọc và hiểu nhãn thực phẩm để chọn lựa thực phẩm lành mạnh. Hiểu về thành phần dinh dưỡng, đường, muối, và chất béo.",
   keywords: [
@@ -24,14 +24,14 @@ export default function ReadingFoodLabelsPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Đọc Nhãn Thực phẩm" },
+          { label: "Đọc nhãn Thực phẩm" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <FileText className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Đọc Nhãn Thực phẩm: Hướng dẫn Đơn giản</h1>
+          <h1 className="heading-1">Đọc nhãn Thực phẩm: Hướng dẫn Đơn giản</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Biết cách đọc nhãn thực phẩm giúp bạn chọn lựa thực phẩm lành mạnh hơn. 
@@ -61,7 +61,7 @@ export default function ReadingFoodLabelsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nhãn Thực phẩm là gì?</h2>
+        <h2 className="heading-2">Nhãn thực phẩm là gì?</h2>
         <div className="space-y-4">
           <p className="text-body">
             <strong>Nhãn thực phẩm</strong> là thông tin dinh dưỡng được in trên bao bì thực phẩm đóng gói. 
@@ -77,12 +77,12 @@ export default function ReadingFoodLabelsPage() {
           </div>
 
           <Card>
-            <h3 className="heading-4 mb-3">Các Phần Quan trọng trên Nhãn</h3>
+            <h3 className="heading-4 mb-3">Các phần quan trọng trên Nhãn</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <Info className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <div>
-                  <p className="text-sm font-semibold text-gray-900 mb-1">1. Khẩu phần (Serving Size)</p>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">1. Khẩu phần (Serving size)</p>
                   <p className="text-sm text-gray-700">
                     Cho biết một phần ăn là bao nhiêu. Tất cả thông tin dinh dưỡng dưới đây là cho một phần này.
                   </p>
@@ -121,7 +121,7 @@ export default function ReadingFoodLabelsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Đọc Nhãn: Những Điều Cần Chú ý</h2>
+        <h2 className="heading-2">Cách đọc nhãn: Những điều Cần chú ý</h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
             <h3 className="heading-4 text-red-900 mb-3">1. Đường (Sugar)</h3>

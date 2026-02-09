@@ -8,7 +8,7 @@ import { Calendar, CheckCircle2, AlertCircle, ClipboardList } from "lucide-react
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Lập Kế hoạch Bữa ăn Tuần",
+  title: "Lập kế hoạch Bữa ăn Tuần",
   description:
     "Hướng dẫn step-by-step cách lập kế hoạch bữa ăn cho cả tuần. Templates và tips thực tế để ăn uống lành mạnh, tiết kiệm thời gian và tiền bạc.",
   keywords: [
@@ -27,14 +27,14 @@ export default function WeeklyMealPlanningPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Lập Kế hoạch Bữa ăn Tuần" },
+          { label: "Lập kế hoạch Bữa ăn Tuần" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Calendar className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Lập Kế hoạch Bữa ăn Tuần</h1>
+          <h1 className="heading-1">Lập kế hoạch Bữa ăn Tuần</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Lập kế hoạch bữa ăn cho cả tuần giúp bạn ăn uống lành mạnh hơn, tiết kiệm thời gian 
@@ -63,7 +63,7 @@ export default function WeeklyMealPlanningPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tại sao Lập Kế hoạch Bữa ăn Tuần?</h2>
+        <h2 className="heading-2">Tại sao Lập kế hoạch Bữa ăn Tuần?</h2>
         <div className="space-y-4">
           <Card>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -115,7 +115,7 @@ export default function WeeklyMealPlanningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Lập Kế hoạch Bữa ăn Tuần: 5 Bước Đơn giản</h2>
+        <h2 className="heading-2">Cách lập kế hoạch Bữa ăn Tuần: 5 Bước đơn giản</h2>
         <div className="space-y-4">
           <Card>
             <div className="flex items-start gap-3 mb-3">
@@ -123,7 +123,7 @@ export default function WeeklyMealPlanningPage() {
                 <span className="text-sm font-bold text-blue-700">1</span>
               </div>
               <div className="flex-1">
-                <h3 className="heading-4 mb-2">Chọn Ngày Lập Kế hoạch</h3>
+                <h3 className="heading-4 mb-2">Chọn ngày Lập kế hoạch</h3>
                 <p className="text-body-sm">
                   Chọn một ngày cố định mỗi tuần để lập kế hoạch (ví dụ: Chủ nhật). 
                   Dành 15-30 phút để lên kế hoạch cho cả tuần.
@@ -138,7 +138,7 @@ export default function WeeklyMealPlanningPage() {
                 <span className="text-sm font-bold text-blue-700">2</span>
               </div>
               <div className="flex-1">
-                <h3 className="heading-4 mb-2">Xem Lịch Trình Tuần</h3>
+                <h3 className="heading-4 mb-2">Xem lịch Trình tuần</h3>
                 <p className="text-body-sm mb-2">
                   Xem lịch trình của bạn để biết:
                 </p>
@@ -157,7 +157,7 @@ export default function WeeklyMealPlanningPage() {
                 <span className="text-sm font-bold text-blue-700">3</span>
               </div>
               <div className="flex-1">
-                <h3 className="heading-4 mb-2">Lên Danh sách Bữa ăn</h3>
+                <h3 className="heading-4 mb-2">Lên danh sách Bữa ăn</h3>
                 <p className="text-body-sm mb-2">
                   Viết ra các bữa ăn cho cả tuần. Bắt đầu với bữa tối (thường phức tạp nhất), 
                   sau đó lên bữa trưa và bữa sáng.
@@ -178,7 +178,7 @@ export default function WeeklyMealPlanningPage() {
                 <span className="text-sm font-bold text-blue-700">4</span>
               </div>
               <div className="flex-1">
-                <h3 className="heading-4 mb-2">Tạo Danh sách Mua sắm</h3>
+                <h3 className="heading-4 mb-2">Tạo danh sách Mua sắm</h3>
                 <p className="text-body-sm mb-2">
                   Dựa trên kế hoạch bữa ăn, tạo danh sách mua sắm. Nhóm theo:
                 </p>
@@ -210,7 +210,7 @@ export default function WeeklyMealPlanningPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Template Kế hoạch Bữa ăn Tuần</h2>
+        <h2 className="heading-2">Template kế hoạch Bữa ăn Tuần</h2>
         <Card>
           <h3 className="heading-4 mb-3">Ví dụ Kế hoạch Bữa ăn 1 Tuần</h3>
           <div className="overflow-x-auto">
@@ -342,13 +342,13 @@ export default function WeeklyMealPlanningPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn Hàng ngày</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn Hàng ngày</h3>
             <p className="text-sm text-gray-600">
               Hướng dẫn lập kế hoạch bữa ăn cơ bản
             </p>
           </Card>
           <Card href="/knowledge/daily-practices/meal-prep">
-            <h3 className="heading-5 mb-2">Chuẩn bị Bữa ăn (Meal Prep)</h3>
+            <h3 className="heading-5 mb-2">Chuẩn bị Bữa ăn (Meal prep)</h3>
             <p className="text-sm text-gray-600">
               Cách chuẩn bị bữa ăn trước để tiết kiệm thời gian
             </p>

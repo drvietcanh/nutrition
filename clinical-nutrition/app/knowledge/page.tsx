@@ -21,11 +21,11 @@ export default function KnowledgePage() {
         </div>
         <p className="text-body-lg">
           Nội dung giáo dục về dinh dưỡng lâm sàng được tổ chức thành hai phần chính:
-          <strong> Cơ sở Kiến thức Dinh dưỡng lâm sàng</strong> và <strong>Dinh dưỡng trong Bệnh Mạn tính</strong>.
+          <strong> Cơ sở Kiến thức Dinh dưỡng lâm sàng</strong> và <strong>Dinh dưỡng trong Bệnh mạn tính</strong>.
         </p>
       </header>
 
-      {/* Clinical Foundations Section */}
+      {/* Clinical foundations section */}
       <section className="space-y-6">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -48,8 +48,8 @@ export default function KnowledgePage() {
             <ul className="list-disc space-y-2 pl-6 text-body-sm mt-4 text-neutral-700">
               <li>Hiểu lầm & Quan niệm Sai trong Dinh dưỡng lâm sàng</li>
               <li>Đánh giá Dinh dưỡng lâm sàng: Quy trình Đầy đủ</li>
-              <li>Ước tính Nhu cầu Dinh dưỡng</li>
-              <li>Đánh giá Lượng Ăn</li>
+              <li>Ước tính nhu cầu dinh dưỡng</li>
+              <li>Đánh giá Lượng ăn</li>
               <li>Và nhiều hơn nữa...</li>
             </ul>
           </CardContent>
@@ -64,12 +64,12 @@ export default function KnowledgePage() {
         </Card>
       </section>
 
-      {/* Chronic Diseases Section */}
+      {/* Chronic diseases section */}
       <section className="space-y-6 mt-8">
         <div className="flex items-center gap-3 mb-6">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 className="heading-2 whitespace-nowrap">
-            Dinh dưỡng trong Bệnh Mạn tính
+            Dinh dưỡng trong Bệnh mạn tính
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -119,7 +119,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/needs-estimation">
           <CardHeader
             icon={Calculator}
-            title="Ước tính Nhu cầu Dinh dưỡng: Vì sao Khoảng Quan trọng Hơn Số Chính xác"
+            title="Ước tính nhu cầu dinh dưỡng: Vì sao Khoảng quan trọng hơn Số chính xác"
           />
           <CardContent>
             <p className="text-body">
@@ -140,7 +140,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/why-intake-falls-short">
           <CardHeader
             icon={FileText}
-            title="Vì sao Lượng Dinh dưỡng Ăn vào Thường Thiếu so với Nhu cầu Đã Tính"
+            title="Vì sao Lượng dinh dưỡng Ăn vào Thường thiếu so với Nhu cầu Đã tính"
           />
           <CardContent>
             <p className="text-body">
@@ -161,7 +161,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/intake-assessment">
           <CardHeader
             icon={UtensilsCrossed}
-            title="Đánh giá Lượng Ăn: Hiểu Người Bệnh Thực sự Nhận được Gì"
+            title="Đánh giá Lượng ăn: Hiểu người Bệnh thực sự Nhận được Gì"
           />
           <CardContent>
             <p className="text-body">
@@ -287,7 +287,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/chronic-diseases">
           <CardHeader
             icon={Activity}
-            title="Dinh dưỡng trong Bệnh Mạn tính"
+            title="Dinh dưỡng trong Bệnh mạn tính"
           />
           <CardContent>
             <p className="text-body">
@@ -357,7 +357,7 @@ export default function KnowledgePage() {
         <Card href="/knowledge/macronutrients-overview">
           <CardHeader
             icon={PieChart}
-            title="Tổng quan về các Chất Dinh dưỡng Đa lượng"
+            title="Tổng quan về các Chất dinh dưỡng Đa lượng"
           />
           <CardContent>
             <p className="text-body">
@@ -376,7 +376,7 @@ export default function KnowledgePage() {
         </Card>
       </section>
 
-      {/* Tools Section */}
+      {/* Tools section */}
       <section className="space-y-6 mt-8">
         <Card>
         <CardHeader
@@ -390,7 +390,7 @@ export default function KnowledgePage() {
           <ul className="list-disc space-y-2 pl-6 text-gray-700">
           <li>
             <Link href="/tools/malnutrition-screening" className="text-blue-700 hover:text-blue-900 hover:underline">
-                Công cụ Sàng lọc Suy Dinh dưỡng
+                Công cụ Sàng lọc Suy dinh dưỡng
             </Link>
           </li>
           <li>
@@ -400,7 +400,7 @@ export default function KnowledgePage() {
           </li>
           <li>
             <Link href="/tools/intake-assessment" className="text-blue-700 hover:text-blue-900 hover:underline">
-                Bảng Đánh giá Lượng Ăn
+                Bảng đánh giá Lượng ăn
             </Link>
           </li>
         </ul>

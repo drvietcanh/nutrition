@@ -66,7 +66,7 @@ export default function HealthyPlatePage() {
         <h2 className="heading-2">Đĩa ăn lành mạnh là gì?</h2>
         <div className="space-y-4">
           <p className="text-body">
-            <strong>Đĩa ăn lành mạnh</strong> (Healthy Plate) là một cách đơn giản để hình dung 
+            <strong>Đĩa ăn lành mạnh</strong> (Healthy plate) là một cách đơn giản để hình dung 
             cách chia bữa ăn của bạn. Thay vì đếm calo phức tạp, bạn chỉ cần nhìn vào đĩa và 
             đảm bảo các phần được chia đúng tỷ lệ.
           </p>
@@ -150,7 +150,7 @@ export default function HealthyPlatePage() {
         <h2 className="heading-2">Ví dụ Bữa ăn Cụ thể</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Trưa lành mạnh</h3>
+            <h3 className="heading-4 mb-3">Bữa trưa lành mạnh</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <Carrot className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -192,7 +192,7 @@ export default function HealthyPlatePage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Tối lành mạnh</h3>
+            <h3 className="heading-4 mb-3">Bữa tối lành mạnh</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <Carrot className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -227,7 +227,7 @@ export default function HealthyPlatePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Bữa ăn cân bằng vs Không Cân bằng</h2>
+        <h2 className="heading-2">So sánh: Bữa ăn cân bằng vs Không cân bằng</h2>
         <ComparisonCard
           title="Ví dụ So sánh"
           items={[
@@ -347,19 +347,19 @@ export default function HealthyPlatePage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan về các Chất Dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan về các Chất dinh dưỡng Đa lượng</h3>
             <p className="text-sm text-gray-600">
               Hiểu về carbohydrate, protein, và chất béo
             </p>
           </Card>
           <Card href="/knowledge/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Cách lập kế hoạch bữa ăn cân bằng
             </p>
           </Card>
           <Card href="/knowledge/portion-sizes">
-            <h3 className="heading-5 mb-2">Hiểu về Portion Sizes</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Portion sizes</h3>
             <p className="text-sm text-gray-600">
               Cách ước lượng khẩu phần đúng
             </p>

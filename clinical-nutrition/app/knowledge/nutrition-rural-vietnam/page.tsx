@@ -8,7 +8,7 @@ import { Leaf, CheckCircle2, Home } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng cho Người Sống ở Nông thôn",
+  title: "Dinh dưỡng cho Người sống ở Nông thôn",
   description:
     "Tận dụng thực phẩm địa phương, tự trồng, cách bảo quản. Tips tận dụng vườn nhà. Cách xây dựng chế độ ăn lành mạnh với thực phẩm địa phương.",
   keywords: [
@@ -28,14 +28,14 @@ export default function NutritionRuralVietnamPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
-          { label: "Dinh dưỡng cho Người Sống ở Nông thôn" },
+          { label: "Dinh dưỡng cho Người sống ở Nông thôn" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Home className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Dinh dưỡng cho Người Sống ở Nông thôn</h1>
+          <h1 className="heading-1">Dinh dưỡng cho Người sống ở Nông thôn</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Sống ở nông thôn có nhiều lợi thế về dinh dưỡng: thực phẩm tươi sống, tự trồng, địa phương. 
@@ -118,13 +118,13 @@ export default function NutritionRuralVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tận dụng Vườn Nhà</h2>
+        <h2 className="heading-2">Tận dụng Vườn nhà</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Rau Củ Dễ Trồng</h3>
+            <h3 className="heading-4 mb-3">Rau củ dễ Trồng</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Rau Xanh:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Rau xanh:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Rau muống (dễ trồng, nhanh thu hoạch)</li>
                   <li>• Rau cải (nhiều loại)</li>
@@ -133,7 +133,7 @@ export default function NutritionRuralVietnamPage() {
                 </ul>
               </div>
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Rau Củ Khác:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Rau củ khác:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Đậu bắp</li>
                   <li>• Mướp</li>
@@ -146,10 +146,10 @@ export default function NutritionRuralVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Trái Cây Dễ Trồng</h3>
+            <h3 className="heading-4 mb-3">Trái cây Dễ trồng</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Cây Ngắn Ngày:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Cây ngắn Ngày:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Đu đủ (nhanh thu hoạch)</li>
                   <li>• Chuối (dễ trồng)</li>
@@ -157,7 +157,7 @@ export default function NutritionRuralVietnamPage() {
                 </ul>
               </div>
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Cây Dài Ngày:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Cây dài ngày:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Xoài</li>
                   <li>• Nhãn</li>
@@ -168,7 +168,7 @@ export default function NutritionRuralVietnamPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="tip" title="Tips Trồng Rau">
+          <ExampleBox variant="tip" title="Tips trồng Rau">
             <p className="mb-2">
               <strong>Bắt đầu đơn giản:</strong> Trồng rau muống, rau cải - dễ trồng, nhanh thu hoạch (2-3 tuần). 
               Không cần nhiều diện tích.
@@ -185,7 +185,7 @@ export default function NutritionRuralVietnamPage() {
         <h2 className="heading-2">Thực phẩm Địa phương</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Protein Địa phương</h3>
+            <h3 className="heading-4 mb-3">Protein địa phương</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
                 <strong>Cá sông:</strong> Cá sông tươi, giàu protein, omega-3. Rẻ hơn cá biển, 
@@ -219,9 +219,9 @@ export default function NutritionRuralVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Bảo quản Thực phẩm</h2>
+        <h2 className="heading-2">Cách bảo quản Thực phẩm</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bảo quản Rau Củ</h3>
+          <h3 className="heading-4 mb-3">Bảo quản Rau củ</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>
               <strong>Tủ lạnh:</strong> Rau củ tươi bảo quản trong tủ lạnh 3-7 ngày. 
@@ -238,7 +238,7 @@ export default function NutritionRuralVietnamPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Bảo quản Trái Cây</h3>
+          <h3 className="heading-4 mb-3">Bảo quản Trái cây</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>
               <strong>Tủ lạnh:</strong> Trái cây chín bảo quản trong tủ lạnh. 
@@ -322,7 +322,7 @@ export default function NutritionRuralVietnamPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Bữa ăn với Thực phẩm Địa phương</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Trưa Địa phương</h3>
+          <h3 className="heading-4 mb-3">Bữa trưa Địa phương</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>
               <strong>Cơm</strong> (tự trồng hoặc mua địa phương)
@@ -339,7 +339,7 @@ export default function NutritionRuralVietnamPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Tối Địa phương</h3>
+          <h3 className="heading-4 mb-3">Bữa tối địa phương</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>
               <strong>Cơm</strong> + <strong>thịt gà vườn luộc</strong> (tự nuôi) + 
@@ -392,7 +392,7 @@ export default function NutritionRuralVietnamPage() {
             </p>
           </Card>
           <Card href="/knowledge/seasonal-foods-vietnam">
-            <h3 className="heading-5 mb-2">Thực phẩm Theo Mùa ở Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Thực phẩm Theo mùa ở Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Trồng theo mùa để có thực phẩm tươi ngon
             </p>

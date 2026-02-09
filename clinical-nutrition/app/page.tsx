@@ -7,14 +7,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        {/* Hero Section */}
+        {/* Hero section */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" aria-hidden="true" />
             <span>Nền tảng giáo dục dinh dưỡng lâm sàng</span>
           </div>
           <h1 className="heading-1 mb-6">
-            Hiểu Dinh dưỡng lâm sàng một Cách Đơn giản
+            Hiểu dinh dưỡng lâm sàng một Cách đơn giản
           </h1>
           <p className="text-body-lg max-w-3xl mx-auto mb-8 text-gray-700">
             Học các khái niệm dinh dưỡng lâm sàng và sử dụng công cụ tương tác để thực hành. 
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Quick Start Guide */}
+        {/* Quick start Guide */}
         <section className="mb-16">
           <div className="text-center mb-8">
             <h2 className="heading-2 mb-3">Hướng dẫn Nhanh</h2>
@@ -81,7 +81,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-purple-600">3</span>
               </div>
-              <h3 className="heading-5 mb-2">Học Quy trình</h3>
+              <h3 className="heading-5 mb-2">Học quy trình</h3>
               <p className="text-body-sm text-gray-600 mb-4">
                 Hiểu cách đánh giá dinh dưỡng từ đầu đến cuối
               </p>
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Main Navigation Cards */}
+        {/* Main navigation Cards */}
         <section className="mb-16">
           <div className="text-center mb-8">
             <h2 className="heading-2 mb-3">Khám phá Nội dung</h2>
@@ -119,7 +119,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Knowledge Base Card */}
+            {/* Knowledge base card */}
             <Card href="/knowledge">
               <CardHeader
                 icon={BookOpen}
@@ -152,7 +152,7 @@ export default function Home() {
               </CardFooter>
             </Card>
 
-            {/* Tools Card */}
+            {/* Tools card */}
             <Card href="/tools">
               <CardHeader
                 icon={Calculator}
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Popular Content Section */}
+        {/* Popular content section */}
         <section className="mb-16">
           <div className="text-center mb-8">
             <h2 className="heading-2 mb-3">Nội dung Phổ biến</h2>
@@ -246,7 +246,7 @@ export default function Home() {
                 <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
                   <Activity className="w-5 h-5 text-green-600" aria-hidden="true" />
                 </div>
-                <h3 className="heading-5">Sàng lọc Suy Dinh dưỡng</h3>
+                <h3 className="heading-5">Sàng lọc Suy dinh dưỡng</h3>
               </div>
               <p className="text-sm text-gray-600">
                 Tìm hiểu cách xác định nguy cơ suy dinh dưỡng
@@ -260,7 +260,7 @@ export default function Home() {
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                   <FileText className="w-5 h-5 text-blue-600" aria-hidden="true" />
                 </div>
-                <h3 className="heading-5">Vì sao Lượng Ăn Thường Thiếu</h3>
+                <h3 className="heading-5">Vì sao Lượng ăn Thường thiếu</h3>
               </div>
               <p className="text-sm text-gray-600">
                 Hiểu các yếu tố thực tế ảnh hưởng đến lượng ăn vào
@@ -274,7 +274,7 @@ export default function Home() {
                 <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
                   <UtensilsCrossed className="w-5 h-5 text-green-600" aria-hidden="true" />
                 </div>
-                <h3 className="heading-5">Đánh giá Lượng Ăn</h3>
+                <h3 className="heading-5">Đánh giá Lượng ăn</h3>
               </div>
               <p className="text-sm text-gray-600">
                 Học cách đánh giá lượng dinh dưỡng thực tế người bệnh nhận được
@@ -349,8 +349,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About Section */}
-        <Callout variant="info" title="Về Nền tảng Này">
+        {/* About section */}
+        <Callout variant="info" title="Về nền tảng Này">
           <p className="mb-3">
             Nền tảng này được thiết kế để giúp mọi người hiểu các khái niệm dinh dưỡng lâm sàng 
             một cách đơn giản và dễ tiếp cận. Tất cả nội dung được trình bày bằng ngôn ngữ dễ hiểu, 

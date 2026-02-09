@@ -63,7 +63,7 @@ export default function NutritionStressPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Giúp Giảm Stress</h2>
+        <h2 className="heading-2">Thực phẩm Giúp giảm Stress</h2>
         <Card>
           <h3 className="heading-4 mb-3">Thực phẩm Giàu B Vitamins</h3>
           <p className="text-body-sm mb-3">
@@ -79,7 +79,7 @@ export default function NutritionStressPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Thực phẩm Giàu Magnesium</h3>
+          <h3 className="heading-4 mb-3">Thực phẩm Giàu magnesium</h3>
           <p className="text-body-sm mb-3">
             Magnesium giúp thư giãn cơ bắp và thần kinh, có thể giúp giảm stress.
           </p>
@@ -105,18 +105,18 @@ export default function NutritionStressPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Nên tránh Khi Stress</h2>
+        <h2 className="heading-2">Thực phẩm Nên tránh Khi stress</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Thực phẩm Có thể Tăng Stress</h3>
+          <h3 className="heading-4 mb-3">Thực phẩm Có thể Tăng stress</h3>
           <div className="space-y-3">
             <div>
-              <p className="text-sm font-semibold text-gray-900 mb-1">Đồ Ngọt, Nhiều Đường</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Đồ ngọt, Nhiều đường</p>
               <p className="text-sm text-gray-700">
                 Có thể làm tăng đường huyết nhanh, sau đó giảm, gây mệt mỏi và căng thẳng hơn.
               </p>
             </div>
             <div>
-              <p className="text-sm font-semibold text-gray-900 mb-1">Caffeine Quá Nhiều</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Caffeine quá nhiều</p>
               <p className="text-sm text-gray-700">
                 Có thể làm tăng lo lắng, bồn chồn, khó ngủ - tăng stress.
               </p>
@@ -153,9 +153,9 @@ export default function NutritionStressPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa ăn Giúp Giảm Stress</h2>
+        <h2 className="heading-2">Ví dụ Bữa ăn Giúp giảm Stress</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Trưa Cân bằng</h3>
+          <h3 className="heading-4 mb-3">Bữa trưa Cân bằng</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>• Cá hồi (omega-3) + rau xanh đậm (B vitamins, magnesium) + gạo lứt (B vitamins)</p>
             <p>• Thịt gà nạc (protein) + bông cải xanh (B vitamins, magnesium) + khoai tây</p>

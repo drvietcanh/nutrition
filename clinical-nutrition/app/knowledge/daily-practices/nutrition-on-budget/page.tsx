@@ -62,7 +62,7 @@ export default function NutritionOnBudgetPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Giá rẻ, Giàu Dinh dưỡng</h2>
+        <h2 className="heading-2">Thực phẩm Giá rẻ, Giàu dinh dưỡng</h2>
         <Card>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -117,7 +117,7 @@ export default function NutritionOnBudgetPage() {
           </p>
         </ExampleBox>
 
-        <ExampleBox variant="tip" title="Thực phẩm Theo Mùa ở Việt Nam">
+        <ExampleBox variant="tip" title="Thực phẩm Theo mùa ở Việt Nam">
           <p className="text-sm mb-2">
             <strong>Mua theo mùa giúp tiết kiệm 30-50%:</strong>
           </p>
@@ -134,7 +134,7 @@ export default function NutritionOnBudgetPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Mẹo Mua sắm Thông minh</h2>
+        <h2 className="heading-2">Mẹo mua sắm Thông minh</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -170,7 +170,7 @@ export default function NutritionOnBudgetPage() {
           </div>
         </Card>
 
-        <ExampleBox variant="tip" title="Cách Mua sắm ở Chợ để Tiết kiệm">
+        <ExampleBox variant="tip" title="Cách mua sắm ở Chợ để Tiết kiệm">
           <p className="text-sm mb-2">
             <strong>Tips mua sắm ở chợ Việt Nam:</strong>
           </p>
@@ -212,7 +212,7 @@ export default function NutritionOnBudgetPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Lập kế hoạch giúp tiết kiệm tiền
             </p>

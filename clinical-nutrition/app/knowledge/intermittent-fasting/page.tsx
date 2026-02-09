@@ -8,7 +8,7 @@ import { Clock, AlertCircle, CheckCircle2, XCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Intermittent Fasting: Hiểu đúng",
+  title: "Intermittent fasting: Hiểu đúng",
   description:
     "Hướng dẫn về intermittent fasting (nhịn ăn gián đoạn) - các phương pháp, lợi ích, rủi ro, và ai nên/không nên thử.",
   keywords: [
@@ -27,14 +27,14 @@ export default function IntermittentFastingPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
-          { label: "Intermittent Fasting" },
+          { label: "Intermittent fasting" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Clock className="w-8 h-8 text-purple-600" aria-hidden="true" />
-          <h1 className="heading-1">Intermittent Fasting: Hiểu đúng</h1>
+          <h1 className="heading-1">Intermittent fasting: Hiểu đúng</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Intermittent fasting (IF) - nhịn ăn gián đoạn - là một phương pháp ăn uống theo thời gian, 
@@ -45,7 +45,7 @@ export default function IntermittentFastingPage() {
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
-            <strong>Intermittent Fasting</strong> = Ăn trong khoảng thời gian nhất định, nhịn ăn trong khoảng thời gian khác
+            <strong>Intermittent fasting</strong> = Ăn trong khoảng thời gian nhất định, nhịn ăn trong khoảng thời gian khác
           </li>
           <li>
             <strong>Không phải</strong> về loại thực phẩm, mà về <strong>khi nào</strong> ăn
@@ -63,10 +63,10 @@ export default function IntermittentFastingPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Intermittent Fasting là gì?</h2>
+        <h2 className="heading-2">Intermittent fasting là gì?</h2>
         <div className="space-y-4">
           <p className="text-body">
-            <strong>Intermittent Fasting (IF)</strong> là một phương pháp ăn uống theo thời gian. 
+            <strong>Intermittent fasting (IF)</strong> là một phương pháp ăn uống theo thời gian. 
             Bạn chia ngày thành hai khoảng: khoảng thời gian ăn (eating window) và khoảng thời gian nhịn ăn (fasting window).
           </p>
 
@@ -79,7 +79,7 @@ export default function IntermittentFastingPage() {
           </ExampleBox>
 
           <Card>
-            <h3 className="heading-4 mb-3">Các Phương pháp phổ biến</h3>
+            <h3 className="heading-4 mb-3">Các phương pháp phổ biến</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
                 <thead className="bg-neutral-50">
@@ -107,7 +107,7 @@ export default function IntermittentFastingPage() {
                   </tr>
                   <tr className="bg-neutral-50">
                     <td className="px-4 py-3 text-sm font-medium text-neutral-900"><strong>OMAD</strong></td>
-                    <td className="px-4 py-3 text-sm text-neutral-700">One Meal A Day - 1 bữa/ngày</td>
+                    <td className="px-4 py-3 text-sm text-neutral-700">One meal A Day - 1 bữa/ngày</td>
                     <td className="px-4 py-3 text-sm text-neutral-700">Người có kinh nghiệm</td>
                   </tr>
                 </tbody>
@@ -144,9 +144,9 @@ export default function IntermittentFastingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ai Nên và Không Nên Thử?</h2>
+        <h2 className="heading-2">Ai nên và Không nên Thử?</h2>
         <ComparisonCard
-          title="Phù hợp vs Không Phù hợp"
+          title="Phù hợp vs Không phù hợp"
           items={[
             {
               label: "Có thể thử (với thận trọng)",
@@ -163,7 +163,7 @@ export default function IntermittentFastingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips thực hành (Nếu Thử)</h2>
+        <h2 className="heading-2">Tips thực hành (Nếu thử)</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

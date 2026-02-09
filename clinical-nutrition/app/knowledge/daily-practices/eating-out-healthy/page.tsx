@@ -60,7 +60,7 @@ export default function EatingOutHealthyPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Chọn Món</h2>
+        <h2 className="heading-2">Tips chọn Món</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 text-green-900 mb-3">✓ Nên chọn:</h3>
@@ -109,7 +109,7 @@ export default function EatingOutHealthyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Mẹo Khi Đặt Món</h2>
+        <h2 className="heading-2">Mẹo khi đặt món</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -150,7 +150,7 @@ export default function EatingOutHealthyPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Lập kế hoạch cho bữa ăn ở nhà và ngoài
             </p>

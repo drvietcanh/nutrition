@@ -61,10 +61,10 @@ export default function PregnancyNutritionPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chất Dinh dưỡng Quan trọng</h2>
+        <h2 className="heading-2">Chất dinh dưỡng Quan trọng</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
-            <h3 className="heading-4 text-green-900 mb-3">Axit Folic (Folate)</h3>
+            <h3 className="heading-4 text-green-900 mb-3">Axit folic (Folate)</h3>
             <p className="text-body text-green-900 mb-3">
               <strong>Quan trọng nhất trong 3 tháng đầu!</strong> Giúp ngăn dị tật ống thần kinh ở thai nhi.
             </p>

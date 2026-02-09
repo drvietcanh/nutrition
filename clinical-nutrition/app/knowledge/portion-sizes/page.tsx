@@ -9,7 +9,7 @@ import { Ruler, Hand, Apple, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Hiểu về Portion Sizes (Khẩu phần)",
+  title: "Hiểu về Portion sizes (Khẩu phần)",
   description:
     "Hướng dẫn cách ước lượng khẩu phần đúng với visual guide và comparisons. Sử dụng bàn tay và các công cụ đơn giản để đo khẩu phần.",
   keywords: [
@@ -28,14 +28,14 @@ export default function PortionSizesPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Hiểu về Portion Sizes" },
+          { label: "Hiểu về Portion sizes" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Hand className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Hiểu về Portion Sizes (Khẩu phần)</h1>
+          <h1 className="heading-1">Hiểu về Portion sizes (Khẩu phần)</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Khẩu phần (portion size) là lượng thực phẩm bạn ăn trong một lần. Hiểu về khẩu phần giúp 
@@ -65,17 +65,17 @@ export default function PortionSizesPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Khẩu phần vs Serving Size</h2>
+        <h2 className="heading-2">Khẩu phần vs Serving size</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Sự Khác biệt</h3>
+            <h3 className="heading-4 mb-3">Sự khác biệt</h3>
             <div className="space-y-3 text-body-sm">
               <p>
-                <strong>Serving Size (Khẩu phần Khuyến nghị):</strong> Lượng thực phẩm được khuyến nghị 
+                <strong>Serving size (Khẩu phần Khuyến nghị):</strong> Lượng thực phẩm được khuyến nghị 
                 trên nhãn thực phẩm hoặc hướng dẫn dinh dưỡng. Đây là lượng tiêu chuẩn để tính toán dinh dưỡng.
               </p>
               <p>
-                <strong>Portion Size (Khẩu phần thực tế):</strong> Lượng thực phẩm bạn thực sự ăn. 
+                <strong>Portion size (Khẩu phần thực tế):</strong> Lượng thực phẩm bạn thực sự ăn. 
                 Có thể lớn hơn hoặc nhỏ hơn serving size.
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function PortionSizesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Ước lượng Khẩu phần: Sử dụng Bàn tay</h2>
+        <h2 className="heading-2">Cách ước lượng Khẩu phần: Sử dụng Bàn tay</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Hướng dẫn Sử dụng Bàn tay</h3>
@@ -271,7 +271,7 @@ export default function PortionSizesPage() {
             </p>
           </Card>
           <Card href="/knowledge/daily-practices/reading-food-labels">
-            <h3 className="heading-5 mb-2">Đọc Nhãn Thực phẩm</h3>
+            <h3 className="heading-5 mb-2">Đọc nhãn Thực phẩm</h3>
             <p className="text-sm text-gray-600">
               Hiểu serving size trên nhãn thực phẩm
             </p>

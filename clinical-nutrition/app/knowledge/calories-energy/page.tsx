@@ -50,10 +50,10 @@ export default function CaloriesEnergyPage() {
             <strong>Calo</strong> là đơn vị đo năng lượng trong thực phẩm
           </li>
           <li>
-            <strong>BMR</strong> (Basal Metabolic Rate) - năng lượng cơ thể cần khi nghỉ ngơi
+            <strong>BMR</strong> (Basal metabolic rate) - năng lượng cơ thể cần khi nghỉ ngơi
           </li>
           <li>
-            <strong>TDEE</strong> (Total Daily Energy Expenditure) - tổng năng lượng cơ thể cần mỗi ngày
+            <strong>TDEE</strong> (Total daily Energy expenditure) - tổng năng lượng cơ thể cần mỗi ngày
           </li>
           <li>
             Để giảm cân: ăn ít hơn TDEE; để tăng cân: ăn nhiều hơn TDEE
@@ -105,7 +105,7 @@ export default function CaloriesEnergyPage() {
         <h2 className="heading-2">BMR và TDEE: Nhu cầu năng lượng của cơ thể</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">BMR (Basal Metabolic Rate) - Tỷ lệ Trao đổi Chất Cơ bản</h3>
+            <h3 className="heading-4 mb-3">BMR (Basal metabolic rate) - Tỷ lệ Trao đổi Chất cơ bản</h3>
             <p className="text-body-sm mb-3">
               <strong>BMR</strong> là lượng năng lượng cơ thể cần khi bạn hoàn toàn nghỉ ngơi 
               (không làm gì cả, chỉ để sống). Đây là năng lượng để:
@@ -126,7 +126,7 @@ export default function CaloriesEnergyPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">TDEE (Total Daily Energy Expenditure) - Tổng năng lượng Tiêu thụ Hàng ngày</h3>
+            <h3 className="heading-4 mb-3">TDEE (Total daily Energy expenditure) - Tổng năng lượng Tiêu thụ Hàng ngày</h3>
             <p className="text-body-sm mb-3">
               <strong>TDEE</strong> là tổng năng lượng cơ thể cần trong một ngày, bao gồm:
             </p>
@@ -342,7 +342,7 @@ export default function CaloriesEnergyPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan về các Chất Dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan về các Chất dinh dưỡng Đa lượng</h3>
             <p className="text-sm text-gray-600">
               Hiểu về carbohydrate, protein, và chất béo - nguồn calo
             </p>
@@ -354,7 +354,7 @@ export default function CaloriesEnergyPage() {
             </p>
           </Card>
           <Card href="/knowledge/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Cách lập kế hoạch bữa ăn với đủ calo và dinh dưỡng
             </p>

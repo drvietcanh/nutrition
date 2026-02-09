@@ -57,7 +57,7 @@ export default function BMIBodyCompositionPage() {
           </h1>
         </div>
         <p className="text-body-lg">
-          Trang này minh họa cách tính BMI (Body Mass Index), Cân nặng Lý tưởng (IBW),
+          Trang này minh họa cách tính BMI (Body mass index), Cân nặng Lý tưởng (IBW),
           Cân nặng Điều chỉnh (ABW), và Diện tích Bề mặt cơ thể (BSA). Các con số hiển thị là{" "}
           <strong>khoảng giáo dục, không phải chẩn đoán</strong>.
         </p>

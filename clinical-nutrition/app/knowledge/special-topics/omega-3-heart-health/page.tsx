@@ -99,7 +99,7 @@ export default function Omega3HeartHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Omega-3</h2>
+        <h2 className="heading-2">Nguồn omega-3</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-4 text-blue-900 mb-3 flex items-center gap-2">
@@ -132,7 +132,7 @@ export default function Omega3HeartHealthPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Nguồn Khác (Cho người ăn chay)</h3>
+            <h3 className="heading-4 mb-3">Nguồn khác (Cho người ăn chay)</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <Leaf className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />

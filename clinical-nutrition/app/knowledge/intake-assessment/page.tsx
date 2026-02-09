@@ -8,7 +8,7 @@ export default function IntakeAssessmentPage() {
       {/* Header */}
       <header className="space-y-3">
         <h1 className="text-2xl font-semibold sm:text-3xl">
-          Đánh giá Lượng Ăn: Hiểu Người bệnh Thực sự Nhận được Gì
+          Đánh giá Lượng ăn: Hiểu người bệnh Thực sự Nhận được Gì
         </h1>
         <p className="text-base text-neutral-700 sm:text-lg">
           Biết người bệnh <em>nên</em> nhận được gì (nhu cầu ước tính) chỉ là một nửa bức tranh.
@@ -25,7 +25,7 @@ export default function IntakeAssessmentPage() {
           id="prescribed-vs-delivered-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Kê đơn vs. Cung cấp: Khoảng cách Giữa Kế hoạch và thực tế
+          Kê đơn vs. Cung cấp: Khoảng cách Giữa kế hoạch và thực tế
         </h2>
         <p className="text-base text-neutral-700">
           Trong môi trường lâm sàng, thường có sự khác biệt giữa:
@@ -65,7 +65,7 @@ export default function IntakeAssessmentPage() {
 
         <div className="rounded-md bg-neutral-100 border border-neutral-300 p-4 mt-4">
           <p className="text-sm font-semibold text-neutral-900 mb-2">
-            Ví dụ lâm sàng 2: Cho ăn Qua Ống (Enteral)
+            Ví dụ lâm sàng 2: Cho ăn Qua ống (Enteral)
           </p>
           <p className="text-sm text-neutral-700 mb-2">
             Một bệnh nhân có ống thông mũi dạ dày với lệnh "cho ăn liên tục 80 mL/giờ, cung cấp 1.600 kcal/ngày." Tuy nhiên:
@@ -83,7 +83,7 @@ export default function IntakeAssessmentPage() {
         </div>
       </section>
 
-      {/* Why Intake Often Falls Short */}
+      {/* Why intake often Falls short */}
       <section
         aria-labelledby="falls-short-heading"
         className="space-y-4 rounded-lg border border-neutral-200 bg-white p-6"
@@ -92,7 +92,7 @@ export default function IntakeAssessmentPage() {
           id="falls-short-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Vì sao Lượng Ăn Thường Thiếu trong Thực hành
+          Vì sao Lượng ăn Thường thiếu trong Thực hành
         </h2>
         <p className="text-base text-neutral-700">
           Hiểu <strong>vì sao</strong> lượng ăn thiếu giúp các bác sĩ lâm sàng giải quyết nguyên nhân gốc rễ, không chỉ triệu chứng.
@@ -173,7 +173,7 @@ export default function IntakeAssessmentPage() {
           id="trends-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Tầm quan trọng của Xu hướng So với Dữ liệu Một Ngày
+          Tầm quan trọng của Xu hướng So với Dữ liệu Một ngày
         </h2>
         <p className="text-base text-neutral-700">
           Dữ liệu lượng ăn một ngày có thể gây hiểu lầm. Các bác sĩ lâm sàng tập trung vào <strong>mô hình theo thời gian</strong> vì:
@@ -252,7 +252,7 @@ export default function IntakeAssessmentPage() {
         </p>
       </section>
 
-      {/* How Clinicians Assess Intake */}
+      {/* How clinicians assess Intake */}
       <section
         aria-labelledby="how-assess-heading"
         className="space-y-4 rounded-lg border border-neutral-200 bg-white p-6"
@@ -261,7 +261,7 @@ export default function IntakeAssessmentPage() {
           id="how-assess-heading"
           className="text-xl font-semibold sm:text-2xl"
         >
-          Cách Các Bác sĩ lâm sàng Đánh giá Lượng Ăn
+          Cách các Bác sĩ lâm sàng Đánh giá Lượng ăn
         </h2>
         <p className="text-base text-neutral-700">
           Phương pháp thay đổi theo môi trường và nguồn lực:
@@ -324,7 +324,7 @@ export default function IntakeAssessmentPage() {
       {/* Link to Tool */}
       <section className="space-y-4 rounded-lg border-2 border-blue-300 bg-blue-50 p-6">
         <h2 className="text-xl font-semibold text-blue-900 sm:text-2xl">
-          Thử Bạn: Bảng Đánh giá Lượng Ăn
+          Thử bạn: Bảng đánh giá Lượng ăn
         </h2>
         <p className="text-base text-blue-800">
           Bảng tương tác của chúng tôi giúp bạn xem xét có hệ thống lượng ăn theo thời gian và so sánh nó với nhu cầu ước tính.
@@ -335,19 +335,19 @@ export default function IntakeAssessmentPage() {
             href="/tools/intake-assessment"
             className="inline-flex items-center rounded-md bg-blue-700 px-4 py-2 text-base font-medium text-white hover:bg-blue-800 transition-colors"
           >
-            Mở Bảng Đánh giá Lượng Ăn →
+            Mở bảng Đánh giá Lượng ăn →
           </Link>
         </div>
       </section>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <section aria-labelledby="tools-heading" className="space-y-4">
         <h2 id="tools-heading" className="text-xl font-semibold sm:text-2xl">
           Công cụ liên quan
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <Card href="/tools/intake-assessment">
-            <CardHeader icon={CheckCircle} title="Đánh giá Lượng Ăn" />
+            <CardHeader icon={CheckCircle} title="Đánh giá Lượng ăn" />
             <CardContent>
               <p className="text-body-sm">
                 Công cụ tương tác để so sánh lượng dinh dưỡng thực tế ăn vào với nhu cầu ước tính,
@@ -356,7 +356,7 @@ export default function IntakeAssessmentPage() {
             </CardContent>
           </Card>
           <Card href="/tools/intake-vs-needs">
-            <CardHeader icon={CheckCircle} title="Lượng Ăn vs Nhu Cầu" />
+            <CardHeader icon={CheckCircle} title="Lượng ăn vs Nhu cầu" />
             <CardContent>
               <p className="text-body-sm">
                 Công cụ so sánh trực quan để đánh giá lượng ăn thực tế so với nhu cầu ước tính.
@@ -372,7 +372,7 @@ export default function IntakeAssessmentPage() {
             </CardContent>
           </Card>
           <Card href="/tools/malnutrition-screening">
-            <CardHeader icon={CheckCircle} title="Nguy cơ Suy Dinh dưỡng" />
+            <CardHeader icon={CheckCircle} title="Nguy cơ Suy dinh dưỡng" />
             <CardContent>
               <p className="text-body-sm">
                 Đánh giá nguy cơ suy dinh dưỡng, một yếu tố quan trọng trong đánh giá lượng ăn.
@@ -382,7 +382,7 @@ export default function IntakeAssessmentPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <section className="space-y-2 rounded-lg border border-neutral-200 bg-white p-4">
         <p className="text-xs text-neutral-600 sm:text-sm">
           Trang này chỉ dùng cho <strong>mục đích giáo dục</strong>. Nó không cung cấp tư vấn y tế, chẩn đoán, hoặc điều trị,

@@ -88,9 +88,9 @@ export default function VitaminKBloodClottingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Vitamin K Tốt</h2>
+        <h2 className="heading-2">Nguồn vitamin K Tốt</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Thực phẩm Giàu Vitamin K</h3>
+          <h3 className="heading-4 mb-3">Thực phẩm Giàu vitamin K</h3>
           <NutrientTable
             title="Hàm lượng Vitamin K trong Thực phẩm"
             rows={[

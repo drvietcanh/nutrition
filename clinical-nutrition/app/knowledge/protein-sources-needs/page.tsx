@@ -109,7 +109,7 @@ export default function ProteinSourcesNeedsPage() {
         </div>
       </section>
 
-      {/* Not More is Better */}
+      {/* Not more is Better */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <AlertCircle className="w-6 h-6 text-amber-600" aria-hidden="true" />
@@ -149,7 +149,7 @@ export default function ProteinSourcesNeedsPage() {
         <h2 className="heading-2">Nhu cầu Protein</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Nhu cầu Protein Hàng ngày</h3>
+            <h3 className="heading-4 mb-3">Nhu cầu Protein hàng ngày</h3>
             <p className="text-body-sm mb-3">
               Nhu cầu protein phụ thuộc vào tuổi, giới tính, hoạt động, và tình trạng sức khỏe:
             </p>
@@ -179,9 +179,9 @@ export default function ProteinSourcesNeedsPage() {
         </div>
       </section>
 
-      {/* Vietnamese Food Protein Table */}
+      {/* Vietnamese food protein Table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng Hàm lượng Đạm trong Thực phẩm Việt Nam</h2>
+        <h2 className="heading-2">Bảng hàm lượng Đạm trong Thực phẩm Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Số liệu dưới đây mang tính ước tính giáo dục, có thể thay đổi tùy theo cách chế biến và từng loại thực phẩm. 
@@ -250,13 +250,13 @@ export default function ProteinSourcesNeedsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Protein Tốt</h2>
+        <h2 className="heading-2">Nguồn protein Tốt</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Đạm Động vật và Đạm Thực vật – Hiểu đúng</h3>
+            <h3 className="heading-4 mb-3">Đạm động vật và Đạm thực vật – Hiểu đúng</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div className="border border-blue-200 bg-blue-50/30 rounded-lg p-4">
-                <h4 className="heading-5 mb-2 text-blue-900">Đạm Động vật</h4>
+                <h4 className="heading-5 mb-2 text-blue-900">Đạm động vật</h4>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>✅ <strong>Dễ hấp thu</strong> - cơ thể hấp thu tốt</li>
                   <li>✅ <strong>Đủ acid amin</strong> - có tất cả acid amin cần thiết</li>
@@ -267,7 +267,7 @@ export default function ProteinSourcesNeedsPage() {
                 </p>
               </div>
               <div className="border border-green-200 bg-green-50/30 rounded-lg p-4">
-                <h4 className="heading-5 mb-2 text-green-900">Đạm Thực vật</h4>
+                <h4 className="heading-5 mb-2 text-green-900">Đạm thực vật</h4>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>✅ <strong>Ít béo</strong> - tốt cho tim mạch</li>
                   <li>✅ <strong>Nhiều chất xơ</strong> - tốt cho tiêu hóa</li>
@@ -287,7 +287,7 @@ export default function ProteinSourcesNeedsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Protein Động vật (Protein "Hoàn chỉnh")</h3>
+            <h3 className="heading-4 mb-3">Protein động vật (Protein "Hoàn chỉnh")</h3>
             <p className="text-body-sm mb-3">
               Protein động vật chứa tất cả các axit amin cần thiết mà cơ thể không thể tự tạo ra.
             </p>
@@ -327,7 +327,7 @@ export default function ProteinSourcesNeedsPage() {
           </ExampleBox>
 
           <Card>
-            <h3 className="heading-4 mb-3">Protein Thực vật</h3>
+            <h3 className="heading-4 mb-3">Protein thực vật</h3>
             <p className="text-body-sm mb-3">
               Protein thực vật thường thiếu một số axit amin, nhưng kết hợp nhiều loại sẽ có đủ.
             </p>
@@ -341,7 +341,7 @@ export default function ProteinSourcesNeedsPage() {
                 { food: "Đậu phộng (Việt Nam)", portion: "30g", visual: "1 nắm tay nhỏ", calories: "170 calo, 7g protein" },
               ]}
             />
-            <Callout variant="info" title="Mẹo cho Người Ăn Chay">
+            <Callout variant="info" title="Mẹo cho Người ăn Chay">
               <p className="text-body-sm">
                 Kết hợp nhiều loại protein thực vật trong ngày để có đủ axit amin. 
                 Ví dụ: Đậu + gạo, đậu phụ + rau, quả hạch + ngũ cốc.
@@ -356,10 +356,10 @@ export default function ProteinSourcesNeedsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ Bữa ăn với Đủ Protein</h2>
+        <h2 className="heading-2">Ví dụ Bữa ăn với Đủ protein</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Sáng (~20g protein)</h3>
+            <h3 className="heading-4 mb-3">Bữa sáng (~20g protein)</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• 2 quả trứng (12g) + 1 lát bánh mì nguyên cám + rau</li>
               <li>• Sữa chua (10g) + yến mạch + quả hạch (6g) + trái cây</li>
@@ -369,7 +369,7 @@ export default function ProteinSourcesNeedsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Trưa (~25g protein)</h3>
+            <h3 className="heading-4 mb-3">Bữa trưa (~25g protein)</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• Thịt gà nạc 100g (31g) + rau + cơm</li>
               <li>• <strong>Cá kho tộ 100g (25g) + rau muống luộc + cơm</strong> - Món ăn Việt Nam</li>
@@ -383,7 +383,7 @@ export default function ProteinSourcesNeedsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Tối (~25g protein)</h3>
+            <h3 className="heading-4 mb-3">Bữa tối (~25g protein)</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li>• Thịt heo nạc 100g (26g) + rau luộc + cơm</li>
               <li>• <strong>Thịt kho tiêu 100g (26g) + rau cải xào + cơm</strong> - Món ăn Việt Nam</li>
@@ -395,7 +395,7 @@ export default function ProteinSourcesNeedsPage() {
         </div>
       </section>
 
-      {/* Application in Vietnamese Meals */}
+      {/* Application in Vietnamese meals */}
       <section className="space-y-4">
         <h2 className="heading-2">Áp dụng trong Bữa ăn Việt Nam</h2>
         <Card className="border-green-200 bg-green-50/30">
@@ -512,7 +512,7 @@ export default function ProteinSourcesNeedsPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan về các Chất Dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan về các Chất dinh dưỡng Đa lượng</h3>
             <p className="text-sm text-gray-600">
               Hiểu về protein trong tổng thể dinh dưỡng
             </p>
@@ -524,7 +524,7 @@ export default function ProteinSourcesNeedsPage() {
             </p>
           </Card>
           <Card href="/knowledge/portion-sizes">
-            <h3 className="heading-5 mb-2">Hiểu về Portion Sizes</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Portion sizes</h3>
             <p className="text-sm text-gray-600">
               Cách ước lượng khẩu phần protein
             </p>

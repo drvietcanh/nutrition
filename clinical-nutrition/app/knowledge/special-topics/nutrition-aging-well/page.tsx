@@ -106,7 +106,7 @@ export default function NutritionAgingWellPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nhu cầu Dinh dưỡng đặc biệt</h2>
+        <h2 className="heading-2">nhu cầu dinh dưỡng đặc biệt</h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
             <h3 className="heading-4 mb-3 text-red-900">1. Protein (Tăng)</h3>

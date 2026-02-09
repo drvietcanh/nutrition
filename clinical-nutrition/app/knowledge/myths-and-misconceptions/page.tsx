@@ -102,7 +102,7 @@ export default function MythsAndMisconceptionsPage() {
         {/* Section 1: Title & Introduction */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Những Quan Niệm Sai Lầm Phổ Biến trong Dinh Dưỡng Lâm Sàng
+            Những quan Niệm sai Lầm phổ Biến trong Dinh dưỡng lâm sàng
           </h1>
           <div className="max-w-3xl mx-auto text-left space-y-6">
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
@@ -125,7 +125,7 @@ export default function MythsAndMisconceptionsPage() {
               </p>
             </div>
             <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
-              <h2 className="font-semibold text-gray-900 mb-3">Cách Sử Dụng Tài Nguyên Này</h2>
+              <h2 className="font-semibold text-gray-900 mb-3">Cách sử dụng Tài nguyên này</h2>
               <p className="text-gray-700 text-sm leading-relaxed mb-3">
                 Dù bạn là y tá ghi chép lượng ăn vào, sinh viên y khoa trong vòng tròn, hay bác sĩ lâm sàng viết chỉ định dinh dưỡng, 
                 bạn có thể đã gặp những niềm tin phổ biến này. Tài nguyên này giúp bạn:
@@ -144,10 +144,10 @@ export default function MythsAndMisconceptionsPage() {
           </div>
         </div>
 
-        {/* Section 2: Why Myths Persist in Clinical Nutrition */}
+        {/* Section 2: Why myths Persist in Clinical nutrition */}
         <div className="mb-12 bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-200 rounded-lg p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Tại Sao Những Niềm Tin Này Vẫn Tồn Tại?
+            Tại sao những Niềm tin này Vẫn tồn tại?
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Hiểu tại sao những quan niệm sai lầm vẫn tồn tại giúp chúng ta nhận biết chúng trong thực hành và tiếp cận thay đổi với sự đồng cảm. 
@@ -155,7 +155,7 @@ export default function MythsAndMisconceptionsPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Mong Muốn Quy Tắc Đơn Giản</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Mong muốn Quy tắc đơn giản</h3>
               <p className="text-sm text-gray-700">
                 Quy tắc đơn giản cảm thấy an toàn hơn và dễ áp dụng hơn so với các cách tiếp cận phức tạp, cá nhân hóa. 
                 "2000 kcal cho mọi người" dễ nhớ hơn so với tính toán nhu cầu cá nhân, ngay cả khi kém chính xác hơn. 
@@ -163,7 +163,7 @@ export default function MythsAndMisconceptionsPage() {
               </p>
             </div>
             <div className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Phụ Thuộc Quá Mức vào Số Liệu hoặc Xét Nghiệm</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Phụ thuộc quá Mức vào Số liệu hoặc Xét nghiệm</h3>
               <p className="text-sm text-gray-700">
                 Số liệu và giá trị xét nghiệm có vẻ khách quan và dứt khoát, nhưng chúng không kể toàn bộ câu chuyện. 
                 Chỉ tập trung vào một giá trị xét nghiệm duy nhất (như albumin) hoặc một con số cụ thể (như BMI) có thể khiến chúng ta 
@@ -171,7 +171,7 @@ export default function MythsAndMisconceptionsPage() {
               </p>
             </div>
             <div className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Hiểu Sai Hướng Dẫn</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Hiểu sai hướng Dẫn</h3>
               <p className="text-sm text-gray-700">
                 Hướng dẫn lâm sàng cung cấp khuyến nghị dựa trên bằng chứng, nhưng chúng được thiết kế để hướng dẫn phán đoán, 
                 không thay thế nó. Khi hướng dẫn được áp dụng quá cứng nhắc hoặc không xem xét bối cảnh bệnh nhân, 
@@ -179,7 +179,7 @@ export default function MythsAndMisconceptionsPage() {
               </p>
             </div>
             <div className="bg-white p-4 rounded-lg border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Trộn Lẫn Lời Khuyên Dinh Dưỡng Cộng Đồng với Chăm Sóc Lâm Sàng</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Trộn lẫn Lời khuyên Dinh dưỡng Cộng đồng với Chăm sóc lâm sàng</h3>
               <p className="text-sm text-gray-700">
                 Lời khuyên dinh dưỡng chung cho dân số khỏe mạnh (như "ăn ít carb" hoặc "nhiều protein hơn là tốt hơn") 
                 không phải lúc nào cũng áp dụng cho bệnh nhân bệnh, nằm viện. Điều phù hợp cho sức khỏe cộng đồng có thể không 
@@ -189,7 +189,7 @@ export default function MythsAndMisconceptionsPage() {
           </div>
         </div>
 
-        {/* Search Bar */}
+        {/* Search bar */}
         <div className="mb-6 sm:mb-8">
           <input
             type="text"
@@ -201,10 +201,10 @@ export default function MythsAndMisconceptionsPage() {
           />
         </div>
 
-        {/* Section 3: Myth Sections */}
+        {/* Section 3: Myth sections */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Những Quan Niệm Sai Lầm Phổ Biến trong Thực Hành
+            Những quan Niệm sai Lầm phổ Biến trong Thực hành
           </h2>
           <div className="space-y-4">
           {filteredMyths.length === 0 ? (
@@ -256,36 +256,36 @@ export default function MythsAndMisconceptionsPage() {
 
                 {expandedMyth === myth.id && (
                   <div className="px-5 sm:px-6 pb-5 sm:pb-6 border-t-2 border-gray-200 pt-5 sm:pt-6 space-y-4 sm:space-y-5">
-                    {/* Why It Sounds Right */}
+                    {/* Why it Sounds right */}
                     <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4 sm:p-5">
                       <h3 className="text-sm font-bold text-gray-900 mb-2.5 uppercase tracking-wide flex items-center gap-2">
                         <span className="text-amber-600">•</span>
-                        Tại Sao Nghe Có Vẻ Đúng
+                        Tại sao nghe có Vẻ đúng
                       </h3>
                       <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                         {myth.whyItSoundsRight}
                       </p>
                     </div>
 
-                    {/* What Actually Happens in Practice */}
+                    {/* What actually Happens in Practice */}
                     <div className="bg-gray-50 border-l-4 border-gray-400 rounded-r-lg p-4 sm:p-5">
                       <h3 className="text-sm font-bold text-gray-900 mb-2.5 uppercase tracking-wide flex items-center gap-2">
                         <span className="text-gray-600">•</span>
-                        Điều Gì Thực Sự Xảy Ra trong Thực Hành
+                        Điều gì Thực sự xảy ra trong Thực hành
                       </h3>
                       <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                         {myth.whatActuallyHappens}
                       </p>
                     </div>
 
-                    {/* What to Understand Instead - Highlighted as Reality */}
+                    {/* What to Understand instead - Highlighted as Reality */}
                     <div className="bg-green-50 border-l-4 border-green-500 rounded-r-lg p-4 sm:p-5 shadow-sm">
                       <div className="flex items-center gap-2 mb-2.5">
                         <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-green-600 text-white">
                           THỰC TẾ
                         </span>
                         <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wide">
-                          Điều Cần Hiểu Thay Vào Đó
+                          Điều cần hiểu thay vào đó
                         </h3>
                       </div>
                       <p className="text-sm sm:text-base text-gray-700 leading-relaxed font-medium">
@@ -293,12 +293,12 @@ export default function MythsAndMisconceptionsPage() {
                       </p>
                     </div>
 
-                    {/* Clinical Insight */}
+                    {/* Clinical insight */}
                     {myth.clinicalInsight && (
                       <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-lg p-4 sm:p-5">
                         <h3 className="text-sm font-bold text-gray-900 mb-2.5 uppercase tracking-wide flex items-center gap-2">
                           <span className="text-blue-600">•</span>
-                          Góc Nhìn Lâm Sàng
+                          Góc nhìn lâm Sàng
                         </h3>
                         <p className="text-sm text-gray-700 leading-relaxed">
                           {myth.clinicalInsight}
@@ -313,10 +313,10 @@ export default function MythsAndMisconceptionsPage() {
           </div>
         </div>
 
-        {/* Section 4: Common Themes */}
+        {/* Section 4: Common themes */}
         <div className="mb-12 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Các Chủ Đề Chung Trong Những Quan Niệm Sai Lầm Này
+            Các chủ đề Chung trong những quan Niệm sai Lầm này
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Khi bạn suy ngẫm về những quan niệm sai lầm này, bạn sẽ nhận thấy một số chủ đề lặp lại xuất hiện trong các niềm tin khác nhau. 
@@ -326,7 +326,7 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl">1.</span>
-                Bối Cảnh Quan Trọng
+                Bối cảnh quan Trọng
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Cùng một can thiệp có thể phù hợp hoặc không phù hợp tùy thuộc vào tình trạng bệnh nhân, tiên lượng, 
@@ -343,7 +343,7 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl">2.</span>
-                Xu Hướng Quan Trọng Hơn Giá Trị Đơn Lẻ
+                Xu hướng quan Trọng hơn giá Trị đơn lẻ
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Một giá trị xét nghiệm đơn lẻ, đo cân nặng, hoặc đếm calo cho bạn biết rất ít. Điều quan trọng là xu hướng theo thời gian. 
@@ -359,7 +359,7 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-5 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-3 text-lg flex items-center gap-2">
                 <span className="text-indigo-600 text-2xl">3.</span>
-                Số Liệu Hỗ Trợ Tư Duy, Không Thay Thế Nó
+                Số liệu hỗ Trợ tư duy, Không thay Thế nó
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Tính toán, giá trị xét nghiệm và đo lường là công cụ để thông báo phán đoán lâm sàng của bạn, không phải để thay thế nó. 
@@ -378,7 +378,7 @@ export default function MythsAndMisconceptionsPage() {
         {/* Section 5: What to Remember */}
         <div className="mb-12 p-6 bg-blue-50 border border-blue-200 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Điều Cần Nhớ
+            Điều cần nhớ
           </h2>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Khi bạn suy ngẫm về những quan niệm sai lầm phổ biến này, hãy ghi nhớ những nguyên tắc chính sau:
@@ -387,7 +387,7 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600">1.</span>
-                Cá Nhân Hóa Quan Trọng
+                Cá nhân hóa Quan trọng
               </h3>
               <p className="text-sm text-gray-700">
                 Nhu cầu dinh dưỡng thay đổi đáng kể giữa các bệnh nhân. Điều gì hiệu quả cho một bệnh nhân có thể không hiệu quả cho bệnh nhân khác, 
@@ -397,7 +397,7 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600">2.</span>
-                Nhiều Hơn Không Phải Luôn Tốt Hơn
+                Nhiều hơn Không phải luôn tốt Hơn
               </h3>
               <p className="text-sm text-gray-700">
                 Đầy đủ thường là mục tiêu, không phải tối đa hóa. Chất dinh dưỡng quá mức có thể không mang lại lợi ích bổ sung và có thể gây vấn đề. Trọng tâm thường là đáp ứng nhu cầu thay vì vượt quá chúng.
@@ -406,7 +406,7 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600">3.</span>
-                Bối Cảnh Là Quan Trọng
+                Bối cảnh là Quan trọng
               </h3>
               <p className="text-sm text-gray-700">
                 Cùng một can thiệp có thể phù hợp hoặc không phù hợp tùy thuộc vào tình trạng bệnh nhân, 
@@ -416,7 +416,7 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600">4.</span>
-                Bằng Chứng Phát Triển
+                Bằng chứng phát Triển
               </h3>
               <p className="text-sm text-gray-700">
                 Các thực hành từng là tiêu chuẩn nhiều thập kỷ trước có thể không phù hợp với bằng chứng hiện tại. Hãy cập nhật với 
@@ -426,7 +426,7 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600">5.</span>
-                Đặt Câu Hỏi Về Giả Định
+                Đặt câu hỏi về Giả định
               </h3>
               <p className="text-sm text-gray-700">
                 Khi bạn nghe "chúng ta luôn làm theo cách này," hãy hỏi tại sao. Hiểu lý do giúp bạn xác định 
@@ -436,7 +436,7 @@ export default function MythsAndMisconceptionsPage() {
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
                 <span className="text-blue-600">6.</span>
-                Hợp Tác Cải Thiện Chăm Sóc
+                Hợp tác cải Thiện chăm sóc
               </h3>
               <p className="text-sm text-gray-700">
                 Làm việc với chuyên gia dinh dưỡng, y tá, bác sĩ và các thành viên nhóm khác. Các góc nhìn khác nhau giúp xác định 
@@ -448,13 +448,13 @@ export default function MythsAndMisconceptionsPage() {
 
         {/* Section 6: Safety & Perspective */}
         <div className="mb-12 space-y-6">
-          {/* Clear Disclaimer */}
+          {/* Clear disclaimer */}
           <div className="p-6 bg-red-50 border-2 border-red-300 rounded-lg">
             <h2 className="text-xl font-bold text-red-900 mb-3 flex items-center gap-2">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
               </svg>
-              Tuyên Bố Miễn Trừ Trách Nhiệm Quan Trọng
+              Tuyên bố miễn trừ trách nhiệm Quan trọng
             </h2>
             <p className="text-sm text-red-900 leading-relaxed font-medium">
               Tài nguyên này chỉ dành cho mục đích giáo dục và không cấu thành lời khuyên y tế, chẩn đoán hoặc điều trị. 
@@ -463,15 +463,15 @@ export default function MythsAndMisconceptionsPage() {
             </p>
           </div>
 
-          {/* Main Content */}
+          {/* Main content */}
           <div className="p-6 bg-amber-50 border border-amber-200 rounded-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              An Toàn & Góc Nhìn
+              An toàn & Góc nhìn
             </h2>
             <div className="space-y-6">
               <div className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Công Cụ Dinh Dưỡng Giúp Hướng Dẫn Sự Chú Ý
+                  Công cụ Dinh dưỡng giúp hướng Dẫn sự Chú Ý
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Công cụ đánh giá dinh dưỡng, máy tính, công cụ sàng lọc và hướng dẫn được thiết kế để giúp bạn 
@@ -483,7 +483,7 @@ export default function MythsAndMisconceptionsPage() {
 
               <div className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Chúng Không Thay Thế Chăm Sóc Đa Ngành
+                  Chúng không thay thế Chăm sóc Đa ngành
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Không có công cụ, tính toán hoặc hướng dẫn nào có thể thay thế chuyên môn và hợp tác của nhóm đa ngành. 
@@ -496,7 +496,7 @@ export default function MythsAndMisconceptionsPage() {
 
               <div className="bg-white p-5 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-3 text-lg">
-                  Phán Đoán Lâm Sàng Vẫn Là Trung Tâm
+                  Phán đoán lâm sàng Vẫn là Trung tâm
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Phán đoán lâm sàng—khả năng của bạn để đánh giá, giải thích và đưa ra quyết định dựa trên toàn bộ bức tranh lâm sàng—là 
@@ -509,26 +509,26 @@ export default function MythsAndMisconceptionsPage() {
 
               <div className="bg-blue-50 p-5 rounded-lg border border-blue-200">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  Khi Nghi Ngờ, Hãy Tư Vấn
+                  Khi nghi Ngờ, Hãy tư Vấn
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed mb-3">
                   Nếu bạn không chắc chắn về quyết định dinh dưỡng, hãy tư vấn với:
                 </p>
                 <ul className="text-sm text-gray-700 space-y-1 list-disc pl-6">
-                  <li><strong>Chuyên Gia Dinh Dưỡng Đã Đăng Ký:</strong> Chuyên gia đánh giá và lập kế hoạch dinh dưỡng</li>
-                  <li><strong>Nhóm Hỗ Trợ Dinh Dưỡng Lâm Sàng:</strong> Cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
-                  <li><strong>Nhóm Lâm Sàng Của Bạn:</strong> Bác sĩ, y tá và các nhà cung cấp khác biết bệnh nhân</li>
-                  <li><strong>Hướng Dẫn Lâm Sàng:</strong> Khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
+                  <li><strong>Chuyên gia Dinh dưỡng đã đăng Ký:</strong> Chuyên gia đánh giá và lập kế hoạch dinh dưỡng</li>
+                  <li><strong>Nhóm hỗ Trợ dinh dưỡng lâm sàng:</strong> Cho các trường hợp phức tạp cần hỗ trợ dinh dưỡng chuyên biệt</li>
+                  <li><strong>Nhóm lâm Sàng của Bạn:</strong> Bác sĩ, y tá và các nhà cung cấp khác biết bệnh nhân</li>
+                  <li><strong>Hướng dẫn lâm Sàng:</strong> Khuyến nghị dựa trên bằng chứng hiện tại từ các tổ chức chuyên nghiệp</li>
                 </ul>
               </div>
 
               <div className="border-t border-gray-300 pt-4">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  Về Tài Nguyên Này
+                  Về tài nguyên này
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   Tất cả thông tin dựa trên hướng dẫn lâm sàng hiện tại từ các tổ chức dinh dưỡng hàng đầu bao gồm 
-                  ASPEN (Hiệp hội Dinh dưỡng Đường Tĩnh Mạch và Đường Ruột Hoa Kỳ), ESPEN (Hiệp hội Dinh dưỡng lâm sàng và Chuyển hóa Châu Âu), 
+                  ASPEN (Hiệp hội Dinh dưỡng Đường tĩnh mạch và Đường ruột hoa Kỳ), ESPEN (Hiệp hội Dinh dưỡng lâm sàng và Chuyển hóa Châu âu), 
                   và Học viện Dinh dưỡng và Chế độ ăn uống. Mục tiêu của chúng tôi là hỗ trợ thực hành dinh dưỡng an toàn, 
                   dựa trên bằng chứng thông qua giáo dục và suy ngẫm, không phải chỉ trích. Cập nhật thường xuyên đảm bảo 
                   phù hợp với bằng chứng mới nhất.
@@ -542,7 +542,7 @@ export default function MythsAndMisconceptionsPage() {
         <div className="mb-8 p-8 bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg">
           <div className="text-center mb-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
-              Sẵn Sàng Áp Dụng Những Gì Bạn Đã Học?
+              Sẵn sàng Áp dụng những gì Bạn đã Học?
             </h2>
             <p className="text-gray-700 max-w-2xl mx-auto leading-relaxed">
               Hiểu những quan niệm sai lầm này là có giá trị, nhưng đưa kiến thức đó vào thực hành là nơi học tập thực sự xảy ra. 
@@ -558,7 +558,7 @@ export default function MythsAndMisconceptionsPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2 text-center">Khám Phá Công Cụ Đánh Giá</h3>
+                <h3 className="font-semibold text-gray-900 mb-2 text-center">Khám phá Công cụ Đánh giá</h3>
               </div>
               <p className="text-sm text-gray-700 mb-4 text-center">
                 Thực hành với các công cụ đánh giá và tính toán dinh dưỡng tương tác của chúng tôi. Những công cụ này giúp bạn áp dụng những gì bạn đã học 
@@ -569,7 +569,7 @@ export default function MythsAndMisconceptionsPage() {
                   href="/tools" 
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
                 >
-                  Khám Phá Công Cụ
+                  Khám phá Công cụ
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -584,7 +584,7 @@ export default function MythsAndMisconceptionsPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2 text-center">Đọc Tổng Quan Đánh Giá</h3>
+                <h3 className="font-semibold text-gray-900 mb-2 text-center">Đọc tổng quan Đánh giá</h3>
               </div>
               <p className="text-sm text-gray-700 mb-4 text-center">
                 Đào sâu hiểu biết của bạn bằng cách đọc tổng quan toàn diện của chúng tôi về quy trình đánh giá dinh dưỡng lâm sàng. 
@@ -595,7 +595,7 @@ export default function MythsAndMisconceptionsPage() {
                   href="/knowledge/assessment-process" 
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
                 >
-                  Đọc Tổng Quan
+                  Đọc tổng quan
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -610,7 +610,7 @@ export default function MythsAndMisconceptionsPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2 text-center">Áp Dụng Vào Ví Dụ Ca Bệnh</h3>
+                <h3 className="font-semibold text-gray-900 mb-2 text-center">Áp dụng Vào ví Dụ ca Bệnh</h3>
               </div>
               <p className="text-sm text-gray-700 mb-4 text-center">
                 Đưa việc học của bạn vào thực hành bằng cách làm việc qua các ví dụ ca bệnh. Xem cách các nguyên tắc bạn đã học áp dụng 
@@ -621,7 +621,7 @@ export default function MythsAndMisconceptionsPage() {
                   href="/cases" 
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline"
                 >
-                  Xem Ca Bệnh
+                  Xem ca bệnh
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -638,7 +638,7 @@ export default function MythsAndMisconceptionsPage() {
           </div>
         </div>
 
-        {/* Related Tools */}
+        {/* Related tools */}
         <section className="mb-12 space-y-4" aria-labelledby="tools-heading">
           <h2 id="tools-heading" className="text-2xl font-bold text-gray-900">
             Công cụ liên quan
@@ -657,7 +657,7 @@ export default function MythsAndMisconceptionsPage() {
               </CardContent>
             </Card>
             <Card href="/tools/malnutrition-screening">
-              <CardHeader icon={CheckCircle} title="Nguy cơ Suy Dinh dưỡng" />
+              <CardHeader icon={CheckCircle} title="Nguy cơ Suy dinh dưỡng" />
               <CardContent>
                 <p className="text-body-sm">
                   Khám phá cách các công cụ sàng lọc đánh giá nguy cơ suy dinh dưỡng,
@@ -666,7 +666,7 @@ export default function MythsAndMisconceptionsPage() {
               </CardContent>
             </Card>
             <Card href="/tools/intake-assessment">
-              <CardHeader icon={CheckCircle} title="Đánh giá Lượng Ăn" />
+              <CardHeader icon={CheckCircle} title="Đánh giá Lượng ăn" />
               <CardContent>
                 <p className="text-body-sm">
                   So sánh lượng dinh dưỡng thực tế ăn vào với nhu cầu ước tính,

@@ -48,7 +48,7 @@ export default function CarbohydratesPage() {
         </p>
       </header>
 
-      {/* Key Points */}
+      {/* Key points */}
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
@@ -130,7 +130,7 @@ export default function CarbohydratesPage() {
         </div>
       </section>
 
-      {/* Not All Carbs Are The Same */}
+      {/* Not all carbs Are the same */}
       <section className="space-y-4">
         <h2 className="heading-2">Không phải tinh bột nào cũng giống nhau</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -167,9 +167,9 @@ export default function CarbohydratesPage() {
         </Callout>
       </section>
 
-      {/* Vietnamese Carbohydrate Table */}
+      {/* Vietnamese carbohydrate table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng Tinh bột Phổ biến ở Việt Nam</h2>
+        <h2 className="heading-2">Bảng tinh bột Phổ biến ở Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Bảng dưới đây giúp bạn hiểu về ảnh hưởng của các loại tinh bột phổ biến đến đường huyết.
@@ -234,7 +234,7 @@ export default function CarbohydratesPage() {
         </div>
       </section>
 
-      {/* Who Needs to Pay Attention */}
+      {/* Who needs to Pay attention */}
       <section className="space-y-4">
         <h2 className="heading-2">Ai cần chú ý Tinh bột?</h2>
         <Card className="border-amber-200 bg-amber-50/30">
@@ -277,12 +277,12 @@ export default function CarbohydratesPage() {
 
       {/* Types of Carbs */}
       <section className="space-y-6">
-        <h2 className="heading-2">Hai Loại Carbohydrate Chính</h2>
+        <h2 className="heading-2">Hai loại Carbohydrate chính</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Simple Carbs */}
+          {/* Simple carbs */}
           <Card className="border-yellow-200 bg-yellow-50">
-            <h3 className="heading-3 text-yellow-900 mb-3">Carbohydrate Đơn giản (Đường)</h3>
+            <h3 className="heading-3 text-yellow-900 mb-3">Carbohydrate đơn giản (Đường)</h3>
             <p className="text-body text-yellow-900 mb-4">
               Cấu trúc đơn giản, hấp thu nhanh vào máu. Làm đường huyết tăng nhanh.
             </p>
@@ -316,9 +316,9 @@ export default function CarbohydratesPage() {
             </div>
           </Card>
 
-          {/* Complex Carbs */}
+          {/* Complex carbs */}
           <Card className="border-green-200 bg-green-50">
-            <h3 className="heading-3 text-green-900 mb-3">Carbohydrate Phức tạp (Tinh bột)</h3>
+            <h3 className="heading-3 text-green-900 mb-3">Carbohydrate phức tạp (Tinh bột)</h3>
             <p className="text-body text-green-900 mb-4">
               Cấu trúc phức tạp hơn, hấp thu chậm. Làm đường huyết tăng chậm và ổn định hơn.
             </p>
@@ -362,7 +362,7 @@ export default function CarbohydratesPage() {
         </div>
       </section>
 
-      {/* Sugar Section */}
+      {/* Sugar section */}
       <section className="space-y-4">
         <h2 className="heading-2">Đường – Không chỉ có "Ngọt"</h2>
         <div className="space-y-4">
@@ -441,9 +441,9 @@ export default function CarbohydratesPage() {
         </div>
       </section>
 
-      {/* Vietnamese Sugar Sources Table */}
+      {/* Vietnamese sugar Sources table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng nguồn Đường Phổ biến ở Việt Nam</h2>
+        <h2 className="heading-2">Bảng nguồn Đường phổ biến ở Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Bảng dưới đây giúp bạn nhận biết các nguồn đường phổ biến và lượng đường tương đối.
@@ -505,9 +505,9 @@ export default function CarbohydratesPage() {
         </div>
       </section>
 
-      {/* How Much Sugar */}
+      {/* How much Sugar */}
       <section className="space-y-4">
-        <h2 className="heading-2">Ăn Đường bao nhiêu là Hợp lý?</h2>
+        <h2 className="heading-2">Ăn đường bao nhiêu là Hợp lý?</h2>
         <Card className="border-blue-200 bg-blue-50/30">
           <div className="space-y-3">
             <p className="text-body">
@@ -536,11 +536,11 @@ export default function CarbohydratesPage() {
         </Card>
       </section>
 
-      {/* Practical Application Sugar */}
+      {/* Practical application Sugar */}
       <section className="space-y-4">
         <h2 className="heading-2">Áp dụng thực tế</h2>
         <Card className="border-green-200 bg-green-50/30">
-          <h3 className="heading-4 mb-3">Mẹo Giảm Đường trong đời sống Việt Nam</h3>
+          <h3 className="heading-4 mb-3">Mẹo giảm đường trong đời sống Việt Nam</h3>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -576,7 +576,7 @@ export default function CarbohydratesPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Ví dụ Cách Giảm Đường</h3>
+          <h3 className="heading-4 mb-3">Ví dụ Cách giảm đường</h3>
           <div className="space-y-3">
             <div className="border-l-4 border-red-500 pl-4">
               <p className="font-medium text-gray-900 mb-1">❌ Trước:</p>
@@ -599,7 +599,7 @@ export default function CarbohydratesPage() {
         </Card>
       </section>
 
-      {/* How Much Carbs */}
+      {/* How much carbs */}
       <section className="space-y-4">
         <h2 className="heading-2">Nên ăn bao nhiêu Carbohydrate?</h2>
         <Card>
@@ -635,7 +635,7 @@ export default function CarbohydratesPage() {
         </Card>
       </section>
 
-      {/* Application in Vietnamese Meals */}
+      {/* Application in Vietnamese meals */}
       <section className="space-y-4">
         <h2 className="heading-2">Áp dụng trong Bữa ăn Việt Nam</h2>
         <Card className="border-green-200 bg-green-50/30">
@@ -703,11 +703,11 @@ export default function CarbohydratesPage() {
         </ExampleBox>
       </section>
 
-      {/* Portion Examples */}
+      {/* Portion examples */}
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Khẩu phần Carbohydrate</h2>
             <PortionSizeGuide
-              title="Khẩu phần Carbohydrate Phổ biến"
+              title="Khẩu phần Carbohydrate phổ biến"
               items={[
                 { food: "Cơm trắng (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~200 calo, 45g carb" },
                 { food: "Gạo lứt (nấu chín)", portion: "1 bát", visual: "Bằng nắm tay", calories: "~200 calo, 45g carb" },
@@ -726,15 +726,15 @@ export default function CarbohydratesPage() {
             />
       </section>
 
-      {/* Choosing Good Carbs */}
+      {/* Choosing good carbs */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách Chọn Carbohydrate Tốt
+          Cách chọn Carbohydrate tốt
         </h2>
         <div className="space-y-4">
           <ComparisonCard
-            title="So sánh: Carbohydrate Tốt vs Nên hạn chế"
+            title="So sánh: Carbohydrate tốt vs Nên hạn chế"
             items={[
               {
                 label: "Ngũ cốc",
@@ -782,7 +782,7 @@ export default function CarbohydratesPage() {
         </div>
       </section>
 
-      {/* Clinical Application */}
+      {/* Clinical application */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <TrendingUp className="w-6 h-6 text-blue-600" aria-hidden="true" />
@@ -850,7 +850,7 @@ export default function CarbohydratesPage() {
         </div>
       </section>
 
-      {/* Common Misconceptions */}
+      {/* Common misconceptions */}
       <section className="space-y-4">
         <h2 className="heading-2">Hiểu lầm phổ biến về Carbohydrate</h2>
         <div className="space-y-4">
@@ -883,12 +883,12 @@ export default function CarbohydratesPage() {
         </div>
       </section>
 
-      {/* Related Articles */}
+      {/* Related articles */}
       <section className="space-y-4">
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/macronutrients-overview">
-            <h3 className="heading-5 mb-2">Tổng quan về các Chất Dinh dưỡng Đa lượng</h3>
+            <h3 className="heading-5 mb-2">Tổng quan về các Chất dinh dưỡng Đa lượng</h3>
             <p className="text-sm text-gray-600">
               Carbohydrate trong tổng thể dinh dưỡng
             </p>
@@ -920,7 +920,7 @@ export default function CarbohydratesPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
           Thông tin này chỉ dành cho mục đích giáo dục. Nếu bạn có đái tháo đường, 

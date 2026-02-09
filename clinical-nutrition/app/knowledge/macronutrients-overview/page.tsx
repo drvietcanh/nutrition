@@ -8,7 +8,7 @@ import Link from "next/link";
 import { getRelatedArticles } from "../../../lib/content/articles";
 
 export const metadata: Metadata = {
-  title: "Tổng quan về các Chất Dinh dưỡng Đa lượng (Macronutrients)",
+  title: "Tổng quan về các Chất dinh dưỡng Đa lượng (Macronutrients)",
   description:
     "Tổng quan về ba chất dinh dưỡng đa lượng chính - carbohydrate, protein, và chất béo - vai trò, nhu cầu, và cách cân bằng trong chế độ ăn.",
   keywords: [
@@ -28,7 +28,7 @@ export default function MacronutrientsOverviewPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Tổng quan về các Chất Dinh dưỡng Đa lượng" },
+          { label: "Tổng quan về các Chất dinh dưỡng Đa lượng" },
         ]}
       />
 
@@ -36,7 +36,7 @@ export default function MacronutrientsOverviewPage() {
         <div className="flex items-center gap-3">
           <PieChart className="w-8 h-8 text-blue-600" aria-hidden="true" />
           <h1 className="heading-1">
-            Tổng quan về các Chất Dinh dưỡng Đa lượng
+            Tổng quan về các Chất dinh dưỡng Đa lượng
           </h1>
         </div>
         <p className="text-body-lg text-gray-700">
@@ -46,7 +46,7 @@ export default function MacronutrientsOverviewPage() {
         </p>
       </header>
 
-      {/* Key Points */}
+      {/* Key points */}
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
@@ -65,7 +65,7 @@ export default function MacronutrientsOverviewPage() {
 
       {/* Overview */}
       <section className="space-y-4">
-        <h2 className="heading-2">Chất Dinh dưỡng Đa lượng là gì?</h2>
+        <h2 className="heading-2">Chất dinh dưỡng Đa lượng là gì?</h2>
         <div className="space-y-4">
           <p className="text-body">
             <strong>Chất dinh dưỡng đa lượng (Macronutrients)</strong> là các chất dinh dưỡng mà cơ thể 
@@ -111,7 +111,7 @@ export default function MacronutrientsOverviewPage() {
         </div>
       </section>
 
-      {/* Carbohydrate Section */}
+      {/* Carbohydrate section */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Wheat className="w-6 h-6 text-amber-600" aria-hidden="true" />
@@ -149,7 +149,7 @@ export default function MacronutrientsOverviewPage() {
         </Card>
       </section>
 
-      {/* Protein Section */}
+      {/* Protein section */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Heart className="w-6 h-6 text-blue-600" aria-hidden="true" />
@@ -182,14 +182,14 @@ export default function MacronutrientsOverviewPage() {
             <p className="text-xs text-gray-600">
               Xem chi tiết trong bài viết về{" "}
               <Link href="/knowledge/needs-estimation" className="text-blue-600 hover:underline">
-                Ước tính Nhu cầu Dinh dưỡng
+                Ước tính nhu cầu dinh dưỡng
               </Link>
             </p>
           </div>
         </Card>
       </section>
 
-      {/* Fat Section */}
+      {/* Fat section */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Droplet className="w-6 h-6 text-green-600" aria-hidden="true" />
@@ -228,11 +228,11 @@ export default function MacronutrientsOverviewPage() {
         </Card>
       </section>
 
-      {/* Balancing Macronutrients */}
+      {/* Balancing macronutrients */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách cân bằng các Chất Dinh dưỡng Đa lượng
+          Cách cân bằng các Chất dinh dưỡng Đa lượng
         </h2>
         <div className="space-y-4">
           <Card>
@@ -289,7 +289,7 @@ export default function MacronutrientsOverviewPage() {
         </div>
       </section>
 
-      {/* Common Mistakes */}
+      {/* Common mistakes */}
       <section className="space-y-4">
         <h2 className="heading-2">Hiểu lầm phổ biến</h2>
         <div className="space-y-4">
@@ -321,7 +321,7 @@ export default function MacronutrientsOverviewPage() {
         </div>
       </section>
 
-      {/* Related Articles */}
+      {/* Related articles */}
       <section className="space-y-4">
         <h2 className="heading-2">Bài viết chi tiết</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -334,7 +334,7 @@ export default function MacronutrientsOverviewPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
           Thông tin này chỉ dành cho mục đích giáo dục. Tỷ lệ chất dinh dưỡng đa lượng cần được 

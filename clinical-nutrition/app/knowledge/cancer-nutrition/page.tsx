@@ -244,7 +244,7 @@ export default function CancerNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="vietnamese-foods-heading" className="heading-2 whitespace-nowrap">
-            🍽️ Bảng Thực phẩm Việt Nam cho Bệnh nhân Ung thư
+            🍽️ Bảng thực phẩm Việt Nam cho Bệnh nhân Ung thư
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -635,7 +635,7 @@ export default function CancerNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="myths-heading" className="heading-2 whitespace-nowrap">
-            🚫 Những Hiểu lầm phổ biến (Cần ghi rõ)
+            🚫 Những hiểu lầm phổ biến (Cần ghi rõ)
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -706,12 +706,12 @@ export default function CancerNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="treatment-heading" className="heading-2 whitespace-nowrap">
-            Điều chỉnh Theo Giai đoạn & Điều trị
+            Điều chỉnh Theo giai đoạn & Điều trị
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
 
-        {/* Cancer Treatment Stages Table */}
+        {/* Cancer treatment Stages table */}
         <div className="overflow-x-auto my-4">
           <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
             <thead className="bg-green-100">
@@ -746,7 +746,7 @@ export default function CancerNutritionPage() {
         </div>
         
         <div className="space-y-4 rounded-lg border border-blue-200 bg-blue-50/50 p-5">
-          <h3 className="heading-4">Trước Điều trị</h3>
+          <h3 className="heading-4">Trước điều trị</h3>
           <ul className="list-disc space-y-2 pl-6 text-body-sm">
             <li>Đánh giá và cải thiện tình trạng dinh dưỡng nếu có thể</li>
             <li>Giáo dục về tác dụng phụ có thể xảy ra</li>
@@ -755,7 +755,7 @@ export default function CancerNutritionPage() {
         </div>
 
         <div className="space-y-4 rounded-lg border border-red-200 bg-red-50/50 p-5">
-          <h3 className="heading-4">Trong Điều trị</h3>
+          <h3 className="heading-4">Trong điều trị</h3>
           <ul className="list-disc space-y-2 pl-6 text-body-sm">
             <li>Quản lý tác dụng phụ (buồn nôn, nôn, tiêu chảy, thay đổi vị giác)</li>
             <li>Tăng năng lượng và protein nếu có suy dinh dưỡng</li>
@@ -765,7 +765,7 @@ export default function CancerNutritionPage() {
         </div>
 
         <div className="space-y-4 rounded-lg border border-green-200 bg-green-50/50 p-5">
-          <h3 className="heading-4">Sau Điều trị</h3>
+          <h3 className="heading-4">Sau điều trị</h3>
           <ul className="list-disc space-y-2 pl-6 text-body-sm">
             <li>Phục hồi dinh dưỡng</li>
             <li>Quản lý tác dụng phụ kéo dài</li>
@@ -944,7 +944,7 @@ export default function CancerNutritionPage() {
             Theo dõi đều đặn là quan trọng để đánh giá hiệu quả của can thiệp dinh dưỡng và điều chỉnh khi cần:
           </p>
           
-          {/* Monitoring Parameters Table */}
+          {/* Monitoring parameters Table */}
           <div className="overflow-x-auto my-4">
             <table className="min-w-full divide-y divide-neutral-200 border border-neutral-200">
               <thead className="bg-green-100">
@@ -990,7 +990,7 @@ export default function CancerNutritionPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="pitfalls-heading" className="heading-2 whitespace-nowrap">
-            Các Cạm bẫy
+            Các cạm bẫy
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>

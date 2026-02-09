@@ -55,7 +55,7 @@ export default function EnergyProteinCalculatorPage() {
         </div>
       </header>
 
-      {/* How to Use Section */}
+      {/* How to Use section */}
       <section
         aria-labelledby="how-to-use-heading"
         className="space-y-3 rounded-lg border border-green-200 bg-green-50 p-5 shadow-sm sm:p-6"
@@ -147,7 +147,7 @@ export default function EnergyProteinCalculatorPage() {
           <span className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
             6
           </span>
-          Hiểu Kết quả
+          Hiểu kết quả
         </h2>
         <div className="space-y-3">
           <p className="text-body">
@@ -155,7 +155,7 @@ export default function EnergyProteinCalculatorPage() {
           </p>
           <ul className="list-disc space-y-3 pl-6 text-sm leading-relaxed text-gray-700 sm:text-base">
             <li>
-              <strong>Khoảng giá trị hữu ích hơn số chính xác:</strong> Thay vì nói "cần chính xác 2000 kcal", 
+              <strong>khoảng giá trị hữu ích hơn số chính xác:</strong> Thay vì nói "cần chính xác 2000 kcal", 
               chúng ta nói "cần khoảng 1800-2200 kcal". Điều này phản ánh thực tế rằng nhu cầu thay đổi 
               theo thời gian và tình trạng sức khỏe.
             </li>
@@ -183,7 +183,7 @@ export default function EnergyProteinCalculatorPage() {
           <span className="w-8 h-8 bg-amber-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
             7
           </span>
-          Những Điều Cần Tránh
+          Những điều Cần tránh
         </h2>
         <p className="text-body-sm text-amber-900 mb-3">
           Khi sử dụng công cụ này, hãy cẩn thận với những điều sau:

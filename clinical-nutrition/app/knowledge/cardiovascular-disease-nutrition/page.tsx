@@ -9,7 +9,7 @@ import { Heart, AlertCircle, CheckCircle2, Info } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng trong Bệnh Tim mạch",
+  title: "Dinh dưỡng trong Bệnh tim mạch",
   description:
     "Hướng dẫn dinh dưỡng tổng quan cho bệnh tim mạch. Nguyên tắc dinh dưỡng lành mạnh cho tim, quản lý cholesterol, huyết áp, và các yếu tố nguy cơ.",
   keywords: [
@@ -28,15 +28,15 @@ export default function CardiovascularDiseaseNutritionPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Dinh dưỡng Bệnh Mạn tính", href: "/knowledge/chronic-diseases" },
-          { label: "Dinh dưỡng trong Bệnh Tim mạch" },
+          { label: "Dinh dưỡng Bệnh mạn tính", href: "/knowledge/chronic-diseases" },
+          { label: "Dinh dưỡng trong Bệnh tim mạch" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Heart className="w-8 h-8 text-red-600" aria-hidden="true" />
-          <h1 className="heading-1">Dinh dưỡng trong Bệnh Tim mạch</h1>
+          <h1 className="heading-1">Dinh dưỡng trong Bệnh tim mạch</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Dinh dưỡng đóng vai trò quan trọng trong phòng ngừa và quản lý bệnh tim mạch. 
@@ -139,7 +139,7 @@ export default function CardiovascularDiseaseNutritionPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">3. Tăng Chất xơ</h3>
+            <h3 className="heading-4 mb-3">3. Tăng chất xơ</h3>
             <p className="text-body-sm mb-3">
               Chất xơ giúp giảm cholesterol và kiểm soát đường huyết.
             </p>
@@ -173,7 +173,7 @@ export default function CardiovascularDiseaseNutritionPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Bữa ăn lành mạnh cho Tim</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Trưa lành mạnh</h3>
+          <h3 className="heading-4 mb-3">Bữa trưa lành mạnh</h3>
           <div className="space-y-3">
             <div className="flex items-start gap-3">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />

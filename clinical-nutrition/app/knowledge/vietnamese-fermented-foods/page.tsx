@@ -96,7 +96,7 @@ export default function VietnameseFermentedFoodsPage() {
             <h3 className="heading-4 mb-3">Cách dùng Nước mắm đúng cách</h3>
             <div className="space-y-3">
               <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-                <p className="text-sm font-semibold text-green-900 mb-1">✓ Dùng Đúng:</p>
+                <p className="text-sm font-semibold text-green-900 mb-1">✓ Dùng đúng:</p>
                 <ul className="space-y-1 text-sm text-green-900">
                   <li>• Pha loãng: 1 thìa nước mắm + 2-3 thìa nước + chanh + đường</li>
                   <li>• Dùng ít: 1/2-1 thìa canh cho cả bữa ăn</li>
@@ -115,7 +115,7 @@ export default function VietnameseFermentedFoodsPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="tip" title="Ví dụ Cách Dùng">
+          <ExampleBox variant="tip" title="Ví dụ Cách dùng">
             <p className="mb-2">
               <strong>Nước mắm pha:</strong> 1 thìa nước mắm + 2 thìa nước + 1 thìa nước cốt chanh + 
               1/2 thìa đường. Dùng để chấm rau luộc, thịt luộc. Giảm natri, tăng hương vị.
@@ -143,7 +143,7 @@ export default function VietnameseFermentedFoodsPage() {
             />
           </Card>
 
-          <ExampleBox variant="tip" title="Cách Dùng Tương">
+          <ExampleBox variant="tip" title="Cách dùng tương">
             <p className="mb-2">
               <strong>Thay nước mắm:</strong> Dùng tương thay nước mắm trong một số món để giảm natri. 
               Tương có ít natri hơn nước mắm một chút.
@@ -273,7 +273,7 @@ export default function VietnameseFermentedFoodsPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Điều chỉnh cho Người có bệnh lý</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Người Tăng huyết áp, Suy tim, Bệnh thận</h3>
+          <h3 className="heading-4 mb-3">Người tăng huyết áp, Suy tim, Bệnh thận</h3>
           <div className="space-y-2 text-body-sm">
             <p>
               <strong>Hạn chế nghiêm ngặt:</strong> Chỉ dùng 1/2 thìa canh nước mắm/ngày, 
@@ -334,7 +334,7 @@ export default function VietnameseFermentedFoodsPage() {
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-cooking-methods">
-            <h3 className="heading-5 mb-2">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Cách nấu ăn lành mạnh Kiểu Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Cách sử dụng gia vị trong nấu ăn
             </p>

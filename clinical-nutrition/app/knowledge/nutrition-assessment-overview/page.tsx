@@ -7,15 +7,15 @@ import { ContentBlock } from "./components/ContentBlock";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 
 /**
- * Nutrition Assessment Overview Page
+ * Nutrition assessment overview Page
  * 
- * Educational Intent:
+ * Educational intent:
  * This page provides a high-level overview of clinical nutrition assessment,
  * serving as an entry point for understanding the assessment process.
  * It explains key concepts without providing treatment recommendations,
  * using descriptive rather than imperative language.
  * 
- * Target Audience:
+ * Target audience:
  * - Clinicians new to clinical nutrition
  * - Nurses involved in screening
  * - Medical students
@@ -25,13 +25,12 @@ export default function NutritionAssessmentOverviewPage() {
   return (
     <main className="mx-auto max-w-3xl space-y-12 px-4 py-8 sm:px-6 lg:px-8">
       {/* 
-        Page Header
-        Educational Intent: Introduces the topic and sets expectations
+        Page header educational Intent: Introduces the topic and sets expectations
         for what readers will learn, emphasizing educational purpose
       */}
       <header className="space-y-5 border-b border-neutral-200 pb-8">
         <h1 className="text-3xl font-semibold leading-tight text-neutral-900 sm:text-4xl">
-          Tổng Quan Đánh Giá Dinh Dưỡng
+          Tổng quan Đánh giá dinh dưỡng
         </h1>
         <ContentBlock>
           <p>
@@ -47,13 +46,13 @@ export default function NutritionAssessmentOverviewPage() {
       </header>
 
       {/* 
-        What is Nutrition Assessment?
-        Educational Intent: Defines the concept clearly, explaining it as
+        What is Nutrition assessment?
+        Educational intent: Defines the concept clearly, explaining it as
         a process rather than a single calculation or test
       */}
       <ContentSection ariaLabelledBy="what-is-heading">
         <SectionHeading id="what-is-heading">
-          Đánh Giá Dinh Dưỡng Là Gì?
+          Đánh giá dinh dưỡng Là gì?
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -86,13 +85,12 @@ export default function NutritionAssessmentOverviewPage() {
       </ContentSection>
 
       {/* 
-        Why Assessment Matters
-        Educational Intent: Explains the value of assessment without
+        Why assessment Matters educational intent: Explains the value of assessment without
         making alarmist claims or providing treatment directives
       */}
       <ContentSection ariaLabelledBy="why-matters-heading">
         <SectionHeading id="why-matters-heading">
-          Tại Sao Đánh Giá Quan Trọng
+          Tại sao đánh Giá quan trọng
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -117,7 +115,7 @@ export default function NutritionAssessmentOverviewPage() {
               Giúp ưu tiên sự chú ý và nguồn lực dựa trên nhu cầu đã xác định
             </li>
           </ul>
-          <EducationalNote variant="info" title="Đánh Giá Thông Báo, Không Chỉ Đạo">
+          <EducationalNote variant="info" title="Đánh giá Thông báo, Không chỉ Đạo">
             <p>
               Đánh giá giúp ưu tiên sự chú ý và hướng dẫn lý luận lâm sàng, nhưng nó không
               thay thế phán đoán chuyên nghiệp hoặc sở thích bệnh nhân. Đánh giá thông báo quyết định—
@@ -128,13 +126,13 @@ export default function NutritionAssessmentOverviewPage() {
       </ContentSection>
 
       {/* 
-        The Assessment Process
-        Educational Intent: Provides a clear overview of the process flow
+        The assessment process
+        Educational intent: Provides a clear overview of the process flow
         without prescribing specific actions or treatments
       */}
       <ContentSection ariaLabelledBy="process-heading">
         <SectionHeading id="process-heading">
-          Quy Trình Đánh Giá
+          Quy trình đánh Giá
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -144,13 +142,12 @@ export default function NutritionAssessmentOverviewPage() {
         </ContentBlock>
 
         {/* 
-          Step 1: Screening
-          Educational Intent: Explains screening as a first step without
+          Step 1: Screening educational intent: Explains screening as a first step without
           prescribing when or how it must be done
         */}
         <div className="mt-6 space-y-4">
           <h3 className="text-xl font-semibold text-neutral-900">
-            Bước 1: Sàng Lọc
+            Bước 1: Sàng lọc
           </h3>
           <ContentBlock>
             <p>
@@ -170,13 +167,13 @@ export default function NutritionAssessmentOverviewPage() {
         </div>
 
         {/* 
-          Step 2: Needs Estimation
-          Educational Intent: Explains needs estimation as a conceptual step,
+          Step 2: Needs estimation
+          Educational intent: Explains needs estimation as a conceptual step,
           avoiding presentation of formulas as definitive answers
         */}
         <div className="mt-6 space-y-4">
           <h3 className="text-xl font-semibold text-neutral-900">
-            Bước 2: Ước Tính Nhu Cầu
+            Bước 2: Ước tính Nhu cầu
           </h3>
           <ContentBlock>
             <p>
@@ -197,13 +194,12 @@ export default function NutritionAssessmentOverviewPage() {
         </div>
 
         {/* 
-          Step 3: Intake Assessment
-          Educational Intent: Explains how to assess actual intake without
+          Step 3: Intake assessment educational intent: Explains how to assess actual intake without
           prescribing specific monitoring protocols
         */}
         <div className="mt-6 space-y-4">
           <h3 className="text-xl font-semibold text-neutral-900">
-            Bước 3: Đánh Giá Lượng Ăn Vào
+            Bước 3: Đánh giá Lượng ăn vào
           </h3>
           <ContentBlock>
             <p>
@@ -224,13 +220,12 @@ export default function NutritionAssessmentOverviewPage() {
       </ContentSection>
 
       {/* 
-        Key Concepts
-        Educational Intent: Highlights important concepts that help readers
+        Key concepts educational Intent: Highlights important concepts that help readers
         understand assessment thinking, not specific protocols
       */}
       <ContentSection ariaLabelledBy="concepts-heading">
         <SectionHeading id="concepts-heading">
-          Các Khái Niệm Chính Cần Hiểu
+          Các khái Niệm chính cần hiểu
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -241,7 +236,7 @@ export default function NutritionAssessmentOverviewPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-              Đánh Giá Là Động
+              Đánh giá là động
             </h3>
             <ContentBlock>
               <p>
@@ -254,7 +249,7 @@ export default function NutritionAssessmentOverviewPage() {
 
           <div>
             <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-              Đánh Giá Phụ Thuộc Vào Bối Cảnh
+              Đánh giá phụ Thuộc vào bối Cảnh
             </h3>
             <ContentBlock>
               <p>
@@ -268,7 +263,7 @@ export default function NutritionAssessmentOverviewPage() {
 
           <div>
             <h3 className="text-lg font-semibold text-neutral-900 mb-3">
-              Số Liệu Thông Báo, Không Chỉ Định
+              Số liệu thông Báo, Không chỉ Định
             </h3>
             <ContentBlock>
               <p>
@@ -282,13 +277,12 @@ export default function NutritionAssessmentOverviewPage() {
       </ContentSection>
 
       {/* 
-        Common Misunderstandings
-        Educational Intent: Addresses misconceptions to help readers
+        Common misunderstandings educational Intent: Addresses misconceptions to help readers
         develop accurate understanding, not to prescribe behavior
       */}
       <ContentSection ariaLabelledBy="misunderstandings-heading">
         <SectionHeading id="misunderstandings-heading">
-          Hiểu Lầm Phổ Biến
+          Hiểu lầm phổ biến
         </SectionHeading>
         <div className="space-y-4">
           <EducationalNote variant="warning" title='❌ "Nếu tôi tính toán nhu cầu, công việc đã xong"'>
@@ -319,13 +313,13 @@ export default function NutritionAssessmentOverviewPage() {
       </ContentSection>
 
       {/* 
-        Learn More
-        Educational Intent: Guides readers to more detailed content
+        Learn more
+        Educational intent: Guides readers to more detailed content
         and tools for learning, not for clinical decision-making
       */}
       <ContentSection ariaLabelledBy="learn-more-heading">
         <SectionHeading id="learn-more-heading" variant="blue">
-          Tìm Hiểu Thêm
+          Tìm hiểu Thêm
         </SectionHeading>
         <ContentBlock>
           <p>
@@ -337,7 +331,7 @@ export default function NutritionAssessmentOverviewPage() {
         <div className="mt-6 space-y-4">
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Hướng Dẫn Quy Trình Chi Tiết
+              Hướng dẫn Quy trình chi tiết
             </h3>
             <p className="text-sm text-blue-800 mb-3">
               Tìm hiểu về quy trình đánh giá đầy đủ, bao gồm cách sàng lọc, ước tính nhu cầu,
@@ -353,7 +347,7 @@ export default function NutritionAssessmentOverviewPage() {
 
           <div className="rounded-md bg-white border border-blue-200 p-4">
             <h3 className="font-semibold text-base mb-2 text-blue-900">
-              Công Cụ Tương Tác
+              Công cụ Tương tác
             </h3>
             <p className="text-sm text-blue-800 mb-3">
               Thực hành quy trình đánh giá với các công cụ tương tác của chúng tôi được thiết kế cho việc học:
@@ -361,17 +355,17 @@ export default function NutritionAssessmentOverviewPage() {
             <ul className="list-disc space-y-1 pl-5 text-sm text-blue-800 mb-3">
               <li>
                 <Link href="/tools/malnutrition-screening" className="underline">
-                  Công Cụ Sàng Lọc Suy Dinh Dưỡng
+                  Công cụ Sàng lọc suy dinh Dưỡng
                 </Link>
               </li>
               <li>
                 <Link href="/tools/energy-protein-calculator" className="underline">
-                  Máy Tính Năng Lượng & Protein
+                  Máy tính năng lượng & Protein
                 </Link>
               </li>
               <li>
                 <Link href="/tools/intake-assessment" className="underline">
-                  Bảng Đánh Giá Lượng Ăn Vào
+                  Bảng đánh Giá lượng ăn vào
                 </Link>
               </li>
             </ul>
@@ -382,7 +376,7 @@ export default function NutritionAssessmentOverviewPage() {
         </div>
       </ContentSection>
 
-      {/* Related Tools */}
+      {/* Related tools */}
       <ContentSection ariaLabelledBy="tools-heading">
         <SectionHeading id="tools-heading" variant="default">
           Công cụ liên quan
@@ -393,7 +387,7 @@ export default function NutritionAssessmentOverviewPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card href="/tools/malnutrition-screening">
-              <CardHeader icon={CheckCircle} title="Nguy cơ Suy Dinh dưỡng" />
+              <CardHeader icon={CheckCircle} title="Nguy cơ Suy dinh dưỡng" />
               <CardContent>
                 <p className="text-body-sm">
                   Công cụ sàng lọc để đánh giá nguy cơ suy dinh dưỡng sử dụng NRS-2002 và PG-SGA.
@@ -409,7 +403,7 @@ export default function NutritionAssessmentOverviewPage() {
               </CardContent>
             </Card>
             <Card href="/tools/intake-assessment">
-              <CardHeader icon={CheckCircle} title="Đánh giá Lượng Ăn" />
+              <CardHeader icon={CheckCircle} title="Đánh giá Lượng ăn" />
               <CardContent>
                 <p className="text-body-sm">
                   So sánh lượng dinh dưỡng thực tế ăn vào với nhu cầu ước tính.
@@ -429,15 +423,14 @@ export default function NutritionAssessmentOverviewPage() {
       </ContentSection>
 
       {/* 
-        Safety & Limitations
-        Educational Intent: Clearly states the educational purpose and
+        Safety & Limitations educational intent: Clearly states the educational purpose and
         limitations, ensuring readers understand this is not a clinical tool
       */}
       <ContentSection ariaLabelledBy="safety-heading">
         <SectionHeading id="safety-heading" variant="amber">
-          An Toàn & Giới Hạn
+          An toàn & Giới hạn
         </SectionHeading>
-        <EducationalNote variant="warning" title="⚠️ Tuyên Bố Miễn Trừ Trách Nhiệm Quan Trọng">
+        <EducationalNote variant="warning" title="⚠️ Tuyên bố miễn trừ trách nhiệm Quan trọng">
           <p className="mb-2">
             <strong>Trang web này và các công cụ của nó chỉ dành cho mục đích giáo dục.</strong> Chúng không cung cấp
             lời khuyên y tế, chẩn đoán hoặc điều trị. Chúng không tạo mối quan hệ bác sĩ–bệnh nhân.

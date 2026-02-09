@@ -8,7 +8,7 @@ import { Activity, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng cho Người Lao động Chân tay",
+  title: "Dinh dưỡng cho Người lao động Chân tay",
   description:
     "Nhu cầu năng lượng và protein cao cho người lao động chân tay. Cách bổ sung, bữa ăn thực tế cho công nhân, nông dân. Hydration và tips thực hành.",
   keywords: [
@@ -28,14 +28,14 @@ export default function NutritionManualLaborPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
-          { label: "Dinh dưỡng cho Người Lao động Chân tay" },
+          { label: "Dinh dưỡng cho Người lao động Chân tay" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Activity className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Dinh dưỡng cho Người Lao động Chân tay</h1>
+          <h1 className="heading-1">Dinh dưỡng cho Người lao động Chân tay</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Người lao động chân tay (công nhân, nông dân, thợ xây...) cần nhiều năng lượng và protein hơn 
@@ -65,12 +65,12 @@ export default function NutritionManualLaborPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nhu cầu Dinh dưỡng cho Người Lao động Chân tay</h2>
+        <h2 className="heading-2">nhu cầu dinh dưỡng cho Người lao động Chân tay</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Nhu cầu năng lượng</h3>
             <NutrientTable
-              title="Nhu cầu năng lượng Theo Mức độ Lao động"
+              title="Nhu cầu năng lượng Theo mức độ Lao động"
               rows={[
                 { nutrient: "Lao động nhẹ (văn phòng)", amount: "2,000", unit: "calo/ngày", highlight: "good", note: "Nhu cầu cơ bản" },
                 { nutrient: "Lao động vừa (công nhân nhẹ)", amount: "2,500", unit: "calo/ngày", highlight: "moderate", note: "Tăng 25%" },
@@ -83,7 +83,7 @@ export default function NutritionManualLaborPage() {
           <Card>
             <h3 className="heading-4 mb-3">Nhu cầu Protein</h3>
             <NutrientTable
-              title="Nhu cầu Protein Theo Mức độ Lao động"
+              title="Nhu cầu Protein theo mức độ Lao động"
               rows={[
                 { nutrient: "Lao động nhẹ", amount: "1.0", unit: "g/kg/ngày", highlight: "good", note: "Ví dụ: 70kg = 70g protein" },
                 { nutrient: "Lao động vừa", amount: "1.2", unit: "g/kg/ngày", highlight: "moderate", note: "Ví dụ: 70kg = 84g protein" },
@@ -110,10 +110,10 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bữa ăn thực tế cho Người Lao động</h2>
+        <h2 className="heading-2">Bữa ăn thực tế cho Người lao động</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Sáng (600-800 calo, 25-30g protein)</h3>
+            <h3 className="heading-4 mb-3">Bữa sáng (600-800 calo, 25-30g protein)</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p className="font-semibold mb-2">Ví dụ bữa sáng no, giàu năng lượng:</p>
               <ul className="space-y-1 pl-6">
@@ -126,7 +126,7 @@ export default function NutritionManualLaborPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Trưa (800-1,000 calo, 35-40g protein)</h3>
+            <h3 className="heading-4 mb-3">Bữa trưa (800-1,000 calo, 35-40g protein)</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p className="font-semibold mb-2">Ví dụ bữa trưa no, dễ mang theo:</p>
               <ul className="space-y-1 pl-6">
@@ -139,7 +139,7 @@ export default function NutritionManualLaborPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bữa Tối (800-1,000 calo, 35-40g protein)</h3>
+            <h3 className="heading-4 mb-3">Bữa tối (800-1,000 calo, 35-40g protein)</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p className="font-semibold mb-2">Ví dụ bữa tối no, phục hồi:</p>
               <ul className="space-y-1 pl-6">
@@ -151,7 +151,7 @@ export default function NutritionManualLaborPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Snack Giữa Ca (200-300 calo)</h3>
+            <h3 className="heading-4 mb-3">Snack giữa ca (200-300 calo)</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p className="font-semibold mb-2">Ví dụ snack nhanh, giàu năng lượng:</p>
               <ul className="space-y-1 pl-6">
@@ -169,7 +169,7 @@ export default function NutritionManualLaborPage() {
         <h2 className="heading-2">Hydration: Uống đủ nước</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
-            <h3 className="heading-4 text-blue-900 mb-3">Nhu cầu Nước cho Người Lao động</h3>
+            <h3 className="heading-4 text-blue-900 mb-3">Nhu cầu Nước cho Người lao động</h3>
             <div className="space-y-2 text-sm text-blue-900">
               <p>
                 <strong>Lao động nhẹ:</strong> 2 lít nước/ngày (8 ly)
@@ -187,7 +187,7 @@ export default function NutritionManualLaborPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="tip" title="Tips Hydration">
+          <ExampleBox variant="tip" title="Tips hydration">
             <p className="mb-2">
               <strong>Mang nước theo:</strong> Luôn mang theo chai nước khi lao động. 
               Uống từng ngụm nhỏ thường xuyên.
@@ -255,36 +255,36 @@ export default function NutritionManualLaborPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Ví dụ thực tế: Bữa ăn Cho Công nhân</h2>
+        <h2 className="heading-2">Ví dụ thực tế: Bữa ăn Cho công nhân</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa ăn Một Ngày (3,000 calo, 105g protein)</h3>
+          <h3 className="heading-4 mb-3">Bữa ăn Một ngày (3,000 calo, 105g protein)</h3>
           <div className="space-y-3">
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-              <p className="text-sm font-semibold text-blue-900 mb-1">Bữa Sáng (7:00):</p>
+              <p className="text-sm font-semibold text-blue-900 mb-1">Bữa sáng (7:00):</p>
               <p className="text-sm text-blue-900">
                 Phở bò lớn + trứng = 640 calo, 37g protein
               </p>
             </div>
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-              <p className="text-sm font-semibold text-green-900 mb-1">Snack Giữa Sáng (10:00):</p>
+              <p className="text-sm font-semibold text-green-900 mb-1">Snack giữa sáng (10:00):</p>
               <p className="text-sm text-green-900">
                 Bánh mì + thịt = 300 calo, 15g protein
               </p>
             </div>
             <div className="bg-amber-50 rounded-lg p-3 border border-amber-200">
-              <p className="text-sm font-semibold text-amber-900 mb-1">Bữa Trưa (12:00):</p>
+              <p className="text-sm font-semibold text-amber-900 mb-1">Bữa trưa (12:00):</p>
               <p className="text-sm text-amber-900">
                 Cơm (2 bát) + thịt gà kho (150g) + rau + canh = 900 calo, 40g protein
               </p>
             </div>
             <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
-              <p className="text-sm font-semibold text-purple-900 mb-1">Snack Chiều (15:00):</p>
+              <p className="text-sm font-semibold text-purple-900 mb-1">Snack chiều (15:00):</p>
               <p className="text-sm text-purple-900">
                 Chuối + sữa chua = 200 calo, 8g protein
               </p>
             </div>
             <div className="bg-red-50 rounded-lg p-3 border border-red-200">
-              <p className="text-sm font-semibold text-red-900 mb-1">Bữa Tối (19:00):</p>
+              <p className="text-sm font-semibold text-red-900 mb-1">Bữa tối (19:00):</p>
               <p className="text-sm text-red-900">
                 Cơm (2 bát) + cá kho (150g) + rau + canh = 850 calo, 38g protein
               </p>

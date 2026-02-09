@@ -64,7 +64,7 @@ export default function FolatePregnancyPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Vì sao Folate Quan trọng cho Phụ nữ Mang thai?</h2>
+        <h2 className="heading-2">Vì sao Folate quan trọng cho Phụ nữ Mang thai?</h2>
         <Card>
           <h3 className="heading-4 mb-3">Vai trò của Folate</h3>
           <div className="space-y-3 text-body-sm">
@@ -111,9 +111,9 @@ export default function FolatePregnancyPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Folate Tốt</h2>
+        <h2 className="heading-2">Nguồn folate Tốt</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Thực phẩm Giàu Folate</h3>
+          <h3 className="heading-4 mb-3">Thực phẩm Giàu folate</h3>
           <NutrientTable
             title="Hàm lượng Folate trong Thực phẩm"
             rows={[
@@ -132,7 +132,7 @@ export default function FolatePregnancyPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Bổ sung Folate</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Khi nào Cần Bổ sung?</h3>
+          <h3 className="heading-4 mb-3">Khi nào Cần bổ sung?</h3>
           <div className="space-y-3 text-body-sm">
             <p>
               <strong>Phụ nữ trong độ tuổi sinh đẻ:</strong> Nên bổ sung 400mcg/ngày, đặc biệt nếu 

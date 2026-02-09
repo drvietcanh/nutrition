@@ -126,7 +126,7 @@ export default function VietnameseSoupsNutritionPage() {
         <h2 className="heading-2">Các loại Canh Việt Nam Phổ biến</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
-            <h3 className="heading-4 mb-3 text-green-900">1. Canh Chua (Sour Soup)</h3>
+            <h3 className="heading-4 mb-3 text-green-900">1. Canh chua (Sour soup)</h3>
             <p className="text-body-sm text-green-900 mb-3">
               Canh chua là món canh có vị chua, thường được nấu với cá, tôm, hoặc thịt.
             </p>
@@ -159,7 +159,7 @@ export default function VietnameseSoupsNutritionPage() {
           </Card>
 
           <Card className="border-blue-200 bg-blue-50">
-            <h3 className="heading-4 mb-3 text-blue-900">2. Canh Rau (Vegetable Soup)</h3>
+            <h3 className="heading-4 mb-3 text-blue-900">2. Canh rau (Vegetable soup)</h3>
             <p className="text-body-sm text-blue-900 mb-3">
               Canh rau là món canh đơn giản, chủ yếu là rau củ, có thể có thịt hoặc không.
             </p>
@@ -194,7 +194,7 @@ export default function VietnameseSoupsNutritionPage() {
           </Card>
 
           <Card className="border-purple-200 bg-purple-50">
-            <h3 className="heading-4 mb-3 text-purple-900">3. Canh Thịt (Meat Soup)</h3>
+            <h3 className="heading-4 mb-3 text-purple-900">3. Canh thịt (Meat soup)</h3>
             <p className="text-body-sm text-purple-900 mb-3">
               Canh thịt là món canh có thịt làm nguyên liệu chính, thường có rau củ kèm theo.
             </p>
@@ -235,7 +235,7 @@ export default function VietnameseSoupsNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Nấu Canh lành mạnh</h2>
+        <h2 className="heading-2">Cách nấu canh lành mạnh</h2>
         <ComparisonCard
           title="So sánh: Canh lành mạnh vs Nên cải thiện"
           items={[
@@ -354,7 +354,7 @@ export default function VietnameseSoupsNutritionPage() {
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-cooking-methods">
-            <h3 className="heading-5 mb-2">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Cách nấu ăn lành mạnh Kiểu Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Phương pháp nấu canh lành mạnh
             </p>

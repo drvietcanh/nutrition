@@ -67,7 +67,7 @@ export default function NutritionBoneHealthPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tại sao Xương Cần Dinh dưỡng?</h2>
+        <h2 className="heading-2">Tại sao Xương cần dinh dưỡng?</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Xương là mô sống, liên tục được xây dựng và phá vỡ. Dinh dưỡng cung cấp "nguyên liệu" để:
@@ -104,7 +104,7 @@ export default function NutritionBoneHealthPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chất Dinh dưỡng Quan trọng cho Xương</h2>
+        <h2 className="heading-2">Chất dinh dưỡng Quan trọng cho Xương</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-4 mb-3 text-blue-900">1. Calcium (Quan trọng nhất)</h3>
@@ -113,7 +113,7 @@ export default function NutritionBoneHealthPage() {
             </p>
             <div className="space-y-3">
               <NutrientTable
-                title="Nhu cầu Calcium Hàng ngày"
+                title="Nhu cầu Calcium hàng ngày"
                 rows={[
                   { nutrient: "Người lớn (19-50 tuổi)", amount: "1000", unit: "mg/ngày", note: "Cả nam và nữ" },
                   { nutrient: "Phụ nữ (51-70 tuổi)", amount: "1200", unit: "mg/ngày", note: "Tăng để phòng ngừa loãng xương" },
@@ -180,7 +180,7 @@ export default function NutritionBoneHealthPage() {
           </Card>
 
           <Card className="border-green-200 bg-green-50">
-            <h3 className="heading-4 mb-3 text-green-900">4. Các Khoáng chất Khác</h3>
+            <h3 className="heading-4 mb-3 text-green-900">4. Các khoáng chất Khác</h3>
             <p className="text-body-sm text-green-900 mb-3">
               Magnesium và Phosphorus cũng quan trọng cho xương.
             </p>
@@ -211,7 +211,7 @@ export default function NutritionBoneHealthPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Trưa (Việt Nam)</h3>
+            <h3 className="heading-5 mb-2">Bữa trưa (Việt Nam)</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Cá nhỏ ăn cả xương + Canh rau muống:</strong>
             </p>
@@ -224,7 +224,7 @@ export default function NutritionBoneHealthPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Bữa Tối (Việt Nam)</h3>
+            <h3 className="heading-5 mb-2">Bữa tối (Việt Nam)</h3>
             <p className="text-sm text-gray-700 mb-2">
               <strong>Cơm + Đậu phụ sốt cà chua + Canh mướp:</strong>
             </p>

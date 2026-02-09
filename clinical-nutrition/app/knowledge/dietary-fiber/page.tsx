@@ -46,7 +46,7 @@ export default function DietaryFiberPage() {
         </p>
       </header>
 
-      {/* Key Points */}
+      {/* Key points */}
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
@@ -117,7 +117,7 @@ export default function DietaryFiberPage() {
         </div>
       </section>
 
-      {/* Not More is Better */}
+      {/* Not more is Better */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <AlertTriangle className="w-6 h-6 text-amber-600" aria-hidden="true" />
@@ -153,9 +153,9 @@ export default function DietaryFiberPage() {
         </Callout>
       </section>
 
-      {/* Vietnamese Fiber Table */}
+      {/* Vietnamese fiber Table */}
       <section className="space-y-4">
-        <h2 className="heading-2">Bảng Chất xơ trong Thực phẩm Việt Nam</h2>
+        <h2 className="heading-2">Bảng chất xơ trong Thực phẩm Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
           <p className="text-sm">
             Hàm lượng chất xơ dưới đây là ước tính, có thể thay đổi tùy theo cách chế biến và từng loại thực phẩm.
@@ -227,7 +227,7 @@ export default function DietaryFiberPage() {
         </div>
       </section>
 
-      {/* Fiber and Blood Sugar */}
+      {/* Fiber and Blood sugar */}
       <section className="space-y-4">
         <h2 className="heading-2">Chất xơ & Đường huyết</h2>
         <Card className="border-blue-200 bg-blue-50/30">
@@ -270,10 +270,10 @@ export default function DietaryFiberPage() {
 
       {/* Types of Fiber */}
       <section className="space-y-6">
-        <h2 className="heading-2">Hai Loại Chất xơ Chính</h2>
+        <h2 className="heading-2">Hai loại Chất xơ Chính</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Soluble Fiber */}
+          {/* Soluble fiber */}
           <Card className="border-blue-200 bg-blue-50">
             <h3 className="heading-3 text-blue-900 mb-3">Chất xơ Hòa tan</h3>
             <p className="text-body text-blue-900 mb-4">
@@ -314,7 +314,7 @@ export default function DietaryFiberPage() {
             </div>
           </Card>
 
-          {/* Insoluble Fiber */}
+          {/* Insoluble fiber */}
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-3 text-green-900 mb-3">Chất xơ Không hòa tan</h3>
             <p className="text-body text-green-900 mb-4">
@@ -365,7 +365,7 @@ export default function DietaryFiberPage() {
         </div>
       </section>
 
-      {/* Health Benefits */}
+      {/* Health benefits */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Heart className="w-6 h-6 text-red-600" aria-hidden="true" />
@@ -406,7 +406,7 @@ export default function DietaryFiberPage() {
         </div>
       </section>
 
-      {/* How Much Fiber */}
+      {/* How much fiber */}
       <section className="space-y-4">
         <h2 className="heading-2">Nên ăn bao nhiêu Chất xơ?</h2>
         <Card>
@@ -454,7 +454,7 @@ export default function DietaryFiberPage() {
         </Card>
       </section>
 
-      {/* Application in Vietnamese Meals */}
+      {/* Application in Vietnamese meals */}
       <section className="space-y-4">
         <h2 className="heading-2">Áp dụng trong Bữa ăn Việt Nam</h2>
         <Card className="border-green-200 bg-green-50/30">
@@ -482,7 +482,7 @@ export default function DietaryFiberPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Ví dụ Bữa ăn Việt Nam Có Đủ Chất xơ</h3>
+          <h3 className="heading-4 mb-3">Ví dụ Bữa ăn Việt Nam Có đủ Chất xơ</h3>
           <div className="space-y-3">
             <div className="border-l-4 border-green-500 pl-4">
               <p className="font-medium text-gray-900 mb-1">Bữa trưa mẫu:</p>
@@ -511,11 +511,11 @@ export default function DietaryFiberPage() {
         </Card>
       </section>
 
-      {/* Practical Tips */}
+      {/* Practical tips */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
-          Cách Tăng Lượng Chất xơ trong Chế độ ăn
+          Cách tăng lượng Chất xơ trong Chế độ ăn
         </h2>
         <div className="space-y-4">
           <TipCard
@@ -569,7 +569,7 @@ export default function DietaryFiberPage() {
         </div>
       </section>
 
-      {/* Clinical Considerations */}
+      {/* Clinical considerations */}
       <section className="space-y-4">
         <h2 className="heading-2">Lưu ý trong Dinh dưỡng lâm sàng</h2>
         <div className="space-y-4">
@@ -608,7 +608,7 @@ export default function DietaryFiberPage() {
         </div>
       </section>
 
-      {/* Related Articles */}
+      {/* Related articles */}
       <section className="space-y-4">
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -621,7 +621,7 @@ export default function DietaryFiberPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
           Thông tin này chỉ dành cho mục đích giáo dục. Nếu bạn có các vấn đề về tiêu hóa 

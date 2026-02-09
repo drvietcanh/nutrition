@@ -1,5 +1,5 @@
 /**
- * Micronutrient Assessment Tool
+ * Micronutrient assessment tool
  * Educational tool for calculating micronutrient requirements
  * 
  * This is for educational purposes only and must NOT be used for clinical decision-making.
@@ -84,10 +84,10 @@ export function calculateMicronutrientRequirements(
     ],
   });
 
-  // Folate/Folic Acid
+  // Folate/Folic acid
   const folate = isAdult ? (isFemale ? 400 : 400) : 200; // mcg/day
   requirements.push({
-    name: "Folate (Acid Folic)",
+    name: "Folate (Acid folic)",
     recommendedIntake: folate,
     unit: "mcg/ngày",
     notes: [
@@ -169,7 +169,7 @@ export function calculateMicronutrientRequirements(
 
   if (additionalFactors.pregnancy) {
     requirements.forEach((req) => {
-      if (req.name === "Folate (Acid Folic)") {
+      if (req.name === "Folate (Acid folic)") {
         req.recommendedIntake = 600;
         req.notes.push("Nhu cầu tăng trong thai kỳ: 600 mcg/ngày.");
       }
@@ -185,7 +185,7 @@ export function calculateMicronutrientRequirements(
 
   if (additionalFactors.lactation) {
     requirements.forEach((req) => {
-      if (req.name === "Folate (Acid Folic)") {
+      if (req.name === "Folate (Acid folic)") {
         req.recommendedIntake = 500;
         req.notes.push("Nhu cầu tăng trong cho con bú: 500 mcg/ngày.");
       }
@@ -200,7 +200,7 @@ export function calculateMicronutrientRequirements(
   }
 
   explanations.push(
-    "Các giá trị này dựa trên RDA (Recommended Dietary Allowance) và DRI (Dietary Reference Intake) cho người khỏe mạnh.",
+    "Các giá trị này dựa trên RDA (Recommended dietary allowance) và DRI (Dietary reference Intake) cho người khỏe mạnh.",
     "Nhu cầu thực tế có thể thay đổi dựa trên tình trạng bệnh, thuốc, và các yếu tố cá nhân khác.",
     "Trong thực hành lâm sàng, các bác sĩ lâm sàng sẽ đánh giá tình trạng vi chất thông qua xét nghiệm và điều chỉnh dựa trên kết quả."
   );

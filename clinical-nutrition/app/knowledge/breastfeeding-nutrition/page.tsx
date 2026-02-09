@@ -26,7 +26,7 @@ export default function BreastfeedingNutritionPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Dinh dưỡng Theo Độ tuổi", href: "/knowledge/life-stages" },
+          { label: "Dinh dưỡng Theo độ tuổi", href: "/knowledge/life-stages" },
           { label: "Dinh dưỡng cho Phụ nữ Cho con bú" },
         ]}
       />
@@ -63,7 +63,7 @@ export default function BreastfeedingNutritionPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nhu cầu Dinh dưỡng Khi Cho con bú</h2>
+        <h2 className="heading-2">nhu cầu dinh dưỡng Khi cho con bú</h2>
         <Card>
           <h3 className="heading-4 mb-3">Nhu cầu Tăng lên</h3>
           <NutrientTable
@@ -82,7 +82,7 @@ export default function BreastfeedingNutritionPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Thực phẩm Quan trọng</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Thực phẩm Nên Ăn</h3>
+          <h3 className="heading-4 mb-3">Thực phẩm Nên ăn</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <p className="text-sm font-semibold text-gray-900 mb-2">Protein:</p>
@@ -139,7 +139,7 @@ export default function BreastfeedingNutritionPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thực phẩm Cần Tránh hoặc Hạn chế</h2>
+        <h2 className="heading-2">Thực phẩm Cần tránh hoặc Hạn chế</h2>
         <Callout variant="warning" title="Lưu ý">
           <div className="space-y-2 text-body-sm">
             <p>

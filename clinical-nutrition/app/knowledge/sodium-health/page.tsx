@@ -49,7 +49,7 @@ export default function SodiumHealthPage() {
         </p>
       </header>
 
-      {/* Key Points */}
+      {/* Key points */}
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
@@ -108,7 +108,7 @@ export default function SodiumHealthPage() {
         </div>
       </section>
 
-      {/* Too Much Sodium */}
+      {/* Too much sodium */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <AlertTriangle className="w-6 h-6 text-red-600" aria-hidden="true" />
@@ -156,14 +156,14 @@ export default function SodiumHealthPage() {
           <Card className="border-amber-200 bg-amber-50">
             <h3 className="heading-4 text-amber-900 mb-3">Các tác hại khác:</h3>
             <ul className="space-y-1 text-sm text-gray-700">
-              <li>• <strong>Bệnh Thận:</strong> Thận phải làm việc nhiều hơn để loại bỏ natri thừa</li>
-              <li>• <strong>Loãng Xương:</strong> Tăng bài tiết canxi qua nước tiểu</li>
+              <li>• <strong>Bệnh thận:</strong> Thận phải làm việc nhiều hơn để loại bỏ natri thừa</li>
+              <li>• <strong>Loãng xương:</strong> Tăng bài tiết canxi qua nước tiểu</li>
             </ul>
           </Card>
         </div>
       </section>
 
-      {/* How Much Sodium */}
+      {/* How much Sodium */}
       <section className="space-y-4">
         <h2 className="heading-2">Nên ăn bao nhiêu Natri?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -221,7 +221,7 @@ export default function SodiumHealthPage() {
         </Card>
       </section>
 
-      {/* Vietnamese Sodium Sources Table */}
+      {/* Vietnamese sodium sources table */}
       <section className="space-y-4">
         <h2 className="heading-2">Nguồn muối phổ biến trong Bữa ăn Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
@@ -332,7 +332,7 @@ export default function SodiumHealthPage() {
         </div>
       </section>
 
-      {/* Not Too Little */}
+      {/* Not too Little */}
       <section className="space-y-4">
         <h2 className="heading-2">Không phải ăn nhạt tuyệt đối là tốt</h2>
         <Card className="border-blue-200 bg-blue-50/30">
@@ -365,7 +365,7 @@ export default function SodiumHealthPage() {
         </Card>
       </section>
 
-      {/* How to Reduce Sodium */}
+      {/* How to Reduce sodium */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
@@ -437,7 +437,7 @@ export default function SodiumHealthPage() {
             className="mt-4"
           />
 
-          <ExampleBox variant="info" title="Cách Dùng Nước Mắm đúng cách (Việt Nam)">
+          <ExampleBox variant="info" title="Cách dùng nước mắm đúng cách (Việt Nam)">
             <p className="text-sm mb-2">
               <strong>Nước mắm</strong> là gia vị phổ biến ở Việt Nam nhưng có rất nhiều natri (15,000-20,000mg/100ml).
             </p>
@@ -469,7 +469,7 @@ export default function SodiumHealthPage() {
             </p>
           </Card>
 
-          <ExampleBox variant="tip" title="Cách Giảm Natri trong Món Ăn Việt Nam">
+          <ExampleBox variant="tip" title="Cách giảm natri trong Món ăn Việt Nam">
             <p className="text-sm mb-2">
               <strong>Canh:</strong>
             </p>
@@ -490,7 +490,7 @@ export default function SodiumHealthPage() {
         </div>
       </section>
 
-      {/* Clinical Application */}
+      {/* Clinical application */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Heart className="w-6 h-6 text-blue-600" aria-hidden="true" />
@@ -498,7 +498,7 @@ export default function SodiumHealthPage() {
         </h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Tăng Huyết áp</h3>
+            <h3 className="heading-4 mb-3">Tăng huyết áp</h3>
             <p className="text-body mb-3">
               Giảm natri là một trong những cách hiệu quả nhất để giảm huyết áp. 
               Giảm 1,000mg natri/ngày có thể giảm huyết áp tâm thu 2-8 mmHg.
@@ -520,7 +520,7 @@ export default function SodiumHealthPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bệnh Thận</h3>
+            <h3 className="heading-4 mb-3">Bệnh thận</h3>
             <p className="text-body mb-3">
               Thận bị tổn thương khó loại bỏ natri thừa. Hạn chế natri giúp bảo vệ thận 
               và giảm phù.
@@ -533,7 +533,7 @@ export default function SodiumHealthPage() {
         </div>
       </section>
 
-      {/* Related Articles */}
+      {/* Related articles */}
       <section className="space-y-4">
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -546,7 +546,7 @@ export default function SodiumHealthPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
           Thông tin này chỉ dành cho mục đích giáo dục. Nếu bạn có tăng huyết áp, suy tim, 

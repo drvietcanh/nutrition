@@ -1,5 +1,5 @@
 /**
- * Recommendation Engine
+ * Recommendation engine
  * 
  * Provides article recommendations based on:
  * - Tags similarity

@@ -100,7 +100,7 @@ export function InteractiveSection() {
 
   return (
     <div className="space-y-6">
-      {/* Input Form */}
+      {/* Input form */}
       <section aria-labelledby="inputs-heading" className="space-y-3">
         <h2 id="inputs-heading" className="heading-4">
           3. Nhập thông tin
@@ -272,7 +272,7 @@ export function InteractiveSection() {
         </form>
       </section>
 
-      {/* Results Display */}
+      {/* Results display */}
       {result && (
         <section aria-labelledby="results-heading" className="space-y-4">
           <h2 id="results-heading" className="heading-4">
@@ -347,7 +347,7 @@ export function InteractiveSection() {
                   </span>
                 </div>
                 <p className="text-xs text-neutral-600">
-                  Tính bằng công thức Du Bois
+                  Tính bằng công thức Du bois
                 </p>
               </div>
             )}
@@ -376,7 +376,7 @@ export function InteractiveSection() {
               </div>
             )}
 
-            {/* Clinical Notes */}
+            {/* Clinical notes */}
             {result.clinicalNotes.length > 0 && (
               <div className="border-t border-neutral-200 pt-4 space-y-2">
                 <h3 className="text-sm font-semibold text-neutral-900">

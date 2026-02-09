@@ -204,7 +204,7 @@ export default function MindfulEatingPage() {
             <div className="flex items-start gap-3">
               <Heart className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-1">3. Nhận biết Khi No</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">3. Nhận biết Khi no</p>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Dừng lại giữa bữa ăn để kiểm tra: "Tôi còn đói không?"</li>
                   <li>• Nhận biết cảm giác no (không còn đói, nhưng chưa quá no)</li>
@@ -266,7 +266,7 @@ export default function MindfulEatingPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Ăn Chánh niệm vs Không Chánh niệm</h2>
+        <h2 className="heading-2">So sánh: Ăn chánh niệm vs Không chánh niệm</h2>
         <ComparisonCard
           title="Ví dụ So sánh"
           items={[
@@ -357,7 +357,7 @@ export default function MindfulEatingPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/portion-sizes">
-            <h3 className="heading-5 mb-2">Hiểu về Portion Sizes</h3>
+            <h3 className="heading-5 mb-2">Hiểu về Portion sizes</h3>
             <p className="text-sm text-gray-600">
               Ăn chánh niệm giúp nhận biết khẩu phần phù hợp
             </p>

@@ -70,7 +70,7 @@ export default function VietnameseHerbsSpicesPage() {
         <h2 className="heading-2">Gia vị Cơ bản Việt Nam</h2>
         <div className="space-y-4">
           <Card className="border-purple-200 bg-purple-50">
-            <h3 className="heading-4 mb-3 text-purple-900">1. Hành (Scallion/Green Onion)</h3>
+            <h3 className="heading-4 mb-3 text-purple-900">1. Hành (Scallion/Green onion)</h3>
             <p className="text-body-sm text-purple-900 mb-3">
               Hành là gia vị phổ biến nhất trong món ăn Việt Nam, dùng cả phần củ và lá.
             </p>
@@ -170,10 +170,10 @@ export default function VietnameseHerbsSpicesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Rau Thơm Việt Nam</h2>
+        <h2 className="heading-2">Rau thơm Việt Nam</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Các loại Rau Thơm Phổ biến</h3>
+            <h3 className="heading-4 mb-3">Các loại Rau thơm phổ biến</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-green-50 rounded-lg p-3 border border-green-200">
                 <p className="text-sm font-semibold text-gray-900 mb-1">Ngò (Cilantro/Coriander)</p>
@@ -182,7 +182,7 @@ export default function VietnameseHerbsSpicesPage() {
                 </p>
               </div>
               <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-                <p className="text-sm font-semibold text-gray-900 mb-1">Rau răm (Vietnamese Mint)</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Rau răm (Vietnamese mint)</p>
                 <p className="text-xs text-gray-700">
                   Vị cay nhẹ, dùng với ốc, cháo. Có thể hỗ trợ tiêu hóa.
                 </p>
@@ -206,7 +206,7 @@ export default function VietnameseHerbsSpicesPage() {
                 </p>
               </div>
               <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-                <p className="text-sm font-semibold text-gray-900 mb-1">Hành lá (Green Onion Leaves)</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Hành lá (Green onion Leaves)</p>
                 <p className="text-xs text-gray-700">
                   Thơm, dùng trong hầu hết món ăn. Cung cấp vitamin C, K.
                 </p>
@@ -214,7 +214,7 @@ export default function VietnameseHerbsSpicesPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="info" title="Rau Thơm trong Món ăn Việt Nam">
+          <ExampleBox variant="info" title="Rau thơm trong Món ăn Việt Nam">
             <p className="mb-2">
               Rau thơm không chỉ tăng hương vị mà còn cung cấp vitamin và khoáng chất. 
               Ví dụ: Phở với nhiều rau thơm (ngò, hành, húng quế) cung cấp vitamin C, K.
@@ -254,7 +254,7 @@ export default function VietnameseHerbsSpicesPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Giảm Viêm</h3>
+            <h3 className="heading-4 mb-3">Giảm viêm</h3>
             <p className="text-body-sm">
               Gừng, tỏi có tính chống viêm, có thể giúp giảm viêm trong cơ thể, 
               hỗ trợ sức khỏe tim mạch và khớp.
@@ -264,7 +264,7 @@ export default function VietnameseHerbsSpicesPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Sử dụng Gia vị và Thảo mộc</h2>
+        <h2 className="heading-2">Cách sử dụng Gia vị và Thảo mộc</h2>
         <ComparisonCard
           title="So sánh: Cách dùng tốt vs Nên tránh"
           items={[
@@ -375,7 +375,7 @@ export default function VietnameseHerbsSpicesPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/vietnamese-cooking-methods">
-            <h3 className="heading-5 mb-2">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Cách nấu ăn lành mạnh Kiểu Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Cách sử dụng gia vị trong nấu ăn Việt Nam
             </p>

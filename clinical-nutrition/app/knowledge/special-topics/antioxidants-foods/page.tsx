@@ -102,9 +102,9 @@ export default function AntioxidantsFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Chất chống Oxy hóa</h2>
+        <h2 className="heading-2">Nguồn chất chống Oxy hóa</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Quy tắc "Cầu vồng" - Ăn Đa dạng Màu sắc</h3>
+          <h3 className="heading-4 mb-3">Quy tắc "Cầu vồng" - Ăn đa dạng Màu sắc</h3>
           <p className="text-body mb-4">
             Mỗi màu sắc trong trái cây và rau củ thường chứa các chất chống oxy hóa khác nhau. 
             Ăn đa dạng màu sắc giúp bạn có nhiều loại chất chống oxy hóa.

@@ -127,7 +127,7 @@ export default function ZincImmunityPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Thực phẩm Giàu Kẽm</h2>
+        <h2 className="heading-2">Nguồn thực phẩm Giàu kẽm</h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
             <h3 className="heading-4 text-red-900 mb-3 flex items-center gap-2">
@@ -157,7 +157,7 @@ export default function ZincImmunityPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Nguồn Khác</h3>
+            <h3 className="heading-4 mb-3">Nguồn khác</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <ul className="space-y-2 text-sm text-gray-700">
@@ -252,7 +252,7 @@ export default function ZincImmunityPage() {
         <Card>
           <h3 className="heading-5 mb-2">Ví dụ: Người hay bị cảm lạnh</h3>
           <p className="text-body-sm mb-2">
-            <strong>Tình huống:</strong> Chị Mai, 35 tuổi, ăn chay, hay bị cảm lạnh, vết thương chậm lành. 
+            <strong>Tình huống:</strong> Chị mai, 35 tuổi, ăn chay, hay bị cảm lạnh, vết thương chậm lành. 
             Có thể thiếu kẽm.
           </p>
           <p className="text-body-sm mb-2">

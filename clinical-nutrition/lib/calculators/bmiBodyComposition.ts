@@ -1,6 +1,6 @@
 /**
- * BMI and Body Composition Calculator
- * Educational tool for calculating BMI, Ideal Body Weight, Adjusted Body Weight, and BSA
+ * BMI and Body composition calculator
+ * Educational tool for calculating BMI, Ideal body weight, Adjusted body Weight, and BSA
  * 
  * This is for educational purposes only and must NOT be used for clinical decision-making.
  */
@@ -23,11 +23,11 @@ export interface BMIBodyCompositionResult {
   category: BMICategory;
   /** Category label in Vietnamese */
   categoryLabel: string;
-  /** Ideal Body Weight (kg) - Devine formula */
+  /** Ideal body weight (kg) - Devine formula */
   idealBodyWeight: number | null;
-  /** Adjusted Body Weight (kg) - for obesity */
+  /** Adjusted body Weight (kg) - for obesity */
   adjustedBodyWeight: number | null;
-  /** Body Surface Area (m²) - Du Bois formula */
+  /** Body surface area (m²) - Du bois formula */
   bodySurfaceArea: number | null;
   /** Educational warnings */
   warnings: string[];
@@ -67,7 +67,7 @@ function classifyBMI(bmi: number): { category: BMICategory; label: string } {
 }
 
 /**
- * Calculate Ideal Body Weight using Devine formula
+ * Calculate ideal body Weight using Devine formula
  * IBW (male) = 50 + 2.3 * (height in inches - 60)
  * IBW (female) = 45.5 + 2.3 * (height in inches - 60)
  */
@@ -79,7 +79,7 @@ function calculateIBW(heightCm: number, sex: ClinicalInput["sex"]): number {
 }
 
 /**
- * Calculate Adjusted Body Weight for obesity
+ * Calculate adjusted Body weight for obesity
  * ABW = IBW + 0.4 * (actual weight - IBW)
  * Used when BMI > 30 for some calculations
  */
@@ -88,7 +88,7 @@ function calculateABW(actualWeight: number, ibw: number): number {
 }
 
 /**
- * Calculate Body Surface Area using Du Bois formula
+ * Calculate body Surface area using Du bois formula
  * BSA = 0.007184 * (weight^0.425) * (height^0.725)
  */
 function calculateBSA(weightKg: number, heightCm: number): number {
@@ -162,7 +162,7 @@ export function calculateBMIBodyComposition(
     // Calculate BSA
     bodySurfaceArea = calculateBSA(input.weightKg, input.heightCm);
     explanations.push(
-      `Diện tích bề mặt cơ thể (BSA) được tính bằng công thức Du Bois: BSA = 0.007184 × (cân nặng^0.425) × (chiều cao^0.725)`,
+      `Diện tích bề mặt cơ thể (BSA) được tính bằng công thức Du bois: BSA = 0.007184 × (cân nặng^0.425) × (chiều cao^0.725)`,
       `BSA ước tính: ${bodySurfaceArea.toFixed(2)} m². BSA thường được sử dụng trong một số tính toán dược lý và lâm sàng.`
     );
 

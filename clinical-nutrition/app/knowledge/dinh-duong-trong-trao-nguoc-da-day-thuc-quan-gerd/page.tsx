@@ -39,7 +39,7 @@ export default function DinhDuongTrongTraoNguocDaDayThucQuanGERDPage() {
         </div>
         <div className="space-y-4">
           <p className="text-body-lg">
-            GERD (Gastroesophageal Reflux Disease) là tình trạng acid dạ dày trào ngược lên thực quản. 
+            GERD (Gastroesophageal reflux Disease) là tình trạng acid dạ dày trào ngược lên thực quản. 
             Dinh dưỡng đúng cách giúp giảm triệu chứng.
           </p>
           <Callout variant="info" title="Mục đích Giáo dục">

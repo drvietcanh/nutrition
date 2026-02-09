@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng Theo Vùng miền Việt Nam",
+  title: "Dinh dưỡng Theo vùng miền Việt Nam",
   description:
     "Đặc điểm dinh dưỡng theo vùng (Bắc, Trung, Nam), ưu và nhược điểm. Món ăn đặc trưng từng vùng. Cách cân bằng dinh dưỡng theo vùng.",
   keywords: [
@@ -28,14 +28,14 @@ export default function RegionalNutritionVietnamPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
-          { label: "Dinh dưỡng Theo Vùng miền Việt Nam" },
+          { label: "Dinh dưỡng Theo vùng miền Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <MapPin className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h1 className="heading-1">Dinh dưỡng Theo Vùng miền Việt Nam</h1>
+          <h1 className="heading-1">Dinh dưỡng Theo vùng miền Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Mỗi vùng miền Việt Nam có đặc điểm dinh dưỡng khác nhau do khí hậu, địa lý, và văn hóa. 
@@ -46,10 +46,10 @@ export default function RegionalNutritionVietnamPage() {
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
-            <strong>Miền Bắc:</strong> Nhiều rau củ, ít cay, có thể nhiều muối (nước mắm)
+            <strong>Miền bắc:</strong> Nhiều rau củ, ít cay, có thể nhiều muối (nước mắm)
           </li>
           <li>
-            <strong>Miền Trung:</strong> Nhiều cay, nhiều mắm, có thể nhiều natri
+            <strong>Miền trung:</strong> Nhiều cay, nhiều mắm, có thể nhiều natri
           </li>
           <li>
             <strong>Miền Nam:</strong> Nhiều ngọt, nhiều dầu mỡ, có thể nhiều đường
@@ -64,7 +64,7 @@ export default function RegionalNutritionVietnamPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Miền Bắc: Nhiều Rau Củ, Ít Cay</h2>
+        <h2 className="heading-2">Miền bắc: Nhiều rau Củ, Ít cay</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Đặc điểm Dinh dưỡng</h3>
@@ -89,7 +89,7 @@ export default function RegionalNutritionVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Món Ăn Đặc trưng</h3>
+            <h3 className="heading-4 mb-3">Món ăn đặc trưng</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
                 <strong>Phở bò:</strong> Bánh phở + thịt bò + rau thơm - cân bằng dinh dưỡng. 
@@ -115,7 +115,7 @@ export default function RegionalNutritionVietnamPage() {
               Tăng gia vị tự nhiên (tỏi, gừng).
             </p>
             <p>
-              <strong>Tăng rau củ:</strong> Miền Bắc đã có nhiều rau củ, tiếp tục duy trì. 
+              <strong>Tăng rau củ:</strong> Miền bắc đã có nhiều rau củ, tiếp tục duy trì. 
               Rau củ là điểm mạnh của miền Bắc.
             </p>
           </ExampleBox>
@@ -123,7 +123,7 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Miền Trung: Nhiều Cay, Nhiều Mắm</h2>
+        <h2 className="heading-2">Miền trung: Nhiều cay, Nhiều mắm</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Đặc điểm Dinh dưỡng</h3>
@@ -148,7 +148,7 @@ export default function RegionalNutritionVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Món Ăn Đặc trưng</h3>
+            <h3 className="heading-4 mb-3">Món ăn đặc trưng</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
                 <strong>Bún bò Huế:</strong> Bún + thịt bò + rau sống - cân bằng. 
@@ -181,7 +181,7 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Miền Nam: Nhiều Ngọt, Nhiều Dầu Mỡ</h2>
+        <h2 className="heading-2">Miền Nam: Nhiều ngọt, Nhiều dầu mỡ</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">Đặc điểm Dinh dưỡng</h3>
@@ -206,7 +206,7 @@ export default function RegionalNutritionVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Món Ăn Đặc trưng</h3>
+            <h3 className="heading-4 mb-3">Món ăn đặc trưng</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>
                 <strong>Cơm tấm:</strong> Cơm + sườn + trứng + đồ chua - cân bằng. 
@@ -244,18 +244,18 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">So sánh: Ưu và Nhược điểm Từng Vùng</h2>
+        <h2 className="heading-2">So sánh: Ưu và Nhược điểm Từng vùng</h2>
         <ComparisonCard
           title="Tổng hợp"
           items={[
             {
-              label: "Miền Bắc",
+              label: "Miền bắc",
               good: "Nhiều rau củ, ít cay, nhiều món luộc hấp - lành mạnh",
               bad: "Có thể nhiều muối (nước mắm, mắm tôm)",
               note: "Điểm mạnh: Rau củ. Điểm yếu: Natri"
             },
             {
-              label: "Miền Trung",
+              label: "Miền trung",
               good: "Nhiều hải sản tươi, nhiều món nướng hấp",
               bad: "Rất nhiều cay, nhiều mắm (rất nhiều natri)",
               note: "Điểm mạnh: Hải sản. Điểm yếu: Cay và natri"
@@ -271,12 +271,12 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách cân bằng Dinh dưỡng Theo Vùng</h2>
+        <h2 className="heading-2">Cách cân bằng Dinh dưỡng Theo vùng</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Tips Điều chỉnh</h3>
+          <h3 className="heading-4 mb-3">Tips điều chỉnh</h3>
           <div className="space-y-3">
             <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-              <p className="text-sm font-semibold text-blue-900 mb-1">Miền Bắc:</p>
+              <p className="text-sm font-semibold text-blue-900 mb-1">Miền bắc:</p>
               <ul className="space-y-1 text-sm text-blue-900">
                 <li>• Giảm nước mắm, mắm tôm - pha loãng, dùng ít</li>
                 <li>• Duy trì nhiều rau củ - điểm mạnh</li>
@@ -284,7 +284,7 @@ export default function RegionalNutritionVietnamPage() {
               </ul>
             </div>
             <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
-              <p className="text-sm font-semibold text-purple-900 mb-1">Miền Trung:</p>
+              <p className="text-sm font-semibold text-purple-900 mb-1">Miền trung:</p>
               <ul className="space-y-1 text-sm text-purple-900">
                 <li>• Giảm cay nếu không ăn được cay</li>
                 <li>• Tránh hoặc giảm mắm tôm, mắm ruốc - rất nhiều natri</li>
@@ -305,7 +305,7 @@ export default function RegionalNutritionVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Kết hợp Món Ăn Từ Nhiều Vùng</h2>
+        <h2 className="heading-2">Kết hợp Món ăn Từ nhiều Vùng</h2>
         <Card>
           <h3 className="heading-4 mb-3">Ví dụ Bữa ăn Đa dạng</h3>
           <div className="space-y-2 text-sm text-gray-700">
@@ -399,7 +399,7 @@ export default function RegionalNutritionVietnamPage() {
             </p>
           </Card>
           <Card href="/knowledge/vietnamese-cooking-methods">
-            <h3 className="heading-5 mb-2">Cách Nấu Ăn lành mạnh Kiểu Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Cách nấu ăn lành mạnh Kiểu Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Phương pháp nấu ăn theo vùng miền
             </p>

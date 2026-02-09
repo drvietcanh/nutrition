@@ -100,9 +100,9 @@ export default function VitaminCImmunityPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Vitamin C Tốt</h2>
+        <h2 className="heading-2">Nguồn vitamin C Tốt</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Thực phẩm Giàu Vitamin C</h3>
+          <h3 className="heading-4 mb-3">Thực phẩm Giàu vitamin C</h3>
           <NutrientTable
             title="Hàm lượng Vitamin C trong Thực phẩm"
             rows={[

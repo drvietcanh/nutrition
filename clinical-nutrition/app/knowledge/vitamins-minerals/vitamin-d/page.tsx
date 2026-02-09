@@ -40,7 +40,7 @@ export default function VitaminDPage() {
         </p>
       </header>
 
-      {/* Key Points */}
+      {/* Key points */}
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
@@ -125,7 +125,7 @@ export default function VitaminDPage() {
 
       {/* Sources */}
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Vitamin D</h2>
+        <h2 className="heading-2">Nguồn vitamin D</h2>
         <div className="space-y-4">
           <Card className="border-yellow-200 bg-yellow-50">
             <h3 className="heading-4 text-yellow-900 mb-3 flex items-center gap-2">
@@ -188,7 +188,7 @@ export default function VitaminDPage() {
         </div>
       </section>
 
-      {/* How Much */}
+      {/* How much */}
       <section className="space-y-4">
         <h2 className="heading-2">Cần bao nhiêu Vitamin D?</h2>
         <Card>
@@ -222,7 +222,7 @@ export default function VitaminDPage() {
         </Card>
       </section>
 
-      {/* Real Examples */}
+      {/* Real examples */}
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ thực tế</h2>
         <div className="space-y-4">
@@ -246,7 +246,7 @@ export default function VitaminDPage() {
           <Card>
             <h3 className="heading-5 mb-2">Ví dụ 2: Người cao tuổi</h3>
             <p className="text-body-sm mb-2">
-              <strong>Tình huống:</strong> Bà Lan, 75 tuổi, ít ra ngoài vì sợ ngã, sống ở miền Bắc (mùa đông ít nắng).
+              <strong>Tình huống:</strong> Bà lan, 75 tuổi, ít ra ngoài vì sợ ngã, sống ở miền Bắc (mùa đông ít nắng).
             </p>
             <p className="text-body-sm mb-2">
               <strong>Giải pháp:</strong>
@@ -324,7 +324,7 @@ export default function VitaminDPage() {
         </Callout>
       </section>
 
-      {/* Related Articles */}
+      {/* Related articles */}
       <section className="space-y-4">
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -343,7 +343,7 @@ export default function VitaminDPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
           Thông tin này chỉ dành cho mục đích giáo dục. Nếu bạn nghi ngờ thiếu vitamin D, 

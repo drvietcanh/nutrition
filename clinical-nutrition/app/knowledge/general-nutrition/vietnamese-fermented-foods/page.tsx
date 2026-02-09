@@ -66,13 +66,13 @@ export default function VietnameseFermentedFoodsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nước Mắm</h2>
+        <h2 className="heading-2">Nước mắm</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Nước mắm là gia vị phổ biến nhất ở Việt Nam, được làm từ cá lên men.
           </p>
           <NutrientTable
-            title="Giá trị Dinh dưỡng Nước Mắm (100ml)"
+            title="Giá trị dinh dưỡng Nước mắm (100ml)"
             rows={[
               { nutrient: "Protein", amount: "10-15", unit: "g", note: "Từ cá lên men" },
               { nutrient: "Natri", amount: "15,000-20,000", unit: "mg", note: "Rất cao - cần dùng ít" },
@@ -112,7 +112,7 @@ export default function VietnameseFermentedFoodsPage() {
             ]}
           />
           <div className="bg-green-50 rounded-lg p-3 border border-green-200 mt-3">
-            <p className="text-sm font-semibold text-gray-900 mb-1">Cách Dùng:</p>
+            <p className="text-sm font-semibold text-gray-900 mb-1">Cách dùng:</p>
             <ul className="text-xs text-gray-700 space-y-1">
               <li>• Dùng với bánh mì, bún, phở</li>
               <li>• Dùng ít, vì vẫn có natri</li>
@@ -146,7 +146,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Mắm Tôm, Mắm Ruốc</h2>
+        <h2 className="heading-2">Mắm tôm, Mắm ruốc</h2>
         <Card>
           <p className="text-body-sm mb-3">
             Mắm tôm, mắm ruốc là gia vị đậm đà, giàu protein nhưng cũng nhiều natri.
@@ -171,13 +171,13 @@ export default function VietnameseFermentedFoodsPage() {
         <h2 className="heading-2">So sánh Gia vị</h2>
         <ComparisonCard
           title="Gia vị Việt Nam"
-          goodTitle="Tốt hơn (Ít Natri)"
+          goodTitle="Tốt hơn (Ít natri)"
           goodItems={[
             "Tương - ít natri hơn nước mắm",
             "Chao - có probiotics, ít natri",
             "Nước mắm pha loãng - giảm natri",
           ]}
-          badTitle="Nên hạn chế (Nhiều Natri)"
+          badTitle="Nên hạn chế (Nhiều natri)"
           badItems={[
             "Nước mắm nguyên chất - rất nhiều natri",
             "Mắm tôm, mắm ruốc - rất nhiều natri",
@@ -187,7 +187,7 @@ export default function VietnameseFermentedFoodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Sử dụng đúng cách</h2>
+        <h2 className="heading-2">Cách sử dụng đúng cách</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">

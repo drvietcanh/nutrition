@@ -333,13 +333,13 @@ export default function BreakfastImportancePage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/nutrition-busy-lifestyle">
-            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người Bận rộn</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người bận rộn</h3>
             <p className="text-sm text-gray-600">
               Quick tips cho bữa sáng khi bận rộn
             </p>
           </Card>
           <Card href="/knowledge/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Cách lập kế hoạch bữa sáng
             </p>

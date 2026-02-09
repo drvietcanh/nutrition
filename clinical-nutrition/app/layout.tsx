@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "NRS-2002",
     "PG-SGA",
   ],
-  authors: [{ name: "Clinical Nutrition Education" }],
+  authors: [{ name: "Clinical nutrition Education" }],
   openGraph: {
     type: "website",
     locale: "vi_VN",

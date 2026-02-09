@@ -147,7 +147,7 @@ export function InteractiveSection() {
 
   return (
     <div className="space-y-6">
-      {/* Input Form */}
+      {/* Input form */}
       <section aria-labelledby="inputs-heading" className="space-y-3">
         <h2 id="inputs-heading" className="heading-4">
           3. Nhập thông tin
@@ -263,7 +263,7 @@ export function InteractiveSection() {
             )}
           </div>
 
-          {/* Weight Loss */}
+          {/* Weight loss */}
           <div className="space-y-1">
             <label
               htmlFor="weightLossPercent"
@@ -294,7 +294,7 @@ export function InteractiveSection() {
             )}
           </div>
 
-          {/* Fasting Days */}
+          {/* Fasting days */}
           <div className="space-y-1">
             <label
               htmlFor="fastingDays"
@@ -314,7 +314,7 @@ export function InteractiveSection() {
             />
           </div>
 
-          {/* Additional Risk Factors */}
+          {/* Additional risk factors */}
           <div className="sm:col-span-2 space-y-3">
             <h3 className="text-sm font-semibold text-neutral-900">
               Yếu tố Nguy cơ Bổ sung (chọn nếu có):
@@ -375,7 +375,7 @@ export function InteractiveSection() {
         </form>
       </section>
 
-      {/* Results Display */}
+      {/* Results display */}
       {result && (
         <section aria-labelledby="results-heading" className="space-y-4">
           <h2 id="results-heading" className="heading-4">
@@ -383,7 +383,7 @@ export function InteractiveSection() {
           </h2>
 
           <div className="rounded-md border border-neutral-200 bg-white p-4 space-y-4">
-            {/* Risk Level */}
+            {/* Risk level */}
             <div
               className={`rounded-lg border-2 p-4 ${getRiskColor(result.riskLevel)}`}
             >
@@ -396,11 +396,11 @@ export function InteractiveSection() {
               </div>
             </div>
 
-            {/* Risk Factors */}
+            {/* Risk factors */}
             {result.riskFactors.length > 0 && (
               <div className="border-t border-neutral-200 pt-4 space-y-2">
                 <h3 className="text-sm font-semibold text-neutral-900">
-                  Yếu tố Nguy cơ Được Xác định:
+                  Yếu tố Nguy cơ Được xác định:
                 </h3>
                 <ul className="list-disc space-y-1 pl-5 text-xs text-neutral-700">
                   {result.riskFactors.map((factor, idx) => (
@@ -448,7 +448,7 @@ export function InteractiveSection() {
               </div>
             )}
 
-            {/* Clinical Notes */}
+            {/* Clinical notes */}
             {result.clinicalNotes.length > 0 && (
               <div className="border-t border-neutral-200 pt-4 space-y-2">
                 <h3 className="text-sm font-semibold text-neutral-900">

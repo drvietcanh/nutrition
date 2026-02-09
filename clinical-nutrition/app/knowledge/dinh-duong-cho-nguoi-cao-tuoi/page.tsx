@@ -81,7 +81,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
         </Callout>
       </header>
 
-      {/* 2. Why Nutrition Matters */}
+      {/* 2. Why nutrition Matters */}
       <section aria-labelledby="why-matters-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -112,7 +112,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
               </ul>
             </Card>
             <Card className="border-green-200 bg-green-50/30">
-              <h3 className="heading-5 mb-2">🔹 Thiếu Vitamin D</h3>
+              <h3 className="heading-5 mb-2">🔹 Thiếu vitamin D</h3>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Ít tiếp xúc ánh nắng</li>
                 <li>• Ảnh hưởng đến xương, cơ, miễn dịch</li>
@@ -131,12 +131,12 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
         </div>
       </section>
 
-      {/* 3. Key Nutrients */}
+      {/* 3. Key nutrients */}
       <section aria-labelledby="nutrients-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="nutrients-heading" className="heading-2 whitespace-nowrap">
-            Chất Dinh dưỡng Quan trọng
+            Chất dinh dưỡng Quan trọng
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -233,7 +233,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
         </Card>
       </section>
 
-      {/* 4. Practical Tips */}
+      {/* 4. Practical tips */}
       <section aria-labelledby="tips-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -272,7 +272,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
         </Card>
       </section>
 
-      {/* 5. Warning Signs */}
+      {/* 5. Warning signs */}
       <section aria-labelledby="warning-heading" className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
@@ -297,7 +297,7 @@ export default function DinhDuongChoNguoiCaoTuoiPage() {
         </Callout>
       </section>
 
-      {/* Related Content */}
+      {/* Related content */}
       {article && <RelatedContent currentSlug={article.slug} />}
     </main>
   );

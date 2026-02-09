@@ -1,5 +1,5 @@
 /**
- * Article Metadata System
+ * Article metadata System
  * 
  * Centralized system for managing article metadata, including:
  * - Article information (title, description, category, tags)
@@ -38,7 +38,7 @@ export interface ArticleMetadata {
  * This should be kept in sync with actual articles
  */
 export const articles: ArticleMetadata[] = [
-  // Clinical Foundations
+  // Clinical foundations
   {
     slug: 'myths-in-clinical-nutrition',
     title: 'Hiểu lầm & Quan niệm Sai trong Dinh dưỡng lâm sàng',
@@ -64,7 +64,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'needs-estimation',
-    title: 'Ước tính Nhu cầu Dinh dưỡng',
+    title: 'Ước tính nhu cầu dinh dưỡng',
     description: 'Vì sao khoảng quan trọng hơn số chính xác',
     category: 'clinical-foundations',
     tags: ['needs', 'estimation', 'calculation', 'requirements'],
@@ -76,7 +76,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'intake-assessment',
-    title: 'Đánh giá Lượng Ăn',
+    title: 'Đánh giá Lượng ăn',
     description: 'Hiểu người bệnh thực sự nhận được gì',
     category: 'clinical-foundations',
     tags: ['intake', 'assessment', 'consumption', 'evaluation'],
@@ -88,7 +88,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'why-intake-falls-short',
-    title: 'Vì sao Lượng Ăn Thường Thiếu',
+    title: 'Vì sao Lượng ăn Thường thiếu',
     description: 'Các yếu tố thực tế tạo ra khoảng cách',
     category: 'clinical-foundations',
     tags: ['intake', 'gaps', 'barriers', 'clinical'],
@@ -98,7 +98,7 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/why-intake-falls-short',
   },
 
-  // General Nutrition
+  // General nutrition
   {
     slug: 'calories-energy',
     title: 'Hiểu về Calo và năng lượng',
@@ -134,7 +134,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'macronutrients-overview',
-    title: 'Tổng quan về các Chất Dinh dưỡng Đa lượng',
+    title: 'Tổng quan về các Chất dinh dưỡng Đa lượng',
     description: 'Tổng quan về carbohydrate, protein, và chất béo',
     category: 'general-nutrition',
     tags: ['macronutrients', 'carbohydrates', 'protein', 'fats', 'basics'],
@@ -210,10 +210,10 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/hydration',
   },
 
-  // Chronic Diseases
+  // Chronic diseases
   {
     slug: 'cardiovascular-disease-nutrition',
-    title: 'Dinh dưỡng trong Bệnh Tim mạch',
+    title: 'Dinh dưỡng trong Bệnh tim mạch',
     description: 'Hướng dẫn dinh dưỡng tổng quan cho bệnh tim mạch. Nguyên tắc dinh dưỡng lành mạnh cho tim',
     category: 'chronic-diseases',
     tags: ['cardiovascular', 'heart-health', 'cholesterol', 'blood-pressure'],
@@ -336,7 +336,7 @@ export const articles: ArticleMetadata[] = [
   {
     slug: 'ibd-nutrition',
     title: 'Dinh dưỡng Bệnh viêm ruột (IBD)',
-    description: 'Hướng dẫn dinh dưỡng trong Crohn và Ulcerative Colitis',
+    description: 'Hướng dẫn dinh dưỡng trong Crohn và Ulcerative colitis',
     category: 'chronic-diseases',
     tags: ['ibd', 'crohn', 'colitis', 'digestion', 'fiber'],
     relatedArticles: ['dinh-duong-trong-hoi-chung-ruot-kich-thich-ibs', 'dietary-fiber', 'gut-health-probiotics'],
@@ -412,7 +412,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'dinh-duong-trong-benh-gut-va-tang-acid-uric',
-    title: 'Dinh dưỡng trong Bệnh Gout',
+    title: 'Dinh dưỡng trong Bệnh gout',
     description: 'Hướng dẫn dinh dưỡng cho bệnh gout - purin, rượu bia, và cách kiểm soát. Gout là bệnh mạn, cần điều trị suốt đời. Dinh dưỡng giúp giảm cơn nhưng không thay thế thuốc hạ uric',
     category: 'chronic-diseases',
     tags: ['gout', 'gút', 'acid-uric', 'purin', 'arthritis', 'metabolism'],
@@ -578,10 +578,10 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/vitamins-minerals/zinc-immunity',
   },
 
-  // Daily Practices
+  // Daily practices
   {
     slug: 'reading-food-labels',
-    title: 'Đọc Nhãn Thực phẩm',
+    title: 'Đọc nhãn thực phẩm',
     description: 'Hướng dẫn cách đọc và hiểu nhãn thực phẩm',
     category: 'daily-practices',
     tags: ['food-labels', 'nutrition-facts', 'shopping'],
@@ -592,7 +592,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'weekly-meal-planning',
-    title: 'Lập Kế hoạch Bữa ăn Tuần',
+    title: 'Lập kế hoạch Bữa ăn Tuần',
     description: 'Hướng dẫn step-by-step cách lập kế hoạch bữa ăn cho cả tuần với templates',
     category: 'daily-practices',
     tags: ['weekly-meal-planning', 'meal-planning', 'organization', 'templates'],
@@ -603,7 +603,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'meal-prep',
-    title: 'Chuẩn bị Bữa ăn (Meal Prep)',
+    title: 'Chuẩn bị Bữa ăn (Meal prep)',
     description: 'Hướng dẫn cách chuẩn bị bữa ăn trước để tiết kiệm thời gian và ăn uống lành mạnh',
     category: 'daily-practices',
     tags: ['meal-prep', 'meal-preparation', 'time-saving', 'preparation'],
@@ -614,7 +614,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'portion-sizes',
-    title: 'Hiểu về Portion Sizes (Khẩu phần)',
+    title: 'Hiểu về Portion sizes (Khẩu phần)',
     description: 'Hướng dẫn cách ước lượng khẩu phần đúng với visual guide và comparisons',
     category: 'daily-practices',
     tags: ['portion-sizes', 'serving-size', 'measurement', 'hand-guide'],
@@ -625,7 +625,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'meal-planning',
-    title: 'Lập Kế hoạch Bữa ăn',
+    title: 'Lập kế hoạch Bữa ăn',
     description: 'Hướng dẫn cách lập kế hoạch bữa ăn đơn giản, thực tế',
     category: 'daily-practices',
     tags: ['meal-planning', 'meal-prep', 'organization'],
@@ -658,7 +658,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'smart-snacking',
-    title: 'Snacking Thông minh',
+    title: 'Snacking thông minh',
     description: 'Hướng dẫn cách snack thông minh',
     category: 'daily-practices',
     tags: ['snacking', 'snacks', 'healthy'],
@@ -680,7 +680,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-busy-lifestyle',
-    title: 'Dinh dưỡng cho Người Bận rộn',
+    title: 'Dinh dưỡng cho Người bận rộn',
     description: 'Quick tips và hướng dẫn dinh dưỡng cho người có lối sống bận rộn',
     category: 'daily-practices',
     tags: ['busy-lifestyle', 'time-saving', 'quick-meals', 'convenience'],
@@ -691,7 +691,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-travel',
-    title: 'Dinh dưỡng khi Đi Du lịch',
+    title: 'Dinh dưỡng khi Đi du lịch',
     description: 'Practical tips về dinh dưỡng khi đi du lịch. Cách ăn uống lành mạnh khi đi máy bay, ở khách sạn',
     category: 'daily-practices',
     tags: ['travel', 'nutrition-travel', 'eating-out', 'healthy-travel'],
@@ -701,7 +701,7 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/nutrition-travel',
   },
 
-  // Life Stages
+  // Life stages
   {
     slug: 'infant-nutrition',
     title: 'Dinh dưỡng cho Trẻ sơ sinh (0-12 tháng)',
@@ -769,10 +769,10 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/dinh-duong-cho-nguoi-cao-tuoi',
   },
 
-  // Special Topics
+  // Special topics
   {
     slug: 'exercise-nutrition',
-    title: 'Dinh dưỡng cho Người Tập thể dục',
+    title: 'Dinh dưỡng cho Người tập thể dục',
     description: 'Hướng dẫn dinh dưỡng cho người tập thể dục. Pre/post workout nutrition, nhu cầu protein, carbohydrate',
     category: 'special-topics',
     tags: ['exercise', 'workout', 'sports-nutrition', 'pre-workout', 'post-workout'],
@@ -783,7 +783,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'intermittent-fasting',
-    title: 'Intermittent Fasting: Hiểu đúng',
+    title: 'Intermittent fasting: Hiểu đúng',
     description: 'Hướng dẫn về intermittent fasting (nhịn ăn gián đoạn) - các phương pháp, lợi ích, rủi ro',
     category: 'special-topics',
     tags: ['intermittent-fasting', 'IF', 'fasting', 'weight-loss'],
@@ -881,10 +881,10 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/special-topics/antioxidants-foods',
   },
 
-  // Vietnamese Foods & Practices
+  // Vietnamese foods & Practices
   {
     slug: 'vietnamese-foods-nutrition',
-    title: 'Thực phẩm Việt Nam: Nguồn Dinh dưỡng Tốt',
+    title: 'Thực phẩm Việt Nam: Nguồn dinh dưỡng Tốt',
     description: 'Giới thiệu các thực phẩm Việt Nam giàu dinh dưỡng - rau củ, protein, carbohydrate, trái cây với ví dụ thực tế',
     category: 'general-nutrition',
     tags: ['vietnamese-food', 'local-foods', 'nutrition', 'rau-củ', 'thực-phẩm-việt-nam'],
@@ -895,7 +895,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-cooking-methods',
-    title: 'Cách Nấu Ăn lành mạnh Kiểu Việt Nam',
+    title: 'Cách nấu ăn lành mạnh Kiểu Việt Nam',
     description: 'Hướng dẫn phương pháp nấu ăn truyền thống Việt Nam (luộc, hấp, kho, nướng, xào) và cách tối ưu dinh dưỡng',
     category: 'daily-practices',
     tags: ['cooking', 'vietnamese-cooking', 'phương-pháp-nấu', 'luộc', 'hấp', 'kho'],
@@ -906,7 +906,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'smart-shopping-vietnam',
-    title: 'Đi Chợ Thông minh ở Việt Nam',
+    title: 'Đi chợ Thông minh ở Việt Nam',
     description: 'Hướng dẫn chọn thực phẩm tươi, đọc nhãn, so sánh giá, mua theo mùa ở chợ Việt Nam',
     category: 'daily-practices',
     tags: ['shopping', 'chợ', 'mua-sắm', 'thực-phẩm-tươi', 'đi-chợ'],
@@ -928,7 +928,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'street-food-vietnam',
-    title: 'Thực phẩm Đường phố Việt Nam: Ăn Uống lành mạnh',
+    title: 'Thực phẩm Đường phố Việt Nam: Ăn uống lành mạnh',
     description: 'Cách chọn lựa đồ ăn đường phố lành mạnh, tránh rủi ro. Hướng dẫn với phở, bánh mì, bún, chè',
     category: 'daily-practices',
     tags: ['street-food', 'đồ-ăn-đường-phố', 'phở', 'bánh-mì', 'ăn-ngoài'],
@@ -961,7 +961,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-manual-labor',
-    title: 'Dinh dưỡng cho Người Lao động Chân tay',
+    title: 'Dinh dưỡng cho Người lao động Chân tay',
     description: 'Nhu cầu năng lượng và protein cao cho người lao động chân tay. Cách bổ sung, bữa ăn thực tế cho công nhân, nông dân',
     category: 'special-topics',
     tags: ['manual-labor', 'lao-động-chân-tay', 'công-nhân', 'nông-dân', 'năng-lượng-cao'],
@@ -972,7 +972,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-night-shift',
-    title: 'Dinh dưỡng cho Người Làm Ca Đêm',
+    title: 'Dinh dưỡng cho Người làm Ca đêm',
     description: 'Cách ăn uống khi làm ca đêm, quản lý giấc ngủ và dinh dưỡng. Timeline bữa ăn cho ca đêm',
     category: 'special-topics',
     tags: ['night-shift', 'ca-đêm', 'giấc-ngủ', 'timeline-bữa-ăn'],
@@ -983,7 +983,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-rural-vietnam',
-    title: 'Dinh dưỡng cho Người Sống ở Nông thôn',
+    title: 'Dinh dưỡng cho Người sống ở Nông thôn',
     description: 'Tận dụng thực phẩm địa phương, tự trồng, cách bảo quản. Tips tận dụng vườn nhà',
     category: 'special-topics',
     tags: ['rural', 'nông-thôn', 'thực-phẩm-địa-phương', 'tự-trồng', 'vườn-nhà'],
@@ -994,7 +994,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'seasonal-foods-vietnam',
-    title: 'Thực phẩm Theo Mùa ở Việt Nam',
+    title: 'Thực phẩm Theo mùa ở Việt Nam',
     description: 'Thực phẩm theo mùa ở Việt Nam, lợi ích, cách chọn và bảo quản. Calendar thực phẩm theo mùa',
     category: 'general-nutrition',
     tags: ['seasonal', 'theo-mùa', 'thực-phẩm-mùa', 'calendar'],
@@ -1005,7 +1005,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'regional-nutrition-vietnam',
-    title: 'Dinh dưỡng Theo Vùng miền Việt Nam',
+    title: 'Dinh dưỡng Theo vùng miền Việt Nam',
     description: 'Đặc điểm dinh dưỡng theo vùng (Bắc, Trung, Nam), ưu và nhược điểm. Món ăn đặc trưng từng vùng',
     category: 'special-topics',
     tags: ['regional', 'vùng-miền', 'miền-bắc', 'miền-trung', 'miền-nam', 'đặc-trưng'],
@@ -1015,7 +1015,7 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/regional-nutrition-vietnam',
   },
 
-  // New Vitamins & Minerals Articles
+  // New vitamins & Minerals articles
   {
     slug: 'vitamin-e-antioxidant',
     title: 'Vitamin E và Chất chống Oxy hóa',
@@ -1039,7 +1039,7 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/vitamins-minerals/selenium-immunity',
   },
 
-  // New Daily Practices Articles
+  // New daily practices Articles
   {
     slug: 'breakfast-importance',
     title: 'Tầm quan trọng của Bữa sáng',
@@ -1052,7 +1052,7 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/daily-practices/breakfast-importance',
   },
 
-  // New Vietnamese Context Articles
+  // New vietnamese context Articles
   {
     slug: 'vietnamese-breakfast-options',
     title: 'Lựa chọn Bữa sáng Việt Nam',
@@ -1242,7 +1242,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-foods-nutrition',
-    title: 'Thực phẩm Việt Nam: Nguồn Dinh dưỡng Tốt',
+    title: 'Thực phẩm Việt Nam: Nguồn dinh dưỡng Tốt',
     description: 'Khám phá giá trị dinh dưỡng của thực phẩm truyền thống Việt Nam - rau củ, protein, carbohydrate, và trái cây. Hướng dẫn cách chọn và sử dụng thực phẩm Việt Nam để có chế độ ăn lành mạnh.',
     category: 'general-nutrition',
     tags: ['thực-phẩm-việt-nam', 'dinh-dưỡng-việt-nam', 'ẩm-thực-việt', 'rau-củ', 'protein-việt-nam'],
@@ -1253,7 +1253,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'vietnamese-cooking-methods',
-    title: 'Cách Nấu Ăn lành mạnh Kiểu Việt Nam',
+    title: 'Cách nấu ăn lành mạnh Kiểu Việt Nam',
     description: 'Hướng dẫn các phương pháp nấu ăn truyền thống Việt Nam lành mạnh - luộc, hấp, kho, nướng, xào. Cách giữ dinh dưỡng và giảm dầu mỡ, muối.',
     category: 'daily-practices',
     tags: ['nấu-ăn-việt-nam', 'phương-pháp-nấu-ăn', 'luộc', 'hấp', 'kho', 'lành-mạnh'],
@@ -1264,7 +1264,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'smart-shopping-vietnam',
-    title: 'Đi Chợ Thông minh ở Việt Nam',
+    title: 'Đi chợ Thông minh ở Việt Nam',
     description: 'Hướng dẫn cách đi chợ thông minh ở Việt Nam - chọn thực phẩm tươi, đọc nhãn, so sánh giá, mua theo mùa. Checklist đi chợ.',
     category: 'daily-practices',
     tags: ['đi-chợ', 'mua-sắm-thực-phẩm', 'chợ-việt-nam', 'thực-phẩm-tươi', 'mua-theo-mùa'],
@@ -1286,7 +1286,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'street-food-vietnam',
-    title: 'Thực phẩm Đường phố Việt Nam: Ăn Uống lành mạnh',
+    title: 'Thực phẩm Đường phố Việt Nam: Ăn uống lành mạnh',
     description: 'Hướng dẫn cách ăn uống lành mạnh với đồ ăn đường phố Việt Nam. Lựa chọn tốt (phở, bánh mì, bún) và lựa chọn nên hạn chế. Tips an toàn và cách điều chỉnh.',
     category: 'daily-practices',
     tags: ['đồ-ăn-đường-phố', 'street-food', 'phở', 'bánh-mì', 'ăn-uống-lành-mạnh'],
@@ -1319,7 +1319,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-manual-labor',
-    title: 'Dinh dưỡng cho Người Lao động Chân tay',
+    title: 'Dinh dưỡng cho Người lao động Chân tay',
     description: 'Hướng dẫn dinh dưỡng cho người lao động chân tay - nhu cầu năng lượng cao (2,500-3,500 calo/ngày), nhu cầu protein cao, và hydration. Ví dụ bữa ăn cho công nhân, nông dân.',
     category: 'special-topics',
     tags: ['dinh-dưỡng-lao-động', 'công-nhân', 'nông-dân', 'năng-lượng-cao', 'protein-cao'],
@@ -1330,7 +1330,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-night-shift',
-    title: 'Dinh dưỡng cho Người Làm Ca Đêm',
+    title: 'Dinh dưỡng cho Người làm Ca đêm',
     description: 'Hướng dẫn cách ăn uống khi làm ca đêm - timeline bữa ăn (trước, trong, sau ca đêm), quản lý giấc ngủ, thực phẩm nên tránh. Tips thực hành.',
     category: 'special-topics',
     tags: ['ca-đêm', 'night-shift', 'dinh-dưỡng-ca-đêm', 'giấc-ngủ', 'caffeine'],
@@ -1341,7 +1341,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-rural-vietnam',
-    title: 'Dinh dưỡng cho Người Sống ở Nông thôn',
+    title: 'Dinh dưỡng cho Người sống ở Nông thôn',
     description: 'Hướng dẫn tận dụng thực phẩm địa phương ở nông thôn Việt Nam - rau vườn, trái cây, cá sông, thịt gà vườn. Cách bảo quản và tips tận dụng vườn nhà.',
     category: 'special-topics',
     tags: ['nông-thôn', 'thực-phẩm-địa-phương', 'rau-vườn', 'trái-cây-địa-phương', 'cá-sông'],
@@ -1352,7 +1352,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'seasonal-foods-vietnam',
-    title: 'Thực phẩm Theo Mùa ở Việt Nam',
+    title: 'Thực phẩm Theo mùa ở Việt Nam',
     description: 'Khám phá thực phẩm theo mùa ở Việt Nam - mùa xuân, hè, thu, đông. Lợi ích của thực phẩm theo mùa (rẻ hơn, tươi hơn, dinh dưỡng hơn) và cách bảo quản.',
     category: 'general-nutrition',
     tags: ['thực-phẩm-theo-mùa', 'seasonal-foods', 'mùa-xuân', 'mùa-hè', 'mùa-thu', 'mùa-đông'],
@@ -1363,8 +1363,8 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'regional-nutrition-vietnam',
-    title: 'Dinh dưỡng Theo Vùng miền Việt Nam',
-    description: 'Khám phá đặc điểm dinh dưỡng theo vùng miền Việt Nam - Miền Bắc, Miền Trung, Miền Nam. Món ăn đặc trưng, ưu và nhược điểm, cách cân bằng.',
+    title: 'Dinh dưỡng Theo vùng miền Việt Nam',
+    description: 'Khám phá đặc điểm dinh dưỡng theo vùng miền Việt Nam - Miền bắc, Miền trung, Miền Nam. Món ăn đặc trưng, ưu và nhược điểm, cách cân bằng.',
     category: 'special-topics',
     tags: ['vùng-miền-việt-nam', 'miền-bắc', 'miền-trung', 'miền-nam', 'món-ăn-đặc-trưng'],
     relatedArticles: ['vietnamese-foods-nutrition', 'sodium-health'],
@@ -1374,7 +1374,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-night-shift',
-    title: 'Dinh dưỡng cho Người Làm Ca Đêm',
+    title: 'Dinh dưỡng cho Người làm Ca đêm',
     description: 'Hướng dẫn cách ăn uống khi làm ca đêm - timeline bữa ăn (trước, trong, sau ca đêm), quản lý giấc ngủ, thực phẩm nên tránh. Tips thực hành.',
     category: 'special-topics',
     tags: ['ca-đêm', 'night-shift', 'dinh-dưỡng-ca-đêm', 'giấc-ngủ', 'caffeine'],
@@ -1385,7 +1385,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'nutrition-rural-vietnam',
-    title: 'Dinh dưỡng cho Người Sống ở Nông thôn',
+    title: 'Dinh dưỡng cho Người sống ở Nông thôn',
     description: 'Hướng dẫn tận dụng thực phẩm địa phương ở nông thôn Việt Nam - rau vườn, trái cây, cá sông, thịt gà vườn. Cách bảo quản và tips tận dụng vườn nhà.',
     category: 'special-topics',
     tags: ['nông-thôn', 'thực-phẩm-địa-phương', 'rau-vườn', 'trái-cây-địa-phương', 'cá-sông'],
@@ -1396,7 +1396,7 @@ export const articles: ArticleMetadata[] = [
   },
   {
     slug: 'seasonal-foods-vietnam',
-    title: 'Thực phẩm Theo Mùa ở Việt Nam',
+    title: 'Thực phẩm Theo mùa ở Việt Nam',
     description: 'Khám phá thực phẩm theo mùa ở Việt Nam - mùa xuân, hè, thu, đông. Lợi ích của thực phẩm theo mùa (rẻ hơn, tươi hơn, dinh dưỡng hơn) và cách bảo quản.',
     category: 'general-nutrition',
     tags: ['thực-phẩm-theo-mùa', 'seasonal-foods', 'mùa-xuân', 'mùa-hè', 'mùa-thu', 'mùa-đông'],

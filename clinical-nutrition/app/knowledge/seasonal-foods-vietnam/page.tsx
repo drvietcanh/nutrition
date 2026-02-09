@@ -8,7 +8,7 @@ import { Calendar, CheckCircle2, DollarSign } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thực phẩm Theo Mùa ở Việt Nam",
+  title: "Thực phẩm Theo mùa ở Việt Nam",
   description:
     "Thực phẩm theo mùa ở Việt Nam, lợi ích, cách chọn và bảo quản. Calendar thực phẩm theo mùa. Tips mua sắm theo mùa để tiết kiệm và tươi ngon.",
   keywords: [
@@ -28,14 +28,14 @@ export default function SeasonalFoodsVietnamPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Thực phẩm Theo Mùa ở Việt Nam" },
+          { label: "Thực phẩm Theo mùa ở Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Calendar className="w-8 h-8 text-green-600" aria-hidden="true" />
-          <h1 className="heading-1">Thực phẩm Theo Mùa ở Việt Nam</h1>
+          <h1 className="heading-1">Thực phẩm Theo mùa ở Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Thực phẩm theo mùa thường rẻ hơn, tươi ngon hơn, và có nhiều dinh dưỡng hơn so với thực phẩm trái mùa. 
@@ -64,7 +64,7 @@ export default function SeasonalFoodsVietnamPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tại sao Thực phẩm Theo Mùa Tốt hơn?</h2>
+        <h2 className="heading-2">Tại sao Thực phẩm Theo mùa tốt hơn?</h2>
         <div className="space-y-4">
           <Card>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -118,13 +118,13 @@ export default function SeasonalFoodsVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Calendar Thực phẩm Theo Mùa</h2>
+        <h2 className="heading-2">Calendar thực phẩm Theo mùa</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Mùa Xuân (Tháng 2-4)</h3>
+            <h3 className="heading-4 mb-3">Mùa xuân (Tháng 2-4)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Rau Củ:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Rau củ:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Rau muống (bắt đầu mùa)</li>
                   <li>• Rau cải (nhiều loại)</li>
@@ -145,10 +145,10 @@ export default function SeasonalFoodsVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Mùa Hè (Tháng 5-7)</h3>
+            <h3 className="heading-4 mb-3">Mùa hè (Tháng 5-7)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Rau Củ:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Rau củ:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Rau muống (nhiều nhất)</li>
                   <li>• Mướp</li>
@@ -173,10 +173,10 @@ export default function SeasonalFoodsVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Mùa Thu (Tháng 8-10)</h3>
+            <h3 className="heading-4 mb-3">Mùa thu (Tháng 8-10)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Rau Củ:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Rau củ:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Rau cải (nhiều loại)</li>
                   <li>• Bông cải xanh</li>
@@ -197,10 +197,10 @@ export default function SeasonalFoodsVietnamPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Mùa Đông (Tháng 11-1)</h3>
+            <h3 className="heading-4 mb-3">Mùa đông (Tháng 11-1)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <p className="text-sm font-semibold text-gray-900 mb-2">Rau Củ:</p>
+                <p className="text-sm font-semibold text-gray-900 mb-2">Rau củ:</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   <li>• Rau cải (nhiều loại)</li>
                   <li>• Cà rốt</li>
@@ -223,11 +223,11 @@ export default function SeasonalFoodsVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Lợi ích Dinh dưỡng Thực phẩm Theo Mùa</h2>
+        <h2 className="heading-2">Lợi ích Dinh dưỡng Thực phẩm Theo mùa</h2>
         <Card>
           <h3 className="heading-4 mb-3">So sánh Giá trị Dinh dưỡng</h3>
           <NutrientTable
-            title="Ví dụ: Xoài Mùa vs Trái Mùa"
+            title="Ví dụ: Xoài mùa vs Trái mùa"
             rows={[
               { nutrient: "Xoài mùa hè (tươi)", amount: "60 calo, 60mg vitamin C", highlight: "good", note: "Chín tự nhiên, giàu vitamin" },
               { nutrient: "Xoài trái mùa (bảo quản)", amount: "60 calo, 40mg vitamin C", highlight: "moderate", note: "Có thể mất một số vitamin" },
@@ -241,9 +241,9 @@ export default function SeasonalFoodsVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Bảo quản Thực phẩm Theo Mùa</h2>
+        <h2 className="heading-2">Cách bảo quản Thực phẩm Theo mùa</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Tips Bảo quản</h3>
+          <h3 className="heading-4 mb-3">Tips bảo quản</h3>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -277,7 +277,7 @@ export default function SeasonalFoodsVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips Mua sắm Theo Mùa</h2>
+        <h2 className="heading-2">Tips mua sắm Theo mùa</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -314,7 +314,7 @@ export default function SeasonalFoodsVietnamPage() {
 
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ thực tế</h2>
-        <ExampleBox variant="tip" title="Ví dụ Mua sắm Theo Mùa">
+        <ExampleBox variant="tip" title="Ví dụ Mua sắm Theo mùa">
           <p className="mb-2">
             <strong>Mùa hè (tháng 6):</strong> Mua xoài (30,000đ/kg), ổi (20,000đ/kg), thanh long (25,000đ/kg). 
             Rẻ, tươi, ngon. Có thể mua nhiều để đông lạnh.
@@ -362,7 +362,7 @@ export default function SeasonalFoodsVietnamPage() {
             </p>
           </Card>
           <Card href="/knowledge/smart-shopping-vietnam">
-            <h3 className="heading-5 mb-2">Đi Chợ Thông minh ở Việt Nam</h3>
+            <h3 className="heading-5 mb-2">Đi chợ Thông minh ở Việt Nam</h3>
             <p className="text-sm text-gray-600">
               Cách chọn thực phẩm theo mùa
             </p>

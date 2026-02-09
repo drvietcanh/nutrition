@@ -76,7 +76,7 @@ export default function HealthyWeightManagementPage() {
               </ul>
             </div>
             <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-              <h3 className="text-sm font-semibold text-gray-900 mb-2">Chọn Thực phẩm Giàu Dinh dưỡng</h3>
+              <h3 className="text-sm font-semibold text-gray-900 mb-2">Chọn thực phẩm Giàu dinh dưỡng</h3>
               <p className="text-sm text-gray-700">
                 Thay vì chỉ đếm calo, hãy chọn thực phẩm giàu dinh dưỡng: 
                 rau củ, trái cây, protein nạc, ngũ cốc nguyên cám. 
@@ -158,7 +158,7 @@ export default function HealthyWeightManagementPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Lập kế hoạch giúp quản lý cân nặng
             </p>

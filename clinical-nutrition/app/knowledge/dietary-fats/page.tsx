@@ -48,7 +48,7 @@ export default function DietaryFatsPage() {
         </p>
       </header>
 
-      {/* Key Points */}
+      {/* Key points */}
       <Callout variant="info" title="Điểm chính">
         <ul className="space-y-2 text-sm">
           <li>
@@ -109,7 +109,7 @@ export default function DietaryFatsPage() {
         </div>
       </section>
 
-      {/* Not All Fats Are The Same */}
+      {/* Not all Fats are the same */}
       <section className="space-y-4">
         <h2 className="heading-2">Không phải chất béo nào cũng giống nhau</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -151,7 +151,7 @@ export default function DietaryFatsPage() {
         </div>
       </section>
 
-      {/* Vietnamese Fat Sources Table */}
+      {/* Vietnamese fat Sources table */}
       <section className="space-y-4">
         <h2 className="heading-2">Bảng nguồn Chất béo Phổ biến ở Việt Nam</h2>
         <Callout variant="info" title="Lưu ý">
@@ -220,7 +220,7 @@ export default function DietaryFatsPage() {
         </div>
       </section>
 
-      {/* Does Fat Make You Fat */}
+      {/* Does fat make you Fat */}
       <section className="space-y-4">
         <h2 className="heading-2">Ăn béo có làm béo không?</h2>
         <Card className="border-blue-200 bg-blue-50/30">
@@ -257,7 +257,7 @@ export default function DietaryFatsPage() {
       <section className="space-y-6">
         <h2 className="heading-2">Các loại Chất béo</h2>
 
-        {/* Unsaturated Fats - Good */}
+        {/* Unsaturated fats - Good */}
         <Card className="border-green-200 bg-green-50">
           <div className="flex items-start gap-3 mb-4">
             <CheckCircle2 className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
@@ -324,7 +324,7 @@ export default function DietaryFatsPage() {
           </ExampleBox>
         </Card>
 
-        {/* Saturated Fats - Limit */}
+        {/* Saturated fats - Limit */}
         <Card className="border-yellow-200 bg-yellow-50">
           <div className="flex items-start gap-3 mb-4">
             <AlertTriangle className="w-6 h-6 text-yellow-600 mt-1 flex-shrink-0" aria-hidden="true" />
@@ -355,12 +355,12 @@ export default function DietaryFatsPage() {
           </div>
         </Card>
 
-        {/* Trans Fats - Avoid */}
+        {/* Trans fats - Avoid */}
         <Card className="border-red-200 bg-red-50">
           <div className="flex items-start gap-3 mb-4">
             <XCircle className="w-6 h-6 text-red-600 mt-1 flex-shrink-0" aria-hidden="true" />
             <div className="flex-1">
-              <h3 className="heading-3 text-red-900 mb-2">Trans Fat (Nên tránh Hoàn toàn)</h3>
+              <h3 className="heading-3 text-red-900 mb-2">Trans fat (Nên tránh Hoàn toàn)</h3>
               <p className="text-body text-red-900 mb-3">
                 Đây là loại chất béo xấu nhất. Làm tăng cholesterol xấu (LDL), 
                 giảm cholesterol tốt (HDL), và tăng nguy cơ bệnh tim, đột quỵ.
@@ -370,7 +370,7 @@ export default function DietaryFatsPage() {
 
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-4 border border-red-200">
-              <h4 className="font-semibold text-gray-900 mb-2">Trans Fat là gì?</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">Trans fat là gì?</h4>
               <p className="text-sm text-gray-700 mb-3">
                 Trans fat được tạo ra khi dầu thực vật được xử lý bằng quá trình gọi là "hydrogen hóa" 
                 để làm cho chúng cứng hơn và bảo quản lâu hơn.
@@ -382,7 +382,7 @@ export default function DietaryFatsPage() {
             </div>
 
             <div className="bg-white rounded-lg p-4 border border-red-200">
-              <h4 className="font-semibold text-gray-900 mb-2">Nguồn Trans Fat:</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">Nguồn trans Fat:</h4>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-red-600 font-bold">⚠</span>
@@ -414,7 +414,7 @@ export default function DietaryFatsPage() {
 
             <div className="bg-red-100 rounded-lg p-4 border-2 border-red-300">
               <p className="text-sm font-semibold text-red-900 mb-2">
-                Cách tránh Trans Fat:
+                Cách tránh Trans fat:
               </p>
               <ul className="space-y-1 text-sm text-red-800">
                 <li>✓ Đọc nhãn thực phẩm - tìm "trans fat", "partially hydrogenated oil"</li>
@@ -427,7 +427,7 @@ export default function DietaryFatsPage() {
         </Card>
       </section>
 
-      {/* Clinical Application */}
+      {/* Clinical application */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Heart className="w-6 h-6 text-blue-600" aria-hidden="true" />
@@ -462,16 +462,16 @@ export default function DietaryFatsPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Bệnh Tim mạch</h3>
+            <h3 className="heading-4 mb-3">Bệnh tim mạch</h3>
             <p className="text-body">
-              Chế độ ăn Địa Trung Hải (nhiều dầu ô liu, cá, quả hạch) đã được chứng minh 
+              Chế độ ăn Địa trung hải (nhiều dầu ô liu, cá, quả hạch) đã được chứng minh 
               giúp giảm nguy cơ bệnh tim. Nguyên tắc chính: thay thế chất béo bão hòa bằng 
               chất béo không bão hòa.
             </p>
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Viêm và Bệnh Mạn tính</h3>
+            <h3 className="heading-4 mb-3">Viêm và Bệnh mạn tính</h3>
             <p className="text-body">
               Omega-3 (từ cá, quả óc chó, hạt lanh) có tác dụng chống viêm, có thể hỗ trợ 
               trong các bệnh viêm mạn tính như viêm khớp, bệnh tim.
@@ -480,7 +480,7 @@ export default function DietaryFatsPage() {
         </div>
       </section>
 
-      {/* Practical Application Vietnamese */}
+      {/* Practical application Vietnamese */}
       <section className="space-y-4">
         <h2 className="heading-2 flex items-center gap-2">
           <Lightbulb className="w-6 h-6 text-amber-600" aria-hidden="true" />
@@ -511,7 +511,7 @@ export default function DietaryFatsPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Ví dụ Cách Chọn Chất béo trong Món ăn Việt Nam</h3>
+          <h3 className="heading-4 mb-3">Ví dụ Cách chọn chất béo trong Món ăn Việt Nam</h3>
           <div className="space-y-3">
             <div className="border-l-4 border-green-500 pl-4">
               <p className="font-medium text-gray-900 mb-1">✅ Cách tốt:</p>
@@ -553,7 +553,7 @@ export default function DietaryFatsPage() {
         />
       </section>
 
-      {/* How Much Fat */}
+      {/* How much fat */}
       <section className="space-y-4">
         <h2 className="heading-2">Nên ăn bao nhiêu Chất béo?</h2>
         <Card>
@@ -581,7 +581,7 @@ export default function DietaryFatsPage() {
         </Card>
       </section>
 
-      {/* Related Articles */}
+      {/* Related articles */}
       <section className="space-y-4">
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -594,7 +594,7 @@ export default function DietaryFatsPage() {
         </div>
       </section>
 
-      {/* Safety Disclaimer */}
+      {/* Safety disclaimer */}
       <Callout variant="error" title="Lưu ý quan trọng">
         <p className="text-sm">
           Thông tin này chỉ dành cho mục đích giáo dục. Nếu bạn có rối loạn lipid máu, 

@@ -126,10 +126,10 @@ export default function VitaminEAntioxidantPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Vitamin E Tốt</h2>
+        <h2 className="heading-2">Nguồn vitamin E Tốt</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Dầu Thực vật (Nguồn Tốt nhất)</h3>
+            <h3 className="heading-4 mb-3">Dầu thực vật (Nguồn tốt nhất)</h3>
             <NutrientTable
               rows={[
                 { nutrient: "Dầu mầm lúa mì", amount: "20.3", unit: "mg/muỗng canh", note: "Rất cao" },
@@ -214,7 +214,7 @@ export default function VitaminEAntioxidantPage() {
           </Card>
 
           <ComparisonCard
-            title="So sánh: Thực phẩm Giàu vs Ít Vitamin E"
+            title="So sánh: Thực phẩm Giàu vs Ít vitamin E"
             items={[
               {
                 label: "Dầu thực vật",
@@ -251,7 +251,7 @@ export default function VitaminEAntioxidantPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-4 mb-3">Hệ Miễn dịch</h3>
+            <h3 className="heading-4 mb-3">Hệ miễn dịch</h3>
             <p className="text-body-sm">
               Vitamin E hỗ trợ hệ miễn dịch bằng cách bảo vệ tế bào miễn dịch khỏi tổn thương, 
               giúp cơ thể chống lại bệnh tật tốt hơn.

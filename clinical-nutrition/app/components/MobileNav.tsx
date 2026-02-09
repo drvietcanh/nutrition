@@ -58,12 +58,12 @@ const knowledgeGroups: NavGroup[] = [
         icon: Calculator,
       },
       {
-        label: "Đánh giá Lượng Ăn",
+        label: "Đánh giá Lượng ăn",
         href: "/knowledge/intake-assessment",
         icon: UtensilsCrossed,
       },
       {
-        label: "Vì sao Lượng Ăn Thường Thiếu",
+        label: "Vì sao Lượng ăn thường thiếu",
         href: "/knowledge/why-intake-falls-short",
         icon: FileText,
       },
@@ -103,14 +103,14 @@ const knowledgeGroups: NavGroup[] = [
         icon: Droplet,
       },
       {
-        label: "Tổng quan Chất Dinh dưỡng Đa lượng",
+        label: "Tổng quan Chất dinh dưỡng Đa lượng",
         href: "/knowledge/macronutrients-overview",
         icon: FileText,
       },
     ],
   },
   {
-    label: "Dinh dưỡng Bệnh Mạn tính",
+    label: "Dinh dưỡng Bệnh mạn tính",
     href: "/knowledge/chronic-diseases",
     items: [
       {
@@ -154,7 +154,7 @@ const knowledgeGroups: NavGroup[] = [
 
 const toolsItems: NavItem[] = [
   {
-    label: "Sàng lọc Suy Dinh dưỡng",
+    label: "Sàng lọc Suy dinh dưỡng",
     href: "/tools/malnutrition-screening",
     icon: Activity,
   },
@@ -164,12 +164,12 @@ const toolsItems: NavItem[] = [
     icon: Calculator,
   },
   {
-    label: "Đánh giá Lượng Ăn",
+    label: "Đánh giá Lượng ăn",
     href: "/tools/intake-assessment",
     icon: UtensilsCrossed,
   },
   {
-    label: "Lượng Ăn vs Nhu Cầu",
+    label: "Lượng ăn vs Nhu cầu",
     href: "/tools/intake-vs-needs",
     icon: UtensilsCrossed,
   },
@@ -245,7 +245,7 @@ export function MobileNav() {
                 <span>Trang chủ</span>
               </Link>
 
-              {/* Knowledge Section */}
+              {/* Knowledge section */}
               <div>
                 <button
                   type="button"
@@ -306,7 +306,7 @@ export function MobileNav() {
                 )}
               </div>
 
-              {/* Tools Section */}
+              {/* Tools section */}
               <div>
                 <button
                   type="button"

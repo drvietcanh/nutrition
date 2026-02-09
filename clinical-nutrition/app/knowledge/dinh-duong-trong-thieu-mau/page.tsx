@@ -59,7 +59,7 @@ export default function DinhDuongTrongThieuMauPage() {
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 id="principles-heading" className="heading-2 whitespace-nowrap">
-            Chất Dinh dưỡng Quan trọng
+            Chất dinh dưỡng Quan trọng
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
         </div>
@@ -98,7 +98,7 @@ export default function DinhDuongTrongThieuMauPage() {
         </Card>
 
         <Card>
-          <CardHeader icon={AlertCircle} title="⚠️ Tìm Nguyên nhân" />
+          <CardHeader icon={AlertCircle} title="⚠️ Tìm nguyên nhân" />
           <CardContent>
             <ul className="list-disc space-y-1 pl-6 text-body-sm">
               <li>Thiếu máu có thể do nhiều nguyên nhân</li>

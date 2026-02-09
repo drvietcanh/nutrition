@@ -193,7 +193,7 @@ export default function VietnameseFamilyMealsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Bữa ăn cân bằng vs Không Cân bằng</h2>
+        <h2 className="heading-2">Bữa ăn cân bằng vs Không cân bằng</h2>
         <ComparisonCard
           title="So sánh Bữa ăn"
           goodTitle="Bữa ăn cân bằng"
@@ -251,7 +251,7 @@ export default function VietnameseFamilyMealsPage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/daily-practices/meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn</h3>
             <p className="text-sm text-gray-600">
               Cách lập kế hoạch bữa ăn gia đình
             </p>

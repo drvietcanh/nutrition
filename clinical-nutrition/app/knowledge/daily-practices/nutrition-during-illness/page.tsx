@@ -67,7 +67,7 @@ export default function NutritionDuringIllnessPage() {
         <h2 className="heading-2">Nguyên tắc Dinh dưỡng khi Bị bệnh</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
-            <h3 className="heading-4 mb-3 text-blue-900">1. Giữ Nước (Quan trọng nhất)</h3>
+            <h3 className="heading-4 mb-3 text-blue-900">1. Giữ nước (Quan trọng nhất)</h3>
             <p className="text-body-sm text-blue-900 mb-3">
               Khi bị bệnh, cơ thể mất nước qua sốt, đổ mồ hôi, hoặc nôn mửa. Giữ nước là ưu tiên số một.
             </p>
@@ -92,7 +92,7 @@ export default function NutritionDuringIllnessPage() {
           </Card>
 
           <Card className="border-green-200 bg-green-50">
-            <h3 className="heading-4 mb-3 text-green-900">2. Ăn Nhẹ, Dễ Tiêu</h3>
+            <h3 className="heading-4 mb-3 text-green-900">2. Ăn nhẹ, Dễ tiêu</h3>
             <p className="text-body-sm text-green-900 mb-3">
               Khi bị bệnh, dạ dày thường nhạy cảm. Ăn nhẹ, dễ tiêu giúp cơ thể hấp thu dinh dưỡng mà không gây khó chịu.
             </p>
@@ -118,7 +118,7 @@ export default function NutritionDuringIllnessPage() {
           </Card>
 
           <Card className="border-purple-200 bg-purple-50">
-            <h3 className="heading-4 mb-3 text-purple-900">3. Protein Nhẹ</h3>
+            <h3 className="heading-4 mb-3 text-purple-900">3. Protein nhẹ</h3>
             <p className="text-body-sm text-purple-900 mb-3">
               Protein cần thiết để phục hồi, nhưng cần chọn loại nhẹ, dễ tiêu.
             </p>
@@ -156,7 +156,7 @@ export default function NutritionDuringIllnessPage() {
         <h2 className="heading-2">Món ăn Việt Nam khi Bị bệnh</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Cháo - Món Ăn Lý tưởng</h3>
+            <h3 className="heading-4 mb-3">Cháo - Món ăn Lý tưởng</h3>
             <p className="text-body-sm mb-3">
               Cháo là món ăn hoàn hảo khi bị bệnh: dễ tiêu, ấm bụng, có nước, và có thể có đủ dinh dưỡng.
             </p>
@@ -165,7 +165,7 @@ export default function NutritionDuringIllnessPage() {
               <p>• <strong>Cháo cá:</strong> Protein từ cá + gạo + nước + rau thơm = đủ dinh dưỡng, dễ tiêu</p>
               <p>• <strong>Cháo đậu xanh:</strong> Protein thực vật + gạo + nước = dễ tiêu, có dinh dưỡng</p>
             </div>
-            <ExampleBox variant="tip" title="Tại sao Cháo Tốt khi Bị bệnh">
+            <ExampleBox variant="tip" title="Tại sao Cháo tốt khi Bị bệnh">
               <p className="text-sm">
                 Cháo có nước (hydration), carbohydrate (năng lượng), protein (phục hồi), 
                 và dễ tiêu. Nấu loãng, ấm, có thể thêm rau thơm để có vitamin. 
@@ -192,7 +192,7 @@ export default function NutritionDuringIllnessPage() {
         <h2 className="heading-2">Ví dụ Thực đơn khi Bị bệnh</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
-            <h3 className="heading-5 mb-2">Khi Không Muốn Ăn</h3>
+            <h3 className="heading-5 mb-2">Khi không Muốn ăn</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>• <strong>Nước:</strong> Nước lọc, nước canh, trà ấm</p>
               <p>• <strong>Cháo loãng:</strong> Cháo thịt gà loãng, ấm</p>
@@ -201,7 +201,7 @@ export default function NutritionDuringIllnessPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Khi Có thể Ăn Một Chút</h3>
+            <h3 className="heading-5 mb-2">Khi có thể Ăn một Chút</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>• <strong>Cháo đầy đủ:</strong> Cháo thịt gà + rau thơm</p>
               <p>• <strong>Canh:</strong> Canh rau muống, canh mướp</p>
@@ -210,7 +210,7 @@ export default function NutritionDuringIllnessPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Khi Bắt đầu Phục hồi</h3>
+            <h3 className="heading-5 mb-2">Khi bắt đầu Phục hồi</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>• <strong>Cơm nhão:</strong> Cơm mềm + canh + món mặn nhẹ</p>
               <p>• <strong>Bún:</strong> Bún với nhiều rau, ít bún</p>
@@ -219,7 +219,7 @@ export default function NutritionDuringIllnessPage() {
           </Card>
 
           <Card>
-            <h3 className="heading-5 mb-2">Khi Gần Khỏi</h3>
+            <h3 className="heading-5 mb-2">Khi gần khỏi</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p>• <strong>Bữa ăn bình thường:</strong> Nhưng vẫn nhẹ, dễ tiêu</p>
               <p>• <strong>Nhiều rau củ:</strong> Để bổ sung vitamin</p>
@@ -270,8 +270,8 @@ export default function NutritionDuringIllnessPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Khi Nào Cần Tham khảo Bác sĩ</h2>
-        <Callout variant="error" title="Cần Tham khảo Bác sĩ">
+        <h2 className="heading-2">Khi nào Cần tham khảo Bác sĩ</h2>
+        <Callout variant="error" title="Cần tham khảo Bác sĩ">
           <div className="space-y-2 text-sm">
             <p>
               <strong>Khi không thể giữ nước:</strong> nôn mửa liên tục, không thể uống nước, 

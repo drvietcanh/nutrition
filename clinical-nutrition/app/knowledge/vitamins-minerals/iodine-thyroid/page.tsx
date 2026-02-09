@@ -105,7 +105,7 @@ export default function IodineThyroidPage() {
         <h2 className="heading-2">Nhu cầu Iodine</h2>
         <Card>
           <NutrientTable
-            title="Nhu cầu Iodine Hàng ngày"
+            title="Nhu cầu Iodine hàng ngày"
             rows={[
               { nutrient: "Người lớn (nam và nữ)", amount: "150", unit: "mcg/ngày", note: "Microgram" },
               { nutrient: "Phụ nữ mang thai", amount: "220", unit: "mcg/ngày", note: "Tăng để phát triển thai nhi" },
@@ -127,10 +127,10 @@ export default function IodineThyroidPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nguồn Iodine Tốt</h2>
+        <h2 className="heading-2">Nguồn iodine Tốt</h2>
         <div className="space-y-4">
           <Card className="border-blue-200 bg-blue-50">
-            <h3 className="heading-4 mb-3 text-blue-900">1. Muối Iod (Nguồn Quan trọng nhất)</h3>
+            <h3 className="heading-4 mb-3 text-blue-900">1. Muối iod (Nguồn quan trọng nhất)</h3>
             <p className="text-body-sm text-blue-900 mb-3">
               Muối iod là nguồn iodine chính và đáng tin cậy nhất. Ở Việt Nam, muối iod được khuyến nghị sử dụng.
             </p>
@@ -216,8 +216,8 @@ export default function IodineThyroidPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thiếu Iodine và Hậu quả</h2>
-        <Callout variant="warning" title="Hậu quả của Thiếu Iodine">
+        <h2 className="heading-2">Thiếu iodine và Hậu quả</h2>
+        <Callout variant="warning" title="Hậu quả của Thiếu iodine">
           <div className="space-y-2 text-sm">
             <p>
               <strong>Ở người lớn:</strong> Bướu cổ, suy giảm chức năng tuyến giáp, mệt mỏi, tăng cân, 
@@ -234,7 +234,7 @@ export default function IodineThyroidPage() {
         </Callout>
 
         <Card>
-          <h3 className="heading-4 mb-3">Phòng ngừa Thiếu Iodine</h3>
+          <h3 className="heading-4 mb-3">Phòng ngừa Thiếu iodine</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>
               <strong>Sử dụng muối iod:</strong> Đây là cách đơn giản và hiệu quả nhất để đảm bảo đủ iodine. 

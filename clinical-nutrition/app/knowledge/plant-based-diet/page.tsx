@@ -114,7 +114,7 @@ export default function PlantBasedDietPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Thách thức Dinh dưỡng và Cách Giải quyết</h2>
+        <h2 className="heading-2">Thách thức Dinh dưỡng và Cách giải quyết</h2>
         <div className="space-y-4">
           <Card>
             <h3 className="heading-4 mb-3">1. Protein</h3>
@@ -141,7 +141,7 @@ export default function PlantBasedDietPage() {
                 <strong>Nguồn cho Vegetarian:</strong> Trứng, sữa, sữa chua
               </p>
               <p>
-                <strong>Cho Vegan:</strong> Cần bổ sung B12 (250-500mcg/ngày) hoặc thực phẩm tăng cường B12
+                <strong>Cho vegan:</strong> Cần bổ sung B12 (250-500mcg/ngày) hoặc thực phẩm tăng cường B12
               </p>
             </div>
           </Card>
@@ -195,7 +195,7 @@ export default function PlantBasedDietPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Bữa ăn Plant-based</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Trưa Đầy đủ Dinh dưỡng</h3>
+          <h3 className="heading-4 mb-3">Bữa trưa Đầy đủ Dinh dưỡng</h3>
           <div className="space-y-3">
             <div className="flex items-start gap-3">
               <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />

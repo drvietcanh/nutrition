@@ -96,7 +96,7 @@ export default function IntakeVsNeedsPage() {
       {/* 1. Title + short explanation */}
       <header className="space-y-2">
         <h1 className="heading-1">
-          Lượng Ăn vs Nhu Cầu Ước Tính – Công cụ Giảng dạy
+          Lượng ăn vs Nhu cầu ước tính – Công cụ Giảng dạy
         </h1>
         <p className="text-body-sm">
           Trang này so sánh một <strong>ước tính giáo dục</strong> về nhu cầu năng lượng

@@ -1,9 +1,9 @@
 import { AlertTriangle } from 'lucide-react';
 
 /**
- * CommonPitfallCallout Component
+ * CommonPitfallCallout component
  * 
- * Educational Purpose: Warns readers about common misconceptions or mistakes
+ * Educational purpose: Warns readers about common misconceptions or mistakes
  * in clinical reasoning. Helps prevent errors in interpretation without being
  * judgmental or alarmist.
  * 
@@ -21,7 +21,7 @@ export default function CommonPitfallCallout({ children }: CommonPitfallCalloutP
         <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
         <div className="flex-1 min-w-0">
           <p className="text-sm font-semibold text-amber-900 mb-2 uppercase tracking-wide">
-            Cạm Bẫy Thường Gặp
+            Cạm bẫy Thường gặp
           </p>
           <div className="text-sm text-gray-700 leading-relaxed">
             {children}

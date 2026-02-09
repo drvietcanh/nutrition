@@ -8,7 +8,7 @@ import { UtensilsCrossed, CheckCircle2, XCircle, AlertCircle } from "lucide-reac
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thực phẩm Đường phố Việt Nam: Ăn Uống Lành mạnh",
+  title: "Thực phẩm Đường phố Việt Nam: Ăn uống lành mạnh",
   description:
     "Cách chọn lựa đồ ăn đường phố lành mạnh, tránh rủi ro. Hướng dẫn với phở, bánh mì, bún, chè. Tips an toàn và điều chỉnh.",
   keywords: [
@@ -29,14 +29,14 @@ export default function StreetFoodVietnamPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Thực phẩm Đường phố Việt Nam: Ăn Uống Lành mạnh" },
+          { label: "Thực phẩm Đường phố Việt Nam: Ăn uống lành mạnh" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <UtensilsCrossed className="w-8 h-8 text-orange-600" aria-hidden="true" />
-          <h1 className="heading-1">Thực phẩm Đường phố Việt Nam: Ăn Uống Lành mạnh</h1>
+          <h1 className="heading-1">Thực phẩm Đường phố Việt Nam: Ăn uống lành mạnh</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Đồ ăn đường phố Việt Nam rất ngon và tiện lợi, nhưng làm sao để chọn lựa lành mạnh? 
@@ -65,7 +65,7 @@ export default function StreetFoodVietnamPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Lựa chọn Tốt: Đồ Ăn Đường phố Lành mạnh</h2>
+        <h2 className="heading-2">Lựa chọn Tốt: Đồ ăn đường phố Lành mạnh</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 text-green-900 mb-3">Phở</h3>
@@ -135,22 +135,22 @@ export default function StreetFoodVietnamPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Lựa chọn Nên hạn chế</h2>
         <Card className="border-red-200 bg-red-50">
-          <h3 className="heading-4 text-red-900 mb-3">Đồ Ăn Nên hạn chế</h3>
+          <h3 className="heading-4 text-red-900 mb-3">Đồ ăn nên hạn chế</h3>
           <div className="space-y-3">
             <div>
-              <p className="text-sm font-semibold text-red-900 mb-1">Đồ Chiên</p>
+              <p className="text-sm font-semibold text-red-900 mb-1">Đồ chiên</p>
               <p className="text-sm text-red-900">
                 Chả giò chiên, khoai tây chiên, gà rán - nhiều chất béo, calo cao, mất dinh dưỡng.
               </p>
             </div>
             <div>
-              <p className="text-sm font-semibold text-red-900 mb-1">Đồ Ngọt</p>
+              <p className="text-sm font-semibold text-red-900 mb-1">Đồ ngọt</p>
               <p className="text-sm text-red-900">
                 Chè, nước ngọt, bánh kẹo - nhiều đường, ít dinh dưỡng, calo cao.
               </p>
             </div>
             <div>
-              <p className="text-sm font-semibold text-red-900 mb-1">Đồ Nhiều Dầu Mỡ</p>
+              <p className="text-sm font-semibold text-red-900 mb-1">Đồ nhiều dầu Mỡ</p>
               <p className="text-sm text-red-900">
                 Món xào nhiều dầu, món có nhiều mỡ - nhiều chất béo không tốt.
               </p>
@@ -180,7 +180,7 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Tips An toàn</h2>
+        <h2 className="heading-2">Tips an toàn</h2>
         <Card>
           <div className="space-y-3">
             <div className="flex items-start gap-2">
@@ -222,7 +222,7 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Cách Điều chỉnh Đồ Ăn Đường phố</h2>
+        <h2 className="heading-2">Cách điều chỉnh Đồ ăn đường phố</h2>
         <Card>
           <h3 className="heading-4 mb-3">Yêu cầu Điều chỉnh</h3>
           <div className="space-y-3">
@@ -266,7 +266,7 @@ export default function StreetFoodVietnamPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Khẩu phần Đồ Ăn Đường phố</h2>
+        <h2 className="heading-2">Khẩu phần Đồ ăn đường phố</h2>
         <Card>
           <h3 className="heading-4 mb-3">Lưu ý về Khẩu phần</h3>
           <div className="space-y-3 text-body-sm">
@@ -370,7 +370,7 @@ export default function StreetFoodVietnamPage() {
             </p>
           </Card>
           <Card href="/knowledge/nutrition-busy-lifestyle">
-            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người Bận rộn</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người bận rộn</h3>
             <p className="text-sm text-gray-600">
               Đồ ăn đường phố cho người bận rộn
             </p>

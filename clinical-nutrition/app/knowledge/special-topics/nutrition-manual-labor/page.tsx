@@ -8,7 +8,7 @@ import { HardHat, Zap, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng cho Người Lao động Chân tay",
+  title: "Dinh dưỡng cho Người lao động Chân tay",
   description:
     "Hướng dẫn dinh dưỡng cho người lao động chân tay - nhu cầu năng lượng cao (2,500-3,500 calo/ngày), nhu cầu protein cao, và hydration. Ví dụ bữa ăn cho công nhân, nông dân.",
   keywords: [
@@ -28,14 +28,14 @@ export default function NutritionManualLaborPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Chủ đề đặc biệt", href: "/knowledge/special-topics" },
-          { label: "Dinh dưỡng cho Người Lao động Chân tay" },
+          { label: "Dinh dưỡng cho Người lao động Chân tay" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <HardHat className="w-8 h-8 text-orange-600" aria-hidden="true" />
-          <h1 className="heading-1">Dinh dưỡng cho Người Lao động Chân tay</h1>
+          <h1 className="heading-1">Dinh dưỡng cho Người lao động Chân tay</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Người lao động chân tay (công nhân, nông dân, thợ xây) cần nhiều năng lượng và protein hơn 
@@ -67,7 +67,7 @@ export default function NutritionManualLaborPage() {
             Người lao động chân tay cần nhiều năng lượng hơn vì hoạt động thể chất nhiều.
           </p>
           <NutrientTable
-            title="Nhu cầu năng lượng Theo Mức độ Lao động"
+            title="Nhu cầu năng lượng Theo mức độ Lao động"
             rows={[
               { nutrient: "Lao động nhẹ (văn phòng)", amount: "2,000-2,200", unit: "calo/ngày", note: "Người bình thường" },
               { nutrient: "Lao động vừa (công nhân)", amount: "2,500-3,000", unit: "calo/ngày", note: "Tăng 25-50%" },
@@ -90,14 +90,14 @@ export default function NutritionManualLaborPage() {
             Protein cần thiết để xây dựng và sửa chữa cơ bắp sau khi lao động.
           </p>
           <NutrientTable
-            title="Nhu cầu Protein Theo Mức độ Lao động"
+            title="Nhu cầu Protein theo mức độ Lao động"
             rows={[
               { nutrient: "Người bình thường", amount: "0.8-1.0", unit: "g/kg thể trọng", note: "Ví dụ: 60g cho người 60kg" },
               { nutrient: "Lao động vừa", amount: "1.2-1.3", unit: "g/kg thể trọng", note: "Ví dụ: 72-78g cho người 60kg" },
               { nutrient: "Lao động nặng", amount: "1.4-1.5", unit: "g/kg thể trọng", note: "Ví dụ: 84-90g cho người 60kg" },
             ]}
           />
-          <ExampleBox variant="tip" title="Nguồn Protein Tốt">
+          <ExampleBox variant="tip" title="Nguồn protein tốt">
             <p className="text-sm mb-2">
               <strong>Ở Việt Nam:</strong>
             </p>
@@ -188,13 +188,13 @@ export default function NutritionManualLaborPage() {
               </p>
             </div>
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Khi Lao động:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Khi lao động:</p>
               <p className="text-xs text-gray-700">
                 Uống 200-300ml nước mỗi 15-20 phút. Tránh uống quá nhiều một lúc.
               </p>
             </div>
             <div className="bg-yellow-50 rounded-lg p-3 border border-yellow-200">
-              <p className="text-sm font-semibold text-gray-900 mb-1">Nước Tốt:</p>
+              <p className="text-sm font-semibold text-gray-900 mb-1">Nước tốt:</p>
               <p className="text-xs text-gray-700">
                 Nước lọc, nước dừa, nước chanh muối (nếu mất nhiều mồ hôi).
               </p>

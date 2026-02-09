@@ -8,7 +8,7 @@ import { UtensilsCrossed, CheckCircle2, XCircle, AlertCircle } from "lucide-reac
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cách Nấu Ăn Lành mạnh Kiểu Việt Nam",
+  title: "Cách nấu ăn Lành mạnh Kiểu Việt Nam",
   description:
     "Hướng dẫn phương pháp nấu ăn truyền thống Việt Nam (luộc, hấp, kho, nướng, xào) và cách tối ưu dinh dưỡng. Ví dụ thực tế với món ăn Việt Nam.",
   keywords: [
@@ -30,14 +30,14 @@ export default function VietnameseCookingMethodsPage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Cách Nấu Ăn Lành mạnh Kiểu Việt Nam" },
+          { label: "Cách nấu ăn Lành mạnh Kiểu Việt Nam" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <UtensilsCrossed className="w-8 h-8 text-orange-600" aria-hidden="true" />
-          <h1 className="heading-1">Cách Nấu Ăn Lành mạnh Kiểu Việt Nam</h1>
+          <h1 className="heading-1">Cách nấu ăn Lành mạnh Kiểu Việt Nam</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Phương pháp nấu ăn truyền thống Việt Nam như luộc, hấp, kho, nướng, xào có thể rất lành mạnh 
@@ -66,7 +66,7 @@ export default function VietnameseCookingMethodsPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Phương pháp Nấu Ăn truyền thống Việt Nam</h2>
+        <h2 className="heading-2">Phương pháp Nấu ăn truyền thống Việt Nam</h2>
         <div className="space-y-4">
           <p className="text-body">
             Người Việt Nam có nhiều phương pháp nấu ăn truyền thống, mỗi phương pháp có ưu và nhược điểm 
@@ -100,7 +100,7 @@ export default function VietnameseCookingMethodsPage() {
             </ul>
           </Card>
 
-          <ExampleBox variant="tip" title="Ví dụ Món Luộc">
+          <ExampleBox variant="tip" title="Ví dụ Món luộc">
             <p className="mb-2">
               <strong>Rau muống luộc:</strong> Rau muống luộc nhanh (2-3 phút) giữ được vitamin C và chất xơ. 
               Có thể ăn với nước mắm pha loãng hoặc chấm mắm tôm.
@@ -125,7 +125,7 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">2. Hấp - Giữ Dinh dưỡng Tối đa</h2>
+        <h2 className="heading-2">2. Hấp - Giữ dinh dưỡng Tối đa</h2>
         <div className="space-y-4">
           <Card className="border-green-200 bg-green-50">
             <h3 className="heading-4 text-green-900 mb-3">Ưu điểm của Hấp</h3>
@@ -145,7 +145,7 @@ export default function VietnameseCookingMethodsPage() {
             </ul>
           </Card>
 
-          <ExampleBox variant="tip" title="Ví dụ Món Hấp">
+          <ExampleBox variant="tip" title="Ví dụ Món hấp">
             <p className="mb-2">
               <strong>Cá hấp:</strong> Cá hấp với gừng, hành giữ được protein và omega-3, không mất dinh dưỡng. 
               Món ăn lành mạnh, dễ tiêu.
@@ -169,7 +169,7 @@ export default function VietnameseCookingMethodsPage() {
             <h3 className="heading-4 mb-3">Kho lành mạnh vs Không lành mạnh</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                <p className="text-sm font-semibold text-green-900 mb-2">Kho Lành mạnh:</p>
+                <p className="text-sm font-semibold text-green-900 mb-2">Kho lành mạnh:</p>
                 <ul className="space-y-1 text-sm text-green-900">
                   <li>• Giảm muối (nước mắm)</li>
                   <li>• Giảm đường</li>
@@ -178,7 +178,7 @@ export default function VietnameseCookingMethodsPage() {
                 </ul>
               </div>
               <div className="bg-red-50 rounded-lg p-4 border border-red-200">
-                <p className="text-sm font-semibold text-red-900 mb-2">Kho Không lành mạnh:</p>
+                <p className="text-sm font-semibold text-red-900 mb-2">Kho không lành mạnh:</p>
                 <ul className="space-y-1 text-sm text-red-900">
                   <li>• Quá nhiều nước mắm (nhiều natri)</li>
                   <li>• Quá nhiều đường</li>
@@ -189,7 +189,7 @@ export default function VietnameseCookingMethodsPage() {
             </div>
           </Card>
 
-          <ExampleBox variant="tip" title="Ví dụ Cách Kho Lành mạnh">
+          <ExampleBox variant="tip" title="Ví dụ Cách kho lành mạnh">
             <p className="mb-2">
               <strong>Cá kho tộ lành mạnh:</strong> Cá kho với ít nước mắm, ít đường, nhiều tỏi, gừng, ớt. 
               Thêm cà chua, đậu bắp vào kho cùng. Giảm natri, tăng dinh dưỡng.
@@ -203,10 +203,10 @@ export default function VietnameseCookingMethodsPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">4. Nướng - Ngon nhưng Cần Cẩn thận</h2>
+        <h2 className="heading-2">4. Nướng - Ngon nhưng Cần cẩn thận</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Nướng Lành mạnh</h3>
+            <h3 className="heading-4 mb-3">Nướng lành mạnh</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -230,7 +230,7 @@ export default function VietnameseCookingMethodsPage() {
             </p>
           </Callout>
 
-          <ExampleBox variant="tip" title="Ví dụ Món Nướng">
+          <ExampleBox variant="tip" title="Ví dụ Món nướng">
             <p className="mb-2">
               <strong>Cá nướng:</strong> Cá nướng với ít dầu, không cháy. Ướp với tỏi, gừng, ớt trước khi nướng. 
               Ăn kèm rau sống, bánh tráng.
@@ -247,7 +247,7 @@ export default function VietnameseCookingMethodsPage() {
         <h2 className="heading-2">5. Xào - Cần điều chỉnh</h2>
         <div className="space-y-4">
           <Card>
-            <h3 className="heading-4 mb-3">Xào Lành mạnh</h3>
+            <h3 className="heading-4 mb-3">Xào lành mạnh</h3>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -268,7 +268,7 @@ export default function VietnameseCookingMethodsPage() {
             </ul>
           </Card>
 
-          <ExampleBox variant="tip" title="Ví dụ Món Xào">
+          <ExampleBox variant="tip" title="Ví dụ Món xào">
             <p className="mb-2">
               <strong>Rau cải xào:</strong> Rau cải xào với ít dầu, tỏi. Xào nhanh để rau còn giòn, 
               giữ được vitamin. Có thể thêm thịt nạc xắt nhỏ.
@@ -345,7 +345,7 @@ export default function VietnameseCookingMethodsPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Bữa ăn với Phương pháp lành mạnh</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Trưa lành mạnh</h3>
+          <h3 className="heading-4 mb-3">Bữa trưa lành mạnh</h3>
           <div className="space-y-3">
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
               <p className="text-sm font-semibold text-green-900 mb-1">Cơm (nấu bình thường)</p>
@@ -367,7 +367,7 @@ export default function VietnameseCookingMethodsPage() {
         </Card>
 
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Tối lành mạnh</h3>
+          <h3 className="heading-4 mb-3">Bữa tối lành mạnh</h3>
           <div className="space-y-3">
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
               <p className="text-sm font-semibold text-green-900 mb-1">Cơm</p>

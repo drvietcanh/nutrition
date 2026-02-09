@@ -8,7 +8,7 @@ import { Clock, Zap, CheckCircle2, AlertCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dinh dưỡng cho Người Bận rộn",
+  title: "Dinh dưỡng cho Người bận rộn",
   description:
     "Quick tips và hướng dẫn dinh dưỡng cho người có lối sống bận rộn. Cách ăn uống lành mạnh khi không có nhiều thời gian.",
   keywords: [
@@ -27,14 +27,14 @@ export default function NutritionBusyLifestylePage() {
         items={[
           { label: "Kiến thức", href: "/knowledge" },
           { label: "Dinh dưỡng Hàng ngày", href: "/knowledge/daily-practices" },
-          { label: "Dinh dưỡng cho Người Bận rộn" },
+          { label: "Dinh dưỡng cho Người bận rộn" },
         ]}
       />
 
       <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Clock className="w-8 h-8 text-orange-600" aria-hidden="true" />
-          <h1 className="heading-1">Dinh dưỡng cho Người Bận rộn</h1>
+          <h1 className="heading-1">Dinh dưỡng cho Người bận rộn</h1>
         </div>
         <p className="text-body-lg text-gray-700">
           Cuộc sống bận rộn không có nghĩa là bạn phải hy sinh dinh dưỡng. Với một vài tips đơn giản, 
@@ -63,9 +63,9 @@ export default function NutritionBusyLifestylePage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Quick Tips cho Bữa sáng</h2>
+        <h2 className="heading-2">Quick tips cho Bữa sáng</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Sáng Nhanh (5-10 phút)</h3>
+          <h3 className="heading-4 mb-3">Bữa sáng nhanh (5-10 phút)</h3>
           <div className="space-y-3">
             <div className="flex items-start gap-3">
               <Zap className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -117,9 +117,9 @@ export default function NutritionBusyLifestylePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Quick Tips cho Bữa trưa</h2>
+        <h2 className="heading-2">Quick tips cho Bữa trưa</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Trưa Nhanh (10-15 phút hoặc Meal Prep)</h3>
+          <h3 className="heading-4 mb-3">Bữa trưa Nhanh (10-15 phút hoặc Meal prep)</h3>
           <div className="space-y-3">
             <div className="flex items-start gap-3">
               <Zap className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -142,7 +142,7 @@ export default function NutritionBusyLifestylePage() {
             <div className="flex items-start gap-3">
               <Zap className="w-5 h-5 text-yellow-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
               <div className="flex-1">
-                <p className="text-sm font-semibold text-gray-900 mb-1">Hộp Meal Prep (0 phút)</p>
+                <p className="text-sm font-semibold text-gray-900 mb-1">Hộp meal prep (0 phút)</p>
                 <p className="text-sm text-gray-700">
                   Chuẩn bị từ cuối tuần, chỉ cần hâm nóng
                 </p>
@@ -173,12 +173,12 @@ export default function NutritionBusyLifestylePage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Snacking Thông minh</h2>
+        <h2 className="heading-2">Snacking thông minh</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Snack Nhanh và lành mạnh</h3>
+          <h3 className="heading-4 mb-3">Snack nhanh và lành mạnh</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p className="text-sm font-semibold text-gray-900 mb-2">Snack Tốt (Mang theo):</p>
+              <p className="text-sm font-semibold text-gray-900 mb-2">Snack tốt (Mang theo):</p>
               <ul className="space-y-1 text-sm text-gray-700">
                 <li>• Trái cây tươi (táo, chuối, <strong>ổi, xoài</strong>)</li>
                 <li>• Quả hạch (hạnh nhân, óc chó)</li>
@@ -275,19 +275,19 @@ export default function NutritionBusyLifestylePage() {
         <h2 className="heading-2">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card href="/knowledge/weekly-meal-planning">
-            <h3 className="heading-5 mb-2">Lập Kế hoạch Bữa ăn Tuần</h3>
+            <h3 className="heading-5 mb-2">Lập kế hoạch Bữa ăn Tuần</h3>
             <p className="text-sm text-gray-600">
               Cách lập kế hoạch bữa ăn cho người bận rộn
             </p>
           </Card>
           <Card href="/knowledge/meal-prep">
-            <h3 className="heading-5 mb-2">Chuẩn bị Bữa ăn (Meal Prep)</h3>
+            <h3 className="heading-5 mb-2">Chuẩn bị Bữa ăn (Meal prep)</h3>
             <p className="text-sm text-gray-600">
               Cách chuẩn bị bữa ăn trước để tiết kiệm thời gian
             </p>
           </Card>
           <Card href="/knowledge/daily-practices/smart-snacking">
-            <h3 className="heading-5 mb-2">Snacking Thông minh</h3>
+            <h3 className="heading-5 mb-2">Snacking thông minh</h3>
             <p className="text-sm text-gray-600">
               Cách snack lành mạnh khi bận rộn
             </p>

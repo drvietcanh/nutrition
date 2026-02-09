@@ -27,7 +27,7 @@ export default function TeenNutritionPage() {
       <Breadcrumb
         items={[
           { label: "Kiến thức", href: "/knowledge" },
-          { label: "Dinh dưỡng Theo Độ tuổi", href: "/knowledge/life-stages" },
+          { label: "Dinh dưỡng Theo độ tuổi", href: "/knowledge/life-stages" },
           { label: "Dinh dưỡng cho Thanh thiếu niên" },
         ]}
       />
@@ -64,7 +64,7 @@ export default function TeenNutritionPage() {
       </Callout>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Nhu cầu Dinh dưỡng Tăng lên</h2>
+        <h2 className="heading-2">nhu cầu dinh dưỡng Tăng lên</h2>
         <Card>
           <h3 className="heading-4 mb-3">Nhu cầu năng lượng và Protein</h3>
           <NutrientTable
@@ -84,7 +84,7 @@ export default function TeenNutritionPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Thách thức Dinh dưỡng ở Thanh thiếu niên</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Các Vấn đề Phổ biến</h3>
+          <h3 className="heading-4 mb-3">Các vấn đề Phổ biến</h3>
           <div className="space-y-3">
             <div>
               <p className="text-sm font-semibold text-gray-900 mb-1">Bỏ bữa, đặc biệt bữa sáng</p>
@@ -134,7 +134,7 @@ export default function TeenNutritionPage() {
       <section className="space-y-4">
         <h2 className="heading-2">Ví dụ Bữa ăn</h2>
         <Card>
-          <h3 className="heading-4 mb-3">Bữa Sáng Nhanh và lành mạnh</h3>
+          <h3 className="heading-4 mb-3">Bữa sáng nhanh và lành mạnh</h3>
           <div className="space-y-2 text-sm text-gray-700">
             <p>• Yến mạch + sữa + trái cây + quả hạch</p>
             <p>• Trứng + bánh mì nguyên cám + trái cây</p>
@@ -154,7 +154,7 @@ export default function TeenNutritionPage() {
             </p>
           </Card>
           <Card href="/knowledge/exercise-nutrition">
-            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người Tập thể dục</h3>
+            <h3 className="heading-5 mb-2">Dinh dưỡng cho Người tập thể dục</h3>
             <p className="text-sm text-gray-600">
               Dinh dưỡng khi tập thể dục
             </p>

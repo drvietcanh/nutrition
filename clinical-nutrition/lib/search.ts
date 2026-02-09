@@ -1,5 +1,5 @@
 /**
- * Enhanced Search Utilities
+ * Enhanced search utilities
  * 
  * Provides advanced search functionality with:
  * - Full-text search
@@ -14,7 +14,7 @@ import { articles, type ArticleMetadata, type ArticleCategory } from "./content/
 // Tools search index
 const toolsIndex = [
   {
-    title: "Sàng lọc Suy Dinh dưỡng",
+    title: "Sàng lọc Suy dinh dưỡng",
     href: "/tools/malnutrition-screening",
     category: "tool" as const,
     description: "Công cụ sàng lọc nguy cơ suy dinh dưỡng",
@@ -28,7 +28,7 @@ const toolsIndex = [
     tags: ["năng lượng", "protein", "calo", "BMR", "TDEE"],
   },
   {
-    title: "Đánh giá Lượng Ăn",
+    title: "Đánh giá Lượng ăn",
     href: "/tools/intake-assessment",
     category: "tool" as const,
     description: "Đánh giá lượng dinh dưỡng thực tế",
@@ -73,7 +73,7 @@ export type SearchResult = {
   score?: number;
 };
 
-// Configure Fuse.js for articles
+// Configure fuse.js for articles
 const articlesFuse = new Fuse(articles, {
   keys: [
     { name: "title", weight: 0.5 },
@@ -85,7 +85,7 @@ const articlesFuse = new Fuse(articles, {
   minMatchCharLength: 2,
 });
 
-// Configure Fuse.js for tools
+// Configure fuse.js for tools
 const toolsFuse = new Fuse(toolsIndex, {
   keys: [
     { name: "title", weight: 0.5 },

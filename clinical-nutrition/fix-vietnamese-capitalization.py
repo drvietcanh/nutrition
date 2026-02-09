@@ -89,6 +89,144 @@ def fix_capitalization_in_text(text, is_title=False):
     
     return text
 
+# Whitelist các tên riêng, tổ chức, thuật ngữ cần giữ nguyên viết hoa
+PROPER_NOUNS_WHITELIST = {
+    # Tên địa danh Việt Nam
+    'Việt', 'Nam', 'Hà', 'Nội', 'Sài', 'Gòn', 'Đà', 'Nẵng', 'Huế', 'Châu', 'Âu',
+    # Tên tổ chức, hiệp hội
+    'American', 'College', 'Diabetes', 'Association', 'Heart', 'Institute', 'World', 'Health', 'Organization',
+    'European', 'Society', 'International', 'Federation', 'National', 'Blood',
+    # Thuật ngữ y khoa tiếng Anh
+    'BMI', 'IBW', 'ABW', 'BSA', 'BMR', 'REE', 'TEE', 'GERD', 'IBS', 'CKD', 'COPD',
+    # Tên riêng khác
+    'Du', 'Bois', 'St', 'Jeor', 'Harris', 'Benedict',
+}
+
+def is_vietnamese_word(word):
+    """
+    Kiểm tra xem từ có phải là tiếng Việt không (có dấu)
+    """
+    vietnamese_chars = 'àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ'
+    return any(char in word for char in vietnamese_chars)
+
+def is_proper_noun(word):
+    """
+    Kiểm tra xem từ có phải là danh từ riêng không
+    """
+    # Kiểm tra trong whitelist
+    if word in PROPER_NOUNS_WHITELIST:
+        return True
+    
+    # Từ tiếng Anh không có dấu thường là tên riêng hoặc thuật ngữ
+    if not is_vietnamese_word(word) and word[0].isupper():
+        # Loại trừ một số từ tiếng Anh phổ biến trong tiếng Việt
+        common_english_words = {'The', 'And', 'Or', 'But', 'For', 'With', 'From', 'To', 'In', 'On', 'At', 'By'}
+        if word not in common_english_words:
+            return True
+    
+    return False
+
+def auto_detect_capitalization_patterns(content):
+    """
+    Tự động phát hiện các pattern viết hoa sai trong tiếng Việt
+    Trả về danh sách các pattern cần sửa
+    Chỉ áp dụng cho từ tiếng Việt (có dấu) và không phải danh từ riêng
+    """
+    detected_patterns = set()
+    
+    # Pattern 1: "Từ1 Từ2" trong đó cả hai đều viết hoa chữ cái đầu
+    # và không phải đầu câu
+    # Ví dụ: "Nhu cầu Dinh dưỡng", "Khoảng giá trị Quan trọng"
+    pattern1 = r'([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)\s+([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)'
+    
+    for match in re.finditer(pattern1, content):
+        start_pos = match.start()
+        # Kiểm tra xem có phải đầu câu không
+        if start_pos > 0:
+            prev_char = content[start_pos - 1]
+            # Nếu không phải sau dấu câu, có thể là lỗi
+            if prev_char not in '.!?\n:':
+                word1 = match.group(1)
+                word2 = match.group(2)
+                
+                # Bỏ qua nếu là danh từ riêng
+                if is_proper_noun(word1) or is_proper_noun(word2):
+                    continue
+                
+                # Chỉ sửa nếu ít nhất một trong hai từ là tiếng Việt (có dấu)
+                # Hoặc cả hai đều là tiếng Việt
+                if is_vietnamese_word(word1) or is_vietnamese_word(word2):
+                    pattern_text = match.group(0)
+                    replacement = word1 + ' ' + word2.lower()
+                    detected_patterns.add((pattern_text, replacement))
+    
+    # Pattern 2: "Từ1 Từ2 Từ3" - nhiều từ viết hoa liên tiếp
+    pattern2 = r'([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)\s+([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)\s+([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)'
+    
+    for match in re.finditer(pattern2, content):
+        start_pos = match.start()
+        if start_pos > 0:
+            prev_char = content[start_pos - 1]
+            if prev_char not in '.!?\n:':
+                word1 = match.group(1)
+                word2 = match.group(2)
+                word3 = match.group(3)
+                
+                # Bỏ qua nếu có danh từ riêng
+                if is_proper_noun(word1) or is_proper_noun(word2) or is_proper_noun(word3):
+                    continue
+                
+                # Chỉ sửa nếu có ít nhất một từ tiếng Việt
+                if is_vietnamese_word(word1) or is_vietnamese_word(word2) or is_vietnamese_word(word3):
+                    pattern_text = match.group(0)
+                    replacement = word1 + ' ' + word2.lower() + ' ' + word3.lower()
+                    detected_patterns.add((pattern_text, replacement))
+    
+    return detected_patterns
+
+def detect_capitalization_errors(text):
+    """
+    Tự động phát hiện các lỗi viết hoa tiếng Việt
+    Pattern: Từ viết hoa đứng sau một từ khác (không phải đầu câu) và không phải danh từ riêng
+    """
+    errors = []
+    
+    # Pattern: Từ viết hoa đứng sau một từ khác (có khoảng trắng)
+    # Ví dụ: "Nhu cầu Dinh dưỡng", "Khoảng giá trị Quan trọng"
+    # Regex: tìm pattern "Từ1 Từ2" trong đó cả hai đều viết hoa chữ cái đầu
+    pattern = r'([a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)\s+([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)'
+    
+    for match in re.finditer(pattern, text):
+        start_pos = match.start()
+        # Kiểm tra xem có phải đầu câu không
+        if start_pos > 0:
+            prev_char = text[start_pos - 1]
+            # Nếu không phải sau dấu câu hoặc đầu dòng, có thể là lỗi
+            if prev_char not in '.!?\n:':
+                word1 = match.group(1)
+                word2 = match.group(2)
+                # Loại trừ một số trường hợp đặc biệt
+                # Danh từ riêng thường có chữ cái đầu viết hoa ở cả hai từ
+                # Nhưng trong tiếng Việt, từ thứ hai thường không viết hoa
+                errors.append((match.group(0), word1 + ' ' + word2.lower(), start_pos))
+    
+    # Pattern: "Từ1 Từ2 Từ3" - nhiều từ viết hoa liên tiếp
+    # Ví dụ: "Khoảng giá trị Quan trọng Hơn"
+    pattern2 = r'([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)\s+([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)\s+([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ][a-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]+)'
+    
+    for match in re.finditer(pattern2, text):
+        start_pos = match.start()
+        if start_pos > 0:
+            prev_char = text[start_pos - 1]
+            if prev_char not in '.!?\n:':
+                word1 = match.group(1)
+                word2 = match.group(2)
+                word3 = match.group(3)
+                # Giữ nguyên từ đầu, viết thường các từ sau
+                errors.append((match.group(0), word1 + ' ' + word2.lower() + ' ' + word3.lower(), start_pos))
+    
+    return errors
+
 def fix_file(file_path):
     """Sửa lỗi viết hoa trong một file"""
     try:
@@ -345,7 +483,59 @@ def fix_file(file_path):
             
             # Pattern: "Đúng cách" → "đúng cách" (khi không phải đầu câu)
             (r'Đúng cách', 'đúng cách'),
+            
+            # Pattern: "Nhu cầu Dinh dưỡng" → "nhu cầu dinh dưỡng" (khi không phải đầu câu)
+            (r'Nhu cầu Dinh dưỡng', 'nhu cầu dinh dưỡng'),
+            
+            # Pattern: "Ước tính Nhu cầu Dinh dưỡng" → "Ước tính nhu cầu dinh dưỡng"
+            (r'Ước tính Nhu cầu Dinh dưỡng', 'Ước tính nhu cầu dinh dưỡng'),
+            
+            # Pattern: "Vì sao Khoảng giá trị Quan trọng Hơn Con số Chính xác" → "Vì sao khoảng giá trị quan trọng hơn con số chính xác"
+            (r'Vì sao Khoảng giá trị Quan trọng Hơn Con số Chính xác', 'Vì sao khoảng giá trị quan trọng hơn con số chính xác'),
+            
+            # Pattern: "Vì sao Nhu cầu Là Ước tính, Không phải Mục tiêu Chính xác" → "Vì sao nhu cầu là ước tính, không phải mục tiêu chính xác"
+            (r'Vì sao Nhu cầu Là Ước tính, Không phải Mục tiêu Chính xác', 'Vì sao nhu cầu là ước tính, không phải mục tiêu chính xác'),
+            
+            # Pattern: "Tầm quan trọng của Khoảng giá trị" → "Tầm quan trọng của khoảng giá trị"
+            (r'Tầm quan trọng của Khoảng giá trị', 'Tầm quan trọng của khoảng giá trị'),
+            
+            # Pattern: "Không phải Con số Đơn lẻ" → "Không phải con số đơn lẻ"
+            (r'Không phải Con số Đơn lẻ', 'Không phải con số đơn lẻ'),
+            
+            # Pattern: "Khoảng giá trị" → "khoảng giá trị" (khi không phải đầu câu)
+            (r'Khoảng giá trị', 'khoảng giá trị'),
+            
+            # Pattern: "Con số Chính xác" → "con số chính xác" (khi không phải đầu câu)
+            (r'Con số Chính xác', 'con số chính xác'),
+            
+            # Pattern: "Con số Đơn lẻ" → "con số đơn lẻ" (khi không phải đầu câu)
+            (r'Con số Đơn lẻ', 'con số đơn lẻ'),
+            
+            # Pattern: "Quan trọng Hơn" → "quan trọng hơn" (khi không phải đầu câu)
+            (r'Quan trọng Hơn', 'quan trọng hơn'),
+            
+            # Pattern: "Mục tiêu Chính xác" → "mục tiêu chính xác" (khi không phải đầu câu)
+            (r'Mục tiêu Chính xác', 'mục tiêu chính xác'),
+            
+            # Pattern: "Là Ước tính" → "là ước tính" (khi không phải đầu câu)
+            (r'Là Ước tính', 'là ước tính'),
         ]
+        
+        # Tự động phát hiện các pattern mới và áp dụng trực tiếp
+        auto_detected = auto_detect_capitalization_patterns(content)
+        for pattern_text, replacement in auto_detected:
+            # Áp dụng pattern tự động phát hiện
+            def replace_auto_pattern(match):
+                start = match.start()
+                if start == 0:
+                    return match.group(0)
+                prev_char = content[start - 1]
+                if prev_char in '.!?\n:':
+                    return match.group(0)
+                return replacement
+            
+            pattern_regex = re.escape(pattern_text)
+            content = re.sub(pattern_regex, replace_auto_pattern, content)
         
         for pattern, replacement in replacements:
             # Không sửa nếu là từ đầu câu
@@ -372,8 +562,54 @@ def fix_file(file_path):
         print(f"Lỗi khi xử lý {file_path}: {e}")
         return False
 
+def scan_all_files_for_patterns():
+    """
+    Quét toàn bộ codebase để tìm các pattern viết hoa sai
+    Trả về danh sách các pattern cần thêm vào script
+    """
+    base_dir = Path(__file__).parent
+    
+    # Tìm tất cả file .tsx và .ts
+    files_to_scan = []
+    for ext in ['*.tsx', '*.ts']:
+        files_to_scan.extend(base_dir.glob(f'app/**/{ext}'))
+        files_to_scan.extend(base_dir.glob(f'lib/**/{ext}'))
+    
+    files_to_scan = [f for f in files_to_scan if 'node_modules' not in str(f)]
+    
+    all_patterns = set()
+    
+    print(f"Đang quét {len(files_to_scan)} file để tìm pattern viết hoa sai...")
+    
+    for file_path in files_to_scan:
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            patterns = auto_detect_capitalization_patterns(content)
+            if patterns:
+                all_patterns.update(patterns)
+        except Exception as e:
+            pass  # Bỏ qua lỗi
+    
+    print(f"\nTìm thấy {len(all_patterns)} pattern viết hoa sai:")
+    for pattern, replacement in sorted(all_patterns):
+        print(f"  '{pattern}' → '{replacement}'")
+    
+    return all_patterns
+
 def main():
     """Hàm chính"""
+    import sys
+    import io
+    # Set UTF-8 encoding for stdout
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    
+    # Kiểm tra argument: nếu có --scan thì chỉ quét, không sửa
+    if len(sys.argv) > 1 and sys.argv[1] == '--scan':
+        scan_all_files_for_patterns()
+        return
+    
     base_dir = Path(__file__).parent
     
     # Tìm tất cả file .tsx và .ts trong thư mục app và lib
@@ -384,11 +620,6 @@ def main():
     
     # Loại bỏ node_modules và các thư mục không cần thiết
     files_to_fix = [f for f in files_to_fix if 'node_modules' not in str(f)]
-    
-    import sys
-    import io
-    # Set UTF-8 encoding for stdout
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
     
     print(f"Tim thay {len(files_to_fix)} file can kiem tra...")
     

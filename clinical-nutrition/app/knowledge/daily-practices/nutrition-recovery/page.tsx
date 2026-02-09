@@ -103,7 +103,7 @@ export default function NutritionRecoveryPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Chất Dinh dưỡng Quan trọng cho Phục hồi</h2>
+        <h2 className="heading-2">Chất dinh dưỡng Quan trọng cho Phục hồi</h2>
         <div className="space-y-4">
           <Card className="border-red-200 bg-red-50">
             <h3 className="heading-4 mb-3 text-red-900">1. Protein (Quan trọng nhất)</h3>
@@ -270,7 +270,7 @@ export default function NutritionRecoveryPage() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="heading-2">Phục hồi Sau Phẫu thuật</h2>
+        <h2 className="heading-2">Phục hồi Sau phẫu thuật</h2>
         <Callout variant="warning" title="Lưu ý đặc biệt">
           <div className="space-y-2 text-sm">
             <p>
