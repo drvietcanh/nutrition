@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Plus, X, ClipboardCheck, AlertCircle, CheckCircle, Info, TrendingUp } from "lucide-react";
+import { Plus, X, ClipboardCheck, AlertCircle, CheckCircle, Info, TrendingUp, Heart } from "lucide-react";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import {
   searchExtendedFoods,
