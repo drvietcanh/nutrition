@@ -181,7 +181,10 @@ function generateMicronutrientInsights(food: ExtendedFoodItem, servingMultiplier
   }
   
   // Purine cao → không phù hợp gút
-  if (food.gout && food.gout.purineLevel === "high" || food.gout.purineLevel === "very-high") {
+  if (
+    food.gout?.purineLevel === "high" ||
+    food.gout?.purineLevel === "very-high"
+  ) {
     highRiskNutrients.push("Purine cao → không phù hợp bệnh gút");
   }
   
@@ -745,11 +748,6 @@ export function InteractiveSection() {
                                   ? "mục tiêu thận"
                                   : "RNI"
                               )}
-                            </div>
-                              {percentMode === "disease" &&
-                              activeDiseaseForTargets === "kidney"
-                                ? "mục tiêu thận"
-                                : "RNI"}
                             </div>
                             {activeDiseaseForTargets === "kidney" &&
                               percentDisease != null &&
