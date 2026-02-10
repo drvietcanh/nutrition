@@ -223,6 +223,17 @@ export const articles: ArticleMetadata[] = [
     href: '/knowledge/cardiovascular-disease-nutrition',
   },
   {
+    slug: 'thuc-pham-can-tranh-tim-mach-huyet-ap-dai-thao-duong',
+    title: 'Thực phẩm cần tránh/hạn chế: Tim mạch – Tăng huyết áp – Đái tháo đường',
+    description: 'Checklist thực hành: nhóm thực phẩm nên tránh/hạn chế cho tim mạch, tăng huyết áp và đái tháo đường (ưu tiên ví dụ món Việt)',
+    category: 'chronic-diseases',
+    tags: ['cardiovascular', 'hypertension', 'diabetes', 'sodium', 'sugar', 'ultra-processed', 'practical'],
+    relatedArticles: ['cardiovascular-disease-nutrition', 'hypertension-nutrition', 'diabetes-nutrition', 'sodium-health', 'glycemic-index-load', 'dietary-fats'],
+    level: 'foundation',
+    targetAudience: 'both',
+    href: '/knowledge/thuc-pham-can-tranh-tim-mach-huyet-ap-dai-thao-duong',
+  },
+  {
     slug: 'dinh-duong-sau-nhoi-mau-co-tim',
     title: 'Dinh dưỡng sau Nhồi máu cơ tim',
     description: 'Hướng dẫn dinh dưỡng sau nhồi máu cơ tim - chất béo, muối, và phòng ngừa thứ phát. Dinh dưỡng + thuốc + vận động = bộ ba bắt buộc',
