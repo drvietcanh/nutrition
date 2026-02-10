@@ -94,7 +94,12 @@ export function InteractiveSection() {
     // Tự động set unit phù hợp
     if (food.vietnameseUnits && food.vietnameseUnits.length > 0) {
       setUnit(food.vietnameseUnits[0].unit);
-    } else if (food.category === 'meat' || food.category === 'seafood') {
+    } else if (
+      food.category === 'meat' ||
+      food.category === 'fish' ||
+      food.category === 'seafood' ||
+      food.category === 'freshwater'
+    ) {
       setUnit('mieng');
     }
   };

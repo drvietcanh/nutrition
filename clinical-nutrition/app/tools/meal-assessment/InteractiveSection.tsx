@@ -288,9 +288,14 @@ export function InteractiveSection() {
           suggestions.push('Giảm lượng thực phẩm có chất béo bão hòa cao');
         }
 
-        const hasFish = mealItems.some(item => 
-          item.food.category === 'seafood'
-        );
+        const hasFish = mealItems.some((item) => {
+          // Backward compatible: extendedFoodDatabase historically stored fish in `seafood`
+          if (item.food.category === "fish") return true;
+          if (item.food.category === "seafood") {
+            return item.food.name.toLowerCase().startsWith("cá");
+          }
+          return false;
+        });
         if (!hasFish) {
           score -= 5;
           suggestions.push('Nên ăn cá 2-3 lần/tuần - tốt cho tim mạch');

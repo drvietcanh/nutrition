@@ -82,7 +82,12 @@ export function BottomSheet({ isOpen, onClose, title, children }: BottomSheetPro
             )}
 
             {/* Content */}
-            <div className="flex-1 overflow-y-auto px-4 py-4">{children}</div>
+            <div
+              className="flex-1 min-h-0 overflow-y-auto overscroll-contain touch-pan-y px-4 py-4"
+              style={{ WebkitOverflowScrolling: "touch" }}
+            >
+              {children}
+            </div>
           </motion.div>
         </>
       )}

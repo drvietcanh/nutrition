@@ -30,7 +30,9 @@ interface MealFoodItem {
 const categories: { value: FoodCategory; label: string }[] = [
   { value: "rice-noodles", label: "Cơm & Bún" },
   { value: "meat", label: "Thịt" },
+  { value: "fish", label: "Cá" },
   { value: "seafood", label: "Hải sản" },
+  { value: "freshwater", label: "Thủy sản nước ngọt" },
   { value: "vegetables", label: "Rau củ" },
   { value: "fruits", label: "Trái cây" },
   { value: "legumes", label: "Đậu" },
