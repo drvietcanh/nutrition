@@ -299,8 +299,9 @@ export const extendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminB12: 2.5,
     vitaminD: 0,
     commonServing: "100g (khoảng 1 lòng bàn tay)",
+    notes: "Purine cao – không khuyến nghị cho bệnh gút",
     gout: {
-      purine: 160,
+      purine: 135, // ~120-150 mg/100g - Purine cao – không khuyến nghị cho bệnh gút
       purineLevel: 'high',
     },
     kidney: {

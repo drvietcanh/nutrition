@@ -71,11 +71,36 @@ function getDiseaseAssessment(
 }
 
 function formatPercent(value: number | null): string {
-  if (value == null || Number.isNaN(value)) return "-";
+  if (value == null || Number.isNaN(value)) return "?";
+  if (value === 0) return "0";
   if (value < 1) return "<1%";
   if (value < 10) return value.toFixed(1) + "%";
   if (value > 999) return ">999%";
   return Math.round(value) + "%";
+}
+
+/**
+ * Format hiển thị vi lượng với 3 trạng thái rõ ràng:
+ * - 0 : không có / không đáng kể
+ * - ? : chưa có dữ liệu chuẩn
+ * - value% RNI : khi có dữ liệu
+ */
+function formatMicronutrientRNI(percent: number | null): string {
+  if (percent == null || Number.isNaN(percent)) return "?";
+  if (percent === 0) return "0";
+  return formatPercent(percent) + " RNI";
+}
+
+/**
+ * Format hiển thị vi lượng với label tùy chỉnh (RNI hoặc mục tiêu bệnh)
+ */
+function formatMicronutrientWithLabel(
+  percent: number | null,
+  label: string
+): string {
+  if (percent == null || Number.isNaN(percent)) return "?";
+  if (percent === 0) return "0";
+  return formatPercent(percent) + " " + label;
 }
 
 function getPercentBarColor(percent: number | null): string {
@@ -85,14 +110,114 @@ function getPercentBarColor(percent: number | null): string {
   return "bg-red-500";
 }
 
+/**
+ * Tự động sinh nhận xét vi lượng dựa trên các vi chất nổi bật
+ * @param food - Thực phẩm
+ * @param servingMultiplier - Hệ số scale khẩu phần (ví dụ: 0.5 cho 50g, 1 cho 100g)
+ */
+function generateMicronutrientInsights(food: ExtendedFoodItem, servingMultiplier: number = 1): string[] {
+  const insights: string[] = [];
+  
+  // Phân tích vi chất giàu (vượt ngưỡng RNI cao)
+  const richNutrients: string[] = [];
+  const missingNutrients: string[] = [];
+  const highRiskNutrients: string[] = [];
+  
+  // Sắt & Vitamin B12 → hỗ trợ thiếu máu
+  const ironValue = food.iron != null ? food.iron * servingMultiplier : null;
+  const b12Value = food.vitaminB12 != null ? food.vitaminB12 * servingMultiplier : null;
+  const ironPercent = ironValue != null ? getPercentOfRNI("iron", ironValue) : null;
+  const b12Percent = b12Value != null ? getPercentOfRNI("vitaminB12", b12Value) : null;
+  if (ironPercent != null && ironPercent >= 30 && b12Percent != null && b12Percent >= 30) {
+    richNutrients.push("Giàu sắt & vitamin B12 → hỗ trợ thiếu máu");
+  } else if (ironPercent != null && ironPercent >= 50) {
+    richNutrients.push("Giàu sắt → hỗ trợ thiếu máu");
+  } else if (b12Percent != null && b12Percent >= 50) {
+    richNutrients.push("Giàu vitamin B12 → hỗ trợ thiếu máu");
+  }
+  
+  // Canxi cao
+  const calciumValue = food.calcium != null ? food.calcium * servingMultiplier : null;
+  const calciumPercent = calciumValue != null ? getPercentOfRNI("calcium", calciumValue) : null;
+  if (calciumPercent != null && calciumPercent >= 30) {
+    richNutrients.push("Giàu canxi → hỗ trợ xương");
+  }
+  
+  // Vitamin C cao
+  const vitCValue = food.vitaminC != null ? food.vitaminC * servingMultiplier : null;
+  const vitCPercent = vitCValue != null ? getPercentOfRNI("vitaminC", vitCValue) : null;
+  if (vitCPercent != null && vitCPercent >= 50) {
+    richNutrients.push("Giàu vitamin C → tăng cường miễn dịch");
+  }
+  
+  // Cholesterol & Phốt pho cao → không phù hợp tim mạch, CKD
+  const cholValue = (food.cholesterol ?? food.cardiovascular?.cholesterol ?? null) != null
+    ? (food.cholesterol ?? food.cardiovascular?.cholesterol ?? 0) * servingMultiplier
+    : null;
+  const cholPercent = cholValue != null ? getPercentOfRNI("cholesterol", cholValue) : null;
+  const phosValue = food.phosphorus != null ? food.phosphorus * servingMultiplier : null;
+  const phosPercent = phosValue != null ? getPercentOfRNI("phosphorus", phosValue) : null;
+  
+  if (cholPercent != null && cholPercent >= 50 && phosPercent != null && phosPercent >= 30) {
+    highRiskNutrients.push("Cholesterol & phốt pho cao → không phù hợp tim mạch, CKD");
+  } else if (cholPercent != null && cholPercent >= 50) {
+    highRiskNutrients.push("Cholesterol cao → không phù hợp tim mạch");
+  } else if (phosPercent != null && phosPercent >= 30) {
+    highRiskNutrients.push("Phốt pho cao → không phù hợp CKD");
+  }
+  
+  // Kali cao → không phù hợp CKD
+  const potValue = food.potassium != null ? food.potassium * servingMultiplier : null;
+  const potPercent = potValue != null ? getPercentOfRNI("potassium", potValue) : null;
+  if (potPercent != null && potPercent >= 30) {
+    highRiskNutrients.push("Kali cao → không phù hợp CKD");
+  }
+  
+  // Natri cao → không phù hợp THA
+  const naValue = food.sodium != null ? food.sodium * servingMultiplier : null;
+  const naPercent = naValue != null ? getPercentOfRNI("sodium", naValue) : null;
+  if (naPercent != null && naPercent >= 30) {
+    highRiskNutrients.push("Natri cao → không phù hợp THA");
+  }
+  
+  // Purine cao → không phù hợp gút
+  if (food.gout && food.gout.purineLevel === "high" || food.gout.purineLevel === "very-high") {
+    highRiskNutrients.push("Purine cao → không phù hợp bệnh gút");
+  }
+  
+  // Vi chất thiếu hoặc không có
+  if (food.vitaminC == null || food.vitaminC === 0) {
+    missingNutrients.push("vitamin C");
+  }
+  if (food.vitaminD == null || food.vitaminD === 0) {
+    missingNutrients.push("vitamin D");
+  }
+  if (missingNutrients.length > 0) {
+    insights.push(`Không cung cấp ${missingNutrients.join(", ")}`);
+  }
+  
+  // Kết hợp insights (tối đa 3-4 gạch đầu dòng)
+  if (richNutrients.length > 0) {
+    insights.push(...richNutrients.slice(0, 2));
+  }
+  if (highRiskNutrients.length > 0) {
+    insights.push(...highRiskNutrients.slice(0, 2));
+  }
+  
+  return insights.slice(0, 4); // Tối đa 4 gạch đầu dòng
+}
+
 export function InteractiveSection() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedFood, setSelectedFood] = useState<ExtendedFoodItem | null>(null);
   const [selectedDisease, setSelectedDisease] = useState<DiseaseType | "all">("all");
   const [percentMode, setPercentMode] = useState<PercentMode>("rni");
   const [showMicronutrients, setShowMicronutrients] = useState(false);
-  // Hệ số khẩu phần so với khẩu phần gốc trong database (servingSize)
-  const [servingMultiplier, setServingMultiplier] = useState<number>(1);
+  // Khẩu phần tính theo gram (50g, 70g, 100g mặc định)
+  const [servingSizeInGrams, setServingSizeInGrams] = useState<number>(100);
+  
+  // Tính multiplier dựa trên servingSizeInGrams (database lưu theo 100g)
+  const servingMultiplier = servingSizeInGrams / 100;
 
   const filteredFoods = useMemo(() => {
     if (!searchQuery.trim()) return [];
@@ -200,38 +325,28 @@ export function InteractiveSection() {
           />
           <CardContent>
             <div className="space-y-4">
-              {(() => {
-                const baseSize = selectedFood.servingSize || 100;
-                const currentSize = baseSize * servingMultiplier;
-                return (
-                  <div className="flex items-center justify-between text-xs text-gray-600">
-                    <span>
-                      Đang xem cho khẩu phần ≈{" "}
-                      <span className="font-semibold">{currentSize}</span> g
-                      {" "}
-                      <span className="text-[11px] text-gray-500">
-                        (khẩu phần gốc: {baseSize} g)
-                      </span>
-                    </span>
-                    <div className="inline-flex rounded-full bg-gray-100 p-0.5">
-                      {[0.5, 1, 1.5, 2].map((mult) => (
-                        <button
-                          key={mult}
-                          type="button"
-                          onClick={() => setServingMultiplier(mult)}
-                          className={`px-2 py-0.5 rounded-full text-[11px] ${
-                            servingMultiplier === mult
-                              ? "bg-yellow-600 text-white"
-                              : "text-gray-700"
-                          }`}
-                        >
-                          {mult}×
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })()}
+              <div className="flex items-center justify-between text-xs text-gray-600">
+                <span>
+                  Đang xem cho khẩu phần:{" "}
+                  <span className="font-semibold">{servingSizeInGrams}</span> g
+                </span>
+                <div className="inline-flex rounded-full bg-gray-100 p-0.5">
+                  {[50, 70, 100].map((size) => (
+                    <button
+                      key={size}
+                      type="button"
+                      onClick={() => setServingSizeInGrams(size)}
+                      className={`px-2 py-0.5 rounded-full text-[11px] ${
+                        servingSizeInGrams === size
+                          ? "bg-yellow-600 text-white"
+                          : "text-gray-700"
+                      }`}
+                    >
+                      {size} g
+                    </button>
+                  ))}
+                </div>
+              </div>
 
               {/* Percent mode toggle */}
               <div className="flex items-center justify-between gap-2">
@@ -462,7 +577,7 @@ export function InteractiveSection() {
                   onClick={() => setShowMicronutrients((v) => !v)}
                   className="w-full flex items-center justify-between px-3 py-2 text-sm font-medium text-gray-800 bg-gray-50 rounded-t-lg"
                 >
-                  <span>Vitamin & Khoáng chất chính (100g)</span>
+                  <span>Vitamin & Khoáng chất chính ({servingSizeInGrams}g)</span>
                   <span className="text-xs text-gray-500">
                     {showMicronutrients ? "Ẩn bớt" : "Xem thêm vi chất"}
                   </span>
@@ -471,7 +586,8 @@ export function InteractiveSection() {
                   <div className="px-3 pb-3 pt-2 text-xs">
                     <div className="grid grid-cols-2 gap-2">
                       {(() => {
-                        const value = selectedFood.vitaminC;
+                        const baseValue = selectedFood.vitaminC;
+                        const value = baseValue != null ? baseValue * servingMultiplier : null;
                         const percent =
                           value != null
                             ? percentMode === "rni"
@@ -489,18 +605,19 @@ export function InteractiveSection() {
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Vitamin C</span>
                               <span className="font-semibold text-gray-900">
-                                {value != null ? `${value} mg` : "-"}
+                                {value != null ? `${value.toFixed(1)} mg` : "-"}
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percent)} RNI
+                              {formatMicronutrientRNI(percent)}
                             </div>
                           </div>
                         );
                       })()}
 
                       {(() => {
-                        const value = selectedFood.vitaminA;
+                        const baseValue = selectedFood.vitaminA;
+                        const value = baseValue != null ? baseValue * servingMultiplier : null;
                         const percent =
                           value != null
                             ? percentMode === "rni"
@@ -518,18 +635,19 @@ export function InteractiveSection() {
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Vitamin A</span>
                               <span className="font-semibold text-gray-900">
-                                {value != null ? `${value} IU` : "-"}
+                                {value != null ? `${Math.round(value)} IU` : "-"}
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percent)} RNI
+                              {formatMicronutrientRNI(percent)}
                             </div>
                           </div>
                         );
                       })()}
 
                       {(() => {
-                        const value = selectedFood.sodium;
+                        const baseValue = selectedFood.sodium;
+                        const value = baseValue != null ? baseValue * servingMultiplier : null;
                         const percentRNI =
                           value != null
                             ? getPercentOfRNI("sodium", value)
@@ -552,16 +670,19 @@ export function InteractiveSection() {
                           <div className="p-2 bg-white rounded border border-gray-100">
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Natri</span>
-                              <span className="font-semibold text-gray-900">
-                                {value != null ? `${value} mg` : "-"}
+                              <span className="font-semibold text-gray-900 flex items-center gap-1">
+                                {value != null ? `${Math.round(value)} mg` : "-"}
+                                <span className="text-red-500" title="Tim mạch, THA">❤️</span>
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percentToShow)}{" "}
-                              {percentMode === "disease" &&
-                              activeDiseaseForTargets === "hypertension"
-                                ? "mục tiêu THA"
-                                : "RNI"}
+                              {formatMicronutrientWithLabel(
+                                percentToShow,
+                                percentMode === "disease" &&
+                                activeDiseaseForTargets === "hypertension"
+                                  ? "mục tiêu THA"
+                                  : "RNI"
+                              )}
                             </div>
                             {activeDiseaseForTargets === "hypertension" &&
                               percentDisease != null &&
@@ -587,7 +708,8 @@ export function InteractiveSection() {
                       })()}
 
                       {(() => {
-                        const value = selectedFood.potassium;
+                        const baseValue = selectedFood.potassium;
+                        const value = baseValue != null ? baseValue * servingMultiplier : null;
                         const percentRNI =
                           value != null
                             ? getPercentOfRNI("potassium", value)
@@ -610,12 +732,20 @@ export function InteractiveSection() {
                           <div className="p-2 bg-white rounded border border-gray-100">
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Kali</span>
-                              <span className="font-semibold text-gray-900">
-                                {value != null ? `${value} mg` : "-"}
+                              <span className="font-semibold text-gray-900 flex items-center gap-1">
+                                {value != null ? `${Math.round(value)} mg` : "-"}
+                                <span className="text-yellow-600" title="Bệnh thận">⚠️</span>
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percentToShow)}{" "}
+                              {formatMicronutrientWithLabel(
+                                percentToShow,
+                                percentMode === "disease" &&
+                                activeDiseaseForTargets === "kidney"
+                                  ? "mục tiêu thận"
+                                  : "RNI"
+                              )}
+                            </div>
                               {percentMode === "disease" &&
                               activeDiseaseForTargets === "kidney"
                                 ? "mục tiêu thận"
@@ -635,7 +765,8 @@ export function InteractiveSection() {
                       })()}
 
                       {(() => {
-                        const value = selectedFood.calcium;
+                        const baseValue = selectedFood.calcium;
+                        const value = baseValue != null ? baseValue * servingMultiplier : null;
                         const percent =
                           value != null
                             ? getPercentOfRNI("calcium", value)
@@ -645,18 +776,19 @@ export function InteractiveSection() {
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Canxi</span>
                               <span className="font-semibold text-gray-900">
-                                {value != null ? `${value} mg` : "-"}
+                                {value != null ? `${Math.round(value)} mg` : "-"}
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percent)} RNI
+                              {formatMicronutrientRNI(percent)}
                             </div>
                           </div>
                         );
                       })()}
 
                       {(() => {
-                        const value = selectedFood.iron;
+                        const baseValue = selectedFood.iron;
+                        const value = baseValue != null ? baseValue * servingMultiplier : null;
                         const percent =
                           value != null ? getPercentOfRNI("iron", value) : null;
                         return (
@@ -664,11 +796,11 @@ export function InteractiveSection() {
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Sắt</span>
                               <span className="font-semibold text-gray-900">
-                                {value != null ? `${value} mg` : "-"}
+                                {value != null ? `${value.toFixed(1)} mg` : "-"}
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percent)} RNI
+                              {formatMicronutrientRNI(percent)}
                             </div>
                           </div>
                         );
@@ -687,14 +819,19 @@ export function InteractiveSection() {
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percent)} RNI
+                              {formatMicronutrientRNI(percent)}
                             </div>
                           </div>
                         );
                       })()}
 
                       {(() => {
-                        const value = selectedFood.phosphorus;
+                        const baseValue = selectedFood.phosphorus;
+                        const value = baseValue != null ? baseValue * servingMultiplier : null;
+                        // Tính %RNI dựa trên giá trị 100g (không scale) để cảnh báo
+                        const percentRNIFor100g = baseValue != null
+                          ? getPercentOfRNI("phosphorus", baseValue)
+                          : null;
                         const percentRNI =
                           value != null
                             ? getPercentOfRNI("phosphorus", value)
@@ -717,23 +854,35 @@ export function InteractiveSection() {
                           <div className="p-2 bg-white rounded border border-gray-100">
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Phốt pho</span>
-                              <span className="font-semibold text-gray-900">
-                                {value != null ? `${value} mg` : "-"}
+                              <span className="font-semibold text-gray-900 flex items-center gap-1">
+                                {value != null ? `${Math.round(value)} mg` : "-"}
+                                <span className="text-yellow-600" title="Bệnh thận">⚠️</span>
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percentToShow)}{" "}
-                              {percentMode === "disease" &&
-                              activeDiseaseForTargets === "kidney"
-                                ? "mục tiêu thận"
-                                : "RNI"}
+                              {formatMicronutrientWithLabel(
+                                percentToShow,
+                                percentMode === "disease" &&
+                                activeDiseaseForTargets === "kidney"
+                                  ? "mục tiêu thận"
+                                  : "RNI"
+                              )}
                             </div>
+                            {percentRNIFor100g != null && percentRNIFor100g >= 30 && (
+                              <div className="mt-1.5">
+                                <span className="inline-flex items-center gap-1 rounded-full bg-yellow-100 px-2 py-0.5 text-[10px] text-yellow-800">
+                                  <span>⚠️</span>
+                                  <span>Không phù hợp bệnh thận mạn</span>
+                                </span>
+                              </div>
+                            )}
                           </div>
                         );
                       })()}
 
                       {(() => {
-                        const value = selectedFood.magnesium;
+                        const baseValue = selectedFood.magnesium;
+                        const value = baseValue != null ? baseValue * servingMultiplier : null;
                         const percent =
                           value != null
                             ? getPercentOfRNI("magnesium", value)
@@ -743,20 +892,25 @@ export function InteractiveSection() {
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Magiê</span>
                               <span className="font-semibold text-gray-900">
-                                {value != null ? `${value} mg` : "-"}
+                                {value != null ? `${Math.round(value)} mg` : "-"}
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percent)} RNI
+                              {formatMicronutrientRNI(percent)}
                             </div>
                           </div>
                         );
                       })()}
 
                       {(() => {
-                        const value =
+                        const baseValue =
                           selectedFood.cholesterol ??
                           selectedFood.cardiovascular?.cholesterol;
+                        const value = baseValue != null ? baseValue * servingMultiplier : null;
+                        // Tính %RNI dựa trên giá trị 100g (không scale) để cảnh báo
+                        const percentRNIFor100g = baseValue != null
+                          ? getPercentOfRNI("cholesterol", baseValue)
+                          : null;
                         const percentRNI =
                           value != null
                             ? getPercentOfRNI("cholesterol", value)
@@ -779,17 +933,28 @@ export function InteractiveSection() {
                           <div className="p-2 bg-white rounded border border-gray-100">
                             <div className="flex items-center justify-between">
                               <span className="text-gray-700">Cholesterol</span>
-                              <span className="font-semibold text-gray-900">
-                                {value != null ? `${value} mg` : "-"}
+                              <span className="font-semibold text-gray-900 flex items-center gap-1">
+                                {value != null ? `${Math.round(value)} mg` : "-"}
+                                <span className="text-red-500" title="Tim mạch, THA">❤️</span>
                               </span>
                             </div>
                             <div className="mt-1 text-[11px] text-gray-500">
-                              {formatPercent(percentToShow)}{" "}
-                              {percentMode === "disease" &&
-                              activeDiseaseForTargets === "cardiovascular"
-                                ? "mục tiêu tim mạch"
-                                : "RNI"}
+                              {formatMicronutrientWithLabel(
+                                percentToShow,
+                                percentMode === "disease" &&
+                                activeDiseaseForTargets === "cardiovascular"
+                                  ? "mục tiêu tim mạch"
+                                  : "RNI"
+                              )}
                             </div>
+                            {percentRNIFor100g != null && percentRNIFor100g >= 30 && (
+                              <div className="mt-1.5">
+                                <span className="inline-flex items-center gap-1 rounded-full bg-yellow-100 px-2 py-0.5 text-[10px] text-yellow-800">
+                                  <span>⚠️</span>
+                                  <span>Hạn chế cho bệnh tim mạch</span>
+                                </span>
+                              </div>
+                            )}
                           </div>
                         );
                       })()}
@@ -798,11 +963,12 @@ export function InteractiveSection() {
                     {/* Vitamin nhóm B & D */}
                     <div className="mt-3 border-t border-gray-100 pt-2">
                       <div className="text-[11px] font-semibold text-gray-700 mb-1">
-                        Vitamin nhóm B & D (100g)
+                        Vitamin nhóm B & D ({servingSizeInGrams}g)
                       </div>
                       <div className="grid grid-cols-2 gap-2">
                         {(() => {
-                          const value = selectedFood.vitaminB1;
+                          const baseValue = selectedFood.vitaminB1;
+                          const value = baseValue != null ? baseValue * servingMultiplier : null;
                           const percent =
                             value != null
                               ? getPercentOfRNI("vitaminB1", value)
@@ -812,18 +978,19 @@ export function InteractiveSection() {
                               <div className="flex items-center justify-between">
                                 <span className="text-gray-700">Vitamin B1</span>
                                 <span className="font-semibold text-gray-900">
-                                  {value != null ? `${value} mg` : "-"}
+                                  {value != null ? `${value.toFixed(2)} mg` : "-"}
                                 </span>
                               </div>
                               <div className="mt-1 text-[11px] text-gray-500">
-                                {formatPercent(percent)} RNI
+                                {formatMicronutrientRNI(percent)}
                               </div>
                             </div>
                           );
                         })()}
 
                         {(() => {
-                          const value = selectedFood.vitaminB2;
+                          const baseValue = selectedFood.vitaminB2;
+                          const value = baseValue != null ? baseValue * servingMultiplier : null;
                           const percent =
                             value != null
                               ? getPercentOfRNI("vitaminB2", value)
@@ -833,18 +1000,19 @@ export function InteractiveSection() {
                               <div className="flex items-center justify-between">
                                 <span className="text-gray-700">Vitamin B2</span>
                                 <span className="font-semibold text-gray-900">
-                                  {value != null ? `${value} mg` : "-"}
+                                  {value != null ? `${value.toFixed(2)} mg` : "-"}
                                 </span>
                               </div>
                               <div className="mt-1 text-[11px] text-gray-500">
-                                {formatPercent(percent)} RNI
+                                {formatMicronutrientRNI(percent)}
                               </div>
                             </div>
                           );
                         })()}
 
                         {(() => {
-                          const value = selectedFood.vitaminB6;
+                          const baseValue = selectedFood.vitaminB6;
+                          const value = baseValue != null ? baseValue * servingMultiplier : null;
                           const percent =
                             value != null
                               ? getPercentOfRNI("vitaminB6", value)
@@ -854,18 +1022,19 @@ export function InteractiveSection() {
                               <div className="flex items-center justify-between">
                                 <span className="text-gray-700">Vitamin B6</span>
                                 <span className="font-semibold text-gray-900">
-                                  {value != null ? `${value} mg` : "-"}
+                                  {value != null ? `${value.toFixed(2)} mg` : "-"}
                                 </span>
                               </div>
                               <div className="mt-1 text-[11px] text-gray-500">
-                                {formatPercent(percent)} RNI
+                                {formatMicronutrientRNI(percent)}
                               </div>
                             </div>
                           );
                         })()}
 
                         {(() => {
-                          const value = selectedFood.folate;
+                          const baseValue = selectedFood.folate;
+                          const value = baseValue != null ? baseValue * servingMultiplier : null;
                           const percent =
                             value != null
                               ? getPercentOfRNI("folate", value)
@@ -875,18 +1044,19 @@ export function InteractiveSection() {
                               <div className="flex items-center justify-between">
                                 <span className="text-gray-700">Folate</span>
                                 <span className="font-semibold text-gray-900">
-                                  {value != null ? `${value} µg` : "-"}
+                                  {value != null ? `${Math.round(value)} µg` : "-"}
                                 </span>
                               </div>
                               <div className="mt-1 text-[11px] text-gray-500">
-                                {formatPercent(percent)} RNI
+                                {formatMicronutrientRNI(percent)}
                               </div>
                             </div>
                           );
                         })()}
 
                         {(() => {
-                          const value = selectedFood.vitaminB12;
+                          const baseValue = selectedFood.vitaminB12;
+                          const value = baseValue != null ? baseValue * servingMultiplier : null;
                           const percent =
                             value != null
                               ? getPercentOfRNI("vitaminB12", value)
@@ -896,18 +1066,19 @@ export function InteractiveSection() {
                               <div className="flex items-center justify-between">
                                 <span className="text-gray-700">Vitamin B12</span>
                                 <span className="font-semibold text-gray-900">
-                                  {value != null ? `${value} µg` : "-"}
+                                  {value != null ? `${value.toFixed(1)} µg` : "-"}
                                 </span>
                               </div>
                               <div className="mt-1 text-[11px] text-gray-500">
-                                {formatPercent(percent)} RNI
+                                {formatMicronutrientRNI(percent)}
                               </div>
                             </div>
                           );
                         })()}
 
                         {(() => {
-                          const value = selectedFood.vitaminD;
+                          const baseValue = selectedFood.vitaminD;
+                          const value = baseValue != null ? baseValue * servingMultiplier : null;
                           const percent =
                             value != null
                               ? getPercentOfRNI("vitaminD", value)
@@ -917,11 +1088,11 @@ export function InteractiveSection() {
                               <div className="flex items-center justify-between">
                                 <span className="text-gray-700">Vitamin D</span>
                                 <span className="font-semibold text-gray-900">
-                                  {value != null ? `${value} IU` : "-"}
+                                  {value != null ? `${Math.round(value)} IU` : "-"}
                                 </span>
                               </div>
                               <div className="mt-1 text-[11px] text-gray-500">
-                                {formatPercent(percent)} RNI
+                                {formatMicronutrientRNI(percent)}
                               </div>
                             </div>
                           );
@@ -930,12 +1101,50 @@ export function InteractiveSection() {
                     </div>
 
                     <p className="mt-2 text-[11px] text-gray-500">
-                      Các % trên chỉ mang tính giáo dục, không thay thế chỉ định
-                      điều trị cá thể hóa.
+                      Thông tin mang tính giáo dục dinh dưỡng.
+                      <br />
+                      Không thay thế tư vấn y khoa hoặc chỉ định điều trị cá thể hóa.
                     </p>
                   </div>
                 )}
               </div>
+
+              {/* Block: Nhận xét vi lượng */}
+              {showMicronutrients && (
+                <div className="mt-4 border rounded-lg bg-blue-50 border-blue-200">
+                  <div className="px-3 py-2 bg-blue-100 rounded-t-lg">
+                    <h4 className="font-semibold text-sm text-gray-900 flex items-center gap-2">
+                      <span>🧠</span>
+                      <span>Nhận xét vi lượng (tự động sinh)</span>
+                    </h4>
+                  </div>
+                  <div className="px-3 pb-3 pt-2">
+                    {(() => {
+                      const insights = generateMicronutrientInsights(selectedFood, servingMultiplier);
+                      if (insights.length === 0) {
+                        return (
+                          <p className="text-xs text-gray-600">
+                            Không có nhận xét đặc biệt về vi lượng.
+                          </p>
+                        );
+                      }
+                      return (
+                        <ul className="space-y-1 text-xs text-gray-700">
+                          {insights.map((insight, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <span className="text-blue-600 mt-0.5">•</span>
+                              <span>{insight}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      );
+                    })()}
+                    <p className="mt-2 text-[11px] text-gray-500 italic">
+                      Block này chỉ mang tính giáo dục, không thay thế chỉ định điều trị.
+                    </p>
+                  </div>
+                </div>
+              )}
 
               {/* Block 3 – Disease Assessment */}
               <div>
@@ -1028,7 +1237,7 @@ export function InteractiveSection() {
                     {selectedDisease === "gout" && selectedFood.gout && (
                       <div className="text-sm text-gray-700 mt-2 space-y-1">
                         <div>
-                          Purin: {selectedFood.gout.purine} mg/100g
+                          Purin: {selectedFood.gout.purine} mg/100g <span className="text-yellow-600" title="Bệnh gút">⚠️</span>
                         </div>
                         <div>
                           Mức độ:{" "}

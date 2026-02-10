@@ -29,6 +29,7 @@ export interface FoodItem {
   vitaminC?: number; // mg per 100g
   vitaminA?: number; // IU or mcg per 100g
   cholesterol?: number; // mg per 100g
+  purine?: number; // mg per 100g - cho thịt, cá (quan trọng cho bệnh gút)
   notes?: string;
   commonServing?: string;
 }
@@ -142,6 +143,7 @@ export const foodDatabase: FoodItem[] = [
     magnesium: 25,
     zinc: 2.1,
     cholesterol: 62,
+    purine: 150, // mg/100g
     commonServing: "100g (khoảng 1 lòng bàn tay)",
   },
   {
@@ -165,6 +167,7 @@ export const foodDatabase: FoodItem[] = [
     magnesium: 28,
     zinc: 1.3,
     cholesterol: 85,
+    purine: 140, // mg/100g
     commonServing: "100g (khoảng 1 lòng bàn tay)",
   },
   {
@@ -181,13 +184,15 @@ export const foodDatabase: FoodItem[] = [
     fat: 15,
     water: 58,
     sodium: 72,
-    potassium: 315,
+    potassium: 330, // ~330 mg (≈ 10% RNI)
     calcium: 18,
     iron: 2.6,
-    phosphorus: 198,
+    phosphorus: 210, // ~210 mg (≈ 30% RNI)
     magnesium: 21,
-    zinc: 4.8,
+    zinc: 4.5, // ~4.5 mg (≈ 40% RNI)
     cholesterol: 90,
+    purine: 135, // ~120-150 mg/100g - Purine cao – không khuyến nghị cho bệnh gút
+    notes: "Purine cao – không khuyến nghị cho bệnh gút",
     commonServing: "100g (khoảng 1 lòng bàn tay)",
   },
 
@@ -213,6 +218,7 @@ export const foodDatabase: FoodItem[] = [
     magnesium: 25,
     zinc: 0.8,
     cholesterol: 55,
+    purine: 120, // mg/100g
     commonServing: "100g (1 miếng vừa)",
   },
   {
@@ -236,6 +242,8 @@ export const foodDatabase: FoodItem[] = [
     magnesium: 37,
     zinc: 1.1,
     cholesterol: 152,
+    purine: 150, // mg/100g - Purine cao
+    notes: "Purine cao – không khuyến nghị cho bệnh gút",
     commonServing: "100g (khoảng 8-10 con vừa)",
   },
 

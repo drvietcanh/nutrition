@@ -24,11 +24,24 @@ const diseases: { value: DiseaseType; label: string; icon: string }[] = [
 ];
 
 function formatPercent(value: number | null): string {
-  if (value == null || Number.isNaN(value)) return "-";
+  if (value == null || Number.isNaN(value)) return "?";
+  if (value === 0) return "0";
   if (value < 1) return "<1%";
   if (value < 10) return value.toFixed(1) + "%";
   if (value > 999) return ">999%";
   return Math.round(value) + "%";
+}
+
+/**
+ * Format hiển thị vi lượng với 3 trạng thái rõ ràng:
+ * - 0 : không có / không đáng kể
+ * - ? : chưa có dữ liệu chuẩn
+ * - value% : khi có dữ liệu
+ */
+function formatMicronutrientPercent(percent: number | null): string {
+  if (percent == null || Number.isNaN(percent)) return "?";
+  if (percent === 0) return "0";
+  return formatPercent(percent);
 }
 
 export function InteractiveSection() {
@@ -165,8 +178,8 @@ export function InteractiveSection() {
           label: 'Tăng huyết áp',
           items: [
             { label: 'Natri', value: `${sodium}mg/100g`, color: naColor },
-            { label: '%RNI natri', value: formatPercent(percentRni), color: 'green' },
-            { label: '% mục tiêu THA', value: formatPercent(percentDisease), color: 'yellow' },
+            { label: '%RNI natri', value: formatMicronutrientPercent(percentRni), color: 'green' },
+            { label: '% mục tiêu THA', value: formatMicronutrientPercent(percentDisease), color: 'yellow' },
           ],
         };
       }
@@ -188,8 +201,8 @@ export function InteractiveSection() {
           items: [
             { label: 'Cholesterol', value: `${cholesterol}mg/100g`, color: cholColor },
             { label: 'Chất béo bão hòa', value: `${satFat}g/100g`, color: fatColor },
-            { label: '%RNI cholesterol', value: formatPercent(cholPercentRni), color: 'green' },
-            { label: '% mục tiêu tim mạch', value: formatPercent(cholPercentDisease), color: 'yellow' },
+            { label: '%RNI cholesterol', value: formatMicronutrientPercent(cholPercentRni), color: 'green' },
+            { label: '% mục tiêu tim mạch', value: formatMicronutrientPercent(cholPercentDisease), color: 'yellow' },
           ],
         };
       }
