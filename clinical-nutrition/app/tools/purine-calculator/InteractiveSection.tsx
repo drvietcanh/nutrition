@@ -96,7 +96,6 @@ export function InteractiveSection() {
       setUnit(food.vietnameseUnits[0].unit);
     } else if (
       food.category === 'meat' ||
-      food.category === 'fish' ||
       food.category === 'seafood' ||
       food.category === 'freshwater'
     ) {
