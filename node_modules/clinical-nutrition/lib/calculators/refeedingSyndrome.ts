@@ -1,5 +1,5 @@
 /**
- * Refeeding Syndrome Risk Assessment
+ * Refeeding syndrome risk Assessment
  * Educational tool for assessing risk of refeeding syndrome
  * 
  * This is for educational purposes only and must NOT be used for clinical decision-making.
@@ -75,7 +75,7 @@ export function calculateRefeedingSyndromeRisk(
   // Use provided BMI or calculated BMI
   const effectiveBMI = additionalFactors.bmi ?? bmi;
 
-  // Risk Factor 1: BMI < 16 or BMI < 18.5 with weight loss
+  // Risk factor 1: BMI < 16 or BMI < 18.5 with weight loss
   if (effectiveBMI != null) {
     if (effectiveBMI < 16) {
       riskScore += 30;
@@ -86,7 +86,7 @@ export function calculateRefeedingSyndromeRisk(
     }
   }
 
-  // Risk Factor 2: Weight loss
+  // Risk factor 2: Weight loss
   const weightLoss = additionalFactors.weightLossPercent ?? input.recentWeightLossPercent;
   if (weightLoss != null) {
     if (weightLoss >= 15) {
@@ -101,7 +101,7 @@ export function calculateRefeedingSyndromeRisk(
     }
   }
 
-  // Risk Factor 3: Fasting duration
+  // Risk factor 3: Fasting duration
   const fastingDays = additionalFactors.fastingDays;
   if (fastingDays != null) {
     if (fastingDays >= 7) {
@@ -116,32 +116,32 @@ export function calculateRefeedingSyndromeRisk(
     }
   }
 
-  // Risk Factor 4: Reduced intake
+  // Risk factor 4: Reduced intake
   const intakeReduction = input.intakeReductionPercent;
   if (intakeReduction != null && intakeReduction >= 50) {
     riskScore += 15;
     riskFactors.push(`Giảm lượng ăn ≥ 50% (${intakeReduction.toFixed(1)}%)`);
   }
 
-  // Risk Factor 5: Alcohol dependence
+  // Risk factor 5: Alcohol dependence
   if (additionalFactors.alcoholDependence) {
     riskScore += 15;
     riskFactors.push("Nghiện rượu");
   }
 
-  // Risk Factor 6: Chemotherapy
+  // Risk factor 6: Chemotherapy
   if (additionalFactors.chemotherapy) {
     riskScore += 10;
     riskFactors.push("Hóa trị");
   }
 
-  // Risk Factor 7: Diabetes
+  // Risk factor 7: Diabetes
   if (additionalFactors.diabetes) {
     riskScore += 10;
     riskFactors.push("Đái tháo đường");
   }
 
-  // Risk Factor 8: Electrolyte imbalance
+  // Risk factor 8: Electrolyte imbalance
   if (additionalFactors.electrolyteImbalance) {
     riskScore += 15;
     riskFactors.push("Mất cân bằng điện giải");

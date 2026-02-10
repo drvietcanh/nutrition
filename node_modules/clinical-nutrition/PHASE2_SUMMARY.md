@@ -1,6 +1,6 @@
-# Phase 2 Summary - Cải Thiện Giao Diện
+# Phase 2 Summary - Cải thiện Giao Diện
 
-## ✅ Đã Hoàn Thành
+## ✅ Đã hoàn thành
 
 ### 1. Knowledge Base Page (`app/knowledge/page.tsx`)
 - ✅ Thay thế các div đơn giản bằng Card components
@@ -8,7 +8,7 @@
   - `AlertCircle` cho "Hiểu lầm & Quan niệm Sai"
   - `ClipboardCheck` cho "Đánh giá Dinh dưỡng Lâm sàng"
   - `Calculator` cho "Ước tính Nhu cầu Dinh dưỡng"
-  - `FileText` cho "Vì sao Lượng Ăn Thường Thiếu"
+  - `FileText` cho "Vì sao Lượng Ăn Thường thiếu"
   - `UtensilsCrossed` cho "Đánh giá Lượng Ăn"
   - `Activity` cho "Công cụ Tương tác"
 - ✅ Cải thiện header với icon `BookOpen`
@@ -24,13 +24,13 @@
   - `Lightbulb` cho clinical-insight variant
   - `AlertCircle` cho common-pitfall variant
 
-### 3. Cải Thiện Visual
+### 3. Cải thiện Visual
 - ✅ Icons giúp quét nội dung dễ hơn
 - ✅ Consistent icon sizing (w-5 h-5)
 - ✅ Improved spacing với flex layout
 - ✅ Better accessibility với aria-hidden cho decorative icons
 
-## 📊 Kết Quả
+## 📊 Kết quả
 
 ### Trước:
 - Plain divs với border và padding

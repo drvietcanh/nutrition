@@ -1,4 +1,4 @@
-# Nội dung Chi tiết cho Từng Bệnh Mạn tính
+# Nội dung Chi tiết cho Từng bệnh mạn tính
 
 ## 1. Tăng huyết áp (Hypertension)
 
@@ -354,7 +354,7 @@
 
 ## 6. Notes Chung
 
-### 6.1 Nguyên tắc Chung cho Tất cả Bệnh Mạn tính
+### 6.1 Nguyên tắc Chung cho Tất cả Bệnh mạn tính
 
 1. **Đánh giá toàn diện**
    - Không chỉ tập trung vào một chất dinh dưỡng

@@ -14,6 +14,14 @@ export type VietnameseUnit =
   | 'qua'            // Quả
   | 'mieng'          // Miếng
   | 'bo'             // Bó (rau)
+  | 'goi'            // Gói
+  | 'o'              // Ổ
+  | 'con'            // Con (cho cá, tôm...)
+  | 'mo'             // Mớ
+  | 'mui'            // Múi
+  | 'nam'            // Nắm
+  | 'nhanh'          // Nhánh
+  | 'tep'            // Tép
   | 'gram';          // Gram (đơn vị chuẩn)
 
 export interface UnitConversion {
@@ -170,6 +178,14 @@ export function getUnitDescription(unit: VietnameseUnit): string {
     'qua': 'Quả',
     'mieng': 'Miếng',
     'bo': 'Bó',
+    'goi': 'Gói',
+    'o': 'Ổ',
+    'con': 'Con',
+    'mo': 'Mớ',
+    'mui': 'Múi',
+    'nam': 'Nắm',
+    'nhanh': 'Nhánh',
+    'tep': 'Tép',
     'gram': 'Gram',
   };
   

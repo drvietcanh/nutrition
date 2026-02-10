@@ -67,11 +67,6 @@ const toolsItems: NavItem[] = [
     href: "/tools/food-database",
     icon: UtensilsCrossed,
   },
-  {
-    label: "Tra cứu Nhanh Thực phẩm",
-    href: "/tools/quick-lookup",
-    icon: UtensilsCrossed,
-  },
 ];
 
 interface DropdownMenuProps {

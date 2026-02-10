@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Plus, X, Search, BarChart3, CheckCircle, AlertCircle, Info } from "lucide-react";
+import { Plus, X, Search, BarChart3, CheckCircle, AlertCircle, Info, TrendingUp, TrendingDown } from "lucide-react";
 import { Card, CardHeader, CardContent } from "../../components/Card";
 import {
   searchExtendedFoods,
   type ExtendedFoodItem,
-} from "../../../lib/vietnamese-food-extended";
+} from "@/lib/vietnamese-food-extended";
+import { NutritionBadge } from "../../components/NutritionBadge";
 import toast from "react-hot-toast";
 
 type DiseaseType = 'diabetes' | 'gout' | 'kidney' | 'hypertension' | 'cardiovascular';
@@ -110,6 +111,77 @@ export function InteractiveSection() {
         return 'Kém';
       default:
         return 'Chưa đánh giá';
+    }
+  };
+
+  // Find best and worst values for highlighting
+  const getComparisonHighlights = () => {
+    if (selectedFoods.length < 2) return null;
+
+    const values: Record<string, number[]> = {};
+    
+    selectedFoods.forEach(food => {
+      const multiplier = comparisonAmount / 100;
+      
+      // Basic nutrition
+      if (!values.calories) values.calories = [];
+      values.calories.push(food.calories * multiplier);
+      
+      if (!values.protein) values.protein = [];
+      values.protein.push(food.protein * multiplier);
+      
+      if (!values.carbs) values.carbs = [];
+      values.carbs.push(food.carbs * multiplier);
+      
+      // Disease-specific
+      if (selectedDisease === 'diabetes' && food.diabetes) {
+        if (!values.gi) values.gi = [];
+        values.gi.push(food.diabetes.glycemicIndex || 0);
+      }
+      if (selectedDisease === 'gout' && food.gout) {
+        if (!values.purine) values.purine = [];
+        values.purine.push(food.gout.purine * multiplier);
+      }
+      if (selectedDisease === 'kidney' && food.kidney) {
+        if (!values.potassium) values.potassium = [];
+        values.potassium.push(food.kidney.potassium * multiplier);
+        if (!values.phosphorus) values.phosphorus = [];
+        values.phosphorus.push(food.kidney.phosphorus * multiplier);
+      }
+      if (selectedDisease === 'hypertension' && food.sodium) {
+        if (!values.sodium) values.sodium = [];
+        values.sodium.push(food.sodium * multiplier);
+      }
+      if (selectedDisease === 'cardiovascular' && food.cardiovascular) {
+        if (!values.cholesterol) values.cholesterol = [];
+        values.cholesterol.push(food.cardiovascular.cholesterol * multiplier);
+        if (!values.saturatedFat) values.saturatedFat = [];
+        values.saturatedFat.push(food.cardiovascular.saturatedFat * multiplier);
+      }
+    });
+
+    const highlights: Record<string, { min: number; max: number }> = {};
+    Object.keys(values).forEach(key => {
+      highlights[key] = {
+        min: Math.min(...values[key]),
+        max: Math.max(...values[key]),
+      };
+    });
+
+    return highlights;
+  };
+
+  const highlights = getComparisonHighlights();
+
+  const isHighlighted = (field: string, value: number, isGood: boolean = false) => {
+    if (!highlights || !highlights[field]) return false;
+    
+    // For good values (low is better): highlight min
+    // For bad values (high is worse): highlight max
+    if (isGood) {
+      return value === highlights[field].min;
+    } else {
+      return value === highlights[field].max;
     }
   };
 
@@ -258,11 +330,39 @@ export function InteractiveSection() {
                           <div className="font-medium text-gray-900">{food.name}</div>
                           <div className="text-xs text-gray-500">{comparisonAmount}g</div>
                         </td>
-                        <td className="text-right p-2">{calories.toFixed(0)}</td>
-                        <td className="text-right p-2">{protein.toFixed(1)}</td>
-                        <td className="text-right p-2">{carbs.toFixed(1)}</td>
+                        <td className={`text-right p-2 ${
+                          isHighlighted('calories', calories) ? 'bg-yellow-50 font-semibold' : ''
+                        }`}>
+                          {calories.toFixed(0)}
+                          {isHighlighted('calories', calories) && (
+                            <TrendingUp className="w-3 h-3 inline-block ml-1 text-yellow-600" />
+                          )}
+                        </td>
+                        <td className={`text-right p-2 ${
+                          isHighlighted('protein', protein, true) ? 'bg-green-50 font-semibold' : ''
+                        }`}>
+                          {protein.toFixed(1)}
+                          {isHighlighted('protein', protein, true) && (
+                            <TrendingUp className="w-3 h-3 inline-block ml-1 text-green-600" />
+                          )}
+                        </td>
+                        <td className={`text-right p-2 ${
+                          isHighlighted('carbs', carbs) ? 'bg-yellow-50 font-semibold' : ''
+                        }`}>
+                          {carbs.toFixed(1)}
+                          {isHighlighted('carbs', carbs) && (
+                            <TrendingUp className="w-3 h-3 inline-block ml-1 text-yellow-600" />
+                          )}
+                        </td>
                         <td className="text-right p-2">{fat.toFixed(1)}</td>
-                        <td className="text-right p-2">{fiber.toFixed(1)}</td>
+                        <td className={`text-right p-2 ${
+                          isHighlighted('fiber', fiber, true) ? 'bg-green-50 font-semibold' : ''
+                        }`}>
+                          {fiber.toFixed(1)}
+                          {isHighlighted('fiber', fiber, true) && (
+                            <TrendingUp className="w-3 h-3 inline-block ml-1 text-green-600" />
+                          )}
+                        </td>
                         {selectedDisease === 'diabetes' && (
                           <>
                             <td className="text-right p-2">
@@ -302,9 +402,16 @@ export function InteractiveSection() {
                           </>
                         )}
                         <td className="text-center p-2">
-                          <span className={`inline-block px-2 py-1 rounded text-xs ${getAssessmentColor(diseaseData?.suitability)}`}>
-                            {getAssessmentLabel(diseaseData?.suitability)}
-                          </span>
+                          <NutritionBadge
+                            label=""
+                            value={getAssessmentLabel(diseaseData?.suitability)}
+                            level={
+                              diseaseData?.suitability === 'good' ? 'low' :
+                              diseaseData?.suitability === 'moderate' ? 'medium' :
+                              diseaseData?.suitability === 'poor' ? 'high' :
+                              undefined
+                            }
+                          />
                         </td>
                         <td className="text-center p-2">
                           <button

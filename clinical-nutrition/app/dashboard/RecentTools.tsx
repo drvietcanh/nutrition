@@ -18,9 +18,9 @@ export function RecentTools() {
 
   return (
     <Card>
-      <CardHeader icon={Clock} title="Công cụ Gần đây" />
+      <CardHeader icon={Clock} title="Công cụ gần đây" />
       <CardContent>
-        <div className="space-y-2">
+        <div className="divide-y divide-gray-100">
           {recentTools.slice(0, 5).map((toolId) => {
             const tool = TOOL_CATALOG.find((t) => t.id === toolId);
             if (!tool) return null;
@@ -28,13 +28,17 @@ export function RecentTools() {
               <Link
                 key={toolId}
                 href={`/tools/${toolId}`}
-                className="flex items-center justify-between p-3 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors"
+                className="flex items-center justify-between px-3 py-2 hover:bg-blue-50/60 transition-colors"
               >
                 <div>
-                  <p className="font-medium text-gray-900">{tool.title}</p>
-                  <p className="text-sm text-gray-600">{tool.summary}</p>
+                  <p className="text-sm font-medium text-gray-900">
+                    {tool.title}
+                  </p>
+                  <p className="text-xs text-gray-600 line-clamp-2">
+                    {tool.summary}
+                  </p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-gray-400" />
+                <ArrowRight className="w-4 h-4 text-gray-400 shrink-0" />
               </Link>
             );
           })}

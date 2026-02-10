@@ -1,4 +1,4 @@
-# Lộ trình Viết Bài Giáo dục Dinh dưỡng cho Bệnh Mạn tính
+# Lộ trình Viết bài giáo dục Dinh dưỡng cho Bệnh mạn tính
 
 ## Tổng quan
 
@@ -12,7 +12,7 @@ Tài liệu này trình bày lộ trình và cấu trúc để phát triển cá
 - Hiểu lầm & Quan niệm Sai trong Dinh dưỡng Lâm sàng
 - Đánh giá Dinh dưỡng Lâm sàng: Quy trình
 - Ước tính Nhu cầu Dinh dưỡng
-- Vì sao Lượng Ăn Thường Thiếu
+- Vì sao Lượng Ăn Thường thiếu
 - Đánh giá Lượng Ăn
 
 **Đặc điểm:**
@@ -21,14 +21,14 @@ Tài liệu này trình bày lộ trình và cấu trúc để phát triển cá
 - Sử dụng components tái sử dụng (Callout, Card, Section)
 - Cấu trúc rõ ràng với headings, explanations, clinical notes
 
-### 1.2 Khoảng trống Cần Lấp đầy
+### 1.2 Khoảng trống Cần lấp đầy
 
 - Thiếu nội dung về dinh dưỡng cho bệnh mạn tính cụ thể
 - Chưa có hướng dẫn về điều chỉnh dinh dưỡng theo bệnh lý
 - Thiếu thông tin về tương tác giữa dinh dưỡng và thuốc
 - Chưa có nội dung về quản lý biến chứng dinh dưỡng trong bệnh mạn tính
 
-## 2. Danh sách Bệnh Mạn tính Ưu tiên
+## 2. Danh sách Bệnh mạn tính Ưu tiên
 
 ### 2.1 Tiêu chí Ưu tiên
 
@@ -60,7 +60,7 @@ Tài liệu này trình bày lộ trình và cấu trúc để phát triển cá
    - Tần suất: Cao
    - Độ phức tạp: Trung bình
 
-#### Nhóm 2: Bệnh Thận (Ưu tiên cao)
+#### Nhóm 2: Bệnh thận (Ưu tiên cao)
 5. **Bệnh thận mạn (Chronic Kidney Disease - CKD)**
    - Tác động: Protein, phosphorus, potassium, natri, dịch
    - Tần suất: Cao
@@ -82,7 +82,7 @@ Tài liệu này trình bày lộ trình và cấu trúc để phát triển cá
    - Tần suất: Trung bình
    - Độ phức tạp: Cao
 
-#### Nhóm 4: Bệnh Khác (Ưu tiên thấp hơn)
+#### Nhóm 4: Bệnh khác (Ưu tiên thấp hơn)
 9. **Bệnh phổi tắc nghẽn mạn (COPD)**
    - Tác động: Năng lượng, protein, cân nặng
    - Tần suất: Trung bình
@@ -100,7 +100,7 @@ Tài liệu này trình bày lộ trình và cấu trúc để phát triển cá
 Mỗi bài viết về bệnh mạn tính nên tuân theo cấu trúc sau:
 
 ```markdown
-# [Tên Bệnh]: Dinh dưỡng Lâm sàng
+# [Tên bệnh]: Dinh dưỡng Lâm sàng
 
 ## 1. Giới thiệu & Tổng quan
 - Tại sao dinh dưỡng quan trọng trong bệnh này
@@ -132,7 +132,7 @@ Mỗi bài viết về bệnh mạn tính nên tuân theo cấu trúc sau:
 - Tần suất đánh giá lại
 - Dấu hiệu cần điều chỉnh kế hoạch
 
-## 7. Các Cạm bẫy Lâm sàng Phổ biến
+## 7. Các cạm bẫy Lâm sàng Phổ biến
 - Những sai lầm thường gặp
 - Hiểu lầm cần tránh
 - Cảnh báo quan trọng
@@ -185,7 +185,7 @@ Tạo components mới nếu cần:
 - Viết bài về dyslipidemia
 - Review và polish Phase 1
 
-### Phase 2: Bệnh Thận (Tháng 3-4)
+### Phase 2: Bệnh thận (Tháng 3-4)
 
 **Tuần 9-10: Bệnh thận mạn (CKD)**
 - Nghiên cứu protein restriction, phosphorus, potassium
@@ -209,7 +209,7 @@ Tạo components mới nếu cần:
 - Viết bài về Crohn và UC
 - Review Phase 3
 
-### Phase 4: Bệnh Khác & Hoàn thiện (Tháng 7-8)
+### Phase 4: Bệnh khác & Hoàn thiện (Tháng 7-8)
 
 **Tuần 17-18: COPD**
 - Nghiên cứu dinh dưỡng trong COPD

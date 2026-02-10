@@ -108,7 +108,7 @@ export function validateAge(age: number | null | undefined): ValidationResult {
  */
 export function validatePercentage(
   value: number | null | undefined,
-  fieldName: string = "Giá trị"
+  fieldName: string = "giá trị"
 ): ValidationResult {
   if (value == null) {
     return { isValid: true }; // Percentages are often optional
@@ -267,7 +267,7 @@ export function validateRange(
   if (lower > upper) {
     return {
       isValid: false,
-      error: `Giá trị thấp hơn (${lower}) không thể lớn hơn giá trị cao hơn (${upper})`,
+      error: `giá trị thấp hơn (${lower}) không thể lớn hơn giá trị cao hơn (${upper})`,
     };
   }
 

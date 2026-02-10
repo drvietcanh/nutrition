@@ -506,26 +506,6 @@ export default function ToolsIndexPage() {
           </CardFooter>
         </Card>
 
-        <Card href="/tools/quick-lookup">
-          <CardHeader
-            icon={Zap}
-            title="Tra cứu Nhanh"
-          />
-          <CardContent>
-            <p className="text-body">
-              Tra cứu nhanh thông tin dinh dưỡng và phù hợp với bệnh lý của thực phẩm.
-              Công cụ nhỏ gọn, nhanh chóng, phù hợp để sử dụng khi đọc bài viết.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Link
-              href="/tools/quick-lookup"
-              className="inline-flex items-center text-base font-medium text-green-700 hover:text-green-900"
-            >
-              sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
-            </Link>
-          </CardFooter>
-        </Card>
       </section>
     </main>
   );

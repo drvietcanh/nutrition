@@ -1,9 +1,16 @@
 "use client";
 
 import { useState, useMemo, useRef } from "react";
-import { Search, UtensilsCrossed, X, Download, Printer, RefreshCw, Info } from "lucide-react";
+import { Search, UtensilsCrossed, X, Download, Printer, RefreshCw, Info, Filter } from "lucide-react";
 import { Card } from "../../components/Card";
 import { PDFExportButton } from "../../components/PDFExportButton";
+import { FoodCard } from "../../components/FoodCard";
+import { BottomSheet } from "../../components/BottomSheet";
+import { FilterChips } from "../../components/FilterChips";
+import { SearchInput } from "../../components/SearchInput";
+import { VirtualList } from "../../components/VirtualList";
+import { useDebounce } from "@/app/hooks/useDebounce";
+import { useMemoizedSearch } from "@/app/hooks/useMemoizedSearch";
 import {
   foodDatabase,
   searchFoods,
@@ -12,7 +19,7 @@ import {
   type FoodItem,
   type FoodCategory,
   type KcalRange,
-} from "../../../lib/food-db";
+} from "@/lib/food-db";
 import toast from "react-hot-toast";
 
 const categories: { value: FoodCategory; label: string }[] = [
@@ -77,7 +84,12 @@ export function InteractiveSection() {
   const [selectedKcalRange, setSelectedKcalRange] = useState<KcalRange>("all");
   const [sodiumFilter, setSodiumFilter] = useState<"all" | Level>("all");
   const [selectedFood, setSelectedFood] = useState<FoodItem | null>(null);
+  const [showBottomSheet, setShowBottomSheet] = useState(false);
+  const [showFilters, setShowFilters] = useState(false);
   const nutritionDetailRef = useRef<HTMLDivElement>(null);
+  
+  // Debounce search query for performance
+  const debouncedSearchQuery = useDebounce(searchQuery, 300);
 
   const mineralProfile = useMemo(() => {
     if (!selectedFood) return null;
@@ -175,6 +187,7 @@ export function InteractiveSection() {
 
   const handleFoodSelect = (food: FoodItem) => {
     setSelectedFood(food);
+    setShowBottomSheet(true);
     toast.success(`Đã chọn ${food.name}`);
   };
 
@@ -287,16 +300,13 @@ export function InteractiveSection() {
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Từ khóa/Keyword
               </label>
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Tìm kiếm theo tên hoặc mã thực phẩm"
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                />
-              </div>
+              <SearchInput
+                value={searchQuery}
+                onChange={setSearchQuery}
+                placeholder="Tìm kiếm theo tên hoặc mã thực phẩm"
+                suggestions={foodDatabase}
+                showHistory={true}
+              />
             </div>
 
             {/* Group Filter */}
@@ -386,10 +396,60 @@ export function InteractiveSection() {
       </Card>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Food list - Table format */}
+        {/* Food list - Card layout on mobile, Table on desktop */}
         <div className="space-y-4">
-          <h2 className="heading-3">Danh sách thực phẩm</h2>
-          <div className="border border-gray-200 rounded-lg overflow-hidden">
+          <div className="flex items-center justify-between">
+            <h2 className="heading-3">Danh sách thực phẩm ({filteredFoods.length})</h2>
+            <button
+              type="button"
+              onClick={() => setShowFilters(!showFilters)}
+              className="md:hidden p-2 text-gray-600 hover:text-gray-900"
+              aria-label="Lọc"
+            >
+              <Filter className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Mobile: Card Layout with Virtual Scrolling */}
+          <div className="md:hidden">
+            {filteredFoods.length === 0 ? (
+              <Card>
+                <div className="text-center py-8 text-gray-500">
+                  <UtensilsCrossed className="w-12 h-12 text-gray-400 mx-auto mb-4" />
+                  <p>Không tìm thấy thực phẩm nào</p>
+                </div>
+              </Card>
+            ) : filteredFoods.length > 50 ? (
+              <VirtualList
+                items={filteredFoods}
+                itemHeight={120}
+                containerHeight={600}
+                renderItem={(food) => (
+                  <div className="p-2">
+                    <FoodCard
+                      food={food}
+                      onClick={() => handleFoodSelect(food)}
+                      isSelected={selectedFood?.id === food.id}
+                    />
+                  </div>
+                )}
+              />
+            ) : (
+              <div className="space-y-3">
+                {filteredFoods.map((food) => (
+                  <FoodCard
+                    key={food.id}
+                    food={food}
+                    onClick={() => handleFoodSelect(food)}
+                    isSelected={selectedFood?.id === food.id}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Desktop: Table Layout */}
+          <div className="hidden md:block border border-gray-200 rounded-lg overflow-hidden">
             <div className="max-h-[600px] overflow-y-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50 sticky top-0">
@@ -428,6 +488,16 @@ export function InteractiveSection() {
                             ? "bg-blue-50 hover:bg-blue-100"
                             : "hover:bg-gray-50"
                         }`}
+                        role="row"
+                        tabIndex={0}
+                        aria-label={`${food.name}, ${food.calories} calories`}
+                        aria-selected={selectedFood?.id === food.id}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            handleFoodSelect(food);
+                          }
+                        }}
                       >
                         <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900">
                           {index + 1}
@@ -458,8 +528,8 @@ export function InteractiveSection() {
           </div>
         </div>
 
-        {/* Selected food Details */}
-        <div className="space-y-4">
+        {/* Selected food Details - Desktop */}
+        <div className="hidden lg:block space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="heading-3">Giá trị dinh dưỡng</h2>
             {selectedFood && (
@@ -920,6 +990,148 @@ export function InteractiveSection() {
             </Card>
           )}
         </div>
+
+        {/* Bottom Sheet for Mobile */}
+        <BottomSheet
+          isOpen={showBottomSheet}
+          onClose={() => {
+            setShowBottomSheet(false);
+            setSelectedFood(null);
+          }}
+          title={selectedFood?.name || "Giá trị dinh dưỡng"}
+        >
+          {selectedFood && (
+            <div ref={nutritionDetailRef} className="space-y-4">
+              {/* Food name */}
+              <div className="bg-green-600 text-white rounded-lg p-4 text-center">
+                <h3 className="text-lg font-bold">{selectedFood.name}</h3>
+                {selectedFood.nameEn && (
+                  <p className="text-sm text-green-100 mt-1">{selectedFood.nameEn}</p>
+                )}
+              </div>
+
+              {/* Code and Energy */}
+              <div className="grid grid-cols-2 gap-3">
+                <div className="bg-gray-100 rounded-lg p-3 text-center">
+                  <div className="text-xs text-gray-600">Mã số</div>
+                  <div className="text-base font-semibold text-gray-900">{selectedFood.code}</div>
+                </div>
+                <div className="bg-gray-100 rounded-lg p-3 text-center">
+                  <div className="text-xs text-gray-600">Năng lượng</div>
+                  <div className="text-base font-semibold text-gray-900">
+                    {nutritionPer100g?.calories} Kcal
+                  </div>
+                </div>
+              </div>
+
+              {/* Quick Nutrition Info */}
+              <div className="space-y-2">
+                <h4 className="font-semibold text-sm text-gray-900">Thông tin cơ bản</h4>
+                <div className="grid grid-cols-2 gap-2 text-sm">
+                  {nutritionPer100g?.protein !== undefined && (
+                    <div className="bg-blue-50 rounded-lg p-2">
+                      <div className="text-xs text-gray-600">Đạm</div>
+                      <div className="font-semibold">{nutritionPer100g.protein.toFixed(1)}g</div>
+                    </div>
+                  )}
+                  {nutritionPer100g?.carbs !== undefined && (
+                    <div className="bg-green-50 rounded-lg p-2">
+                      <div className="text-xs text-gray-600">Carb</div>
+                      <div className="font-semibold">{nutritionPer100g.carbs.toFixed(1)}g</div>
+                    </div>
+                  )}
+                  {nutritionPer100g?.fat !== undefined && (
+                    <div className="bg-yellow-50 rounded-lg p-2">
+                      <div className="text-xs text-gray-600">Chất béo</div>
+                      <div className="font-semibold">{nutritionPer100g.fat.toFixed(1)}g</div>
+                    </div>
+                  )}
+                  {nutritionPer100g?.fiber !== undefined && (
+                    <div className="bg-purple-50 rounded-lg p-2">
+                      <div className="text-xs text-gray-600">Chất xơ</div>
+                      <div className="font-semibold">{nutritionPer100g.fiber.toFixed(1)}g</div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Mineral Profile */}
+              {mineralProfile && (
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-sm text-gray-900">Khoáng chất</h4>
+                  <div className="space-y-2">
+                    {mineralProfile.sodium.value !== undefined && (
+                      <div className="flex items-center justify-between p-2 bg-gray-50 rounded-lg">
+                        <span className="text-sm text-gray-700">Natri (Na)</span>
+                        <div className="text-right">
+                          <span className="font-semibold text-sm">
+                            {mineralProfile.sodium.value} mg
+                          </span>
+                          {mineralProfile.sodium.level && (
+                            <span
+                              className={`ml-2 text-xs px-2 py-0.5 rounded ${
+                                mineralProfile.sodium.level === "low"
+                                  ? "bg-green-100 text-green-800"
+                                  : mineralProfile.sodium.level === "medium"
+                                  ? "bg-yellow-100 text-yellow-800"
+                                  : "bg-red-100 text-red-800"
+                              }`}
+                            >
+                              {mineralProfile.sodium.level === "low"
+                                ? "Thấp"
+                                : mineralProfile.sodium.level === "medium"
+                                ? "Vừa"
+                                : "Cao"}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                    {mineralProfile.potassium.value !== undefined && (
+                      <div className="flex items-center justify-between p-2 bg-gray-50 rounded-lg">
+                        <span className="text-sm text-gray-700">Kali (K)</span>
+                        <span className="font-semibold text-sm">
+                          {mineralProfile.potassium.value} mg
+                        </span>
+                      </div>
+                    )}
+                    {mineralProfile.phosphorus.value !== undefined && (
+                      <div className="flex items-center justify-between p-2 bg-gray-50 rounded-lg">
+                        <span className="text-sm text-gray-700">Phốt pho (P)</span>
+                        <span className="font-semibold text-sm">
+                          {mineralProfile.phosphorus.value} mg
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+
+              {/* Actions */}
+              <div className="flex gap-2 pt-2 border-t">
+                <PDFExportButton
+                  elementRef={nutritionDetailRef}
+                  title={`Giá trị dinh dưỡng - ${selectedFood.name}`}
+                  filename={`gia-tri-dinh-duong-${selectedFood.code}.pdf`}
+                  variant="outline"
+                  size="sm"
+                  className="flex-1 flex items-center justify-center gap-2"
+                >
+                  <Download className="w-4 h-4" />
+                  Tải PDF
+                </PDFExportButton>
+                <button
+                  type="button"
+                  onClick={handlePrint}
+                  className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2 text-sm"
+                >
+                  <Printer className="w-4 h-4" />
+                  In
+                </button>
+              </div>
+            </div>
+          )}
+        </BottomSheet>
       </div>
     </div>
   );

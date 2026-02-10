@@ -1,7 +1,7 @@
 /**
- * KnowledgeSection Component
+ * KnowledgeSection component
  * 
- * Educational Purpose: Provides consistent structure for major content sections
+ * Educational purpose: Provides consistent structure for major content sections
  * in knowledge pages. Ensures semantic HTML, accessibility, and consistent styling.
  * 
  * Usage: Wrap major content sections to maintain consistent structure and spacing.

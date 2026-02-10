@@ -63,9 +63,9 @@ export function EducationalNote({
 
   const styles = variantStyles[variant];
   const defaultTitle = variant === 'clinical-insight'
-    ? 'Hiểu Biết Lâm Sàng'
+    ? 'Hiểu biết lâm sàng'
     : variant === 'common-pitfall'
-    ? 'Cạm Bẫy Thường Gặp'
+    ? 'Cạm bẫy Thường gặp'
     : undefined;
 
   return (

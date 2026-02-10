@@ -1,7 +1,7 @@
 /**
- * FactorCard Component
+ * FactorCard component
  * 
- * Educational Purpose: Displays individual factors affecting intake in a
+ * Educational purpose: Displays individual factors affecting intake in a
  * visually distinct card format. Helps readers understand specific barriers
  * or contributors to intake gaps.
  * 

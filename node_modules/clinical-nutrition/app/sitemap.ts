@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "ibd-nutrition",
     "copd-nutrition",
     "cancer-nutrition",
+    "emergency-nutrition",
+    "sports-nutrition",
   ];
 
   const toolPages = [
@@ -29,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "fluid-requirements",
     "refeeding-syndrome-risk",
     "micronutrient-assessment",
+    "food-database",
   ];
 
   return [

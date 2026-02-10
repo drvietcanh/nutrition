@@ -1,19 +1,23 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Search, CheckCircle, AlertCircle, Info, X } from "lucide-react";
+import { Search, CheckCircle, AlertCircle, Info, X, BarChart3 } from "lucide-react";
 import { Card, CardHeader, CardContent } from "../../components/Card";
+import { NutritionBadge } from "../../components/NutritionBadge";
+import { BottomSheet } from "../../components/BottomSheet";
+import { SearchInput } from "../../components/SearchInput";
 import {
   searchExtendedFoods,
   getFoodsByDisease,
+  extendedFoodDatabase,
   type ExtendedFoodItem,
-} from "../../../lib/vietnamese-food-extended";
+} from "@/lib/vietnamese-food-extended";
 import toast from "react-hot-toast";
 import {
   getPercentOfDiseaseTarget,
   getPercentOfRNI,
   type DiseaseType,
-} from "../../../lib/nutrition-reference";
+} from "@/lib/nutrition-reference";
 
 const diseases: { value: DiseaseType; label: string; icon: string }[] = [
   { value: "diabetes", label: "Đái tháo đường", icon: "🩺" },
@@ -50,6 +54,9 @@ export function InteractiveSection() {
   const [selectedFood, setSelectedFood] = useState<ExtendedFoodItem | null>(null);
   const [filterLevel, setFilterLevel] = useState<'all' | 'good' | 'moderate' | 'avoid'>('all');
   const [nutrientFilter, setNutrientFilter] = useState<'none' | 'low-sodium' | 'high-potassium' | 'high-fiber'>('none');
+  const [showBottomSheet, setShowBottomSheet] = useState(false);
+  const [showComparison, setShowComparison] = useState(false);
+  const [comparisonFoods, setComparisonFoods] = useState<ExtendedFoodItem[]>([]);
 
   const filteredFoods = useMemo(() => {
     let foods = searchExtendedFoods(searchQuery);
@@ -102,8 +109,42 @@ export function InteractiveSection() {
 
   const handleFoodSelect = (food: ExtendedFoodItem) => {
     setSelectedFood(food);
+    setShowBottomSheet(true);
     toast.success(`Đã chọn ${food.name}`);
   };
+
+  const quickStats = useMemo(() => {
+    if (selectedDisease === 'all') return null;
+    
+    const goodFoods = getFoodsByDisease(selectedDisease, 'good');
+    const moderateFoods = getFoodsByDisease(selectedDisease, 'moderate');
+    const avoidFoods = getFoodsByDisease(selectedDisease, 'avoid');
+    
+    // Filter by search query if exists
+    const lowerQuery = searchQuery.toLowerCase();
+    const good = searchQuery.trim()
+      ? goodFoods.filter(f => 
+          f.name.toLowerCase().includes(lowerQuery) ||
+          f.nameEn?.toLowerCase().includes(lowerQuery)
+        ).length
+      : goodFoods.length;
+    
+    const moderate = searchQuery.trim()
+      ? moderateFoods.filter(f => 
+          f.name.toLowerCase().includes(lowerQuery) ||
+          f.nameEn?.toLowerCase().includes(lowerQuery)
+        ).length
+      : moderateFoods.length;
+    
+    const avoid = searchQuery.trim()
+      ? avoidFoods.filter(f => 
+          f.name.toLowerCase().includes(lowerQuery) ||
+          f.nameEn?.toLowerCase().includes(lowerQuery)
+        ).length
+      : avoidFoods.length;
+
+    return { good, moderate, avoid, total: filteredFoods.length };
+  }, [filteredFoods, selectedDisease, searchQuery]);
 
   const getDiseaseInfo = (food: ExtendedFoodItem, disease: DiseaseType) => {
     switch (disease) {
@@ -220,16 +261,13 @@ export function InteractiveSection() {
         <CardContent>
           <div className="space-y-4">
             {/* Search */}
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Tìm kiếm thực phẩm..."
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              />
-            </div>
+            <SearchInput
+              value={searchQuery}
+              onChange={setSearchQuery}
+              placeholder="Tìm kiếm thực phẩm..."
+              suggestions={extendedFoodDatabase}
+              showHistory={true}
+            />
 
             {/* Disease Filter */}
             <div>
@@ -381,6 +419,42 @@ export function InteractiveSection() {
           </div>
         </CardContent>
       </Card>
+
+      {/* Quick Reference Cards */}
+      {selectedDisease !== 'all' && quickStats && (
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <Card
+            onClick={() => setFilterLevel('good')}
+            className="cursor-pointer hover:shadow-md transition-all"
+          >
+            <div className="text-center">
+              <div className="text-3xl font-bold text-green-600 mb-1">{quickStats.good}</div>
+              <div className="text-sm font-medium text-gray-700">✅ Tốt</div>
+              <div className="text-xs text-gray-500 mt-1">Phù hợp</div>
+            </div>
+          </Card>
+          <Card
+            onClick={() => setFilterLevel('moderate')}
+            className="cursor-pointer hover:shadow-md transition-all"
+          >
+            <div className="text-center">
+              <div className="text-3xl font-bold text-yellow-600 mb-1">{quickStats.moderate}</div>
+              <div className="text-sm font-medium text-gray-700">⚠️ Trung bình</div>
+              <div className="text-xs text-gray-500 mt-1">Ăn vừa phải</div>
+            </div>
+          </Card>
+          <Card
+            onClick={() => setFilterLevel('avoid')}
+            className="cursor-pointer hover:shadow-md transition-all"
+          >
+            <div className="text-center">
+              <div className="text-3xl font-bold text-red-600 mb-1">{quickStats.avoid}</div>
+              <div className="text-sm font-medium text-gray-700">❌ Nên tránh</div>
+              <div className="text-xs text-gray-500 mt-1">Hạn chế</div>
+            </div>
+          </Card>
+        </div>
+      )}
 
       {/* Results */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -594,6 +668,94 @@ export function InteractiveSection() {
           </Card>
         )}
       </div>
+
+      {/* Bottom Sheet for Mobile */}
+      <BottomSheet
+        isOpen={showBottomSheet}
+        onClose={() => {
+          setShowBottomSheet(false);
+          setSelectedFood(null);
+        }}
+        title={selectedFood?.name || "Chi tiết thực phẩm"}
+      >
+        {selectedFood && (
+          <div className="space-y-4">
+            {/* Basic Info */}
+            <div>
+              <h4 className="font-semibold text-sm text-gray-900 mb-2">Thông tin cơ bản</h4>
+              <div className="grid grid-cols-2 gap-2 text-sm">
+                <div>
+                  <span className="text-gray-600">Calories:</span>{' '}
+                  <span className="font-medium">{selectedFood.calories} kcal</span>
+                </div>
+                <div>
+                  <span className="text-gray-600">Đạm:</span>{' '}
+                  <span className="font-medium">{selectedFood.protein}g</span>
+                </div>
+                <div>
+                  <span className="text-gray-600">Carb:</span>{' '}
+                  <span className="font-medium">{selectedFood.carbs}g</span>
+                </div>
+                <div>
+                  <span className="text-gray-600">Chất béo:</span>{' '}
+                  <span className="font-medium">{selectedFood.fat}g</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Disease-specific Info */}
+            {selectedDisease !== 'all' && (() => {
+              const info = getDiseaseInfo(selectedFood, selectedDisease);
+              if (!info) return null;
+              return (
+                <div>
+                  <h4 className="font-semibold text-sm text-gray-900 mb-2">
+                    {diseases.find(d => d.value === selectedDisease)?.icon}{' '}
+                    {diseases.find(d => d.value === selectedDisease)?.label}
+                  </h4>
+                  <div className="space-y-2">
+                    {info.items.map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="flex items-center justify-between p-2 bg-gray-50 rounded"
+                      >
+                        <span className="text-sm font-medium text-gray-700">
+                          {item.label}:
+                        </span>
+                        <div className="flex items-center gap-2">
+                          <span
+                            className={`text-sm font-semibold ${
+                              item.color === 'red'
+                                ? 'text-red-600'
+                                : item.color === 'yellow'
+                                ? 'text-yellow-600'
+                                : 'text-green-600'
+                            }`}
+                          >
+                            {item.value}
+                          </span>
+                          {'level' in item && item.level && (
+                            <NutritionBadge
+                              label=""
+                              value={item.level}
+                              level={
+                                item.level === 'very-high' || item.level === 'cao' ? 'very-high' :
+                                item.level === 'high' ? 'high' :
+                                item.level === 'trung bình' || item.level === 'medium' ? 'medium' :
+                                'low'
+                              }
+                            />
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
+          </div>
+        )}
+      </BottomSheet>
     </div>
   );
 }
