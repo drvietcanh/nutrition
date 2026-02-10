@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Activity, Calculator, UtensilsCrossed, ArrowRight, Ruler, Droplet, AlertTriangle, Pill, Search, ClipboardCheck, Calendar, FlaskConical, BarChart3, RefreshCw, CalendarDays, Zap, Heart } from "lucide-react";
 import { Card, CardHeader, CardContent, CardFooter } from "../components/Card";
 import { Breadcrumb } from "../components/Breadcrumb";
+import { Callout } from "../components/Callout";
 
 export default function ToolsIndexPage() {
   return (
@@ -20,7 +21,15 @@ export default function ToolsIndexPage() {
         </p>
       </header>
 
-      <section className="space-y-6">
+      <Callout variant="warning" title="Lưu ý về mục đích giáo dục">
+        <p className="text-body-sm">
+          Các công cụ trên nền tảng này được thiết kế để hỗ trợ học tập và minh họa khái niệm. 
+          Kết quả không thay thế đánh giá lâm sàng đầy đủ và quyết định của đội ngũ y tế.
+        </p>
+      </Callout>
+
+      <section className="space-y-8 tool-page-section">
+        <h2 className="heading-2">Sàng lọc & đánh giá tổng quan</h2>
         <Card href="/tools/malnutrition-screening">
           <CardHeader
             icon={Activity}
@@ -43,6 +52,7 @@ export default function ToolsIndexPage() {
           </CardFooter>
         </Card>
 
+        <h2 className="heading-2 mt-10">Tính toán nhu cầu & cân bằng ăn vào</h2>
         <Card href="/tools/energy-protein-calculator">
           <CardHeader
             icon={Calculator}
@@ -170,6 +180,7 @@ export default function ToolsIndexPage() {
           </CardFooter>
         </Card>
 
+        <h2 className="heading-2 mt-10">Cơ sở dữ liệu thực phẩm & lập kế hoạch bữa ăn</h2>
         <Card href="/tools/food-database">
           <CardHeader
             icon={UtensilsCrossed}
@@ -233,6 +244,7 @@ export default function ToolsIndexPage() {
           </CardFooter>
         </Card>
 
+        <h2 className="heading-2 mt-10">Công cụ cho bệnh lý cụ thể</h2>
         <Card href="/tools/food-lookup-by-disease">
           <CardHeader
             icon={Search}

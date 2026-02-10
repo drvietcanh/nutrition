@@ -5,14 +5,15 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-50 border-t border-gray-200 mt-16">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <footer className="mt-16 border-t border-gray-200 bg-gray-50/80 backdrop-blur-sm">
+      <div className="h-1 w-full bg-gradient-to-r from-blue-200 via-emerald-200 to-blue-200" />
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <BookOpen className="w-6 h-6 text-blue-600" aria-hidden="true" />
-              <span className="text-lg font-bold text-gray-900">
+              <span className="text-lg font-semibold tracking-tight text-gray-900">
                 Dinh dưỡng lâm sàng
               </span>
             </div>
@@ -24,7 +25,7 @@ export function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 mb-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-700 mb-4">
               Điều hướng
             </h3>
             <ul className="space-y-2">
@@ -65,7 +66,7 @@ export function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 mb-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-700 mb-4">
               Tài nguyên
             </h3>
             <ul className="space-y-2">
@@ -98,7 +99,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 mb-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-700 mb-4">
               Liên hệ
             </h3>
             <ul className="space-y-2">
@@ -127,7 +128,7 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-8 pt-8 border-t border-gray-200">
+        <div className="mt-8 pt-6 border-t border-gray-200">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-600">
               © {currentYear} Dinh dưỡng lâm sàng. Tất cả quyền được bảo lưu.

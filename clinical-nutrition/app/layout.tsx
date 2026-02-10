@@ -79,15 +79,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-            <ErrorBoundary>
-              <SkipLinks />
-        <GlobalDisclaimerBanner />
-              <Header />
-              <main id="main-content">{children}</main>
-              <Footer />
-              <BackToTop />
-              <ToastProvider />
-            </ErrorBoundary>
+        <ErrorBoundary>
+          <SkipLinks />
+          <GlobalDisclaimerBanner />
+          <Header />
+          <main
+            id="main-content"
+            className="page-shell"
+          >
+            <div className="page-container">
+              {children}
+            </div>
+          </main>
+          <Footer />
+          <BackToTop />
+          <ToastProvider />
+        </ErrorBoundary>
       </body>
     </html>
   );
