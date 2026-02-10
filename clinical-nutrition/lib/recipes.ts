@@ -153,7 +153,7 @@ export const recipes: Recipe[] = [
     prepTime: 15,
     cookTime: 20,
     category: "soup",
-    tags: ["fish", "soup", "sour", "traditional"],
+    tags: ["seafood", "soup", "sour", "traditional"],
     nutrition: {
       calories: 180,
       protein: 20,

@@ -289,10 +289,13 @@ export function InteractiveSection() {
         }
 
         const hasFish = mealItems.some((item) => {
-          // Backward compatible: extendedFoodDatabase historically stored fish in `seafood`
-          if (item.food.category === "fish") return true;
-          if (item.food.category === "seafood") {
-            return item.food.name.toLowerCase().startsWith("cá");
+          // Cá biển: nằm trong `seafood` và tên bắt đầu bằng \"Cá\"
+          if (item.food.category === "seafood" && item.food.name.toLowerCase().startsWith("cá")) {
+            return true;
+          }
+          // Cá & thủy sản nước ngọt: toàn bộ nhóm `freshwater`
+          if (item.food.category === "freshwater") {
+            return true;
           }
           return false;
         });
