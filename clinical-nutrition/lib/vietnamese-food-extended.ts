@@ -97,7 +97,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "com-trang",
     code: "10001",
-    name: "Cæ¡m Tráº¯ng",
+    name: "Cơm Trắng",
     nameEn: "White rice",
     category: "rice-noodles",
     servingSize: 100,
@@ -145,7 +145,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "com-gao-lut",
-    name: "Cæ¡m Gáº¡o Lá»©t",
+    name: "Cơm Gạo Lứt",
     nameEn: "Brown rice",
     category: "rice-noodles",
     servingSize: 100,
@@ -193,7 +193,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bun-cha",
     code: "10003",
-    name: "Bãºn Cháº£",
+    name: "Bún Chả",
     nameEn: "Grilled pork with noodles",
     category: "rice-noodles",
     servingSize: 100,
@@ -253,7 +253,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bun-ga",
     code: "10004",
-    name: "Bãºn Gã",
+    name: "Bún G",
     nameEn: "Chicken noodle soup",
     category: "rice-noodles",
     servingSize: 100,
@@ -314,7 +314,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "banh-mi",
     code: "10005",
-    name: "Bã¡nh Mã¬",
+    name: "Bánh Mì",
     nameEn: "Vietnamese bread",
     category: "rice-noodles",
     servingSize: 100,
@@ -370,7 +370,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "pho-bo",
     code: "11016",
-    name: "Phá»ÿ bÃ²",
+    name: "Ph Bò",
     nameEn: "Beef pho",
     category: "rice-noodles",
     servingSize: 300,
@@ -424,7 +424,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bun",
     code: "10003",
-    name: "Bãºn",
+    name: "Bún",
     nameEn: "Rice vermicelli",
     category: "rice-noodles",
     servingSize: 100,
@@ -474,7 +474,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "thit-heo-nac",
     code: "20001",
-    name: "Thá»‹t Heo Náº¡c",
+    name: "Tht Heo Nạc",
     nameEn: "Lean pork",
     category: "meat",
     servingSize: 100,
@@ -521,7 +521,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "thit-ga",
     code: "20002",
-    name: "Thá»‹t Gã",
+    name: "Tht G",
     nameEn: "Chicken",
     category: "meat",
     servingSize: 100,
@@ -568,7 +568,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "thit-bo",
     code: "20003",
-    name: "Thá»‹t bÃ²",
+    name: "Tht Bò",
     nameEn: "Beef",
     category: "meat",
     servingSize: 100,
@@ -615,7 +615,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "gan-lon",
-    name: "Gan Lá»£n",
+    name: "Gan Lợn",
     nameEn: "Pork liver",
     category: "meat",
     servingSize: 100,
@@ -662,7 +662,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-loc",
     code: "11044",
-    name: "CÃ¡ lÃ³c",
+    name: "Cá Lóc",
     nameEn: "Snakehead fish",
     category: "seafood",
     servingSize: 100,
@@ -708,7 +708,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "tom",
     code: "30002",
-    name: "Tã´m",
+    name: "Tôm",
     nameEn: "Shrimp",
     category: "seafood",
     servingSize: 100,
@@ -763,7 +763,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "rau-muong",
     code: "40001",
-    name: "Rau Muá»‘ng",
+    name: "Rau Mung",
     nameEn: "Water spinach",
     category: "vegetables",
     servingSize: 100,
@@ -819,7 +819,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "cai-xanh",
     code: "40002",
-    name: "Cáº£i Xanh",
+    name: "Cải Xanh",
     nameEn: "Chinese cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -872,7 +872,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-chua",
     code: "40003",
-    name: "CÃ Chua",
+    name: "Cà Chua",
     nameEn: "Tomato",
     category: "vegetables",
     servingSize: 100,
@@ -928,7 +928,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "khoai-tay",
     code: "40006",
-    name: "Khoai Tã¢y",
+    name: "Khoai Tây",
     nameEn: "Potato",
     category: "vegetables",
     servingSize: 100,
@@ -1042,7 +1042,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "chuoi",
     code: "50001",
-    name: "Chuá»‘i",
+    name: "Chui",
     nameEn: "Banana",
     category: "fruits",
     servingSize: 100,
@@ -1154,7 +1154,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "tao",
     code: "50003",
-    name: "Tã¡o",
+    name: "Táo",
     nameEn: "Apple",
     category: "fruits",
     servingSize: 100,
@@ -1211,7 +1211,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dau-phu",
     code: "60001",
-    name: "Äáº­u Phá»¥",
+    name: "Đậu Phụ",
     nameEn: "Tofu",
     category: "legumes",
     servingSize: 100,
@@ -1266,7 +1266,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dau-xanh",
     code: "60002",
-    name: "Äáº­u Xanh",
+    name: "Đậu Xanh",
     nameEn: "Mung beans",
     category: "legumes",
     servingSize: 100,
@@ -1320,7 +1320,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "nuoc-mam",
     code: "70001",
-    name: "NÆ°á»›c Máº¯m",
+    name: "Nưc Mắm",
     nameEn: "Fish sauce",
     category: "condiments",
     servingSize: 15,
@@ -1449,7 +1449,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "tan-o",
-    name: "Rau Táº§n Ã´",
+    name: "Rau Tần Ô",
     nameEn: "Crown daisy",
     category: "vegetables",
     servingSize: 100,
@@ -1491,7 +1491,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "hanh-la",
     code: "40049",
-    name: "HÃ Nh Lã¡",
+    name: "Hành Lá",
     nameEn: "Spring onion",
     category: "vegetables",
     servingSize: 100,
@@ -1537,7 +1537,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "hung-que",
     code: "40051",
-    name: "Hãºng Quáº¿",
+    name: "Húng Quế",
     nameEn: "Sweet basil",
     category: "vegetables",
     servingSize: 100,
@@ -1582,7 +1582,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-tim",
     code: "11054",
-    name: "CÃ Tã­m",
+    name: "Cà Tím",
     nameEn: "Eggplant",
     category: "vegetables",
     servingSize: 100,
@@ -1629,7 +1629,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dau-bap",
     code: "40009",
-    name: "Äáº­u Báº¯p",
+    name: "Đậu Bắp",
     nameEn: "Okra",
     category: "vegetables",
     servingSize: 100,
@@ -1676,7 +1676,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "kho-qua",
     code: "11004",
-    name: "Khá»• Qua",
+    name: "Kh Qua",
     nameEn: "Bitter melon",
     category: "vegetables",
     servingSize: 100,
@@ -1722,7 +1722,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "muop-huong",
-    name: "MÆ°á»›p hÆ°Æ¡ng",
+    name: "Mưp Hương",
     nameEn: "Angled luffa",
     category: "vegetables",
     servingSize: 100,
@@ -1769,7 +1769,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "chuoi-tieu",
     code: "50017",
-    name: "Chuá»‘i Tiãªu",
+    name: "Chui Tiêu",
     nameEn: "Banana",
     category: "fruits",
     servingSize: 100,
@@ -1816,7 +1816,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "cam-sanh",
     code: "50018",
-    name: "Cam Sã Nh",
+    name: "Cam Sành",
     nameEn: "Orange",
     category: "fruits",
     servingSize: 100,
@@ -1863,7 +1863,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "quyt",
     code: "50019",
-    name: "Quã½t",
+    name: "Quýt",
     nameEn: "Mandarin",
     category: "fruits",
     servingSize: 100,
@@ -1910,7 +1910,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "vu-sua",
     code: "50026",
-    name: "Vãº Sá»¯a",
+    name: "Vú Sữa",
     nameEn: "Star apple",
     category: "fruits",
     servingSize: 100,
@@ -1957,7 +1957,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "chom-chom",
     code: "50014",
-    name: "Chã´m Chã´m",
+    name: "Chôm Chôm",
     nameEn: "Rambutan",
     category: "fruits",
     servingSize: 100,
@@ -2004,7 +2004,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "nhan",
     code: "50029",
-    name: "Nhã£n",
+    name: "Nhãn",
     nameEn: "Longan",
     category: "fruits",
     servingSize: 100,
@@ -2087,7 +2087,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cai-be-xanh",
-    name: "Rau Cáº£i báº¹ Xanh",
+    name: "Rau Cải Bẹ Xanh",
     nameEn: "Mustard greens",
     category: "vegetables",
     servingSize: 100,
@@ -2132,7 +2132,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "xa-lach",
     code: "40041",
-    name: "Rau Xã Lã¡ch",
+    name: "Rau Xà Lách",
     nameEn: "Lettuce",
     category: "vegetables",
     servingSize: 100,
@@ -2179,7 +2179,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "tia-to",
     code: "40053",
-    name: "Tã­a Tã´",
+    name: "Tía Tô",
     nameEn: "Perilla leaves",
     category: "vegetables",
     servingSize: 100,
@@ -2270,7 +2270,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "khoai-mon",
     code: "40019",
-    name: "Khoai Mã´n",
+    name: "Khoai Môn",
     nameEn: "Taro root",
     category: "vegetables",
     servingSize: 100,
@@ -2316,7 +2316,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bap-ngo",
-    name: "Báº¯p (Ngã´)",
+    name: "Bắp (Ngô)",
     nameEn: "Corn",
     category: "vegetables",
     servingSize: 100,
@@ -2408,7 +2408,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "xoai-xanh",
-    name: "Xoã I Xanh",
+    name: "Xoài Xanh",
     nameEn: "Green mango",
     category: "fruits",
     servingSize: 100,
@@ -2547,7 +2547,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bo",
     code: "20003",
-    name: "BÆ¡",
+    name: "Bơ",
     nameEn: "Avocado",
     category: "fruits",
     servingSize: 100,
@@ -2596,7 +2596,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   // ========================================================================
   {
     id: "cai-bo-xoi",
-    name: "Cáº£i bÃ³ Xã´i",
+    name: "Cải Bó Xôi",
     nameEn: "Spinach",
     category: "vegetables",
     servingSize: 100,
@@ -2641,7 +2641,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bap-cai-trang",
-    name: "Báº¯p Cáº£i Tráº¯ng",
+    name: "Bắp Cải Trắng",
     nameEn: "White cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -2688,7 +2688,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bap-cai-tim",
     code: "40033",
-    name: "Báº¯p Cáº£i Tã­m",
+    name: "Bắp Cải Tím",
     nameEn: "Red cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -2780,7 +2780,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "dua-leo-veg36",
-    name: "DÆ°a Leo",
+    name: "Dưa Leo",
     nameEn: "Cucumber",
     category: "vegetables",
     servingSize: 100,
@@ -2827,7 +2827,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "hanh-tay",
     code: "40057",
-    name: "HÃ Nh Tã¢y",
+    name: "Hành Tây",
     nameEn: "Onion",
     category: "vegetables",
     servingSize: 100,
@@ -2874,7 +2874,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "toi",
     code: "20096",
-    name: "Tá»i",
+    name: "Tỏi",
     nameEn: "Garlic",
     category: "vegetables",
     servingSize: 100,
@@ -2921,7 +2921,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "tao-ta",
     code: "50020",
-    name: "Tã¡o Ta",
+    name: "Táo Ta",
     nameEn: "Apple",
     category: "fruits",
     servingSize: 100,
@@ -3059,7 +3059,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "man-roi",
-    name: "Máº­n (Roi)",
+    name: "Mận (Roi)",
     nameEn: "Rose apple",
     category: "fruits",
     servingSize: 100,
@@ -3106,7 +3106,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "me-chin",
     code: "50033",
-    name: "Me Chã­n",
+    name: "Me Chín",
     nameEn: "Tamarind",
     category: "fruits",
     servingSize: 100,
@@ -3155,7 +3155,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   // ========================================================================
   {
     id: "banh-mi-nguyen-cam",
-    name: "Bã¡nh Mã¬ Nguyãªn Cã¡m",
+    name: "Bánh Mì Nguyên Cám",
     nameEn: "Whole wheat bread",
     category: "rice-noodles",
     servingSize: 100,
@@ -3201,7 +3201,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "banh-mi-den",
-    name: "Bã¡nh Mã¬ Ä‘en (Rye)",
+    name: "Bánh Mì En (Rye)",
     nameEn: "Rye bread",
     category: "rice-noodles",
     servingSize: 100,
@@ -3247,7 +3247,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "yen-mach-chao",
-    name: "Yáº¿n Máº¡ch (Chã¡o)",
+    name: "Yến Mạch (Cháo)",
     nameEn: "Oatmeal cooked",
     category: "rice-noodles",
     servingSize: 100,
@@ -3293,7 +3293,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bun-gao-lut",
-    name: "Bãºn Gáº¡o Lá»©t",
+    name: "Bún Gạo Lứt",
     nameEn: "Brown rice vermicelli",
     category: "rice-noodles",
     servingSize: 100,
@@ -3339,7 +3339,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "sua-tach-beo",
-    name: "Sá»¯a Tã¡ch Bã©o",
+    name: "Sữa Tách Béo",
     nameEn: "Skim milk",
     category: "dairy",
     servingSize: 100,
@@ -3385,7 +3385,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "sua-dau-nanh-it-duong",
-    name: "Sá»¯a Ä‘áº­u Nã Nh Ã­t Ä‘Æ°á»ng",
+    name: "Sữa Ậu Nành Ít Ường",
     nameEn: "Low-sugar soy milk",
     category: "beverages",
     servingSize: 100,
@@ -3421,7 +3421,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "sua-chua-khong-duong",
-    name: "Sá»¯a Chua Khã´ng Ä‘Æ°á»ng",
+    name: "Sữa Chua Không Ường",
     nameEn: "Plain yogurt",
     category: "dairy",
     servingSize: 100,
@@ -3467,7 +3467,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "pho-mai-it-beo",
-    name: "Phã´ Mai tÆ°Æ¡i Ã­t Bã©o",
+    name: "Phô Mai Tươi Ít Béo",
     nameEn: "Cottage cheese",
     category: "dairy",
     servingSize: 100,
@@ -3513,7 +3513,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "dua-cai-muoi",
-    name: "DÆ°a Cáº£i Muá»‘i",
+    name: "Dưa Cải Mui",
     nameEn: "Pickled mustard greens",
     category: "vegetables",
     servingSize: 100,
@@ -3548,7 +3548,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-phao-muoi",
-    name: "CÃ Phã¡o Muá»‘i",
+    name: "Cà Pháo Mui",
     nameEn: "Pickled eggplant",
     category: "vegetables",
     servingSize: 100,
@@ -3594,7 +3594,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "banh-bao",
     code: "10029",
-    name: "Bã¡nh Bao Nhã¢n Thá»‹t",
+    name: "Bánh Bao Nhân Tht",
     nameEn: "Steamed meat bun",
     category: "snacks",
     servingSize: 100,
@@ -3640,7 +3640,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "banh-mi-kep",
-    name: "Bã¡nh Mã¬ káº¹p Thá»‹t",
+    name: "Bánh Mì Kẹp Tht",
     nameEn: "Banh mi sandwich",
     category: "snacks",
     servingSize: 100,
@@ -3687,7 +3687,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bun-rieu",
     code: "11003",
-    name: "Bãºn Riãªu",
+    name: "Bún Riêu",
     nameEn: "Bun rieu crab noodle soup",
     category: "soups",
     servingSize: 100,
@@ -3791,7 +3791,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "chao-trang",
     code: "11056",
-    name: "Chã¡o Tráº¯ng",
+    name: "Cháo Trắng",
     nameEn: "Plain rice porridge",
     category: "soups",
     servingSize: 100,
@@ -3847,7 +3847,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "chao-ga",
     code: "11057",
-    name: "Chã¡o Gã",
+    name: "Cháo G",
     nameEn: "Chicken porridge",
     category: "soups",
     servingSize: 100,
@@ -3908,7 +3908,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "pho-ga",
     code: "11015",
-    name: "Phá»ÿ Gã",
+    name: "Ph G",
     nameEn: "Chicken pho",
     category: "soups",
     servingSize: 100,
@@ -3968,7 +3968,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-com-kho",
-    name: "CÃ¡ Cæ¡m Khã´",
+    name: "Cá Cơm Khô",
     nameEn: "Dried anchovy",
     category: "seafood",
     servingSize: 100,
@@ -4013,7 +4013,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ruoc-thit",
-    name: "Ruá»‘c Thá»‹t",
+    name: "Ruc Tht",
     nameEn: "Pork floss",
     category: "meat",
     servingSize: 100,
@@ -4060,7 +4060,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "nuoc-dua",
     code: "90001",
-    name: "NÆ°á»›c Dá»«a tÆ°Æ¡i",
+    name: "Nưc Dừa Tươi",
     nameEn: "Coconut water",
     category: "beverages",
     servingSize: 100,
@@ -4109,7 +4109,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   // ========================================================================
   {
     id: "gio-lua",
-    name: "GiÃ² Lá»¥a",
+    name: "Giò Lụa",
     nameEn: "Steamed pork sausage",
     category: "meat",
     servingSize: 100,
@@ -4158,7 +4158,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cha-lua-chien",
-    name: "Cháº£ Lá»¥a Chiãªn",
+    name: "Chả Lụa Chiên",
     nameEn: "Fried pork sausage",
     category: "meat",
     servingSize: 100,
@@ -4257,7 +4257,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "heo-quay",
-    name: "Thá»‹t Heo Quay",
+    name: "Tht Heo Quay",
     nameEn: "Roast pork belly",
     category: "meat",
     servingSize: 100,
@@ -4306,7 +4306,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "thit-kho-tau",
     code: "11027",
-    name: "Thá»‹t Kho Tã U",
+    name: "Tht Kho Tàu",
     nameEn: "Braised pork with egg",
     category: "meat",
     servingSize: 100,
@@ -4356,7 +4356,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bo-vien",
     code: "20120",
-    name: "BÃ² Viãªn",
+    name: "Bò Viên",
     nameEn: "Beef meatball",
     category: "meat",
     servingSize: 100,
@@ -4406,7 +4406,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "xuc-xich-heo",
     code: "20035",
-    name: "Xãºc Xã­ch Heo",
+    name: "Xúc Xích Heo",
     nameEn: "Pork sausage",
     category: "meat",
     servingSize: 100,
@@ -4456,7 +4456,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     // báº£n jambon má»›i, trÃ¡nh trÃ¹ng id cÅ©
     id: "jambon-meat32",
-    name: "Jambon (Giäƒm Bã´ng)",
+    name: "Jambon (Gim Bông)",
     nameEn: "Ham",
     category: "meat",
     servingSize: 100,
@@ -4506,7 +4506,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ga-nuong",
     code: "20008",
-    name: "Thá»‹t Gã nÆ°á»›ng",
+    name: "Tht Gà Nưng",
     nameEn: "Grilled chicken",
     category: "meat",
     servingSize: 100,
@@ -4555,7 +4555,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "vit-quay",
-    name: "Vá»‹t Quay",
+    name: "Vt Quay",
     nameEn: "Roast duck",
     category: "meat",
     servingSize: 100,
@@ -4603,7 +4603,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "be-thui",
-    name: "Bãª Thui",
+    name: "Bê Thui",
     nameEn: "Roasted veal",
     category: "meat",
     servingSize: 100,
@@ -4655,7 +4655,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-basa",
     code: "30001",
-    name: "CÃ¡ Basa",
+    name: "Cá Basa",
     nameEn: "Basa fish",
     category: "seafood",
     servingSize: 100,
@@ -4701,7 +4701,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-tra",
     code: "30014",
-    name: "CÃ¡ Tra",
+    name: "Cá Tra",
     nameEn: "Pangasius catfish",
     category: "seafood",
     servingSize: 100,
@@ -4746,7 +4746,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-linh",
-    name: "CÃ¡ Linh",
+    name: "Cá Linh",
     nameEn: "Small river fish",
     category: "seafood",
     servingSize: 100,
@@ -4791,7 +4791,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-sac",
-    name: "CÃ¡ Sáº·c",
+    name: "Cá Sặc",
     nameEn: "Snakeskin gourami",
     category: "seafood",
     servingSize: 100,
@@ -4836,7 +4836,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-that-lat",
-    name: "CÃ¡ Thã¡t Lã¡t",
+    name: "Cá Thát Lát",
     nameEn: "Featherback fish",
     category: "seafood",
     servingSize: 100,
@@ -4881,7 +4881,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-dua",
-    name: "CÃ¡ Dá»©a",
+    name: "Cá Dứa",
     nameEn: "Pangasius krempfi",
     category: "seafood",
     servingSize: 100,
@@ -4926,7 +4926,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-ngu-hop-nuoc",
-    name: "CÃ¡ Ngá»« Há»™p (nÆ°á»›c)",
+    name: "Cá Ngừ Hp (Nưc)",
     nameEn: "Canned tuna in water",
     category: "seafood",
     servingSize: 100,
@@ -4971,7 +4971,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-moi-hop-fish32",
-    name: "CÃ¡ mÃ²i Há»™p",
+    name: "Cá Mòi Hp",
     nameEn: "Canned sardines",
     category: "seafood",
     servingSize: 100,
@@ -5017,7 +5017,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-com-tuoi",
     code: "30026",
-    name: "CÃ¡ Cæ¡m tÆ°Æ¡i",
+    name: "Cá Cơm Tươi",
     nameEn: "Fresh anchovy",
     category: "seafood",
     servingSize: 100,
@@ -5062,7 +5062,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-thu-tuoi",
-    name: "CÃ¡ Thu tÆ°Æ¡i",
+    name: "Cá Thu Tươi",
     nameEn: "Spanish mackerel",
     category: "seafood",
     servingSize: 100,
@@ -5107,7 +5107,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-bop",
-    name: "CÃ¡ Bá»›p",
+    name: "Cá Bp",
     nameEn: "Cobia fish",
     category: "seafood",
     servingSize: 100,
@@ -5152,7 +5152,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-nau",
-    name: "CÃ¡ Nã¢u",
+    name: "Cá Nâu",
     nameEn: "Scat fish",
     category: "seafood",
     servingSize: 100,
@@ -5200,7 +5200,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   // ========================================================================
   {
     id: "ca-thu-nuong",
-    name: "CÃ¡ Thu nÆ°á»›ng",
+    name: "Cá Thu Nưng",
     nameEn: "Grilled mackerel",
     category: "seafood",
     servingSize: 100,
@@ -5245,7 +5245,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-ngu-ap-chao",
-    name: "CÃ¡ Ngá»« Ã¡p Cháº£o",
+    name: "Cá Ngừ Áp Chảo",
     nameEn: "Pan-seared tuna",
     category: "seafood",
     servingSize: 100,
@@ -5290,7 +5290,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-hoi-nuong",
-    name: "CÃ¡ Há»“i nÆ°á»›ng",
+    name: "Cá Hi Nưng",
     nameEn: "Grilled salmon",
     category: "seafood",
     servingSize: 100,
@@ -5335,7 +5335,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-trich-nuong",
-    name: "CÃ¡ Trã­ch nÆ°á»›ng",
+    name: "Cá Trích Nưng",
     nameEn: "Grilled herring",
     category: "seafood",
     servingSize: 100,
@@ -5380,7 +5380,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-moi-nuong",
-    name: "CÃ¡ mÃ²i nÆ°á»›ng",
+    name: "Cá Mòi Nưng",
     nameEn: "Grilled sardine",
     category: "seafood",
     servingSize: 100,
@@ -5425,7 +5425,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-nuc-nuong",
-    name: "CÃ¡ Ná»¥c nÆ°á»›ng",
+    name: "Cá Nục Nưng",
     nameEn: "Grilled scad",
     category: "seafood",
     servingSize: 100,
@@ -5470,7 +5470,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-ho-nuong",
-    name: "CÃ¡ Há»‘ nÆ°á»›ng",
+    name: "Cá H Nưng",
     nameEn: "Grilled hairtail fish",
     category: "seafood",
     servingSize: 100,
@@ -5519,7 +5519,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "cua-bien",
     code: "30012",
-    name: "Cua Biá»ƒn",
+    name: "Cua Bin",
     nameEn: "Crab",
     category: "seafood",
     servingSize: 100,
@@ -5568,7 +5568,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "muc",
     code: "30007",
-    name: "Má»±c",
+    name: "Mực",
     nameEn: "Squid",
     category: "seafood",
     servingSize: 100,
@@ -5617,7 +5617,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bach-tuoc",
     code: "30035",
-    name: "Báº¡ch Tuá»™c",
+    name: "Bạch Tuc",
     nameEn: "Octopus",
     category: "seafood",
     servingSize: 100,
@@ -5714,7 +5714,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ghe",
     code: "30032",
-    name: "Gháº¹",
+    name: "Ghẹ",
     nameEn: "Crab (small)",
     category: "seafood",
     servingSize: 100,
@@ -5763,7 +5763,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "so-huyet",
     code: "30036",
-    name: "SÃ² Huyáº¿t",
+    name: "Sò Huyết",
     nameEn: "Blood cockle",
     category: "seafood",
     servingSize: 100,
@@ -5812,7 +5812,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "hau",
     code: "50004",
-    name: "HÃ U",
+    name: "Hàu",
     nameEn: "Oyster",
     category: "seafood",
     servingSize: 100,
@@ -5861,7 +5861,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "so-diep",
     code: "30039",
-    name: "SÃ² Ä‘iá»‡p",
+    name: "Sò Ip",
     nameEn: "Scallop",
     category: "seafood",
     servingSize: 100,
@@ -5912,7 +5912,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   // ========================================================================
   {
     id: "ca-chim-bien",
-    name: "CÃ¡ Chim Biá»ƒn",
+    name: "Cá Chim Bin",
     nameEn: "Sea bream",
     category: "seafood",
     servingSize: 100,
@@ -5961,7 +5961,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-bac-ma",
     code: "30023",
-    name: "CÃ¡ Báº¡c Mã¡",
+    name: "Cá Bạc Má",
     nameEn: "Indian mackerel",
     category: "seafood",
     servingSize: 100,
@@ -6009,7 +6009,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-chi-vang",
-    name: "CÃ¡ Chá»‰ Vã Ng",
+    name: "Cá Ch Vàng",
     nameEn: "Yellowtail scad",
     category: "seafood",
     servingSize: 100,
@@ -6058,7 +6058,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-mu",
     code: "30063",
-    name: "CÃ¡ Mãº",
+    name: "Cá Mú",
     nameEn: "Grouper",
     category: "seafood",
     servingSize: 100,
@@ -6106,7 +6106,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-hong-bien",
-    name: "CÃ¡ Há»“ng Biá»ƒn",
+    name: "Cá Hng Bin",
     nameEn: "Red snapper",
     category: "seafood",
     servingSize: 100,
@@ -6154,7 +6154,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-duoi",
-    name: "CÃ¡ Ä‘uá»‘i",
+    name: "Cá Ui",
     nameEn: "Stingray",
     category: "seafood",
     servingSize: 100,
@@ -6202,7 +6202,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-kim",
-    name: "CÃ¡ Kã¬m",
+    name: "Cá Kìm",
     nameEn: "Needlefish",
     category: "seafood",
     servingSize: 100,
@@ -6250,7 +6250,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-bon-bien",
-    name: "CÃ¡ Bæ¡n Biá»ƒn",
+    name: "Cá Bơn Bin",
     nameEn: "Flounder",
     category: "seafood",
     servingSize: 100,
@@ -6298,7 +6298,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-tuyet",
-    name: "CÃ¡ Tuyáº¿t",
+    name: "Cá Tuyết",
     nameEn: "Cod",
     category: "seafood",
     servingSize: 100,
@@ -6349,7 +6349,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   // ========================================================================
   {
     id: "cai-xoong",
-    name: "Rau Cáº£i Xoong",
+    name: "Rau Cải Xoong",
     nameEn: "Watercress",
     category: "vegetables",
     servingSize: 100,
@@ -6393,7 +6393,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "diep-ca",
-    name: "Rau Diáº¿p Cã¡",
+    name: "Rau Diếp Cá",
     nameEn: "Fish mint",
     category: "vegetables",
     servingSize: 100,
@@ -6481,7 +6481,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bo-ngot-rung",
-    name: "Rau Bá»“ ngÃ³t (ngÃ³t Rá»«ng)",
+    name: "Rau B Ngót (Ngót Rừng)",
     nameEn: "Wild sweet leaf",
     category: "vegetables",
     servingSize: 100,
@@ -6525,7 +6525,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "rau-don",
-    name: "Rau Dá»›n",
+    name: "Rau Dn",
     nameEn: "Fiddlehead fern",
     category: "vegetables",
     servingSize: 100,
@@ -6569,7 +6569,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "rau-cang-cua",
-    name: "Rau Cã Ng Cua",
+    name: "Rau Càng Cua",
     nameEn: "Peperomia pellucida",
     category: "vegetables",
     servingSize: 100,
@@ -6614,7 +6614,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "rau-ma",
     code: "40016",
-    name: "Rau Mã¡",
+    name: "Rau Má",
     nameEn: "Centella asiatica",
     category: "vegetables",
     servingSize: 100,
@@ -6658,7 +6658,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "rau-he",
-    name: "Rau háº¹",
+    name: "Rau Hẹ",
     nameEn: "Garlic chives",
     category: "vegetables",
     servingSize: 100,
@@ -6702,7 +6702,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "gia-do",
-    name: "Giã¡ Ä‘á»—",
+    name: "Giá",
     nameEn: "Mung bean sprouts",
     category: "vegetables",
     servingSize: 100,
@@ -6795,7 +6795,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dau-ha-lan",
     code: "40027",
-    name: "Äáº­u HÃ Lan tÆ°Æ¡i",
+    name: "Đậu Hà Lan Tươi",
     nameEn: "Green peas",
     category: "vegetables",
     servingSize: 100,
@@ -6890,7 +6890,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "khoai-mi",
-    name: "Khoai Mã¬ (Sáº¯n)",
+    name: "Khoai Mì (Sắn)",
     nameEn: "Cassava root",
     category: "vegetables",
     servingSize: 100,
@@ -6936,7 +6936,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cu-nang",
-    name: "Cá»§ Näƒng (Mã£ Tháº§y)",
+    name: "Củ Nng (Mã Thầy)",
     nameEn: "Water chestnut",
     category: "vegetables",
     servingSize: 100,
@@ -6982,7 +6982,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cu-sen",
-    name: "Cá»§ Sen",
+    name: "Củ Sen",
     nameEn: "Lotus root",
     category: "vegetables",
     servingSize: 100,
@@ -7029,7 +7029,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "gung",
     code: "11029",
-    name: "Gá»«ng",
+    name: "Gừng",
     nameEn: "Ginger root",
     category: "vegetables",
     servingSize: 100,
@@ -7076,7 +7076,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "nghe",
     code: "30037",
-    name: "Nghá»‡ tÆ°Æ¡i",
+    name: "Ngh Tươi",
     nameEn: "Turmeric root",
     category: "vegetables",
     servingSize: 100,
@@ -7122,7 +7122,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-chua-bi",
-    name: "CÃ Chua Bi",
+    name: "Cà Chua Bi",
     nameEn: "Cherry tomato",
     category: "vegetables",
     servingSize: 100,
@@ -7168,7 +7168,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ot-chuong",
-    name: "Á»št Chuã´ng",
+    name: "T Chuông",
     nameEn: "Bell pepper",
     category: "vegetables",
     servingSize: 100,
@@ -7214,7 +7214,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bi-ngoi",
-    name: "BÃ­ ngÃ²i",
+    name: "Bí Ngòi",
     nameEn: "Zucchini",
     category: "vegetables",
     servingSize: 100,
@@ -7260,7 +7260,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "kho-qua-rung",
-    name: "Khá»• Qua Rá»«ng",
+    name: "Kh Qua Rừng",
     nameEn: "Wild bitter melon",
     category: "vegetables",
     servingSize: 100,
@@ -7306,7 +7306,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "du-du-xanh",
-    name: "Äu Ä‘á»§ Xanh",
+    name: "Đu Ủ Xanh",
     nameEn: "Green papaya",
     category: "vegetables",
     servingSize: 100,
@@ -7352,7 +7352,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "su-hao",
-    name: "Su Hã O",
+    name: "Su Hào",
     nameEn: "Kohlrabi",
     category: "vegetables",
     servingSize: 100,
@@ -7399,7 +7399,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dau-que",
     code: "40026",
-    name: "Äáº­u Que",
+    name: "Đậu Que",
     nameEn: "Green beans",
     category: "vegetables",
     servingSize: 100,
@@ -7448,7 +7448,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   // ========================================================================
   {
     id: "chuoi-tieu-fr28",
-    name: "Chuá»‘i Tiãªu Chã­n",
+    name: "Chui Tiêu Chín",
     nameEn: "Banana",
     category: "fruits",
     servingSize: 100,
@@ -7586,7 +7586,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "buoi-da-xanh",
-    name: "BÆ°á»Ÿi Da Xanh",
+    name: "Bưi Da Xanh",
     nameEn: "Pomelo",
     category: "fruits",
     servingSize: 100,
@@ -7817,7 +7817,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "vai",
     code: "20012",
-    name: "Váº£i",
+    name: "Vải",
     nameEn: "Lychee",
     category: "fruits",
     servingSize: 100,
@@ -7956,7 +7956,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "coc",
     code: "10008",
-    name: "CÃ³c",
+    name: "Cóc",
     nameEn: "Ambarella",
     category: "fruits",
     servingSize: 100,
@@ -8247,7 +8247,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "com-tam-suon-viet05",
-    name: "Cæ¡m Táº¥m sÆ°á»n",
+    name: "Cơm Tấm Sườn",
     nameEn: "Broken rice with pork chop",
     category: "rice-noodles",
     servingSize: 450,
@@ -8294,7 +8294,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "com-ga-xoi-mo",
     code: "11020",
-    name: "Cæ¡m Gã Xá»‘i Má»¡",
+    name: "Cơm Gà Xi Mỡ",
     nameEn: "Fried chicken rice",
     category: "rice-noodles",
     servingSize: 450,
@@ -8345,7 +8345,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "chao-thit-bam",
     code: "11005",
-    name: "Chã¡o Thá»‹t Báº±m",
+    name: "Cháo Tht Bằm",
     nameEn: "Pork porridge",
     category: "soups",
     servingSize: 400,
@@ -8395,7 +8395,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "chao-long",
-    name: "Chã¡o lÃ²ng",
+    name: "Cháo Lòng",
     nameEn: "Pork offal porridge",
     category: "soups",
     servingSize: 400,
@@ -8534,7 +8534,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "goi-cuon",
     code: "10035",
-    name: "Gá»i Cuá»‘n Tã´m Thá»‹t",
+    name: "Gỏi Cun Tôm Tht",
     nameEn: "Fresh spring rolls",
     category: "snacks",
     servingSize: 200,
@@ -8584,7 +8584,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "nem-ran-viet12",
-    name: "Nem Rã¡n (Cháº£ giÃ²)",
+    name: "Nem Rán (Chả Giò)",
     nameEn: "Spring rolls fried",
     category: "snacks",
     servingSize: 150,
@@ -8631,7 +8631,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "canh-chua-ca",
     code: "11007",
-    name: "Canh Chua Cã¡",
+    name: "Canh Chua Cá",
     nameEn: "Sour fish soup",
     category: "soups",
     servingSize: 400,
@@ -8682,7 +8682,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-kho-to",
     code: "11009",
-    name: "CÃ¡ Kho Tá»™",
+    name: "Cá Kho T",
     nameEn: "Braised fish in clay pot",
     category: "seafood",
     servingSize: 200,
@@ -8728,7 +8728,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "thit-kho-trung-viet15",
-    name: "Thá»‹t Kho Trá»©ng",
+    name: "Tht Kho Trứng",
     nameEn: "Braised pork with eggs",
     category: "meat",
     servingSize: 200,
@@ -8777,7 +8777,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "hu-tieu-nam-vang",
     code: "11017",
-    name: "Há»§ Tiáº¿u Nam Vang",
+    name: "Hủ Tiếu Nam Vang",
     nameEn: "Hu tieu Nam Vang",
     category: "soups",
     servingSize: 450,
@@ -8869,7 +8869,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cao-lau",
-    name: "Cao Láº§u",
+    name: "Cao Lầu",
     nameEn: "Cao lau",
     category: "soups",
     servingSize: 400,
@@ -8916,7 +8916,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bun-mam",
     code: "11041",
-    name: "Bãºn Máº¯m",
+    name: "Bún Mắm",
     nameEn: "Bun mam",
     category: "soups",
     servingSize: 450,
@@ -8963,7 +8963,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bun-rieu-cua",
     code: "11010",
-    name: "Bãºn Riãªu Cua",
+    name: "Bún Riêu Cua",
     nameEn: "Crab noodle soup",
     category: "soups",
     servingSize: 400,
@@ -9013,7 +9013,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bun-mang-vit",
-    name: "Bãºn Mäƒng Vá»‹t",
+    name: "Bún Mng Vt",
     nameEn: "Duck bamboo noodle soup",
     category: "soups",
     servingSize: 450,
@@ -9064,7 +9064,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "xoi-ga",
     code: "10025",
-    name: "Xã´i Gã",
+    name: "Xôi G",
     nameEn: "Sticky rice with chicken",
     category: "rice-noodles",
     servingSize: 350,
@@ -9101,7 +9101,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "xoi-man",
     code: "10024",
-    name: "Xã´i Máº·n",
+    name: "Xôi Mặn",
     nameEn: "Sticky rice savory",
     category: "rice-noodles",
     servingSize: 350,
@@ -9138,7 +9138,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "banh-chung",
     code: "10036",
-    name: "Bã¡nh chÆ°ng",
+    name: "Bánh Chưng",
     nameEn: "Sticky rice cake",
     category: "rice-noodles",
     servingSize: 200,
@@ -9175,7 +9175,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "banh-tet",
     code: "10037",
-    name: "Bã¡nh Tã©t",
+    name: "Bánh Tét",
     nameEn: "Cylindrical sticky rice cake",
     category: "rice-noodles",
     servingSize: 200,
@@ -9212,7 +9212,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "banh-gio",
     code: "10030",
-    name: "Bã¡nh giÃ²",
+    name: "Bánh Giò",
     nameEn: "Pyramid rice dumpling",
     category: "snacks",
     servingSize: 250,
@@ -9249,7 +9249,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "banh-khot",
     code: "10046",
-    name: "Bã¡nh Khá»t",
+    name: "Bánh Khọt",
     nameEn: "Mini savory pancakes",
     category: "snacks",
     servingSize: 200,
@@ -9286,7 +9286,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "banh-bot-loc",
     code: "10044",
-    name: "Bã¡nh Bá»™t Lá»c",
+    name: "Bánh Bt Lọc",
     nameEn: "Tapioca shrimp dumplings",
     category: "snacks",
     servingSize: 200,
@@ -9322,7 +9322,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "banh-beo-viet29",
-    name: "Bã¡nh Bã¨o",
+    name: "Bánh Bèo",
     nameEn: "Steamed rice cakes",
     category: "snacks",
     servingSize: 250,
@@ -9359,7 +9359,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "com-chien-duong-chau",
     code: "11021",
-    name: "Cæ¡m Chiãªn DÆ°Æ¡ng Chã¢u",
+    name: "Cơm Chiên Dương Châu",
     nameEn: "Yangzhou fried rice",
     category: "rice-noodles",
     servingSize: 400,
@@ -9399,7 +9399,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "banh-trang-tron",
     code: "10034",
-    name: "Bã¡nh Trã¡ng Trá»™n",
+    name: "Bánh Tráng Trn",
     nameEn: "Rice paper salad",
     category: "snacks",
     servingSize: 250,
@@ -9435,7 +9435,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "banh-trang-nuong",
-    name: "Bã¡nh Trã¡ng nÆ°á»›ng",
+    name: "Bánh Tráng Nưng",
     nameEn: "Grilled rice paper",
     category: "snacks",
     servingSize: 200,
@@ -9471,7 +9471,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bap-xao",
-    name: "Báº¯p Xã O",
+    name: "Bắp Xào",
     nameEn: "Stir-fried corn",
     category: "snacks",
     servingSize: 200,
@@ -9508,7 +9508,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "trung-ga",
     code: "80005",
-    name: "Trá»©ng Gã",
+    name: "Trứng G",
     nameEn: "Chicken egg",
     category: "dairy",
     servingSize: 100,
@@ -9566,7 +9566,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "trung-vit",
     code: "80009",
-    name: "Trá»©ng Vá»‹t",
+    name: "Trứng Vt",
     nameEn: "Duck egg",
     category: "dairy",
     servingSize: 100,
@@ -9624,7 +9624,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "trung-cut",
     code: "80010",
-    name: "Trá»©ng Cãºt",
+    name: "Trứng Cút",
     nameEn: "Quail egg",
     category: "dairy",
     servingSize: 100,
@@ -9682,7 +9682,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "trung-ngong",
     code: "80011",
-    name: "Trá»©ng Ngá»—ng",
+    name: "Trứng Ngng",
     nameEn: "Goose egg",
     category: "dairy",
     servingSize: 100,
@@ -9739,7 +9739,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "trung-cut-lon",
-    name: "Trá»©ng Cãºt Lá»™n",
+    name: "Trứng Cút Ln",
     nameEn: "Fertilized quail egg",
     category: "snacks",
     servingSize: 100,
@@ -9785,7 +9785,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "trung-vit-lon",
-    name: "Trá»©ng Vá»‹t Lá»™n",
+    name: "Trứng Vt Ln",
     nameEn: "Balut egg",
     category: "snacks",
     servingSize: 100,
@@ -9832,7 +9832,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "banh-mi-que",
     code: "12007",
-    name: "Bã¡nh Mã¬ Que",
+    name: "Bánh Mì Que",
     nameEn: "Bread stick sandwich",
     category: "snacks",
     servingSize: 120,
@@ -9878,7 +9878,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "banh-tieu",
-    name: "Bã¡nh Tiãªu",
+    name: "Bánh Tiêu",
     nameEn: "Fried sesame bread",
     category: "snacks",
     servingSize: 100,
@@ -9924,7 +9924,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "banh-cam",
-    name: "Bã¡nh Cam (Bã¡nh Rã¡n)",
+    name: "Bánh Cam (Bánh Rán)",
     nameEn: "Fried glutinous rice cake",
     category: "snacks",
     servingSize: 120,
@@ -9970,7 +9970,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "che-dau-den-viet39",
-    name: "Chã¨ Ä‘áº­u Ä‘en",
+    name: "Chè Ậu En",
     nameEn: "Sweet black bean dessert",
     category: "desserts",
     servingSize: 250,
@@ -10017,7 +10017,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "che-ba-mau",
     code: "12004",
-    name: "Chã¨ Ba Mã U",
+    name: "Chè Ba Màu",
     nameEn: "Three-color dessert",
     category: "desserts",
     servingSize: 300,
@@ -10110,7 +10110,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cai-ngot-veg64",
-    name: "Rau Cáº£i Ngá»t",
+    name: "Rau Cải Ngọt",
     nameEn: "Choy sum",
     category: "vegetables",
     servingSize: 100,
@@ -10154,7 +10154,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cai-xanh-veg65",
-    name: "Rau Cáº£i Xanh",
+    name: "Rau Cải Xanh",
     nameEn: "Mustard greens",
     category: "vegetables",
     servingSize: 100,
@@ -10198,7 +10198,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cai-thao-veg66",
-    name: "Rau Cáº£i Tháº£o",
+    name: "Rau Cải Thảo",
     nameEn: "Napa cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -10286,7 +10286,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "rau-den-com-veg68",
-    name: "Rau Dá»n Cæ¡m",
+    name: "Rau Dền Cơm",
     nameEn: "Amaranth greens",
     category: "vegetables",
     servingSize: 100,
@@ -10330,7 +10330,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "rau-den-gai-veg69",
-    name: "Rau Dá»n Gai",
+    name: "Rau Dền Gai",
     nameEn: "Spiny amaranth",
     category: "vegetables",
     servingSize: 100,
@@ -10374,7 +10374,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "rau-lang-veg70",
-    name: "Rau Lang (Ngá»n Khoai Lang)",
+    name: "Rau Lang (Ngọn Khoai Lang)",
     nameEn: "Sweet potato leaves",
     category: "vegetables",
     servingSize: 100,
@@ -10419,7 +10419,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "tan-o-veg71",
-    name: "Rau Táº§n Ã´ (Cáº£i Cãºc)",
+    name: "Rau Tần Ô (Cải Cúc)",
     nameEn: "Crown daisy",
     category: "vegetables",
     servingSize: 100,
@@ -10463,7 +10463,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "xa-lach-xoan-veg72",
-    name: "Rau Xã Lã¡ch Xoäƒn",
+    name: "Rau Xà Lách Xon",
     nameEn: "Curly lettuce",
     category: "vegetables",
     servingSize: 100,
@@ -10508,7 +10508,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "thi-la-veg73",
-    name: "Rau Thã¬ Lã",
+    name: "Rau Thì L",
     nameEn: "Dill weed",
     category: "vegetables",
     servingSize: 100,
@@ -10552,7 +10552,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "kinh-gioi-veg74",
-    name: "Rau Kinh Giá»›i",
+    name: "Rau Kinh Gii",
     nameEn: "Vietnamese balm",
     category: "vegetables",
     servingSize: 100,
@@ -10599,7 +10599,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   // ========================================================================
   {
     id: "khoai-so",
-    name: "Khoai Sá»",
+    name: "Khoai Sọ",
     nameEn: "Taro corm",
     category: "vegetables",
     servingSize: 100,
@@ -10646,7 +10646,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "khoai-mo",
     code: "40019",
-    name: "Khoai Má»¡",
+    name: "Khoai Mỡ",
     nameEn: "Purple yam",
     category: "vegetables",
     servingSize: 100,
@@ -10692,7 +10692,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cu-tu",
-    name: "Cá»§ Tá»«",
+    name: "Củ Từ",
     nameEn: "Yam bean",
     category: "vegetables",
     servingSize: 100,
@@ -10738,7 +10738,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cu-cai-do",
-    name: "Cá»§ Cáº£i Ä‘á»",
+    name: "Củ Cải Ỏ",
     nameEn: "Beetroot",
     category: "vegetables",
     servingSize: 100,
@@ -10774,7 +10774,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-rot-tim",
-    name: "CÃ Rá»‘t Tã­m",
+    name: "Cà Rt Tím",
     nameEn: "Purple carrot",
     category: "vegetables",
     servingSize: 100,
@@ -10820,7 +10820,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bi-ho-lo",
-    name: "BÃ­ Há»“ Lã´",
+    name: "Bí H Lô",
     nameEn: "Bottle gourd",
     category: "vegetables",
     servingSize: 100,
@@ -10866,7 +10866,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "muop-khia",
-    name: "MÆ°á»›p Khã­a",
+    name: "Mưp Khía",
     nameEn: "Ridged gourd",
     category: "vegetables",
     servingSize: 100,
@@ -10912,7 +10912,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bau-sao",
-    name: "Báº§u Sao",
+    name: "Bầu Sao",
     nameEn: "Star gourd",
     category: "vegetables",
     servingSize: 100,
@@ -10958,7 +10958,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "dau-rong",
-    name: "Äáº­u Rá»“ng (Quáº£)",
+    name: "Đậu Rng (Quả)",
     nameEn: "Winged bean pod",
     category: "vegetables",
     servingSize: 100,
@@ -11004,7 +11004,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "dau-bap-do",
-    name: "Äáº­u Báº¯p Ä‘á»",
+    name: "Đậu Bắp Ỏ",
     nameEn: "Red okra",
     category: "vegetables",
     servingSize: 100,
@@ -11050,7 +11050,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-phao-tuoi",
-    name: "CÃ Phã¡o tÆ°Æ¡i",
+    name: "Cà Pháo Tươi",
     nameEn: "Fresh Thai eggplant",
     category: "vegetables",
     servingSize: 100,
@@ -11096,7 +11096,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "dua-gang",
-    name: "DÆ°a Gang",
+    name: "Dưa Gang",
     nameEn: "Oriental melon",
     category: "vegetables",
     servingSize: 100,
@@ -11142,7 +11142,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "dua-leo-bao-tu",
-    name: "DÆ°a Leo Bao Tá»­",
+    name: "Dưa Leo Bao Tử",
     nameEn: "Mini cucumber",
     category: "vegetables",
     servingSize: 100,
@@ -11189,7 +11189,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   // ========== Bá»” SUNG THá»°C PHáº¨M Má»šI - NHÃ“M NGÅ¨ Cá»C & TINH Bá»˜T ==========
   {
     id: "gao-nep",
-    name: "Gáº¡o Náº¿p",
+    name: "Gạo Nếp",
     nameEn: "Glutinous rice",
     category: "rice-noodles",
     servingSize: 100,
@@ -11242,7 +11242,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "gao-lut-do",
-    name: "Gáº¡o Lá»©t Ä‘á»",
+    name: "Gạo Lứt Ỏ",
     nameEn: "Red brown rice",
     category: "rice-noodles",
     servingSize: 100,
@@ -11295,7 +11295,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bun-tuoi",
-    name: "Bãºn tÆ°Æ¡i",
+    name: "Bún Tươi",
     nameEn: "Fresh rice vermicelli",
     category: "rice-noodles",
     servingSize: 100,
@@ -11349,7 +11349,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bun-tau",
-    name: "Bãºn Tã U",
+    name: "Bún Tàu",
     nameEn: "Cellophane noodles",
     category: "rice-noodles",
     servingSize: 100,
@@ -11403,7 +11403,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "mi-tom",
-    name: "MÃ¬ Tã´m",
+    name: "Mì Tôm",
     nameEn: "Instant noodles",
     category: "rice-noodles",
     servingSize: 100,
@@ -11458,7 +11458,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "hu-tieu",
     code: "11017",
-    name: "Há»§ Tiáº¿u",
+    name: "Hủ Tiếu",
     nameEn: "Hu tieu noodles",
     category: "rice-noodles",
     servingSize: 100,
@@ -11512,7 +11512,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "banh-canh",
-    name: "Bã¡nh Canh",
+    name: "Bánh Canh",
     nameEn: "Banh canh noodles",
     category: "rice-noodles",
     servingSize: 100,
@@ -11566,7 +11566,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "khoai-lang-tim",
-    name: "Khoai Lang Tã­m",
+    name: "Khoai Lang Tím",
     nameEn: "Purple sweet potato",
     category: "vegetables",
     servingSize: 100,
@@ -11624,7 +11624,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "khoai-mon",
     code: "40019",
-    name: "Khoai Mã´n",
+    name: "Khoai Môn",
     nameEn: "Taro",
     category: "vegetables",
     servingSize: 100,
@@ -11681,7 +11681,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "khoai-so",
-    name: "Khoai Sá»",
+    name: "Khoai Sọ",
     nameEn: "Taro root",
     category: "vegetables",
     servingSize: 100,
@@ -11739,7 +11739,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "san",
     code: "50018",
-    name: "Sáº¯n (Cá»§ Mã¬)",
+    name: "Sắn (Củ Mì)",
     nameEn: "Cassava",
     category: "vegetables",
     servingSize: 100,
@@ -11796,7 +11796,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "banh-mi-trang",
-    name: "Bã¡nh Mã¬ Tráº¯ng",
+    name: "Bánh Mì Trắng",
     nameEn: "White bread",
     category: "rice-noodles",
     servingSize: 100,
@@ -11850,7 +11850,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "banh-mi-nguyen-cam",
-    name: "Bã¡nh Mã¬ Nguyãªn Cã¡m",
+    name: "Bánh Mì Nguyên Cám",
     nameEn: "Whole wheat bread",
     category: "rice-noodles",
     servingSize: 100,
@@ -11906,7 +11906,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "thit-ba-chi",
     code: "20014",
-    name: "Thá»‹t Ba Chá»‰",
+    name: "Tht Ba Ch",
     nameEn: "Pork belly",
     category: "meat",
     servingSize: 100,
@@ -11959,7 +11959,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "thit-nac-vai",
-    name: "Thá»‹t Náº¡c Vai",
+    name: "Tht Nạc Vai",
     nameEn: "Pork shoulder",
     category: "meat",
     servingSize: 100,
@@ -12011,7 +12011,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "suon-non",
-    name: "SÆ°á»n Non",
+    name: "Sườn Non",
     nameEn: "Pork ribs",
     category: "meat",
     servingSize: 100,
@@ -12063,7 +12063,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "chan-gio",
-    name: "Chã¢n giÃ²",
+    name: "Chân Giò",
     nameEn: "Pork leg",
     category: "meat",
     servingSize: 100,
@@ -12115,7 +12115,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "thit-bo-nac",
-    name: "Thá»‹t bÃ² Náº¡c",
+    name: "Tht Bò Nạc",
     nameEn: "Lean beef",
     category: "meat",
     servingSize: 100,
@@ -12168,7 +12168,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "thit-bo-gan",
-    name: "Thá»‹t bÃ² Gã¢n",
+    name: "Tht Bò Gân",
     nameEn: "Beef tendon",
     category: "meat",
     servingSize: 100,
@@ -12221,7 +12221,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bap-bo",
-    name: "Báº¯p bÃ²",
+    name: "Bắp Bò",
     nameEn: "Beef shank",
     category: "meat",
     servingSize: 100,
@@ -12274,7 +12274,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "uc-ga",
     code: "20094",
-    name: "Á»¨c Gã",
+    name: "Ức G",
     nameEn: "Chicken breast",
     category: "meat",
     servingSize: 100,
@@ -12328,7 +12328,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dui-ga",
     code: "20095",
-    name: "ÄÃ¹i Gã",
+    name: "Đùi G",
     nameEn: "Chicken thigh",
     category: "meat",
     servingSize: 100,
@@ -12381,7 +12381,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dui-toi-ga",
     code: "20096",
-    name: "ÄÃ¹i Tá»i Gã",
+    name: "Đùi Tỏi G",
     nameEn: "Chicken drumstick",
     category: "meat",
     servingSize: 100,
@@ -12437,7 +12437,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dui-goc-tu-ga",
     code: "20097",
-    name: "ÄÃ¹i gÃ³c Tæ° Gã",
+    name: "Đùi Góc Tư G",
     nameEn: "Chicken leg quarter",
     category: "meat",
     servingSize: 100,
@@ -12493,7 +12493,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "canh-ga",
     code: "20098",
-    name: "Cã¡nh Gã",
+    name: "Cánh G",
     nameEn: "Chicken wing (whole)",
     category: "meat",
     servingSize: 100,
@@ -12546,7 +12546,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "canh-giua-ga",
     code: "20099",
-    name: "Cã¡nh Giá»¯a Gã",
+    name: "Cánh Giữa G",
     nameEn: "Chicken wingette",
     category: "meat",
     servingSize: 100,
@@ -12602,7 +12602,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "canh-dau-ga",
     code: "20100",
-    name: "Cã¡nh Ä‘áº§u Gã",
+    name: "Cánh Ầu G",
     nameEn: "Chicken drumette",
     category: "meat",
     servingSize: 100,
@@ -12658,7 +12658,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "co-ga",
     code: "20101",
-    name: "Cá»• Gã",
+    name: "C G",
     nameEn: "Chicken neck",
     category: "meat",
     servingSize: 100,
@@ -12714,7 +12714,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "gan-ga",
     code: "20104",
-    name: "Gan Gã",
+    name: "Gan G",
     nameEn: "Chicken liver",
     category: "meat",
     servingSize: 100,
@@ -12771,7 +12771,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "me-ga",
     code: "20105",
-    name: "Má» Gã",
+    name: "Mề G",
     nameEn: "Chicken gizzard",
     category: "meat",
     servingSize: 100,
@@ -12827,7 +12827,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "tim-ga",
     code: "20106",
-    name: "Tim Gã",
+    name: "Tim G",
     nameEn: "Chicken heart",
     category: "meat",
     servingSize: 100,
@@ -12883,7 +12883,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "chan-ga",
     code: "20107",
-    name: "Chã¢n Gã",
+    name: "Chân G",
     nameEn: "Chicken feet",
     category: "meat",
     servingSize: 100,
@@ -12939,7 +12939,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "long-ga",
     code: "20103",
-    name: "LÃ²ng Gã (Ná»™i Táº¡ng)",
+    name: "Lòng Gà (Ni Tạng)",
     nameEn: "Chicken offal (mixed)",
     category: "meat",
     servingSize: 100,
@@ -12995,7 +12995,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dau-ga",
     code: "20100",
-    name: "Äáº§u Gã",
+    name: "Đầu G",
     nameEn: "Chicken head",
     category: "meat",
     servingSize: 100,
@@ -13051,7 +13051,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "da-ga",
     code: "20102",
-    name: "Da Gã",
+    name: "Da G",
     nameEn: "Chicken skin",
     category: "meat",
     servingSize: 100,
@@ -13095,7 +13095,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-loc",
     code: "11044",
-    name: "CÃ¡ lÃ³c",
+    name: "Cá Lóc",
     nameEn: "Snakehead fish",
     category: "seafood",
     servingSize: 100,
@@ -13139,7 +13139,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-tram",
     code: "30014",
-    name: "CÃ¡ Tráº¯m",
+    name: "Cá Trắm",
     nameEn: "Grass carp",
     category: "seafood",
     servingSize: 100,
@@ -13182,7 +13182,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-ro",
     code: "30003",
-    name: "CÃ¡ Rã´",
+    name: "Cá Rô",
     nameEn: "Anabas",
     category: "seafood",
     servingSize: 100,
@@ -13225,7 +13225,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ca-tra",
     code: "30014",
-    name: "CÃ¡ Tra",
+    name: "Cá Tra",
     nameEn: "Pangasius",
     category: "seafood",
     servingSize: 100,
@@ -13321,7 +13321,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "tom-su",
     code: "30028",
-    name: "Tã´m Sãº",
+    name: "Tôm Sú",
     nameEn: "Tiger prawn",
     category: "seafood",
     servingSize: 100,
@@ -13375,7 +13375,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "tom-the",
     code: "30029",
-    name: "Tã´m Tháº»",
+    name: "Tôm Thẻ",
     nameEn: "White shrimp",
     category: "seafood",
     servingSize: 100,
@@ -13428,7 +13428,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "cua-bien",
     code: "30012",
-    name: "Cua Biá»ƒn",
+    name: "Cua Bin",
     nameEn: "Sea crab",
     category: "seafood",
     servingSize: 100,
@@ -13482,7 +13482,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "cua-dong",
     code: "30031",
-    name: "Cua Ä‘á»“ng",
+    name: "Cua Ng",
     nameEn: "Freshwater crab",
     category: "seafood",
     servingSize: 100,
@@ -13536,7 +13536,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "ghe",
     code: "30032",
-    name: "Gháº¹",
+    name: "Ghẹ",
     nameEn: "Blue crab",
     category: "seafood",
     servingSize: 100,
@@ -13588,7 +13588,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "gan-lon",
-    name: "Gan Lá»£n",
+    name: "Gan Lợn",
     nameEn: "Pork liver",
     category: "meat",
     servingSize: 100,
@@ -13643,7 +13643,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "than-lon",
-    name: "Tháº­n Lá»£n",
+    name: "Thận Lợn",
     nameEn: "Pork kidney",
     category: "meat",
     servingSize: 100,
@@ -13698,7 +13698,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "tim-lon",
-    name: "Tim Lá»£n",
+    name: "Tim Lợn",
     nameEn: "Pork heart",
     category: "meat",
     servingSize: 100,
@@ -13753,7 +13753,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "long-lon",
-    name: "LÃ²ng Lá»£n",
+    name: "Lòng Lợn",
     nameEn: "Pork intestine",
     category: "meat",
     servingSize: 100,
@@ -13808,7 +13808,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "rau-muong",
     code: "40001",
-    name: "Rau Muá»‘ng",
+    name: "Rau Mung",
     nameEn: "Water spinach",
     category: "vegetables",
     servingSize: 100,
@@ -13866,7 +13866,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "rau-ngot",
     code: "11011",
-    name: "Rau ngÃ³t",
+    name: "Rau Ngót",
     nameEn: "Sweet leaf",
     category: "vegetables",
     servingSize: 100,
@@ -13924,7 +13924,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "rau-den",
     code: "40015",
-    name: "Rau Dá»n",
+    name: "Rau Dền",
     nameEn: "Amaranth",
     category: "vegetables",
     servingSize: 100,
@@ -13982,7 +13982,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "rau-cai",
     code: "40008",
-    name: "Rau Cáº£i",
+    name: "Rau Cải",
     nameEn: "Mustard greens",
     category: "vegetables",
     servingSize: 100,
@@ -14095,7 +14095,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cu-cai",
-    name: "Cá»§ Cáº£i",
+    name: "Củ Cải",
     nameEn: "Radish",
     category: "vegetables",
     servingSize: 100,
@@ -14152,7 +14152,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "su-hao",
-    name: "Su Hã O",
+    name: "Su Hào",
     nameEn: "Kohlrabi",
     category: "vegetables",
     servingSize: 100,
@@ -14210,7 +14210,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "bap-cai",
     code: "40005",
-    name: "Báº¯p Cáº£i",
+    name: "Bắp Cải",
     nameEn: "Cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -14267,7 +14267,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "sup-lo",
-    name: "Sãºp Læ¡",
+    name: "Súp Lơ",
     nameEn: "Cauliflower",
     category: "vegetables",
     servingSize: 100,
@@ -14325,7 +14325,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "hanh-tay",
     code: "40057",
-    name: "HÃ Nh Tã¢y",
+    name: "Hành Tây",
     nameEn: "Onion",
     category: "vegetables",
     servingSize: 100,
@@ -14383,7 +14383,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "toi",
     code: "20096",
-    name: "Tá»i",
+    name: "Tỏi",
     nameEn: "Garlic",
     category: "vegetables",
     servingSize: 100,
@@ -14441,7 +14441,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "gung",
     code: "11029",
-    name: "Gá»«ng",
+    name: "Gừng",
     nameEn: "Ginger",
     category: "vegetables",
     servingSize: 100,
@@ -14499,7 +14499,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "nghe",
     code: "30037",
-    name: "Nghá»‡ tÆ°Æ¡i",
+    name: "Ngh Tươi",
     nameEn: "Turmeric",
     category: "vegetables",
     servingSize: 100,
@@ -14557,7 +14557,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dau-xanh",
     code: "60002",
-    name: "Äáº­u Xanh",
+    name: "Đậu Xanh",
     nameEn: "Mung bean",
     category: "legumes",
     servingSize: 100,
@@ -14615,7 +14615,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dau-den",
     code: "60006",
-    name: "Äáº­u Ä‘en",
+    name: "Đậu En",
     nameEn: "Black bean",
     category: "legumes",
     servingSize: 100,
@@ -14672,7 +14672,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "dau-phung",
-    name: "Äáº­u Phá»¥ng",
+    name: "Đậu Phụng",
     nameEn: "Peanut",
     category: "legumes",
     servingSize: 100,
@@ -14730,7 +14730,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dau-nanh",
     code: "80003",
-    name: "Äáº­u Nã Nh",
+    name: "Đậu Nành",
     nameEn: "Soybean",
     category: "legumes",
     servingSize: 100,
@@ -14789,7 +14789,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "xoai",
     code: "50005",
-    name: "Xoã I",
+    name: "Xoài",
     nameEn: "Mango",
     category: "fruits",
     servingSize: 100,
@@ -14847,7 +14847,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "chuoi",
     code: "50001",
-    name: "Chuá»‘i",
+    name: "Chui",
     nameEn: "Banana",
     category: "fruits",
     servingSize: 100,
@@ -14905,7 +14905,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "du-du",
     code: "50006",
-    name: "Äu Ä‘á»§",
+    name: "Đu Ủ",
     nameEn: "Papaya",
     category: "fruits",
     servingSize: 100,
@@ -14963,7 +14963,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "dua-hau",
     code: "50004",
-    name: "DÆ°a Háº¥u",
+    name: "Dưa Hấu",
     nameEn: "Watermelon",
     category: "fruits",
     servingSize: 100,
@@ -15021,7 +15021,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "mit",
     code: "50011",
-    name: "Mã­t",
+    name: "Mít",
     nameEn: "Jackfruit",
     category: "fruits",
     servingSize: 100,
@@ -15079,7 +15079,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "sau-rieng",
     code: "50012",
-    name: "Sáº§u Riãªng",
+    name: "Sầu Riêng",
     nameEn: "Durian",
     category: "fruits",
     servingSize: 100,
@@ -15127,7 +15127,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "tao",
     code: "50003",
-    name: "Tã¡o",
+    name: "Táo",
     nameEn: "Apple",
     category: "fruits",
     servingSize: 100,
@@ -15175,7 +15175,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "le",
     code: "10001",
-    name: "Lãª",
+    name: "Lê",
     nameEn: "Pear",
     category: "fruits",
     servingSize: 100,
@@ -15271,7 +15271,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "quyt",
     code: "50019",
-    name: "Quã½t",
+    name: "Quýt",
     nameEn: "Tangerine",
     category: "fruits",
     servingSize: 100,
@@ -15319,7 +15319,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "buoi",
     code: "50010",
-    name: "BÆ°á»Ÿi",
+    name: "Bưi",
     nameEn: "Pomelo",
     category: "fruits",
     servingSize: 100,
@@ -15377,7 +15377,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "oi",
     code: "20096",
-    name: "Á»”i",
+    name: "I",
     nameEn: "Guava",
     category: "fruits",
     servingSize: 100,
@@ -15435,7 +15435,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "nhan",
     code: "50029",
-    name: "Nhã£n",
+    name: "Nhãn",
     nameEn: "Longan",
     category: "fruits",
     servingSize: 100,
@@ -15493,7 +15493,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "vai",
     code: "20012",
-    name: "Váº£i",
+    name: "Vải",
     nameEn: "Lychee",
     category: "fruits",
     servingSize: 100,
@@ -15551,7 +15551,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "chom-chom",
     code: "50014",
-    name: "Chã´m Chã´m",
+    name: "Chôm Chôm",
     nameEn: "Rambutan",
     category: "fruits",
     servingSize: 100,
@@ -15609,7 +15609,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "mang-cut",
     code: "50013",
-    name: "Mäƒng Cá»¥t",
+    name: "Mng Cụt",
     nameEn: "Mangosteen",
     category: "fruits",
     servingSize: 100,
@@ -15668,7 +15668,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "nuoc-mam",
     code: "70001",
-    name: "NÆ°á»›c Máº¯m",
+    name: "Nưc Mắm",
     nameEn: "Fish sauce",
     category: "condiments",
     servingSize: 100,
@@ -15722,7 +15722,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "nuoc-tuong",
-    name: "NÆ°á»›c tÆ°Æ¡ng",
+    name: "Nưc Tương",
     nameEn: "Soy sauce",
     category: "condiments",
     servingSize: 100,
@@ -15777,7 +15777,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "tuong-ot",
     code: "70002",
-    name: "TÆ°Æ¡ng Á»›t",
+    name: "Tương T",
     nameEn: "Chili sauce",
     category: "condiments",
     servingSize: 100,
@@ -15833,7 +15833,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "tuong-den",
-    name: "TÆ°Æ¡ng Ä‘en",
+    name: "Tương En",
     nameEn: "Black bean sauce",
     category: "condiments",
     servingSize: 100,
@@ -15887,7 +15887,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "mat-ong",
-    name: "Máº­t Ong",
+    name: "Mật Ong",
     nameEn: "Honey",
     category: "condiments",
     servingSize: 100,
@@ -15944,7 +15944,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "mam-tom",
     code: "70013",
-    name: "Máº¯m Tã´m",
+    name: "Mắm Tôm",
     nameEn: "Shrimp paste",
     category: "condiments",
     servingSize: 100,
@@ -15999,7 +15999,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   {
     id: "mam-nem",
     code: "70012",
-    name: "Máº¯m Nãªm",
+    name: "Mắm Nêm",
     nameEn: "Fermented fish sauce",
     category: "condiments",
     servingSize: 100,

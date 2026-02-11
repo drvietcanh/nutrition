@@ -85,6 +85,7 @@ def normalize_whitespace(s: str) -> str:
 
 _CODE_FLOAT_RE = re.compile(r"^(\d+)\.0+$")
 _COMBINING_MARK_RE = re.compile(r"[\u0300-\u036f]")
+_MOJIBAKE_HINT_CHARS = ("Ã", "Â", "Æ", "¦", "¤", "¶", "·", "¸", "º", "»")
 
 
 def normalize_code(code: str) -> str:
@@ -109,6 +110,23 @@ def strip_diacritics(s: str) -> str:
     decomposed = unicodedata.normalize("NFD", s)
     without_marks = _COMBINING_MARK_RE.sub("", decomposed)
     return unicodedata.normalize("NFC", without_marks)
+
+
+def fix_mojibake_if_needed(s: str) -> str:
+    """
+    Nếu chuỗi có các ký tự mojibake điển hình (Ã, Â, Æ, ...),
+    thử sửa bằng cách diễn giải lại như Latin-1 -> UTF-8.
+    Idempotent: chuỗi đã đúng sẽ không bị đổi.
+    """
+    if not s:
+        return s
+    if not any(ch in s for ch in _MOJIBAKE_HINT_CHARS):
+        return s
+    try:
+        fixed = s.encode("latin1", errors="ignore").decode("utf-8", errors="ignore")
+        return fixed if fixed and fixed != s else s
+    except Exception:
+        return s
 
 
 def is_acronym_token(token: str) -> bool:
@@ -273,7 +291,8 @@ def read_csv(path: Path) -> List[FoodRow]:
                 for row in reader:
                     rid = normalize_whitespace(row.get("Id", ""))
                     code = normalize_code(row.get("Code", ""))
-                    name = normalize_whitespace(row.get("Name", ""))
+                    name_raw = row.get("Name", "") or ""
+                    name = normalize_whitespace(fix_mojibake_if_needed(name_raw))
                     cat = normalize_whitespace(row.get("Category", ""))
                     if not rid or not name:
                         continue
