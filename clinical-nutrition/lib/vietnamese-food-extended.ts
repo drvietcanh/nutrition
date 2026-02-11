@@ -1,39 +1,41 @@
-﻿/**
+/**
  * Extended Vietnamese food database with disease-specific information
  * 
- * Má»Ÿ rá»™ng tá»« food-db.ts vá»›i thÃ´ng tin vá»:
- * - ÄÃ¡i thÃ¡o Ä‘Æ°á»ng: GI, GL
- * - Bá»‡nh gÃºt: Purin
- * - Bá»‡nh tháº­n: Kali, Phá»‘t pho
- * - TÄƒng huyáº¿t Ã¡p: Natri
- * - Tim máº¡ch: Cholesterol, Cháº¥t bÃ©o bÃ£o hÃ²a
+ * Mở rộng từ food-db.ts với thông tin về:
+ * - Đái tháo đường: GI, GL
+ * - Bệnh gút: Purin
+ * - Bệnh thận: Kali, Phốt pho
+ * - Tăng huyết áp: Natri
+ * - Tim mạch: Cholesterol, Chất béo bão hòa
  */
 
-import { foodDatabase, type FoodItem } from "./food-db";
+import type { FoodItem, KcalRange } from "./food-db";
+import { filterFoodsByKcalRange } from "./food-db";
+export type { KcalRange } from "./food-db";
 
 export interface DiseaseSpecificInfo {
-  // ÄÃ¡i thÃ¡o Ä‘Æ°á»ng
+  // Đái tháo đường
   diabetes?: {
     glycemicIndex?: number; // GI
-    glycemicLoad?: number; // GL cho kháº©u pháº§n thÃ´ng thÆ°á»ng
-    carbPerPortion: number; // g carb trong kháº©u pháº§n thÃ´ng thÆ°á»ng
+    glycemicLoad?: number; // GL cho khẩu phần thông thường
+    carbPerPortion: number; // g carb trong khẩu phần thông thường
   };
   
-  // Bá»‡nh gÃºt
+  // Bệnh gút
   gout?: {
     purine: number; // mg/100g
     purineLevel: 'very-high' | 'high' | 'medium' | 'low';
   };
   
-  // Bá»‡nh tháº­n
+  // Bệnh thận
   kidney?: {
     potassium: number; // mg/100g
     phosphorus: number; // mg/100g
   };
   
-  // TÄƒng huyáº¿t Ã¡p (natri Ä‘Ã£ cÃ³ trong FoodItem)
+  // Tăng huyết áp (natri đã có trong FoodItem)
   
-  // Tim máº¡ch
+  // Tim mạch
   cardiovascular?: {
     cholesterol: number; // mg/100g
     saturatedFat: number; // g/100g
@@ -41,47 +43,17 @@ export interface DiseaseSpecificInfo {
 }
 
 export interface ExtendedFoodItem extends Omit<FoodItem, 'code'>, DiseaseSpecificInfo {
-  // MÃ£ sá»‘ thá»±c pháº©m (optional - cÃ³ thá»ƒ cÃ³ hoáº·c khÃ´ng)
-  // CÃ³ trong food-db.ts nhÆ°ng khÃ´ng cÃ³ trong extended ban Ä‘áº§u
-  code?: string; // MÃ£ sá»‘ (vÃ­ dá»¥: "10001") - optional for backward compatibility
-  
-  // DEPRECATED: These fields should be moved to disease-specific sections
-  // Use kidney.potassium and kidney.phosphorus instead of base potassium/phosphorus
-  // Use cardiovascular.cholesterol instead of base cholesterol
-  /** @deprecated Use kidney.potassium instead */
-  potassium?: number; // mg per 100g
-  /** @deprecated Use kidney.phosphorus instead */
-  phosphorus?: number; // mg per 100g
-  /** @deprecated Use cardiovascular.cholesterol instead */
-  cholesterol?: number; // mg per 100g
-  // Vitamin nhÃ³m B & vitamin D (Ä‘Æ¡n vá»‹ tham kháº£o, dÃ¹ng cho má»¥c Ä‘Ã­ch giÃ¡o dá»¥c)
+  // Mã số thực phẩm (giữ optional để tương thích với các món mở rộng chưa có mã quốc gia)
+  code?: string;
+  // Vitamin nhóm B & vitamin D (đơn vị tham khảo, dùng cho mục đích giáo dục)
   vitaminB1?: number; // mg per 100g
   vitaminB2?: number; // mg per 100g
-  vitaminB3?: number; // mg per 100g (Niacin)
-  vitaminB5?: number; // mg per 100g (Pantothenic acid)
   vitaminB6?: number; // mg per 100g
-  vitaminB7?: number; // Âµg per 100g (Biotin)
-  folate?: number; // Âµg per 100g
-  vitaminB12?: number; // Âµg per 100g
+  folate?: number; // µg per 100g
+  vitaminB12?: number; // µg per 100g
   vitaminD?: number; // IU per 100g
-  vitaminE?: number; // mg per 100g (Tocopherol)
-  vitaminK?: number; // Âµg per 100g (Phylloquinone/Menaquinone)
-  choline?: number; // mg per 100g
 
-  // KhoÃ¡ng cháº¥t bá»• sung (theo chuáº©n quá»‘c táº¿)
-  selenium?: number; // Âµg per 100g
-  copper?: number; // mg per 100g
-  manganese?: number; // mg per 100g
-  iodine?: number; // Âµg per 100g
-
-  // PhÃ¢n tÃ­ch cháº¥t bÃ©o chi tiáº¿t (theo chuáº©n quá»‘c táº¿)
-  transFat?: number; // g per 100g
-  monounsaturatedFat?: number; // g per 100g (MUFA)
-  polyunsaturatedFat?: number; // g per 100g (PUFA)
-  omega3FattyAcids?: number; // g per 100g
-  omega6FattyAcids?: number; // g per 100g
-
-  // ÄÆ¡n vá»‹ Viá»‡t Nam
+  // Đơn vị Việt Nam
   vietnameseUnits?: {
     unit: 'bat' | 'thia-canh' | 'thia-ca-phe' | 'dia' | 'to' | 'cai' | 'qua' | 'mieng' | 'bo' | 'goi' | 'o' | 'con' | 'mo' | 'mui' | 'nam' | 'nhanh' | 'tep';
     weight: number; // grams
@@ -90,14 +62,13 @@ export interface ExtendedFoodItem extends Omit<FoodItem, 'code'>, DiseaseSpecifi
 }
 
 /**
- * Database thá»±c pháº©m Viá»‡t Nam vá»›i thÃ´ng tin Ä‘áº§y Ä‘á»§
+ * Database thực phẩm Việt Nam với thông tin đầy đủ
  */
-const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
+export const extendedFoodDatabase: ExtendedFoodItem[] = [
   // Rice & Noodles
   {
     id: "com-trang",
-    code: "10001",
-    name: "Cơm Trắng",
+    name: "Cơm trắng",
     nameEn: "White rice",
     category: "rice-noodles",
     servingSize: 100,
@@ -110,24 +81,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     sodium: 1,
     vitaminB1: 0.02,
     vitaminB2: 0.01,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
     folate: 8,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.04, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 2.1, // mg
-    selenium: 7.5, // Âµg
-    copper: 0.07, // mg
-    manganese: 0.47, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t nhá» (100g)",
+    commonServing: "1 bát nhỏ (100g)",
     diabetes: {
       glycemicIndex: 73,
-      glycemicLoad: 33, // cho 1 bÃ¡t vá»«a (~150g)
+      glycemicLoad: 33, // cho 1 bát vừa (~150g)
       carbPerPortion: 45,
     },
     kidney: {
@@ -139,13 +100,13 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'bat', weight: 150, description: '1 bÃ¡t vá»«a' },
-      { unit: 'bat', weight: 100, description: '1 bÃ¡t nhá»' },
+      { unit: 'bat', weight: 150, description: '1 bát vừa' },
+      { unit: 'bat', weight: 100, description: '1 bát nhỏ' },
     ],
   },
   {
     id: "com-gao-lut",
-    name: "Cơm Gạo Lứt",
+    name: "Cơm gạo lứt",
     nameEn: "Brown rice",
     category: "rice-noodles",
     servingSize: 100,
@@ -158,219 +119,31 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     sodium: 5,
     vitaminB1: 0.18,
     vitaminB2: 0.05,
-    vitaminB3: 2.6, // Niacin - cao hÆ¡n gáº¡o tráº¯ng
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.3,
-    vitaminB7: 0, // Biotin
     folate: 9,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.17, // Tocopherol - cao hÆ¡n gáº¡o tráº¯ng
-    vitaminK: 0.5, // Phylloquinone
-    choline: 9.2, // mg - cao hÆ¡n gáº¡o tráº¯ng
-    selenium: 9.8, // Âµg - cao hÆ¡n gáº¡o tráº¯ng
-    copper: 0.11, // mg
-    manganese: 0.93, // mg - cao hÆ¡n gáº¡o tráº¯ng
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t vá»«a (150g)",
+    commonServing: "1 bát vừa (150g)",
     diabetes: {
       glycemicIndex: 55,
-      glycemicLoad: 25, // cho 1 bÃ¡t vá»«a (~150g)
+      glycemicLoad: 25, // cho 1 bát vừa (~150g)
       carbPerPortion: 45,
     },
     kidney: {
       potassium: 43,
-      phosphorus: 83, // cao hÆ¡n gáº¡o tráº¯ng
+      phosphorus: 83, // cao hơn gạo trắng
     },
     cardiovascular: {
       cholesterol: 0,
       saturatedFat: 0.2,
     },
     vietnameseUnits: [
-      { unit: 'bat', weight: 150, description: '1 bÃ¡t vá»«a' },
-    ],
-  },
-  {
-    id: "bun-cha",
-    code: "10003",
-    name: "Bún Chả",
-    nameEn: "Grilled pork with noodles",
-    category: "rice-noodles",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 168,
-    protein: 10.0,
-    carbs: 20.0,
-    fat: 4.8,
-    fiber: 0.6,
-    water: 65.0,
-    sodium: 320,
-    potassium: 120,
-    calcium: 20,
-    iron: 1.5,
-    phosphorus: 60,
-    magnesium: 22,
-    zinc: 1.2,
-    vitaminB1: 0.15,
-    vitaminB2: 0.12,
-    vitaminB3: 2.5, // Niacin - tá»« thá»‹t heo
-    vitaminB5: 0.5, // Pantothenic acid
-    vitaminB6: 0.2,
-    vitaminB7: 0, // Biotin
-    folate: 8,
-    vitaminB12: 0.5, // Âµg - tá»« thá»‹t heo
-    vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 35.0, // mg
-    selenium: 8.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 pháº§n (250g)",
-    notes: "MÃ³n Äƒn truyá»n thá»‘ng HÃ  Ná»™i, thá»‹t nÆ°á»›ng vá»›i bÃºn.",
-    diabetes: {
-      glycemicIndex: 60,
-      glycemicLoad: 30,
-      carbPerPortion: 50,
-    },
-    kidney: {
-      potassium: 120,
-      phosphorus: 60,
-    },
-    cardiovascular: {
-      cholesterol: 50,
-      saturatedFat: 1.8,
-    },
-    gout: {
-      purine: 150,
-      purineLevel: "high",
-    },
-    vietnameseUnits: [
-      { unit: 'to', weight: 250, description: '1 pháº§n bÃºn cháº£' },
-    ],
-  },
-  {
-    id: "bun-ga",
-    code: "10004",
-    name: "Bún G",
-    nameEn: "Chicken noodle soup",
-    category: "rice-noodles",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 95,
-    protein: 5.5,
-    carbs: 12.0,
-    fat: 2.5,
-    fiber: 0.5,
-    water: 79.0,
-    sodium: 350,
-    potassium: 85,
-    calcium: 12,
-    iron: 0.8,
-    phosphorus: 45,
-    magnesium: 15,
-    zinc: 0.6,
-    cholesterol: 25,
-    vitaminB1: 0.08,
-    vitaminB2: 0.06,
-    vitaminB3: 1.2, // Niacin - tá»« thá»‹t gÃ 
-    vitaminB5: 0.3, // Pantothenic acid
-    vitaminB6: 0.15,
-    vitaminB7: 0, // Biotin
-    folate: 5,
-    vitaminB12: 0.2, // Âµg - tá»« thá»‹t gÃ 
-    vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 20.0, // mg
-    selenium: 5.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ vá»«a (300g)",
-    notes: "BÃºn nÆ°á»›c dÃ¹ng gÃ , Ã­t má»¡ hÆ¡n phá»Ÿ bÃ².",
-    diabetes: {
-      glycemicIndex: 55,
-      glycemicLoad: 20,
-      carbPerPortion: 36,
-    },
-    kidney: {
-      potassium: 85,
-      phosphorus: 45,
-    },
-    cardiovascular: {
-      cholesterol: 25,
-      saturatedFat: 0.8,
-    },
-    gout: {
-      purine: 140,
-      purineLevel: "high",
-    },
-    vietnameseUnits: [
-      { unit: 'to', weight: 300, description: '1 tÃ´ bÃºn gÃ ' },
-    ],
-  },
-  {
-    id: "banh-mi",
-    code: "10005",
-    name: "Bánh Mì",
-    nameEn: "Vietnamese bread",
-    category: "rice-noodles",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 265,
-    protein: 8.2,
-    carbs: 51.0,
-    fat: 3.2,
-    fiber: 2.7,
-    water: 36.0,
-    sodium: 491,
-    potassium: 115,
-    calcium: 20,
-    iron: 3.6,
-    phosphorus: 98,
-    magnesium: 25,
-    zinc: 0.7,
-    vitaminB1: 0.51,
-    vitaminB2: 0.33,
-    vitaminB3: 4.0, // Niacin - tá»« bá»™t mÃ¬
-    vitaminB5: 0.4, // Pantothenic acid
-    vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
-    folate: 20,
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 10.0, // mg
-    selenium: 20.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1 á»• vá»«a)",
-    notes: "BÃ¡nh mÃ¬ Viá»‡t Nam, thÆ°á»ng dÃ¹ng lÃ m bÃ¡nh mÃ¬ káº¹p.",
-    diabetes: {
-      glycemicIndex: 75,
-      glycemicLoad: 38,
-      carbPerPortion: 51,
-    },
-    kidney: {
-      potassium: 115,
-      phosphorus: 98,
-    },
-    cardiovascular: {
-      cholesterol: 0,
-      saturatedFat: 0.6,
-    },
-    vietnameseUnits: [
-      { unit: 'o', weight: 100, description: '1 á»• bÃ¡nh mÃ¬' },
+      { unit: 'bat', weight: 150, description: '1 bát vừa' },
     ],
   },
   {
     id: "pho-bo",
-    code: "11016",
-    name: "Ph Bò",
+    name: "Phở bò",
     nameEn: "Beef pho",
     category: "rice-noodles",
     servingSize: 300,
@@ -381,31 +154,15 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     fat: 8,
     fiber: 2,
     sodium: 1200,
-    vitaminB1: 0.1,
-    vitaminB2: 0.1,
-    vitaminB3: 1.5, // Niacin (tá»« thá»‹t bÃ² vÃ  bÃ¡nh phá»Ÿ)
-    vitaminB5: 0.2, // Pantothenic acid
-    vitaminB6: 0.1,
-    vitaminB7: 1.0, // Biotin (Âµg)
-    folate: 3,
-    vitaminB12: 0.8, // tá»« thá»‹t bÃ²
-    vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.4, // Phylloquinone
-    choline: 25, // mg
-    selenium: 5.0, // Âµg
-    copper: 0.03, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ vá»«a (300g)",
-    notes: "Bao gá»“m bÃ¡nh phá»Ÿ, thá»‹t bÃ², nÆ°á»›c dÃ¹ng",
+    commonServing: "1 tô vừa (300g)",
+    notes: "Bao gồm bánh phở, thịt bò, nước dùng",
     diabetes: {
       glycemicIndex: 45,
-      glycemicLoad: 10, // cho 1 tÃ´ vá»«a
-      carbPerPortion: 22, // chá»‰ bÃ¡nh phá»Ÿ
+      glycemicLoad: 10, // cho 1 tô vừa
+      carbPerPortion: 22, // chỉ bánh phở
     },
     gout: {
-      purine: 160, // tá»« thá»‹t bÃ²
+      purine: 160, // từ thịt bò
       purineLevel: 'high',
     },
     kidney: {
@@ -417,13 +174,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 3,
     },
     vietnameseUnits: [
-      { unit: 'to', weight: 300, description: '1 tÃ´ vá»«a' },
-      { unit: 'to', weight: 250, description: '1 tÃ´ nhá»' },
+      { unit: 'to', weight: 300, description: '1 tô vừa' },
+      { unit: 'to', weight: 250, description: '1 tô nhỏ' },
     ],
   },
   {
     id: "bun",
-    code: "10003",
     name: "Bún",
     nameEn: "Rice vermicelli",
     category: "rice-noodles",
@@ -435,26 +191,10 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     fat: 0.2,
     fiber: 0.5,
     sodium: 1,
-    vitaminB1: 0.01,
-    vitaminB2: 0.01,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
-    vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
-    folate: 2,
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.02, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 1.0, // mg
-    selenium: 3.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1 pháº§n bÃºn)",
+    commonServing: "100g (1 phần bún)",
     diabetes: {
       glycemicIndex: 53,
-      glycemicLoad: 13, // cho 1 tÃ´ bÃºn (~100g bÃºn)
+      glycemicLoad: 13, // cho 1 tô bún (~100g bún)
       carbPerPortion: 25,
     },
     kidney: {
@@ -466,15 +206,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'to', weight: 100, description: '1 tÃ´ bÃºn' },
+      { unit: 'to', weight: 100, description: '1 tô bún' },
     ],
   },
 
   // Meat
   {
     id: "thit-heo-nac",
-    code: "20001",
-    name: "Tht Heo Nạc",
+    name: "Thịt heo nạc",
     nameEn: "Lean pork",
     category: "meat",
     servingSize: 100,
@@ -487,21 +226,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     iron: 0.9,
     vitaminB1: 0.8,
     vitaminB2: 0.2,
-    vitaminB3: 5.0, // Niacin - cao trong thá»‹t
-    vitaminB5: 0.7, // Pantothenic acid
     vitaminB6: 0.5,
-    vitaminB7: 5.0, // Biotin (Âµg)
     folate: 5,
     vitaminB12: 0.7,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 75, // mg - cao trong thá»‹t
-    selenium: 24.6, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (khoáº£ng 1 lÃ²ng bÃ n tay)",
+    commonServing: "100g (khoảng 1 lòng bàn tay)",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -515,13 +244,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 1.2,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng vá»«a (100g)' },
+      { unit: 'mieng', weight: 100, description: '1 miếng vừa (100g)' },
     ],
   },
   {
     id: "thit-ga",
-    code: "20002",
-    name: "Tht G",
+    name: "Thịt gà",
     nameEn: "Chicken",
     category: "meat",
     servingSize: 100,
@@ -534,21 +262,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     iron: 0.9,
     vitaminB1: 0.07,
     vitaminB2: 0.15,
-    vitaminB3: 7.7, // Niacin - ráº¥t cao trong thá»‹t gÃ 
-    vitaminB5: 1.0, // Pantothenic acid
     vitaminB6: 0.5,
-    vitaminB7: 4.0, // Biotin (Âµg)
     folate: 4,
     vitaminB12: 0.3,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 65, // mg
-    selenium: 14.3, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (khoáº£ng 1 lÃ²ng bÃ n tay)",
+    commonServing: "100g (khoảng 1 lòng bàn tay)",
     gout: {
       purine: 140,
       purineLevel: 'medium',
@@ -559,16 +277,15 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     },
     cardiovascular: {
       cholesterol: 85,
-      saturatedFat: 1, // bá» da
+      saturatedFat: 1, // bỏ da
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng vá»«a (100g)' },
+      { unit: 'mieng', weight: 100, description: '1 miếng vừa (100g)' },
     ],
   },
   {
     id: "thit-bo",
-    code: "20003",
-    name: "Tht Bò",
+    name: "Thịt bò",
     nameEn: "Beef",
     category: "meat",
     servingSize: 100,
@@ -581,24 +298,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     iron: 2.6,
     vitaminB1: 0.05,
     vitaminB2: 0.2,
-    vitaminB3: 4.5, // Niacin
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.4,
-    vitaminB7: 3.0, // Biotin (Âµg)
     folate: 9,
     vitaminB12: 2.5,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 1.2, // Phylloquinone
-    choline: 82, // mg
-    selenium: 14.2, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (khoáº£ng 1 lÃ²ng bÃ n tay)",
-    notes: "Purine cao â€“ khÃ´ng khuyáº¿n nghá»‹ cho bá»‡nh gÃºt",
+    commonServing: "100g (khoảng 1 lòng bàn tay)",
+    notes: "Purine cao – không khuyến nghị cho bệnh gút",
     gout: {
-      purine: 135, // ~120-150 mg/100g - Purine cao â€“ khÃ´ng khuyáº¿n nghá»‹ cho bá»‡nh gÃºt
+      purine: 135, // ~120-150 mg/100g - Purine cao – không khuyến nghị cho bệnh gút
       purineLevel: 'high',
     },
     kidney: {
@@ -610,12 +317,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 6,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng vá»«a (100g)' },
+      { unit: 'mieng', weight: 100, description: '1 miếng vừa (100g)' },
     ],
   },
   {
     id: "gan-lon",
-    name: "Gan Lợn",
+    name: "Gan lợn",
     nameEn: "Pork liver",
     category: "meat",
     servingSize: 100,
@@ -626,22 +333,6 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     fat: 3.6,
     sodium: 87,
     iron: 15,
-    vitaminB1: 0.3,
-    vitaminB2: 2.1, // mg - ráº¥t cao trong gan
-    vitaminB3: 12.0, // Niacin - ráº¥t cao trong gan
-    vitaminB5: 5.0, // Pantothenic acid - ráº¥t cao trong gan
-    vitaminB6: 0.7,
-    vitaminB7: 30.0, // Biotin (Âµg) - ráº¥t cao trong gan
-    folate: 200, // Âµg - ráº¥t cao trong gan
-    vitaminB12: 20.0, // Âµg - ráº¥t cao trong gan
-    vitaminD: 20, // IU
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 500, // mg - ráº¥t cao trong gan
-    selenium: 40.0, // Âµg - cao trong gan
-    copper: 0.5, // mg - cao trong gan
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
     commonServing: "100g",
     gout: {
       purine: 300,
@@ -655,14 +346,42 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       cholesterol: 300,
       saturatedFat: 1.2,
     },
-    notes: "Ná»™i táº¡ng cÃ³ purin vÃ  cholesterol ráº¥t cao - trÃ¡nh cho ngÆ°á»i gÃºt vÃ  tim máº¡ch",
+    notes: "Nội tạng có purin và cholesterol rất cao - tránh cho người gút và tim mạch",
   },
 
   // Seafood
   {
+    id: "ca-basa",
+    name: "Cá basa",
+    nameEn: "Basa fish",
+    category: "seafood",
+    servingSize: 100,
+    servingUnit: "g",
+    calories: 162,
+    protein: 18,
+    carbs: 0,
+    fat: 9,
+    sodium: 45,
+    commonServing: "100g (1 miếng vừa)",
+    gout: {
+      purine: 100,
+      purineLevel: 'medium',
+    },
+    kidney: {
+      potassium: 200,
+      phosphorus: 200,
+    },
+    cardiovascular: {
+      cholesterol: 50,
+      saturatedFat: 2,
+    },
+    vietnameseUnits: [
+      { unit: 'mieng', weight: 100, description: '1 miếng vừa (100g)' },
+    ],
+  },
+  {
     id: "ca-loc",
-    code: "11044",
-    name: "Cá Lóc",
+    name: "Cá lóc",
     nameEn: "Snakehead fish",
     category: "seafood",
     servingSize: 100,
@@ -672,23 +391,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     carbs: 0,
     fat: 1.5,
     sodium: 50,
-    vitaminB1: 0.1,
-    vitaminB2: 0.1,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 0.5, // Pantothenic acid
-    vitaminB6: 0.3,
-    vitaminB7: 1.0, // Biotin (Âµg)
-    folate: 5,
-    vitaminB12: 2.0, // Âµg - cao trong cÃ¡
-    vitaminD: 4.0, // IU - cÃ³ trong cÃ¡
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 36.5, // Âµg - ráº¥t cao trong cÃ¡
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 50, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "100g (1 miáº¿ng vá»«a)",
+    commonServing: "100g (1 miếng vừa)",
     gout: {
       purine: 110,
       purineLevel: 'medium',
@@ -702,12 +405,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.5,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng vá»«a (100g)' },
+      { unit: 'mieng', weight: 100, description: '1 miếng vừa (100g)' },
     ],
   },
   {
     id: "tom",
-    code: "30002",
     name: "Tôm",
     nameEn: "Shrimp",
     category: "seafood",
@@ -719,51 +421,43 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     fat: 0.3,
     fiber: 0.0,
     sodium: 111,
+    potassium: 264,
     calcium: 70,
     iron: 0.5,
+    phosphorus: 220,
     magnesium: 37,
     zinc: 1.3,
     vitaminA: 0,
     vitaminC: 0,
+    cholesterol: 189,
     cardiovascular: {
       cholesterol: 189,
       saturatedFat: 0.1,
+    },
+    vitaminB1: 0.02,
+    vitaminB2: 0.03,
+    vitaminB6: 0.10,
+    folate: 15,
+    vitaminB12: 1.1,
+    vitaminD: 0,
+    commonServing: "100g (khoảng 8-10 con vừa)",
+    gout: {
+      purine: 150,
+      purineLevel: 'high',
     },
     kidney: {
       potassium: 264,
       phosphorus: 220,
     },
-    vitaminB1: 0.02,
-    vitaminB2: 0.03,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
-    vitaminB6: 0.10,
-    vitaminB7: 1.0, // Biotin (Âµg)
-    folate: 15,
-    vitaminB12: 1.1,
-    vitaminD: 0,
-    vitaminE: 1.5, // Tocopherol - cao trong háº£i sáº£n
-    vitaminK: 0, // Phylloquinone
-    choline: 70, // mg
-    selenium: 38.0, // Âµg - ráº¥t cao trong háº£i sáº£n
-    copper: 0.2, // mg
-    manganese: 0.1, // mg
-    iodine: 35, // Âµg - cao trong háº£i sáº£n
-    commonServing: "100g (khoáº£ng 8-10 con vá»«a)",
-    gout: {
-      purine: 150,
-      purineLevel: 'high',
-    },
     vietnameseUnits: [
-      { unit: 'cai', weight: 10, description: '1 con tÃ´m vá»«a (10g)' },
+      { unit: 'cai', weight: 10, description: '1 con tôm vừa (10g)' },
     ],
   },
 
   // Vegetables
   {
     id: "rau-muong",
-    code: "40001",
-    name: "Rau Mung",
+    name: "Rau muống",
     nameEn: "Water spinach",
     category: "vegetables",
     servingSize: 100,
@@ -778,23 +472,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     iron: 1.7,
     vitaminC: 55,
     vitaminA: 3158,
-    vitaminB1: 0.03,
-    vitaminB2: 0.1,
-    vitaminB3: 0.9, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
-    vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
-    folate: 57, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 302, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 6.9, // mg
-    selenium: 0.9, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1 bÃ³ nhá»)",
+    commonServing: "100g (1 bó nhỏ)",
     diabetes: {
       glycemicIndex: 20,
       glycemicLoad: 1,
@@ -813,13 +491,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'bo', weight: 100, description: '1 bÃ³ nhá»' },
+      { unit: 'bo', weight: 100, description: '1 bó nhỏ' },
     ],
   },
   {
     id: "cai-xanh",
-    code: "40002",
-    name: "Cải Xanh",
+    name: "Cải xanh",
     nameEn: "Chinese cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -834,22 +511,6 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     iron: 0.8,
     vitaminC: 36,
     vitaminA: 4468,
-    vitaminB1: 0.04,
-    vitaminB2: 0.05,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
-    vitaminB6: 0.2,
-    vitaminB7: 0, // Biotin
-    folate: 66, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 45, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 10.4, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
     commonServing: "100g",
     diabetes: {
       glycemicIndex: 15,
@@ -871,8 +532,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-chua",
-    code: "40003",
-    name: "Cà Chua",
+    name: "Cà chua",
     nameEn: "Tomato",
     category: "vegetables",
     servingSize: 100,
@@ -887,23 +547,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     iron: 0.3,
     vitaminC: 14,
     vitaminA: 833,
-    vitaminB1: 0.04,
-    vitaminB2: 0.02,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
-    vitaminB6: 0.08,
-    vitaminB7: 0, // Biotin
-    folate: 15, // Âµg
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 7.9, // Phylloquinone
-    choline: 6.7, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.06, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1-2 quáº£ vá»«a)",
+    commonServing: "100g (1-2 quả vừa)",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 0.6,
@@ -922,13 +566,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 100, description: '1-2 quáº£ vá»«a' },
+      { unit: 'qua', weight: 100, description: '1-2 quả vừa' },
     ],
   },
   {
     id: "khoai-tay",
-    code: "40006",
-    name: "Khoai Tây",
+    name: "Khoai tây",
     nameEn: "Potato",
     category: "vegetables",
     servingSize: 100,
@@ -942,23 +585,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     calcium: 12,
     iron: 0.8,
     vitaminC: 19.7,
-    vitaminB1: 0.08,
-    vitaminB2: 0.03,
-    vitaminB3: 1.1, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
-    vitaminB6: 0.3, // mg - cao trong khoai tÃ¢y
-    vitaminB7: 0, // Biotin
-    folate: 15, // Âµg
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.01, // Tocopherol
-    vitaminK: 2.0, // Phylloquinone
-    choline: 12.1, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.11, // mg
-    manganese: 0.15, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1 cá»§ vá»«a)",
+    commonServing: "100g (1 củ vừa)",
     diabetes: {
       glycemicIndex: 78,
       glycemicLoad: 13,
@@ -969,22 +596,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       purineLevel: 'low',
     },
     kidney: {
-      potassium: 421, // Ráº¥t cao!
+      potassium: 421, // Rất cao!
       phosphorus: 57,
     },
     cardiovascular: {
       cholesterol: 0,
       saturatedFat: 0,
     },
-    notes: "Kali ráº¥t cao - háº¡n cháº¿ cho ngÆ°á»i bá»‡nh tháº­n",
+    notes: "Kali rất cao - hạn chế cho người bệnh thận",
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 cá»§ vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 củ vừa' },
     ],
   },
   {
     id: "khoai-lang",
-    code: "10007",
-    name: "Khoai Lang",
+    name: "Khoai lang",
     nameEn: "Sweet potato",
     category: "vegetables",
     servingSize: 100,
@@ -999,23 +625,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     iron: 0.6,
     vitaminC: 2.4,
     vitaminA: 14187,
-    vitaminB1: 0.1,
-    vitaminB2: 0.1,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.8, // Pantothenic acid - cao trong khoai lang
-    vitaminB6: 0.2,
-    vitaminB7: 0, // Biotin
-    folate: 11, // Âµg
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 1.8, // Phylloquinone
-    choline: 12.2, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.26, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1 cá»§ vá»«a)",
+    commonServing: "100g (1 củ vừa)",
     diabetes: {
       glycemicIndex: 54,
       glycemicLoad: 11,
@@ -1034,15 +644,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 cá»§ vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 củ vừa' },
     ],
   },
 
   // Fruits
   {
     id: "chuoi",
-    code: "50001",
-    name: "Chui",
+    name: "Chuối",
     nameEn: "Banana",
     category: "fruits",
     servingSize: 100,
@@ -1056,25 +665,9 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     calcium: 5,
     iron: 0.3,
     vitaminC: 8.7,
-    vitaminB1: 0.03,
-    vitaminB2: 0.07,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
-    vitaminB6: 0.4, // mg - cao trong chuá»‘i
-    vitaminB7: 0, // Biotin
-    folate: 20, // Âµg
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.5, // Phylloquinone
-    choline: 9.8, // mg
-    selenium: 1.0, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.27, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1 quáº£ vá»«a)",
+    commonServing: "100g (1 quả vừa)",
     diabetes: {
-      glycemicIndex: 51, // chÃ­n vá»«a
+      glycemicIndex: 51, // chín vừa
       glycemicLoad: 12,
       carbPerPortion: 23,
     },
@@ -1083,21 +676,20 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       purineLevel: 'low',
     },
     kidney: {
-      potassium: 358, // Ráº¥t cao!
+      potassium: 358, // Rất cao!
       phosphorus: 22,
     },
     cardiovascular: {
       cholesterol: 0,
       saturatedFat: 0,
     },
-    notes: "Kali ráº¥t cao - háº¡n cháº¿ cho ngÆ°á»i bá»‡nh tháº­n",
+    notes: "Kali rất cao - hạn chế cho người bệnh thận",
     vietnameseUnits: [
-      { unit: 'qua', weight: 100, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 100, description: '1 quả vừa' },
     ],
   },
   {
     id: "cam",
-    code: "50002",
     name: "Cam",
     nameEn: "Orange",
     category: "fruits",
@@ -1113,23 +705,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     iron: 0.1,
     vitaminC: 53.2,
     vitaminA: 225,
-    vitaminB1: 0.1,
-    vitaminB2: 0.04,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
-    vitaminB6: 0.06,
-    vitaminB7: 0, // Biotin
-    folate: 30, // Âµg
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 8.4, // mg
-    selenium: 0.5, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.03, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1 quáº£ vá»«a)",
+    commonServing: "100g (1 quả vừa)",
     diabetes: {
       glycemicIndex: 42,
       glycemicLoad: 5,
@@ -1148,12 +724,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 100, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 100, description: '1 quả vừa' },
     ],
   },
   {
     id: "tao",
-    code: "50003",
     name: "Táo",
     nameEn: "Apple",
     category: "fruits",
@@ -1168,23 +743,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     calcium: 6,
     iron: 0.1,
     vitaminC: 4.6,
-    vitaminB1: 0.02,
-    vitaminB2: 0.03,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
-    vitaminB6: 0.04,
-    vitaminB7: 0, // Biotin
-    folate: 3, // Âµg
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 2.2, // Phylloquinone
-    choline: 3.4, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.03, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1 quáº£ vá»«a)",
+    commonServing: "100g (1 quả vừa)",
     diabetes: {
       glycemicIndex: 36,
       glycemicLoad: 5,
@@ -1203,15 +762,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 100, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 100, description: '1 quả vừa' },
     ],
   },
 
   // Legumes
   {
     id: "dau-phu",
-    code: "60001",
-    name: "Đậu Phụ",
+    name: "Đậu phụ",
     nameEn: "Tofu",
     category: "legumes",
     servingSize: 100,
@@ -1224,23 +782,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     sodium: 7,
     calcium: 350,
     iron: 5.4,
-    vitaminB1: 0.2,
-    vitaminB2: 0.1,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
-    vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
-    folate: 15, // Âµg
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 2.4, // Phylloquinone
-    choline: 35, // mg
-    selenium: 8.9, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.6, // mg - cao trong Ä‘áº­u
-    iodine: 0, // Âµg
-    commonServing: "100g (1 miáº¿ng vá»«a)",
+    commonServing: "100g (1 miếng vừa)",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 0.3,
@@ -1258,15 +800,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       cholesterol: 0,
       saturatedFat: 0.7,
     },
-    notes: "Äáº¡m thá»±c váº­t, tá»‘t cho tim máº¡ch vÃ  ngÆ°á»i gÃºt",
+    notes: "Đạm thực vật, tốt cho tim mạch và người gút",
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng vá»«a' },
+      { unit: 'mieng', weight: 100, description: '1 miếng vừa' },
     ],
   },
   {
     id: "dau-xanh",
-    code: "60002",
-    name: "Đậu Xanh",
+    name: "Đậu xanh",
     nameEn: "Mung beans",
     category: "legumes",
     servingSize: 100,
@@ -1279,23 +820,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     sodium: 15,
     calcium: 132,
     iron: 6.7,
-    vitaminB1: 0.62,
-    vitaminB2: 0.23,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 1.9, // Pantothenic acid - cao trong Ä‘áº­u
-    vitaminB6: 0.38,
-    vitaminB7: 0, // Biotin
-    folate: 625, // Âµg - ráº¥t cao trong Ä‘áº­u
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 9.0, // Phylloquinone
-    choline: 97.9, // mg - ráº¥t cao trong Ä‘áº­u
-    selenium: 2.5, // Âµg
-    copper: 0.9, // mg - cao trong Ä‘áº­u
-    manganese: 1.0, // mg - cao trong Ä‘áº­u
-    iodine: 0, // Âµg
-    commonServing: "100g (náº¥u chÃ­n)",
+    commonServing: "100g (nấu chín)",
     diabetes: {
       glycemicIndex: 25,
       glycemicLoad: 16,
@@ -1306,21 +831,20 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       purineLevel: 'medium',
     },
     kidney: {
-      potassium: 400, // Ráº¥t cao!
-      phosphorus: 400, // Ráº¥t cao!
+      potassium: 400, // Rất cao!
+      phosphorus: 400, // Rất cao!
     },
     cardiovascular: {
       cholesterol: 0,
       saturatedFat: 0.3,
     },
-    notes: "Kali vÃ  phá»‘t pho ráº¥t cao - háº¡n cháº¿ cho ngÆ°á»i bá»‡nh tháº­n",
+    notes: "Kali và phốt pho rất cao - hạn chế cho người bệnh thận",
   },
 
   // Condiments
   {
     id: "nuoc-mam",
-    code: "70001",
-    name: "Nưc Mắm",
+    name: "Nước mắm",
     nameEn: "Fish sauce",
     category: "condiments",
     servingSize: 15,
@@ -1330,24 +854,8 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     carbs: 0.8,
     fat: 0,
     sodium: 1500,
-    vitaminB1: 0,
-    vitaminB2: 0,
-    vitaminB3: 0, // Niacin
-    vitaminB5: 0, // Pantothenic acid
-    vitaminB6: 0,
-    vitaminB7: 0, // Biotin
-    folate: 0, // Âµg
-    vitaminB12: 0.1, // Âµg - tá»« cÃ¡
-    vitaminD: 0,
-    vitaminE: 0, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 0, // mg
-    selenium: 0, // Âµg
-    copper: 0, // mg
-    manganese: 0, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 muá»—ng canh (15ml)",
-    notes: "Ráº¥t nhiá»u natri - dÃ¹ng Ã­t cho ngÆ°á»i tÄƒng huyáº¿t Ã¡p",
+    commonServing: "1 muỗng canh (15ml)",
+    notes: "Rất nhiều natri - dùng ít cho người tăng huyết áp",
     kidney: {
       potassium: 50,
       phosphorus: 10,
@@ -1357,16 +865,16 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'thia-canh', weight: 15, description: '1 muá»—ng canh (15ml)' },
-      { unit: 'thia-ca-phe', weight: 5, description: '1 muá»—ng cÃ  phÃª (5ml)' },
+      { unit: 'thia-canh', weight: 15, description: '1 muỗng canh (15ml)' },
+      { unit: 'thia-ca-phe', weight: 5, description: '1 muỗng cà phê (5ml)' },
     ],
   },
   // ========================================================================
-  // Bá»• sung thÃªm rau lÃ¡ & trÃ¡i cÃ¢y (pháº§n 36â€“37: 186â€“200)
+  // Bổ sung thêm rau lá & trái cây (phần 36–37: 186–200)
   // ========================================================================
   {
     id: "rau-den-veg16",
-    name: "Rau dá»n",
+    name: "Rau dền",
     nameEn: "Amaranth leaves",
     category: "vegetables",
     servingSize: 100,
@@ -1378,37 +886,29 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     fiber: 2.2,
     water: 92.0,
     sodium: 12,
+    potassium: 611,
     calcium: 215,
     iron: 2.3,
+    phosphorus: 43,
     magnesium: 55,
     zinc: 0.9,
     vitaminA: 291,
     vitaminC: 43.0,
+    cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.06,
     vitaminB2: 0.12,
-    vitaminB3: 0.9, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
-    folate: 85, // Âµg - cao trong rau lÃ¡ xanh
+    folate: 85,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 1140, // Phylloquinone - ráº¥t cao trong rau dá»n
-    choline: 6.9, // mg
-    selenium: 0.9, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.9, // mg - cao trong rau dá»n
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Ráº¥t giÃ u kali; CKD cáº§n háº¡n cháº¿.",
+    commonServing: "1 bát (~100g)",
+    notes: "Rất giàu kali; CKD cần hạn chế.",
     kidney: { potassium: 611, phosphorus: 43 },
   },
   {
     id: "rau-day",
-    code: "11039",
-    name: "Rau Ä‘ay",
+    name: "Rau đay",
     nameEn: "Jute leaves",
     category: "vegetables",
     servingSize: 100,
@@ -1420,36 +920,29 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     fiber: 2.0,
     water: 87.0,
     sodium: 15,
+    potassium: 510,
     calcium: 182,
     iron: 3.3,
+    phosphorus: 55,
     magnesium: 65,
     zinc: 0.7,
     vitaminA: 3800,
     vitaminC: 53.0,
+    cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.09,
     vitaminB2: 0.16,
-    vitaminB3: 1.0, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.15,
-    vitaminB7: 0, // Biotin
-    folate: 140, // Âµg - cao trong rau lÃ¡ xanh
+    folate: 140,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 380, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 10.4, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Nhiá»u cháº¥t nháº§y, tá»‘t tiÃªu hÃ³a.",
+    commonServing: "1 bát (~100g)",
+    notes: "Nhiều chất nhầy, tốt tiêu hóa.",
     kidney: { potassium: 510, phosphorus: 55 },
   },
   {
     id: "tan-o",
-    name: "Rau Tần Ô",
+    name: "Rau tần ô",
     nameEn: "Crown daisy",
     category: "vegetables",
     servingSize: 100,
@@ -1461,37 +954,29 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     fiber: 1.6,
     water: 92.0,
     sodium: 18,
+    potassium: 340,
     calcium: 120,
     iron: 1.5,
+    phosphorus: 50,
     magnesium: 45,
     zinc: 0.6,
     vitaminA: 4200,
     vitaminC: 11.0,
+    cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    kidney: { potassium: 340, phosphorus: 50 },
     vitaminB1: 0.06,
     vitaminB2: 0.10,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 105, // Âµg - cao trong rau lÃ¡ xanh
+    folate: 105,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 250, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 10.4, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Rau láº©u phá»• biáº¿n.",
+    commonServing: "1 bát (~100g)",
+    notes: "Rau lẩu phổ biến.",
+    kidney: { potassium: 340, phosphorus: 50 },
   },
   {
     id: "hanh-la",
-    code: "40049",
-    name: "Hành Lá",
+    name: "Hành lá",
     nameEn: "Spring onion",
     category: "vegetables",
     servingSize: 100,
@@ -1516,28 +1001,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.13,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
-    folate: 64, // Âµg
+    folate: 64,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 207, // Phylloquinone - cao trong hÃ nh lÃ¡
-    choline: 5.7, // mg
-    selenium: 0.5, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "DÃ¹ng gia vá»‹",
-    notes: "Ä‚n lÆ°á»£ng nhá».",
+    commonServing: "Dùng gia vị",
+    notes: "Ăn lượng nhỏ.",
     kidney: { potassium: 276, phosphorus: 37 },
   },
   {
     id: "hung-que",
-    code: "40051",
-    name: "Húng Quế",
+    name: "Húng quế",
     nameEn: "Sweet basil",
     category: "vegetables",
     servingSize: 100,
@@ -1561,28 +1035,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.08,
-    vitaminB3: 0.9, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.15,
-    vitaminB7: 0, // Biotin
-    folate: 68, // Âµg
+    folate: 68,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.8, // Tocopherol
-    vitaminK: 415, // Phylloquinone - ráº¥t cao trong hÃºng quáº¿
-    choline: 11.4, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.4, // mg - cao trong hÃºng quáº¿
-    manganese: 1.1, // mg - cao trong hÃºng quáº¿
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n kÃ¨m",
-    notes: "Rau gia vá»‹, giÃ u vi cháº¥t.",
+    commonServing: "Ăn kèm",
+    notes: "Rau gia vị, giàu vi chất.",
     kidney: { potassium: 295, phosphorus: 56 },
   },
   {
     id: "ca-tim",
-    code: "11054",
-    name: "Cà Tím",
+    name: "Cà tím",
     nameEn: "Eggplant",
     category: "vegetables",
     servingSize: 100,
@@ -1607,29 +1070,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.04,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.08,
-    vitaminB7: 0, // Biotin
-    folate: 22, // Âµg
+    folate: 22,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 3.5, // Phylloquinone
-    choline: 6.9, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ nhá» (~100g)",
-    notes: "Ãt nÄƒng lÆ°á»£ng.",
+    commonServing: "1 quả nhỏ (~100g)",
+    notes: "Ít năng lượng.",
     diabetes: { glycemicIndex: 20, glycemicLoad: 1, carbPerPortion: 6 },
     kidney: { potassium: 229, phosphorus: 24 },
   },
   {
     id: "dau-bap",
-    code: "40009",
-    name: "Đậu Bắp",
+    name: "Đậu bắp",
     nameEn: "Okra",
     category: "vegetables",
     servingSize: 100,
@@ -1654,29 +1106,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.20,
     vitaminB2: 0.06,
-    vitaminB3: 1.0, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.22,
-    vitaminB7: 0, // Biotin
-    folate: 60, // Âµg
+    folate: 60,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 31.3, // Phylloquinone
-    choline: 12.3, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.8, // mg - cao trong Ä‘áº­u báº¯p
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Cháº¥t nháº§y tá»‘t tiÃªu hÃ³a.",
+    commonServing: "1 bát (~100g)",
+    notes: "Chất nhầy tốt tiêu hóa.",
     diabetes: { glycemicIndex: 20, glycemicLoad: 2, carbPerPortion: 7 },
     kidney: { potassium: 299, phosphorus: 61 },
   },
   {
     id: "kho-qua",
-    code: "11004",
-    name: "Kh Qua",
+    name: "Khổ qua",
     nameEn: "Bitter melon",
     category: "vegetables",
     servingSize: 100,
@@ -1701,28 +1142,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.04,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
-    folate: 72, // Âµg
+    folate: 72,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 4.8, // Phylloquinone
-    choline: 12.8, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.03, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~100g)",
-    notes: "Hay dÃ¹ng cho ÄTÄ.",
+    commonServing: "1 quả (~100g)",
+    notes: "Hay dùng cho ĐTĐ.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 4 },
     kidney: { potassium: 296, phosphorus: 31 },
   },
   {
     id: "muop-huong",
-    name: "Mưp Hương",
+    name: "Mướp hương",
     nameEn: "Angled luffa",
     category: "vegetables",
     servingSize: 100,
@@ -1747,29 +1178,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.04,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.06,
-    vitaminB7: 0, // Biotin
-    folate: 25, // Âµg
+    folate: 25,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 1.3, // Phylloquinone
-    choline: 7.6, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 khÃºc (~100g)",
-    notes: "Thanh mÃ¡t.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Thanh mát.",
     diabetes: { glycemicIndex: 20, glycemicLoad: 1, carbPerPortion: 4 },
     kidney: { potassium: 150, phosphorus: 30 },
   },
   {
     id: "chuoi-tieu",
-    code: "50017",
-    name: "Chui Tiêu",
+    name: "Chuối tiêu",
     nameEn: "Banana",
     category: "fruits",
     servingSize: 100,
@@ -1794,29 +1214,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.07,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
-    vitaminB6: 0.40, // mg - cao trong chuá»‘i
-    vitaminB7: 0, // Biotin
-    folate: 20, // Âµg
+    vitaminB6: 0.40,
+    folate: 20,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.5, // Phylloquinone
-    choline: 9.8, // mg
-    selenium: 1.0, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.27, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~100g)",
-    notes: "Kali cao; CKD lÆ°u Ã½.",
+    commonServing: "1 quả (~100g)",
+    notes: "Kali cao; CKD lưu ý.",
     diabetes: { glycemicIndex: 51, glycemicLoad: 13, carbPerPortion: 26 },
     kidney: { potassium: 358, phosphorus: 22 },
   },
   {
     id: "cam-sanh",
-    code: "50018",
-    name: "Cam Sành",
+    name: "Cam sành",
     nameEn: "Orange",
     category: "fruits",
     servingSize: 100,
@@ -1841,28 +1250,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.09,
     vitaminB2: 0.04,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.06,
-    vitaminB7: 0, // Biotin
-    folate: 30, // Âµg
+    folate: 30,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 8.4, // mg
-    selenium: 0.5, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.03, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~130g)",
+    commonServing: "1 quả (~130g)",
     notes: "Vitamin C cao.",
     diabetes: { glycemicIndex: 43, glycemicLoad: 5, carbPerPortion: 15 },
     kidney: { potassium: 181, phosphorus: 14 },
   },
   {
     id: "quyt",
-    code: "50019",
     name: "Quýt",
     nameEn: "Mandarin",
     category: "fruits",
@@ -1888,29 +1286,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.06,
     vitaminB2: 0.04,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.08,
-    vitaminB7: 0, // Biotin
-    folate: 16, // Âµg
+    folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 8.4, // mg
-    selenium: 0.1, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~100g)",
-    notes: "Ngá»t vá»«a.",
+    commonServing: "1 quả (~100g)",
+    notes: "Ngọt vừa.",
     diabetes: { glycemicIndex: 42, glycemicLoad: 6, carbPerPortion: 13 },
     kidney: { potassium: 166, phosphorus: 20 },
   },
   {
     id: "vu-sua",
-    code: "50026",
-    name: "Vú Sữa",
+    name: "Vú sữa",
     nameEn: "Star apple",
     category: "fruits",
     servingSize: 100,
@@ -1935,29 +1322,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.05,
     vitaminB2: 0.05,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.08,
-    vitaminB7: 0, // Biotin
-    folate: 12, // Âµg
+    folate: 12,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 7.6, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1/2 quáº£ (~100g)",
-    notes: "Nhiá»u xÆ¡ hÃ²a tan.",
+    commonServing: "1/2 quả (~100g)",
+    notes: "Nhiều xơ hòa tan.",
     diabetes: { glycemicIndex: 48, glycemicLoad: 8, carbPerPortion: 16 },
     kidney: { potassium: 212, phosphorus: 26 },
   },
   {
     id: "chom-chom",
-    code: "50014",
-    name: "Chôm Chôm",
+    name: "Chôm chôm",
     nameEn: "Rambutan",
     category: "fruits",
     servingSize: 100,
@@ -1982,28 +1358,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.02,
     vitaminB2: 0.04,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.06,
-    vitaminB7: 0, // Biotin
-    folate: 8, // Âµg
+    folate: 8,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 5.4, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.07, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "5â€“6 quáº£ (~100g)",
-    notes: "Ngá»t; ÄTÄ Äƒn vá»«a.",
+    commonServing: "5–6 quả (~100g)",
+    notes: "Ngọt; ĐTĐ ăn vừa.",
     diabetes: { glycemicIndex: 55, glycemicLoad: 9, carbPerPortion: 17 },
     kidney: { potassium: 42, phosphorus: 16 },
   },
   {
     id: "nhan",
-    code: "50029",
     name: "Nhãn",
     nameEn: "Longan",
     category: "fruits",
@@ -2033,17 +1398,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "10â€“12 quáº£ (~100g)",
-    notes: "ÄÆ°á»ng cao.",
+    commonServing: "10–12 quả (~100g)",
+    notes: "Đường cao.",
     diabetes: { glycemicIndex: 60, glycemicLoad: 9, carbPerPortion: 15 },
     kidney: { potassium: 266, phosphorus: 21 },
   },
   // ========================================================================
-  // Bá»• sung nhÃ³m rau lÃ¡, cá»§, trÃ¡i cÃ¢y phá»• biáº¿n (pháº§n 38â€“40)
+  // Bổ sung nhóm rau lá, củ, trái cây phổ biến (phần 38–40)
   // ========================================================================
   {
     id: "cai-thia-veg25",
-    name: "Rau cáº£i thÃ¬a",
+    name: "Rau cải thìa",
     nameEn: "Bok choy",
     category: "vegetables",
     servingSize: 100,
@@ -2067,27 +1432,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.07,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.09,
-    vitaminB7: 0, // Biotin
-    folate: 66, // Âµg - cao trong rau lÃ¡ xanh
+    folate: 66,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 45, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 10.4, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Ãt kcal; giÃ u canxi.",
+    commonServing: "1 bát (~100g)",
+    notes: "Ít kcal; giàu canxi.",
     kidney: { potassium: 252, phosphorus: 37 },
   },
   {
     id: "cai-be-xanh",
-    name: "Rau Cải Bẹ Xanh",
+    name: "Rau cải bẹ xanh",
     nameEn: "Mustard greens",
     category: "vegetables",
     servingSize: 100,
@@ -2111,28 +1466,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.15,
-    vitaminB3: 0.8, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.14,
-    vitaminB7: 0, // Biotin
-    folate: 75, // Âµg - cao trong rau lÃ¡ xanh
+    folate: 75,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.6, // Tocopherol
-    vitaminK: 257, // Phylloquinone - ráº¥t cao trong rau cáº£i
-    choline: 19.5, // mg
-    selenium: 0.8, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "GiÃ u kali; CKD chÃº Ã½.",
+    commonServing: "1 bát (~100g)",
+    notes: "Giàu kali; CKD chú ý.",
     kidney: { potassium: 384, phosphorus: 58 },
   },
   {
     id: "xa-lach",
-    code: "40041",
-    name: "Rau Xà Lách",
+    name: "Rau xà lách",
     nameEn: "Lettuce",
     category: "vegetables",
     servingSize: 100,
@@ -2157,29 +1501,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.07,
     vitaminB2: 0.08,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.09,
-    vitaminB7: 0, // Biotin
-    folate: 38, // Âµg
+    folate: 38,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 126.3, // Phylloquinone - ráº¥t cao trong xÃ  lÃ¡ch
-    choline: 9.9, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.03, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng",
-    notes: "Ãt nÄƒng lÆ°á»£ng.",
+    commonServing: "Ăn sống",
+    notes: "Ít năng lượng.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 3 },
     kidney: { potassium: 194, phosphorus: 29 },
   },
   {
     id: "tia-to",
-    code: "40053",
-    name: "Tía Tô",
+    name: "Tía tô",
     nameEn: "Perilla leaves",
     category: "vegetables",
     servingSize: 100,
@@ -2203,22 +1536,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.10,
     vitaminB2: 0.15,
-    vitaminB3: 1.0, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 0, // Biotin
-    folate: 100, // Âµg - cao trong tÃ­a tÃ´
+    folate: 100,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 690, // Phylloquinone - ráº¥t cao trong tÃ­a tÃ´
-    choline: 35.3, // mg - cao trong tÃ­a tÃ´
-    selenium: 0.3, // Âµg
-    copper: 0.3, // mg - cao trong tÃ­a tÃ´
-    manganese: 1.2, // mg - cao trong tÃ­a tÃ´
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n kÃ¨m",
-    notes: "Rau gia vá»‹, giÃ u vi cháº¥t.",
+    commonServing: "Ăn kèm",
+    notes: "Rau gia vị, giàu vi chất.",
     kidney: { potassium: 500, phosphorus: 63 },
   },
   {
@@ -2248,29 +1571,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.06,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.8, // Pantothenic acid - cao trong khoai lang
     vitaminB6: 0.21,
-    vitaminB7: 0, // Biotin
-    folate: 11, // Âµg
+    folate: 11,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 1.8, // Phylloquinone
-    choline: 12.2, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.26, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ (~100g)",
-    notes: "Tinh bá»™t; GI trung bÃ¬nh.",
+    commonServing: "1 củ (~100g)",
+    notes: "Tinh bột; GI trung bình.",
     diabetes: { glycemicIndex: 44, glycemicLoad: 9, carbPerPortion: 20 },
     kidney: { potassium: 337, phosphorus: 47 },
   },
   {
     id: "khoai-mon",
-    code: "40019",
-    name: "Khoai Môn",
+    name: "Khoai môn",
     nameEn: "Taro root",
     category: "vegetables",
     servingSize: 100,
@@ -2295,28 +1607,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.10,
     vitaminB2: 0.03,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.27,
-    vitaminB7: 0, // Biotin
-    folate: 22, // Âµg
+    folate: 22,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 1.0, // Phylloquinone
-    choline: 9.2, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.17, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (~100g)",
-    notes: "Kali cao; CKD háº¡n cháº¿.",
+    commonServing: "1 miếng (~100g)",
+    notes: "Kali cao; CKD hạn chế.",
     diabetes: { glycemicIndex: 54, glycemicLoad: 14, carbPerPortion: 27 },
     kidney: { potassium: 591, phosphorus: 84 },
   },
   {
     id: "bap-ngo",
-    name: "Bắp (Ngô)",
+    name: "Bắp (ngô)",
     nameEn: "Corn",
     category: "vegetables",
     servingSize: 100,
@@ -2341,28 +1643,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.20,
     vitaminB2: 0.10,
-    vitaminB3: 1.7, // Niacin - cao trong báº¯p ngÃ´
-    vitaminB5: 0.7, // Pantothenic acid - cao trong báº¯p ngÃ´
     vitaminB6: 0.16,
-    vitaminB7: 0, // Biotin
-    folate: 42, // Âµg
+    folate: 42,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.3, // Phylloquinone
-    choline: 23.0, // mg - cao trong báº¯p ngÃ´
-    selenium: 0.6, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 trÃ¡i nhá» (~100g)",
-    notes: "Tinh bá»™t; ÄTÄ Äƒn vá»«a.",
+    commonServing: "1 trái nhỏ (~100g)",
+    notes: "Tinh bột; ĐTĐ ăn vừa.",
     diabetes: { glycemicIndex: 52, glycemicLoad: 11, carbPerPortion: 21 },
     kidney: { potassium: 270, phosphorus: 89 },
   },
   {
     id: "xoai-chin-fr18",
-    name: "XoÃ i chÃ­n",
+    name: "Xoài chín",
     nameEn: "Ripe mango",
     category: "fruits",
     servingSize: 100,
@@ -2387,28 +1679,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.04,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 43, // Âµg
+    folate: 43,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.9, // Tocopherol
-    vitaminK: 4.2, // Phylloquinone
-    choline: 7.6, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.11, // mg
-    manganese: 0.06, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (~100g)",
-    notes: "Ngá»t; ÄTÄ Äƒn vá»«a.",
+    commonServing: "1 miếng (~100g)",
+    notes: "Ngọt; ĐTĐ ăn vừa.",
     diabetes: { glycemicIndex: 51, glycemicLoad: 8, carbPerPortion: 15 },
     kidney: { potassium: 168, phosphorus: 14 },
   },
   {
     id: "xoai-xanh",
-    name: "Xoài Xanh",
+    name: "Xoài xanh",
     nameEn: "Green mango",
     category: "fruits",
     servingSize: 100,
@@ -2433,28 +1715,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.05,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
-    folate: 38, // Âµg
+    folate: 38,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.9, // Tocopherol
-    vitaminK: 4.2, // Phylloquinone
-    choline: 7.6, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.11, // mg
-    manganese: 0.06, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng",
-    notes: "Chua; GI tháº¥p.",
+    commonServing: "Ăn sống",
+    notes: "Chua; GI thấp.",
     diabetes: { glycemicIndex: 35, glycemicLoad: 3, carbPerPortion: 9 },
     kidney: { potassium: 156, phosphorus: 16 },
   },
   {
     id: "dua-hau-fr20",
-    name: "DÆ°a háº¥u",
+    name: "Dưa hấu",
     nameEn: "Watermelon",
     category: "fruits",
     servingSize: 100,
@@ -2479,22 +1751,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.02,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
-    folate: 3, // Âµg
+    folate: 3,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 4.1, // mg
-    selenium: 0.4, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (~100g)",
-    notes: "Nhiá»u nÆ°á»›c; GI cao.",
+    commonServing: "1 miếng (~100g)",
+    notes: "Nhiều nước; GI cao.",
     diabetes: { glycemicIndex: 72, glycemicLoad: 5, carbPerPortion: 8 },
     kidney: { potassium: 112, phosphorus: 11 },
   },
@@ -2525,28 +1787,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.05,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.08,
-    vitaminB7: 0, // Biotin
-    folate: 7, // Âµg
+    folate: 7,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.0, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 5.1, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.0, // mg
-    manganese: 0.0, // mg
-    iodine: 0, // Âµg
-    commonServing: "1/2 quáº£ (~100g)",
-    notes: "Nhiá»u xÆ¡; tá»‘t tiÃªu hÃ³a.",
+    commonServing: "1/2 quả (~100g)",
+    notes: "Nhiều xơ; tốt tiêu hóa.",
     diabetes: { glycemicIndex: 48, glycemicLoad: 5, carbPerPortion: 11 },
     kidney: { potassium: 277, phosphorus: 36 },
   },
   {
     id: "bo",
-    code: "20003",
     name: "Bơ",
     nameEn: "Avocado",
     category: "fruits",
@@ -2572,31 +1823,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 2.1 },
     vitaminB1: 0.07,
     vitaminB2: 0.13,
-    vitaminB3: 1.7, // Niacin
-    vitaminB5: 1.4, // Pantothenic acid - cao trong bÆ¡
     vitaminB6: 0.26,
-    vitaminB7: 0, // Biotin
-    folate: 81, // Âµg
+    folate: 81,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 2.1, // Tocopherol - cao trong bÆ¡
-    vitaminK: 21.0, // Phylloquinone - cao trong bÆ¡
-    choline: 14.2, // mg
-    selenium: 0.4, // Âµg
-    copper: 0.19, // mg
-    manganese: 0.14, // mg
-    iodine: 0, // Âµg
-    commonServing: "1/2 quáº£ (~100g)",
-    notes: "GiÃ u cháº¥t bÃ©o tá»‘t; kali cao.",
+    commonServing: "1/2 quả (~100g)",
+    notes: "Giàu chất béo tốt; kali cao.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 9 },
     kidney: { potassium: 485, phosphorus: 52 },
   },
   // ========================================================================
-  // Bá»• sung thÃªm rau lÃ¡ & trÃ¡i cÃ¢y (pháº§n 42: 213â€“224)
+  // Bổ sung thêm rau lá & trái cây (phần 42: 213–224)
   // ========================================================================
   {
     id: "cai-bo-xoi",
-    name: "Cải Bó Xôi",
+    name: "Cải bó xôi",
     nameEn: "Spinach",
     category: "vegetables",
     servingSize: 100,
@@ -2621,27 +1862,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.19,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 0, // Biotin
-    folate: 194, // Âµg - ráº¥t cao trong cáº£i bÃ³ xÃ´i
+    folate: 194,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 2.0, // Tocopherol - cao trong cáº£i bÃ³ xÃ´i
-    vitaminK: 482.9, // Phylloquinone - ráº¥t cao trong cáº£i bÃ³ xÃ´i
-    choline: 19.3, // mg
-    selenium: 1.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.9, // mg - cao trong cáº£i bÃ³ xÃ´i
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "GiÃ u sáº¯t & folate; CKD chÃº Ã½ kali.",
+    commonServing: "1 bát (~100g)",
+    notes: "Giàu sắt & folate; CKD chú ý kali.",
     kidney: { potassium: 558, phosphorus: 49 },
   },
   {
     id: "bap-cai-trang",
-    name: "Bắp Cải Trắng",
+    name: "Bắp cải trắng",
     nameEn: "White cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -2666,29 +1897,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.06,
     vitaminB2: 0.04,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 43, // Âµg
+    folate: 43,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 76, // Phylloquinone - cao trong báº¯p cáº£i
-    choline: 10.7, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Ãt kcal; dá»… Äƒn.",
+    commonServing: "1 bát (~100g)",
+    notes: "Ít kcal; dễ ăn.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 6 },
     kidney: { potassium: 170, phosphorus: 26 },
   },
   {
     id: "bap-cai-tim",
-    code: "40033",
-    name: "Bắp Cải Tím",
+    name: "Bắp cải tím",
     nameEn: "Red cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -2713,28 +1933,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.07,
     vitaminB2: 0.05,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.14,
-    vitaminB7: 0, // Biotin
-    folate: 43, // Âµg
+    folate: 43,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 38.2, // Phylloquinone
-    choline: 12.0, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Chá»‘ng oxy hÃ³a tá»‘t.",
+    commonServing: "1 bát (~100g)",
+    notes: "Chống oxy hóa tốt.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 7 },
     kidney: { potassium: 243, phosphorus: 30 },
   },
   {
     id: "ca-chua-veg35",
-    name: "CÃ  chua",
+    name: "Cà chua",
     nameEn: "Tomato",
     category: "vegetables",
     servingSize: 100,
@@ -2759,28 +1969,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.02,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.08,
-    vitaminB7: 0, // Biotin
-    folate: 15, // Âµg
+    folate: 15,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 7.9, // Phylloquinone
-    choline: 6.7, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.11, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ vá»«a (~100g)",
-    notes: "GiÃ u lycopene.",
+    commonServing: "1 quả vừa (~100g)",
+    notes: "Giàu lycopene.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 4 },
     kidney: { potassium: 237, phosphorus: 24 },
   },
   {
     id: "dua-leo-veg36",
-    name: "Dưa Leo",
+    name: "Dưa leo",
     nameEn: "Cucumber",
     category: "vegetables",
     servingSize: 100,
@@ -2805,29 +2005,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.03,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.04,
-    vitaminB7: 0, // Biotin
-    folate: 7, // Âµg
+    folate: 7,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.0, // Tocopherol
-    vitaminK: 16.4, // Phylloquinone
-    choline: 6.0, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~100g)",
-    notes: "Nhiá»u nÆ°á»›c; THA phÃ¹ há»£p.",
+    commonServing: "1 quả (~100g)",
+    notes: "Nhiều nước; THA phù hợp.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 4 },
     kidney: { potassium: 147, phosphorus: 24 },
   },
   {
     id: "hanh-tay",
-    code: "40057",
-    name: "Hành Tây",
+    name: "Hành tây",
     nameEn: "Onion",
     category: "vegetables",
     servingSize: 100,
@@ -2852,28 +2041,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.05,
     vitaminB2: 0.02,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 19, // Âµg
+    folate: 19,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.0, // Tocopherol
-    vitaminK: 0.4, // Phylloquinone
-    choline: 6.1, // mg
-    selenium: 0.5, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ nhá» (~100g)",
-    notes: "Gia vá»‹ quen thuá»™c.",
+    commonServing: "1 củ nhỏ (~100g)",
+    notes: "Gia vị quen thuộc.",
     diabetes: { glycemicIndex: 10, glycemicLoad: 1, carbPerPortion: 9 },
     kidney: { potassium: 146, phosphorus: 29 },
   },
   {
     id: "toi",
-    code: "20096",
     name: "Tỏi",
     nameEn: "Garlic",
     category: "vegetables",
@@ -2899,29 +2077,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.20,
     vitaminB2: 0.11,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.6, // Pantothenic acid - cao trong tá»i
-    vitaminB6: 1.24, // mg - ráº¥t cao trong tá»i
-    vitaminB7: 0, // Biotin
-    folate: 3, // Âµg
+    vitaminB6: 1.24,
+    folate: 3,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 1.7, // Phylloquinone
-    choline: 23.2, // mg - cao trong tá»i
-    selenium: 14.2, // Âµg - ráº¥t cao trong tá»i
-    copper: 0.3, // mg - cao trong tá»i
-    manganese: 1.7, // mg - ráº¥t cao trong tá»i
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n lÆ°á»£ng nhá»",
-    notes: "Gia vá»‹; nhiá»u vi cháº¥t.",
+    commonServing: "Ăn lượng nhỏ",
+    notes: "Gia vị; nhiều vi chất.",
     diabetes: { glycemicIndex: 30, glycemicLoad: 10, carbPerPortion: 33 },
     kidney: { potassium: 401, phosphorus: 153 },
   },
   {
     id: "tao-ta",
-    code: "50020",
-    name: "Táo Ta",
+    name: "Táo ta",
     nameEn: "Apple",
     category: "fruits",
     servingSize: 100,
@@ -2946,28 +2113,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.02,
     vitaminB2: 0.03,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.04,
-    vitaminB7: 0, // Biotin
-    folate: 3, // Âµg
+    folate: 3,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 2.2, // Phylloquinone
-    choline: 3.4, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.03, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~100g)",
-    notes: "GI tháº¥pâ€“trung bÃ¬nh.",
+    commonServing: "1 quả (~100g)",
+    notes: "GI thấp–trung bình.",
     diabetes: { glycemicIndex: 36, glycemicLoad: 5, carbPerPortion: 14 },
     kidney: { potassium: 107, phosphorus: 11 },
   },
   {
     id: "le-fr24",
-    name: "LÃª",
+    name: "Lê",
     nameEn: "Pear",
     category: "fruits",
     servingSize: 100,
@@ -2992,28 +2149,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.02,
     vitaminB2: 0.03,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
-    folate: 7, // Âµg
+    folate: 7,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 4.4, // Phylloquinone
-    choline: 5.1, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.05, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~100g)",
-    notes: "Nhiá»u xÆ¡.",
+    commonServing: "1 quả (~100g)",
+    notes: "Nhiều xơ.",
     diabetes: { glycemicIndex: 38, glycemicLoad: 6, carbPerPortion: 15 },
     kidney: { potassium: 119, phosphorus: 12 },
   },
   {
     id: "du-du-chin-fr25",
-    name: "Äu Ä‘á»§ chÃ­n",
+    name: "Đu đủ chín",
     nameEn: "Papaya",
     category: "fruits",
     servingSize: 100,
@@ -3038,28 +2185,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.03,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
-    folate: 37, // Âµg
+    folate: 37,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 2.6, // Phylloquinone
-    choline: 6.1, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (~100g)",
-    notes: "Tá»‘t tiÃªu hÃ³a.",
+    commonServing: "1 miếng (~100g)",
+    notes: "Tốt tiêu hóa.",
     diabetes: { glycemicIndex: 60, glycemicLoad: 7, carbPerPortion: 11 },
     kidney: { potassium: 182, phosphorus: 10 },
   },
   {
     id: "man-roi",
-    name: "Mận (Roi)",
+    name: "Mận (roi)",
     nameEn: "Rose apple",
     category: "fruits",
     servingSize: 100,
@@ -3084,29 +2221,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.02,
     vitaminB2: 0.03,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
-    folate: 5, // Âµg
+    folate: 5,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.0, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 4.6, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.0, // mg
-    iodine: 0, // Âµg
-    commonServing: "2â€“3 quáº£ (~100g)",
-    notes: "Ãt nÄƒng lÆ°á»£ng.",
+    commonServing: "2–3 quả (~100g)",
+    notes: "Ít năng lượng.",
     diabetes: { glycemicIndex: 20, glycemicLoad: 1, carbPerPortion: 6 },
     kidney: { potassium: 123, phosphorus: 15 },
   },
   {
     id: "me-chin",
-    code: "50033",
-    name: "Me Chín",
+    name: "Me chín",
     nameEn: "Tamarind",
     category: "fruits",
     servingSize: 100,
@@ -3129,33 +2255,23 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 3.5,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.43, // mg - cao trong me
+    vitaminB1: 0.43,
     vitaminB2: 0.15,
-    vitaminB3: 1.9, // Niacin - cao trong me
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.38,
-    vitaminB7: 0, // Biotin
-    folate: 14, // Âµg
+    folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 2.8, // Phylloquinone
-    choline: 8.6, // mg
-    selenium: 1.3, // Âµg
-    copper: 0.9, // mg - cao trong me
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n lÆ°á»£ng nhá»",
-    notes: "ÄÆ°á»ng ráº¥t cao.",
+    commonServing: "Ăn lượng nhỏ",
+    notes: "Đường rất cao.",
     diabetes: { glycemicIndex: 65, glycemicLoad: 40, carbPerPortion: 63 },
     kidney: { potassium: 628, phosphorus: 113 },
   },
   // ========================================================================
-  // Tinh bá»™t nguyÃªn cÃ¡m / GI tháº¥p + sá»¯a & dÆ°a muá»‘i + mÃ³n sÃ¡ng & Ä‘áº·c biá»‡t (225â€“240)
+  // Tinh bột nguyên cám / GI thấp + sữa & dưa muối + món sáng & đặc biệt (225–240)
   // ========================================================================
   {
     id: "banh-mi-nguyen-cam",
-    name: "Bánh Mì Nguyên Cám",
+    name: "Bánh mì nguyên cám",
     nameEn: "Whole wheat bread",
     category: "rice-noodles",
     servingSize: 100,
@@ -3180,28 +2296,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0.6 },
     vitaminB1: 0.42,
     vitaminB2: 0.18,
-    vitaminB3: 4.0, // Niacin - cao trong bÃ¡nh mÃ¬ nguyÃªn cÃ¡m
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.25,
-    vitaminB7: 0, // Biotin
-    folate: 40, // Âµg
+    folate: 40,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 1.2, // Phylloquinone
-    choline: 26.0, // mg
-    selenium: 35.0, // Âµg - cao trong bÃ¡nh mÃ¬ nguyÃªn cÃ¡m
-    copper: 0.4, // mg
-    manganese: 2.0, // mg - cao trong bÃ¡nh mÃ¬ nguyÃªn cÃ¡m
-    iodine: 0, // Âµg
-    commonServing: "2 lÃ¡t (~60g)",
-    notes: "Carb phá»©c; GI tháº¥p hÆ¡n bÃ¡nh mÃ¬ tráº¯ng.",
+    commonServing: "2 lát (~60g)",
+    notes: "Carb phức; GI thấp hơn bánh mì trắng.",
     diabetes: { glycemicIndex: 50, glycemicLoad: 12, carbPerPortion: 25 },
     kidney: { potassium: 250, phosphorus: 210 },
   },
   {
     id: "banh-mi-den",
-    name: "Bánh Mì En (Rye)",
+    name: "Bánh mì đen (rye)",
     nameEn: "Rye bread",
     category: "rice-noodles",
     servingSize: 100,
@@ -3226,28 +2332,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0.5 },
     vitaminB1: 0.38,
     vitaminB2: 0.16,
-    vitaminB3: 3.0, // Niacin - cao trong bÃ¡nh mÃ¬ Ä‘en
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.22,
-    vitaminB7: 0, // Biotin
-    folate: 35, // Âµg
+    folate: 35,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 1.2, // Phylloquinone
-    choline: 24.0, // mg
-    selenium: 30.0, // Âµg - cao trong bÃ¡nh mÃ¬ Ä‘en
-    copper: 0.3, // mg
-    manganese: 1.5, // mg - cao trong bÃ¡nh mÃ¬ Ä‘en
-    iodine: 0, // Âµg
-    commonServing: "2 lÃ¡t (~60g)",
-    notes: "GI tháº¥p; tá»‘t cho ÄTÄ.",
+    commonServing: "2 lát (~60g)",
+    notes: "GI thấp; tốt cho ĐTĐ.",
     diabetes: { glycemicIndex: 45, glycemicLoad: 11, carbPerPortion: 24 },
     kidney: { potassium: 240, phosphorus: 190 },
   },
   {
     id: "yen-mach-chao",
-    name: "Yến Mạch (Cháo)",
+    name: "Yến mạch (cháo)",
     nameEn: "Oatmeal cooked",
     category: "rice-noodles",
     servingSize: 100,
@@ -3272,28 +2368,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0.2 },
     vitaminB1: 0.10,
     vitaminB2: 0.04,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.07,
-    vitaminB7: 0, // Biotin
-    folate: 6, // Âµg
+    folate: 6,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 8.0, // mg
-    selenium: 5.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.6, // mg - cao trong yáº¿n máº¡ch
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~200g)",
-    notes: "GI tháº¥p; tá»‘t tim máº¡ch.",
+    commonServing: "1 bát (~200g)",
+    notes: "GI thấp; tốt tim mạch.",
     diabetes: { glycemicIndex: 55, glycemicLoad: 11, carbPerPortion: 24 },
     kidney: { potassium: 70, phosphorus: 77 },
   },
   {
     id: "bun-gao-lut",
-    name: "Bún Gạo Lứt",
+    name: "Bún gạo lứt",
     nameEn: "Brown rice vermicelli",
     category: "rice-noodles",
     servingSize: 100,
@@ -3318,28 +2404,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0.3 },
     vitaminB1: 0.18,
     vitaminB2: 0.06,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
-    folate: 12, // Âµg
+    folate: 12,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 9.0, // mg
-    selenium: 7.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.8, // mg - cao trong gáº¡o lá»©t
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~150g)",
-    notes: "Carb tá»‘t hÆ¡n bÃºn tráº¯ng.",
+    commonServing: "1 bát (~150g)",
+    notes: "Carb tốt hơn bún trắng.",
     diabetes: { glycemicIndex: 55, glycemicLoad: 14, carbPerPortion: 39 },
     kidney: { potassium: 110, phosphorus: 80 },
   },
   {
     id: "sua-tach-beo",
-    name: "Sữa Tách Béo",
+    name: "Sữa tách béo",
     nameEn: "Skim milk",
     category: "dairy",
     servingSize: 100,
@@ -3364,28 +2440,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 5, saturatedFat: 0.1 },
     vitaminB1: 0.04,
     vitaminB2: 0.18,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.04,
-    vitaminB7: 3.0, // Biotin (Âµg)
     folate: 5,
     vitaminB12: 1.3,
     vitaminD: 40,
-    vitaminE: 0.0, // Tocopherol (ráº¥t Ã­t trong sá»¯a tÃ¡ch bÃ©o)
-    vitaminK: 0.1, // Phylloquinone
-    choline: 18, // mg
-    selenium: 3.3, // Âµg
-    copper: 0.01, // mg
-    manganese: 0.0, // mg
-    iodine: 1.0, // Âµg
     commonServing: "1 ly (200ml)",
-    notes: "Ãt bÃ©o; phÃ¹ há»£p tim máº¡ch.",
+    notes: "Ít béo; phù hợp tim mạch.",
     diabetes: { glycemicIndex: 35, glycemicLoad: 3, carbPerPortion: 10 },
     kidney: { potassium: 150, phosphorus: 95 },
   },
   {
     id: "sua-dau-nanh-it-duong",
-    name: "Sữa Ậu Nành Ít Ường",
+    name: "Sữa đậu nành ít đường",
     nameEn: "Low-sugar soy milk",
     category: "beverages",
     servingSize: 100,
@@ -3415,13 +2481,13 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminB12: 0,
     vitaminD: 0,
     commonServing: "1 ly (200ml)",
-    notes: "Äáº¡m thá»±c váº­t; CKD dÃ¹ng vá»«a.",
+    notes: "Đạm thực vật; CKD dùng vừa.",
     diabetes: { glycemicIndex: 30, glycemicLoad: 2, carbPerPortion: 5 },
     kidney: { potassium: 118, phosphorus: 52 },
   },
   {
     id: "sua-chua-khong-duong",
-    name: "Sữa Chua Không Ường",
+    name: "Sữa chua không đường",
     nameEn: "Plain yogurt",
     category: "dairy",
     servingSize: 100,
@@ -3446,28 +2512,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 10, saturatedFat: 2.1 },
     vitaminB1: 0.04,
     vitaminB2: 0.15,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.04,
-    vitaminB7: 3.0, // Biotin (Âµg)
-    folate: 7, // Âµg
+    folate: 7,
     vitaminB12: 0.6,
     vitaminD: 40,
-    vitaminE: 0.0, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 15, // mg
-    selenium: 3.3, // Âµg
-    copper: 0.01, // mg
-    manganese: 0.0, // mg
-    iodine: 1.0, // Âµg
-    commonServing: "1 hÅ© (~100g)",
-    notes: "Tá»‘t tiÃªu hÃ³a; Ã­t áº£nh hÆ°á»Ÿng ÄTÄ.",
+    commonServing: "1 hũ (~100g)",
+    notes: "Tốt tiêu hóa; ít ảnh hưởng ĐTĐ.",
     diabetes: { glycemicIndex: 35, glycemicLoad: 2, carbPerPortion: 5 },
     kidney: { potassium: 155, phosphorus: 95 },
   },
   {
     id: "pho-mai-it-beo",
-    name: "Phô Mai Tươi Ít Béo",
+    name: "Phô mai tươi ít béo",
     nameEn: "Cottage cheese",
     category: "dairy",
     servingSize: 100,
@@ -3492,28 +2548,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 17, saturatedFat: 2.7 },
     vitaminB1: 0.03,
     vitaminB2: 0.12,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.03,
-    vitaminB7: 3.0, // Biotin (Âµg)
-    folate: 12, // Âµg
+    folate: 12,
     vitaminB12: 0.5,
     vitaminD: 20,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 18, // mg
-    selenium: 9.0, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.0, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n kÃ¨m (~50g)",
-    notes: "Ãt bÃ©o hÆ¡n phÃ´ mai thÆ°á»ng.",
+    commonServing: "Ăn kèm (~50g)",
+    notes: "Ít béo hơn phô mai thường.",
     diabetes: { glycemicIndex: 10, glycemicLoad: 1, carbPerPortion: 3 },
     kidney: { potassium: 104, phosphorus: 159 },
   },
   {
     id: "dua-cai-muoi",
-    name: "Dưa Cải Mui",
+    name: "Dưa cải muối",
     nameEn: "Pickled mustard greens",
     category: "vegetables",
     servingSize: 100,
@@ -3542,13 +2588,13 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 20,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "Ä‚n ~50g",
-    notes: "Natri ráº¥t cao; THA trÃ¡nh.",
+    commonServing: "Ăn ~50g",
+    notes: "Natri rất cao; THA tránh.",
     kidney: { potassium: 150, phosphorus: 40 },
   },
   {
     id: "ca-phao-muoi",
-    name: "Cà Pháo Mui",
+    name: "Cà pháo muối",
     nameEn: "Pickled eggplant",
     category: "vegetables",
     servingSize: 100,
@@ -3573,28 +2619,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.04,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.06,
-    vitaminB7: 0, // Biotin
-    folate: 18, // Âµg
+    folate: 18,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 6.5, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n ~30â€“50g",
-    notes: "DÆ°a muá»‘i = muá»‘i.",
+    commonServing: "Ăn ~30–50g",
+    notes: "Dưa muối = muối.",
     kidney: { potassium: 180, phosphorus: 45 },
   },
   {
     id: "banh-bao",
-    code: "10029",
-    name: "Bánh Bao Nhân Tht",
+    name: "Bánh bao nhân thịt",
     nameEn: "Steamed meat bun",
     category: "snacks",
     servingSize: 100,
@@ -3619,28 +2654,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 35, saturatedFat: 2.0 },
     vitaminB1: 0.20,
     vitaminB2: 0.10,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 0, // Biotin
-    folate: 15, // Âµg
+    folate: 15,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 20.0, // mg
-    selenium: 15.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cÃ¡i (~120g)",
-    notes: "Tinh bá»™t + má»¡.",
+    commonServing: "1 cái (~120g)",
+    notes: "Tinh bột + mỡ.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 24, carbPerPortion: 40 },
     kidney: { potassium: 120, phosphorus: 110 },
   },
   {
     id: "banh-mi-kep",
-    name: "Bánh Mì Kẹp Tht",
+    name: "Bánh mì kẹp thịt",
     nameEn: "Banh mi sandwich",
     category: "snacks",
     servingSize: 100,
@@ -3665,29 +2690,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 45, saturatedFat: 3.0 },
     vitaminB1: 0.18,
     vitaminB2: 0.09,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.15,
-    vitaminB7: 0, // Biotin
-    folate: 12, // Âµg
+    folate: 12,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 25.0, // mg
-    selenium: 18.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 á»• (~150g)",
-    notes: "Natri & má»¡ cao.",
+    commonServing: "1 ổ (~150g)",
+    notes: "Natri & mỡ cao.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 26, carbPerPortion: 45 },
     kidney: { potassium: 150, phosphorus: 120 },
   },
   {
     id: "bun-rieu",
-    code: "11003",
-    name: "Bún Riêu",
+    name: "Bún riêu",
     nameEn: "Bun rieu crab noodle soup",
     category: "soups",
     servingSize: 100,
@@ -3712,263 +2726,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 35, saturatedFat: 0.8 },
     vitaminB1: 0.10,
     vitaminB2: 0.06,
-    vitaminB3: 1.0, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 10, // Âµg
-    vitaminB12: 0.5, // Âµg - tá»« cua
+    folate: 10,
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 15.0, // mg
-    selenium: 12.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ (~400g)",
-    notes: "NÆ°á»›c dÃ¹ng + máº¯m.",
+    commonServing: "1 tô (~400g)",
+    notes: "Nước dùng + mắm.",
     diabetes: { glycemicIndex: 65, glycemicLoad: 36, carbPerPortion: 56 },
     kidney: { potassium: 120, phosphorus: 90 },
   },
   {
-    id: "canh-chua",
-    code: "11001",
-    name: "Canh Chua",
-    nameEn: "Sour soup",
-    category: "soups",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 35,
-    protein: 2.5,
-    carbs: 4.0,
-    fat: 0.8,
-    fiber: 0.5,
-    water: 92.0,
-    sodium: 280,
-    potassium: 120,
-    calcium: 15,
-    iron: 0.5,
-    phosphorus: 25,
-    magnesium: 12,
-    zinc: 0.3,
-    vitaminC: 8.0,
-    vitaminB1: 0.05,
-    vitaminB2: 0.03,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
-    vitaminB6: 0.08,
-    vitaminB7: 0, // Biotin
-    folate: 10,
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 5.0, // mg
-    selenium: 2.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (1 bÃ¡t nhá»)",
-    notes: "Canh chua cÃ¡/ tÃ´m, nhiá»u rau cá»§, Ã­t calo.",
-    diabetes: {
-      glycemicIndex: 30,
-      glycemicLoad: 1,
-      carbPerPortion: 4,
-    },
-    kidney: {
-      potassium: 120,
-      phosphorus: 25,
-    },
-    cardiovascular: {
-      cholesterol: 0,
-      saturatedFat: 0.2,
-    },
-    vietnameseUnits: [
-      { unit: 'bat', weight: 100, description: '1 bÃ¡t nhá»' },
-    ],
-  },
-  {
-    id: "chao-trang",
-    code: "11056",
-    name: "Cháo Trắng",
-    nameEn: "Plain rice porridge",
-    category: "soups",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 40,
-    protein: 0.7,
-    carbs: 8.7,
-    fat: 0.2,
-    fiber: 0.1,
-    water: 90.0,
-    sodium: 50,
-    potassium: 13,
-    calcium: 3,
-    iron: 0.1,
-    phosphorus: 12,
-    magnesium: 3,
-    zinc: 0.1,
-    vitaminB1: 0.01,
-    vitaminB2: 0.01,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
-    vitaminB6: 0.02,
-    vitaminB7: 0, // Biotin
-    folate: 1,
-    vitaminB12: 0,
-    vitaminD: 0,
-    vitaminE: 0.01, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 0.7, // mg
-    selenium: 2.5, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.16, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ (~300g)",
-    notes: "Æ¯á»›c tÃ­nh; náº¿u Äƒn kÃ¨m dÆ°a muá»‘i/chÃ  bÃ´ng sáº½ tÄƒng natri Ä‘Ã¡ng ká»ƒ.",
-    diabetes: {
-      glycemicIndex: 70,
-      glycemicLoad: 18,
-      carbPerPortion: 26,
-    },
-    kidney: {
-      potassium: 13,
-      phosphorus: 12,
-    },
-    cardiovascular: {
-      cholesterol: 0,
-      saturatedFat: 0.1,
-    },
-    vietnameseUnits: [
-      { unit: 'to', weight: 300, description: '1 tÃ´ chÃ¡o tráº¯ng' },
-    ],
-  },
-  {
-    id: "chao-ga",
-    code: "11057",
-    name: "Cháo G",
-    nameEn: "Chicken porridge",
-    category: "soups",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 71,
-    protein: 4.0,
-    carbs: 8.6,
-    fat: 2.3,
-    fiber: 0.2,
-    water: 85.0,
-    sodium: 129,
-    potassium: 63,
-    calcium: 5,
-    iron: 0.5,
-    phosphorus: 51,
-    magnesium: 6,
-    zinc: 0.5,
-    cholesterol: 24,
-    vitaminB1: 0.05,
-    vitaminB2: 0.04,
-    vitaminB3: 1.2, // Niacin - tá»« thá»‹t gÃ 
-    vitaminB5: 0.3, // Pantothenic acid
-    vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
-    folate: 3,
-    vitaminB12: 0.1, // Âµg - tá»« thá»‹t gÃ 
-    vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 12.0, // mg
-    selenium: 3.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ (~350g)",
-    notes: "Æ¯á»›c tÃ­nh theo kháº©u pháº§n phá»• biáº¿n; natri phá»¥ thuá»™c nÆ°á»›c dÃ¹ng/nÃªm.",
-    diabetes: {
-      glycemicIndex: 65,
-      glycemicLoad: 22,
-      carbPerPortion: 30,
-    },
-    kidney: {
-      potassium: 63,
-      phosphorus: 51,
-    },
-    cardiovascular: {
-      cholesterol: 24,
-      saturatedFat: 0.7,
-    },
-    gout: {
-      purine: 140,
-      purineLevel: "high",
-    },
-    vietnameseUnits: [
-      { unit: 'to', weight: 350, description: '1 tÃ´ chÃ¡o gÃ ' },
-    ],
-  },
-  {
-    id: "pho-ga",
-    code: "11015",
-    name: "Ph G",
-    nameEn: "Chicken pho",
-    category: "soups",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 93,
-    protein: 6.2,
-    carbs: 12.2,
-    fat: 2.2,
-    fiber: 0.4,
-    water: 79.0,
-    sodium: 156,
-    potassium: 67,
-    calcium: 9,
-    iron: 0.6,
-    phosphorus: 58,
-    magnesium: 7,
-    zinc: 0.5,
-    cholesterol: 16,
-    vitaminB1: 0.08,
-    vitaminB2: 0.06,
-    vitaminB3: 1.5, // Niacin - tá»« thá»‹t gÃ 
-    vitaminB5: 0.4, // Pantothenic acid
-    vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 5,
-    vitaminB12: 0.2, // Âµg - tá»« thá»‹t gÃ 
-    vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 15.0, // mg
-    selenium: 4.0, // Âµg
-    copper: 0.06, // mg
-    manganese: 0.15, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´",
-    notes: "Æ¯á»›c tÃ­nh cho 1 tÃ´ phá»Ÿ gÃ  Ä‘áº§y Ä‘á»§; nÆ°á»›c dÃ¹ng máº·n.",
-    diabetes: {
-      glycemicIndex: 60,
-      glycemicLoad: 22,
-      carbPerPortion: 55,
-    },
-    kidney: {
-      potassium: 67,
-      phosphorus: 58,
-    },
-    cardiovascular: {
-      cholesterol: 16,
-      saturatedFat: 0.6,
-    },
-    gout: {
-      purine: 140,
-      purineLevel: "high",
-    },
-    vietnameseUnits: [
-      { unit: 'to', weight: 450, description: '1 tÃ´ phá»Ÿ gÃ ' },
-    ],
-  },
-  {
     id: "ca-com-kho",
-    name: "Cá Cơm Khô",
+    name: "Cá cơm khô",
     nameEn: "Dried anchovy",
     category: "seafood",
     servingSize: 100,
@@ -3992,28 +2761,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 120, saturatedFat: 1.2 },
     vitaminB1: 0.12,
     vitaminB2: 0.10,
-    vitaminB3: 3.0, // Niacin - cao trong cÃ¡ khÃ´
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 0, // Biotin
-    folate: 18, // Âµg
-    vitaminB12: 5.0, // Âµg - ráº¥t cao trong cÃ¡ khÃ´
+    folate: 18,
+    vitaminB12: 5.0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 50.0, // mg - cao trong cÃ¡ khÃ´
-    selenium: 50.0, // Âµg - ráº¥t cao trong cÃ¡ khÃ´
-    copper: 0.5, // mg - cao trong cÃ¡ khÃ´
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n ~20g",
-    notes: "Purine & natri ráº¥t cao.",
+    commonServing: "Ăn ~20g",
+    notes: "Purine & natri rất cao.",
     gout: { purine: 350, purineLevel: "very-high" },
     kidney: { potassium: 850, phosphorus: 600 },
   },
   {
     id: "ruoc-thit",
-    name: "Ruc Tht",
+    name: "Ruốc thịt",
     nameEn: "Pork floss",
     category: "meat",
     servingSize: 100,
@@ -4038,29 +2797,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 85, saturatedFat: 9.0 },
     vitaminB1: 0.20,
     vitaminB2: 0.18,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.22,
-    vitaminB7: 0, // Biotin
-    folate: 10, // Âµg
-    vitaminB12: 0.5, // Âµg
+    folate: 10,
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 30.0, // mg
-    selenium: 25.0, // Âµg - cao trong cÃ¡ khÃ´
-    copper: 0.3, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ráº¯c ~20g",
-    notes: "Máº·n + purine.",
+    commonServing: "Rắc ~20g",
+    notes: "Mặn + purine.",
     gout: { purine: 300, purineLevel: "high" },
     kidney: { potassium: 300, phosphorus: 220 },
   },
   {
     id: "nuoc-dua",
-    code: "90001",
-    name: "Nưc Dừa Tươi",
+    name: "Nước dừa tươi",
     nameEn: "Coconut water",
     category: "beverages",
     servingSize: 100,
@@ -4085,31 +2833,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.02,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
-    folate: 5, // Âµg
+    folate: 5,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.0, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 1.1, // mg
-    selenium: 1.0, // Âµg
-    copper: 0.0, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 trÃ¡i (~300ml)",
-    notes: "Kali cao; CKD lÆ°u Ã½.",
+    commonServing: "1 trái (~300ml)",
+    notes: "Kali cao; CKD lưu ý.",
     diabetes: { glycemicIndex: 35, glycemicLoad: 4, carbPerPortion: 11 },
     kidney: { potassium: 250, phosphorus: 20 },
   },
   // ========================================================================
-  // Thá»‹t cháº¿ biáº¿n & quay/nÆ°á»›ng (241â€“251)
+  // Thịt chế biến & quay/nướng (241–251)
   // ========================================================================
   {
     id: "gio-lua",
-    name: "Giò Lụa",
+    name: "Giò lụa",
     nameEn: "Steamed pork sausage",
     category: "meat",
     servingSize: 100,
@@ -4134,22 +2872,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 65, saturatedFat: 2.5 },
     vitaminB1: 0.15,
     vitaminB2: 0.10,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 0, // Biotin
-    folate: 10, // Âµg
+    folate: 10,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 25.0, // mg
-    selenium: 20.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "2â€“3 lÃ¡t (~50g)",
-    notes: "Thá»‹t cháº¿ biáº¿n; natri cao.",
+    commonServing: "2–3 lát (~50g)",
+    notes: "Thịt chế biến; natri cao.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -4158,7 +2886,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "cha-lua-chien",
-    name: "Chả Lụa Chiên",
+    name: "Chả lụa chiên",
     nameEn: "Fried pork sausage",
     category: "meat",
     servingSize: 100,
@@ -4183,22 +2911,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 70, saturatedFat: 6.0 },
     vitaminB1: 0.14,
     vitaminB2: 0.10,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0, // Biotin
-    folate: 9, // Âµg
+    folate: 9,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 25.0, // mg
-    selenium: 20.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n ~50g",
-    notes: "Má»¡ + natri cao.",
+    commonServing: "Ăn ~50g",
+    notes: "Mỡ + natri cao.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -4206,9 +2924,9 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     kidney: { potassium: 240, phosphorus: 200 },
   },
   {
-    // dÃ¹ng id khÃ¡c Ä‘á»ƒ trÃ¡nh trÃ¹ng vá»›i báº£n nem-chua cÅ©
+    // dùng id khác để tránh trùng với bản nem-chua cũ
     id: "nem-chua-meat27",
-    name: "Nem Chua",
+    name: "Nem chua",
     nameEn: "Fermented pork roll",
     category: "meat",
     servingSize: 100,
@@ -4233,22 +2951,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 75, saturatedFat: 6.5 },
     vitaminB1: 0.18,
     vitaminB2: 0.14,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 0, // Biotin
-    folate: 12, // Âµg
+    folate: 12,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 30.0, // mg
-    selenium: 22.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1â€“2 cÃ¢y (~50g)",
-    notes: "Ráº¥t máº·n; lÃªn men.",
+    commonServing: "1–2 cây (~50g)",
+    notes: "Rất mặn; lên men.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -4257,7 +2965,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "heo-quay",
-    name: "Tht Heo Quay",
+    name: "Thịt heo quay",
     nameEn: "Roast pork belly",
     category: "meat",
     servingSize: 100,
@@ -4281,22 +2989,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 90, saturatedFat: 14.0 },
     vitaminB1: 0.10,
     vitaminB2: 0.08,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 6, // Âµg
+    folate: 6,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 20.0, // mg
-    selenium: 18.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (~100g)",
-    notes: "Má»¡ bÃ£o hÃ²a ráº¥t cao.",
+    commonServing: "1 miếng (~100g)",
+    notes: "Mỡ bão hòa rất cao.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -4305,8 +3003,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "thit-kho-tau",
-    code: "11027",
-    name: "Tht Kho Tàu",
+    name: "Thịt kho tàu",
     nameEn: "Braised pork with egg",
     category: "meat",
     servingSize: 100,
@@ -4331,22 +3028,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 110, saturatedFat: 8.5 },
     vitaminB1: 0.12,
     vitaminB2: 0.10,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.15,
-    vitaminB7: 0, // Biotin
-    folate: 8, // Âµg
-    vitaminB12: 0.5, // Âµg - tá»« thá»‹t vÃ  trá»©ng
+    folate: 8,
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 25.0, // mg - tá»« thá»‹t vÃ  trá»©ng
-    selenium: 18.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 chÃ©n (~150g)",
-    notes: "Máº·n + má»¡.",
+    commonServing: "1 chén (~150g)",
+    notes: "Mặn + mỡ.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -4355,8 +3042,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bo-vien",
-    code: "20120",
-    name: "Bò Viên",
+    name: "Bò viên",
     nameEn: "Beef meatball",
     category: "meat",
     servingSize: 100,
@@ -4381,22 +3067,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 85, saturatedFat: 5.5 },
     vitaminB1: 0.12,
     vitaminB2: 0.10,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.14,
-    vitaminB7: 0, // Biotin
-    folate: 10, // Âµg
-    vitaminB12: 0.5, // Âµg - tá»« thá»‹t bÃ²
+    folate: 10,
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 28.0, // mg
-    selenium: 20.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "5â€“6 viÃªn (~100g)",
-    notes: "Thá»‹t xay + phá»¥ gia.",
+    commonServing: "5–6 viên (~100g)",
+    notes: "Thịt xay + phụ gia.",
     gout: {
       purine: 135,
       purineLevel: 'high',
@@ -4405,8 +3081,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "xuc-xich-heo",
-    code: "20035",
-    name: "Xúc Xích Heo",
+    name: "Xúc xích heo",
     nameEn: "Pork sausage",
     category: "meat",
     servingSize: 100,
@@ -4431,22 +3106,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 80, saturatedFat: 10.0 },
     vitaminB1: 0.10,
     vitaminB2: 0.08,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 8, // Âµg
+    folate: 8,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 22.0, // mg
-    selenium: 18.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cÃ¢y (~60g)",
-    notes: "Thá»‹t cháº¿ biáº¿n; THA trÃ¡nh.",
+    commonServing: "1 cây (~60g)",
+    notes: "Thịt chế biến; THA tránh.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -4454,9 +3119,9 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     kidney: { potassium: 220, phosphorus: 180 },
   },
   {
-    // báº£n jambon má»›i, trÃ¡nh trÃ¹ng id cÅ©
+    // bản jambon mới, tránh trùng id cũ
     id: "jambon-meat32",
-    name: "Jambon (Gim Bông)",
+    name: "Jambon (giăm bông)",
     nameEn: "Ham",
     category: "meat",
     servingSize: 100,
@@ -4481,22 +3146,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 70, saturatedFat: 2.2 },
     vitaminB1: 0.08,
     vitaminB2: 0.06,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
-    folate: 7, // Âµg
-    vitaminB12: 0.5, // Âµg
+    folate: 7,
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 25.0, // mg
-    selenium: 20.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "2â€“3 lÃ¡t (~50g)",
-    notes: "Natri ráº¥t cao.",
+    commonServing: "2–3 lát (~50g)",
+    notes: "Natri rất cao.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -4505,8 +3160,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ga-nuong",
-    code: "20008",
-    name: "Tht Gà Nưng",
+    name: "Thịt gà nướng",
     nameEn: "Grilled chicken",
     category: "meat",
     servingSize: 100,
@@ -4531,22 +3185,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 75, saturatedFat: 3.5 },
     vitaminB1: 0.08,
     vitaminB2: 0.10,
-    vitaminB3: 8.0, // Niacin - ráº¥t cao trong thá»‹t gÃ 
-    vitaminB5: 1.0, // Pantothenic acid - cao trong thá»‹t gÃ 
     vitaminB6: 0.18,
-    vitaminB7: 0, // Biotin
-    folate: 9, // Âµg
-    vitaminB12: 0.3, // Âµg
+    folate: 9,
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 65.0, // mg - cao trong thá»‹t gÃ 
-    selenium: 18.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (~100g)",
-    notes: "Æ¯á»›p máº·n; chÃº Ã½ natri.",
+    commonServing: "1 miếng (~100g)",
+    notes: "Ướp mặn; chú ý natri.",
     gout: {
       purine: 140,
       purineLevel: 'medium',
@@ -4555,7 +3199,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "vit-quay",
-    name: "Vt Quay",
+    name: "Vịt quay",
     nameEn: "Roast duck",
     category: "meat",
     servingSize: 100,
@@ -4579,22 +3223,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 95, saturatedFat: 10.5 },
     vitaminB1: 0.06,
     vitaminB2: 0.08,
-    vitaminB3: 5.0, // Niacin - cao trong thá»‹t vá»‹t
-    vitaminB5: 1.0, // Pantothenic acid - cao trong thá»‹t vá»‹t
     vitaminB6: 0.14,
-    vitaminB7: 0, // Biotin
-    folate: 8, // Âµg
-    vitaminB12: 0.4, // Âµg
+    folate: 8,
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 65.0, // mg - cao trong thá»‹t vá»‹t
-    selenium: 20.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (~100g)",
-    notes: "Má»¡ cao; tim máº¡ch háº¡n cháº¿.",
+    commonServing: "1 miếng (~100g)",
+    notes: "Mỡ cao; tim mạch hạn chế.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -4603,7 +3237,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "be-thui",
-    name: "Bê Thui",
+    name: "Bê thui",
     nameEn: "Roasted veal",
     category: "meat",
     servingSize: 100,
@@ -4627,22 +3261,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 70, saturatedFat: 2.5 },
     vitaminB1: 0.06,
     vitaminB2: 0.10,
-    vitaminB3: 5.0, // Niacin - cao trong thá»‹t bÃª
-    vitaminB5: 0.8, // Pantothenic acid - cao trong thá»‹t bÃª
     vitaminB6: 0.20,
-    vitaminB7: 0, // Biotin
-    folate: 10, // Âµg
-    vitaminB12: 1.5, // Âµg - cao trong thá»‹t bÃª
+    folate: 10,
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 85.0, // mg - cao trong thá»‹t bÃª
-    selenium: 15.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 Ä‘Ä©a (~100g)",
-    notes: "Äáº¡m cao; purine trung bÃ¬nh.",
+    commonServing: "1 đĩa (~100g)",
+    notes: "Đạm cao; purine trung bình.",
     gout: {
       purine: 120,
       purineLevel: 'medium',
@@ -4650,12 +3274,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     kidney: { potassium: 240, phosphorus: 210 },
   },
   // ========================================================================
-  // CÃ¡ nÆ°á»›c ngá»t & cÃ¡ biá»ƒn bá»• sung (252â€“263)
+  // Cá nước ngọt & cá biển bổ sung (252–263)
   // ========================================================================
   {
-    id: "ca-basa",
-    code: "30001",
-    name: "Cá Basa",
+    id: "ca-basa-fish25",
+    name: "Cá basa",
     nameEn: "Basa fish",
     category: "seafood",
     servingSize: 100,
@@ -4679,29 +3302,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 55, saturatedFat: 1.5 },
     vitaminB1: 0.04,
     vitaminB2: 0.06,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.22,
-    vitaminB7: 1.0, // Biotin (Âµg)
-    folate: 7, // Âµg
-    vitaminB12: 1.0, // Âµg - cao trong cÃ¡
+    folate: 7,
+    vitaminB12: 1.0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 25.0, // Âµg - cao trong cÃ¡
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg (cÃ¡ nÆ°á»›c ngá»t)
-    commonServing: "1 khÃºc (~100g)",
-    notes: "CÃ¡ bÃ©o vá»«a; phá»• biáº¿n.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Cá béo vừa; phổ biến.",
     gout: { purine: 140, purineLevel: "medium" },
     kidney: { potassium: 278, phosphorus: 190 },
   },
   {
     id: "ca-tra",
-    code: "30014",
-    name: "Cá Tra",
+    name: "Cá tra",
     nameEn: "Pangasius catfish",
     category: "seafood",
     servingSize: 100,
@@ -4725,28 +3337,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 58, saturatedFat: 1.2 },
     vitaminB1: 0.05,
     vitaminB2: 0.07,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.24,
-    vitaminB7: 1.0, // Biotin (Âµg)
-    folate: 7, // Âµg
-    vitaminB12: 1.2, // Âµg - cao trong cÃ¡
+    folate: 7,
+    vitaminB12: 1.2,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 25.0, // Âµg - cao trong cÃ¡
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg (cÃ¡ nÆ°á»›c ngá»t)
-    commonServing: "1 khÃºc (~100g)",
-    notes: "Ãt xÆ°Æ¡ng; dá»… Äƒn.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Ít xương; dễ ăn.",
     gout: { purine: 140, purineLevel: "medium" },
     kidney: { potassium: 300, phosphorus: 200 },
   },
   {
     id: "ca-linh",
-    name: "Cá Linh",
+    name: "Cá linh",
     nameEn: "Small river fish",
     category: "seafood",
     servingSize: 100,
@@ -4770,28 +3372,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 60, saturatedFat: 0.9 },
     vitaminB1: 0.05,
     vitaminB2: 0.08,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.25,
-    vitaminB7: 1.0, // Biotin (Âµg)
-    folate: 8, // Âµg
-    vitaminB12: 1.5, // Âµg - cao trong cÃ¡
+    folate: 8,
+    vitaminB12: 1.5,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 25.0, // Âµg - cao trong cÃ¡
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg (cÃ¡ nÆ°á»›c ngá»t)
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "CÃ¡ nhá»; purine trung bÃ¬nh.",
+    commonServing: "1 bát (~100g)",
+    notes: "Cá nhỏ; purine trung bình.",
     gout: { purine: 150, purineLevel: "medium" },
     kidney: { potassium: 320, phosphorus: 210 },
   },
   {
     id: "ca-sac",
-    name: "Cá Sặc",
+    name: "Cá sặc",
     nameEn: "Snakeskin gourami",
     category: "seafood",
     servingSize: 100,
@@ -4815,28 +3407,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 62, saturatedFat: 1.1 },
     vitaminB1: 0.05,
     vitaminB2: 0.07,
-    vitaminB3: 1.2, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.23,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 7,
     vitaminB12: 1.3,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 60, // mg
-    selenium: 22.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg (cÃ¡ nÆ°á»›c ngá»t)
     commonServing: "1 con (~100g)",
-    notes: "CÃ¡ nÆ°á»›c ngá»t phá»• biáº¿n miá»n TÃ¢y.",
+    notes: "Cá nước ngọt phổ biến miền Tây.",
     gout: { purine: 140, purineLevel: "medium" },
     kidney: { potassium: 310, phosphorus: 195 },
   },
   {
     id: "ca-that-lat",
-    name: "Cá Thát Lát",
+    name: "Cá thát lát",
     nameEn: "Featherback fish",
     category: "seafood",
     servingSize: 100,
@@ -4860,28 +3442,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 55, saturatedFat: 1.0 },
     vitaminB1: 0.05,
     vitaminB2: 0.06,
-    vitaminB3: 1.1, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.22,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 7,
     vitaminB12: 1.2,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 58, // mg
-    selenium: 20.0, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg (cÃ¡ nÆ°á»›c ngá»t)
-    commonServing: "1 khÃºc (~100g)",
-    notes: "Hay lÃ m cháº£ cÃ¡.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Hay làm chả cá.",
     gout: { purine: 140, purineLevel: "medium" },
     kidney: { potassium: 295, phosphorus: 190 },
   },
   {
     id: "ca-dua",
-    name: "Cá Dứa",
+    name: "Cá dứa",
     nameEn: "Pangasius krempfi",
     category: "seafood",
     servingSize: 100,
@@ -4905,28 +3477,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 60, saturatedFat: 1.6 },
     vitaminB1: 0.04,
     vitaminB2: 0.07,
-    vitaminB3: 1.3, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.24,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 7,
     vitaminB12: 1.1,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 62, // mg
-    selenium: 23.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg (cÃ¡ nÆ°á»›c ngá»t)
-    commonServing: "1 khÃºc (~100g)",
-    notes: "BÃ©o hÆ¡n cÃ¡ tra.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Béo hơn cá tra.",
     gout: { purine: 140, purineLevel: "medium" },
     kidney: { potassium: 285, phosphorus: 200 },
   },
   {
     id: "ca-ngu-hop-nuoc",
-    name: "Cá Ngừ Hp (Nưc)",
+    name: "Cá ngừ hộp (nước)",
     nameEn: "Canned tuna in water",
     category: "seafood",
     servingSize: 100,
@@ -4950,28 +3512,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 45, saturatedFat: 0.3 },
     vitaminB1: 0.08,
     vitaminB2: 0.10,
-    vitaminB3: 8.0, // Niacin - cao trong cÃ¡ ngá»«
-    vitaminB5: 0.8, // Pantothenic acid
     vitaminB6: 0.40,
-    vitaminB7: 1.5, // Biotin (Âµg)
     folate: 12,
     vitaminB12: 3.0,
     vitaminD: 350,
-    vitaminE: 0.7, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 75, // mg
-    selenium: 38.0, // Âµg - cao trong cÃ¡ ngá»«
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 45, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1/2 há»™p (~80g)",
-    notes: "Ãt má»¡; natri tÃ¹y loáº¡i.",
+    commonServing: "1/2 hộp (~80g)",
+    notes: "Ít mỡ; natri tùy loại.",
     gout: { purine: 160, purineLevel: "medium" },
     kidney: { potassium: 250, phosphorus: 230 },
   },
   {
     id: "ca-moi-hop-fish32",
-    name: "Cá Mòi Hp",
+    name: "Cá mòi hộp",
     nameEn: "Canned sardines",
     category: "seafood",
     servingSize: 100,
@@ -4995,29 +3547,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 75, saturatedFat: 2.7 },
     vitaminB1: 0.10,
     vitaminB2: 0.12,
-    vitaminB3: 5.2, // Niacin - cao trong cÃ¡ mÃ²i
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.45,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 10,
     vitaminB12: 4.0,
     vitaminD: 400,
-    vitaminE: 1.3, // Tocopherol - cao trong cÃ¡ mÃ²i
-    vitaminK: 0.1, // Phylloquinone
-    choline: 80, // mg
-    selenium: 50.0, // Âµg - ráº¥t cao trong cÃ¡ mÃ²i
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 48, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1/2 há»™p (~90g)",
-    notes: "GiÃ u Ca; purine trung bÃ¬nh.",
+    commonServing: "1/2 hộp (~90g)",
+    notes: "Giàu Ca; purine trung bình.",
     gout: { purine: 180, purineLevel: "medium" },
     kidney: { potassium: 397, phosphorus: 490 },
   },
   {
     id: "ca-com-tuoi",
-    code: "30026",
-    name: "Cá Cơm Tươi",
+    name: "Cá cơm tươi",
     nameEn: "Fresh anchovy",
     category: "seafood",
     servingSize: 100,
@@ -5041,28 +3582,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 65, saturatedFat: 1.4 },
     vitaminB1: 0.06,
     vitaminB2: 0.09,
-    vitaminB3: 3.0, // Niacin - cao trong cÃ¡ cÆ¡m
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.35,
-    vitaminB7: 1.5, // Biotin (Âµg)
     folate: 9,
     vitaminB12: 3.5,
     vitaminD: 350,
-    vitaminE: 0.8, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 70, // mg
-    selenium: 45.0, // Âµg - ráº¥t cao trong cÃ¡ cÆ¡m
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 50, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Purine trung bÃ¬nhâ€“cao.",
+    commonServing: "1 bát (~100g)",
+    notes: "Purine trung bình–cao.",
     gout: { purine: 180, purineLevel: "medium" },
     kidney: { potassium: 450, phosphorus: 300 },
   },
   {
     id: "ca-thu-tuoi",
-    name: "Cá Thu Tươi",
+    name: "Cá thu tươi",
     nameEn: "Spanish mackerel",
     category: "seafood",
     servingSize: 100,
@@ -5086,28 +3617,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 70, saturatedFat: 3.5 },
     vitaminB1: 0.07,
     vitaminB2: 0.10,
-    vitaminB3: 6.2, // Niacin - cao trong cÃ¡ thu
-    vitaminB5: 0.8, // Pantothenic acid
     vitaminB6: 0.40,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 13,
     vitaminB12: 6.0,
     vitaminD: 380,
-    vitaminE: 1.1, // Tocopherol - cao trong cÃ¡ bÃ©o
-    vitaminK: 0.1, // Phylloquinone
-    choline: 72, // mg
-    selenium: 34.0, // Âµg - ráº¥t cao trong cÃ¡ thu
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 44, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 lÃ¡t (~100g)",
-    notes: "BÃ©o; omega-3 cao.",
+    commonServing: "1 lát (~100g)",
+    notes: "Béo; omega-3 cao.",
     gout: { purine: 160, purineLevel: "medium" },
     kidney: { potassium: 314, phosphorus: 280 },
   },
   {
     id: "ca-bop",
-    name: "Cá Bp",
+    name: "Cá bớp",
     nameEn: "Cobia fish",
     category: "seafood",
     servingSize: 100,
@@ -5131,28 +3652,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 50, saturatedFat: 0.5 },
     vitaminB1: 0.05,
     vitaminB2: 0.08,
-    vitaminB3: 4.0, // Niacin
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.30,
-    vitaminB7: 1.5, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 2.0,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 68, // mg
-    selenium: 30.0, // Âµg - cao trong cÃ¡ bá»›p
-    copper: 0.08, // mg
-    manganese: 0.02, // mg
-    iodine: 42, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 khÃºc (~100g)",
-    notes: "Äáº¡m cao; bÃ©o tháº¥p; purine trung bÃ¬nh.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Đạm cao; béo thấp; purine trung bình.",
     gout: { purine: 60, purineLevel: "medium" },
     kidney: { potassium: 340, phosphorus: 200 },
   },
   {
     id: "ca-nau",
-    name: "Cá Nâu",
+    name: "Cá nâu",
     nameEn: "Scat fish",
     category: "seafood",
     servingSize: 100,
@@ -5176,31 +3687,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 55, saturatedFat: 0.9 },
     vitaminB1: 0.05,
     vitaminB2: 0.07,
-    vitaminB3: 1.4, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.25,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 7,
     vitaminB12: 1.2,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 61, // mg
-    selenium: 24.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 5, // Âµg (cÃ¡ nÆ°á»›c lá»£ - tháº¥p)
     commonServing: "1 con (~100g)",
-    notes: "CÃ¡ vÃ¹ng nÆ°á»›c lá»£.",
+    notes: "Cá vùng nước lợ.",
     gout: { purine: 140, purineLevel: "medium" },
     kidney: { potassium: 300, phosphorus: 210 },
   },
   // ========================================================================
-  // CÃ¡ nÆ°á»›ng & cÃ¡ Ã¡p cháº£o (MEAL47-MEAL54)
+  // Cá nướng & cá áp chảo (MEAL47-MEAL54)
   // ========================================================================
   {
     id: "ca-thu-nuong",
-    name: "Cá Thu Nưng",
+    name: "Cá thu nướng",
     nameEn: "Grilled mackerel",
     category: "seafood",
     servingSize: 100,
@@ -5224,28 +3725,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 70, saturatedFat: 3.3 },
     vitaminB1: 0.10,
     vitaminB2: 0.19,
-    vitaminB3: 6.5, // Niacin - cao trong cÃ¡ biá»ƒn
-    vitaminB5: 0.8, // Pantothenic acid
     vitaminB6: 0.40,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 9,
     vitaminB12: 8.7,
     vitaminD: 360,
-    vitaminE: 1.2, // Tocopherol - cao trong cÃ¡ bÃ©o
-    vitaminK: 0.1, // Phylloquinone
-    choline: 75, // mg
-    selenium: 35.0, // Âµg - ráº¥t cao trong cÃ¡ biá»ƒn
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 45, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 khÃºc vá»«a",
-    notes: "CÃ¡ biá»ƒn bÃ©o; giÃ u omega-3; purine trung bÃ¬nh.",
+    commonServing: "1 khúc vừa",
+    notes: "Cá biển béo; giàu omega-3; purine trung bình.",
     gout: { purine: 150, purineLevel: "high" },
     kidney: { potassium: 314, phosphorus: 210 },
   },
   {
     id: "ca-ngu-ap-chao",
-    name: "Cá Ngừ Áp Chảo",
+    name: "Cá ngừ áp chảo",
     nameEn: "Pan-seared tuna",
     category: "seafood",
     servingSize: 100,
@@ -5269,28 +3760,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 45, saturatedFat: 1.3 },
     vitaminB1: 0.09,
     vitaminB2: 0.10,
-    vitaminB3: 8.5, // Niacin - ráº¥t cao trong cÃ¡ ngá»«
-    vitaminB5: 0.9, // Pantothenic acid
     vitaminB6: 0.60,
-    vitaminB7: 1.5, // Biotin (Âµg)
     folate: 4,
     vitaminB12: 2.9,
     vitaminD: 200,
-    vitaminE: 0.8, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 80, // mg
-    selenium: 40.0, // Âµg - ráº¥t cao trong cÃ¡ ngá»«
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 50, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 miáº¿ng",
-    notes: "Äáº¡m cao; bÃ©o tháº¥p; purine trung bÃ¬nh.",
+    commonServing: "1 miếng",
+    notes: "Đạm cao; béo thấp; purine trung bình.",
     gout: { purine: 60, purineLevel: "medium" },
     kidney: { potassium: 252, phosphorus: 220 },
   },
   {
     id: "ca-hoi-nuong",
-    name: "Cá Hi Nưng",
+    name: "Cá hồi nướng",
     nameEn: "Grilled salmon",
     category: "seafood",
     servingSize: 100,
@@ -5314,28 +3795,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 43, saturatedFat: 4.5 },
     vitaminB1: 0.11,
     vitaminB2: 0.15,
-    vitaminB3: 7.5, // Niacin - ráº¥t cao trong cÃ¡ há»“i
-    vitaminB5: 1.6, // Pantothenic acid - cao
     vitaminB6: 0.75,
-    vitaminB7: 3.0, // Biotin (Âµg)
     folate: 25,
     vitaminB12: 10.0,
     vitaminD: 450,
-    vitaminE: 1.1, // Tocopherol - cao trong cÃ¡ há»“i
-    vitaminK: 0.1, // Phylloquinone
-    choline: 90, // mg - ráº¥t cao
-    selenium: 36.5, // Âµg - ráº¥t cao
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 50, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 miáº¿ng",
-    notes: "GiÃ u omega-3, vitamin D; purine trung bÃ¬nh.",
+    commonServing: "1 miếng",
+    notes: "Giàu omega-3, vitamin D; purine trung bình.",
     gout: { purine: 75, purineLevel: "medium" },
     kidney: { potassium: 312, phosphorus: 250 },
   },
   {
     id: "ca-trich-nuong",
-    name: "Cá Trích Nưng",
+    name: "Cá trích nướng",
     nameEn: "Grilled herring",
     category: "seafood",
     servingSize: 100,
@@ -5359,28 +3830,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 95, saturatedFat: 4.5 },
     vitaminB1: 0.08,
     vitaminB2: 0.22,
-    vitaminB3: 5.5, // Niacin - cao trong cÃ¡ trÃ­ch
-    vitaminB5: 0.7, // Pantothenic acid
     vitaminB6: 0.30,
-    vitaminB7: 2.5, // Biotin (Âµg)
     folate: 10,
     vitaminB12: 13.7,
     vitaminD: 600,
-    vitaminE: 1.3, // Tocopherol - cao trong cÃ¡ bÃ©o
-    vitaminK: 0.1, // Phylloquinone
-    choline: 85, // mg - cao
-    selenium: 38.0, // Âµg - ráº¥t cao
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 55, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "2 con nhá»",
-    notes: "CÃ¡ biá»ƒn bÃ©o; purine trung bÃ¬nh.",
+    commonServing: "2 con nhỏ",
+    notes: "Cá biển béo; purine trung bình.",
     gout: { purine: 99, purineLevel: "medium" },
     kidney: { potassium: 327, phosphorus: 280 },
   },
   {
     id: "ca-moi-nuong",
-    name: "Cá Mòi Nưng",
+    name: "Cá mòi nướng",
     nameEn: "Grilled sardine",
     category: "seafood",
     servingSize: 100,
@@ -5404,28 +3865,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 142, saturatedFat: 1.5 },
     vitaminB1: 0.07,
     vitaminB2: 0.23,
-    vitaminB3: 5.0, // Niacin - cao trong cÃ¡ mÃ²i
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.30,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 10,
     vitaminB12: 8.9,
     vitaminD: 270,
-    vitaminE: 1.2, // Tocopherol - cao trong cÃ¡ mÃ²i
-    vitaminK: 0.1, // Phylloquinone
-    choline: 75, // mg
-    selenium: 52.0, // Âµg - ráº¥t cao trong cÃ¡ mÃ²i
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 50, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "3â€“4 con",
-    notes: "Ráº¥t giÃ u canxi; purine cao.",
+    commonServing: "3–4 con",
+    notes: "Rất giàu canxi; purine cao.",
     gout: { purine: 145, purineLevel: "high" },
     kidney: { potassium: 397, phosphorus: 490 },
   },
   {
     id: "ca-nuc-nuong",
-    name: "Cá Nục Nưng",
+    name: "Cá nục nướng",
     nameEn: "Grilled scad",
     category: "seafood",
     servingSize: 100,
@@ -5449,28 +3900,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 65, saturatedFat: 2.8 },
     vitaminB1: 0.06,
     vitaminB2: 0.18,
-    vitaminB3: 4.5, // Niacin - cao trong cÃ¡ ná»¥c
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.25,
-    vitaminB7: 1.5, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 3.0,
     vitaminD: 300,
-    vitaminE: 0.9, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 70, // mg
-    selenium: 32.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 45, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 con vá»«a",
-    notes: "CÃ¡ biá»ƒn phá»• biáº¿n; purine trung bÃ¬nh.",
+    commonServing: "1 con vừa",
+    notes: "Cá biển phổ biến; purine trung bình.",
     gout: { purine: 100, purineLevel: "medium" },
     kidney: { potassium: 320, phosphorus: 230 },
   },
   {
     id: "ca-ho-nuong",
-    name: "Cá H Nưng",
+    name: "Cá hố nướng",
     nameEn: "Grilled hairtail fish",
     category: "seafood",
     servingSize: 100,
@@ -5494,32 +3935,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 55, saturatedFat: 1.6 },
     vitaminB1: 0.05,
     vitaminB2: 0.12,
-    vitaminB3: 3.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.22,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 6,
     vitaminB12: 1.8,
     vitaminD: 120,
-    vitaminE: 0.6, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 28.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.08, // mg
-    manganese: 0.02, // mg
-    iodine: 40, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 khÃºc",
-    notes: "CÃ¡ náº¡c; purine tháº¥pâ€“trung bÃ¬nh.",
+    commonServing: "1 khúc",
+    notes: "Cá nạc; purine thấp–trung bình.",
     gout: { purine: 70, purineLevel: "medium" },
     kidney: { potassium: 290, phosphorus: 210 },
   },
   // ========================================================================
-  // Háº£i sáº£n tÆ°Æ¡i phá»• biáº¿n
+  // Hải sản tươi phổ biến
   // ========================================================================
   {
     id: "cua-bien",
-    code: "30012",
-    name: "Cua Bin",
+    name: "Cua biển",
     nameEn: "Crab",
     category: "seafood",
     servingSize: 100,
@@ -5543,31 +3973,20 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 78, saturatedFat: 0.2 },
     vitaminB1: 0.10,
     vitaminB2: 0.15,
-    vitaminB3: 2.5, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 20,
     vitaminB12: 9.8,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 80, // mg - cao trong cua
-    selenium: 37.0, // Âµg - ráº¥t cao trong cua
-    copper: 0.6, // mg - cao trong cua
-    manganese: 0.1, // mg
-    iodine: 50, // Âµg - cao trong háº£i sáº£n
-    commonServing: "1 con vá»«a (~100g thá»‹t)",
-    notes: "GiÃ u vitamin B12; purine trung bÃ¬nhâ€“cao.",
+    commonServing: "1 con vừa (~100g thịt)",
+    notes: "Giàu vitamin B12; purine trung bình–cao.",
     gout: { purine: 130, purineLevel: "high" },
     kidney: { potassium: 329, phosphorus: 210 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 con vừa' },
     ],
   },
   {
     id: "muc",
-    code: "30007",
     name: "Mực",
     nameEn: "Squid",
     category: "seafood",
@@ -5592,32 +4011,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 233, saturatedFat: 0.4 },
     vitaminB1: 0.02,
     vitaminB2: 0.04,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 5,
     vitaminB12: 1.3,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 44.0, // Âµg - ráº¥t cao trong má»±c
-    copper: 0.4, // mg - cao trong má»±c
-    manganese: 0.1, // mg
-    iodine: 40, // Âµg - cao trong háº£i sáº£n
-    commonServing: "1 con vá»«a (~100g)",
-    notes: "Cholesterol cao; purine trung bÃ¬nh.",
+    commonServing: "1 con vừa (~100g)",
+    notes: "Cholesterol cao; purine trung bình.",
     gout: { purine: 110, purineLevel: "medium" },
     kidney: { potassium: 246, phosphorus: 198 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 con vừa' },
     ],
   },
   {
     id: "bach-tuoc",
-    code: "30035",
-    name: "Bạch Tuc",
+    name: "Bạch tuộc",
     nameEn: "Octopus",
     category: "seafood",
     servingSize: 100,
@@ -5641,31 +4049,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 96, saturatedFat: 0.2 },
     vitaminB1: 0.03,
     vitaminB2: 0.04,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.36,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 16,
     vitaminB12: 20.0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 36.0, // Âµg - ráº¥t cao trong báº¡ch tuá»™c
-    copper: 0.4, // mg - cao trong báº¡ch tuá»™c
-    manganese: 0.1, // mg
-    iodine: 45, // Âµg - cao trong háº£i sáº£n
-    commonServing: "1 con nhá» (~100g)",
-    notes: "GiÃ u sáº¯t, vitamin B12; natri cao; purine trung bÃ¬nh.",
+    commonServing: "1 con nhỏ (~100g)",
+    notes: "Giàu sắt, vitamin B12; natri cao; purine trung bình.",
     gout: { purine: 95, purineLevel: "medium" },
     kidney: { potassium: 350, phosphorus: 186 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con nhá»' },
+      { unit: 'cai', weight: 100, description: '1 con nhỏ' },
     ],
   },
   {
     id: "ngheu-so",
-    name: "NghÃªu (ngao)",
+    name: "Nghêu (ngao)",
     nameEn: "Clam",
     category: "seafood",
     servingSize: 100,
@@ -5689,31 +4087,20 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 34, saturatedFat: 0.2 },
     vitaminB1: 0.16,
     vitaminB2: 0.20,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 20,
     vitaminB12: 98.0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 70, // mg
-    selenium: 64.0, // Âµg - ráº¥t cao trong nghÃªu
-    copper: 0.6, // mg - cao trong nghÃªu
-    manganese: 0.1, // mg
-    iodine: 60, // Âµg - ráº¥t cao trong nghÃªu
-    commonServing: "1 Ä‘Ä©a (~100g thá»‹t)",
-    notes: "Ráº¥t giÃ u sáº¯t, vitamin B12, kali; purine tháº¥pâ€“trung bÃ¬nh.",
+    commonServing: "1 đĩa (~100g thịt)",
+    notes: "Rất giàu sắt, vitamin B12, kali; purine thấp–trung bình.",
     gout: { purine: 55, purineLevel: "low" },
     kidney: { potassium: 628, phosphorus: 338 },
     vietnameseUnits: [
-      { unit: 'dia', weight: 100, description: '1 Ä‘Ä©a vá»«a' },
+      { unit: 'dia', weight: 100, description: '1 đĩa vừa' },
     ],
   },
   {
     id: "ghe",
-    code: "30032",
     name: "Ghẹ",
     nameEn: "Crab (small)",
     category: "seafood",
@@ -5738,32 +4125,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 78, saturatedFat: 0.2 },
     vitaminB1: 0.09,
     vitaminB2: 0.14,
-    vitaminB3: 2.2, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 18,
     vitaminB12: 8.5,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 75, // mg
-    selenium: 35.0, // Âµg - cao trong gháº¹
-    copper: 0.5, // mg - cao trong gháº¹
-    manganese: 0.1, // mg
-    iodine: 48, // Âµg - cao trong háº£i sáº£n
-    commonServing: "1 con vá»«a (~100g thá»‹t)",
-    notes: "GiÃ u vitamin B12, káº½m; purine trung bÃ¬nh.",
+    commonServing: "1 con vừa (~100g thịt)",
+    notes: "Giàu vitamin B12, kẽm; purine trung bình.",
     gout: { purine: 120, purineLevel: "medium" },
     kidney: { potassium: 300, phosphorus: 200 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 con vừa' },
     ],
   },
   {
     id: "so-huyet",
-    code: "30036",
-    name: "Sò Huyết",
+    name: "Sò huyết",
     nameEn: "Blood cockle",
     category: "seafood",
     servingSize: 100,
@@ -5787,31 +4163,20 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 45, saturatedFat: 0.2 },
     vitaminB1: 0.15,
     vitaminB2: 0.18,
-    vitaminB3: 1.8, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 18,
     vitaminB12: 20.0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 68, // mg
-    selenium: 58.0, // Âµg - ráº¥t cao trong sÃ² huyáº¿t
-    copper: 0.5, // mg - cao trong sÃ² huyáº¿t
-    manganese: 0.1, // mg
-    iodine: 55, // Âµg - ráº¥t cao trong sÃ² huyáº¿t
-    commonServing: "1 Ä‘Ä©a (~100g thá»‹t)",
-    notes: "GiÃ u sáº¯t, canxi, vitamin B12; purine trung bÃ¬nh.",
+    commonServing: "1 đĩa (~100g thịt)",
+    notes: "Giàu sắt, canxi, vitamin B12; purine trung bình.",
     gout: { purine: 90, purineLevel: "medium" },
     kidney: { potassium: 350, phosphorus: 250 },
     vietnameseUnits: [
-      { unit: 'dia', weight: 100, description: '1 Ä‘Ä©a vá»«a' },
+      { unit: 'dia', weight: 100, description: '1 đĩa vừa' },
     ],
   },
   {
     id: "hau",
-    code: "50004",
     name: "Hàu",
     nameEn: "Oyster",
     category: "seafood",
@@ -5836,32 +4201,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 55, saturatedFat: 0.6 },
     vitaminB1: 0.12,
     vitaminB2: 0.15,
-    vitaminB3: 1.2, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 10,
     vitaminB12: 16.0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 78.0, // Âµg - ráº¥t cao trong hÃ u
-    copper: 1.6, // mg - ráº¥t cao trong hÃ u
-    manganese: 0.2, // mg
-    iodine: 60, // Âµg - ráº¥t cao trong hÃ u
-    commonServing: "5â€“6 con vá»«a (~100g thá»‹t)",
-    notes: "Ráº¥t giÃ u káº½m, sáº¯t, vitamin B12; purine trung bÃ¬nh.",
+    commonServing: "5–6 con vừa (~100g thịt)",
+    notes: "Rất giàu kẽm, sắt, vitamin B12; purine trung bình.",
     gout: { purine: 90, purineLevel: "medium" },
     kidney: { potassium: 156, phosphorus: 120 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 15, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 15, description: '1 con vừa' },
     ],
   },
   {
     id: "so-diep",
-    code: "30039",
-    name: "Sò Ip",
+    name: "Sò điệp",
     nameEn: "Scallop",
     category: "seafood",
     servingSize: 100,
@@ -5885,34 +4239,24 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 33, saturatedFat: 0.2 },
     vitaminB1: 0.08,
     vitaminB2: 0.10,
-    vitaminB3: 1.0, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 1.5, // Biotin (Âµg)
     folate: 16,
     vitaminB12: 1.3,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 60, // mg
-    selenium: 22.0, // Âµg - cao trong sÃ² Ä‘iá»‡p
-    copper: 0.1, // mg
-    manganese: 0.05, // mg
-    iodine: 25, // Âµg - trung bÃ¬nh
-    commonServing: "5â€“6 con vá»«a (~100g thá»‹t)",
-    notes: "Natri ráº¥t cao; phá»‘t pho cao; purine trung bÃ¬nh.",
+    commonServing: "5–6 con vừa (~100g thịt)",
+    notes: "Natri rất cao; phốt pho cao; purine trung bình.",
     gout: { purine: 110, purineLevel: "medium" },
     kidney: { potassium: 205, phosphorus: 338 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 15, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 15, description: '1 con vừa' },
     ],
   },
   // ========================================================================
-  // CÃ¡ biá»ƒn phá»• biáº¿n bá»• sung
+  // Cá biển phổ biến bổ sung
   // ========================================================================
   {
     id: "ca-chim-bien",
-    name: "Cá Chim Bin",
+    name: "Cá chim biển",
     nameEn: "Sea bream",
     category: "seafood",
     servingSize: 100,
@@ -5936,32 +4280,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 60, saturatedFat: 0.8 },
     vitaminB1: 0.05,
     vitaminB2: 0.08,
-    vitaminB3: 3.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.25,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 2.5,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 28.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.08, // mg
-    manganese: 0.02, // mg
-    iodine: 40, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 con vá»«a (~100g)",
-    notes: "CÃ¡ biá»ƒn náº¡c; purine trung bÃ¬nh.",
+    commonServing: "1 con vừa (~100g)",
+    notes: "Cá biển nạc; purine trung bình.",
     gout: { purine: 65, purineLevel: "medium" },
     kidney: { potassium: 300, phosphorus: 210 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 con vừa' },
     ],
   },
   {
     id: "ca-bac-ma",
-    code: "30023",
-    name: "Cá Bạc Má",
+    name: "Cá bạc má",
     nameEn: "Indian mackerel",
     category: "seafood",
     servingSize: 100,
@@ -5985,31 +4318,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 65, saturatedFat: 2.5 },
     vitaminB1: 0.06,
     vitaminB2: 0.10,
-    vitaminB3: 5.5, // Niacin - cao trong cÃ¡ báº¡c mÃ¡
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.30,
-    vitaminB7: 1.5, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 3.0,
     vitaminD: 0,
-    vitaminE: 0.9, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 70, // mg
-    selenium: 33.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 43, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 con vá»«a (~100g)",
-    notes: "CÃ¡ biá»ƒn bÃ©o; purine trung bÃ¬nh.",
+    commonServing: "1 con vừa (~100g)",
+    notes: "Cá biển béo; purine trung bình.",
     gout: { purine: 100, purineLevel: "medium" },
     kidney: { potassium: 320, phosphorus: 230 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 con vừa' },
     ],
   },
   {
     id: "ca-chi-vang",
-    name: "Cá Ch Vàng",
+    name: "Cá chỉ vàng",
     nameEn: "Yellowtail scad",
     category: "seafood",
     servingSize: 100,
@@ -6033,32 +4356,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 60, saturatedFat: 2.2 },
     vitaminB1: 0.06,
     vitaminB2: 0.09,
-    vitaminB3: 4.8, // Niacin - cao trong cÃ¡ chá»‰ vÃ ng
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.28,
-    vitaminB7: 1.5, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 2.8,
     vitaminD: 0,
-    vitaminE: 0.8, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 68, // mg
-    selenium: 31.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 42, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 con vá»«a (~100g)",
-    notes: "CÃ¡ biá»ƒn phá»• biáº¿n; purine trung bÃ¬nh.",
+    commonServing: "1 con vừa (~100g)",
+    notes: "Cá biển phổ biến; purine trung bình.",
     gout: { purine: 95, purineLevel: "medium" },
     kidney: { potassium: 310, phosphorus: 220 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 con vừa' },
     ],
   },
   {
     id: "ca-mu",
-    code: "30063",
-    name: "Cá Mú",
+    name: "Cá mú",
     nameEn: "Grouper",
     category: "seafood",
     servingSize: 100,
@@ -6082,31 +4394,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 55, saturatedFat: 0.8 },
     vitaminB1: 0.05,
     vitaminB2: 0.08,
-    vitaminB3: 3.8, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.26,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 2.4,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 66, // mg
-    selenium: 29.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.08, // mg
-    manganese: 0.02, // mg
-    iodine: 41, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 khÃºc (~100g)",
-    notes: "CÃ¡ biá»ƒn náº¡c; purine trung bÃ¬nh.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Cá biển nạc; purine trung bình.",
     gout: { purine: 70, purineLevel: "medium" },
     kidney: { potassium: 325, phosphorus: 215 },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 khÃºc vá»«a' },
+      { unit: 'mieng', weight: 100, description: '1 khúc vừa' },
     ],
   },
   {
     id: "ca-hong-bien",
-    name: "Cá Hng Bin",
+    name: "Cá hồng biển",
     nameEn: "Red snapper",
     category: "seafood",
     servingSize: 100,
@@ -6130,31 +4432,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 58, saturatedFat: 1.1 },
     vitaminB1: 0.06,
     vitaminB2: 0.09,
-    vitaminB3: 4.0, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.28,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 2.6,
     vitaminD: 0,
-    vitaminE: 0.6, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 67, // mg
-    selenium: 30.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.08, // mg
-    manganese: 0.02, // mg
-    iodine: 42, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 con vá»«a (~100g)",
-    notes: "CÃ¡ biá»ƒn phá»• biáº¿n; purine trung bÃ¬nh.",
+    commonServing: "1 con vừa (~100g)",
+    notes: "Cá biển phổ biến; purine trung bình.",
     gout: { purine: 75, purineLevel: "medium" },
     kidney: { potassium: 330, phosphorus: 220 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 con vừa' },
     ],
   },
   {
     id: "ca-duoi",
-    name: "Cá Ui",
+    name: "Cá đuối",
     nameEn: "Stingray",
     category: "seafood",
     servingSize: 100,
@@ -6178,31 +4470,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 45, saturatedFat: 0.3 },
     vitaminB1: 0.04,
     vitaminB2: 0.07,
-    vitaminB3: 2.5, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.22,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 7,
     vitaminB12: 1.9,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 60, // mg
-    selenium: 26.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 38, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 miáº¿ng (~100g)",
-    notes: "CÃ¡ náº¡c; purine tháº¥pâ€“trung bÃ¬nh.",
+    commonServing: "1 miếng (~100g)",
+    notes: "Cá nạc; purine thấp–trung bình.",
     gout: { purine: 55, purineLevel: "low" },
     kidney: { potassium: 310, phosphorus: 190 },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng vá»«a' },
+      { unit: 'mieng', weight: 100, description: '1 miếng vừa' },
     ],
   },
   {
     id: "ca-kim",
-    name: "Cá Kìm",
+    name: "Cá kìm",
     nameEn: "Needlefish",
     category: "seafood",
     servingSize: 100,
@@ -6226,31 +4508,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 48, saturatedFat: 0.7 },
     vitaminB1: 0.05,
     vitaminB2: 0.08,
-    vitaminB3: 3.2, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.24,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 7,
     vitaminB12: 2.1,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 64, // mg
-    selenium: 27.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.08, // mg
-    manganese: 0.02, // mg
-    iodine: 39, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 con vá»«a (~100g)",
-    notes: "CÃ¡ biá»ƒn náº¡c; purine trung bÃ¬nh.",
+    commonServing: "1 con vừa (~100g)",
+    notes: "Cá biển nạc; purine trung bình.",
     gout: { purine: 60, purineLevel: "medium" },
     kidney: { potassium: 315, phosphorus: 205 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 con vừa' },
     ],
   },
   {
     id: "ca-bon-bien",
-    name: "Cá Bơn Bin",
+    name: "Cá bơn biển",
     nameEn: "Flounder",
     category: "seafood",
     servingSize: 100,
@@ -6274,31 +4546,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 45, saturatedFat: 0.5 },
     vitaminB1: 0.04,
     vitaminB2: 0.07,
-    vitaminB3: 2.8, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.22,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 7,
     vitaminB12: 1.6,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 59, // mg
-    selenium: 25.0, // Âµg - cao trong cÃ¡ biá»ƒn
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 37, // Âµg - cao trong cÃ¡ biá»ƒn
-    commonServing: "1 con nhá» (~100g)",
-    notes: "CÃ¡ náº¡c; purine tháº¥p.",
+    commonServing: "1 con nhỏ (~100g)",
+    notes: "Cá nạc; purine thấp.",
     gout: { purine: 50, purineLevel: "low" },
     kidney: { potassium: 303, phosphorus: 190 },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 con nhá»' },
+      { unit: 'cai', weight: 100, description: '1 con nhỏ' },
     ],
   },
   {
     id: "ca-tuyet",
-    name: "Cá Tuyết",
+    name: "Cá tuyết",
     nameEn: "Cod",
     category: "seafood",
     servingSize: 100,
@@ -6322,34 +4584,24 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 43, saturatedFat: 0.2 },
     vitaminB1: 0.04,
     vitaminB2: 0.06,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 6,
     vitaminB12: 1.1,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 58, // mg
-    selenium: 24.0, // Âµg - cao trong cÃ¡ tuyáº¿t
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 50, // Âµg - ráº¥t cao trong cÃ¡ tuyáº¿t
-    commonServing: "1 khÃºc (~100g)",
-    notes: "CÃ¡ náº¡c; kali cao; purine trung bÃ¬nh.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Cá nạc; kali cao; purine trung bình.",
     gout: { purine: 70, purineLevel: "medium" },
     kidney: { potassium: 413, phosphorus: 203 },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 khÃºc vá»«a' },
+      { unit: 'mieng', weight: 100, description: '1 khúc vừa' },
     ],
   },
   // ========================================================================
-  // Rau lÃ¡ & Ä‘áº­u bá»• sung (264â€“274)
+  // Rau lá & đậu bổ sung (264–274)
   // ========================================================================
   {
     id: "cai-xoong",
-    name: "Rau Cải Xoong",
+    name: "Rau cải xoong",
     nameEn: "Watercress",
     category: "vegetables",
     servingSize: 100,
@@ -6373,27 +4625,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.09,
     vitaminB2: 0.14,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.13,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 9,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol - cao trong rau lÃ¡ xanh
-    vitaminK: 250, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 9.0, // mg
-    selenium: 0.9, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng/náº¥u canh",
-    notes: "GiÃ u kali; CKD chÃº Ã½.",
+    commonServing: "Ăn sống/nấu canh",
+    notes: "Giàu kali; CKD chú ý.",
     kidney: { potassium: 330, phosphorus: 60 },
   },
   {
     id: "diep-ca",
-    name: "Rau Diếp Cá",
+    name: "Rau diếp cá",
     nameEn: "Fish mint",
     category: "vegetables",
     servingSize: 100,
@@ -6417,27 +4659,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.05,
     vitaminB2: 0.08,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 80,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.7, // Tocopherol
-    vitaminK: 200, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 8.5, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng",
-    notes: "Rau gia vá»‹; mÃ¡t.",
+    commonServing: "Ăn sống",
+    notes: "Rau gia vị; mát.",
     kidney: { potassium: 290, phosphorus: 45 },
   },
   {
     id: "rau-sam",
-    name: "Rau Sam",
+    name: "Rau sam",
     nameEn: "Purslane",
     category: "vegetables",
     servingSize: 100,
@@ -6461,27 +4693,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.05,
     vitaminB2: 0.11,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 12,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.8, // Tocopherol
-    vitaminK: 380, // Phylloquinone - ráº¥t cao trong rau sam
-    choline: 6.5, // mg
-    selenium: 0.9, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "Luá»™c/náº¥u canh",
-    notes: "Kali ráº¥t cao; CKD háº¡n cháº¿.",
+    commonServing: "Luộc/nấu canh",
+    notes: "Kali rất cao; CKD hạn chế.",
     kidney: { potassium: 494, phosphorus: 44 },
   },
   {
     id: "bo-ngot-rung",
-    name: "Rau B Ngót (Ngót Rừng)",
+    name: "Rau bồ ngót (ngót rừng)",
     nameEn: "Wild sweet leaf",
     category: "vegetables",
     servingSize: 100,
@@ -6505,27 +4727,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.10,
     vitaminB2: 0.26,
-    vitaminB3: 1.2, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.19,
-    vitaminB7: 0.8, // Biotin (Âµg)
     folate: 170,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 1.5, // Tocopherol - cao trong rau lÃ¡ xanh
-    vitaminK: 400, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 18.0, // mg
-    selenium: 1.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh",
-    notes: "GiÃ u vitamin A, C.",
+    commonServing: "Nấu canh",
+    notes: "Giàu vitamin A, C.",
     kidney: { potassium: 480, phosphorus: 70 },
   },
   {
     id: "rau-don",
-    name: "Rau Dn",
+    name: "Rau dớn",
     nameEn: "Fiddlehead fern",
     category: "vegetables",
     servingSize: 100,
@@ -6549,27 +4761,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.15,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 0.6, // Biotin (Âµg)
     folate: 45,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.6, // Tocopherol
-    vitaminK: 180, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 12.0, // mg
-    selenium: 0.8, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "Luá»™c/xÃ o",
-    notes: "Rau rá»«ng; kali cao.",
+    commonServing: "Luộc/xào",
+    notes: "Rau rừng; kali cao.",
     kidney: { potassium: 370, phosphorus: 60 },
   },
   {
     id: "rau-cang-cua",
-    name: "Rau Càng Cua",
+    name: "Rau càng cua",
     nameEn: "Peperomia pellucida",
     category: "vegetables",
     servingSize: 100,
@@ -6593,28 +4795,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.06,
     vitaminB2: 0.09,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 75,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 150, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 10.0, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng/trá»™n",
-    notes: "MÃ¡t; canxi cao.",
+    commonServing: "Ăn sống/trộn",
+    notes: "Mát; canxi cao.",
     kidney: { potassium: 260, phosphorus: 42 },
   },
   {
     id: "rau-ma",
-    code: "40016",
-    name: "Rau Má",
+    name: "Rau má",
     nameEn: "Centella asiatica",
     category: "vegetables",
     servingSize: 100,
@@ -6638,27 +4829,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.08,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 40,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 120, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 8.0, // mg
-    selenium: 0.5, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng/uá»‘ng nÆ°á»›c",
-    notes: "Kali cao; CKD lÆ°u Ã½.",
+    commonServing: "Ăn sống/uống nước",
+    notes: "Kali cao; CKD lưu ý.",
     kidney: { potassium: 295, phosphorus: 38 },
   },
   {
     id: "rau-he",
-    name: "Rau Hẹ",
+    name: "Rau hẹ",
     nameEn: "Garlic chives",
     category: "vegetables",
     servingSize: 100,
@@ -6682,27 +4863,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.06,
     vitaminB2: 0.12,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 0.6, // Biotin (Âµg)
     folate: 105,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.8, // Tocopherol
-    vitaminK: 212, // Phylloquinone - ráº¥t cao trong rau háº¹
-    choline: 11.0, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "XÃ o/náº¥u canh",
-    notes: "Rau gia vá»‹, nhiá»u vi cháº¥t.",
+    commonServing: "Xào/nấu canh",
+    notes: "Rau gia vị, nhiều vi chất.",
     kidney: { potassium: 296, phosphorus: 58 },
   },
   {
     id: "gia-do",
-    name: "Giá",
+    name: "Giá đỗ",
     nameEn: "Mung bean sprouts",
     category: "vegetables",
     servingSize: 100,
@@ -6727,28 +4898,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.12,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.09,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 61,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 33, // Phylloquinone
-    choline: 14.0, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng/xÃ o",
-    notes: "Ãt kcal; dá»… Äƒn.",
+    commonServing: "Ăn sống/xào",
+    notes: "Ít kcal; dễ ăn.",
     diabetes: { glycemicIndex: 20, glycemicLoad: 1, carbPerPortion: 6 },
     kidney: { potassium: 149, phosphorus: 54 },
   },
   {
     id: "bi-do-veg48",
-    name: "BÃ­ Ä‘á»",
+    name: "Bí đỏ",
     nameEn: "Pumpkin",
     category: "vegetables",
     servingSize: 100,
@@ -6773,29 +4934,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.05,
     vitaminB2: 0.04,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 0.4, // Biotin (Âµg)
     folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 1.1, // Tocopherol - cao trong bÃ­ Ä‘á»
-    vitaminK: 1.1, // Phylloquinone
-    choline: 8.2, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.13, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh/chÃ¨",
-    notes: "GI trung bÃ¬nh; ÄTÄ Äƒn vá»«a.",
+    commonServing: "Nấu canh/chè",
+    notes: "GI trung bình; ĐTĐ ăn vừa.",
     diabetes: { glycemicIndex: 65, glycemicLoad: 7, carbPerPortion: 7 },
     kidney: { potassium: 340, phosphorus: 44 },
   },
   {
     id: "dau-ha-lan",
-    code: "40027",
-    name: "Đậu Hà Lan Tươi",
+    name: "Đậu Hà Lan tươi",
     nameEn: "Green peas",
     category: "vegetables",
     servingSize: 100,
@@ -6820,31 +4970,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.27,
     vitaminB2: 0.15,
-    vitaminB3: 2.1, // Niacin - cao trong Ä‘áº­u
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 65,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 24.8, // Phylloquinone
-    choline: 28.0, // mg
-    selenium: 1.8, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "Luá»™c/xÃ o",
-    notes: "Tinh bá»™t + xÆ¡.",
+    commonServing: "Luộc/xào",
+    notes: "Tinh bột + xơ.",
     diabetes: { glycemicIndex: 51, glycemicLoad: 8, carbPerPortion: 15 },
     kidney: { potassium: 244, phosphorus: 108 },
   },
   // ========================================================================
-  // Cá»§ (root & tuber) + quáº£-rau phá»• biáº¿n (275â€“287)
+  // Củ (root & tuber) + quả-rau phổ biến (275–287)
   // ========================================================================
   {
     id: "khoai-tay-veg50",
-    name: "Khoai tÃ¢y",
+    name: "Khoai tây",
     nameEn: "Potato",
     category: "vegetables",
     servingSize: 100,
@@ -6869,28 +5009,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.03,
-    vitaminB3: 1.1, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.30,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.01, // Tocopherol
-    vitaminK: 2.0, // Phylloquinone
-    choline: 12.1, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.11, // mg
-    manganese: 0.15, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ vá»«a (~100g)",
-    notes: "GI trung bÃ¬nh; ÄTÄ Äƒn vá»«a.",
+    commonServing: "1 củ vừa (~100g)",
+    notes: "GI trung bình; ĐTĐ ăn vừa.",
     diabetes: { glycemicIndex: 78, glycemicLoad: 13, carbPerPortion: 17 },
     kidney: { potassium: 425, phosphorus: 57 },
   },
   {
     id: "khoai-mi",
-    name: "Khoai Mì (Sắn)",
+    name: "Khoai mì (sắn)",
     nameEn: "Cassava root",
     category: "vegetables",
     servingSize: 100,
@@ -6915,28 +5045,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.09,
     vitaminB2: 0.04,
-    vitaminB3: 0.8, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.09,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 27,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.19, // Tocopherol
-    vitaminK: 1.9, // Phylloquinone
-    choline: 23.7, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 khÃºc (~100g)",
-    notes: "Tinh bá»™t cao; ÄTÄ háº¡n cháº¿.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Tinh bột cao; ĐTĐ hạn chế.",
     diabetes: { glycemicIndex: 94, glycemicLoad: 36, carbPerPortion: 38 },
     kidney: { potassium: 271, phosphorus: 27 },
   },
   {
     id: "cu-nang",
-    name: "Củ Nng (Mã Thầy)",
+    name: "Củ năng (mã thầy)",
     nameEn: "Water chestnut",
     category: "vegetables",
     servingSize: 100,
@@ -6961,28 +5081,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.07,
     vitaminB2: 0.05,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.33,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.3, // Phylloquinone
-    choline: 5.0, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.3, // mg - cao trong cá»§ nÄƒng
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u chÃ¨/Äƒn sá»‘ng",
-    notes: "Kali cao; CKD chÃº Ã½.",
+    commonServing: "Nấu chè/ăn sống",
+    notes: "Kali cao; CKD chú ý.",
     diabetes: { glycemicIndex: 60, glycemicLoad: 14, carbPerPortion: 24 },
     kidney: { potassium: 584, phosphorus: 63 },
   },
   {
     id: "cu-sen",
-    name: "Củ Sen",
+    name: "Củ sen",
     nameEn: "Lotus root",
     category: "vegetables",
     servingSize: 100,
@@ -7007,28 +5117,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.16,
     vitaminB2: 0.03,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.26,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 13,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.3, // Phylloquinone
-    choline: 44.1, // mg - cao trong cá»§ sen
-    selenium: 0.7, // Âµg
-    copper: 0.3, // mg - cao trong cá»§ sen
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "XÃ o/háº§m",
-    notes: "XÆ¡ cao; GI trung bÃ¬nh.",
+    commonServing: "Xào/hầm",
+    notes: "Xơ cao; GI trung bình.",
     diabetes: { glycemicIndex: 55, glycemicLoad: 10, carbPerPortion: 17 },
     kidney: { potassium: 556, phosphorus: 100 },
   },
   {
     id: "gung",
-    code: "11029",
     name: "Gừng",
     nameEn: "Ginger root",
     category: "vegetables",
@@ -7054,29 +5153,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.03,
-    vitaminB3: 0.8, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 11,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.26, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 28.8, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Gia vá»‹",
-    notes: "DÃ¹ng lÆ°á»£ng nhá».",
+    commonServing: "Gia vị",
+    notes: "Dùng lượng nhỏ.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 2, carbPerPortion: 4 },
     kidney: { potassium: 415, phosphorus: 34 },
   },
   {
     id: "nghe",
-    code: "30037",
-    name: "Ngh Tươi",
+    name: "Nghệ tươi",
     nameEn: "Turmeric root",
     category: "vegetables",
     servingSize: 100,
@@ -7101,28 +5189,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.15,
     vitaminB2: 0.23,
-    vitaminB3: 1.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 20,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 4.4, // Tocopherol - ráº¥t cao trong nghá»‡
-    vitaminK: 13.4, // Phylloquinone
-    choline: 49.2, // mg - cao trong nghá»‡
-    selenium: 4.5, // Âµg - cao trong nghá»‡
-    copper: 0.6, // mg - cao trong nghá»‡
-    manganese: 2.0, // mg - ráº¥t cao trong nghá»‡
-    iodine: 0, // Âµg
-    commonServing: "Gia vá»‹",
-    notes: "DÃ¹ng Ã­t; giÃ u curcumin.",
+    commonServing: "Gia vị",
+    notes: "Dùng ít; giàu curcumin.",
     diabetes: { glycemicIndex: 30, glycemicLoad: 20, carbPerPortion: 67 },
     kidney: { potassium: 2080, phosphorus: 299 },
   },
   {
     id: "ca-chua-bi",
-    name: "Cà Chua Bi",
+    name: "Cà chua bi",
     nameEn: "Cherry tomato",
     category: "vegetables",
     servingSize: 100,
@@ -7147,28 +5225,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.02,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.08,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 15,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 7.9, // Phylloquinone
-    choline: 6.7, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.06, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng",
-    notes: "GI tháº¥p.",
+    commonServing: "Ăn sống",
+    notes: "GI thấp.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 4 },
     kidney: { potassium: 237, phosphorus: 24 },
   },
   {
     id: "ot-chuong",
-    name: "T Chuông",
+    name: "Ớt chuông",
     nameEn: "Bell pepper",
     category: "vegetables",
     servingSize: 100,
@@ -7193,28 +5261,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.05,
     vitaminB2: 0.03,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.29,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 46,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 1.6, // Tocopherol - cao trong á»›t chuÃ´ng
-    vitaminK: 4.9, // Phylloquinone
-    choline: 5.5, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.07, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "XÃ o/Äƒn sá»‘ng",
-    notes: "Vitamin C ráº¥t cao.",
+    commonServing: "Xào/ăn sống",
+    notes: "Vitamin C rất cao.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 6 },
     kidney: { potassium: 211, phosphorus: 26 },
   },
   {
     id: "bi-ngoi",
-    name: "Bí Ngòi",
+    name: "Bí ngòi",
     nameEn: "Zucchini",
     category: "vegetables",
     servingSize: 100,
@@ -7239,28 +5297,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.05,
     vitaminB2: 0.09,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 24,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 4.3, // Phylloquinone
-    choline: 9.5, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "XÃ o/háº¥p",
-    notes: "Ãt nÄƒng lÆ°á»£ng.",
+    commonServing: "Xào/hấp",
+    notes: "Ít năng lượng.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 3 },
     kidney: { potassium: 261, phosphorus: 38 },
   },
   {
     id: "kho-qua-rung",
-    name: "Kh Qua Rừng",
+    name: "Khổ qua rừng",
     nameEn: "Wild bitter melon",
     category: "vegetables",
     servingSize: 100,
@@ -7285,28 +5333,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.04,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.06,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 72,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 4.8, // Phylloquinone
-    choline: 7.0, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.03, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "XÃ o/náº¥u canh",
-    notes: "Hay dÃ¹ng cho ÄTÄ.",
+    commonServing: "Xào/nấu canh",
+    notes: "Hay dùng cho ĐTĐ.",
     diabetes: { glycemicIndex: 10, glycemicLoad: 1, carbPerPortion: 3 },
     kidney: { potassium: 305, phosphorus: 33 },
   },
   {
     id: "du-du-xanh",
-    name: "Đu Ủ Xanh",
+    name: "Đu đủ xanh",
     nameEn: "Green papaya",
     category: "vegetables",
     servingSize: 100,
@@ -7331,28 +5369,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.03,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 37,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 2.6, // Phylloquinone
-    choline: 6.1, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "Gá»i/náº¥u canh",
-    notes: "GI tháº¥p.",
+    commonServing: "Gỏi/nấu canh",
+    notes: "GI thấp.",
     diabetes: { glycemicIndex: 30, glycemicLoad: 3, carbPerPortion: 10 },
     kidney: { potassium: 182, phosphorus: 15 },
   },
   {
     id: "su-hao",
-    name: "Su Hào",
+    name: "Su hào",
     nameEn: "Kohlrabi",
     category: "vegetables",
     servingSize: 100,
@@ -7377,29 +5405,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.05,
     vitaminB2: 0.02,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.17,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 12.3, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.13, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Luá»™c/xÃ o",
-    notes: "XÆ¡ cao; mÃ¡t.",
+    commonServing: "Luộc/xào",
+    notes: "Xơ cao; mát.",
     diabetes: { glycemicIndex: 30, glycemicLoad: 2, carbPerPortion: 6 },
     kidney: { potassium: 350, phosphorus: 46 },
   },
   {
     id: "dau-que",
-    code: "40026",
-    name: "Đậu Que",
+    name: "Đậu que",
     nameEn: "Green beans",
     category: "vegetables",
     servingSize: 100,
@@ -7424,31 +5441,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.06,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.14,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 33,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 14.4, // Phylloquinone - cao trong Ä‘áº­u que
-    choline: 15.3, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.07, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Luá»™c/xÃ o",
-    notes: "GI tháº¥p.",
+    commonServing: "Luộc/xào",
+    notes: "GI thấp.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 7 },
     kidney: { potassium: 211, phosphorus: 38 },
   },
   // ========================================================================
-  // TrÃ¡i cÃ¢y phá»• biáº¿n bá»• sung (288â€“300)
+  // Trái cây phổ biến bổ sung (288–300)
   // ========================================================================
   {
     id: "chuoi-tieu-fr28",
-    name: "Chui Tiêu Chín",
+    name: "Chuối tiêu chín",
     nameEn: "Banana",
     category: "fruits",
     servingSize: 100,
@@ -7473,28 +5480,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.07,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.37,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 20,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.5, // Phylloquinone
-    choline: 9.8, // mg
-    selenium: 1.0, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.27, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ vá»«a (~100g)",
-    notes: "GI trung bÃ¬nh; kali cao.",
+    commonServing: "1 quả vừa (~100g)",
+    notes: "GI trung bình; kali cao.",
     diabetes: { glycemicIndex: 62, glycemicLoad: 14, carbPerPortion: 23 },
     kidney: { potassium: 358, phosphorus: 22 },
   },
   {
     id: "cam-sanh-fr29",
-    name: "Cam sÃ nh",
+    name: "Cam sành",
     nameEn: "Orange",
     category: "fruits",
     servingSize: 100,
@@ -7519,28 +5516,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.09,
     vitaminB2: 0.04,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.06,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 30,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 8.4, // mg
-    selenium: 0.5, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.03, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~150g)",
+    commonServing: "1 quả (~150g)",
     notes: "Vitamin C cao.",
     diabetes: { glycemicIndex: 43, glycemicLoad: 5, carbPerPortion: 12 },
     kidney: { potassium: 181, phosphorus: 14 },
   },
   {
     id: "quyt-fr30",
-    name: "QuÃ½t",
+    name: "Quýt",
     nameEn: "Mandarin orange",
     category: "fruits",
     servingSize: 100,
@@ -7565,28 +5552,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.06,
     vitaminB2: 0.04,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.07,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 10.2, // mg
-    selenium: 0.1, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~100g)",
-    notes: "Ngá»t hÆ¡n cam.",
+    commonServing: "1 quả (~100g)",
+    notes: "Ngọt hơn cam.",
     diabetes: { glycemicIndex: 47, glycemicLoad: 6, carbPerPortion: 13 },
     kidney: { potassium: 166, phosphorus: 20 },
   },
   {
     id: "buoi-da-xanh",
-    name: "Bưi Da Xanh",
+    name: "Bưởi da xanh",
     nameEn: "Pomelo",
     category: "fruits",
     servingSize: 100,
@@ -7611,28 +5588,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.02,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.04,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 10,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 8.0, // mg
-    selenium: 0.1, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 mÃºi (~100g)",
-    notes: "GI tháº¥p; ÄTÄ phÃ¹ há»£p.",
+    commonServing: "1 múi (~100g)",
+    notes: "GI thấp; ĐTĐ phù hợp.",
     diabetes: { glycemicIndex: 30, glycemicLoad: 3, carbPerPortion: 10 },
     kidney: { potassium: 216, phosphorus: 17 },
   },
   {
     id: "sau-rieng-fr32",
-    name: "Sáº§u riÃªng",
+    name: "Sầu riêng",
     nameEn: "Durian",
     category: "fruits",
     servingSize: 100,
@@ -7657,28 +5624,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.37,
     vitaminB2: 0.20,
-    vitaminB3: 1.1, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.32,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 44,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 9.9, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n ~50g",
-    notes: "ÄÆ°á»ng & nÄƒng lÆ°á»£ng cao.",
+    commonServing: "Ăn ~50g",
+    notes: "Đường & năng lượng cao.",
     diabetes: { glycemicIndex: 49, glycemicLoad: 13, carbPerPortion: 27 },
     kidney: { potassium: 436, phosphorus: 39 },
   },
   {
     id: "mang-cut-fr33",
-    name: "MÄƒng cá»¥t",
+    name: "Măng cụt",
     nameEn: "Mangosteen",
     category: "fruits",
     servingSize: 100,
@@ -7703,28 +5660,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.05,
     vitaminB2: 0.06,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 31,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 8.0, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1â€“2 quáº£ (~100g)",
-    notes: "Ngá»t; Äƒn vá»«a.",
+    commonServing: "1–2 quả (~100g)",
+    notes: "Ngọt; ăn vừa.",
     diabetes: { glycemicIndex: 60, glycemicLoad: 11, carbPerPortion: 18 },
     kidney: { potassium: 48, phosphorus: 8 },
   },
   {
     id: "chom-chom-fr34",
-    name: "ChÃ´m chÃ´m",
+    name: "Chôm chôm",
     nameEn: "Rambutan",
     category: "fruits",
     servingSize: 100,
@@ -7749,28 +5696,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.01,
     vitaminB2: 0.07,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.02,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 7.0, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n ~100g",
-    notes: "ÄÆ°á»ng cao.",
+    commonServing: "Ăn ~100g",
+    notes: "Đường cao.",
     diabetes: { glycemicIndex: 59, glycemicLoad: 10, carbPerPortion: 17 },
     kidney: { potassium: 42, phosphorus: 9 },
   },
   {
     id: "nhan-fr35",
-    name: "NhÃ£n",
+    name: "Nhãn",
     nameEn: "Longan",
     category: "fruits",
     servingSize: 100,
@@ -7795,28 +5732,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.14,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 7.0, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.2, // mg - cao trong nhÃ£n
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n ~100g",
-    notes: "Ngá»t; ÄTÄ háº¡n cháº¿.",
+    commonServing: "Ăn ~100g",
+    notes: "Ngọt; ĐTĐ hạn chế.",
     diabetes: { glycemicIndex: 51, glycemicLoad: 8, carbPerPortion: 15 },
     kidney: { potassium: 266, phosphorus: 21 },
   },
   {
     id: "vai",
-    code: "20012",
     name: "Vải",
     nameEn: "Lychee",
     category: "fruits",
@@ -7842,28 +5768,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.01,
     vitaminB2: 0.07,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 7.0, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n ~100g",
-    notes: "ÄÆ°á»ng cao.",
+    commonServing: "Ăn ~100g",
+    notes: "Đường cao.",
     diabetes: { glycemicIndex: 50, glycemicLoad: 8, carbPerPortion: 17 },
     kidney: { potassium: 171, phosphorus: 31 },
   },
   {
     id: "dua-thom-fr37",
-    name: "Dá»©a (thÆ¡m)",
+    name: "Dứa (thơm)",
     nameEn: "Pineapple",
     category: "fruits",
     servingSize: 100,
@@ -7888,28 +5804,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.02,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 18,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 5.5, // mg
-    selenium: 0.1, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.9, // mg - ráº¥t cao trong dá»©a
-    iodine: 0, // Âµg
-    commonServing: "1 lÃ¡t (~100g)",
-    notes: "GI trung bÃ¬nh.",
+    commonServing: "1 lát (~100g)",
+    notes: "GI trung bình.",
     diabetes: { glycemicIndex: 59, glycemicLoad: 8, carbPerPortion: 13 },
     kidney: { potassium: 109, phosphorus: 8 },
   },
   {
     id: "oi-fr38",
-    name: "á»”i",
+    name: "Ổi",
     nameEn: "Guava",
     category: "fruits",
     servingSize: 100,
@@ -7934,28 +5840,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.07,
     vitaminB2: 0.04,
-    vitaminB3: 1.1, // Niacin - cao trong á»•i
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 49,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.7, // Tocopherol
-    vitaminK: 2.6, // Phylloquinone
-    choline: 7.6, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.23, // mg - cao trong á»•i
-    manganese: 0.15, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (~100g)",
-    notes: "XÆ¡ cao; ÄTÄ phÃ¹ há»£p.",
+    commonServing: "1 quả (~100g)",
+    notes: "Xơ cao; ĐTĐ phù hợp.",
     diabetes: { glycemicIndex: 31, glycemicLoad: 4, carbPerPortion: 14 },
     kidney: { potassium: 417, phosphorus: 40 },
   },
   {
     id: "coc",
-    code: "10008",
     name: "Cóc",
     nameEn: "Ambarella",
     category: "fruits",
@@ -7981,28 +5876,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.05,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.07,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 18,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 7.0, // mg
-    selenium: 0.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng",
-    notes: "Chua; kali khÃ¡ cao.",
+    commonServing: "Ăn sống",
+    notes: "Chua; kali khá cao.",
     diabetes: { glycemicIndex: 40, glycemicLoad: 5, carbPerPortion: 11 },
     kidney: { potassium: 287, phosphorus: 24 },
   },
   {
     id: "me-xanh",
-    name: "Me Xanh",
+    name: "Me xanh",
     nameEn: "Green tamarind",
     category: "fruits",
     servingSize: 100,
@@ -8027,31 +5912,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.43,
     vitaminB2: 0.15,
-    vitaminB3: 1.9, // Niacin - cao trong me
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.38,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 2.8, // Phylloquinone
-    choline: 8.6, // mg
-    selenium: 1.3, // Âµg
-    copper: 0.9, // mg - ráº¥t cao trong me
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n ráº¥t Ã­t",
-    notes: "ÄÆ°á»ng + acid cao.",
+    commonServing: "Ăn rất ít",
+    notes: "Đường + acid cao.",
     diabetes: { glycemicIndex: 55, glycemicLoad: 11, carbPerPortion: 20 },
     kidney: { potassium: 628, phosphorus: 113 },
   },
   // ========================================================================
-  // MÃ³n nÆ°á»›c & mÃ³n chÃ­nh phá»• biáº¿n (301â€“315)
+  // Món nước & món chính phổ biến (301–315)
   // ========================================================================
   {
     id: "pho-bo-viet01",
-    name: "Phá»Ÿ bÃ²",
+    name: "Phở bò",
     nameEn: "Beef pho",
     category: "soups",
     servingSize: 400,
@@ -8076,22 +5951,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 65, saturatedFat: 3.5 },
     vitaminB1: 0.20,
     vitaminB2: 0.15,
-    vitaminB3: 4.0, // Niacin - cao tá»« thá»‹t bÃ²
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 18,
-    vitaminB12: 0.5, // Âµg - tá»« thá»‹t bÃ²
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 20.0, // mg
-    selenium: 12.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ (~400g)",
-    notes: "NÆ°á»›c dÃ¹ng máº·n; THA lÆ°u Ã½.",
+    commonServing: "1 tô (~400g)",
+    notes: "Nước dùng mặn; THA lưu ý.",
     gout: {
       purine: 160,
       purineLevel: 'high',
@@ -8101,7 +5966,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "pho-ga-viet02",
-    name: "Phá»Ÿ gÃ ",
+    name: "Phở gà",
     nameEn: "Chicken pho",
     category: "soups",
     servingSize: 400,
@@ -8126,22 +5991,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 60, saturatedFat: 2.5 },
     vitaminB1: 0.18,
     vitaminB2: 0.14,
-    vitaminB3: 6.0, // Niacin - ráº¥t cao tá»« thá»‹t gÃ 
-    vitaminB5: 0.8, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0.8, // Biotin (Âµg)
     folate: 16,
-    vitaminB12: 0.3, // Âµg - tá»« thá»‹t gÃ 
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 18.0, // mg
-    selenium: 10.0, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ (~400g)",
-    notes: "Ãt bÃ©o hÆ¡n phá»Ÿ bÃ².",
+    commonServing: "1 tô (~400g)",
+    notes: "Ít béo hơn phở bò.",
     gout: {
       purine: 140,
       purineLevel: 'medium',
@@ -8151,7 +6006,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bun-bo-hue-viet03",
-    name: "BÃºn bÃ² Huáº¿",
+    name: "Bún bò Huế",
     nameEn: "Bun bo Hue",
     category: "soups",
     servingSize: 450,
@@ -8176,22 +6031,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 75, saturatedFat: 5.5 },
     vitaminB1: 0.22,
     vitaminB2: 0.18,
-    vitaminB3: 4.5, // Niacin - cao tá»« thá»‹t bÃ²
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 1.2, // Biotin (Âµg)
     folate: 20,
-    vitaminB12: 0.6, // Âµg - tá»« thá»‹t bÃ²
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 22.0, // mg
-    selenium: 13.0, // Âµg
-    copper: 0.12, // mg
-    manganese: 0.6, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ (~450g)",
-    notes: "Ráº¥t máº·n + bÃ©o.",
+    commonServing: "1 tô (~450g)",
+    notes: "Rất mặn + béo.",
     gout: {
       purine: 160,
       purineLevel: 'high',
@@ -8201,7 +6046,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bun-cha-viet04",
-    name: "BÃºn cháº£",
+    name: "Bún chả",
     nameEn: "Bun cha",
     category: "soups",
     servingSize: 450,
@@ -8226,28 +6071,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 70, saturatedFat: 6.0 },
     vitaminB1: 0.20,
     vitaminB2: 0.16,
-    vitaminB3: 4.5, // Niacin - cao tá»« thá»‹t heo
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 18,
-    vitaminB12: 0.4, // Âµg - tá»« thá»‹t heo
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 19.0, // mg
-    selenium: 11.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 suáº¥t",
-    notes: "NÆ°á»›c cháº¥m máº·n.",
+    commonServing: "1 suất",
+    notes: "Nước chấm mặn.",
     diabetes: { glycemicIndex: 68, glycemicLoad: 37, carbPerPortion: 55 },
     kidney: { potassium: 320, phosphorus: 190 },
   },
   {
     id: "com-tam-suon-viet05",
-    name: "Cơm Tấm Sườn",
+    name: "Cơm tấm sườn",
     nameEn: "Broken rice with pork chop",
     category: "rice-noodles",
     servingSize: 450,
@@ -8272,29 +6107,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 85, saturatedFat: 7.5 },
     vitaminB1: 0.18,
     vitaminB2: 0.14,
-    vitaminB3: 5.0, // Niacin - cao tá»« thá»‹t heo
-    vitaminB5: 0.7, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 1.2, // Biotin (Âµg)
     folate: 16,
-    vitaminB12: 0.5, // Âµg - tá»« thá»‹t heo
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 25.0, // mg
-    selenium: 15.0, // Âµg
-    copper: 0.12, // mg
-    manganese: 0.6, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 Ä‘Ä©a",
-    notes: "Tinh bá»™t + má»¡ + máº¯m.",
+    commonServing: "1 đĩa",
+    notes: "Tinh bột + mỡ + mắm.",
     diabetes: { glycemicIndex: 75, glycemicLoad: 51, carbPerPortion: 68 },
     kidney: { potassium: 400, phosphorus: 230 },
   },
   {
     id: "com-ga-xoi-mo",
-    code: "11020",
-    name: "Cơm Gà Xi Mỡ",
+    name: "Cơm gà xối mỡ",
     nameEn: "Fried chicken rice",
     category: "rice-noodles",
     servingSize: 450,
@@ -8319,22 +6143,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 90, saturatedFat: 9.5 },
     vitaminB1: 0.16,
     vitaminB2: 0.12,
-    vitaminB3: 7.0, // Niacin - ráº¥t cao tá»« thá»‹t gÃ 
-    vitaminB5: 1.0, // Pantothenic acid - cao
     vitaminB6: 0.18,
-    vitaminB7: 0.8, // Biotin (Âµg)
     folate: 15,
-    vitaminB12: 0.3, // Âµg - tá»« thá»‹t gÃ 
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 22.0, // mg
-    selenium: 12.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 Ä‘Ä©a",
-    notes: "BÃ©o; tim máº¡ch háº¡n cháº¿.",
+    commonServing: "1 đĩa",
+    notes: "Béo; tim mạch hạn chế.",
     gout: {
       purine: 140,
       purineLevel: 'medium',
@@ -8344,8 +6158,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "chao-thit-bam",
-    code: "11005",
-    name: "Cháo Tht Bằm",
+    name: "Cháo thịt bằm",
     nameEn: "Pork porridge",
     category: "soups",
     servingSize: 400,
@@ -8370,22 +6183,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 45, saturatedFat: 2.0 },
     vitaminB1: 0.10,
     vitaminB2: 0.08,
-    vitaminB3: 3.5, // Niacin - tá»« thá»‹t heo
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0.8, // Biotin (Âµg)
     folate: 12,
-    vitaminB12: 0.3, // Âµg - tá»« thá»‹t heo
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 12.0, // mg
-    selenium: 8.0, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ (~400g)",
-    notes: "Dá»… tiÃªu; natri vá»«a.",
+    commonServing: "1 tô (~400g)",
+    notes: "Dễ tiêu; natri vừa.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -8395,7 +6198,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "chao-long",
-    name: "Cháo Lòng",
+    name: "Cháo lòng",
     nameEn: "Pork offal porridge",
     category: "soups",
     servingSize: 400,
@@ -8420,28 +6223,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 110, saturatedFat: 4.5 },
     vitaminB1: 0.15,
     vitaminB2: 0.12,
-    vitaminB3: 8.0, // Niacin - ráº¥t cao tá»« ná»™i táº¡ng
-    vitaminB5: 2.0, // Pantothenic acid - cao tá»« ná»™i táº¡ng
     vitaminB6: 0.18,
-    vitaminB7: 3.0, // Biotin (Âµg) - cao tá»« ná»™i táº¡ng
     folate: 20,
-    vitaminB12: 1.5, // Âµg - cao tá»« ná»™i táº¡ng
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 30.0, // mg - cao tá»« ná»™i táº¡ng
-    selenium: 18.0, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´",
-    notes: "Ná»™i táº¡ng; gÃºt trÃ¡nh.",
+    commonServing: "1 tô",
+    notes: "Nội tạng; gút tránh.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 29, carbPerPortion: 42 },
     kidney: { potassium: 260, phosphorus: 200 },
   },
   {
     id: "banh-cuon-viet09",
-    name: "BÃ¡nh cuá»‘n",
+    name: "Bánh cuốn",
     nameEn: "Steamed rice rolls",
     category: "rice-noodles",
     servingSize: 300,
@@ -8466,28 +6259,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 45, saturatedFat: 2.0 },
     vitaminB1: 0.14,
     vitaminB2: 0.10,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 14,
-    vitaminB12: 0.2, // Âµg - tá»« thá»‹t
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 8.0, // mg
-    selenium: 5.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 Ä‘Ä©a",
-    notes: "Tinh bá»™t + máº¯m.",
+    commonServing: "1 đĩa",
+    notes: "Tinh bột + mắm.",
     diabetes: { glycemicIndex: 75, glycemicLoad: 43, carbPerPortion: 58 },
     kidney: { potassium: 180, phosphorus: 140 },
   },
   {
     id: "banh-xeo-viet10",
-    name: "BÃ¡nh xÃ¨o",
+    name: "Bánh xèo",
     nameEn: "Vietnamese pancake",
     category: "snacks",
     servingSize: 300,
@@ -8512,29 +6295,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 70, saturatedFat: 8.5 },
     vitaminB1: 0.16,
     vitaminB2: 0.12,
-    vitaminB3: 2.5, // Niacin - tá»« thá»‹t vÃ  tÃ´m
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 0.6, // Biotin (Âµg)
     folate: 15,
-    vitaminB12: 0.3, // Âµg - tá»« thá»‹t vÃ  tÃ´m
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 12.0, // mg
-    selenium: 8.0, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.5, // mg
-    iodine: 5, // Âµg - tá»« tÃ´m
-    commonServing: "1 cÃ¡i lá»›n",
-    notes: "ChiÃªn dáº§u; bÃ©o.",
+    commonServing: "1 cái lớn",
+    notes: "Chiên dầu; béo.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 32, carbPerPortion: 45 },
     kidney: { potassium: 300, phosphorus: 180 },
   },
   {
     id: "goi-cuon",
-    code: "10035",
-    name: "Gỏi Cun Tôm Tht",
+    name: "Gỏi cuốn tôm thịt",
     nameEn: "Fresh spring rolls",
     category: "snacks",
     servingSize: 200,
@@ -8559,22 +6331,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 55, saturatedFat: 2.5 },
     vitaminB1: 0.12,
     vitaminB2: 0.10,
-    vitaminB3: 2.0, // Niacin - tá»« tÃ´m vÃ  thá»‹t
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.14,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 18,
-    vitaminB12: 0.4, // Âµg - tá»« tÃ´m vÃ  thá»‹t
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 10.0, // mg
-    selenium: 7.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.3, // mg
-    iodine: 8, // Âµg - tá»« tÃ´m
-    commonServing: "2 cuá»‘n",
-    notes: "Ãt dáº§u; nÆ°á»›c cháº¥m máº·n.",
+    commonServing: "2 cuốn",
+    notes: "Ít dầu; nước chấm mặn.",
     gout: {
       purine: 145,
       purineLevel: 'medium',
@@ -8584,7 +6346,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "nem-ran-viet12",
-    name: "Nem Rán (Chả Giò)",
+    name: "Nem rán (chả giò)",
     nameEn: "Spring rolls fried",
     category: "snacks",
     servingSize: 150,
@@ -8609,29 +6371,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 65, saturatedFat: 9.0 },
     vitaminB1: 0.14,
     vitaminB2: 0.12,
-    vitaminB3: 2.2, // Niacin - tá»« thá»‹t
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0.6, // Biotin (Âµg)
     folate: 15,
-    vitaminB12: 0.3, // Âµg - tá»« thá»‹t
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 11.0, // mg
-    selenium: 7.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "3â€“4 cuá»‘n",
-    notes: "ChiÃªn dáº§u; bÃ©o.",
+    commonServing: "3–4 cuốn",
+    notes: "Chiên dầu; béo.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 21, carbPerPortion: 30 },
     kidney: { potassium: 260, phosphorus: 170 },
   },
   {
     id: "canh-chua-ca",
-    code: "11007",
-    name: "Canh Chua Cá",
+    name: "Canh chua cá",
     nameEn: "Sour fish soup",
     category: "soups",
     servingSize: 400,
@@ -8656,22 +6407,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 55, saturatedFat: 1.8 },
     vitaminB1: 0.10,
     vitaminB2: 0.08,
-    vitaminB3: 3.5, // Niacin - tá»« cÃ¡
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 14,
-    vitaminB12: 1.2, // Âµg - cao tá»« cÃ¡
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 15.0, // mg
-    selenium: 10.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.2, // mg
-    iodine: 10, // Âµg - tá»« cÃ¡
-    commonServing: "1 tÃ´",
-    notes: "Máº·n vá»«a; nhiá»u rau.",
+    commonServing: "1 tô",
+    notes: "Mặn vừa; nhiều rau.",
     gout: {
       purine: 140,
       purineLevel: 'medium',
@@ -8681,8 +6422,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-kho-to",
-    code: "11009",
-    name: "Cá Kho T",
+    name: "Cá kho tộ",
     nameEn: "Braised fish in clay pot",
     category: "seafood",
     servingSize: 200,
@@ -8707,28 +6447,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 75, saturatedFat: 6.5 },
     vitaminB1: 0.12,
     vitaminB2: 0.10,
-    vitaminB3: 4.0, // Niacin - tá»« cÃ¡
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 1.2, // Biotin (Âµg)
     folate: 16,
-    vitaminB12: 1.5, // Âµg - cao tá»« cÃ¡
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 18.0, // mg
-    selenium: 12.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.2, // mg
-    iodine: 12, // Âµg - tá»« cÃ¡
-    commonServing: "1 pháº§n (~200g)",
-    notes: "Máº·n; purine trung bÃ¬nh.",
+    commonServing: "1 phần (~200g)",
+    notes: "Mặn; purine trung bình.",
     gout: { purine: 180, purineLevel: "medium" },
     kidney: { potassium: 380, phosphorus: 260 },
   },
   {
     id: "thit-kho-trung-viet15",
-    name: "Tht Kho Trứng",
+    name: "Thịt kho trứng",
     nameEn: "Braised pork with eggs",
     category: "meat",
     servingSize: 200,
@@ -8753,31 +6483,20 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 160, saturatedFat: 15.0 },
     vitaminB1: 0.14,
     vitaminB2: 0.12,
-    vitaminB3: 5.0, // Niacin - cao tá»« thá»‹t heo vÃ  trá»©ng
-    vitaminB5: 0.8, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 1.5, // Biotin (Âµg) - tá»« trá»©ng
     folate: 14,
-    vitaminB12: 0.8, // Âµg - tá»« thá»‹t vÃ  trá»©ng
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 30.0, // mg - cao tá»« trá»©ng
-    selenium: 18.0, // Âµg
-    copper: 0.12, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 pháº§n (~200g)",
-    notes: "Ráº¥t bÃ©o + máº·n.",
+    commonServing: "1 phần (~200g)",
+    notes: "Rất béo + mặn.",
     kidney: { potassium: 360, phosphorus: 240 },
   },
   // ========================================================================
-  // MÃ³n Viá»‡t bá»• sung (Há»§ tiáº¿u, mÃ¬ Quáº£ng, xÃ´i, bÃ¡nh Táº¿t, cÆ¡m chiÃªnâ€¦) 316â€“330
+  // Món Việt bổ sung (Hủ tiếu, mì Quảng, xôi, bánh Tết, cơm chiên…) 316–330
   // ========================================================================
   {
     id: "hu-tieu-nam-vang",
-    code: "11017",
-    name: "Hủ Tiếu Nam Vang",
+    name: "Hủ tiếu Nam Vang",
     nameEn: "Hu tieu Nam Vang",
     category: "soups",
     servingSize: 450,
@@ -8802,28 +6521,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 70, saturatedFat: 4.5 },
     vitaminB1: 0.18,
     vitaminB2: 0.14,
-    vitaminB3: 4.5, // Niacin - tá»« thá»‹t vÃ  tÃ´m
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 18,
-    vitaminB12: 0.5, // Âµg - tá»« thá»‹t vÃ  tÃ´m
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 20.0, // mg
-    selenium: 12.0, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.5, // mg
-    iodine: 5, // Âµg - tá»« tÃ´m
-    commonServing: "1 tÃ´ (~450g)",
-    notes: "NÆ°á»›c dÃ¹ng máº·n; nhiá»u topping.",
+    commonServing: "1 tô (~450g)",
+    notes: "Nước dùng mặn; nhiều topping.",
     diabetes: { glycemicIndex: 68, glycemicLoad: 34, carbPerPortion: 50 },
     kidney: { potassium: 360, phosphorus: 200 },
   },
   {
     id: "mi-quang-viet17",
-    name: "MÃ¬ Quáº£ng",
+    name: "Mì Quảng",
     nameEn: "Mi Quang",
     category: "soups",
     servingSize: 400,
@@ -8848,28 +6557,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 65, saturatedFat: 5.0 },
     vitaminB1: 0.16,
     vitaminB2: 0.12,
-    vitaminB3: 4.0, // Niacin - tá»« thá»‹t vÃ  tÃ´m
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0.8, // Biotin (Âµg)
     folate: 16,
-    vitaminB12: 0.4, // Âµg - tá»« thá»‹t vÃ  tÃ´m
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 18.0, // mg
-    selenium: 10.0, // Âµg
-    copper: 0.12, // mg
-    manganese: 0.5, // mg
-    iodine: 4, // Âµg - tá»« tÃ´m
-    commonServing: "1 tÃ´ (~400g)",
-    notes: "Ãt nÆ°á»›c; nhiá»u dáº§u.",
+    commonServing: "1 tô (~400g)",
+    notes: "Ít nước; nhiều dầu.",
     diabetes: { glycemicIndex: 65, glycemicLoad: 29, carbPerPortion: 45 },
     kidney: { potassium: 340, phosphorus: 190 },
   },
   {
     id: "cao-lau",
-    name: "Cao Lầu",
+    name: "Cao lầu",
     nameEn: "Cao lau",
     category: "soups",
     servingSize: 400,
@@ -8894,29 +6593,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 60, saturatedFat: 4.5 },
     vitaminB1: 0.15,
     vitaminB2: 0.12,
-    vitaminB3: 3.5, // Niacin - tá»« thá»‹t
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.14,
-    vitaminB7: 0.6, // Biotin (Âµg)
     folate: 15,
-    vitaminB12: 0.3, // Âµg - tá»« thá»‹t
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 16.0, // mg
-    selenium: 9.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ (~400g)",
-    notes: "MÃ¬ dai; máº·n vá»«a.",
+    commonServing: "1 tô (~400g)",
+    notes: "Mì dai; mặn vừa.",
     diabetes: { glycemicIndex: 65, glycemicLoad: 31, carbPerPortion: 48 },
     kidney: { potassium: 330, phosphorus: 180 },
   },
   {
     id: "bun-mam",
-    code: "11041",
-    name: "Bún Mắm",
+    name: "Bún mắm",
     nameEn: "Bun mam",
     category: "soups",
     servingSize: 450,
@@ -8941,29 +6629,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 80, saturatedFat: 6.5 },
     vitaminB1: 0.18,
     vitaminB2: 0.15,
-    vitaminB3: 5.5, // Niacin - cao tá»« cÃ¡ vÃ  tÃ´m
-    vitaminB5: 0.7, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 1.2, // Biotin (Âµg)
     folate: 18,
-    vitaminB12: 1.0, // Âµg - cao tá»« cÃ¡ vÃ  tÃ´m
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 25.0, // mg - cao
-    selenium: 15.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.3, // mg
-    iodine: 8, // Âµg - tá»« cÃ¡ vÃ  tÃ´m
-    commonServing: "1 tÃ´ (~450g)",
-    notes: "Ráº¥t máº·n; purine cao.",
+    commonServing: "1 tô (~450g)",
+    notes: "Rất mặn; purine cao.",
     gout: { purine: 200, purineLevel: "high" },
     kidney: { potassium: 380, phosphorus: 240 },
   },
   {
     id: "bun-rieu-cua",
-    code: "11010",
-    name: "Bún Riêu Cua",
+    name: "Bún riêu cua",
     nameEn: "Crab noodle soup",
     category: "soups",
     servingSize: 400,
@@ -8988,22 +6665,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 65, saturatedFat: 3.5 },
     vitaminB1: 0.16,
     vitaminB2: 0.12,
-    vitaminB3: 2.5, // Niacin - tá»« cua
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 2.0, // Biotin (Âµg) - tá»« cua
     folate: 16,
-    vitaminB12: 2.0, // Âµg - ráº¥t cao tá»« cua
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 20.0, // mg - tá»« cua
-    selenium: 9.0, // Âµg
-    copper: 0.6, // mg - cao tá»« cua
-    manganese: 0.1, // mg
-    iodine: 12, // Âµg - tá»« cua
-    commonServing: "1 tÃ´ (~400g)",
-    notes: "Cua + máº¯m tÃ´m.",
+    commonServing: "1 tô (~400g)",
+    notes: "Cua + mắm tôm.",
     gout: {
       purine: 180,
       purineLevel: 'high',
@@ -9013,7 +6680,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "bun-mang-vit",
-    name: "Bún Mng Vt",
+    name: "Bún măng vịt",
     nameEn: "Duck bamboo noodle soup",
     category: "soups",
     servingSize: 450,
@@ -9038,22 +6705,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 75, saturatedFat: 5.5 },
     vitaminB1: 0.16,
     vitaminB2: 0.14,
-    vitaminB3: 5.0, // Niacin - cao tá»« vá»‹t
-    vitaminB5: 1.0, // Pantothenic acid - cao
     vitaminB6: 0.18,
-    vitaminB7: 0.8, // Biotin (Âµg)
     folate: 18,
-    vitaminB12: 0.5, // Âµg - tá»« vá»‹t
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 22.0, // mg - cao tá»« vá»‹t
-    selenium: 12.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ´ (~450g)",
-    notes: "Má»¡ vá»‹t + máº·n.",
+    commonServing: "1 tô (~450g)",
+    notes: "Mỡ vịt + mặn.",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -9063,8 +6720,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "xoi-ga",
-    code: "10025",
-    name: "Xôi G",
+    name: "Xôi gà",
     nameEn: "Sticky rice with chicken",
     category: "rice-noodles",
     servingSize: 350,
@@ -9093,15 +6749,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 gÃ³i (~350g)",
-    notes: "Tinh bá»™t cao.",
+    commonServing: "1 gói (~350g)",
+    notes: "Tinh bột cao.",
     diabetes: { glycemicIndex: 80, glycemicLoad: 56, carbPerPortion: 70 },
     kidney: { potassium: 420, phosphorus: 210 },
   },
   {
     id: "xoi-man",
-    code: "10024",
-    name: "Xôi Mặn",
+    name: "Xôi mặn",
     nameEn: "Sticky rice savory",
     category: "rice-noodles",
     servingSize: 350,
@@ -9130,15 +6785,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 15,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 gÃ³i",
-    notes: "Má»¡ + máº·n.",
+    commonServing: "1 gói",
+    notes: "Mỡ + mặn.",
     diabetes: { glycemicIndex: 82, glycemicLoad: 59, carbPerPortion: 72 },
     kidney: { potassium: 450, phosphorus: 230 },
   },
   {
     id: "banh-chung",
-    code: "10036",
-    name: "Bánh Chưng",
+    name: "Bánh chưng",
     nameEn: "Sticky rice cake",
     category: "rice-noodles",
     servingSize: 200,
@@ -9167,15 +6821,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 miáº¿ng (~200g)",
-    notes: "Tinh bá»™t + má»¡.",
+    commonServing: "1 miếng (~200g)",
+    notes: "Tinh bột + mỡ.",
     diabetes: { glycemicIndex: 80, glycemicLoad: 48, carbPerPortion: 60 },
     kidney: { potassium: 320, phosphorus: 180 },
   },
   {
     id: "banh-tet",
-    code: "10037",
-    name: "Bánh Tét",
+    name: "Bánh tét",
     nameEn: "Cylindrical sticky rice cake",
     category: "rice-noodles",
     servingSize: 200,
@@ -9205,14 +6858,13 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminB12: 0,
     vitaminD: 0,
     commonServing: "1 khoanh (~200g)",
-    notes: "TÆ°Æ¡ng tá»± bÃ¡nh chÆ°ng.",
+    notes: "Tương tự bánh chưng.",
     diabetes: { glycemicIndex: 78, glycemicLoad: 45, carbPerPortion: 58 },
     kidney: { potassium: 300, phosphorus: 170 },
   },
   {
     id: "banh-gio",
-    code: "10030",
-    name: "Bánh Giò",
+    name: "Bánh giò",
     nameEn: "Pyramid rice dumpling",
     category: "snacks",
     servingSize: 250,
@@ -9241,15 +6893,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 cÃ¡i (~250g)",
-    notes: "Tinh bá»™t + má»¡.",
+    commonServing: "1 cái (~250g)",
+    notes: "Tinh bột + mỡ.",
     diabetes: { glycemicIndex: 75, glycemicLoad: 38, carbPerPortion: 50 },
     kidney: { potassium: 260, phosphorus: 170 },
   },
   {
     id: "banh-khot",
-    code: "10046",
-    name: "Bánh Khọt",
+    name: "Bánh khọt",
     nameEn: "Mini savory pancakes",
     category: "snacks",
     servingSize: 200,
@@ -9278,15 +6929,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "8â€“10 cÃ¡i",
-    notes: "ChiÃªn nhiá»u dáº§u.",
+    commonServing: "8–10 cái",
+    notes: "Chiên nhiều dầu.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 28, carbPerPortion: 40 },
     kidney: { potassium: 300, phosphorus: 190 },
   },
   {
     id: "banh-bot-loc",
-    code: "10044",
-    name: "Bánh Bt Lọc",
+    name: "Bánh bột lọc",
     nameEn: "Tapioca shrimp dumplings",
     category: "snacks",
     servingSize: 200,
@@ -9315,14 +6965,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 Ä‘Ä©a",
-    notes: "Tinh bá»™t + máº·n.",
+    commonServing: "1 đĩa",
+    notes: "Tinh bột + mặn.",
     diabetes: { glycemicIndex: 75, glycemicLoad: 41, carbPerPortion: 55 },
     kidney: { potassium: 220, phosphorus: 150 },
   },
   {
     id: "banh-beo-viet29",
-    name: "Bánh Bèo",
+    name: "Bánh bèo",
     nameEn: "Steamed rice cakes",
     category: "snacks",
     servingSize: 250,
@@ -9351,15 +7001,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 15,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 chÃ©n lá»›n",
-    notes: "Máº¯m tÃ´m khÃ´.",
+    commonServing: "1 chén lớn",
+    notes: "Mắm tôm khô.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 34, carbPerPortion: 48 },
     kidney: { potassium: 200, phosphorus: 140 },
   },
   {
     id: "com-chien-duong-chau",
-    code: "11021",
-    name: "Cơm Chiên Dương Châu",
+    name: "Cơm chiên Dương Châu",
     nameEn: "Yangzhou fried rice",
     category: "rice-noodles",
     servingSize: 400,
@@ -9388,18 +7037,17 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 15,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 Ä‘Ä©a",
-    notes: "ChiÃªn dáº§u; máº·n.",
+    commonServing: "1 đĩa",
+    notes: "Chiên dầu; mặn.",
     diabetes: { glycemicIndex: 75, glycemicLoad: 47, carbPerPortion: 62 },
     kidney: { potassium: 380, phosphorus: 210 },
   },
   // ========================================================================
-  // Äá»“ Äƒn váº·t & chÃ¨ phá»• biáº¿n (331â€“340)
+  // Đồ ăn vặt & chè phổ biến (331–340)
   // ========================================================================
   {
     id: "banh-trang-tron",
-    code: "10034",
-    name: "Bánh Tráng Trn",
+    name: "Bánh tráng trộn",
     nameEn: "Rice paper salad",
     category: "snacks",
     servingSize: 250,
@@ -9428,14 +7076,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 bá»‹ch (~250g)",
-    notes: "Ráº¥t máº·n; nhiá»u topping.",
+    commonServing: "1 bịch (~250g)",
+    notes: "Rất mặn; nhiều topping.",
     diabetes: { glycemicIndex: 75, glycemicLoad: 41, carbPerPortion: 55 },
     kidney: { potassium: 280, phosphorus: 190 },
   },
   {
     id: "banh-trang-nuong",
-    name: "Bánh Tráng Nưng",
+    name: "Bánh tráng nướng",
     nameEn: "Grilled rice paper",
     category: "snacks",
     servingSize: 200,
@@ -9464,14 +7112,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 cÃ¡i",
-    notes: "ChiÃªn/nÆ°á»›ng nhiá»u dáº§u.",
+    commonServing: "1 cái",
+    notes: "Chiên/nướng nhiều dầu.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 34, carbPerPortion: 48 },
     kidney: { potassium: 260, phosphorus: 180 },
   },
   {
     id: "bap-xao",
-    name: "Bắp Xào",
+    name: "Bắp xào",
     nameEn: "Stir-fried corn",
     category: "snacks",
     servingSize: 200,
@@ -9501,245 +7149,13 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminB12: 0,
     vitaminD: 0,
     commonServing: "1 ly",
-    notes: "Tinh bá»™t + bÆ¡.",
+    notes: "Tinh bột + bơ.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 31, carbPerPortion: 45 },
     kidney: { potassium: 220, phosphorus: 120 },
   },
   {
-    id: "trung-ga",
-    code: "80005",
-    name: "Trứng G",
-    nameEn: "Chicken egg",
-    category: "dairy",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 155,
-    protein: 13.0,
-    carbs: 1.1,
-    fat: 11.0,
-    fiber: 0.0,
-    water: 75.0,
-    sodium: 124,
-    potassium: 138,
-    calcium: 56,
-    iron: 1.8,
-    phosphorus: 198,
-    magnesium: 12,
-    zinc: 1.3,
-    vitaminA: 160,
-    vitaminC: 0,
-    vitaminB1: 0.04,
-    vitaminB2: 0.46,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 1.5, // Pantothenic acid - cao trong trá»©ng
-    vitaminB6: 0.17,
-    vitaminB7: 25.0, // Biotin (Âµg) - ráº¥t cao trong trá»©ng
-    folate: 47,
-    vitaminB12: 0.9, // Âµg - cao trong trá»©ng
-    vitaminD: 2.0, // Âµg - cÃ³ trong lÃ²ng Ä‘á»
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 0.3, // Phylloquinone
-    choline: 294.0, // mg - ráº¥t cao trong trá»©ng
-    selenium: 30.7, // Âµg - cao trong trá»©ng
-    copper: 0.07, // mg
-    manganese: 0.03, // mg
-    iodine: 25.0, // Âµg - tá»« thá»©c Äƒn gÃ 
-    cholesterol: 372,
-    commonServing: "100g (khoáº£ng 2 quáº£)",
-    notes: "Nguá»“n protein cháº¥t lÆ°á»£ng cao, giÃ u choline vÃ  selenium.",
-    cardiovascular: {
-      cholesterol: 372,
-      saturatedFat: 3.3,
-    },
-    kidney: {
-      potassium: 138,
-      phosphorus: 198,
-    },
-    gout: {
-      purine: 0,
-      purineLevel: "low",
-    },
-    vietnameseUnits: [
-      { unit: 'qua', weight: 50, description: '1 quáº£ trá»©ng gÃ ' },
-    ],
-  },
-  {
-    id: "trung-vit",
-    code: "80009",
-    name: "Trứng Vt",
-    nameEn: "Duck egg",
-    category: "dairy",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 185,
-    protein: 13.0,
-    carbs: 1.5,
-    fat: 14.0,
-    fiber: 0.0,
-    water: 70.0,
-    sodium: 146,
-    potassium: 222,
-    calcium: 64,
-    iron: 3.9,
-    phosphorus: 220,
-    magnesium: 17,
-    zinc: 1.4,
-    vitaminA: 194,
-    vitaminC: 0,
-    vitaminB1: 0.15,
-    vitaminB2: 0.40,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 1.9, // Pantothenic acid - cao trong trá»©ng
-    vitaminB6: 0.25,
-    vitaminB7: 20.0, // Biotin (Âµg) - cao trong trá»©ng
-    folate: 80,
-    vitaminB12: 5.4, // Âµg - ráº¥t cao trong trá»©ng vá»‹t
-    vitaminD: 1.7, // Âµg
-    vitaminE: 1.3, // Tocopherol
-    vitaminK: 0.4, // Phylloquinone
-    choline: 263.0, // mg - ráº¥t cao trong trá»©ng
-    selenium: 36.4, // Âµg - cao trong trá»©ng
-    copper: 0.06, // mg
-    manganese: 0.04, // mg
-    iodine: 20.0, // Âµg
-    cholesterol: 884,
-    commonServing: "100g (khoáº£ng 1.5 quáº£)",
-    notes: "Lá»›n hÆ¡n trá»©ng gÃ , giÃ u vitamin B12 vÃ  cholesterol cao hÆ¡n.",
-    cardiovascular: {
-      cholesterol: 884,
-      saturatedFat: 3.7,
-    },
-    kidney: {
-      potassium: 222,
-      phosphorus: 220,
-    },
-    gout: {
-      purine: 0,
-      purineLevel: "low",
-    },
-    vietnameseUnits: [
-      { unit: 'qua', weight: 70, description: '1 quáº£ trá»©ng vá»‹t' },
-    ],
-  },
-  {
-    id: "trung-cut",
-    code: "80010",
-    name: "Trứng Cút",
-    nameEn: "Quail egg",
-    category: "dairy",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 158,
-    protein: 13.0,
-    carbs: 0.4,
-    fat: 11.1,
-    fiber: 0.0,
-    water: 74.0,
-    sodium: 141,
-    potassium: 132,
-    calcium: 64,
-    iron: 3.6,
-    phosphorus: 226,
-    magnesium: 13,
-    zinc: 1.5,
-    vitaminA: 156,
-    vitaminC: 0,
-    vitaminB1: 0.13,
-    vitaminB2: 0.79,
-    vitaminB3: 0.15, // Niacin
-    vitaminB5: 1.8, // Pantothenic acid - cao trong trá»©ng
-    vitaminB6: 0.15,
-    vitaminB7: 20.0, // Biotin (Âµg) - cao trong trá»©ng
-    folate: 66,
-    vitaminB12: 1.6, // Âµg - cao trong trá»©ng
-    vitaminD: 1.4, // Âµg
-    vitaminE: 1.1, // Tocopherol
-    vitaminK: 0.3, // Phylloquinone
-    choline: 263.0, // mg - ráº¥t cao trong trá»©ng
-    selenium: 32.0, // Âµg - cao trong trá»©ng
-    copper: 0.06, // mg
-    manganese: 0.04, // mg
-    iodine: 15.0, // Âµg
-    cholesterol: 844,
-    commonServing: "100g (khoáº£ng 8â€“10 quáº£)",
-    notes: "GiÃ u cholesterol; thÆ°á»ng Äƒn 3â€“5 quáº£/láº§n. GiÃ u vitamin B2 vÃ  sáº¯t.",
-    cardiovascular: {
-      cholesterol: 844,
-      saturatedFat: 3.6,
-    },
-    kidney: {
-      potassium: 132,
-      phosphorus: 226,
-    },
-    gout: {
-      purine: 0,
-      purineLevel: "low",
-    },
-    vietnameseUnits: [
-      { unit: 'qua', weight: 10, description: '1 quáº£ trá»©ng cÃºt' },
-    ],
-  },
-  {
-    id: "trung-ngong",
-    code: "80011",
-    name: "Trứng Ngng",
-    nameEn: "Goose egg",
-    category: "dairy",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 185,
-    protein: 13.9,
-    carbs: 1.3,
-    fat: 13.3,
-    fiber: 0.0,
-    water: 70.0,
-    sodium: 138,
-    potassium: 210,
-    calcium: 60,
-    iron: 3.0,
-    phosphorus: 220,
-    magnesium: 16,
-    zinc: 1.5,
-    vitaminA: 200,
-    vitaminC: 0,
-    vitaminB1: 0.15,
-    vitaminB2: 0.38,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 1.9, // Pantothenic acid - cao trong trá»©ng
-    vitaminB6: 0.24,
-    vitaminB7: 18.0, // Biotin (Âµg) - cao trong trá»©ng
-    folate: 76,
-    vitaminB12: 5.1, // Âµg - ráº¥t cao trong trá»©ng ngá»—ng
-    vitaminD: 1.7, // Âµg
-    vitaminE: 1.3, // Tocopherol
-    vitaminK: 0.4, // Phylloquinone
-    choline: 263.0, // mg - ráº¥t cao trong trá»©ng
-    selenium: 36.7, // Âµg - cao trong trá»©ng
-    copper: 0.06, // mg
-    manganese: 0.04, // mg
-    iodine: 18.0, // Âµg
-    cholesterol: 850,
-    commonServing: "100g (~1/2 quáº£ lá»›n)",
-    notes: "Quáº£ ráº¥t to; thÆ°á»ng Ä‘Æ°á»£c khuyÃªn khÃ´ng Äƒn quÃ¡ thÆ°á»ng xuyÃªn do cholesterol cao. GiÃ u vitamin B12.",
-    cardiovascular: {
-      cholesterol: 850,
-      saturatedFat: 3.6,
-    },
-    kidney: {
-      potassium: 210,
-      phosphorus: 220,
-    },
-    gout: {
-      purine: 0,
-      purineLevel: "low",
-    },
-    vietnameseUnits: [
-      { unit: 'qua', weight: 200, description: '1 quáº£ trá»©ng ngá»—ng' },
-    ],
-  },
-  {
     id: "trung-cut-lon",
-    name: "Trứng Cút Ln",
+    name: "Trứng cút lộn",
     nameEn: "Fertilized quail egg",
     category: "snacks",
     servingSize: 100,
@@ -9764,28 +7180,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 550, saturatedFat: 4.5 },
     vitaminB1: 0.14,
     vitaminB2: 0.20,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 1.8, // Pantothenic acid - cao trong trá»©ng
     vitaminB6: 0.22,
-    vitaminB7: 5.0, // Biotin (Âµg) - cao trong trá»©ng
     folate: 44,
-    vitaminB12: 3.0, // Âµg - ráº¥t cao trong trá»©ng
+    vitaminB12: 3.0,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 0.3, // Phylloquinone
-    choline: 150.0, // mg - ráº¥t cao trong trá»©ng
-    selenium: 32.0, // Âµg - cao trong trá»©ng
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "2â€“3 trá»©ng",
+    commonServing: "2–3 trứng",
     notes: "Cholesterol & purine cao.",
     gout: { purine: 300, purineLevel: "high" },
     kidney: { potassium: 130, phosphorus: 210 },
   },
   {
     id: "trung-vit-lon",
-    name: "Trứng Vt Ln",
+    name: "Trứng vịt lộn",
     nameEn: "Balut egg",
     category: "snacks",
     servingSize: 100,
@@ -9810,29 +7216,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 480, saturatedFat: 4.2 },
     vitaminB1: 0.12,
     vitaminB2: 0.18,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 1.6, // Pantothenic acid - cao trong trá»©ng
     vitaminB6: 0.20,
-    vitaminB7: 4.5, // Biotin (Âµg) - cao trong trá»©ng
     folate: 40,
-    vitaminB12: 2.8, // Âµg - ráº¥t cao trong trá»©ng
+    vitaminB12: 2.8,
     vitaminD: 0,
-    vitaminE: 0.9, // Tocopherol
-    vitaminK: 0.3, // Phylloquinone
-    choline: 140.0, // mg - ráº¥t cao trong trá»©ng
-    selenium: 30.0, // Âµg - cao trong trá»©ng
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 trá»©ng (~100g)",
-    notes: "GÃºt & má»¡ mÃ¡u trÃ¡nh.",
+    commonServing: "1 trứng (~100g)",
+    notes: "Gút & mỡ máu tránh.",
     gout: { purine: 300, purineLevel: "high" },
     kidney: { potassium: 120, phosphorus: 200 },
   },
   {
     id: "banh-mi-que",
-    code: "12007",
-    name: "Bánh Mì Que",
+    name: "Bánh mì que",
     nameEn: "Bread stick sandwich",
     category: "snacks",
     servingSize: 120,
@@ -9857,28 +7252,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 65, saturatedFat: 6.0 },
     vitaminB1: 0.10,
     vitaminB2: 0.08,
-    vitaminB3: 1.5, // Niacin - tá»« bÃ¡nh mÃ¬ vÃ  thá»‹t
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
     folate: 12,
-    vitaminB12: 0.2, // Âµg - tá»« pate/thá»‹t
+    vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 8.0, // mg
-    selenium: 5.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
     commonServing: "1 que",
-    notes: "BÆ¡ + pate máº·n.",
+    notes: "Bơ + pate mặn.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 27, carbPerPortion: 38 },
     kidney: { potassium: 200, phosphorus: 150 },
   },
   {
     id: "banh-tieu",
-    name: "Bánh Tiêu",
+    name: "Bánh tiêu",
     nameEn: "Fried sesame bread",
     category: "snacks",
     servingSize: 100,
@@ -9903,28 +7288,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 5.0 },
     vitaminB1: 0.10,
     vitaminB2: 0.08,
-    vitaminB3: 0.8, // Niacin - tá»« bá»™t mÃ¬
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
     folate: 10,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 5.0, // mg
-    selenium: 2.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.4, // mg - tá»« mÃ¨
-    iodine: 0, // Âµg
-    commonServing: "1 cÃ¡i",
-    notes: "ChiÃªn dáº§u; Ä‘Æ°á»ng cao.",
+    commonServing: "1 cái",
+    notes: "Chiên dầu; đường cao.",
     diabetes: { glycemicIndex: 85, glycemicLoad: 43, carbPerPortion: 50 },
     kidney: { potassium: 180, phosphorus: 120 },
   },
   {
     id: "banh-cam",
-    name: "Bánh Cam (Bánh Rán)",
+    name: "Bánh cam (bánh rán)",
     nameEn: "Fried glutinous rice cake",
     category: "snacks",
     servingSize: 120,
@@ -9949,28 +7324,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 6.0 },
     vitaminB1: 0.08,
     vitaminB2: 0.06,
-    vitaminB3: 0.6, // Niacin - tá»« bá»™t náº¿p
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
     folate: 9,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 4.0, // mg
-    selenium: 1.5, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cÃ¡i",
-    notes: "ÄÆ°á»ng + chiÃªn dáº§u.",
+    commonServing: "1 cái",
+    notes: "Đường + chiên dầu.",
     diabetes: { glycemicIndex: 90, glycemicLoad: 50, carbPerPortion: 55 },
     kidney: { potassium: 160, phosphorus: 110 },
   },
   {
     id: "che-dau-den-viet39",
-    name: "Chè Ậu En",
+    name: "Chè đậu đen",
     nameEn: "Sweet black bean dessert",
     category: "desserts",
     servingSize: 250,
@@ -9995,29 +7360,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0.8 },
     vitaminB1: 0.20,
     vitaminB2: 0.10,
-    vitaminB3: 1.3, // Niacin - tá»« Ä‘áº­u Ä‘en
-    vitaminB5: 0.9, // Pantothenic acid - cao tá»« Ä‘áº­u Ä‘en
     vitaminB6: 0.16,
-    vitaminB7: 0, // Biotin
-    folate: 90, // Âµg - cao tá»« Ä‘áº­u Ä‘en
+    folate: 90,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 26.0, // mg - cao tá»« Ä‘áº­u Ä‘en
-    selenium: 3.6, // Âµg
-    copper: 0.5, // mg - cao tá»« Ä‘áº­u Ä‘en
-    manganese: 0.9, // mg - cao tá»« Ä‘áº­u Ä‘en
-    iodine: 0, // Âµg
     commonServing: "1 ly (~250g)",
-    notes: "ÄÆ°á»ng cao; ÄTÄ háº¡n cháº¿.",
+    notes: "Đường cao; ĐTĐ hạn chế.",
     diabetes: { glycemicIndex: 70, glycemicLoad: 34, carbPerPortion: 48 },
     kidney: { potassium: 300, phosphorus: 180 },
   },
   {
     id: "che-ba-mau",
-    code: "12004",
-    name: "Chè Ba Màu",
+    name: "Chè ba màu",
     nameEn: "Three-color dessert",
     category: "desserts",
     servingSize: 300,
@@ -10042,31 +7396,21 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 1.5 },
     vitaminB1: 0.16,
     vitaminB2: 0.10,
-    vitaminB3: 1.0, // Niacin - tá»« Ä‘áº­u vÃ  nÆ°á»›c cá»‘t dá»«a
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.14,
-    vitaminB7: 0, // Biotin
-    folate: 80, // Âµg
+    folate: 80,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 20.0, // mg
-    selenium: 2.5, // Âµg
-    copper: 0.3, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
     commonServing: "1 ly",
-    notes: "ÄÆ°á»ng + nÆ°á»›c cá»‘t dá»«a.",
+    notes: "Đường + nước cốt dừa.",
     diabetes: { glycemicIndex: 75, glycemicLoad: 41, carbPerPortion: 55 },
     kidney: { potassium: 280, phosphorus: 170 },
   },
   // ========================================================================
-  // Rau lÃ¡ & rau gia vá»‹ phá»• biáº¿n (341â€“352)
+  // Rau lá & rau gia vị phổ biến (341–352)
   // ========================================================================
   {
     id: "rau-muong-veg63",
-    name: "Rau muá»‘ng",
+    name: "Rau muống",
     nameEn: "Water spinach",
     category: "vegetables",
     servingSize: 100,
@@ -10088,29 +7432,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 55.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.03,
-    vitaminB2: 0.1,
-    vitaminB3: 0.9, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.08,
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
-    folate: 57, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.14,
+    vitaminB12: 57,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 302, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 6.9, // mg
-    selenium: 0.9, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Ráº¥t phá»• biáº¿n; kali cao.",
+    commonServing: "1 bát (~100g)",
+    notes: "Rất phổ biến; kali cao.",
     kidney: { potassium: 312, phosphorus: 48 },
   },
   {
     id: "cai-ngot-veg64",
-    name: "Rau Cải Ngọt",
+    name: "Rau cải ngọt",
     nameEn: "Choy sum",
     category: "vegetables",
     servingSize: 100,
@@ -10132,29 +7466,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 46.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.04,
-    vitaminB2: 0.05,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.07,
     vitaminB6: 0.11,
-    vitaminB7: 0, // Biotin
-    folate: 80, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.13,
+    vitaminB12: 80,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 45, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 10.4, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "GiÃ u canxi.",
+    commonServing: "1 bát (~100g)",
+    notes: "Giàu canxi.",
     kidney: { potassium: 350, phosphorus: 50 },
   },
   {
     id: "cai-xanh-veg65",
-    name: "Rau Cải Xanh",
+    name: "Rau cải xanh",
     nameEn: "Mustard greens",
     category: "vegetables",
     servingSize: 100,
@@ -10176,29 +7500,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 70.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.04,
-    vitaminB2: 0.05,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.08,
     vitaminB6: 0.15,
-    vitaminB7: 0, // Biotin
-    folate: 75, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.14,
+    vitaminB12: 75,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 45, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 10.4, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t (~100g)",
-    notes: "Hay muá»‘i dÆ°a.",
+    commonServing: "1 bát (~100g)",
+    notes: "Hay muối dưa.",
     kidney: { potassium: 384, phosphorus: 58 },
   },
   {
     id: "cai-thao-veg66",
-    name: "Rau Cải Thảo",
+    name: "Rau cải thảo",
     nameEn: "Napa cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -10220,29 +7534,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 27.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.05,
+    vitaminB1: 0.0,
     vitaminB2: 0.04,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
-    folate: 79, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.08,
+    vitaminB12: 79,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 42.9, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 7.2, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh/xÃ o",
-    notes: "Ãt nÄƒng lÆ°á»£ng.",
+    commonServing: "Nấu canh/xào",
+    notes: "Ít năng lượng.",
     kidney: { potassium: 238, phosphorus: 25 },
   },
   {
     id: "mong-toi-veg67",
-    name: "Rau má»“ng tÆ¡i",
+    name: "Rau mồng tơi",
     nameEn: "Malabar spinach",
     category: "vegetables",
     servingSize: 100,
@@ -10264,29 +7568,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 102.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.05,
-    vitaminB2: 0.16,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.06,
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
-    folate: 140, // Âµg - ráº¥t cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.11,
+    vitaminB12: 140,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 302, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 6.0, // mg
-    selenium: 0.8, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh",
-    notes: "Nhá»›t; mÃ¡t.",
+    commonServing: "Nấu canh",
+    notes: "Nhớt; mát.",
     kidney: { potassium: 510, phosphorus: 36 },
   },
   {
     id: "rau-den-com-veg68",
-    name: "Rau Dền Cơm",
+    name: "Rau dền cơm",
     nameEn: "Amaranth greens",
     category: "vegetables",
     servingSize: 100,
@@ -10308,29 +7602,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 43.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.06,
-    vitaminB2: 0.12,
-    vitaminB3: 0.9, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.06,
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 85, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.10,
+    vitaminB12: 85,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 1140, // Phylloquinone - ráº¥t cao trong rau dá»n
-    choline: 6.9, // mg
-    selenium: 0.9, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.9, // mg - cao trong rau dá»n
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh",
+    commonServing: "Nấu canh",
     notes: "Kali cao.",
     kidney: { potassium: 611, phosphorus: 43 },
   },
   {
     id: "rau-den-gai-veg69",
-    name: "Rau Dền Gai",
+    name: "Rau dền gai",
     nameEn: "Spiny amaranth",
     category: "vegetables",
     servingSize: 100,
@@ -10352,29 +7636,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 45.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.06,
-    vitaminB2: 0.12,
-    vitaminB3: 0.9, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.07,
     vitaminB6: 0.13,
-    vitaminB7: 0, // Biotin
-    folate: 90, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.12,
+    vitaminB12: 90,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 1140, // Phylloquinone - ráº¥t cao trong rau dá»n
-    choline: 6.9, // mg
-    selenium: 0.9, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.9, // mg - cao trong rau dá»n
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh",
-    notes: "Rau dá»n dáº¡i.",
+    commonServing: "Nấu canh",
+    notes: "Rau dền dại.",
     kidney: { potassium: 590, phosphorus: 46 },
   },
   {
     id: "rau-lang-veg70",
-    name: "Rau Lang (Ngọn Khoai Lang)",
+    name: "Rau lang (ngọn khoai lang)",
     nameEn: "Sweet potato leaves",
     category: "vegetables",
     servingSize: 100,
@@ -10396,30 +7670,20 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 11.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.10,
-    vitaminB2: 0.26,
-    vitaminB3: 1.2, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.11,
     vitaminB6: 0.15,
-    vitaminB7: 0.8, // Biotin (Âµg)
-    folate: 90, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.18,
+    vitaminB12: 90,
     vitaminD: 0,
-    vitaminE: 1.5, // Tocopherol - cao trong rau lÃ¡ xanh
-    vitaminK: 400, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 18.0, // mg
-    selenium: 1.0, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "Luá»™c/xÃ o",
-    notes: "XÆ¡ cao; tá»‘t ÄTÄ.",
+    commonServing: "Luộc/xào",
+    notes: "Xơ cao; tốt ĐTĐ.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 7 },
     kidney: { potassium: 337, phosphorus: 56 },
   },
   {
     id: "tan-o-veg71",
-    name: "Rau Tần Ô (Cải Cúc)",
+    name: "Rau tần ô (cải cúc)",
     nameEn: "Crown daisy",
     category: "vegetables",
     servingSize: 100,
@@ -10441,29 +7705,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 11.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.06,
-    vitaminB2: 0.10,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.06,
     vitaminB6: 0.10,
-    vitaminB7: 0, // Biotin
-    folate: 105, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.12,
+    vitaminB12: 105,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 250, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 10.4, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n láº©u",
-    notes: "Rau mÃ¹a láº¡nh.",
+    commonServing: "Ăn lẩu",
+    notes: "Rau mùa lạnh.",
     kidney: { potassium: 340, phosphorus: 50 },
   },
   {
     id: "xa-lach-xoan-veg72",
-    name: "Rau Xà Lách Xon",
+    name: "Rau xà lách xoăn",
     nameEn: "Curly lettuce",
     category: "vegetables",
     servingSize: 100,
@@ -10485,30 +7739,20 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 9.2,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.06,
-    vitaminB2: 0.04,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.07,
     vitaminB6: 0.08,
-    vitaminB7: 0, // Biotin
-    folate: 38, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.09,
+    vitaminB12: 38,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 126.3, // Phylloquinone - cao trong xÃ  lÃ¡ch
-    choline: 9.9, // mg
-    selenium: 0.4, // Âµg
-    copper: 0.03, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng",
-    notes: "Ãt kcal.",
+    commonServing: "Ăn sống",
+    notes: "Ít kcal.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 3 },
     kidney: { potassium: 194, phosphorus: 29 },
   },
   {
     id: "thi-la-veg73",
-    name: "Rau Thì L",
+    name: "Rau thì là",
     nameEn: "Dill weed",
     category: "vegetables",
     servingSize: 100,
@@ -10530,29 +7774,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 85.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.06,
-    vitaminB2: 0.30, // cao trong thÃ¬ lÃ 
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.06,
     vitaminB6: 0.28,
-    vitaminB7: 0, // Biotin
-    folate: 150, // Âµg - ráº¥t cao trong thÃ¬ lÃ 
-    vitaminB12: 0,
+    folate: 0.18,
+    vitaminB12: 150,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 440, // Phylloquinone - ráº¥t cao trong thÃ¬ lÃ 
-    choline: 12.8, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.15, // mg
-    manganese: 1.3, // mg - cao trong thÃ¬ lÃ 
-    iodine: 0, // Âµg
-    commonServing: "Gia vá»‹",
-    notes: "Ä‚n lÆ°á»£ng nhá».",
+    commonServing: "Gia vị",
+    notes: "Ăn lượng nhỏ.",
     kidney: { potassium: 738, phosphorus: 66 },
   },
   {
     id: "kinh-gioi-veg74",
-    name: "Rau Kinh Gii",
+    name: "Rau kinh giới",
     nameEn: "Vietnamese balm",
     category: "vegetables",
     servingSize: 100,
@@ -10574,32 +7808,22 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 38.0,
     cholesterol: 0,
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
-    vitaminB1: 0.05,
-    vitaminB2: 0.11,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
+    vitaminB1: 0.0,
+    vitaminB2: 0.09,
     vitaminB6: 0.16,
-    vitaminB7: 0, // Biotin
-    folate: 110, // Âµg - cao trong rau lÃ¡ xanh
-    vitaminB12: 0,
+    folate: 0.20,
+    vitaminB12: 110,
     vitaminD: 0,
-    vitaminE: 0.8, // Tocopherol
-    vitaminK: 415, // Phylloquinone - ráº¥t cao trong kinh giá»›i
-    choline: 11.4, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.4, // mg - cao trong kinh giá»›i
-    manganese: 1.1, // mg - cao trong kinh giá»›i
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n kÃ¨m",
-    notes: "Rau gia vá»‹.",
+    commonServing: "Ăn kèm",
+    notes: "Rau gia vị.",
     kidney: { potassium: 420, phosphorus: 64 },
   },
   // ========================================================================
-  // Cá»§ & quáº£ phá»• biáº¿n bá»• sung (353â€“365)
+  // Củ & quả phổ biến bổ sung (353–365)
   // ========================================================================
   {
     id: "khoai-so",
-    name: "Khoai Sọ",
+    name: "Khoai sọ",
     nameEn: "Taro corm",
     category: "vegetables",
     servingSize: 100,
@@ -10624,29 +7848,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.10,
     vitaminB2: 0.03,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.27,
-    vitaminB7: 0, // Biotin
     folate: 22,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 1.0, // Phylloquinone
-    choline: 9.2, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.17, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 khÃºc (~100g)",
-    notes: "Tinh bá»™t; kali cao.",
+    commonServing: "1 khúc (~100g)",
+    notes: "Tinh bột; kali cao.",
     diabetes: { glycemicIndex: 54, glycemicLoad: 14, carbPerPortion: 27 },
     kidney: { potassium: 591, phosphorus: 84 },
   },
   {
     id: "khoai-mo",
-    code: "40019",
-    name: "Khoai Mỡ",
+    name: "Khoai mỡ",
     nameEn: "Purple yam",
     category: "vegetables",
     servingSize: 100,
@@ -10671,28 +7884,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.08,
     vitaminB2: 0.04,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 0, // Biotin
     folate: 23,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 1.0, // Phylloquinone
-    choline: 8.0, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh/chÃ©",
-    notes: "Kali ráº¥t cao; CKD háº¡n cháº¿.",
+    commonServing: "Nấu canh/ché",
+    notes: "Kali rất cao; CKD hạn chế.",
     diabetes: { glycemicIndex: 55, glycemicLoad: 15, carbPerPortion: 27 },
     kidney: { potassium: 816, phosphorus: 55 },
   },
   {
     id: "cu-tu",
-    name: "Củ Từ",
+    name: "Củ từ",
     nameEn: "Yam bean",
     category: "vegetables",
     servingSize: 100,
@@ -10717,28 +7920,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.09,
     vitaminB2: 0.05,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.20,
-    vitaminB7: 0, // Biotin
     folate: 24,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.5, // Phylloquinone
-    choline: 7.5, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "Luá»™c/náº¥u canh",
-    notes: "Tinh bá»™t.",
+    commonServing: "Luộc/nấu canh",
+    notes: "Tinh bột.",
     diabetes: { glycemicIndex: 55, glycemicLoad: 15, carbPerPortion: 27 },
     kidney: { potassium: 670, phosphorus: 60 },
   },
   {
     id: "cu-cai-do",
-    name: "Củ Cải Ỏ",
+    name: "Củ cải đỏ",
     nameEn: "Beetroot",
     category: "vegetables",
     servingSize: 100,
@@ -10767,14 +7960,14 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 109,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "Luá»™c/xÃ o",
-    notes: "GI trung bÃ¬nh.",
+    commonServing: "Luộc/xào",
+    notes: "GI trung bình.",
     diabetes: { glycemicIndex: 64, glycemicLoad: 6, carbPerPortion: 10 },
     kidney: { potassium: 325, phosphorus: 40 },
   },
   {
     id: "ca-rot-tim",
-    name: "Cà Rt Tím",
+    name: "Cà rốt tím",
     nameEn: "Purple carrot",
     category: "vegetables",
     servingSize: 100,
@@ -10799,28 +7992,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.07,
     vitaminB2: 0.06,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.14,
-    vitaminB7: 0, // Biotin
     folate: 19,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.6, // Tocopherol
-    vitaminK: 13.2, // Phylloquinone
-    choline: 6.2, // mg
-    selenium: 0.1, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng/náº¥u",
-    notes: "GiÃ u anthocyanin.",
+    commonServing: "Ăn sống/nấu",
+    notes: "Giàu anthocyanin.",
     diabetes: { glycemicIndex: 47, glycemicLoad: 4, carbPerPortion: 10 },
     kidney: { potassium: 320, phosphorus: 35 },
   },
   {
     id: "bi-ho-lo",
-    name: "Bí H Lô",
+    name: "Bí hồ lô",
     nameEn: "Bottle gourd",
     category: "vegetables",
     servingSize: 100,
@@ -10845,28 +8028,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.02,
     vitaminB2: 0.03,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
     folate: 12,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 4.5, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh",
-    notes: "Ráº¥t Ã­t kcal.",
+    commonServing: "Nấu canh",
+    notes: "Rất ít kcal.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 3 },
     kidney: { potassium: 170, phosphorus: 25 },
   },
   {
     id: "muop-khia",
-    name: "Mưp Khía",
+    name: "Mướp khía",
     nameEn: "Ridged gourd",
     category: "vegetables",
     servingSize: 100,
@@ -10891,28 +8064,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.04,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.06,
-    vitaminB7: 0, // Biotin
     folate: 25,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 10.0, // Phylloquinone
-    choline: 5.0, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh/xÃ o",
-    notes: "Thanh mÃ¡t.",
+    commonServing: "Nấu canh/xào",
+    notes: "Thanh mát.",
     diabetes: { glycemicIndex: 20, glycemicLoad: 1, carbPerPortion: 4 },
     kidney: { potassium: 150, phosphorus: 30 },
   },
   {
     id: "bau-sao",
-    name: "Bầu Sao",
+    name: "Bầu sao",
     nameEn: "Star gourd",
     category: "vegetables",
     servingSize: 100,
@@ -10937,28 +8100,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.04,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.06,
-    vitaminB7: 0, // Biotin
     folate: 18,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 4.0, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "Náº¥u canh",
-    notes: "Ãt nÄƒng lÆ°á»£ng.",
+    commonServing: "Nấu canh",
+    notes: "Ít năng lượng.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 4 },
     kidney: { potassium: 180, phosphorus: 28 },
   },
   {
     id: "dau-rong",
-    name: "Đậu Rng (Quả)",
+    name: "Đậu rồng (quả)",
     nameEn: "Winged bean pod",
     category: "vegetables",
     servingSize: 100,
@@ -10983,28 +8136,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.11,
-    vitaminB3: 0.8, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0, // Biotin
-    folate: 66, // Âµg - cao trong Ä‘áº­u
+    folate: 66,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 14.4, // Phylloquinone - cao trong Ä‘áº­u que
-    choline: 15.3, // mg - cao trong Ä‘áº­u
-    selenium: 0.6, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "XÃ o/luá»™c",
-    notes: "XÆ¡ cao.",
+    commonServing: "Xào/luộc",
+    notes: "Xơ cao.",
     diabetes: { glycemicIndex: 30, glycemicLoad: 3, carbPerPortion: 9 },
     kidney: { potassium: 304, phosphorus: 52 },
   },
   {
     id: "dau-bap-do",
-    name: "Đậu Bắp Ỏ",
+    name: "Đậu bắp đỏ",
     nameEn: "Red okra",
     category: "vegetables",
     servingSize: 100,
@@ -11029,28 +8172,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.20,
     vitaminB2: 0.06,
-    vitaminB3: 1.0, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.22,
-    vitaminB7: 0, // Biotin
-    folate: 60, // Âµg - cao trong Ä‘áº­u báº¯p
+    folate: 60,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 31.3, // Phylloquinone - cao trong Ä‘áº­u báº¯p
-    choline: 12.3, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.8, // mg - cao trong Ä‘áº­u báº¯p
-    iodine: 0, // Âµg
-    commonServing: "Luá»™c/xÃ o",
-    notes: "Cháº¥t nháº§y tá»‘t ruá»™t.",
+    commonServing: "Luộc/xào",
+    notes: "Chất nhầy tốt ruột.",
     diabetes: { glycemicIndex: 20, glycemicLoad: 2, carbPerPortion: 7 },
     kidney: { potassium: 299, phosphorus: 61 },
   },
   {
     id: "ca-phao-tuoi",
-    name: "Cà Pháo Tươi",
+    name: "Cà pháo tươi",
     nameEn: "Fresh Thai eggplant",
     category: "vegetables",
     servingSize: 100,
@@ -11075,28 +8208,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.04,
     vitaminB2: 0.04,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.08,
-    vitaminB7: 0, // Biotin
     folate: 22,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 3.5, // Phylloquinone
-    choline: 6.9, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng/náº¥u",
-    notes: "Ãt kcal.",
+    commonServing: "Ăn sống/nấu",
+    notes: "Ít kcal.",
     diabetes: { glycemicIndex: 20, glycemicLoad: 1, carbPerPortion: 6 },
     kidney: { potassium: 229, phosphorus: 24 },
   },
   {
     id: "dua-gang",
-    name: "Dưa Gang",
+    name: "Dưa gang",
     nameEn: "Oriental melon",
     category: "vegetables",
     servingSize: 100,
@@ -11121,28 +8244,18 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.03,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
     folate: 4,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 4.0, // mg
-    selenium: 0.4, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n trÃ¡ng miá»‡ng",
-    notes: "Ngá»t nháº¹.",
+    commonServing: "Ăn tráng miệng",
+    notes: "Ngọt nhẹ.",
     diabetes: { glycemicIndex: 60, glycemicLoad: 5, carbPerPortion: 8 },
     kidney: { potassium: 228, phosphorus: 17 },
   },
   {
     id: "dua-leo-bao-tu",
-    name: "Dưa Leo Bao Tử",
+    name: "Dưa leo bao tử",
     nameEn: "Mini cucumber",
     category: "vegetables",
     servingSize: 100,
@@ -11167,29 +8280,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: { cholesterol: 0, saturatedFat: 0 },
     vitaminB1: 0.03,
     vitaminB2: 0.03,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.04,
-    vitaminB7: 0, // Biotin
     folate: 7,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.03, // Tocopherol
-    vitaminK: 16.4, // Phylloquinone
-    choline: 6.0, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.08, // mg
-    iodine: 0, // Âµg
-    commonServing: "Ä‚n sá»‘ng",
-    notes: "Nhiá»u nÆ°á»›c.",
+    commonServing: "Ăn sống",
+    notes: "Nhiều nước.",
     diabetes: { glycemicIndex: 15, glycemicLoad: 1, carbPerPortion: 4 },
     kidney: { potassium: 147, phosphorus: 24 },
   },
-  // ========== Bá»” SUNG THá»°C PHáº¨M Má»šI - NHÃ“M NGÅ¨ Cá»C & TINH Bá»˜T ==========
+  // ========== BỔ SUNG THỰC PHẨM MỚI - NHÓM NGŨ CỐC & TINH BỘT ==========
   {
     id: "gao-nep",
-    name: "Gạo Nếp",
+    name: "Gạo nếp",
     nameEn: "Glutinous rice",
     category: "rice-noodles",
     servingSize: 100,
@@ -11208,21 +8311,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.5,
     vitaminB1: 0.05,
     vitaminB2: 0.02,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
     folate: 10,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.04, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 1.5, // mg
-    selenium: 5.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t vá»«a (150g)",
+    commonServing: "1 bát vừa (150g)",
     diabetes: {
       glycemicIndex: 75,
       glycemicLoad: 36,
@@ -11237,12 +8330,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'bat', weight: 150, description: '1 bÃ¡t vá»«a' },
+      { unit: 'bat', weight: 150, description: '1 bát vừa' },
     ],
   },
   {
     id: "gao-lut-do",
-    name: "Gạo Lứt Ỏ",
+    name: "Gạo lứt đỏ",
     nameEn: "Red brown rice",
     category: "rice-noodles",
     servingSize: 100,
@@ -11261,21 +8354,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.6,
     vitaminB1: 0.20,
     vitaminB2: 0.06,
-    vitaminB3: 2.8, // Niacin - cao trong gáº¡o lá»©t Ä‘á»
-    vitaminB5: 0.7, // Pantothenic acid - cao trong gáº¡o lá»©t Ä‘á»
     vitaminB6: 0.35,
-    vitaminB7: 0, // Biotin
     folate: 12,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.6, // Phylloquinone
-    choline: 10.0, // mg
-    selenium: 10.5, // Âµg - cao trong gáº¡o lá»©t Ä‘á»
-    copper: 0.12, // mg
-    manganese: 1.1, // mg - cao trong gáº¡o lá»©t Ä‘á»
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t vá»«a (150g)",
+    commonServing: "1 bát vừa (150g)",
     diabetes: {
       glycemicIndex: 50,
       glycemicLoad: 22,
@@ -11290,12 +8373,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.2,
     },
     vietnameseUnits: [
-      { unit: 'bat', weight: 150, description: '1 bÃ¡t vá»«a' },
+      { unit: 'bat', weight: 150, description: '1 bát vừa' },
     ],
   },
   {
     id: "bun-tuoi",
-    name: "Bún Tươi",
+    name: "Bún tươi",
     nameEn: "Fresh rice vermicelli",
     category: "rice-noodles",
     servingSize: 100,
@@ -11315,21 +8398,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.3,
     vitaminB1: 0.01,
     vitaminB2: 0.01,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
     folate: 5,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.02, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 1.0, // mg
-    selenium: 3.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 pháº§n (100g)",
+    commonServing: "1 phần (100g)",
     diabetes: {
       glycemicIndex: 53,
       glycemicLoad: 13,
@@ -11344,12 +8417,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'bo', weight: 100, description: '1 bÃ³ bÃºn' },
+      { unit: 'bo', weight: 100, description: '1 bó bún' },
     ],
   },
   {
     id: "bun-tau",
-    name: "Bún Tàu",
+    name: "Bún tàu",
     nameEn: "Cellophane noodles",
     category: "rice-noodles",
     servingSize: 100,
@@ -11368,22 +8441,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.1,
     vitaminB1: 0,
     vitaminB2: 0,
-    vitaminB3: 0, // Niacin
-    vitaminB5: 0, // Pantothenic acid
     vitaminB6: 0,
-    vitaminB7: 0, // Biotin
     folate: 0,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 0, // mg
-    selenium: 0, // Âµg
-    copper: 0, // mg
-    manganese: 0, // mg
-    iodine: 0, // Âµg
-    commonServing: "50g khÃ´ (náº¥u thÃ nh ~150g)",
-    notes: "BÃºn tÃ u khÃ´, náº¥u lÃªn ná»Ÿ nhiá»u",
+    commonServing: "50g khô (nấu thành ~150g)",
+    notes: "Bún tàu khô, nấu lên nở nhiều",
     diabetes: {
       glycemicIndex: 45,
       glycemicLoad: 19,
@@ -11398,12 +8461,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'bo', weight: 50, description: '50g khÃ´' },
+      { unit: 'bo', weight: 50, description: '50g khô' },
     ],
   },
   {
     id: "mi-tom",
-    name: "Mì Tôm",
+    name: "Mì tôm",
     nameEn: "Instant noodles",
     category: "rice-noodles",
     servingSize: 100,
@@ -11422,22 +8485,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.0,
     vitaminB1: 0.5,
     vitaminB2: 0.3,
-    vitaminB3: 4.0, // Niacin - cao tá»« bá»™t mÃ¬
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.2,
-    vitaminB7: 0, // Biotin
     folate: 50,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 10.0, // mg
-    selenium: 15.0, // Âµg - cao tá»« bá»™t mÃ¬
-    copper: 0.2, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 gÃ³i (80g)",
-    notes: "Ráº¥t nhiá»u natri - khÃ´ng tá»‘t cho THA",
+    commonServing: "1 gói (80g)",
+    notes: "Rất nhiều natri - không tốt cho THA",
     diabetes: {
       glycemicIndex: 52,
       glycemicLoad: 27,
@@ -11452,13 +8505,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 8,
     },
     vietnameseUnits: [
-      { unit: 'goi', weight: 80, description: '1 gÃ³i' },
+      { unit: 'goi', weight: 80, description: '1 gói' },
     ],
   },
   {
     id: "hu-tieu",
-    code: "11017",
-    name: "Hủ Tiếu",
+    name: "Hủ tiếu",
     nameEn: "Hu tieu noodles",
     category: "rice-noodles",
     servingSize: 100,
@@ -11478,21 +8530,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.4,
     vitaminB1: 0.02,
     vitaminB2: 0.01,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
     folate: 6,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.02, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 1.0, // mg
-    selenium: 3.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 pháº§n (100g)",
+    commonServing: "1 phần (100g)",
     diabetes: {
       glycemicIndex: 50,
       glycemicLoad: 12,
@@ -11507,12 +8549,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'bo', weight: 100, description: '1 pháº§n' },
+      { unit: 'bo', weight: 100, description: '1 phần' },
     ],
   },
   {
     id: "banh-canh",
-    name: "Bánh Canh",
+    name: "Bánh canh",
     nameEn: "Banh canh noodles",
     category: "rice-noodles",
     servingSize: 100,
@@ -11532,21 +8574,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.3,
     vitaminB1: 0.01,
     vitaminB2: 0.01,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.04,
-    vitaminB7: 0, // Biotin
     folate: 4,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.01, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 0.8, // mg
-    selenium: 2.0, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.15, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 pháº§n (100g)",
+    commonServing: "1 phần (100g)",
     diabetes: {
       glycemicIndex: 48,
       glycemicLoad: 12,
@@ -11561,12 +8593,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'bo', weight: 100, description: '1 pháº§n' },
+      { unit: 'bo', weight: 100, description: '1 phần' },
     ],
   },
   {
     id: "khoai-lang-tim",
-    name: "Khoai Lang Tím",
+    name: "Khoai lang tím",
     nameEn: "Purple sweet potato",
     category: "vegetables",
     servingSize: 100,
@@ -11588,22 +8620,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 2.4,
     vitaminB1: 0.08,
     vitaminB2: 0.06,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.8, // Pantothenic acid - cao trong khoai lang
     vitaminB6: 0.21,
-    vitaminB7: 0, // Biotin
     folate: 11,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 1.8, // Phylloquinone
-    choline: 12.2, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.26, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ vá»«a (150g)",
-    notes: "GiÃ u anthocyanin, tá»‘t cho tim máº¡ch",
+    commonServing: "1 củ vừa (150g)",
+    notes: "Giàu anthocyanin, tốt cho tim mạch",
     diabetes: {
       glycemicIndex: 54,
       glycemicLoad: 16,
@@ -11618,13 +8640,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 150, description: '1 cá»§ vá»«a' },
+      { unit: 'cai', weight: 150, description: '1 củ vừa' },
     ],
   },
   {
     id: "khoai-mon",
-    code: "40019",
-    name: "Khoai Môn",
+    name: "Khoai môn",
     nameEn: "Taro",
     category: "vegetables",
     servingSize: 100,
@@ -11646,22 +8667,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 4.5,
     vitaminB1: 0.10,
     vitaminB2: 0.03,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.28,
-    vitaminB7: 0, // Biotin
     folate: 22,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 1.0, // Phylloquinone
-    choline: 9.2, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.17, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ vá»«a (150g)",
-    notes: "Kali ráº¥t cao - cáº©n tháº­n vá»›i bá»‡nh tháº­n",
+    commonServing: "1 củ vừa (150g)",
+    notes: "Kali rất cao - cẩn thận với bệnh thận",
     diabetes: {
       glycemicIndex: 58,
       glycemicLoad: 23,
@@ -11676,12 +8687,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 150, description: '1 cá»§ vá»«a' },
+      { unit: 'cai', weight: 150, description: '1 củ vừa' },
     ],
   },
   {
     id: "khoai-so",
-    name: "Khoai Sọ",
+    name: "Khoai sọ",
     nameEn: "Taro root",
     category: "vegetables",
     servingSize: 100,
@@ -11703,21 +8714,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 3.0,
     vitaminB1: 0.09,
     vitaminB2: 0.02,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.25,
-    vitaminB7: 0, // Biotin
     folate: 19,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 1.0, // Phylloquinone
-    choline: 8.5, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ vá»«a (150g)",
+    commonServing: "1 củ vừa (150g)",
     notes: "Kali cao",
     diabetes: {
       glycemicIndex: 56,
@@ -11733,13 +8734,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 150, description: '1 cá»§ vá»«a' },
+      { unit: 'cai', weight: 150, description: '1 củ vừa' },
     ],
   },
   {
     id: "san",
-    code: "50018",
-    name: "Sắn (Củ Mì)",
+    name: "Sắn (củ mì)",
     nameEn: "Cassava",
     category: "vegetables",
     servingSize: 100,
@@ -11761,22 +8761,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 20.6,
     vitaminB1: 0.09,
     vitaminB2: 0.05,
-    vitaminB3: 0.8, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.09,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 27,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.19, // Tocopherol
-    vitaminK: 1.9, // Phylloquinone
-    choline: 23.7, // mg
-    selenium: 0.7, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.4, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ vá»«a (200g)",
-    notes: "Nhiá»u tinh bá»™t, cáº§n náº¥u chÃ­n ká»¹",
+    commonServing: "1 củ vừa (200g)",
+    notes: "Nhiều tinh bột, cần nấu chín kỹ",
     diabetes: {
       glycemicIndex: 46,
       glycemicLoad: 35,
@@ -11791,12 +8781,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 200, description: '1 cá»§ vá»«a' },
+      { unit: 'cai', weight: 200, description: '1 củ vừa' },
     ],
   },
   {
     id: "banh-mi-trang",
-    name: "Bánh Mì Trắng",
+    name: "Bánh mì trắng",
     nameEn: "White bread",
     category: "rice-noodles",
     servingSize: 100,
@@ -11815,21 +8805,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.8,
     vitaminB1: 0.5,
     vitaminB2: 0.3,
-    vitaminB3: 3.0, // Niacin - cao tá»« bá»™t mÃ¬
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
     folate: 100,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 8.0, // mg
-    selenium: 20.0, // Âµg - cao tá»« bá»™t mÃ¬
-    copper: 0.2, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 á»• (50g)",
+    commonServing: "1 ổ (50g)",
     notes: "GI cao, natri cao",
     diabetes: {
       glycemicIndex: 75,
@@ -11845,12 +8825,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.8,
     },
     vietnameseUnits: [
-      { unit: 'o', weight: 50, description: '1 á»•' },
+      { unit: 'o', weight: 50, description: '1 ổ' },
     ],
   },
   {
     id: "banh-mi-nguyen-cam",
-    name: "Bánh Mì Nguyên Cám",
+    name: "Bánh mì nguyên cám",
     nameEn: "Whole wheat bread",
     category: "rice-noodles",
     servingSize: 100,
@@ -11869,22 +8849,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 2.0,
     vitaminB1: 0.4,
     vitaminB2: 0.3,
-    vitaminB3: 4.0, // Niacin - ráº¥t cao tá»« bá»™t mÃ¬ nguyÃªn cÃ¡m
-    vitaminB5: 0.6, // Pantothenic acid - cao tá»« bá»™t mÃ¬ nguyÃªn cÃ¡m
     vitaminB6: 0.3,
-    vitaminB7: 0, // Biotin
     folate: 50,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 1.4, // Phylloquinone
-    choline: 26.0, // mg - cao tá»« bá»™t mÃ¬ nguyÃªn cÃ¡m
-    selenium: 35.0, // Âµg - ráº¥t cao tá»« bá»™t mÃ¬ nguyÃªn cÃ¡m
-    copper: 0.3, // mg
-    manganese: 2.0, // mg - ráº¥t cao tá»« bá»™t mÃ¬ nguyÃªn cÃ¡m
-    iodine: 0, // Âµg
-    commonServing: "1 á»• (50g)",
-    notes: "Tá»‘t hÆ¡n bÃ¡nh mÃ¬ tráº¯ng - nhiá»u xÆ¡",
+    commonServing: "1 ổ (50g)",
+    notes: "Tốt hơn bánh mì trắng - nhiều xơ",
     diabetes: {
       glycemicIndex: 53,
       glycemicLoad: 11,
@@ -11899,14 +8869,13 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.6,
     },
     vietnameseUnits: [
-      { unit: 'o', weight: 50, description: '1 á»•' },
+      { unit: 'o', weight: 50, description: '1 ổ' },
     ],
   },
-  // ========== Bá»” SUNG THá»°C PHáº¨M Má»šI - NHÃ“M THá»ŠT & Háº¢I Sáº¢N ==========
+  // ========== BỔ SUNG THỰC PHẨM MỚI - NHÓM THỊT & HẢI SẢN ==========
   {
     id: "thit-ba-chi",
-    code: "20014",
-    name: "Tht Ba Ch",
+    name: "Thịt ba chỉ",
     nameEn: "Pork belly",
     category: "meat",
     servingSize: 100,
@@ -11925,22 +8894,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.5,
     vitaminB1: 0.4,
     vitaminB2: 0.2,
-    vitaminB3: 4.5, // Niacin - cao trong thá»‹t heo
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.3,
-    vitaminB7: 4.0, // Biotin (Âµg)
     folate: 5,
     vitaminB12: 0.5,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 60.0, // mg - cao trong thá»‹t heo
-    selenium: 20.0, // Âµg - cao trong thá»‹t heo
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (50g)",
-    notes: "Nhiá»u cháº¥t bÃ©o bÃ£o hÃ²a - háº¡n cháº¿ cho tim máº¡ch",
+    commonServing: "1 miếng (50g)",
+    notes: "Nhiều chất béo bão hòa - hạn chế cho tim mạch",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -11954,12 +8913,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 20,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 50, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 50, description: '1 miếng' },
     ],
   },
   {
     id: "thit-nac-vai",
-    name: "Tht Nạc Vai",
+    name: "Thịt nạc vai",
     nameEn: "Pork shoulder",
     category: "meat",
     servingSize: 100,
@@ -11978,21 +8937,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 2.0,
     vitaminB1: 0.6,
     vitaminB2: 0.3,
-    vitaminB3: 5.5, // Niacin - cao trong thá»‹t heo
-    vitaminB5: 0.8, // Pantothenic acid
     vitaminB6: 0.4,
-    vitaminB7: 5.0, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 0.6,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 70.0, // mg - cao trong thá»‹t heo
-    selenium: 22.0, // Âµg - cao trong thá»‹t heo
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (100g)",
+    commonServing: "1 miếng (100g)",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -12006,12 +8955,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 6.5,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 100, description: '1 miếng' },
     ],
   },
   {
     id: "suon-non",
-    name: "Sườn Non",
+    name: "Sườn non",
     nameEn: "Pork ribs",
     category: "meat",
     servingSize: 100,
@@ -12030,21 +8979,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.8,
     vitaminB1: 0.5,
     vitaminB2: 0.25,
-    vitaminB3: 5.0, // Niacin - cao trong thá»‹t heo
-    vitaminB5: 0.7, // Pantothenic acid
     vitaminB6: 0.35,
-    vitaminB7: 4.5, // Biotin (Âµg)
     folate: 6,
     vitaminB12: 0.5,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 65.0, // mg - cao trong thá»‹t heo
-    selenium: 21.0, // Âµg - cao trong thá»‹t heo
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (80g)",
+    commonServing: "1 miếng (80g)",
     gout: {
       purine: 145,
       purineLevel: 'high',
@@ -12058,12 +8997,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 7,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 80, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 80, description: '1 miếng' },
     ],
   },
   {
     id: "chan-gio",
-    name: "Chân Giò",
+    name: "Chân giò",
     nameEn: "Pork leg",
     category: "meat",
     servingSize: 100,
@@ -12082,21 +9021,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.9,
     vitaminB1: 0.55,
     vitaminB2: 0.28,
-    vitaminB3: 5.2, // Niacin - cao trong thá»‹t heo
-    vitaminB5: 0.75, // Pantothenic acid
     vitaminB6: 0.38,
-    vitaminB7: 5.0, // Biotin (Âµg)
     folate: 7,
     vitaminB12: 0.55,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 72.0, // mg - cao trong thá»‹t heo
-    selenium: 23.0, // Âµg - cao trong thá»‹t heo
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (100g)",
+    commonServing: "1 miếng (100g)",
     gout: {
       purine: 148,
       purineLevel: 'high',
@@ -12110,12 +9039,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 5.5,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 100, description: '1 miếng' },
     ],
   },
   {
     id: "thit-bo-nac",
-    name: "Tht Bò Nạc",
+    name: "Thịt bò nạc",
     nameEn: "Lean beef",
     category: "meat",
     servingSize: 100,
@@ -12134,22 +9063,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 4.5,
     vitaminB1: 0.08,
     vitaminB2: 0.2,
-    vitaminB3: 4.5, // Niacin - cao trong thá»‹t bÃ²
-    vitaminB5: 0.6, // Pantothenic acid
     vitaminB6: 0.4,
-    vitaminB7: 3.0, // Biotin (Âµg)
     folate: 9,
-    vitaminB12: 2.0, // Âµg - cao trong thá»‹t bÃ²
+    vitaminB12: 2.0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 1.2, // Phylloquinone
-    choline: 82.0, // mg - cao trong thá»‹t bÃ²
-    selenium: 14.2, // Âµg - cao trong thá»‹t bÃ²
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (100g)",
-    notes: "GiÃ u sáº¯t vÃ  káº½m",
+    commonServing: "1 miếng (100g)",
+    notes: "Giàu sắt và kẽm",
     gout: {
       purine: 160,
       purineLevel: 'high',
@@ -12163,12 +9082,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 6,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 100, description: '1 miếng' },
     ],
   },
   {
     id: "thit-bo-gan",
-    name: "Tht Bò Gân",
+    name: "Thịt bò gân",
     nameEn: "Beef tendon",
     category: "meat",
     servingSize: 100,
@@ -12187,22 +9106,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 2.5,
     vitaminB1: 0.05,
     vitaminB2: 0.15,
-    vitaminB3: 3.5, // Niacin - tá»« thá»‹t bÃ²
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.2,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 5,
-    vitaminB12: 1.5, // Âµg - cao tá»« thá»‹t bÃ²
+    vitaminB12: 1.5,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 50.0, // mg - tá»« thá»‹t bÃ²
-    selenium: 12.0, // Âµg - tá»« thá»‹t bÃ²
-    copper: 0.08, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (80g)",
-    notes: "Nhiá»u collagen",
+    commonServing: "1 miếng (80g)",
+    notes: "Nhiều collagen",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -12216,12 +9125,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 1,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 80, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 80, description: '1 miếng' },
     ],
   },
   {
     id: "bap-bo",
-    name: "Bắp Bò",
+    name: "Bắp bò",
     nameEn: "Beef shank",
     category: "meat",
     servingSize: 100,
@@ -12240,21 +9149,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 4.8,
     vitaminB1: 0.09,
     vitaminB2: 0.22,
-    vitaminB3: 4.8, // Niacin - cao trong thá»‹t bÃ²
-    vitaminB5: 0.7, // Pantothenic acid
     vitaminB6: 0.42,
-    vitaminB7: 3.2, // Biotin (Âµg)
     folate: 10,
-    vitaminB12: 2.2, // Âµg - ráº¥t cao trong thá»‹t bÃ²
+    vitaminB12: 2.2,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 1.2, // Phylloquinone
-    choline: 85.0, // mg - cao trong thá»‹t bÃ²
-    selenium: 15.0, // Âµg - cao trong thá»‹t bÃ²
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (100g)",
+    commonServing: "1 miếng (100g)",
     gout: {
       purine: 155,
       purineLevel: 'high',
@@ -12268,13 +9167,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 3,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 100, description: '1 miếng' },
     ],
   },
   {
     id: "uc-ga",
-    code: "20094",
-    name: "Ức G",
+    name: "Ức gà",
     nameEn: "Chicken breast",
     category: "meat",
     servingSize: 100,
@@ -12293,22 +9191,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.9,
     vitaminB1: 0.07,
     vitaminB2: 0.11,
-    vitaminB3: 8.0, // Niacin - ráº¥t cao trong á»©c gÃ 
-    vitaminB5: 1.0, // Pantothenic acid - cao trong á»©c gÃ 
-    vitaminB6: 0.64, // mg - cao trong á»©c gÃ 
-    vitaminB7: 4.0, // Biotin (Âµg)
+    vitaminB6: 0.64,
     folate: 4,
     vitaminB12: 0.3,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 65.0, // mg - cao trong á»©c gÃ 
-    selenium: 18.0, // Âµg - cao trong á»©c gÃ 
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (100g)",
-    notes: "Nhiá»u Ä‘áº¡m, Ã­t bÃ©o - tá»‘t cho tim máº¡ch",
+    commonServing: "1 miếng (100g)",
+    notes: "Nhiều đạm, ít béo - tốt cho tim mạch",
     gout: {
       purine: 140,
       purineLevel: 'medium',
@@ -12322,13 +9210,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 1,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 100, description: '1 miếng' },
     ],
   },
   {
     id: "dui-ga",
-    code: "20095",
-    name: "Đùi G",
+    name: "Đùi gà",
     nameEn: "Chicken thigh",
     category: "meat",
     servingSize: 100,
@@ -12347,21 +9234,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.9,
     vitaminB1: 0.06,
     vitaminB2: 0.12,
-    vitaminB3: 7.5, // Niacin - cao trong Ä‘Ã¹i gÃ 
-    vitaminB5: 0.9, // Pantothenic acid
     vitaminB6: 0.51,
-    vitaminB7: 3.5, // Biotin (Âµg)
     folate: 5,
     vitaminB12: 0.4,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 60.0, // mg - cao trong Ä‘Ã¹i gÃ 
-    selenium: 16.0, // Âµg - cao trong Ä‘Ã¹i gÃ 
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 Ä‘Ã¹i (80g)",
+    commonServing: "1 đùi (80g)",
     gout: {
       purine: 138,
       purineLevel: 'medium',
@@ -12375,132 +9252,19 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 3.2,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 80, description: '1 Ä‘Ã¹i' },
-    ],
-  },
-  {
-    id: "dui-toi-ga",
-    code: "20096",
-    name: "Đùi Tỏi G",
-    nameEn: "Chicken drumstick",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 210,
-    protein: 24.0,
-    carbs: 0.0,
-    fat: 11.5,
-    fiber: 0.0,
-    water: 62.0,
-    sodium: 95,
-    potassium: 235,
-    calcium: 12,
-    iron: 1.3,
-    phosphorus: 190,
-    magnesium: 22,
-    zinc: 2.0,
-    cholesterol: 120,
-    vitaminB1: 0.07,
-    vitaminB2: 0.13,
-    vitaminB3: 7.0, // Niacin - cao trong Ä‘Ã¹i gÃ 
-    vitaminB5: 0.9, // Pantothenic acid
-    vitaminB6: 0.48,
-    vitaminB7: 3.5, // Biotin (Âµg)
-    folate: 5,
-    vitaminB12: 0.4, // Âµg
-    vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 58.0, // mg
-    selenium: 15.0, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 chiáº¿c (~90â€“110g thá»‹t + da)",
-    notes: "Pháº§n cáº³ng Ä‘Ã¹i (drumstick); phá»• biáº¿n khi chiÃªn/nÆ°á»›ng.",
-    gout: {
-      purine: 138,
-      purineLevel: "medium",
-    },
-    kidney: {
-      potassium: 235,
-      phosphorus: 190,
-    },
-    cardiovascular: {
-      cholesterol: 120,
-      saturatedFat: 3.3,
-    },
-    vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 chiáº¿c Ä‘Ã¹i tá»i' },
-    ],
-  },
-  {
-    id: "dui-goc-tu-ga",
-    code: "20097",
-    name: "Đùi Góc Tư G",
-    nameEn: "Chicken leg quarter",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 215,
-    protein: 23.0,
-    carbs: 0.0,
-    fat: 12.5,
-    fiber: 0.0,
-    water: 61.0,
-    sodium: 95,
-    potassium: 235,
-    calcium: 12,
-    iron: 1.3,
-    phosphorus: 190,
-    magnesium: 22,
-    zinc: 2.0,
-    cholesterol: 125,
-    vitaminB1: 0.07,
-    vitaminB2: 0.13,
-    vitaminB3: 7.2, // Niacin - cao trong Ä‘Ã¹i gÃ 
-    vitaminB5: 0.9, // Pantothenic acid
-    vitaminB6: 0.49,
-    vitaminB7: 3.5, // Biotin (Âµg)
-    folate: 5,
-    vitaminB12: 0.4, // Âµg
-    vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 59.0, // mg
-    selenium: 15.0, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 gÃ³c tÆ° (~200â€“250g cáº£ xÆ°Æ¡ng/da)",
-    notes: "Káº¿t há»£p Ä‘Ã¹i + tá»i; dÃ¹ng trong cÆ¡m gÃ /Ä‘Ã¹i gÃ  nÆ°á»›ng.",
-    gout: {
-      purine: 138,
-      purineLevel: "medium",
-    },
-    kidney: {
-      potassium: 235,
-      phosphorus: 190,
-    },
-    cardiovascular: {
-      cholesterol: 125,
-      saturatedFat: 3.4,
-    },
-    vietnameseUnits: [
-      { unit: 'cai', weight: 225, description: '1 gÃ³c tÆ°' },
+      { unit: 'cai', weight: 80, description: '1 đùi' },
     ],
   },
   {
     id: "canh-ga",
-    code: "20098",
-    name: "Cánh G",
-    nameEn: "Chicken wing (whole)",
+    name: "Cánh gà",
+    nameEn: "Chicken wing",
     category: "meat",
     servingSize: 100,
     servingUnit: "g",
     calories: 203,
-    protein: 20.0,
-    carbs: 0.0,
+    protein: 18.3,
+    carbs: 0,
     fat: 14.0,
     fiber: 0,
     sodium: 82,
@@ -12512,21 +9276,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.5,
     vitaminB1: 0.05,
     vitaminB2: 0.1,
-    vitaminB3: 6.5, // Niacin - cao trong cÃ¡nh gÃ 
-    vitaminB5: 0.8, // Pantothenic acid
     vitaminB6: 0.45,
-    vitaminB7: 3.0, // Biotin (Âµg)
     folate: 4,
     vitaminB12: 0.35,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 55.0, // mg - cao trong cÃ¡nh gÃ 
-    selenium: 15.0, // Âµg - cao trong cÃ¡nh gÃ 
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cÃ¡nh (50g)",
+    commonServing: "1 cánh (50g)",
     gout: {
       purine: 135,
       purineLevel: 'medium',
@@ -12540,518 +9294,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 4.5,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 50, description: '1 cÃ¡nh' },
-    ],
-  },
-  {
-    id: "canh-giua-ga",
-    code: "20099",
-    name: "Cánh Giữa G",
-    nameEn: "Chicken wingette",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 210,
-    protein: 21.0,
-    carbs: 0.0,
-    fat: 14.0,
-    fiber: 0.0,
-    water: 63.0,
-    sodium: 90,
-    potassium: 210,
-    calcium: 12,
-    iron: 1.2,
-    phosphorus: 185,
-    magnesium: 21,
-    zinc: 1.9,
-    cholesterol: 115,
-    vitaminB1: 0.05,
-    vitaminB2: 0.1,
-    vitaminB3: 6.8, // Niacin
-    vitaminB5: 0.8, // Pantothenic acid
-    vitaminB6: 0.46,
-    vitaminB7: 3.0, // Biotin (Âµg)
-    folate: 4,
-    vitaminB12: 0.35, // Âµg
-    vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 56.0, // mg
-    selenium: 15.0, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "3â€“4 miáº¿ng cÃ¡nh giá»¯a (~100g)",
-    notes: "Pháº§n giá»¯a cÃ¡nh; tá»· lá»‡ da/má»¡ cao.",
-    gout: {
-      purine: 135,
-      purineLevel: "medium",
-    },
-    kidney: {
-      potassium: 210,
-      phosphorus: 185,
-    },
-    cardiovascular: {
-      cholesterol: 115,
-      saturatedFat: 4.6,
-    },
-    vietnameseUnits: [
-      { unit: 'mieng', weight: 25, description: '1 miáº¿ng cÃ¡nh giá»¯a' },
-    ],
-  },
-  {
-    id: "canh-dau-ga",
-    code: "20100",
-    name: "Cánh Ầu G",
-    nameEn: "Chicken drumette",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 210,
-    protein: 22.0,
-    carbs: 0.0,
-    fat: 13.0,
-    fiber: 0.0,
-    water: 63.0,
-    sodium: 90,
-    potassium: 215,
-    calcium: 12,
-    iron: 1.2,
-    phosphorus: 185,
-    magnesium: 21,
-    zinc: 1.9,
-    cholesterol: 115,
-    vitaminB1: 0.05,
-    vitaminB2: 0.1,
-    vitaminB3: 7.0, // Niacin
-    vitaminB5: 0.8, // Pantothenic acid
-    vitaminB6: 0.47,
-    vitaminB7: 3.0, // Biotin (Âµg)
-    folate: 4,
-    vitaminB12: 0.35, // Âµg
-    vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 57.0, // mg
-    selenium: 15.0, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "3â€“4 drumettes (~100g)",
-    notes: "Äáº§u cÃ¡nh, gáº§n thÃ¢n; nhiá»u thá»‹t hÆ¡n cÃ¡nh giá»¯a.",
-    gout: {
-      purine: 135,
-      purineLevel: "medium",
-    },
-    kidney: {
-      potassium: 215,
-      phosphorus: 185,
-    },
-    cardiovascular: {
-      cholesterol: 115,
-      saturatedFat: 4.3,
-    },
-    vietnameseUnits: [
-      { unit: 'cai', weight: 30, description: '1 drumette' },
-    ],
-  },
-  {
-    id: "co-ga",
-    code: "20101",
-    name: "C G",
-    nameEn: "Chicken neck",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 220,
-    protein: 18.0,
-    carbs: 0.0,
-    fat: 16.0,
-    fiber: 0.0,
-    water: 62.0,
-    sodium: 90,
-    potassium: 210,
-    calcium: 40,
-    iron: 2.0,
-    phosphorus: 190,
-    magnesium: 22,
-    zinc: 2.0,
-    cholesterol: 130,
-    vitaminB1: 0.06,
-    vitaminB2: 0.12,
-    vitaminB3: 6.5, // Niacin
-    vitaminB5: 0.8, // Pantothenic acid
-    vitaminB6: 0.44,
-    vitaminB7: 3.0, // Biotin (Âµg)
-    folate: 4,
-    vitaminB12: 0.35, // Âµg
-    vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 55.0, // mg
-    selenium: 15.0, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "2â€“3 cá»• nhá» (~100g thá»‹t + da)",
-    notes: "Nhiá»u da/xÆ°Æ¡ng; hay dÃ¹ng náº¥u nÆ°á»›c dÃ¹ng.",
-    gout: {
-      purine: 135,
-      purineLevel: "medium",
-    },
-    kidney: {
-      potassium: 210,
-      phosphorus: 190,
-    },
-    cardiovascular: {
-      cholesterol: 130,
-      saturatedFat: 4.5,
-    },
-    vietnameseUnits: [
-      { unit: 'cai', weight: 35, description: '1 cá»• gÃ ' },
-    ],
-  },
-  {
-    id: "gan-ga",
-    code: "20104",
-    name: "Gan G",
-    nameEn: "Chicken liver",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 167,
-    protein: 24.0,
-    carbs: 1.0,
-    fat: 7.0,
-    fiber: 0.0,
-    water: 70.0,
-    sodium: 82,
-    potassium: 230,
-    calcium: 12,
-    iron: 9.0,
-    phosphorus: 297,
-    magnesium: 24,
-    zinc: 3.0,
-    vitaminA: 4000, // IU - ráº¥t cao trong gan
-    cholesterol: 345,
-    vitaminB1: 0.30,
-    vitaminB2: 1.80,
-    vitaminB3: 10.0, // Niacin - ráº¥t cao trong gan
-    vitaminB5: 6.0, // Pantothenic acid - ráº¥t cao
-    vitaminB6: 0.85,
-    vitaminB7: 35.0, // Biotin (Âµg) - ráº¥t cao
-    folate: 588, // Âµg - ráº¥t cao
-    vitaminB12: 16.6, // Âµg - ráº¥t cao
-    vitaminD: 0,
-    vitaminE: 0.7, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 290.0, // mg - ráº¥t cao
-    selenium: 55.0, // Âµg - ráº¥t cao
-    copper: 0.4, // mg - cao
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g",
-    notes: "Ráº¥t giÃ u vitamin A, sáº¯t, folate, B12 vÃ  cholesterol; ngÆ°á»i gÃºt/tim máº¡ch cáº§n háº¡n cháº¿.",
-    gout: {
-      purine: 300,
-      purineLevel: "high",
-    },
-    kidney: {
-      potassium: 230,
-      phosphorus: 297,
-    },
-    cardiovascular: {
-      cholesterol: 345,
-      saturatedFat: 2.2,
-    },
-    vietnameseUnits: [
-      { unit: 'mieng', weight: 50, description: '1 miáº¿ng gan' },
-    ],
-  },
-  {
-    id: "me-ga",
-    code: "20105",
-    name: "Mề G",
-    nameEn: "Chicken gizzard",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 155,
-    protein: 18.0,
-    carbs: 0.0,
-    fat: 8.0,
-    fiber: 0.0,
-    water: 72.0,
-    sodium: 69,
-    potassium: 237,
-    calcium: 11,
-    iron: 2.5,
-    phosphorus: 173,
-    magnesium: 25,
-    zinc: 2.4,
-    cholesterol: 215,
-    vitaminB1: 0.05,
-    vitaminB2: 0.15,
-    vitaminB3: 3.5, // Niacin
-    vitaminB5: 0.7, // Pantothenic acid
-    vitaminB6: 0.20,
-    vitaminB7: 2.0, // Biotin (Âµg)
-    folate: 5,
-    vitaminB12: 0.5, // Âµg
-    vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 50.0, // mg
-    selenium: 12.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g",
-    notes: "GiÃ u protein, cholesterol vá»«a; hay dÃ¹ng xÃ o/háº§m.",
-    gout: {
-      purine: 150,
-      purineLevel: "high",
-    },
-    kidney: {
-      potassium: 237,
-      phosphorus: 173,
-    },
-    cardiovascular: {
-      cholesterol: 215,
-      saturatedFat: 2.3,
-    },
-    vietnameseUnits: [
-      { unit: 'cai', weight: 50, description: '1 má» gÃ ' },
-    ],
-  },
-  {
-    id: "tim-ga",
-    code: "20106",
-    name: "Tim G",
-    nameEn: "Chicken heart",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 185,
-    protein: 26.0,
-    carbs: 0.0,
-    fat: 8.0,
-    fiber: 0.0,
-    water: 70.0,
-    sodium: 90,
-    potassium: 260,
-    calcium: 14,
-    iron: 6.0,
-    phosphorus: 240,
-    magnesium: 24,
-    zinc: 3.5,
-    cholesterol: 242,
-    vitaminB1: 0.15,
-    vitaminB2: 0.50,
-    vitaminB3: 8.0, // Niacin - cao trong tim
-    vitaminB5: 2.0, // Pantothenic acid - cao
-    vitaminB6: 0.40,
-    vitaminB7: 6.0, // Biotin (Âµg) - cao
-    folate: 20,
-    vitaminB12: 7.3, // Âµg - ráº¥t cao trong tim
-    vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 200.0, // mg - ráº¥t cao trong tim
-    selenium: 30.0, // Âµg - cao
-    copper: 0.2, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g (nhiá»u trÃ¡i tim nhá»)",
-    notes: "Ná»™i táº¡ng giÃ u sáº¯t, vitamin B12, choline vÃ  cholesterol.",
-    gout: {
-      purine: 200,
-      purineLevel: "high",
-    },
-    kidney: {
-      potassium: 260,
-      phosphorus: 240,
-    },
-    cardiovascular: {
-      cholesterol: 242,
-      saturatedFat: 2.2,
-    },
-    vietnameseUnits: [
-      { unit: 'cai', weight: 10, description: '1 trÃ¡i tim' },
-    ],
-  },
-  {
-    id: "chan-ga",
-    code: "20107",
-    name: "Chân G",
-    nameEn: "Chicken feet",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 215,
-    protein: 19.0,
-    carbs: 0.0,
-    fat: 15.0,
-    fiber: 0.0,
-    water: 65.0,
-    sodium: 85,
-    potassium: 200,
-    calcium: 80,
-    iron: 1.5,
-    phosphorus: 150,
-    magnesium: 20,
-    zinc: 1.8,
-    cholesterol: 100,
-    vitaminB1: 0.05,
-    vitaminB2: 0.10,
-    vitaminB3: 3.0, // Niacin
-    vitaminB5: 0.5, // Pantothenic acid
-    vitaminB6: 0.15,
-    vitaminB7: 1.0, // Biotin (Âµg)
-    folate: 3,
-    vitaminB12: 0.3, // Âµg
-    vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 40.0, // mg
-    selenium: 10.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "2â€“3 chÃ¢n (~100g)",
-    notes: "Nhiá»u collagen, canxi tá»« xÆ°Æ¡ng; hay dÃ¹ng háº§m.",
-    gout: {
-      purine: 150,
-      purineLevel: "high",
-    },
-    kidney: {
-      potassium: 200,
-      phosphorus: 150,
-    },
-    cardiovascular: {
-      cholesterol: 100,
-      saturatedFat: 4.2,
-    },
-    vietnameseUnits: [
-      { unit: 'cai', weight: 35, description: '1 chÃ¢n gÃ ' },
-    ],
-  },
-  {
-    id: "long-ga",
-    code: "20103",
-    name: "Lòng Gà (Ni Tạng)",
-    nameEn: "Chicken offal (mixed)",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 190,
-    protein: 23.0,
-    carbs: 0.0,
-    fat: 10.0,
-    fiber: 0.0,
-    water: 68.0,
-    sodium: 90,
-    potassium: 260,
-    calcium: 16,
-    iron: 8.0,
-    phosphorus: 260,
-    magnesium: 28,
-    zinc: 4.0,
-    cholesterol: 300,
-    vitaminB1: 0.20,
-    vitaminB2: 1.20,
-    vitaminB3: 8.0, // Niacin - cao
-    vitaminB5: 3.0, // Pantothenic acid - cao
-    vitaminB6: 0.50,
-    vitaminB7: 15.0, // Biotin (Âµg) - cao
-    folate: 200,
-    vitaminB12: 8.0, // Âµg - ráº¥t cao
-    vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 180.0, // mg - cao
-    selenium: 35.0, // Âµg - cao
-    copper: 0.3, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "100g",
-    notes: "Bao gá»“m gan/má»/tim/ruá»™t non; ráº¥t giÃ u cholesterol vÃ  purine.",
-    gout: {
-      purine: 300,
-      purineLevel: "high",
-    },
-    kidney: {
-      potassium: 260,
-      phosphorus: 260,
-    },
-    cardiovascular: {
-      cholesterol: 300,
-      saturatedFat: 3.0,
-    },
-    vietnameseUnits: [
-      { unit: 'dia', weight: 100, description: '1 pháº§n lÃ²ng gÃ ' },
-    ],
-  },
-  {
-    id: "dau-ga",
-    code: "20100",
-    name: "Đầu G",
-    nameEn: "Chicken head",
-    category: "meat",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 200,
-    protein: 16.0,
-    carbs: 0.0,
-    fat: 15.0,
-    fiber: 0.0,
-    water: 65.0,
-    sodium: 85,
-    potassium: 200,
-    calcium: 50,
-    iron: 2.0,
-    phosphorus: 150,
-    magnesium: 20,
-    zinc: 2.0,
-    cholesterol: 120,
-    vitaminB1: 0.05,
-    vitaminB2: 0.10,
-    vitaminB3: 3.5, // Niacin
-    vitaminB5: 0.6, // Pantothenic acid
-    vitaminB6: 0.20,
-    vitaminB7: 2.0, // Biotin (Âµg)
-    folate: 5,
-    vitaminB12: 0.5, // Âµg
-    vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 50.0, // mg
-    selenium: 12.0, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1â€“2 Ä‘áº§u (~100g)",
-    notes: "Nhiá»u xÆ°Æ¡ng, Ã­t thá»‹t; hay dÃ¹ng náº¥u nÆ°á»›c dÃ¹ng.",
-    gout: {
-      purine: 150,
-      purineLevel: "high",
-    },
-    kidney: {
-      potassium: 200,
-      phosphorus: 150,
-    },
-    cardiovascular: {
-      cholesterol: 120,
-      saturatedFat: 4.3,
-    },
-    vietnameseUnits: [
-      { unit: 'cai', weight: 50, description: '1 Ä‘áº§u gÃ ' },
+      { unit: 'cai', weight: 50, description: '1 cánh' },
     ],
   },
   {
     id: "da-ga",
-    code: "20102",
-    name: "Da G",
+    name: "Da gà",
     nameEn: "Chicken skin",
     category: "meat",
     servingSize: 100,
@@ -13075,7 +9323,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminB12: 0.2,
     vitaminD: 0,
     commonServing: "50g",
-    notes: "Ráº¥t nhiá»u cháº¥t bÃ©o bÃ£o hÃ²a - nÃªn trÃ¡nh cho tim máº¡ch",
+    notes: "Rất nhiều chất béo bão hòa - nên tránh cho tim mạch",
     gout: {
       purine: 120,
       purineLevel: 'medium',
@@ -13094,8 +9342,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ca-loc",
-    code: "11044",
-    name: "Cá Lóc",
+    name: "Cá lóc",
     nameEn: "Snakehead fish",
     category: "seafood",
     servingSize: 100,
@@ -13118,8 +9365,8 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 15,
     vitaminB12: 1.5,
     vitaminD: 50,
-    commonServing: "1 khÃºc (150g)",
-    notes: "CÃ¡ nÆ°á»›c ngá»t, Ã­t bÃ©o",
+    commonServing: "1 khúc (150g)",
+    notes: "Cá nước ngọt, ít béo",
     gout: {
       purine: 100,
       purineLevel: 'medium',
@@ -13133,13 +9380,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.5,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 150, description: '1 khÃºc' },
+      { unit: 'mieng', weight: 150, description: '1 khúc' },
     ],
   },
   {
     id: "ca-tram",
-    code: "30014",
-    name: "Cá Trắm",
+    name: "Cá trắm",
     nameEn: "Grass carp",
     category: "seafood",
     servingSize: 100,
@@ -13162,7 +9408,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 12,
     vitaminB12: 1.2,
     vitaminD: 40,
-    commonServing: "1 khÃºc (150g)",
+    commonServing: "1 khúc (150g)",
     gout: {
       purine: 110,
       purineLevel: 'medium',
@@ -13176,13 +9422,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 1.5,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 150, description: '1 khÃºc' },
+      { unit: 'mieng', weight: 150, description: '1 khúc' },
     ],
   },
   {
     id: "ca-ro",
-    code: "30003",
-    name: "Cá Rô",
+    name: "Cá rô",
     nameEn: "Anabas",
     category: "seafood",
     servingSize: 100,
@@ -13205,7 +9450,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 10,
     vitaminB12: 1.0,
     vitaminD: 35,
-    commonServing: "1 con vá»«a (100g)",
+    commonServing: "1 con vừa (100g)",
     gout: {
       purine: 105,
       purineLevel: 'medium',
@@ -13219,13 +9464,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.3,
     },
     vietnameseUnits: [
-      { unit: 'con', weight: 100, description: '1 con vá»«a' },
+      { unit: 'con', weight: 100, description: '1 con vừa' },
     ],
   },
   {
     id: "ca-tra",
-    code: "30014",
-    name: "Cá Tra",
+    name: "Cá tra",
     nameEn: "Pangasius",
     category: "seafood",
     servingSize: 100,
@@ -13248,7 +9492,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 8,
     vitaminB12: 0.8,
     vitaminD: 30,
-    commonServing: "1 khÃºc (150g)",
+    commonServing: "1 khúc (150g)",
     gout: {
       purine: 95,
       purineLevel: 'medium',
@@ -13262,12 +9506,54 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 1.2,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 150, description: '1 khÃºc' },
+      { unit: 'mieng', weight: 150, description: '1 khúc' },
+    ],
+  },
+  {
+    id: "ca-basa",
+    name: "Cá basa",
+    nameEn: "Basa fish",
+    category: "seafood",
+    servingSize: 100,
+    servingUnit: "g",
+    calories: 90,
+    protein: 14.0,
+    carbs: 0,
+    fat: 3.0,
+    fiber: 0,
+    sodium: 40,
+    potassium: 260,
+    calcium: 12,
+    iron: 0.3,
+    phosphorus: 160,
+    magnesium: 20,
+    zinc: 0.4,
+    vitaminB1: 0.02,
+    vitaminB2: 0.05,
+    vitaminB6: 0.18,
+    folate: 7,
+    vitaminB12: 0.7,
+    vitaminD: 25,
+    commonServing: "1 khúc (150g)",
+    gout: {
+      purine: 90,
+      purineLevel: 'medium',
+    },
+    kidney: {
+      potassium: 260,
+      phosphorus: 160,
+    },
+    cardiovascular: {
+      cholesterol: 52,
+      saturatedFat: 1.0,
+    },
+    vietnameseUnits: [
+      { unit: 'mieng', weight: 150, description: '1 khúc' },
     ],
   },
   {
     id: "ca-hoi",
-    name: "CÃ¡ há»“i",
+    name: "Cá hồi",
     nameEn: "Salmon",
     category: "seafood",
     servingSize: 100,
@@ -13286,22 +9572,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.6,
     vitaminB1: 0.23,
     vitaminB2: 0.38,
-    vitaminB3: 7.5, // Niacin - ráº¥t cao trong cÃ¡ há»“i
-    vitaminB5: 1.6, // Pantothenic acid - cao trong cÃ¡ há»“i
-    vitaminB6: 0.82, // mg - ráº¥t cao trong cÃ¡ há»“i
-    vitaminB7: 5.0, // Biotin (Âµg)
-    folate: 25, // Âµg
-    vitaminB12: 3.2, // Âµg - ráº¥t cao trong cÃ¡ há»“i
-    vitaminD: 988, // IU - ráº¥t cao trong cÃ¡ há»“i
-    vitaminE: 1.1, // Tocopherol - cao trong cÃ¡ há»“i
-    vitaminK: 0.1, // Phylloquinone
-    choline: 90, // mg - cao trong cÃ¡ há»“i
-    selenium: 36.5, // Âµg - ráº¥t cao trong cÃ¡ há»“i
-    copper: 0.25, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 khÃºc (150g)",
-    notes: "GiÃ u omega-3, tá»‘t cho tim máº¡ch",
+    vitaminB6: 0.82,
+    folate: 25,
+    vitaminB12: 3.2,
+    vitaminD: 988,
+    commonServing: "1 khúc (150g)",
+    notes: "Giàu omega-3, tốt cho tim mạch",
     gout: {
       purine: 170,
       purineLevel: 'high',
@@ -13315,13 +9591,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 2.5,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 150, description: '1 khÃºc' },
+      { unit: 'mieng', weight: 150, description: '1 khúc' },
     ],
   },
   {
     id: "tom-su",
-    code: "30028",
-    name: "Tôm Sú",
+    name: "Tôm sú",
     nameEn: "Tiger prawn",
     category: "seafood",
     servingSize: 100,
@@ -13340,22 +9615,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.3,
     vitaminB1: 0.02,
     vitaminB2: 0.03,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.4, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 1.0, // Biotin (Âµg)
-    folate: 16, // Âµg
-    vitaminB12: 1.1, // Âµg - cao trong tÃ´m
+    folate: 16,
+    vitaminB12: 1.1,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol - cao trong tÃ´m
-    vitaminK: 0.1, // Phylloquinone
-    choline: 70, // mg - cao trong tÃ´m
-    selenium: 30.0, // Âµg - cao trong tÃ´m
-    copper: 0.2, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 con lá»›n (30g)",
-    notes: "Nhiá»u Ä‘áº¡m, Ã­t bÃ©o",
+    commonServing: "1 con lớn (30g)",
+    notes: "Nhiều đạm, ít béo",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -13369,13 +9634,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'con', weight: 30, description: '1 con lá»›n' },
+      { unit: 'con', weight: 30, description: '1 con lớn' },
     ],
   },
   {
     id: "tom-the",
-    code: "30029",
-    name: "Tôm Thẻ",
+    name: "Tôm thẻ",
     nameEn: "White shrimp",
     category: "seafood",
     servingSize: 100,
@@ -13394,21 +9658,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.0,
     vitaminB1: 0.02,
     vitaminB2: 0.02,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.1,
-    vitaminB7: 1.0, // Biotin (Âµg)
     folate: 12,
     vitaminB12: 0.9,
     vitaminD: 0,
-    vitaminE: 0.9, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 65, // mg
-    selenium: 28.0, // Âµg - cao trong tÃ´m
-    copper: 0.2, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg (tÃ´m nÆ°á»›c ngá»t)
-    commonServing: "10 con vá»«a (100g)",
+    commonServing: "10 con vừa (100g)",
     gout: {
       purine: 145,
       purineLevel: 'high',
@@ -13422,13 +9676,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.2,
     },
     vietnameseUnits: [
-      { unit: 'con', weight: 10, description: '10 con vá»«a' },
+      { unit: 'con', weight: 10, description: '10 con vừa' },
     ],
   },
   {
     id: "cua-bien",
-    code: "30012",
-    name: "Cua Bin",
+    name: "Cua biển",
     nameEn: "Sea crab",
     category: "seafood",
     servingSize: 100,
@@ -13447,22 +9700,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 3.8,
     vitaminB1: 0.08,
     vitaminB2: 0.3,
-    vitaminB3: 2.5, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.2,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 51,
     vitaminB12: 3.3,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 80, // mg - cao trong cua
-    selenium: 37.0, // Âµg - ráº¥t cao trong cua
-    copper: 0.6, // mg - cao trong cua
-    manganese: 0.1, // mg
-    iodine: 50, // Âµg - cao trong háº£i sáº£n
-    commonServing: "1 con vá»«a (200g)",
-    notes: "Natri cao - cáº©n tháº­n vá»›i THA",
+    commonServing: "1 con vừa (200g)",
+    notes: "Natri cao - cẩn thận với THA",
     gout: {
       purine: 150,
       purineLevel: 'high',
@@ -13476,13 +9719,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.3,
     },
     vietnameseUnits: [
-      { unit: 'con', weight: 200, description: '1 con vá»«a' },
+      { unit: 'con', weight: 200, description: '1 con vừa' },
     ],
   },
   {
     id: "cua-dong",
-    code: "30031",
-    name: "Cua Ng",
+    name: "Cua đồng",
     nameEn: "Freshwater crab",
     category: "seafood",
     servingSize: 100,
@@ -13501,22 +9743,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 2.5,
     vitaminB1: 0.06,
     vitaminB2: 0.25,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 45,
     vitaminB12: 2.8,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 75, // mg
-    selenium: 32.0, // Âµg - cao trong cua
-    copper: 0.5, // mg - cao trong cua
-    manganese: 0.1, // mg
-    iodine: 5, // Âµg (cua nÆ°á»›c ngá»t - tháº¥p)
     commonServing: "5-6 con (100g)",
-    notes: "Nhiá»u canxi",
+    notes: "Nhiều canxi",
     gout: {
       purine: 140,
       purineLevel: 'high',
@@ -13535,7 +9767,6 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "ghe",
-    code: "30032",
     name: "Ghẹ",
     nameEn: "Blue crab",
     category: "seafood",
@@ -13555,20 +9786,10 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 3.2,
     vitaminB1: 0.07,
     vitaminB2: 0.28,
-    vitaminB3: 2.2, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.19,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 48,
     vitaminB12: 3.1,
     vitaminD: 0,
-    vitaminE: 0.4, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 75, // mg
-    selenium: 35.0, // Âµg - cao trong gháº¹
-    copper: 0.5, // mg - cao trong gháº¹
-    manganese: 0.1, // mg
-    iodine: 48, // Âµg - cao trong háº£i sáº£n
     commonServing: "1 con (150g)",
     gout: {
       purine: 148,
@@ -13588,7 +9809,7 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
   },
   {
     id: "gan-lon",
-    name: "Gan Lợn",
+    name: "Gan lợn",
     nameEn: "Pork liver",
     category: "meat",
     servingSize: 100,
@@ -13609,22 +9830,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 23,
     vitaminB1: 0.26,
     vitaminB2: 2.1,
-    vitaminB3: 13.0, // Niacin - ráº¥t cao trong gan
-    vitaminB5: 6.0, // Pantothenic acid - ráº¥t cao trong gan
     vitaminB6: 0.52,
-    vitaminB7: 35.0, // Biotin (Âµg) - ráº¥t cao trong gan
     folate: 163,
     vitaminB12: 26,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 3.0, // Phylloquinone
-    choline: 330, // mg - ráº¥t cao trong gan
-    selenium: 40.0, // Âµg - ráº¥t cao trong gan
-    copper: 0.6, // mg - cao trong gan
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (50g)",
-    notes: "Ráº¥t nhiá»u sáº¯t, vitamin A - nhÆ°ng purin ráº¥t cao, trÃ¡nh cho bá»‡nh gÃºt",
+    commonServing: "1 miếng (50g)",
+    notes: "Rất nhiều sắt, vitamin A - nhưng purin rất cao, tránh cho bệnh gút",
     gout: {
       purine: 300,
       purineLevel: 'very-high',
@@ -13638,12 +9849,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 1.2,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 50, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 50, description: '1 miếng' },
     ],
   },
   {
     id: "than-lon",
-    name: "Thận Lợn",
+    name: "Thận lợn",
     nameEn: "Pork kidney",
     category: "meat",
     servingSize: 100,
@@ -13664,22 +9875,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 10,
     vitaminB1: 0.3,
     vitaminB2: 1.8,
-    vitaminB3: 8.0, // Niacin - cao trong tháº­n
-    vitaminB5: 3.0, // Pantothenic acid - cao trong tháº­n
     vitaminB6: 0.4,
-    vitaminB7: 25.0, // Biotin (Âµg) - cao trong tháº­n
     folate: 50,
     vitaminB12: 15,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 250, // mg - ráº¥t cao trong tháº­n
-    selenium: 30.0, // Âµg - cao trong tháº­n
-    copper: 0.4, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (80g)",
-    notes: "Purin ráº¥t cao - trÃ¡nh cho bá»‡nh gÃºt",
+    commonServing: "1 quả (80g)",
+    notes: "Purin rất cao - tránh cho bệnh gút",
     gout: {
       purine: 210,
       purineLevel: 'very-high',
@@ -13693,12 +9894,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 1.0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 80, description: '1 quáº£' },
+      { unit: 'qua', weight: 80, description: '1 quả' },
     ],
   },
   {
     id: "tim-lon",
-    name: "Tim Lợn",
+    name: "Tim lợn",
     nameEn: "Pork heart",
     category: "meat",
     servingSize: 100,
@@ -13719,22 +9920,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 1,
     vitaminB1: 0.3,
     vitaminB2: 0.7,
-    vitaminB3: 6.0, // Niacin - cao trong tim
-    vitaminB5: 2.0, // Pantothenic acid - cao trong tim
     vitaminB6: 0.5,
-    vitaminB7: 10.0, // Biotin (Âµg)
     folate: 5,
     vitaminB12: 1.5,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 150, // mg - cao trong tim
-    selenium: 25.0, // Âµg - cao trong tim
-    copper: 0.3, // mg
-    manganese: 0.05, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ (100g)",
-    notes: "Purin cao - háº¡n cháº¿ cho bá»‡nh gÃºt",
+    commonServing: "1 quả (100g)",
+    notes: "Purin cao - hạn chế cho bệnh gút",
     gout: {
       purine: 180,
       purineLevel: 'very-high',
@@ -13748,12 +9939,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 1.5,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 100, description: '1 quáº£' },
+      { unit: 'qua', weight: 100, description: '1 quả' },
     ],
   },
   {
     id: "long-lon",
-    name: "Lòng Lợn",
+    name: "Lòng lợn",
     nameEn: "Pork intestine",
     category: "meat",
     servingSize: 100,
@@ -13772,22 +9963,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.0,
     vitaminB1: 0.05,
     vitaminB2: 0.1,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.1,
-    vitaminB7: 2.0, // Biotin (Âµg)
     folate: 2,
     vitaminB12: 0.5,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0.0, // Phylloquinone
-    choline: 50, // mg
-    selenium: 10.0, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.01, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 pháº§n (100g)",
-    notes: "Nhiá»u cháº¥t bÃ©o, cholesterol cao",
+    commonServing: "1 phần (100g)",
+    notes: "Nhiều chất béo, cholesterol cao",
     gout: {
       purine: 120,
       purineLevel: 'medium',
@@ -13801,14 +9982,13 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 8,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 pháº§n' },
+      { unit: 'mieng', weight: 100, description: '1 phần' },
     ],
   },
-  // ========== Bá»” SUNG THá»°C PHáº¨M Má»šI - NHÃ“M RAU Cá»¦ ==========
+  // ========== BỔ SUNG THỰC PHẨM MỚI - NHÓM RAU CỦ ==========
   {
     id: "rau-muong",
-    code: "40001",
-    name: "Rau Mung",
+    name: "Rau muống",
     nameEn: "Water spinach",
     category: "vegetables",
     servingSize: 100,
@@ -13830,22 +10010,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 55,
     vitaminB1: 0.03,
     vitaminB2: 0.1,
-    vitaminB3: 0.9, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 0, // Biotin
     folate: 57,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 302, // Phylloquinone - ráº¥t cao trong rau lÃ¡ xanh
-    choline: 6.9, // mg
-    selenium: 0.9, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 má»› (200g)",
-    notes: "GiÃ u vitamin A, C - nhÆ°ng kali cao",
+    commonServing: "1 mớ (200g)",
+    notes: "Giàu vitamin A, C - nhưng kali cao",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 1,
@@ -13860,13 +10030,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'mo', weight: 200, description: '1 má»›' },
+      { unit: 'mo', weight: 200, description: '1 mớ' },
     ],
   },
   {
     id: "rau-ngot",
-    code: "11011",
-    name: "Rau Ngót",
+    name: "Rau ngót",
     nameEn: "Sweet leaf",
     category: "vegetables",
     servingSize: 100,
@@ -13888,22 +10057,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 185,
     vitaminB1: 0.1,
     vitaminB2: 0.21,
-    vitaminB3: 1.0, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.28,
-    vitaminB7: 0, // Biotin
-    folate: 194, // Âµg - ráº¥t cao trong rau ngÃ³t
+    folate: 194,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 419, // Phylloquinone - ráº¥t cao trong rau ngÃ³t
-    choline: 20.1, // mg
-    selenium: 0.8, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.6, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 má»› (150g)",
-    notes: "Kali ráº¥t cao - cáº©n tháº­n vá»›i bá»‡nh tháº­n",
+    commonServing: "1 mớ (150g)",
+    notes: "Kali rất cao - cẩn thận với bệnh thận",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 1,
@@ -13918,13 +10077,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'mo', weight: 150, description: '1 má»›' },
+      { unit: 'mo', weight: 150, description: '1 mớ' },
     ],
   },
   {
     id: "rau-den",
-    code: "40015",
-    name: "Rau Dền",
+    name: "Rau dền",
     nameEn: "Amaranth",
     category: "vegetables",
     servingSize: 100,
@@ -13946,22 +10104,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 43,
     vitaminB1: 0.03,
     vitaminB2: 0.16,
-    vitaminB3: 0.9, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.19,
-    vitaminB7: 0, // Biotin
-    folate: 85, // Âµg - cao trong rau lÃ¡ xanh
+    folate: 85,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 1140, // Phylloquinone - ráº¥t cao trong rau dá»n
-    choline: 6.9, // mg
-    selenium: 0.9, // Âµg
-    copper: 0.2, // mg
-    manganese: 0.9, // mg - cao trong rau dá»n
-    iodine: 0, // Âµg
-    commonServing: "1 má»› (150g)",
-    notes: "Kali ráº¥t cao - cáº©n tháº­n vá»›i bá»‡nh tháº­n",
+    commonServing: "1 mớ (150g)",
+    notes: "Kali rất cao - cẩn thận với bệnh thận",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 1,
@@ -13976,13 +10124,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'mo', weight: 150, description: '1 má»›' },
+      { unit: 'mo', weight: 150, description: '1 mớ' },
     ],
   },
   {
     id: "rau-cai",
-    code: "40008",
-    name: "Rau Cải",
+    name: "Rau cải",
     nameEn: "Mustard greens",
     category: "vegetables",
     servingSize: 100,
@@ -14004,21 +10151,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 70,
     vitaminB1: 0.07,
     vitaminB2: 0.11,
-    vitaminB3: 0.8, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.18,
-    vitaminB7: 0, // Biotin
-    folate: 57, // Âµg - cao trong rau lÃ¡ xanh
+    folate: 57,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.6, // Tocopherol
-    vitaminK: 257, // Phylloquinone - ráº¥t cao trong rau cáº£i
-    choline: 19.5, // mg
-    selenium: 0.8, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.5, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 má»› (150g)",
+    commonServing: "1 mớ (150g)",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 1,
@@ -14033,12 +10170,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'mo', weight: 150, description: '1 má»›' },
+      { unit: 'mo', weight: 150, description: '1 mớ' },
     ],
   },
   {
     id: "rau-mong-toi",
-    name: "Rau má»“ng tÆ¡i",
+    name: "Rau mồng tơi",
     nameEn: "Malabar spinach",
     category: "vegetables",
     servingSize: 100,
@@ -14060,22 +10197,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 102,
     vitaminB1: 0.05,
     vitaminB2: 0.16,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.24,
-    vitaminB7: 0, // Biotin
     folate: 140,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 1.0, // Tocopherol
-    vitaminK: 302, // Phylloquinone - cao trong rau lÃ¡ xanh
-    choline: 6.0, // mg
-    selenium: 0.8, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.3, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 má»› (150g)",
-    notes: "GiÃ u vitamin A, C",
+    commonServing: "1 mớ (150g)",
+    notes: "Giàu vitamin A, C",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 1,
@@ -14090,12 +10217,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'mo', weight: 150, description: '1 má»›' },
+      { unit: 'mo', weight: 150, description: '1 mớ' },
     ],
   },
   {
     id: "cu-cai",
-    name: "Củ Cải",
+    name: "Củ cải",
     nameEn: "Radish",
     category: "vegetables",
     servingSize: 100,
@@ -14117,22 +10244,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 29,
     vitaminB1: 0.01,
     vitaminB2: 0.04,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.07,
-    vitaminB7: 0, // Biotin
-    folate: 25, // Âµg
+    folate: 25,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0, // Tocopherol
-    vitaminK: 1.3, // Phylloquinone
-    choline: 6.5, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ (100g)",
-    notes: "Ãt kcal, nhiá»u nÆ°á»›c",
+    commonServing: "1 củ (100g)",
+    notes: "Ít kcal, nhiều nước",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 1,
@@ -14147,12 +10264,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 cá»§' },
+      { unit: 'cai', weight: 100, description: '1 củ' },
     ],
   },
   {
     id: "su-hao",
-    name: "Su Hào",
+    name: "Su hào",
     nameEn: "Kohlrabi",
     category: "vegetables",
     servingSize: 100,
@@ -14174,22 +10291,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 62,
     vitaminB1: 0.05,
     vitaminB2: 0.02,
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.15,
-    vitaminB7: 0, // Biotin
-    folate: 16, // Âµg
+    folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 38.2, // Phylloquinone - cao trong su hÃ o
-    choline: 9.2, // mg
-    selenium: 0.2, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ vá»«a (150g)",
-    notes: "GiÃ u vitamin C",
+    commonServing: "1 củ vừa (150g)",
+    notes: "Giàu vitamin C",
     diabetes: {
       glycemicIndex: 20,
       glycemicLoad: 2,
@@ -14204,13 +10311,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 150, description: '1 cá»§ vá»«a' },
+      { unit: 'cai', weight: 150, description: '1 củ vừa' },
     ],
   },
   {
     id: "bap-cai",
-    code: "40005",
-    name: "Bắp Cải",
+    name: "Bắp cải",
     nameEn: "Cabbage",
     category: "vegetables",
     servingSize: 100,
@@ -14232,22 +10338,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 36.6,
     vitaminB1: 0.06,
     vitaminB2: 0.04,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 43, // Âµg
+    folate: 43,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 76, // Phylloquinone - cao trong báº¯p cáº£i
-    choline: 10.7, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.02, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 pháº§n (150g)",
-    notes: "Kali tháº¥p - tá»‘t cho bá»‡nh tháº­n",
+    commonServing: "1 phần (150g)",
+    notes: "Kali thấp - tốt cho bệnh thận",
     diabetes: {
       glycemicIndex: 10,
       glycemicLoad: 1,
@@ -14262,12 +10358,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 150, description: '1 pháº§n' },
+      { unit: 'mieng', weight: 150, description: '1 phần' },
     ],
   },
   {
     id: "sup-lo",
-    name: "Súp Lơ",
+    name: "Súp lơ",
     nameEn: "Cauliflower",
     category: "vegetables",
     servingSize: 100,
@@ -14289,22 +10385,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 48.2,
     vitaminB1: 0.05,
     vitaminB2: 0.06,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.7, // Pantothenic acid - cao trong sÃºp lÆ¡
     vitaminB6: 0.18,
-    vitaminB7: 1.5, // Biotin (Âµg) - cao trong sÃºp lÆ¡
     folate: 57,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 15.5, // Phylloquinone
-    choline: 44.3, // mg - cao trong sÃºp lÆ¡
-    selenium: 0.6, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ´ng vá»«a (200g)",
-    notes: "GiÃ u vitamin C",
+    commonServing: "1 bông vừa (200g)",
+    notes: "Giàu vitamin C",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 2,
@@ -14319,13 +10405,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 200, description: '1 bÃ´ng vá»«a' },
+      { unit: 'cai', weight: 200, description: '1 bông vừa' },
     ],
   },
   {
     id: "hanh-tay",
-    code: "40057",
-    name: "Hành Tây",
+    name: "Hành tây",
     nameEn: "Onion",
     category: "vegetables",
     servingSize: 100,
@@ -14347,22 +10432,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 7.4,
     vitaminB1: 0.05,
     vitaminB2: 0.03,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
     folate: 19,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.02, // Tocopherol
-    vitaminK: 0.4, // Phylloquinone
-    choline: 6.1, // mg
-    selenium: 0.5, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ vá»«a (100g)",
-    notes: "Ãt natri - tá»‘t cho THA",
+    commonServing: "1 củ vừa (100g)",
+    notes: "Ít natri - tốt cho THA",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 1,
@@ -14377,12 +10452,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 100, description: '1 cá»§ vá»«a' },
+      { unit: 'cai', weight: 100, description: '1 củ vừa' },
     ],
   },
   {
     id: "toi",
-    code: "20096",
     name: "Tỏi",
     nameEn: "Garlic",
     category: "vegetables",
@@ -14405,22 +10479,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 31.2,
     vitaminB1: 0.2,
     vitaminB2: 0.11,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.6, // Pantothenic acid - cao trong tá»i
-    vitaminB6: 1.24, // ráº¥t cao
-    vitaminB7: 0, // Biotin
+    vitaminB6: 1.24,
     folate: 3,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 1.7, // Phylloquinone
-    choline: 23.2, // mg - cao trong tá»i
-    selenium: 14.2, // Âµg - ráº¥t cao trong tá»i
-    copper: 0.3, // mg - cao trong tá»i
-    manganese: 1.7, // mg - ráº¥t cao trong tá»i
-    iodine: 0, // Âµg
-    commonServing: "1 tÃ©p (3g)",
-    notes: "DÃ¹ng lÃ m gia vá»‹, Ã­t kcal",
+    commonServing: "1 tép (3g)",
+    notes: "Dùng làm gia vị, ít kcal",
     diabetes: {
       glycemicIndex: 30,
       glycemicLoad: 0,
@@ -14435,12 +10499,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'tep', weight: 3, description: '1 tÃ©p' },
+      { unit: 'tep', weight: 3, description: '1 tép' },
     ],
   },
   {
     id: "gung",
-    code: "11029",
     name: "Gừng",
     nameEn: "Ginger",
     category: "vegetables",
@@ -14463,22 +10526,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 5,
     vitaminB1: 0.03,
     vitaminB2: 0.03,
-    vitaminB3: 0.8, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.16,
-    vitaminB7: 0, // Biotin
     folate: 11,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 28.8, // mg - cao trong gá»«ng
-    selenium: 0.7, // Âµg
-    copper: 0.23, // mg
-    manganese: 0.23, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 nhÃ¡nh nhá» (10g)",
-    notes: "DÃ¹ng lÃ m gia vá»‹",
+    commonServing: "1 nhánh nhỏ (10g)",
+    notes: "Dùng làm gia vị",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 0,
@@ -14493,13 +10546,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.2,
     },
     vietnameseUnits: [
-      { unit: 'nhanh', weight: 10, description: '1 nhÃ¡nh nhá»' },
+      { unit: 'nhanh', weight: 10, description: '1 nhánh nhỏ' },
     ],
   },
   {
     id: "nghe",
-    code: "30037",
-    name: "Ngh Tươi",
+    name: "Nghệ",
     nameEn: "Turmeric",
     category: "vegetables",
     servingSize: 100,
@@ -14521,22 +10573,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 25.9,
     vitaminB1: 0.06,
     vitaminB2: 0.15,
-    vitaminB3: 1.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 0, // Biotin
     folate: 20,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 4.4, // Tocopherol - ráº¥t cao trong nghá»‡
-    vitaminK: 13.4, // Phylloquinone
-    choline: 49.2, // mg - cao trong nghá»‡
-    selenium: 4.5, // Âµg
-    copper: 0.6, // mg - cao trong nghá»‡
-    manganese: 2.0, // mg - ráº¥t cao trong nghá»‡
-    iodine: 0, // Âµg
-    commonServing: "1 cá»§ nhá» (20g)",
-    notes: "DÃ¹ng lÃ m gia vá»‹, kali ráº¥t cao",
+    commonServing: "1 củ nhỏ (20g)",
+    notes: "Dùng làm gia vị, kali rất cao",
     diabetes: {
       glycemicIndex: 15,
       glycemicLoad: 0,
@@ -14551,13 +10593,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 2.2,
     },
     vietnameseUnits: [
-      { unit: 'cai', weight: 20, description: '1 cá»§ nhá»' },
+      { unit: 'cai', weight: 20, description: '1 củ nhỏ' },
     ],
   },
   {
     id: "dau-xanh",
-    code: "60002",
-    name: "Đậu Xanh",
+    name: "Đậu xanh",
     nameEn: "Mung bean",
     category: "legumes",
     servingSize: 100,
@@ -14579,22 +10620,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 4.8,
     vitaminB1: 0.62,
     vitaminB2: 0.23,
-    vitaminB3: 2.0, // Niacin
-    vitaminB5: 1.9, // Pantothenic acid - cao trong Ä‘áº­u
     vitaminB6: 0.38,
-    vitaminB7: 0, // Biotin
-    folate: 625, // Âµg - ráº¥t cao trong Ä‘áº­u
+    folate: 625,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.5, // Tocopherol
-    vitaminK: 9.0, // Phylloquinone
-    choline: 97.9, // mg - cao trong Ä‘áº­u
-    selenium: 2.5, // Âµg
-    copper: 0.9, // mg - cao trong Ä‘áº­u
-    manganese: 1.0, // mg - cao trong Ä‘áº­u
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t chÃ¨ (100g)",
-    notes: "Kali vÃ  phá»‘t pho ráº¥t cao - cáº©n tháº­n vá»›i bá»‡nh tháº­n",
+    commonServing: "1 bát chè (100g)",
+    notes: "Kali và phốt pho rất cao - cẩn thận với bệnh thận",
     diabetes: {
       glycemicIndex: 25,
       glycemicLoad: 16,
@@ -14609,13 +10640,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.3,
     },
     vietnameseUnits: [
-      { unit: 'bat', weight: 100, description: '1 bÃ¡t chÃ¨' },
+      { unit: 'bat', weight: 100, description: '1 bát chè' },
     ],
   },
   {
     id: "dau-den",
-    code: "60006",
-    name: "Đậu En",
+    name: "Đậu đen",
     nameEn: "Black bean",
     category: "legumes",
     servingSize: 100,
@@ -14637,22 +10667,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 0,
     vitaminB1: 0.9,
     vitaminB2: 0.19,
-    vitaminB3: 2.6, // Niacin
-    vitaminB5: 1.8, // Pantothenic acid - cao trong Ä‘áº­u
     vitaminB6: 0.29,
-    vitaminB7: 0, // Biotin
-    folate: 444, // Âµg - ráº¥t cao trong Ä‘áº­u
+    folate: 444,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 8.3, // Tocopherol - cao trong Ä‘áº­u phá»¥ng
-    vitaminK: 0, // Phylloquinone
-    choline: 52.5, // mg - cao trong Ä‘áº­u
-    selenium: 7.2, // Âµg
-    copper: 1.1, // mg - cao trong Ä‘áº­u
-    manganese: 1.9, // mg - cao trong Ä‘áº­u
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t chÃ¨ (100g)",
-    notes: "Kali vÃ  phá»‘t pho ráº¥t cao",
+    commonServing: "1 bát chè (100g)",
+    notes: "Kali và phốt pho rất cao",
     diabetes: {
       glycemicIndex: 30,
       glycemicLoad: 19,
@@ -14667,12 +10687,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.4,
     },
     vietnameseUnits: [
-      { unit: 'bat', weight: 100, description: '1 bÃ¡t chÃ¨' },
+      { unit: 'bat', weight: 100, description: '1 bát chè' },
     ],
   },
   {
     id: "dau-phung",
-    name: "Đậu Phụng",
+    name: "Đậu phụng",
     nameEn: "Peanut",
     category: "legumes",
     servingSize: 100,
@@ -14694,22 +10714,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 0,
     vitaminB1: 0.64,
     vitaminB2: 0.14,
-    vitaminB3: 12.1, // Niacin - ráº¥t cao trong Ä‘áº­u phá»¥ng
-    vitaminB5: 1.8, // Pantothenic acid
     vitaminB6: 0.35,
-    vitaminB7: 0, // Biotin
-    folate: 240, // Âµg - cao trong Ä‘áº­u
+    folate: 240,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 8.3, // Tocopherol - ráº¥t cao trong Ä‘áº­u phá»¥ng
-    vitaminK: 0, // Phylloquinone
-    choline: 52.5, // mg - cao trong Ä‘áº­u
-    selenium: 7.2, // Âµg
-    copper: 1.1, // mg - cao trong Ä‘áº­u
-    manganese: 1.9, // mg - cao trong Ä‘áº­u
-    iodine: 0, // Âµg
-    commonServing: "1 náº¯m (30g)",
-    notes: "Nhiá»u cháº¥t bÃ©o, kali vÃ  phá»‘t pho cao",
+    commonServing: "1 nắm (30g)",
+    notes: "Nhiều chất béo, kali và phốt pho cao",
     diabetes: {
       glycemicIndex: 14,
       glycemicLoad: 2,
@@ -14724,13 +10734,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 6.8,
     },
     vietnameseUnits: [
-      { unit: 'nam', weight: 30, description: '1 náº¯m' },
+      { unit: 'nam', weight: 30, description: '1 nắm' },
     ],
   },
   {
     id: "dau-nanh",
-    code: "80003",
-    name: "Đậu Nành",
+    name: "Đậu nành",
     nameEn: "Soybean",
     category: "legumes",
     servingSize: 100,
@@ -14752,22 +10761,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 6,
     vitaminB1: 0.87,
     vitaminB2: 0.87,
-    vitaminB3: 1.6, // Niacin
-    vitaminB5: 0.8, // Pantothenic acid
     vitaminB6: 0.38,
-    vitaminB7: 0, // Biotin
     folate: 375,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.9, // Tocopherol
-    vitaminK: 47.0, // Phylloquinone
-    choline: 115.9, // mg - ráº¥t cao trong Ä‘áº­u nÃ nh
-    selenium: 17.8, // Âµg - cao trong Ä‘áº­u nÃ nh
-    copper: 1.7, // mg - ráº¥t cao trong Ä‘áº­u nÃ nh
-    manganese: 2.5, // mg - ráº¥t cao trong Ä‘áº­u nÃ nh
-    iodine: 0, // Âµg
-    commonServing: "1 bÃ¡t Ä‘áº­u nÃ nh luá»™c (100g)",
-    notes: "Kali vÃ  phá»‘t pho ráº¥t cao - cáº©n tháº­n vá»›i bá»‡nh tháº­n",
+    commonServing: "1 bát đậu nành luộc (100g)",
+    notes: "Kali và phốt pho rất cao - cẩn thận với bệnh thận",
     diabetes: {
       glycemicIndex: 18,
       glycemicLoad: 5,
@@ -14782,13 +10781,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 2.9,
     },
     vietnameseUnits: [
-      { unit: 'bat', weight: 100, description: '1 bÃ¡t' },
+      { unit: 'bat', weight: 100, description: '1 bát' },
     ],
   },
-  // ========== Bá»” SUNG THá»°C PHáº¨M Má»šI - NHÃ“M TRÃI CÃ‚Y ==========
+  // ========== BỔ SUNG THỰC PHẨM MỚI - NHÓM TRÁI CÂY ==========
   {
     id: "xoai",
-    code: "50005",
     name: "Xoài",
     nameEn: "Mango",
     category: "fruits",
@@ -14811,22 +10809,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 36.4,
     vitaminB1: 0.03,
     vitaminB2: 0.04,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.12,
-    vitaminB7: 0, // Biotin
-    folate: 43, // Âµg
+    folate: 43,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.9, // Tocopherol
-    vitaminK: 4.2, // Phylloquinone
-    choline: 7.6, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.11, // mg
-    manganese: 0.06, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ vá»«a (200g)",
-    notes: "GI trung bÃ¬nh",
+    commonServing: "1 quả vừa (200g)",
+    notes: "GI trung bình",
     diabetes: {
       glycemicIndex: 51,
       glycemicLoad: 15,
@@ -14841,13 +10829,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 200, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 200, description: '1 quả vừa' },
     ],
   },
   {
     id: "chuoi",
-    code: "50001",
-    name: "Chui",
+    name: "Chuối",
     nameEn: "Banana",
     category: "fruits",
     servingSize: 100,
@@ -14869,22 +10856,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 8.7,
     vitaminB1: 0.03,
     vitaminB2: 0.07,
-    vitaminB3: 0.7, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
-    vitaminB6: 0.37, // mg - cao trong chuá»‘i
-    vitaminB7: 0, // Biotin
+    vitaminB6: 0.37,
     folate: 20,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.5, // Phylloquinone
-    choline: 9.8, // mg
-    selenium: 1.0, // Âµg - cao trong trÃ¡i cÃ¢y
-    copper: 0.08, // mg
-    manganese: 0.27, // mg - cao trong chuá»‘i
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ vá»«a (100g)",
-    notes: "Kali cao - cáº©n tháº­n vá»›i bá»‡nh tháº­n",
+    commonServing: "1 quả vừa (100g)",
+    notes: "Kali cao - cẩn thận với bệnh thận",
     diabetes: {
       glycemicIndex: 51,
       glycemicLoad: 12,
@@ -14899,13 +10876,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 100, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 100, description: '1 quả vừa' },
     ],
   },
   {
     id: "du-du",
-    code: "50006",
-    name: "Đu Ủ",
+    name: "Đu đủ",
     nameEn: "Papaya",
     category: "fruits",
     servingSize: 100,
@@ -14927,22 +10903,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 60.9,
     vitaminB1: 0.02,
     vitaminB2: 0.03,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.04,
-    vitaminB7: 0, // Biotin
     folate: 37,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 2.6, // Phylloquinone
-    choline: 6.1, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng vá»«a (150g)",
-    notes: "GiÃ u vitamin C",
+    commonServing: "1 miếng vừa (150g)",
+    notes: "Giàu vitamin C",
     diabetes: {
       glycemicIndex: 60,
       glycemicLoad: 10,
@@ -14957,13 +10923,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 150, description: '1 miáº¿ng vá»«a' },
+      { unit: 'mieng', weight: 150, description: '1 miếng vừa' },
     ],
   },
   {
     id: "dua-hau",
-    code: "50004",
-    name: "Dưa Hấu",
+    name: "Dưa hấu",
     nameEn: "Watermelon",
     category: "fruits",
     servingSize: 100,
@@ -14985,22 +10950,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 8.1,
     vitaminB1: 0.03,
     vitaminB2: 0.02,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
-    folate: 3, // Âµg
+    folate: 3,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.1, // Phylloquinone
-    choline: 4.1, // mg
-    selenium: 0.4, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.04, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 miáº¿ng (200g)",
-    notes: "GI cao nhÆ°ng GL tháº¥p do nhiá»u nÆ°á»›c",
+    commonServing: "1 miếng (200g)",
+    notes: "GI cao nhưng GL thấp do nhiều nước",
     diabetes: {
       glycemicIndex: 76,
       glycemicLoad: 12,
@@ -15015,12 +10970,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'mieng', weight: 200, description: '1 miáº¿ng' },
+      { unit: 'mieng', weight: 200, description: '1 miếng' },
     ],
   },
   {
     id: "mit",
-    code: "50011",
     name: "Mít",
     nameEn: "Jackfruit",
     category: "fruits",
@@ -15043,21 +10997,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 13.7,
     vitaminB1: 0.11,
     vitaminB2: 0.06,
-    vitaminB3: 0.9, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 0, // Biotin
-    folate: 24, // Âµg
+    folate: 24,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 0, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.08, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 mÃºi (50g)",
+    commonServing: "1 múi (50g)",
     notes: "Kali cao, GI cao",
     diabetes: {
       glycemicIndex: 75,
@@ -15073,13 +11017,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.2,
     },
     vietnameseUnits: [
-      { unit: 'mui', weight: 50, description: '1 mÃºi' },
+      { unit: 'mui', weight: 50, description: '1 múi' },
     ],
   },
   {
     id: "sau-rieng",
-    code: "50012",
-    name: "Sầu Riêng",
+    name: "Sầu riêng",
     nameEn: "Durian",
     category: "fruits",
     servingSize: 100,
@@ -15105,8 +11048,8 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 36,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 mÃºi (50g)",
-    notes: "Nhiá»u kcal, kali cao",
+    commonServing: "1 múi (50g)",
+    notes: "Nhiều kcal, kali cao",
     diabetes: {
       glycemicIndex: 49,
       glycemicLoad: 7,
@@ -15121,12 +11064,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'mui', weight: 50, description: '1 mÃºi' },
+      { unit: 'mui', weight: 50, description: '1 múi' },
     ],
   },
   {
     id: "tao",
-    code: "50003",
     name: "Táo",
     nameEn: "Apple",
     category: "fruits",
@@ -15153,8 +11095,8 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 3,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 quáº£ vá»«a (150g)",
-    notes: "GI tháº¥p, kali tháº¥p - tá»‘t cho Ä‘Ã¡i thÃ¡o Ä‘Æ°á»ng vÃ  bá»‡nh tháº­n",
+    commonServing: "1 quả vừa (150g)",
+    notes: "GI thấp, kali thấp - tốt cho đái tháo đường và bệnh thận",
     diabetes: {
       glycemicIndex: 36,
       glycemicLoad: 8,
@@ -15169,12 +11111,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 150, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 150, description: '1 quả vừa' },
     ],
   },
   {
     id: "le",
-    code: "10001",
     name: "Lê",
     nameEn: "Pear",
     category: "fruits",
@@ -15201,8 +11142,8 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 7,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 quáº£ vá»«a (150g)",
-    notes: "GI tháº¥p, kali tháº¥p",
+    commonServing: "1 quả vừa (150g)",
+    notes: "GI thấp, kali thấp",
     diabetes: {
       glycemicIndex: 38,
       glycemicLoad: 9,
@@ -15217,12 +11158,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 150, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 150, description: '1 quả vừa' },
     ],
   },
   {
     id: "cam",
-    code: "50002",
     name: "Cam",
     nameEn: "Orange",
     category: "fruits",
@@ -15249,8 +11189,8 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 30,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 quáº£ vá»«a (150g)",
-    notes: "GiÃ u vitamin C",
+    commonServing: "1 quả vừa (150g)",
+    notes: "Giàu vitamin C",
     diabetes: {
       glycemicIndex: 42,
       glycemicLoad: 8,
@@ -15265,12 +11205,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 150, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 150, description: '1 quả vừa' },
     ],
   },
   {
     id: "quyt",
-    code: "50019",
     name: "Quýt",
     nameEn: "Tangerine",
     category: "fruits",
@@ -15297,8 +11236,8 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     folate: 16,
     vitaminB12: 0,
     vitaminD: 0,
-    commonServing: "1 quáº£ vá»«a (100g)",
-    notes: "GiÃ u vitamin C",
+    commonServing: "1 quả vừa (100g)",
+    notes: "Giàu vitamin C",
     diabetes: {
       glycemicIndex: 42,
       glycemicLoad: 5,
@@ -15313,13 +11252,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 100, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 100, description: '1 quả vừa' },
     ],
   },
   {
     id: "buoi",
-    code: "50010",
-    name: "Bưi",
+    name: "Bưởi",
     nameEn: "Pomelo",
     category: "fruits",
     servingSize: 100,
@@ -15341,22 +11279,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 61,
     vitaminB1: 0.03,
     vitaminB2: 0.03,
-    vitaminB3: 0.2, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.04,
-    vitaminB7: 0, // Biotin
-    folate: 0, // Âµg
+    folate: 0,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 8.4, // mg
-    selenium: 0.1, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 mÃºi (100g)",
-    notes: "GiÃ u vitamin C, GI tháº¥p",
+    commonServing: "1 múi (100g)",
+    notes: "Giàu vitamin C, GI thấp",
     diabetes: {
       glycemicIndex: 25,
       glycemicLoad: 3,
@@ -15371,13 +11299,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'mui', weight: 100, description: '1 mÃºi' },
+      { unit: 'mui', weight: 100, description: '1 múi' },
     ],
   },
   {
     id: "oi",
-    code: "20096",
-    name: "I",
+    name: "Ổi",
     nameEn: "Guava",
     category: "fruits",
     servingSize: 100,
@@ -15399,22 +11326,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 228.3,
     vitaminB1: 0.07,
     vitaminB2: 0.04,
-    vitaminB3: 1.1, // Niacin - cao trong á»•i
-    vitaminB5: 0.5, // Pantothenic acid
     vitaminB6: 0.11,
-    vitaminB7: 0, // Biotin
-    folate: 49, // Âµg
+    folate: 49,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.7, // Tocopherol
-    vitaminK: 2.6, // Phylloquinone
-    choline: 7.6, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.23, // mg - cao trong á»•i
-    manganese: 0.15, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 quáº£ vá»«a (100g)",
-    notes: "Ráº¥t giÃ u vitamin C, kali cao",
+    commonServing: "1 quả vừa (100g)",
+    notes: "Rất giàu vitamin C, kali cao",
     diabetes: {
       glycemicIndex: 12,
       glycemicLoad: 2,
@@ -15429,12 +11346,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.3,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 100, description: '1 quáº£ vá»«a' },
+      { unit: 'qua', weight: 100, description: '1 quả vừa' },
     ],
   },
   {
     id: "nhan",
-    code: "50029",
     name: "Nhãn",
     nameEn: "Longan",
     category: "fruits",
@@ -15456,23 +11372,13 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminA: 0,
     vitaminC: 84,
     vitaminB1: 0.03,
-    vitaminB2: 0.14, // mg - cao trong nhÃ£n
-    vitaminB3: 0.3, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
+    vitaminB2: 0.14,
     vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
     folate: 0,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 0, // mg
-    selenium: 0.1, // Âµg
-    copper: 0.2, // mg - cao trong nhÃ£n
-    manganese: 0.05, // mg
-    iodine: 0, // Âµg
-    commonServing: "10 quáº£ (100g)",
-    notes: "GiÃ u vitamin C",
+    commonServing: "10 quả (100g)",
+    notes: "Giàu vitamin C",
     diabetes: {
       glycemicIndex: 50,
       glycemicLoad: 8,
@@ -15487,12 +11393,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 10, description: '10 quáº£' },
+      { unit: 'qua', weight: 10, description: '10 quả' },
     ],
   },
   {
     id: "vai",
-    code: "20012",
     name: "Vải",
     nameEn: "Lychee",
     category: "fruits",
@@ -15515,22 +11420,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 71.5,
     vitaminB1: 0.01,
     vitaminB2: 0.07,
-    vitaminB3: 0.6, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0.4, // Phylloquinone
-    choline: 7.1, // mg
-    selenium: 0.6, // Âµg
-    copper: 0.15, // mg
-    manganese: 0.05, // mg
-    iodine: 0, // Âµg
-    commonServing: "10 quáº£ (100g)",
-    notes: "GiÃ u vitamin C",
+    commonServing: "10 quả (100g)",
+    notes: "Giàu vitamin C",
     diabetes: {
       glycemicIndex: 50,
       glycemicLoad: 9,
@@ -15545,13 +11440,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 10, description: '10 quáº£' },
+      { unit: 'qua', weight: 10, description: '10 quả' },
     ],
   },
   {
     id: "chom-chom",
-    code: "50014",
-    name: "Chôm Chôm",
+    name: "Chôm chôm",
     nameEn: "Rambutan",
     category: "fruits",
     servingSize: 100,
@@ -15573,22 +11467,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 4.9,
     vitaminB1: 0.01,
     vitaminB2: 0.02,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.02,
-    vitaminB7: 0, // Biotin
     folate: 8,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 0, // mg
-    selenium: 0.1, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "5 quáº£ (100g)",
-    notes: "Kali tháº¥p - tá»‘t cho bá»‡nh tháº­n",
+    commonServing: "5 quả (100g)",
+    notes: "Kali thấp - tốt cho bệnh thận",
     diabetes: {
       glycemicIndex: 55,
       glycemicLoad: 12,
@@ -15603,13 +11487,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 20, description: '1 quáº£' },
+      { unit: 'qua', weight: 20, description: '1 quả' },
     ],
   },
   {
     id: "mang-cut",
-    code: "50013",
-    name: "Mng Cụt",
+    name: "Măng cụt",
     nameEn: "Mangosteen",
     category: "fruits",
     servingSize: 100,
@@ -15631,22 +11514,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 2.9,
     vitaminB1: 0.05,
     vitaminB2: 0.05,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.02,
-    vitaminB7: 0, // Biotin
     folate: 31,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 0, // mg
-    selenium: 0.1, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.02, // mg
-    iodine: 0, // Âµg
-    commonServing: "2 quáº£ (100g)",
-    notes: "Kali tháº¥p",
+    commonServing: "2 quả (100g)",
+    notes: "Kali thấp",
     diabetes: {
       glycemicIndex: 30,
       glycemicLoad: 5,
@@ -15661,14 +11534,13 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'qua', weight: 50, description: '1 quáº£' },
+      { unit: 'qua', weight: 50, description: '1 quả' },
     ],
   },
-  // ========== Bá»” SUNG THá»°C PHáº¨M Má»šI - NHÃ“M GIA Vá»Š & NÆ¯á»šC CHáº¤M ==========
+  // ========== BỔ SUNG THỰC PHẨM MỚI - NHÓM GIA VỊ & NƯỚC CHẤM ==========
   {
     id: "nuoc-mam",
-    code: "70001",
-    name: "Nưc Mắm",
+    name: "Nước mắm",
     nameEn: "Fish sauce",
     category: "condiments",
     servingSize: 100,
@@ -15687,22 +11559,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.5,
     vitaminB1: 0.01,
     vitaminB2: 0.02,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.05,
-    vitaminB7: 0, // Biotin
     folate: 2,
     vitaminB12: 0.5,
     vitaminD: 0,
-    vitaminE: 0, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 1.0, // mg
-    selenium: 2.0, // Âµg
-    copper: 0.01, // mg
-    manganese: 0.01, // mg
-    iodine: 5, // Âµg - tá»« cÃ¡
-    commonServing: "1 thÃ¬a canh (15ml)",
-    notes: "Natri ráº¥t cao - háº¡n cháº¿ nghiÃªm ngáº·t cho THA",
+    commonServing: "1 thìa canh (15ml)",
+    notes: "Natri rất cao - hạn chế nghiêm ngặt cho THA",
     diabetes: {
       glycemicIndex: 0,
       glycemicLoad: 0,
@@ -15717,12 +11579,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'thia-canh', weight: 15, description: '1 thÃ¬a canh' },
+      { unit: 'thia-canh', weight: 15, description: '1 thìa canh' },
     ],
   },
   {
     id: "nuoc-tuong",
-    name: "Nưc Tương",
+    name: "Nước tương",
     nameEn: "Soy sauce",
     category: "condiments",
     servingSize: 100,
@@ -15741,22 +11603,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.5,
     vitaminB1: 0.03,
     vitaminB2: 0.15,
-    vitaminB3: 0.5, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.15,
-    vitaminB7: 0, // Biotin
     folate: 14,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 2.0, // mg
-    selenium: 0.5, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 thÃ¬a canh (15ml)",
-    notes: "Natri ráº¥t cao - háº¡n cháº¿ nghiÃªm ngáº·t cho THA",
+    commonServing: "1 thìa canh (15ml)",
+    notes: "Natri rất cao - hạn chế nghiêm ngặt cho THA",
     diabetes: {
       glycemicIndex: 0,
       glycemicLoad: 0,
@@ -15771,13 +11623,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'thia-canh', weight: 15, description: '1 thÃ¬a canh' },
+      { unit: 'thia-canh', weight: 15, description: '1 thìa canh' },
     ],
   },
   {
     id: "tuong-ot",
-    code: "70002",
-    name: "Tương T",
+    name: "Tương ớt",
     nameEn: "Chili sauce",
     category: "condiments",
     servingSize: 100,
@@ -15798,21 +11649,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 76.4,
     vitaminB1: 0.05,
     vitaminB2: 0.09,
-    vitaminB3: 1.0, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.28,
-    vitaminB7: 0, // Biotin
     folate: 23,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.3, // Tocopherol
-    vitaminK: 5.4, // Phylloquinone
-    choline: 2.5, // mg
-    selenium: 0.3, // Âµg
-    copper: 0.05, // mg
-    manganese: 0.1, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 thÃ¬a cÃ  phÃª (5g)",
+    commonServing: "1 thìa cà phê (5g)",
     notes: "Natri cao",
     diabetes: {
       glycemicIndex: 15,
@@ -15828,12 +11669,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.1,
     },
     vietnameseUnits: [
-      { unit: 'thia-ca-phe', weight: 5, description: '1 thÃ¬a cÃ  phÃª' },
+      { unit: 'thia-ca-phe', weight: 5, description: '1 thìa cà phê' },
     ],
   },
   {
     id: "tuong-den",
-    name: "Tương En",
+    name: "Tương đen",
     nameEn: "Black bean sauce",
     category: "condiments",
     servingSize: 100,
@@ -15852,21 +11693,11 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.5,
     vitaminB1: 0.1,
     vitaminB2: 0.1,
-    vitaminB3: 0.4, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.1,
-    vitaminB7: 0, // Biotin
     folate: 20,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 3.0, // mg
-    selenium: 0.5, // Âµg
-    copper: 0.1, // mg
-    manganese: 0.2, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 thÃ¬a canh (15g)",
+    commonServing: "1 thìa canh (15g)",
     notes: "Natri cao",
     diabetes: {
       glycemicIndex: 20,
@@ -15882,12 +11713,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.3,
     },
     vietnameseUnits: [
-      { unit: 'thia-canh', weight: 15, description: '1 thÃ¬a canh' },
+      { unit: 'thia-canh', weight: 15, description: '1 thìa canh' },
     ],
   },
   {
     id: "mat-ong",
-    name: "Mật Ong",
+    name: "Mật ong",
     nameEn: "Honey",
     category: "condiments",
     servingSize: 100,
@@ -15908,22 +11739,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     vitaminC: 0.5,
     vitaminB1: 0,
     vitaminB2: 0.04,
-    vitaminB3: 0.1, // Niacin
-    vitaminB5: 0.1, // Pantothenic acid
     vitaminB6: 0.02,
-    vitaminB7: 0, // Biotin
     folate: 2,
     vitaminB12: 0,
     vitaminD: 0,
-    vitaminE: 0, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 2.2, // mg
-    selenium: 0.8, // Âµg
-    copper: 0.04, // mg
-    manganese: 0.08, // mg
-    iodine: 0, // Âµg
-    commonServing: "1 thÃ¬a canh (21g)",
-    notes: "GI cao - háº¡n cháº¿ cho Ä‘Ã¡i thÃ¡o Ä‘Æ°á»ng",
+    commonServing: "1 thìa canh (21g)",
+    notes: "GI cao - hạn chế cho đái tháo đường",
     diabetes: {
       glycemicIndex: 58,
       glycemicLoad: 10,
@@ -15938,13 +11759,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0,
     },
     vietnameseUnits: [
-      { unit: 'thia-canh', weight: 21, description: '1 thÃ¬a canh' },
+      { unit: 'thia-canh', weight: 21, description: '1 thìa canh' },
     ],
   },
   {
     id: "mam-tom",
-    code: "70013",
-    name: "Mắm Tôm",
+    name: "Mắm tôm",
     nameEn: "Shrimp paste",
     category: "condiments",
     servingSize: 100,
@@ -15963,22 +11783,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 1.0,
     vitaminB1: 0.1,
     vitaminB2: 0.2,
-    vitaminB3: 1.5, // Niacin
-    vitaminB5: 0.3, // Pantothenic acid
     vitaminB6: 0.1,
-    vitaminB7: 0.5, // Biotin (Âµg)
     folate: 10,
     vitaminB12: 1.0,
     vitaminD: 0,
-    vitaminE: 0.2, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 5.0, // mg
-    selenium: 8.0, // Âµg - cao tá»« tÃ´m
-    copper: 0.1, // mg
-    manganese: 0.05, // mg
-    iodine: 15, // Âµg - cao tá»« tÃ´m
-    commonServing: "1 thÃ¬a cÃ  phÃª (5g)",
-    notes: "Natri ráº¥t cao - háº¡n cháº¿ nghiÃªm ngáº·t cho THA",
+    commonServing: "1 thìa cà phê (5g)",
+    notes: "Natri rất cao - hạn chế nghiêm ngặt cho THA",
     diabetes: {
       glycemicIndex: 0,
       glycemicLoad: 0,
@@ -15993,13 +11803,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.2,
     },
     vietnameseUnits: [
-      { unit: 'thia-ca-phe', weight: 5, description: '1 thÃ¬a cÃ  phÃª' },
+      { unit: 'thia-ca-phe', weight: 5, description: '1 thìa cà phê' },
     ],
   },
   {
     id: "mam-nem",
-    code: "70012",
-    name: "Mắm Nêm",
+    name: "Mắm nêm",
     nameEn: "Fermented fish sauce",
     category: "condiments",
     servingSize: 100,
@@ -16018,22 +11827,12 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
     zinc: 0.8,
     vitaminB1: 0.08,
     vitaminB2: 0.15,
-    vitaminB3: 1.2, // Niacin
-    vitaminB5: 0.2, // Pantothenic acid
     vitaminB6: 0.1,
-    vitaminB7: 0.3, // Biotin (Âµg)
     folate: 8,
     vitaminB12: 0.8,
     vitaminD: 0,
-    vitaminE: 0.1, // Tocopherol
-    vitaminK: 0, // Phylloquinone
-    choline: 4.0, // mg
-    selenium: 6.0, // Âµg - tá»« cÃ¡
-    copper: 0.08, // mg
-    manganese: 0.04, // mg
-    iodine: 12, // Âµg - tá»« cÃ¡
-    commonServing: "1 thÃ¬a cÃ  phÃª (5g)",
-    notes: "Natri ráº¥t cao",
+    commonServing: "1 thìa cà phê (5g)",
+    notes: "Natri rất cao",
     diabetes: {
       glycemicIndex: 0,
       glycemicLoad: 0,
@@ -16048,121 +11847,28 @@ const baseExtendedFoodDatabase: ExtendedFoodItem[] = [
       saturatedFat: 0.3,
     },
     vietnameseUnits: [
-      { unit: 'thia-ca-phe', weight: 5, description: '1 thÃ¬a cÃ  phÃª' },
+      { unit: 'thia-ca-phe', weight: 5, description: '1 thìa cà phê' },
     ],
   },
 ];
 
 /**
- * Hợp nhất database:
- * - Ưu tiên dữ liệu chi tiết từ `baseExtendedFoodDatabase`
- * - Bổ sung các món còn thiếu từ `foodDatabase` (food-db.ts)
- * - Đồng bộ `code` theo food-db.ts để tránh gán sai mã
+ * Get food by ID with extended information
  */
-const mergedFoodById = new Map<string, ExtendedFoodItem>();
-
-function scoreExtendedFood(food: ExtendedFoodItem): number {
-  const baseScore = Object.values(food).filter(
-    (v) => v !== undefined && v !== null
-  ).length;
-  const diabetesScore = food.diabetes
-    ? Object.values(food.diabetes).filter((v) => v !== undefined && v !== null)
-        .length
-    : 0;
-  const goutScore = food.gout
-    ? Object.values(food.gout).filter((v) => v !== undefined && v !== null)
-        .length
-    : 0;
-  const kidneyScore = food.kidney
-    ? Object.values(food.kidney).filter((v) => v !== undefined && v !== null)
-        .length
-    : 0;
-  const cardioScore = food.cardiovascular
-    ? Object.values(food.cardiovascular).filter(
-        (v) => v !== undefined && v !== null
-      ).length
-    : 0;
-  const unitsScore = food.vietnameseUnits ? food.vietnameseUnits.length : 0;
-
-  return baseScore + diabetesScore + goutScore + kidneyScore + cardioScore + unitsScore;
+export function getExtendedFoodById(id: string): ExtendedFoodItem | undefined {
+  return extendedFoodDatabase.find((food) => food.id === id);
 }
 
-function mergeFillMissing(
-  primary: ExtendedFoodItem,
-  secondary: ExtendedFoodItem
-): ExtendedFoodItem {
-  const out: Record<string, unknown> = { ...primary };
-  const sec: Record<string, unknown> = secondary as unknown as Record<string, unknown>;
-
-  for (const key of Object.keys(sec)) {
-    const outVal = out[key];
-    const secVal = sec[key];
-
-    if (outVal === undefined && secVal !== undefined) {
-      out[key] = secVal;
-      continue;
-    }
-
-    // Merge known nested objects conservatively (fill missing keys only)
-    if (
-      (key === "diabetes" || key === "gout" || key === "kidney" || key === "cardiovascular") &&
-      outVal &&
-      secVal &&
-      typeof outVal === "object" &&
-      typeof secVal === "object" &&
-      !Array.isArray(outVal) &&
-      !Array.isArray(secVal)
-    ) {
-      out[key] = { ...(secVal as Record<string, unknown>), ...(outVal as Record<string, unknown>) };
-      continue;
-    }
-
-    // Prefer the longer vietnameseUnits list if both exist
-    if (key === "vietnameseUnits" && Array.isArray(outVal) && Array.isArray(secVal)) {
-      if (outVal.length < secVal.length) out[key] = secVal;
-    }
-  }
-
-  return out as unknown as ExtendedFoodItem;
+/**
+ * Filter extended foods by kcal range (reuse logic from food-db)
+ */
+export function filterExtendedFoodsByKcalRange(
+  foods: ExtendedFoodItem[],
+  range: KcalRange
+): ExtendedFoodItem[] {
+  // Ép kiểu an toàn vì filterFoodsByKcalRange không phụ thuộc vào field `code`
+  return filterFoodsByKcalRange(foods as unknown as FoodItem[], range) as ExtendedFoodItem[];
 }
-
-for (const food of baseExtendedFoodDatabase) {
-  const existing = mergedFoodById.get(food.id);
-  if (!existing) {
-    mergedFoodById.set(food.id, food);
-    continue;
-  }
-
-  // Deduplicate by keeping the richer entry, then fill missing fields from the other.
-  const existingScore = scoreExtendedFood(existing);
-  const incomingScore = scoreExtendedFood(food);
-  const primary = existingScore >= incomingScore ? existing : food;
-  const secondary = primary === existing ? food : existing;
-  mergedFoodById.set(food.id, mergeFillMissing(primary, secondary));
-}
-
-for (const food of foodDatabase) {
-  const existing = mergedFoodById.get(food.id);
-
-  if (!existing) {
-    mergedFoodById.set(food.id, toExtendedFoodItem(food));
-    continue;
-  }
-
-  // Đồng bộ từ food-db (được xem là nguồn chuẩn cho tên + mã)
-  // - Fix lỗi hiển thị tiếng Việt (mojibake) bằng cách luôn lấy `name` từ food-db nếu có
-  // - Đồng bộ `code` theo food-db để tránh gán sai mã
-  // - Bổ sung `nameEn` nếu extended thiếu
-  const next: ExtendedFoodItem = {
-    ...existing,
-    name: food.name || existing.name,
-    nameEn: existing.nameEn || food.nameEn,
-    code: food.code || existing.code,
-  };
-  mergedFoodById.set(food.id, next);
-}
-
-export const extendedFoodDatabase: ExtendedFoodItem[] = Array.from(mergedFoodById.values());
 
 /**
  * Search foods with extended information
@@ -16230,138 +11936,6 @@ export function getFoodsByDisease(
         
       default:
         return false;
-    }
-  });
-}
-
-/**
- * Convert ExtendedFoodItem to FoodItem (for backward compatibility)
- */
-export function toFoodItem(extended: ExtendedFoodItem): import("./food-db").FoodItem {
-  return {
-    id: extended.id,
-    code: extended.code || "",
-    name: extended.name,
-    nameEn: extended.nameEn,
-    category: extended.category,
-    servingSize: extended.servingSize,
-    servingUnit: extended.servingUnit,
-    calories: extended.calories,
-    protein: extended.protein,
-    carbs: extended.carbs,
-    fat: extended.fat,
-    sugars: extended.sugars,
-    water: extended.water,
-    fiber: extended.fiber,
-    sodium: extended.sodium,
-    potassium: extended.potassium,
-    calcium: extended.calcium,
-    iron: extended.iron,
-    phosphorus: extended.phosphorus,
-    magnesium: extended.magnesium,
-    zinc: extended.zinc,
-    vitaminC: extended.vitaminC,
-    vitaminA: extended.vitaminA,
-    cholesterol: extended.cholesterol,
-    purine: extended.gout?.purine,
-    notes: extended.notes,
-    commonServing: extended.commonServing,
-  };
-}
-
-/**
- * Convert FoodItem to ExtendedFoodItem (for migration)
- */
-export function toExtendedFoodItem(food: import("./food-db").FoodItem): ExtendedFoodItem {
-  return {
-    id: food.id,
-    code: food.code,
-    name: food.name,
-    nameEn: food.nameEn,
-    category: food.category,
-    servingSize: food.servingSize,
-    servingUnit: food.servingUnit,
-    calories: food.calories,
-    protein: food.protein,
-    carbs: food.carbs,
-    fat: food.fat,
-    sugars: food.sugars,
-    water: food.water,
-    fiber: food.fiber,
-    sodium: food.sodium,
-    potassium: food.potassium,
-    calcium: food.calcium,
-    iron: food.iron,
-    phosphorus: food.phosphorus,
-    magnesium: food.magnesium,
-    zinc: food.zinc,
-    vitaminC: food.vitaminC,
-    vitaminA: food.vitaminA,
-    cholesterol: food.cholesterol,
-    notes: food.notes,
-    commonServing: food.commonServing,
-    // Map purine to gout if available
-    gout: food.purine ? {
-      purine: food.purine,
-      purineLevel: food.purine < 50 ? 'low' : food.purine < 150 ? 'medium' : 'high',
-    } : undefined,
-    // Map potassium/phosphorus to kidney if available
-    kidney: (food.potassium !== undefined || food.phosphorus !== undefined) ? {
-      potassium: food.potassium || 0,
-      phosphorus: food.phosphorus || 0,
-    } : undefined,
-    // Map cholesterol to cardiovascular if available
-    cardiovascular: food.cholesterol !== undefined ? {
-      cholesterol: food.cholesterol,
-      saturatedFat: 0, // Default, can be updated later
-    } : undefined,
-  };
-}
-
-/**
- * Get food by code (for food-database tool compatibility)
- */
-export function getFoodByCode(code: string): ExtendedFoodItem | undefined {
-  return extendedFoodDatabase.find((food) => food.code === code);
-}
-
-/**
- * Get foods by category (for backward compatibility)
- */
-export function getExtendedFoodsByCategory(category: import("./food-db").FoodCategory): ExtendedFoodItem[] {
-  return extendedFoodDatabase.filter((food) => food.category === category);
-}
-
-/**
- * Get food by ID (for backward compatibility)
- */
-export function getExtendedFoodById(id: string): ExtendedFoodItem | undefined {
-  return extendedFoodDatabase.find((food) => food.id === id);
-}
-
-/**
- * Filter foods by kcal range (for backward compatibility)
- */
-export type KcalRange = "all" | "<50" | "50-100" | "100-200" | "200-300" | ">300";
-
-export function filterExtendedFoodsByKcalRange(foods: ExtendedFoodItem[], range: KcalRange): ExtendedFoodItem[] {
-  if (range === "all") return foods;
-
-  return foods.filter((food) => {
-    const kcal = food.calories;
-    switch (range) {
-      case "<50":
-        return kcal < 50;
-      case "50-100":
-        return kcal >= 50 && kcal < 100;
-      case "100-200":
-        return kcal >= 100 && kcal < 200;
-      case "200-300":
-        return kcal >= 200 && kcal < 300;
-      case ">300":
-        return kcal >= 300;
-      default:
-        return true;
     }
   });
 }
