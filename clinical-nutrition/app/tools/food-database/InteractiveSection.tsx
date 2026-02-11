@@ -86,6 +86,11 @@ export function InteractiveSection() {
   const [selectedCategory, setSelectedCategory] = useState<FoodCategory | "all">("all");
   const [selectedKcalRange, setSelectedKcalRange] = useState<KcalRange>("all");
   const [sodiumFilter, setSodiumFilter] = useState<"all" | Level>("all");
+  const [potassiumFilter, setPotassiumFilter] = useState<"all" | Level>("all");
+  const [purineFilter, setPurineFilter] = useState<"all" | Level>("all");
+  const [phosphorusFilter, setPhosphorusFilter] = useState<"all" | Level>("all");
+  const [cholesterolFilter, setCholesterolFilter] = useState<"all" | Level>("all");
+  const [fiberFilter, setFiberFilter] = useState<"all" | Level>("all");
   const [selectedFood, setSelectedFood] = useState<FoodItem | null>(null);
   const [showBottomSheet, setShowBottomSheet] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
@@ -177,11 +182,56 @@ export function InteractiveSection() {
       });
     }
 
+    // Apply potassium filter (hỗ trợ bệnh thận CKD)
+    if (potassiumFilter !== "all") {
+      foods = foods.filter((food) => {
+        const level = classifyLevel(food.potassium, 150, 300);
+        if (!level) return false;
+        return level === potassiumFilter;
+      });
+    }
+
+    // Apply purine filter (hỗ trợ bệnh gút)
+    if (purineFilter !== "all") {
+      foods = foods.filter((food) => {
+        const level = classifyLevel(food.purine, 50, 150);
+        if (!level) return false;
+        return level === purineFilter;
+      });
+    }
+
+    // Apply phosphorus filter (hỗ trợ bệnh thận CKD)
+    if (phosphorusFilter !== "all") {
+      foods = foods.filter((food) => {
+        const level = classifyLevel(food.phosphorus, 100, 200);
+        if (!level) return false;
+        return level === phosphorusFilter;
+      });
+    }
+
+    // Apply cholesterol filter (hỗ trợ bệnh tim mạch)
+    if (cholesterolFilter !== "all") {
+      foods = foods.filter((food) => {
+        const level = classifyLevel(food.cholesterol, 50, 100);
+        if (!level) return false;
+        return level === cholesterolFilter;
+      });
+    }
+
+    // Apply fiber filter (hỗ trợ tiêu hóa, đái tháo đường)
+    if (fiberFilter !== "all") {
+      foods = foods.filter((food) => {
+        const level = classifyLevel(food.fiber, 2, 5);
+        if (!level) return false;
+        return level === fiberFilter;
+      });
+    }
+
     // Apply kcal filter
     foods = filterFoodsByKcalRange(foods, selectedKcalRange);
 
     return foods;
-  }, [searchQuery, selectedCategory, selectedKcalRange, sodiumFilter]);
+  }, [searchQuery, selectedCategory, selectedKcalRange, sodiumFilter, potassiumFilter, purineFilter, phosphorusFilter, cholesterolFilter, fiberFilter]);
 
   const nutritionPer100g = useMemo(() => {
     if (!selectedFood) return null;
@@ -199,6 +249,11 @@ export function InteractiveSection() {
     setSelectedCategory("all");
     setSelectedKcalRange("all");
     setSodiumFilter("all");
+    setPotassiumFilter("all");
+    setPurineFilter("all");
+    setPhosphorusFilter("all");
+    setCholesterolFilter("all");
+    setFiberFilter("all");
     setSelectedFood(null);
     toast.success("Đã làm mới");
   };
@@ -297,7 +352,7 @@ export function InteractiveSection() {
       {/* Search and Filters */}
       <Card>
         <div className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Keyword Search */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -369,6 +424,101 @@ export function InteractiveSection() {
                 <option value="low">Thấp (&lt; 120 mg/100g)</option>
                 <option value="medium">Vừa (120–400 mg/100g)</option>
                 <option value="high">Cao (&gt; 400 mg/100g)</option>
+              </select>
+            </div>
+
+            {/* Potassium filter */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Kali cho người CKD
+              </label>
+              <select
+                value={potassiumFilter}
+                onChange={(e) =>
+                  setPotassiumFilter(e.target.value as "all" | Level)
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              >
+                <option value="all">Tất cả mức kali</option>
+                <option value="low">Thấp (&lt; 150 mg/100g)</option>
+                <option value="medium">Vừa (150–300 mg/100g)</option>
+                <option value="high">Cao (&gt; 300 mg/100g)</option>
+              </select>
+            </div>
+
+            {/* Purine filter */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Purine cho người gút
+              </label>
+              <select
+                value={purineFilter}
+                onChange={(e) =>
+                  setPurineFilter(e.target.value as "all" | Level)
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              >
+                <option value="all">Tất cả mức purine</option>
+                <option value="low">Thấp (&lt; 50 mg/100g)</option>
+                <option value="medium">Vừa (50–150 mg/100g)</option>
+                <option value="high">Cao (&gt; 150 mg/100g)</option>
+              </select>
+            </div>
+
+            {/* Phosphorus filter */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Phốt pho cho người CKD
+              </label>
+              <select
+                value={phosphorusFilter}
+                onChange={(e) =>
+                  setPhosphorusFilter(e.target.value as "all" | Level)
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              >
+                <option value="all">Tất cả mức phốt pho</option>
+                <option value="low">Thấp (&lt; 100 mg/100g)</option>
+                <option value="medium">Vừa (100–200 mg/100g)</option>
+                <option value="high">Cao (&gt; 200 mg/100g)</option>
+              </select>
+            </div>
+
+            {/* Cholesterol filter */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Cholesterol cho người tim mạch
+              </label>
+              <select
+                value={cholesterolFilter}
+                onChange={(e) =>
+                  setCholesterolFilter(e.target.value as "all" | Level)
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              >
+                <option value="all">Tất cả mức cholesterol</option>
+                <option value="low">Thấp (&lt; 50 mg/100g)</option>
+                <option value="medium">Vừa (50–100 mg/100g)</option>
+                <option value="high">Cao (&gt; 100 mg/100g)</option>
+              </select>
+            </div>
+
+            {/* Fiber filter */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Chất xơ
+              </label>
+              <select
+                value={fiberFilter}
+                onChange={(e) =>
+                  setFiberFilter(e.target.value as "all" | Level)
+                }
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              >
+                <option value="all">Tất cả mức chất xơ</option>
+                <option value="low">Thấp (&lt; 2 g/100g)</option>
+                <option value="medium">Vừa (2–5 g/100g)</option>
+                <option value="high">Cao (&gt; 5 g/100g)</option>
               </select>
             </div>
           </div>
