@@ -32,6 +32,7 @@ const categories: { value: FoodCategory; label: string }[] = [
   { value: "legumes", label: "Đậu" },
   { value: "dairy", label: "Sữa" },
   { value: "condiments", label: "Gia vị" },
+  { value: "beverages", label: "Đồ uống" },
 ];
 
 const kcalRanges: { value: KcalRange; label: string }[] = [

@@ -36,6 +36,7 @@ const categories: { value: FoodCategory; label: string }[] = [
   { value: "fruits", label: "Trái cây" },
   { value: "legumes", label: "Đậu" },
   { value: "soups", label: "Canh/Súp" },
+  { value: "beverages", label: "Đồ uống" },
 ];
 
 export function InteractiveSection() {
