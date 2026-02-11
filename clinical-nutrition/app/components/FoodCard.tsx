@@ -8,8 +8,8 @@ type FoodCardItem = FoodItem | (ExtendedFoodItem & { code?: string });
 const categoryLabels: Record<FoodCategory, string> = {
   "rice-noodles": "Cơm & Bún",
   meat: "Thịt",
-  seafood: "Hải sản",
-  freshwater: "Thủy sản nước ngọt",
+  seafood: "Thủy hải sản",
+  freshwater: "Thủy hải sản",
   vegetables: "Rau củ",
   fruits: "Trái cây",
   legumes: "Đậu",
