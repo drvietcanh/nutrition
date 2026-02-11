@@ -38,11 +38,11 @@ export default function EnergyProteinCalculatorPage() {
   return (
     <main className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6 lg:px-8 sm:py-12">
       {/* 1. Title + brief explanation */}
-      <header className="space-y-3 tool-page-section">
+      <header className="space-y-3">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
-            <h1 className="heading-1">
-              Cơ thể cần bao nhiêu năng lượng & protein mỗi ngày?
+            <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+              cơ thể cần bao nhiêu năng lượng & Protein mỗi ngày?
             </h1>
           </div>
           <ShareButton
@@ -68,7 +68,7 @@ export default function EnergyProteinCalculatorPage() {
       {/* How to Use section */}
       <section
         aria-labelledby="how-to-use-heading"
-        className="space-y-3 rounded-lg border border-green-200 bg-green-50 p-5 shadow-sm sm:p-6 tool-page-section"
+        className="space-y-3 rounded-lg border border-green-200 bg-green-50 p-5 shadow-sm sm:p-6"
       >
         <h2
           id="how-to-use-heading"
@@ -104,7 +104,7 @@ export default function EnergyProteinCalculatorPage() {
       {/* 2. Why estimate needs? */}
       <section
         aria-labelledby="why-estimate-heading"
-        className="space-y-3 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6 tool-page-section"
+        className="space-y-3 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm sm:p-6"
       >
         <h2
           id="why-estimate-heading"
@@ -149,7 +149,7 @@ export default function EnergyProteinCalculatorPage() {
       </Suspense>
 
       {/* 6. Interpretation & learning points (global for the page) */}
-      <section aria-labelledby="learning-heading" className="space-y-4 tool-page-section">
+      <section aria-labelledby="learning-heading" className="space-y-4">
         <h2
           id="learning-heading"
           className="text-lg font-semibold text-gray-900 sm:text-xl flex items-center gap-2"
@@ -184,7 +184,7 @@ export default function EnergyProteinCalculatorPage() {
       {/* 7. Common clinical pitfalls */}
       <section
         aria-labelledby="pitfalls-heading"
-        className="space-y-3 rounded-lg border border-amber-200 bg-amber-50 p-5 shadow-sm sm:p-6 tool-page-section"
+        className="space-y-3 rounded-lg border border-amber-200 bg-amber-50 p-5 shadow-sm sm:p-6"
       >
         <h2
           id="pitfalls-heading"
@@ -216,7 +216,7 @@ export default function EnergyProteinCalculatorPage() {
       </section>
 
       {/* 8. Safety disclaimer */}
-      <section aria-labelledby="safety-heading" className="space-y-2 rounded-lg border border-red-200 bg-red-50 p-4 sm:p-5 tool-page-section">
+      <section aria-labelledby="safety-heading" className="space-y-2 rounded-lg border border-red-200 bg-red-50 p-4 sm:p-5">
         <h2
           id="safety-heading"
           className="text-base font-semibold text-red-900 sm:text-lg"

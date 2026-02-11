@@ -34,7 +34,7 @@ export default function IntakeAssessmentPage() {
   return (
     <main className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6 lg:px-8 sm:py-12">
       {/* 1. Title + brief explanation */}
-      <header className="space-y-2 tool-page-section">
+      <header className="space-y-2">
         <h1 className="heading-1">
           Đánh giá Lượng ăn – Công cụ giảng dạy
         </h1>
@@ -49,7 +49,7 @@ export default function IntakeAssessmentPage() {
       {/* 2. Why compare needs and intake? */}
       <section
         aria-labelledby="why-compare-heading"
-        className="space-y-2 rounded-md border border-neutral-200 bg-white p-4 shadow-sm tool-page-section"
+        className="space-y-2 rounded-md border border-neutral-200 bg-white p-4"
       >
         <h2
           id="why-compare-heading"
@@ -93,7 +93,7 @@ export default function IntakeAssessmentPage() {
       {/* 6. Common clinical reasons for gaps */}
       <section
         aria-labelledby="reasons-heading"
-        className="space-y-3 rounded-md border border-neutral-200 bg-white p-4 shadow-sm tool-page-section"
+        className="space-y-3 rounded-md border border-neutral-200 bg-white p-4"
       >
         <h2
           id="reasons-heading"
@@ -122,7 +122,7 @@ export default function IntakeAssessmentPage() {
       </section>
 
       {/* 7. How clinicians think about trends */}
-      <section aria-labelledby="trends-heading" className="space-y-3 tool-page-section">
+      <section aria-labelledby="trends-heading" className="space-y-3">
         <h2
           id="trends-heading"
           className="heading-4"
@@ -146,7 +146,7 @@ export default function IntakeAssessmentPage() {
       </section>
 
       {/* 8. Safety disclaimer */}
-      <section aria-labelledby="safety-heading" className="space-y-2 tool-page-section">
+      <section aria-labelledby="safety-heading" className="space-y-2">
         <h2
           id="safety-heading"
           className="heading-4"

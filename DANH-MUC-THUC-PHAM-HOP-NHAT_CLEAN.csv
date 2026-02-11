@@ -1,0 +1,645 @@
+Id,Code,Name,Category
+banh-beo-viet29,,BÃ¡nh bÃ¨o,snacks
+banh-cam,,BÃ¡nh cam (bÃ¡nh rÃ¡n),snacks
+banh-canh,,BÃ¡nh canh,rice-noodles
+banh-cuon-viet09,,BÃ¡nh cuá»‘n,rice-noodles
+banh-mi-den,,BÃ¡nh mÃ¬ Ä‘en (rye),rice-noodles
+banh-mi-kep,,BÃ¡nh mÃ¬ káº¹p thá»‹t,snacks
+banh-mi-nguyen-cam,,BÃ¡nh mÃ¬ nguyÃªn cÃ¡m,rice-noodles
+banh-mi-trang,,BÃ¡nh mÃ¬ tráº¯ng,rice-noodles
+banh-tieu,,BÃ¡nh tiÃªu,snacks
+banh-trang-nuong,,BÃ¡nh trÃ¡ng nÆ°á»›ng,snacks
+banh-xeo-viet10,,BÃ¡nh xÃ¨o,snacks
+bap-bo,,Báº¯p bÃ²,meat
+bap-cai-trang,,Báº¯p cáº£i tráº¯ng,vegetables
+bap-ngo,,Báº¯p (ngÃ´),vegetables
+bap-xao,,Báº¯p xÃ o,snacks
+bau-sao,,Báº§u sao,vegetables
+be-thui,,BÃª thui,meat
+bi-do-veg48,,BÃ­ Ä‘á»,vegetables
+bi-ho-lo,,BÃ­ há»“ lÃ´,vegetables
+bi-ngoi,,BÃ­ ngÃ²i,vegetables
+bo-ngot-rung,,Rau bá»“ ngÃ³t (ngÃ³t rá»«ng),vegetables
+bun-bo-hue-viet03,,BÃºn bÃ² Huáº¿,soups
+bun-cha-viet04,,BÃºn cháº£,soups
+bun-gao-lut,,BÃºn gáº¡o lá»©t,rice-noodles
+bun-mang-vit,,BÃºn mÄƒng vá»‹t,soups
+bun-tau,,BÃºn tÃ u,rice-noodles
+bun-tuoi,,BÃºn tÆ°Æ¡i,rice-noodles
+buoi-da-xanh,,BÆ°á»Ÿi da xanh,fruits
+ca-bon-bien,,CÃ¡ bÆ¡n biá»ƒn,seafood
+ca-bop,,CÃ¡ bá»›p,seafood
+ca-chim-bien,,CÃ¡ chim biá»ƒn,seafood
+ca-chi-vang,,CÃ¡ chá»‰ vÃ ng,seafood
+ca-chua-bi,,CÃ  chua bi,vegetables
+ca-chua-veg35,,CÃ  chua,vegetables
+ca-com-kho,,CÃ¡ cÆ¡m khÃ´,seafood
+ca-dua,,CÃ¡ dá»©a,seafood
+ca-duoi,,CÃ¡ Ä‘uá»‘i,seafood
+ca-hoi,,CÃ¡ há»“i,seafood
+ca-hoi-nuong,,CÃ¡ há»“i nÆ°á»›ng,seafood
+ca-hong-bien,,CÃ¡ há»“ng biá»ƒn,seafood
+ca-ho-nuong,,CÃ¡ há»‘ nÆ°á»›ng,seafood
+cai-be-xanh,,Rau cáº£i báº¹ xanh,vegetables
+cai-bo-xoi,,Cáº£i bÃ³ xÃ´i,vegetables
+cai-ngot-veg64,,Rau cáº£i ngá»t,vegetables
+cai-thao-veg66,,Rau cáº£i tháº£o,vegetables
+cai-thia-veg25,,Rau cáº£i thÃ¬a,vegetables
+cai-xanh-veg65,,Rau cáº£i xanh,vegetables
+cai-xoong,,Rau cáº£i xoong,vegetables
+ca-kim,,CÃ¡ kÃ¬m,seafood
+ca-linh,,CÃ¡ linh,seafood
+ca-moi-hop-fish32,,CÃ¡ mÃ²i há»™p,seafood
+ca-moi-nuong,,CÃ¡ mÃ²i nÆ°á»›ng,seafood
+cam-sanh-fr29,,Cam sÃ nh,fruits
+ca-nau,,CÃ¡ nÃ¢u,seafood
+ca-ngu-ap-chao,,CÃ¡ ngá»« Ã¡p cháº£o,seafood
+ca-ngu-hop-nuoc,,CÃ¡ ngá»« há»™p (nÆ°á»›c),seafood
+ca-nuc-nuong,,CÃ¡ ná»¥c nÆ°á»›ng,seafood
+cao-lau,,Cao láº§u,soups
+ca-phao-muoi,,CÃ  phÃ¡o muá»‘i,vegetables
+ca-phao-tuoi,,CÃ  phÃ¡o tÆ°Æ¡i,vegetables
+ca-rot-tim,,CÃ  rá»‘t tÃ­m,vegetables
+ca-sac,,CÃ¡ sáº·c,seafood
+ca-that-lat,,CÃ¡ thÃ¡t lÃ¡t,seafood
+ca-thu-nuong,,CÃ¡ thu nÆ°á»›ng,seafood
+ca-thu-tuoi,,CÃ¡ thu tÆ°Æ¡i,seafood
+ca-trich-nuong,,CÃ¡ trÃ­ch nÆ°á»›ng,seafood
+ca-tuyet,,CÃ¡ tuyáº¿t,seafood
+cha-lua-chien,,Cháº£ lá»¥a chiÃªn,meat
+chan-gio,,ChÃ¢n giÃ²,meat
+chao-long,,ChÃ¡o lÃ²ng,soups
+che-dau-den-viet39,,ChÃ¨ Ä‘áº­u Ä‘en,desserts
+chom-chom-fr34,,ChÃ´m chÃ´m,fruits
+chuoi-tieu-fr28,,Chuá»‘i tiÃªu chÃ­n,fruits
+com-gao-lut,,CÆ¡m gáº¡o lá»©t,rice-noodles
+com-tam-suon-viet05,,CÆ¡m táº¥m sÆ°á»n,rice-noodles
+cu-cai,,Cá»§ cáº£i,vegetables
+cu-cai-do,,Cá»§ cáº£i Ä‘á»,vegetables
+cu-nang,,Cá»§ nÄƒng (mÃ£ tháº§y),vegetables
+cu-sen,,Cá»§ sen,vegetables
+cu-tu,,Cá»§ tá»«,vegetables
+dau-bap-do,,Äáº­u báº¯p Ä‘á»,vegetables
+dau-phung,,Äáº­u phá»¥ng,legumes
+dau-rong,,Äáº­u rá»“ng (quáº£),vegetables
+diep-ca,,Rau diáº¿p cÃ¡,vegetables
+dua-cai-muoi,,DÆ°a cáº£i muá»‘i,vegetables
+dua-gang,,DÆ°a gang,vegetables
+dua-hau-fr20,,DÆ°a háº¥u,fruits
+dua-leo-bao-tu,,DÆ°a leo bao tá»­,vegetables
+dua-leo-veg36,,DÆ°a leo,vegetables
+dua-thom-fr37,,Dá»©a (thÆ¡m),fruits
+du-du-chin-fr25,,Äu Ä‘á»§ chÃ­n,fruits
+du-du-xanh,,Äu Ä‘á»§ xanh,vegetables
+gan-lon,,Gan lá»£n,meat
+gao-lut-do,,Gáº¡o lá»©t Ä‘á»,rice-noodles
+gao-nep,,Gáº¡o náº¿p,rice-noodles
+gia-do,,GiÃ¡ Ä‘á»—,vegetables
+gio-lua,,GiÃ² lá»¥a,meat
+heo-quay,,Thá»‹t heo quay,meat
+jambon-meat32,,Jambon (giÄƒm bÃ´ng),meat
+khoai-lang-tim,,Khoai lang tÃ­m,vegetables
+khoai-lang-veg29,,Khoai lang,vegetables
+khoai-mi,,Khoai mÃ¬ (sáº¯n),vegetables
+khoai-so,,Khoai sá»,vegetables
+khoai-tay-veg50,,Khoai tÃ¢y,vegetables
+kho-qua-rung,,Khá»• qua rá»«ng,vegetables
+kinh-gioi-veg74,,Rau kinh giá»›i,vegetables
+le-fr24,,LÃª,fruits
+long-lon,,LÃ²ng lá»£n,meat
+mang-cut-fr33,,MÄƒng cá»¥t,fruits
+man-roi,,Máº­n (roi),fruits
+mat-ong,,Máº­t ong,condiments
+me-xanh,,Me xanh,fruits
+mi-quang-viet17,,MÃ¬ Quáº£ng,soups
+mi-tom,,MÃ¬ tÃ´m,rice-noodles
+mong-toi-veg67,,Rau má»“ng tÆ¡i,vegetables
+muop-huong,,MÆ°á»›p hÆ°Æ¡ng,vegetables
+muop-khia,,MÆ°á»›p khÃ­a,vegetables
+nem-chua-meat27,,Nem chua,meat
+nem-ran-viet12,,Nem rÃ¡n (cháº£ giÃ²),snacks
+ngheu-so,,NghÃªu (ngao),seafood
+nhan-fr35,,NhÃ£n,fruits
+nuoc-tuong,,NÆ°á»›c tÆ°Æ¡ng,condiments
+oi-fr38,,á»”i,fruits
+ot-chuong,,á»št chuÃ´ng,vegetables
+pho-bo-viet01,,Phá»Ÿ bÃ²,soups
+pho-ga-viet02,,Phá»Ÿ gÃ,soups
+pho-mai-it-beo,,PhÃ´ mai tÆ°Æ¡i Ã­t bÃ©o,dairy
+quyt-fr30,,QuÃ½t,fruits
+rau-cang-cua,,Rau cÃ ng cua,vegetables
+rau-den-com-veg68,,Rau dá»n cÆ¡m,vegetables
+rau-den-gai-veg69,,Rau dá»n gai,vegetables
+rau-den-veg16,,Rau dá»n,vegetables
+rau-don,,Rau dá»›n,vegetables
+rau-he,,Rau háº¹,vegetables
+rau-lang-veg70,,Rau lang (ngá»n khoai lang),vegetables
+rau-mong-toi,,Rau má»“ng tÆ¡i,vegetables
+rau-muong-veg63,,Rau muá»‘ng,vegetables
+rau-sam,,Rau sam,vegetables
+ruoc-thit,,Ruá»‘c thá»‹t,meat
+sau-rieng-fr32,,Sáº§u riÃªng,fruits
+sua-chua-khong-duong,,Sá»¯a chua khÃ´ng Ä‘Æ°á»ng,dairy
+sua-dau-nanh-it-duong,,Sá»¯a Ä‘áº­u nÃ nh Ã­t Ä‘Æ°á»ng,beverages
+sua-tach-beo,,Sá»¯a tÃ¡ch bÃ©o,dairy
+su-hao,,Su hÃ o,vegetables
+suon-non,,SÆ°á»n non,meat
+sup-lo,,SÃºp lÆ¡,vegetables
+tan-o,,Rau táº§n Ã´,vegetables
+tan-o-veg71,,Rau táº§n Ã´ (cáº£i cÃºc),vegetables
+thanh-long-fr21,,Thanh long,fruits
+than-lon,,Tháº­n lá»£n,meat
+thi-la-veg73,,Rau thÃ¬ lÃ,vegetables
+thit-bo-gan,,Thá»‹t bÃ² gÃ¢n,meat
+thit-bo-nac,,Thá»‹t bÃ² náº¡c,meat
+thit-kho-trung-viet15,,Thá»‹t kho trá»©ng,meat
+thit-nac-vai,,Thá»‹t náº¡c vai,meat
+tim-lon,,Tim lá»£n,meat
+trung-cut-lon,,Trá»©ng cÃºt lá»™n,snacks
+trung-vit-lon,,Trá»©ng vá»‹t lá»™n,snacks
+tuong-den,,TÆ°Æ¡ng Ä‘en,condiments
+vit-quay,,Vá»‹t quay,meat
+xa-lach-xoan-veg72,,Rau xÃ  lÃ¡ch xoÄƒn,vegetables
+xoai-chin-fr18,,XoÃ i chÃ­n,fruits
+xoai-xanh,,XoÃ i xanh,fruits
+yen-mach-chao,,Yáº¿n máº¡ch (chÃ¡o),rice-noodles
+com-trang,10001.0,CÆ¡m tráº¯ng,rice-noodles
+le,10001.0,LÃª,fruits
+bun,10003.0,BÃºn,rice-noodles
+bun-cha,10003.0,BÃºn cháº£,rice-noodles
+bun-ga,10004.0,BÃºn gÃ,rice-noodles
+banh-mi,10005.0,BÃ¡nh mÃ¬,rice-noodles
+mien,10006.0,Miáº¿n,rice-noodles
+khoai-lang,10007.0,Khoai lang,vegetables
+coc,10008.0,CÃ³c,fruits
+ngu-coc,10008.0,NgÃ´ (Báº¯p),snacks
+com-ga,10009.0,CÆ¡m gÃ,rice-noodles
+banh-cuon,10010.0,BÃ¡nh cuá»‘n,rice-noodles
+khoai-tay-chien,10011.0,Khoai tÃ¢y chiÃªn,snacks
+banh-quy,10012.0,BÃ¡nh quy,snacks
+com-tam,10013.0,CÆ¡m táº¥m,rice-noodles
+banh-trang,10016.0,BÃ¡nh trÃ¡ng,snacks
+banh-phong-tom,10017.0,BÃ¡nh phá»“ng tÃ´m,snacks
+banh-mi-trung,10018.0,BÃ¡nh mÃ¬ trá»©ng,snacks
+banh-mi-thit,10019.0,BÃ¡nh mÃ¬ thá»‹t,snacks
+nem-nuong-updated,10020.0,Nem nÆ°á»›ng,snacks
+banh-beo-chen,10021.0,BÃ¡nh bÃ¨o chÃ©n,snacks
+banh-bao-chay,10022.0,BÃ¡nh bao chay,snacks
+goi-cuon-chay,10023.0,Gá»i cuá»‘n chay,snacks
+xoi-man,10024.0,XÃ´i máº·n,rice-noodles
+xoi-ga,10025.0,XÃ´i gÃ,rice-noodles
+banh-mi-op-la,10026.0,BÃ¡nh mÃ¬ á»‘p la,snacks
+banh-mi-cha-lua,10027.0,BÃ¡nh mÃ¬ cháº£ lá»¥a,snacks
+banh-mi-xiu-mai,10028.0,BÃ¡nh mÃ¬ xÃ­u máº¡i,snacks
+banh-bao,10029.0,BÃ¡nh bao nhÃ¢n thá»‹t,snacks
+banh-bao-thit,10029.0,BÃ¡nh bao nhÃ¢n thá»‹t,snacks
+banh-gio,10030.0,BÃ¡nh giÃ²,snacks
+mi-goi,10031.0,MÃ¬ gÃ³i (mÃ¬ Äƒn liá»n),snacks
+bun-thit-nuong,10032.0,BÃºn thá»‹t nÆ°á»›ng,rice-noodles
+bun-dau-mam-tom,10033.0,BÃºn Ä‘áº­u máº¯m tÃ´m,rice-noodles
+banh-trang-tron,10034.0,BÃ¡nh trÃ¡ng trá»™n,snacks
+goi-cuon,10035.0,Gá»i cuá»‘n tÃ´m thá»‹t,snacks
+goi-cuon-tom-thit,10035.0,Gá»i cuá»‘n tÃ´m thá»‹t,snacks
+banh-chung,10036.0,BÃ¡nh chÆ°ng,rice-noodles
+banh-tet,10037.0,BÃ¡nh tÃ©t,rice-noodles
+bun-ca,10038.0,BÃºn cÃ¡,rice-noodles
+bun-moc,10039.0,BÃºn má»c,rice-noodles
+mi-xao-bo,10040.0,MÃ¬ xÃ o bÃ²,rice-noodles
+com-rang-trung,10041.0,CÆ¡m rang trá»©ng,rice-noodles
+bun-oc,10042.0,BÃºn á»‘c,rice-noodles
+com-hen,10043.0,CÆ¡m háº¿n,rice-noodles
+banh-bot-loc,10044.0,BÃ¡nh bá»™t lá»c,snacks
+banh-nam,10045.0,BÃ¡nh náº­m,snacks
+banh-khot,10046.0,BÃ¡nh khá»t,snacks
+canh-chua,11001.0,Canh chua,soups
+bun-rieu,11003.0,BÃºn riÃªu,soups
+canh-kho-qua,11004.0,Canh khá»• qua,soups
+kho-qua,11004.0,Khá»• qua,vegetables
+chao-thit-bam,11005.0,ChÃ¡o thá»‹t báº±m,soups
+banh-cuon-thit-updated,11006.0,BÃ¡nh cuá»‘n thá»‹t,soups
+canh-chua-ca,11007.0,Canh chua cÃ¡,soups
+com-canh-chua-ca,11007.0,CÆ¡m canh chua cÃ¡,soups
+com-thit-kho-trung,11008.0,CÆ¡m thá»‹t kho trá»©ng,soups
+ca-kho-to,11009.0,CÃ¡ kho tá»™,seafood
+com-ca-kho-to,11009.0,CÆ¡m cÃ¡ kho tá»™,soups
+bun-rieu-cua,11010.0,BÃºn riÃªu cua,soups
+bun-rieu-cua-updated,11010.0,BÃºn riÃªu cua,soups
+canh-rau-ngot-thit,11011.0,Canh rau ngÃ³t thá»‹t,soups
+rau-ngot,11011.0,Rau ngÃ³t,vegetables
+canh-bi-nau-tom,11012.0,Canh bÃ­ náº¥u tÃ´m,soups
+trung-chien-nuoc-mam,11013.0,Trá»©ng chiÃªn nÆ°á»›c máº¯m,soups
+dau-hu-sot-ca,11014.0,Äáº­u hÅ© sá»‘t cÃ,soups
+pho-ga,11015.0,Phá»Ÿ gÃ,soups
+pho-bo,11016.0,Phá»Ÿ bÃ²,rice-noodles
+hu-tieu,11017.0,Há»§ tiáº¿u,rice-noodles
+hu-tieu-nam-vang,11017.0,Há»§ tiáº¿u Nam Vang,soups
+bun-bo-hue,11018.0,BÃºn bÃ² Huáº¿,soups
+com-tam-suon-bi-cha,11019.0,CÆ¡m táº¥m sÆ°á»n bÃ¬ cháº£,soups
+com-ga-xoi-mo,11020.0,CÆ¡m gÃ  xá»‘i má»¡,rice-noodles
+com-chien-duong-chau,11021.0,CÆ¡m chiÃªn DÆ°Æ¡ng ChÃ¢u,rice-noodles
+banh-xeo,11022.0,BÃ¡nh xÃ¨o,soups
+thit-rang-mam-ruoc,11023.0,Thá»‹t rang máº¯m ruá»‘c,soups
+ca-chien,11024.0,CÃ¡ chiÃªn,soups
+canh-chua-ca-updated,11025.0,Canh chua cÃ¡,soups
+rau-luoc-kho-quet,11026.0,Rau luá»™c cháº¥m kho quáº¹t,soups
+thit-kho-tau,11027.0,Thá»‹t kho tÃ u,meat
+ca-kho-tieu,11028.0,CÃ¡ kho tiÃªu,soups
+ga-kho-gung,11029.0,GÃ  kho gá»«ng,soups
+gung,11029.0,Gá»«ng,vegetables
+bo-xao-rau-cai,11030.0,Thá»‹t bÃ² xÃ o rau cáº£i,soups
+heo-xao-hanh-can,11031.0,Thá»‹t heo xÃ o hÃ nh cáº§n,soups
+trung-xao-ca-chua,11032.0,Trá»©ng xÃ o cÃ  chua,soups
+canh-cai-xanh-thit,11033.0,Canh cáº£i xanh náº¥u thá»‹t,soups
+canh-muop-nau-hen,11034.0,Canh mÆ°á»›p náº¥u háº¿n,soups
+tom-rim-man,11035.0,TÃ´m rim máº·n,soups
+dau-hu-chien,11036.0,Äáº­u hÅ© chiÃªn,soups
+bun-thang,11037.0,BÃºn thang,soups
+cha-ca-la-vong,11038.0,Cháº£ cÃ¡ LÃ£ Vá»ng,soups
+canh-cua-rau-day,11039.0,Canh cua rau Ä‘ay,soups
+rau-day,11039.0,Rau Ä‘ay,vegetables
+mi-quang,11040.0,MÃ¬ Quáº£ng,soups
+bun-mam,11041.0,BÃºn máº¯m,soups
+bun-mam-nem,11041.0,BÃºn máº¯m nÃªm,soups
+lau-mam,11043.0,Láº©u máº¯m,soups
+ca-loc,11044.0,CÃ¡ lÃ³c,seafood
+ca-loc-nuong-trui,11044.0,CÃ¡ lÃ³c nÆ°á»›ng trui,soups
+canh-chua-ca-mien-tay,11045.0,Canh chua cÃ¡ miá»n TÃ¢y,soups
+com-chay-thap-cam,11046.0,CÆ¡m chay tháº­p cáº©m,soups
+com-chien-chay,11047.0,CÆ¡m chiÃªn chay,soups
+bun-rieu-chay,11048.0,BÃºn riÃªu chay,soups
+pho-chay,11049.0,Phá»Ÿ chay,soups
+dau-hu-kho-nam,11050.0,Äáº­u hÅ© kho náº¥m,soups
+canh-rong-bien-chay,11051.0,Canh rong biá»ƒn chay,soups
+canh-kho-qua-chay,11052.0,Canh khá»• qua chay,soups
+rau-cu-xao-thap-cam,11053.0,Rau cá»§ xÃ o tháº­p cáº©m,soups
+ca-tim,11054.0,CÃ  tÃ­m,vegetables
+ca-tim-kho-chay,11054.0,CÃ  tÃ­m kho chay,soups
+nam-kho-tieu-chay,11055.0,Náº¥m kho tiÃªu chay,soups
+chao-trang,11056.0,ChÃ¡o tráº¯ng,soups
+chao-ga,11057.0,ChÃ¡o gÃ,soups
+com-suon-canh,11058.0,CÆ¡m sÆ°á»n + canh,soups
+com-ga-xe,11059.0,CÆ¡m gÃ  xÃ©,soups
+com-chien-canh,11060.0,CÆ¡m chiÃªn + canh,soups
+com-bo-luc-lac,11061.0,CÆ¡m bÃ² lÃºc láº¯c,soups
+che-dau-xanh,12001.0,ChÃ¨ Ä‘áº­u xanh,desserts
+che-khoai-mon,12002.0,ChÃ¨ khoai mÃ´n,desserts
+kem,12003.0,Kem,desserts
+che-ba-mau,12004.0,ChÃ¨ ba mÃ u,desserts
+sua-chua-nep-cam,12005.0,Sá»¯a chua náº¿p cáº©m,desserts
+banh-mi-que,12007.0,BÃ¡nh mÃ¬ que,snacks
+thit-heo-nac,20001.0,Thá»‹t heo náº¡c,meat
+thit-ga,20002.0,Thá»‹t gÃ,meat
+bo,20003.0,BÆ¡,fruits
+thit-bo,20003.0,Thá»‹t bÃ²,meat
+thit-vit,20004.0,Thá»‹t vá»‹t,meat
+thit-heo-ba-chi,20005.0,Thá»‹t heo ba chá»‰,meat
+gan-heo,20006.0,Gan heo,meat
+thit-bo-kho,20007.0,Thá»‹t bÃ² kho,meat
+ga-nuong,20008.0,Thá»‹t gÃ  nÆ°á»›ng,meat
+thit-ga-nuong,20008.0,Thá»‹t gÃ  nÆ°á»›ng,meat
+thit-heo-kho,20009.0,Thá»‹t heo kho,meat
+thit-bo-luc-lac,20010.0,Thá»‹t bÃ² lÃºc láº¯c,meat
+nem-nuong,20011.0,Nem nÆ°á»›ng,snacks
+thit-heo-nac-vai,20012.0,Thá»‹t heo náº¡c vai,meat
+vai,20012.0,Váº£i,fruits
+thit-heo-nac-mong,20013.0,Thá»‹t heo náº¡c mÃ´ng,meat
+thit-ba-chi,20014.0,Thá»‹t ba chá»‰,meat
+thit-ba-chi-heo,20014.0,Thá»‹t ba chá»‰ heo,meat
+thit-heo-xay,20015.0,Thá»‹t heo xay,meat
+thit-bo-than,20016.0,Thá»‹t bÃ² thÄƒn,meat
+thit-bo-nam,20017.0,Thá»‹t bÃ² náº¡m,meat
+thit-bo-xay,20018.0,Thá»‹t bÃ² xay,meat
+thit-ga-ta-co-da,20019.0,Thá»‹t gÃ  ta (cÃ³ da),meat
+thit-ga-ta-bo-da,20020.0,Thá»‹t gÃ  ta bá» da,meat
+thit-vit-co-da,20021.0,Thá»‹t vá»‹t (cÃ³ da),meat
+thit-vit-bo-da,20022.0,Thá»‹t vá»‹t bá» da,meat
+thit-de,20023.0,Thá»‹t dÃª,meat
+thit-cuu,20024.0,Thá»‹t cá»«u,meat
+gio-heo,20025.0,GiÃ² heo (chÃ¢n giÃ²),meat
+suon-heo-non,20026.0,SÆ°á»n heo non,meat
+tai-heo,20027.0,Tai heo,meat
+thit-be,20028.0,Thá»‹t bÃª,meat
+thit-chim-cut,20029.0,Thá»‹t chim cÃºt,meat
+thit-bo-cau,20030.0,Thá»‹t bá»“ cÃ¢u,meat
+thit-tho,20031.0,Thá»‹t thá»,meat
+thit-ech,20032.0,Thá»‹t áº¿ch,meat
+ba-roi-bo,20033.0,Ba rá»i bÃ²,meat
+thit-nguoi-giam-bong,20034.0,GiÄƒm bÃ´ng (thá»‹t nguá»™i),meat
+xuc-xich-heo,20035.0,XÃºc xÃ­ch heo,meat
+thit-heo-cot-let,20036.0,Thá»‹t heo cá»‘t láº¿t,meat
+thit-heo-nac-dam,20037.0,Thá»‹t heo náº¡c dÄƒm,meat
+thit-heo-than-noi,20038.0,Thá»‹t heo thÄƒn ná»™i,meat
+thit-heo-than-ngoai,20039.0,Thá»‹t heo thÄƒn ngoáº¡i,meat
+thit-bo-bap,20040.0,Thá»‹t bÃ² báº¯p,meat
+thit-bo-gau,20041.0,Thá»‹t bÃ² gáº§u,meat
+bo-de-suon,20042.0,Thá»‹t bÃ² dáº» sÆ°á»n,meat
+thit-ga-cong-nghiep-co-da,20043.0,Thá»‹t gÃ  cÃ´ng nghiá»‡p (cÃ³ da),meat
+thit-ga-cong-nghiep-bo-da,20044.0,Thá»‹t gÃ  cÃ´ng nghiá»‡p bá» da,meat
+thit-ngan-co-da,20045.0,Thá»‹t ngan (cÃ³ da),meat
+thit-ngan-bo-da,20046.0,Thá»‹t ngan bá» da,meat
+thit-trau,20047.0,Thá»‹t trÃ¢u,meat
+thit-cho,20048.0,Thá»‹t chÃ³,meat
+thit-meo,20049.0,Thá»‹t mÃ¨o,meat
+thit-ran,20050.0,Thá»‹t ráº¯n,meat
+thit-ca-sau,20051.0,Thá»‹t cÃ¡ sáº¥u,meat
+thit-nhim,20052.0,Thá»‹t nhÃ­m,meat
+thit-dui,20053.0,Thá»‹t dÃºi,meat
+thit-cay-huong,20054.0,Thá»‹t cáº§y hÆ°Æ¡ng,meat
+thit-chim-se,20055.0,Thá»‹t chim sáº»,meat
+thit-heo-rung,20056.0,Thá»‹t heo rá»«ng,meat
+thit-nai,20057.0,Thá»‹t nai (hÆ°Æ¡u),meat
+thit-da-dieu,20058.0,Thá»‹t Ä‘Ã  Ä‘iá»ƒu,meat
+thit-chim-tri,20059.0,Thá»‹t chim trÄ©,meat
+thit-cu-gay,20060.0,Thá»‹t chim cu gÃ¡y,meat
+thit-cuu-non,20061.0,Thá»‹t cá»«u non,meat
+thit-be-non,20062.0,Thá»‹t bÃª non,meat
+thit-ngua,20063.0,Thá»‹t ngá»±a,meat
+thit-bo-vai,20064.0,Thá»‹t vai bÃ²,meat
+thit-bo-loi-vai,20065.0,Thá»‹t bÃ² lÃµi vai,meat
+duoi-bo,20066.0,ÄuÃ´i bÃ²,meat
+gan-bo,20067.0,GÃ¢n bÃ²,meat
+thit-trau-than,20068.0,Thá»‹t trÃ¢u thÄƒn,meat
+thit-trau-bap,20069.0,Báº¯p trÃ¢u,meat
+thit-trau-nam,20070.0,Thá»‹t trÃ¢u náº¡m,meat
+thit-trau-vai,20071.0,Thá»‹t vai trÃ¢u,meat
+suon-trau,20072.0,SÆ°á»n trÃ¢u,meat
+duoi-trau,20073.0,ÄuÃ´i trÃ¢u,meat
+gan-trau,20074.0,GÃ¢n trÃ¢u,meat
+long-trau,20075.0,LÃ²ng trÃ¢u (ná»™i táº¡ng),meat
+thit-de-than,20076.0,Thá»‹t dÃª thÄƒn,meat
+thit-de-dui,20077.0,ÄÃ¹i dÃª,meat
+thit-de-vai,20078.0,Thá»‹t vai dÃª,meat
+suon-de,20079.0,SÆ°á»n dÃª,meat
+thit-de-ba-chi,20080.0,Ba chá»‰ dÃª,meat
+gan-de,20081.0,LÃ²ng dÃª (ná»™i táº¡ng),meat
+gan-de-gia,20082.0,GÃ¢n dÃª,meat
+duoi-de,20083.0,ÄuÃ´i dÃª,meat
+thit-be-than,20084.0,ThÄƒn bÃª,meat
+thit-be-bap,20085.0,Báº¯p bÃª,meat
+thit-be-nam,20086.0,Náº¡m bÃª,meat
+thit-be-vai,20087.0,Thá»‹t vai bÃª,meat
+suon-be,20088.0,SÆ°á»n bÃª,meat
+co-be,20089.0,Cá»• bÃª,meat
+thit-be-bung,20090.0,Thá»‹t bá»¥ng bÃª,meat
+gan-be,20091.0,GÃ¢n bÃª,meat
+duoi-be,20092.0,ÄuÃ´i bÃª,meat
+oc-be,20093.0,Ã“c bÃª,meat
+uc-ga,20094.0,á»¨c gÃ,meat
+dui-ga,20095.0,ÄÃ¹i gÃ,meat
+dui-toi-ga,20096.0,ÄÃ¹i tá»i gÃ,meat
+oi,20096.0,á»”i,fruits
+toi,20096.0,Tá»i,vegetables
+dui-goc-tu-ga,20097.0,ÄÃ¹i gÃ³c tÆ° gÃ,meat
+canh-ga,20098.0,CÃ¡nh gÃ,meat
+canh-giua-ga,20099.0,CÃ¡nh giá»¯a gÃ,meat
+canh-dau-ga,20100.0,CÃ¡nh Ä‘áº§u gÃ,meat
+dau-ga,20100.0,Äáº§u gÃ,meat
+co-ga,20101.0,Cá»• gÃ,meat
+da-ga,20102.0,Da gÃ,meat
+long-ga,20103.0,LÃ²ng gÃ  (ná»™i táº¡ng),meat
+gan-ga,20104.0,Gan gÃ,meat
+me-ga,20105.0,Má» gÃ,meat
+tim-ga,20106.0,Tim gÃ,meat
+chan-ga,20107.0,ChÃ¢n gÃ,meat
+uc-vit,20109.0,á»¨c vá»‹t,meat
+dui-vit,20110.0,ÄÃ¹i vá»‹t,meat
+dui-toi-vit,20111.0,ÄÃ¹i tá»i vá»‹t,meat
+canh-vit,20112.0,CÃ¡nh vá»‹t,meat
+co-vit,20113.0,Cá»• vá»‹t,meat
+da-vit,20114.0,Da vá»‹t,meat
+long-vit,20115.0,LÃ²ng vá»‹t (ná»™i táº¡ng),meat
+gan-vit,20116.0,Gan vá»‹t,meat
+me-vit,20117.0,Má» vá»‹t,meat
+tim-vit,20118.0,Tim vá»‹t,meat
+chan-vit,20119.0,ChÃ¢n vá»‹t,meat
+bo-vien,20120.0,BÃ² viÃªn,meat
+long-heo,20121.0,LÃ²ng heo (ruá»™t non),meat
+ca-basa,30001.0,CÃ¡ basa,seafood
+tom,30002.0,TÃ´m,seafood
+ca-ro,30003.0,CÃ¡ rÃ´,seafood
+ca-rot,30003.0,CÃ¡ rÃ´,freshwater
+cua,30005.0,Cua,seafood
+ca-ngu,30006.0,CÃ¡ ngá»«,seafood
+muc,30007.0,Má»±c,seafood
+ca-hui,30008.0,CÃ¡ há»“i,seafood
+ca-tre,30010.0,CÃ¡ trÃª,freshwater
+ca-chem,30011.0,CÃ¡ cháº½m,seafood
+cua-bien,30012.0,Cua biá»ƒn,seafood
+ca-chep,30013.0,CÃ¡ chÃ©p,freshwater
+ca-tra,30014.0,CÃ¡ tra,seafood
+ca-tram,30014.0,CÃ¡ tráº¯m,seafood
+ca-tram-co,30014.0,CÃ¡ tráº¯m cá»,freshwater
+ca-troi,30015.0,CÃ¡ trÃ´i,freshwater
+ca-dieu-hong,30016.0,CÃ¡ diÃªu há»“ng,freshwater
+ca-ro-dong,30017.0,CÃ¡ rÃ´ Ä‘á»“ng,freshwater
+ca-ro-phi,30018.0,CÃ¡ rÃ´ phi,freshwater
+ca-loc-updated,30019.0,CÃ¡ lÃ³c (cÃ¡ quáº£),freshwater
+ca-nuc,30022.0,CÃ¡ ná»¥c,seafood
+ca-bac-ma,30023.0,CÃ¡ báº¡c mÃ¡,seafood
+ca-ngu-tuoi,30024.0,CÃ¡ ngá»« tÆ°Æ¡i,seafood
+ca-thu,30025.0,CÃ¡ thu,seafood
+ca-com-tuoi,30026.0,CÃ¡ cÆ¡m tÆ°Æ¡i,seafood
+ca-moi-tuoi,30027.0,CÃ¡ mÃ²i tÆ°Æ¡i,seafood
+tom-su,30028.0,TÃ´m sÃº,seafood
+tom-the,30029.0,TÃ´m tháº»,seafood
+cua-bien-updated,30030.0,Cua biá»ƒn,seafood
+cua-dong,30031.0,Cua Ä‘á»“ng,seafood
+ghe,30032.0,Gháº¹,seafood
+ghe-xanh,30032.0,Gháº¹ xanh,seafood
+muc-ong,30033.0,Má»±c á»‘ng,seafood
+muc-nang,30034.0,Má»±c nang,seafood
+bach-tuoc,30035.0,Báº¡ch tuá»™c,seafood
+so-huyet,30036.0,SÃ² huyáº¿t,seafood
+nghe,30037.0,Nghá»‡ tÆ°Æ¡i,vegetables
+ngheu,30037.0,NghÃªu (ngao),seafood
+so-diep,30039.0,SÃ² Ä‘iá»‡p,seafood
+oc-buou,30040.0,á»c bÆ°Æ¡u,freshwater
+oc-huong,30041.0,á»c hÆ°Æ¡ng,seafood
+tom-cang-xanh,30042.0,TÃ´m cÃ ng xanh,freshwater
+tom-dat,30043.0,TÃ´m Ä‘áº¥t,seafood
+tom-kho,30044.0,TÃ´m khÃ´,seafood
+ca-kho,30045.0,CÃ¡ khÃ´ (trung bÃ¬nh),seafood
+muc-kho,30046.0,Má»±c khÃ´,seafood
+bach-tuoc-kho,30047.0,Báº¡ch tuá»™c khÃ´,seafood
+ruoc-tom,30048.0,Ruá»‘c tÃ´m,seafood
+ruoc-ca,30049.0,Ruá»‘c cÃ¡,seafood
+coi-so-diep,30050.0,Cá»“i sÃ² Ä‘iá»‡p,seafood
+sua-bien,30051.0,Sá»©a biá»ƒn,seafood
+rong-bien-kho,30052.0,Rong biá»ƒn khÃ´,seafood
+than-ca-ngu,30053.0,ThÄƒn cÃ¡ ngá»«,seafood
+bung-ca-ngu,30054.0,Bá»¥ng cÃ¡ ngá»«,seafood
+thit-lung-ca-ngu,30055.0,Náº¡c lÆ°ng cÃ¡ ngá»«,seafood
+ma-ca-ngu,30056.0,MÃ¡ cÃ¡ ngá»«,seafood
+co-ca-ngu,30057.0,Cá»• cÃ¡ ngá»«,seafood
+vay-ca-ngu,30058.0,VÃ¢y cÃ¡ ngá»«,seafood
+duoi-ca-ngu,30059.0,ÄuÃ´i cÃ¡ ngá»«,seafood
+tom-hum,30060.0,TÃ´m hÃ¹m,seafood
+ca-trich,30061.0,CÃ¡ trÃ­ch,seafood
+ca-chuon,30062.0,CÃ¡ chuá»“n,seafood
+ca-mu,30063.0,CÃ¡ mÃº,seafood
+rau-muong,40001.0,Rau muá»‘ng,vegetables
+cai-xanh,40002.0,Cáº£i xanh,vegetables
+ca-chua,40003.0,CÃ  chua,vegetables
+ca-rot-rau,40004.0,CÃ  rá»‘t,vegetables
+bap-cai,40005.0,Báº¯p cáº£i,vegetables
+khoai-tay,40006.0,Khoai tÃ¢y,vegetables
+bi-do,40007.0,BÃ­ Ä‘á»,vegetables
+rau-cai,40008.0,Rau cáº£i,vegetables
+dau-bap,40009.0,Äáº­u báº¯p,vegetables
+rau-lang,40010.0,Rau lang,vegetables
+rau-diep,40011.0,Rau diáº¿p,vegetables
+dau-bao,40012.0,Äáº­u báº¯p,vegetables
+su-su,40013.0,Su su,vegetables
+rau-ngo,40014.0,Rau ngÃ³t,vegetables
+rau-den,40015.0,Rau dá»n,vegetables
+rau-ma,40016.0,Rau mÃ¡,vegetables
+rau-cai-thia,40017.0,Rau cáº£i thÃ¬a,vegetables
+rau-cai-cuc,40018.0,Rau cáº£i cÃºc,vegetables
+khoai-mo,40019.0,Khoai má»¡,vegetables
+khoai-mon,40019.0,Khoai mÃ´n,vegetables
+ca-chua-updated,40020.0,CÃ  chua,vegetables
+su-su-updated,40025.0,Su su,vegetables
+dau-que,40026.0,Äáº­u que,vegetables
+dau-ha-lan,40027.0,Äáº­u HÃ  Lan tÆ°Æ¡i,vegetables
+dau-ha-lan-updated,40027.0,Äáº­u HÃ  Lan tÆ°Æ¡i,vegetables
+dau-bap-xanh,40028.0,Äáº­u báº¯p xanh,vegetables
+mang-tuoi,40029.0,MÄƒng tÆ°Æ¡i,vegetables
+nam-rom,40030.0,Náº¥m rÆ¡m,vegetables
+nam-bao-ngu,40031.0,Náº¥m bÃ o ngÆ°,vegetables
+nam-kim-cham,40032.0,Náº¥m kim chÃ¢m,vegetables
+bap-cai-tim,40033.0,Báº¯p cáº£i tÃ­m,vegetables
+rau-muong-updated,40034.0,Rau muá»‘ng,vegetables
+rau-den-updated,40035.0,Rau dá»n,vegetables
+rau-ngot-updated,40036.0,Rau ngÃ³t,vegetables
+mong-toi,40037.0,Rau má»“ng tÆ¡i,vegetables
+cai-ngot,40038.0,Cáº£i ngá»t,vegetables
+cai-xanh-updated,40039.0,Cáº£i xanh (cáº£i báº¹),vegetables
+cai-thia-updated,40040.0,Cáº£i thÃ¬a (bok choy),vegetables
+xa-lach,40041.0,Rau xÃ  lÃ¡ch,vegetables
+xa-lach-updated,40041.0,XÃ  lÃ¡ch,vegetables
+dua-leo,40042.0,DÆ°a leo (dÆ°a chuá»™t),vegetables
+bi-xanh,40043.0,BÃ­ xanh (bÃ­ Ä‘ao),vegetables
+bi-do-updated,40044.0,BÃ­ Ä‘á»,vegetables
+bau,40045.0,Báº§u,vegetables
+rau-muong-xao-toi,40047.0,Rau muá»‘ng xÃ o tá»i,vegetables
+rau-cai-luoc,40048.0,Rau cáº£i luá»™c,vegetables
+hanh-la,40049.0,HÃ nh lÃ¡,vegetables
+rau-mui,40050.0,Rau mÃ¹i (ngÃ²),vegetables
+hung-que,40051.0,HÃºng quáº¿,vegetables
+rau-ram,40052.0,Rau rÄƒm,vegetables
+tia-to,40053.0,TÃ­a tÃ´,vegetables
+thi-la,40054.0,ThÃ¬ lÃ,vegetables
+sa-cay,40055.0,Sáº£ cÃ¢y,vegetables
+hanh-tay,40057.0,HÃ nh tÃ¢y,vegetables
+chuoi,50001.0,Chuá»‘i,fruits
+cam,50002.0,Cam,fruits
+tao,50003.0,TÃ¡o,fruits
+dua-hau,50004.0,DÆ°a háº¥u,fruits
+hau,50004.0,HÃ u,seafood
+xoai,50005.0,XoÃ i,fruits
+du-du,50006.0,Äu Ä‘á»§,fruits
+nho,50008.0,Nho,fruits
+thanh-long,50009.0,Thanh long,fruits
+buoi,50010.0,BÆ°á»Ÿi,fruits
+mit,50011.0,MÃ­t,fruits
+sau-rieng,50012.0,Sáº§u riÃªng,fruits
+mang-cut,50013.0,MÄƒng cá»¥t,fruits
+chom-chom,50014.0,ChÃ´m chÃ´m,fruits
+mam-xoi,50015.0,MÃ¢m xÃ´i,fruits
+dau-tay,50016.0,DÃ¢u tÃ¢y,fruits
+chuoi-tieu,50017.0,Chuá»‘i tiÃªu,fruits
+cam-sanh,50018.0,Cam sÃ nh,fruits
+san,50018.0,Sáº¯n (cá»§ mÃ¬),vegetables
+quyt,50019.0,QuÃ½t,fruits
+tao-ta,50020.0,TÃ¡o ta,fruits
+xoai-chin,50021.0,XoÃ i chÃ­n,fruits
+du-du-updated,50022.0,Äu Ä‘á»§ chÃ­n,fruits
+dua,50023.0,Dá»©a (thÆ¡m),fruits
+thanh-long-updated,50024.0,Thanh long,fruits
+vu-sua,50026.0,VÃº sá»¯a,fruits
+mit-chin,50027.0,MÃ­t chÃ­n,fruits
+nhan,50029.0,NhÃ£n,fruits
+chom-chom-updated,50030.0,ChÃ´m chÃ´m,fruits
+mang-cut-updated,50031.0,MÄƒng cá»¥t,fruits
+dua-hau-updated,50032.0,DÆ°a háº¥u,fruits
+me-chin,50033.0,Me chÃ­n,fruits
+sau,50035.0,Sáº¥u,fruits
+man-bac,50036.0,Máº­n Báº¯c,fruits
+roi,50037.0,Roi (máº­n miá»n Nam),fruits
+le-viet,50038.0,LÃª Viá»‡t Nam,fruits
+sung,50039.0,Sung,fruits
+dau-da,50040.0,DÃ¢u da (bÃ²n bon),fruits
+dau-tam,50041.0,DÃ¢u táº±m,fruits
+viet-quat-vn,50042.0,Viá»‡t quáº¥t (VN),fruits
+ca-na,50043.0,CÃ  na,fruits
+va,50044.0,TrÃ¡i váº£,fruits
+dau-phu,60001.0,Äáº­u phá»¥,legumes
+dau-xanh,60002.0,Äáº­u xanh,legumes
+dau-do,60004.0,Äáº­u Ä‘á»,legumes
+lac,60005.0,Láº¡c (Äáº­u phá»™ng),legumes
+dau-den,60006.0,Äáº­u Ä‘en,legumes
+dau-trang,60007.0,Äáº­u tráº¯ng,legumes
+dau-co-ve,60008.0,Äáº­u cÃ´ ve,legumes
+dau-nanh-kho,60010.0,Äáº­u nÃ nh khÃ´,legumes
+dau-xanh-kho,60011.0,Äáº­u xanh khÃ´,legumes
+dau-den-kho,60012.0,Äáº­u Ä‘en khÃ´,legumes
+dau-do-kho,60013.0,Äáº­u Ä‘á» khÃ´,legumes
+dau-lang-kho,60014.0,Äáº­u lÄƒng khÃ´,legumes
+dau-phong-kho,60015.0,Äáº­u phá»™ng (láº¡c) khÃ´,legumes
+dau-ha-lan-kho,60016.0,Äáº­u HÃ  Lan khÃ´,legumes
+me-trang,60017.0,Háº¡t mÃ¨ tráº¯ng,legumes
+me-den,60018.0,Háº¡t mÃ¨ Ä‘en,legumes
+hat-dieu,60019.0,Háº¡t Ä‘iá»u,legumes
+hat-bi,60020.0,Háº¡t bÃ­ xanh,legumes
+hat-huong-duong,60021.0,Háº¡t hÆ°á»›ng dÆ°Æ¡ng,legumes
+nuoc-mam,70001.0,NÆ°á»›c máº¯m,condiments
+tuong-ot,70002.0,TÆ°Æ¡ng á»›t,condiments
+muoi-an,70003.0,Muá»‘i Äƒn,condiments
+duong-cat-trang,70004.0,ÄÆ°á»ng cÃ¡t tráº¯ng,condiments
+bot-ngot-msg,70005.0,Bá»™t ngá»t (MSG),condiments
+dau-an-thuc-vat,70006.0,Dáº§u Äƒn thá»±c váº­t,condiments
+xi-dau,70007.0,XÃ¬ dáº§u (nÆ°á»›c tÆ°Æ¡ng),condiments
+dau-hao,70008.0,Dáº§u hÃ o,condiments
+nuoc-mam-pha,70009.0,NÆ°á»›c máº¯m pha,condiments
+bot-nem,70010.0,Bá»™t nÃªm (trung bÃ¬nh),condiments
+mo-heo-thang,70011.0,Má»¡ heo tháº¯ng,condiments
+mam-nem,70012.0,Máº¯m nÃªm,condiments
+mam-tom,70013.0,Máº¯m tÃ´m,condiments
+tuong-ca,70014.0,TÆ°Æ¡ng cÃ,condiments
+tuong-ban,70015.0,TÆ°Æ¡ng báº§n,condiments
+sua-bo-tuoi,80001.0,Sá»¯a bÃ² tÆ°Æ¡i,dairy
+sua-chua,80002.0,Sá»¯a chua,dairy
+dau-nanh,80003.0,Äáº­u nÃ nh,legumes
+sua-dau-nanh,80003.0,Sá»¯a Ä‘áº­u nÃ nh,dairy
+pho-mai,80004.0,PhÃ´ mai,dairy
+trung-ga,80005.0,Trá»©ng gÃ,dairy
+sua-tuoi-tiet-trung,80006.0,Sá»¯a tÆ°Æ¡i tiá»‡t trÃ¹ng,dairy
+sua-dac,80007.0,Sá»¯a Ä‘áº·c,dairy
+sua-chua-uop-lanh,80008.0,Sá»¯a chua Æ°á»›p láº¡nh,dairy
+trung-vit,80009.0,Trá»©ng vá»‹t,dairy
+trung-cut,80010.0,Trá»©ng cÃºt,dairy
+trung-ngong,80011.0,Trá»©ng ngá»—ng,dairy
+nuoc-dua,90001.0,NÆ°á»›c dá»«a tÆ°Æ¡i,beverages
+nuoc-cam,90002.0,NÆ°á»›c cam,beverages
+tra-xanh,90003.0,TrÃ  xanh,beverages
+nuoc-chanh,90004.0,NÆ°á»›c chanh,beverages
+ca-phe-den,90005.0,CÃ  phÃª Ä‘en,beverages
+tra-dao,90006.0,TrÃ  Ä‘Ã o,beverages
+nuoc-dau-xanh,90008.0,NÆ°á»›c Ä‘áº­u xanh,beverages
+tra-atiso,90009.0,TrÃ  atiso,beverages
+tra-da,90010.0,TrÃ  Ä‘Ã¡,beverages
+ca-phe-sua-da,90011.0,CÃ  phÃª sá»¯a Ä‘Ã¡,beverages
+nuoc-mia,90012.0,NÆ°á»›c mÃ­a,beverages
+tra-sua-tran-chau,90013.0,TrÃ  sá»¯a trÃ¢n chÃ¢u,beverages
+sua-bap,90014.0,Sá»¯a báº¯p,beverages
+sam-bo-luong,90015.0,SÃ¢m bá»• lÆ°á»£ng,beverages
+sinh-to-bo,90016.0,Sinh tá»‘ bÆ¡,beverages
+bia-lager-5,90017.0,Bia lager (5% ABV),beverages
+bia-lager-45,90018.0,Bia lager (4.5% ABV),beverages
+bia-strong-7,90019.0,Bia máº¡nh (7% ABV),beverages
+bia-khong-con,90020.0,Bia khÃ´ng cá»“n (0.5% ABV),beverages
+ruou-vang-do-13,90021.0,RÆ°á»£u vang Ä‘á» (13% ABV),beverages
+ruou-vang-trang-12,90022.0,RÆ°á»£u vang tráº¯ng (12% ABV),beverages
+ruou-vodka-40,90023.0,Vodka (40% ABV),beverages
+ruou-whisky-40,90024.0,Whisky (40% ABV),beverages
+ruou-gao-30,90025.0,RÆ°á»£u gáº¡o (30% ABV),beverages

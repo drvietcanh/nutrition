@@ -10,16 +10,16 @@ import { FilterChips } from "../../components/FilterChips";
 import { SearchInput } from "../../components/SearchInput";
 import { VirtualList } from "../../components/VirtualList";
 import { useDebounce } from "@/app/hooks/useDebounce";
-import { useMemoizedSearch } from "@/app/hooks/useMemoizedSearch";
 import {
-  foodDatabase,
-  searchFoods,
-  filterFoodsByKcalRange,
-  getNutritionPer100g,
-  type FoodItem,
   type FoodCategory,
-  type KcalRange,
 } from "@/lib/food-db";
+import {
+  extendedFoodDatabase,
+  searchExtendedFoods,
+  filterExtendedFoodsByKcalRange,
+  type ExtendedFoodItem,
+  type KcalRange,
+} from "@/lib/vietnamese-food-extended";
 import toast from "react-hot-toast";
 
 const categories: { value: FoodCategory; label: string }[] = [
@@ -33,6 +33,9 @@ const categories: { value: FoodCategory; label: string }[] = [
   { value: "dairy", label: "Sữa" },
   { value: "condiments", label: "Gia vị" },
   { value: "beverages", label: "Đồ uống" },
+  { value: "snacks", label: "Đồ ăn vặt" },
+  { value: "soups", label: "Súp" },
+  { value: "desserts", label: "Tráng miệng" },
 ];
 
 const kcalRanges: { value: KcalRange; label: string }[] = [
@@ -91,7 +94,7 @@ export function InteractiveSection() {
   const [phosphorusFilter, setPhosphorusFilter] = useState<"all" | Level>("all");
   const [cholesterolFilter, setCholesterolFilter] = useState<"all" | Level>("all");
   const [fiberFilter, setFiberFilter] = useState<"all" | Level>("all");
-  const [selectedFood, setSelectedFood] = useState<FoodItem | null>(null);
+  const [selectedFood, setSelectedFood] = useState<ExtendedFoodItem | null>(null);
   const [showBottomSheet, setShowBottomSheet] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const nutritionDetailRef = useRef<HTMLDivElement>(null);
@@ -161,11 +164,11 @@ export function InteractiveSection() {
   }, [selectedFood]);
 
   const filteredFoods = useMemo(() => {
-    let foods = foodDatabase;
+    let foods = extendedFoodDatabase;
 
     // Apply search filter
     if (searchQuery.trim()) {
-      foods = searchFoods(searchQuery);
+      foods = searchExtendedFoods(searchQuery);
     }
 
     // Apply category filter
@@ -194,7 +197,8 @@ export function InteractiveSection() {
     // Apply purine filter (hỗ trợ bệnh gút)
     if (purineFilter !== "all") {
       foods = foods.filter((food) => {
-        const level = classifyLevel(food.purine, 50, 150);
+        const purine = food.gout?.purine;
+        const level = classifyLevel(purine, 50, 150);
         if (!level) return false;
         return level === purineFilter;
       });
@@ -228,17 +232,37 @@ export function InteractiveSection() {
     }
 
     // Apply kcal filter
-    foods = filterFoodsByKcalRange(foods, selectedKcalRange);
+    foods = filterExtendedFoodsByKcalRange(foods, selectedKcalRange);
 
     return foods;
   }, [searchQuery, selectedCategory, selectedKcalRange, sodiumFilter, potassiumFilter, purineFilter, phosphorusFilter, cholesterolFilter, fiberFilter]);
 
   const nutritionPer100g = useMemo(() => {
     if (!selectedFood) return null;
-    return getNutritionPer100g(selectedFood);
+
+    // NOTE: Values in our DB are treated as the canonical reference values for display.
+    // Some composite dishes may store per-portion values; we intentionally preserve stored values here.
+    return {
+      calories: selectedFood.calories,
+      protein: selectedFood.protein,
+      carbs: selectedFood.carbs,
+      fat: selectedFood.fat,
+      water: selectedFood.water,
+      fiber: selectedFood.fiber,
+      sodium: selectedFood.sodium,
+      potassium: selectedFood.kidney?.potassium ?? selectedFood.potassium,
+      calcium: selectedFood.calcium,
+      iron: selectedFood.iron,
+      phosphorus: selectedFood.kidney?.phosphorus ?? selectedFood.phosphorus,
+      magnesium: selectedFood.magnesium,
+      zinc: selectedFood.zinc,
+      vitaminC: selectedFood.vitaminC,
+      vitaminA: selectedFood.vitaminA,
+      cholesterol: selectedFood.cardiovascular?.cholesterol ?? selectedFood.cholesterol,
+    };
   }, [selectedFood]);
 
-  const handleFoodSelect = (food: FoodItem) => {
+  const handleFoodSelect = (food: ExtendedFoodItem) => {
     setSelectedFood(food);
     setShowBottomSheet(true);
     toast.success(`Đã chọn ${food.name}`);
@@ -362,7 +386,7 @@ export function InteractiveSection() {
                 value={searchQuery}
                 onChange={setSearchQuery}
                 placeholder="Tìm kiếm theo tên hoặc mã thực phẩm"
-                suggestions={foodDatabase}
+                suggestions={extendedFoodDatabase}
                 showHistory={true}
               />
             </div>

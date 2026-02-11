@@ -1679,3 +1679,172 @@ Dữ liệu được bổ sung dựa trên:
 - Manganese: 0.27 mg (cao)
 - Selenium: 1.0 µg (cao trong trái cây)
 - Vitamin B6: 0.37 mg (cao)
+
+---
+
+## Lần bổ sung 34: Bổ sung các thực phẩm thiếu từ food-db.ts
+
+**Ngày:** 2024-12-XX
+
+**Mục đích:** Bổ sung các thực phẩm quan trọng còn thiếu trong vietnamese-food-extended.ts so với food-db.ts (có 364 thực phẩm thiếu).
+
+### Thực phẩm đã bổ sung:
+
+**Nhóm Sữa (Dairy) - Trứng:**
+- Trứng gà (trung-ga) - **QUAN TRỌNG NHẤT**
+- Trứng vịt (trung-vit)
+- Trứng cút (trung-cut)
+- Trứng ngỗng (trung-ngong)
+
+**Nhóm Ngũ cốc & Mì (Rice-noodles):**
+- Bún chả (bun-cha)
+- Bún gà (bun-ga)
+- Bánh mì (banh-mi)
+
+### Đặc điểm nổi bật lần 34:
+
+**Trứng gà:**
+- Choline: 294.0 mg (rất cao - nguồn tốt nhất)
+- Selenium: 30.7 µg (cao)
+- Vitamin B7 (Biotin): 25.0 µg (rất cao)
+- Cholesterol: 372 mg (trung bình)
+- Purine: 0 (thấp - tốt cho bệnh gút)
+
+**Trứng vịt:**
+- Vitamin B12: 5.4 µg (rất cao - cao nhất trong các loại trứng)
+- Cholesterol: 884 mg (rất cao)
+- Choline: 263.0 mg (rất cao)
+- Selenium: 36.4 µg (cao)
+
+**Trứng cút:**
+- Vitamin B2: 0.79 mg (rất cao)
+- Iron: 3.6 mg (rất cao)
+- Cholesterol: 844 mg (rất cao)
+- Choline: 263.0 mg (rất cao)
+
+**Trứng ngỗng:**
+- Vitamin B12: 5.1 µg (rất cao)
+- Cholesterol: 850 mg (rất cao)
+- Choline: 263.0 mg (rất cao)
+- Quả rất to, thường được khuyên không ăn quá thường xuyên
+
+**Bún chả:**
+- Món ăn truyền thống Hà Nội
+- Purine: 150 mg (cao - từ thịt heo)
+- Vitamin B3: 2.5 mg (từ thịt heo)
+- Glycemic Index: 60 (trung bình)
+
+**Bún gà:**
+- Ít mỡ hơn phở bò
+- Purine: 140 mg (cao - từ thịt gà)
+- Glycemic Index: 55 (thấp hơn bún chả)
+
+**Bánh mì:**
+- Glycemic Index: 75 (cao)
+- Sodium: 491 mg (cao)
+- Iron: 3.6 mg (cao - từ bột mì)
+- Vitamin B3: 4.0 mg (cao - từ bột mì)
+
+### Ghi chú:
+- Tất cả các trứng đều có purine = 0 (tốt cho bệnh gút)
+- Trứng là nguồn choline tốt nhất (quan trọng cho não và gan)
+- Trứng vịt và ngỗng có cholesterol rất cao, cần lưu ý cho bệnh tim mạch
+- Bún chả và bún gà có purine cao, cần tránh cho bệnh gút
+- Bánh mì có GI cao, cần lưu ý cho bệnh đái tháo đường
+
+### Tổng số thực phẩm sau lần bổ sung 34:
+- Trước: 303 thực phẩm
+- Sau: 310 thực phẩm
+- Đã bổ sung: 7 thực phẩm
+- Còn thiếu: 357 thực phẩm (từ tổng 364 ban đầu)
+
+---
+
+## Lần bổ sung 35: Tiếp tục bổ sung các thực phẩm thiếu
+
+**Ngày:** 2024-12-XX
+
+**Mục đích:** Tiếp tục bổ sung các món canh/súp phổ biến và các phần thịt gà chi tiết.
+
+### Thực phẩm đã bổ sung:
+
+**Nhóm Món canh/súp (Soups):**
+- Canh chua (canh-chua)
+- Cháo trắng (chao-trang)
+- Cháo gà (chao-ga)
+- Phở gà (pho-ga)
+
+**Nhóm Thịt (Meat) - Các phần thịt gà chi tiết:**
+- Đùi tỏi gà (dui-toi-ga)
+- Đùi góc tư gà (dui-goc-tu-ga)
+- Cánh giữa gà (canh-giua-ga)
+- Cánh đầu gà (canh-dau-ga)
+- Cổ gà (co-ga)
+- Gan gà (gan-ga)
+- Mề gà (me-ga)
+- Tim gà (tim-ga)
+- Chân gà (chan-ga)
+- Lòng gà (long-ga)
+- Đầu gà (dau-ga)
+
+### Đặc điểm nổi bật lần 35:
+
+**Canh chua:**
+- Calo thấp: 35 kcal/100g
+- Vitamin C: 8.0 mg
+- Glycemic Index: 30 (rất thấp)
+- Phù hợp cho người đái tháo đường
+
+**Cháo trắng:**
+- Calo thấp: 40 kcal/100g
+- Glycemic Index: 70 (cao)
+- Natri thấp: 50 mg (nếu không thêm gia vị)
+
+**Cháo gà:**
+- Protein: 4.0 g/100g
+- Purine: 140 mg (cao - từ thịt gà)
+- Glycemic Index: 65 (trung bình)
+
+**Phở gà:**
+- Protein: 6.2 g/100g
+- Purine: 140 mg (cao - từ thịt gà)
+- Natri: 156 mg/100g (cao nếu tính cả nước dùng)
+
+**Gan gà:**
+- Vitamin A: 4000 IU (rất cao - cao nhất trong database)
+- Iron: 9.0 mg (rất cao)
+- Folate: 588 µg (rất cao)
+- Vitamin B12: 16.6 µg (rất cao)
+- Choline: 290.0 mg (rất cao)
+- Selenium: 55.0 µg (rất cao)
+- Cholesterol: 345 mg (rất cao)
+- Purine: 300 mg (rất cao)
+
+**Tim gà:**
+- Protein: 26.0 g (rất cao)
+- Iron: 6.0 mg (rất cao)
+- Vitamin B12: 7.3 µg (rất cao)
+- Choline: 200.0 mg (rất cao)
+- Cholesterol: 242 mg (cao)
+- Purine: 200 mg (cao)
+
+**Lòng gà (nội tạng hỗn hợp):**
+- Iron: 8.0 mg (rất cao)
+- Zinc: 4.0 mg (cao)
+- Vitamin B12: 8.0 µg (rất cao)
+- Choline: 180.0 mg (cao)
+- Cholesterol: 300 mg (rất cao)
+- Purine: 300 mg (rất cao)
+
+### Ghi chú:
+- Các món canh/súp thường có natri cao do nước dùng và gia vị
+- Các phần nội tạng gà (gan, tim, lòng) rất giàu vitamin và khoáng chất nhưng cũng rất giàu cholesterol và purine
+- Gan gà là nguồn vitamin A, sắt, folate và B12 tốt nhất trong database
+- Người bệnh gút và tim mạch cần hạn chế các phần nội tạng
+- Cháo trắng có GI cao, cần lưu ý cho bệnh đái tháo đường
+
+### Tổng số thực phẩm sau lần bổ sung 35:
+- Trước: 310 thực phẩm
+- Sau: 325 thực phẩm
+- Đã bổ sung: 15 thực phẩm
+- Còn thiếu: 342 thực phẩm (từ tổng 364 ban đầu)

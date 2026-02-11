@@ -40,7 +40,7 @@ export default function MalnutritionScreeningPage() {
       <ToolStepIndicator currentStep={1} />
       
       {/* 1. Title + short intro */}
-      <header className="space-y-4 tool-page-section">
+      <header className="space-y-4">
         <div className="flex items-center gap-3">
           <Activity className="w-8 h-8 text-green-600" aria-hidden="true" />
           <h1 className="heading-1">
@@ -54,7 +54,7 @@ export default function MalnutritionScreeningPage() {
       </header>
 
       {/* 2. What is malnutrition risk? */}
-      <section aria-labelledby="what-is-risk-heading" className="space-y-4 tool-page-section">
+      <section aria-labelledby="what-is-risk-heading" className="space-y-4">
         <div className="flex items-center gap-2">
           <AlertCircle className="w-5 h-5 text-blue-600" aria-hidden="true" />
           <h2
@@ -89,7 +89,7 @@ export default function MalnutritionScreeningPage() {
       </Suspense>
 
       {/* 6. Interpretation & learning points */}
-      <section aria-labelledby="learning-heading" className="space-y-4 tool-page-section">
+      <section aria-labelledby="learning-heading" className="space-y-4">
         <div className="flex items-center gap-2">
           <CheckCircle className="w-5 h-5 text-green-600" aria-hidden="true" />
           <h2
@@ -119,7 +119,7 @@ export default function MalnutritionScreeningPage() {
       </section>
 
       {/* 7. When to use / When not to use – tool-specific wording */}
-      <section aria-labelledby="when-to-use-heading" className="space-y-4 tool-page-section">
+      <section aria-labelledby="when-to-use-heading" className="space-y-4">
         <h2
           id="when-to-use-heading"
           className="text-xl font-semibold sm:text-2xl text-gray-900"
@@ -168,7 +168,7 @@ export default function MalnutritionScreeningPage() {
       </section>
 
       {/* 8. Safety disclaimer – local reiteration */}
-      <section aria-labelledby="safety-heading" className="space-y-3 tool-page-section">
+      <section aria-labelledby="safety-heading" className="space-y-3">
         <h2
           id="safety-heading"
           className="heading-4"

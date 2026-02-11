@@ -5,16 +5,16 @@ import { Callout } from "./components/Callout";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-b from-blue-50 via-slate-50 to-white">
-      <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 sm:py-12">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Hero section */}
-        <div className="text-center section-spacing-lg">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6 shadow-sm">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4" aria-hidden="true" />
             <span>Nền tảng giáo dục dinh dưỡng lâm sàng</span>
           </div>
           <h1 className="heading-1 mb-6">
-            Hiểu dinh dưỡng lâm sàng một cách đơn giản
+            Hiểu dinh dưỡng lâm sàng một Cách đơn giản
           </h1>
           <p className="text-body-lg max-w-3xl mx-auto mb-8 text-gray-700">
             Học các khái niệm dinh dưỡng lâm sàng và sử dụng công cụ tương tác để thực hành. 
@@ -39,9 +39,9 @@ export default function Home() {
         </div>
 
         {/* Quick start Guide */}
-        <section className="section-spacing-lg">
+        <section className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="heading-2 mb-3">Hướng dẫn nhanh</h2>
+            <h2 className="heading-2 mb-3">Hướng dẫn Nhanh</h2>
             <p className="text-body text-gray-600 max-w-2xl mx-auto">
               Bắt đầu với 4 bước đơn giản để hiểu và sử dụng dinh dưỡng lâm sàng
             </p>
@@ -51,7 +51,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">1</span>
               </div>
-              <h3 className="heading-5 mb-2">Bước 1: Tìm hiểu cơ bản</h3>
+              <h3 className="heading-5 mb-2">Tìm hiểu cơ bản</h3>
               <p className="text-body-sm text-gray-600 mb-4">
                 Đọc về các khái niệm cơ bản và hiểu lầm phổ biến
               </p>
@@ -66,7 +66,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-green-600">2</span>
               </div>
-              <h3 className="heading-5 mb-2">Bước 2: Sử dụng công cụ</h3>
+              <h3 className="heading-5 mb-2">sử dụng Công cụ</h3>
               <p className="text-body-sm text-gray-600 mb-4">
                 Thực hành với các công cụ tính toán và đánh giá
               </p>
@@ -81,7 +81,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-purple-600">3</span>
               </div>
-              <h3 className="heading-5 mb-2">Bước 3: Học quy trình</h3>
+              <h3 className="heading-5 mb-2">Học quy trình</h3>
               <p className="text-body-sm text-gray-600 mb-4">
                 Hiểu cách đánh giá dinh dưỡng từ đầu đến cuối
               </p>
@@ -96,7 +96,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-amber-600">4</span>
               </div>
-              <h3 className="heading-5 mb-2">Bước 4: Áp dụng thực tế</h3>
+              <h3 className="heading-5 mb-2">Áp dụng thực tế</h3>
               <p className="text-body-sm text-gray-600 mb-4">
                 Tìm hiểu về dinh dưỡng cho các bệnh mạn tính
               </p>
@@ -111,9 +111,9 @@ export default function Home() {
         </section>
 
         {/* Main navigation Cards */}
-        <section className="section-spacing-lg">
+        <section className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="heading-2 mb-3">Khám phá nội dung</h2>
+            <h2 className="heading-2 mb-3">Khám phá Nội dung</h2>
             <p className="text-body text-gray-600">
               Chọn cách bạn muốn học về dinh dưỡng lâm sàng
             </p>
@@ -180,7 +180,7 @@ export default function Home() {
               </CardContent>
               <CardFooter>
                 <span className="inline-flex items-center text-green-600 font-medium group-hover:text-green-800">
-                  Sử dụng công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
+                  sử dụng Công cụ <ArrowRight className="w-4 h-4 ml-1" aria-hidden="true" />
                 </span>
               </CardFooter>
             </Card>
@@ -188,9 +188,9 @@ export default function Home() {
         </section>
 
         {/* Popular content section */}
-        <section className="section-spacing-lg">
+        <section className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="heading-2 mb-3">Nội dung phổ biến</h2>
+            <h2 className="heading-2 mb-3">Nội dung Phổ biến</h2>
             <p className="text-body text-gray-600">
               Các bài viết và công cụ được xem nhiều nhất
             </p>
@@ -284,7 +284,7 @@ export default function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section className="section-spacing-lg">
+        <section className="mb-16">
           <div className="text-center mb-8">
             <h2 className="heading-2 mb-3">Câu hỏi Thường gặp</h2>
             <p className="text-body text-gray-600">

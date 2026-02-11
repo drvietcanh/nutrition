@@ -26,7 +26,7 @@ export default function KnowledgePage() {
       </header>
 
       {/* Clinical foundations section */}
-      <section className="space-y-6 section-spacing">
+      <section className="space-y-6">
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 className="heading-2 whitespace-nowrap">
@@ -65,7 +65,7 @@ export default function KnowledgePage() {
       </section>
 
       {/* Chronic diseases section */}
-      <section className="space-y-6 mt-8 section-spacing">
+      <section className="space-y-6 mt-8">
         <div className="flex items-center gap-3 mb-6">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent"></div>
           <h2 className="heading-2 whitespace-nowrap">
