@@ -16149,10 +16149,17 @@ for (const food of foodDatabase) {
     continue;
   }
 
-  // Đồng bộ code từ food-db (đúng/chuẩn) nếu khác hoặc còn thiếu
-  if (food.code && existing.code !== food.code) {
-    mergedFoodById.set(food.id, { ...existing, code: food.code });
-  }
+  // Đồng bộ từ food-db (được xem là nguồn chuẩn cho tên + mã)
+  // - Fix lỗi hiển thị tiếng Việt (mojibake) bằng cách luôn lấy `name` từ food-db nếu có
+  // - Đồng bộ `code` theo food-db để tránh gán sai mã
+  // - Bổ sung `nameEn` nếu extended thiếu
+  const next: ExtendedFoodItem = {
+    ...existing,
+    name: food.name || existing.name,
+    nameEn: existing.nameEn || food.nameEn,
+    code: food.code || existing.code,
+  };
+  mergedFoodById.set(food.id, next);
 }
 
 export const extendedFoodDatabase: ExtendedFoodItem[] = Array.from(mergedFoodById.values());
