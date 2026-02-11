@@ -347,35 +347,6 @@ export const extendedFoodDatabase: ExtendedFoodItem[] = [
 
   // Seafood
   {
-    id: "ca-basa",
-    name: "Cá basa",
-    nameEn: "Basa fish",
-    category: "seafood",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 162,
-    protein: 18,
-    carbs: 0,
-    fat: 9,
-    sodium: 45,
-    commonServing: "100g (1 miếng vừa)",
-    gout: {
-      purine: 100,
-      purineLevel: 'medium',
-    },
-    kidney: {
-      potassium: 200,
-      phosphorus: 200,
-    },
-    cardiovascular: {
-      cholesterol: 50,
-      saturatedFat: 2,
-    },
-    vietnameseUnits: [
-      { unit: 'mieng', weight: 100, description: '1 miếng vừa (100g)' },
-    ],
-  },
-  {
     id: "ca-loc",
     name: "Cá lóc",
     nameEn: "Snakehead fish",
@@ -3273,7 +3244,7 @@ export const extendedFoodDatabase: ExtendedFoodItem[] = [
   // Cá nước ngọt & cá biển bổ sung (252–263)
   // ========================================================================
   {
-    id: "ca-basa-fish25",
+    id: "ca-basa",
     name: "Cá basa",
     nameEn: "Basa fish",
     category: "seafood",
@@ -9500,48 +9471,6 @@ export const extendedFoodDatabase: ExtendedFoodItem[] = [
     cardiovascular: {
       cholesterol: 58,
       saturatedFat: 1.2,
-    },
-    vietnameseUnits: [
-      { unit: 'mieng', weight: 150, description: '1 khúc' },
-    ],
-  },
-  {
-    id: "ca-basa",
-    name: "Cá basa",
-    nameEn: "Basa fish",
-    category: "seafood",
-    servingSize: 100,
-    servingUnit: "g",
-    calories: 90,
-    protein: 14.0,
-    carbs: 0,
-    fat: 3.0,
-    fiber: 0,
-    sodium: 40,
-    potassium: 260,
-    calcium: 12,
-    iron: 0.3,
-    phosphorus: 160,
-    magnesium: 20,
-    zinc: 0.4,
-    vitaminB1: 0.02,
-    vitaminB2: 0.05,
-    vitaminB6: 0.18,
-    folate: 7,
-    vitaminB12: 0.7,
-    vitaminD: 25,
-    commonServing: "1 khúc (150g)",
-    gout: {
-      purine: 90,
-      purineLevel: 'medium',
-    },
-    kidney: {
-      potassium: 260,
-      phosphorus: 160,
-    },
-    cardiovascular: {
-      cholesterol: 52,
-      saturatedFat: 1.0,
     },
     vietnameseUnits: [
       { unit: 'mieng', weight: 150, description: '1 khúc' },

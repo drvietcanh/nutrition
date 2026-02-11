@@ -32,7 +32,7 @@ const InteractiveSection = dynamic(
 
 export default function FoodDatabasePage() {
   return (
-    <main className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6 lg:px-8 sm:py-12">
+    <div className="mx-auto max-w-4xl space-y-8 px-4 py-8 sm:px-6 lg:px-8 sm:py-12">
       <Breadcrumb
         items={[
           { label: "Công cụ", href: "/tools" },
@@ -66,6 +66,6 @@ export default function FoodDatabasePage() {
       >
         <InteractiveSection />
       </Suspense>
-    </main>
+    </div>
   );
 }

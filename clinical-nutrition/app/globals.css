@@ -21,6 +21,11 @@
   }
 }
 
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 body {
   /* Nền dịu với gradient rất nhẹ để tạo cảm giác hiện đại, thân thiện */
   background:
@@ -31,6 +36,8 @@ body {
   line-height: var(--line-height-relaxed);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Mobile optimizations */
@@ -101,6 +108,7 @@ html {
   min-height: calc(100vh - 4rem);
   padding-top: var(--spacing-8);
   padding-bottom: var(--spacing-12);
+  overflow: visible;
 }
 
 .page-container {

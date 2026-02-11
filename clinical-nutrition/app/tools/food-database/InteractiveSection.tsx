@@ -25,7 +25,7 @@ import toast from "react-hot-toast";
 const categories: { value: FoodCategory; label: string }[] = [
   { value: "rice-noodles", label: "Cơm & Bún" },
   { value: "meat", label: "Thịt" },
-  { value: "seafood", label: "Hải sản (cá biển, tôm, mực...)" },
+  { value: "seafood", label: "Hải sản" },
   { value: "freshwater", label: "Thủy sản nước ngọt" },
   { value: "vegetables", label: "Rau củ" },
   { value: "fruits", label: "Trái cây" },
@@ -46,7 +46,7 @@ const kcalRanges: { value: KcalRange; label: string }[] = [
 const categoryLabels: Record<FoodCategory, string> = {
   "rice-noodles": "Cơm & Bún",
   meat: "Thịt",
-  seafood: "Hải sản (cá biển, tôm, mực...)",
+  seafood: "Hải sản",
   freshwater: "Thủy sản nước ngọt",
   vegetables: "Rau củ",
   fruits: "Trái cây",
