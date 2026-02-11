@@ -11,7 +11,9 @@ const filePath = join(__dirname, '../lib/vietnamese-food-extended.ts');
 let content = readFileSync(filePath, 'utf-8');
 
 // Pattern to match a food item block
-const itemPattern = /(\{[^}]*id:\s*"([^"]+)"[^}]*\})/gs;
+// Note: We avoid the 's' (dotAll) flag for compatibility with older TS targets.
+// '[^}]' already spans across newlines until the closing brace.
+const itemPattern = /(\{[^}]*id:\s*"([^"]+)"[^}]*\})/g;
 
 let changesCount = 0;
 const items = Array.from(content.matchAll(itemPattern));
@@ -23,8 +25,9 @@ for (const match of items) {
   const id = match[2];
   
   // Check if item has kidney section with potassium/phosphorus
-  const hasKidney = /kidney:\s*\{[^}]*\}/s.test(fullMatch);
-  const hasCardiovascular = /cardiovascular:\s*\{[^}]*\}/s.test(fullMatch);
+  // Again, avoid 's' flag; '[^}]' is enough to span until closing brace.
+  const hasKidney = /kidney:\s*\{[^}]*\}/.test(fullMatch);
+  const hasCardiovascular = /cardiovascular:\s*\{[^}]*\}/.test(fullMatch);
   
   let modified = fullMatch;
   let itemChanged = false;
