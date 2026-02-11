@@ -110,7 +110,8 @@ function validateNutritionData(): ValidationResult {
       if (hasBase) locationsFound.push('base');
       
       if (field === 'potassium' || field === 'phosphorus') {
-        const kidneyPattern = /kidney:\s*\{[^}]*\}/s;
+        // Avoid 's' (dotAll) flag for compatibility; '[^}]' spans until closing brace.
+        const kidneyPattern = /kidney:\s*\{[^}]*\}/;
         const kidneyMatch = itemContent.match(kidneyPattern);
         if (kidneyMatch && new RegExp(`\\b${field}:`, 'i').test(kidneyMatch[0])) {
           locationsFound.push('kidney');
@@ -118,7 +119,7 @@ function validateNutritionData(): ValidationResult {
       }
       
       if (field === 'cholesterol') {
-        const cardioPattern = /cardiovascular:\s*\{[^}]*\}/s;
+        const cardioPattern = /cardiovascular:\s*\{[^}]*\}/;
         const cardioMatch = itemContent.match(cardioPattern);
         if (cardioMatch && new RegExp(`\\b${field}:`, 'i').test(cardioMatch[0])) {
           locationsFound.push('cardiovascular');
