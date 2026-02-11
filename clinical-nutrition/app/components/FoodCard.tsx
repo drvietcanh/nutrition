@@ -1,9 +1,25 @@
 "use client";
 
-import { FoodItem } from "@/lib/food-db";
+import { FoodItem, type FoodCategory } from "@/lib/food-db";
 import { ExtendedFoodItem } from "@/lib/vietnamese-food-extended";
 
 type FoodCardItem = FoodItem | (ExtendedFoodItem & { code?: string });
+
+const categoryLabels: Record<FoodCategory, string> = {
+  "rice-noodles": "Cơm & Bún",
+  meat: "Thịt",
+  seafood: "Hải sản (cá biển, tôm, mực...)",
+  freshwater: "Thủy sản nước ngọt",
+  vegetables: "Rau củ",
+  fruits: "Trái cây",
+  legumes: "Đậu",
+  dairy: "Sữa",
+  condiments: "Gia vị",
+  beverages: "Đồ uống",
+  snacks: "Đồ ăn vặt",
+  soups: "Súp",
+  desserts: "Tráng miệng",
+};
 
 interface FoodCardProps {
   food: FoodCardItem;
@@ -35,7 +51,12 @@ export function FoodCard({ food, onClick, isSelected }: FoodCardProps) {
             {food.name}
           </h3>
           {food.nameEn && (
-            <p className="text-sm text-gray-500 mb-2 truncate">{food.nameEn}</p>
+            <p className="text-sm text-gray-500 mb-1 truncate">{food.nameEn}</p>
+          )}
+          {food.category && (
+            <p className="text-xs text-gray-400 mb-2">
+              {categoryLabels[food.category] || food.category}
+            </p>
           )}
           <div className="flex flex-wrap gap-2 text-xs">
             <span className="px-2 py-0.5 bg-gray-100 text-gray-700 rounded">

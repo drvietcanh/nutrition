@@ -31,7 +31,7 @@ const categories: { value: FoodCategory; label: string }[] = [
   { value: "rice-noodles", label: "Cơm & Bún" },
   { value: "meat", label: "Thịt" },
   { value: "seafood", label: "Hải sản (cá biển, tôm, mực...)" },
-  { value: "freshwater", label: "Thủy sản nước ngọt (cá đồng, cá sông...)" },
+  { value: "freshwater", label: "Thủy sản nước ngọt" },
   { value: "vegetables", label: "Rau củ" },
   { value: "fruits", label: "Trái cây" },
   { value: "legumes", label: "Đậu" },
